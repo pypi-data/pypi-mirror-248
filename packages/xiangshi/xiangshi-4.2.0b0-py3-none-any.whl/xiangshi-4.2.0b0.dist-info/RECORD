@@ -1,0 +1,10 @@
+xiangshi/__init__.py,sha256=D8adk-U2vLJDugA6uv4G3loJqMpsD_wKILRRAdkaYKg,241
+xiangshi/func.py,sha256=ZnlHbG8sUB3MJskftM876xfHd4oZJe7yaSC0hzsjUiY,2999
+xiangshi/kmeans.py,sha256=YujLarBGHCNijM1iHPKrgP1g2o_1RnAcXk2GW0k3Sts,6062
+xiangshi/main.py,sha256=jrh39lWXTmf_rlKz79FgMottDptPqLEOTU7-noQKdZY,4422
+xiangshi/stoptext.txt,sha256=KYpd9hrpmsqW7Z7kaRF50wL5SFBaYdpoL0nIQTmfWU4,4742
+xiangshi-4.2.0b0.dist-info/LICENSE,sha256=gOaOcG7hZFmB00Zc-aKRF0fpRSE7cKkFCgEyjj5QTRk,1066
+xiangshi-4.2.0b0.dist-info/METADATA,sha256=2Jdj28of1JtMGt__5ZEtapoS_jU50yaWGjzPhFLy6r8,5778
+xiangshi-4.2.0b0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+xiangshi-4.2.0b0.dist-info/top_level.txt,sha256=-cyqkZYQJGROBPKHSae3F9g_MMVjfEUxoQUFFXapf7U,9
+xiangshi-4.2.0b0.dist-info/RECORD,,
