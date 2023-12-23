@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: CU_SAM
+Version: 0.0.1
+Summary: A small example package
+Author-email: SAM <samy.test.python@gmail.com>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Example Package
+Don't read this.. not related to physics :)
+just some formality :]
+This is a simple example package.
+[GitHub-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
