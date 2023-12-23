@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+django_enum/__init__.py
+django_enum/base.py
+django_enum_simple_choices.egg-info/PKG-INFO
+django_enum_simple_choices.egg-info/SOURCES.txt
+django_enum_simple_choices.egg-info/dependency_links.txt
+django_enum_simple_choices.egg-info/top_level.txt

@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: django-enum-simple-choices
+Version: 1.0.1
+Summary: Simple enum for Django choice fields
+Home-page: https://github.com/Extraordinary01/django-enum
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.4
+License-File: LICENSE
+
+This app includes DjangoEnum class which compatible with Django choice fields.
+
+Usage example::
+
+
+    from django.db import models
+    from django_enum import DjangoEnum
+
+
+    class StatusTypes(DjangoEnum):
+        ACTIVE = 0
+        STOPPING = 1
+        STOPPED = 2
+
+
+    class MyModel(models.Model):
+        status = models.IntegerField(choices=StatusTypes.choices())
+
+
+CHANGELOG:
+
+1.0.1: Fix name, value issue
+
