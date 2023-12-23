@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: cloudmesh-configuration
+Version: 5.0.7
+Summary: A simple way to configure applications from yaml files.
+Author-email: Gregor von Laszewski <laszewski@gmail.com>
+Maintainer-email: Gregor von Laszewski <laszewski@gmail.com>
+License: Apache License
+                                   Version 2.0, January 2004
+                                http://www.apache.org/licenses/
+        
+           Copyright 2017-2021 Gregor von Laszewski, Indiana University
+           Copyright 2021,2022 Gregor von Laszewski, University of Virginia
+        
+           Licensed under the Apache License, Version 2.0 (the "License");
+           you may not use this file except in compliance with the License.
+           You may obtain a copy of the License at
+        
+               http://www.apache.org/licenses/LICENSE-2.0
+        
+           Unless required by applicable law or agreed to in writing, software
+           distributed under the License is distributed on an "AS IS" BASIS,
+           WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+           See the License for the specific language governing permissions and
+           limitations under the License.
+        
+Project-URL: Homepage, https://github.com/cloudmesh/cloudmesh-configuration
+Project-URL: Documentation, https://github.com/cloudmesh/cloudmesh-configuration/blob/main/README.md
+Project-URL: Repository, https://github.com/cloudmesh/cloudmesh-configuration.git
+Project-URL: Issues, https://github.com/cloudmesh/cloudmesh-configuration/issues
+Project-URL: Changelog, https://github.com/cloudmesh/cloudmesh-configuration/blob/main/CHANGELOG.md
+Keywords: helper library,cloudmesh
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Environment :: Other Environment
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: Topic :: System
+Classifier: Topic :: System :: Distributed Computing
+Classifier: Topic :: System :: Shells
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS
+Requires-Dist: toml
+Requires-Dist: cloudmesh-cmd5
+
+# cloudmesh-config
+
+## Acknowledgments
+
+Continued work was in part funded by the NSF
+CyberTraining: CIC: CyberTraining for Students and Technologies
+from Generation Z with the awadrd numbers 1829704 and 2200409.
