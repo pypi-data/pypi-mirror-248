@@ -1,0 +1,12 @@
+setup.py
+verysimplemodule_rafael/__init__.py
+verysimplemodule_rafael/add.py
+verysimplemodule_rafael/subtract.py
+verysimplemodule_rafael.egg-info/PKG-INFO
+verysimplemodule_rafael.egg-info/SOURCES.txt
+verysimplemodule_rafael.egg-info/dependency_links.txt
+verysimplemodule_rafael.egg-info/requires.txt
+verysimplemodule_rafael.egg-info/top_level.txt
+verysimplemodule_rafael/extra/__init__.py
+verysimplemodule_rafael/extra/divide.py
+verysimplemodule_rafael/extra/multiply.py
