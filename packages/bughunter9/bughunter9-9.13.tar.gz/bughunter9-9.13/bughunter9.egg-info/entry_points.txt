@@ -1,0 +1,2 @@
+[console_scripts]
+bughunter9 = bughunter9:main
