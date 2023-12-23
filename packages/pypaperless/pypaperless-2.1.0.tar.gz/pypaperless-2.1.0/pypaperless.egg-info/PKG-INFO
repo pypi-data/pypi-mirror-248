@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: pypaperless
+Version: 2.1.0
+Summary: Little api wrapper for the paperless(-ngx) dms.
+Author-email: Tobias Schulz <public.dev@tbsch.de>
+License: MIT
+Platform: any
+Classifier: Environment :: Console
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp
+Provides-Extra: test
+Requires-Dist: black==23.12.0; extra == "test"
+Requires-Dist: codespell==2.2.6; extra == "test"
+Requires-Dist: mypy==1.7.1; extra == "test"
+Requires-Dist: ruff==0.1.8; extra == "test"
+Requires-Dist: pytest==7.4.3; extra == "test"
+Requires-Dist: pytest-asyncio==0.23.2; extra == "test"
+Requires-Dist: pytest-aiohttp==1.0.5; extra == "test"
+Requires-Dist: pytest-cov==4.1.0; extra == "test"
+Requires-Dist: pre-commit==3.6.0; extra == "test"
+Requires-Dist: pylint==3.0.3; extra == "test"
+
+# PyPaperless
+
+![Test Badge](https://github.com/tb1337/paperless-api/actions/workflows/test.yml/badge.svg)
+
+Little api client for [Paperless-ngx](https://github.com/paperless-ngx/paperless-ngx)!
+
+Find out more here:
+
+* Project: https://docs.paperless-ngx.com
+* REST API: https://docs.paperless-ngx.com/api/
+
+## Features
+
+- Depends on aiohttp, works in async environments.
+- Token authentication only. **No credentials anymore.**
+- `list()` requests all object ids of resources.
+- `get()` for each resources. Accepts Django filters.
+- `iterate()` for each endpoint. Accepts Django filters.
+- `create()`, `update()`, `delete()` methods for many resources.
+- Paperless makes use of pagination. We use that too. You have full control.
+- *PyPaperless* only transports data. Your code organizes it.
+
+## Documentation
+
+* [Handling a session](docs/SESSION.md)
+* [Request data](docs/REQUEST.md)
+* [Create, update, delete data](docs/CRUD.md)
+
+## Thanks to
+
+* The Paperless-ngx Team
+* The Home Assistant Community
