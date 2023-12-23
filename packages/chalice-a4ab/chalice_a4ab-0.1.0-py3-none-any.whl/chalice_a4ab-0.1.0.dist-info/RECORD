@@ -1,0 +1,15 @@
+chalice_a4ab/__init__.py,sha256=oghanqjCihGjPX3SdOXiCUaL3l06h5tXWDCg5np4BY8,859
+chalice_a4ab/chalice_plugin.py,sha256=rF7symVwkhr-l1aipyoZH0FKrADVh9RXAW-WCa3HnNc,5608
+chalice_a4ab/runtime/__init__.py,sha256=VRw9R1ykMYQ1n3cncbFjwFArJiMzC_fvYysHsYlWqx0,48
+chalice_a4ab/runtime/api_runtime.py,sha256=TSGiiaV-4MgUp6CGe_BDMcJXU6M-zPlC0HjhAx7_dMo,2374
+chalice_a4ab/runtime/converter/__init__.py,sha256=eiSyjFqU1-SZDYUijFEwjBuqiKqCllFBs0oKH6rcPgI,574
+chalice_a4ab/runtime/converter/bedrock_agent_event_to_apigw.py,sha256=KPBualykth7m6QYavbzMvZgOLpm9dvgCgsnpqYcCFJw,3919
+chalice_a4ab/runtime/model_utility/apigw.py,sha256=3ks4CEtRoCRgye7Gy3_5JGVq39nNZHWn1B_u1Nyf2Us,1444
+chalice_a4ab/runtime/model_utility/bedrock_agent.py,sha256=mAAF-YkGgDCfLRJD8miV3HQoYVWLcqb6lAL4QzM4HjE,1593
+chalice_a4ab/runtime/models/apigw.py,sha256=910NxZsNioSVJlVNL-oT-twv80sQbEWUwbUmqvy_6GU,3174
+chalice_a4ab/runtime/models/bedrock_agent.py,sha256=2kKdJkhLSsGk7LX6ENvWtrdd9V6aFxgTzgPI8d73Tx0,4518
+chalice_a4ab/runtime/pydantic_tool/utility.py,sha256=07IfQrxK7pHDU4GTONMWFsm6l_G_kVb4gqx-iaust0Q,1135
+chalice_a4ab-0.1.0.dist-info/LICENSE,sha256=ljYWoyZVG-ATXlX4xohRBOQOImxia3drErKYhqt6cyg,1085
+chalice_a4ab-0.1.0.dist-info/METADATA,sha256=AdtlaiGG6GXl_bAVsAhyrXtnF9SNrPlfPxbT8iaVJ48,1877
+chalice_a4ab-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+chalice_a4ab-0.1.0.dist-info/RECORD,,
