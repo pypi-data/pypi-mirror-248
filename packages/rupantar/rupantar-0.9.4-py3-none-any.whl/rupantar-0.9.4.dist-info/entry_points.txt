@@ -1,0 +1,3 @@
+[console_scripts]
+rupantar=src.rupantar.start:main
+
