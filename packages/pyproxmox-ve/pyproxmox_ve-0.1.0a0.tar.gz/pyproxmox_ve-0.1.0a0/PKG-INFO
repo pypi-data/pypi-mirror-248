@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: pyproxmox-ve
+Version: 0.1.0a0
+Summary: Async wrapper (aiohttp) for Proxmox VE API
+License: Apache Version 2.0
+Author: Brandon Spendlove
+Author-email: brandonspendlove@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiohttp (>=3.9.1,<4.0.0)
+Requires-Dist: pydantic (>=2.5.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+# pyproxmox-ve
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![CI Status](https://github.com/proxmox-central-manager/pyproxmox-ve/actions/workflows/ci.yml/badge.svg)](https://github.com/proxmox-central-manager/pyproxmox-ve/actions/workflows/ci.yml/badge.svg)
+
+A simple python module to interact with the Proxmox Virtual Environment (PVE) HTTP API which uses aiohttp and pydantic.
+
+## Installation
+
+```
+pip install pyproxmox-ve
+```
+
+## Pydantic
+Pydantic is a fantastic data validation library which I've opted to use in this project, not only to provide data input validation (and also return validation from the PVE API responses), but also to provide a great developer experience with IDEs. Python type annotations provide us the ability with great integration with tools like PyCharm, VSCode and more...
+
+## Examples
+
+TO-DO
+
+## Development and Contributing
+
+See this document [which explains the development environment/setup required to contribute to this project](CONTRIBUTING.md)
+
+
