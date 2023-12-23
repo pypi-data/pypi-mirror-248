@@ -1,0 +1,22 @@
+image: fedora/latest
+packages:
+  - python38
+  - python39
+  - python310
+  - python311
+  - python312
+  - pipx
+sources:
+  - https://git.sr.ht/~sara/pytest-pook
+tasks:
+  - hatch: pipx install hatch
+  - test: |
+      cd pytest-pook
+      hatch run test:test
+  - lint: |
+      cd pytest-pook
+      hatch run lint
+triggers:
+  - action: email
+    condition: always
+    to: contact@sarayourfriend.pictures
