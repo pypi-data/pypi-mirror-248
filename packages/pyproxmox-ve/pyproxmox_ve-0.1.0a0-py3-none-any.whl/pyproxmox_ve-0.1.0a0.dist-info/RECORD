@@ -1,0 +1,16 @@
+pyproxmox_ve/__init__.py,sha256=autSfbeCshyktKFS5twGSJ2pBZ5ztglscdMDkiBUWh4,42
+pyproxmox_ve/api.py,sha256=Ptq6JEe7j9IVZymWTB2uHTY5CGr1nGoZyuYewe4BCYs,8428
+pyproxmox_ve/auth.py,sha256=C3R7nCfiD4E4TTHCHTk9s_UdDti_-iPo7FOn_nYwsDg,154
+pyproxmox_ve/exceptions.py,sha256=ezSScngTKKeCub16OXVKr05ks0WeUwhQv0CtdB6VvK4,547
+pyproxmox_ve/models/base.py,sha256=u98LRIwLmDsrkdWCAJpFNYi4X7EHTGHDTNx8SBy2aPw,310
+pyproxmox_ve/models/enums.py,sha256=rh_u2p8ZIF0FzXRtyqEY3bqhrT4aGiTsug-XizUKWuw,135
+pyproxmox_ve/models/user.py,sha256=P51W0PATb8dsD8i4fROKP0z0bYnRfKlMVpB74Z3b_ug,902
+pyproxmox_ve/models/version.py,sha256=1I_D0eFlE8F6C2RmWryQcEPaMBjrBMvcVgT3qLwHkZ8,228
+pyproxmox_ve/resources/__init__.py,sha256=xXZkUkKGn2DFfR0w30YqsrAu_1yl-BMK94ayspYFhoA,113
+pyproxmox_ve/resources/access/access.py,sha256=uO5s5Fs5-YnNa3DGK2jEogqV-SxsvpyPUNX_2I-lqKA,314
+pyproxmox_ve/resources/access/users/users.py,sha256=KhpCIbXVvG5OZgcKqHK0r2aZbgWNi_lZtmJFs5xortw,743
+pyproxmox_ve/resources/version.py,sha256=BMMzdKezeWnVx4zjNUN8Om30SmR000rBUYyMz3Srs0k,435
+pyproxmox_ve-0.1.0a0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyproxmox_ve-0.1.0a0.dist-info/METADATA,sha256=W0wYPSb7wKidBCELF3hz4pvMs1zAPxuJZSZOXhRiofk,1661
+pyproxmox_ve-0.1.0a0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+pyproxmox_ve-0.1.0a0.dist-info/RECORD,,
