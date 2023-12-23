@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: xolo
+Version: 0.0.2
+Summary: Xolo Toolkit
+Project-URL: Homepage, https://github.com/marcovzla/xolo
+Author-email: Marco Antonio Valenzuela Escárcega <marcovalenzuelaescarcega@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.11
+Requires-Dist: docstring-parser
+Requires-Dist: jsonref
+Requires-Dist: pydantic
+Requires-Dist: python-slugify
+Requires-Dist: regex
+Description-Content-Type: text/markdown
+
+# xolo
