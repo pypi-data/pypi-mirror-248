@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ai-network-storage
+Version: 0.3.0
+Summary: SDK for AI Network P2P file sharing system
+Home-page: UNKNOWN
+Author: kmh4500
+Author-email: kimminhyun@comcom.ai
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: grpcio
+Requires-Dist: grpcio-tools
+
+UNKNOWN
+
+
