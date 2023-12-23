@@ -1,0 +1,33 @@
+{
+  "source_conf": [
+    {
+      "name": "pg_check",
+      "db_type": "pg",
+      "db_conf_path": "/home/xsy/pg_conf.json",
+      "source_check_table_file_path": "/home/xsy/pg_tables_2301.text",
+      "target_check_table_file_path": "/home/xsy/cz_pg_check_tables_2301.text",
+      "cz_cdc_table_prefix": "111018_10116003_xsy_gray",
+      "pk_column": "id"
+    },
+    {
+      "name": "mysql1_check",
+      "db_type": "mysql",
+      "db_conf_path": "/home/xsy/mysql_conf.json",
+      "source_check_table_file_path": "/home/xsy/mysql_tables.text",
+      "target_check_table_file_path": "/home/xsy/cz_mysql_check_tables.text",
+      "cz_cdc_table_prefix": "111018_10115005_xsy_gray",
+      "pk_column": "id"
+    },
+    {
+      "name": "mysql2_check",
+      "db_type": "mysql",
+      "db_conf_path": "/home/xsy/mysql2_conf.json",
+      "source_check_table_file_path": "/home/xsy/mysql2_tables.text",
+      "target_check_table_file_path": "/home/xsy/cz_mysql2_check_tables.text",
+      "cz_cdc_table_prefix": "111018_10115006_xsy_gray",
+      "pk_column": "id"
+    }
+  ],
+  "target_db_conf_path": "/home/xsy/cz_conf.json",
+  "target_db_schema_name": "public"
+}
