@@ -1,0 +1,10 @@
+setup.py
+isha-distributions/Binomialdistribution.py
+isha-distributions/Gaussiandistribution.py
+isha-distributions/Generaldistribution.py
+isha-distributions/__init__.py
+isha_distributions.egg-info/PKG-INFO
+isha_distributions.egg-info/SOURCES.txt
+isha_distributions.egg-info/dependency_links.txt
+isha_distributions.egg-info/not-zip-safe
+isha_distributions.egg-info/top_level.txt
