@@ -1,0 +1,15 @@
+videojitter/_signal.py,sha256=sAL6U0KdL-2NsPGWxS-IMOugjZO-ZByHEzWzGp7Ckr0,3775
+videojitter/_util.py,sha256=l-It6gUhmfxgoX3cFzxUQogYMh8b0zlp2ErHkpWw_AE,2314
+videojitter/_version.py,sha256=UdFCS-idSY2F2sweO9SMCGE7yYle2IZJhi2bvyuhurI,282
+videojitter/_version_generated.py,sha256=NqIxvFkGTmjWkkWwq7_lHTaOlQBhNyI1nf75AHO9AOs,406
+videojitter/analyze_recording.py,sha256=f-oIvcMkglLQdFMJ0d7vNOZqFOdD-tlKNG7lAPNfzbo,25859
+videojitter/generate_fake_recording.py,sha256=EvVXuMKk5kwrhjw2v92WD2AOjq5t9Kf200_WjU0rB2s,16356
+videojitter/generate_report.py,sha256=8HzKHdxkGNqrW16TWtpBsdoTWUnaSAzVQy24LuvT5Ms,35018
+videojitter/generate_spec.py,sha256=cKoPqh5OpWtzn4zNt8JiWHZc_9HxD58B6NCQ9ZoziVs,2347
+videojitter/generate_video.py,sha256=8aDUx9MsRtc62o-VKP2jITU9bCl1D9Gtaw5LAhJp8vc,5231
+videojitter-1.0.dist-info/LICENSE.txt,sha256=B4LyxR8IWxb2F_F3RGxtAibo6k85qTDwvQUxVsGNM4M,1095
+videojitter-1.0.dist-info/METADATA,sha256=DQswZSSFhLKLrQqsFWakt3D3lBnysRYgMAL8vzGrG1Y,2024
+videojitter-1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+videojitter-1.0.dist-info/entry_points.txt,sha256=KdIASEdAfoHbgz7fx7bBtkAbQRHZWgXyHCJET5dAz0g,347
+videojitter-1.0.dist-info/top_level.txt,sha256=boC7L1yBZmUKIIMLTtbqpxN-vIqtF1wtWniKpAguBPs,12
+videojitter-1.0.dist-info/RECORD,,
