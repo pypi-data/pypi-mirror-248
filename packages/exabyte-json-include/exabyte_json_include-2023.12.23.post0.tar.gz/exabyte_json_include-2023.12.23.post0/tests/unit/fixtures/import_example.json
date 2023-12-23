@@ -1,0 +1,7 @@
+{
+  "one": "fish",
+  "two": "phish",
+  "red": "fishe",
+  "blue": "phishe",
+  "an_include": {"...": "include(_include_target.json)"}
+}
