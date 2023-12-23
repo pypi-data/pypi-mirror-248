@@ -1,0 +1,9 @@
+cloudmesh/bar/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloudmesh/bar/bar.py,sha256=KVmU3v4AE-siGda9ZTheOQ_vOnpy5L-U-zrhQFxx5hk,1122
+cloudmesh/bar/command/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloudmesh/bar/command/bar.py,sha256=p1FeoFMUHJEsTboH3GSlg7qKmJeub16zXHyjNJKYZS4,3565
+cloudmesh_bar-5.0.20.dist-info/LICENSE,sha256=w7U4P4ljhJjniTEMxSyhAcEbWHDk2Ng1FqsOG6aEgs0,769
+cloudmesh_bar-5.0.20.dist-info/METADATA,sha256=fMvfL2sCmrLdylYWAFjVk1jxdbs0AyZ9udz3cPBqwnU,5559
+cloudmesh_bar-5.0.20.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+cloudmesh_bar-5.0.20.dist-info/top_level.txt,sha256=aTw_KEhKv-8X8yWzikhSTeYlXkcauZxg_98rOi1SJHg,10
+cloudmesh_bar-5.0.20.dist-info/RECORD,,
