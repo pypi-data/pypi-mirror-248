@@ -1,0 +1,117 @@
+Metadata-Version: 2.1
+Name: cloudmesh-installer
+Version: 5.0.1
+Summary: Installer for cloudmesh
+Author-email: Gregor von Laszewski <laszewski@gmail.com>
+Maintainer-email: Gregor von Laszewski <laszewski@gmail.com>
+License:                                  Apache License
+                                   Version 2.0, January 2004
+                                http://www.apache.org/licenses/
+        
+           Copyright 2017 Gregor von Laszewski, Indiana University
+        
+           Licensed under the Apache License, Version 2.0 (the "License");
+           you may not use this file except in compliance with the License.
+           You may obtain a copy of the License at
+        
+               http://www.apache.org/licenses/LICENSE-2.0
+        
+           Unless required by applicable law or agreed to in writing, software
+           distributed under the License is distributed on an "AS IS" BASIS,
+           WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+           See the License for the specific language governing permissions and
+           limitations under the License.
+        
+Project-URL: Homepage, https://github.com/cloudmesh/cloudmesh-installer
+Project-URL: Documentation, https://github.com/cloudmesh/cloudmesh-installer/blob/main/README.md
+Project-URL: Repository, https://github.com/cloudmesh/cloudmesh-installer.git
+Project-URL: Issues, https://github.com/cloudmesh/cloudmesh-installer/issues
+Project-URL: Changelog, https://github.com/cloudmesh/cloudmesh-installer/blob/main/CHANGELOG.md
+Keywords: helper library,cloudmesh
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Environment :: Other Environment
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: Topic :: System
+Classifier: Topic :: System :: Distributed Computing
+Classifier: Topic :: System :: Shells
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: toml
+Requires-Dist: docopt
+Requires-Dist: ordered_set
+Requires-Dist: cloudmesh-common
+
+# Cloudmesh Installer 
+
+
+[![image](https://img.shields.io/pypi/v/cloudmesh-common.svg)](https://pypi.org/project/cloudmesh-common/)
+[![Python](https://img.shields.io/pypi/pyversions/cloudmesh-common.svg)](https://pypi.python.org/pypi/cloudmesh-common)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/cloudmesh/cloudmesh-common/blob/main/LICENSE)
+[![Format](https://img.shields.io/pypi/format/cloudmesh-common.svg)](https://pypi.python.org/pypi/cloudmesh-common)
+[![Status](https://img.shields.io/pypi/status/cloudmesh-common.svg)](https://pypi.python.org/pypi/cloudmesh-common)
+[![Travis](https://travis-ci.com/cloudmesh/cloudmesh-common.svg?branch=main)](https://travis-ci.com/cloudmesh/cloudmesh-common)
+
+
+
+This is an experimental installer that is most usefull during the development of
+cloudmesh components form source. Once cloudmehs is released, you can use the
+packages hosted at pypi.
+
+This command can be installed with 
+
+```bash
+$ pip install cloudmesh-installer
+```
+
+an FAQ is available at
+
+* <https://github.com/cloudmesh/cloudmesh-installer/blob/main/FAQ.md>
+
+## Usage
+
+```bash
+
+```
+
+
+
+## Appendix
+
+Timings
+
+| Command | Time |
+| --- | --- |
+| `pip install cloudmesh-installer` | 	0m4.558s |
+| `time cloudmesh-installer install cms`| 0m18.288s |
+| `time cloudmesh-installer git clone storage` | 	0m4.926s |
+
+
+Tests
+
+ * [test_installer](tests/test_installer.py)
+ 
+## Acknowledgments
+
+This work was in part funded by the NSF
+CyberTraining: CIC: CyberTraining for Students and Technologies
+from Generation Z with the awadrd numbers 1829704 and 2200409.
