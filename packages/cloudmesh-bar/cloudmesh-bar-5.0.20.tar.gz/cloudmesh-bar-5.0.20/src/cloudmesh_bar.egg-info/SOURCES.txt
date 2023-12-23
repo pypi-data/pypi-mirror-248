@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+VERSION
+pyproject.toml
+requirements-dev.txt
+requirements.txt
+setup.cfg
+src/cloudmesh/bar/__init__.py
+src/cloudmesh/bar/bar.py
+src/cloudmesh/bar/command/__init__.py
+src/cloudmesh/bar/command/bar.py
+src/cloudmesh_bar.egg-info/PKG-INFO
+src/cloudmesh_bar.egg-info/SOURCES.txt
+src/cloudmesh_bar.egg-info/dependency_links.txt
+src/cloudmesh_bar.egg-info/requires.txt
+src/cloudmesh_bar.egg-info/top_level.txt
