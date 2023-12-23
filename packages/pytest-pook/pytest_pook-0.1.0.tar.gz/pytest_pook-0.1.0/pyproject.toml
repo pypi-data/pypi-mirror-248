@@ -1,0 +1,54 @@
+[project]
+name = "pytest-pook"
+version = "0.1.0"
+description = "Pytest plugin for pook"
+authors = [
+    { name = "sarayourfriend", email = "contact@sarayourfriend.pictures" },
+]
+readme = "README.md"
+requires-python = ">=3.8"
+
+dependencies = [
+    "pook~=1.2.1",
+    "pytest~=7.4",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Framework :: Pytest",
+    "Topic :: Software Development :: Testing :: Mocking",
+]
+
+[project.urls]
+Documentation = "https://git.sr.ht/~sara/pytest-pook"
+"Source code" = "https://git.sr.ht/~sara/pytest-pook"
+
+[project.optional-dependencies]
+dev = [
+    "ruff",
+    "pre-commit",
+]
+
+[project.entry-points.pytest11]
+pytest_pook = "pytest_pook.plugin"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch]
+[tool.hatch.build.targets.wheel]
+[tool.hatch.envs.default]
+
+[tool.hatch.envs.test]
+scripts = {test = 'pytest'}
+matrix = [
+    {python = ["3.8", "3.9", "3.10", "3.11", "3.12"]}
+]
