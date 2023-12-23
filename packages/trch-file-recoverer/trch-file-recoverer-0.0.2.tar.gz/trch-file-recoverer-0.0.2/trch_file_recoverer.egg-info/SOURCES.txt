@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+file_recoverer/__init__.py
+file_recoverer/file_recoverer.py
+trch_file_recoverer.egg-info/PKG-INFO
+trch_file_recoverer.egg-info/SOURCES.txt
+trch_file_recoverer.egg-info/dependency_links.txt
+trch_file_recoverer.egg-info/entry_points.txt
+trch_file_recoverer.egg-info/top_level.txt
