@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: dataframeviewer
+Version: 1.6.3
+Summary: PyQt5 application to visualize pandas DataFrames
+Home-page: UNKNOWN
+Author: Rafael Arvelo
+Author-email: rafaelarvelo1@gmail.com
+License: UNKNOWN
+Description: PyQt5 GUI application to show DataFrame in QTableViews and generate plots
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.6
