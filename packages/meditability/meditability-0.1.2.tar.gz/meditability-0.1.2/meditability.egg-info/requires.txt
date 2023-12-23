@@ -1,0 +1,4 @@
+snakemake>=7.32.4
+biopython>=1.81
+pyyaml>=6.0
+pytz>=2023.3
