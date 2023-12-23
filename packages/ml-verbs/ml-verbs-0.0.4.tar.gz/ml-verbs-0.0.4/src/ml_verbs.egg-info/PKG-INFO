@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: ml-verbs
+Version: 0.0.4
+Summary: Generic interfaces for machine learning
+License: MIT License
+        
+        Copyright (c) 2023 Anatoly Makarevich
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: github, https://github.com/NowanIlfideme/ml-verbs
+Keywords: ml,machine learning
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic-cereal
+Provides-Extra: dev
+Requires-Dist: setuptools>=61.0.0; extra == "dev"
+Requires-Dist: setuptools-scm[toml]>=6.2; extra == "dev"
+Requires-Dist: wheel>=0.41; extra == "dev"
+Requires-Dist: pre-commit==3.5.0; extra == "dev"
+Requires-Dist: ruff==0.1.7; extra == "dev"
+Requires-Dist: black==23.11.0; extra == "dev"
+Requires-Dist: isort==5.12.0; extra == "dev"
+Requires-Dist: mypy==1.7.1; extra == "dev"
+Requires-Dist: pytest==7.4.3; extra == "dev"
+Requires-Dist: pytest-lazy-fixture==0.6.3; extra == "dev"
+Requires-Dist: jupyter; extra == "dev"
+Requires-Dist: ipykernel; extra == "dev"
+Requires-Dist: pandas-stubs; extra == "dev"
+Provides-Extra: dev-extras
+Requires-Dist: pandas; extra == "dev-extras"
+Requires-Dist: polars; extra == "dev-extras"
+Requires-Dist: xarray; extra == "dev-extras"
+Requires-Dist: pyspark; extra == "dev-extras"
+Provides-Extra: docs
+Requires-Dist: mkdocs==1.5.3; extra == "docs"
+Requires-Dist: mkdocs-material==9.5.1; extra == "docs"
+Requires-Dist: mkdocstrings==0.24.0; extra == "docs"
+Requires-Dist: mkdocstrings-python==1.7.5; extra == "docs"
+Requires-Dist: mkdocs-jupyter==0.24.6; extra == "docs"
+Requires-Dist: pygments==2.17.2; extra == "docs"
+
+# `ml_verbs`
+
+General interfaces for machine learning.
