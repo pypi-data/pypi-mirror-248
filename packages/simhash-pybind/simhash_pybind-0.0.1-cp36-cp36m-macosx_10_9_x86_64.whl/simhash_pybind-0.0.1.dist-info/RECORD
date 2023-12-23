@@ -1,0 +1,6 @@
+simhash/__init__.py,sha256=i4SAak6Rx5P9QtEpwmEpA-uBc050PwmsWv26VgNhKf4,1370
+simhash/_simhash.cpython-36m-darwin.so,sha256=wdj_YwVWJtg3vfsUWWeaklCYWmzOFna-FvCZxjJEVZc,183472
+simhash_pybind-0.0.1.dist-info/METADATA,sha256=GS7kVY61B4Od240UXOrHDP7jaOmIYu8f5bkiRZeBYqk,1118
+simhash_pybind-0.0.1.dist-info/WHEEL,sha256=ye8A2lA8pjGNe7-ueOpggarJAhczq3EZGqnLZzzfQYQ,110
+simhash_pybind-0.0.1.dist-info/top_level.txt,sha256=jZrhQkZSQluTx1_51WgfLUp9vTEmsh1nXenyaE4uEZ8,8
+simhash_pybind-0.0.1.dist-info/RECORD,,
