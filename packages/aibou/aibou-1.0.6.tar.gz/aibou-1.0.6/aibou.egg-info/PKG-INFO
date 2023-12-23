@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: aibou
+Version: 1.0.6
+Summary: Command line turn-based monster battle game
+Author-email: Jacob Krol <jdkrol351@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/jakekrol/aibou
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: keyboard
+Requires-Dist: rich
+Requires-Dist: termcolor
+Requires-Dist: PyYAML
+
+# Aibou
+
+## Quickstart
+
+``` bash
+pip install aibou
+python -m aibou
+```
+
+## Linux
+
+``` bash
+# keyboard module requires root
+sudo su
+pip install aibou
+python -m aibou
+```
+
+## Info
+
+Authored by [Jacob Krol](https://github.com/jakekrol)
+
+### Developer timeline
+
+- Core game development: Winter break of 2022-2023
+- Develop and publish python package: Winter break of 2023-2024
