@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+pulpo-beanstalk-cli/__init__.py
+pulpo-beanstalk-cli/pulpo-beanstalk-cli.py
+pulpo_beanstalk_cli.egg-info/PKG-INFO
+pulpo_beanstalk_cli.egg-info/SOURCES.txt
+pulpo_beanstalk_cli.egg-info/dependency_links.txt
+pulpo_beanstalk_cli.egg-info/requires.txt
+pulpo_beanstalk_cli.egg-info/top_level.txt
+tests/test_cli.py
