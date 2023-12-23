@@ -1,0 +1,9 @@
+bumpversion/__init__.py,sha256=iG1RqsHMM9Y4rg_H9ZqoQLdpz9vroikOtO-jPCwzbaY,23
+bumpversion/bumpversion.py,sha256=_UOge8TNVN9avaZtzq3r9591_vFSWbkFEOTji4M0kpo,11049
+bumpversion/bumpversion_command.py,sha256=kF0GYCjP7anOuOMdn2LoLfFFYEUiETFCEf9oKZbcSYY,2857
+cloudmesh_bumpversion-5.0.19.dist-info/LICENSE,sha256=w7U4P4ljhJjniTEMxSyhAcEbWHDk2Ng1FqsOG6aEgs0,769
+cloudmesh_bumpversion-5.0.19.dist-info/METADATA,sha256=NMfvlGvJwlpiUpm15i3H1dRukt3PHYLW_nUZmlcLeDs,5716
+cloudmesh_bumpversion-5.0.19.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+cloudmesh_bumpversion-5.0.19.dist-info/entry_points.txt,sha256=j9Ub9uztsfoFeqil7W-UfKy3Lx58LYJ_K5SKmMFRUa8,69
+cloudmesh_bumpversion-5.0.19.dist-info/top_level.txt,sha256=wtwvOpCf4mp03VQ6OQyT4KsSRaWnn8jd5RTMk-CSPUY,12
+cloudmesh_bumpversion-5.0.19.dist-info/RECORD,,
