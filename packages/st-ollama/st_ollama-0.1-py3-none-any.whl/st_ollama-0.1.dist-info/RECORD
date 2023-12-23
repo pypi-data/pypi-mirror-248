@@ -1,0 +1,10 @@
+ollachat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ollachat/chatbot.py,sha256=-Bma48xK3007WkcDN3wB7CuawEypNUo7pnwYxxxe5u4,3363
+ollachat/cli.py,sha256=iJuVO_xAkIO1VuMjf53-XJABM4jRD9LisMyBegxF6WY,298
+ollachat/list_ollama_models.py,sha256=SQqx2_iXhupqk7IhCl9lk_yygzvl7b3adzxE4abxPLQ,1883
+st_ollama-0.1.dist-info/LICENSE,sha256=nt1EoakU37gQ6FZTp4kF52-23NajlNtc9LNIY3uBSNM,1066
+st_ollama-0.1.dist-info/METADATA,sha256=VaSEsWtY3gfJe_Yo9CSLAfgukFddhQOG16s3w6TN-Ac,942
+st_ollama-0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+st_ollama-0.1.dist-info/entry_points.txt,sha256=kauWwlxTlTscuUOP9up1ovP7ThAIoW4fchjIDabWujY,56
+st_ollama-0.1.dist-info/top_level.txt,sha256=rOzbGzDdF2LnJXITnWJSbGKUzI1aQlPxG7HfY5-ePK4,9
+st_ollama-0.1.dist-info/RECORD,,
