@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: langvec
+Version: 0.0.1
+Summary: Language of Vectors (LangVec) is a simple Python library designed for transforming numerical vector data into a language-like structure using a predefined set of words (lexicon).
+Author: Simeon Emanuilov
+Author-email: simeon.emanuilov@gmail.com
+License: MIT
+Keywords: langvec semantic search vectorization
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.00
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+
+<p align="center">
+  <img src="assets/logo.png" alt="LangVec Logo" width="110">
+</p>
+
+<p align="center">
+  <i>Language of Vectors (LangVec) is a simple Python library designed for transforming numerical vector data into a language-like structure using a predefined set of words (lexicon).</i>
+</p>
+
+## Approach
+
+`LangVec` package leverages the concept of percentile-based mapping to assign words from a lexicon to numerical values, facilitating intuitive and human-readable representations of numerical data.
+
+## Where to use LangVec
+The `LangVec` library finds application in semantic search and similarity based systems, where understanding the proximity between vectors is crucial.  
+By transforming complex numerical vectors into a lexicon-based representation, `LangVec` facilitates an intuitive understanding of these similarities for humans.  
+This transformation is particularly advantageous in scenarios where interpreting raw numerical data (like floating points or integers) can be challenging or less informative. 
+In fields like machine learning and natural language processing, `LangVec` can assist in tasks such as clustering or categorizing data, where a human-readable format is preferable for quick insights and decision-making.  
+
+## Installation
+```bash
+pip install langvec
+```
+
+## Usage
+```python
+import numpy as np
+import langvec
+
+# Initialize LangVec
+lv = LangVec()
+
+# Generate some random data
+data = np.random.rand(100)
+
+# Fit to this data (getting know to distribution)
+lv.fit([data])
+
+# Example vector for prediction
+input_vector = np.random.rand(15)
+
+# Make prediction on unseen vector embedding
+print(lv.predict(input_vector))
+```
