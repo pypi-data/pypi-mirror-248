@@ -1,0 +1,82 @@
+name: Rust CI
+
+env:
+  SVDTOOLS: svdtools
+
+on:
+  push:
+    branches: master
+  pull_request:
+  merge_group:
+
+jobs:
+  rust-ci:
+    name: Rust-CI
+    runs-on: ubuntu-latest
+    needs: [build, test, test_convert, clippy, format, check]
+    if: always()
+    steps:
+      - name: Done
+        run: jq --exit-status 'all(.result == "success")' <<< '${{ toJson(needs) }}'
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    env:
+      RUSTFLAGS: "-D warnings"
+      RUSTDOCFLAGS: "-D warnings"
+    steps:
+      - uses: actions/checkout@v4
+      - run: cargo build
+      - run: cargo doc
+
+  test:
+    name: Test
+    env:
+      RUSTFLAGS: "-D warnings"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: cargo test
+
+  test_convert:
+    name: Test Convert
+    env:
+      RUSTFLAGS: "-D warnings"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          cargo run --release -- convert res/example1/stm32l4x2.svd stm32l4x2.yaml
+          cargo run --release -- convert res/example1/stm32l4x2.svd stm32l4x2.json
+          cargo run --release -- convert stm32l4x2.yaml stm32l4x2.svd
+          cargo run --release -- convert stm32l4x2.json stm32l4x2.svd
+
+  clippy:
+    name: Clippy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: cargo clippy -- --deny warnings
+
+  format:
+    name: Format
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: cargo fmt -- --check
+  check:
+    name: Check
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        target:
+          - stm32
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Install svdtools
+        run: |
+          cargo install svdtools --path .
+      - name: Check
+        run: bash tools/check_${{ matrix.target }}.sh

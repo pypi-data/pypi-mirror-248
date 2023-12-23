@@ -1,0 +1,11 @@
+TSC:
+  _array:
+    IOG?CR: {}
+  IOHCR:
+    _array:
+      G1_IO?: {}
+    G1_IO*:
+      Disabled: [0, "Gx_IOy Schmitt trigger hysteresis disabled"]
+      Enabled: [1, "Gx_IOy Schmitt trigger hysteresis enabled"]
+    G2_IO*:
+      _derivedFrom: "G1_IO1"
