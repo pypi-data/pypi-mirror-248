@@ -1,0 +1,9 @@
+deepl/__init__.py,sha256=CkWoJIItoY51MlFww9WyDMN9QplijjTq97PiolDtAd0,107
+deepl/deepl.py,sha256=aG8Uhs_WzoFMe5a8kGWW6rsJ1dzmpp2XyA5EcjuOn7s,6739
+deepl/main.py,sha256=H3szzgHMmLuyEtauCmdT4rBY5m5rkdsxCn751JnCwHc,3876
+deepl/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deepl_cli-0.6.0.dist-info/LICENSE,sha256=2F34pzqx4jJKK1sha0CPJgnlcdNI61dr38GpuzyFTRk,1063
+deepl_cli-0.6.0.dist-info/METADATA,sha256=XMOpCik-Xhgn6qZ8IuGB9k2QGRkjHKeh3IuFXnrGXoI,3634
+deepl_cli-0.6.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+deepl_cli-0.6.0.dist-info/entry_points.txt,sha256=98q5Damt0VMpRcFgaqwTMTQ9EFZcnBITROaET5N_vzY,41
+deepl_cli-0.6.0.dist-info/RECORD,,
