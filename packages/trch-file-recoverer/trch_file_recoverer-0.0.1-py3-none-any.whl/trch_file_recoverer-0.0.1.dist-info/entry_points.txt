@@ -1,0 +1,2 @@
+[console_scripts]
+recover-files = recover_files.recover_files:main
