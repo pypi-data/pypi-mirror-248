@@ -1,0 +1,118 @@
+[tool.poetry]
+name = "rupantar"
+version = "0.9.4"
+description = "Simple hackable static website generator with a focus on minimalism"
+authors = ["bhodrolok <korbolorbo1214@proton.me>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/bhodrolok/rupantar"
+packages = [{include = "rupantar", from = "src"}]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Environment :: Console",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: Unix",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: Microsoft :: Windows",
+    "Topic :: Internet",
+    "Topic :: Terminals"
+    ]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/bhodrolok/rupantar/issues"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+jinja2 = "^3.1.2"
+# pyyaml = "^6.0.1", no sup for <=3.5
+pyyaml = {version = "^6.0.1", python = "^3.6"}
+markdown2 = "^2.4.10"
+xdg-base-dirs = "^6.0.1"
+tomli = { version = "^2.0.1", python = "<3.11" }
+watchfiles = "^0.21.0"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.3"
+pytest-cov = "^4.1.0"
+pytest-xdist = "^3.5.0"
+pytest-mock = "^3.12.0"
+# pytest-order = "^1.2.0"
+
+[tool.poetry.group.docs.dependencies]
+pyment = "^0.3.3"
+
+[tool.poetry.group.extras.dependencies]
+
+[tool.poetry.group.dev.dependencies]
+taskipy = "^1.12.2"
+black = "^23.11.0"
+ruff = "^0.1.6"
+pyupgrade = "^3.15.0"
+pre-commit = "^3.5.0"
+
+
+[tool.poetry.scripts]
+rupantar = "src.rupantar.start:main"
+
+# https://github.com/taskipy/taskipy#adding-tasks
+[tool.taskipy.settings]
+use_vars = true
+
+[tool.taskipy.variables]
+rup_path = "src/rupantar"
+rup_start_path = "src.rupantar.start"
+rup_script = { var = "python -m {rup_start_path}", recursive = true }
+
+
+[tool.taskipy.tasks]
+rupantar = { cmd = "{rup_script}", help = "Run rupantar start script as a module. Works as you'd expect..." }
+init = { cmd = "{rup_script} init -s hello", help = "Init. a default rupantar project, resulting dir is 'hello'" }
+
+# just_work = Init --> Build --> Serve
+just_work = { cmd = "{rup_script} init -s hello", help = "Initialize a rupantar project with default settings, build it, and serve it at port 55991." }
+
+post_just_work = "task build"
+build_only = { cmd = "{rup_script} build hello", help = "Build rupantar project ('hello')" }
+build = { cmd = "{rup_script} build hello", help = "Build rupantar project ('hello') and serve it afterwards" }
+post_build = "task serve"
+serve = {cmd = "{rup_script} serve -p 55991 -O hello", help = "Serve built rupantar project at port 55991 ('hello')!" }
+
+
+fmt_black = { cmd = "black {rup_path}", help = "PEP-8 compliant formatting" }
+check_ruff = { cmd = "ruff check {rup_path}", help = "Run ruff as a linter" }
+fmt_ruff = { cmd = "ruff format {rup_path}", help = "Run ruff as a formatter" }
+# Black --> Ruff style --> Ruff format
+lint_check = "task fmt_black && task check_ruff && task fmt_ruff"
+
+# https://black.readthedocs.io/en/stable/usage_and_configuration/the_basics.html#command-line-options
+[tool.black]
+line-length = 90
+target-version = ["py310", "py311", "py312"]
+verbose = "True"
+# quiet = "True"
+diff = "True"
+# color = "True"
+include = 'src\/|tests\/'
+
+# https://docs.astral.sh/ruff/configuration/
+[tool.ruff]
+line-length = 90
+target-version = "py38"
+
+# https://github.com/taskipy/taskipy#adding-tasks
+[tool.pytest.ini_options]
+# dirs to be included in where Python will look for imported modules. Paths are relative to the rootdir directory.
+pythonpath = ["src"]
+# log_cli = "True"
+# log_cli_date_format = "%Y-%m-%d %H:%M:%S"
+testpaths = ["tests"]
