@@ -1,0 +1,12 @@
+setuptools
+pytest
+coverage
+flake8
+sphinx
+sphinx_rtd_theme
+sphinx-autodoc-typehints
+myst-parser
+mistune==0.8.4
+sphinxcontrib-openapi
+sphinx-copybutton
+wheel
