@@ -1,0 +1,17 @@
+database/__init__.py,sha256=-0srHCWyqrNQpG9u9z07jKmIAr0fik9b6QCkQ-klSUY,33
+database/database.py,sha256=s60o-eIpbqzpEOaRVHx5ohKfikjiCFDe2wVUxIcAzxw,44608
+excel_tool/__init__.py,sha256=bA0tVhCPXe16Ws6V3w41Hu00SmleXInGiNfx4_VaH_U,35
+excel_tool/excel_tool.py,sha256=KG_xuhU1Dpykmwg9A50mG5jpPJHFVnLAu2CfOvbX7sk,5033
+utility_tool/__init__.py,sha256=1VcfgVtpV9-WfVN0IlnUOoBf80u8crzN67OBXt7ooqQ,233
+utility_tool/spiritlong_email.py,sha256=5GPoaD_-G1KzB09__COR0IqvDH5-JCbny8ZwnwhX3BM,2244
+utility_tool/spiritlong_format.py,sha256=xV_8791Us094BkUDEFfcNx5SMMsB8_FeGtfeJyH-9ME,7457
+utility_tool/spiritlong_logging.py,sha256=s_fcGxfnOxmKJlLxHbVUJY9tMVoO5jfo-5TS1Z9bN8I,1800
+utility_tool/spiritlong_string.py,sha256=ubV7XS29j8TCn7boKfOo5iBl2rVTAOck18diLNyqEXA,1752
+utility_tool/spiritlong_wechat.py,sha256=lSMaoOASNkaON1ykQz1yoXshUcM4S2nq98fYFY0NUzU,4018
+word_tool/__init__.py,sha256=SVRo7c19pMT27NoT7TYEI84uerITISPaCOKasncqhSM,33
+word_tool/word_tool.py,sha256=Eh0FCvSxZRk7-61j1cAXLye-mFgvEPRRXHW245foaXM,10749
+spiritlong-0.0.32.dist-info/LICENSE.txt,sha256=58nXzt_pYK4LBVXIHslVAAnZZ3tBuImAd4flKsOrLtA,1449
+spiritlong-0.0.32.dist-info/METADATA,sha256=LMG5RveBy0rvV119ZI6qscq8Ovr3caQRxxBflHBjGV4,876
+spiritlong-0.0.32.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+spiritlong-0.0.32.dist-info/top_level.txt,sha256=LVFfmHhw0gqaxjbTPyOfsdFneedW-TNcdK4lLfRdhpo,43
+spiritlong-0.0.32.dist-info/RECORD,,
