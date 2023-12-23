@@ -1,0 +1,14 @@
+sodom/__init__.py,sha256=dqqBQ2XiBZOf3sIK_iNpSshLo4DNF-unollNrvaNBXU,2479
+sodom/__main__.py,sha256=1Lg62dI-AFTVqqoffuuSsAkCDFathWncFRpVr0X-iUQ,13163
+sodom/attrs.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sodom/elements.py,sha256=eN3B-K1-KWJQmZ8yB7jT2jnUn5gU10OdAUefi-mWkQw,7531
+sodom/literals.py,sha256=lK1FJddLAipS7q62sewspyFeD_NQYn6kb8HoJa1-8SI,5009
+sodom/partial.py,sha256=BxbmlIZo0pgNQO_7xxsJ8GAa4soutlduCLzhTWQYRMc,1792
+sodom/tags.py,sha256=ZGaXzdEIF202IkcKfAIkhxlPBWsEaOrP1cRA31CyHZ8,7948
+sodom/tests.py,sha256=fHg39gN45AaxE_RT3MXv6P-A6a6aror3fgzTKwuGzEc,18792
+sodom/utils.py,sha256=CiYYP_eKW8s8r6Hb12zAH7cWOhGiVWE3QyExTtzthvE,3107
+sodom/version.py,sha256=0754TzORLfizDVM4SGZF0H0b-vsr_-NtVMr7o6hQm7A,24
+sodom-1.1.0.post1.dist-info/METADATA,sha256=H6NWGHhJfDXEsc86-73eyiiSaC29X1Xi8cVdca-0iF8,3187
+sodom-1.1.0.post1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+sodom-1.1.0.post1.dist-info/top_level.txt,sha256=2C43WRNSkpX84BhgV02PWdmCieSjDHel6bMqkGZ_9aw,6
+sodom-1.1.0.post1.dist-info/RECORD,,
