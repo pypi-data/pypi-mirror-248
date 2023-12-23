@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+LUX2EV.egg-info/PKG-INFO
+LUX2EV.egg-info/SOURCES.txt
+LUX2EV.egg-info/dependency_links.txt
+LUX2EV.egg-info/requires.txt
+LUX2EV.egg-info/top_level.txt
+lux2ev/__init__.py
+lux2ev/lux2ev.png
+lux2ev/setup.py
