@@ -1,0 +1,3 @@
+[console_scripts]
+testfoundry = testfoundry.__main__:main
+
