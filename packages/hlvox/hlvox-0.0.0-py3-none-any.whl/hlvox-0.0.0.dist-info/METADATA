@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: hlvox
+Version: 0.0.0
+Summary: Pieces together voice files to form sentences
+Home-page: https://gitlab.com/bhagen/hlvox
+Author: Blair Hagen
+Author-email: bhagen55@gmail.com
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE.md
+License-File: AUTHORS
+
