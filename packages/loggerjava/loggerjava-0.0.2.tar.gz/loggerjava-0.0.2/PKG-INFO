@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: loggerjava
+Version: 0.0.2
+Summary: a python package for ... 
+Author: HTony03
+Author-email: HTony03@foxmail.com
+Keywords: python,logger
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# loggerjava
+
+---
+an easy logger which outputs like java
+### how to use
+
+use the following codes:
+
+import loggerjava
+
+logger = loggerjava()
+
+logger.info("test")
+
+logger.warn("test",pos="insidecommand")
+
+### output
+[20:39:00] [main/debug]: test
+
+[20:39:00] [main/info]: test
+
+[20:39:00] [main/WARNING]: test
+
+[20:39:00] [main/ERROR]: test
+
+[20:39:00] [main/FATAL]: test
+
+### config
+
+logger.confg()
