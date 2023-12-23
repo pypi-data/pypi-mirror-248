@@ -1,0 +1,151 @@
+Help on class MetroStyleManager in module MetroFramework.Components:
+
+class MetroStyleManager(System.ComponentModel.Component)
+ |  Void .ctor()
+ |  Void .ctor(System.ComponentModel.IContainer)
+ |
+ |  Method resolution order:
+ |      MetroStyleManager
+ |      System.ComponentModel.Component
+ |      System.MarshalByRefObject
+ |      System.Object
+ |      builtins.object
+ |
+ |  Methods defined here:
+ |
+ |  __eq__(self, value, /)
+ |      Return self==value.
+ |
+ |  __ge__(self, value, /)
+ |      Return self>=value.
+ |
+ |  __gt__(self, value, /)
+ |      Return self>value.
+ |
+ |  __hash__(self, /)
+ |      Return hash(self).
+ |
+ |  __le__(self, value, /)
+ |      Return self<=value.
+ |
+ |  __lt__(self, value, /)
+ |      Return self<value.
+ |
+ |  __ne__(self, value, /)
+ |      Return self!=value.
+ |
+ |  __repr__(self, /)
+ |      Return repr(self).
+ |
+ |  __str__(self, /)
+ |      Return str(self).
+ |
+ |  ----------------------------------------------------------------------
+ |  Static methods defined here:
+ |
+ |  __new__(*args, **kwargs) from clr._internal.CLRMetatype
+ |      Create and return a new object.  See help(type) for accurate signature.
+ |
+ |  ----------------------------------------------------------------------
+ |  Data descriptors defined here:
+ |
+ |  MetroStyleChanged
+ |
+ |  Owner
+ |
+ |  Style
+ |
+ |  Theme
+ |
+ |  ----------------------------------------------------------------------
+ |  Data and other attributes defined here:
+ |
+ |  Default = <MetroFramework.Components.MetroStyleManager object>
+ |
+ |  Dispose = <unbound method 'Dispose'>
+ |
+ |  Overloads = <unbound method '__init__'>
+ |
+ |  Update = <unbound method 'Update'>
+ |
+ |  __init__ = <unbound method '__init__'>
+ |
+ |  __overloads__ = <unbound method '__init__'>
+ |
+ |  add_MetroStyleChanged = <unbound method 'add_MetroStyleChanged'>
+ |
+ |  get_Owner = <unbound method 'get_Owner'>
+ |
+ |  get_Style = <unbound method 'get_Style'>
+ |
+ |  get_Theme = <unbound method 'get_Theme'>
+ |
+ |  remove_MetroStyleChanged = <unbound method 'remove_MetroStyleChanged'>
+ |
+ |  set_Owner = <unbound method 'set_Owner'>
+ |
+ |  set_Style = <unbound method 'set_Style'>
+ |
+ |  set_Theme = <unbound method 'set_Theme'>
+ |
+ |  ----------------------------------------------------------------------
+ |  Data descriptors inherited from System.ComponentModel.Component:
+ |
+ |  CanRaiseEvents
+ |
+ |  Container
+ |
+ |  DesignMode
+ |
+ |  Disposed
+ |
+ |  Events
+ |
+ |  Site
+ |
+ |  ----------------------------------------------------------------------
+ |  Data and other attributes inherited from System.ComponentModel.Component:
+ |
+ |  Finalize = <unbound method 'Finalize'>
+ |
+ |  GetService = <unbound method 'GetService'>
+ |
+ |  ToString = <unbound method 'ToString'>
+ |
+ |  add_Disposed = <unbound method 'add_Disposed'>
+ |
+ |  get_CanRaiseEvents = <unbound method 'get_CanRaiseEvents'>
+ |
+ |  get_Container = <unbound method 'get_Container'>
+ |
+ |  get_DesignMode = <unbound method 'get_DesignMode'>
+ |
+ |  get_Events = <unbound method 'get_Events'>
+ |
+ |  get_Site = <unbound method 'get_Site'>
+ |
+ |  remove_Disposed = <unbound method 'remove_Disposed'>
+ |
+ |  set_Site = <unbound method 'set_Site'>
+ |
+ |  ----------------------------------------------------------------------
+ |  Data and other attributes inherited from System.MarshalByRefObject:
+ |
+ |  CreateObjRef = <unbound method 'CreateObjRef'>
+ |
+ |  GetLifetimeService = <unbound method 'GetLifetimeService'>
+ |
+ |  InitializeLifetimeService = <unbound method 'InitializeLifetimeService...
+ |
+ |  MemberwiseClone = <unbound method 'MemberwiseClone'>
+ |
+ |  ----------------------------------------------------------------------
+ |  Data and other attributes inherited from System.Object:
+ |
+ |  Equals = <unbound method 'Equals'>
+ |
+ |  GetHashCode = <unbound method 'GetHashCode'>
+ |
+ |  GetType = <unbound method 'GetType'>
+ |
+ |  ReferenceEquals = <unbound method 'ReferenceEquals'>

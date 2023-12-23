@@ -1,0 +1,2092 @@
+Help on MetroForm in module MetroFramework.Forms object:
+
+class MetroForm(MetroFramework.Controls.MetroFormBase)
+ |  Void .ctor()
+ |
+ |  Method resolution order:
+ |      MetroForm
+ |      MetroFramework.Controls.MetroFormBase
+ |      System.Windows.Forms.Form
+ |      System.Windows.Forms.ContainerControl
+ |      System.Windows.Forms.ScrollableControl
+ |      System.Windows.Forms.Control
+ |      System.ComponentModel.Component
+ |      System.MarshalByRefObject
+ |      System.Object
+ |      builtins.object
+ |
+ |  Methods defined here:
+ |
+ |  __eq__(self, value, /)
+ |      Return self==value.
+ |
+ |  __ge__(self, value, /)
+ |      Return self>=value.
+ |
+ |  __gt__(self, value, /)
+ |      Return self>value.
+ |
+ |  __hash__(self, /)
+ |      Return hash(self).
+ |
+ |  __le__(self, value, /)
+ |      Return self<=value.
+ |
+ |  __lt__(self, value, /)
+ |      Return self<value.
+ |
+ |  __ne__(self, value, /)
+ |      Return self!=value.
+ |
+ |  __repr__(self, /)
+ |      Return repr(self).
+ |
+ |  __str__(self, /)
+ |      Return str(self).
+ |
+ |  ----------------------------------------------------------------------
+ |  Static methods defined here:
+ |
+ |  __new__(*args, **kwargs) from clr._internal.CLRMetatype
+ |      Create and return a new object.  See help(type) for accurate signature.
+ |
+ |  ----------------------------------------------------------------------
+ |  Data descriptors defined here:
+ |
+ |  BackColor
+ |
+ |  BorderStyle
+ |
+ |  CreateParams
+ |
+ |  DefaultPadding
+ |
+ |  DisplayHeader
+ |
+ |  MdiParent
+ |
+ |  Movable
+ |
+ |  Padding
+ |
+ |  Resizable
+ |
+ |  ShadowType
+ |
+ |  TextAlign
+ |
+ |  ----------------------------------------------------------------------
+ |  Data and other attributes defined here:
+ |
+ |  Dispose = <unbound method 'Dispose'>
+ |
+ |  FocusMe = <unbound method 'FocusMe'>
+ |
+ |  MetroAeroDropShadow = <class 'MetroFramework.Forms.MetroAeroDropShadow...
+ |      Void .ctor(System.Windows.Forms.Form)
+ |
+ |
+ |  MetroFlatDropShadow = <class 'MetroFramework.Forms.MetroFlatDropShadow...
+ |      Void .ctor(System.Windows.Forms.Form)
+ |
+ |
+ |  MetroFormShadowType = <class 'MetroFramework.Forms.MetroFormShadowType...
+ |      Python wrapper for .NET type MetroFramework.Forms.MetroForm+MetroFormShadowType
+ |
+ |
+ |  MetroRealisticDropShadow = <class 'MetroFramework.Forms.MetroRealistic...
+ |      Void .ctor(System.Windows.Forms.Form)
+ |
+ |
+ |  MetroShadowBase = <class 'MetroFramework.Forms.MetroShadowBase'>
+ |      Python wrapper for .NET type MetroFramework.Forms.MetroForm+MetroShadowBase
+ |
+ |
+ |  OnActivated = <unbound method 'OnActivated'>
+ |
+ |  OnClosed = <unbound method 'OnClosed'>
+ |
+ |  OnClosing = <unbound method 'OnClosing'>
+ |
+ |  OnEnabledChanged = <unbound method 'OnEnabledChanged'>
+ |
+ |  OnHandleCreated = <unbound method 'OnHandleCreated'>
+ |
+ |  OnLoad = <unbound method 'OnLoad'>
+ |
+ |  OnMouseDown = <unbound method 'OnMouseDown'>
+ |
+ |  OnPaint = <unbound method 'OnPaint'>
+ |
+ |  OnPaintBackground = <unbound method 'OnPaintBackground'>
+ |
+ |  OnResizeEnd = <unbound method 'OnResizeEnd'>
+ |
+ |  Overloads = <unbound method '__init__'>
+ |
+ |  RemoveCloseButton = <unbound method 'RemoveCloseButton'>
+ |
+ |  SetVisibleCore = <unbound method 'SetVisibleCore'>
+ |
+ |  WndProc = <unbound method 'WndProc'>
+ |
+ |  __init__ = <unbound method '__init__'>
+ |
+ |  __overloads__ = <unbound method '__init__'>
+ |
+ |  get_BackColor = <unbound method 'get_BackColor'>
+ |
+ |  get_BorderStyle = <unbound method 'get_BorderStyle'>
+ |
+ |  get_CreateParams = <unbound method 'get_CreateParams'>
+ |
+ |  get_DefaultPadding = <unbound method 'get_DefaultPadding'>
+ |
+ |  get_DisplayHeader = <unbound method 'get_DisplayHeader'>
+ |
+ |  get_MdiParent = <unbound method 'get_MdiParent'>
+ |
+ |  get_Movable = <unbound method 'get_Movable'>
+ |
+ |  get_Padding = <unbound method 'get_Padding'>
+ |
+ |  get_Resizable = <unbound method 'get_Resizable'>
+ |
+ |  get_ShadowType = <unbound method 'get_ShadowType'>
+ |
+ |  get_TextAlign = <unbound method 'get_TextAlign'>
+ |
+ |  set_BorderStyle = <unbound method 'set_BorderStyle'>
+ |
+ |  set_DisplayHeader = <unbound method 'set_DisplayHeader'>
+ |
+ |  set_MdiParent = <unbound method 'set_MdiParent'>
+ |
+ |  set_Movable = <unbound method 'set_Movable'>
+ |
+ |  set_Padding = <unbound method 'set_Padding'>
+ |
+ |  set_Resizable = <unbound method 'set_Resizable'>
+ |
+ |  set_ShadowType = <unbound method 'set_ShadowType'>
+ |
+ |  set_TextAlign = <unbound method 'set_TextAlign'>
+ |
+ |  ----------------------------------------------------------------------
+ |  Data descriptors inherited from MetroFramework.Controls.MetroFormBase:
+ |
+ |  Site
+ |
+ |  Style
+ |
+ |  StyleManager
+ |
+ |  Theme
+ |
+ |  ----------------------------------------------------------------------
+ |  Data and other attributes inherited from MetroFramework.Controls.MetroFormBase:
+ |
+ |  get_Site = <unbound method 'get_Site'>
+ |
+ |  get_Style = <unbound method 'get_Style'>
+ |
+ |  get_StyleManager = <unbound method 'get_StyleManager'>
+ |
+ |  get_Theme = <unbound method 'get_Theme'>
+ |
+ |  set_Site = <unbound method 'set_Site'>
+ |
+ |  set_Style = <unbound method 'set_Style'>
+ |
+ |  set_StyleManager = <unbound method 'set_StyleManager'>
+ |
+ |  set_Theme = <unbound method 'set_Theme'>
+ |
+ |  ----------------------------------------------------------------------
+ |  Data descriptors inherited from System.Windows.Forms.Form:
+ |
+ |  AcceptButton
+ |
+ |  Activated
+ |
+ |  ActiveForm
+ |
+ |  ActiveMdiChild
+ |
+ |  AllowTransparency
+ |
+ |  AutoScale
+ |
+ |  AutoScaleBaseSize
+ |
+ |  AutoScroll
+ |
+ |  AutoSize
+ |
+ |  AutoSizeChanged
+ |
+ |  AutoSizeMode
+ |
+ |  AutoValidate
+ |
+ |  AutoValidateChanged
+ |
+ |  CancelButton
+ |
+ |  ClientSize
+ |
+ |  Closed
+ |
+ |  Closing
+ |
+ |  ControlBox
+ |
+ |  Deactivate
+ |
+ |  DefaultImeMode
+ |
+ |  DefaultSize
+ |
+ |  DesktopBounds
+ |
+ |  DesktopLocation
+ |
+ |  DialogResult
+ |
+ |  DpiChanged
+ |
+ |  FormBorderStyle
+ |
+ |  FormClosed
+ |
+ |  FormClosing
+ |
+ |  HelpButton
+ |
+ |  HelpButtonClicked
+ |
+ |  Icon
+ |
+ |  InputLanguageChanged
+ |
+ |  InputLanguageChanging
+ |
+ |  IsMdiChild
+ |
+ |  IsMdiContainer
+ |
+ |  IsRestrictedWindow
+ |
+ |  KeyPreview
+ |
+ |  Load
+ |
+ |  Location
+ |
+ |  MainMenuStrip
+ |
+ |  Margin
+ |
+ |  MarginChanged
+ |
+ |  MaximizeBox
+ |
+ |  MaximizedBounds
+ |
+ |  MaximizedBoundsChanged
+ |
+ |  MaximumSize
+ |
+ |  MaximumSizeChanged
+ |
+ |  MdiChildActivate
+ |
+ |  MdiChildren
+ |
+ |  Menu
+ |
+ |  MenuComplete
+ |
+ |  MenuStart
+ |
+ |  MergedMenu
+ |
+ |  MinimizeBox
+ |
+ |  MinimumSize
+ |
+ |  MinimumSizeChanged
+ |
+ |  Modal
+ |
+ |  Opacity
+ |
+ |  OwnedForms
+ |
+ |  Owner
+ |
+ |  ResizeBegin
+ |
+ |  ResizeEnd
+ |
+ |  RestoreBounds
+ |
+ |  RightToLeftLayout
+ |
+ |  RightToLeftLayoutChanged
+ |
+ |  ShowIcon
+ |
+ |  ShowInTaskbar
+ |
+ |  ShowWithoutActivation
+ |
+ |  Shown
+ |
+ |  Size
+ |
+ |  SizeGripStyle
+ |
+ |  StartPosition
+ |
+ |  TabIndex
+ |
+ |  TabIndexChanged
+ |
+ |  TabStop
+ |
+ |  TabStopChanged
+ |
+ |  Text
+ |
+ |  TopLevel
+ |
+ |  TopMost
+ |
+ |  TransparencyKey
+ |
+ |  WindowState
+ |
+ |  ----------------------------------------------------------------------
+ |  Data and other attributes inherited from System.Windows.Forms.Form:
+ |
+ |  Activate = <unbound method 'Activate'>
+ |
+ |  ActivateMdiChild = <unbound method 'ActivateMdiChild'>
+ |
+ |  AddOwnedForm = <unbound method 'AddOwnedForm'>
+ |
+ |  AdjustFormScrollbars = <unbound method 'AdjustFormScrollbars'>
+ |
+ |  ApplyAutoScaling = <unbound method 'ApplyAutoScaling'>
+ |
+ |  CenterToParent = <unbound method 'CenterToParent'>
+ |
+ |  CenterToScreen = <unbound method 'CenterToScreen'>
+ |
+ |  Close = <unbound method 'Close'>
+ |
+ |  ControlCollection = <class 'System.Windows.Forms.ControlCollection'>
+ |      Void .ctor(System.Windows.Forms.Form)
+ |
+ |
+ |  CreateControlsInstance = <unbound method 'CreateControlsInstance'>
+ |
+ |  CreateHandle = <unbound method 'CreateHandle'>
+ |
+ |  DefWndProc = <unbound method 'DefWndProc'>
+ |
+ |  GetAutoScaleSize = <unbound method 'GetAutoScaleSize'>
+ |
+ |  GetScaledBounds = <unbound method 'GetScaledBounds'>
+ |
+ |  LayoutMdi = <unbound method 'LayoutMdi'>
+ |
+ |  OnBackgroundImageChanged = <unbound method 'OnBackgroundImageChanged'>
+ |
+ |  OnBackgroundImageLayoutChanged = <unbound method 'OnBackgroundImageLay...
+ |
+ |  OnCreateControl = <unbound method 'OnCreateControl'>
+ |
+ |  OnDeactivate = <unbound method 'OnDeactivate'>
+ |
+ |  OnDpiChanged = <unbound method 'OnDpiChanged'>
+ |
+ |  OnEnter = <unbound method 'OnEnter'>
+ |
+ |  OnFontChanged = <unbound method 'OnFontChanged'>
+ |
+ |  OnFormClosed = <unbound method 'OnFormClosed'>
+ |
+ |  OnFormClosing = <unbound method 'OnFormClosing'>
+ |
+ |  OnGetDpiScaledSize = <unbound method 'OnGetDpiScaledSize'>
+ |
+ |  OnHandleDestroyed = <unbound method 'OnHandleDestroyed'>
+ |
+ |  OnHelpButtonClicked = <unbound method 'OnHelpButtonClicked'>
+ |
+ |  OnInputLanguageChanged = <unbound method 'OnInputLanguageChanged'>
+ |
+ |  OnInputLanguageChanging = <unbound method 'OnInputLanguageChanging'>
+ |
+ |  OnLayout = <unbound method 'OnLayout'>
+ |
+ |  OnMaximizedBoundsChanged = <unbound method 'OnMaximizedBoundsChanged'>
+ |
+ |  OnMaximumSizeChanged = <unbound method 'OnMaximumSizeChanged'>
+ |
+ |  OnMdiChildActivate = <unbound method 'OnMdiChildActivate'>
+ |
+ |  OnMenuComplete = <unbound method 'OnMenuComplete'>
+ |
+ |  OnMenuStart = <unbound method 'OnMenuStart'>
+ |
+ |  OnMinimumSizeChanged = <unbound method 'OnMinimumSizeChanged'>
+ |
+ |  OnResize = <unbound method 'OnResize'>
+ |
+ |  OnResizeBegin = <unbound method 'OnResizeBegin'>
+ |
+ |  OnRightToLeftLayoutChanged = <unbound method 'OnRightToLeftLayoutChang...
+ |
+ |  OnShown = <unbound method 'OnShown'>
+ |
+ |  OnStyleChanged = <unbound method 'OnStyleChanged'>
+ |
+ |  OnTextChanged = <unbound method 'OnTextChanged'>
+ |
+ |  OnVisibleChanged = <unbound method 'OnVisibleChanged'>
+ |
+ |  ProcessCmdKey = <unbound method 'ProcessCmdKey'>
+ |
+ |  ProcessDialogChar = <unbound method 'ProcessDialogChar'>
+ |
+ |  ProcessDialogKey = <unbound method 'ProcessDialogKey'>
+ |
+ |  ProcessKeyPreview = <unbound method 'ProcessKeyPreview'>
+ |
+ |  ProcessMnemonic = <unbound method 'ProcessMnemonic'>
+ |
+ |  ProcessTabKey = <unbound method 'ProcessTabKey'>
+ |
+ |  RemoveOwnedForm = <unbound method 'RemoveOwnedForm'>
+ |
+ |  ScaleControl = <unbound method 'ScaleControl'>
+ |
+ |  ScaleCore = <unbound method 'ScaleCore'>
+ |
+ |  Select = <unbound method 'Select'>
+ |
+ |  SetBoundsCore = <unbound method 'SetBoundsCore'>
+ |
+ |  SetClientSizeCore = <unbound method 'SetClientSizeCore'>
+ |
+ |  SetDesktopBounds = <unbound method 'SetDesktopBounds'>
+ |
+ |  SetDesktopLocation = <unbound method 'SetDesktopLocation'>
+ |
+ |  Show = <unbound method 'Show'>
+ |
+ |  ShowDialog = <unbound method 'ShowDialog'>
+ |
+ |  ToString = <unbound method 'ToString'>
+ |
+ |  UpdateDefaultButton = <unbound method 'UpdateDefaultButton'>
+ |
+ |  ValidateChildren = <unbound method 'ValidateChildren'>
+ |
+ |  add_Activated = <unbound method 'add_Activated'>
+ |
+ |  add_AutoSizeChanged = <unbound method 'add_AutoSizeChanged'>
+ |
+ |  add_AutoValidateChanged = <unbound method 'add_AutoValidateChanged'>
+ |
+ |  add_Closed = <unbound method 'add_Closed'>
+ |
+ |  add_Closing = <unbound method 'add_Closing'>
+ |
+ |  add_Deactivate = <unbound method 'add_Deactivate'>
+ |
+ |  add_DpiChanged = <unbound method 'add_DpiChanged'>
+ |
+ |  add_FormClosed = <unbound method 'add_FormClosed'>
+ |
+ |  add_FormClosing = <unbound method 'add_FormClosing'>
+ |
+ |  add_HelpButtonClicked = <unbound method 'add_HelpButtonClicked'>
+ |
+ |  add_InputLanguageChanged = <unbound method 'add_InputLanguageChanged'>
+ |
+ |  add_InputLanguageChanging = <unbound method 'add_InputLanguageChanging...
+ |
+ |  add_Load = <unbound method 'add_Load'>
+ |
+ |  add_MarginChanged = <unbound method 'add_MarginChanged'>
+ |
+ |  add_MaximizedBoundsChanged = <unbound method 'add_MaximizedBoundsChang...
+ |
+ |  add_MaximumSizeChanged = <unbound method 'add_MaximumSizeChanged'>
+ |
+ |  add_MdiChildActivate = <unbound method 'add_MdiChildActivate'>
+ |
+ |  add_MenuComplete = <unbound method 'add_MenuComplete'>
+ |
+ |  add_MenuStart = <unbound method 'add_MenuStart'>
+ |
+ |  add_MinimumSizeChanged = <unbound method 'add_MinimumSizeChanged'>
+ |
+ |  add_ResizeBegin = <unbound method 'add_ResizeBegin'>
+ |
+ |  add_ResizeEnd = <unbound method 'add_ResizeEnd'>
+ |
+ |  add_RightToLeftLayoutChanged = <unbound method 'add_RightToLeftLayoutC...
+ |
+ |  add_Shown = <unbound method 'add_Shown'>
+ |
+ |  add_TabIndexChanged = <unbound method 'add_TabIndexChanged'>
+ |
+ |  add_TabStopChanged = <unbound method 'add_TabStopChanged'>
+ |
+ |  get_AcceptButton = <unbound method 'get_AcceptButton'>
+ |
+ |  get_ActiveForm = <unbound method 'get_ActiveForm'>
+ |
+ |  get_ActiveMdiChild = <unbound method 'get_ActiveMdiChild'>
+ |
+ |  get_AllowTransparency = <unbound method 'get_AllowTransparency'>
+ |
+ |  get_AutoScale = <unbound method 'get_AutoScale'>
+ |
+ |  get_AutoScaleBaseSize = <unbound method 'get_AutoScaleBaseSize'>
+ |
+ |  get_AutoScroll = <unbound method 'get_AutoScroll'>
+ |
+ |  get_AutoSize = <unbound method 'get_AutoSize'>
+ |
+ |  get_AutoSizeMode = <unbound method 'get_AutoSizeMode'>
+ |
+ |  get_AutoValidate = <unbound method 'get_AutoValidate'>
+ |
+ |  get_CancelButton = <unbound method 'get_CancelButton'>
+ |
+ |  get_ClientSize = <unbound method 'get_ClientSize'>
+ |
+ |  get_ControlBox = <unbound method 'get_ControlBox'>
+ |
+ |  get_DefaultImeMode = <unbound method 'get_DefaultImeMode'>
+ |
+ |  get_DefaultSize = <unbound method 'get_DefaultSize'>
+ |
+ |  get_DesktopBounds = <unbound method 'get_DesktopBounds'>
+ |
+ |  get_DesktopLocation = <unbound method 'get_DesktopLocation'>
+ |
+ |  get_DialogResult = <unbound method 'get_DialogResult'>
+ |
+ |  get_FormBorderStyle = <unbound method 'get_FormBorderStyle'>
+ |
+ |  get_HelpButton = <unbound method 'get_HelpButton'>
+ |
+ |  get_Icon = <unbound method 'get_Icon'>
+ |
+ |  get_IsMdiChild = <unbound method 'get_IsMdiChild'>
+ |
+ |  get_IsMdiContainer = <unbound method 'get_IsMdiContainer'>
+ |
+ |  get_IsRestrictedWindow = <unbound method 'get_IsRestrictedWindow'>
+ |
+ |  get_KeyPreview = <unbound method 'get_KeyPreview'>
+ |
+ |  get_Location = <unbound method 'get_Location'>
+ |
+ |  get_MainMenuStrip = <unbound method 'get_MainMenuStrip'>
+ |
+ |  get_Margin = <unbound method 'get_Margin'>
+ |
+ |  get_MaximizeBox = <unbound method 'get_MaximizeBox'>
+ |
+ |  get_MaximizedBounds = <unbound method 'get_MaximizedBounds'>
+ |
+ |  get_MaximumSize = <unbound method 'get_MaximumSize'>
+ |
+ |  get_MdiChildren = <unbound method 'get_MdiChildren'>
+ |
+ |  get_Menu = <unbound method 'get_Menu'>
+ |
+ |  get_MergedMenu = <unbound method 'get_MergedMenu'>
+ |
+ |  get_MinimizeBox = <unbound method 'get_MinimizeBox'>
+ |
+ |  get_MinimumSize = <unbound method 'get_MinimumSize'>
+ |
+ |  get_Modal = <unbound method 'get_Modal'>
+ |
+ |  get_Opacity = <unbound method 'get_Opacity'>
+ |
+ |  get_OwnedForms = <unbound method 'get_OwnedForms'>
+ |
+ |  get_Owner = <unbound method 'get_Owner'>
+ |
+ |  get_RestoreBounds = <unbound method 'get_RestoreBounds'>
+ |
+ |  get_RightToLeftLayout = <unbound method 'get_RightToLeftLayout'>
+ |
+ |  get_ShowIcon = <unbound method 'get_ShowIcon'>
+ |
+ |  get_ShowInTaskbar = <unbound method 'get_ShowInTaskbar'>
+ |
+ |  get_ShowWithoutActivation = <unbound method 'get_ShowWithoutActivation...
+ |
+ |  get_Size = <unbound method 'get_Size'>
+ |
+ |  get_SizeGripStyle = <unbound method 'get_SizeGripStyle'>
+ |
+ |  get_StartPosition = <unbound method 'get_StartPosition'>
+ |
+ |  get_TabIndex = <unbound method 'get_TabIndex'>
+ |
+ |  get_TabStop = <unbound method 'get_TabStop'>
+ |
+ |  get_Text = <unbound method 'get_Text'>
+ |
+ |  get_TopLevel = <unbound method 'get_TopLevel'>
+ |
+ |  get_TopMost = <unbound method 'get_TopMost'>
+ |
+ |  get_TransparencyKey = <unbound method 'get_TransparencyKey'>
+ |
+ |  get_WindowState = <unbound method 'get_WindowState'>
+ |
+ |  remove_Activated = <unbound method 'remove_Activated'>
+ |
+ |  remove_AutoSizeChanged = <unbound method 'remove_AutoSizeChanged'>
+ |
+ |  remove_AutoValidateChanged = <unbound method 'remove_AutoValidateChang...
+ |
+ |  remove_Closed = <unbound method 'remove_Closed'>
+ |
+ |  remove_Closing = <unbound method 'remove_Closing'>
+ |
+ |  remove_Deactivate = <unbound method 'remove_Deactivate'>
+ |
+ |  remove_DpiChanged = <unbound method 'remove_DpiChanged'>
+ |
+ |  remove_FormClosed = <unbound method 'remove_FormClosed'>
+ |
+ |  remove_FormClosing = <unbound method 'remove_FormClosing'>
+ |
+ |  remove_HelpButtonClicked = <unbound method 'remove_HelpButtonClicked'>
+ |
+ |  remove_InputLanguageChanged = <unbound method 'remove_InputLanguageCha...
+ |
+ |  remove_InputLanguageChanging = <unbound method 'remove_InputLanguageCh...
+ |
+ |  remove_Load = <unbound method 'remove_Load'>
+ |
+ |  remove_MarginChanged = <unbound method 'remove_MarginChanged'>
+ |
+ |  remove_MaximizedBoundsChanged = <unbound method 'remove_MaximizedBound...
+ |
+ |  remove_MaximumSizeChanged = <unbound method 'remove_MaximumSizeChanged...
+ |
+ |  remove_MdiChildActivate = <unbound method 'remove_MdiChildActivate'>
+ |
+ |  remove_MenuComplete = <unbound method 'remove_MenuComplete'>
+ |
+ |  remove_MenuStart = <unbound method 'remove_MenuStart'>
+ |
+ |  remove_MinimumSizeChanged = <unbound method 'remove_MinimumSizeChanged...
+ |
+ |  remove_ResizeBegin = <unbound method 'remove_ResizeBegin'>
+ |
+ |  remove_ResizeEnd = <unbound method 'remove_ResizeEnd'>
+ |
+ |  remove_RightToLeftLayoutChanged = <unbound method 'remove_RightToLeftL...
+ |
+ |  remove_Shown = <unbound method 'remove_Shown'>
+ |
+ |  remove_TabIndexChanged = <unbound method 'remove_TabIndexChanged'>
+ |
+ |  remove_TabStopChanged = <unbound method 'remove_TabStopChanged'>
+ |
+ |  set_AcceptButton = <unbound method 'set_AcceptButton'>
+ |
+ |  set_AllowTransparency = <unbound method 'set_AllowTransparency'>
+ |
+ |  set_AutoScale = <unbound method 'set_AutoScale'>
+ |
+ |  set_AutoScaleBaseSize = <unbound method 'set_AutoScaleBaseSize'>
+ |
+ |  set_AutoScroll = <unbound method 'set_AutoScroll'>
+ |
+ |  set_AutoSize = <unbound method 'set_AutoSize'>
+ |
+ |  set_AutoSizeMode = <unbound method 'set_AutoSizeMode'>
+ |
+ |  set_AutoValidate = <unbound method 'set_AutoValidate'>
+ |
+ |  set_BackColor = <unbound method 'set_BackColor'>
+ |
+ |  set_CancelButton = <unbound method 'set_CancelButton'>
+ |
+ |  set_ClientSize = <unbound method 'set_ClientSize'>
+ |
+ |  set_ControlBox = <unbound method 'set_ControlBox'>
+ |
+ |  set_DesktopBounds = <unbound method 'set_DesktopBounds'>
+ |
+ |  set_DesktopLocation = <unbound method 'set_DesktopLocation'>
+ |
+ |  set_DialogResult = <unbound method 'set_DialogResult'>
+ |
+ |  set_FormBorderStyle = <unbound method 'set_FormBorderStyle'>
+ |
+ |  set_HelpButton = <unbound method 'set_HelpButton'>
+ |
+ |  set_Icon = <unbound method 'set_Icon'>
+ |
+ |  set_IsMdiContainer = <unbound method 'set_IsMdiContainer'>
+ |
+ |  set_KeyPreview = <unbound method 'set_KeyPreview'>
+ |
+ |  set_Location = <unbound method 'set_Location'>
+ |
+ |  set_MainMenuStrip = <unbound method 'set_MainMenuStrip'>
+ |
+ |  set_Margin = <unbound method 'set_Margin'>
+ |
+ |  set_MaximizeBox = <unbound method 'set_MaximizeBox'>
+ |
+ |  set_MaximizedBounds = <unbound method 'set_MaximizedBounds'>
+ |
+ |  set_MaximumSize = <unbound method 'set_MaximumSize'>
+ |
+ |  set_Menu = <unbound method 'set_Menu'>
+ |
+ |  set_MinimizeBox = <unbound method 'set_MinimizeBox'>
+ |
+ |  set_MinimumSize = <unbound method 'set_MinimumSize'>
+ |
+ |  set_Opacity = <unbound method 'set_Opacity'>
+ |
+ |  set_Owner = <unbound method 'set_Owner'>
+ |
+ |  set_RightToLeftLayout = <unbound method 'set_RightToLeftLayout'>
+ |
+ |  set_ShowIcon = <unbound method 'set_ShowIcon'>
+ |
+ |  set_ShowInTaskbar = <unbound method 'set_ShowInTaskbar'>
+ |
+ |  set_Size = <unbound method 'set_Size'>
+ |
+ |  set_SizeGripStyle = <unbound method 'set_SizeGripStyle'>
+ |
+ |  set_StartPosition = <unbound method 'set_StartPosition'>
+ |
+ |  set_TabIndex = <unbound method 'set_TabIndex'>
+ |
+ |  set_TabStop = <unbound method 'set_TabStop'>
+ |
+ |  set_Text = <unbound method 'set_Text'>
+ |
+ |  set_TopLevel = <unbound method 'set_TopLevel'>
+ |
+ |  set_TopMost = <unbound method 'set_TopMost'>
+ |
+ |  set_TransparencyKey = <unbound method 'set_TransparencyKey'>
+ |
+ |  set_WindowState = <unbound method 'set_WindowState'>
+ |
+ |  ----------------------------------------------------------------------
+ |  Data descriptors inherited from System.Windows.Forms.ContainerControl:
+ |
+ |  ActiveControl
+ |
+ |  AutoScaleDimensions
+ |
+ |  AutoScaleFactor
+ |
+ |  AutoScaleMode
+ |
+ |  BindingContext
+ |
+ |  CanEnableIme
+ |
+ |  CurrentAutoScaleDimensions
+ |
+ |  ParentForm
+ |
+ |  ----------------------------------------------------------------------
+ |  Data and other attributes inherited from System.Windows.Forms.ContainerControl:
+ |
+ |  OnAutoValidateChanged = <unbound method 'OnAutoValidateChanged'>
+ |
+ |  OnParentChanged = <unbound method 'OnParentChanged'>
+ |
+ |  PerformAutoScale = <unbound method 'PerformAutoScale'>
+ |
+ |  Scale = <unbound method 'Scale'>
+ |
+ |  Validate = <unbound method 'Validate'>
+ |
+ |  get_ActiveControl = <unbound method 'get_ActiveControl'>
+ |
+ |  get_AutoScaleDimensions = <unbound method 'get_AutoScaleDimensions'>
+ |
+ |  get_AutoScaleFactor = <unbound method 'get_AutoScaleFactor'>
+ |
+ |  get_AutoScaleMode = <unbound method 'get_AutoScaleMode'>
+ |
+ |  get_BindingContext = <unbound method 'get_BindingContext'>
+ |
+ |  get_CanEnableIme = <unbound method 'get_CanEnableIme'>
+ |
+ |  get_CurrentAutoScaleDimensions = <unbound method 'get_CurrentAutoScale...
+ |
+ |  get_ParentForm = <unbound method 'get_ParentForm'>
+ |
+ |  set_ActiveControl = <unbound method 'set_ActiveControl'>
+ |
+ |  set_AutoScaleDimensions = <unbound method 'set_AutoScaleDimensions'>
+ |
+ |  set_AutoScaleMode = <unbound method 'set_AutoScaleMode'>
+ |
+ |  set_BindingContext = <unbound method 'set_BindingContext'>
+ |
+ |  ----------------------------------------------------------------------
+ |  Data descriptors inherited from System.Windows.Forms.ScrollableControl:
+ |
+ |  AutoScrollMargin
+ |
+ |  AutoScrollMinSize
+ |
+ |  AutoScrollPosition
+ |
+ |  DisplayRectangle
+ |
+ |  DockPadding
+ |
+ |  HScroll
+ |
+ |  HorizontalScroll
+ |
+ |  Scroll
+ |
+ |  VScroll
+ |
+ |  VerticalScroll
+ |
+ |  ----------------------------------------------------------------------
+ |  Data and other attributes inherited from System.Windows.Forms.ScrollableControl:
+ |
+ |  DockPaddingEdges = <class 'System.Windows.Forms.DockPaddingEdges'>
+ |      Python wrapper for .NET type System.Windows.Forms.ScrollableControl+DockPaddingEdges
+ |
+ |
+ |  DockPaddingEdgesConverter = <class 'System.Windows.Forms.DockPaddingEd...
+ |      Void .ctor()
+ |
+ |
+ |  GetScrollState = <unbound method 'GetScrollState'>
+ |
+ |  OnMouseWheel = <unbound method 'OnMouseWheel'>
+ |
+ |  OnPaddingChanged = <unbound method 'OnPaddingChanged'>
+ |
+ |  OnRightToLeftChanged = <unbound method 'OnRightToLeftChanged'>
+ |
+ |  OnScroll = <unbound method 'OnScroll'>
+ |
+ |  ScrollControlIntoView = <unbound method 'ScrollControlIntoView'>
+ |
+ |  ScrollStateAutoScrolling = 1
+ |
+ |  ScrollStateFullDrag = 16
+ |
+ |  ScrollStateHScrollVisible = 2
+ |
+ |  ScrollStateUserHasScrolled = 8
+ |
+ |  ScrollStateVScrollVisible = 4
+ |
+ |  ScrollToControl = <unbound method 'ScrollToControl'>
+ |
+ |  SetAutoScrollMargin = <unbound method 'SetAutoScrollMargin'>
+ |
+ |  SetDisplayRectLocation = <unbound method 'SetDisplayRectLocation'>
+ |
+ |  SetScrollState = <unbound method 'SetScrollState'>
+ |
+ |  add_Scroll = <unbound method 'add_Scroll'>
+ |
+ |  get_AutoScrollMargin = <unbound method 'get_AutoScrollMargin'>
+ |
+ |  get_AutoScrollMinSize = <unbound method 'get_AutoScrollMinSize'>
+ |
+ |  get_AutoScrollPosition = <unbound method 'get_AutoScrollPosition'>
+ |
+ |  get_DisplayRectangle = <unbound method 'get_DisplayRectangle'>
+ |
+ |  get_DockPadding = <unbound method 'get_DockPadding'>
+ |
+ |  get_HScroll = <unbound method 'get_HScroll'>
+ |
+ |  get_HorizontalScroll = <unbound method 'get_HorizontalScroll'>
+ |
+ |  get_VScroll = <unbound method 'get_VScroll'>
+ |
+ |  get_VerticalScroll = <unbound method 'get_VerticalScroll'>
+ |
+ |  remove_Scroll = <unbound method 'remove_Scroll'>
+ |
+ |  set_AutoScrollMargin = <unbound method 'set_AutoScrollMargin'>
+ |
+ |  set_AutoScrollMinSize = <unbound method 'set_AutoScrollMinSize'>
+ |
+ |  set_AutoScrollPosition = <unbound method 'set_AutoScrollPosition'>
+ |
+ |  set_HScroll = <unbound method 'set_HScroll'>
+ |
+ |  set_VScroll = <unbound method 'set_VScroll'>
+ |
+ |  ----------------------------------------------------------------------
+ |  Data descriptors inherited from System.Windows.Forms.Control:
+ |
+ |  AccessibilityObject
+ |
+ |  AccessibleDefaultActionDescription
+ |
+ |  AccessibleDescription
+ |
+ |  AccessibleName
+ |
+ |  AccessibleRole
+ |
+ |  AllowDrop
+ |
+ |  Anchor
+ |
+ |  AutoScrollOffset
+ |
+ |  BackColorChanged
+ |
+ |  BackgroundImage
+ |
+ |  BackgroundImageChanged
+ |
+ |  BackgroundImageLayout
+ |
+ |  BackgroundImageLayoutChanged
+ |
+ |  BindingContextChanged
+ |
+ |  Bottom
+ |
+ |  Bounds
+ |
+ |  CanFocus
+ |
+ |  CanRaiseEvents
+ |
+ |  CanSelect
+ |
+ |  Capture
+ |
+ |  CausesValidation
+ |
+ |  CausesValidationChanged
+ |
+ |  ChangeUICues
+ |
+ |  Click
+ |
+ |  ClientRectangle
+ |
+ |  ClientSizeChanged
+ |
+ |  CompanyName
+ |
+ |  ContainsFocus
+ |
+ |  ContextMenu
+ |
+ |  ContextMenuChanged
+ |
+ |  ContextMenuStrip
+ |
+ |  ContextMenuStripChanged
+ |
+ |  ControlAdded
+ |
+ |  ControlRemoved
+ |
+ |  Controls
+ |
+ |  Created
+ |
+ |  Cursor
+ |
+ |  CursorChanged
+ |
+ |  DataBindings
+ |
+ |  DefaultCursor
+ |
+ |  DefaultMargin
+ |
+ |  DefaultMaximumSize
+ |
+ |  DefaultMinimumSize
+ |
+ |  DeviceDpi
+ |
+ |  Disposing
+ |
+ |  Dock
+ |
+ |  DockChanged
+ |
+ |  DoubleBuffered
+ |
+ |  DoubleClick
+ |
+ |  DpiChangedAfterParent
+ |
+ |  DpiChangedBeforeParent
+ |
+ |  DragDrop
+ |
+ |  DragEnter
+ |
+ |  DragLeave
+ |
+ |  DragOver
+ |
+ |  Enabled
+ |
+ |  EnabledChanged
+ |
+ |  Enter
+ |
+ |  Focused
+ |
+ |  Font
+ |
+ |  FontChanged
+ |
+ |  FontHeight
+ |
+ |  ForeColor
+ |
+ |  ForeColorChanged
+ |
+ |  GiveFeedback
+ |
+ |  GotFocus
+ |
+ |  Handle
+ |
+ |  HandleCreated
+ |
+ |  HandleDestroyed
+ |
+ |  HasChildren
+ |
+ |  Height
+ |
+ |  HelpRequested
+ |
+ |  ImeMode
+ |
+ |  ImeModeBase
+ |
+ |  ImeModeChanged
+ |
+ |  Invalidated
+ |
+ |  InvokeRequired
+ |
+ |  IsAccessible
+ |
+ |  IsDisposed
+ |
+ |  IsHandleCreated
+ |
+ |  IsMirrored
+ |
+ |  KeyDown
+ |
+ |  KeyPress
+ |
+ |  KeyUp
+ |
+ |  Layout
+ |
+ |  LayoutEngine
+ |
+ |  Leave
+ |
+ |  Left
+ |
+ |  LocationChanged
+ |
+ |  LostFocus
+ |
+ |  MouseCaptureChanged
+ |
+ |  MouseClick
+ |
+ |  MouseDoubleClick
+ |
+ |  MouseDown
+ |
+ |  MouseEnter
+ |
+ |  MouseHover
+ |
+ |  MouseLeave
+ |
+ |  MouseMove
+ |
+ |  MouseUp
+ |
+ |  MouseWheel
+ |
+ |  Move
+ |
+ |  Name
+ |
+ |  PaddingChanged
+ |
+ |  Paint
+ |
+ |  Parent
+ |
+ |  ParentChanged
+ |
+ |  PreferredSize
+ |
+ |  PreviewKeyDown
+ |
+ |  ProductName
+ |
+ |  ProductVersion
+ |
+ |  QueryAccessibilityHelp
+ |
+ |  QueryContinueDrag
+ |
+ |  RecreatingHandle
+ |
+ |  Region
+ |
+ |  RegionChanged
+ |
+ |  RenderRightToLeft
+ |
+ |  Resize
+ |
+ |  ResizeRedraw
+ |
+ |  Right
+ |
+ |  RightToLeft
+ |
+ |  RightToLeftChanged
+ |
+ |  ScaleChildren
+ |
+ |  ShowFocusCues
+ |
+ |  ShowKeyboardCues
+ |
+ |  SizeChanged
+ |
+ |  StyleChanged
+ |
+ |  SystemColorsChanged
+ |
+ |  Tag
+ |
+ |  TextChanged
+ |
+ |  Top
+ |
+ |  TopLevelControl
+ |
+ |  UseWaitCursor
+ |
+ |  Validated
+ |
+ |  Validating
+ |
+ |  Visible
+ |
+ |  VisibleChanged
+ |
+ |  Width
+ |
+ |  WindowTarget
+ |
+ |  ----------------------------------------------------------------------
+ |  Data and other attributes inherited from System.Windows.Forms.Control:
+ |
+ |  AccessibilityNotifyClients = <unbound method 'AccessibilityNotifyClien...
+ |
+ |  BeginInvoke = <unbound method 'BeginInvoke'>
+ |
+ |  BringToFront = <unbound method 'BringToFront'>
+ |
+ |  CheckForIllegalCrossThreadCalls = False
+ |
+ |  Contains = <unbound method 'Contains'>
+ |
+ |  ControlAccessibleObject = <class 'System.Windows.Forms.ControlAccessib...
+ |      Void .ctor(System.Windows.Forms.Control)
+ |
+ |
+ |  CreateAccessibilityInstance = <unbound method 'CreateAccessibilityInst...
+ |
+ |  CreateControl = <unbound method 'CreateControl'>
+ |
+ |  CreateGraphics = <unbound method 'CreateGraphics'>
+ |
+ |  DefaultBackColor = <System.Drawing.Color object>
+ |
+ |  DefaultFont = <System.Drawing.Font object>
+ |
+ |  DefaultForeColor = <System.Drawing.Color object>
+ |
+ |  DestroyHandle = <unbound method 'DestroyHandle'>
+ |
+ |  DoDragDrop = <unbound method 'DoDragDrop'>
+ |
+ |  DrawToBitmap = <unbound method 'DrawToBitmap'>
+ |
+ |  EndInvoke = <unbound method 'EndInvoke'>
+ |
+ |  FindForm = <unbound method 'FindForm'>
+ |
+ |  Focus = <unbound method 'Focus'>
+ |
+ |  FromChildHandle = <unbound method 'FromChildHandle'>
+ |
+ |  FromHandle = <unbound method 'FromHandle'>
+ |
+ |  GetAccessibilityObjectById = <unbound method 'GetAccessibilityObjectBy...
+ |
+ |  GetAutoSizeMode = <unbound method 'GetAutoSizeMode'>
+ |
+ |  GetChildAtPoint = <unbound method 'GetChildAtPoint'>
+ |
+ |  GetContainerControl = <unbound method 'GetContainerControl'>
+ |
+ |  GetNextControl = <unbound method 'GetNextControl'>
+ |
+ |  GetPreferredSize = <unbound method 'GetPreferredSize'>
+ |
+ |  GetStyle = <unbound method 'GetStyle'>
+ |
+ |  GetTopLevel = <unbound method 'GetTopLevel'>
+ |
+ |  Hide = <unbound method 'Hide'>
+ |
+ |  InitLayout = <unbound method 'InitLayout'>
+ |
+ |  Invalidate = <unbound method 'Invalidate'>
+ |
+ |  Invoke = <unbound method 'Invoke'>
+ |
+ |  InvokeGotFocus = <unbound method 'InvokeGotFocus'>
+ |
+ |  InvokeLostFocus = <unbound method 'InvokeLostFocus'>
+ |
+ |  InvokeOnClick = <unbound method 'InvokeOnClick'>
+ |
+ |  InvokePaint = <unbound method 'InvokePaint'>
+ |
+ |  InvokePaintBackground = <unbound method 'InvokePaintBackground'>
+ |
+ |  IsInputChar = <unbound method 'IsInputChar'>
+ |
+ |  IsInputKey = <unbound method 'IsInputKey'>
+ |
+ |  IsKeyLocked = <unbound method 'IsKeyLocked'>
+ |
+ |  IsMnemonic = <unbound method 'IsMnemonic'>
+ |
+ |  LogicalToDeviceUnits = <unbound method 'LogicalToDeviceUnits'>
+ |
+ |  ModifierKeys = <Keys.None: 0x00000000>
+ |
+ |  MouseButtons = <MouseButtons.Left: 0x00100000>
+ |
+ |  MousePosition = <System.Drawing.Point object>
+ |
+ |  NotifyInvalidate = <unbound method 'NotifyInvalidate'>
+ |
+ |  OnAutoSizeChanged = <unbound method 'OnAutoSizeChanged'>
+ |
+ |  OnBackColorChanged = <unbound method 'OnBackColorChanged'>
+ |
+ |  OnBindingContextChanged = <unbound method 'OnBindingContextChanged'>
+ |
+ |  OnCausesValidationChanged = <unbound method 'OnCausesValidationChanged...
+ |
+ |  OnChangeUICues = <unbound method 'OnChangeUICues'>
+ |
+ |  OnClick = <unbound method 'OnClick'>
+ |
+ |  OnClientSizeChanged = <unbound method 'OnClientSizeChanged'>
+ |
+ |  OnContextMenuChanged = <unbound method 'OnContextMenuChanged'>
+ |
+ |  OnContextMenuStripChanged = <unbound method 'OnContextMenuStripChanged...
+ |
+ |  OnControlAdded = <unbound method 'OnControlAdded'>
+ |
+ |  OnControlRemoved = <unbound method 'OnControlRemoved'>
+ |
+ |  OnCursorChanged = <unbound method 'OnCursorChanged'>
+ |
+ |  OnDockChanged = <unbound method 'OnDockChanged'>
+ |
+ |  OnDoubleClick = <unbound method 'OnDoubleClick'>
+ |
+ |  OnDpiChangedAfterParent = <unbound method 'OnDpiChangedAfterParent'>
+ |
+ |  OnDpiChangedBeforeParent = <unbound method 'OnDpiChangedBeforeParent'>
+ |
+ |  OnDragDrop = <unbound method 'OnDragDrop'>
+ |
+ |  OnDragEnter = <unbound method 'OnDragEnter'>
+ |
+ |  OnDragLeave = <unbound method 'OnDragLeave'>
+ |
+ |  OnDragOver = <unbound method 'OnDragOver'>
+ |
+ |  OnForeColorChanged = <unbound method 'OnForeColorChanged'>
+ |
+ |  OnGiveFeedback = <unbound method 'OnGiveFeedback'>
+ |
+ |  OnGotFocus = <unbound method 'OnGotFocus'>
+ |
+ |  OnHelpRequested = <unbound method 'OnHelpRequested'>
+ |
+ |  OnImeModeChanged = <unbound method 'OnImeModeChanged'>
+ |
+ |  OnInvalidated = <unbound method 'OnInvalidated'>
+ |
+ |  OnKeyDown = <unbound method 'OnKeyDown'>
+ |
+ |  OnKeyPress = <unbound method 'OnKeyPress'>
+ |
+ |  OnKeyUp = <unbound method 'OnKeyUp'>
+ |
+ |  OnLeave = <unbound method 'OnLeave'>
+ |
+ |  OnLocationChanged = <unbound method 'OnLocationChanged'>
+ |
+ |  OnLostFocus = <unbound method 'OnLostFocus'>
+ |
+ |  OnMarginChanged = <unbound method 'OnMarginChanged'>
+ |
+ |  OnMouseCaptureChanged = <unbound method 'OnMouseCaptureChanged'>
+ |
+ |  OnMouseClick = <unbound method 'OnMouseClick'>
+ |
+ |  OnMouseDoubleClick = <unbound method 'OnMouseDoubleClick'>
+ |
+ |  OnMouseEnter = <unbound method 'OnMouseEnter'>
+ |
+ |  OnMouseHover = <unbound method 'OnMouseHover'>
+ |
+ |  OnMouseLeave = <unbound method 'OnMouseLeave'>
+ |
+ |  OnMouseMove = <unbound method 'OnMouseMove'>
+ |
+ |  OnMouseUp = <unbound method 'OnMouseUp'>
+ |
+ |  OnMove = <unbound method 'OnMove'>
+ |
+ |  OnNotifyMessage = <unbound method 'OnNotifyMessage'>
+ |
+ |  OnParentBackColorChanged = <unbound method 'OnParentBackColorChanged'>
+ |
+ |  OnParentBackgroundImageChanged = <unbound method 'OnParentBackgroundIm...
+ |
+ |  OnParentBindingContextChanged = <unbound method 'OnParentBindingContex...
+ |
+ |  OnParentCursorChanged = <unbound method 'OnParentCursorChanged'>
+ |
+ |  OnParentEnabledChanged = <unbound method 'OnParentEnabledChanged'>
+ |
+ |  OnParentFontChanged = <unbound method 'OnParentFontChanged'>
+ |
+ |  OnParentForeColorChanged = <unbound method 'OnParentForeColorChanged'>
+ |
+ |  OnParentRightToLeftChanged = <unbound method 'OnParentRightToLeftChang...
+ |
+ |  OnParentVisibleChanged = <unbound method 'OnParentVisibleChanged'>
+ |
+ |  OnPreviewKeyDown = <unbound method 'OnPreviewKeyDown'>
+ |
+ |  OnPrint = <unbound method 'OnPrint'>
+ |
+ |  OnQueryContinueDrag = <unbound method 'OnQueryContinueDrag'>
+ |
+ |  OnRegionChanged = <unbound method 'OnRegionChanged'>
+ |
+ |  OnSizeChanged = <unbound method 'OnSizeChanged'>
+ |
+ |  OnSystemColorsChanged = <unbound method 'OnSystemColorsChanged'>
+ |
+ |  OnTabIndexChanged = <unbound method 'OnTabIndexChanged'>
+ |
+ |  OnTabStopChanged = <unbound method 'OnTabStopChanged'>
+ |
+ |  OnValidated = <unbound method 'OnValidated'>
+ |
+ |  OnValidating = <unbound method 'OnValidating'>
+ |
+ |  PerformLayout = <unbound method 'PerformLayout'>
+ |
+ |  PointToClient = <unbound method 'PointToClient'>
+ |
+ |  PointToScreen = <unbound method 'PointToScreen'>
+ |
+ |  PreProcessControlMessage = <unbound method 'PreProcessControlMessage'>
+ |
+ |  PreProcessMessage = <unbound method 'PreProcessMessage'>
+ |
+ |  ProcessKeyEventArgs = <unbound method 'ProcessKeyEventArgs'>
+ |
+ |  ProcessKeyMessage = <unbound method 'ProcessKeyMessage'>
+ |
+ |  PropagatingImeMode = <ImeMode.Inherit: -1>
+ |
+ |  RaiseDragEvent = <unbound method 'RaiseDragEvent'>
+ |
+ |  RaiseKeyEvent = <unbound method 'RaiseKeyEvent'>
+ |
+ |  RaiseMouseEvent = <unbound method 'RaiseMouseEvent'>
+ |
+ |  RaisePaintEvent = <unbound method 'RaisePaintEvent'>
+ |
+ |  RecreateHandle = <unbound method 'RecreateHandle'>
+ |
+ |  RectangleToClient = <unbound method 'RectangleToClient'>
+ |
+ |  RectangleToScreen = <unbound method 'RectangleToScreen'>
+ |
+ |  ReflectMessage = <unbound method 'ReflectMessage'>
+ |
+ |  Refresh = <unbound method 'Refresh'>
+ |
+ |  RescaleConstantsForDpi = <unbound method 'RescaleConstantsForDpi'>
+ |
+ |  ResetBackColor = <unbound method 'ResetBackColor'>
+ |
+ |  ResetBindings = <unbound method 'ResetBindings'>
+ |
+ |  ResetCursor = <unbound method 'ResetCursor'>
+ |
+ |  ResetFont = <unbound method 'ResetFont'>
+ |
+ |  ResetForeColor = <unbound method 'ResetForeColor'>
+ |
+ |  ResetImeMode = <unbound method 'ResetImeMode'>
+ |
+ |  ResetMouseEventArgs = <unbound method 'ResetMouseEventArgs'>
+ |
+ |  ResetRightToLeft = <unbound method 'ResetRightToLeft'>
+ |
+ |  ResetText = <unbound method 'ResetText'>
+ |
+ |  ResumeLayout = <unbound method 'ResumeLayout'>
+ |
+ |  RtlTranslateAlignment = <unbound method 'RtlTranslateAlignment'>
+ |
+ |  RtlTranslateContent = <unbound method 'RtlTranslateContent'>
+ |
+ |  RtlTranslateHorizontal = <unbound method 'RtlTranslateHorizontal'>
+ |
+ |  RtlTranslateLeftRight = <unbound method 'RtlTranslateLeftRight'>
+ |
+ |  ScaleBitmapLogicalToDevice = <unbound method 'ScaleBitmapLogicalToDevi...
+ |
+ |  SelectNextControl = <unbound method 'SelectNextControl'>
+ |
+ |  SendToBack = <unbound method 'SendToBack'>
+ |
+ |  SetAutoSizeMode = <unbound method 'SetAutoSizeMode'>
+ |
+ |  SetBounds = <unbound method 'SetBounds'>
+ |
+ |  SetStyle = <unbound method 'SetStyle'>
+ |
+ |  SetTopLevel = <unbound method 'SetTopLevel'>
+ |
+ |  SizeFromClientSize = <unbound method 'SizeFromClientSize'>
+ |
+ |  SuspendLayout = <unbound method 'SuspendLayout'>
+ |
+ |  Update = <unbound method 'Update'>
+ |
+ |  UpdateBounds = <unbound method 'UpdateBounds'>
+ |
+ |  UpdateStyles = <unbound method 'UpdateStyles'>
+ |
+ |  UpdateZOrder = <unbound method 'UpdateZOrder'>
+ |
+ |  add_BackColorChanged = <unbound method 'add_BackColorChanged'>
+ |
+ |  add_BackgroundImageChanged = <unbound method 'add_BackgroundImageChang...
+ |
+ |  add_BackgroundImageLayoutChanged = <unbound method 'add_BackgroundImag...
+ |
+ |  add_BindingContextChanged = <unbound method 'add_BindingContextChanged...
+ |
+ |  add_CausesValidationChanged = <unbound method 'add_CausesValidationCha...
+ |
+ |  add_ChangeUICues = <unbound method 'add_ChangeUICues'>
+ |
+ |  add_Click = <unbound method 'add_Click'>
+ |
+ |  add_ClientSizeChanged = <unbound method 'add_ClientSizeChanged'>
+ |
+ |  add_ContextMenuChanged = <unbound method 'add_ContextMenuChanged'>
+ |
+ |  add_ContextMenuStripChanged = <unbound method 'add_ContextMenuStripCha...
+ |
+ |  add_ControlAdded = <unbound method 'add_ControlAdded'>
+ |
+ |  add_ControlRemoved = <unbound method 'add_ControlRemoved'>
+ |
+ |  add_CursorChanged = <unbound method 'add_CursorChanged'>
+ |
+ |  add_DockChanged = <unbound method 'add_DockChanged'>
+ |
+ |  add_DoubleClick = <unbound method 'add_DoubleClick'>
+ |
+ |  add_DpiChangedAfterParent = <unbound method 'add_DpiChangedAfterParent...
+ |
+ |  add_DpiChangedBeforeParent = <unbound method 'add_DpiChangedBeforePare...
+ |
+ |  add_DragDrop = <unbound method 'add_DragDrop'>
+ |
+ |  add_DragEnter = <unbound method 'add_DragEnter'>
+ |
+ |  add_DragLeave = <unbound method 'add_DragLeave'>
+ |
+ |  add_DragOver = <unbound method 'add_DragOver'>
+ |
+ |  add_EnabledChanged = <unbound method 'add_EnabledChanged'>
+ |
+ |  add_Enter = <unbound method 'add_Enter'>
+ |
+ |  add_FontChanged = <unbound method 'add_FontChanged'>
+ |
+ |  add_ForeColorChanged = <unbound method 'add_ForeColorChanged'>
+ |
+ |  add_GiveFeedback = <unbound method 'add_GiveFeedback'>
+ |
+ |  add_GotFocus = <unbound method 'add_GotFocus'>
+ |
+ |  add_HandleCreated = <unbound method 'add_HandleCreated'>
+ |
+ |  add_HandleDestroyed = <unbound method 'add_HandleDestroyed'>
+ |
+ |  add_HelpRequested = <unbound method 'add_HelpRequested'>
+ |
+ |  add_ImeModeChanged = <unbound method 'add_ImeModeChanged'>
+ |
+ |  add_Invalidated = <unbound method 'add_Invalidated'>
+ |
+ |  add_KeyDown = <unbound method 'add_KeyDown'>
+ |
+ |  add_KeyPress = <unbound method 'add_KeyPress'>
+ |
+ |  add_KeyUp = <unbound method 'add_KeyUp'>
+ |
+ |  add_Layout = <unbound method 'add_Layout'>
+ |
+ |  add_Leave = <unbound method 'add_Leave'>
+ |
+ |  add_LocationChanged = <unbound method 'add_LocationChanged'>
+ |
+ |  add_LostFocus = <unbound method 'add_LostFocus'>
+ |
+ |  add_MouseCaptureChanged = <unbound method 'add_MouseCaptureChanged'>
+ |
+ |  add_MouseClick = <unbound method 'add_MouseClick'>
+ |
+ |  add_MouseDoubleClick = <unbound method 'add_MouseDoubleClick'>
+ |
+ |  add_MouseDown = <unbound method 'add_MouseDown'>
+ |
+ |  add_MouseEnter = <unbound method 'add_MouseEnter'>
+ |
+ |  add_MouseHover = <unbound method 'add_MouseHover'>
+ |
+ |  add_MouseLeave = <unbound method 'add_MouseLeave'>
+ |
+ |  add_MouseMove = <unbound method 'add_MouseMove'>
+ |
+ |  add_MouseUp = <unbound method 'add_MouseUp'>
+ |
+ |  add_MouseWheel = <unbound method 'add_MouseWheel'>
+ |
+ |  add_Move = <unbound method 'add_Move'>
+ |
+ |  add_PaddingChanged = <unbound method 'add_PaddingChanged'>
+ |
+ |  add_Paint = <unbound method 'add_Paint'>
+ |
+ |  add_ParentChanged = <unbound method 'add_ParentChanged'>
+ |
+ |  add_PreviewKeyDown = <unbound method 'add_PreviewKeyDown'>
+ |
+ |  add_QueryAccessibilityHelp = <unbound method 'add_QueryAccessibilityHe...
+ |
+ |  add_QueryContinueDrag = <unbound method 'add_QueryContinueDrag'>
+ |
+ |  add_RegionChanged = <unbound method 'add_RegionChanged'>
+ |
+ |  add_Resize = <unbound method 'add_Resize'>
+ |
+ |  add_RightToLeftChanged = <unbound method 'add_RightToLeftChanged'>
+ |
+ |  add_SizeChanged = <unbound method 'add_SizeChanged'>
+ |
+ |  add_StyleChanged = <unbound method 'add_StyleChanged'>
+ |
+ |  add_SystemColorsChanged = <unbound method 'add_SystemColorsChanged'>
+ |
+ |  add_TextChanged = <unbound method 'add_TextChanged'>
+ |
+ |  add_Validated = <unbound method 'add_Validated'>
+ |
+ |  add_Validating = <unbound method 'add_Validating'>
+ |
+ |  add_VisibleChanged = <unbound method 'add_VisibleChanged'>
+ |
+ |  get_AccessibilityObject = <unbound method 'get_AccessibilityObject'>
+ |
+ |  get_AccessibleDefaultActionDescription = <unbound method 'get_Accessib...
+ |
+ |  get_AccessibleDescription = <unbound method 'get_AccessibleDescription...
+ |
+ |  get_AccessibleName = <unbound method 'get_AccessibleName'>
+ |
+ |  get_AccessibleRole = <unbound method 'get_AccessibleRole'>
+ |
+ |  get_AllowDrop = <unbound method 'get_AllowDrop'>
+ |
+ |  get_Anchor = <unbound method 'get_Anchor'>
+ |
+ |  get_AutoScrollOffset = <unbound method 'get_AutoScrollOffset'>
+ |
+ |  get_BackgroundImage = <unbound method 'get_BackgroundImage'>
+ |
+ |  get_BackgroundImageLayout = <unbound method 'get_BackgroundImageLayout...
+ |
+ |  get_Bottom = <unbound method 'get_Bottom'>
+ |
+ |  get_Bounds = <unbound method 'get_Bounds'>
+ |
+ |  get_CanFocus = <unbound method 'get_CanFocus'>
+ |
+ |  get_CanRaiseEvents = <unbound method 'get_CanRaiseEvents'>
+ |
+ |  get_CanSelect = <unbound method 'get_CanSelect'>
+ |
+ |  get_Capture = <unbound method 'get_Capture'>
+ |
+ |  get_CausesValidation = <unbound method 'get_CausesValidation'>
+ |
+ |  get_CheckForIllegalCrossThreadCalls = <unbound method 'get_CheckForIll...
+ |
+ |  get_ClientRectangle = <unbound method 'get_ClientRectangle'>
+ |
+ |  get_CompanyName = <unbound method 'get_CompanyName'>
+ |
+ |  get_ContainsFocus = <unbound method 'get_ContainsFocus'>
+ |
+ |  get_ContextMenu = <unbound method 'get_ContextMenu'>
+ |
+ |  get_ContextMenuStrip = <unbound method 'get_ContextMenuStrip'>
+ |
+ |  get_Controls = <unbound method 'get_Controls'>
+ |
+ |  get_Created = <unbound method 'get_Created'>
+ |
+ |  get_Cursor = <unbound method 'get_Cursor'>
+ |
+ |  get_DataBindings = <unbound method 'get_DataBindings'>
+ |
+ |  get_DefaultBackColor = <unbound method 'get_DefaultBackColor'>
+ |
+ |  get_DefaultCursor = <unbound method 'get_DefaultCursor'>
+ |
+ |  get_DefaultFont = <unbound method 'get_DefaultFont'>
+ |
+ |  get_DefaultForeColor = <unbound method 'get_DefaultForeColor'>
+ |
+ |  get_DefaultMargin = <unbound method 'get_DefaultMargin'>
+ |
+ |  get_DefaultMaximumSize = <unbound method 'get_DefaultMaximumSize'>
+ |
+ |  get_DefaultMinimumSize = <unbound method 'get_DefaultMinimumSize'>
+ |
+ |  get_DeviceDpi = <unbound method 'get_DeviceDpi'>
+ |
+ |  get_Disposing = <unbound method 'get_Disposing'>
+ |
+ |  get_Dock = <unbound method 'get_Dock'>
+ |
+ |  get_DoubleBuffered = <unbound method 'get_DoubleBuffered'>
+ |
+ |  get_Enabled = <unbound method 'get_Enabled'>
+ |
+ |  get_Focused = <unbound method 'get_Focused'>
+ |
+ |  get_Font = <unbound method 'get_Font'>
+ |
+ |  get_FontHeight = <unbound method 'get_FontHeight'>
+ |
+ |  get_ForeColor = <unbound method 'get_ForeColor'>
+ |
+ |  get_Handle = <unbound method 'get_Handle'>
+ |
+ |  get_HasChildren = <unbound method 'get_HasChildren'>
+ |
+ |  get_Height = <unbound method 'get_Height'>
+ |
+ |  get_ImeMode = <unbound method 'get_ImeMode'>
+ |
+ |  get_ImeModeBase = <unbound method 'get_ImeModeBase'>
+ |
+ |  get_InvokeRequired = <unbound method 'get_InvokeRequired'>
+ |
+ |  get_IsAccessible = <unbound method 'get_IsAccessible'>
+ |
+ |  get_IsDisposed = <unbound method 'get_IsDisposed'>
+ |
+ |  get_IsHandleCreated = <unbound method 'get_IsHandleCreated'>
+ |
+ |  get_IsMirrored = <unbound method 'get_IsMirrored'>
+ |
+ |  get_LayoutEngine = <unbound method 'get_LayoutEngine'>
+ |
+ |  get_Left = <unbound method 'get_Left'>
+ |
+ |  get_ModifierKeys = <unbound method 'get_ModifierKeys'>
+ |
+ |  get_MouseButtons = <unbound method 'get_MouseButtons'>
+ |
+ |  get_MousePosition = <unbound method 'get_MousePosition'>
+ |
+ |  get_Name = <unbound method 'get_Name'>
+ |
+ |  get_Parent = <unbound method 'get_Parent'>
+ |
+ |  get_PreferredSize = <unbound method 'get_PreferredSize'>
+ |
+ |  get_ProductName = <unbound method 'get_ProductName'>
+ |
+ |  get_ProductVersion = <unbound method 'get_ProductVersion'>
+ |
+ |  get_PropagatingImeMode = <unbound method 'get_PropagatingImeMode'>
+ |
+ |  get_RecreatingHandle = <unbound method 'get_RecreatingHandle'>
+ |
+ |  get_Region = <unbound method 'get_Region'>
+ |
+ |  get_RenderRightToLeft = <unbound method 'get_RenderRightToLeft'>
+ |
+ |  get_ResizeRedraw = <unbound method 'get_ResizeRedraw'>
+ |
+ |  get_Right = <unbound method 'get_Right'>
+ |
+ |  get_RightToLeft = <unbound method 'get_RightToLeft'>
+ |
+ |  get_ScaleChildren = <unbound method 'get_ScaleChildren'>
+ |
+ |  get_ShowFocusCues = <unbound method 'get_ShowFocusCues'>
+ |
+ |  get_ShowKeyboardCues = <unbound method 'get_ShowKeyboardCues'>
+ |
+ |  get_Tag = <unbound method 'get_Tag'>
+ |
+ |  get_Top = <unbound method 'get_Top'>
+ |
+ |  get_TopLevelControl = <unbound method 'get_TopLevelControl'>
+ |
+ |  get_UseWaitCursor = <unbound method 'get_UseWaitCursor'>
+ |
+ |  get_Visible = <unbound method 'get_Visible'>
+ |
+ |  get_Width = <unbound method 'get_Width'>
+ |
+ |  get_WindowTarget = <unbound method 'get_WindowTarget'>
+ |
+ |  remove_BackColorChanged = <unbound method 'remove_BackColorChanged'>
+ |
+ |  remove_BackgroundImageChanged = <unbound method 'remove_BackgroundImag...
+ |
+ |  remove_BackgroundImageLayoutChanged = <unbound method 'remove_Backgrou...
+ |
+ |  remove_BindingContextChanged = <unbound method 'remove_BindingContextC...
+ |
+ |  remove_CausesValidationChanged = <unbound method 'remove_CausesValidat...
+ |
+ |  remove_ChangeUICues = <unbound method 'remove_ChangeUICues'>
+ |
+ |  remove_Click = <unbound method 'remove_Click'>
+ |
+ |  remove_ClientSizeChanged = <unbound method 'remove_ClientSizeChanged'>
+ |
+ |  remove_ContextMenuChanged = <unbound method 'remove_ContextMenuChanged...
+ |
+ |  remove_ContextMenuStripChanged = <unbound method 'remove_ContextMenuSt...
+ |
+ |  remove_ControlAdded = <unbound method 'remove_ControlAdded'>
+ |
+ |  remove_ControlRemoved = <unbound method 'remove_ControlRemoved'>
+ |
+ |  remove_CursorChanged = <unbound method 'remove_CursorChanged'>
+ |
+ |  remove_DockChanged = <unbound method 'remove_DockChanged'>
+ |
+ |  remove_DoubleClick = <unbound method 'remove_DoubleClick'>
+ |
+ |  remove_DpiChangedAfterParent = <unbound method 'remove_DpiChangedAfter...
+ |
+ |  remove_DpiChangedBeforeParent = <unbound method 'remove_DpiChangedBefo...
+ |
+ |  remove_DragDrop = <unbound method 'remove_DragDrop'>
+ |
+ |  remove_DragEnter = <unbound method 'remove_DragEnter'>
+ |
+ |  remove_DragLeave = <unbound method 'remove_DragLeave'>
+ |
+ |  remove_DragOver = <unbound method 'remove_DragOver'>
+ |
+ |  remove_EnabledChanged = <unbound method 'remove_EnabledChanged'>
+ |
+ |  remove_Enter = <unbound method 'remove_Enter'>
+ |
+ |  remove_FontChanged = <unbound method 'remove_FontChanged'>
+ |
+ |  remove_ForeColorChanged = <unbound method 'remove_ForeColorChanged'>
+ |
+ |  remove_GiveFeedback = <unbound method 'remove_GiveFeedback'>
+ |
+ |  remove_GotFocus = <unbound method 'remove_GotFocus'>
+ |
+ |  remove_HandleCreated = <unbound method 'remove_HandleCreated'>
+ |
+ |  remove_HandleDestroyed = <unbound method 'remove_HandleDestroyed'>
+ |
+ |  remove_HelpRequested = <unbound method 'remove_HelpRequested'>
+ |
+ |  remove_ImeModeChanged = <unbound method 'remove_ImeModeChanged'>
+ |
+ |  remove_Invalidated = <unbound method 'remove_Invalidated'>
+ |
+ |  remove_KeyDown = <unbound method 'remove_KeyDown'>
+ |
+ |  remove_KeyPress = <unbound method 'remove_KeyPress'>
+ |
+ |  remove_KeyUp = <unbound method 'remove_KeyUp'>
+ |
+ |  remove_Layout = <unbound method 'remove_Layout'>
+ |
+ |  remove_Leave = <unbound method 'remove_Leave'>
+ |
+ |  remove_LocationChanged = <unbound method 'remove_LocationChanged'>
+ |
+ |  remove_LostFocus = <unbound method 'remove_LostFocus'>
+ |
+ |  remove_MouseCaptureChanged = <unbound method 'remove_MouseCaptureChang...
+ |
+ |  remove_MouseClick = <unbound method 'remove_MouseClick'>
+ |
+ |  remove_MouseDoubleClick = <unbound method 'remove_MouseDoubleClick'>
+ |
+ |  remove_MouseDown = <unbound method 'remove_MouseDown'>
+ |
+ |  remove_MouseEnter = <unbound method 'remove_MouseEnter'>
+ |
+ |  remove_MouseHover = <unbound method 'remove_MouseHover'>
+ |
+ |  remove_MouseLeave = <unbound method 'remove_MouseLeave'>
+ |
+ |  remove_MouseMove = <unbound method 'remove_MouseMove'>
+ |
+ |  remove_MouseUp = <unbound method 'remove_MouseUp'>
+ |
+ |  remove_MouseWheel = <unbound method 'remove_MouseWheel'>
+ |
+ |  remove_Move = <unbound method 'remove_Move'>
+ |
+ |  remove_PaddingChanged = <unbound method 'remove_PaddingChanged'>
+ |
+ |  remove_Paint = <unbound method 'remove_Paint'>
+ |
+ |  remove_ParentChanged = <unbound method 'remove_ParentChanged'>
+ |
+ |  remove_PreviewKeyDown = <unbound method 'remove_PreviewKeyDown'>
+ |
+ |  remove_QueryAccessibilityHelp = <unbound method 'remove_QueryAccessibi...
+ |
+ |  remove_QueryContinueDrag = <unbound method 'remove_QueryContinueDrag'>
+ |
+ |  remove_RegionChanged = <unbound method 'remove_RegionChanged'>
+ |
+ |  remove_Resize = <unbound method 'remove_Resize'>
+ |
+ |  remove_RightToLeftChanged = <unbound method 'remove_RightToLeftChanged...
+ |
+ |  remove_SizeChanged = <unbound method 'remove_SizeChanged'>
+ |
+ |  remove_StyleChanged = <unbound method 'remove_StyleChanged'>
+ |
+ |  remove_SystemColorsChanged = <unbound method 'remove_SystemColorsChang...
+ |
+ |  remove_TextChanged = <unbound method 'remove_TextChanged'>
+ |
+ |  remove_Validated = <unbound method 'remove_Validated'>
+ |
+ |  remove_Validating = <unbound method 'remove_Validating'>
+ |
+ |  remove_VisibleChanged = <unbound method 'remove_VisibleChanged'>
+ |
+ |  set_AccessibleDefaultActionDescription = <unbound method 'set_Accessib...
+ |
+ |  set_AccessibleDescription = <unbound method 'set_AccessibleDescription...
+ |
+ |  set_AccessibleName = <unbound method 'set_AccessibleName'>
+ |
+ |  set_AccessibleRole = <unbound method 'set_AccessibleRole'>
+ |
+ |  set_AllowDrop = <unbound method 'set_AllowDrop'>
+ |
+ |  set_Anchor = <unbound method 'set_Anchor'>
+ |
+ |  set_AutoScrollOffset = <unbound method 'set_AutoScrollOffset'>
+ |
+ |  set_BackgroundImage = <unbound method 'set_BackgroundImage'>
+ |
+ |  set_BackgroundImageLayout = <unbound method 'set_BackgroundImageLayout...
+ |
+ |  set_Bounds = <unbound method 'set_Bounds'>
+ |
+ |  set_Capture = <unbound method 'set_Capture'>
+ |
+ |  set_CausesValidation = <unbound method 'set_CausesValidation'>
+ |
+ |  set_CheckForIllegalCrossThreadCalls = <unbound method 'set_CheckForIll...
+ |
+ |  set_ContextMenu = <unbound method 'set_ContextMenu'>
+ |
+ |  set_ContextMenuStrip = <unbound method 'set_ContextMenuStrip'>
+ |
+ |  set_Cursor = <unbound method 'set_Cursor'>
+ |
+ |  set_Dock = <unbound method 'set_Dock'>
+ |
+ |  set_DoubleBuffered = <unbound method 'set_DoubleBuffered'>
+ |
+ |  set_Enabled = <unbound method 'set_Enabled'>
+ |
+ |  set_Font = <unbound method 'set_Font'>
+ |
+ |  set_FontHeight = <unbound method 'set_FontHeight'>
+ |
+ |  set_ForeColor = <unbound method 'set_ForeColor'>
+ |
+ |  set_Height = <unbound method 'set_Height'>
+ |
+ |  set_ImeMode = <unbound method 'set_ImeMode'>
+ |
+ |  set_ImeModeBase = <unbound method 'set_ImeModeBase'>
+ |
+ |  set_IsAccessible = <unbound method 'set_IsAccessible'>
+ |
+ |  set_Left = <unbound method 'set_Left'>
+ |
+ |  set_Name = <unbound method 'set_Name'>
+ |
+ |  set_Parent = <unbound method 'set_Parent'>
+ |
+ |  set_Region = <unbound method 'set_Region'>
+ |
+ |  set_ResizeRedraw = <unbound method 'set_ResizeRedraw'>
+ |
+ |  set_RightToLeft = <unbound method 'set_RightToLeft'>
+ |
+ |  set_Tag = <unbound method 'set_Tag'>
+ |
+ |  set_Top = <unbound method 'set_Top'>
+ |
+ |  set_UseWaitCursor = <unbound method 'set_UseWaitCursor'>
+ |
+ |  set_Visible = <unbound method 'set_Visible'>
+ |
+ |  set_Width = <unbound method 'set_Width'>
+ |
+ |  set_WindowTarget = <unbound method 'set_WindowTarget'>
+ |
+ |  ----------------------------------------------------------------------
+ |  Data descriptors inherited from System.ComponentModel.Component:
+ |
+ |  Container
+ |
+ |  DesignMode
+ |
+ |  Disposed
+ |
+ |  Events
+ |
+ |  ----------------------------------------------------------------------
+ |  Data and other attributes inherited from System.ComponentModel.Component:
+ |
+ |  Finalize = <unbound method 'Finalize'>
+ |
+ |  GetService = <unbound method 'GetService'>
+ |
+ |  add_Disposed = <unbound method 'add_Disposed'>
+ |
+ |  get_Container = <unbound method 'get_Container'>
+ |
+ |  get_DesignMode = <unbound method 'get_DesignMode'>
+ |
+ |  get_Events = <unbound method 'get_Events'>
+ |
+ |  remove_Disposed = <unbound method 'remove_Disposed'>
+ |
+ |  ----------------------------------------------------------------------
+ |  Data and other attributes inherited from System.MarshalByRefObject:
+ |
+ |  CreateObjRef = <unbound method 'CreateObjRef'>
+ |
+ |  GetLifetimeService = <unbound method 'GetLifetimeService'>
+ |
+ |  InitializeLifetimeService = <unbound method 'InitializeLifetimeService...
+ |
+ |  MemberwiseClone = <unbound method 'MemberwiseClone'>
+ |
+ |  ----------------------------------------------------------------------
+ |  Data and other attributes inherited from System.Object:
+ |
+ |  Equals = <unbound method 'Equals'>
+ |
+ |  GetHashCode = <unbound method 'GetHashCode'>
+ |
+ |  GetType = <unbound method 'GetType'>
+ |
+ |  ReferenceEquals = <unbound method 'ReferenceEquals'>
+
