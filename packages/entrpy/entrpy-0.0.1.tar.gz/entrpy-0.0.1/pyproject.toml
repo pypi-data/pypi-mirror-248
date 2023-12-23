@@ -1,0 +1,28 @@
+################################################################################
+# Package
+################################################################################
+
+[tool.poetry]
+name = "entrpy"
+version = "0.0.1"
+description = "entrpy Python Library"
+authors = ["Naveen P"]
+readme = "ReadMe.md"
+license = "MIT"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+packages = [{ include = "src" }]
+
+[build-system]
+requires = ["poetry-core>=1.5.0"]
+build-backend = "poetry.core.masonry.api"
+
+################################################################################
+# Dependencies
+################################################################################
+
+[tool.poetry.dependencies]
+python = "^3.8"
