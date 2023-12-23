@@ -1,0 +1,14 @@
+[
+  {
+    "directory": "D:\\gitwork\\releng-tool-py\\tests\\templates\\meson\\package\\lib\\local\\build",
+    "command": "\"cl\" \"-Ilibtestlib.a.p\" \"-I.\" \"-I..\" \"/MDd\" \"/nologo\" \"/showIncludes\" \"/utf-8\" \"/Zc:__cplusplus\" \"/W2\" \"/EHsc\" \"/Od\" \"/Zi\" \"/Fdlibtestlib.a.p\\lib.cpp.pdb\" /Folibtestlib.a.p/lib.cpp.obj \"/c\" ../lib.cpp",
+    "file": "../lib.cpp",
+    "output": "libtestlib.a.p/lib.cpp.obj"
+  },
+  {
+    "directory": "D:\\gitwork\\releng-tool-py\\tests\\templates\\meson\\package\\lib\\local\\build",
+    "command": "\"cl\" \"-Itestlib.dll.p\" \"-I.\" \"-I..\" \"/MDd\" \"/nologo\" \"/showIncludes\" \"/utf-8\" \"/Zc:__cplusplus\" \"/W2\" \"/EHsc\" \"/Od\" \"/Zi\" \"/Fdtestlib.dll.p\\lib.cpp.pdb\" /Fotestlib.dll.p/lib.cpp.obj \"/c\" ../lib.cpp",
+    "file": "../lib.cpp",
+    "output": "testlib.dll.p/lib.cpp.obj"
+  }
+]
