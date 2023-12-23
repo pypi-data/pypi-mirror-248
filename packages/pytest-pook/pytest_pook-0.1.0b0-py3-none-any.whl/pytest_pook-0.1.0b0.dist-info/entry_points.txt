@@ -1,0 +1,2 @@
+[pytest11]
+pytest_pook = pytest_pook.plugin

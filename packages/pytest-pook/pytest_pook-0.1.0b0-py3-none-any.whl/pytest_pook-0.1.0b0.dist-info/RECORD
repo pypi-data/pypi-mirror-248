@@ -1,0 +1,7 @@
+pytest_pook/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_pook/plugin.py,sha256=RbHoObSsHUASZ3K6LMvxEv4KgKM_4vg8YRmeu1nN0RU,1238
+pytest_pook-0.1.0b0.dist-info/METADATA,sha256=M5ZJV-PtMwJi5TlwyHl0PslaTFpakycz3bB32X9nE6I,4042
+pytest_pook-0.1.0b0.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+pytest_pook-0.1.0b0.dist-info/entry_points.txt,sha256=tn7AUy3Il6KqrHqD_1i8RaeT3pqyMS7DzGpbKMzCEyw,44
+pytest_pook-0.1.0b0.dist-info/licenses/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+pytest_pook-0.1.0b0.dist-info/RECORD,,
