@@ -1,0 +1,162 @@
+Help on class MetroColorStyle in module MetroFramework:
+
+class MetroColorStyle(System.Enum)
+ |  Python wrapper for .NET type MetroFramework.MetroColorStyle
+ |
+ |  Method resolution order:
+ |      MetroColorStyle
+ |      System.Enum
+ |      System.ValueType
+ |      System.Object
+ |      builtins.object
+ |
+ |  Methods defined here:
+ |
+ |  __and__(self, value, /)
+ |      Return self&value.
+ |
+ |  __eq__(self, value, /)
+ |      Return self==value.
+ |
+ |  __float__(self, /)
+ |      float(self)
+ |
+ |  __ge__(self, value, /)
+ |      Return self>=value.
+ |
+ |  __gt__(self, value, /)
+ |      Return self>value.
+ |
+ |  __hash__(self, /)
+ |      Return hash(self).
+ |
+ |  __invert__(self, /)
+ |      ~self
+ |
+ |  __le__(self, value, /)
+ |      Return self<=value.
+ |
+ |  __lt__(self, value, /)
+ |      Return self<value.
+ |
+ |  __ne__(self, value, /)
+ |      Return self!=value.
+ |
+ |  __or__(self, value, /)
+ |      Return self|value.
+ |
+ |  __rand__(self, value, /)
+ |      Return value&self.
+ |
+ |  __repr__(self, /)
+ |      Return repr(self).
+ |
+ |  __ror__(self, value, /)
+ |      Return value|self.
+ |
+ |  __rxor__(self, value, /)
+ |      Return value^self.
+ |
+ |  __str__(self, /)
+ |      Return str(self).
+ |
+ |  __xor__(self, value, /)
+ |      Return self^value.
+ |
+ |  ----------------------------------------------------------------------
+ |  Static methods defined here:
+ |
+ |  __new__(*args, **kwargs) from clr._internal.CLRMetatype
+ |      Create and return a new object.  See help(type) for accurate signature.
+ |
+ |  ----------------------------------------------------------------------
+ |  Data descriptors defined here:
+ |
+ |  value__
+ |
+ |  ----------------------------------------------------------------------
+ |  Data and other attributes defined here:
+ |
+ |  Black = <MetroColorStyle.Black: 0>
+ |
+ |  Blue = <MetroColorStyle.Blue: 3>
+ |
+ |  Brown = <MetroColorStyle.Brown: 8>
+ |
+ |  Default = <MetroColorStyle.Default: -1>
+ |
+ |  Green = <MetroColorStyle.Green: 4>
+ |
+ |  Lime = <MetroColorStyle.Lime: 5>
+ |
+ |  Magenta = <MetroColorStyle.Magenta: 10>
+ |
+ |  Orange = <MetroColorStyle.Orange: 7>
+ |
+ |  Pink = <MetroColorStyle.Pink: 9>
+ |
+ |  Purple = <MetroColorStyle.Purple: 11>
+ |
+ |  Red = <MetroColorStyle.Red: 12>
+ |
+ |  Silver = <MetroColorStyle.Silver: 2>
+ |
+ |  Teal = <MetroColorStyle.Teal: 6>
+ |
+ |  White = <MetroColorStyle.White: 1>
+ |
+ |  Yellow = <MetroColorStyle.Yellow: 13>
+ |
+ |  __index__ = <unbound method '__index__'>
+ |
+ |  __int__ = <unbound method '__int__'>
+ |
+ |  ----------------------------------------------------------------------
+ |  Data and other attributes inherited from System.Enum:
+ |
+ |  CompareTo = <unbound method 'CompareTo'>
+ |
+ |  Equals = <unbound method 'Equals'>
+ |
+ |  Format = <unbound method 'Format'>
+ |
+ |  GetHashCode = <unbound method 'GetHashCode'>
+ |
+ |  GetName = <unbound method 'GetName'>
+ |
+ |  GetNames = <unbound method 'GetNames'>
+ |
+ |  GetTypeCode = <unbound method 'GetTypeCode'>
+ |
+ |  GetUnderlyingType = <unbound method 'GetUnderlyingType'>
+ |
+ |  GetValues = <unbound method 'GetValues'>
+ |
+ |  HasFlag = <unbound method 'HasFlag'>
+ |
+ |  IsDefined = <unbound method 'IsDefined'>
+ |
+ |  Parse = <unbound method 'Parse'>
+ |
+ |  ToObject = <unbound method 'ToObject'>
+ |
+ |  ToString = <unbound method 'ToString'>
+ |
+ |  TryParse = <unbound method 'TryParse'>
+ |
+ |  __init__ = <unbound method '__init__'>
+ |
+ |  ----------------------------------------------------------------------
+ |  Data and other attributes inherited from System.Object:
+ |
+ |  Finalize = <unbound method 'Finalize'>
+ |
+ |  GetType = <unbound method 'GetType'>
+ |
+ |  MemberwiseClone = <unbound method 'MemberwiseClone'>
+ |
+ |  Overloads = <unbound method '__init__'>
+ |
+ |  ReferenceEquals = <unbound method 'ReferenceEquals'>
+ |
+ |  __overloads__ = <unbound method '__init__'>
