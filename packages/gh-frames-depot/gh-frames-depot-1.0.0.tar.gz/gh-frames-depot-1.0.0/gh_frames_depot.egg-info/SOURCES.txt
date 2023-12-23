@@ -1,0 +1,10 @@
+README.rst
+setup.py
+frames_depot/__init__.py
+frames_depot/frames_depot.py
+frames_depot/main.py
+gh_frames_depot.egg-info/PKG-INFO
+gh_frames_depot.egg-info/SOURCES.txt
+gh_frames_depot.egg-info/dependency_links.txt
+gh_frames_depot.egg-info/requires.txt
+gh_frames_depot.egg-info/top_level.txt
