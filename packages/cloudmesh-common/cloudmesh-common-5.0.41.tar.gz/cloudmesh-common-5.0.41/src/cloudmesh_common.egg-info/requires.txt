@@ -1,0 +1,16 @@
+python-dateutil
+colorama
+humanize
+oyaml
+pyfiglet
+python-hostlist
+requests
+simplejson
+tabulate
+tqdm
+pyyaml
+psutil
+
+[:platform_system == "Windows"]
+pywin32
+pyuac
