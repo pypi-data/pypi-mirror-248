@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+requirements.txt
+setup.py
+scipy_pilutil/__init__.py
+scipy_pilutil/pilutil.py
+scipy_pilutil.egg-info/PKG-INFO
+scipy_pilutil.egg-info/SOURCES.txt
+scipy_pilutil.egg-info/dependency_links.txt
+scipy_pilutil.egg-info/requires.txt
+scipy_pilutil.egg-info/top_level.txt
+scipy_pilutil/patch/__init__.py
