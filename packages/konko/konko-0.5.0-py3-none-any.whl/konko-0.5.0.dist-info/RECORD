@@ -1,0 +1,9 @@
+konko/__init__.py,sha256=3vLZZZFuY6WqTG8pOUA-TiaBoQYgkWy4A6jQHXGdif4,4886
+konko/chat_completion.py,sha256=MnM9S-QhFRBjx9KnM-EzBxBAhnLry8b1zecE8Rd_aBQ,923
+konko/completion.py,sha256=XZHRKO8LLEw3aJnkaKrWqw0dSy4HHJZP5JxAY8f9hc4,873
+konko/embedding.py,sha256=70tOVzO12lxsQVilWJIsggNqnFRu3gTCaK-tb_opyh0,863
+konko/model.py,sha256=T9FKXO8oa-R0n59EU83JvmKRQLwLMfDM7SKnuGtSoYw,2140
+konko/version.py,sha256=Z4S0cUqfWFIxSvanoTDQh676x2hjV4pKRi-FEpPk-k4,18
+konko-0.5.0.dist-info/METADATA,sha256=2vz0DRXSogVKlvPrMDPWuqOqYodBpUsZwB3WH-J0TOg,992
+konko-0.5.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+konko-0.5.0.dist-info/RECORD,,
