@@ -1,0 +1,10 @@
+README.md
+setup.py
+test_gen/__init__.py
+test_gen/__main__.py
+test_gen/test_repo.py
+testfoundry.egg-info/PKG-INFO
+testfoundry.egg-info/SOURCES.txt
+testfoundry.egg-info/dependency_links.txt
+testfoundry.egg-info/entry_points.txt
+testfoundry.egg-info/top_level.txt
