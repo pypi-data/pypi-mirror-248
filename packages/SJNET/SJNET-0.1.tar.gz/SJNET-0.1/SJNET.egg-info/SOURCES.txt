@@ -1,0 +1,8 @@
+README.md
+setup.py
+SJNET/__init__.py
+SJNET/main.py
+SJNET.egg-info/PKG-INFO
+SJNET.egg-info/SOURCES.txt
+SJNET.egg-info/dependency_links.txt
+SJNET.egg-info/top_level.txt

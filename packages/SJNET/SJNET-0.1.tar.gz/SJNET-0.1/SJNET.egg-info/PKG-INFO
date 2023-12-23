@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: SJNET
+Version: 0.1
+Summary: A neural network Framework
+Author: Abhijith SJ
+Author-email: sjabhijith187@gmail.com
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
