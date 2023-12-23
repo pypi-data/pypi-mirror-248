@@ -1,0 +1,3 @@
+[console_scripts]
+dataviewer = dataviewer.dataviewer:main
+
