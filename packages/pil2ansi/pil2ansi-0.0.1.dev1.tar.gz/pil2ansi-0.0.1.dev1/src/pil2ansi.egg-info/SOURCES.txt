@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/pil2ansi.py
+src/pil2ansi.egg-info/PKG-INFO
+src/pil2ansi.egg-info/SOURCES.txt
+src/pil2ansi.egg-info/dependency_links.txt
+src/pil2ansi.egg-info/requires.txt
+src/pil2ansi.egg-info/top_level.txt
