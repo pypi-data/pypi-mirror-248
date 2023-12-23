@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+discord_emojis/__init__.py
+discord_emojis/_version.py
+discord_emojis/emojis_collection.py
+discord_emojis/py.typed
+discord_emojis/utils.py
+discord_emojis.egg-info/PKG-INFO
+discord_emojis.egg-info/SOURCES.txt
+discord_emojis.egg-info/dependency_links.txt
+discord_emojis.egg-info/not-zip-safe
+discord_emojis.egg-info/top_level.txt
