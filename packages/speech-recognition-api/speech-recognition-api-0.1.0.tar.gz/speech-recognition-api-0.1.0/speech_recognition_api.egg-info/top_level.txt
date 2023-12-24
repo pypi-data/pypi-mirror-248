@@ -1,0 +1,3 @@
+dist
+speech_recognition_api
+tests

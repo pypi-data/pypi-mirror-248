@@ -1,0 +1,184 @@
+[project]
+name = "speech-recognition-api"
+version = "0.1.0"
+authors = [
+  { name="Viktor Zhemchuzhnikov", email="asai5909@gmail.com" },
+]
+description = "Simple but extensible API for Speech Recognition."
+readme = "README.md"
+requires-python = ">=3.9,<3.12"
+classifiers = [
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "fastapi~=0.105.0",
+    "pydantic~=2.5.2",
+    "pydantic-settings~=2.1.0"
+]
+
+[project.optional-dependencies]
+whisper = ["transformers>=4.23.0", "pydub~=0.25.1", "torch>=2.0.0,<=3.0.0"]
+gcs = ["google-cloud-storage~=2.14.0"]
+s3 = ["boto3~=1.34.5", "boto3-type-annotations~=0.3.1"]
+celery = ["celery~=5.3.6"]
+huey = ["huey~=2.5.0"]
+all = ["speech_recognition_api[whisper,gcs,s3,celery,huey]"]
+
+[project.urls]
+Homepage = "https://github.com/asai95/speech-recognition-api"
+Issues = "https://github.com/asai95/speech-recognition-api/issues"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[tool.ruff]
+# Exclude a variety of commonly ignored directories.
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+    "data",
+]
+
+line-length = 120
+indent-width = 4
+target-version = "py39"
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "F",
+    "W",
+    "N",
+    "I",
+    "S",
+    "B",
+    "A",
+    "G",
+    "Q",
+    "C4",
+    "PT",
+    "PL",
+    "RUF",
+    "BLE",
+    "FBT",
+    "C90",
+    "COM",
+    "ISC",
+    "PIE",
+    "T20",
+    "RET",
+    "SLF",
+    "SIM",
+    "TID",
+    "INT",
+    "ARG",
+    "PTH",
+    "ERA",
+    "PGH",
+    "FLY",
+    "LOG",
+    "ANN",
+    "PERF",
+    "ASYNC",
+]
+ignore = ["COM812", "ISC001", "ANN101", "ANN102", "E203", "B008"]
+
+# Allow fix for all enabled rules (when `--fix`) is provided.
+fixable = ["ALL"]
+unfixable = []
+
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+preview = true
+
+[tool.ruff.per-file-ignores]
+"tests/*.py" = [
+    "PLR2004",
+    "PLR6301",
+    "S101",
+    "ANN001",
+    "ANN002",
+    "ANN003",
+    "ANN201",
+    "ANN202",
+    "ANN204",
+    "E402",
+    "ARG001",
+    "ARG002",
+    "SIM115",
+    "PTH123",
+    "PT006",
+]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+
+[tool.mypy]
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+    "tests",
+]
+
+[[tool.mypy.overrides]]
+module = [
+    "google.*",
+    "pydub",
+    "transformers",
+    "huey.*",
+    "celery.*",
+    "boto3_type_annotations.*",
+    "boto3",
+    "uvicorn",
+]
+ignore_missing_imports = true
