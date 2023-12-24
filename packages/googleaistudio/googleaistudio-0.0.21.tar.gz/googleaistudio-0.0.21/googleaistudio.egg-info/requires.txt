@@ -1,0 +1,7 @@
+Pygments
+argparse
+google-cloud-aiplatform
+pillow
+prompt_toolkit
+pyperclip
+requests

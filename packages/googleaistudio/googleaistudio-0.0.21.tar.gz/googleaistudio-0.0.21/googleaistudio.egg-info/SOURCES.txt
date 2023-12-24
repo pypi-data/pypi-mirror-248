@@ -1,0 +1,17 @@
+setup.py
+googleaistudio/README.md
+googleaistudio/codey.py
+googleaistudio/config.py
+googleaistudio/geminipro.py
+googleaistudio/geminiprovision.py
+googleaistudio/health_check.py
+googleaistudio/palm2.py
+googleaistudio/requirements.txt
+googleaistudio/streaming_word_wrapper.py
+googleaistudio.egg-info/PKG-INFO
+googleaistudio.egg-info/SOURCES.txt
+googleaistudio.egg-info/dependency_links.txt
+googleaistudio.egg-info/entry_points.txt
+googleaistudio.egg-info/requires.txt
+googleaistudio.egg-info/top_level.txt
+googleaistudio/utils/prompt_shared_key_bindings.py
