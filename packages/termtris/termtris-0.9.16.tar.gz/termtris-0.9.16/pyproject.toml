@@ -1,0 +1,44 @@
+[build-system]
+requires = ['setuptools >= 61.0']
+build-backend = "setuptools.build_meta"
+
+[project]
+name = 'termtris'
+version = '0.9.16'
+description = 'A Tetris game in character terminal environment'
+readme = 'README.md'
+requires-python = '>= 3.6'
+license = {file = 'LICENSE'}
+authors = [
+    {name = 'Brooks Su', email = 'yipeng00@gmail.com'},
+]
+keywords = [
+    'tetris', 'termtetris', 'termtris', 'game', 'terminal', 'ltermio',
+]
+classifiers = [
+    'License :: OSI Approved :: Apache Software License',
+    'Natural Language :: English',
+    'Operating System :: Unix',
+    'Operating System :: POSIX',
+    'Operating System :: MacOS :: MacOS X',
+    'Programming Language :: Python :: 3.6',
+    'Environment :: Console',
+    'Development Status :: 4 - Beta',
+    'Intended Audience :: End Users/Desktop',
+    'Topic :: Games/Entertainment',
+]
+dependencies = ['ltermio>= 0.2.7',]
+
+[project.urls]
+Homepage = 'https://github.com/brookssu/termtris'
+
+[project.scripts]
+tt = 'termtris:main'
+termtris = 'termtris:main'
+
+[tool.setuptools]
+package-dir = {'' = 'src'}
+py-modules = ['tt_backend', 'tt_tetro', 'tt_panel', 'termtris']
+
+[tool.setuptools.packages.find]
+where = ['src']
