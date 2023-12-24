@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+helpme171/__init__.py
+helpme171/demod.py
+helpme171.egg-info/PKG-INFO
+helpme171.egg-info/SOURCES.txt
+helpme171.egg-info/dependency_links.txt
+helpme171.egg-info/top_level.txt
+helpme171/demod_fold/demod2.py
