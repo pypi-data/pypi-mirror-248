@@ -1,0 +1,5 @@
+PuLP>=2.7.0
+numpy
+psutil
+symengine>=0.11.0
+sympy>=1.12
