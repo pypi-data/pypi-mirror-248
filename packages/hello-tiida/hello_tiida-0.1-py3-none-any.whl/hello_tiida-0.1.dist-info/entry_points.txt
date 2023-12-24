@@ -1,0 +1,2 @@
+[console_scripts]
+hello_tiida = hello_tiida.main:hello_tiida
