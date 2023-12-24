@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+baseline_optimal/__init__.py
+baseline_optimal/_classifier.py
+baseline_optimal/_processor.py
+baseline_optimal/class_task.py
