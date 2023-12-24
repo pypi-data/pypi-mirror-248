@@ -1,0 +1,12 @@
+prosper_bot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+prosper_bot/allocation_strategy/__init__.py,sha256=uORLlDsKfs-udBI9NieuQ6v0sTYhwXgvcWYFwlKArto,3193
+prosper_bot/allocation_strategy/fixed_target.py,sha256=Cp33IpuqswfTwj24IoYPiYGvnf5hYlTFgf63HXNwlvs,4032
+prosper_bot/bot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+prosper_bot/bot/bot.py,sha256=zLJ_FGv2bJ5X36g5tEkT8mBW9qI-yDoPxNnVyYZQOdw,4933
+prosper_bot/cli/__init__.py,sha256=L1J1rDA_nfAHg_tqZekNk7TvE9-Jfo2YX2aihRu1qhw,1004
+prosper_bot/util/__init__.py,sha256=HKGSSszQkSlIsOBDKaRs-JvDdq2j2g1Hx7mqzLYZQqA,2964
+prosper_bot-0.3.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+prosper_bot-0.3.4.dist-info/METADATA,sha256=cAF8qLx8XY7sXcamniXKISuVKVWxp2hzUaScqLutoBg,5257
+prosper_bot-0.3.4.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+prosper_bot-0.3.4.dist-info/entry_points.txt,sha256=VFJpR-EoXJZ78SOdTnfgf3VheS7yU7cCt732rZBdGN4,58
+prosper_bot-0.3.4.dist-info/RECORD,,
