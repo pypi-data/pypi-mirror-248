@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+bensapdf/__init__.py
+bensapdf/pdf2image.py
+bensapdf/pdf2text.py
+bensapdf.egg-info/PKG-INFO
+bensapdf.egg-info/SOURCES.txt
+bensapdf.egg-info/dependency_links.txt
+bensapdf.egg-info/top_level.txt
