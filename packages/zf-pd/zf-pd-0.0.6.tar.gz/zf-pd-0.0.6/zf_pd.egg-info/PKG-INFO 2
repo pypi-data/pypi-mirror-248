@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: zf-pd
+Version: 0.0.3
+Author: zeffmuks
+Author-email: zeffmuks@gmail.com
+License-File: LICENSE
+Requires-Dist: loguru
+Requires-Dist: click
+Requires-Dist: setuptools
