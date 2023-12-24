@@ -1,0 +1,5 @@
+setup.py
+alexisomghw2.egg-info/PKG-INFO
+alexisomghw2.egg-info/SOURCES.txt
+alexisomghw2.egg-info/dependency_links.txt
+alexisomghw2.egg-info/top_level.txt
