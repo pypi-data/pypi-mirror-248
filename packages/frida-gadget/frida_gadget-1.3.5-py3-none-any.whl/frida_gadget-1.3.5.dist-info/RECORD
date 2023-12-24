@@ -1,0 +1,13 @@
+scripts/__init__.py,sha256=Zh2yFhJCnDzWNtAZf7bcsk8Qwrhxx21jX8scPt-9MxE,604
+scripts/__version__.py,sha256=RZqzRGb3Ki1kXRLU4zaKYHX2Bjh2UqVy_RFrke5zS-Q,264
+scripts/cli.py,sha256=DmX3XPScVn8uxZHus4sniXRry3-la0F80D_Cbz09ggY,11343
+scripts/frida_github.py,sha256=-fKTzUrcNvIh_YChVtWiPcRyESEfiB6OlpgegcJFk4I,3608
+scripts/logger.py,sha256=ioV5uvEffEUgidb9KFHlY08j3uYadhZK7t1-pzRhOn0,623
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_cli.py,sha256=vAWzRYvWhFeqyUmRLuDOblOXumkUy2Is6iA6Pg8wfOk,403
+frida_gadget-1.3.5.dist-info/LICENSE,sha256=HDXipTPBKrPTl1c_K5FO4ME7bj8xw-eF_Fd4wFbgtkE,1060
+frida_gadget-1.3.5.dist-info/METADATA,sha256=-TDbBVNJWn2myxGlgtwfLdprerNM7m6ym1Qu5hdXd5k,8552
+frida_gadget-1.3.5.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+frida_gadget-1.3.5.dist-info/entry_points.txt,sha256=cyHx_q9NVxg_Rb_RZ3ZNiqy9iP8QBN-4jFRNx0H6J0o,49
+frida_gadget-1.3.5.dist-info/top_level.txt,sha256=edMH_90ea15tX5SNKyrowc7LCDIQ21YDb6fIb57vre8,14
+frida_gadget-1.3.5.dist-info/RECORD,,
