@@ -1,0 +1,6 @@
+pyedr
+pandas
+
+[test]
+pytest
+pytest-xdist
