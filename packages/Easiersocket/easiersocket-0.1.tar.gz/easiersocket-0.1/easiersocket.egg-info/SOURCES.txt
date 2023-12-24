@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+setup.py
+easiersocket.egg-info/PKG-INFO
+easiersocket.egg-info/SOURCES.txt
+easiersocket.egg-info/dependency_links.txt
+easiersocket.egg-info/top_level.txt
