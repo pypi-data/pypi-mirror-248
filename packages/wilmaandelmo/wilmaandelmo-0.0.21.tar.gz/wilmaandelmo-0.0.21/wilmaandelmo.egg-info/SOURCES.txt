@@ -1,0 +1,7 @@
+MANIFEST.in
+README.md
+setup.py
+wilmaandelmo.egg-info/PKG-INFO
+wilmaandelmo.egg-info/SOURCES.txt
+wilmaandelmo.egg-info/dependency_links.txt
+wilmaandelmo.egg-info/top_level.txt
