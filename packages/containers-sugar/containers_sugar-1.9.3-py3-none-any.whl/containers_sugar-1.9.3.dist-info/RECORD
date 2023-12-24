@@ -1,0 +1,10 @@
+sugar/__init__.py,sha256=TZiYMQV-_kiBw0OiT_H2_kZMNPeXQXbC4m9WUt8Yfjk,194
+sugar/__main__.py,sha256=03FG6LwOtDw4PhiKe-Ee6lGvaASizdsh7CsXoU0zEKc,124
+sugar/cli.py,sha256=M-IYEZYxoD6Utw8OhdPwt9BHv6enfKo7xpIdyMc3-jI,4387
+sugar/logs.py,sha256=rnId_PG-9ez7Cf5VnM0vA078Cn2-9-Fieu8bR9GUvqc,1074
+sugar/sugar.py,sha256=2A3ICUUH6Xq2cws2mIEfjSmuiU7VPIICfXba9kfCSXc,18184
+containers_sugar-1.9.3.dist-info/LICENSE,sha256=VdNe-RCjB8ySHZb0705-5jspey66C9W1Fj5-cJ2Vfjo,1514
+containers_sugar-1.9.3.dist-info/METADATA,sha256=CKaEWeUoBFcg0XyNyx_22BTuXEe8ipKM4QkLheUuY-k,672
+containers_sugar-1.9.3.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+containers_sugar-1.9.3.dist-info/entry_points.txt,sha256=fkFnVEbn1s7v4Q583aIrT8gxKT2hQ-c8WShxYou0u8E,44
+containers_sugar-1.9.3.dist-info/RECORD,,
