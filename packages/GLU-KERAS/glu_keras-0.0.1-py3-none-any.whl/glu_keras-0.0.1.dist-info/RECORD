@@ -1,0 +1,6 @@
+glu_keras/__init__.py,sha256=csLlsNYjziv1x-WdIWSwlkqHlsMctT2eN8X72heRjJU,92
+glu_keras/glu.py,sha256=7XLf9csaMN0vq2rgkfkF6siYYlxB-2_yeo2OgJn1-hA,2363
+glu_keras/version.py,sha256=ugyuFliEqtAwQmH4sTlc16YXKYbFWDmfyk87fErB8-8,21
+glu_keras-0.0.1.dist-info/METADATA,sha256=VpwQgjmFnubXWikJl5FxyosqUqkeywQzWQKHOP1NbVc,643
+glu_keras-0.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+glu_keras-0.0.1.dist-info/RECORD,,
