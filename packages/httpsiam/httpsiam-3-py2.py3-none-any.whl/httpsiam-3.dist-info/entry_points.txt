@@ -1,0 +1,2 @@
+[console_scripts]
+httpsiam = main.main:httpsiam
