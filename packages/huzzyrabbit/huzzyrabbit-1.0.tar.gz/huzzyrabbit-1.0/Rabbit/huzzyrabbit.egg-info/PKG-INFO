@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: huzzyrabbit
+Version: 1.0
+Summary: Huzzy Rabbit
+Home-page: UNKNOWN
+Author: Huzzy
+License: UNKNOWN
+Platform: UNKNOWN
+Requires: aio_pika
+Requires-Python: >=3.10
+License-File: LICENSE.txt
+
+This is my personal RabbitMq Connection and Implementation package
+

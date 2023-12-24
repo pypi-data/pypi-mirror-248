@@ -1,0 +1,7 @@
+LICENSE.txt
+README.md
+setup.py
+Rabbit/huzzyrabbit.egg-info/PKG-INFO
+Rabbit/huzzyrabbit.egg-info/SOURCES.txt
+Rabbit/huzzyrabbit.egg-info/dependency_links.txt
+Rabbit/huzzyrabbit.egg-info/top_level.txt
