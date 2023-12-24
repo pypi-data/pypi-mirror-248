@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: mkdocs-minecraft
+Version: 0.2.2
+Summary: A MkDocs Minecraft Recipes plugin
+Home-page: 
+Author: Katzen48 | Tobi
+Author-email: Katzen48 | Tobi <admin@katzen48.de>
+License: MIT
+Keywords: mkdocs
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: mkdocs>=1.5.3
+
+# mkdocs-minecraft
+
+This is a template for a MkDocs plugin.
+
+## Setup
+
+Install the plugin using pip:
+
+`pip install mkdocs-minecraft`
+
+Activate the plugin in `mkdocs.yml`:
+```yaml
+plugins:
+  - search
+  - minecraft
+```
+
+> **Note:** If you have no `plugins` entry in your config file yet, you'll likely also want to add the `search` plugin. MkDocs enables it by default if there is no `plugins` entry set, but now you have to enable it explicitly.
+
+More information about plugins in the [MkDocs documentation][mkdocs-plugins].
+
+## Config
+
+* `param` - This does something
+
+## Usage
+
+## See Also
+
+More information about templates [here][mkdocs-template].
+
+More information about blocks [here][mkdocs-block].
+
+[mkdocs-plugins]: http://www.mkdocs.org/user-guide/plugins/
+[mkdocs-template]: https://www.mkdocs.org/user-guide/custom-themes/#template-variables
+[mkdocs-block]: https://www.mkdocs.org/user-guide/styling-your-docs/#overriding-template-blocks
