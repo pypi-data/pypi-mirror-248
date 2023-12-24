@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mhdwriter"
+version = "0.1.9"
+description = "A package to generate mhd/raw pairs from image stacks."
+authors = [{name = "Eli White", email = "eli.white@emitimaging.com"}]
+license = {file = "LICENSE"}
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+"opencv-python-headless","loguru","tqdm"
+]
+
+[tool.setuptools]
+packages = ["mhdwriter"]
