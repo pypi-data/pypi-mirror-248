@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "pycvi-lib"
+packages = [
+    {include = "pycvi"}
+]
+version = "0.1.1"
+description = ""
+authors = ["Natacha, Galmiche <natacha.galmiche@uib.no>"]
+readme = "README.md"
+[tool.poetry.dependencies]
+python = ">=3.8,<3.12"
+aeon = "^0.6.0"
+
+[tool.poetry.group.examples]
+optional = true
+
+[tool.poetry.group.examples.dependencies]
+scikit-learn-extra = "^0.3.0"
+matplotlib = "^3.7"
+
+
+[tool.poetry.group.dev.dependencies]
+pandas = {version = "*", python = "^3.8" }
+pytest = "^7.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
