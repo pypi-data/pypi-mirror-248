@@ -1,0 +1,5 @@
+rich
+pyrogram-repl
+requests
+aiohttp
+bhaiapi
