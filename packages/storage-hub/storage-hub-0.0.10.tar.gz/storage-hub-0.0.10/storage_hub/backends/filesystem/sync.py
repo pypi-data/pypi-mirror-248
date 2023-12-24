@@ -1,0 +1,6 @@
+class FileSystemBackend:
+    def upload(self):
+        ...
+
+    def download(self):
+        ...
