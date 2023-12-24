@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: anovate-ai-dataset-download
+Version: 0.1.3
+Summary: 
+Author: Waleed Meselhy
+Author-email: waleed_meselhy@eng.asu.edu.eg
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: boto3 (>=1.34.2,<2.0.0)
+Requires-Dist: pycognito (>=2023.5.0,<2024.0.0)
+Requires-Dist: pyinquirer (>=1.0.3,<2.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: rich (>=13.7.0,<14.0.0)
+Requires-Dist: tqdm (>=4.66.1,<5.0.0)
+Requires-Dist: typer[all] (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+
