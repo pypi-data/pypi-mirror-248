@@ -1,0 +1,10 @@
+baseline_optimal/__init__.py,sha256=iXsW-fNQEuZE-F81emjjqNpUwYt94BZzcp7OjttSxUo,33
+baseline_optimal/_classifier.py,sha256=QdNsPzp16eTqf50kJzZSN0Fpe_5Q25U9ZrW_43xfeaE,3733
+baseline_optimal/_processor.py,sha256=_U39HyFwIFpyloyJ8gdPao-oeTqOz0bMwtlUeQ6x0Vw,7730
+baseline_optimal/class_task.py,sha256=g-8DAQdj5DDv-zmOnUFwyR4p2s31pj3M2RWM_2L7UZA,8467
+baseline_optimal/classifier_pipeline.py,sha256=E0Z7c7qv9DpsP8OfO485x8ieJEHPhtnkRt_ZMi-TIag,9857
+baseline_optimal-0.0.5.dist-info/LICENSE,sha256=TfHF6pPjgB2etchN25sdyes4kBp6vRWDF7CZ0wgr5PM,1067
+baseline_optimal-0.0.5.dist-info/METADATA,sha256=xbiy2XJQdUfiTnDi6wlGBANuC1Zeo8bEj2oSFmyO2j0,4140
+baseline_optimal-0.0.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+baseline_optimal-0.0.5.dist-info/top_level.txt,sha256=xNwWPvGOsZW5bhpBk33NpttFFf4Rn_z2Xo2_4U2_JWY,17
+baseline_optimal-0.0.5.dist-info/RECORD,,
