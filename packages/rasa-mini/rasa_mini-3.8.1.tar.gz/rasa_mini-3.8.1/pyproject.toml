@@ -1,0 +1,94 @@
+[build-system]
+requires = [ "poetry-core>=1.0.4",]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "rasa-mini"
+version = "3.8.1"
+description = "Minified Rasa with only NLU component."
+authors = [ "Rasa Technologies GmbH <hi@rasa.com>",]
+homepage = "https://rasa.com"
+repository = "https://github.com/mazyod/rasa"
+documentation = "https://rasa.com/docs"
+include = [ "LICENSE.txt", "README.md", "rasa/cli/default_config.yml", "rasa/shared/importers/*", "rasa/utils/schemas/*"]
+packages = [
+    { include = "rasa" }
+]
+readme = "README.md"
+license = "Apache-2.0"
+
+[[tool.poetry.source]]
+name = "internal repository mirroring psycopg binary for macos"
+url = "https://europe-west3-python.pkg.dev/rasa-releases/psycopg-binary/simple/"
+priority = "primary"
+
+
+[[tool.poetry.source]]
+name = "PyPI"
+priority = "primary"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+requests = "^2.23"
+matplotlib = ">=3.1,<3.8"
+jsonpickle = "^3.0.1"
+absl-py = ">=0.9,<1.5"
+tqdm = "^4.31"
+pykwalify = ">=1.7,<1.9"
+coloredlogs = ">=10,<16"
+"ruamel.yaml" = ">=0.16.5,<0.17.22"
+pyyaml = ">=6.0"
+colorhash = "^2.0.0"
+jsonschema = ">=3.2,<4.18"
+packaging = ">=20.0,<21.0"
+colorclass = "~2.2"
+aiohttp = "^3.8.6"
+questionary = ">=1.5.1,<1.11.0"
+prompt-toolkit = "^3.0,<3.0.29"
+sklearn-crfsuite = "~0.3"
+python-dateutil = "~2.8"
+tensorflow_hub = "^0.15.0"
+regex = ">=2020.6,<2022.11"
+joblib = "^1.3.2"
+typing-utils = "^0.1.0"
+tarsafe = ">=0.0.3,<0.0.6"
+randomname = ">=0.2.1,<0.3.0"
+portalocker = "^2.7.0"
+structlog = "^23.1.0"
+# pin dnspython to avoid dependency incompatibility
+# in order to fix https://rasahq.atlassian.net/browse/ATO-1419
+dnspython = "2.3.0"
+# because of tf
+numpy = "1.23.5"
+scipy = "^1.11.0"
+scikit-learn = "^1.3.0"
+sqlalchemy = "^2.0.23"
+dask = "^2023.12.1"
+
+[tool.poetry.scripts]
+rasa = "rasa.__main__:main"
+
+[tool.poetry.dependencies.tensorflow]
+version = "2.14.1"
+markers = "sys_platform != 'darwin' or platform_machine != 'arm64'"
+
+[tool.poetry.dependencies.tensorflow-intel]
+version = "2.14.1"
+markers = "sys_platform == 'win32'"
+
+[tool.poetry.dependencies.tensorflow-cpu-aws]
+version = "2.14.1"
+markers = "sys_platform == 'linux' and (platform_machine == 'arm64' or platform_machine == 'aarch64')"
+
+[tool.poetry.dependencies.tensorflow-macos]
+version = "2.14.1"
+markers = "sys_platform == 'darwin' and platform_machine == 'arm64'"
+
+[tool.poetry.dependencies.tensorflow-metal]
+version = "1.1.0"
+markers = "sys_platform == 'darwin' and platform_machine == 'arm64'"
+optional = true
+
+[tool.poetry.dependencies.tensorflow-text]
+version = "2.14.0"
+markers = "sys_platform != 'win32' and platform_machine != 'arm64' and platform_machine != 'aarch64'"
