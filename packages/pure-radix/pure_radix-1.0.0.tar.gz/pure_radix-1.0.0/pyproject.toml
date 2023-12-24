@@ -1,0 +1,16 @@
+[tool.black]
+line-length = 100
+
+[project]
+name = "pure_radix"
+version = "1.0.0"
+description = "Generic radix tree implementation in pure Python"
+readme = "README.md"
+license = { text = "MIT License" }
+authors = [
+    { name = "Eduard Christian Dumitrescu", email = "eduard.c.dumitrescu@gmail.com" },
+]
+dependencies = [ "attrs" ]
+
+[tool.setuptools]
+package-dir = {"" = "src"}

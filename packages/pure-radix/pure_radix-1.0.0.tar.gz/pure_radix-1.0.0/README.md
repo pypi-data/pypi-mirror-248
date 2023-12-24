@@ -1,0 +1,121 @@
+# pure_radix
+
+[Radix tree](https://en.wikipedia.org/wiki/Radix_tree) library but in pure clean Python. Run it on PyPy or IronPython or wherever.
+
+## Dependencies
+
+We try to keep dependencies light:
+
+- [attrs](https://pypi.org/project/attrs/) dataclass library (2881 LoC)
+
+To run the tests, you'll need `pytest` and optionally `hypothesis`.
+
+## Examples
+
+```python
+>>> from pure_radix import SetNode, Tree
+>>>
+>>> # Create a tree where each node holds a set. You are free to
+>>> # customize what information is held inside each node.
+>>> t = Tree(node_class=SetNode)
+>>>
+>>> node1 = t.get((10, 11, 12), create=True)
+>>> node2 = t.force((10, 11, 30))  # equivalent
+>>>
+>>> node1.add("cat")
+>>> node2.add("dog")
+>>>
+>>> print(t.root.node_debug_string())
+[]
+  [10, 11]
+    [12] {'cat'}
+    [30] {'dog'}
+>>>
+>>> # This node exists because it's a common prefix between node1 and node2.
+>>> t.get((10, 11))
+SetNode(node_prefix=(10, 11), raw_data=None)
+>>>
+>>> # This node doesn't exist.
+>>> print(t.get((10,)))
+None
+```
+
+The library works with any kind of sequence, including strings!
+
+```python
+>>> # It also works with strings!
+>>> t = Tree(node_class=SetNode)
+>>>
+>>> t.force("catalogue").add(1)
+>>> t.force("category").add(2)
+>>> t.force("categorization").add(3)
+>>> t.force("cart").add(4)
+>>> t.force("carpet")  # leaf node without actual data!
+SetNode(node_prefix=('p', 'e', 't'), raw_data=None)
+>>> t.force("car").add(5)
+>>> t.force("star").add(6)
+>>>
+>>> print(t.root.node_debug_string())
+[]
+  ['c', 'a']
+    ['r'] {5}
+      ['p', 'e', 't']
+      ['t'] {4}
+    ['t']
+      ['a', 'l', 'o', 'g', 'u', 'e'] {1}
+      ['e', 'g', 'o', 'r']
+        ['i', 'z', 'a', 't', 'i', 'o', 'n'] {3}
+        ['y'] {2}
+  ['s', 't', 'a', 'r'] {6}
+```
+
+Are you looking for the longest common prefix? Here is how you can get the nodes that have the longest common prefix with a sequence:
+
+```python
+>>> for n, node in t.find_closest_nodes("catenary"):
+...     print(n, node)
+... 
+4 SetNode(node_prefix=('e', 'g', 'o', 'r'), raw_data=None)
+3 SetNode(node_prefix=('a', 'l', 'o', 'g', 'u', 'e'), raw_data={1})
+2 SetNode(node_prefix=('r',), raw_data={5})
+0 SetNode(node_prefix=('s', 't', 'a', 'r'), raw_data={6})
+```
+
+Do you need to recursively get all non-empty nodes under a node?
+
+```python
+>>> list(t.find(t.get("cat")))
+[SetNode(node_prefix=('y',), raw_data={2}), SetNode(node_prefix=('i', 'z', 'a', 't', 'i', 'o', 'n'), raw_data={3}), SetNode(node_prefix=('a', 'l', 'o', 'g', 'u', 'e'), raw_data={1})]
+```
+
+Let's empty some nodes now!
+
+```python
+>>> t.get("category").clear()
+>>> t.get("catalogue").clear()
+>>> t.get("star").clear()
+>>> print(t.root.node_debug_string())
+[]
+  ['c', 'a']
+    ['r'] {5}
+      ['p', 'e', 't']
+      ['t'] {4}
+    ['t']
+      ['a', 'l', 'o', 'g', 'u', 'e']
+      ['e', 'g', 'o', 'r']
+        ['i', 'z', 'a', 't', 'i', 'o', 'n'] {3}
+        ['y']
+  ['s', 't', 'a', 'r']
+```
+
+Empty nodes do not get removed automatically! You must remove them yourself:
+
+```python
+>>> t.prune()
+>>> print(t.root.node_debug_string())
+[]
+  ['c', 'a']
+    ['r'] {5}
+      ['t'] {4}
+    ['t', 'e', 'g', 'o', 'r', 'i', 'z', 'a', 't', 'i', 'o', 'n'] {3}
+```
