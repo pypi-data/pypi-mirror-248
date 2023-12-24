@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/python/LibreAssist/__init__.py
+src/python/LibreAssist.egg-info/PKG-INFO
+src/python/LibreAssist.egg-info/SOURCES.txt
+src/python/LibreAssist.egg-info/dependency_links.txt
+src/python/LibreAssist.egg-info/requires.txt
+src/python/LibreAssist.egg-info/top_level.txt
+src/python/LibreAssist/inference/__init__.py
+src/python/LibreAssist/inference/_setting.py
+src/python/LibreAssist/inference/inference.py
+src/python/LibreAssist/user_interface/__init__.py
+src/python/LibreAssist/user_interface/_info.py
+src/python/LibreAssist/user_interface/gardio_interface.py
+src/python/LibreAssist/user_interface/theme.py
