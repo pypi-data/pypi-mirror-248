@@ -1,0 +1,11 @@
+STAIR/ABA_annotation.py,sha256=p3RzonF_IU963PpH5PjVynfiuwBZ5hXiqXEHKaLroIY,8661
+STAIR/__init__.py,sha256=R_k_o_tnaL7pocI5hxuJInS2EHDzSTIBpl1mVXmeUQI,120
+STAIR/emb_alignment.py,sha256=xfbugiDKfaSzCApgDP3mnhWDiz0Mlq3dNxoP_MrHEXk,18469
+STAIR/loc_alignment.py,sha256=77XUsZS1lA8E-_qwBz9jvLJMUoqy8I8hO4hiAg-_rU0,12304
+STAIR/loc_prediction.py,sha256=6mKKnHZeTjtD5XI_bjiLPbe6PgzS7L2RQQYtDBmeJJg,14182
+STAIR/test.py,sha256=TJ9vqIcsjjzujZ_3bsMcLUI46sHiK9JVtb-FXNQvQ6Y,174
+STAIR/utils.py,sha256=nVpKURiP4W43C5vJkwDH9FoynBHcyU09-6mVAb4DOQk,2821
+STAIR_tools-1.1.dist-info/METADATA,sha256=gnGuNvCs-e9RPhxv5RDADW73xkWn5zDaA9KGinHbbdU,241
+STAIR_tools-1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+STAIR_tools-1.1.dist-info/top_level.txt,sha256=zKH4cEdsWWHbcw9c-0O0FV5cU1E5MbMOoCeag3F-q1M,6
+STAIR_tools-1.1.dist-info/RECORD,,
