@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: ccxt-market-ticker
+Version: 0.0.1
+Summary: This project uses ccxtpro to stream market data from exchanges. You can use this project to stream market data from exchanges to a queue. You can select which exchanges and which symbols you want to stream. by arguments or by a zookeepernode.
+Home-page: https://github.com/donnercody/ccxt-market-ticker
+Author: donnercody
+Author-email: donnercody86@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: ccxt
+Requires-Dist: pytest
+Requires-Dist: pika
+
+ccxt-market-ticker
+
+---
+
+This library can be used to use the ccxt library to get the ticker of all markets of an exchange.
+The library also provides a function to get the ticker of all markets of all exchanges 
+with MQListener and MQPublisher.
+
+MQListener Example:
+```python
+from marketticker.MQListener import MQListener
+from marketticker.Symbol import Symbol
+
+listener = MQListener("localhost", 5672, "test", "test")
+listener.connect()
+
+
+class YourListener:
+    def onMarketDataReceived(self, data):
+        print("1: " + str(data))
+
+    def onMarketTickerReceived(self, data):
+        print("1: " + str(data))
+
+listener.followMarketTicker("binance", Symbol("BTC/USDT"), "1m", YourListener())
+```
+
+
+
