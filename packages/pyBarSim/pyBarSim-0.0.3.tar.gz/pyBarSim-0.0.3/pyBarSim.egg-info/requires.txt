@@ -1,0 +1,6 @@
+numpy
+scipy
+numba
+xarray
+matplotlib
+pyvista
