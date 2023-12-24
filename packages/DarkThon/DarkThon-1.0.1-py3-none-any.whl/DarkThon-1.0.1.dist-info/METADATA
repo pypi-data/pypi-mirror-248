@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: DarkThon
+Version: 1.0.1
+Summary: custom Telethon class for working with session on server
+Author-email: mihajlovic.aleksa@gmail.com
+Requires-Dist: telethon ==1.30.3
+Requires-Dist: requests
+
