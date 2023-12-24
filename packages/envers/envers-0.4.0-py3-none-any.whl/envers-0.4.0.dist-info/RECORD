@@ -1,0 +1,11 @@
+envers/__init__.py,sha256=r0bnQtNZaUpUKBjwLsMBhoqa73LSgX0hWGTrFrBTBS0,470
+envers/__main__.py,sha256=Y2TjPZohoejzag62JHTeOLyT0Zg79I-WXuBUzvHy-fA,125
+envers/cli.py,sha256=9bCcKL7DfiSNJAW32jMiR5ysALw964ooeepxtx_mBys,3147
+envers/core.py,sha256=jJ44zx2p22ykV5xsnStA0w8gj7DsEGuOm8Grf0Fkm1I,13851
+envers/crypt.py,sha256=9iV-IzdFjmkjF6HtVit91Q63DHPUBKDt-FbThQJffes,2179
+envers/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+envers-0.4.0.dist-info/LICENSE,sha256=HKzWg10W-uCRj7QX_N39hIMLVqpSD1v670bP4MHLfVk,1507
+envers-0.4.0.dist-info/METADATA,sha256=HuiXy7cKcQvj-SzXELhrjbscThXeo8BZzpGj9pBt5Mg,789
+envers-0.4.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+envers-0.4.0.dist-info/entry_points.txt,sha256=UVR_-DH5qKO5pXkbwb_-pfUf2JSr8nrP-Q5Z_N9bnak,46
+envers-0.4.0.dist-info/RECORD,,
