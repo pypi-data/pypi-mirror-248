@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: netsplit
+Version: 0.2.0
+Summary: Netsplit can help slice and dice your IP space
+Author: Nikos Chasiotis
+Author-email: hasiotis@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: ipaddress (>=1.0.23,<2.0.0)
+Requires-Dist: rich (>=13.7.0,<14.0.0)
+Requires-Dist: tomli (>=2.0.1,<3.0.0)
+Description-Content-Type: text/markdown
+
+## Netsplit
+
+Here is a very simply network plan:
+```
+[netsplit]
+  description = "Global / Subnet"
+  network = "192.168.0.0/24"
+
+[plan]
+  options = { slots = 4 }
+  members = ["NetA", "NetB"]
+```
+We can render it with:
+```
+❯ netsplit plan -p examples/netsplit-simple.toml -r 2
+     ╷                   ╷                                    ╷               ╷
+   # │ Global / Subnet   │ Subnet                             │ idx+ext/slots │ IPs
+╶────┼───────────────────┼────────────────────────────────────┼───────────────┼─────╴
+   0 │ Global            │ ................192.168.0.0/24     │               │ 256
+   1 │ Global / NetA     │ ..................192.168.0.0/26   │   1     /   4 │  64
+   1 │ Global / NetB     │ ..................192.168.0.64/26  │   2     /   4 │  64
+   1 │ Global / RESERVED │ ..................192.168.0.128/26 │   3     /   4 │  64
+   1 │ Global / RESERVED │ ..................192.168.0.192/26 │   4     /   4 │  64
+     ╵                   ╵                                    ╵               ╵
+```
+
