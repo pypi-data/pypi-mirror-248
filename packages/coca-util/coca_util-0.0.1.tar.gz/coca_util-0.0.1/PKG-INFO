@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: coca-util
+Version: 0.0.1
+Summary: 
+Home-page: https://github.com/CocaButon60s/coca_util
+License: MIT
+Author: Hiroyuki
+Author-email: sam2kaikaramegusuri@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: websockets (>=12.0,<13.0)
+Description-Content-Type: text/markdown
+
+
