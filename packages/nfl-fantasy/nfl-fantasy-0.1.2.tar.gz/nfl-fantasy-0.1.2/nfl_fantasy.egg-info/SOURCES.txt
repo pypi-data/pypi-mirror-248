@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+nfl_fantasy.egg-info/PKG-INFO
+nfl_fantasy.egg-info/SOURCES.txt
+nfl_fantasy.egg-info/dependency_links.txt
+nfl_fantasy.egg-info/top_level.txt
+nflfantasy/__init__.py
+nflfantasy/__main__.py
+nflfantasy/_points.py
