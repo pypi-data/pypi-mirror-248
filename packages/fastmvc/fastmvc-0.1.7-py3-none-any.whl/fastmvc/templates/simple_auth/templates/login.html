@@ -1,0 +1,33 @@
+{% extends 'static_pages/templates/_base.html' %}
+
+{% block page_title %}Sign in to {% endblock %}
+{% block meta_description %}Please sign in.{% endblock %}
+
+{% block content %}
+
+<div class="row m-0 justify-content-center">
+  <div class="col-xl-4">
+    <main class="m-auto text-center p-5 mt-3" style="max-width: 500px">
+      <form  action="/user/login" method="POST">
+        <img class="mb-4" src="{{ url_for('static', path='/img/logo.svg') }}"
+             alt="" height="60">
+        <h1 class="h3 mb-4 fw-normal">Sign in to ^{proj | title}^</h1>
+
+        <div class="form-floating mb-1">
+          <input type="text" class="form-control" id="floatingInput"
+                 placeholder="Email" name="username">
+          <label for="floatingInput">Email</label>
+        </div>
+
+        <button class="w-100 btn btn-lg btn-primary mt-3"
+                type="submit" id="submit">
+            Continue
+        </button>
+      </form>
+
+    </main>
+  </div>
+</div>
+
+
+{% endblock %}
