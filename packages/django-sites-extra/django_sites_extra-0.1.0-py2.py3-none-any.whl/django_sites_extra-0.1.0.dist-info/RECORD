@@ -1,0 +1,12 @@
+sites_extra/__init__.py,sha256=gL7rhJCbzQbYLMfck4KYLxOLPaXDk9fwA4_dfNOPr2M,481
+sites_extra/admin.py,sha256=oeKq2Dp4l4TK5dQ0gyqnGnI8eZmfyM_Jp2hJwovnyy0,655
+sites_extra/apps.py,sha256=tqx5G1pnK-x74mxJXQCzN03PnqIilVP-UHbzA78xUj4,201
+sites_extra/context_processors.py,sha256=y1REy5loH8egPxL5EPBclND34cQYp_qpM2DDeT0_UmA,1124
+sites_extra/models.py,sha256=MluLM0dTqjvdldpvvfi6ii6K0VjMCLrreru0Lf5TsyE,326
+sites_extra/migrations/0001_initial.py,sha256=3ESOv6Fu80mNthML9sNuITCx9mfUYlh35rVkgLfp_vo,1830
+sites_extra/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_sites_extra-0.1.0.dist-info/LICENSE,sha256=psVxw2kjI-aseF45nSNG_Je0rkSONjnbKUtS3xSSklI,1134
+django_sites_extra-0.1.0.dist-info/METADATA,sha256=4FWt_bDX24_LoCNvKMWJ_8wPOykr2y4xgiB4bj2xqWk,4815
+django_sites_extra-0.1.0.dist-info/WHEEL,sha256=P2T-6epvtXQ2cBOE_U1K4_noqlJFN3tj15djMgEu4NM,110
+django_sites_extra-0.1.0.dist-info/top_level.txt,sha256=YgzxcGzutn3o9Dfg-5Bv8vArpOhXeY2vljHhaYrjYA8,12
+django_sites_extra-0.1.0.dist-info/RECORD,,
