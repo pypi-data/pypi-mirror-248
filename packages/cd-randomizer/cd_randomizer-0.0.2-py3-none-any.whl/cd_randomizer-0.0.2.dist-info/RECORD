@@ -1,0 +1,10 @@
+cd_randomizer/__version__.py,sha256=j7895T8JfsWQAOvxm8SAdESs5iFmIuAqKpyfjSAfKZ4,23
+cd_randomizer/rand.py,sha256=71yWUzYugSxcB9exbrYcfFCZLpcKa0A9ks52QivgyD0,2349
+cd_randomizer/examples/example_usage.py,sha256=xd-uW4gMTlHzRhO9LESZ7w26-GFVUVdH7LL32rhSnjw,632
+cd_randomizer/tests/test_rand.py,sha256=1EMqUbaei2B3IXbmszVXiQUdUFdG00NLWYMzKlE3bO4,266
+cd_randomizer-0.0.2.dist-info/LICENSE.md,sha256=xXPRashrI0cnQQXx2q4Ypb5FmNlRGcJx0D2iCSTOGls,1100
+cd_randomizer-0.0.2.dist-info/LICENSE.txt,sha256=xXPRashrI0cnQQXx2q4Ypb5FmNlRGcJx0D2iCSTOGls,1100
+cd_randomizer-0.0.2.dist-info/METADATA,sha256=RJpSVZ6j_WwnAYdup0rcB34mJ-sFrucrOcuT5EQndUU,2959
+cd_randomizer-0.0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+cd_randomizer-0.0.2.dist-info/top_level.txt,sha256=WiYCCs4eISHBNwGTwQWNXv6_zZTBjI3mFVLzIU0JZNY,14
+cd_randomizer-0.0.2.dist-info/RECORD,,
