@@ -1,0 +1,2 @@
+[console_scripts]
+cursor-demo = cursor:_test_cursor
