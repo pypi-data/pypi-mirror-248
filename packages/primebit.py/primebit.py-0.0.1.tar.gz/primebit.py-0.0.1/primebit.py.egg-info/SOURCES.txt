@@ -1,0 +1,6 @@
+README.md
+setup.py
+primebit.py.egg-info/PKG-INFO
+primebit.py.egg-info/SOURCES.txt
+primebit.py.egg-info/dependency_links.txt
+primebit.py.egg-info/top_level.txt
