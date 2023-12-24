@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+simplex.egg-info/PKG-INFO
+simplex.egg-info/SOURCES.txt
+simplex.egg-info/dependency_links.txt
+simplex.egg-info/top_level.txt
