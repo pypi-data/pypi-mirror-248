@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: httpsiam
+Version: 2
+Summary: A Number To Nid Tool Made By Siam Rahman
+Home-page: https://github.com/SIAMRAHMAN000
+Author: SIAM RAHMAN
+Author-email: s14mbro1@gmail.com
+License: MIT
+Keywords: httpsiam
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
