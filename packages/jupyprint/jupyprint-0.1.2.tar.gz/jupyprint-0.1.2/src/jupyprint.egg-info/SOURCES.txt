@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+src/jupyprint/__init__.py
+src/jupyprint/jupyprint.py
+src/jupyprint.egg-info/PKG-INFO
+src/jupyprint.egg-info/SOURCES.txt
+src/jupyprint.egg-info/dependency_links.txt
+src/jupyprint.egg-info/requires.txt
+src/jupyprint.egg-info/top_level.txt
