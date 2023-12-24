@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: EasyObj
+Version: 0.2.2
+Summary: A js-like object for python
+Requires-Python: >=3.8
+License-File: LICENSE
+
