@@ -1,0 +1,8 @@
+setup.py
+alexisomgmhshwgeneratelatex.egg-info/PKG-INFO
+alexisomgmhshwgeneratelatex.egg-info/SOURCES.txt
+alexisomgmhshwgeneratelatex.egg-info/dependency_links.txt
+alexisomgmhshwgeneratelatex.egg-info/top_level.txt
+hw_2/__init__.py
+hw_2/task1.py
+hw_2/task2.py
