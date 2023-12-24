@@ -1,0 +1,13 @@
+runtime: python311
+instance_class: F1
+entrypoint: gunicorn --workers 1 --worker-class uvicorn.workers.UvicornWorker --bind :$PORT main:app
+automatic_scaling:
+  min_instances: 1
+  max_instances: 1
+env_variables:
+  ENVIRONMENT: "prod"
+handlers:
+- url: /.*
+  secure: always
+  redirect_http_response_code: 301
+  script: auto
