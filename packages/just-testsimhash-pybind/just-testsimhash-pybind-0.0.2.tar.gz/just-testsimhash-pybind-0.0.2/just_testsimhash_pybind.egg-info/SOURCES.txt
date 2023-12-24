@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+just_testsimhash_pybind.egg-info/PKG-INFO
+just_testsimhash_pybind.egg-info/SOURCES.txt
+just_testsimhash_pybind.egg-info/dependency_links.txt
+just_testsimhash_pybind.egg-info/top_level.txt
+simhash/__init__.py
+simhash/simhash.cpp
+simhash/simhash-cpp/include/permutation.h
+simhash/simhash-cpp/include/simhash.h
+simhash/simhash-cpp/src/permutation.cpp
+simhash/simhash-cpp/src/simhash.cpp
+test/test.py
