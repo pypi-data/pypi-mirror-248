@@ -1,0 +1,9 @@
+filer_optimizer/__init__.py,sha256=L_U1Pcax9s7WNsGixiBSs_CZ61Sm-xKr3W4s2wn_Jo4,485
+filer_optimizer/apps.py,sha256=SmOOF6RRCd9OhXIi_R2SrPve6hEFPZCVPUnWXdqnJXU,274
+filer_optimizer/signals.py,sha256=fRCTGBBVUJIXCzLehNFCXN0U9IX2v_HB68iXQgcM-jI,835
+filer_optimizer/utils.py,sha256=i8o7pNgX_mC23XwC2AamfnqR8Xo6huJ7iCKnE0RGQpE,6080
+django_filer_optimizer-0.1.1.dist-info/LICENSE,sha256=psVxw2kjI-aseF45nSNG_Je0rkSONjnbKUtS3xSSklI,1134
+django_filer_optimizer-0.1.1.dist-info/METADATA,sha256=SPUnH1WFfdZCTkx5OLJQ8NsVXxgLuHaQH9G2lNXdOCE,4512
+django_filer_optimizer-0.1.1.dist-info/WHEEL,sha256=P2T-6epvtXQ2cBOE_U1K4_noqlJFN3tj15djMgEu4NM,110
+django_filer_optimizer-0.1.1.dist-info/top_level.txt,sha256=dJ72E4u1OWL4SInJQe4GJWdiyx1sGCVF0N7i8KDWjP4,16
+django_filer_optimizer-0.1.1.dist-info/RECORD,,

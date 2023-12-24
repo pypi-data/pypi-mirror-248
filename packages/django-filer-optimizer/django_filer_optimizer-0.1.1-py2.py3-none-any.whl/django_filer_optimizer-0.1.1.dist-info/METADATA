@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: django-filer-optimizer
+Version: 0.1.1
+Summary: Django application to extend the "django-filer" application with extra utils like.
+Home-page: https://github.com/DLRSP/django-filer-optimizer
+Author: DLRSP
+Author-email: dlrsp.dev@gmail.com
+License: MIT License
+Keywords: django
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django >=3.2
+Provides-Extra: linting
+Requires-Dist: flake8 ; extra == 'linting'
+Requires-Dist: pylint ; extra == 'linting'
+Provides-Extra: testing
+Requires-Dist: coverage ; extra == 'testing'
+Requires-Dist: codecov ; extra == 'testing'
+
+# django-filer-optimizer [![PyPi license](https://img.shields.io/pypi/l/django-filer-optimizer.svg)](https://pypi.python.org/pypi/django-filer-optimizer)
+
+[![PyPi status](https://img.shields.io/pypi/status/django-filer-optimizer.svg)](https://pypi.python.org/pypi/django-filer-optimizer)
+[![PyPi version](https://img.shields.io/pypi/v/django-filer-optimizer.svg)](https://pypi.python.org/pypi/django-filer-optimizer)
+[![PyPi python version](https://img.shields.io/pypi/pyversions/django-filer-optimizer.svg)](https://pypi.python.org/pypi/django-filer-optimizer)
+[![PyPi downloads](https://img.shields.io/pypi/dm/django-filer-optimizer.svg)](https://pypi.python.org/pypi/django-filer-optimizer)
+[![PyPi downloads](https://img.shields.io/pypi/dw/django-filer-optimizer.svg)](https://pypi.python.org/pypi/django-filer-optimizer)
+[![PyPi downloads](https://img.shields.io/pypi/dd/django-filer-optimizer.svg)](https://pypi.python.org/pypi/django-filer-optimizer)
+
+## GitHub ![GitHub release](https://img.shields.io/github/tag/DLRSP/django-filer-optimizer.svg) ![GitHub release](https://img.shields.io/github/release/DLRSP/django-filer-optimizer.svg)
+
+## Test [![codecov.io](https://codecov.io/github/DLRSP/django-filer-optimizer/coverage.svg?branch=main)](https://codecov.io/github/DLRSP/django-filer-optimizer?branch=main) [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/DLRSP/django-filer-optimizer/main.svg)](https://results.pre-commit.ci/latest/github/DLRSP/django-filer-optimizer/main) [![gitthub.com](https://github.com/DLRSP/django-filer-optimizer/actions/workflows/ci.yaml/badge.svg)](https://github.com/DLRSP/django-filer-optimizer/actions/workflows/ci.yaml)
+
+## Check Demo Project
+* Check the demo repo on [GitHub](https://github.com/DLRSP/example/tree/django-filer-optimizer)
+
+## Requirements
+-   Python 3.8+ supported.
+-   Django 3.2+ supported.
+
+## Setup
+1. Install from **pip**:
+    ```shell
+    pip install django-filer-optimizer
+    ```
+2. Modify `settings.py` by adding the app to `INSTALLED_APPS`:
+    ```python
+    INSTALLED_APPS = [
+        # ...
+        "filer_optimizer",
+        # ...
+    ]
+    ```
+3. Finally, modify your project `urls.py` with handlers for all errors:
+    ```python
+    # ...other imports...
+    
+    urlpatterns = [
+        # ...other urls...
+    ]
+    ```
+4. Execute Django's command `migrate` inside your project's root:
+    ```shell
+    python manage.py migrate
+    Running migrations:
+      Applying filer_optimizer.0001_initial... OK
+    ```
+
+## Run Example Project
+
+```shell
+git clone --depth=50 --branch=django-filer-optimizer https://github.com/DLRSP/example.git DLRSP/example
+cd DLRSP/example
+python manage.py runserver
+```
+
+Now browser the app @ http://127.0.0.1:8000
