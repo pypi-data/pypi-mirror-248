@@ -1,0 +1,17 @@
+syncmodels/__init__.py,sha256=UTWcAKIum2BWhJtnPPI30304PxFVZxwT7qsfih8dNMo,140
+syncmodels/helpers.py,sha256=n-NWprHyIrqg7s-N6Bh6t05sawbAH-i10C4WAFaN3y4,5708
+syncmodels/mapper.py,sha256=kGd3kqsFq2QASEd-zOEMJKXho-3XaqAcNXxZ1NLWVG4,2163
+syncmodels/model.py,sha256=FwEHVKCG_mENZDhZOl12I58SnwXhCV2R75vRzA41RBc,155
+syncmodels/syncmodels.py,sha256=3psIvDIAcCm_MTyT4z7SV9TefmK17mG5dpRbQ_UFRW4,555
+syncmodels/cli/__init__.py,sha256=ExMMojAs6ejj-guTvemMIo9gLTQrezwkvNhlH9SkNjM,1147
+syncmodels/cli/config.py,sha256=1AgGyGvpxg2oNMWRZ1RTldKynqd7x_7jBUV-qLXnknA,3710
+syncmodels/cli/main.py,sha256=27Uv6-H9yavr7WJjFmTDJKL-i_rVScpkyXajhQq2kFA,1563
+syncmodels/cli/wingdbstub.py,sha256=yii9lEoHdLvi-kF23DmFvVMfPoAhtrGUyJAwNzAcC0A,17377
+syncmodels/cli/workspace.py,sha256=v-SgTszyIkM3d8B_953ux_OjNOoTRHhoOWe8y3TJ7p8,2493
+syncmodels-0.1.1.dist-info/AUTHORS.rst,sha256=3ZPoqg8Aav8DSYKd0fwcwn4_5HwSiMLart0E5Un00-U,168
+syncmodels-0.1.1.dist-info/LICENSE,sha256=uzMOYtIiUsnsD0xHJR7aJWJ4v_bvan0kTnvufy5eNoA,1075
+syncmodels-0.1.1.dist-info/METADATA,sha256=cS4F5ANsSdw5vL5bR2TUyLe42Jkxzv8cWAT-eo_BBh0,1955
+syncmodels-0.1.1.dist-info/WHEEL,sha256=P2T-6epvtXQ2cBOE_U1K4_noqlJFN3tj15djMgEu4NM,110
+syncmodels-0.1.1.dist-info/entry_points.txt,sha256=dMnigjZsHMxTwXiiZyBZdBbMYE0-hY3L5cG15EcDAzw,51
+syncmodels-0.1.1.dist-info/top_level.txt,sha256=2DfQ9NuAhKMjY3BvQGVBA7GfqTm7EoHNbaehSUiqiHQ,11
+syncmodels-0.1.1.dist-info/RECORD,,
