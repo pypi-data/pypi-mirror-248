@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+edensa/__init__.py
+edensa/pdf2image.py
+edensa/pdf2text.py
+edensapdf.egg-info/PKG-INFO
+edensapdf.egg-info/SOURCES.txt
+edensapdf.egg-info/dependency_links.txt
+edensapdf.egg-info/top_level.txt
