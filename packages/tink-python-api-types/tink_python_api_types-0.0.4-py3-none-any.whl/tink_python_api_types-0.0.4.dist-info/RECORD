@@ -1,0 +1,9 @@
+tink_python_api_types/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tink_python_api_types/account.py,sha256=CR-lZS7_dIBTwojnKKuSl8Y63GrPJYRl6pLAeL-YgMs,816
+tink_python_api_types/common.py,sha256=t_qJimAQ1soLPW9F_nE6EbvIhdrVBk8l_XxC3flquGo,175
+tink_python_api_types/transaction.py,sha256=bIeaKHRsirs5pequ8f_TZVRG3coSoeRhDkmYMM9emYE,819
+tink_python_api_types-0.0.4.dist-info/LICENSE,sha256=vnqJLY-Rt0SgThqZnZMDaTQ4pM-Vw5R_bHG7Vv8VvyI,1088
+tink_python_api_types-0.0.4.dist-info/METADATA,sha256=gJlE-hg5mc1dAwfE5AQ4J_2N6sl3V4lRPZFCq3Gx8vk,2597
+tink_python_api_types-0.0.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+tink_python_api_types-0.0.4.dist-info/top_level.txt,sha256=AZSuK2mVFpHmUQSK4tpWefcD8YSwdQrddBtd6l3kxUU,22
+tink_python_api_types-0.0.4.dist-info/RECORD,,
