@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "fooocus"
+version = "0.1.1"
+description = ""
+authors = []
+readme = "readme.md"
+license = "GPL-3.0-only"
+packages = [
+    { include = "modules", from = "." },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[project.urls]
+"Homepage" = "https://github.com/lllyasviel/Fooocus"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
