@@ -1,0 +1,13 @@
+openai
+pandas
+PyMuPDF
+pytesseract
+textstat
+Pillow
+gensim
+nltk
+summarizer
+flair
+textblob
+scikit-learn
+pandasql
