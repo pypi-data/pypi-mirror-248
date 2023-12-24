@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: tarda
+Version: 0.0.5
+Summary: A library for collection of IDS & robust-IDS and tools for evaluating them
+Home-page: https://github.com/spg-iitd/tardigrade
+Author: Swain Subrat Kumar
+Author-email: mailofswainsubrat@gmail.com
+License: MIT
+Keywords: ids adversarial network nids
+License-File: LICENSE
+Requires-Dist: scapy
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: tqdm
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: torchsummary
+Requires-Dist: torchattacks
+Requires-Dist: torchatta
+
+# tardigrade
+Robust IDS for IoT
+
+
+
+Change Log
+==========
+
+0.0.1 (16/04/2023)
+------------------
+- Initialization
