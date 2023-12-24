@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: py-debugs
+Version: 0.1.1
+Summary: This is the simplest module for logging functions.
+Home-page: https://github.io/DDSurok/py-debug
+Author: DDSurok
+Author-email: ddsurok@gmail.com
+Project-URL: GitHub, https://github.io/DDSurok/py-debug
+Keywords: logging log debug
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# py-debugs
+Debug utils for Python
+
+## Install
+    pip install py-debugs
+
+## Using
+    import py_debug as d
+    import logging  # optional
+
+    
+    @d.call_counter(mute_after=1, log_every=100)
+    def counter(i):
+        pass
+    
+    
+    if __name__ == '__main__':
+        for i in range(10000):
+            counter(i)
