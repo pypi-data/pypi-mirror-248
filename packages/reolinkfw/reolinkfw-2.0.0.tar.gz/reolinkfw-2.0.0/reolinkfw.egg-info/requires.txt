@@ -1,0 +1,10 @@
+aiohttp
+lxml>=4.9.2
+lz4
+pakler~=0.2.0
+pybcl~=1.0.0
+pycramfs~=1.1.0
+pyfdt>=0.3
+PySquashfsImage~=0.9.0
+python-lzo~=1.15
+ubi-reader!=0.8.7,!=0.8.8
