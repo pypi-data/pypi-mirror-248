@@ -1,0 +1,7 @@
+setup.py
+PhysicsSimulatorOT/__init__.py
+physics_simulator.egg-info/PKG-INFO
+physics_simulator.egg-info/SOURCES.txt
+physics_simulator.egg-info/dependency_links.txt
+physics_simulator.egg-info/entry_points.txt
+physics_simulator.egg-info/top_level.txt

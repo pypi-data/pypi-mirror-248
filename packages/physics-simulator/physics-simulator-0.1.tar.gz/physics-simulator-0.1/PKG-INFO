@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: physics-simulator
+Version: 0.1
+Summary: A simple physics simulator module for Python
+Author: Omer Tukenmez
+Author-email: omertukenmez77@gmail.com
+Keywords: physics simulation
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

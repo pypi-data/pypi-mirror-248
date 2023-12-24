@@ -1,0 +1,2 @@
+[console_scripts]
+physics-simulator = physics_simulator:main
