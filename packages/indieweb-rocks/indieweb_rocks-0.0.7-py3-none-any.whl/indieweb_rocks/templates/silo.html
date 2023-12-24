@@ -1,0 +1,32 @@
+$def with (url, site)
+$var title: The $url.host silo
+
+<style>
+.urlbox {
+  line-height: 1.5; }
+.urlbox a {
+  color: #000;
+  display: block;
+  text-decoration: none; }
+.urlbox a:hover em {
+  text-decoration: underline; }
+.urlbox a img {
+  position: relative;
+  top: .1em; }
+.urlbox a small {
+  position: relative;
+  top: -.2em; }
+</style>
+<p class=urlbox><a href=$url>
+$if site["title"]:
+    <em>$site["title"]</em>
+    <img src=/sites/$url.minimized/icon.png style=height:1em;width:1em>
+$if site["hsts"]:
+    $ style = "color:green"
+$elif url.scheme == "https":
+    $ style = "color:green"
+$else:
+    $ style = "color:red"
+<small style=$style>$url</small>
+<img src=/sites/$(url.minimized)/screenshot.png width=100%>
+</a></p>

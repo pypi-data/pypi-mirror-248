@@ -1,0 +1,51 @@
+$def with (resource)
+<!doctype html>
+<html lang=en-us class=dark>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="initial-scale=1.0,user-scalable=no,\
+maximum-scale=1,width=device-width">
+<meta name=apple-mobile-web-app-capable content=yes>
+<meta name=apple-mobile-web-app-status-bar-style content=black-translucent>
+<title>
+$if "title" in resource:
+    $resource.title &mdash;
+IndieWeb Validator</title>
+<link rel=stylesheet href=/static/web.css>
+<link rel=stylesheet href=/static/screen.css>
+<link rel=icon href=/static/favicon.ico>
+$if not isinstance(resource, str) and "head" in resource:
+    $:resource.head()
+</head>
+<body
+$if "body_classes" in resource:
+     class="$' '.join(resource.body_classes)"\
+>
+
+$# <div style=text-align:right>
+$# $if tx.user.session:
+$#     $if tx.user.is_owner:
+$#         <form method=post action=/owner/sign-out>
+$#     $else:
+$#         <form method=post action=/guests/sign-out>
+$#     $if tx.user.session["uid"][0] == "/":
+$#         <a href=/owner>Site Owner</a>
+$#     $else:
+$#         <a href=/$uri(tx.user.session["uid"][0]).minimized>$tx.user.session["name"][0]</a>
+$#     <br><button>Sign Out</button>
+$#     </form>
+$# $else:
+$#     <a href=/guests><button>Sign In</button></a>
+$# </div>
+
+$if "title" in resource:
+    <nav><a href=/ rel=home><img src=/static/favicon.ico> IndieWeb Validator</a></nav>
+
+<article>
+$:resource
+</article>
+
+<footer><p><a href=/system>System Details</a></p></footer>
+
+</body>
+</html>

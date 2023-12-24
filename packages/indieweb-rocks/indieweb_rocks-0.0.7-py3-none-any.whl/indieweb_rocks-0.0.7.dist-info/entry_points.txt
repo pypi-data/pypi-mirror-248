@@ -1,0 +1,3 @@
+[websites]
+indieweb_rocks=indieweb_rocks.__web__:app
+

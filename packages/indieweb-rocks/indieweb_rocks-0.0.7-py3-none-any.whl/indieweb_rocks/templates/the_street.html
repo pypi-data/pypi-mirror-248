@@ -1,0 +1,77 @@
+$def with (domains, subdomains)
+$var title: The Street
+$var body_classes = ["widescreen", "notoolbars"]
+
+<script src=https://unpkg.com/statebus@7/statebus.js></script>
+<script src=https://unpkg.com/statebus@7/client-library.js></script>
+<script src=https://unpkg.com/braidify/braidify-client.js></script>
+<script>
+bus(() => {
+  backgroundColor = bus.state['https://ragt.ag/manifest.json'].background_color
+  themeColor = bus.state['https://ragt.ag/manifest.json'].theme_color
+  console.log("Updating background: ", backgroundColor)
+  document.getElementById("21FFF").style.backgroundColor = backgroundColor
+  document.getElementById("21FFF").querySelector(".theme").style.backgroundColor = themeColor
+})
+</script>
+
+<style>
+div#street-top {
+  background-color:
+  border-bottom: 2em solid #333; }
+div#street-bottom {
+  border-bottom: 2em solid #333; }
+div.street {
+  overflow-y: auto;
+  padding-bottom: 2em;
+  white-space: nowrap; }
+div.street div {
+  display: inline-block;
+  margin: 1em 0;
+  padding: 1em;
+  text-align: center;
+  vertical-align: bottom; }
+div.address {
+  background-color: #ccc;
+  width: 20em; }
+div.express-port {
+  background-color: #999;
+  font-variant: small-caps;
+  width: 12em; }
+</style>
+
+<div style=text-align:center;>
+<h1>The Street</h1>
+<p>The known IndieWeb sorted by <code>sha256(domain)</code>. See <a
+href=https://en.wikipedia.org/wiki/Snow_Crash#Metaverse>Snow Crash's Metaverse</a>.</p>
+</div>
+
+$ last_port = 1
+<div class=street>
+$for hash, domain in domains:
+    $ new_port = int(hash[:2], 16) + 1
+    $while new_port > last_port:
+        $ _port_hex = hex(last_port).partition("x")[2]
+        $ port_hex = f"{_port_hex:0>2}".upper()
+        <div id=$port_hex class=express-port>Express Port <code>$port_hex</code></div>
+        $ last_port += 1
+    $ height = 16.5 + int(math.log(len(subdomains[domain])+1) * 3)
+    <div id=$hash[:5] class=address style="height:$(height)em;white-space:normal;">
+    <div style=margin:0;padding:0;max-height:14em;overflow:auto><img
+    src=/sites/$domain/site.png style=width:100%></div>
+    <div class=theme style=margin:0;padding:0>
+    <a href=/$domain>$domain</a><br>
+    $if subdomains[domain]:
+        <small>
+        $for subdomain in subdomains[domain][:20]:
+            <a href=/$subdomain.$domain>$subdomain</a>\
+            $if not loop.last:
+                ,
+        $if len(subdomains[domain]) > 20:
+            &hellip;
+        </small><br>
+    <a href=#$hash[:5]><code style=font-size:.75em>$hash[:5]</code></a>
+    </div>
+    </div>
+</div>
+<div id=street></div>

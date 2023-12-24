@@ -1,0 +1,22 @@
+$def with (site, issues)
+$var title: Accessibility issues for $site
+$var body_classes = ["widescreen"]
+
+<p style=text-align:center><a href=https://www.w3.org/WAI/WCAG2AA-Conformance>Web
+Content Accessibility Guidelines (WCAG) 2 Level AA Conformance</a></p>
+
+<div style="display:grid;grid-template-columns:60% 40%;height:40em">
+<div style="border:0;height:40em;overflow-y:auto;width:100%">
+    <img src=/sites/$site/fullpage.png width=100%>
+</div>
+<div style="height:40em;overflow-y:auto;padding:">
+$for issue in issues:
+    $ title = issue.pop("code")
+    $ code = title.split(".")[4]
+    <h5>$title.removeprefix("WCAG2AA.")</h5>
+    <p>$issue.pop("message")&nbsp;<small><a
+    href=//www.w3.org/TR/WCAG20-TECHS/$code>read&nbsp;more</a></small></p>
+    <p><small><code>$issue.pop("selector")</code></p>
+    <p><code>$issue.pop("context")</code></small></p>
+</div>
+</div>

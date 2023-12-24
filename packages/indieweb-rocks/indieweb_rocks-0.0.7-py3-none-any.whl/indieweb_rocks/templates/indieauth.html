@@ -1,0 +1,17 @@
+$def with (sites)
+$var title: IndieAuth
+
+<h1>IndieAuth</h1>
+
+<p>IndieAuth is a federated login protocol for Web sign-in, enabling users
+to use their own domain to sign in to other sites and services. <a
+href=//indieweb.org/indieauth>wiki</a> <a href=//indieauth.spec.indieweb.org>spec</a> <a href=/tools/indieauth>implement</a></p>
+
+<h3>Personal websites using IndieAuth</h3>
+<ul>
+$for site in sites:
+    $ details = site["details"]
+    $if indieauth := details.get("indieauth"):
+        $ domain = details["domain"]["name"]
+        <li><a href=/$domain>$domain</a> <pre><small>$pformat(indieauth)</small></pre></li>
+</ul>
