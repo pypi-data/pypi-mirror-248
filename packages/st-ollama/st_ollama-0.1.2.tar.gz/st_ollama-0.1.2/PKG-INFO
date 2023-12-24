@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: st_ollama
+Version: 0.1.2
+Summary: A Streamlit chatbot app integrating Ollama LLMs
+Home-page: https://github.com/iamaziz/st_ollama
+Author: Aziz Alto
+Author-email: iamaziz.alto@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: streamlit
+Requires-Dist: llama_index
+
+# Ollachat 🚀
+
+> **TL;DR** A minimal Streamlit Chatbot with Ollama models
+
+A Streamlit chatbot app that integrates with the Ollama LLMs. Includes Chat history; and each model has its own log history.
+
+
+## Getting started
+
+
+1) Install the pacakge (in virtualenv recommended)
+
+```bash
+pip install st_ollama
+```
+
+2) Start the app
+
+```bash
+ollachat
+```
+
+### Notes
+
+- [Ollama](http://ollama.ai/) must be installed.
+- Supports macOS and Linux.
