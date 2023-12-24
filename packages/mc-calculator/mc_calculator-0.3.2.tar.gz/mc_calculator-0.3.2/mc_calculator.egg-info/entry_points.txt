@@ -1,0 +1,2 @@
+[console_scripts]
+mc-calculator = mc_calculator.__main__:main
