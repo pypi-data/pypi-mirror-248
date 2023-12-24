@@ -1,0 +1,1 @@
+from .main import hello, print_ln
