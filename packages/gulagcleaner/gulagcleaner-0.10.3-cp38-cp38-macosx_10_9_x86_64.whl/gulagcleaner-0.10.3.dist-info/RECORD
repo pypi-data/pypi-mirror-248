@@ -1,0 +1,12 @@
+gulagcleaner/clean.py,sha256=lk-otsT6i-JPVmYGYUlGD2NkcHvVmIh9bPb44Ylz0sw,1191
+gulagcleaner/metadata.py,sha256=ws0zPBXIRw6YbibJzodOlZ2D1AWjB7cMVFyLN5WObX8,941
+gulagcleaner/command_line.py,sha256=eXq0sq9qBHqDHJv1Kd-GBZQkrFa7gU72ax89QH9El2I,4285
+gulagcleaner/_lib.cpython-38-darwin.so,sha256=ckpBtubj6gCHNf0LFbci7O1ePdFSCS0ZcQcZ6tauSGo,1102312
+gulagcleaner/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gulagcleaner/decrypt.py,sha256=iWDF8UAuGs2XpXIquVWHG2Vd1O5SSRA3iuIiVDh7LQA,451
+gulagcleaner-0.10.3.dist-info/RECORD,,
+gulagcleaner-0.10.3.dist-info/LICENSE,sha256=51HPitbZtRFO9YgvLbVskUiOBGUiB8ImK2RyTGPF_38,70297
+gulagcleaner-0.10.3.dist-info/WHEEL,sha256=wt_0D7ETubDJ-d2If9gFyi_RXCxFIy3PzOgckP8MsJY,109
+gulagcleaner-0.10.3.dist-info/entry_points.txt,sha256=eQusLRQShH5pUIaZot3vxhJUmIl3WZ3Od3jcHe50jAw,64
+gulagcleaner-0.10.3.dist-info/top_level.txt,sha256=fUsQ7UtKqrhW4ZfKQ-CsBR6X7jaVInjxVObxxpI_HVc,13
+gulagcleaner-0.10.3.dist-info/METADATA,sha256=_sb6vwopq3tPmXpCzDcwFM0jbuVZbOtwKKEkncRv55M,84667
