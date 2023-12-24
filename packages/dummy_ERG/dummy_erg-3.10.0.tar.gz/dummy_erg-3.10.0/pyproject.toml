@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "dummy_ERG"
+version = "3.10.0"
+description = ""
+authors = ["EbonyGunwhy <e.gunwhy@sheffield.ac.uk>"]
+readme = "README.md"
+packages = [{include = "dummy_ERG", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "1.22.4"
+
+[tool.poetry.group.dev.dependencies]
+bumpver = "^2023.1129"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^5.2"
+
+[tool.poetry.group.docs.dependencies]
+sphinx = "4.5.0"
+matplotlib = "^3.8.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.bumpver]
+current_version = "3.10.0"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "bump version {old_version} -> {new_version}"
+tag_message = "{new_version}"
+tag_scope = "default"
+pre_commit_hook = ""
+post_commit_hook = ""
+commit = true
+tag = true
+push = true
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+    'current_version = "{version}"',
+    'version = "{version}"'
+]
+"src/dummy_ERG/__init__.py" = ["{version}"]
+"tests/test_dummy_ERG.py" = ["{version}"]
+#"docs/source/conf.py" = ['release = "{version}"']
