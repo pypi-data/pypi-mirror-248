@@ -1,0 +1,14 @@
+p9fs/__init__.py,sha256=8zyzqF1VtD17myihZsn4rPhum_BzRDeT8H7rXKXv63g,15830
+py9p/__init__.py,sha256=L4m9YHKVg2-8uZvOGUkumcE8xPTFmx4IO-PR7McqYyw,1103
+py9p/__main__.py,sha256=wvfbhMyT9kFPnxjO4wBJrPFWMql6yAryN_EyRMGSSPA,12664
+py9p/fid.py,sha256=HrIWCaiLCSJZTqkkMIfOXa6AnpeT_iLStJLWBkyktSg,1436
+py9p/fuse9p.py,sha256=akoFYpDZ-URoSagQ2KpwGgjBSISLmuEA4l00sgAqcow,19757
+py9p/pki.py,sha256=0euYM4MKHrxdkFMp5M_R9sVxhwMTDqnOQu9wGlBcgac,12486
+py9p/py9p.py,sha256=9NeDGEU5L8oHRYxcd6a59t5zWHET3UDZro28j9UwZqM,59944
+py9p/utils.py,sha256=tXbfzC-Dxz6X9v9LqLG3OEO7oVbjccJL6TWAJ1XXjW4,241
+p9fs-0.0.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+p9fs-0.0.4.dist-info/METADATA,sha256=WUFW3mTP-4ioR_nvw_EoRam_dc-d8JPiXzeImTbcOeE,14579
+p9fs-0.0.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+p9fs-0.0.4.dist-info/entry_points.txt,sha256=ZxNwWuG8Og_8_31rav2OULC3liB-iIGllJvpX27QMjA,38
+p9fs-0.0.4.dist-info/top_level.txt,sha256=h90H7Loc07pA8L141aXjLmyHZqJk6IsXPTcbgMCelzo,10
+p9fs-0.0.4.dist-info/RECORD,,

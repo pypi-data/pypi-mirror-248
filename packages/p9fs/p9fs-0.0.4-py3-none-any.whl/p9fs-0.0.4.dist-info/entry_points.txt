@@ -1,0 +1,2 @@
+[fsspec.specs]
+p9 = p9fs.P9FileSystem
