@@ -1,0 +1,6 @@
+aiohttp
+pycryptodome
+
+[tests]
+pytest
+pytest-asyncio
