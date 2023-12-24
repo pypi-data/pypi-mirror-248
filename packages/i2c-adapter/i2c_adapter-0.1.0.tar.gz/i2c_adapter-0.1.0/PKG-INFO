@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: i2c_adapter
+Version: 0.1.0
+Summary: An easy to use USB to I2C adapter using a Raspberry Pico.
+Project-URL: Homepage, https://github.com/zapta/i2c_adapter
+Project-URL: Bug Tracker, https://github.com/zapta/i2c_adapter/issues
+Author-email: Zapta <zapta@zapta.com>
+License-File: LICENSE
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: pyserial>=3.5
+Description-Content-Type: text/markdown
+
+# Simple I2C Adapter
+A simple USB to I2C adapter that uses Raspberry Pico board and provies an easy to use Python API.
+
+Status: Fully functional and is used by the [GreenPak driver](https://pypi.org/project/greenpak).
+
+Design goals:
+* Provides USB to I2C master functionality.
+* Supports Windows/Mac/Linux.
+* Uses of-the-shelf inexpensive hardware (Raspberry Pico).
+* No driver installation required (emulates a serial port).
+* Provides an easy to use Pyton API.
+* Can be easyly modified or adapted to new hardware.
+
+example:
+
+```python
+from i2c_adapter import I2cAdapter
+
+i2c = i2c.I2cAdapter(port="COM7")
+device = 0x08
+assert i2c.write(device, bytearray([0]))
+data = i2c.read(device,  20)
+print(data)
+```
