@@ -1,0 +1,8 @@
+moat/kv/ha/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+moat/kv/ha/_config.yaml,sha256=-e1ITMNWxWYk2bhZ6TyjahCSIswQEXwgOrXPHGuPuGw,51
+moat/kv/ha/_main.py,sha256=dWM6HAfJWC0ZFFc4WYu0_oMXBK0ZQhixZeAizgmvT7A,13144
+moat/kv/ha/schema.yaml,sha256=KHR54E9Cg6Y26P1l3NeQ5C8FNf2EQX_MlCdhbuUDEZ8,2180
+moat_kv_ha-0.5.3.dist-info/METADATA,sha256=MoI-ZC56vUEORh_fgAPueEaoEzdmAUhMF-RkfvufUfc,4343
+moat_kv_ha-0.5.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+moat_kv_ha-0.5.3.dist-info/top_level.txt,sha256=pcs9fl5w5AB5GVi4SvBqIVmFrkRwQkVw_dEvW0Q0cSA,5
+moat_kv_ha-0.5.3.dist-info/RECORD,,
