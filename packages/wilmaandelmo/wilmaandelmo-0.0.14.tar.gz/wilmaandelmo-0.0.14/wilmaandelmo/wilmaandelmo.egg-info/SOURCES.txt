@@ -1,0 +1,6 @@
+README.md
+setup.py
+wilmaandelmo/wilmaandelmo.egg-info/PKG-INFO
+wilmaandelmo/wilmaandelmo.egg-info/SOURCES.txt
+wilmaandelmo/wilmaandelmo.egg-info/dependency_links.txt
+wilmaandelmo/wilmaandelmo.egg-info/top_level.txt
