@@ -1,0 +1,17 @@
+setup.py
+oyl/__init__.py
+oyl/algorithm.py
+oyl/drawings.py
+oyl/infos.py
+oyl/scores.py
+oyl/utils.py
+oyl.egg-info/PKG-INFO
+oyl.egg-info/SOURCES.txt
+oyl.egg-info/dependency_links.txt
+oyl.egg-info/requires.txt
+oyl.egg-info/top_level.txt
+oyl/nn/CNN.py
+oyl/nn/GA_MLP.py
+oyl/nn/GA_RBF.py
+oyl/nn/RBF.py
+oyl/nn/__init__.py
