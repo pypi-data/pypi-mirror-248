@@ -1,0 +1,5 @@
+websockets
+nest-asyncio
+sentry-sdk
+pydub
+librosa
