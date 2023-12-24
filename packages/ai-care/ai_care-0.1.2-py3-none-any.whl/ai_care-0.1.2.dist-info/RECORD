@@ -1,0 +1,12 @@
+ai_care/__init__.py,sha256=9FhV6MSfftnGGsaTuYIzus0rwz_VIpvVIIA0DAieMns,201
+ai_care/_version.py,sha256=4d955YGgsZqhBYTOnTh7tTmFGju1h2nN-5S545UDtYc,44
+ai_care/abilities.py,sha256=q3NIi_w7R2zFpf-zonzDUCFi6PGpX8cMMXnLAuQUzAM,10302
+ai_care/ai_care.py,sha256=X7JKsgmuHpY32gnCSUZW9Y_oa0rHlxUm2sLgQatgpmU,13176
+ai_care/choice_execute.py,sha256=NfHIMtQWrC6wKotdaAnQJIKZVxGWkTJw69vQPcu_-80,4156
+ai_care/parse_response.py,sha256=Rm8kLHORdkNujgbJP2pmwnjhaKcYOKZ2DZrInOGYLEw,3848
+ai_care/render_prompt.py,sha256=zbOLJDXMaAdr35nM--5Jsqnk3PM-Bv5DjHaYWnkzsSc,6093
+ai_care-0.1.2.dist-info/LICENSE,sha256=qvlnteELlpBudFDhJqPQVdlZb-Dxru4NH5HkvVvGQmQ,1067
+ai_care-0.1.2.dist-info/METADATA,sha256=XP2QHMf1AlZFprflrmthccx7U6QfjylscD8xlvg2Dm0,5914
+ai_care-0.1.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+ai_care-0.1.2.dist-info/top_level.txt,sha256=NDf7Z_m2DV4aEkYFJjEVlDyhUcw-hz7cIYiWHHxbsa4,8
+ai_care-0.1.2.dist-info/RECORD,,
