@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/go_arbitor.py
+src/go_board.py
+src/lets_go.py
+src/lets_go.egg-info/PKG-INFO
+src/lets_go.egg-info/SOURCES.txt
+src/lets_go.egg-info/dependency_links.txt
+src/lets_go.egg-info/entry_points.txt
+src/lets_go.egg-info/requires.txt
+src/lets_go.egg-info/top_level.txt
