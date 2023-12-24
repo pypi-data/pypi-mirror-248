@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: port_scanner_fokd
+Version: 0.0.1
+Summary: A simple port scanner to return a list of open ports.
+Project-URL: Homepage, https://github.com/f-okd/port-scanner-fokd
+Project-URL: Issues, https://github.com/f-okd/port-scanner-fokd/issues
+Author-email: Faye Okude <fayeokude.02@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Simple port scanner
+
+"Scan" function type signature:
+
+```
+def scan(target: str, start=0, stop=1023, threads=500) -> List[int]:
+```
+
+By default you only need to enter a target IP address and it will scan the 1000 most frequently used ports/system ports.
