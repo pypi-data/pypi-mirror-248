@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "helpme171"
+version = "0.0.3"
+description = "A package with functions I use often."
+readme = {file = "README.md", content-type = "text/markdown"}
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+numpy = ">=1.22.0"
+matplotlib = ">=3.5.0"
+keras = ">=2.7.0"
+ipykernel = ">=6.27.1"
+
+
+[tool.poetry.dev-dependencies]
+pytest = ">=7.5.0"
+black = ">=21.12b0"
+sphinx = ">=4.5.0"
