@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.py
+TurboType/TurboType.py
+TurboType/__init__.py
+TurboType.egg-info/PKG-INFO
+TurboType.egg-info/SOURCES.txt
+TurboType.egg-info/dependency_links.txt
+TurboType.egg-info/entry_points.txt
+TurboType.egg-info/not-zip-safe
+TurboType.egg-info/requires.txt
+TurboType.egg-info/top_level.txt
+TurboType/data/font.ttf
+TurboType/data/words.txt
