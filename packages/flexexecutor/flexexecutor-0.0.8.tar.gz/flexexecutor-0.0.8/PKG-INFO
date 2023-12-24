@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: flexexecutor
+Version: 0.0.8
+Summary: Executors for both async and sync functions and automatically scales the number of workers
+Author: leavers
+License: MIT
+Project-URL: homepage, https://github.com/leavers/flexexecutor
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: autoflake; extra == "dev"
+Requires-Dist: bumpver; extra == "dev"
+Requires-Dist: coverage[toml]; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: nox; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-asyncio; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: pytest-timeout; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+Provides-Extra: pylsp
+Requires-Dist: python-lsp-server[all]; extra == "pylsp"
+Requires-Dist: pylsp-mypy; extra == "pylsp"
+Requires-Dist: pylsp-rope; extra == "pylsp"
+Requires-Dist: python-lsp-ruff; extra == "pylsp"
+Requires-Dist: pyls-isort; extra == "pylsp"
+Requires-Dist: python-lsp-black; extra == "pylsp"
+
+# flexexecutor
