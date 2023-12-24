@@ -1,0 +1,8 @@
+.direnv
+target
+*.dot
+.venv
+.jupyter
+__pycache__
+*.so
+dist
