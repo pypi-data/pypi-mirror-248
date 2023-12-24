@@ -1,0 +1,1 @@
+from .tokenization_internlm import InternLMTokenizer
