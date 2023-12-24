@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+envrx/__init__.py
+envrx/envrx.py
+envrx/exceptions.py
+envrx/utils.py
+envrx.egg-info/PKG-INFO
+envrx.egg-info/SOURCES.txt
+envrx.egg-info/dependency_links.txt
+envrx.egg-info/top_level.txt
