@@ -1,0 +1,9 @@
+setuptools>=68.0.0
+openai>=0.27.9
+PyYAML>=6.0
+httpx>=0.24.1
+beautifulsoup4>=4.12.2
+typing>=3.7.4.3
+validators>=0.21.2
+discord.py>=2.3
+tiktoken>=0.4

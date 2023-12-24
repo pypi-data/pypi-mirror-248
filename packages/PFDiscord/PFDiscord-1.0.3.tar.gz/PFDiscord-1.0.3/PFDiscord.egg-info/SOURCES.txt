@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+PFDiscord/PFDiscord.py
+PFDiscord/__init__.py
+PFDiscord/conversation.py
+PFDiscord/initialize.py
+PFDiscord/message_handlers.py
+PFDiscord/tokenGPT.py
+PFDiscord/utils.py
+PFDiscord/web_utils.py
+PFDiscord.egg-info/PKG-INFO
+PFDiscord.egg-info/SOURCES.txt
+PFDiscord.egg-info/dependency_links.txt
+PFDiscord.egg-info/requires.txt
+PFDiscord.egg-info/top_level.txt
+tests/test_web_utils.py
