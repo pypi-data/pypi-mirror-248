@@ -1,0 +1,2 @@
+[console_scripts]
+xxxxxxxxxx = Python.main:main_function
