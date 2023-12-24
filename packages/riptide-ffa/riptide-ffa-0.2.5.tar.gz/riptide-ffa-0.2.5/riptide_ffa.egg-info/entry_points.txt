@@ -1,0 +1,3 @@
+[console_scripts]
+rffa = riptide.pipeline.pipeline:main
+rseek = riptide.apps.rseek:main
