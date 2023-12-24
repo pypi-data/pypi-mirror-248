@@ -1,0 +1,6 @@
+aioposter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aioposter/client.py,sha256=KEFCeZu_Y_qznS0TKiyTEF9vHr6Pqec2iBp0RACPcEA,2997
+aioposter/server.py,sha256=ju8Ph7f0i3Awm8fxHFpKx_2n8yeXTPVv9xgjp9hwBIA,3191
+aioposter-0.0.3.dist-info/METADATA,sha256=FGv_V52kf_StaRHiIgkiCuV1Crca-DQEDOcWaVsBqTc,630
+aioposter-0.0.3.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+aioposter-0.0.3.dist-info/RECORD,,
