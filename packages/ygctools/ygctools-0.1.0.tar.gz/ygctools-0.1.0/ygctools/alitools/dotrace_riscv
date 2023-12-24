@@ -1,0 +1,19 @@
+#!/bin/bash
+
+toolchain="riscv64-unknown-elf-addr2line"
+
+function help() {
+	echo "eg: dotrace_riscv \"elf file\" \"backtrace file\""
+}
+
+if [[ $# -lt 2 ]]; then
+	help
+	exit 0
+fi
+
+trace_str=`awk '{a[NR]=\$3} END{for(i=1;i<=NR;i++){printf(i != NR ? a[i]" " : a[i]) }}' $2`
+#echo $trace_str
+cmd="$toolchain -pfiCe $1 $trace_str"
+echo $cmd
+eval $cmd
+

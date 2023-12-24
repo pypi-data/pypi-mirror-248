@@ -1,0 +1,3 @@
+[console_scripts]
+ygc = ygctools.cmd:main
+
