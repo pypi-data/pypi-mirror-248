@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: cursed-editor
+Version: 0.8.4
+Summary: A Vim Inspired Text Editor Written in Pure Python
+Home-page: https://philzerull.gitlab.io/cursed_editor/
+License: GPL-3.0-or-later
+Author: Philip Zerull
+Author-email: cursed_editor@philzerull.com
+Requires-Python: >=3.8,<3.13
+Classifier: Environment :: Console :: Curses
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Text Editors
+Requires-Dist: windows-curses (==2.3.0) ; sys_platform == "win32"
+Project-URL: Repository, https://gitlab.com/philzerull/cursed_editor
+Description-Content-Type: text/markdown
+
+# Cursed - a Vim Inspired Text Editor Written in Pure Python
+
+See more info at https://philzerull.gitlab.io/cursed_editor/
+
