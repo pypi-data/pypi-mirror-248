@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: i2c_adapter
+Version: 0.0.8
+Summary: A simple USB to I2C adapter using inexpensive of-the-shelf hardware
+Project-URL: Homepage, https://github.com/zapta/i2c_adapter
+Project-URL: Bug Tracker, https://github.com/zapta/i2c_adapter/issues
+Author-email: Zapta <zapta@zapta.com>
+License-File: LICENSE
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: pyserial>=3.5
+Description-Content-Type: text/markdown
+
+# i2c_adapter
+A simple USB to I2C adapter.
+
+Status (Dec 2023): Fully functional. Used successfuly by the Greenpak driver [https://pypi.org/project/greenpak](https://pypi.org/project/greenpak).
+
+Design goals:
+* USB to I2C master.
+* Supports Windows/Mac/Linux.
+* Uses of-the-shelf inexpensive hardware.
+* No driver installation required (emulates a serial port).
+* Simple Python API.
+* Can be easyly moded or adapted to new hardware.
