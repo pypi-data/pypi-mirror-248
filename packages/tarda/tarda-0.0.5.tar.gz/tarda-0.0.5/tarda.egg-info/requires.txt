@@ -1,0 +1,13 @@
+scapy
+numpy
+pandas
+matplotlib
+scikit-learn
+scipy
+tqdm
+torch
+torchvision
+torchsummary
+torchattacks
+torchattacks
+torchatta
