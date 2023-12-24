@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: msproteomics
+Version: 0.1.2
+Summary: A Python package for mass spectrometry-based proteomics data processing
+Home-page: https://github.com/tvpham/msproteomics
+Author: Thang Pham
+Author-email: t.pham@amsterdamumc.nl
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# msproteomics sitereport: reporting DIA-MS phosphoproteomics experiments at site level with ease
+
+This repository contains a Python package to report phosphosites and phosphopeptides from a DIA-MS phosphoproteomics experiment.
+
+
+
