@@ -1,0 +1,1 @@
+from .task1 import generate_latex_table
