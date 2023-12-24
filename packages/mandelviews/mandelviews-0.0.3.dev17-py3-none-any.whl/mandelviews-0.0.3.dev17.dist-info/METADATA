@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: mandelviews
+Version: 0.0.3.dev17
+Summary: Create and view mandelbrot sets, following guidelines in ccn template.
+Author-email: Eric Thomson <thomson.eric@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2023 Eric Thomson
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/EricThomson/mandelviews
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: PyQt5
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pydocstyle ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: mkdocs ; extra == 'docs'
+Requires-Dist: mkdocstrings[python] ; extra == 'docs'
+Requires-Dist: mkdocs-section-index ; extra == 'docs'
+Requires-Dist: mkdocs-gen-files ; extra == 'docs'
+Requires-Dist: mkdocs-literate-nav ; extra == 'docs'
+Requires-Dist: mkdocs-gallery ; extra == 'docs'
+
+# mandelviews
+Mandelbrot viewer
+
+![mandelbrot set](./docs/images/mandelviews_example.jpg)
+
+Calculates Mandelbrot Set in pure Python, Visualizes with matplotlib.
+ 
+
+Repo built following the guidelines set out at the CCN template:    
+ https://github.com/flatironinstitute/ccn-template
+
+
+For more details on construction of the Mandelbrot set using the escape time 
+algorithm:        
+https://complex-analysis.com/content/mandelbrot_set.html
+
+
+## To do
+- Add numba and cython for speedup comparisons. 
+- Holoviews visualization. 
+
