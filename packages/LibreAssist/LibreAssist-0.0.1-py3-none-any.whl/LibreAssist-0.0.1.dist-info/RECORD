@@ -1,0 +1,13 @@
+LibreAssist/__init__.py,sha256=V5tuv6kf5u2ZTEj9VytUeFndH8Nh1Eoi0J4kQ56BLUc,528
+LibreAssist/inference/__init__.py,sha256=mHiR63Cz_mwoDSv93GtcxfcZ-IoQy7j_6y9qWqkvOJc,484
+LibreAssist/inference/_setting.py,sha256=V7RwFP8VMkiKOuCGsef3uFjVgjkroILnjuHRRfTDVc8,3253
+LibreAssist/inference/inference.py,sha256=eTlI-WCLIXlrD_duMhJK1xwr-Cb_RoOlMpG3KjRmyFk,7726
+LibreAssist/user_interface/__init__.py,sha256=CmvhYzoGCkPLJ_qafYVXouI9eO3h2xa6372TFvQUOeY,44
+LibreAssist/user_interface/_info.py,sha256=Q_mfB-KySdTe12ctCZOpRvcxNe5zX19nbVXj0nQqJGg,1900
+LibreAssist/user_interface/gardio_interface.py,sha256=TlBwGc_ulb7TwH6cCQGp8fB3BnnV7A4yX69e1-S357Y,13800
+LibreAssist/user_interface/theme.py,sha256=EAJSA0amLjhb_2obpFr48uZjRDklNYr3UK5TF_VGuJU,3992
+LibreAssist-0.0.1.dist-info/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+LibreAssist-0.0.1.dist-info/METADATA,sha256=DslSTsxtkuR-2QoTdhsg3D1Qkv0ZL8oDiQB0s4OTbrE,4061
+LibreAssist-0.0.1.dist-info/WHEEL,sha256=Xo9-1PvkuimrydujYJAjF7pCkriuXBpUPEjma1nZyJ0,92
+LibreAssist-0.0.1.dist-info/top_level.txt,sha256=moWBDe4BAUV_ZXoC9QJPi6DRwq-5MuX6b7ExfKwzWwU,12
+LibreAssist-0.0.1.dist-info/RECORD,,
