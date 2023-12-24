@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: rluafunctions
+Version: 0.0.2
+Summary: Use common rlua functions and libraries in Python
+Home-page: https://github.com/roninmaster21/rfunctions
+Author: roninmaster21
+Author-email: 
+License: MIT
+Project-URL: Bug Tracker, https://github.com/roninmaster21/rfunctions
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# rfunctions
+Package that contains recreated versions of some rlua libraries
+# Install on Windows
+```
+py -m pip install "git+https://github.com/roninmaster21/rfunctions.git"
+```
+# Install on Unix/macOS
+```
+python3 -m pip install "git+https://github.com/roninmaster21/rfunctions.git"
+```
