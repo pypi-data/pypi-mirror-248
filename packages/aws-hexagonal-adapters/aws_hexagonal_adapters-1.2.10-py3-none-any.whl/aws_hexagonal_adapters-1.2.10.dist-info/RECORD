@@ -1,0 +1,11 @@
+aws_hexagonal_adapters/cloudwatch_service.py,sha256=9ZHNaKaYggGD6mFjtBWrdlb_y7TBOay7BS5j8PSpIYs,2266
+aws_hexagonal_adapters/dynamo_db_service.py,sha256=nYc_M2fUEvIvTDU5NdvttUiO1LxTClnhFqp864UiDvk,14471
+aws_hexagonal_adapters/event_bridge_service.py,sha256=mPm4bwDhA3vbJKUooPrYlDwPX9qBmieUG4SeafZQ0aA,2303
+aws_hexagonal_adapters/s3_service.py,sha256=mhh8TTTtJ7awYo-T8TiNyNExWBCJxA1qcsSXl_bqz0Y,15203
+aws_hexagonal_adapters/ses_service.py,sha256=UB1ikj3xXIS1PkQLxEpxJjOYL-Kxk52b_3f4Rf3UIiI,6384
+aws_hexagonal_adapters/sqs_service.py,sha256=wAZw3kO2-3ntzhwJFUEbJT2fTM2XKVGBrqx7kiBhaHI,13910
+aws_hexagonal_adapters/ssm_service.py,sha256=KYDHQTVCag_acbXBBvQ7oV7Ryyx78C_y2XeezSfkyoU,5964
+aws_hexagonal_adapters-1.2.10.dist-info/METADATA,sha256=An1JayJQGki3IdoStI8__XLMKBXs-H6VhQpY4HkyW4E,5404
+aws_hexagonal_adapters-1.2.10.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+aws_hexagonal_adapters-1.2.10.dist-info/licenses/LICENSE,sha256=-8s2txIIVOOaJ4ww3G72gE-JhzImwnASK8YBIbYSGNY,1071
+aws_hexagonal_adapters-1.2.10.dist-info/RECORD,,
