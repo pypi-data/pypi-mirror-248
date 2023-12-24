@@ -1,0 +1,14 @@
+bballRefWebScraper/__init__.py,sha256=pQYvJCARY0ocPKM6FifO_epNBUYlhfN_i9O_cn0W_Jo,293
+bballRefWebScraper/bb_ref_scraper.py,sha256=wzLUbqwI68q6mMRS3PhHdwwf9hvAPL_DqN5iCGNx1xE,4309
+bballRefWebScraper/draft_class.py,sha256=6d_lT3uzXWYNbLpZjGQC-YRXIF_jVtPen8DpXV-ffZM,1401
+bballRefWebScraper/examples.py,sha256=5K9RnH3Cps0B2cvtIT0JtbmParS1y3VrI4mfgDTWx4s,609
+bballRefWebScraper/get_player_stats.py,sha256=uuKYU77fL_QU6yl1AwDHsZ-qUox1AXBDFCQXqVbza0c,1587
+bballRefWebScraper/mvp_tracker.py,sha256=VxXZS4ymWGTkeDOfxNFH9kdr7l_fRSU56C44J5qiPHw,1841
+bballRefWebScraper/per_game_leaders.py,sha256=ky2BqYqZ2vXl2_QTBpOQmjNw5DAy2JwzLE4aKCO30dQ,1356
+bballRefWebScraper/schedule.py,sha256=EDQuCG1boYZ8V2vKVSaNK2ISYJ5wm6YUE8ME-EH3Lw4,1417
+bballRefWebScraper/utils.py,sha256=pAgFtCwjX2zohQG0JEhs9gznqAF1lVB201HHD49_F1Q,5658
+bballRefWebScraper-0.1.0.dist-info/LICENSE,sha256=U-t-gQm0EQkBBae9DEJjQ3v59CIpEpyp4PP7mZoLnBY,1075
+bballRefWebScraper-0.1.0.dist-info/METADATA,sha256=JjHSY-xVtwEKcCs2UlgX8vgcSnOHTaRDQ9cZtWAyHIk,2044
+bballRefWebScraper-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+bballRefWebScraper-0.1.0.dist-info/top_level.txt,sha256=5-hN3T1kS6JNp7nH3GWdnvBwc7qz9_a4arlf83AK7Yw,19
+bballRefWebScraper-0.1.0.dist-info/RECORD,,
