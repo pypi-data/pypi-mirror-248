@@ -1,0 +1,4 @@
+[console_scripts]
+read_diann = msproteomics.read_diann:main
+sitereport = msproteomics.sitereport:main
+
