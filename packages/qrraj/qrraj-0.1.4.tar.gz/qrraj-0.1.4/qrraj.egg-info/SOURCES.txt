@@ -1,0 +1,9 @@
+README.md
+setup.py
+qrraj/__init__.py
+qrraj/qr.py
+qrraj.egg-info/PKG-INFO
+qrraj.egg-info/SOURCES.txt
+qrraj.egg-info/dependency_links.txt
+qrraj.egg-info/requires.txt
+qrraj.egg-info/top_level.txt
