@@ -1,0 +1,12 @@
+LICENSE.md
+LICENSE.txt
+README.md
+pyproject.toml
+cd_randomizer/__version__.py
+cd_randomizer/rand.py
+cd_randomizer.egg-info/PKG-INFO
+cd_randomizer.egg-info/SOURCES.txt
+cd_randomizer.egg-info/dependency_links.txt
+cd_randomizer.egg-info/top_level.txt
+cd_randomizer/examples/example_usage.py
+cd_randomizer/tests/test_rand.py

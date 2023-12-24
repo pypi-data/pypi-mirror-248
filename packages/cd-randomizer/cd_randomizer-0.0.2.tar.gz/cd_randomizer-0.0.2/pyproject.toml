@@ -1,0 +1,28 @@
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cd_randomizer"
+version = "0.0.2"
+description = "A simple CD randomizer package."
+authors = [
+    {name = "Nicholas Capasso", email = "codedocta@gmail.com"}
+]
+license = { file = "LICENSE.txt" }
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    # List your dependencies here
+    # "numpy",
+    # "pandas",
+]
+
+[project.urls]
+Home = "https://github.com/codedocta/cd_randomizer"
