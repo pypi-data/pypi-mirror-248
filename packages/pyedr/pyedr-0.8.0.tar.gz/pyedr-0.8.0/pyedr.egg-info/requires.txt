@@ -1,0 +1,7 @@
+numpy
+tqdm
+mda-xdrlib
+
+[test]
+pytest
+pytest-xdist
