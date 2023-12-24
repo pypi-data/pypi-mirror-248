@@ -21875,7 +21875,7 @@
       "project_version": "2.2.0.dev20231224",
       "url": "https://files.pythonhosted.org/packages/62/19/232d48194c5019fbee04862f804e105eb91d010607cf62b014f7a6308144/mindspore_dev-2.2.0.dev20231224-cp38-cp38-manylinux1_x86_64.whl",
       "upload_time": "2023-12-23T21:00:57.060970Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "pytranscoding",
@@ -21889,7 +21889,7 @@
       "project_version": "2.2.0.dev20231224",
       "url": "https://files.pythonhosted.org/packages/da/14/b4c481b43b23203197a55b949c472eb71a0682f37908304c0b28ce82e161/mindspore_dev-2.2.0.dev20231224-cp39-cp39-manylinux1_x86_64.whl",
       "upload_time": "2023-12-23T21:03:31.308901Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "mindspore-dev",
