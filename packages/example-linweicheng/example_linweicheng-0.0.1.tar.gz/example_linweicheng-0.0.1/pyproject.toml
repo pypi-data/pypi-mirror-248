@@ -1,0 +1,41 @@
+[project]
+name = "example_linweicheng"
+version = "0.0.1"
+authors = [
+    { name = "linweicheng", email = "linweicheng24@gmail.com" },
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+#[build-system]
+#requires = ["setuptools>=40.0"]
+#build-backend = "setuptools.build_meta"
+
+[project.urls]
+Homepage = "https://github.com/pypa/sampleproject"
+Issues = "http://op.wwooww.cn:35600"
+
+
+
+
+## Hatchling
+#[build-system]
+#requires = ["hatchling"]
+#build-backend = "hatchling.build"
+## setuptools
+
+## Flit
+#[build-system]
+#requires = ["flit_core>=3.4"]
+#build-backend = "flit_core.buildapi"
+## PDM
+#[build-system]
+#requires = ["pdm-backend"]
+#build-backend = "pdm.backend"
+

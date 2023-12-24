@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/example_linweicheng/__init__.py
+src/example_linweicheng/example.py
+src/example_linweicheng.egg-info/PKG-INFO
+src/example_linweicheng.egg-info/SOURCES.txt
+src/example_linweicheng.egg-info/dependency_links.txt
+src/example_linweicheng.egg-info/top_level.txt
