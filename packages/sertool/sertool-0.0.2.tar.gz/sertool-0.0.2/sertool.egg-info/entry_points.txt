@@ -1,0 +1,2 @@
+[console_scripts]
+sertool = sertool.__main__:main

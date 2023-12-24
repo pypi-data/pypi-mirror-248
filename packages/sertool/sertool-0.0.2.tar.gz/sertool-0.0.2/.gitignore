@@ -1,0 +1,6 @@
+build/*
+dist/*
+*.pyc
+sertool.egg-info/*
+.eggs/
+venv/*

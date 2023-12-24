@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: sertool
+Version: 0.0.2
+Summary: Serial Port Helper Tool
+Home-page: https://github.com/redhill-embedded/sertool.git
+Download-URL: https://github.com/redhill-embedded/sertool/archive/v_010.tar.gz
+Author: Adrian Rothenbuhler
+Author-email: adrian@redhill-embedded.com
+License: MIT
+Keywords: Serial port
+Requires-Python: >=3.8
+License-File: LICENSE.txt
+Requires-Dist: pyserial
+Requires-Dist: colorama
