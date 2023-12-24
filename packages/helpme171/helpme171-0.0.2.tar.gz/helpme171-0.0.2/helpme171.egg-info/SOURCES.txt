@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+helpme171/__init__.py
+helpme171/demo_module.py
+helpme171.egg-info/PKG-INFO
+helpme171.egg-info/SOURCES.txt
+helpme171.egg-info/dependency_links.txt
+helpme171.egg-info/top_level.txt
+helpme171/demo_mod2/__init__.py
+helpme171/demo_mod2/demo_module2.py
