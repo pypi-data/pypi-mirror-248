@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: aio-dtls
+Version: 0.0.3
+Summary: asyncio implementation of the dtls protocol in python
+Home-page: https://github.com/businka/aio_dtls
+Author: Razgovorov Mikhail
+Author-email: 1338833@gmail.com
+License: MIT
+Keywords: python tls dtls mbed asyncio
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Natural Language :: Russian
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: construct
+Requires-Dist: cryptography
+
+# aio_dtls
+
+[![img lib ver](https://img.shields.io/pypi/v/aio_dtls.svg "")](https://pypi.python.org/pypi/aio_dtls)
+[![img python ver](https://img.shields.io/pypi/pyversions/aio_dtls.svg "")](https://pypi.python.org/pypi/aio_dtls)
+[![img license](https://img.shields.io/pypi/l/aio_dtls.svg "")](https://pypi.python.org/pypi/aio_dtls)
+
+The implementation of dtls was made to connect to the iotivity which uses the mbedtls and not the standard cipher.
+
+Handshake dtls and tls for ECDHE_ANON is working now
+
+A simple example of use can be seen in example.py
+
+An example implementation of the COAPS protocol in Bubot_CoAP
+
+
