@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: vsql
+Version: 0.1.1
+Summary: 
+Author: Oscar Laird
+Author-email: olaird25@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: apsw (>=3.44.2.0,<4.0.0.0)
+Requires-Dist: faiss-cpu (>=1.7.4,<2.0.0)
+Requires-Dist: openai (>=1.6.0,<2.0.0)
+Requires-Dist: pinecone-client (>=2.2.4,<3.0.0)
+Requires-Dist: python-dotenv (>=1.0.0,<2.0.0)
+Requires-Dist: sentence-transformers (>=2.2.2,<3.0.0)
+Requires-Dist: tabulate (>=0.9.0,<0.10.0)
+Requires-Dist: tqdm (>=4.66.1,<5.0.0)
+Description-Content-Type: text/markdown
+
+
