@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: test_github_actions
+Version: 0.1.0
+Summary: 
+Author: AbrahamPapp
+Author-email: pabris97@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: matplotlib
+Description-Content-Type: text/markdown
+
+
