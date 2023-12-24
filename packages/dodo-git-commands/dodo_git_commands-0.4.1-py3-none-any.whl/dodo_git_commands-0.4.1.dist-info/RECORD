@@ -1,0 +1,11 @@
+dodo_git_commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dodo_git_commands/chown-src.py,sha256=ch-ZTIeEtJTfmqwAUuQRX7O_YNu_y9phPnXO3SgkL1o,474
+dodo_git_commands/git-multi-branch.py,sha256=nwUUdZGwt2ohLiq_-r5-DeVSWK9o3dD0Q8HvSZZWazM,1098
+dodo_git_commands/git-multi-status.py,sha256=MiZDAH4gVwZaGZEHfEkulqs8fMORpHgr_L5oXaJbC3E,1434
+dodo_git_commands/git-tag.py,sha256=cKLvLQGgIOheumuMfJyoWwc78HjDDITiPO56CdwofTo,624
+dodo_git_commands/git-toggle-hook.py,sha256=iPKqla5nRver6EgsGLe51HIQRwvsXxLUoP-DsGE4rks,3124
+dodo_git_commands-0.4.1.dist-info/LICENSE,sha256=zu_OgG7aujnQSKM30G1Z0nnpwTVK5afFwE1DyZbJJa0,1071
+dodo_git_commands-0.4.1.dist-info/METADATA,sha256=m53FzM3KmuFWjwW0NvP8jiy-SOBCr-gHMb2Lvs2xYxQ,321
+dodo_git_commands-0.4.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+dodo_git_commands-0.4.1.dist-info/top_level.txt,sha256=nyAxTQvadamx45WfOpuqaLAJPbIOdRw9reIC-Y2eFS4,18
+dodo_git_commands-0.4.1.dist-info/RECORD,,

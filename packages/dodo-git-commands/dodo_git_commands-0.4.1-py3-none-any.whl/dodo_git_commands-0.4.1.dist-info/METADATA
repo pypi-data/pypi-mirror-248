@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: dodo-git-commands
+Version: 0.4.1
+Summary: Git related Dodo Commands
+Home-page: https://github.com/mnieber/dodo-git-commands
+Download-URL: https://github.com/mnieber/dodo-git-commands/tarball/0.4.1
+Author: Maarten Nieber
+Author-email: hallomaarten@yahoo.com
+License: MIT
+License-File: LICENSE
+
