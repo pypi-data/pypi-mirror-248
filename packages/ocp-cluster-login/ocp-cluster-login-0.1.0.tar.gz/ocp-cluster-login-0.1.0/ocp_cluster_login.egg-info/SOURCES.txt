@@ -1,0 +1,12 @@
+LICENSE
+README.md
+README.rst
+setup.py
+ocp_cluster_login/__init__.py
+ocp_cluster_login/main.py
+ocp_cluster_login.egg-info/PKG-INFO
+ocp_cluster_login.egg-info/SOURCES.txt
+ocp_cluster_login.egg-info/dependency_links.txt
+ocp_cluster_login.egg-info/entry_points.txt
+ocp_cluster_login.egg-info/requires.txt
+ocp_cluster_login.egg-info/top_level.txt
