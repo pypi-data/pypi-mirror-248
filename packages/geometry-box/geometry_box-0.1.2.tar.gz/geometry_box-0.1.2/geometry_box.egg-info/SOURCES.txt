@@ -1,0 +1,12 @@
+LICENSE
+README.md
+README.rst
+setup.py
+geometry_box/__init__.py
+geometry_box/geometry_box.py
+geometry_box/points.py
+geometry_box/shapes.py
+geometry_box.egg-info/PKG-INFO
+geometry_box.egg-info/SOURCES.txt
+geometry_box.egg-info/dependency_links.txt
+geometry_box.egg-info/top_level.txt
