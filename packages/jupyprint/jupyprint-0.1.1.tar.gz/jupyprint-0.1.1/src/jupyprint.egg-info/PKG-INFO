@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: jupyprint
+Version: 0.1.1
+Summary: A simple python package to print markdown and LaTeX equations from code cells in Jupyter notebooks.
+Author: Peter Rush
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: ipython
+
+Please see the README here: https://github.com/pxr687/jupyprint
