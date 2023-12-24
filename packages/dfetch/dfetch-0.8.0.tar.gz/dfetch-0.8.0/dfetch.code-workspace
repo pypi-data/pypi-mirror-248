@@ -1,0 +1,81 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"python.defaultInterpreterPath": "${workspaceFolder}/venv/Scripts/python",
+		"python.linting.prospectorEnabled": false,
+		"python.linting.banditEnabled": true,
+		"python.linting.pydocstyleEnabled": true,
+		"python.linting.pylintEnabled": true,
+		"python.linting.mypyEnabled": true,
+		"python.linting.flake8Enabled": false,
+		"python.linting.lintOnSave": true,
+		"editor.codeActionsOnSave": {
+			"source.organizeImports": "explicit"
+		},
+		"isort.check": true,
+		"restructuredtext.linter.run": "onType",
+		"restructuredtext.linter.doc8.extraArgs": [
+			"--config",
+			"${workspaceFolder}/pyproject.toml"
+		],
+		"esbonio.sphinx.buildDir": "${workspaceFolder}/doc/_build/html",
+		"esbonio.sphinx.confDir": "${workspaceFolder}/doc",
+		"python.testing.pytestArgs": [
+			"tests"
+		],
+		"python.testing.unittestEnabled": false,
+		"python.testing.pytestEnabled": true,
+		"python.testing.autoTestDiscoverOnSaveEnabled": true,
+		"cucumberautocomplete.steps": [
+			"features/steps/*.py"
+		],
+		"esbonio.server.enabled": true,
+		"[python]": {
+			"editor.defaultFormatter": "ms-python.black-formatter",
+			"editor.formatOnSave": true,
+		},
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Feature tests (wip)",
+				"type": "python",
+				"justMyCode": false,
+				"console": "integratedTerminal",
+				"request": "launch",
+				"module": "behave",
+				"args": [
+					"features",
+					"--wip"
+				]
+			},
+			{
+				"name": "DFetch update",
+				"type": "python",
+				"request": "launch",
+				"module": "dfetch.__main__",
+				"justMyCode": false,
+				"args": [
+					"update"
+				]
+			}
+		]
+	},
+	"extensions": {
+		"recommendations": [
+			"lextudio.restructuredtext",
+			"alexkrechik.cucumberautocomplete",
+			"ms-python.python",
+			"ms-python.isort",
+			"ms-python.black-formatter",
+			"bungcip.better-toml",
+			"trond-snekvik.simple-rst",
+			"jebbs.plantuml"
+		]
+	}
+}

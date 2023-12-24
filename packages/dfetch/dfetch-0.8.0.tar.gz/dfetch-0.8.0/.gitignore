@@ -1,0 +1,11 @@
+.vscode
+venv*
+dfetch.egg-info
+__pycache__
+doc/_build
+dist
+.coverage
+coverage.xml
+example/Tests/
+build
+doc/landing-page/_build

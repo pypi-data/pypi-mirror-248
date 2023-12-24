@@ -1,0 +1,29 @@
+@startuml
+start
+
+skinparam monochrome true
+skinparam defaultFontName Frutiger
+
+:Get version on disk;
+
+if (Tag given?) then (yes)
+  :Get all tags;
+  :Parse tags;
+  :Show versions:
+   - wanted tag
+   - on disk tag
+   - available tag;
+else (no)
+  if (Branch given?) then (no)
+    :Use default branch;
+  endif
+
+  :Get latest revision of branch;
+  :Show versions:
+   - wanted revision / branch
+   - on disk revision / branch
+   - available revision / branch;
+endif
+
+stop
+@enduml
