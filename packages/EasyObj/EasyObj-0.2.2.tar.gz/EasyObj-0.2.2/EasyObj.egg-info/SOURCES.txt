@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+EasyObj/BetterDict.py
+EasyObj/BetterList.py
+EasyObj/Symbol.py
+EasyObj/__init__.py
+EasyObj.egg-info/PKG-INFO
+EasyObj.egg-info/SOURCES.txt
+EasyObj.egg-info/dependency_links.txt
+EasyObj.egg-info/not-zip-safe
+EasyObj.egg-info/top_level.txt
