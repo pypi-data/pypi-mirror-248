@@ -1,0 +1,6 @@
+class AsyncFileSystemBackend:
+    def upload(self):
+        ...
+
+    def download(self):
+        ...
