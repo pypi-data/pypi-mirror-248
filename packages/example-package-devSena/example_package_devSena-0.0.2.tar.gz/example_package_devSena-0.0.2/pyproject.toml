@@ -1,0 +1,18 @@
+[project]
+authors = [
+  {name = "Example Author", email = "author@example.com"},
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+description = "A small example package"
+name = "example_package_devSena"
+readme = "README.md"
+requires-python = ">=3.8"
+version = "0.0.2"
+
+[project.urls]
+Homepage = "https://github.com/pypa/sampleproject"
+Issues = "https://github.com/pypa/sampleproject/issues"
