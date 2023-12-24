@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/p9fs/__init__.py
+src/p9fs.egg-info/PKG-INFO
+src/p9fs.egg-info/SOURCES.txt
+src/p9fs.egg-info/dependency_links.txt
+src/p9fs.egg-info/entry_points.txt
+src/p9fs.egg-info/requires.txt
+src/p9fs.egg-info/top_level.txt
+src/py9p/__init__.py
+src/py9p/__main__.py
+src/py9p/fid.py
+src/py9p/fuse9p.py
+src/py9p/pki.py
+src/py9p/py9p.py
+src/py9p/utils.py

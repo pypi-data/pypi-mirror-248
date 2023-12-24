@@ -1,0 +1,43 @@
+[project]
+name = "p9fs"
+version = "0.0.4"
+description = "9P implementation of Python fsspec"
+license = {file = "LICENSE"}
+readme = "README.md"
+authors = [
+    {name = "Pavel Chekin", email = "pbchekin@gmail.com"},
+]
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+
+]
+dependencies = [
+    "fsspec",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/pbchekin/p9fs-py"
+"Source" = "https://github.com/pbchekin/p9fs-py"
+
+[project.optional-dependencies]
+tests = [
+    "pytest",
+]
+
+[project.entry-points."fsspec.specs"]
+p9 = "p9fs.P9FileSystem"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["p9fs*", "py9p*"]
+namespaces = false
+
+[tool.pytest.ini_options]
