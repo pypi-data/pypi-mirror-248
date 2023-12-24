@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: orgroamtools
+Version: 0.1.0
+Summary: Library to aid in analysis of org-roam collections
+Author: Aatmun Baxi
+Author-email: abaxi@tamu.edu
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: networkx (>=3.2.1,<4.0.0)
+Requires-Dist: orgparse (>=0.4.20231004,<0.5.0)
+Description-Content-Type: text/markdown
+
+# orgroamtools
+`orgroamtools` is a Python library to assist in data analysis of `org-roam` collections.
+It provides data structures that can be used to extract metrics and body text from your `org-roam` collection.
+
+Documentation is available at https://aatmunbaxi.github.io/orgroamtools.
+Source is at https://github.com/aatmunbaxi/orgroamtools.
+
