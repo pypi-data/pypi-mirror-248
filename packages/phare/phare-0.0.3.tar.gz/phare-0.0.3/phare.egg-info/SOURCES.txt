@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+examples/fill_random.py
+phare/__init__.py
+phare/auth.py
+phare/constants.py
+phare/error.py
+phare/lighthouse.py
+phare/protocol.py
+phare/serialize.py
+phare.egg-info/PKG-INFO
+phare.egg-info/SOURCES.txt
+phare.egg-info/dependency_links.txt
+phare.egg-info/requires.txt
+phare.egg-info/top_level.txt
