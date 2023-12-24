@@ -1,0 +1,7 @@
+setup.py
+alexisomggeneratelatextable/__init__.py
+alexisomggeneratelatextable/task1.py
+alexisomggeneratelatextable.egg-info/PKG-INFO
+alexisomggeneratelatextable.egg-info/SOURCES.txt
+alexisomggeneratelatextable.egg-info/dependency_links.txt
+alexisomggeneratelatextable.egg-info/top_level.txt
