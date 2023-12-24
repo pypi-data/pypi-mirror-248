@@ -1,0 +1,62 @@
+# Define the build system requirements for the project.
+[build-system]
+requires = ["setuptools", "setuptools-scm[toml]"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "mandelviews"
+# following is so setuptools_scm will find version number!
+dynamic = ["version"]
+description = "Create and view mandelbrot sets, following guidelines in ccn template."
+readme = "readme.md"
+license.file = "LICENSE"
+authors = [
+  { name = "Eric Thomson", email = "thomson.eric@gmail.com" },]
+dependencies = [
+  "numpy",
+  "matplotlib",
+  "PyQt5",
+]
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+
+[tool.setuptools_scm]
+write_to = "src/mandelviews/version.py"
+version_scheme = 'python-simplified-semver'
+local_scheme = 'no-local-version'
+
+
+# Optional dependencies for documentation [docs] and testing/linting [dev]:
+[project.optional-dependencies]
+docs = [
+    'mkdocs',
+    'mkdocstrings[python]',
+    'mkdocs_section_index',
+    'mkdocs_gen_files',
+    'mkdocs_literate_nav',
+    'mkdocs-gallery',
+]
+dev = [
+    "black",                        # Code formatter
+    "isort",                        # Import sorter
+    "pytest",                       # Testing framework
+    "flake8",                       # Code linter
+    "pytest-cov",                   # Test coverage plugin for pytest
+    "pydocstyle",                    # Docstrings linter
+]
+
+
+[project.urls]
+Homepage = "https://github.com/EricThomson/mandelviews"
+# could add link to docs here
+
+
+[tool.pydocstyle]
+convention = "numpy"                   # Convention for linting (numpy, google, pep257)
+match = "^(?!version\\.py$).*\\.py$"   # This matches everything that ends with .py, except for version.py
