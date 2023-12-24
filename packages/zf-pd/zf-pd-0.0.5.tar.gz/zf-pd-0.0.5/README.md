@@ -1,0 +1,301 @@
+# pd (Product Development and Deployment)
+
+## Features
+
+1. Project initialization (FastAPI, React).
+2. File conversion (image, video, audio).
+3. EC2 instance management.
+4. Nginx configuration generation.
+5. File synchronization (e.g., .zshrc, .gitconfig).
+6. SSH setup and configuration.
+7. Environment setup and configuration.
+
+## Installation
+
+```bash
+pip install -i https://test.pypi.org/simple/ zf-pd
+```
+
+`pd` will store the following information in `~/.pdconfig.json`:
+
+```bash
+{
+    "projects": [
+        {
+            "type": "fastapi",
+            "name": "project1",
+            "path": "/path/to/project1",
+            "instances": [
+                "instance-1"
+            ]
+        },
+        {
+            "type": "fastapi",
+            "name": "project2",
+            "path": "/path/to/project2",
+            "instances": [
+                "instance-2"
+            ]
+        },
+        {
+            "type": "fastapi",
+            "name": "project3",
+            "path": "/path/to/project3",
+            "instances": [
+                "instance-3",
+                "instance-4"
+            ]
+        }
+    ],
+    "ec2": {
+        "launch-template-id": "lt-template-id",
+        "key-pair-path": "/path/to/keypair.pem",
+        "instances": [
+            "instance-1",
+            "instance-2",
+            "instance-3",
+            "instance-4"
+        ]
+    }
+}
+```
+
+## Usage
+
+### 1. Init
+
+`pd init` is great tool for quickly initializing new development projects. It support FastAPI and React projects.
+
+**Example**
+
+You can quickly create a new FastAPI project by running:
+
+```bash
+$ pd init fastapi
+Name: fastapi-test
+```
+
+This will create a new FastAPI project and print the following:
+
+```bash
+Created project fastapi-test at ./fastapi-test. Please run the following commands:
+cd ./fastapi-test
+pip install -r requirements.txt
+npm run install
+python3 -m uvicorn app.main:app --reload
+Open http://localhost:8000
+```
+
+You can specify the full project path when running `pd init`:
+
+```bash
+$ pd init fastapi --name /path/to/fastapi-test
+```
+
+This will initialize a new FastAPI project at `/path/to/fastapi-test`.
+
+For React, you can basically do the same:
+
+```bash
+$ pd init react
+Name: react-test
+```
+
+This will create a new React project called `react-test` at `./react-test` path.
+
+### 2. Convert
+
+`pd convert` is a tool for converting existing your files into other formats.
+
+**Example**
+
+You can convert an mp4 video file into an audio file by running:
+
+```bash
+$ pd conv video -p tests/video.mp4 -f mp3
+```
+
+The converted audio file will be saved at `tests/video.mp3`.
+
+It support image, video, and audio conversion.
+
+```
+$ pd conv --help
+
+Usage: python -m pd conv [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  audio  Convert an audio to another format
+  image  Convert an image into another format
+  video  Convert a video to another format
+```
+
+### 3. EC2
+
+`pd ec2` is a tool for managing EC2 instances. It uses `boto3` to manage EC2 instances.
+
+You must configure the following when using `pd ec2` for the first time:
+
+**Environment**:
+
+```bash
+export AWS_ACCESS_KEY_ID=<your-access-key-id>
+export AWS_SECRET_ACCESS_KEY=<your-secret-access-key>
+export AWS_DEFAULT_REGION=<your-region>
+```
+
+**~/.pdconfig**:
+
+You must update `~/.pdconfig.json` with your EC2 launch template id and key pair path:
+
+```bash
+{
+  "ec2": {
+    "launch-template-id": <your-launch-template-id e.g. lt-1234567890>,
+    "key-pair-path": <your-key-pair-path e.g. /home/ubuntu/key.pem>,
+  }
+}
+```
+
+- The key pair path must be an absolute path on the disk.
+
+See [AWS EC2 Launch Templates](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-launch-templates.html) for more
+information.
+
+`pd ec2` support the following commands:
+
+#### 3.1 Launch
+
+`pd ec2 launch` launches a new EC2 instance.
+
+```bash
+$ pd ec2 launch --help
+Usage: pd ec2 launch [OPTIONS]
+
+  Launch an EC2 instance
+
+Options:
+  -n, --name TEXT      Name of the EC2 instance e.g. ec2-test  [required]
+  -c, --count INTEGER  Number of instances to launch [default: 1]
+  -p, --project TEXT   Project name e.g /path/to/project
+
+  --help               Show this message and exit.
+```
+
+**Example**
+
+```bash
+$ pd ec2 launch -n ec2-test -c 1
+```
+
+If this EC2 instance is part of a project, you can specify the project path:
+
+```bash
+$ pd ec2 launch -n ec2-test -p /path/to/project
+```
+
+#### 3.2 Terminate
+
+`pd ec2 terminate` terminates an EC2 instance.
+
+```bash
+$ pd ec2 terminate --help
+Usage: pd ec2 terminate [OPTIONS]
+
+  Terminate an EC2 instance
+
+Options:
+  -i, --instance-id TEXT  ID of the EC2 instance to terminate e.g.
+                          i-1234567890abcdef  [required]
+
+  -p, --project TEXT      Project name e.g /path/to/project
+  --help                  Show this message and exit.
+```
+
+**Example**
+
+```bash
+$ pd ec2 terminate -n ec2-test
+```
+
+You can additionally pass the project path:
+
+```bash
+$ pd ec2 terminate -n ec2-test -p /path/to/project
+```
+
+### 4. Nginx
+
+`pd nginx` is a tool for managing Nginx configuration files.
+
+`pd nginx` support the following commands:
+
+#### 4.1 Generate
+
+`pd nginx generate` generates Nginx configuration files.
+
+```bash
+pd nginx generate --help
+Usage: pd nginx generate [OPTIONS]
+
+  Generate nginx config
+
+Options:
+  -h, --host TEXT     Host to proxy to e.g. localhost  [required]
+  -p, --port INTEGER  Port to proxy to e.g. 80  [required]
+  -d, --domain TEXT   Domain to use for nginx config e.g. example.com
+                      [required]
+
+  -s, --static TEXT   Static resources path e.g. /path/to/static
+  --help              Show this message and exit.
+
+```
+
+**Example**
+
+```bash
+$ pd nginx generate --host 127.0.0.1 --port 8000 --domain example.com
+server {
+    server_name examaple.com;
+
+    location / {
+        proxy_pass http://127.0.0.1:8000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}
+```
+
+You can additionally specify the static resources path:
+
+```bash
+$ pd nginx generate -h localhost -p 80 -d example.com -s /path/to/static
+server {
+    server_name example.com;
+
+    root /path/to/static;
+    client_max_body_size 50M;
+
+    location / {
+        proxy_pass http://localhost:80;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+
+    location /static/ {
+        alias /path/to/static;
+
+        # Add CORS 'Access-Control-Allow-Origin' header for fonts
+        location ~* \.(ico|png|css|ttf)$ {
+            add_header Access-Control-Allow-Origin *;
+        }
+    }
+}
+```
