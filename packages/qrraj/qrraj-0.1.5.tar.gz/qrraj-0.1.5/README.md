@@ -1,0 +1,1 @@
+This library helps you generate your own QRCode for your videos,your channels and various other useful purposes.
