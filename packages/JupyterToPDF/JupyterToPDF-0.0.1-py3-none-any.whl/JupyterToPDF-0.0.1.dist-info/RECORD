@@ -1,0 +1,9 @@
+notebook_to_pdf/__init__.py,sha256=dONWC0dNErxeIDj_wASsz_zrhZpxxUGYBrxc6xotafI,48
+notebook_to_pdf/converter.py,sha256=GPueeOJVdwBscVfoKrCWfvEIqEe2KhkeRqTtgf-ECuU,680
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_converter.py,sha256=2PIoPpuj7QX1o4ufdtBF4Nir33CdehCr91dj50fmBFY,852
+JupyterToPDF-0.0.1.dist-info/METADATA,sha256=aXhAVLegqIpZjH4nvT9kVanfewZ734k2Cnv-cLbYy5g,2480
+JupyterToPDF-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+JupyterToPDF-0.0.1.dist-info/entry_points.txt,sha256=00vdmc2Gyz0YKSUrLSvXc3VqBVHqjh9rCXWmK2KknkA,80
+JupyterToPDF-0.0.1.dist-info/top_level.txt,sha256=ZQLeCkh2CaeOX7vuerrdgH2NxUVELG9Kjp3bpZRTQPE,22
+JupyterToPDF-0.0.1.dist-info/RECORD,,

@@ -1,0 +1,2 @@
+[console_scripts]
+JupyterToPDF = JupyterToPDF.converter:convert_notebook_to_pdf
