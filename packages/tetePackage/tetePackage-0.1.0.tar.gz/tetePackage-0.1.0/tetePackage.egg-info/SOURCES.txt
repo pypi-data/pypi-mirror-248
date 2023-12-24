@@ -1,0 +1,5 @@
+setup.py
+tetePackage.egg-info/PKG-INFO
+tetePackage.egg-info/SOURCES.txt
+tetePackage.egg-info/dependency_links.txt
+tetePackage.egg-info/top_level.txt
