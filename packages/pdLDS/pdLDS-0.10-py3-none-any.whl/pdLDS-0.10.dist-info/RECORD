@@ -1,0 +1,13 @@
+pdLDS/__init__.py,sha256=t8eRBDnRpQJqKM-CtX7rPCHV2mdL1DTrZ8zJ6iZFgFg,96
+pdLDS/cDynamics.py,sha256=fuidx8o3Ee4oK7G2CuAnMsC7SItoOAiw7xt0w5BbruA,10138
+pdLDS/dynamics.py,sha256=-jUAM8Wn5mDHVWkaJDr5gnTsjAgJoadE6tecOiQPUi4,5740
+pdLDS/generate.py,sha256=RaAoUjitFLpaZW-aN0mkakJ4OFw-Y0nNrryx54TPCec,4075
+pdLDS/likelihood.py,sha256=7hzmb7lyVsx1Q7IiAeaHm6LnKU57gHsw-bYcGUNDf_E,749
+pdLDS/offset.py,sha256=tlRbl5LPUb9pOO4v-z_a9bRz8Lx7O2DKadFZvZX3JtQ,3778
+pdLDS/pdLDS.py,sha256=QwS365J4Ax0BmsS8amz2ParCqTJWyAEa3qshf4UuI0w,18365
+pdLDS/utils.py,sha256=m4aRMfiZyPuY_B9acEkavKtbEhz16kYp8fG9SDPcU3I,907
+pdLDS-0.10.dist-info/LICENSE,sha256=GelbevN8pzn-h0xJLS5j1tLRfVITQG2NntAuNMDZjRA,1063
+pdLDS-0.10.dist-info/METADATA,sha256=5G-sCLqc27J3WR6GjF1McOD-NJkhPHU3cKKD9TBelUM,671
+pdLDS-0.10.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pdLDS-0.10.dist-info/top_level.txt,sha256=GKcuWbPG3dKvPEUEDFFnWlLmaTDfgBEVN5VjY4YhtQw,6
+pdLDS-0.10.dist-info/RECORD,,
