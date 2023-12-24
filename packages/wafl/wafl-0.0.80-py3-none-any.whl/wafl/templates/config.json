@@ -1,0 +1,26 @@
+{
+  "waking_up_word": "computer",
+  "waking_up_sound": true,
+  "deactivate_sound": true,
+  "rules": "rules.yaml",
+  "functions": "functions.py",
+  "llm_model": {
+    "model_host": "localhost",
+    "model_port": 8080
+  },
+  "listener_model": {
+    "model_host": "localhost",
+    "model_port": 8080,
+    "listener_hotword_logp": -8,
+    "listener_volume_threshold": 0.6,
+    "listener_silence_timeout": 0.7
+  },
+  "speaker_model": {
+    "model_host": "localhost",
+    "model_port": 8080
+  },
+  "text_embedding_model": {
+    "model_host": "localhost",
+    "model_port": 8080
+  }
+}
