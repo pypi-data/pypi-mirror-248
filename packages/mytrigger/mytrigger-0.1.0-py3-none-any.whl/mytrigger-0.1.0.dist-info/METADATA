@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: mytrigger
+Version: 0.1.0
+Summary: A custom Airflow trigger for monitoring multiple GCS prefixes
+Home-page: https://github.com/your_username/mytrigger
+Author: Your Name
+Author-email: your_email@example.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: apache-airflow
+Requires-Dist: aiohttp
+
+UNKNOWN
+
+
