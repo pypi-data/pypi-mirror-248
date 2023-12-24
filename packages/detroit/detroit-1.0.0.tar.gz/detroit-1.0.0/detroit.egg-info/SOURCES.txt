@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+detroit/__init__.py
+detroit/d3.py
+detroit/plot.py
+detroit/style.py
+detroit/ui.py
+detroit/utils.py
+detroit.egg-info/PKG-INFO
+detroit.egg-info/SOURCES.txt
+detroit.egg-info/dependency_links.txt
+detroit.egg-info/requires.txt
+detroit.egg-info/top_level.txt
