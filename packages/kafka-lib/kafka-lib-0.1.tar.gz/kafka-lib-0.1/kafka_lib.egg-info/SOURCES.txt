@@ -1,0 +1,9 @@
+setup.py
+kafka_lib/__init__.py
+kafka_lib/kafka_lib.py
+kafka_lib/producer.py
+kafka_lib.egg-info/PKG-INFO
+kafka_lib.egg-info/SOURCES.txt
+kafka_lib.egg-info/dependency_links.txt
+kafka_lib.egg-info/requires.txt
+kafka_lib.egg-info/top_level.txt
