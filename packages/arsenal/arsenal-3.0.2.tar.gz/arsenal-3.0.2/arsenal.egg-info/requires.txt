@@ -1,0 +1,8 @@
+numpy
+scipy
+pandas
+cython
+orderedset
+matplotlib
+gprof2dot
+path.py
