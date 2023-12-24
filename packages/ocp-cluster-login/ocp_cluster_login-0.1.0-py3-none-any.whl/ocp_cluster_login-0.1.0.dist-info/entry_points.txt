@@ -1,0 +1,2 @@
+[console_scripts]
+ocp-cluster-login = ocp_cluster_login.main:main
