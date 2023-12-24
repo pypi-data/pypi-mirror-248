@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: arkana-build-tools-example-pkg
+Version: 0.1.0
+Summary: TBD.
+Author: Sivam Pasupathipillai
+Author-email: sivam.pasupathipillai@gmail.com
+Requires-Python: >=3.11,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# Arkana build tools
+## *"Build tools should work like magic"🪄*
+
+Build tools for the busy data bee 🐝.
+
+![example workflow](https://github.com/svmpsp/arkana-build-tools/actions/workflows/build-python-application.yml/badge.svg)
+
+### Features
+
+* Full Python packaging lifecycle management including:
+    * code formatting following best practices.
+    * type checking, linting, testing.
+    * dependency management and pinning
+    * packaging
+    * release on PyPI
+* Exploratory data science environment setup
+
