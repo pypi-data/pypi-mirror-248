@@ -1,0 +1,3 @@
+[console_scripts]
+keybeat=keybeat.__main__:main
+
