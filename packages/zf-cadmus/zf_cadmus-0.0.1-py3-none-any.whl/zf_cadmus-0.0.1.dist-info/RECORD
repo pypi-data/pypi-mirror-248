@@ -1,0 +1,11 @@
+cadmus/__init__.py,sha256=yHU0w-3V4JgTVIr5y1QHY3MKreEmtkswppll2rpLvVM,135
+cadmus/cache.py,sha256=PbiarknOJ27r6c_y1c9yntsBxcbSzSybeqBnyAs3sUc,3566
+cadmus/cache_test.py,sha256=vczHOgC0QYcVtsGD4KfWrejIwFq6T2vDOgXL_pEQMU0,642
+cadmus/database.py,sha256=bKpKeroouKPKPHDU6IjziqZkt3SwOwKbkdAok8QFhaI,7849
+cadmus/model.py,sha256=Ib5b_LHD9sEvUIGwQItmKaU_9EPcrRugiTvFqeDI34Y,1214
+cadmus/version.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+zf_cadmus-0.0.1.dist-info/LICENSE,sha256=pMdDbqqjSfeXsy7oezjVV5CfFSpNIs0vLc2R8ahBqa4,1065
+zf_cadmus-0.0.1.dist-info/METADATA,sha256=a6pDTVAXj0azUJMhP85xyHJFKJlL-we08CjyddlJcPM,3784
+zf_cadmus-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+zf_cadmus-0.0.1.dist-info/top_level.txt,sha256=7Xzv9w5C4tX7p4cZKksj_1WygNAs3K1zohi_3Fnk_yo,7
+zf_cadmus-0.0.1.dist-info/RECORD,,
