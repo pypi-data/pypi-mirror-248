@@ -1,0 +1,116 @@
+Metadata-Version: 2.1
+Name: lektor-deploy-ipfs
+Version: 1.0.0
+Summary: Deploy your static Lektor website to IPFS!
+Author-email: Erin Yuki Schlarb <erin-dev@ninetailed.ninja>
+License: LGPLv3
+Keywords: Lektor plugin
+Classifier: Environment :: Plugins
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Lektor
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: dns-lexicon
+Requires-Dist: httpx
+Requires-Dist: ipfshttpclient
+
+# lektor-deploy-ipfs
+
+Deploy your static Lektor site to IPFS!
+
+Implemented features:
+
+ * Add Lektor deployment directory to IPFS node using the [py-ipfs-api-client](https://github.com/ipfs-shipyard/py-ipfs-http-client/) library
+ * Add the added IPFS directory to an IPFS-Cluster pinset, updating the pin if it already exists (optional)
+ * Reference the added IPFS directory using an IPNS key
+ * Reference the added IPFS directory using DNSLink using the [Lexicon](https://dns-lexicon.readthedocs.io/) library
+
+Known issues:
+
+ * The used py-ipfs-api-client library hasn’t been updated and raises a version incompatibility error with latest Kubo
+    * This can be worked around by editing the source code near the exception and setting a higher maximum version.
+    * Yes, this is technically my responsibility to fix…
+
+## Configuration
+
+All relevant configuration is done by adding a new `servers` section with a
+target URI of `ipfs://`, `ipfs+dnslink://` or `ipns://` into your project’s
+*.lektorproject* file. The basic structure of `servers` sections is described
+[in the Lektor documentation](https://www.getlektor.com/docs/deployment/#lektor-assisted-deployments),
+however several additional keys are supported:
+
+ * `target`: Target URI to publish the Lektor-generated website to; may be one
+   of the following:
+    * `ipfs://`: Add Lektor deployment to IPFS node (and optionally also
+      IPFS-Cluster), but do not reference it anywhere
+    * `ipfs+dnslink://<domainname>`: In addition, reference the added files in
+      a `_dnslink.<domainname>` DNS TXT record to have them be served by IPFS
+      gateways at `/ipns/<domainname>` or when handling direct requests to
+      `https://<domainname>`
+    * `ipns://<ipnskey>`: Instead, reference the added files using the given
+      IPNS key (either a key-name or an IPNS hash) to have them be served by
+      IPFS gateways at `/ipns/<ipnskeyhash>` (this can be combined with a
+      static DNSLink record to also handle direct requests on any configured
+      domain)
+ * `upload-type`: Must be either `ipfs` or `ipfs-cluster` to add the Lektor
+   deployment files only to the IPFS node or to both the IPFS node and the
+   IPFS-Cluster daemon, respectively.
+ * `ipfs-api-addr`, `ipfs-api-base`, `ipfs-api-username`, `ipfs-api-password`:
+   The MultiAddr, HTTP basename, HTTP username and HTTP password to use when
+   connecting to the IPFS node; defaults to the defaults used by the
+   py-ipfs-api-client library (`/dns/localhost/tcp/5001/http` and `/api/v0`
+   with no username or password).
+ * `cluster-endpoint`: The HTTP base URL to use when communicating with the
+   IPFS-Cluster daemon; defaults to `http://localhost:9094/`.
+ * `cluster-pin-name`: The Cluster pin-name to set/update when adding the
+   Lektor deployment files to the IPFS-Cluster daemon; required if
+   *upload-type* is *ipfs-cluster*, otherwise ignored.
+ * `dns-provider-name`: Name of the DNS provider management solution that
+   Lexicon should expect when attempting to update the DNSLink record –
+   see the [Lexicon documentation](https://dns-lexicon.readthedocs.io/en/latest/configuration_reference.html#providers-available)
+   for a list of accepted values (note that a lot of off-the-shelf DNS
+   resellers will work using either `ddns`, `directadmin`, `infoblox`, `onapp`
+   or `plesk` when specifying the correct `*_server/endpoint` URL, even when
+   they are not explicitely mentioned in the Lexicon documentation); ignored
+   unless an `ipfs+dnslink://` target URI is used.
+ * `dns-*`: Arbitrary key-value pairs to pass to the Lexicon library when
+   attempting to update the DNSLink record (all `-` are replaced with `_` for
+   consistency with other Lektor options) – see the [Lexicon documentation](https://dns-lexicon.readthedocs.io/en/latest/configuration_reference.html#list-of-options);
+   ignored unless an `ipfs+dnslink://` target URI is used.
+
+### Minimal Example
+
+Only add the Lektor deployment files to IPFS with no further processing:
+
+```ini
+[servers.ipfs]
+name = Add to IPFS
+target = ipfs://
+```
+
+### Full DNSLink+IPFS-Cluster Example
+
+Adds Lektor deployment files to IPFS and an IPFS-Cluster and referencs them
+using DNSLink at domain `example.org` whose DNS is persumably managed by the
+Plesk instance of Magenta Business AT – this is similar to the configuration
+used in production by the author.
+
+```ini
+[servers.public]
+name = Public
+enabled = yes
+default = yes
+target = ipfs+dnslink://example.org
+
+upload-type = ipfs-cluster
+cluster-pin-name = erin_website_tutoring
+
+dns-provider-name = plesk
+dns-plesk-server  = https://panelhost02.webhosting.magentabusiness.at/
+dns-auth-username = the-username-used-when-logging-in
+dns-auth-password = the-password-used-when-logging-in
+dns-ttl           = 60  # Not actually implemented by the Lexicon Plesk provider
+```
