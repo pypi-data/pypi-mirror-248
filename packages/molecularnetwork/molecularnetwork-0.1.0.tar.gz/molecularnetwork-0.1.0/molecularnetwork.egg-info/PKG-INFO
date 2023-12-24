@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: molecularnetwork
+Version: 0.1.0
+Summary: A package for creating molecular networks based on molecular features and similarities.
+Home-page: https://github.com/Manas02/molecularnetwork
+Author: Manas Mahale
+Author-email: manas.m.mahale@gmail.com
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: networkx
+Requires-Dist: rdkit
