@@ -1,0 +1,4 @@
+color256
+cursor
+termkey
+unicon
