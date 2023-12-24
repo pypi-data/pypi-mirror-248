@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/termtris.py
+src/tt_backend.py
+src/tt_panel.py
+src/tt_tetro.py
+src/termtris.egg-info/PKG-INFO
+src/termtris.egg-info/SOURCES.txt
+src/termtris.egg-info/dependency_links.txt
+src/termtris.egg-info/entry_points.txt
+src/termtris.egg-info/requires.txt
+src/termtris.egg-info/top_level.txt
