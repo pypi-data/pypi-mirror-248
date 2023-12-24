@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: django-query-fetch
+Version: 0.0.1
+Summary: A Python package for executing database queries based on various parameters.
+Author-email: Aswin K T <aswinkt1299@gmail.com>
+Project-URL: Homepage, https://github.com/Aswinkt/django_query_fetch
+Project-URL: Issues, https://github.com/Aswinkt/django_query_fetch/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Framework :: Django
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Django Query Fetch
+
+## Overview
+
+Django Query Fetch is a Python package that provides a convenient function for executing database queries based on various parameters.
+
+## Installation
+
+Install the package using pip:
+
+```bash
+pip install django-query-fetch

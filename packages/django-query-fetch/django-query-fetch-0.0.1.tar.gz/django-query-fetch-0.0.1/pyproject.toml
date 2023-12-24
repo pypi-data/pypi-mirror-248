@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "django-query-fetch"
+version = "0.0.1"
+authors = [
+  { name="Aswin K T", email="aswinkt1299@gmail.com" },
+]
+description = "A Python package for executing database queries based on various parameters."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    'Framework :: Django',
+]
+
+[project.urls]
+Homepage = "https://github.com/Aswinkt/django_query_fetch"
+Issues = "https://github.com/Aswinkt/django_query_fetch/issues"
