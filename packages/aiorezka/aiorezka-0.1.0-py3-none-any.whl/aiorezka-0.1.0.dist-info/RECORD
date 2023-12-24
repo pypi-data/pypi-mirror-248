@@ -1,0 +1,12 @@
+aiorezka/__init__.py,sha256=wryxb2ujc7SNhSNy8mCAYMa_IivSjBEIG-BeiIgZ3bA,72
+aiorezka/api.py,sha256=tWvK9713LB-ZHmKxQjejfE4OtDLLBXypdvAmgvRgl0w,3234
+aiorezka/backend/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiorezka/backend/latest_movie.py,sha256=DZJiZhWiKdqutJjMdk1YaOKt4BoPuTTovFKR_veKX6s,2150
+aiorezka/backend/movie_detail.py,sha256=JajYEKrPL3fFW0RVmaXb78ffX2gEGnxkG7aQnr5dcM8,950
+aiorezka/enums.py,sha256=r_d_vKVjLFB0Dnw1wGpFga6QKPVFxELN3QoYeqUB5yo,93
+aiorezka/factories.py,sha256=BEAb6p9DPzs4K3iQksU7MmMYSo6dUeoBAyWb3CMxu3g,5213
+aiorezka/schemas.py,sha256=sySBYGaI2StuDn-P_iIGL4QRsitiWKOSgJiwz1vp_4I,1719
+aiorezka/utils.py,sha256=h_JB5sar024kt1PwddYwg7dFcpt26N49u7IDSNqRF1k,296
+aiorezka-0.1.0.dist-info/METADATA,sha256=BdthuCyn8cFxP-wUx1T6zxHAXLTZx06vhZkt_3eFg6A,1091
+aiorezka-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+aiorezka-0.1.0.dist-info/RECORD,,

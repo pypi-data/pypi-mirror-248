@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: aiorezka
+Version: 0.1.0
+Summary: 
+Author: iYasha
+Author-email: 33287747+iYasha@users.noreply.github.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiohttp (>=3.9.1,<4.0.0)
+Requires-Dist: beautifulsoup4 (>=4.12.2,<5.0.0)
+Requires-Dist: faker (>=21.0.0,<22.0.0)
+Requires-Dist: pydantic (>=2.5.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+# aiorezka
+
+## Installation
+
+```bash
+pip install aiorezka
+```
+
+## Usage/Examples
+
+```python
+from aiorezka.api import RezkaAPI
+from aiohttp import ClientSession
+import asyncio
+
+async def main():
+    async with ClientSession() as session:
+        datails = await RezkaAPI(session).detail.get(
+            'https://rezka.ag/cartoons/comedy/2136-rik-i-morti-2013.html'
+        )
+        print(datails)
+
+asyncio.run(main())
+
