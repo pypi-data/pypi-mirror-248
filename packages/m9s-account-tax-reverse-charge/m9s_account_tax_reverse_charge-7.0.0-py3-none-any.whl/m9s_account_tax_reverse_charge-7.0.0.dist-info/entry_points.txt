@@ -1,0 +1,2 @@
+[trytond.modules]
+account_tax_reverse_charge = trytond.modules.account_tax_reverse_charge
