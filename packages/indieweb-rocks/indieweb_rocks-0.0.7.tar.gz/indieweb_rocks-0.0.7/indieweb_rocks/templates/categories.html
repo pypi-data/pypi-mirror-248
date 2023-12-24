@@ -1,0 +1,11 @@
+$def with (categories)
+$var title: Categories
+
+<p id=categories><small>\
+$for category, count in categories.most_common():
+    $if count == 1:
+        $continue
+    $if not loop.first:
+        ,
+    <a href=/categories/$category>$category</a> <small>$count</small>\
+</small></p>

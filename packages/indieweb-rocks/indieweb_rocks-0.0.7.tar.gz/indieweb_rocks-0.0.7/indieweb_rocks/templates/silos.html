@@ -1,0 +1,10 @@
+$def with ()
+$var title: Silos
+
+<ul id=services>
+$for silo, (domain, *_) in silos.items():
+    <li style=padding:.25em><a href=/$domain><img style=height:1.25em;width:1.25em
+    src=/sites/$domain/icon.png>&nbsp;$silo</a></li>
+</ul>
+
+<p><small><a href=/silos/url_summaries.json><code>url_summaries.json</code></a></small></p>

@@ -1,0 +1,15 @@
+$def with (people)
+$var title: People
+
+<h1>People</h1>
+
+<ul id=people>
+$for url, card in people.items():
+    $if not card:
+        $continue
+    <li style="display:grid;grid-template-columns:2em auto;
+    grid-column-gap:.5em;margin-bottom:.5em"><img
+    style=height:2.25em;width:2.25em src=/sites/$url/photo.png>
+    <div><a href=/$url style=color:black>$card["name"][0]<br><small
+    style=color:green>$url</small></a></div></li>
+</ul>

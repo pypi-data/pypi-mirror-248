@@ -1,0 +1,45 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "indieweb.rocks"
+version = "0.0.7"
+description = "IndieWeb validator"
+authors = ["Angelo Gladding <angelo@ragt.ag>"]
+license = "0BSD"
+
+[tool.poetry.plugins."websites"]
+indieweb_rocks = "indieweb_rocks.__web__:app"
+
+[[tool.poetry.source]]
+name = "main"
+url = "https://ragt.ag/code/pypi"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+webint = ">=0.0"
+webint-data = ">=0.0"
+webint-guests = ">=0.0"
+webint-owner = ">=0.0"
+webint-system = ">=0.0"
+micropub = ">=0.0"
+typesense = "^0.18.0"
+svglib = "^1.3.0"
+python-whois = "^0.8.0"
+phonenumbers = "^8.12.55"
+
+[tool.poetry.group.dev.dependencies]
+gmpg = {path="../gmpg", develop=true}
+bgq = {path="../bgq", develop=true}
+easyuri = {path="../easyuri", develop=true}
+newmath = {path="../newmath", develop=true}
+sqlyte = {path="../sqlyte", develop=true}
+microformats = {path="../python-microformats", develop=true}
+micropub = {path="../python-micropub", develop=true}
+txtint = {path="../txtint", develop=true}
+webagt = {path="../webagt", develop=true}
+webint = {path="../webint", develop=true}
+webint-data = {path="../webint-data", develop=true}
+webint-owner = {path="../webint-owner", develop=true}
+webint-system = {path="../webint-system", develop=true}

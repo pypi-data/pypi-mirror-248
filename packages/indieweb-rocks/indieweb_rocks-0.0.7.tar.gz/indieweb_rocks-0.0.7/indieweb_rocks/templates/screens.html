@@ -1,0 +1,7 @@
+$def with (sites)
+$var title: Site Screenshots
+
+<div style="display:grid;grid-template-columns:25% 25% 25% 25%">
+$for site in sites:
+    <div><a href=//$site><img style="width:100%" src=/sites/$site/screenshot.png></a></div>
+</div>
