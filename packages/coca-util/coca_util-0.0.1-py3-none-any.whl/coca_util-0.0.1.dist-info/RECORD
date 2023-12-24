@@ -1,0 +1,8 @@
+coca_util/__init__.py,sha256=2gj7ktk0SgsWz5t2GkHd5rnffclwmHBiOFJJ34dNLOo,41
+coca_util/debug.py,sha256=YIv5OpS6Alb-nIqqMd5lPcpL7giM33q_RvKNvHSbSUk,573
+coca_util/line.py,sha256=LQ0BETP30DK4I4C_x44k0eYM4pbLMX-sBCJfHtaCdK4,341
+coca_util/ws/Client.py,sha256=uCBbyzfRjQKrS5L13lsRq1OrTVdrCB6HsmOwG17dPC0,1424
+coca_util/ws/__init__.py,sha256=fJtTccxgSQtJ6Ud68G2swGCZT0_SZ17DW8XaYuKLoIE,22
+coca_util-0.0.1.dist-info/METADATA,sha256=98ztOWyr4pr-Tdms48h4tAuMVPjnJBWDNc3dy8yGZZo,545
+coca_util-0.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+coca_util-0.0.1.dist-info/RECORD,,
