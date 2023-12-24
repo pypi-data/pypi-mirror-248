@@ -1,0 +1,20 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "st-pocketbase-connection"
+version = "0.3.0"
+description = "Streamlit extension to access pocketbase"
+authors = ["Ashwin <bsashwin9@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/Ashwin-op/st-pocketbase-connection"
+packages = [
+    { include = "pocketbase_connection.py", from = "." },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pocketbase = "^0.9.2"
+streamlit = "^1.29.0"
