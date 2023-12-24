@@ -1,0 +1,13 @@
+i18nconverter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+i18nconverter/main.py,sha256=YHwfpCLR6tkr3xId-xiQ2PnQVVDg7_EUvUPiqDA2H4k,7008
+i18nconverter/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+i18nconverter/utils/gspreadsheet_to_json.py,sha256=EqdW5aBV-v0DerMgTy65qM7bV7M_7fP6EEmW9Ky-Zo4,1649
+i18nconverter/utils/json_to_kv.py,sha256=IrYyvNHBTvGDKH4VrxiE4wYOtnLIvo3-NuvOwq0Qb_Q,1112
+i18nconverter/utils/kv_to_gspreadsheet.py,sha256=aQFgP4mQ1faNFVbFVus5ex6LxJ_OBTxWaB8vBsESmr4,1345
+i18nconverter/utils/utils_google.py,sha256=m0ukRJc1rKDhotSUGrq_ur0HjSK_dRv1tczqpuv6inw,1154
+i18nconverter-0.0.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+i18nconverter-0.0.3.dist-info/METADATA,sha256=W2Wm7naWK0sh-FVFUZNM21pr4FfqYqJMEcWwSZBcy08,6609
+i18nconverter-0.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+i18nconverter-0.0.3.dist-info/entry_points.txt,sha256=7lGPjWzRlIgXgTBg_armaaNhMmjfFhCZthQQXYCcsvo,57
+i18nconverter-0.0.3.dist-info/top_level.txt,sha256=LK9w4gyfpc2KZDKKxrNn8FUNU-qk5Rn3iJlxRQWz9o4,14
+i18nconverter-0.0.3.dist-info/RECORD,,
