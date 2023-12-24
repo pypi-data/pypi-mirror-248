@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: ipush
+Version: 0.1.0
+Summary: Push for python
+Project-URL: Homepage, https://git.jetsung.com/idev/pypush
+Project-URL: Documentation, https://framagit.org/idev/pypush
+Project-URL: Repository, https://framagit.org/idev/pypush.git
+Author-email: Jetsung Chan <jetsungchan@gmail.com>
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Communications :: Email
+Requires-Python: >=3.8
+Requires-Dist: lxml>=4.9.4
+Requires-Dist: requests>=2.31.0
+Description-Content-Type: text/markdown
+
+# pypush
+
+APP 推送通知
+
+## 支持平台
+
+| 状态     | **国内**平台      | 官网                                                                                                      | 文档 | 备注 |
+| :------- | :---------------- | :-------------------------------------------------------------------------------------------------------- | :--- | :--- |
+| ✔ **荐** | **钉钉群机器人**  | [https://open.dingtalk.com/](https://open.dingtalk.com/document/robots/customize-robot-security-settings) | -    |      |
+| ✔ **荐** | **飞书群机器人**  | [https://open.feishu.cn/](https://open.feishu.cn/document/client-docs/bot-v3/add-custom-bot)              | -    |      |
+| ✔ **荐** | **Lark 群机器人** | [https://open.larksuite.com/](https://open.larksuite.com/document/client-docs/bot-v3/add-custom-bot)      | -    |      |
+
+## 前置环境
+
+1. 使用 [**Rye**](https://rye-up.com/) 作为包管理工具
+
+## 单元测试
+
+```bash
+# rye test
+rye run tests
+
+# pytest
+python -m pytest
+
+# 打印测试报告
+python -m pytest -s
+```
