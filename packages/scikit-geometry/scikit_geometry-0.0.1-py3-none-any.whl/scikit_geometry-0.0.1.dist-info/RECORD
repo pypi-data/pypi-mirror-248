@@ -1,0 +1,12 @@
+scikit-geometry/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scikit-geometry/algorithms/__init__.py,sha256=GsJh2ZSBCaLB0yu6UjM3U4T6wWwXjaUJ8xJpX4Q1Iw4,320
+scikit-geometry/algorithms/_convexhull.py,sha256=m0UPvznrWVYooOUoaPgTEoo5OMR_uaoEc7fUik67W18,3017
+scikit-geometry/algorithms/_mincircle.py,sha256=OOaRAJ8pQaArIVXsK4EunGoD2qRYtBomZVc4rxHpMTA,10551
+scikit-geometry/algorithms/_triangulation.py,sha256=_LqiA5klGfdvzjEyCELqp4o4a66qey9zvWQuSBpMYRE,4942
+scikit-geometry/algorithms/_voronoi.py,sha256=rUudAFifI_9L3nJxyVnXR_FWkSvGhII4Hv7yt-A4RXs,9547
+scikit-geometry/elements/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scikit-geometry/elements/elements.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scikit_geometry-0.0.1.dist-info/LICENSE,sha256=OEPvlsz_KBSGrQyDlLU8byQ_8Q7tEsUzAoqTtXjK4TY,1073
+scikit_geometry-0.0.1.dist-info/METADATA,sha256=A0AiaDAHs06F6i2vmO3wFyEDvENw9tR94KxLVV9vxjY,3024
+scikit_geometry-0.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+scikit_geometry-0.0.1.dist-info/RECORD,,
