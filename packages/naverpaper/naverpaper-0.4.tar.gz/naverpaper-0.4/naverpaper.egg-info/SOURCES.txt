@@ -1,0 +1,7 @@
+setup.py
+naverpaper.egg-info/PKG-INFO
+naverpaper.egg-info/SOURCES.txt
+naverpaper.egg-info/dependency_links.txt
+naverpaper.egg-info/requires.txt
+naverpaper.egg-info/top_level.txt
+test/test_naverpaper.py

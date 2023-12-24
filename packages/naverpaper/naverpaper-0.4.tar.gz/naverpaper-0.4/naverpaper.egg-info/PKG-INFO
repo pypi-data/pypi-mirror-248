@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: naverpaper
+Version: 0.4
+Summary: Naver Paper Machine
+Author: stateofai
+Author-email: tellme@duck.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
