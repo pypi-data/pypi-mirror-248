@@ -1,0 +1,10 @@
+README.md
+setup.py
+insurancespell.egg-info/PKG-INFO
+insurancespell.egg-info/SOURCES.txt
+insurancespell.egg-info/dependency_links.txt
+insurancespell.egg-info/not-zip-safe
+insurancespell.egg-info/requires.txt
+insurancespell.egg-info/top_level.txt
+insurancespellcheck/__init__.py
+insurancespellcheck/sp.model
