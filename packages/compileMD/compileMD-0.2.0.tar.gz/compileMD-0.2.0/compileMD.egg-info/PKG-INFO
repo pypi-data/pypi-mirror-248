@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: compileMD
+Version: 0.2.0
+Summary: Compiles multiple markdown files into a single README.md
+Home-page: https://github.com/asis2016/compileMD
+Author: Ashish S. Maharjan
+Author-email: <hello@amaharjan.de>
+License: MIT
+Keywords: python,markdown
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+
+UNKNOWN
+
