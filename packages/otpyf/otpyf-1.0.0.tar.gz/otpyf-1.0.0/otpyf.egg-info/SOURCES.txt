@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+otpyf/__init__.py
+otpyf/otpyf.py
+otpyf.egg-info/PKG-INFO
+otpyf.egg-info/SOURCES.txt
+otpyf.egg-info/dependency_links.txt
+otpyf.egg-info/not-zip-safe
+otpyf.egg-info/top_level.txt
