@@ -1,0 +1,9 @@
+setup.py
+carbgremover/__init__.py
+carbgremover/external_model.py
+carbgremover/internal_model.py
+carsegmentation.egg-info/PKG-INFO
+carsegmentation.egg-info/SOURCES.txt
+carsegmentation.egg-info/dependency_links.txt
+carsegmentation.egg-info/requires.txt
+carsegmentation.egg-info/top_level.txt
