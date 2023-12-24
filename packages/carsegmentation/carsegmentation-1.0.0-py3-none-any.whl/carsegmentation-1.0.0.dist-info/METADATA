@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: carsegmentation
+Version: 1.0.0
+Requires-Dist: numpy
+Requires-Dist: tensorflow
+Requires-Dist: ultralytics
+Requires-Dist: segment-anything
+

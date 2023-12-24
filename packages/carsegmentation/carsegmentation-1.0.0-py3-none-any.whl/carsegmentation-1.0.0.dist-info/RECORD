@@ -1,0 +1,7 @@
+carbgremover/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+carbgremover/external_model.py,sha256=ta2sa5WP6ObR2bkcAyI6OnGSJrDGEoFcpzfwIzzk1w0,2549
+carbgremover/internal_model.py,sha256=Z06_Md6TUnoSohHG8iJ4N29eM9978ZsSicnYB6NxRsY,1851
+carsegmentation-1.0.0.dist-info/METADATA,sha256=ahFInJXoc8wy9xacnKDzXUKvOPnjQs3oimkOj3JBrJo,166
+carsegmentation-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+carsegmentation-1.0.0.dist-info/top_level.txt,sha256=PouqHDMzsp17jHc_bEUjiI6BKg2P5qyRLCwbXpFfGOA,13
+carsegmentation-1.0.0.dist-info/RECORD,,
