@@ -1,0 +1,9 @@
+setup.py
+kafka_lib_tima.egg-info/PKG-INFO
+kafka_lib_tima.egg-info/SOURCES.txt
+kafka_lib_tima.egg-info/dependency_links.txt
+kafka_lib_tima.egg-info/requires.txt
+kafka_lib_tima.egg-info/top_level.txt
+kafka_tima/__init__.py
+kafka_tima/kafka_tima.py
+kafka_tima/producer.py
