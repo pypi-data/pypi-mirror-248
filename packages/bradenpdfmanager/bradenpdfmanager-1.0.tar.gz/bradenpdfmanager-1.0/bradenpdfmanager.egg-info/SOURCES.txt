@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+bradenpdfmanager/__init__.py
+bradenpdfmanager/pdf2image.py
+bradenpdfmanager/pdf2text.py
+bradenpdfmanager.egg-info/PKG-INFO
+bradenpdfmanager.egg-info/SOURCES.txt
+bradenpdfmanager.egg-info/dependency_links.txt
+bradenpdfmanager.egg-info/top_level.txt
