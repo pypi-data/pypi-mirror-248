@@ -1,0 +1,1 @@
+This package is made to have useful functions I might want to re-use.
