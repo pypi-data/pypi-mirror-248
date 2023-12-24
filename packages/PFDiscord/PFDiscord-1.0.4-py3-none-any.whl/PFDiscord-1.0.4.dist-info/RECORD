@@ -1,0 +1,13 @@
+PFDiscord/PFDiscord.py,sha256=-bCPOaxZstO2X-dGpQghbkrVVdZcCFZyeqyDermg1rU,16051
+PFDiscord/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+PFDiscord/conversation.py,sha256=z4ipe_ZiW-wXc_S9KsPuZpZOlhjBhs1hV37lKEJhpXc,8233
+PFDiscord/initialize.py,sha256=i0WxKyAFuSxmAN5JUqMNuwpr7Qcuwrtg4-260m_hzvo,6598
+PFDiscord/message_handlers.py,sha256=mJ8PbR3fWMMPMrp_eHFs-cv1Ii23GJQJmvd2Un7A_Z8,5333
+PFDiscord/tokenGPT.py,sha256=5lda_F40qwro6NQG-Ov_OHNdaoVFAVVajvW_KHGfbp8,3342
+PFDiscord/utils.py,sha256=U91KywiP-MPkKVdZi4SOPHzQb5wHhMAP6TeWZN8IQyc,2117
+PFDiscord/web_utils.py,sha256=gFEgHNVrSrQ8V2SvvE-LrWGNtoGWU1-H8FaOYv_JE0c,5898
+PFDiscord-1.0.4.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+PFDiscord-1.0.4.dist-info/METADATA,sha256=wZ9-jsZMP20QbvVjJcoErwitdkmB5EdzKga0EU2hPCY,7012
+PFDiscord-1.0.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+PFDiscord-1.0.4.dist-info/top_level.txt,sha256=9JL-UTdx7I-YzXo59owdFR0roU0ZJsOHnJC9xFXS2TA,10
+PFDiscord-1.0.4.dist-info/RECORD,,
