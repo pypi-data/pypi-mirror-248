@@ -1,0 +1,17 @@
+LICENSE,sha256=Rj3aL1dHpejwCwKUR-C9dGL48DW4EDlHfZhHqHhTdwc,1497
+README.md,sha256=AXN1in6jhj1GBrRV2e7KU1QMhmCdDFQ85q5kpfJEnSo,6340
+gaspra/__init__.py,sha256=6YRV5aclIv_9cW-K6GrIU5-D-tu_TOu6m6JFxe_6g5Y,141
+gaspra/changesets.py,sha256=QIe6kq3pk87o4w79wdITdMly0tvYMSNI6mQb2WD2LhY,6302
+gaspra/common.py,sha256=5QpuALlCrPZWtU0qFm80pRLsCgKsmLTRCXVT_r6mUw0,154
+gaspra/difflib_benchmark.py,sha256=ewXaliio176qmj7uQBhYMtVo2HwEQnhpayt95Vw_fBg,1956
+gaspra/dot_dump.py,sha256=eK3hZwqyYN5hnWr57AWUKadMgE7ESqoaLGsUpkQhqXg,903
+gaspra/examples.py,sha256=4kvJQTdKhaZaN9h0IrMJqwFrcqQATIBuVXDssQgsU_U,978
+gaspra/merge.py,sha256=2kETu0ffRX-RIDEFrQ25NW1H42l_0AByRT5jdgLYjJM,9746
+gaspra/multiple_strings.py,sha256=BvrRMJgmw5M7Gkcp6rZu6ghTOc3RbU1XrPpUiRgzVBY,5138
+gaspra/suffix_automaton.py,sha256=7vsOkZWKOyPWYHtZjl0h52qwhcLQ5FkXlGlwmExJu1k,9535
+gaspra/test_helpers/random_strings.py,sha256=5_Zmde-HROAAW4uQswX1KfmzjJdRewDOhXggCn0TeH4,149
+gaspra/wrappers.py,sha256=mCTPiaKgoNdzEU9vv8UNpjdGYVk_dcPFE4BSzYEry7E,1996
+gaspra-0.1.0a2.dist-info/LICENSE,sha256=Rj3aL1dHpejwCwKUR-C9dGL48DW4EDlHfZhHqHhTdwc,1497
+gaspra-0.1.0a2.dist-info/METADATA,sha256=vNz4GT39nrKBZFM_znnQnbKXJfUBXC_yyfxgED5KkrY,7354
+gaspra-0.1.0a2.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+gaspra-0.1.0a2.dist-info/RECORD,,
