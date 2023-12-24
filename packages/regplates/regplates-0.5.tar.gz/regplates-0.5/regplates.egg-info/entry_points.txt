@@ -1,0 +1,2 @@
+[console_scripts]
+xxxxxxxxxx = RegistrationPlatesGUI.main:main_function
