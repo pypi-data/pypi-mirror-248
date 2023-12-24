@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: DXEntity
+Version: 0.1.5
+Summary: The DXEntity API return location information for an amateur radio call sign.
+Author: Fred C.
+Project-URL: Source, https://github.com/0x9900/DXEntity
+Project-URL: Tracker, https://github.com/0x9900/DXEntity/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python
+Classifier: Topic :: Communications :: Ham Radio
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# DXEntity
+
+## Amateur Radio Country Files
+
+## Example
+```python
+In [1]: from DXEntity import DXCC
+In [2]: dx = DXCC()
+In [3]: dx.lookup('W1AW')
+Out[3]: DXCCRecord(country='United States', prefix='K', adif=291, cqzone=5, ituzone=8, continent='NA', latitude=42.38, longitude=71.65, gmtoffset=5.0, exactcallsign=False)
+```

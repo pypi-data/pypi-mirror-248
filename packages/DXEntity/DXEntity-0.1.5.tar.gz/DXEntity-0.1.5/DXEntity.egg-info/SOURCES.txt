@@ -1,0 +1,16 @@
+.git_archival.txt
+.gitattributes
+.gitignore
+.pre-commit-config.yaml
+LICENSE
+README.md
+pylintrc
+pyproject.toml
+.github/workflows/pylint.yml
+DXEntity/__init__.py
+DXEntity/_dxentity.py
+DXEntity/_version.py
+DXEntity.egg-info/PKG-INFO
+DXEntity.egg-info/SOURCES.txt
+DXEntity.egg-info/dependency_links.txt
+DXEntity.egg-info/top_level.txt
