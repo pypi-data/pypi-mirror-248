@@ -1,0 +1,6 @@
+Huggingface Call 1 made at 1703337393.1530354Huggingface Call 2 made at 1703337394.9049094Huggingface Call 3 made at 1703337396.6628902Huggingface Call 4 made at 1703337398.3861156Huggingface Call 5 made at 1703337400.4906986
+The number of counted calls = 5
+The total costs for the document are: 0.0 euro's
+We had to accept 0 incorrect summaries due to the while-limit.
+We use language-option Default.
+We use language model MBZUAI/LaMini-Flan-T5-248M.

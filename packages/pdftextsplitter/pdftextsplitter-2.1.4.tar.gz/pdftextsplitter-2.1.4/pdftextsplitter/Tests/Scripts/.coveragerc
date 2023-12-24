@@ -1,0 +1,12 @@
+[run]
+source = ../../TextPart/
+omit =
+    ./*
+    ../Tools/*
+    ../../Source/*
+    ../../TextPart/__pycache__/*
+    ../../TextPart/__init__.py
+    ../../TextPart/summarize.py
+    ../../TextPart/summarize_openai.py
+    ../../TextPart/summarize_public_Huggingface.py
+    ../../TextPart/summarize_private.py
