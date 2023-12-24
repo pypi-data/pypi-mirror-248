@@ -1,0 +1,6 @@
+[console_scripts]
+codey = googleaistudio.codey:main
+geminipro = googleaistudio.geminipro:main
+geminiprovision = googleaistudio.geminiprovision:main
+palm2 = googleaistudio.palm2:main
+
