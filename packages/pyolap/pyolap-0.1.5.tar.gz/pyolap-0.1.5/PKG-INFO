@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: pyolap
+Version: 0.1.5
+Summary: Python Olap on EuclidOLAP.
+Home-page: https://github.com/EuclidOLAP/EuclidOLAP
+Author: czg
+Author-email: euclidolap@outlook.com
+Keywords: olap,analysis,BI,statistics,dimensional,cube
