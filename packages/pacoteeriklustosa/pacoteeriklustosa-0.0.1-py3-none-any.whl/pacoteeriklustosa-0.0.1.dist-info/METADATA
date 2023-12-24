@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pacoteeriklustosa
+Version: 0.0.1
+Summary: Meu primeiro pacote para a linguagem python
+Author: Erik Vinicius Lustosa da Silva
+Author-email: eriklustosa8@gmail.com
+Keywords: python,primeiro pacote
+Classifier: Development Status :: 3 - Alpha
+Requires-Dist: numpy
+
+Esse pacote vai facilitar as contas de matematicas
