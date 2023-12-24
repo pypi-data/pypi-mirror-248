@@ -1,0 +1,4 @@
+argparse==1.4.0
+configparser==5.0.2
+spotipy==2.23.0
+daemon==1.2
