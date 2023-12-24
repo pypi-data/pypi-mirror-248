@@ -1,0 +1,10 @@
+llm_shell/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+llm_shell/chatgpt_support.py,sha256=rz2WEIOg9V5Cnuladd35Hk7Z60LWEnxlaFFnuxXWcc4,2202
+llm_shell/llm_shell.py,sha256=9qBmJQ3vJXLiZZjhDQlTzmF61-rKaYHjPrWgYUVYxbM,6344
+llm_shell/util.py,sha256=JPd2Vgr-2k6IYsNkCaDonBZnX48uVbSQR6ZgUbzkU2Q,1981
+llm_shell-0.1.0.dist-info/LICENSE,sha256=jO_cAg0Xy5vTE84A5T1pJ2JLlY3V7122rA2OAqW7sNk,1052
+llm_shell-0.1.0.dist-info/METADATA,sha256=SeNIQ6EjnOZ_O8YnvjqOCQK0UqwYMeCsBqeag5a87oo,3457
+llm_shell-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+llm_shell-0.1.0.dist-info/entry_points.txt,sha256=O_PqVjCVrQrhV6eaC8rMR_IvdFYQInj7awScsvMmsjo,56
+llm_shell-0.1.0.dist-info/top_level.txt,sha256=kFAyNVHksKM7-koO_5l5ec421VGm2WSKjFTambUTaxk,10
+llm_shell-0.1.0.dist-info/RECORD,,
