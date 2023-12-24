@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: dummy_ERG
+Version: 3.14.0
+Summary: 
+Author: EbonyGunwhy
+Author-email: e.gunwhy@sheffield.ac.uk
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: numpy (==1.22.4)
+Description-Content-Type: text/markdown
+
+# dummyproject
+
+This is a dummy project for practicing builds.
+
