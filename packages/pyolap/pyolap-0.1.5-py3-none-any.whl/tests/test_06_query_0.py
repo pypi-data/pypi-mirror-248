@@ -1,0 +1,162 @@
+from pyolap import euclidolap
+
+# 如果使用容器内Python环境，IP地址填写 127.0.0.1 ！！！
+# 如果使用本地Python，IP地址要修改为你的运行docker容器的服务器IP ！！！
+olap_ctx = euclidolap.OlapContext("192.168.66.8", 8760)
+
+result = olap_ctx.execute("""
+with
+member [Measures].EEEEEEEEE as IIf(isEmpty( ([Measures].[sales count]) ), 1000, 2000)
+select
+{
+    [Measures].[sales count],
+    [Measures].EEEEEEEEE
+} on 0,
+crossJoin(members([Regions]), members([Dates])) on 1
+// ([Regions].[North America].[USA], [Dates].[2023].[Q4].[M12]) on 1
+// members([Regions]) on 1
+from [Andes Online Store]
+where
+([Goods].[Electronic], [Payment Methods].[Debit card]);
+""")
+
+print(result)
+
+mdx_ls = [
+    """select
+{ ([Dates].[ALL].[2021]) } on 0,
+topCount(
+    CrossJoin(members([Measures]), children([Customer Types].[ALL]), lateralMembers([Payment Methods].[ALL].PayPal)), 
+    10, 
+    ([Dates].[ALL].[2021])
+) on 1 
+from [Andes Online Store]""",
+    """select 
+{ (ClosingPeriod(
+    Dates.Calendar.Quarters,
+    Dates.[ALL].[2021]
+)) } on 10,
+{ ([Measures].[sales count]) } on SECTIONS
+from [Andes Online Store];""",
+          """select 
+{ [Dates].[2022].FirstSibling() } on 0,
+{ ([Measures].sales), ([Measures].[sales count]) } on 100 
+from [Sahara Online Store];""",
+          """with 
+    member [Measures].XXX as "([Measures].[sales count], parallelPeriod())" 
+select 
+    { (Dates.[ALL].[2021].Q3.M7), (Dates.[ALL].[2021].Q4.M10) } 
+on 0, 
+    { ([Measures].XXX) } 
+on 1 
+from [Andes Online Store];""",
+          """with 
+    member [Measures].XXX as ([Measures].[sales count], parallelPeriod()) 
+select 
+    { (Dates.[ALL].[2022].Q3) } 
+on 0, 
+    { ([Measures].XXX) } 
+on 1 
+from [Andes Online Store];""",
+          """with 
+    member [Measures].XXX as ([Measures].[sales count], parallelPeriod()) 
+select 
+    { (Dates.[ALL].[2022].Q3.M7), (Dates.[ALL].[2023].Q4.M10) } 
+on 0, 
+    { ([Measures].XXX) } 
+on 1 
+from [Andes Online Store];""",
+          """with 
+member [Measures].SSSSSS as lookUpCube("Andes Online Store", "([Measures].[sales count])") 
+select 
+{ ( [Measures].[sales] ), ([Measures].SSSSSS) } on 0, 
+children(Dates.[ALL].[2021]) on 1 
+from [Sahara Online Store];""",
+          """select
+{ ([Dates].[ALL].[2021]) } on 0,
+topCount(
+    crossjoin(members([Measures]), children([Customer Types].[ALL]), lateralMembers([Payment Methods].[ALL].PayPal)), 
+    10, 
+    ([Dates].[ALL].[2021])
+) on 1 
+from [Andes Online Store];""",
+          """with 
+  member [Measures].AAA
+    as CoalesceEmpty(
+        CoalesceEmpty(
+            ([Measures].[sales count]), 
+            ([Measures].[sales count], [Goods].[Foodstuff].[Fruits])
+        ), 
+        8760.66
+    ) 
+select
+  { ([Measures].[sales count]), ([Measures].[sales]), ([Measures].AAA) } on 0,
+  { (Dates.[ALL]) } on 1 
+from [Andes Online Store];""",
+          """with
+  member [Measures].SSSSSS as
+    sum({ ([Measures].XXX), ([Measures].YYY), ([Measures].ZZZ) })
+  member [Measures].XXX
+    as ([Measures].[sales count]) * 10
+  member [Measures].YYY
+    as (([Measures].XXX) + 111)
+  member [Measures].ZZZ
+    as ([Measures].YYY) / 8 - 222.22
+  member [Measures].QQQ
+    as sum({([Measures].[sales count]), ([Measures].[sales])})
+  member Dates.VVV
+    as sum({ ([Dates].[ALL].[2022]), ([Dates].[ALL].[2023]) })
+  member [Measures].IIIIII
+    as IIF( ([Measures].SSSSSS) > 2000000, 200, 404 )
+  member [Measures].FFFFFF
+    as IIF( ([Measures].IIIIII) = 200, 321, 900000000 )
+select
+  { ([Measures].SSSSSS), ([Measures].IIIIII), ([Measures].FFFFFF) } on 0,
+  filter(
+    members(Dates),
+    ((([Measures].SSSSSS) <= 30000)or (([Measures].SSSSSS) >= 40000))
+      and ((([Measures].SSSSSS) <= 360000) or (([Measures].SSSSSS) >= 370000))
+  ) on 1
+from [Andes Online Store];""",
+          """with
+member [Measures].EEEEEEEEE as 123
+select
+{ [Measures].sales } on 0,
+{ Dates.[all] } on 1
+from [Andes Online Store];""",
+          """with
+member [Measures].EEEEEEEEE as IIf(isEmpty( ([Measures].[sales count]) ), 1000, 2000)
+select
+{
+    [Measures].[sales count],
+    [Measures].EEEEEEEEE
+} on 0,
+crossJoin(members([Regions]), members([Dates])) on 1
+from [Andes Online Store]
+where
+([Goods].[Electronic], [Payment Methods].[Debit card]);""",
+          """with 
+member [Measures].EEEEEE
+  as Dates.currentMember.name
+member [Measures].QQQQQQ
+  as Aggregate(Dates.members, [Measures].EEEEEE, DistinctCount)
+select 
+  [Measures].QQQQQQ on 1,
+  [Regions].[North America] on 10 
+from [Andes Online Store]
+where ([Regions].[Asia]);""",
+          """select
+[Goods] on rows,
+Regions on columns
+from [Andes Online Store];""",
+          """select
+[Goods] on rows,
+[Dates] on columns
+from [Andes Online Store]"""]
+
+for mdx in mdx_ls:
+    print("\n\n>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
+    print(mdx, end="\n\n")
+    print(olap_ctx.execute(mdx))
+
+olap_ctx.close()
