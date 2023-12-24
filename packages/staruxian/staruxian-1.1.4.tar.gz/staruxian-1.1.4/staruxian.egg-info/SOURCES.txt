@@ -1,0 +1,9 @@
+README.md
+setup.py
+staruxian/__init__.py
+staruxian/main.py
+staruxian.egg-info/PKG-INFO
+staruxian.egg-info/SOURCES.txt
+staruxian.egg-info/dependency_links.txt
+staruxian.egg-info/entry_points.txt
+staruxian.egg-info/top_level.txt
