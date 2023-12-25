@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: DarkThon
+Version: 1.0.1
+Summary: custom Telethon class for new telegram api
+Author-email: DarkThon@gmail.com
