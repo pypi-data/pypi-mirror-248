@@ -1,0 +1,9 @@
+numpy>=1.21
+scipy
+tqdm
+scikit-image
+matplotlib
+
+[dev]
+sphinx
+sphinx_rtd_theme
