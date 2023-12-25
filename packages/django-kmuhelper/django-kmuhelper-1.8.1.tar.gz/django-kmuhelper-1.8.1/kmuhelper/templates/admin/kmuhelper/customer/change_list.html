@@ -1,0 +1,13 @@
+{% extends 'admin/kmuhelper/change_list.html' %}
+
+{% block object-tools-items %}
+    {% load kmuhelper_tags %}
+    {% kmuhelper_woocommerce_connected as woocommerce_is_connected %}
+    {% if woocommerce_is_connected and perms.kmuhelper.add_customer %}
+        <li>
+            <a onclick="woocommerce_loading_swal();" href="{% url 'kmuhelper:wc-import-customers' %}" class="addlink">Kunden von
+                WooCommerce importieren</a>
+        </li>
+    {% endif %}
+    {{ block.super }}
+{% endblock %}
