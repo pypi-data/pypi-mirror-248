@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools >= 42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.poetry]
+name = "xtictoc"
+version = "0.3"
+description = "This project serves as an educational demonstration of a dependency confusion attack, showcasing the potential risks associated with package management and dependency resolution."
+authors = ["Wation"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.6"

@@ -1,0 +1,2 @@
+[console_scripts]
+xtictoc = xtictoc.__main__:main
