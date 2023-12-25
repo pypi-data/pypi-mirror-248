@@ -1,0 +1,18 @@
+[project]
+name = "mochapy"
+version = "1.0.0"
+authors = [
+  { name="Gabriel Gavrilov", email="gabriel.gavrilov02@gmail.com" },
+]
+description = "A tiny flexible web framework for Python"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/GabrielGavrilov/mocha-py"
+Issues = "https://github.com/GabrielGavrilov/mocha-py/issues"
