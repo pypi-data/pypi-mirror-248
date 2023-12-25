@@ -1,0 +1,7 @@
+README.md
+setup.py
+btframework.egg-info/PKG-INFO
+btframework.egg-info/SOURCES.txt
+btframework.egg-info/dependency_links.txt
+btframework.egg-info/requires.txt
+btframework.egg-info/top_level.txt
