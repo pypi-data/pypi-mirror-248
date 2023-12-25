@@ -1,0 +1,5 @@
+httpx
+attrs
+boto3
+pulumi
+pulumi-gcp
