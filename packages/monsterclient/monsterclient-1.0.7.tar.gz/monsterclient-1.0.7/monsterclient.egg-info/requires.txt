@@ -1,0 +1,5 @@
+requests
+click
+pygments
+curlify
+bs4
