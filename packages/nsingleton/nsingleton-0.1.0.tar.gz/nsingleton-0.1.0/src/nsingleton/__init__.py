@@ -1,0 +1,1 @@
+from .nsingleton import singleton

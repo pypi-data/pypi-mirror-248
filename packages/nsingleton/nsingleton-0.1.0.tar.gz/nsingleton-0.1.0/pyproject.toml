@@ -1,0 +1,36 @@
+[project]
+name = "nsingleton"
+version = "0.1.0"
+description = "New Singleton decorator. Just another singleton pattern implementation. Thread-safe, with type casting."
+authors = [
+    { name = "Nikolay Shishov", email = "nikolay.shishov@gmail.com" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = []
+requires-python = ">=3.8"
+readme = "README.md"
+keywords = [
+    "python",
+    "singleton",
+    "pattern",
+    "decorator",
+]
+
+[project.license]
+file = "LICENSE"
+
+[project.urls]
+repository = "https://github.com/nickosh/nsingleton"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+package-type = "library"
