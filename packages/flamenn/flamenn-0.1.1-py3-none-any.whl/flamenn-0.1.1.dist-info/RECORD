@@ -1,0 +1,8 @@
+flamenn/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flamenn/errors.py,sha256=lMA65mSUbdupan4mh3Zi_JFxnj4QBjoxwYZky2A2Xas,883
+flamenn/layers.py,sha256=UehiRBTW898GTKD4m90SMWWiW3fRI6d9QnTJS4gOJe0,1281
+flamenn/networks.py,sha256=3ZRo9Q5q5cxhyDsMudBPzFxyxu7dAzfKtaxJ9MQRtag,15983
+flamenn-0.1.1.dist-info/LICENSE,sha256=nEoqRplRFsKnxg0h5QakZOko26lSjt0_61NFJsBmh9Y,1440
+flamenn-0.1.1.dist-info/METADATA,sha256=18EyQEX_s4NOFpHsC98Q4DDJFOq8ygSCQU6ft7gr8TQ,1332
+flamenn-0.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+flamenn-0.1.1.dist-info/RECORD,,
