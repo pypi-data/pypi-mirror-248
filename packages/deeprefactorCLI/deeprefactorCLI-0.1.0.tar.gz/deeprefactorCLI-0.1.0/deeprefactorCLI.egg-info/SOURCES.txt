@@ -1,0 +1,9 @@
+setup.py
+deep_refactor/__init__.py
+deep_refactor/main.py
+deeprefactorCLI.egg-info/PKG-INFO
+deeprefactorCLI.egg-info/SOURCES.txt
+deeprefactorCLI.egg-info/dependency_links.txt
+deeprefactorCLI.egg-info/entry_points.txt
+deeprefactorCLI.egg-info/requires.txt
+deeprefactorCLI.egg-info/top_level.txt
