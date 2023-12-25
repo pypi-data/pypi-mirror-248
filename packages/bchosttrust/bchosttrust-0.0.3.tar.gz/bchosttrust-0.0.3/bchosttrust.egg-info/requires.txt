@@ -1,0 +1,5 @@
+anytree==2.12.1
+click==8.1.7
+lazy_loader==0.3
+plyvel==1.5.0
+typeguard==4.1.5
