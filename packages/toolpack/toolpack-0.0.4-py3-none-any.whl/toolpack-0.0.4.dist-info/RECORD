@@ -1,0 +1,8 @@
+toolpack/__init__.py,sha256=W2GI_FGJ3Ba4zNyQ5onzx6bWkUJcL4nHVVccWZMMLXI,525
+toolpack/parallel/__init__.py,sha256=JrxT2ffN-STSy6Bi_lcgYHnk8cZnjPoqkCz-hMUpfJw,39
+toolpack/parallel/parallel.py,sha256=JksRwOfoBSmHhnQiV7t8ISqPEH0E0sSmXY-VuicQs24,958
+toolpack-0.0.4.dist-info/LICENSE,sha256=YHdmljYzw_QtQGnqrFnxnRZLaYg0eRVlAwbJqQVuAks,1067
+toolpack-0.0.4.dist-info/METADATA,sha256=314QMDGpnFhl45qSfIZFF2e_f83ZhRp9I0VWlYSrjbQ,838
+toolpack-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+toolpack-0.0.4.dist-info/top_level.txt,sha256=GrHrMXQz_EaxWkGwQbx0JmVJYurYlOSTVZ44WWfJvnc,9
+toolpack-0.0.4.dist-info/RECORD,,
