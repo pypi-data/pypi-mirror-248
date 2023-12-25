@@ -1,0 +1,8 @@
+README.md
+setup.py
+url-splitter-abc/__init__.py
+url-splitter-abc/splitter.py
+url_splitter_abc.egg-info/PKG-INFO
+url_splitter_abc.egg-info/SOURCES.txt
+url_splitter_abc.egg-info/dependency_links.txt
+url_splitter_abc.egg-info/top_level.txt
