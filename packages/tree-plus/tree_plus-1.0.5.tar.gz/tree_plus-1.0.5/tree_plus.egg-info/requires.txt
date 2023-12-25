@@ -1,0 +1,8 @@
+tiktoken
+PyYAML
+click
+rich
+
+[dev]
+pytest
+pytest-env
