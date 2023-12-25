@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: orphism
+Version: 0.0.1.dev2
+License-File: LICENSE.txt
+Requires-Dist: hy>=0.27.0
+Requires-Dist: hyrule>=0.4.0
+Requires-Dist: rich>=12.6.0
