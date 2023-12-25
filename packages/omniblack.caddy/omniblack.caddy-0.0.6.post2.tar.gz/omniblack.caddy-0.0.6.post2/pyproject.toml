@@ -1,0 +1,38 @@
+[project]
+name = 'omniblack.caddy'
+version = '0.0.6-2'
+description = "A python client for Caddy's admin api."
+readme = './README.md'
+classifiers = [
+    'Development Status :: 3 - Alpha',
+    'Intended Audience :: Developers',
+]
+
+dependencies=[
+    'attrs',
+    'requests',
+    'multidict',
+    'urllib3',
+    'pydantic',
+]
+
+[project.license]
+id = "Apache-2.0"
+file = "LICENSE.txt"
+
+[[project.authors]]
+name = "Terry Patterson"
+email = "Terryp@wegrok.net"
+[project.urls]
+Homepage = "https://gitlab.com/terryp/terry/-/tree/next/lib/caddy"
+Repository = "https://gitlab.com/terryp/terry.git"
+
+[build-system]
+requires = [
+    "setuptools ~= 68.2",
+]
+build-backend = "setuptools.build_meta"
+
+
+[tool.setuptools.packages.find]
+include = ["omniblack.*"]
