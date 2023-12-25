@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+FAYAAEE/__init__.py
+FAYAAEE/__version__.py
+FAYAAEE.egg-info/PKG-INFO
+FAYAAEE.egg-info/SOURCES.txt
+FAYAAEE.egg-info/dependency_links.txt
+FAYAAEE.egg-info/requires.txt
+FAYAAEE.egg-info/top_level.txt
+FAYAAEE/swag_config/__init__.py

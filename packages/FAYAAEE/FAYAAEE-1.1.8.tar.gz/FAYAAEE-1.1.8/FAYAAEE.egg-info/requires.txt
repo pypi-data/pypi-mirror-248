@@ -1,0 +1,8 @@
+flask
+flask-sqlalchemy
+pymysql
+PyJWT
+Flask-Cors
+Pillow
+ffmpeg-python
+werkzeug
