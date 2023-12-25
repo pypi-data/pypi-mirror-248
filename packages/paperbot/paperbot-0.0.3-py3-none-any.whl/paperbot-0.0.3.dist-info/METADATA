@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: paperbot
+Version: 0.0.3
+Summary: A small example package
+Project-URL: Homepage, https://github.com/papercopilot/paperbot
+Project-URL: Issues, https://github.com/papercopilot/paperbot/issues
+Author-email: Jing Yang <jingyang.carl.work@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Paperbots
+<img src='https://img.shields.io/pypi/v/paperbot.svg?color=brightgreen' target='https://pypi.org/project/paperbot/' alt='PyPI version'>
