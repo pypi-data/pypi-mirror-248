@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: sdpc-linux
+Version: 2.0
+Summary: a library for sdpcPY (linux version)
+Home-page: https://github.com/WonderLandxD/sdpc-for-python
+Author: Jiawen Li
+Author-email: lijiawen21@mails.tsinghua.edu.cn
+License: MIT License
+Platform: linux
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+
+UNKNOWN
+
