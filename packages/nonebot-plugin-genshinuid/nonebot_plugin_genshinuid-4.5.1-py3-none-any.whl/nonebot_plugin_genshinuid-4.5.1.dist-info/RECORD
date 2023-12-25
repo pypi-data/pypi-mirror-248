@@ -1,0 +1,10 @@
+GenshinUID/__init__.py,sha256=7LCQ3BP6_6z2Zjo4NdYH3UhN45Rz1KkFj6aBKrbRVLg,25111
+GenshinUID/auto_install.py,sha256=IsNck4tsM0ukmOHFNEY5bQFNrxGVBxYXfkYqIEviYxo,1227
+GenshinUID/client.py,sha256=Wfcb5vyTNMrQkIMzQB7UtxNTnLurrqD14RLqDCyovUo,53205
+GenshinUID/models.py,sha256=-K6SxTxtpKwKG3yiGz0hZwDNvkzoJbZUxbofdweQT_o,1043
+GenshinUID/path.py,sha256=i6QZv8ckpPamY5wCqWbIDS2V_DJpildADjpP1mX4Ehc,336
+GenshinUID/utils.py,sha256=XGv_nr74HZspW0KnDAXhSWO-4Kf7fXvQpBiFcowlC6s,201
+nonebot_plugin_genshinuid-4.5.1.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+nonebot_plugin_genshinuid-4.5.1.dist-info/METADATA,sha256=V7rzFEKIvPxeOnA7g65c9w72feT5oGnJyEUp83aBtu0,4531
+nonebot_plugin_genshinuid-4.5.1.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+nonebot_plugin_genshinuid-4.5.1.dist-info/RECORD,,
