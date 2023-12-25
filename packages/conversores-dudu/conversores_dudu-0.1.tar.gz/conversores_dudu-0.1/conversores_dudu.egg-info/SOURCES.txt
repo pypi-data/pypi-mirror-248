@@ -1,0 +1,9 @@
+setup.py
+conversores_dudu.egg-info/PKG-INFO
+conversores_dudu.egg-info/SOURCES.txt
+conversores_dudu.egg-info/dependency_links.txt
+conversores_dudu.egg-info/requires.txt
+conversores_dudu.egg-info/top_level.txt
+duds_converters/__init__.py
+duds_converters/converter.py
+duds_converters/utils.py
