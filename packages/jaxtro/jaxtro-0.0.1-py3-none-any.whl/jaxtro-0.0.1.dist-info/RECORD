@@ -1,0 +1,11 @@
+jaxtro/__init__.py,sha256=P5C4SapjzdHmHGrnf9nFUjcJ5l8NwgMxj8tlohANdxo,602
+jaxtro/models/__init__.py,sha256=9HU2eEI42ZN2cUVoNIvOrWbNbYY4_ytnx4cqKtX9x_4,635
+jaxtro/models/wysocki2019massmodel.py,sha256=uy7s3at0zswwktD5y5vkxXRtWIUqFeO6BzN3YxyEPSg,5518
+jaxtro/utils/__init__.py,sha256=KPSlcPKJQwAH3uEMzSO55Yjn0UrgIJouVFVQ7zY3YN4,620
+jaxtro/utils/misc.py,sha256=8D21bL9LbDJh01ZOoGES8FBkZ5FJ6QnwZVqjQj8_1KM,1848
+jaxtro/utils/popgen.py,sha256=BeR6RUC6mTS7vfdHYNoyaFFqVqqZrvRoAsseIEM8Cwk,3853
+jaxtro-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+jaxtro-0.0.1.dist-info/METADATA,sha256=PyPS04kxrV2RGsHDKjYsygyDjaBHGMfo7uFnBPlYpYM,581
+jaxtro-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+jaxtro-0.0.1.dist-info/top_level.txt,sha256=mrlRM3FYONfuES4FOlq-507eLRge7JQ0qVWdJfcIQWI,7
+jaxtro-0.0.1.dist-info/RECORD,,

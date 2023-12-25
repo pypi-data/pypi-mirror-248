@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: jaxtro
+Version: 0.0.1
+Home-page: https://github.com/Qazalbash/jastro
+Author: Meesum Qazalbash and Muhammad Zeeshan
+Author-email: meesumqazalbash@gmail.com
+Maintainer: Meesum Qazalbash
+Maintainer-email: meesumqazalbash@gmail.com
+License: Apache 2.0
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: jaxampler
+Requires-Dist: numpy
+
