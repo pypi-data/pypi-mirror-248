@@ -1,0 +1,7 @@
+setup.py
+src/calctestchristmas.egg-info/PKG-INFO
+src/calctestchristmas.egg-info/SOURCES.txt
+src/calctestchristmas.egg-info/dependency_links.txt
+src/calctestchristmas.egg-info/top_level.txt
+src/examples/__init__.py
+src/examples/options.py
