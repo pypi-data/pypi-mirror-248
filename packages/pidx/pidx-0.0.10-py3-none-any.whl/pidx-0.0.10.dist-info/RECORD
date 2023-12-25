@@ -1,0 +1,13 @@
+pidx/__init__.py,sha256=DU1eywD3_2sdg3DJujR_DdcgPxJtURWabQjWuEO9-1Q,442
+pidx/_modidx.py,sha256=QuqYlUJDHrjoieai6zwxnCT_8OWiwgkQ0A9082gfGHQ,3540
+pidx/cons.py,sha256=o-3drtTx9_apM7Qp90HAD2cC8_iG9mhKLsnA8b1wJG4,580
+pidx/idxs.py,sha256=ym2xay93zKSve_T-DqkfE4VC4se6ZyAT9wF8QYAcBMU,22751
+pidx/mock.py,sha256=jaIkRa5_b2FrHjTNJr0P4qJbPE2krzr_dc13JFSNDV0,976
+pidx/safe.py,sha256=6LwM99wpFKpq8rA2cAfW9MrVX4hVL2T8cW4Ot9KP5dc,1530
+pidx/util.py,sha256=GZ46N77foQt7nSNUGv2H5mTg6CUV6aA1AK_FitoQWa0,6020
+pidx-0.0.10.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+pidx-0.0.10.dist-info/METADATA,sha256=Wm6DXIiv6PBJq-R-H_HMhH_N6AiehxfTyjsyLoyQef8,4054
+pidx-0.0.10.dist-info/WHEEL,sha256=5sUXSg9e4bi7lTLOHcm6QEYwO5TIF1TNbTSVFVjcJcc,92
+pidx-0.0.10.dist-info/entry_points.txt,sha256=YA3S64gYwEslF2e04UBkFKNyWshrBOX_Ev8eBYO3LWA,30
+pidx-0.0.10.dist-info/top_level.txt,sha256=4YbjOG8p0Dwb2JBNlxaDVoTAyiRimCiOV32WicsFF9s,5
+pidx-0.0.10.dist-info/RECORD,,
