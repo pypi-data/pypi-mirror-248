@@ -1,0 +1,2 @@
+[console_scripts]
+pygmea = pygmea.__main__:main
