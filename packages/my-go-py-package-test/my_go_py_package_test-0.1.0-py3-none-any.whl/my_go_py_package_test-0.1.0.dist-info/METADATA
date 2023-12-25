@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: my-go-py-package-test
+Version: 0.1.0
+Summary: 
+Author: wwzip
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+这是一个测试项目，用完就删除
+
