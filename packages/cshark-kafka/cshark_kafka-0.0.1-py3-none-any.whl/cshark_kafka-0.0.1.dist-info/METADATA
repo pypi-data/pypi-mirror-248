@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: cshark-kafka
+Version: 0.0.1
+Summary: CShark custom kafka library for python project
+Author: CShark team (Yelnur)
+Requires-Dist: kafka-python
+
