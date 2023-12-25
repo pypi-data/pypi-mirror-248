@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "xtictoc"
+version = "1.0.2"
+description = "Welcome to Xtictoc, a simple console-based Tic-Tac-Toe (XO) game in Python."
+authors = ["Wation"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+xtictoc = "xtictoc.__main__:main"
