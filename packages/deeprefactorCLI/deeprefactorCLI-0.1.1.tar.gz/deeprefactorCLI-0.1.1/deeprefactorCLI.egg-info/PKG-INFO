@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: deeprefactorCLI
+Version: 0.1.1
+Home-page: https://deeprefactor.dev
+Requires-Dist: typer>=0.9.0
+Requires-Dist: requests>=2.31.0
+Requires-Dist: rich>=13.7.0
+Requires-Dist: keyring>=24.3.0
