@@ -1,0 +1,247 @@
+2023-08-15T23:49:57.399330+0800 - finhack.library.monitor - INFO - (1072, "Key column 'end_date' doesn't exist in table")
+2023-08-15T23:49:57.400319+0800 - finhack.library.monitor - INFO - (1072, "Key column 'trade_date' doesn't exist in table")
+2023-08-15T23:49:57.400571+0800 - finhack.library.monitor - INFO - stock_basic:同步完毕
+2023-08-15T23:49:58.275338+0800 - finhack.library.monitor - INFO - (1072, "Key column 'ts_code' doesn't exist in table")
+2023-08-15T23:49:58.276495+0800 - finhack.library.monitor - INFO - (1072, "Key column 'end_date' doesn't exist in table")
+2023-08-15T23:49:58.277569+0800 - finhack.library.monitor - INFO - (1072, "Key column 'trade_date' doesn't exist in table")
+2023-08-15T23:49:58.278261+0800 - finhack.library.monitor - INFO - trade_cal:同步完毕
+2023-08-15T23:49:58.278361+0800 - finhack.collector.tushare.tushare_collector - INFO - namechange
+2023-08-15T23:49:58.278414+0800 - finhack.collector.tushare.tushare_collector - INFO - hs_const
+2023-08-15T23:49:58.278461+0800 - finhack.collector.tushare.tushare_collector - INFO - stock_company
+2023-08-15T23:49:58.278505+0800 - finhack.collector.tushare.tushare_collector - INFO - stk_managers
+2023-08-15T23:49:58.278550+0800 - finhack.collector.tushare.tushare_collector - INFO - stk_rewards
+2023-08-15T23:49:58.278594+0800 - finhack.collector.tushare.tushare_collector - INFO - new_share
+2023-08-15T23:49:58.278640+0800 - finhack.collector.tushare.tushare_collector - INFO - daily
+2023-08-15T23:49:58.278700+0800 - finhack.collector.tushare.tushare_collector - INFO - weekly
+2023-08-15T23:49:58.278747+0800 - finhack.collector.tushare.tushare_collector - INFO - monthly
+2023-08-15T23:49:58.278789+0800 - finhack.collector.tushare.tushare_collector - INFO - adj_factor
+2023-08-15T23:49:58.278831+0800 - finhack.collector.tushare.tushare_collector - INFO - suspend_d
+2023-08-15T23:49:58.278873+0800 - finhack.collector.tushare.tushare_collector - INFO - daily_basic
+2023-08-15T23:49:58.278917+0800 - finhack.collector.tushare.tushare_collector - INFO - moneyflow
+2023-08-15T23:49:58.278958+0800 - finhack.collector.tushare.tushare_collector - INFO - stk_limit
+2023-08-15T23:49:58.278999+0800 - finhack.collector.tushare.tushare_collector - INFO - limit_list
+2023-08-15T23:49:58.279108+0800 - finhack.collector.tushare.tushare_collector - INFO - moneyflow_hsgt
+2023-08-15T23:49:58.279151+0800 - finhack.collector.tushare.tushare_collector - INFO - hsgt_top10
+2023-08-15T23:49:58.279193+0800 - finhack.collector.tushare.tushare_collector - INFO - ggt_top10
+2023-08-15T23:49:58.279238+0800 - finhack.collector.tushare.tushare_collector - INFO - hk_hold
+2023-08-15T23:49:58.279280+0800 - finhack.collector.tushare.tushare_collector - INFO - ggt_daily
+2023-08-15T23:49:59.543085+0800 - finhack.library.monitor - INFO - disclosure_date:同步完毕
+2023-08-15T23:49:59.543301+0800 - finhack.collector.tushare.tushare_collector - INFO - income
+2023-08-15T23:49:59.543411+0800 - finhack.collector.tushare.tushare_collector - INFO - balancesheet
+2023-08-15T23:49:59.543510+0800 - finhack.collector.tushare.tushare_collector - INFO - cashflow
+2023-08-15T23:49:59.543605+0800 - finhack.collector.tushare.tushare_collector - INFO - forecast
+2023-08-15T23:49:59.543695+0800 - finhack.collector.tushare.tushare_collector - INFO - express
+2023-08-15T23:49:59.543785+0800 - finhack.collector.tushare.tushare_collector - INFO - fina_indicator
+2023-08-15T23:49:59.543872+0800 - finhack.collector.tushare.tushare_collector - INFO - fina_audit
+2023-08-15T23:49:59.543959+0800 - finhack.collector.tushare.tushare_collector - INFO - fina_mainbz
+2023-08-15T23:49:59.544057+0800 - finhack.collector.tushare.tushare_collector - INFO - dividend
+2023-08-15T23:49:59.544144+0800 - finhack.collector.tushare.tushare_collector - INFO - margin
+2023-08-15T23:49:59.544231+0800 - finhack.collector.tushare.tushare_collector - INFO - margin_detail
+2023-08-15T23:49:59.544324+0800 - finhack.collector.tushare.tushare_collector - INFO - top_list
+2023-08-15T23:49:59.544418+0800 - finhack.collector.tushare.tushare_collector - INFO - top_inst
+2023-08-15T23:49:59.544531+0800 - finhack.collector.tushare.tushare_collector - INFO - pledge_stat
+2023-08-15T23:49:59.544622+0800 - finhack.collector.tushare.tushare_collector - INFO - pledge_detail
+2023-08-15T23:49:59.544711+0800 - finhack.collector.tushare.tushare_collector - INFO - repurchase
+2023-08-15T23:49:59.544819+0800 - finhack.collector.tushare.tushare_collector - INFO - concept
+2023-08-15T23:49:59.544912+0800 - finhack.collector.tushare.tushare_collector - INFO - concept_detail
+2023-08-15T23:49:59.545016+0800 - finhack.collector.tushare.tushare_collector - INFO - share_float
+2023-08-15T23:49:59.545106+0800 - finhack.collector.tushare.tushare_collector - INFO - block_trade
+2023-08-15T23:49:59.545194+0800 - finhack.collector.tushare.tushare_collector - INFO - stk_holdernumber
+2023-08-15T23:49:59.545281+0800 - finhack.collector.tushare.tushare_collector - INFO - stk_holdertrade
+2023-08-15T23:49:59.545367+0800 - finhack.collector.tushare.tushare_collector - INFO - top10_holders
+2023-08-15T23:49:59.545451+0800 - finhack.collector.tushare.tushare_collector - INFO - top10_floatholders
+2023-08-15T23:50:00.429198+0800 - finhack.library.monitor - INFO - (1072, "Key column 'end_date' doesn't exist in table")
+2023-08-15T23:50:00.430359+0800 - finhack.library.monitor - INFO - (1072, "Key column 'trade_date' doesn't exist in table")
+2023-08-15T23:50:00.431647+0800 - finhack.library.monitor - INFO - index_basic:同步完毕
+2023-08-15T23:50:00.559911+0800 - finhack.library.monitor - INFO - (1072, "Key column 'ts_code' doesn't exist in table")
+2023-08-15T23:50:00.560992+0800 - finhack.library.monitor - INFO - (1072, "Key column 'end_date' doesn't exist in table")
+2023-08-15T23:50:00.561995+0800 - finhack.library.monitor - INFO - (1072, "Key column 'trade_date' doesn't exist in table")
+2023-08-15T23:50:00.562368+0800 - finhack.library.monitor - INFO - index_classify:同步完毕
+2023-08-15T23:50:00.562464+0800 - finhack.collector.tushare.tushare_collector - INFO - index_daily
+2023-08-15T23:50:00.562525+0800 - finhack.collector.tushare.tushare_collector - INFO - index_weekly
+2023-08-15T23:50:00.562581+0800 - finhack.collector.tushare.tushare_collector - INFO - index_monthly
+2023-08-15T23:50:00.562633+0800 - finhack.collector.tushare.tushare_collector - INFO - index_weight
+2023-08-15T23:50:00.562693+0800 - finhack.collector.tushare.tushare_collector - INFO - index_dailybasic
+2023-08-15T23:50:00.562744+0800 - finhack.collector.tushare.tushare_collector - INFO - index_member
+2023-08-15T23:50:00.562795+0800 - finhack.collector.tushare.tushare_collector - INFO - daily_info
+2023-08-15T23:50:00.562847+0800 - finhack.collector.tushare.tushare_collector - INFO - sz_daily_info
+2023-08-15T23:50:00.562899+0800 - finhack.collector.tushare.tushare_collector - INFO - report_rc
+2023-08-15T23:50:00.562950+0800 - finhack.collector.tushare.tushare_collector - INFO - cyq_perf
+2023-08-15T23:50:00.563002+0800 - finhack.collector.tushare.tushare_collector - INFO - cyq_chips
+2023-08-15T23:55:03.735111+0800 - finhack.library.monitor - INFO - (1072, "Key column 'end_date' doesn't exist in table")
+2023-08-15T23:55:03.736732+0800 - finhack.library.monitor - INFO - (1072, "Key column 'trade_date' doesn't exist in table")
+2023-08-15T23:55:03.737186+0800 - finhack.library.monitor - INFO - stock_basic:同步完毕
+2023-08-15T23:55:04.632319+0800 - finhack.library.monitor - INFO - (1072, "Key column 'ts_code' doesn't exist in table")
+2023-08-15T23:55:04.634003+0800 - finhack.library.monitor - INFO - (1072, "Key column 'end_date' doesn't exist in table")
+2023-08-15T23:55:04.635243+0800 - finhack.library.monitor - INFO - (1072, "Key column 'trade_date' doesn't exist in table")
+2023-08-15T23:55:04.635938+0800 - finhack.library.monitor - INFO - trade_cal:同步完毕
+2023-08-15T23:55:04.636029+0800 - finhack.collector.tushare.tushare_collector - INFO - namechange
+2023-08-15T23:55:04.636091+0800 - finhack.collector.tushare.tushare_collector - INFO - hs_const
+2023-08-15T23:55:04.636142+0800 - finhack.collector.tushare.tushare_collector - INFO - stock_company
+2023-08-15T23:55:04.636193+0800 - finhack.collector.tushare.tushare_collector - INFO - stk_managers
+2023-08-15T23:55:04.636246+0800 - finhack.collector.tushare.tushare_collector - INFO - stk_rewards
+2023-08-15T23:55:04.636292+0800 - finhack.collector.tushare.tushare_collector - INFO - new_share
+2023-08-15T23:55:04.636337+0800 - finhack.collector.tushare.tushare_collector - INFO - daily
+2023-08-15T23:55:04.636384+0800 - finhack.collector.tushare.tushare_collector - INFO - weekly
+2023-08-15T23:55:04.636428+0800 - finhack.collector.tushare.tushare_collector - INFO - monthly
+2023-08-15T23:55:04.636476+0800 - finhack.collector.tushare.tushare_collector - INFO - adj_factor
+2023-08-15T23:55:04.636521+0800 - finhack.collector.tushare.tushare_collector - INFO - suspend_d
+2023-08-15T23:55:04.636566+0800 - finhack.collector.tushare.tushare_collector - INFO - daily_basic
+2023-08-15T23:55:04.636610+0800 - finhack.collector.tushare.tushare_collector - INFO - moneyflow
+2023-08-15T23:55:04.636653+0800 - finhack.collector.tushare.tushare_collector - INFO - stk_limit
+2023-08-15T23:55:04.636696+0800 - finhack.collector.tushare.tushare_collector - INFO - limit_list
+2023-08-15T23:55:04.636833+0800 - finhack.collector.tushare.tushare_collector - INFO - moneyflow_hsgt
+2023-08-15T23:55:04.636880+0800 - finhack.collector.tushare.tushare_collector - INFO - hsgt_top10
+2023-08-15T23:55:04.636925+0800 - finhack.collector.tushare.tushare_collector - INFO - ggt_top10
+2023-08-15T23:55:04.636970+0800 - finhack.collector.tushare.tushare_collector - INFO - hk_hold
+2023-08-15T23:55:04.637014+0800 - finhack.collector.tushare.tushare_collector - INFO - ggt_daily
+2023-08-15T23:55:05.771254+0800 - finhack.library.monitor - INFO - disclosure_date:同步完毕
+2023-08-15T23:55:05.771428+0800 - finhack.collector.tushare.tushare_collector - INFO - income
+2023-08-15T23:55:05.771509+0800 - finhack.collector.tushare.tushare_collector - INFO - balancesheet
+2023-08-15T23:55:05.771579+0800 - finhack.collector.tushare.tushare_collector - INFO - cashflow
+2023-08-15T23:55:05.771646+0800 - finhack.collector.tushare.tushare_collector - INFO - forecast
+2023-08-15T23:55:05.771712+0800 - finhack.collector.tushare.tushare_collector - INFO - express
+2023-08-15T23:55:05.771777+0800 - finhack.collector.tushare.tushare_collector - INFO - fina_indicator
+2023-08-15T23:55:05.771841+0800 - finhack.collector.tushare.tushare_collector - INFO - fina_audit
+2023-08-15T23:55:05.771904+0800 - finhack.collector.tushare.tushare_collector - INFO - fina_mainbz
+2023-08-15T23:55:05.771968+0800 - finhack.collector.tushare.tushare_collector - INFO - dividend
+2023-08-15T23:55:05.772031+0800 - finhack.collector.tushare.tushare_collector - INFO - margin
+2023-08-15T23:55:05.772094+0800 - finhack.collector.tushare.tushare_collector - INFO - margin_detail
+2023-08-15T23:55:05.772156+0800 - finhack.collector.tushare.tushare_collector - INFO - top_list
+2023-08-15T23:55:05.772218+0800 - finhack.collector.tushare.tushare_collector - INFO - top_inst
+2023-08-15T23:55:05.772280+0800 - finhack.collector.tushare.tushare_collector - INFO - pledge_stat
+2023-08-15T23:55:05.772342+0800 - finhack.collector.tushare.tushare_collector - INFO - pledge_detail
+2023-08-15T23:55:05.772404+0800 - finhack.collector.tushare.tushare_collector - INFO - repurchase
+2023-08-15T23:55:05.772465+0800 - finhack.collector.tushare.tushare_collector - INFO - concept
+2023-08-15T23:55:05.772526+0800 - finhack.collector.tushare.tushare_collector - INFO - concept_detail
+2023-08-15T23:55:05.772587+0800 - finhack.collector.tushare.tushare_collector - INFO - share_float
+2023-08-15T23:55:05.772650+0800 - finhack.collector.tushare.tushare_collector - INFO - block_trade
+2023-08-15T23:55:05.772712+0800 - finhack.collector.tushare.tushare_collector - INFO - stk_holdernumber
+2023-08-15T23:55:05.772797+0800 - finhack.collector.tushare.tushare_collector - INFO - stk_holdertrade
+2023-08-15T23:55:05.772864+0800 - finhack.collector.tushare.tushare_collector - INFO - top10_holders
+2023-08-15T23:55:05.772926+0800 - finhack.collector.tushare.tushare_collector - INFO - top10_floatholders
+2023-08-15T23:55:06.799454+0800 - finhack.library.monitor - INFO - (1072, "Key column 'end_date' doesn't exist in table")
+2023-08-15T23:55:06.800755+0800 - finhack.library.monitor - INFO - (1072, "Key column 'trade_date' doesn't exist in table")
+2023-08-15T23:55:06.801889+0800 - finhack.library.monitor - INFO - index_basic:同步完毕
+2023-08-15T23:55:06.964407+0800 - finhack.library.monitor - INFO - (1072, "Key column 'ts_code' doesn't exist in table")
+2023-08-15T23:55:06.965423+0800 - finhack.library.monitor - INFO - (1072, "Key column 'end_date' doesn't exist in table")
+2023-08-15T23:55:06.966491+0800 - finhack.library.monitor - INFO - (1072, "Key column 'trade_date' doesn't exist in table")
+2023-08-15T23:55:06.966740+0800 - finhack.library.monitor - INFO - index_classify:同步完毕
+2023-08-15T23:55:06.966852+0800 - finhack.collector.tushare.tushare_collector - INFO - index_daily
+2023-08-15T23:55:06.966929+0800 - finhack.collector.tushare.tushare_collector - INFO - index_weekly
+2023-08-15T23:55:06.966994+0800 - finhack.collector.tushare.tushare_collector - INFO - index_monthly
+2023-08-15T23:55:06.967056+0800 - finhack.collector.tushare.tushare_collector - INFO - index_weight
+2023-08-15T23:55:06.967116+0800 - finhack.collector.tushare.tushare_collector - INFO - index_dailybasic
+2023-08-15T23:55:06.967175+0800 - finhack.collector.tushare.tushare_collector - INFO - index_member
+2023-08-15T23:55:06.967233+0800 - finhack.collector.tushare.tushare_collector - INFO - daily_info
+2023-08-15T23:55:06.967293+0800 - finhack.collector.tushare.tushare_collector - INFO - sz_daily_info
+2023-08-15T23:55:06.967347+0800 - finhack.collector.tushare.tushare_collector - INFO - report_rc
+2023-08-15T23:55:06.967393+0800 - finhack.collector.tushare.tushare_collector - INFO - cyq_perf
+2023-08-15T23:55:06.967437+0800 - finhack.collector.tushare.tushare_collector - INFO - cyq_chips
+2023-08-15T23:55:12.755170+0800 - finhack.library.monitor - INFO - (1072, "Key column 'end_date' doesn't exist in table")
+2023-08-15T23:55:12.756094+0800 - finhack.library.monitor - INFO - (1072, "Key column 'trade_date' doesn't exist in table")
+2023-08-15T23:55:12.760633+0800 - finhack.library.monitor - INFO - fund_basic:同步完毕
+2023-08-15T23:55:12.760822+0800 - finhack.collector.tushare.tushare_collector - INFO - fund_company
+2023-08-15T23:55:12.760934+0800 - finhack.collector.tushare.tushare_collector - INFO - fund_manager
+2023-08-15T23:55:12.761032+0800 - finhack.collector.tushare.tushare_collector - INFO - fund_share
+2023-08-15T23:55:12.761119+0800 - finhack.collector.tushare.tushare_collector - INFO - fund_nav
+2023-08-15T23:55:12.761203+0800 - finhack.collector.tushare.tushare_collector - INFO - fund_div
+2023-08-15T23:55:12.761286+0800 - finhack.collector.tushare.tushare_collector - INFO - fund_portfolio
+2023-08-15T23:55:12.761367+0800 - finhack.collector.tushare.tushare_collector - INFO - fund_daily
+2023-08-15T23:55:12.761448+0800 - finhack.collector.tushare.tushare_collector - INFO - fund_adj
+2023-08-15T23:55:12.761531+0800 - finhack.collector.tushare.tushare_collector - INFO - shibor
+2023-08-15T23:55:12.761611+0800 - finhack.collector.tushare.tushare_collector - INFO - shibor_quote
+2023-08-15T23:55:12.761704+0800 - finhack.collector.tushare.tushare_collector - INFO - shibor_lpr
+2023-08-15T23:55:12.761785+0800 - finhack.collector.tushare.tushare_collector - INFO - wz_index
+2023-08-15T23:55:12.761864+0800 - finhack.collector.tushare.tushare_collector - INFO - gz_index
+2023-08-15T23:55:12.761944+0800 - finhack.collector.tushare.tushare_collector - INFO - cn_gdp
+2023-08-15T23:55:12.762022+0800 - finhack.collector.tushare.tushare_collector - INFO - cn_cpi
+2023-08-15T23:55:12.762101+0800 - finhack.collector.tushare.tushare_collector - INFO - cn_ppi
+2023-08-15T23:55:12.762180+0800 - finhack.collector.tushare.tushare_collector - INFO - cn_m
+2023-08-15T23:55:12.762258+0800 - finhack.collector.tushare.tushare_collector - INFO - us_tycr
+2023-08-15T23:55:12.762336+0800 - finhack.collector.tushare.tushare_collector - INFO - us_trycr
+2023-08-15T23:55:12.762415+0800 - finhack.collector.tushare.tushare_collector - INFO - us_tbr
+2023-08-15T23:55:12.762505+0800 - finhack.collector.tushare.tushare_collector - INFO - us_tltr
+2023-08-15T23:55:12.762585+0800 - finhack.collector.tushare.tushare_collector - INFO - us_trltr
+2023-08-15T23:55:12.762665+0800 - finhack.collector.tushare.tushare_collector - INFO - eco_cal
+2023-08-15T23:55:12.762748+0800 - finhack.collector.tushare.tushare_collector - INFO - fut_basic
+2023-08-15T23:55:12.762827+0800 - finhack.collector.tushare.tushare_collector - INFO - trade_cal
+2023-08-15T23:55:12.762908+0800 - finhack.collector.tushare.tushare_collector - INFO - fut_daily
+2023-08-15T23:55:12.762987+0800 - finhack.collector.tushare.tushare_collector - INFO - fut_holding
+2023-08-15T23:55:13.459236+0800 - finhack.library.monitor - INFO - (1072, "Key column 'end_date' doesn't exist in table")
+2023-08-15T23:55:13.460392+0800 - finhack.library.monitor - INFO - (1072, "Key column 'trade_date' doesn't exist in table")
+2023-08-15T23:55:13.461146+0800 - finhack.library.monitor - INFO - hk_basic:同步完毕
+2023-08-15T23:55:13.461267+0800 - finhack.collector.tushare.tushare_collector - INFO - hk_tradecal
+2023-08-15T23:55:13.461346+0800 - finhack.collector.tushare.tushare_collector - INFO - hk_daily
+2023-08-15T23:55:13.950976+0800 - finhack.library.monitor - INFO - (1072, "Key column 'end_date' doesn't exist in table")
+2023-08-15T23:55:13.952424+0800 - finhack.library.monitor - INFO - (1072, "Key column 'trade_date' doesn't exist in table")
+2023-08-15T23:55:13.953070+0800 - finhack.library.monitor - INFO - cb_basic:同步完毕
+2023-08-15T23:55:13.953205+0800 - finhack.collector.tushare.tushare_collector - INFO - cb_issue
+2023-08-15T23:55:13.953296+0800 - finhack.collector.tushare.tushare_collector - INFO - cb_call
+2023-08-15T23:55:13.953375+0800 - finhack.collector.tushare.tushare_collector - INFO - cb_daily
+2023-08-15T23:55:13.953450+0800 - finhack.collector.tushare.tushare_collector - INFO - cb_price_chg
+2023-08-15T23:55:14.083798+0800 - finhack.library.monitor - INFO - (1072, "Key column 'end_date' doesn't exist in table")
+2023-08-15T23:55:14.084884+0800 - finhack.library.monitor - INFO - (1072, "Key column 'trade_date' doesn't exist in table")
+2023-08-15T23:55:14.084995+0800 - finhack.library.monitor - INFO - fx_basic:同步完毕
+2023-08-15T23:55:14.085079+0800 - finhack.collector.tushare.tushare_collector - INFO - fx_daily
+2023-08-15T23:55:14.809012+0800 - finhack.library.monitor - INFO - (1072, "Key column 'ts_code' doesn't exist in table")
+2023-08-15T23:55:14.922852+0800 - finhack.library.monitor - INFO - (1072, "Key column 'end_date' doesn't exist in table")
+2023-08-15T23:55:15.162275+0800 - finhack.library.monitor - INFO - ggt_daily:同步完毕
+2023-08-15T23:55:15.228185+0800 - finhack.library.monitor - INFO - hk_tradecal:同步完毕
+2023-08-16T00:09:30.202642+0800 - finhack.core.loader.base_loader - INFO - 停止任务成功！
+2023-08-16T00:09:44.303277+0800 - finhack.core.loader.base_loader - INFO - 停止任务成功！
+2023-08-16T00:10:03.951326+0800 - finhack.core.loader.base_loader - INFO - 停止任务成功！
+2023-08-16T00:16:38.663170+0800 - finhack.library.monitor - INFO - (1072, "Key column 'end_date' doesn't exist in table")
+2023-08-16T00:16:38.664345+0800 - finhack.library.monitor - INFO - (1072, "Key column 'trade_date' doesn't exist in table")
+2023-08-16T00:16:38.664698+0800 - finhack.library.monitor - INFO - stock_basic:同步完毕
+2023-08-16T00:16:39.426127+0800 - finhack.library.monitor - INFO - (1072, "Key column 'ts_code' doesn't exist in table")
+2023-08-16T00:16:39.427037+0800 - finhack.library.monitor - INFO - (1072, "Key column 'end_date' doesn't exist in table")
+2023-08-16T00:16:39.427872+0800 - finhack.library.monitor - INFO - (1072, "Key column 'trade_date' doesn't exist in table")
+2023-08-16T00:16:39.428686+0800 - finhack.library.monitor - INFO - trade_cal:同步完毕
+2023-08-16T00:16:39.428795+0800 - finhack.collector.tushare.tushare_collector - INFO - namechange
+2023-08-16T00:16:39.428864+0800 - finhack.collector.tushare.tushare_collector - INFO - hs_const
+2023-08-16T00:16:39.428929+0800 - finhack.collector.tushare.tushare_collector - INFO - stock_company
+2023-08-16T00:16:39.428982+0800 - finhack.collector.tushare.tushare_collector - INFO - stk_managers
+2023-08-16T00:16:39.429034+0800 - finhack.collector.tushare.tushare_collector - INFO - stk_rewards
+2023-08-16T00:16:39.429086+0800 - finhack.collector.tushare.tushare_collector - INFO - new_share
+2023-08-16T00:16:39.429137+0800 - finhack.collector.tushare.tushare_collector - INFO - daily
+2023-08-16T00:16:39.429187+0800 - finhack.collector.tushare.tushare_collector - INFO - weekly
+2023-08-16T00:16:39.429237+0800 - finhack.collector.tushare.tushare_collector - INFO - monthly
+2023-08-16T00:16:39.429291+0800 - finhack.collector.tushare.tushare_collector - INFO - adj_factor
+2023-08-16T00:16:39.429340+0800 - finhack.collector.tushare.tushare_collector - INFO - suspend_d
+2023-08-16T00:16:39.429390+0800 - finhack.collector.tushare.tushare_collector - INFO - daily_basic
+2023-08-16T00:16:39.429440+0800 - finhack.collector.tushare.tushare_collector - INFO - moneyflow
+2023-08-16T00:16:39.429498+0800 - finhack.collector.tushare.tushare_collector - INFO - stk_limit
+2023-08-16T00:16:39.429548+0800 - finhack.collector.tushare.tushare_collector - INFO - limit_list
+2023-08-16T00:16:39.429665+0800 - finhack.collector.tushare.tushare_collector - INFO - moneyflow_hsgt
+2023-08-16T00:16:39.429716+0800 - finhack.collector.tushare.tushare_collector - INFO - hsgt_top10
+2023-08-16T00:16:39.429765+0800 - finhack.collector.tushare.tushare_collector - INFO - ggt_top10
+2023-08-16T00:16:39.429815+0800 - finhack.collector.tushare.tushare_collector - INFO - hk_hold
+2023-08-16T00:16:39.429864+0800 - finhack.collector.tushare.tushare_collector - INFO - ggt_daily
+2023-08-16T00:17:05.817156+0800 - finhack.library.monitor - INFO - (1072, "Key column 'end_date' doesn't exist in table")
+2023-08-16T00:17:05.817962+0800 - finhack.library.monitor - INFO - (1072, "Key column 'trade_date' doesn't exist in table")
+2023-08-16T00:17:05.818207+0800 - finhack.library.monitor - INFO - stock_basic:同步完毕
+2023-08-16T00:17:06.581716+0800 - finhack.library.monitor - INFO - (1072, "Key column 'ts_code' doesn't exist in table")
+2023-08-16T00:17:06.582765+0800 - finhack.library.monitor - INFO - (1072, "Key column 'end_date' doesn't exist in table")
+2023-08-16T00:17:06.583893+0800 - finhack.library.monitor - INFO - (1072, "Key column 'trade_date' doesn't exist in table")
+2023-08-16T00:17:06.584870+0800 - finhack.library.monitor - INFO - trade_cal:同步完毕
+2023-08-16T00:17:06.584967+0800 - finhack.collector.tushare.tushare_collector - INFO - namechange
+2023-08-16T00:17:06.585023+0800 - finhack.collector.tushare.tushare_collector - INFO - hs_const
+2023-08-16T00:17:06.585075+0800 - finhack.collector.tushare.tushare_collector - INFO - stock_company
+2023-08-16T00:17:06.585122+0800 - finhack.collector.tushare.tushare_collector - INFO - stk_managers
+2023-08-16T00:17:06.585167+0800 - finhack.collector.tushare.tushare_collector - INFO - stk_rewards
+2023-08-16T00:17:06.585213+0800 - finhack.collector.tushare.tushare_collector - INFO - new_share
+2023-08-16T00:17:06.585259+0800 - finhack.collector.tushare.tushare_collector - INFO - daily
+2023-08-16T00:17:06.585304+0800 - finhack.collector.tushare.tushare_collector - INFO - weekly
+2023-08-16T00:17:06.585347+0800 - finhack.collector.tushare.tushare_collector - INFO - monthly
+2023-08-16T00:17:06.585392+0800 - finhack.collector.tushare.tushare_collector - INFO - adj_factor
+2023-08-16T00:17:06.585437+0800 - finhack.collector.tushare.tushare_collector - INFO - suspend_d
+2023-08-16T00:17:06.585481+0800 - finhack.collector.tushare.tushare_collector - INFO - daily_basic
+2023-08-16T00:17:06.585525+0800 - finhack.collector.tushare.tushare_collector - INFO - moneyflow
+2023-08-16T00:17:06.585569+0800 - finhack.collector.tushare.tushare_collector - INFO - stk_limit
+2023-08-16T00:17:06.585613+0800 - finhack.collector.tushare.tushare_collector - INFO - limit_list
+2023-08-16T00:17:06.585728+0800 - finhack.collector.tushare.tushare_collector - INFO - moneyflow_hsgt
+2023-08-16T00:17:06.585784+0800 - finhack.collector.tushare.tushare_collector - INFO - hsgt_top10
+2023-08-16T00:17:06.585829+0800 - finhack.collector.tushare.tushare_collector - INFO - ggt_top10
+2023-08-16T00:17:06.585874+0800 - finhack.collector.tushare.tushare_collector - INFO - hk_hold
+2023-08-16T00:17:06.585918+0800 - finhack.collector.tushare.tushare_collector - INFO - ggt_daily
