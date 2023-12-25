@@ -1,0 +1,7 @@
+setup.py
+src/calccc.egg-info/PKG-INFO
+src/calccc.egg-info/SOURCES.txt
+src/calccc.egg-info/dependency_links.txt
+src/calccc.egg-info/top_level.txt
+src/examples/__init__.py
+src/examples/options.py
