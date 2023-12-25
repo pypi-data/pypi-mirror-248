@@ -1,0 +1,9 @@
+README.md
+setup.py
+computing-specs/__init__.py
+computing-specs/hardware_info.py
+computing_specs.egg-info/PKG-INFO
+computing_specs.egg-info/SOURCES.txt
+computing_specs.egg-info/dependency_links.txt
+computing_specs.egg-info/requires.txt
+computing_specs.egg-info/top_level.txt
