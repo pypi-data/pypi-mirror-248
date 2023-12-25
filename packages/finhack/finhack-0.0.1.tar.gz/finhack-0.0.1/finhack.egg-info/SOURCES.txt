@@ -1,0 +1,5 @@
+setup.py
+finhack.egg-info/PKG-INFO
+finhack.egg-info/SOURCES.txt
+finhack.egg-info/dependency_links.txt
+finhack.egg-info/top_level.txt
