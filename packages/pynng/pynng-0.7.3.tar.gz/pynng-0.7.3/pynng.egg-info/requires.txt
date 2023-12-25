@@ -1,0 +1,9 @@
+cffi
+
+[dev]
+pytest
+pytest-asyncio
+pytest-trio
+pytest-curio
+curio
+trio
