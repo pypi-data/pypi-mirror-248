@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: readwise-to-datasette
+Version: 0.2.0
+Summary: Extract readwise highlights into a datasette sqlite DB
+Home-page: https://github.com/iloveitaly/readwise-to-datasette
+License: MIT
+Keywords: readwise,datasette
+Author: Michael Bianco
+Author-email: mike@mikebian.co
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: funcy-pipe (>=0.5.0,<0.6.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: sqlite-utils (>=3.36,<4.0)
+Description-Content-Type: text/markdown
+
+# Import Readwise Highlights into SQLite
+
+Self-explanatory. Nice and simple importer for datasette.
+
+```shell
+pip install readwise-to-datasette
+readwise-to-datasette
+```
+
+Or, from source:
+
+```python
+poetry install
+poetry run readwise-to-datasette
+```
