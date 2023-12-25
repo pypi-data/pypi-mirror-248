@@ -1,0 +1,8 @@
+README.rst
+notrandom.py
+pyproject.toml
+setup.py
+notrandom.egg-info/PKG-INFO
+notrandom.egg-info/SOURCES.txt
+notrandom.egg-info/dependency_links.txt
+notrandom.egg-info/top_level.txt
