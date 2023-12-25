@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: annosine2
+Version: 1.0.4
+Summary: AnnoSINE2 - SINE Annotation Tool for Plant and Animal Genomes
+Home-page: https://github.com/liaoherui/AnnoSINE
+Author: Herui Liao, Shujun Ou, and Yang Li
+Author-email: heruiliao2-c@my.cityu.edu.hk
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cycler (==0.10.0)
+Requires-Dist: kiwisolver (==1.3.1)
+Requires-Dist: matplotlib (==3.4.2)
+Requires-Dist: numpy (==1.20.3)
+Requires-Dist: Pillow (==8.2.0)
+Requires-Dist: pyparsing (==2.4.7)
+Requires-Dist: python-dateutil (==2.8.1)
+Requires-Dist: six (==1.16.0)
+
+AnnoSINE2 is a SINE annotation tool for plant/animal genomes. The program is designed to generate high-quality non-redundant SINE libraries for genome annotation.
+
