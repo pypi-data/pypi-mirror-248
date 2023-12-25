@@ -1,0 +1,25 @@
+from enum import Enum
+
+
+class Section(str, Enum):
+    inn_submission = "inn/submission"
+    inn_resubmission = "inn/resubmission"
+    inn_verification = "inn/verification"
+    home = "home"
+    exchange = "exchange"
+    agents = "agents"
+    carriers = "carriers"
+    api = "api"
+    organization_profile = "organization/profile"
+    organization_employees = "organization/employees"
+    organization_docs = "organization/docs"
+    resources_drivers = "resources/drivers"
+    resources_vehicles = "resources/vehicles"
+    resources_trailers = "resources/trailers"
+    carriages_buffer = "carriages/buffer"
+    carriages_assignment = "carriages/assignment"
+    carriages_confirmed = "carriages/confirmed"
+    carriages_active = "carriages/active"
+    carriages_completed = "carriages/completed"
+    user_profile = "user/profile"
+    user_notifications = "user/notifications"
