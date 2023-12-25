@@ -1,0 +1,4 @@
+oryks-google-oauth
+pydantic
+pydantic-settings
+pytz
