@@ -1,0 +1,6 @@
+cobra
+pandas>=2.0
+numpy
+scipy
+dill
+ncbi-genome-download
