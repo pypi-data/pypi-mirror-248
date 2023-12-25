@@ -1,0 +1,3 @@
+recursive-exclude AutoIntegrityCheck *.py
+recursive-include AutoIntegrityCheck *.so *.pyd
+

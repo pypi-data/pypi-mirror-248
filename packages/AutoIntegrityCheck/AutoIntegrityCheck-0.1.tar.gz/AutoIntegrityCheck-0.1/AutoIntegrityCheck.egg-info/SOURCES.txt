@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+AutoIntegrityCheck/validator.c
+AutoIntegrityCheck.egg-info/PKG-INFO
+AutoIntegrityCheck.egg-info/SOURCES.txt
+AutoIntegrityCheck.egg-info/dependency_links.txt
+AutoIntegrityCheck.egg-info/not-zip-safe
+AutoIntegrityCheck.egg-info/requires.txt
+AutoIntegrityCheck.egg-info/top_level.txt

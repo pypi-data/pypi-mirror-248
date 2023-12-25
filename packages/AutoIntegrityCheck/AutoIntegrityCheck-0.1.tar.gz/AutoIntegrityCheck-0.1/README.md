@@ -1,0 +1,1 @@
+A tool to validate the integrity of Automatic1111/SdNext environments
