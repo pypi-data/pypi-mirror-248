@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+orphism/__init__.py
+orphism.egg-info/PKG-INFO
+orphism.egg-info/SOURCES.txt
+orphism.egg-info/dependency_links.txt
+orphism.egg-info/requires.txt
+orphism.egg-info/top_level.txt
