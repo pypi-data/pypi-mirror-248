@@ -1,0 +1,8 @@
+core-mixins
+core-ciphers
+core-tests
+core-etl
+aws-encryption-sdk==3.1.1
+boto3==1.29.3
+
+[test]
