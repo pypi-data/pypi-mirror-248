@@ -1,0 +1,8 @@
+alibabacloud_clickhouse20191111/__init__.py,sha256=DBOXUkWvdrQlu1Jk7rYnVLALqCeVP9m3zdxvBvW8NCY,21
+alibabacloud_clickhouse20191111/client.py,sha256=88QeHPjM7VyS-DTQhBve7mi8aTWjh1eHp1mDsV7PV2M,131671
+alibabacloud_clickhouse20191111/models.py,sha256=AsXe9DcW7Jnnhztadtq1l12bQN7RZVIr_v3Y2ObwYjI,477058
+alibabacloud_clickhouse20191111_py2-3.1.4.dist-info/LICENSE,sha256=VgSqXWyZONnzmDzK6u3lc8cM_zPwlIOD4dxG73CBeE0,588
+alibabacloud_clickhouse20191111_py2-3.1.4.dist-info/METADATA,sha256=kJN3Z7ykumAaT9qWqyQuHk-BeqpStRL27IAlFjFRp9E,2411
+alibabacloud_clickhouse20191111_py2-3.1.4.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+alibabacloud_clickhouse20191111_py2-3.1.4.dist-info/top_level.txt,sha256=GG7d-HGO4NoPdlBlTAlxqQ5qM1nReRDXMlb6-4gVrQc,32
+alibabacloud_clickhouse20191111_py2-3.1.4.dist-info/RECORD,,
