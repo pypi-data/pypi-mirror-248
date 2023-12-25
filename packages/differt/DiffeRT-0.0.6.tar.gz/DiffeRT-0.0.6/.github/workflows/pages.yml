@@ -1,0 +1,67 @@
+# Simple workflow for deploying static content to GitHub Pages
+name: Deploy static content to Pages
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: [main]
+
+  pull_request:
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  # Single deploy job since we're just deploying
+  deploy:
+    permissions: write-all
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Install PDM
+      uses: pdm-project/setup-pdm@v3
+      with:
+        python-version: '3.11'
+        cache: true
+
+    - name: Install Rust
+      uses: dtolnay/rust-toolchain@stable
+
+    - name: Install dependencies
+      run: |
+        pdm install -G docs,github-action
+
+    - name: Add Jupyter Kernel
+      run: |
+        pdm run python -m ipykernel install --user --name DiffeRT
+
+    - name: Build docs
+      run: cd docs && pdm run make html
+
+    - name: Upload artifact
+      if: github.event_name != 'pull_request'
+      uses: actions/upload-pages-artifact@v2
+      with:
+        # Upload docs/build/html dir
+        path: docs/build/html/
+
+    - name: Deploy to GitHub Pages
+      id: deployment
+      if: github.event_name != 'pull_request'
+      uses: actions/deploy-pages@v2
