@@ -1,0 +1,8 @@
+README.md
+setup.py
+gazillion-url-splitter/__init__.py
+gazillion-url-splitter/splitter.py
+gazillion_url_splitter.egg-info/PKG-INFO
+gazillion_url_splitter.egg-info/SOURCES.txt
+gazillion_url_splitter.egg-info/dependency_links.txt
+gazillion_url_splitter.egg-info/top_level.txt
