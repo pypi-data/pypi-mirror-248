@@ -1,0 +1,2 @@
+[console_scripts]
+pii-decide = pii_decide.app.decide:main
