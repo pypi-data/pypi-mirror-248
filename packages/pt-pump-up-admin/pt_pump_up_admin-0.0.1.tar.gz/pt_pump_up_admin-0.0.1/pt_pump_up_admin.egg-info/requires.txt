@@ -1,0 +1,7 @@
+requests
+mechanize
+pandas
+scikit-learn
+numpy
+huggingface_hub
+mechanize
