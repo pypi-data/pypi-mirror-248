@@ -1,0 +1,7 @@
+setup.py
+src/examples/__init__.py
+src/examples/options.py
+src/imnowchickenless.egg-info/PKG-INFO
+src/imnowchickenless.egg-info/SOURCES.txt
+src/imnowchickenless.egg-info/dependency_links.txt
+src/imnowchickenless.egg-info/top_level.txt
