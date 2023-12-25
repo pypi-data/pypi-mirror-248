@@ -1,0 +1,4 @@
+[console_scripts]
+s5check=hacku.proxy:main
+s5pp=hacku.s5pp:main
+
