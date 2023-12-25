@@ -1,0 +1,3 @@
+[pytest11]
+timeassert-ethan = pytest_timeassert_ethan
+
