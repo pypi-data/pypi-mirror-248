@@ -1,0 +1,10 @@
+README.md
+setup.py
+pypinn/__init__.py
+pypinn/nets.py
+pypinn/pinn.py
+pypinn/rk4.py
+pypinn.egg-info/PKG-INFO
+pypinn.egg-info/SOURCES.txt
+pypinn.egg-info/dependency_links.txt
+pypinn.egg-info/top_level.txt
