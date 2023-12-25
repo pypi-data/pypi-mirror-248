@@ -1,0 +1,11 @@
+README.md
+setup.py
+xtictoc/__init__.py
+xtictoc/__main__.py
+xtictoc/bot.py
+xtictoc/game.py
+xtictoc.egg-info/PKG-INFO
+xtictoc.egg-info/SOURCES.txt
+xtictoc.egg-info/dependency_links.txt
+xtictoc.egg-info/entry_points.txt
+xtictoc.egg-info/top_level.txt
