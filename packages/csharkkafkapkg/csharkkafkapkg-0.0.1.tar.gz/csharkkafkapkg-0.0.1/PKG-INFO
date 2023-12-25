@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: csharkkafkapkg
+Version: 0.0.1
+Summary: CShark custom kafka library for python project
+Author: CShark team (Yelnur)
+Author-email: someemail@mail.com
+Keywords: python,kafka,producer,consumer,sync,async,local
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows

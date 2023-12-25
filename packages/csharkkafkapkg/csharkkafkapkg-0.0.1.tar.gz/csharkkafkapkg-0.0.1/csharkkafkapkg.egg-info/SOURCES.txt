@@ -1,0 +1,8 @@
+setup.py
+cshark-kafka-library/__init__.py
+cshark-kafka-library/custom_cshark_kafka.py
+csharkkafkapkg.egg-info/PKG-INFO
+csharkkafkapkg.egg-info/SOURCES.txt
+csharkkafkapkg.egg-info/dependency_links.txt
+csharkkafkapkg.egg-info/requires.txt
+csharkkafkapkg.egg-info/top_level.txt
