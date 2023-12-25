@@ -1,0 +1,8 @@
+ood>=1.0.0
+plotly>=5.18.0
+colour>=0.1.5
+pint>=0.23
+pandas>=2.0.0
+
+[dev]
+pytest
