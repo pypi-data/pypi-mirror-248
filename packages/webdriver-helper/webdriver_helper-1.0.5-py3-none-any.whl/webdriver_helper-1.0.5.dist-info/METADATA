@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: webdriver-helper
+Version: 1.0.5
+Summary: 自动加速下载浏览器驱动，使selenium 4 开箱即用
+Home-page: https://github.com/dongfangtianyu/webdriver-helper
+Author: dongfangtianyu
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: selenium ~=4.15.0
+
+`1.*`版只支持chromedriver下载加速，如果需要对其他driver加速，建议升级到`2.*`。
+
+详情咨询wx:python_sanmu
