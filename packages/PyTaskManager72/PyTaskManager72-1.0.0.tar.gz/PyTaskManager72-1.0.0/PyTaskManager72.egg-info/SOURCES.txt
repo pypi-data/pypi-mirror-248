@@ -1,0 +1,7 @@
+PyTaskManager72.py
+setup.py
+PyTaskManager72.egg-info/PKG-INFO
+PyTaskManager72.egg-info/SOURCES.txt
+PyTaskManager72.egg-info/dependency_links.txt
+PyTaskManager72.egg-info/requires.txt
+PyTaskManager72.egg-info/top_level.txt
