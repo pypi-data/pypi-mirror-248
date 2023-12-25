@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: mochapy
+Version: 1.0.0
+Summary: A tiny flexible web framework for Python
+Author-email: Gabriel Gavrilov <gabriel.gavrilov02@gmail.com>
+Project-URL: Homepage, https://github.com/GabrielGavrilov/mocha-py
+Project-URL: Issues, https://github.com/GabrielGavrilov/mocha-py/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
