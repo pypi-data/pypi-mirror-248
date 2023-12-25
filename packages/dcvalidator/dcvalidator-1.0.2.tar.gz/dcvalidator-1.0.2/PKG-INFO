@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: dcvalidator
+Version: 1.0.2
+Summary: A simple Python package for validation
+Author: Wation
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# DCValidator
+
+`dcvalidator` is a Python package designed for educational purposes to showcase Dependency Confusion attacks. It is not intended for real-world use and should not be used in production systems.
+
+## Installation
+
+```bash
+pip install dcvalidator
+```
+
+## Iran National Code Validation
+The package provides a function is_nationalcode for validating Iran National Codes. The function takes a string representing the National Code and returns True if the code is valid and False otherwise.
+
+Executing the `is_nationalcode` function in this package will simulate a Dependency Confusion attack for educational purposes. As part of this simulation, the code intentionally runs an OS command to obtain directory information.
+
+**Please Note:**
+
+- This simulated attack is for educational use only.
+- Do not use this tool in a production environment.
+- The project maintainers are not responsible for any misuse of this tool.
+
+```py
+from dcvalidator import is_nationalcode
+
+# Validate Iran National Code
+result = is_nationalcode('1234567890')
+
+if result:
+    print("Valid National Code")
+else:
+    print("Invalid National Code")
+```
+
+## Important Notes
+- Educational Purpose Only: This project is meant for educational purposes and should not be used with malicious intent.
+
+- Responsible Disclosure: If you discover any security vulnerabilities or potential risks, please follow responsible disclosure practices and report them to the maintainers.
+
+## Contributing
+Contributions are welcome! If you find issues or have improvements, feel free to open an issue or submit a pull request.
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
