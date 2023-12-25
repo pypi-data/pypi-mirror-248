@@ -1,0 +1,12 @@
+ai_network_storage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ai_network_storage/directory_service_pb2.py,sha256=kvw23vkiaZDS0_7msiaPhkvu9b25GliqgvxqUJpYC64,1964
+ai_network_storage/directory_service_pb2_grpc.py,sha256=SjoRRXcRQtDbrE4nW2Q1FU4y2xgl1Mu5qvQbFQVmZGY,4223
+ai_network_storage/p2p_file_system_pb2.py,sha256=WuCev2EiczHj_b7xIi5K9mS03UR3ugyU794x9tIjrbo,1856
+ai_network_storage/p2p_file_system_pb2_grpc.py,sha256=15iLOXSZx5_I7DfGH1z3LDUvFxeAWFcm_c3YW4evdt0,4073
+ai_network_storage/sdk.py,sha256=k_PeZC-D3C78pUjqo2JLqd6H5LX96I4MzB5446gdjlw,2361
+ai_network_storage/tcp_client.py,sha256=_Or5V_Ik56LhVW75IEMrE9W2iyUSfHSfFagNcWzQWsE,675
+ai_network_storage/test.py,sha256=pEWEeprAXyEdO2gTC1fVpKXmBiSBsUUMyTE0jGhisNE,218
+ai_network_storage-0.4.0.dist-info/METADATA,sha256=uXgVsIu9VesTPmxXZs3diymTQexrYESjmqDukbm2kH8,216
+ai_network_storage-0.4.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+ai_network_storage-0.4.0.dist-info/top_level.txt,sha256=psThjF0S2Ahf_jAQO1XX5fEEWpQ5AgmfEpp_SlYMrgY,19
+ai_network_storage-0.4.0.dist-info/RECORD,,
