@@ -1,0 +1,14 @@
+[nskit.mixer.environment.factory]
+default = nskit.mixer.utilities:_EnvironmentFactory.default_environment
+
+[nskit.recipes]
+python_api_service = nskit.recipes.python.api:APIRecipe
+python_package = nskit.recipes.python.package:PackageRecipe
+recipe = nskit.recipes.recipe:RecipeRecipe
+
+[nskit.vcs.installers]
+python = nskit.vcs.installer:PythonInstaller
+
+[nskit.vcs.providers]
+azure_devops = nskit.vcs.providers.azure_devops:AzureDevOpsSettings
+github = nskit.vcs.providers.github:GithubSettings
