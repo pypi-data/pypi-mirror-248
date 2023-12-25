@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: wjxdemo
+Version: 1.0.0
+Summary: python for wjx
+Home-page: https://github.com/Zemelee/wjx/blob/master/wjx2.py
+Author: Zemelee
+Author-email: zhengmi0925@qq.com
+License: Apache-2.0 license
+Project-URL: Bug Tracker, https://www.bilibili.com/video/BV1qc411T7CG/
+Project-URL: Documentation, https://blog.csdn.net/zerolea/article/details/130596049
+Project-URL: Source Code, https://github.com/Zemelee/wjx/blob/master/wjx2.py
+Description: UNKNOWN
+Platform: any
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

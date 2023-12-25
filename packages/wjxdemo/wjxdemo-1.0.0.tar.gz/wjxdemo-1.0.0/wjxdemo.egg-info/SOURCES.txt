@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+wjxdemo.egg-info/PKG-INFO
+wjxdemo.egg-info/SOURCES.txt
+wjxdemo.egg-info/dependency_links.txt
+wjxdemo.egg-info/not-zip-safe
+wjxdemo.egg-info/requires.txt
+wjxdemo.egg-info/top_level.txt
