@@ -1,0 +1,8 @@
+# Do not edit - changes here will be overwritten by Copier
+_commit: v1
+_src_path: gh:tlambert03/pyrepo
+mode: simple
+module_name: fpbase
+project_name: fpbase
+project_short_description: Stub for future FPbase API
+
