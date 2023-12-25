@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling", "requests"]
+build-backend = "hatchling.build"
+
+
+[project]
+name = "zerorunner-consul"
+version = "0.2.1"
+authors = [
+    { name = "xiao.bai", email = "546142369@qq.com" },
+]
+description = "Python client for Consul (https://www.consul.io/)"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/baizunxian/zerorunner-consul"
+Issues = "https://github.com/baizunxian/zerorunner-consul/issues"
