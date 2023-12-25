@@ -1,0 +1,13 @@
+GridPolator-0.3.1.dist-info/METADATA,sha256=hjbR_GmUJInCAfZyD0IC69-SJxOD0KcZg6-qjD48NxA,1272
+GridPolator-0.3.1.dist-info/WHEEL,sha256=kac6KKFPHJuPCCwK0i9AWWnFeeZ-ptaa1EV9C2cdr7Q,108
+GridPolator-0.3.1.dist-info/license_files/LICENSE,sha256=gqX5uXJC0H1X_A1aQl0PZ4LSfSarMsDjzKFETTqrkM4,1069
+GridPolator/builtins/__init__.py,sha256=XkOR60uQawsmZJ6QhKDF2ngJSHJ9SBDgJMdA-6OtdvI,50
+GridPolator/builtins/cache.py,sha256=uLt5GohXc5WmxCQhpxghxegk3JynYt6igw1yWw46ipA,136
+GridPolator/builtins/phoenix_vspec.py,sha256=ykdTbMOImIPrx2p9ha7vf5a9t5wa4yZeZ_gPAoYk1Fg,5021
+GridPolator/__init__.py,sha256=VuCyPuPuXKR6BZzdE4ZnhFirutVVHVkvRDDVbCzGKTI,609
+GridPolator/binning.py,sha256=vd7ywwpfoYjyu6TYFGheAz8qRPyqm2EUGGVLbNUWlKU,3702
+GridPolator/astropy_units.py,sha256=sIF6tp6lNItcDqcRApLByytABLefzNLXaoyDJTkr-Wk,1420
+GridPolator/config.py,sha256=rH27CLNSbiWTNa6aEI2c4dA-HEq4yAZbzAjEHOJsgg8,1349
+GridPolator/grid.py,sha256=tNJBqHwqkdKeJRW3xQkDxl2Zq4Dk4sp9C1FLRU3FLpU,6923
+GridPolator/_gridpolator.cpython-312-x86_64-linux-gnu.so,sha256=e6pvXvHLFpQ91TZNzKWIUTx13E1Kra-z9iqtm07F4P0,547376
+GridPolator-0.3.1.dist-info/RECORD,,
