@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: flexy_probability_distributions_hApImAn
+Version: 1.0
+Summary: Gaussian and Binomial distributions
+Author: Happy Felix Chukwuma
+Author-email: happychukwuma@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

@@ -1,0 +1,11 @@
+README.md
+setup.py
+distributions/BinomialDistribution.py
+distributions/GaussianDistribution.py
+distributions/__init__.py
+distributions/general_distribution_class.py
+flexy_probability_distributions_hApImAn.egg-info/PKG-INFO
+flexy_probability_distributions_hApImAn.egg-info/SOURCES.txt
+flexy_probability_distributions_hApImAn.egg-info/dependency_links.txt
+flexy_probability_distributions_hApImAn.egg-info/not-zip-safe
+flexy_probability_distributions_hApImAn.egg-info/top_level.txt
