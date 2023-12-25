@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: openquiz_export
+Version: 0.0.2
+Summary: Openquiz-export exports quiz results from open-quiz.com to Excel
+Home-page: https://gitlab.com/peczony/openquiz-export
+Author: Alexander Pecheny
+Author-email: ap@pecheny.me
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: requests
+Requires-Dist: openpyxl
+Requires-Dist: levenshtein
+
+Openquiz-export exports quiz results from open-quiz.com to Excel
