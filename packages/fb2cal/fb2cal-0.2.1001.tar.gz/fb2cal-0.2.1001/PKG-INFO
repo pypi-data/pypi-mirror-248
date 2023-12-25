@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: fb2cal
+Version: 0.2.1001
+Summary: Facebook Birthday Events to ICS file converter
+Home-page: https://git.io/fjMwr
+Download-URL: https://github.com/mobeigi/fb2cal/archive/v1.2.4.tar.gz
+Author: Mo Beigi
+Author-email: me@mobeigi.com
+License: GPLv3
+Keywords: facebook,birthday,calendar,export,ics
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Other Audience
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >3.9
+License-File: LICENSE
+Requires-Dist: MechanicalSoup
+Requires-Dist: ics>=0.6
+Requires-Dist: requests
+Requires-Dist: freezegun
