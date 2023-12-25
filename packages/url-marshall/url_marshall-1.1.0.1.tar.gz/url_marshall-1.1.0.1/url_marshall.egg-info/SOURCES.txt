@@ -1,0 +1,8 @@
+README.md
+setup.py
+url_marshall.egg-info/PKG-INFO
+url_marshall.egg-info/SOURCES.txt
+url_marshall.egg-info/dependency_links.txt
+url_marshall.egg-info/entry_points.txt
+url_marshall.egg-info/requires.txt
+url_marshall.egg-info/top_level.txt
