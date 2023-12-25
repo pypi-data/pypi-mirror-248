@@ -1,0 +1,11 @@
+simpliqm/__init__.py,sha256=4CDxorGEIVVnQzPQ46IWNqFgAgg871kFjrklMLfdZvM,60
+simpliqm/__main__.py,sha256=Huz0dExiaH0XTMLhfe3skkFD9-VH7ZUiWMbDR_J8TIY,28
+simpliqm/cli.py,sha256=RNS9XZzUiYpH7XuD08uBlTe0JPEbAWys3rtWXmyTQpM,488
+simpliqm/minimize.py,sha256=sjq1-805zqSVmrpSTrDYTbjHtpJlXB9w2766BUG8hqk,5787
+simpliqm/term.py,sha256=VAZGZ26oqGo0gwoSS_SJ3CMkCHQNQQmOLbHI0iyHO2A,1497
+simpliqm-1.0.0.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+simpliqm-1.0.0.dist-info/METADATA,sha256=a0h9WUcqnyGJpcstN4TcjCQuevTes0xLo-WtzY1Geg4,3396
+simpliqm-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+simpliqm-1.0.0.dist-info/entry_points.txt,sha256=cyFzqHdGRcJAPMFtPOHmNfZ_mB3897KpKG3yAYCizmo,40
+simpliqm-1.0.0.dist-info/top_level.txt,sha256=MXs5AbvwJyY2EDv0sXtBFx5drh3-M-R-bBfs4ZQgolw,9
+simpliqm-1.0.0.dist-info/RECORD,,
