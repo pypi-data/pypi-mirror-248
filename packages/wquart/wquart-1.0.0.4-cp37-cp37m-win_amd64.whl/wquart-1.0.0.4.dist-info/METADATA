@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: wquart
+Version: 1.0.0.4
+Summary: wuqi chip7033 uart message resolve
+Home-page: http://www.wuqi-tech.com/
+Author: wuqi-wanjian
+Author-email: wan.jian@wuqi-tech.com
+Requires-Python: >=3.6
+Requires-Dist: pyserial
+
+wuqi-chip7033 uart message resolve
