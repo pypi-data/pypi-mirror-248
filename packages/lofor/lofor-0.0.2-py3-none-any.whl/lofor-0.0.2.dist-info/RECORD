@@ -1,0 +1,12 @@
+lofor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lofor/cli.py,sha256=03E6VS7rVM-zj66DsjC9yPIu6Nqs5wAHM0lGcNVd-DM,3185
+lofor/manager/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lofor/manager/config.py,sha256=JMkfVpl6SXkGmBLo43QeLVb2B3hKlPswDa9RlsvrC_E,1970
+lofor/server/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lofor/server/http.py,sha256=kLaD6S8YJZ4rroWmfbelsq1lgPgyZNWVtjpD9_k_Vzs,4210
+lofor/server/serve.py,sha256=acfZZZQwRMOzzE4TrM9u1RjnQiAaToJr47wErGYGoWU,6211
+lofor-0.0.2.dist-info/METADATA,sha256=9VtBSGix9HOXQnRfXAjdmJ4Qk166ORYXJ2VCTFZAi7c,1396
+lofor-0.0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+lofor-0.0.2.dist-info/entry_points.txt,sha256=2AyNpGD_PAvs8orgJv2JpOviBafzAPF82DGccgk7NZQ,47
+lofor-0.0.2.dist-info/top_level.txt,sha256=TA0CWaCoLGCHvufXa6k7y0c9L1VTJL7rGGdnWb3zd0A,6
+lofor-0.0.2.dist-info/RECORD,,
