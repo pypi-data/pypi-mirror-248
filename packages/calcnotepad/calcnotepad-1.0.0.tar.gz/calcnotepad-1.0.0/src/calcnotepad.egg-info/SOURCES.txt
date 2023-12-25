@@ -1,0 +1,7 @@
+setup.py
+src/calcnotepad.egg-info/PKG-INFO
+src/calcnotepad.egg-info/SOURCES.txt
+src/calcnotepad.egg-info/dependency_links.txt
+src/calcnotepad.egg-info/top_level.txt
+src/examples/__init__.py
+src/examples/options.py
