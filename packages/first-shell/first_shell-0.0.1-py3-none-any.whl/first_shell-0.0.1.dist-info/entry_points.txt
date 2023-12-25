@@ -1,0 +1,2 @@
+[console_scripts]
+first-shell = first_shell.__main__:main

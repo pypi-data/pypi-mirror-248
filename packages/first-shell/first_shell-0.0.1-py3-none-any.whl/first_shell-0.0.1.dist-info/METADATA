@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: first-shell
+Version: 0.0.1
+Summary: The first shell for every littel nerd
+Project-URL: Documentation, https://github.com/unknown/first-shell#readme
+Project-URL: Issues, https://github.com/unknown/first-shell/issues
+Project-URL: Source, https://github.com/unknown/first-shell
+Author-email: Frank Hoffmann <15r10nk-git@polarbit.de>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: gtts>=2.4.0
+Requires-Dist: pydub
+Requires-Dist: simpleaudio
+Requires-Dist: textual>=0.45.1
+Description-Content-Type: text/markdown
+
+# first-shell
+
+[![Docs](https://img.shields.io/badge/docs-mkdocs-green)](https://15r10nk.github.io/first-shell/)
+[![pypi version](https://img.shields.io/pypi/v/first-shell.svg)](https://pypi.org/project/first-shell/)
+![Python Versions](https://img.shields.io/pypi/pyversions/first-shell)
+![PyPI - Downloads](https://img.shields.io/pypi/dw/first-shell)
+[![GitHub Sponsors](https://img.shields.io/github/sponsors/15r10nk)](https://github.com/sponsors/15r10nk)
+
+-----
+
+Hi, I wrote the following shell for my 4 year old daughter, because she wants to do the same things like her dad. 
+
+
+## Installation
+
+```console
+pip install first-shell
+```
+
+simpleaudio requires libasound:
+``` console
+apt-get install libasound2-dev
+```
+
+## Usage
+
+Run first-shell with `first-shell`
+
+It reads every character/word/line the user writes into the prompt.
+
+Games:
+
+- **xmas**: guess words and keep the lights on
+
+![xmas](xmas.png)
+
+## TODO
+
+- [ ] testing
+- [ ] i18n support
+- [ ] custom config file with words
+- [ ] more games & features
+
+
+## License
+
+`first-shell` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
