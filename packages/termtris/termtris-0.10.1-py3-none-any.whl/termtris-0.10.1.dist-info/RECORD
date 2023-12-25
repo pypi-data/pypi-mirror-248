@@ -1,0 +1,10 @@
+termtris/__init__.py,sha256=3mjuQXEof8EJIs5ixhv8DwMtKRapYcbaWs7kf_qf6O0,776
+termtris/termtris.py,sha256=YcJE6foeNULSChavJXtJ8f-5Jen7RBHENU-P_nrIXto,5882
+termtris/tt_backend.py,sha256=7yjesOcmquooiq0irRC1DMFSdlj_XO82Cx3qooiuh6E,6522
+termtris/tt_panel.py,sha256=nfwrp2HQ5ebKBOiv9yYASyoej1aUHzOsHYN7bfYnf0I,7359
+termtris/tt_tetro.py,sha256=tmjgKWzcghW5ZGN22fedA9qkcdD5XhU6vtUHMIMqDFA,4520
+termtris-0.10.1.dist-info/METADATA,sha256=iRyB0z62CM7WHlI9JAF1edkzU6idv_-gvqT1hjX3Ftw,14584
+termtris-0.10.1.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+termtris-0.10.1.dist-info/entry_points.txt,sha256=KOogl9poghrbdJWwg86lE1z94J5grdL1QRUr_Oy3YAk,62
+termtris-0.10.1.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+termtris-0.10.1.dist-info/RECORD,,
