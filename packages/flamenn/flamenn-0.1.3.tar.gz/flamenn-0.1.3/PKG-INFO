@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: flamenn
+Version: 0.1.3
+Summary: Flamenn is a high-level PyTorch wrapper for rapid model protyping. It uses a builder pattern for creating network arquitectures using PyTorch's components.
+Home-page: https://github.com/Yoquec/flamenn
+License: BSD-3-Clause
+Author: Yoquec
+Author-email: alvaro.viejo@pm.me
+Requires-Python: >=3.8,<3.12
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: numpy (>=1.26.2,<2.0.0)
+Requires-Dist: torch (>=2.1.2,<3.0.0)
+Requires-Dist: tqdm (>=4.66.1,<5.0.0)
+Description-Content-Type: text/markdown
+
+# Flamenn 🔥👷
+Flamenn is a high-level [PyTorch](pytorch.org) wrapper for rapid model protyping.
+It uses a builder pattern for creating network arquitectures using PyTorch's components.
+
+## Example usage
+```python
+import torch
+from flamenn.networks import MultiLayerPerceptron
+from flamenn.layers import PerceptronLayer
+
+testNN = (
+    MultiLayerPerceptron(input_size=5)
+    .addLayer(PerceptronLayer(5, activation=torch.nn.ReLU(), dropout=False))
+    .addLayer(PerceptronLayer(3, torch.nn.ReLU(), False))
+    .addCriterion(torch.nn.NLLLoss())
+    .addOptim("adam", learning_rate=10e-3)
+)
+
+testNN.forward(torch.rand((1,5)))
+
+# Result:
+# >>> tensor([[0.4108, 0.2620, 0.0000]], grad_fn=<ReluBackward0>)
+```
+
