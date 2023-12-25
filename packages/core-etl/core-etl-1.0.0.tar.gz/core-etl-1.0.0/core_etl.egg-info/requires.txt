@@ -1,0 +1,4 @@
+core-mixins
+core-tests
+
+[test]
