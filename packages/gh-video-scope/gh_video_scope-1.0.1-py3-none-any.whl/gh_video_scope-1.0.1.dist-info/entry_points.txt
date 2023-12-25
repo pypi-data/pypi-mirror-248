@@ -1,0 +1,2 @@
+[console_scripts]
+videoinfo = videoscope.cli:main
