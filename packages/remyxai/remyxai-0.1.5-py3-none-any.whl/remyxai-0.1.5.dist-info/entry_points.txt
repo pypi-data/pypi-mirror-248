@@ -1,0 +1,3 @@
+[console_scripts]
+remyxai = remyxai.cli:main
+
