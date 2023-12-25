@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: pyenvs
+Version: 0.0.1
+Summary: A small .env parser
+Author-email: Stupid Johanna <stupidjane@tutanota.com>
+Project-URL: Homepage, https://github.com/stupidjohanna/pyenvs
+Project-URL: Issues, https://github.com/stupidjohanna/pyenvs/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+Highly Minimalistic .env File Wrapper
+
+### Sample:
+
+Suppose you have the following .env file:
+
+```sh
+ACCESS_KEY = jriofesdjxifocjewsayiofdlcj
+```
+
+Parsing it may look something like this:
+```py
+>>> import os
+>>> from pyenvs import load_dotenv
+>>> load_dotenv()
+>>> os.environ["ACCESS_KEY"]
+jriofesdjxifocjewsayiofdlcj
+```
