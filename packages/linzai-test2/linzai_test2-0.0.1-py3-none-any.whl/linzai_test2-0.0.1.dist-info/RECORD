@@ -1,0 +1,9 @@
+linzai_test2/__init__.py,sha256=eyp9_m-QRDQ0VKpLu0iSrqvB4etPmcWu55rP-Jyvm1c,1344
+linzai_test2/model_infer/__init__.py,sha256=esr8mu4K-Pjx4vSIZdHbTEuos8BCRzZd9DB1ZYQbDMI,1407
+linzai_test2/model_infer/pp_structure_infer.py,sha256=bwFX_9U6XmGGnZt11kZkxH9uytreCcZMVE6m3expjrU,17418
+linzai_test2/pyarmor_runtime_000000/__init__.py,sha256=ZFFs0nXtcMpDZiv01CIp5GXqGIXkmlVtqVpEMWG_Dwk,103
+linzai_test2/pyarmor_runtime_000000/pyarmor_runtime.pyd,sha256=5HJoC_SF9iK1AUuvUUNnxMqo-ikHwGAOo8oMQ2Ycphw,620544
+linzai_test2-0.0.1.dist-info/METADATA,sha256=uYSFPoKJnn9eh_xlZZFs0Fn3mCD3jIlPxcTlubO2xTQ,61
+linzai_test2-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+linzai_test2-0.0.1.dist-info/top_level.txt,sha256=q7ye36GiGTIJaTL8Tu0gg4Cf0ol5TAtoP0h9f4OzxLw,13
+linzai_test2-0.0.1.dist-info/RECORD,,
