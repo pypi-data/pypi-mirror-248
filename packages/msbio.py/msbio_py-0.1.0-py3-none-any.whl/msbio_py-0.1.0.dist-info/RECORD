@@ -1,0 +1,8 @@
+msbio/__init__.py,sha256=ClNcUhIkHG-zKu13BpwI6aDyjOEhCCUwKX9UvVwUD9A,61
+msbio/decoder.py,sha256=Q4RNM2JIqwV9lOduvC1prbd2yhlAnUFnF5nQD3GUfy8,1581
+msbio/encoder.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+msbio/msbio.py,sha256=XpU5yTPlkektNk4HbnUAjP5EH4uRyqPey15qDvyBPSk,473
+msbio_py-0.1.0.dist-info/LICENSE,sha256=wadLikkAc86JaHzwp7yYCIpoyK-hWhI6Bjz2c6Z664I,1081
+msbio_py-0.1.0.dist-info/METADATA,sha256=KjH7eph6zYwVEPv-Z3QTeRPF-K-o6AfBxmICP5Ie5sE,1110
+msbio_py-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+msbio_py-0.1.0.dist-info/RECORD,,

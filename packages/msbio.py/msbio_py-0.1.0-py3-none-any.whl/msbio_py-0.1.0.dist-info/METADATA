@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: msbio.py
+Version: 0.1.0
+Summary: A module for reading/writing 'settings.bin' from Mindustry Server.
+Home-page: https://github.com/RCR-OOP/msbio.py
+License: MIT
+Author: Romanin
+Author-email: semina054@gmail.com
+Requires-Python: >=3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Repository, https://github.com/RCR-OOP/msbio.py
+Description-Content-Type: text/markdown
+
+# msbio.py
+## Description
+A module for reading/writing 'settings.bin' from Mindustry Server.
+
+## Installation
+```shell
+pip install msbio
+```
+
+## Using
+```python
+import msbio
+
+with open('settings.bin', 'rb') as file:
+    data = msbio.read(file)
+```
