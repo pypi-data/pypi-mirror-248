@@ -1,0 +1,3 @@
+[console_scripts]
+readwise-to-datasette=readwise_to_datasette:main
+
