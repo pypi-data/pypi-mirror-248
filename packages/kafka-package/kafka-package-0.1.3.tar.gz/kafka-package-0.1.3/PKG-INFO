@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: kafka-package
+Version: 0.1.3
+Summary: This is kafka library to final project on the subject of advanced python
+Author: Sabir Glazhdin
+Author-email: sabir0807@mail.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+
+UNKNOWN
+
