@@ -1,0 +1,7 @@
+setup.py
+src/christmasmiraclemaker.egg-info/PKG-INFO
+src/christmasmiraclemaker.egg-info/SOURCES.txt
+src/christmasmiraclemaker.egg-info/dependency_links.txt
+src/christmasmiraclemaker.egg-info/top_level.txt
+src/examples/__init__.py
+src/examples/options.py
