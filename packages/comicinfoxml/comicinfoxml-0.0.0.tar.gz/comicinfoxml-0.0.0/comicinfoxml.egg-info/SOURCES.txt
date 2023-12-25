@@ -1,0 +1,10 @@
+LICENSE
+README.md
+comicinfoxml.py
+pyproject.toml
+comicinfoxml.egg-info/PKG-INFO
+comicinfoxml.egg-info/SOURCES.txt
+comicinfoxml.egg-info/dependency_links.txt
+comicinfoxml.egg-info/entry_points.txt
+comicinfoxml.egg-info/requires.txt
+comicinfoxml.egg-info/top_level.txt
