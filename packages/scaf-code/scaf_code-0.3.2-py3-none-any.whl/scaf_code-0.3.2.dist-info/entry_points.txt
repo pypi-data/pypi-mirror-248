@@ -1,0 +1,3 @@
+[console_scripts]
+scaf_code=scaf_code.cli:main
+
