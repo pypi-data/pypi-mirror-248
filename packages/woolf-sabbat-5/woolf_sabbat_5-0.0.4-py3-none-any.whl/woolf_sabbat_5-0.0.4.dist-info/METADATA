@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: woolf_sabbat_5
+Version: 0.0.4
+Summary: A CLI package that helps to manage contacts and notes.
+License: MIT
+Keywords: assistant,contacts,notes
+Author: Rodion Groshev
+Author-email: rodion.groshev@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: prompt-toolkit (>=3.0.0,<4.0.0)
+Requires-Dist: rich (>=12.0.0,<13.0.0)
+Description-Content-Type: text/markdown
+
+# Woolf-Sabbath
