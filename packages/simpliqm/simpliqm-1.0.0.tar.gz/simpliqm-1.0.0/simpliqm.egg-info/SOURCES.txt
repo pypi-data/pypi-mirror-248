@@ -1,0 +1,17 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+.github/workflows/python-publish.yml
+.github/workflows/python-test.yml
+simpliqm/__init__.py
+simpliqm/__main__.py
+simpliqm/cli.py
+simpliqm/minimize.py
+simpliqm/term.py
+simpliqm.egg-info/PKG-INFO
+simpliqm.egg-info/SOURCES.txt
+simpliqm.egg-info/dependency_links.txt
+simpliqm.egg-info/entry_points.txt
+simpliqm.egg-info/top_level.txt
+tests/test_minimization.py

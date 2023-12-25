@@ -1,0 +1,2 @@
+[console_scripts]
+qm = simpliqm.cli:cli
