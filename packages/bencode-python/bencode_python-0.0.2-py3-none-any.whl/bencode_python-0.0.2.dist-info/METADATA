@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: bencode-python
+Version: 0.0.2
+Summary: Bencode encoder and decoder written in python.
+Home-page: https://github.com/zrekryu/bencode-python
+Author: Zrekryu
+Author-email: zrekryu@gmail.com
+Keywords: bencode,beecode,torrent,bittorrent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+# Bencode
+Bencode encoder and decoder written in python.
+
+## Installation
+```bash
+pip install bencode-python
+```
+
+## Usage
+
+### Decoder
+Decoding bencode data.
+```py
+from bencode.decoder import Decoder
+
+decoder = Decoder()
+decoded = decoder.decode(b"i42e")
+print(decoded) # 42
+```
+
+### Encoder
+Encoding Python data types into bencode format.
+```py
+from bencode.encoder import Encoder
+
+encoder = Encoder()
+encoded = encoder.encode(42)
+print(encoded) # b'i42e'
+```
+
+# License
+Licensed under the MIT License.
