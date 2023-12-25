@@ -1,0 +1,2 @@
+[console_scripts]
+cursor-demo = ltermio.cursor:_test_cursor
