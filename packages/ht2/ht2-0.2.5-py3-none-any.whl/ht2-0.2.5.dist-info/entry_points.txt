@@ -1,0 +1,2 @@
+[console_scripts]
+htio = ht2.scripts.htio:main
