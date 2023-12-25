@@ -1,0 +1,2 @@
+[console_scripts]
+google-palm-cli = main:main
