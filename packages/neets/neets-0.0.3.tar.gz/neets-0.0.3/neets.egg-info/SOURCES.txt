@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+neets/__init__.py
+neets/completions.py
+neets/neets.py
+neets/tts.py
+neets/utils.py
+neets.egg-info/PKG-INFO
+neets.egg-info/SOURCES.txt
+neets.egg-info/dependency_links.txt
+neets.egg-info/entry_points.txt
+neets.egg-info/requires.txt
+neets.egg-info/top_level.txt
