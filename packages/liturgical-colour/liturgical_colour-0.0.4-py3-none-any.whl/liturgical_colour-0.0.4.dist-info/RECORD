@@ -1,0 +1,8 @@
+liturgical_colour/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+liturgical_colour/feasts.py,sha256=FHTwVWp3EBLCsGWHs8j6vSR4-ZFGy1jJ-iHgvfXCmdU,30866
+liturgical_colour/funcs.py,sha256=zpiDdqdEetfyyTI66qx0v-dPEILf_SfZJe1mxE8vGW0,1303
+liturgical_colour/liturgical.py,sha256=IXUYRnP4QyozKE3bzqaqI-gNe2yofq7fSdM3njkGRJE,7138
+liturgical_colour-0.0.4.dist-info/METADATA,sha256=xNz1v_WpFI7i1mbULvkHcBAd9UVVbSRpyzdYqLO87iY,4354
+liturgical_colour-0.0.4.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+liturgical_colour-0.0.4.dist-info/entry_points.txt,sha256=VMBU1OVLhHion_DEzvBFg0N-7o1INvwj8OUGjnV6RbA,71
+liturgical_colour-0.0.4.dist-info/RECORD,,
