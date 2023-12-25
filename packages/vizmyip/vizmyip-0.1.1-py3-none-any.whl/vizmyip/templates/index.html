@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            height: 100%;
+        }
+    </style>
+
+    <title>Whatismyip?</title>
+</head>
+
+<body>
+    <div class="row pt-4">
+        <div class="offset-md-2 col-md-4">
+            <h1>What is my Public IP?</h1>
+        </div>
+    </div>
+    <div class="row">
+        <!-- column 1 -->
+        <div class="offset-md-2 col-md-4">
+            <!-- table -->
+            <table class="table table-bordered table-responsive">
+                <tbody>
+                    <tr>
+                        <td>IP</td>
+                        <td>{{ data.query }}</td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>{{ data.city }}, {{ data.regionName}}, {{ data.countryCode }}</td>
+                    </tr>
+                    <tr>
+                        <td>Zip</td>
+                        <td>{{ data.zip }}</td>
+                    </tr>
+                    <tr>
+                        <td>Longitude/Latitude</td>
+                        <td>{{ data.lon }}, {{ data.lat }}</td>
+                    </tr>
+                    <tr>
+                        <td>Timezone</td>
+                        <td>{{ data.timezone }}</td>
+                    </tr>
+                    <tr>
+                        <td>ISP</td>
+                        <td>{{ data.org }}</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <!-- column 2 -->
+        <div class="col-md-4 d-flex justify-content-center align-items-center">
+            <div id="map" style="width: 600px; height: 400px;"></div>
+        </div>
+    </div>
+
+    <!-- script for #map -->
+    <script>
+        let latLon = ['{{data.lat}}', '{{data.lon}}']
+        const map = L.map('map').setView(latLon, 13);
+
+        const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '© <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+
+        const marker = L.marker(latLon).addTo(map);
+    </script>
+</body>
+</html>
