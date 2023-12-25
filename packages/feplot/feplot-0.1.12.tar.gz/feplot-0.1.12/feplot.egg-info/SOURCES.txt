@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+feplot/__init__.py
+feplot/_helpers.py
+feplot/_plotter.py
+feplot/_xdmf.py
+feplot.egg-info/PKG-INFO
+feplot.egg-info/SOURCES.txt
+feplot.egg-info/dependency_links.txt
+feplot.egg-info/requires.txt
+feplot.egg-info/top_level.txt
+tests/test_xdmf.py
