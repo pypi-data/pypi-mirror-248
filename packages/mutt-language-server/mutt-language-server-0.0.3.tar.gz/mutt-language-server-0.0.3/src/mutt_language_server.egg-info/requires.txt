@@ -1,0 +1,7 @@
+pygls
+
+[dev]
+pytest-cov
+
+[misc]
+tree-sitter-lsp[misc]
