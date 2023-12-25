@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: vizmyip
+Version: 0.1.0
+Summary: Visualizes public IP information of your system.
+Home-page: https://github.com/asis2016/vizmyip
+Author: Ashish S. Maharjan
+Author-email: <hello@amaharjan.de>
+License: MIT
+Keywords: python,flask,ip,public ip
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: flask
+Requires-Dist: requests
+
+# vizmyip
+Visualizes public IP information of your system.
+
+## Installation
+Install `vizmyip` with pip3
+```bash
+$ pip3 install --user compileMD
+```
+
+## Run Locally
+After the installation,
+```bash
+$ vizmyip
+```
+
+## Feedback and Contributing
+Contributions are always welcome! And, if you have any feedback or query, please reach out to me at hello@amaharjan.de.
+
+## Related
+Here are some related links for this project:
+- https://amaharjan.de/what-is-my-ip-a-simple-flask-project/
+
+## License
+[MIT](./LICENSE)
+
+
