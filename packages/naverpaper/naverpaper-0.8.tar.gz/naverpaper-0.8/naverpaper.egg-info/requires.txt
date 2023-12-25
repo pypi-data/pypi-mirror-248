@@ -1,0 +1,7 @@
+requests
+BeautifulSoup4
+lxml
+pyc
+rsa
+urllib3
+lzstring
