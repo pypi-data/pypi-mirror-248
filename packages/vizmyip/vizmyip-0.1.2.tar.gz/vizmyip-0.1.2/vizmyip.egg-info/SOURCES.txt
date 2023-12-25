@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+vizmyip/__init__.py
+vizmyip/app.py
+vizmyip.egg-info/PKG-INFO
+vizmyip.egg-info/SOURCES.txt
+vizmyip.egg-info/dependency_links.txt
+vizmyip.egg-info/entry_points.txt
+vizmyip.egg-info/requires.txt
+vizmyip.egg-info/top_level.txt
+vizmyip/templates/index.html
