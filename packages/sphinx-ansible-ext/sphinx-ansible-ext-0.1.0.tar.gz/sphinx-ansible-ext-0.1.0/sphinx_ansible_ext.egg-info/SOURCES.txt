@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements-dev.txt
+requirements.txt
+setup.py
+sphinx_ansible_ext/__init__.py
+sphinx_ansible_ext/conversions.py
+sphinx_ansible_ext/directives.py
+sphinx_ansible_ext.egg-info/PKG-INFO
+sphinx_ansible_ext.egg-info/SOURCES.txt
+sphinx_ansible_ext.egg-info/dependency_links.txt
+sphinx_ansible_ext.egg-info/requires.txt
+sphinx_ansible_ext.egg-info/top_level.txt
+sphinx_ansible_ext.egg-info/zip-safe

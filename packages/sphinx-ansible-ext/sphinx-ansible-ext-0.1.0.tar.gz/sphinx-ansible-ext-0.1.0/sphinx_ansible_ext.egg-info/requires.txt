@@ -1,0 +1,4 @@
+antsibull-docs
+yaml2rst
+
+[dev]
