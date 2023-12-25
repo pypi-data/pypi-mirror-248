@@ -1,0 +1,12 @@
+scuff/__init__.py,sha256=20rRH5XenDjSPFpHFouo6Nz4M_qDdv-AonLbatAjgbs,597
+scuff/compiler.py,sha256=U4erD-4mDB8l66vTvq6y_YFy5qUgK3sWEXi63IAgywY,6884
+scuff/error.py,sha256=iHwaGoX_wHActwXtqvl7MQ4iSI5j_XpjC_N3X61y_XY,4408
+scuff/lexer.py,sha256=EEurAPONE_OvRPAIc_142Y-ib3nTiChNwzs2QK04RkI,12793
+scuff/parser.py,sha256=gMAsfJsG8sbLC9cArgyyHuuTyiSJVqmfaM3Y-yGF_iM,26156
+scuff/token.py,sha256=Ujw-kbqcFOhEfYSDWREz0HBFei_P6-5IdbPr-keb_Fg,5081
+scuff/tools.py,sha256=QSx-HZ9FvXLIf8O2EtOJSPUo-649VI5I2LH7dyrLyuI,2023
+scuff-0.2.1.dist-info/LICENSE,sha256=PIT4iuf_iOcMKyY_uOPG2YZ-znjpSTcU0z0ST-wD59Q,1072
+scuff-0.2.1.dist-info/METADATA,sha256=Tce2FfRmXOWH-ueXecrXClYBcj6PPp0l_eyDqhzVo4M,4182
+scuff-0.2.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+scuff-0.2.1.dist-info/top_level.txt,sha256=hA1_EOBVNgGfseebgJ_y4U5iNVFJ_2TlgwrcV50Sp1Q,6
+scuff-0.2.1.dist-info/RECORD,,
