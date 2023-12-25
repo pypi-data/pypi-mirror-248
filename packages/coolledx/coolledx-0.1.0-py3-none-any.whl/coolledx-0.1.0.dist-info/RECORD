@@ -1,0 +1,9 @@
+coolledx/__init__.py,sha256=mxaqTtgKiadwc4RuGj4nBn2H-r6s4o05xVvFPvsACZw,1669
+coolledx/argparser.py,sha256=btVxJFxXCtVEn3PY023SDsJReKgF71prtNnlBMwQi_4,4268
+coolledx/client.py,sha256=jwcEDl0rCaknrnOaaj-FBASfhfKV4U7qiLtl-O3Jmtc,9328
+coolledx/commands.py,sha256=-WFuajupOVj8CDcxFto3Y6jNPsg7rpKVuqzHpg6KlDo,14171
+coolledx/render.py,sha256=PO-6xsMJ61Jgp3RuEd4Us8TctAC6etxF7vcUhDgDL7I,15839
+coolledx-0.1.0.dist-info/LICENSE,sha256=n7B33D8vVOArlyJTgt1X5AcKe86UsR3tVWbN3E0LLu8,1089
+coolledx-0.1.0.dist-info/METADATA,sha256=IJxhMg8zQKw2H-KvPVqrEcMwwqnElGKQrR9g0kvZOcc,4805
+coolledx-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+coolledx-0.1.0.dist-info/RECORD,,
