@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=65.5.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.poetry]
+name = "woolf_sabbat_5"
+version = "0.0.1"
+description = "A CLI package that helps to manage contacts and notes."
+readme = "README.md"
+authors = [
+    "Rodion Groshev <rodion.groshev@gmail.com>",
+    "Yuliia Kondratenko <julia.kompanets@gmail.com>",
+    "Valeriia Fediuk <fediuk.valeriia14@gmail.com>",
+    "Eduard Schumacher <mijamoto911@gmail.com>",
+    "Artem Danilchuk <renerroll@gmail.com>"
+]
+license = "MIT"
+keywords = ["assistant", "contacts", "notes"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+rich = "^12.0.0"
+prompt-toolkit = "^3.0.0"
+
+[tool.poetry.dev-dependencies]
+black = "^21.12b0"
+pylint = "^2.10.2"
+isort = "^5.10.3"
+pytest = "^7.3.1"
+build = "^0.7.0"
+twine = "^3.4.2"
+
+[project.urls]
+Homepage = "https://github.com/rodion-groshev/Woolf_Sabbath_5"
+Issues = "https://github.com/rodion-groshev/Woolf_Sabbath_5/issues"
+
