@@ -1,0 +1,3 @@
+[console_scripts]
+enumerate_devices = lanutils.lanutils:enumerate_devices_cli
+whats_my_ip = lanutils.lanutils:whats_my_ip_cli
