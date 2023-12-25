@@ -1,0 +1,58 @@
+from typing import Literal, List, Tuple
+
+import torch
+
+
+class Pooler:
+    extractions: dict = {
+        # sentence based
+        'cls': lambda x: x[0],
+        'sent_mean': lambda x: torch.mean(x[1:-1], dim=0),
+
+        # word based, positional extraction
+        'subword_first': lambda x: x[0],
+        'subword_last': lambda x: x[-1],
+
+        # word based, arithmetic extraction
+        'subword_mean': lambda x: torch.mean(x, dim=0),
+        'subword_min': lambda x: torch.min(x, dim=0)[0],
+        'subword_max': lambda x: torch.max(x, dim=0)[0]
+    }
+
+    @staticmethod
+    def batch_pool(
+            encoded_batch: dict,
+            form: Literal[
+                'cls', 'sent_mean',
+                'subword_first', 'subword_last',
+                'subword_mean', 'subword_min', 'subword_max'
+            ] = 'cls'
+    ):
+        return torch.stack([
+            Pooler.extractions[form](embed)
+            for embed in (
+                encoded_batch['embeds']
+                if form in ['cls', 'sent_mean'] else
+                Pooler._extract_embed_spans(encoded_batch)
+            )
+        ])
+
+    @staticmethod
+    def _extract_embed_spans(encoded_batch: dict):
+        for span, mapping, embeds in zip(
+                encoded_batch['span_idx'],
+                encoded_batch['offset_mapping'],
+                encoded_batch['embeds']
+        ):
+            emb_span_idx = Pooler._get_token_idx(mapping[1:embeds.size(dim=0) - 1], span)
+            yield embeds[emb_span_idx[0]: emb_span_idx[1] + 1]
+
+    @staticmethod
+    def _get_token_idx(mapping: List[Tuple[int, int]], c_span: Tuple[int, int]):
+
+        prep_map: callable = lambda pos: list(enumerate(list(zip(*mapping))[pos]))
+
+        return (
+            next(eid for eid, cid in reversed(prep_map(0)) if cid <= c_span[0]),
+            next(eid for eid, cid in prep_map(1) if cid >= c_span[1])
+        )
