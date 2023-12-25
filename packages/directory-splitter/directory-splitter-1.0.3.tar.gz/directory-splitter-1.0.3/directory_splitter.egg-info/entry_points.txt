@@ -1,0 +1,2 @@
+[console_scripts]
+directory-splitter = tester.tester1:print_url
