@@ -1,0 +1,9 @@
+README.md
+setup.py
+endpointsorter/__init__.py
+endpointsorter/endpointsorter.py
+endpointsorter.egg-info/PKG-INFO
+endpointsorter.egg-info/SOURCES.txt
+endpointsorter.egg-info/dependency_links.txt
+endpointsorter.egg-info/entry_points.txt
+endpointsorter.egg-info/top_level.txt
