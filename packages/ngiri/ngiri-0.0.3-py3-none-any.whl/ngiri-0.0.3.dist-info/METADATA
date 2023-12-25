@@ -1,0 +1,214 @@
+Metadata-Version: 2.1
+Name: ngiri
+Version: 0.0.3
+Summary: Ngiri  (Warhog) Proxy  and HTTP client.
+Project-URL: Changelog, https://github.com/pesaply/ngiri/blob/master/CHANGELOG.md
+Project-URL: Documentation, https://www.ngiri.co.tz
+Project-URL: Homepage, https://github.com/pesaply/ngiri
+Project-URL: Source, https://github.com/pesaply/ngiri
+Author-email: Mark Francis <ngiriapp@gmail.com>
+License-Expression: BSD-3-Clause
+License-File: LICENSE
+License-File: LICENSE.md
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: AsyncIO
+Classifier: Framework :: Trio
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Python: >=3.8
+Requires-Dist: anyio
+Requires-Dist: certifi
+Requires-Dist: httpcore==1.*
+Requires-Dist: idna
+Requires-Dist: sniffio
+Provides-Extra: brotli
+Requires-Dist: brotli; (platform_python_implementation == 'CPython') and extra == 'brotli'
+Requires-Dist: brotlicffi; (platform_python_implementation != 'CPython') and extra == 'brotli'
+Provides-Extra: cli
+Requires-Dist: click==8.*; extra == 'cli'
+Requires-Dist: pygments==2.*; extra == 'cli'
+Requires-Dist: rich<14,>=10; extra == 'cli'
+Provides-Extra: http2
+Requires-Dist: h2<5,>=3; extra == 'http2'
+Provides-Extra: socks
+Requires-Dist: socksio==1.*; extra == 'socks'
+Description-Content-Type: text/markdown
+
+
+
+<p align="center"><strong>Ngiri</strong> <em>- A next-generation HTTP client for Python.</em></p>
+
+<p align="center">
+<a href="https://github.com/encode/ngiri/actions">
+    <img src="https://github.com/pesaply/ngiri/workflows/Test%20Suite/badge.svg" alt="Test Suite">
+</a>
+<a href="https://pypi.org/project/ngiri/">
+    <img src="https://as2.ftcdn.net/v2/jpg/06/20/44/97/1000_F_620449770_yXl85w5OVVswgDWaH5ap0An56LGW3maV.jpg" alt="Package version">
+</a>
+</p>
+
+Ngiri is a fully featured Poxy and HTTP client library for Python 3. It includes **an integrated
+command line client**, has support for both **HTTP/1.1 and HTTP/2**, and provides both **sync
+and async APIs**.
+
+---
+
+Install ngiri using pip:
+
+```shell
+$ pip install ngiri
+```
+
+Now, let's get started:
+
+```pycon
+>>> import ngiri
+>>> r = ngiri.get('https://www.example.org/')
+>>> r
+<Response [200 OK]>
+>>> r.status_code
+200
+>>> r.headers['content-type']
+'text/html; charset=UTF-8'
+>>> r.text
+'<!doctype html>\n<html>\n<head>\n<title>Example Domain</title>...'
+```
+
+Or, using the command-line client.
+
+```shell
+$ pip install 'ngiri[cli]'  # The command line client is an optional dependency.
+```
+
+Which now allows us to use ngiri directly from the command-line...
+
+<p align="center">
+  <img width="700" src="https://as2.ftcdn.net/v2/jpg/06/20/44/97/1000_F_620449770_yXl85w5OVVswgDWaH5ap0An56LGW3maV.jpg" alt='ngiri --help'>
+</p>
+
+Sending a request...
+
+<p align="center">
+  <img width="700" src="https://as2.ftcdn.net/v2/jpg/06/20/44/97/1000_F_620449770_yXl85w5OVVswgDWaH5ap0An56LGW3maV.jpg" alt='ngiri http://httpbin.org/json'>
+</p>
+
+## Features
+
+ngiri builds on the well-established usability of `requests`, and gives you:
+
+* A broadly [requests-compatible API](https://www.ngiri.co.tz/compatibility/).
+* An integrated command-line client.
+* HTTP/1.1 [and HTTP/2 support](https://www.ngiri.co.tz/http2/).
+* Standard synchronous interface, but with [async support if you need it](https://www.ngiri.co.tz/async/).
+* Ability to make requests directly to [WSGI applications](https://www.ngiri.co.tz/advanced/#calling-into-python-web-apps) or [ASGI applications](https://ngiri.co.tz/async/#calling-into-python-web-apps).
+* Strict timeouts everywhere.
+* Fully type annotated.
+* 100% test coverage.
+
+Plus all the standard features of `requests`...
+
+* International Domains and URLs
+* Keep-Alive & Connection Pooling
+* Sessions with Cookie Persistence
+* Browser-style SSL Verification
+* Basic/Digest Authentication
+* Elegant Key/Value Cookies
+* Automatic Decompression
+* Automatic Content Decoding
+* Unicode Response Bodies
+* Multipart File Uploads
+* HTTP(S) Proxy Support
+* Connection Timeouts
+* Streaming Downloads
+* .netrc Support
+* Chunked Requests
+
+## Installation
+
+Install with pip:
+
+```shell
+$ pip install ngiri
+```
+
+Or, to include the optional HTTP/2 support, use:
+
+```shell
+$ pip install ngiri[http2]
+```
+
+ngiri requires Python 3.8+.
+
+## Documentation
+
+Project documentation is available at [https://www.ngiri.co.tz/](https://www.ngiri.co.tz/).
+
+For a run-through of all the basics, head over to the [QuickStart](https://www.ngiri.co.tz/quickstart/).
+
+For more advanced topics, see the [Advanced Usage](https://www.ngiri.co.tz/advanced/) section, the [async support](https://www.ngiri.co.tz/async/) section, or the [HTTP/2](https://www.ngiri.co.tz/http2/) section.
+
+The [Developer Interface](https://www.ngiri.co.tz/api/) provides a comprehensive API reference.
+
+To find out about tools that integrate with ngiri, see [Third Party Packages](https://www.ngiri.co.tz/third_party_packages/).
+
+## Contribute
+
+If you want to contribute with ngiri check out the [Contributing Guide](https://www.ngiri.co.tz/contributing/) to learn how to start.
+
+## Dependencies
+
+The ngiri project relies on these excellent libraries:
+
+* `httpcore` - The underlying transport implementation for `ngiri`.
+  * `h11` - HTTP/1.1 support.
+* `certifi` - SSL certificates.
+* `idna` - Internationalized domain name support.
+* `sniffio` - Async library autodetection.
+
+As well as these optional installs:
+
+* `h2` - HTTP/2 support. *(Optional, with `ngiri[http2]`)*
+* `socksio` - SOCKS proxy support. *(Optional, with `ngiri[socks]`)*
+* `rich` - Rich terminal support. *(Optional, with `ngiri[cli]`)*
+* `click` - Command line client support. *(Optional, with `ngiri[cli]`)*
+* `brotli` or `brotlicffi` - Decoding for "brotli" compressed responses. *(Optional, with `ngiri[brotli]`)*
+
+A huge amount of credit is due to `requests` for the API layout that
+much of this work follows, as well as to `urllib3` for plenty of design
+inspiration around the lower-level networking details.
+
+---
+
+
+## Release Information
+
+### Added
+
+* The `proxy` argument was added. You should use the `proxy` argument instead of the deprecated `proxies`, or use `mounts=` for more complex configurations. (#2879)
+
+### Deprecated
+
+* The `proxies` argument is now deprecated. It will still continue to work, but it will be removed in the future. (#2879)
+
+### Fixed
+
+* Fix cases of double escaping of URL path components. Allow / as a safe character in the query portion. (#2990)
+* Handle `NO_PROXY` envvar cases when a fully qualified URL is supplied as the value. (#2741)
+* Allow URLs where username or password contains unescaped '@'. (#2986)
+* Ensure ASGI `raw_path` does not include URL query component. (#2999)
+* Ensure `Response.iter_text()` cannot yield empty strings. (#2998)
+
+
+---
+
+[Full changelog](https://github.com/pesaply/ngiri/blob/master/CHANGELOG.md)
