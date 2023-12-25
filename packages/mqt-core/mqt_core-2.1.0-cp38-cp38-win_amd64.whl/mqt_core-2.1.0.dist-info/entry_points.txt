@@ -1,0 +1,3 @@
+[console_scripts]
+compare = mqt.core.evaluation:main
+
