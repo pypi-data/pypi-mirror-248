@@ -1,0 +1,15 @@
+core_db/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+core_db/engines/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+core_db/engines/mongo.py,sha256=gWsVZm75sSoKvc87ca2x13c1AxCDg36Tm-VL5M_90wQ,9774
+core_db/engines/mysql.py,sha256=DVTEybZsMwg0kDSyO9E7ilo5rAHgX5SA4R-vHNQM8dA,3134
+core_db/engines/oracle.py,sha256=ahqF9sWaARnQLMzUkgGSzPddOHWQ0Scsk5g49ipO6Es,1494
+core_db/engines/snowflake.py,sha256=t73L6QzMQBrp9qHQLsJUKL84_Odbe8ktEKtgaVfAnfo,4248
+core_db/etls/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+core_db/etls/database_based.py,sha256=dzBnXwK9X-DiqFAex31N7BPtbw9n8uxGKNsrD9vijr8,2473
+core_db/interfaces/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+core_db/interfaces/base.py,sha256=RJILEBrl_-5xstkOo6wCePxZhuEG62wc8O7lFvE3ZHQ,3388
+core_db/interfaces/sql_based.py,sha256=U-Mz2kvONnKslj8pPiAubC08Q5svLUreaeCzalD0RPw,5165
+core_db-1.0.0.dist-info/METADATA,sha256=0KhnaJs0Sz0gdfmt4GO5Q2PyXNRDnheRKbSmBq2Wg_E,1639
+core_db-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+core_db-1.0.0.dist-info/top_level.txt,sha256=BEqtSYE1GGlG8DBsHKW8hjNasQY_HFPz5cJeNGuy71k,8
+core_db-1.0.0.dist-info/RECORD,,
