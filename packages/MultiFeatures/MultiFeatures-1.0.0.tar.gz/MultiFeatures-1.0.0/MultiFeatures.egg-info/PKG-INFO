@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: MultiFeatures
+Version: 1.0.0
+Summary: A versatile Python package with multiple features
+Home-page: https://github.com/S4tyendra/MultiFeatures
+Author: S4tyendra
+Author-email: satya@devh.in
+License: MIT
+Keywords: Tools,Python,12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+## Not yet
