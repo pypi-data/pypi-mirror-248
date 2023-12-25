@@ -1,0 +1,5 @@
+setup.py
+blabladsa123.egg-info/PKG-INFO
+blabladsa123.egg-info/SOURCES.txt
+blabladsa123.egg-info/dependency_links.txt
+blabladsa123.egg-info/top_level.txt
