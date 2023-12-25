@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: zhatlebaye_kafka
+Version: 0.1.3
+Summary: An extension to the aiokafka library with enhanced producer and consumer functionalities
+Home-page: https://gitlab.com/di-halyk-academy-zhatlebaye/zhatlebaye-kafka
+Author: Yerlan Yesmoldin
+Author-email: e_esmoldin@kbtu.kz
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
