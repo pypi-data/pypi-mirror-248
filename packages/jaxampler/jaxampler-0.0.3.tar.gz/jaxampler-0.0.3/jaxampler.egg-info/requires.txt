@@ -1,0 +1,4 @@
+jaxlib>=0.4.0
+jax>=0.4.0
+tfp-nightly
+matplotlib>=3.8.0
