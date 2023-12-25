@@ -1,0 +1,15 @@
+rdot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rdot/ba.py,sha256=DNX3dYVIZLfRWzfofY4bWPspxL_WZB0Koufmbsgqe7Y,17619
+rdot/ba_basic.py,sha256=aAsxgSbtV8WDm0nkJfWN6ktHBut5-VsrUOzy31mfdGI,3308
+rdot/ba_ib.py,sha256=QTv45UuxvhjC_9wm9LrLT5JLD0bT-46q0bwEK02qWsw,5454
+rdot/distortions.py,sha256=xjeNompChWaBMmE8-0ltZygb9T7DpHTWTi2_QJJzcUE,2143
+rdot/information.py,sha256=xe1ii9ezTTnmZ4r3AKbShu9RkbsuWjEOzAd2uu2L39I,1577
+rdot/postprocessing.py,sha256=_Rn-pZcbmRKQNUcFjOb7CbsVNu_fJ05dUdjT5-tjRTo,1267
+rdot/probability.py,sha256=SSYBe8D79L_0ZAPh-zwVfcjT4WlheI45GlwHCYJXafQ,1987
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_rd.py,sha256=8wqaLElOWRcUmwMbx6oZB9Nr52c383JlvTqaJ2TalN0,17435
+rdot-0.0.21.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+rdot-0.0.21.dist-info/METADATA,sha256=3s7tIHfq88wovBEL7eDvH4vAepjevYg23EUC83hw1-I,690
+rdot-0.0.21.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+rdot-0.0.21.dist-info/top_level.txt,sha256=bzBO4q5pUJtMhRVKeX0ZbKdgAlSKZRU3BLS7b2kZchU,11
+rdot-0.0.21.dist-info/RECORD,,
