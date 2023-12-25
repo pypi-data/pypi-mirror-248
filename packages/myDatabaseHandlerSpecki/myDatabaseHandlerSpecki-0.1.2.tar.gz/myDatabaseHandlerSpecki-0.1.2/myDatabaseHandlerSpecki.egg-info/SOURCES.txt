@@ -1,0 +1,9 @@
+README.md
+setup.py
+myDatabaseHandlerSpecki/__init__.py
+myDatabaseHandlerSpecki/database_handler.py
+myDatabaseHandlerSpecki.egg-info/PKG-INFO
+myDatabaseHandlerSpecki.egg-info/SOURCES.txt
+myDatabaseHandlerSpecki.egg-info/dependency_links.txt
+myDatabaseHandlerSpecki.egg-info/requires.txt
+myDatabaseHandlerSpecki.egg-info/top_level.txt
