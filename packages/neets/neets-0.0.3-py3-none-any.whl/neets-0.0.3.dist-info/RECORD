@@ -1,0 +1,11 @@
+neets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+neets/completions.py,sha256=FH5T64ccZL28NmzBcH3wm715-x9HZhMn5SM0kWpya_E,1363
+neets/neets.py,sha256=4Pjj5HkHXSdLQZQ8ogmTHqO7rTpMHKgw3G601Pn7bSQ,1765
+neets/tts.py,sha256=gpZ1-lesheuoQI8SNBPit7K6zILgPIJBvW04W3UnSMg,3329
+neets/utils.py,sha256=Wl8nDLqqgyL8Rw5P8us7GfiateZc1JoVx7jR_IIXoHY,1145
+neets-0.0.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+neets-0.0.3.dist-info/METADATA,sha256=ElE0KjjqxSYYWPI8d_C_EKFsdtLkkjvCBdBcD-CgDp4,1650
+neets-0.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+neets-0.0.3.dist-info/entry_points.txt,sha256=NUhKYn4MS1NTT7MhSv5WglmSguqGgj4bixKgpA6m8Oc,42
+neets-0.0.3.dist-info/top_level.txt,sha256=772bcry2mhtSmGbxc_udODw1-s2rrwocCwAtsE4SBns,6
+neets-0.0.3.dist-info/RECORD,,
