@@ -1,0 +1,7 @@
+setup.py
+src/examples/__init__.py
+src/examples/options.py
+src/stringsdownload123.egg-info/PKG-INFO
+src/stringsdownload123.egg-info/SOURCES.txt
+src/stringsdownload123.egg-info/dependency_links.txt
+src/stringsdownload123.egg-info/top_level.txt
