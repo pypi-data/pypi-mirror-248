@@ -1,0 +1,10 @@
+README.md
+setup.py
+directory_splitter.egg-info/PKG-INFO
+directory_splitter.egg-info/SOURCES.txt
+directory_splitter.egg-info/dependency_links.txt
+directory_splitter.egg-info/entry_points.txt
+directory_splitter.egg-info/requires.txt
+directory_splitter.egg-info/top_level.txt
+tester/__init__.py
+tester/tester1.py
