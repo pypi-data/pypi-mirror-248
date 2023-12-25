@@ -1,0 +1,7 @@
+PyTaskGUI.py
+setup.py
+PyTaskGUI.egg-info/PKG-INFO
+PyTaskGUI.egg-info/SOURCES.txt
+PyTaskGUI.egg-info/dependency_links.txt
+PyTaskGUI.egg-info/requires.txt
+PyTaskGUI.egg-info/top_level.txt

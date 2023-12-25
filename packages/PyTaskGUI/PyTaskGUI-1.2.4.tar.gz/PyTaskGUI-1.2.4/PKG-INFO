@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: PyTaskGUI
+Version: 1.2.4
+Summary: PyTask
+Author: dwashere
+Author-email: den.langeto45@yandex.ru
+Requires-Dist: pyodbc
+Requires-Dist: Pillow
