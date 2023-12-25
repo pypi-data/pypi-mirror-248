@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: zerorunner-consul
+Version: 0.2.1
+Summary: Python client for Consul (https://www.consul.io/)
+Project-URL: Homepage, https://github.com/baizunxian/zerorunner-consul
+Project-URL: Issues, https://github.com/baizunxian/zerorunner-consul/issues
+Author-email: "xiao.bai" <546142369@qq.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+### zerorunner-consul
+
+Python client for Consul (https://www.consul.io/)
+[GitHub](https://github.com/baizunxian/zerorunner-consul/)
