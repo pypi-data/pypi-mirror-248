@@ -1,0 +1,33 @@
+{% load static %}
+<ul id="viewer_{{ widget.name }}">
+  <!-- Existing li elements may be here -->
+</ul>
+
+<div class="file-button addlink" id="upload_image_{{ widget.name }}">
+    <input type="{{ widget.attrs.input_type }}"
+           data-widgetname="{{ widget.name }}"
+           data-max_count="{{ widget.attrs.max_count }}"
+           onchange="uploadImage(this)"
+           {% if widget.attrs.multiple %}
+           multiple
+           {% endif %}
+           accept="{{ widget.attrs.accept }}">
+</div>
+<textarea id="{{ widget.name }}" name="{{ widget.name }}" style="display: none"></textarea>
+<div id="outerdiv" class="big-img-box">
+    <div id="innerdiv" style="position:absolute;">
+        <img id="bigimg" src="" alt="大图"/></div>
+</div>
+<input type="text" hidden id="multi_upload_url" value="{% url 'upload_image' %}">
+<script type="text/javascript">
+    $(function () {
+        var model_image_list = '{{ widget.widget_img_urls }}'.split(",")
+        if (model_image_list[0] !== '') {
+            if (model_image_list.length > 0) {
+                for (let i = 0; i < model_image_list.length; i++) {
+                    add_selected_img(model_image_list[i], "{{ widget.name }}", {{ widget.attrs.max_count }});
+                }
+            }
+        }
+    })
+</script>
