@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICESNCE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+KonstantineGogoladze.egg-info/PKG-INFO
+KonstantineGogoladze.egg-info/SOURCES.txt
+KonstantineGogoladze.egg-info/dependency_links.txt
+KonstantineGogoladze.egg-info/top_level.txt
