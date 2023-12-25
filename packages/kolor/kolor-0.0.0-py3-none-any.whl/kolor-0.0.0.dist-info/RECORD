@@ -1,0 +1,11 @@
+kolor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kolor/bg.py,sha256=pS2k2cmft657rJcjY67N45Gj-4LEMJhX4UU3n_MxiYE,3525
+kolor/control.py,sha256=JSNaPijPAxl4Qs3LTn51Ewg8N0hdgfRA2J0c2i8zGDk,5745
+kolor/fg.py,sha256=le-82bw-kROKB7JKKsOc2J7P5XfMqw_oWGOEzZx65MA,3562
+kolor/helper.py,sha256=fwZm_PY3HLa9G4bbocIx-vkZ_GmDHDN98EM54FP4nRc,10258
+kolor/reset.py,sha256=uNw8N1saI31GIT_hfDgHl6V_BxfY6s3Bx-zfdN7deNQ,112
+kolor/style.py,sha256=2kHu4nSyUccybxTAT_MjMoQ-zn5cclpHIPUuUnB9uiE,667
+kolor-0.0.0.dist-info/METADATA,sha256=i06hLr4J0xM6ehnP15f1LtxQQ3dYrTbZF3jfWj2TIUc,6788
+kolor-0.0.0.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+kolor-0.0.0.dist-info/licenses/LICENSE.txt,sha256=t6fmumSs6X6EGNQFwAI6idDBtAs7sw_Sqonj_Fqq_Go,1067
+kolor-0.0.0.dist-info/RECORD,,
