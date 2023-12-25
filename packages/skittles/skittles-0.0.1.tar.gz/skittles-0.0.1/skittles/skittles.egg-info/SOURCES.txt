@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+skittles/driver/__init__.py
+skittles/driver/http.py
+skittles/driver/model.py
+skittles/driver/ws.py
+skittles/entity/__init__.py
+skittles/platform/__init__.py
+skittles/platform/mah.py
+skittles/platform/model.py
+skittles/skittles.egg-info/PKG-INFO
+skittles/skittles.egg-info/SOURCES.txt
+skittles/skittles.egg-info/dependency_links.txt
+skittles/skittles.egg-info/requires.txt
+skittles/skittles.egg-info/top_level.txt
