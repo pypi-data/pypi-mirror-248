@@ -1,0 +1,11 @@
+cputils/__init__.py,sha256=tNvVRPJ0SPQd76wg7GybZRnHY54vQMcd53MtxK4flF8,122
+cputils/common.py,sha256=vio8INQu2LUKRcaSvZoNP9jA116yXVb6CCWPR0kw3AY,585
+cputils/config.py,sha256=iXgjJ1vGPCzy4zFrrSvfA3gAi96eSqXVFwGv78N8rlw,1087
+cputils/samples.py,sha256=DOdEaTj-0k_34lp7CbkEJUwssLpxuOwcipijESO1DIg,1965
+cputils/testing.py,sha256=lIzUD-u-wLRIj7QA_s1UVeQWZWODmkvJRXgWPeSqTPI,4983
+cputils-0.1.0.dist-info/LICENSE.txt,sha256=q5vOWJU-hoICkn0Gqjd6QutFmHrt7xQ3bWf9xO5dvOQ,1072
+cputils-0.1.0.dist-info/METADATA,sha256=fO2D0d2CqH7nfYQ-2IC_JS2JFqzYf13mlfD1egsl6-E,1847
+cputils-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+cputils-0.1.0.dist-info/entry_points.txt,sha256=2aKife5VRGvKT5qROzg-RJnA6Hu1ktFXqFVfge9rUo0,143
+cputils-0.1.0.dist-info/top_level.txt,sha256=ogoFnyUos-21z53YpexczrrvTL9dU2elHoWi8fay6Gc,8
+cputils-0.1.0.dist-info/RECORD,,

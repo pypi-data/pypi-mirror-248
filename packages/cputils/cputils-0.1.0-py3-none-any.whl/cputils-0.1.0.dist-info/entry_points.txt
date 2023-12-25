@@ -1,0 +1,5 @@
+[console_scripts]
+cpconfig = cputils.config:main
+cpsamples = cputils.samples:main
+cpsubmit = cputils.submit:main
+cptest = cputils.testing:main
