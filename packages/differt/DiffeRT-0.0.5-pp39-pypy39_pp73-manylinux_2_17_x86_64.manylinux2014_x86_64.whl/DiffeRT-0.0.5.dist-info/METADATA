@@ -1,0 +1,125 @@
+Metadata-Version: 2.1
+Name: DiffeRT
+Version: 0.0.5
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: chex >=0.1.84
+Requires-Dist: jax >=0.4.20
+Requires-Dist: jaxtyping >=0.2.24
+Requires-Dist: matplotlib >=3.8.1
+Requires-Dist: numpy >=1.26.1
+Requires-Dist: plotly >=5.18.0
+License-File: LICENSE.md
+Summary: Differentiable Ray Tracing Toolbox for Radio Propagation Simulations
+Keywords: ray tracing,differentiable,propagation,radio,jax
+Author-email: Jérome Eertmans <jeertmans@icloud.com>
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Changelog, https://github.com/jeertmans/DiffeRT/releases
+Project-URL: Documentation, https://eertmans.be/DiffeRT
+Project-URL: Founding, https://github.com/sponsors/jeertmans
+Project-URL: Homepage, https://github.com/jeertmans/DiffeRT
+Project-URL: Repository, https://github.com/jeertmans/DiffeRT
+
+<div align="center">
+
+# DiffeRT
+
+[![pdm-managed](https://img.shields.io/badge/pdm-managed-blueviolet)](https://pdm-project.org)
+
+</div>
+
+
+## Contributing
+
+This project is built on both Python and Rust code.
+
+### Requirements
+
+To run build this package locally, you need:
+
+- [Python 3.9](https://www.python.org/) or above;
+- [Rust](https://www.rust-lang.org/) stable toolchain;
+- [Maturin](https://www.maturin.rs/) for building Python bindings from Rust code;
+- and [PDM](https://pdm-project.org) to manage all Python dependencies.
+
+### Building locally
+
+You can build the project locally using:
+
+```
+pdm install
+```
+
+If you need to install development dependencies, we recommend running:
+
+```
+pdm install -G:all
+```
+
+### Documentation
+
+To generate the documentation, you first need to install an IPython kernel named
+`DiffeRT`:
+
+```
+pdm run ipython kernel install --user --name=DiffeRT
+```
+
+If you want to use another name for your kernel, please also modify the
+name in [`docs/source/conf.py`](docs/source/conf.py):
+
+```python
+nbsphinx_kernel_name = "DiffeRT"
+```
+
+Then, you can build the docs with:
+
+```
+cd docs
+pdm run make html
+```
+
+Finally, you can open `build/html/index.html` to see the generated docs.
+
+### Testing
+
+Both Rust and Python codebases have their own tests and benchmarks.
+
+#### Testing Rust code
+
+You can very easily test you code using Cargo:
+
+```
+cargo test
+```
+
+or benchmark it:
+
+```
+cargo bench
+```
+
+#### Testing Python code
+
+in the same way, you can very test you code with Pytest:
+
+```
+pdm run pytest
+```
+
+or benchmark it:
+
+```
+pdm run pytest --benchmark-only
+```
+
