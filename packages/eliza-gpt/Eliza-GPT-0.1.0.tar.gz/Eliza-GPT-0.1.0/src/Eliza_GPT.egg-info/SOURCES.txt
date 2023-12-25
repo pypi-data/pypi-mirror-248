@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/Eliza_GPT.egg-info/PKG-INFO
+src/Eliza_GPT.egg-info/SOURCES.txt
+src/Eliza_GPT.egg-info/dependency_links.txt
+src/Eliza_GPT.egg-info/entry_points.txt
+src/Eliza_GPT.egg-info/not-zip-safe
+src/Eliza_GPT.egg-info/requires.txt
+src/Eliza_GPT.egg-info/top_level.txt
+tests/test_eliza_gpt.py
