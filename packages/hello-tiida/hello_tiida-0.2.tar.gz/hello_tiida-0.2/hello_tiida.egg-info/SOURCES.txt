@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+hello_tiida/__init__.py
+hello_tiida/main.py
+hello_tiida.egg-info/PKG-INFO
+hello_tiida.egg-info/SOURCES.txt
+hello_tiida.egg-info/dependency_links.txt
+hello_tiida.egg-info/entry_points.txt
+hello_tiida.egg-info/top_level.txt
