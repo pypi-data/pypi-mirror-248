@@ -1,0 +1,7 @@
+tests/output
+tests/.DS_Store
+__pycache__
+.DS_Store
+cmdout
+fontimize_pypi_test
+cmdout
