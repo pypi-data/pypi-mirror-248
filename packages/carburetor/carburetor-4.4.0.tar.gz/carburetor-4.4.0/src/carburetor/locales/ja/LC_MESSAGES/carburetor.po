@@ -1,0 +1,357 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Gnuey56 <gnuey56@proton.me>, 2023.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2023.
+# Danial Behzadi <dani.behzi@ubuntu.com>, 2023.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-18 15:48+0330\n"
+"PO-Revision-Date: 2023-12-09 20:30+0000\n"
+"Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
+"Language-Team: Japanese <https://hosted.weblate.org/projects/carburetor/"
+"translations/ja/>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.3-dev\n"
+
+#: src/carburetor/actions.py:79
+msgid "translator-credits"
+msgstr "Gnuey56"
+
+#: src/carburetor/actions.py:125
+msgid "Disconnecting…"
+msgstr "切断中…"
+
+#: src/carburetor/actions.py:129
+msgid "Connecting…"
+msgstr "接続中…"
+
+#: src/carburetor/actions.py:141
+msgid "You have a new identity!"
+msgstr "新しい識別子を獲得しました！"
+
+#: src/carburetor/actions.py:143
+msgid "Tractor is not running!"
+msgstr "Tractor は作動していません！"
+
+#: src/carburetor/actions.py:161
+msgid "Proxy has been unset"
+msgstr "プロキシの設定が解除されました"
+
+#: src/carburetor/actions.py:164
+msgid "Proxy has been set"
+msgstr "プロキシが設定されました"
+
+#: src/carburetor/actions.py:237 data/gtk/main.ui:129
+msgid "Stopped"
+msgstr "停止中"
+
+#: src/carburetor/actions.py:240 data/gtk/main.ui:71
+msgid "_Connect"
+msgstr "接続 (_C)"
+
+#: src/carburetor/actions.py:252
+msgid "Tractor is stopped"
+msgstr "Tractor は停止中"
+
+#: src/carburetor/actions.py:261
+msgid "Running"
+msgstr "作動中"
+
+#: src/carburetor/actions.py:268
+msgid "_Disconnect"
+msgstr "切断する (_D)"
+
+#: src/carburetor/actions.py:278
+msgid "Tractor is running"
+msgstr "Tractor は作動中"
+
+#: src/carburetor/config.py:35 data/gtk/main.ui:56
+msgid "Carburetor"
+msgstr "Carburetor"
+
+#: src/carburetor/handler.py:112
+msgid "Austria"
+msgstr "オーストリア"
+
+#: src/carburetor/handler.py:113
+msgid "Bulgaria"
+msgstr "ブルガリア"
+
+#: src/carburetor/handler.py:114
+msgid "Canada"
+msgstr "カナダ"
+
+#: src/carburetor/handler.py:115
+msgid "Switzerland"
+msgstr "スイス"
+
+#: src/carburetor/handler.py:116
+msgid "Czech"
+msgstr "チェコ"
+
+#: src/carburetor/handler.py:117
+msgid "Germany"
+msgstr "ドイツ"
+
+#: src/carburetor/handler.py:118
+msgid "Spain"
+msgstr "スペイン"
+
+#: src/carburetor/handler.py:119
+msgid "Finland"
+msgstr "フィンランド"
+
+#: src/carburetor/handler.py:120
+msgid "France"
+msgstr "フランス"
+
+#: src/carburetor/handler.py:121
+msgid "Ireland"
+msgstr "アイルランド"
+
+#: src/carburetor/handler.py:122
+msgid "Moldova"
+msgstr "モルドバ"
+
+#: src/carburetor/handler.py:123
+msgid "Netherlands"
+msgstr "オランダ"
+
+#: src/carburetor/handler.py:124
+msgid "Norway"
+msgstr "ノルウェー"
+
+#: src/carburetor/handler.py:125
+msgid "Poland"
+msgstr "ポーランド"
+
+#: src/carburetor/handler.py:126
+msgid "Romania"
+msgstr "ルーマニア"
+
+#: src/carburetor/handler.py:127
+msgid "Seychelles"
+msgstr "セーシェル"
+
+#: src/carburetor/handler.py:128
+msgid "Sweden"
+msgstr "スウェーデン"
+
+#: src/carburetor/handler.py:129
+msgid "Singapore"
+msgstr "シンガポール"
+
+#: src/carburetor/handler.py:130
+msgid "Russia"
+msgstr "ロシア"
+
+#: src/carburetor/handler.py:131
+msgid "Ukraine"
+msgstr "ウクライナ"
+
+#: src/carburetor/handler.py:132
+msgid "United Kingdom"
+msgstr "イギリス"
+
+#: src/carburetor/handler.py:133
+msgid "United States"
+msgstr "アメリカ"
+
+#: src/carburetor/handler.py:148
+msgid "Auto (Best)"
+msgstr "自動（最も良い）"
+
+#: src/carburetor/handler.py:238 data/gtk/preferences.ui:120
+msgid "None"
+msgstr "なし"
+
+#: src/carburetor/handler.py:239
+msgid "Vanilla"
+msgstr "バニラ（通常）"
+
+#: src/carburetor/handler.py:240
+msgid "Obfuscated"
+msgstr "難読化した（Obfuscated）通信"
+
+#: src/carburetor/handler.py:274
+msgid "_OK"
+msgstr "OK (_O)"
+
+#: src/carburetor/handler.py:277
+msgid "Can not save the bridges"
+msgstr "ブリッジを保存できません"
+
+#: src/carburetor/handler.py:278
+msgid "Please check the syntax of bridges"
+msgstr "ブリッジの構文を確認してください"
+
+#: src/carburetor/tasks.py:151
+msgid "Tractor is connected"
+msgstr "Tractor は接続済み"
+
+#: src/carburetor/tasks.py:154
+msgid "Tractor couldn't connect"
+msgstr "Tractor は接続できません"
+
+#: data/gtk/help-overlay.ui:27 data/gtk/preferences.ui:28
+msgid "General"
+msgstr "一般"
+
+#: data/gtk/help-overlay.ui:32
+msgctxt "shortcuts window item"
+msgid "Preferences"
+msgstr "設定"
+
+#: data/gtk/help-overlay.ui:39
+msgctxt "shortcuts window item"
+msgid "Shortcuts"
+msgstr "ショートカットキー"
+
+#: data/gtk/help-overlay.ui:46
+msgctxt "shortcuts window item"
+msgid "Quit"
+msgstr "終了"
+
+#: data/gtk/help-overlay.ui:53
+msgctxt "Shortcuts window group"
+msgid "Functionality"
+msgstr "機能"
+
+#: data/gtk/help-overlay.ui:58
+msgctxt "shortcuts window item"
+msgid "Connect / Disconnect"
+msgstr "接続・接続解除"
+
+#: data/gtk/help-overlay.ui:65
+msgctxt "shortcuts window item"
+msgid "New ID"
+msgstr "新しい識別子を獲得"
+
+#: data/gtk/main.ui:40
+msgctxt "tooltip"
+msgid "Show Details"
+msgstr "詳細を表示"
+
+#: data/gtk/main.ui:65
+msgctxt "tooltip"
+msgid "Main Menu"
+msgstr "メインメニュー"
+
+#: data/gtk/main.ui:136
+msgid "_Cancel"
+msgstr "キャンセル (_C)"
+
+#: data/gtk/main.ui:198
+msgctxt "Action Menu Item"
+msgid "_New ID"
+msgstr "新しい識別子を獲得 (_N)"
+
+#: data/gtk/main.ui:202
+msgctxt "Action Menu Item"
+msgid "_Check connection"
+msgstr "接続をチェック (_C)"
+
+#: data/gtk/main.ui:206
+msgctxt "Action Menu Item"
+msgid "_Toggle proxy on system"
+msgstr "システムのプロキシを切り替え (_T)"
+
+#: data/gtk/main.ui:212
+msgctxt "App Menu Item"
+msgid "_Preferences"
+msgstr "設定 (_P)"
+
+#: data/gtk/main.ui:216
+msgctxt "App Menu Item"
+msgid "_Keyboard Shortcuts"
+msgstr "キーボードショートカット(_K)"
+
+#: data/gtk/main.ui:220
+msgctxt "App Menu Item"
+msgid "_About Carburetor"
+msgstr "Carburetor について (_A)"
+
+#: data/gtk/main.ui:224
+msgctxt "App Menu Item"
+msgid "_Quit"
+msgstr "終了(_Q)"
+
+#: data/gtk/preferences.ui:31
+msgid "Exit Node"
+msgstr "出口ノード"
+
+#: data/gtk/preferences.ui:35
+msgid "The country you want to connect from"
+msgstr "接続したい国"
+
+#: data/gtk/preferences.ui:36
+msgid "Exit Country"
+msgstr "出口ノードの国"
+
+#: data/gtk/preferences.ui:45
+msgid "Accept Connections"
+msgstr "許可する接続"
+
+#: data/gtk/preferences.ui:48
+msgid "Allow external devices to use this network"
+msgstr "外部デバイスがこのネットワークを使用することを許可する"
+
+#: data/gtk/preferences.ui:59
+msgid "Ports"
+msgstr "ポート"
+
+#: data/gtk/preferences.ui:62
+msgid "Socks Port"
+msgstr "Socks ポート"
+
+#: data/gtk/preferences.ui:66
+msgid "Local port on which Tractor would be listen"
+msgstr "Tractor がリッスンするローカルポート番号"
+
+#: data/gtk/preferences.ui:74
+msgid "DNS Port"
+msgstr "DNS ポート"
+
+#: data/gtk/preferences.ui:78
+msgid "Local port on which you would have an anonymous name server"
+msgstr "匿名ネームサーバーのローカルポート番号"
+
+#: data/gtk/preferences.ui:86
+msgid "HTTP Port"
+msgstr "HTTP ポート"
+
+#: data/gtk/preferences.ui:90
+msgid "Local port on which a HTTP tunnel would be listen"
+msgstr "HTTP トンネルがリッスンするローカルポート番号"
+
+#: data/gtk/preferences.ui:101 data/gtk/preferences.ui:132
+msgid "Bridges"
+msgstr "ブリッジ"
+
+#. Type of the bridge to use
+#: data/gtk/preferences.ui:104
+msgid "Type"
+msgstr "タイプ"
+
+#: data/gtk/preferences.ui:108
+msgid "Type of bridge"
+msgstr "ブリッジのタイプ"
+
+#: data/gtk/preferences.ui:115
+msgid "Client Transport Plugin"
+msgstr "トランスポートプラグイン"
+
+#: data/gtk/preferences.ui:154
+msgid "_Save"
+msgstr "保存 (_S)"
+
+#: data/gtk/preferences.ui:155
+msgid "Save Bridges as a file in your local configs"
+msgstr "ブリッジをファイルとして設定に保存"

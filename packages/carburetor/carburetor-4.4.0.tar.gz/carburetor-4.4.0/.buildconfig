@@ -1,0 +1,13 @@
+[default]
+name=Default
+runtime=flatpak:org.gnome.Platform/x86_64/45
+toolchain=default
+config-opts=
+run-opts=
+prefix=/app
+app-id=io.frama.tractor.carburetor
+postbuild=
+prebuild=update_resources
+run-command=
+default=true
+builddir=false
