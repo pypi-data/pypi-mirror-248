@@ -1,0 +1,7 @@
+README.md
+setup.py
+plum_project.egg-info/PKG-INFO
+plum_project.egg-info/SOURCES.txt
+plum_project.egg-info/dependency_links.txt
+plum_project.egg-info/requires.txt
+plum_project.egg-info/top_level.txt
