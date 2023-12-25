@@ -1,0 +1,5 @@
+setup.py
+huggingface_cli.egg-info/PKG-INFO
+huggingface_cli.egg-info/SOURCES.txt
+huggingface_cli.egg-info/dependency_links.txt
+huggingface_cli.egg-info/top_level.txt
