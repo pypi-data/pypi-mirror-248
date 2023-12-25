@@ -1,0 +1,8 @@
+setup.py
+kafka_final_package/KafkaProducer.py
+kafka_final_package/__init__.py
+kafka_final_package.egg-info/PKG-INFO
+kafka_final_package.egg-info/SOURCES.txt
+kafka_final_package.egg-info/dependency_links.txt
+kafka_final_package.egg-info/requires.txt
+kafka_final_package.egg-info/top_level.txt
