@@ -1,0 +1,15 @@
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+
+# Ignore virtual environment
+venv/
+
+# Ignore generated files or directories
+dist/
+
+# Ignore PyCharm IDE files
+.idea/
+
+# Other
+.DS_Store
