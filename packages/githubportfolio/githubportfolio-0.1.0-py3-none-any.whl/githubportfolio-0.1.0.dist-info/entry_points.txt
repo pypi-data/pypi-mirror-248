@@ -1,0 +1,3 @@
+[console_scripts]
+gitportfolio=gitportfolio.main:main
+
