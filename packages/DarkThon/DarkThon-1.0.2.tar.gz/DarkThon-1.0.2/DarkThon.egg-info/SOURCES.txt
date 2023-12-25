@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+DarkThon/__init__.py
+DarkThon.egg-info/PKG-INFO
+DarkThon.egg-info/SOURCES.txt
+DarkThon.egg-info/dependency_links.txt
+DarkThon.egg-info/not-zip-safe
+DarkThon.egg-info/requires.txt
+DarkThon.egg-info/top_level.txt
