@@ -1,0 +1,11 @@
+rrequested-demultiplex/__init__.py,sha256=HUSi-OD1T--lN3KhdAwoU8m_snvQ9D9ulw2nulb_GUs,102
+rrequested-demultiplex/file_system.py,sha256=wsCTVsivWaam_T7hK5Wgjc3YKLhBX1Wmg93NF90t1p8,1272
+rrequested-demultiplex/quality_filter.py,sha256=ckN2qKvCqYGXwIe94l8ETyJtIYo1SI6aDjJj_CSN0_E,4689
+rrequested-demultiplex/setup.py,sha256=uofzRUUVnmnhro5pfndJPrNuNVpEhiorEreJ7oZUZGM,930
+rrequested-demultiplex/size_filter.py,sha256=SJ8plNuvtAUkJJMS1Tk2zVNFvduojT2jmxYw0d19WKc,6058
+rrequested-demultiplex/unref_demult.py,sha256=zr6q1KjfLgtX0nbtmW0Rzach37ucTDTSQZ5yITfqlyg,11974
+rrequested_demultiplex-1.2.0.dist-info/LICENSE,sha256=kZwLnw964j6pKEQ9YRILM7Uwmt8gtVH34Hswqap1v9w,1071
+rrequested_demultiplex-1.2.0.dist-info/METADATA,sha256=3usQjAlDrJPNM82pKd-P-SKwSqC1jTlV96YETHP3_yE,9017
+rrequested_demultiplex-1.2.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+rrequested_demultiplex-1.2.0.dist-info/top_level.txt,sha256=bqCsYukEMrp3icvCzf4C6ozjP2L5aEb4qi7M2vOyBzc,23
+rrequested_demultiplex-1.2.0.dist-info/RECORD,,
