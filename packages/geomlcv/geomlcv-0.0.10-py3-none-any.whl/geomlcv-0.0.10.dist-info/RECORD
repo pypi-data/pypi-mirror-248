@@ -1,0 +1,13 @@
+geomlcv/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geomlcv/utils/bash_scripts/delete_s3_files.sh,sha256=K099l5s_7SIKz2ze79jrQBUwtnC1s8XxRRkR4W17Wx0,263
+geomlcv/utils/download_data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geomlcv/utils/download_data/aws.py,sha256=8TAmy59dDwtO9RgKMIIAqYMSJNdHbhjOsJCuWdDAiSs,3502
+geomlcv/utils/download_data/google.py,sha256=M_f_PknpGPMNBSv-tgJOZPDBJXS7P9hbMXISBk6l37k,4617
+geomlcv/utils/download_data/multiprocess.py,sha256=t__Lb8gzj3YrwvYiVcSeZHJeS2bTrjMNEeJEaWdrwOY,226
+geomlcv/utils/download_data/utils.py,sha256=LYvhhSlrpH0DWyNOUuXNyMAWDOxAfXn7aF_Ybl3KBn8,8623
+geomlcv/utils/nn.py,sha256=bdo3_yc81Dv3pyEtgq8BIG-cDeYeG6qleniwPRb4sP4,7179
+geomlcv/utils/process_images/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geomlcv/utils/process_images/utils.py,sha256=fn0Nt0NBw-thQvI-XJaDSNx8-Z0BJ0NvbEL3_fO61o4,2933
+geomlcv-0.0.10.dist-info/METADATA,sha256=sM73sdRQ6eFnYzdn4NWFuXcd4RPOH4GqbVMBsl8xxMU,3185
+geomlcv-0.0.10.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+geomlcv-0.0.10.dist-info/RECORD,,
