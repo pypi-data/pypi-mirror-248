@@ -1,0 +1,3 @@
+[console_scripts]
+gridworks-ws=gws.__main__:main
+
