@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: itpwriter
+Version: 0.1.0
+Summary: Tool to write ITPs using a Debian package source.
+License: Apache-2.0
+Author: Maytham Alsudany
+Author-email: maytha8thedev@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: jinja2 (>=3.1.2,<4.0.0)
+Requires-Dist: python-debian (>=0.1.49,<0.2.0)
+Description-Content-Type: text/markdown
+
+# itpwriter
+
+Tool to write ITPs using a Debian package source.
+
+## Install
+
+Available from pypi under the name 'itpwriter'.
+
+```sh
+pip install itpwriter
+```
+
+## Usage
+
+Pass `--help` flag for usage info.
+
+## Why?
+
+I usually finish the d/control, d/changelog, and d/copyright files, and then copy their contents into an ITP. This program automates that.
+
+## Copyright
+
+Copyright &copy; 2023 Maytham Alsudany `<maytha8thedev@gmail.com>`
+
+## License
+
+MIT (aka Expat) unless otherwise indicated. See [LICENSE](./LICENSE).
+

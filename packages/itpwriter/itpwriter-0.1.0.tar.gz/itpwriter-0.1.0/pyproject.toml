@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "itpwriter"
+version = "0.1.0"
+description = "Tool to write ITPs using a Debian package source."
+authors = ["Maytham Alsudany <maytha8thedev@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-debian = "^0.1.49"
+click = "^8.1.7"
+jinja2 = "^3.1.2"
+
+[tool.poetry.scripts]
+itpwriter = 'itpwriter.cli:cli'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
