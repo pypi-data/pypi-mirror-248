@@ -1,0 +1,7 @@
+PyFormManager.py
+setup.py
+PyFormManager.egg-info/PKG-INFO
+PyFormManager.egg-info/SOURCES.txt
+PyFormManager.egg-info/dependency_links.txt
+PyFormManager.egg-info/requires.txt
+PyFormManager.egg-info/top_level.txt
