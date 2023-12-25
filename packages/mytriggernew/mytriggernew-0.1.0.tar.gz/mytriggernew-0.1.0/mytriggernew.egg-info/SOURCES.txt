@@ -1,0 +1,7 @@
+setup.py
+mytriggernew/my_custom_sensor.py
+mytriggernew.egg-info/PKG-INFO
+mytriggernew.egg-info/SOURCES.txt
+mytriggernew.egg-info/dependency_links.txt
+mytriggernew.egg-info/requires.txt
+mytriggernew.egg-info/top_level.txt
