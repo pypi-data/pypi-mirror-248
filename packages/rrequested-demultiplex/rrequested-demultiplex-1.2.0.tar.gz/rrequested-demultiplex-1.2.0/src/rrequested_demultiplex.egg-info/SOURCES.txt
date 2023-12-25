@@ -1,0 +1,14 @@
+LICENSE
+pyproject.toml
+readme.md
+src/rrequested-demultiplex/__init__.py
+src/rrequested-demultiplex/file_system.py
+src/rrequested-demultiplex/quality_filter.py
+src/rrequested-demultiplex/setup.py
+src/rrequested-demultiplex/size_filter.py
+src/rrequested-demultiplex/unref_demult.py
+src/rrequested_demultiplex.egg-info/PKG-INFO
+src/rrequested_demultiplex.egg-info/SOURCES.txt
+src/rrequested_demultiplex.egg-info/dependency_links.txt
+src/rrequested_demultiplex.egg-info/requires.txt
+src/rrequested_demultiplex.egg-info/top_level.txt
