@@ -1,0 +1,2 @@
+[console_scripts]
+url_marshall = url_marshall:main
