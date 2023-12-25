@@ -1,0 +1,8 @@
+README.md
+setup.py
+endpointsplitter.egg-info/PKG-INFO
+endpointsplitter.egg-info/SOURCES.txt
+endpointsplitter.egg-info/dependency_links.txt
+endpointsplitter.egg-info/top_level.txt
+libname/__init__.py
+libname/splitter.py
