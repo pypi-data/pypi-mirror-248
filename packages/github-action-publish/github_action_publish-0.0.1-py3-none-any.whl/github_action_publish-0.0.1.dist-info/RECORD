@@ -1,0 +1,6 @@
+github_action_publish-0.0.1.dist-info/METADATA,sha256=efkEYw7hMEO-mm3GrG02Z4JNsHm452aCPd2R8HMhSV0,263
+github_action_publish-0.0.1.dist-info/WHEEL,sha256=C8f_gqhOWmHrh81n3Ukx5iURrqMhsHla81fuY1yuwvs,90
+github_action_publish/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+github_action_publish/cli.py,sha256=f8mN2kFC3l7t14fnmHcsCSQwzMby4OSvuSJ90-qY2PA,106
+github_action_publish/publish.yml,sha256=n05UeGS1dnxaDEluee5n1LScXWz7aMMaosyUG8WwDsk,445
+github_action_publish-0.0.1.dist-info/RECORD,,
