@@ -1,0 +1,5 @@
+include capella/text_files/splash_text.txt
+include capella/text_files/tooltips.txt
+include capella/text_files/sight_log.txt
+include de421.bsp
+include hip_main.dat
