@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "model_schemes"
+version = "0.1.0"
+description = "Schemes is a python package that allows you to build and validate data structures for AI and ML projects."
+authors = ["russell <studiousentrepreneurs@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^2.5.3"
+requests = "^2.31.0"
+pytz = "^2023.3.post1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
