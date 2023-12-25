@@ -1,0 +1,1 @@
+from teteLIB.file1 import call_my_name

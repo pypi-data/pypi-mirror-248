@@ -1,0 +1,9 @@
+LICENSE.txt
+setup.cfg
+setup.py
+teteLIB/__init__.py
+teteLIB/file1.py
+teteLIB.egg-info/PKG-INFO
+teteLIB.egg-info/SOURCES.txt
+teteLIB.egg-info/dependency_links.txt
+teteLIB.egg-info/top_level.txt
