@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+test_matstat/__init__.py
+test_matstat.egg-info/PKG-INFO
+test_matstat.egg-info/SOURCES.txt
+test_matstat.egg-info/dependency_links.txt
+test_matstat.egg-info/not-zip-safe
+test_matstat.egg-info/top_level.txt
