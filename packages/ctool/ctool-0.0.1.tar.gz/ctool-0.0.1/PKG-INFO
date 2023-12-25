@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: ctool
+Version: 0.0.1
+Summary: A CMake wrapper and toolset
+Author-email: Timothy Brackett <brackett.tc@gmail.com>
+Project-URL: Homepage, https://github.com/bracketttc/ctool
+Project-URL: Issues, https://github.com/bracketttc/ctool/issues
+Keywords: cmake
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: The Unlicense (Unlicense)
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Testing
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# CTool
+
+A CMake wrapper and toolset.
+
+## Planned tools
+
+- `ctool-autoinstall` - detect missing dependencies and install them using distribution package managers
+- `ctool-changed-tests` - use cmake-file-api and CTest json to determine what files might change the output of which tests
