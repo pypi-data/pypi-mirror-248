@@ -1,0 +1,14 @@
+[project]
+name = "test_gabrielgavrilov"
+version = "0.0.1"
+authors = [
+  { name="Gabriel Gavrilov", email="gabriel.gavrilov02@gmail.com" },
+]
+description = "A python test package"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
