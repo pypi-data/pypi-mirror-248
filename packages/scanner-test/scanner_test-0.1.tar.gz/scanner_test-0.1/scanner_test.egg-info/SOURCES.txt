@@ -1,0 +1,5 @@
+setup.py
+scanner_test.egg-info/PKG-INFO
+scanner_test.egg-info/SOURCES.txt
+scanner_test.egg-info/dependency_links.txt
+scanner_test.egg-info/top_level.txt
