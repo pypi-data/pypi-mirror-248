@@ -1,0 +1,7 @@
+pandas
+scipy
+pyteomics
+dill
+numpy
+lxml
+openpyxl
