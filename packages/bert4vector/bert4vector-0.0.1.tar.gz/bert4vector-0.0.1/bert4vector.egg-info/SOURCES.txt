@@ -1,0 +1,7 @@
+README.md
+setup.py
+bert4vector.egg-info/PKG-INFO
+bert4vector.egg-info/SOURCES.txt
+bert4vector.egg-info/dependency_links.txt
+bert4vector.egg-info/requires.txt
+bert4vector.egg-info/top_level.txt

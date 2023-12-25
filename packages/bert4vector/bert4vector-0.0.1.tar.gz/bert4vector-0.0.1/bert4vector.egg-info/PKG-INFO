@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: bert4vector
+Version: 0.0.1
+Summary: an elegant bert4vector
+Home-page: https://github.com/Tongjilibo/bert4vector
+Author: Tongjilibo
+License: MIT Licence
+Description-Content-Type: text/markdown
+
+# bert4vector
+向量的计算、相似度计算
