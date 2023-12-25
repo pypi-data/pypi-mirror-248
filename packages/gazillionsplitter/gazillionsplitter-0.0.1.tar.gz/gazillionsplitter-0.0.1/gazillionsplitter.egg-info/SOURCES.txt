@@ -1,0 +1,8 @@
+README.md
+setup.py
+gazillionsplitter/__init__.py
+gazillionsplitter/splitter.py
+gazillionsplitter.egg-info/PKG-INFO
+gazillionsplitter.egg-info/SOURCES.txt
+gazillionsplitter.egg-info/dependency_links.txt
+gazillionsplitter.egg-info/top_level.txt
