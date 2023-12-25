@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: plum-project
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: psycopg[binary] ==3.1.16
+Requires-Dist: python-dotenv ==1.0.0
+Requires-Dist: requests ==2.31.0
+
+UNKNOWN
+
