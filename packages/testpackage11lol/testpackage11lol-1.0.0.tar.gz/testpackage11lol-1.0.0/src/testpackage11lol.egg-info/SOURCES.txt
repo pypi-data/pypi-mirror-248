@@ -1,0 +1,7 @@
+setup.py
+src/examples/__init__.py
+src/examples/options.py
+src/testpackage11lol.egg-info/PKG-INFO
+src/testpackage11lol.egg-info/SOURCES.txt
+src/testpackage11lol.egg-info/dependency_links.txt
+src/testpackage11lol.egg-info/top_level.txt
