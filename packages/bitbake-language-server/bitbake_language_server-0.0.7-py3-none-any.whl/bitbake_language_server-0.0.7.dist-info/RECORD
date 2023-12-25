@@ -1,0 +1,16 @@
+bitbake_language_server/__init__.py,sha256=rMKx7H96TzrjRu1d4Zqki-uDwnunDNcbT3KXPH5PcWU,403
+bitbake_language_server/__main__.py,sha256=vaFdPpQTWTuruu-qEWCUneg0VzgF9sJCE1mDDN6lstc,1065
+bitbake_language_server/_metainfo.py,sha256=QZsN7rGeUvfeV_7FZUNfhTGcBBbeRzCj6xIYQQsdiM0,600
+bitbake_language_server/_version.py,sha256=vZ9YJhtz2uaZyfeULJmmzg7nlru6jGE1i6ermqZWYAQ,411
+bitbake_language_server/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bitbake_language_server/server.py,sha256=yB3hI_5wbLULXYU7Xt0BmI9GrZyqn7LGT_g7_XLDAoQ,8803
+bitbake_language_server/utils.py,sha256=sld73mvC_7CIYc9L0Ayu7RSBfKlb-jPNZRbBvT9JHRg,331
+bitbake_language_server-0.0.7.data/data/share/bash-completion/completions/bitbake-language-server,sha256=Q7zh8yHYNzYRIQq1gvhY-MPrrcG-NW8nFwkk1YHrXQo,4343
+bitbake_language_server-0.0.7.data/data/share/man/man1/bitbake-language-server.1,sha256=p8WBjofyO8eaBgXFFJ0jC5swOAIu_dvq876Yv-6HgrY,442
+bitbake_language_server-0.0.7.data/data/share/zsh/site-functions/_bitbake-language-server,sha256=cdklCJG5lf1yAR52dAAPWIiKSc96dw18lRTZdavVYGA,1240
+bitbake_language_server-0.0.7.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+bitbake_language_server-0.0.7.dist-info/METADATA,sha256=69hYjW7O1GRUP7aQIHv8Qt_oYKZ6Q5NpLCLhvy-8HZo,8259
+bitbake_language_server-0.0.7.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+bitbake_language_server-0.0.7.dist-info/entry_points.txt,sha256=BBSZYMqyKsaS9cbU81kjF3ccCHIQwXXk_YN14sXvLwM,82
+bitbake_language_server-0.0.7.dist-info/top_level.txt,sha256=y-fPmOKbHb1wcbSgldeXDvzXzF8goW6tyipJJfJC3P0,24
+bitbake_language_server-0.0.7.dist-info/RECORD,,
