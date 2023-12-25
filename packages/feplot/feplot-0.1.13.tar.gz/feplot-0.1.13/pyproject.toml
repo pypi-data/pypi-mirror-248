@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=63.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "feplot"
+description = "A visualization tool for FElupe"
+readme = "README.md"
+requires-python = ">=3.6"
+license = {file = "LICENSE"}
+keywords = [
+  "python", 
+  "constitution",
+  "scientific-computing",
+  "fem",
+  "finite-elements-analysis",
+  "hyperelasticity", 
+]
+
+authors = [
+  {email = "mohamed.zaaraoui.999@gmail.com"},
+  {name = "Mohamed ZAARAOUI"}
+]
+
+classifiers = [
+  "Programming Language :: Python",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering",
+  "Topic :: Utilities"
+]
+
+dynamic = ["version"] # Version is read from feplot/__init__.py
+
+dependencies = [
+  "numpy",
+  "pyvista",
+  "pyvistaqt",
+  "meshio",
+  "felupe",
+]
+
+[project.urls]
+homepage = "https://feplot.readthedocs.io/en/latest"
+code = "https://github.com/ZAARAOUI999/feplot"
+issues = "https://github.com/ZAARAOUI999/feplot/issues"
+repository = "https://github.com/ZAARAOUI999/feplot.git"
+
+[tool.setuptools.dynamic]
+version = {attr = "feplot.__version__"}
+
+[tool.setuptools.package-data]
+"feplot.icons" = ["**"]
+
+
