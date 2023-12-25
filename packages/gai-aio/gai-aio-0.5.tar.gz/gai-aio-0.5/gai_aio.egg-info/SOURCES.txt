@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+gai_aio.egg-info/PKG-INFO
+gai_aio.egg-info/SOURCES.txt
+gai_aio.egg-info/dependency_links.txt
+gai_aio.egg-info/requires.txt
+gai_aio.egg-info/top_level.txt
