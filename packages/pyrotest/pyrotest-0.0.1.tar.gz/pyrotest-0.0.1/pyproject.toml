@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyrotest"
+version = "0.0.1"
+authors = [
+  { name="Pugazhenthi Thirukkami", email="pugalcse@gmail.com" },
+]
+description = "pyroTest package "
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://gitlab.com/pugazh-network-consulting/topology-builder"
+Issues = "https://gitlab.com/pugazh-network-consulting/topology-builder/-/issues"
