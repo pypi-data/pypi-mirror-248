@@ -1,0 +1,103 @@
+Metadata-Version: 2.1
+Name: scaife-viewer-core
+Version: 0.3rc1
+Summary: Scaife Viewer Backend :: Core Functionality
+Home-page: https://github.com/scaife-viewer/backend/
+Author: Scaife Viewer Team
+Author-email: jtauber+scaife@jtauber.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: anytree ==2.4.3
+Requires-Dist: certifi ==2018.11.29
+Requires-Dist: click >=8.0.0
+Requires-Dist: dask[bag] ==2022.1.0
+Requires-Dist: django-appconf >=1.0.4
+Requires-Dist: Django <3.0,>=2.2
+Requires-Dist: elasticsearch <8,>=7
+Requires-Dist: google-auth ==1.6.2
+Requires-Dist: google-cloud-pubsub ==0.39.1
+Requires-Dist: lxml >=4.3.5
+Requires-Dist: MyCapytain ==3.0.1
+Requires-Dist: python-dateutil ==2.7.5
+Requires-Dist: python-mimeparse ==1.6.0
+Requires-Dist: rdflib ==4.2.2
+Requires-Dist: regex >=2020.11.13
+Requires-Dist: requests ==2.22.0
+Requires-Dist: ruamel.yaml ==0.17.21
+Requires-Dist: wrapt ==1.11.1
+Provides-Extra: dev
+Requires-Dist: black ==19.10b0 ; extra == 'dev'
+Requires-Dist: flake8 <4,>=3.7 ; extra == 'dev'
+Requires-Dist: flake8-quotes <3,>=2.1.1 ; extra == 'dev'
+Requires-Dist: isort <5,>=4.3.21 ; extra == 'dev'
+Requires-Dist: pytest-cov <3,>=2.8 ; extra == 'dev'
+Requires-Dist: pytest-django <4,>3.7.0 ; extra == 'dev'
+Requires-Dist: hypothesis <6,>=5.1.5 ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest-cov <3,>=2.8 ; extra == 'test'
+Requires-Dist: pytest-django <4,>3.7.0 ; extra == 'test'
+Requires-Dist: hypothesis <6,>=5.1.5 ; extra == 'test'
+
+# Scaife Viewer :: Core functionality
+
+This package was extracted from
+[https://github.com/scaife-viewer/scaife-viewer](https://github.com/scaife-viewer/scaife-viewer)
+
+## Settings
+
+### ALLOW_TRAILING_COLON
+
+Default: `False`
+
+When `False`, to maintain compatability with the MyCapitain resolver,
+the trailing colon will be stripped from URNs.
+
+### REDIRECT_VERSION_LIBRARY_COLLECTION_TO_READER
+
+Default: `True`
+
+When `True`, will redirect a version / exemplar `library_collection` URL to the first passage of the version in the reader`
+
+### HOOKSET
+
+Default: `"scaife_viewer.core.hooks.DefaultHookSet"`
+
+The path to a hookset that can be used to customize package functionality.
+
+#### hookset.content_manifest_path
+
+Default: Callable returning `pathlib.Path` resolving to `data/content-manifests/production.yaml`
+
+Can be customized via the `CONTENT_MANIFEST_PATH` env var.
+
+**RESOLVER_CACHE_LABEL**
+
+Default: `"cts-resolver"`
+
+The label to use for the cache backend that holds cached resolver data
+
+
+### USE_CLOUD_INDEXER
+
+Default: `False`
+
+When `True`, sets GCE-specific metadata for the search index management
+command
+
+## CLI
+
+For information about the CLI:
+
+```shell
+scaife --help
+```
