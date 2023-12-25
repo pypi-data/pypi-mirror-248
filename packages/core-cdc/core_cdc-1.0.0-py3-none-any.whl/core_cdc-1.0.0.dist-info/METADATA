@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: core-cdc
+Version: 1.0.0
+Summary: This project/library contains the core mechanism and resources for Change Data Capture services...
+Author-email: Alejandro Cora González <alek.cora.glez@gmail.com>
+Maintainer: Alejandro Cora González
+License: MIT
+Project-URL: Homepage, https://gitlab.com/bytecode-solutions/core/core-cdc
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: core-mixins
+Requires-Dist: core-tests
+Requires-Dist: core-aws
+Requires-Dist: core-db
+Requires-Dist: mysql-replication ==0.31
+Requires-Dist: pymongo ==4.6.0
+Provides-Extra: test
+
+# core-cdc (CDC a.k.a Change Data Capture)
+_______________________________________________________________________________
+
+It provides the core mechanism and required resources to 
+implement "Change Data Capture" services...
+
+## Execution Environment
+
+### Install libraries
+```commandline
+pip install --upgrade pip 
+pip install virtualenv
+```
+
+### Create the Python Virtual Environment.
+```commandline
+virtualenv --python=python3.11 .venv
+```
+
+### Activate the Virtual Environment.
+```commandline
+source .venv/bin/activate
+```
+
+### Install required libraries.
+```commandline
+pip install .
+```
+
+### Check tests and coverage...
+```commandline
+python manager.py run-test
+python manager.py run-coverage
+```
