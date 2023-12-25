@@ -1,0 +1,9 @@
+core-etl
+core-mixins
+core-tests
+oracledb==1.4.2
+pymongo==4.6.0
+PyMySQL==1.1.0
+snowflake-connector-python==3.5.0
+
+[test]
