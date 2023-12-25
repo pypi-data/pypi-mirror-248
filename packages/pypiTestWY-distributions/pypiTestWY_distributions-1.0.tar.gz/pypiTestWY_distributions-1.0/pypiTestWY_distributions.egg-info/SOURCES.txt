@@ -1,0 +1,10 @@
+setup.py
+pypiTestWY_distributions/Binomialdistribution.py
+pypiTestWY_distributions/Gaussiandistribution.py
+pypiTestWY_distributions/Generaldistribution.py
+pypiTestWY_distributions/__init__.py
+pypiTestWY_distributions.egg-info/PKG-INFO
+pypiTestWY_distributions.egg-info/SOURCES.txt
+pypiTestWY_distributions.egg-info/dependency_links.txt
+pypiTestWY_distributions.egg-info/not-zip-safe
+pypiTestWY_distributions.egg-info/top_level.txt
