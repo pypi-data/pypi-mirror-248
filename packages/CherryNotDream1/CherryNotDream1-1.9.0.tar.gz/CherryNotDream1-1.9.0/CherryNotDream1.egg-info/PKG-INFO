@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: CherryNotDream1
+Version: 1.9.0
+Summary: Dream
+Author: CherryNotDream
+Author-email: 1lvl000977@gmail.com
+Requires-Dist: pyodbc
+Requires-Dist: Pillow

@@ -1,0 +1,7 @@
+CherryNotDream1.py
+setup.py
+CherryNotDream1.egg-info/PKG-INFO
+CherryNotDream1.egg-info/SOURCES.txt
+CherryNotDream1.egg-info/dependency_links.txt
+CherryNotDream1.egg-info/requires.txt
+CherryNotDream1.egg-info/top_level.txt
