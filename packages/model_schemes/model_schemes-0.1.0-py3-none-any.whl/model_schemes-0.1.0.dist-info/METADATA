@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: model_schemes
+Version: 0.1.0
+Summary: Schemes is a python package that allows you to build and validate data structures for AI and ML projects.
+Author: russell
+Author-email: studiousentrepreneurs@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pydantic (>=2.5.3,<3.0.0)
+Requires-Dist: pytz (>=2023.3.post1,<2024.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# schemes
+
+## Description
+Schemes is a python package that allows you to easily create and manage data schemes for your data science projects.
+
+## Installation
+```bash
+pip install model_schemes
+```
+
+## Usage
+```python
+from model_schemes.legal import petition
+data = {...}
+p= petition.PetitionSchema(**data)
+p.model_dump()
+p.model_dump_json()
+```
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
+## Author
+[Russell-AI](https://github.com/russell-ai)
+
+
