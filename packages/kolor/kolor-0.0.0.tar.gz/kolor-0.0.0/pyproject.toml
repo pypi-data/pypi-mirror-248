@@ -1,0 +1,37 @@
+[build-system]
+requires = [
+    "hatchling",
+]
+build-backend = "hatchling.build"
+
+[project]
+name = "kolor"
+version = "0.0.0"
+authors = [
+  { name="Samuel", email="samuel.9360639@gmail.com" },
+]
+description = "Print colored text in python and perform color conversions"
+readme = "README.md"
+requires-python = ">=3.7"
+keywords = [
+    'ANSI',
+    'Color',
+    'Text',
+]
+license = { text = "MIT" }
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/Samuel9360639/kolor"
+Issues = "https://github.com/Samuel9360639/kolor/issues"
+Contribute = "https://github.com/Samuel9360639/kolor/pulls"
+
+[tool.hatch.build.targets.wheel]
+include = [
+    "/kolor/*",
+]
