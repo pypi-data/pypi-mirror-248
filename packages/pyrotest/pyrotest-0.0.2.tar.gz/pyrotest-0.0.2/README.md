@@ -1,0 +1,54 @@
+# pyroTest Guidelines
+
+### Precondition:
+
+**System Requirements:**
+
+    Operating System : Ubuntu Server 18.04.5 LTS.
+    Processor (CPU)  : 1 or 2 CPU cores minimum. 64-bit CPU required, Intel or AMD.
+    Memory (RAM)     : 4GB RAM minimum
+    HDD (Storage)    : 30GB disk size minimum.
+
+**Packages Requirements:**
+
+There are certain preconditions which we need to take into consideration before start running 
+the automated regression suite. We need to install the below packages to satisfy the precondition requirements. 
+
+
+**For Ubuntu & Debian Machines**
+
+### How to Install Chrome Driver:
+
+    wget https://chromedriver.storage.googleapis.com/2.41/chromedriver_linux64.zip
+    unzip chromedriver_linux64.zip
+    sudo mv chromedriver /usr/bin/chromedriver
+    sudo chown root:root /usr/bin/chromedriver
+    sudo chmod +x /usr/bin/chromedriver
+    sudo rm -fr chromedriver_linux64.zip
+
+### How to Install Gecko Driver:
+
+    wget https://github.com/mozilla/geckodriver/releases/download/v0.26.0/geckodriver-v0.26.0-linux64.tar.gz
+    tar xvzf geckodriver-v0.26.0-linux64.tar.gz
+    sudo chmod 777 geckodriver
+    sudo mv geckodriver /usr/bin/
+
+### How to install firefox Driver:
+     wget https://ftp.mozilla.org/pub/firefox/releases/66.0.3/linux-x86_64/en-US/firefox-66.0.3.tar.bz2
+     tar -xjf firefox-66.0.3.tar.bz2
+     sudo rm -rf /opt/firefox
+     sudo mv firefox/ /opt
+     sudo mv /usr/bin/firefox /usr/bin/firefox_old
+     sudo ln -s /opt/firefox/firefox /usr/bin/firefox
+
+### How to create Virtual Environment:
+
+## How to create 3-site topology
+
+### Precondition to create 3-site topology in KVM
+
+Before creating topology we need to create KVM hypervisor, We can create KVM hypervisor in below mentioned ways
+    1. Create a Hypervisor in Virtual Box/ESXi in private infrastructure
+    2. Create a Hypervisor in Cloud infrastructure using GCP 
+
+As of now we have automated the topology creation in GCP environment for 3-site. 
