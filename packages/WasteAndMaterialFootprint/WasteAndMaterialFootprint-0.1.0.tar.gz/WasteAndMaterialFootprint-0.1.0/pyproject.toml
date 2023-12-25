@@ -1,0 +1,10 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "WasteAndMaterialFootprint"
+version = "0.1.0"
+description = "A tool for analyzing waste and material footprints."
+readme = "README.md"
+authors = [{name = "Stewart Charles McDowall | Stew-McD", email = "s.c.mcdowall@cml.leidenuniv.nl"}]
