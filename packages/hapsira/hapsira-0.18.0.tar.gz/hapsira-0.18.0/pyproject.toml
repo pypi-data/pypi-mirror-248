@@ -1,0 +1,185 @@
+[build-system]
+requires = [
+    "flit_core >=3.4,<4",
+    "wheel",
+    "oldest-supported-numpy",
+]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "hapsira"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+authors = [
+    {name = "Sebastian M. Ernst", email = "ernst@pleiszenburg.de"}
+]
+maintainers = [
+    {name = "Sebastian M. Ernst", email = "ernst@pleiszenburg.de"}
+]
+keywords = [
+    "aero",
+    "aerospace",
+    "engineering",
+    "astrodynamics",
+    "orbits",
+    "kepler",
+    "orbital mechanics"
+]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Scientific/Engineering :: Astronomy",
+]
+dependencies = [
+    "astropy", # >=5.0,<6",
+    "astroquery", # >=0.3.9",
+    "jplephem",
+    "matplotlib<3.8", #  >=2.0,!=3.0.1,<3.8", # https://github.com/librosa/librosa/issues/1763
+    "numba", #  >=0.46 ; python_version<'3.9'",
+    # "numba >=0.53.0 ; python_version>='3.9'",
+    "numpy",
+    "pandas",
+    "plotly", #  >=4.0,<6",
+    "pyerfa",
+    "scipy", #  >=1.4.0",
+]
+dynamic = ["version", "description"]
+
+[project.urls]
+Homepage = "https://hapsira.readthedocs.io"
+Documentation = "https://hapsira.readthedocs.io"
+Source = "https://github.com/pleiszenburg/hapsira"
+Tracker = "https://github.com/pleiszenburg/hapsira/issues"
+Changelog = "https://hapsira.readthedocs.io/en/stable/changelog.html"
+
+[project.optional-dependencies]
+jupyter = ["notebook", "ipywidgets>=7.6"]
+cesium = ["czml3 ~=0.5.3"]
+dev = [
+    "flit",
+    "wheel",
+]
+doc = [
+    "httpx",
+    "ipython", # >=5.0",
+    "ipykernel", # https://github.com/pandas-dev/pandas/issues/18041#issuecomment-340701027
+    "ipywidgets",# >=7.6",
+    "jupyter-client",
+    "jupytext",
+    "myst-parser", # >=0.13.1",
+    "nbsphinx", # >=0.8.6",
+    "nbconvert", # >=5.5",
+    "sgp4",
+    "sphinx", # !=3.5,!=4.0,<5.1",  # https://github.com/readthedocs/sphinx-hoverxref/issues/119
+    "sphinx-autoapi>=3",
+    "sphinx-gallery<=0.7.0",  # Just to avoid the jupytext warning
+    "sphinx_rtd_theme", # ~=1.0.0",
+    "sphinx-hoverxref", # ==0.7b1",
+    "sphinx-notfound-page",
+    "sphinx-copybutton", # >0.2.9",
+    "sphinx-github-role", # ~=0.1.0",
+]
+test = [
+    "coverage",
+    "hypothesis",
+    "import-linter[toml]",
+    "mypy", # >=0.740",
+    "pre-commit",
+    "pytest", # >=3.2",
+    "pytest-cov", # <2.6.0",  # https://github.com/pytest-dev/pytest-cov/issues/222
+    "pytest-doctestplus", # >=0.8",  # https://github.com/astropy/pytest-doctestplus/issues/118
+    "pytest-mpl",
+    "pytest-mypy",
+    "pytest-remotedata",
+    "tox",
+]
+
+[tool.flit.sdist]
+include = [
+    "src/hapsira/atmosphere/data/coesa62.dat",
+    "src/hapsira/atmosphere/data/coesa76.dat",
+    "src/hapsira/atmosphere/data/coesa76_p.dat",
+    "src/hapsira/atmosphere/data/coesa76_rho.dat",
+    "setup.cfg"
+]
+exclude = [
+    "docs/"
+]
+
+[tool.ruff]
+select = [
+    "E",  # pycodestyle, see https://github.com/charliermarsh/ruff#pycodestyle-e-w
+#    "D",  # pydocstyle, see https://github.com/charliermarsh/ruff#pydocstyle-d
+    "F",  # pyflakes, see https://github.com/charliermarsh/ruff#pyflakes-f
+    "I"   # isort, see https://github.com/charliermarsh/ruff#isort-i
+]
+
+ignore = [
+    "E501",  # Line too long. Ignoring this so "black" manages line length.
+]
+
+exclude = [
+    ".git",
+    ".tox",
+    ".venv",
+    "build",
+    "dist",
+]
+
+[tool.ruff.isort]
+combine-as-imports = true
+force-sort-within-sections = true
+known-first-party = ["hapsira"]
+
+[tool.ruff.mccabe]
+max-complexity = 18
+
+[tool.mypy]
+check_untyped_defs = true
+strict_optional = false
+ignore_missing_imports = true
+
+[tool.coverage.paths]
+source = ["src"]
+
+[tool.coverage.run]
+branch = true
+source = ["src"]
+
+[tool.coverage.report]
+omit = ["contrib/*"]
+show_missing = true
+
+[tool.importlinter]
+# Include Astropy to properly analyze external submodules,
+# see https://github.com/seddonym/import-linter/issues/111
+root_packages = ["hapsira", "astropy"]
+include_external_packages = true
+
+[[tool.importlinter.contracts]]
+name = "hapsira.core does not import astropy.units"
+type = "forbidden"
+source_modules = ["hapsira.core"]
+forbidden_modules = ["astropy.units"]
+
+[tool.pytest.ini_options]
+norecursedirs = [".git", ".tox", "dist", "build", ".venv"]
+testpaths = ["tests"]
+python_files ="test_*.py"
+doctest_plus = false
+addopts = ["--strict-markers"]
+markers = ["slow", "remote_data", "filterwarnings", "mpl_image_compare"]

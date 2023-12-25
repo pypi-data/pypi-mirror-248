@@ -1,0 +1,67 @@
+name: hapsira test suite
+
+on:
+    push: {}
+    schedule:
+        - cron: '30 9 7 * *'
+
+jobs:
+
+  specifics:
+    strategy:
+      matrix:
+        tox-env: [
+          "fast",
+          "online",
+          "slow",
+          "images"
+        ]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.8"
+      - name: Update Python infrastructure
+        run: |
+          python -m pip install --upgrade pip
+          pip install -U tox
+      - name: Versions
+        run:
+          python --version
+          tox --version
+      - name: Run tests
+        run: |
+          tox -e tests38-${{ matrix.tox-env }}
+
+  build:
+    strategy:
+      matrix:
+        python-version: [
+          "3.8",
+          "3.9",
+          "3.10",
+          "3.11"
+        ]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pandoc
+        run: |
+          sudo apt-get install -y pandoc
+      - name: Install Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Update Python infrastructure
+        run: |
+          python -m pip install --upgrade pip
+          pip install -U tox
+      - name: Versions
+        run:
+          python --version
+          tox --version
+      - name: Run tests
+        run: |
+          tox
