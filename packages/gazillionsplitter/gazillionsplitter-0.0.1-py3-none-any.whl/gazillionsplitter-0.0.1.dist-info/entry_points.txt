@@ -1,0 +1,2 @@
+[console_scripts]
+gazillionsplitter = gazillionsplitter.splitter:main
