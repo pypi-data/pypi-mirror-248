@@ -1,0 +1,2 @@
+[console_scripts]
+dedupy = dedupy.tool:main

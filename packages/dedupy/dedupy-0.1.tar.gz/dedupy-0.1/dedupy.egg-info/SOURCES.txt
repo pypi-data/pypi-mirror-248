@@ -1,0 +1,9 @@
+setup.py
+dedupy/__init__.py
+dedupy/tool.py
+dedupy.egg-info/PKG-INFO
+dedupy.egg-info/SOURCES.txt
+dedupy.egg-info/dependency_links.txt
+dedupy.egg-info/entry_points.txt
+dedupy.egg-info/requires.txt
+dedupy.egg-info/top_level.txt
