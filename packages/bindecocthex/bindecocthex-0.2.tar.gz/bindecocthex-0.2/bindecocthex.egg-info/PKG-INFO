@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: bindecocthex
+Version: 0.2
+Summary: A package for binary, decimal, octal, and hexadecimal conversions
+Home-page: https://git.selfmade.ninja/rsuriya/bindecocthex
+Author: Suriya Ravichandran,Karthikeyan Ramesh
+Author-email: rsuriya119@gmail.com
+Description-Content-Type: text/markdown
