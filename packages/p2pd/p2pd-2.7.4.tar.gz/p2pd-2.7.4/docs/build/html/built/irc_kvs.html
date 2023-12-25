@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A key-value store over IRC &mdash; P2PD 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="STUN client for address lookups" href="stun.html" />
+    <link rel="prev" title="Awesome stuff built with P2PD" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            P2PD
+          </a>
+              <div class="version">
+                0.1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../problems.html">The problem with P2P networking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../how.html">How P2PD works</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python/index.html">Using P2PD from Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rest_api.html">The P2PD REST API</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Awesome stuff built with P2PD</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">A key-value store over IRC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stun.html">STUN client for address lookups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turn.html">TURN client for proxying</a></li>
+<li class="toctree-l2"><a class="reference internal" href="netifaces.html">More portable netifaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http_client.html">Hyper-usable HTTP client</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http_framework.html">Lightweight web framework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="toxiproxy.html">Toxiproxy client and server</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../future_work.html">Future work</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">P2PD</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Awesome stuff built with P2PD</a></li>
+      <li class="breadcrumb-item active">A key-value store over IRC</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/built/irc_kvs.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="a-key-value-store-over-irc">
+<h1>A key-value store over IRC<a class="headerlink" href="#a-key-value-store-over-irc" title="Permalink to this heading"></a></h1>
+<p>Web browsers and networked applications rely critically on domain names
+to avoid people having to remember long strings of numbers. Without domain
+names its unlikely the Internet would have been as successful as it was.
+Unfortunately, the domain name system is commercial and lacks a standardized
+protocol for registering domains between providers. Such a system is necessary
+for peer-to-peer software because programs need to be able to register names
+for themselves without humans having to baby sit them and the names ought to
+not be paid so accessibility is granted to these software programs.</p>
+<p>The question is: how to accomplish this in such a way that it would run on public
+infrastructure. To my knowledge there are no existing systems that offer the
+equivalent of a permissioned, open, key-value store. I have researched the
+question and tried many prototypes to try solve this problem - without much luck.
+Chat-GPT seems to think that such a system doesn’t exist. So I built one.</p>
+<p>My system implements a distributed key-value store across IRC servers.
+I use channel names as key-names and channel topics as key-values. Names
+are stored by ensuring that a minimum number of channels can be registered
+for a single name. This allows people to lookup names and know that
+after they get more than the maximum registration failure number
+they can be reasonably certain that the results point to the right name.
+This helps to maintain integrity if servers go down, avoids name conflicts,
+and provides a higher level of security than trusting one server.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">hashlib</span>
+<span class="kn">from</span> <span class="nn">p2pd</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="k">async</span> <span class="k">def</span> <span class="nf">example</span><span class="p">():</span>
+    <span class="c1"># Save your seed value somewhere.</span>
+    <span class="n">seed</span> <span class="o">=</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">sha3_256</span><span class="p">(</span><span class="sa">b</span><span class="s2">&quot;Use a secure password and save it in a password manager.&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Load a network interface.</span>
+    <span class="n">interface</span> <span class="o">=</span> <span class="k">await</span> <span class="n">Interface</span><span class="p">()</span>
+
+    <span class="c1"># Start the KVS.</span>
+    <span class="n">irc_kvs</span> <span class="o">=</span> <span class="k">await</span> <span class="n">IRCDNS</span><span class="p">(</span>
+        <span class="n">i</span><span class="o">=</span><span class="n">interface</span><span class="p">,</span>
+        <span class="n">seed</span><span class="o">=</span><span class="n">seed</span><span class="p">,</span>
+        <span class="n">servers</span><span class="o">=</span><span class="n">IRC_SERVERS</span>
+    <span class="p">)</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+    <span class="n">refresher</span> <span class="o">=</span> <span class="n">IRCRefresher</span><span class="p">(</span><span class="n">irc_kvs</span><span class="p">)</span>
+
+    <span class="c1"># Register a new name.</span>
+    <span class="c1"># To require a password you can use:</span>
+    <span class="c1"># [&quot;example&quot;, &quot;.cawm&quot;, &quot;my super secret passwrod&quot;]</span>
+    <span class="n">name_info</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;example&quot;</span><span class="p">,</span> <span class="s2">&quot;.cawm&quot;</span><span class="p">]</span>
+    <span class="k">await</span> <span class="n">irc_kvs</span><span class="o">.</span><span class="n">name_register</span><span class="p">(</span><span class="o">*</span><span class="n">name_info</span><span class="p">)</span>
+
+    <span class="c1"># Store a value for that name.</span>
+    <span class="k">await</span> <span class="n">irc_kvs</span><span class="o">.</span><span class="n">store_value</span><span class="p">(</span><span class="o">*</span><span class="p">[</span><span class="s2">&quot;I liek the cat&quot;</span><span class="p">]</span> <span class="o">+</span> <span class="n">name_info</span><span class="p">)</span>
+
+    <span class="c1"># Get back that value.</span>
+    <span class="n">val</span> <span class="o">=</span> <span class="k">await</span> <span class="n">irc_kvs</span><span class="o">.</span><span class="n">name_lookup</span><span class="p">(</span><span class="o">*</span><span class="n">name_info</span><span class="p">)[</span><span class="s2">&quot;msg&quot;</span><span class="p">]</span>
+
+    <span class="c1"># Cleanup (this closes local database and cons.)</span>
+    <span class="k">await</span> <span class="n">irc_kvs</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>You can see from this example that a cryptographic seed is generated using
+a password as an input to a hash function. Make sure the bytes used for
+the seed are at least 24 bytes long.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Since IRC networks have expiries for inactive nicknames and channels. If you call await refresher.refresher() it will handle refreshing
+everything and even attempt to register names that may
+have failed (up to a certain threshold.)</p>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Awesome stuff built with P2PD" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="stun.html" class="btn btn-neutral float-right" title="STUN client for address lookups" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

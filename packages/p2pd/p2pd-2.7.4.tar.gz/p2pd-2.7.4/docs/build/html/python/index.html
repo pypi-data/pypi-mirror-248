@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Using P2PD from Python &mdash; P2PD 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Basics" href="basics.html" />
+    <link rel="prev" title="How P2PD works" href="../how.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            P2PD
+          </a>
+              <div class="version">
+                0.1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../problems.html">The problem with P2P networking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../how.html">How P2PD works</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Using P2PD from Python</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="basics.html">Basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pipes.html">Pipes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="queues.html">Queues</a></li>
+<li class="toctree-l2"><a class="reference internal" href="daemons.html">Daemons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="p2p.html">Peer-to-peer connections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../rest_api.html">The P2PD REST API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../built/index.html">Awesome stuff built with P2PD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../future_work.html">Future work</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">P2PD</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Using P2PD from Python</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/python/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="using-p2pd-from-python">
+<h1>Using P2PD from Python<a class="headerlink" href="#using-p2pd-from-python" title="Permalink to this heading"></a></h1>
+<p><strong>Running async examples</strong></p>
+<p>Alr1ght people, P2PD uses Python’s ‘asynchronous’ features to run
+everything in an event loop. You might want to use the special ‘REPL’
+that the asyncio module provides to run these examples. It’s available
+on (very) recent versions of Python like 3.8 or higher. Otherwise,
+P2PD has a function called async_test(name_of_async_func, arg_tup)
+that can be used to run async code.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>-m<span class="w"> </span>asyncio
+</pre></div>
+</div>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">asyncio</span> <span class="n">REPL</span> <span class="mf">3.11.0</span>
+<span class="n">Use</span> <span class="s2">&quot;await&quot;</span> <span class="n">directly</span> <span class="n">instead</span> <span class="n">of</span> <span class="s2">&quot;asyncio.run()&quot;</span><span class="o">.</span>
+<span class="n">Type</span> <span class="s2">&quot;help&quot;</span><span class="p">,</span> <span class="s2">&quot;copyright&quot;</span><span class="p">,</span> <span class="s2">&quot;credits&quot;</span> <span class="ow">or</span> <span class="s2">&quot;license&quot;</span> <span class="k">for</span> <span class="n">more</span> <span class="n">information</span><span class="o">.</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">asyncio</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">p2pd</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+<p>Now you can simply type <cite>await some_function()</cite> in the REPL to execute it.
+If you experience errors in the REPL you’ll have to use a regular Python
+file for the examples.</p>
+<p><strong>Before we get started all example code assumes that:</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>The ‘selector’ event loop is being used.</p></li>
+<li><p>The ‘spawn’ method is used as the multiprocessing start method.</p></li>
+<li><p>You are familiar with how to run asynchronous code.</p></li>
+<li><p>The string encoding is “UTF-8.”</p></li>
+</ol>
+</div></blockquote>
+<p>This keeps the code consistent across platforms. The package sets
+these by default so if your application is using a different configuration
+it may not work properly with P2PD.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="basics.html">Basics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="basics.html#network-interface-cards">Network interface cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basics.html#the-addressing-problem">The addressing problem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basics.html#routes-to-the-rescue">Routes to the rescue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basics.html#a-first-networking-program">A first networking program</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pipes.html">Pipes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pipes.html#tcp-echo-server-example">TCP echo server example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pipes.html#udp-await-example">UDP await example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pipes.html#pipe-methods">Pipe methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pipes.html#def-subscribe-self-sub-sub-all-handler-none">def subscribe(self, sub=SUB_ALL, handler=None)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pipes.html#def-unsubscribe-self-sub">def unsubscribe(self, sub)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pipes.html#async-def-recv-self-sub-sub-all-timeout-2-full-false">async def recv(self, sub=SUB_ALL, timeout=2, full=False)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pipes.html#async-def-send-self-data-dest-tup-none">async def send(self, data, dest_tup=None)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pipes.html#def-add-msg-cb-self-msg-cb">def add_msg_cb(self, msg_cb)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pipes.html#def-del-msg-cb-self-msg-cb">def del_msg_cb(self, msg_cb)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pipes.html#def-add-end-cb-self-end-cb">def add_end_cb(self, end_cb)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pipes.html#def-del-end-cb-self-end-cb">def del_end_cb(self, end_cb)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pipes.html#def-add-pipe-self-pipe">def add_pipe(self, pipe)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pipes.html#def-del-pipe-self-pipe">def del_pipe(self, pipe)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pipes.html#async-def-close-self">async def close(self)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pipes.html#additional-pipe-options">Additional pipe options</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="queues.html">Queues</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="queues.html#javascript-subscription-example">Javascript subscription example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="queues.html#python-subscription-example">Python subscription example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="queues.html#last-words-on-queues">Last words on queues</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="daemons.html">Daemons</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="daemons.html#listen-all">listen_all</a></li>
+<li class="toctree-l2"><a class="reference internal" href="daemons.html#listen-specific">listen_specific</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="p2p.html">Peer-to-peer connections</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#rest-apis">REST APIs</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../how.html" class="btn btn-neutral float-left" title="How P2PD works" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="basics.html" class="btn btn-neutral float-right" title="Basics" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
