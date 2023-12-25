@@ -1,0 +1,28 @@
+[project]
+name = "partcad"
+version = "0.1.0"
+description = "Framework for packaging CAD models"
+readme = "README.md"
+keywords = ["cadquery", "build123d"]
+requires-python = ">=3.10"
+license = {file = "LICENSE.txt"}
+authors = [
+  {name = "Roman Kuzmenko", email = "openvmp@proton.me" }
+]
+maintainers = [
+  {name = "Roman Kuzmenko", email = "openvmp@proton.me" }
+]
+dynamic = ["dependencies"]
+
+[project.scripts]
+pc = "partcad:main_cli"
+
+[tool.setuptools.package-data]
+"partcad.template" = ["*.yaml"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.pytest.ini_options]
+# addopts = -ra -s -rx
+pythonpath = "src"
