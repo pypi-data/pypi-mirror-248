@@ -1,0 +1,13 @@
+pillow
+pandas
+opencv-python
+dill
+cython
+fvcore
+numpy
+scipy
+chainercv
+cityscapesscripts
+pycocotools
+tqdm
+argparse
