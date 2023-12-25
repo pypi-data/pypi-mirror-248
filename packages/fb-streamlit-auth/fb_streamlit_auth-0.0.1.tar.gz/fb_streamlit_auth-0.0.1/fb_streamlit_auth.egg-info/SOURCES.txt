@@ -1,0 +1,11 @@
+LICENCE
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+fb_streamlit_auth/__init__.py
+fb_streamlit_auth.egg-info/PKG-INFO
+fb_streamlit_auth.egg-info/SOURCES.txt
+fb_streamlit_auth.egg-info/dependency_links.txt
+fb_streamlit_auth.egg-info/requires.txt
+fb_streamlit_auth.egg-info/top_level.txt
