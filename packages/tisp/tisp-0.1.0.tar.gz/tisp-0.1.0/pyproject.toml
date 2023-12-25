@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "tisp"
+version = "0.1.0"
+description = "Solve TSP instances to optimality."
+authors = ["Tip ten Brink <T.M.tenBrink@student.tudelft.nl>", "Jasper Mulder <J.Mulder-7@student.tudelft.nl>"]
+readme = "README.md"
+packages = [
+    { include = "tisp", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = ">=3.9, <3.12"
+mip = "^1.15.0"
+
+[tool.poetry.scripts]
+tisp = "tisp.solver:run"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.1.8"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
