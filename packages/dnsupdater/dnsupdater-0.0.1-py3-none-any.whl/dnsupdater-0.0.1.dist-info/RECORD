@@ -1,0 +1,10 @@
+dnsupdater/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dnsupdater/cloudflare.py,sha256=eZLudEi6Qx_GTO89-9GL3kNI31uwcxQgx9FOkVUPiLs,1399
+dnsupdater/dnsupdater.py,sha256=gQop7-xksaWw2N4pQ6f573af8aJSbLSaa83qhfjcuk0,2238
+dnsupdater/ip.py,sha256=J7NwFLfdwMIxSJ1Q8MfwekvkPN8H6MVWNcIQnOjGYBk,178
+dnsupdater/route53.py,sha256=UKThr12i9Kk75rcJnuaVQiiFM00DXBGtsmxyZjENj68,667
+dnsupdater-0.0.1.dist-info/METADATA,sha256=hI7Nbuz9M8Jky8a6vttLWZJ7vzbIG5q3uch-mnzRen8,2684
+dnsupdater-0.0.1.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+dnsupdater-0.0.1.dist-info/entry_points.txt,sha256=GjyQqnFB7B4eLVF1VelJLe4Fg-M0XhGMTXOeaSkSc5A,58
+dnsupdater-0.0.1.dist-info/licenses/LICENSE,sha256=q42FvtShvYs7aVSi9LLcbzBatUiv5aijrjpsOtv7QEk,1077
+dnsupdater-0.0.1.dist-info/RECORD,,
