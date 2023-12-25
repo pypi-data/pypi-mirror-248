@@ -1,0 +1,107 @@
+Metadata-Version: 2.1
+Name: pipelite
+Version: 0.1.9.1
+Summary: This solution build by design (configuration) simple of complex Data Pipelines
+Author-email: datacorner <admin@datacorner.fr>
+License: MIT License
+        
+        Copyright (c) 2023 Benoît Cayla
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Bug Tracker, https://github.com/datacorner/pipelite/issues
+Project-URL: Homepage, https://github.com/datacorner/pipelite/wiki
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas ==2.0.3
+Requires-Dist: openpyxl ==3.1.2
+Requires-Dist: pyodbc ==4.0.39
+Requires-Dist: pyrfc ==3.1
+Requires-Dist: requests ==2.31.0
+Requires-Dist: xmltodict ==0.13.0
+Requires-Dist: jsonpath-ng ==1.6.0
+Requires-Dist: jsonschema ==4.19.1
+Requires-Dist: Jinja2 ==3.1.2
+
+![](logo_transp_med.png)
+# The pipelite Project
+Empower your data workflows effortlessly with **pipelite**, a lightweight Python program designed for seamless **data pipeline creation and execution**. Using a simple JSON configuration, users can build complex pipelines without writing code. What sets pipelite apart is its total extensibility—anyone can easily create and integrate new connectors or transformations, enhancing the program's capabilities. 
+
+
+It's also possible to add new way to manage the flow of the transformations if needed. With a MIT license fostering collaboration, this flexible tool is perfect for users of all levels. Craft, execute, and extend your data pipelines with **pipelite**, your go-to solution for adaptable and scalable data processing.
+
+**Some characteristics:**
+* Simple JSON configuration
+* Lightweight and code-free (MIT license for flexibility)
+* Python Code (leverage the basics libraries instead addind many heavy and complex libs) 
+* Effortless pipeline creation and high integrability thanks to the json configuration
+* Streamlined execution process
+* Total extensibility (connectivity, transformation, pipeline management)
+* Boost data processing efficiency
+* Quick learning curve
+* Empower your data workflows in a simple way
+
+So in one word ... pipelite is your extensible solution for dynamic data pipelines.
+
+## Currently this solution provides data access and load from these data sources :  
+✅  [External file (csv)](https://github.com/datacorner/pipelite/wiki/csvFileDS)  
+✅  [External Excel Spreadsheet (xls, xlsx, xlsm, xlsb, odf, ods and odt) (read only)](https://github.com/datacorner/pipelite/wiki/excelFileDS)  
+✅  [External XES File (read only)](https://github.com/datacorner/pipelite/wiki/xesFileDS)  
+✅  [ODBC Data Sources (checked with SQL Server, SQLite) by using an configurable SQL query (Read Only)](https://github.com/datacorner/pipelite/wiki/odbcDS)  
+✅  [SAP Read Table via SAP RFC (Read Only)](https://github.com/datacorner/pipelite/wiki/sapDS)  
+✅  [ABBYY Timeline PI (write only in Repository)](https://github.com/datacorner/pipelite/wiki/piDS)  
+
+## And provides those transformers  
+✅ [Pass Through (Ex. just to change the Data Sources names IN-OUT)](https://github.com/datacorner/pipelite/wiki/passthroughTR)  
+✅ [Dataset Profiling](https://github.com/datacorner/pipelite/wiki/profileTR)  
+✅ [Concat 2 Data sources](https://github.com/datacorner/pipelite/wiki/concatTR)  
+✅ [Join data sources](https://github.com/datacorner/pipelite/wiki/joinTR)  
+✅ [Lookup](https://github.com/datacorner/pipelite/wiki/lookupTR)  
+✅ [SubString](https://github.com/datacorner/pipelite/wiki/extractstrTR)  
+✅ [Rename Column Name](https://github.com/datacorner/pipelite/wiki/renamecolTR)  
+✅ [Column Transformation](https://github.com/datacorner/pipelite/wiki/jinjaTR)  
+
+👉 **[Jump to the wiki from here](https://github.com/datacorner/pipelite/wiki)**
+
+# Installation
+
+just use pip by typing
+```
+    pip install pipelite
+```
+# ... and just use it !
+
+[See here](https://github.com/datacorner/pipelite/wiki/run)
+
+# External modules
+
+* **[jinja2](https://pypi.org/project/Jinja2/)** BSD-3-Clause license
+* **[jsonschema](https://pypi.org/project/jsonschema/)** MIT License (MIT)
+* **[jsonpath-ng](https://pypi.org/project/jsonpath-ng/)** Apache Software License (Apache 2.0)
+* **[xmltodict](https://pypi.org/project/xmltodict/)** MIT License (MIT)
+* **[requests](https://pypi.org/project/requests/)** Apache Software License (Apache 2.0)
+* **[pyrfc](https://pypi.org/project/pyrfc/)** Apache Software License (Apache 2.0)
+* **[pyodbc](https://pypi.org/project/pyodbc/)** MIT License (MIT)
+* **[openpyxl](https://pypi.org/project/openpyxl/)** MIT License (MIT)
+* **[pandas](https://pypi.org/project/pandas/)** BSD 3-Clause License
