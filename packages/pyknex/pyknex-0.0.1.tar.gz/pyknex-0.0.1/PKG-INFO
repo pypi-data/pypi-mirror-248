@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pyknex
+Version: 0.0.1
+Summary: SQL builder for python
+Project-URL: Homepage, https://github.com/murrchacho/pyknex
+Project-URL: Issues, https://github.com/murrchacho/pyknex/issues
+Author-email: murrchacho <murrchacho@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
