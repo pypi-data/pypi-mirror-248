@@ -1,0 +1,13 @@
+cltrier_prosem/__init__.py,sha256=ceqAQWufgqcABg-hASXg0exombjDUD-T99cbOR3RNLM,2581
+cltrier_prosem/classifier.py,sha256=ylh__3d-f7frATUr7Nq8BHlBT-dripttpvC51gFh-Zk,1339
+cltrier_prosem/cli.py,sha256=8kxDc1R3GF9kUjF3Sks9YxWteQambpAE_wxuZSHG11Y,314
+cltrier_prosem/dataset.py,sha256=Zzsgq_3XztXOuB6rTMReyAVy71YxcXxx6un53RL5gB4,900
+cltrier_prosem/encoder.py,sha256=vR7HUvUs1kBvqtxPamsU6-OabpBoe59QSMUsZC3s8Gw,2784
+cltrier_prosem/metric.py,sha256=GefFRdmlnXUVXoshQr0kb22IZArug_lFzYI7ko7wi2M,1853
+cltrier_prosem/pooler.py,sha256=oA1-4cif8Ttsy7WH4nAYN2o91k0MahgxbQakW03rE2M,1880
+cltrier_prosem/trainer.py,sha256=1HxQn-ueCLFa5U8298H9h4EtmPixYyjkDwvXd-rjiho,4739
+cltrier_prosem/util.py,sha256=lWLqMMSQF889dCXSJ5R1Rtm2vTZ3D00hnxIHPFGM5nI,1733
+cltrier_prosem-0.2.1.dist-info/LICENSE,sha256=iDYl9HcuZdAjDutOvBxQJ6DC6IG_ZIR4ZygzGjSgXKc,1071
+cltrier_prosem-0.2.1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+cltrier_prosem-0.2.1.dist-info/METADATA,sha256=WDaWl2u3uKb9JCgoKPf4ZrPG67_Et9ytyRUAChIgJ_0,2007
+cltrier_prosem-0.2.1.dist-info/RECORD,,
