@@ -1,0 +1,26 @@
+[package]
+name = "frtb_engine"
+version.workspace = true
+edition = "2021"
+publish = false
+license-file.workspace = true
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ultibi = {path = "../ultibi"}
+polars = {workspace = true, features=["strings", "ndarray", "lazy", "is_in", "dtype-categorical", "performant", "partition_by", "concat_str"]}
+serde = {workspace = true, features=["derive"]}
+serde_json = {workspace = true}
+once_cell = {workspace = true}
+ndarray = {version = "0.15.6", features = ["matrixmultiply-threading", "rayon", "serde"] }
+rayon = "1.5.3"
+strum = {version="0.24", features = ["derive"] }
+log = "0.4"
+yearfrac = "0.1.4"
+smartstring = "*"
+
+[dev-dependencies]
+
+[features]
+CRR2 = []
