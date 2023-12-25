@@ -1,0 +1,7 @@
+PyFormCode.py
+setup.py
+PyFormCode.egg-info/PKG-INFO
+PyFormCode.egg-info/SOURCES.txt
+PyFormCode.egg-info/dependency_links.txt
+PyFormCode.egg-info/requires.txt
+PyFormCode.egg-info/top_level.txt

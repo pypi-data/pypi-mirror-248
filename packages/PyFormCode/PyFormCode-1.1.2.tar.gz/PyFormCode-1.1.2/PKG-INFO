@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: PyFormCode
+Version: 1.1.2
+Summary: PyForm
+Author: dwashere
+Author-email: den.langeto45@yandex.ru
+Requires-Dist: pyodbc
+Requires-Dist: Pillow
