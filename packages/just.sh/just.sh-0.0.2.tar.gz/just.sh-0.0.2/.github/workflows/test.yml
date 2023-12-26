@@ -1,0 +1,82 @@
+name: Test just.sh
+
+on:
+  push:
+    branches:
+      - master
+    tags-ignore:
+      - '*.*.*'
+  workflow_dispatch:
+  workflow_call:
+
+permissions:
+  contents: read
+
+defaults:
+  run:
+    shell: bash -euxo pipefail {0}
+  
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - name: Install Python dependencies
+        run: |
+          python3 -m pip install .[test]
+      - name: Install Just on Linux
+        run: |
+          curl -L "https://github.com/casey/just/releases/download/1.17.0/just-1.17.0-x86_64-unknown-linux-musl.tar.gz" \
+            | sudo tar -C /usr/local/bin -xzv just
+      - name: Lint
+        run: |
+          just check
+  test:
+    name: Run all tests
+    needs: lint
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest]
+        python-version: ['3.8', '3.9', '3.10', '3.11', '3.12']
+        just-version: ['1.17.0']
+        include:
+          - os: macos-latest
+            python-version: '3.8'
+            just-version: '1.17.0'
+          - os: 'ubuntu-20.04'
+            python-version: '3.7'
+            just-version: '1.17.0'
+          - os: ubuntu-latest
+            python-version: '3.8'
+            just-version: '1.13.0'
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install Python dependencies
+        run: |
+          python3 -m pip install .[test]
+      - name: Install Just on macOS
+        if: ${{ startsWith(matrix.os, 'macos') }}
+        run: |
+          curl -L "https://github.com/casey/just/releases/download/${{ matrix.just-version }}/just-${{ matrix.just-version }}-x86_64-apple-darwin.tar.gz" \
+            | sudo tar -C /usr/local/bin -xzv just
+      - name: Install Just on Linux
+        if: ${{ startsWith(matrix.os, 'ubuntu') }}
+        run: |
+          curl -L "https://github.com/casey/just/releases/download/${{ matrix.just-version }}/just-${{ matrix.just-version }}-x86_64-unknown-linux-musl.tar.gz" \
+            | sudo tar -C /usr/local/bin -xzv just
+      - name: Run tests
+        run: |
+          just test

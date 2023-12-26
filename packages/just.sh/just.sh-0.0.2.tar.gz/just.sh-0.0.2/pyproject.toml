@@ -1,0 +1,130 @@
+########################################################################################
+# Build system configuration                                                           #
+########################################################################################
+
+[build-system]
+# Latest versions that support Python 3.7
+requires = ["setuptools >= 61", "setuptools_scm >= 7"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.package-dir]
+just_sh = "just_sh"
+pyjust = "just_sh"
+
+[tool.setuptools.packages]
+find = {}
+
+[tool.setuptools.package-data]
+"*" = ["py.typed"]
+
+[tool.setuptools_scm]
+
+
+########################################################################################
+# Package metadata                                                                     #
+########################################################################################
+
+[project]
+name = "just.sh"
+authors = [
+    { name = "Jacob Strieb", email = "jstrieb@alumni.cmu.edu" },
+]
+description = "Compile Justfiles to portable shell scripts"
+readme = "README.md"
+license = { file = "LICENSE" }
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Code Generators",
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+]
+keywords = [ "just", "justfile", "just.sh", "shell", "compiler", "POSIX", "pyjust" ]
+# Realistically, all of the code except for setuptools should be compatible with
+# Python 3.6. So it's probably possible to run this code on Python 3.6 if the
+# code is installed manually (without using this pyproject.toml) or run directly
+# from cloned source.
+requires-python = ">=3.7"
+# May be compatible with older versions
+dependencies = [ 
+    "parsy >= 2.1",
+    "importlib_metadata >= 1.4 ; python_version < '3.8'"
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+# May be compatible with older versions. Many of the versions below are the
+# latest ones that support Python 3.7.
+test = [
+    # Linting
+    "black >= 23.3.0",
+    "mypy >= 1.4.1",
+    "ruff >= 0.1.8",
+    # Testing
+    "pytest >= 7.4.3",
+    "coverage[toml] >= 6.5.0",
+    "pytest-cov >= 4.1.0",
+    "pytest-xdist >= 3.5.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/jstrieb/just.sh"
+Repository = "https://github.com/jstrieb/just.sh.git"
+Issues = "https://github.com/jstrieb/just.sh/issues"
+
+[project.scripts]
+"just.sh" = "just_sh.convert:cli_entrypoint"
+just-sh = "just_sh.convert:cli_entrypoint"
+just_sh = "just_sh.convert:cli_entrypoint"
+pyjust = "just_sh.convert:cli_entrypoint"
+
+
+########################################################################################
+# Tool configuration                                                                   #
+########################################################################################
+
+[tool.ruff.lint]
+select = ["E", "F", "UP", "B", "SIM", "I"]
+ignore = ["SIM108", "E501"]
+
+[tool.mypy]
+strict = true
+
+[[tool.mypy.overrides]]
+module = "parsy"
+ignore_missing_imports = true
+
+[tool.coverage.run]
+relative_files = true
+omit = [
+    "__*__.py",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    # Have to re-enable the standard pragma
+    "pragma: no cover",
+
+    # Don't complain if tests don't hit defensive assertion code
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "raise RuntimeError",
+    "raise ValueError",
+
+    "except ImportError",
+    "except PackageNotFoundError",
+
+    # Don't complain if non-runnable code isn't run
+    "if __name__ == .__main__.:",
+    "cli_entrypoint\\(",
+    # "main\(",
+
+    # Ignore unused conditionals
+    "pass",
+]

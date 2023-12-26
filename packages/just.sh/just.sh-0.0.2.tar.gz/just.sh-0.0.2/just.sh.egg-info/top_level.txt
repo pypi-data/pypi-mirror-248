@@ -1,0 +1,4 @@
+dist
+docs
+just_sh
+test

@@ -1,0 +1,5 @@
+[console_scripts]
+just-sh = just_sh.convert:cli_entrypoint
+just.sh = just_sh.convert:cli_entrypoint
+just_sh = just_sh.convert:cli_entrypoint
+pyjust = just_sh.convert:cli_entrypoint

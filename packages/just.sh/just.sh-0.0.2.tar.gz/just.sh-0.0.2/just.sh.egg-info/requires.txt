@@ -1,0 +1,13 @@
+parsy>=2.1
+
+[:python_version < "3.8"]
+importlib_metadata>=1.4
+
+[test]
+black>=23.3.0
+mypy>=1.4.1
+ruff>=0.1.8
+pytest>=7.4.3
+coverage[toml]>=6.5.0
+pytest-cov>=4.1.0
+pytest-xdist>=3.5.0
