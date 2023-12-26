@@ -1,0 +1,3 @@
+[console_scripts]
+_test_chicken_coop = test_chicken_coop:invoke_tests
+chicken_coop = chicken_coop:cli
