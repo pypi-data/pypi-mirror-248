@@ -1,0 +1,22 @@
+[console_scripts]
+adiatt = amtFMC.debug_funct:adi_txAtt
+adidds = amtFMC.debug_funct:set_dds
+adifreq = amtFMC.debug_funct:adi_freq
+adigain = amtFMC.debug_funct:adi_rxGain
+adiport = amtFMC.debug_funct:set_port
+adireg = amtFMC.debug_funct:radi_reg
+fv = amtFMC.FMC_funct:amtFmcRfFv
+reattr = amtFMC.debug_funct:read_attr
+redeattr = amtFMC.debug_funct:debug_attr
+ref = amtFMC.FMC_funct:amtFmcRfRef
+refpath = amtFMC.debug_funct:sel_ref
+reset = amtFMC.FMC_funct:amtFmcRfReset
+rxconf = amtFMC.FMC_funct:amtFmcRxConfig
+rxread = amtFMC.FMC_funct:amtFmcRfRxRead
+tuatt = amtFMC.debug_funct:tuner_rxAtt
+tufreq = amtFMC.debug_funct:tuner_freq
+tupath = amtFMC.debug_funct:path
+txconf = amtFMC.FMC_funct:amtFmcTxConfig
+txstart = amtFMC.FMC_funct:amtFmcRfTxStart
+txstop = amtFMC.FMC_funct:amtFmcRfTxStop
+zed = amtFMC.debug_funct:zed
