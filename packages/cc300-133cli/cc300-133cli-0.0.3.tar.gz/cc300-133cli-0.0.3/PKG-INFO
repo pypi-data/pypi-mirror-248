@@ -1,0 +1,256 @@
+Metadata-Version: 2.1
+Name: cc300-133cli
+Version: 0.0.3
+Summary: A small example package
+Author-email: Example Author <author@example.com>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Python Basics
+
+# Installing on MacOs [Pyenv] (Preferred)
+
+1. Install ``pyenv`` with brew
+```commandline
+brew install pyenv
+```
+2. To list all python versions and distributions available,
+```commandline
+pyenv install -l
+```
+3. To install a version, select from one of them and run, (here selecting `3.11.7` official python release version)
+```commandline
+pyenv install 3.11.7
+```
+4. And to use `3.11.7` version from `pyenv`, run,
+```commandline
+pyenv global 3.11.7
+```
+
+To select this env by default, run,
+```commandline
+pyenv init - | source
+```
+
+# Installing on MacOs [Brew]
+```commandline
+brew install python@3.11
+```
+
+# Project Initialization
+
+To Initialize a project, create a directory
+```commandline
+mkdir test
+cd test
+```
+and create an isolated environment for it,
+```commandline
+python -m venv env
+```
+this will create a folder named ```env``` in the current directory,
+and the environment can be activated using,
+```commandline
+. env/bin/activate # for bash shell
+```
+Now dependencies can be installed in this namespace instead of installing globally, for example,
+```commandline
+pip install numpy
+```
+# Execution
+Python Files can be interpreted with,
+```commandline
+python main.py  
+# python <filename.py>
+```
+
+# Python Package Repositories
+Python packages and third party libraries can be found at, https://pypi.org/
+
+# Packaging
+wheel(`.whl`) is now the default format.
+to package a project, run
+```commandline
+pip install build twine
+```
+to run packaging, create a `pyproject.toml` config file,
+```commandline
+python -m build
+```
+and to upload it to pypi, install twine,
+```commandline
+python -m twine
+```
+and run,
+```commandline
+python -m twine upload dist/*
+```
+
+# requirement.txt file
+Sometimes, to simplify package dependencies during production builds, a `requirements.txt` will be added to the repo for specifying dependencies,
+it can be created from an env using,
+```commandline
+pip freeze > requirements.txt
+```
+
+# Testing
+```commandline
+pip install pytest
+```
+and you can write test cases as simple as,
+```python
+# content of test_sample.py
+def inc(x):
+    return x + 1
+
+
+def test_answer():
+    assert inc(3) == 5
+```
+and can be executed by running, 
+```commandline
+pytest
+```
+in the working directory. \
+This will execute all the methods starting with `test_` in the source code \
+and to mock a function,
+```python
+def getssh():
+    """Simple function to return expanded homedir ssh path."""
+    return Path.home() / ".ssh"
+
+def test_getssh(monkeypatch):
+    def mockreturn():
+        return Path("/abc")
+
+    monkeypatch.setattr(Path, "home", mockreturn)
+    x = getssh()
+    assert x == Path("/abc/.ssh")
+```
+Docs: https://docs.pytest.org/en/7.4.x/how-to/index.html
+
+# Logging
+python provides the `logging` module in the standard library for logging.
+```python
+import logging
+logging.warning('Watch out!')  # will print a message to the console
+logging.info('I told you so')  # will not print anything
+```
+the above code will use the root logger, to use a logger with custom name,
+```python
+log1 = logging.getLogger("LOS")
+log1.setLevel(logging.INFO)
+```
+Here `CLOS` is the name of the logger and level is INFO, and can be called using,
+```python
+log1.info(dec_collector.collect(1))
+log1.info("Execution Stopped")
+```
+Docs: https://docs.python.org/3/howto/logging.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[//]: # ()
+[//]: # ()
+[//]: # ( )
+[//]: # (# Abstract Base Classes)
+
+[//]: # (A way to define Interfaces in Python.)
+
+[//]: # (```python)
+
+[//]: # (from abc import ABC)
+
+[//]: # (from abc import abstractmethod)
+
+[//]: # ()
+[//]: # ()
+[//]: # (class Collector&#40;ABC&#41;:)
+
+[//]: # (    @abstractmethod)
+
+[//]: # (    def collect&#40;self, context&#41;:)
+
+[//]: # (        pass)
+
+[//]: # ()
+[//]: # (```)
+
+[//]: # (# Threading)
+
+[//]: # (Shared Across Threads&#40;Green Threads&#41;)
+
+[//]: # (GIL Locks the Interpreter, so threads depending on single resource will mostly be serialized.)
+
+[//]: # (```python)
+
+[//]: # (from threading import Thread)
+
+[//]: # (tk = Thread&#40;target=min, args=&#40;1, 2&#41;&#41;)
+
+[//]: # (tk.start&#40;&#41;)
+
+[//]: # (```)
+
+[//]: # (# Multiprocessing)
+
+[//]: # (Spawns Multiple Python Processes thereby using all CPU Cores)
+
+[//]: # (```python)
+
+[//]: # (from multiprocessing import Process)
+
+[//]: # (p = Process&#40;target=min, args=&#40;1, 2&#41;&#41;)
+
+[//]: # (p.start&#40;&#41;)
+
+[//]: # (```)
+
+[//]: # (# Async)
+
+[//]: # (Asynchronous Executions restricted to a single thread only relying on context switching.)
+
+[//]: # (```python)
+
+[//]: # (from asyncio import Task)
+
+[//]: # (import asyncio)
+
+[//]: # ()
+[//]: # (async def async_min&#40;a, b&#41;:)
+
+[//]: # (    result = min&#40;a, b&#41;)
+
+[//]: # (    return result)
+
+[//]: # ()
+[//]: # (ts = Task&#40;async_min&#40;10, 20&#41;&#41;)
+
+[//]: # (print&#40;asyncio.get_event_loop&#40;&#41;.run_until_complete&#40;ts&#41;&#41;)
+
+[//]: # (```)
+
+[//]: # (for Executors: https://docs.python.org/3.11/library/concurrent.futures.html)

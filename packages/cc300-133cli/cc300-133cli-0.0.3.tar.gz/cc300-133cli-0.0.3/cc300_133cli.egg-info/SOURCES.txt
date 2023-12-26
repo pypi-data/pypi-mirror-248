@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+cc300_133cli.egg-info/PKG-INFO
+cc300_133cli.egg-info/SOURCES.txt
+cc300_133cli.egg-info/dependency_links.txt
+cc300_133cli.egg-info/top_level.txt
+collectors/base.py
+collectors/aws/s3.py
