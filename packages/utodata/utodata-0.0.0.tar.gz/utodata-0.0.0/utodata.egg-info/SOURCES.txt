@@ -1,0 +1,6 @@
+setup.py
+utodata.egg-info/PKG-INFO
+utodata.egg-info/SOURCES.txt
+utodata.egg-info/dependency_links.txt
+utodata.egg-info/requires.txt
+utodata.egg-info/top_level.txt
