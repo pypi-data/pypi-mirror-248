@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+savarin/__init__.py
+savarin/__main__.py
+savarin/config.py
+savarin/workshops.py
+savarin.egg-info/PKG-INFO
+savarin.egg-info/SOURCES.txt
+savarin.egg-info/dependency_links.txt
+savarin.egg-info/requires.txt
+savarin.egg-info/top_level.txt
