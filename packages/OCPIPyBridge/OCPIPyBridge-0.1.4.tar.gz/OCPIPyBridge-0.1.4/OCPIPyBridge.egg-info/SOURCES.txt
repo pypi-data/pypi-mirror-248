@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+OCPIPyBridge.egg-info/PKG-INFO
+OCPIPyBridge.egg-info/SOURCES.txt
+OCPIPyBridge.egg-info/dependency_links.txt
+OCPIPyBridge.egg-info/requires.txt
+OCPIPyBridge.egg-info/top_level.txt
