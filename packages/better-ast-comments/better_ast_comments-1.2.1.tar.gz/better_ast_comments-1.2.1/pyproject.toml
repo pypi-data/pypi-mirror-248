@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "better-ast-comments"
+packages = [{include="ast_comments"}]
+version = "1.2.1"
+description = ""
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/zmievsa/better-ast-comments"
+homepage = "https://github.com/zmievsa/better-ast-comments"
+authors = ["Dmitry Makarov <dmtern0vnik@gmail.com>", "Stanislav Zmiev <zmievsa@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.2"
+black = "^22.6.0"
+isort = "^5.10.1"
+flake8 = "^5.0.3"
+flake8-print = "^5.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
