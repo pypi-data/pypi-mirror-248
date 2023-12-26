@@ -1,0 +1,13 @@
+carbgremover/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+carbgremover/external_model.py,sha256=sRgFFdGH3pK0myDchf0eI6NoZhAODGPvlmgGpZfzTnM,4167
+carbgremover/internal_model.py,sha256=VldLE7UYr5Z7fK5kLcv_zW0r6u6ByMtZEvSHn0CtDHg,2913
+carbgremover/images/car1.jpg,sha256=Sm0OYtJE-Ih4P0xPwuOCR0Cprlp8ef_SCkQJ0BQVy0s,257088
+carbgremover/images/car2.jpg,sha256=b4341dQlLV5_HVYv2tqFiZWnzCfLaAr0GZjiM1xFaxg,105359
+carbgremover/images/rescar1.jpg,sha256=eAC1mXIr8RyBapKHvMeeElyN1rveqP07bwnUonLkEoA,106182
+carbgremover/images/rescar2.jpg,sha256=rGc_Ajl8KqRWspEy38QPvrXIAtOhuY4TG9EwgwIZFc0,111455
+carbgremover/pretrained_models/best_model_weights.h5,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+carbgremover/pretrained_models/sam_vit_h_4b8939.pth,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+SegmentCar-0.0.6.dist-info/METADATA,sha256=rNqr_YULN3Y-9zDXGsfSwXJolGmAcBQXqQ-1Q4ymis0,2185
+SegmentCar-0.0.6.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+SegmentCar-0.0.6.dist-info/top_level.txt,sha256=PouqHDMzsp17jHc_bEUjiI6BKg2P5qyRLCwbXpFfGOA,13
+SegmentCar-0.0.6.dist-info/RECORD,,
