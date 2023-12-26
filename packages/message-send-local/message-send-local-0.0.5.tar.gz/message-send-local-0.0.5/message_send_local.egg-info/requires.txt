@@ -1,0 +1,5 @@
+pytest>=7.4.0
+user-context-remote>=0.0.17
+python-sdk-local>=0.0.27
+messages-local
+database-mysql-local
