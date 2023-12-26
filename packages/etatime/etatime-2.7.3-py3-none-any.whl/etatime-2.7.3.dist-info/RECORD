@@ -1,0 +1,9 @@
+etatime/__init__.py,sha256=G09Iq7LpCgf-MZc_YfzJvVMtkAncHK54WRIkf4ZjrPY,174
+etatime/completion.py,sha256=ChCJeCtsAeXGJTJ7RP2JSwOj0RWjSPGmD7VHb36NctI,1346
+etatime/constants.py,sha256=nbkpllErEiULMWfxjoR6-51DVir7IiCXgyTfen7NHvs,805
+etatime/eta.py,sha256=JB04dhE-bYMgviujo4YAX9C7hLZLnnyNzIsPTeh9vHw,17954
+etatime/time.py,sha256=aP9y21bieiO3IKXcrgtr0ebKxs6l35Tp45coYQ7_VAs,8457
+etatime-2.7.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+etatime-2.7.3.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+etatime-2.7.3.dist-info/METADATA,sha256=u4Cm8twQRrQpHs1O3wlEecRc3i5ci6NmL7TDHWeHP60,7556
+etatime-2.7.3.dist-info/RECORD,,
