@@ -1,0 +1,12 @@
+ksef_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ksef_utils/config.py,sha256=Jio0GDI1tWpCuyDPAjkZ796Oe1LJ1ay7TxEiDYIi39o,477
+ksef_utils/server.py,sha256=5riSLmLflww-FCTfrpog6IadjlJqx6Bwr8scQT8L1tE,8715
+ksef_utils/utils.py,sha256=AYAVRxrmr1eYgvgrlylor1TxaoAeGVQgF08yjpVukMI,1397
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=PbYyOEPSnoyZ_No6NgVwGlR2ji3LL5JDDctHdmXjYcg,946
+tests/test_ksef.py,sha256=fKzHjZ-LZL9ANmcvvRk8rCqhHCyz3cV8yY2x_4ASxZU,3248
+ksef_utils-1.0.dist-info/LICENSE,sha256=vmoUBs8APE3r7gE9RiADUeDprjVn9sO0y6s_YLYGuN0,53
+ksef_utils-1.0.dist-info/METADATA,sha256=MC8OTD1ZDlEonq0JjJgIpQWG59qMFyGKm1wGTGvFU7Q,1669
+ksef_utils-1.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+ksef_utils-1.0.dist-info/top_level.txt,sha256=CoUvzrY43GLRArnnreFJPlNFI2UnCOC9zG_El1wxC_s,17
+ksef_utils-1.0.dist-info/RECORD,,
