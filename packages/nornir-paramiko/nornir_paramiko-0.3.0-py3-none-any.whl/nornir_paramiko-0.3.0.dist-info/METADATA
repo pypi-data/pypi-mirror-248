@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: nornir_paramiko
+Version: 0.3.0
+Summary: 
+Author: Devon Mar
+Author-email: devonm@mdmm.ca
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: nornir (>=3.0.0,<4.0.0)
+Requires-Dist: paramiko (>=2.7,<3.0)
+Requires-Dist: scp (>=0.13.3,<0.15.0)
+Description-Content-Type: text/markdown
+
+# nornir_paramiko
+
+Paramiko connection plugin and tasks for nornir.
+
+Based on the paramiko connection and tasks from nornir 2.5.0
+
