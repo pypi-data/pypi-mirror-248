@@ -1,0 +1,16 @@
+liboxide/__init__.py,sha256=zhnK7PvCQETJdJtOmJrDxYGtUF1w9JIrmdROKe27L0o,524
+liboxide/_apps.py,sha256=weVZEsENadftWMwmf1bRk47VXnTIrSYCw16akEG6MhU,2651
+liboxide/_base.py,sha256=AyT3BNCbXWz8vbg00IodXKAdG3FA-NokZgA9IV476bE,1650
+liboxide/_errors.py,sha256=T4XmcBrML6XgWBY1eSiqsIXV-Rnnd5w-5T4fOTy_Oqg,175
+liboxide/_notification.py,sha256=u2gaQ4f7FRPEeSLYzQZMub4nVmfsiGt4E_-630BEv0M,1630
+liboxide/_power.py,sha256=d1Q1Ws8m6rGdz6e4Q4Fj6XkkQgxtx8qR_VyivGkOol8,492
+liboxide/_screen.py,sha256=rooxg2lqRxB3tnWsJEjfcqqWbc3oqXP-lsi6pMbos4U,939
+liboxide/_system.py,sha256=NhH2iueRytvhHRWuyyVHOfJljG3IV3ZFK7OuByR4-qk,766
+liboxide/_util.py,sha256=xSYwvP6WQY8cwwpOe3vgdPA1yjX_H8DMrviG8cNV8bI,3116
+liboxide/_wifi.py,sha256=6S5JBXndeCu04tVqxr3ivxYjplrPSNpyBKsecMyKs-s,2735
+liboxide/_xdgsettings.py,sha256=S7S9fL53403kTSzKv5ni7PLgRhZ0m4_2TENVLVto_kI,2557
+liboxide-0.1.0.dist-info/LICENSE,sha256=-9T6z0w3w1FtWGMIcni4q9eKicrxxqmngoZzcVurD6U,1062
+liboxide-0.1.0.dist-info/METADATA,sha256=ncxZ7LQFGqvdAuq3aIHqRm0oBAlGl5f9OOmZcTLeBtw,1223
+liboxide-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+liboxide-0.1.0.dist-info/top_level.txt,sha256=_o6B3j8jGMfoSy0ZDMzfSjtOh4xasom9ECOHYpbcpHM,9
+liboxide-0.1.0.dist-info/RECORD,,
