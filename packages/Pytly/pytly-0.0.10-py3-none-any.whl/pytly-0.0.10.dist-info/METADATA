@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: Pytly
+Version: 0.0.10
+Summary: A simple Python library for creating and manipulating T.LY links.
+Project-URL: Homepage, https://github.com/lucas-a-meyer/pytly
+Project-URL: Issues, https://github.com/lucas-a-meyer/pytly/issues
+Author-email: "Lucas A. Meyer" <lucas@meyerperin.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: requests>=2.31.0
+Description-Content-Type: text/markdown
+
+# Pytly
+A python client for the T.LY API
+
+
