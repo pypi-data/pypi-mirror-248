@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: sphinxcontrib-cheeseshop
+Version: 0.3
+Summary: Sphinx extension for PyPI
+Author: Adam Turner, Richard Jones
+Author-email: Georg Brandl <georg@python.org>
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Framework :: Sphinx
+Classifier: Framework :: Sphinx :: Extension
+Classifier: Topic :: Documentation
+Classifier: Topic :: Documentation :: Sphinx
+Requires-Dist: Sphinx>=4.0
+Project-URL: Repository, https://github.com/sphinx-contrib/cheeseshop/
+
+================================
+The Cheese Shop Sphinx extension
+================================
+
+   Ah! We do have some Camembert, sir...
+
+This extension adds directives for easy linking to Cheese Shop (Python Package
+Index) packages.  It requires Sphinx 4.0.
+
+   It's a bit runny, sir...
+
+It supports a directive and a role, as well as a new config value.
+
+   Well, as a matter of fact it's very runny, sir...
+
+The ``pypi-release`` directive adds an HTML-only output block that automatically
+fetches the download links for the latest release of the given package and
+displays them as a list.  For example, ::
+
+   .. pypi-release:: Sphinx
+      :prefix: Download
+      :class: sidebar
+
+will display "Download:" and a list of download links (eggs and the source
+distribution) for the latest Sphinx release.  The "sidebar" class makes the
+resulting ``<div>`` appear like a reStructuredText sidebar.  Using "prefix", you
+can select what text precedes the list.
+
+   I think it's runnier than you like it, sir...
+
+The ``pypi`` role links to a package.  Use it in one of these forms::
+
+   :pypi:`Sphinx`  -- link to latest release
+   :pypi:`the Sphinx package <Sphinx>`  -- dito, but explicit title given
+   :pypi:`Sphinx (0.6)`  -- link to specific release
+   :pypi:`the Sphinx package <Sphinx (0.6)>`  -- dito, with explicit title
+
+This extension also adds a ``cheeseshop_url`` config value, which defaults to
+``'http://pypi.org/project'`` and is used to build URLs to the Cheese Shop.
+
+Have fun!
+
+   Oh... The cat's eaten it.
+
