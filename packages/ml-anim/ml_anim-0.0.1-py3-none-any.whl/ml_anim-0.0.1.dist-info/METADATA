@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: ml_anim
+Version: 0.0.1
+Summary: A simple library for building ML animations with Manim
+Author: Heidar-An
+Project-URL: Repository, https://github.com/Heidar-An/MLAnim
+Keywords: manim,ml,ml anim,ml_anim,MLAnim
+Description-Content-Type: text/markdown
+Requires-Dist: manim >=0.18.0
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+
