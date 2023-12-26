@@ -1,0 +1,3 @@
+[console_scripts]
+searchbibleai = searchbibleai.searchbibleai:main
+searchbibleaiconvertor = searchbibleai.searchbibleaiconvertor:main
