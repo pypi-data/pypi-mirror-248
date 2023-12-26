@@ -1,0 +1,7 @@
+README.md
+setup.py
+lix/__init__.py
+lix.egg-info/PKG-INFO
+lix.egg-info/SOURCES.txt
+lix.egg-info/dependency_links.txt
+lix.egg-info/top_level.txt
