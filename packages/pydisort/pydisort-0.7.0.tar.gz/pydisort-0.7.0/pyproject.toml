@@ -1,0 +1,10 @@
+[build-system]
+requires = ["setuptools", "wheel", "cmake", "pybind11"]
+build-backend = "setuptools.build_meta"
+
+[tool.cibuildwheel]
+before-build = "pip install -r requirements.txt"
+
+# Install system library
+[tool.cibuildwheel.linux]
+manylinux-x86_64-image = "manylinux2014"
