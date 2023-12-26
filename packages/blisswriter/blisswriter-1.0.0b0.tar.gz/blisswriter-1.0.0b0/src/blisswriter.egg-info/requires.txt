@@ -1,0 +1,15 @@
+blissdata>=1
+pyicat-plus
+
+[dev]
+blissdata[tango]
+pytest>=7
+black>=22
+flake8>=4
+
+[tango]
+blissdata[tango]
+
+[test]
+blissdata[tango]
+pytest>=7
