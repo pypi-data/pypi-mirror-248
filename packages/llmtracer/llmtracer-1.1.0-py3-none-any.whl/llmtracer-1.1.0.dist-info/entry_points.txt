@@ -1,0 +1,3 @@
+[console_scripts]
+llmtraceviewer=llmtracer.tools.trace_viewer.pcconfig:main
+
