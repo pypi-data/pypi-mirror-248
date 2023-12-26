@@ -1,0 +1,5 @@
+setup.py
+giorgiuertisa.egg-info/PKG-INFO
+giorgiuertisa.egg-info/SOURCES.txt
+giorgiuertisa.egg-info/dependency_links.txt
+giorgiuertisa.egg-info/top_level.txt
