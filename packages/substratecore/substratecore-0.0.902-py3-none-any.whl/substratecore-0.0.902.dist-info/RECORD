@@ -1,0 +1,10 @@
+substratecore/__init__.py,sha256=nZw5E6Ipo-kTLrCibYocjkfn4Mw093qMS-kC7KgmoQU,450
+substratecore/_version.py,sha256=4LLIx4Lj9o5D8QuZThF1xZvGlF8WFOlpXansHsJWa6k,26
+substratecore/clip_versions.py,sha256=HCwO0efvmuPdkmOth_hsRG2N18onvLdNdJpgBDi3xg4,5146
+substratecore/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+substratecore/pydantic_models.py,sha256=sgFy3knwqxfkNycx-ORFYR1WhT_ZU4WTNn9uyYRaIaU,7607
+substratecore/typeddict_models.py,sha256=UBcelKz7EZV6jGzvwZYsrYK72LsmIhrkTt3vb6D0Nkw,6384
+substratecore/versions.py,sha256=mIAT23wVJM90i5Zt91UdoDh20bqu4Dk0-UPsAkCSQw8,847
+substratecore-0.0.902.dist-info/METADATA,sha256=3aDD707x9ZqLBRnGePEs61e21S4ESM089LlhEXeR0ps,395
+substratecore-0.0.902.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+substratecore-0.0.902.dist-info/RECORD,,
