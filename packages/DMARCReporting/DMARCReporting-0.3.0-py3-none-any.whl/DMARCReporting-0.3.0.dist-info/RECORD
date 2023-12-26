@@ -1,0 +1,15 @@
+DMARCReporting/__init__.py,sha256=Cq_MSOQq382JsnYDPK6RXwPJzt1sntoFQwLE9bA97QI,676
+DMARCReporting/__main__.py,sha256=584UKW0jblvb1sxsujR7tMeBEuBYRypv5z5GUFVm2Fg,59
+DMARCReporting/cli.py,sha256=EV-ixsP78KxBbah6wPtb96I0a0g1VA_QDDih6d8wUHA,891
+DMARCReporting/constants.py,sha256=N2WbgQsq-BI1-0pi__oCRBcXdMkU6lgkPACe8BAowSw,250
+DMARCReporting/decompressor.py,sha256=h8fxEqmRuNs7a6XdGkT5pu4w1B5XqEY3WdINZQt_MNI,1097
+DMARCReporting/dns.py,sha256=5VcFdUL_V5fYeApOngtV-m-rlgm48b8OJZB8-4bJLug,235
+DMARCReporting/filelister.py,sha256=xB6EYENiISZgBDIw9ITMDcQi_sJWXHmNnQ86PSSTI7k,439
+DMARCReporting/parser.py,sha256=A_oowjl3Nfsh0gy3xLaO0OdmvMc0eomK94cnXl_4vtI,3814
+DMARCReporting/renderer.py,sha256=sUhP-CurKowHmsYbgYnv1HZEJLqSPzSFZ4-oc24n7IM,435
+DMARCReporting-0.3.0.dist-info/LICENSE,sha256=rX5s3fLsWwAb6D2_uyjzMpory3hQozxI_8FJZ0384QE,1069
+DMARCReporting-0.3.0.dist-info/METADATA,sha256=bgYNjsGk1cRCMHepCuO-Fzgsu8hzl9lfbh0LLVyI5s4,3320
+DMARCReporting-0.3.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+DMARCReporting-0.3.0.dist-info/entry_points.txt,sha256=CASBIe-uf8ZdwrhsQlJd1vad8i4aDZZ0YZ8qisjQYO0,55
+DMARCReporting-0.3.0.dist-info/top_level.txt,sha256=N7K5VPeZ18MTWGNnp6H9W7oPp6mqgSzRfNXito-QVlc,15
+DMARCReporting-0.3.0.dist-info/RECORD,,
