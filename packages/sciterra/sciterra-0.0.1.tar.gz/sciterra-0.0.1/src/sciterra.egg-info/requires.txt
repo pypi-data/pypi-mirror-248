@@ -1,0 +1,12 @@
+ads
+bibtexparser
+gensim
+numpy
+pandas
+plotnine
+scikit-learn
+sentence-transformers
+semanticscholar
+spacy
+torch
+transformers
