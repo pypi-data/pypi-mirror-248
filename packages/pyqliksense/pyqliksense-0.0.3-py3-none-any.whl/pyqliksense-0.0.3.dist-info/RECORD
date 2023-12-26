@@ -1,0 +1,17 @@
+pyqliksense/QlikApplication.py,sha256=feY_6MIXGXS4eduiGb2i-r5XThwUxTLyDGnrdQD04DM,1187
+pyqliksense/QlikSenseInstance.py,sha256=EXsYZ4E8pY1ilmwJDkOkN3btE_B8pcNZ8dyDeARIsIw,4845
+pyqliksense/__init__.py,sha256=ND7ExxYrEKh2UFWpgDHeukWWezPsgRVmZ1OFE-9NIt4,80
+pyqliksense/connections/QlikHubApi.py,sha256=h0IvBSPhG-aKXEQ_AXpnGg3vj0_cNxg1nSh5pAb5JEk,547
+pyqliksense/connections/QlikRepository.py,sha256=clhP2aTH1Auu91x-OvPzwvjS35WW8jwANWFXX6tlIwA,559
+pyqliksense/connections/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyqliksense/connections/engine/QlikEngine.py,sha256=qb4mlGcbevx4B8v0TMCyv9dn66TF2nsbh2UQ8M1u9Mw,3384
+pyqliksense/connections/engine/QlikEngineMessages.py,sha256=Lf46I_8uCiN3yH1HVyNRrwb1rzAC4nkwHU_DDCzww1w,1209
+pyqliksense/connections/engine/QlikEngineSession.py,sha256=q_xnp_jG1BOLUjeQt-7W352dSqOE0XcgF6imTJPCcmo,880
+pyqliksense/connections/engine/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyqliksense/objects/QlikHyperCube.py,sha256=MbeK-aZAGLom4o72QlAwFZTt_GZEkHb39mR87PEZ28I,663
+pyqliksense/objects/__init__.py,sha256=uOOQvw8v7gVn6udur7P5H5YeTkd8GMf5Xl9FhYTU1JI,45
+pyqliksense-0.0.3.dist-info/LICENSE,sha256=0UQjUp7cYCK0125GhsfBGyFo_yhyu_Y3vdcqbCxK5fs,1092
+pyqliksense-0.0.3.dist-info/METADATA,sha256=f4btiKoAbS3MkwA6_dmrZgFCrBD-VvRcoR7jgkL8tI0,2318
+pyqliksense-0.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pyqliksense-0.0.3.dist-info/top_level.txt,sha256=t-xvyrb9zbPpuqVBElAVRo9Ipg2rcbwCEnSUcaMBqQc,12
+pyqliksense-0.0.3.dist-info/RECORD,,
