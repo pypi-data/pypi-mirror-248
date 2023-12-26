@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: SPLADERunner
+Version: 0.0.1
+Summary: Ultralight and Fast wrapper for the unofficial implementation of SPLADEv2 models for your search & retrieval pipelines. Models and Library created by Prithivi Da, For PRs and Collaboration to checkout the readme.
+Home-page: https://github.com/PrithivirajDamodaran/SPLADERunner
+Author: Prithivi Da
+Author-email: 
+License: CC-BY-SA-4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# SPLADERunner
