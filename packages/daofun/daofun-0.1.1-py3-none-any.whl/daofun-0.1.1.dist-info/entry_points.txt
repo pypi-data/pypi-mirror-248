@@ -1,0 +1,2 @@
+[console_scripts]
+daofun = daofun.DAOfun.daofun:main
