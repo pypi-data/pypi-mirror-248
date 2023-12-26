@@ -1,0 +1,6 @@
+LICENSE.txt
+setup.py
+datorogava.egg-info/PKG-INFO
+datorogava.egg-info/SOURCES.txt
+datorogava.egg-info/dependency_links.txt
+datorogava.egg-info/top_level.txt
