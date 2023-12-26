@@ -1,0 +1,9 @@
+README.md
+setup.py
+EasyMake/__init__.py
+EasyMake/main.py
+easymake.egg-info/PKG-INFO
+easymake.egg-info/SOURCES.txt
+easymake.egg-info/dependency_links.txt
+easymake.egg-info/entry_points.txt
+easymake.egg-info/top_level.txt
