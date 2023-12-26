@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: qualesim-qcis
+Version: 0.0.1
+Summary: QuaLeSim frontend for QCIS.
+Home-page: https://gitee.com/hpcl_quanta/dqcsim-qcis.git
+Author: Liu
+Author-email: 3081545786@qq.com
+License: GPLv3
+Keywords: qualesim qcis
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Topic :: Scientific/Engineering
+Description-Content-Type: text/markdown
