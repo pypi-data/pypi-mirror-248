@@ -1,0 +1,6 @@
+pandas
+matplotlib
+astropy
+aplpy
+IPython
+PySimpleGUI
