@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ray-py-tools
+Version: 0.0.5
+Summary: python tools
+Home-page: https://github.com/winstonsias/
+Author: winston
+Author-email: winstonsias@qq.com
+License: MIT
+Keywords: python tools
+Requires-Dist: requests>=2.31.0
+Requires-Dist: rich>=13.6.0
+Requires-Dist: emoji>=2.8.0
+Requires-Dist: retrying==1.3.3
