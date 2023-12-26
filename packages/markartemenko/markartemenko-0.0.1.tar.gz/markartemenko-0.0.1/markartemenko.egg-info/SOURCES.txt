@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+markartemenko.egg-info/PKG-INFO
+markartemenko.egg-info/SOURCES.txt
+markartemenko.egg-info/dependency_links.txt
+markartemenko.egg-info/top_level.txt
