@@ -1,0 +1,16 @@
+vodafone_station/__init__.py,sha256=79FB9wCiuB9DWqJHaF2ibDSS6mV5nx39H4Vcf4cgZBQ,261
+vodafone_station/__main__.py,sha256=ZzrrBI14nQV_ku90s9jNR3gmYGofjKC1wC4j4JxAlT8,84
+vodafone_station/abstract_vodafone_station.py,sha256=vkyXl5g3UoOrsLExLC7yE_QQ-PFdkVVdiSbyCJia2ww,4603
+vodafone_station/cli.py,sha256=dCLOvO5ri_LVcdWZsu1debJ6sNAWFmS3-yhBXA6A2pI,3864
+vodafone_station/config.py,sha256=7KiW_jzqzBcfR31a_wTmpluzOzIWf400ffNjVN_j7SU,2089
+vodafone_station/default_config.json,sha256=e9m-kX7OF9Sj0wz_W2WqvV-h3a2ivBUylkYuZmqIV6I,864
+vodafone_station/main.py,sha256=v6IPlJAMU7jVgYgUqpEOhuhkZ9dHQlKU0h1L9pRopi0,385
+vodafone_station/util.py,sha256=OOM7KJv9MbrrSJdSiDuzyjBrLv_jCUP9W0UsvJHMjtA,637
+vodafone_station/vodafone_station_abstract.py,sha256=vkyXl5g3UoOrsLExLC7yE_QQ-PFdkVVdiSbyCJia2ww,4603
+vodafone_station/vodafone_station_class.py,sha256=F0qzSpeR-W6UgkzWyz5Mn7FWz0bZdpwWIYYRlXS3Kno,1182
+vodafone_station-0.1.5.dist-info/LICENSE,sha256=N0P3pKtRMvfb64jmgJdlerg3TnS0a2QC776AzPsbZIg,35128
+vodafone_station-0.1.5.dist-info/METADATA,sha256=GnK_1_z5-ViVJEsfzC7teaLM-hAzDNsl6fwvmEsHZpc,448
+vodafone_station-0.1.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+vodafone_station-0.1.5.dist-info/entry_points.txt,sha256=Y3lMkrsfWgzCLrEo3fvCPxH0N4PVf6UqrSjKXijNf1M,63
+vodafone_station-0.1.5.dist-info/top_level.txt,sha256=Rhf5_D3Rqkw46p29miJvSwsQQs9phTxizGhr9MVaVEk,17
+vodafone_station-0.1.5.dist-info/RECORD,,

@@ -1,0 +1,2 @@
+[console_scripts]
+vodafone-station = vodafone_station.cli:main

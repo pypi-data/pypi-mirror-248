@@ -1,0 +1,22 @@
+{
+  "protocol": "http",
+  "host": "192.168.0.1",
+  "always_log_others_out": false,
+  "use_base_api": true,
+  "path_api": "/api/v1",
+  "api": {
+    "login": "/session/login",
+    "logout": "/session/logout",
+    "menu": "/session/menu",
+    "upnp": "/int_general",
+    "wanPing": "/int_general",
+    "hostAll": "/host/hostTbl,UMTSBackup,WPSEnable1,WPSEnable2,RadioEnable1,RadioEnable2,SSIDEnable1,SSIDEnable2,SSIDEnable3,operational,call_no,call_no2,LineStatus1,LineStatus2,DeviceMode,ScheduleEnable,dhcpLanTbl,dhcpV4LanTbl,lpspeed_1,lpspeed_2,lpspeed_3,lpspeed_4,AdditionalInfos1,AdditionalInfos2",
+    "phoneNumbers": "/pho_phone_numbers",
+    "callLog": "/phone_calllog/0,1,2/CallTbl",
+    "phoneSettings": "/pho_phone_numbers",
+    "firewall": "/firewall",
+    "hostExposure": "/int_ipv6host_exposure",
+    "status": "/sta_status",
+    "wifi": "/wifi/1,2"
+  }
+}

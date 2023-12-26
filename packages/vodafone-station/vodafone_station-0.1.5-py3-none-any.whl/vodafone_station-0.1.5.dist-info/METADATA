@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: vodafone-station
+Version: 0.1.5
+Summary: Package to interact with a vodafone station
+Author: normanre
+Author-email: python@normanre.de
+License: GNU GPL
+Classifier: Development Status :: 1 - Planning
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# vodafone-station
+
+Sample Description
