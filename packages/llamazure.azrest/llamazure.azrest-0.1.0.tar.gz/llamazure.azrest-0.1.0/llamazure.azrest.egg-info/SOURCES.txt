@@ -1,0 +1,16 @@
+MANIFEST.in
+backend_shim.py
+setup.py
+llamazure/__init__.py
+llamazure.azrest.egg-info/PKG-INFO
+llamazure.azrest.egg-info/SOURCES.txt
+llamazure.azrest.egg-info/dependency_links.txt
+llamazure.azrest.egg-info/entry_points.txt
+llamazure.azrest.egg-info/namespace_packages.txt
+llamazure.azrest.egg-info/requires.txt
+llamazure.azrest.egg-info/top_level.txt
+llamazure/azrest/__init__.py
+llamazure/azrest/azrest.py
+llamazure/azrest/models.py
+llamazure/azrest/openapi.py
+llamazure/azrest/openapi_info.py

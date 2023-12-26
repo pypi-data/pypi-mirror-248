@@ -1,0 +1,7 @@
+click~=8.0
+pydantic>=2.0
+requests<3,>=2
+types-requests
+
+[cli]
+click>8
