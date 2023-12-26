@@ -1,0 +1,18 @@
+[project]
+name = "Chaparral"
+version = "0.0.3"
+authors = [
+    { name="Edgar Andrade-Lotero", email="andradeed78@gmail.com" },
+    { name="Alejandro Andrade-Lotero", email="landrad78@gmail.com" },
+]
+description = "Recomienda rutas"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+"Programming Language :: Python :: 3",
+"Development Status :: 3 - Alpha",
+"Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/ardillabyte/chaparral"
