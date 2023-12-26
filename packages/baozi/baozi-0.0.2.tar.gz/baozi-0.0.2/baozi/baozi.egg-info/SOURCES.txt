@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+baozi/baozi.egg-info/PKG-INFO
+baozi/baozi.egg-info/SOURCES.txt
+baozi/baozi.egg-info/dependency_links.txt
+baozi/baozi.egg-info/top_level.txt
+tests/test_baozi.py
+tests/test_performance.py
