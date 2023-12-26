@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: message-flow
+Version: 0.2.0
+Summary: Asynchronous Communication Framework
+Author-Email: Valentin Vorobyev <voro6yov.valentin@gmail.com>
+License: Apache License 2.0
+Requires-Python: >=3.10
+Requires-Dist: pydantic>=2.5.2
+Description-Content-Type: text/markdown
