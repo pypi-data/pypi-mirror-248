@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+franka_valve.egg-info/PKG-INFO
+franka_valve.egg-info/SOURCES.txt
+franka_valve.egg-info/dependency_links.txt
+franka_valve.egg-info/requires.txt
+franka_valve.egg-info/top_level.txt
+py_src/assets/cpp_library/controller.so

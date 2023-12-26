@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: franka-valve
+Version: 0.0.0
+Summary: Rotate a valve using Franka Panda with Reinforcement Learning in mujoco simulation.
+Home-page: https://github.com/Yujin1007/franka_simulation
+Author: Yujin1007, twkang43
+Author-email: yujin1004k@gmail.com, twkang43@gmail.com
+License: MIT
+Keywords: reinforcement learning,RL,robotics,robot,franka,emika,panda
+Platform: linux
+Requires-Python: >=3.8
+License-File: LICENSE
