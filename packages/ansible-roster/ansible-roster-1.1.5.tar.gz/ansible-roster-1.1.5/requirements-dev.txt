@@ -1,0 +1,14 @@
+-r requirements.txt
+
+ansible
+antsibull-docs
+pylint
+pytest
+pytest-cov
+pytest-html
+pytest-order
+sphinx
+sphinx-rtd-theme
+sphinxcontrib-htmlhelp
+sphinxcontrib-napoleon
+tomli
