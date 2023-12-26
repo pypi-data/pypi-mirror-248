@@ -1,0 +1,12 @@
+llamazure/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+llamazure/rbac/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+llamazure/rbac/repository.py,sha256=bskXWP8AaLBLRMK4K44Iw-Fi8EcEcM7oHk-F7nT7Bn0,853
+llamazure/rbac/resources.py,sha256=xj0pGkva4ztFltIuFYMwxtqK1EM2W041m_Dcy_owYD8,2021
+llamazure/rbac/role_asn.py,sha256=eFlaLn5i6eYQDd6O0T4Uv09fuc_QAXH7MunIMzsI-0g,7395
+llamazure/rbac/role_def.py,sha256=Ymszur5Ac488hMlq6393R6dy-LeGShapRZ_uydWKlxQ,4877
+llamazure/rbac/roles.py,sha256=eHAPrrL3W90S89MncK3xkGU7qqD72t9BxW1WD5WKMZ0,9158
+llamazure.rbac-0.1.0.dist-info/METADATA,sha256=Uf5_wclZtj9cus5s-Xen6X19mLGGj8Px6XFRU2oRgq8,2857
+llamazure.rbac-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+llamazure.rbac-0.1.0.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+llamazure.rbac-0.1.0.dist-info/top_level.txt,sha256=4gbH0fcRQb_rEVCcLYRu_D2cVCdf0VYVCIi_f0PiMq4,10
+llamazure.rbac-0.1.0.dist-info/RECORD,,
