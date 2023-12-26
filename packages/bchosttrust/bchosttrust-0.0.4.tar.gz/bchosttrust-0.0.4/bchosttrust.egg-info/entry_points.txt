@@ -1,0 +1,2 @@
+[console_scripts]
+bcht = bchosttrust.__main__:cli
