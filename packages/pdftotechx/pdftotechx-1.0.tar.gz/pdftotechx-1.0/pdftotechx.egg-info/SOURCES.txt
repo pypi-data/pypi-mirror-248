@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+pdftotechx.egg-info/PKG-INFO
+pdftotechx.egg-info/SOURCES.txt
+pdftotechx.egg-info/dependency_links.txt
+pdftotechx.egg-info/requires.txt
+pdftotechx.egg-info/top_level.txt
