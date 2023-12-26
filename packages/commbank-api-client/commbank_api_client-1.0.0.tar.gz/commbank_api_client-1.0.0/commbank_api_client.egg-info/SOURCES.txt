@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+commbank_api_client/__init__.py
+commbank_api_client/types.py
+commbank_api_client.egg-info/PKG-INFO
+commbank_api_client.egg-info/SOURCES.txt
+commbank_api_client.egg-info/dependency_links.txt
+commbank_api_client.egg-info/top_level.txt
