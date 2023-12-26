@@ -1,0 +1,4 @@
+[console_scripts]
+ddd = lazyinit.ddd:ddd
+lazy = lazyinit.lazy:lazy
+run = lazyinit.run:run
