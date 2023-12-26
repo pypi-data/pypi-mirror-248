@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: json-literal
+Version: 1.1.0
+Summary: Definition of literal values for compatibility with JSON data.
+License: BSD-3-Clause
+Author: Yasutanium
+Author-email: yassun4dev@outlook.com
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
+
+# Use JSON literal on Python code
+
+By importing this package in wildcard, JSON data can be handled directly in Python code.
+
+# Install
+
+```sh
+pip install json-literal
+```
+
+# Usage
+
+```python
+from json_literal import *
+
+data = {
+    "a": 1,
+    "b": true,
+    "c": false,
+    "d": null,
+    "e": [1,2,3],
+    "f": {
+        "g": "h"
+    }
+}
+```
+
