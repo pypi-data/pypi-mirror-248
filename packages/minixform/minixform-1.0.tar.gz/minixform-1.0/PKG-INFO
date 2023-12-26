@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: minixform
+Version: 1.0
+Summary: MiniXform un package python qui vous permet de creer un formulaire XLSFORM à partir d'un fichier .yaml
+Author: La centrale cognitive
+Author-email: lacentrale.cognitive@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: pandas
+Requires-Dist: codecs
+Requires-Dist: openpyxl
+Requires-Dist: humre
+Requires-Dist: rich
+Requires-Dist: yaml

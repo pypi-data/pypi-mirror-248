@@ -1,0 +1,6 @@
+pandas
+codecs
+openpyxl
+humre
+rich
+yaml
