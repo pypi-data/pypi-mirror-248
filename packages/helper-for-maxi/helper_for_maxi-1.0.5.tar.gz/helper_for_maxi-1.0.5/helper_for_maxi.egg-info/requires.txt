@@ -1,0 +1,5 @@
+pyperclip
+typing
+time
+sys
+random
