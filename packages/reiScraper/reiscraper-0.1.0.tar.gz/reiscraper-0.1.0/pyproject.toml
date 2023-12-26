@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "reiScraper"
+version = "0.1.0"
+description = "Rei Scrapper"
+authors = ["Lutfi Verdian"]
+license = "MIT"
+readme = "README.md"
+
+packages = [
+    { include= "scraper",  from = "src"},
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+httpx = "^0.26.0"
+selectolax = "^0.3.17"
+rich = "^13.7.0"
+typing = "^3.12.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
