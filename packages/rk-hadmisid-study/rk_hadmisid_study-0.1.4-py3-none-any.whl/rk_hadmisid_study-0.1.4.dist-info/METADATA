@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: rk-hadmisid-study
+Version: 0.1.4
+Summary: All tools and scripts used in the study of the hadron mis-ID.
+Author: xuzh
+Requires-Dist: rx-differential-crosscheck-fits >=0.0.3
+Requires-Dist: rx-scripts >=0.2.8
+Requires-Dist: rx-tools >=0.2.0
+
