@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "akl-cameras"
+version = "0.1.0"
+description = "Tool that allow to operate cameras owned by AKL"
+authors = ["Jędrzej Stasik <jedrzej.stasik@gmail.com>"]
+readme = "README.md"
+packages = [{include = "akl_cameras"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.13.2"
+black = "^23.12.1"
+mypy = "^1.8.0"
+pylint = "^3.0.3"
+flake8 = "^6.1.0"
+taskipy = "^1.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.taskipy.tasks]
+formatting = "python -m black . && python -m isort ."
+pylint = "pylint akl_cameras tests"
+mypy = "python -m mypy --namespace-packages akl_cameras tests examples"
+flake8 = "poetry run python -m flake8 akl_cameras tests examples && echo All is ok"
+
+black_check = "black --check akl_cameras tests examples"
+isort_check = "isort --check akl_cameras tests examples"
+
+[tool.isort]
+profile = "black"
