@@ -1,0 +1,69 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name="amtFMC"
+version="0.0.3"
+dynamic = ["readme"]
+requires-python=">=3.6"
+dependencies = [
+    'paramiko',
+    'pyadi-iio <= 0.0.16',
+    'pylibiio <= 0.25',
+    'numpy'
+]
+
+authors=[{name = "yingju", email = "yingju.chen@hxltd.com"}]
+maintainers =[{name = "yingju", email = "yingju.chen@hxltd.com"},{name = "Amtery"}]
+description="Amtery Python library for FMC5030."
+license = {text = "MIT License"}
+
+classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License"]
+
+[project.urls]
+Homepage="https://www.amtery.com/en"
+Documentation = "https://github.com/yjchenhx/amtFMC_examples"
+
+
+[project.scripts]
+ref="amtFMC.FMC_funct:amtFmcRfRef"
+reset="amtFMC.FMC_funct:amtFmcRfReset"
+txconf="amtFMC.FMC_funct:amtFmcTxConfig"
+txstart="amtFMC.FMC_funct:amtFmcRfTxStart"
+txstop="amtFMC.FMC_funct:amtFmcRfTxStop"
+rxconf="amtFMC.FMC_funct:amtFmcRxConfig"
+rxread="amtFMC.FMC_funct:amtFmcRfRxRead"
+fv="amtFMC.FMC_funct:amtFmcRfFv"
+zed="amtFMC.debug_funct:zed"
+adireg="amtFMC.debug_funct:radi_reg"
+reattr="amtFMC.debug_funct:read_attr"
+redeattr="amtFMC.debug_funct:debug_attr"
+adifreq="amtFMC.debug_funct:adi_freq"
+adidds="amtFMC.debug_funct:set_dds"
+adiport="amtFMC.debug_funct:set_port"
+adiatt="amtFMC.debug_funct:adi_txAtt"
+adigain="amtFMC.debug_funct:adi_rxGain"
+tufreq="amtFMC.debug_funct:tuner_freq"
+tuatt="amtFMC.debug_funct:tuner_rxAtt"
+tupath="amtFMC.debug_funct:path"
+refpath="amtFMC.debug_funct:sel_ref"
+
+[project.optional-dependencies]
+examples = ["thread6","matplotlib","scipy"]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"amtFMC.examples" = ["*"]
+"amtFMC.examples.python_examples" = ["*.py"]
+"amtFMC.examples.labview_examples" = ["*.vi"]
+
+[tool.setuptools.dynamic]
+readme = {file = "README.md", content-type = "text/markdown"}
