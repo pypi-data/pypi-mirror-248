@@ -1,0 +1,10 @@
+piqp-0.2.4.dist-info/WHEEL,sha256=Cbg0nsX8XUWK0XXyuFqImveu21GlM0i0SUNuS4t0nDw,162
+piqp-0.2.4.dist-info/LICENSE,sha256=Ql0WXOWsYrw_0c74NzT6Z4C8hEZYv8XpBMpFoBHf7HA,1313
+piqp-0.2.4.dist-info/RECORD,,
+piqp-0.2.4.dist-info/top_level.txt,sha256=F-GFRluNmn1bIS3npWT9LVAqKKnPzP4_LX_vULOXLnE,5
+piqp-0.2.4.dist-info/METADATA,sha256=KuAS4BgM5w1wamxapJhc1vbN8G29PQPzaiQChJWPn5M,4745
+piqp/piqp_python.pypy39-pp73-x86_64-linux-gnu.so,sha256=2C0l5MB3h4yoYKRRG059dc_dsXIcwuYQLKnig-wOgxk,614568
+piqp/piqp_python_avx512.pypy39-pp73-x86_64-linux-gnu.so,sha256=mxZqZi0dQtFY42cs4eSG5A4PMLu6exLMdz8amVtnI2A,725160
+piqp/__init__.py,sha256=Wjb2QcsWaVeit-n248L7l7u603eEeamLdQOmJPjiE2Q,965
+piqp/piqp_python_avx2.pypy39-pp73-x86_64-linux-gnu.so,sha256=HYDS_bT98B1jGB1xQntK8hE8p4942FDP6HFndBUtTFU,684200
+piqp/instruction_set.pypy39-pp73-x86_64-linux-gnu.so,sha256=_R1_cCb34VuHk5B_pKgZAMe8HsJR-E5bPhK_QbgflVM,204680
