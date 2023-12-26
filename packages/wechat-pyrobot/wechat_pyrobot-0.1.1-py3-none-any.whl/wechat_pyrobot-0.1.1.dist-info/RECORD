@@ -1,0 +1,15 @@
+wechat_pyrobot/__init__.py,sha256=tPsYqq7qwzFn_lOtpg2dd3AY_gts68D2p04vxNgSs6A,499
+wechat_pyrobot/anti_revoke32.py,sha256=BitYu3vRNHYm0ka6h1lFBfLApA_ciXFH9sdI74VT8WA,1441
+wechat_pyrobot/anti_revoke64.py,sha256=Rx1cbp6a4GhG6reXj6pekkUgeiVArfeP6b0eP4OLvEo,1196
+wechat_pyrobot/ctypes_json.py,sha256=FA-nHtVrw1MDVqPHAqfMenhYx_-2myh6hcoMg4SQ5JQ,1323
+wechat_pyrobot/hooklog32.py,sha256=K_595iyVQsk23qffI8clIdvtZZTmrB3Xsrr76J99mwg,1589
+wechat_pyrobot/hooklog64.py,sha256=ljKiHMJqQsmfu3rC6gZAhQ3X_T8piMm_lnmGEdMGt58,1312
+wechat_pyrobot/hookmsg32.py,sha256=mrlz9HJ8vKCoi5KLlm1OpX-W-NSmpDejQQhUWAP_4mA,2521
+wechat_pyrobot/hookmsg64.py,sha256=u8mF3jAxGkKX1hhUR3BgcI14uu0ik7wu7TSAwxpS-GQ,2582
+wechat_pyrobot/offset.py,sha256=mVLwPlZzcHICQY_G-IrPFxn1yxU0cFqoN-lVCd-9h5A,1283
+wechat_pyrobot/sendmsg32.py,sha256=oPZ4rI7TooDEveYeeMgBzoLl_4960bPBLxl8n5AUO3E,6836
+wechat_pyrobot/sendmsg64.py,sha256=AAj7dbi58IZLUXQ1NlWb2KlQo9yFlm4YpzHHOBekFHY,4054
+wechat_pyrobot-0.1.1.dist-info/METADATA,sha256=rEvsXoxQIZoImXEuP94B5cFh4APp1Ksfc82roBBz4Q8,7385
+wechat_pyrobot-0.1.1.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+wechat_pyrobot-0.1.1.dist-info/licenses/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+wechat_pyrobot-0.1.1.dist-info/RECORD,,
