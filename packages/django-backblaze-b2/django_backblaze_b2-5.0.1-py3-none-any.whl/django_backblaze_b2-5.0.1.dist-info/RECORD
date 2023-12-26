@@ -1,0 +1,14 @@
+django_backblaze_b2/__init__.py,sha256=lms1iNANE2WV6YBsVMbqtyY3754A2jRkbVDQAUhIxzw,264
+django_backblaze_b2/_decorators.py,sha256=zrqs0Etnf2e7LJOdNdlG698JwcBRAplarTnECHtBSg0,1024
+django_backblaze_b2/b2_file.py,sha256=MeBMhCHdjl6VwKVMvrku-zctqg5W0BiBGydU0P9yx0A,2719
+django_backblaze_b2/cache_account_info.py,sha256=7eNGk097_tRQJyyOdCfDeQmpsT0v7LPUCBSauhujLUU,7933
+django_backblaze_b2/options.py,sha256=Cs3CHvAzUT8Dd6KmUR5wERGcia3noiMWoYj9F7D05Fk,2004
+django_backblaze_b2/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_backblaze_b2/storage.py,sha256=cuSnRWQKR1nraGg6-qBSRJyI-LKHB_slbHW0ydf61nw,12884
+django_backblaze_b2/storages.py,sha256=dPkQltzvxQZRpMMtcmnrkjavrs6CWhik6kAZZzqxB9o,4727
+django_backblaze_b2/urls.py,sha256=nTe09FRpPQeqitmZA0BQPW2EIv6gHh7DBPUZAJjxaqc,358
+django_backblaze_b2/views.py,sha256=LpoqV5z2y-5ocpPDzqggr_zVZlYCJ1lTsm5FBA8GKds,2167
+django_backblaze_b2-5.0.1.dist-info/LICENSE,sha256=jXLY7g8xeDcF00aH5UWhtU0lWZK4pgxEOBvwCYG0qLQ,1318
+django_backblaze_b2-5.0.1.dist-info/METADATA,sha256=HFlru3Zhzp8NR8W1yvxoawfsWraqicGXARsuoQJLMOg,10228
+django_backblaze_b2-5.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+django_backblaze_b2-5.0.1.dist-info/RECORD,,
