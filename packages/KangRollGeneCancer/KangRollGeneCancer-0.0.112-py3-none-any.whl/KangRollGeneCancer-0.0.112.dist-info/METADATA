@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: KangRollGeneCancer
+Version: 0.0.112
+Summary: fn001 Python release edtion with KangTest
+Home-page: https://github.com/yourusername/standalone001pyarmor
+Author: xiaowen
+Author-email: xiaowenseekjob@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# standalone004fn101callfn001
+standalone004fn101callfn001
+
+
+我需要按照standalone003gntmcallmln 这个库的做法。 在KangGeneCancer中再做一次同样的操作，是的配套文件（源程序、测试程序，（-本地测试，PYPI发布后用户测试）--真码测试，混码测试均可实现）
+
+
+
+| pypi库                          | env             | 混淆         | 本地               | 准备PIYI的发布 | 批处理程序的准备 | 代码优化和打包 | 本地        | PYPI发布后用户 | 备注                         |
+| ------------------------------- | --------------- | ------------ | ------------------ | -------------- | ---------------- | -------------- | ----------- | -------------- | ---------------------------- |
+|                                 | Pip requirement |              | -源码 -混淆 - 测试 | Setup.py       |                  |                | wd          | wd             |                              |
+| standalone003gntmcallmln        | OK              | OK           |                    | OK             |                  | OK             | -真码，混码 | -真码，混码    |                              |
+|                                 |                 |              |                    |                |                  |                |             |                |                              |
+|                                 |                 |              |                    |                |                  |                |             |                |                              |
+| 准备 KangRollGeneCancer         | OK              | 确定混淆目标 | 找到混淆批处理文件 | OK             | OK               | OK             | OK          | OK             | 制作一个.tex文档方便自己了解 |
+|                                 |                 |              |                    |                |                  |                |             |                |                              |
+| 准备standalone004fn101callfn001 |                 | 双互混淆     |                    |                |                  |                |             |                |                              |
+
+
+
