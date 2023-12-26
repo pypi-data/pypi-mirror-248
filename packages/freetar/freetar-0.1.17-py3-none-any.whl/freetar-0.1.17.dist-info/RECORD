@@ -1,0 +1,13 @@
+freetar/backend.py,sha256=VZ_BPL4mCRtQe5MxRhKnZ9oVSt_aZz1oeEj0mGX7mOQ,1603
+freetar/static/custom.js,sha256=gpPbYAnMFqRw_Gk9qkyjdxBWNRTCqdjem3vxoeHkj4w,2590
+freetar/static/guitar.png,sha256=ofStgS0qfIMJzm_k8kM9ppZkC2ilVdCFjgh1qfB8tqg,26135
+freetar/static/main.css,sha256=FcvVCICY9g9B8dtZyaZWBB3xQP7l1-6_V1WO0SMUzZI,117
+freetar/static/print.css,sha256=WRWtsPKobEMnSp3xNrwRzb_RH91D2xPAvZg5XvajrFk,226
+freetar/templates/base.html,sha256=eowhExj2Gm-LaF6scd9b4JGaHYtKm0hqFtX4sBf7_iY,2055
+freetar/templates/index.html,sha256=buDLSl6Wvwx1uvr46ZhvEq046eXhj-0ALrcBrkW2c4c,9496
+freetar/ug.py,sha256=Hw_y4C_42Y8mdWwdsvB86Tj8Pews_q-4B2__wPR5gaE,6147
+freetar-0.1.17.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+freetar-0.1.17.dist-info/METADATA,sha256=csMD99Nw2yeOm5t_Dz1OFVnilr4qKfHwnCPjlWVaKB0,1766
+freetar-0.1.17.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+freetar-0.1.17.dist-info/entry_points.txt,sha256=60bmEh1QDGRIu0Qs-brNb9SaWg0Q3z7e_25EpdDm5Qc,48
+freetar-0.1.17.dist-info/RECORD,,
