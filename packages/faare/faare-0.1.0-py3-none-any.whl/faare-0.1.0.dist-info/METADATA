@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: faare
+Version: 0.1.0
+Summary: faare
+Author-email: Ivo Filot <i.a.w.filot@tue.nl>
+Maintainer-email: Ivo Filot <i.a.w.filot@tue.nl>
+License: GPL-3.0-or-later
+Project-URL: Homepage, https://gitlab.tue.nl/ifilot/faare
+Project-URL: Bug Tracker, https://gitlab.tue.nl/ifilot/faare/-/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: ase
+
+# Fully Agnostic Atomic Render Environment
