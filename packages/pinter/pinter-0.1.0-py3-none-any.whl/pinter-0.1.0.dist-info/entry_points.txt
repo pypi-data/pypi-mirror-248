@@ -1,0 +1,3 @@
+[console_scripts]
+pinter=pinter.__main__:cli
+
