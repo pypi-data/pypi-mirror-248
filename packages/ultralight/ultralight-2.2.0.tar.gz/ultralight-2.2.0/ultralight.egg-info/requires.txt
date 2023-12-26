@@ -1,0 +1,6 @@
+numpy
+numexpr
+opencv-python
+requests
+tqdm
+onnxruntime
