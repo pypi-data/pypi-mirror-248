@@ -1,0 +1,11 @@
+README.md
+setup.py
+mkdocs_quiz/plugin.py
+mkdocs_quiz.egg-info/PKG-INFO
+mkdocs_quiz.egg-info/SOURCES.txt
+mkdocs_quiz.egg-info/dependency_links.txt
+mkdocs_quiz.egg-info/entry_points.txt
+mkdocs_quiz.egg-info/requires.txt
+mkdocs_quiz.egg-info/top_level.txt
+mkdocs_quiz/css/quiz.css
+mkdocs_quiz/js/quiz.js
