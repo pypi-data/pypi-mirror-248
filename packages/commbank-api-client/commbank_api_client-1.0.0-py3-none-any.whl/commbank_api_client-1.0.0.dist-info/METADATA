@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: commbank_api_client
+Version: 1.0.0
+Summary: Fully asynchronous (unofficial) API client for Commonwealth Bank of Australia
+Author-email: Bowen Feng <857514.leofeng@gmail.com>
+Keywords: commbank,api,async,client
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
