@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pojw
+Version: 0.0.6
+Summary: OpenJigWare 원격 제어 소스
+Home-page: https://github.com/ojw5014/pojw
+Author: Jinwook.On
+Author-email: ojw5014@hanmail.net
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+License-File: LICENSE
+
