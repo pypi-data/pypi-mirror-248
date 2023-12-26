@@ -1,0 +1,17 @@
+gamspec/Operator.py,sha256=ffuLVLfD3vox0LoHetOUC7LV9QyLafCP6WAkY5xY_-4,8995
+gamspec/PeakRegion.py,sha256=bnhrnrKQ7kFawLY_nOYfZjsIpwq7cdifpwSkAa4Kdjs,5871
+gamspec/Spectrum.py,sha256=9RdTrAX9cdPH8kidb9bbttua1wLtyuQB67yfQk8oMa4,23697
+gamspec/__init__.py,sha256=TGZ2wjroe3t8JsfoNJcHvSGPUFESlllg3MtH_aBppIk,727
+gamspec/plot_settings.py,sha256=TqtgYXlJeT35RRg3KaNODNZyuG1n0ScRnNIPEkIMWsQ,932
+gamspec/utils.py,sha256=wpgdQqKFM_wAkdvtyp8eicyivdHKLI8cAJMzJMB9Py0,5083
+gamspec/operators/AreaCalculator.py,sha256=9axJmYQaej_RUHcpv9BI8iQF1JnL6hAu0gwXy9EQbP8,19296
+gamspec/operators/BasicOperator.py,sha256=VtVRe7Feyz8tholZcL207MnDrZ-YgMnBjyDbUgmDT9g,3029
+gamspec/operators/OtherOperator.py,sha256=fpl_dVVHO8Q7dztAg0RN8htL2n0ee_vuZqxCE3UWRHQ,6495
+gamspec/operators/PeakSearcher.py,sha256=C9Ui2LKjgtJwljI4ZvQeUBeH1uZrARZ8r1796eN12HU,16820
+gamspec/operators/Smoother.py,sha256=7s_XsEZ575sWaLrVHKizn3wv5KOIPTfHNgDNN9ZM_zs,9771
+gamspec/operators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gamspec-0.1.1.dist-info/LICENSE,sha256=7BZ89iTzEDAvkOIL1CRAPTa5SZHXO7-RBY-S89BTX7k,1108
+gamspec-0.1.1.dist-info/METADATA,sha256=ReRLq5iEePS2TL449vYvefj1e0sjhpQsq5eG-5yJP_0,1097
+gamspec-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+gamspec-0.1.1.dist-info/top_level.txt,sha256=eb_8mwpDkDd6eNui7bNgTJGFgTWT4X5tXQErFGflqk8,8
+gamspec-0.1.1.dist-info/RECORD,,
