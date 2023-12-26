@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: halftones
+Version: 0.1.0
+Summary: Python package for processing and creating halftone images
+Home-page: https://github.com/eotles/halftones_pkg
+Author: Erkin Ötleş
+Author-email: hi@eotles.com
+License-File: LICENSE
+
