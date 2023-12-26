@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: qingpi-python
+Version: 0.1.1
+Summary: Python library for Qingpi.
+Home-page: https://github.com/U-1F992/qingpi
+Author: Koutaro Mukai
+Author-email: mukai.k1011k@outlook.jp
+Requires-Python: >=3.10,<3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Repository, https://github.com/U-1F992/qingpi
+Description-Content-Type: text/markdown
+
+# qingpi-python
+
+Python library for Qingpi.
+
