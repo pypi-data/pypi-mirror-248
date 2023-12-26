@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+whisper2subs/__init__.py
+whisper2subs/__main__.py
+whisper2subs/cli.py
+whisper2subs/export.py
+whisper2subs/transcribe.py
+whisper2subs/translate.py
+whisper2subs.egg-info/PKG-INFO
+whisper2subs.egg-info/SOURCES.txt
+whisper2subs.egg-info/dependency_links.txt
+whisper2subs.egg-info/entry_points.txt
+whisper2subs.egg-info/requires.txt
+whisper2subs.egg-info/top_level.txt
