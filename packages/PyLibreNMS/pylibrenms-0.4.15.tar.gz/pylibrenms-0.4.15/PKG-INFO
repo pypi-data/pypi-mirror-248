@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: PyLibreNMS
+Version: 0.4.15
+Summary: A Python Library for LibreNMS
+Project-URL: Homepage, https://github.com/diego-lopez8/pylibrenms
+Project-URL: Issues, https://github.com/diego-lopez8/pylibrenms/issues
+Author-email: Diego Troy Lopez <diego.lopez@nyu.edu>
+License-File: LICENSE
+Keywords: SDN,librenms,networking,wrapper
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: requests
+Description-Content-Type: text/markdown
+
+# PyLibreNMS
+
+A Python library for the LibreNMS API. 
+
+## Installation
+
+Requires Python>=3.8.
+
+```
+pip install pylibrenms
+```
+
+
+## Quick Start
+
+Using the API
+
+```python
+from pylibrenms import Librenms
+
+librenms_token = "YOUR_API_TOKEN"
+nms = Librenms("YOUR_NMS_INSTANCE", librenms_token)
+print(nms.get_all_ports())
+```
+
+## Documentation
+
+Coming soon!
