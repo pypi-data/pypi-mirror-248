@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: dfpwm
+Version: 0.1.0
+Summary: DFPWM convertor for Python
+License: MIT
+Author: cyan
+Author-email: contact@cyans.me
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: Cython (>=3.0.7,<4.0.0)
+Requires-Dist: librosa
+Requires-Dist: numpy (>=1.26.2,<2.0.0)
+Description-Content-Type: text/markdown
+
+# DFPWM
+DFPWM convertor for Python
+
+## Usage
