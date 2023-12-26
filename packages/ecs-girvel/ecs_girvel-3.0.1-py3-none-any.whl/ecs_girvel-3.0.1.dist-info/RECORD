@@ -1,0 +1,9 @@
+ecs/__init__.py,sha256=TCZuW-lGl0yH4Mqx6qMWmDv855WD8jlns616rJNBYpM,688
+ecs/entity.py,sha256=vc1rVyBNcSzM8xmFfpY6rDnNNZL-2AGbP9VNIxT8Jw0,844
+ecs/essentials.py,sha256=0taKzyP1yRiK5B8J-CJPFSdRxbG_lKYM3_acoB166ac,2028
+ecs/metasystem.py,sha256=3Xhv61qdv0U18caMzduOKsOBaAFtJarSmtG-2afTvdA,2160
+ecs/system.py,sha256=HsXifWfwJZEHZtXJ51eDb_Zxnxf_8snV_ExOdHhs11A,2060
+ecs_girvel-3.0.1.dist-info/METADATA,sha256=kZncInM3FMIUhzbHiO3M_OZX2ZmJDsTSnBIhwmvxSFk,2741
+ecs_girvel-3.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+ecs_girvel-3.0.1.dist-info/top_level.txt,sha256=eMOjMZotpPGDKgFV0mVkb-D-6HFOstJIvilfwedo4Rc,4
+ecs_girvel-3.0.1.dist-info/RECORD,,
