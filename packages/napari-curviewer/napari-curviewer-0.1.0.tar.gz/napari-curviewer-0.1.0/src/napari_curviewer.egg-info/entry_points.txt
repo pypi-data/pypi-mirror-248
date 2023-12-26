@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-curviewer = napari_curviewer:napari.yaml
