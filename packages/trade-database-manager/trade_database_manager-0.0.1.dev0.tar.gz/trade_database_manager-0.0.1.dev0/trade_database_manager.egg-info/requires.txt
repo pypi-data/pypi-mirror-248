@@ -1,0 +1,5 @@
+pandas
+numpy
+ruamel.yaml
+sqlalchemy
+psycopg2
