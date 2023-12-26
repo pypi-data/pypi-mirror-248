@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+lukaadvadze.egg-info/PKG-INFO
+lukaadvadze.egg-info/SOURCES.txt
+lukaadvadze.egg-info/dependency_links.txt
+lukaadvadze.egg-info/top_level.txt
