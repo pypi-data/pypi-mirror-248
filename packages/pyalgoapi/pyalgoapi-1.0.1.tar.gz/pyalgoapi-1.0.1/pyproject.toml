@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "pyalgoapi"
+version = "1.0.1"
+description = "Python Wrapper for BSC Algo API"
+authors = ["Trung Dang <trungd@bsc.com.vn>"]
+packages = [{ include = "algoapi" }, { include = "examples" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.2"
+yapf = "^0.40.2"
+pandas = "^2.1.4"
+
+[tool.pytest.ini_options]
+addopts = "-vv -s --no-header -q"
+
+[tool.yapf]
+based_on_style = "facebook"
+blank_line_before_nested_class_or_def = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
