@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "shownewlistedit"
+version = "1.0.0"
+description = "Show funny code for coding"
+authors = ["banzaben <panzar0405@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
