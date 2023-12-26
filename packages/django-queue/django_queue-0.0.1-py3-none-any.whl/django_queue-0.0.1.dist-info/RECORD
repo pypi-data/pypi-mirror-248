@@ -1,0 +1,15 @@
+queue/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+queue/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+queue/apps.py,sha256=QSLFWUuwHme9HwIZmhzwDL-QQPvt5czu_3KE7zwmgDg,142
+queue/models.py,sha256=H3DB8PfgHNA0GzEpnuqgtb_aXy1htV4LNroe3gVqHNg,930
+queue/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+queue/views.py,sha256=xc1IQHrsij7j33TUbo-_oewy3vs03pw_etpBWaMYJl0,63
+queue/migrations/0001_initial.py,sha256=jtco2OYb09JwhTOu6ShI-EHyfMpNiD-3sM6i9I5-ujs,739
+queue/migrations/0002_alter_task_result.py,sha256=oX4QaITBHB5m0f-LNfmoNV-Bt95dOvSU-p55To7SAdk,364
+queue/migrations/0003_task_type.py,sha256=8OQhngvdi6POHN29PieAkNjLZ8M7PHDOfshmpfJcPc4,422
+queue/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_queue-0.0.1.dist-info/LICENSE,sha256=7BFg97intbmmMdTbvtCCY4aillKiMQmpGnU28fOTWTw,1501
+django_queue-0.0.1.dist-info/METADATA,sha256=A81Di_FRELIOoCb2BeOzrPcXPx01JBhAvDNsnGt40bs,3889
+django_queue-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+django_queue-0.0.1.dist-info/top_level.txt,sha256=_Ep0Wj6MvoDVYxdWNdRtk6-Uv9mM03i-9vHh_YJPuvM,6
+django_queue-0.0.1.dist-info/RECORD,,
