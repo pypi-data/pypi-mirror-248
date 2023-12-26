@@ -1,0 +1,11 @@
+./.gitignore,sha256=PxBwUFpI_2WPF-k0_KG2z-ewX9CGJfIYnT6QSfeQutU,3104
+./LICENSE,sha256=t6ReVOMQ55J2w_fuFPv6jLhVIyQi8lG8NWvD3tPALD8,1075
+./PKG-INFO,sha256=lw0HIOKI7W9pBTKF-QFMyYT5Y9qcDgqnTyf_W2PNfSA,4885
+./README.md,sha256=o_OH25aLyEGlvUQfReC8A04i43-13ZkQZGXB4S4Ucn0,4323
+./pyproject.toml,sha256=YaUumnVON8nxwd_OFwXQRxF5ye4Md8w7PIcWvejk-s4,767
+./htmxido/__init__.py,sha256=mZHvamaxE6xBDBW6BOTB9EEEGc7XT5W6HJxdoJqKODU,20
+./htmxido/htmx.py,sha256=cK8-Q9VlrI0Qka4kyT76VcijDsU8unIvyyNvKbQnpr8,4151
+htmxido-0.2.0.dist-info/METADATA,sha256=lw0HIOKI7W9pBTKF-QFMyYT5Y9qcDgqnTyf_W2PNfSA,4885
+htmxido-0.2.0.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+htmxido-0.2.0.dist-info/licenses/LICENSE,sha256=t6ReVOMQ55J2w_fuFPv6jLhVIyQi8lG8NWvD3tPALD8,1075
+htmxido-0.2.0.dist-info/RECORD,,
