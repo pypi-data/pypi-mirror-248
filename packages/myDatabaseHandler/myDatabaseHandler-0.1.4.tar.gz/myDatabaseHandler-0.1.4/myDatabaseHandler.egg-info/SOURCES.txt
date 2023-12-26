@@ -1,0 +1,9 @@
+README.md
+setup.py
+myDatabaseHandler/__init__.py
+myDatabaseHandler/database_handler.py
+myDatabaseHandler.egg-info/PKG-INFO
+myDatabaseHandler.egg-info/SOURCES.txt
+myDatabaseHandler.egg-info/dependency_links.txt
+myDatabaseHandler.egg-info/requires.txt
+myDatabaseHandler.egg-info/top_level.txt
