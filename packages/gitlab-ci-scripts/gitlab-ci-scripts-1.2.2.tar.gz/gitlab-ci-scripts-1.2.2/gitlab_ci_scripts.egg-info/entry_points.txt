@@ -1,0 +1,2 @@
+[console_scripts]
+pycov-convert-relative-filenames = gitlab_ci_scripts.pycov_convert_relative_filenames:main

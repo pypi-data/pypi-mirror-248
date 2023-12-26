@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements-dev.txt
+requirements.txt
+setup.py
+gitlab_ci_scripts/__init__.py
+gitlab_ci_scripts/pycov_convert_relative_filenames.py
+gitlab_ci_scripts.egg-info/PKG-INFO
+gitlab_ci_scripts.egg-info/SOURCES.txt
+gitlab_ci_scripts.egg-info/dependency_links.txt
+gitlab_ci_scripts.egg-info/entry_points.txt
+gitlab_ci_scripts.egg-info/requires.txt
+gitlab_ci_scripts.egg-info/top_level.txt
+gitlab_ci_scripts.egg-info/zip-safe
