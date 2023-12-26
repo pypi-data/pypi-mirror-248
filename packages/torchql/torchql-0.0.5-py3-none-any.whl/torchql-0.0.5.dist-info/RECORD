@@ -1,0 +1,11 @@
+tql/__init__.py,sha256=6slV3xaoqTgKF_WZvyIjWdv_tq_1OoybYJ7xtY7Tr5I,94
+tql/database.py,sha256=88KTrGXv55FvPmle0nqFq5pvHJI7_NJ4ZvgP2cG-V7w,6283
+tql/database_lazy.py,sha256=yZTjV2CxJrKXjcF8OHtYcl7n_fYo7Lpzjwy6AIcnbIM,4044
+tql/query.py,sha256=rVooaL9MSYBZYSh-Hn7ZpoiNiGdPn4hc4dM7aHnppEY,15962
+tql/table.py,sha256=jai0kSaA5N-uPaEz8vyWeo-4yfQCIAF-twJxkN--g-8,20359
+tql/table_lazy.py,sha256=bkNtwFlAgbaPntITueQMvj4gqTGJu1K2zMrREMPrdu4,10773
+tql/utils.py,sha256=qL25cZfDxWGKCaQq1-KXu-Xh4i1tfjCSRJ7LS4O23GI,1807
+torchql-0.0.5.dist-info/METADATA,sha256=kN1o6A_iP8jMAcOm5Pi_1CAqOBgF3cbnEqy9GxKR7_w,409
+torchql-0.0.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+torchql-0.0.5.dist-info/top_level.txt,sha256=doFYOqVcqUstRmOfap14BDe3ynwPYG51VdePUoULjk0,4
+torchql-0.0.5.dist-info/RECORD,,
