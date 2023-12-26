@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: daofun
+Version: 0.1.5
+Summary: DAOFUN is an interactive adaptation of the DAOPHOT 
+Home-page: https://github.com/ciquezada/daofun
+Author: Carlos Quezada
+License: Licencia
+Keywords: daophot astronomical python
