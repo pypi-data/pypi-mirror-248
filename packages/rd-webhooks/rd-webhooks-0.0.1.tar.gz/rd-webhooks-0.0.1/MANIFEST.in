@@ -1,0 +1,6 @@
+include LICENSE
+include requirements.txt
+recursive-include conf *
+recursive-include rd_webhooks *.py
+recursive-include rd_webhooks *.yml
+prune tests

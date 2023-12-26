@@ -1,0 +1,411 @@
+---
+components:
+  schemas:
+    X-Gitlab-Event:
+      description: &description_x_gitlab_event |
+        String representing event received.
+        Not all endpoints accept all values from this list.
+        cf. [GitLab X-Gitlab-Event documentation](https://docs.gitlab.com/ee/user/project/integrations/webhooks.html)
+      type: string
+      enum: [
+          "Issue Hook",
+          "Job Hook",
+          "Merge Request Hook",
+          "Note Hook",
+          "Pipeline Hook",
+          "Push Hook",
+          "System Hook",
+          "Tag Push Hook",
+          "Wiki Page Hook"
+        ]
+
+    X-Gitlab-Token:
+      description: &description_x_gitlab_header |
+        If you specify a secret token in GitLab, it will be sent with the hook request in the X-Gitlab-Token HTTP header.
+        The webhook endpoint will verify that the request is legitimate via this header.
+        cf. [GitLab X-Gitlab-Token documentation](https://docs.gitlab.com/ee/user/project/integrations/webhooks.html#secret-token)
+      type: string
+      default: null
+
+    # =========================================================================
+    # NOTE:
+    # Gitlab objects are mostly unions of other objects.
+    # Such as:
+    #   - Key-Value object: { "foobar": { foobar-object }}
+    #     eg: GitlabProjectObject
+    #   - Generic object:   { "object_kind": "foobar", "object_attributes": { foobar-object }}
+    #   - Merged objects:   { foobar-object, fubar-object, ... }
+    #   - Squashed to root: { "foobar_id": id, "foobar_name": name", ... }
+    #
+    # Required fields are the fields that are used in the webhooks.
+    # Examples only show required fields.
+    # Preference is given to inner field:
+    #   - { "project": {"id": 1} }
+    #     rather than
+    #   - { "project_id": 1 }
+    #
+    # Naming schema is:
+    # - if fields are at the root, it's a GitlabXyz
+    # - if fields are in an "object" kv, it's a GitlabXyzObject
+    # - if it's an expected webhook payload, it's a GitlabXyzEvent
+    # =========================================================================
+    GitlabAssignees:
+      type: object
+      required:
+        - assignees
+      properties:
+        assignees:
+          type: array
+          items:
+            $ref: "#/components/schemas/GitlabUser"
+
+    GitlabMergeRequestEvent:
+      type: object
+      allOf:
+        - $ref: "#/components/schemas/GitlabMergeRequestObjectKind"
+        - $ref: "#/components/schemas/GitlabUserObject"
+        - $ref: "#/components/schemas/GitlabProjectObject"
+
+    # --------------------------------------------------------------------------
+    GitlabMergeRequest:
+      type: object
+      example: |
+        {
+          "id": 30171,
+          "ref": "master",
+          "tag": false,
+          "sha": "ec0100d49400847ed069d0bc1d375c10e6747c7e",
+          "before_sha": "0000000000000000000000000000000000000000",
+          "status": "success",
+          "detailed_status": "passed",
+          "stages": ["output"],
+          "created_at": "2019-08-28 11:36:12 UTC",
+          "finished_at": "2019-08-28 11:36:41 UTC",
+          "duration": 28,
+          "variables": []
+        }
+      required:
+        - id
+        - iid
+        - state
+      properties:
+        id:
+          type: integer
+          format: uint64
+          description: "A merge request identifier"
+          example: 30171
+        iid:
+          type: integer
+          format: uint64
+          description: "A merge request identifier"
+          example: 30171
+        state:
+          type: string
+          description: "State of the merge request"
+          example: "merged"
+          enum: ["opened", "merged", "closed"]
+        action:
+          type: string
+          description: "Action on the merge request"
+          example: "action"
+          enum: ["update", "merge", "open", "close"]
+
+    # --------------------------------------------------------------------------
+    GitlabMergeRequestObjectKind:
+      type: object
+      description: "KeyValue object kind for a GitlabMergeRequest"
+      example: |
+        {
+          "object_kind": "merge_request",
+          "object_attributes": {
+            "assignee_id": 232,
+            "author_id": 232,
+            "created_at": "2021-05-12 09:01:48 UTC",
+            "description": "",
+            "head_pipeline_id": null,
+            "id": 71808,
+            "iid": 12,
+            "last_edited_at": null,
+            "last_edited_by_id": null,
+            "merge_commit_sha": null,
+            "merge_error": null
+          }
+        }
+      required:
+        - object_kind
+        - object_attributes
+      properties:
+        object_kind:
+          type: string
+          enum: ["merge_request"]
+        object_attributes:
+          $ref: "#/components/schemas/GitlabMergeRequest"
+
+    # --------------------------------------------------------------------------
+    GitlabPipelineEvent:
+      type: object
+      allOf:
+        - $ref: "#/components/schemas/GitlabPipelineObjectKind"
+        - $ref: "#/components/schemas/GitlabUserObject"
+        - $ref: "#/components/schemas/GitlabProjectObject"
+
+    # --------------------------------------------------------------------------
+    GitlabPipeline:
+      type: object
+      example: |
+        {
+          "id": 30171,
+          "ref": "master",
+          "tag": false,
+          "sha": "ec0100d49400847ed069d0bc1d375c10e6747c7e",
+          "before_sha": "0000000000000000000000000000000000000000",
+          "status": "success",
+          "detailed_status": "passed",
+          "stages": ["output"],
+          "created_at": "2019-08-28 11:36:12 UTC",
+          "finished_at": "2019-08-28 11:36:41 UTC",
+          "duration": 28,
+          "variables": []
+        }
+      required:
+        - id
+        - ref
+        - status
+      properties:
+        id:
+          type: integer
+          format: uint64
+          description: "A pipeline identifier"
+          example: 30171
+        ref:
+          type: string
+          description: "A git reference (branch or tag name)"
+          example: "master"
+          minLength: 1
+        status:
+          type: string
+          description: "Pipeline status"
+          example: "success"
+          enum: ["success", "skipped", "pending", "running", "canceled", "failed", "waiting_for_resource"]
+
+    # --------------------------------------------------------------------------
+    GitlabPipelineObjectKind:
+      type: object
+      description: "KeyValue object kind for a GitlabPipeline"
+      example: |
+        {
+          "object_kind": "pipeline",
+          "object_attributes": {
+            "id": 30171,
+            "ref": "master",
+            "tag": false,
+            "sha": "ec0100d49400847ed069d0bc1d375c10e6747c7e",
+            "before_sha": "0000000000000000000000000000000000000000",
+            "status": "success",
+            "detailed_status": "passed",
+            "stages": [ "output" ],
+            "created_at": "2019-08-28 11:36:12 UTC",
+            "finished_at": "2019-08-28 11:36:41 UTC",
+            "duration": 28,
+            "variables": []
+          }
+        }
+      required:
+        - object_kind
+        - object_attributes
+      properties:
+        object_kind:
+          type: string
+          enum: ["pipeline"]
+        object_attributes:
+          $ref: "#/components/schemas/GitlabPipeline"
+
+    # --------------------------------------------------------------------------
+    GitlabProject:
+      type: object
+      description: |
+        GitLab project object.
+      example: |
+        {
+          "id": 320
+        },
+      required:
+        - id
+      properties:
+        id:
+          type: integer
+          format: uint64
+          description: "A project identifier"
+
+    # --------------------------------------------------------------------------
+    GitlabProjectObject:
+      type: object
+      description: |
+        GitLab project object wrapped in a key-value.
+      example: |
+        {
+          "project": {
+            "id": 320
+          },
+        },
+      required:
+        - project
+      properties:
+        project:
+          $ref: "#/components/schemas/GitlabProject"
+
+    # --------------------------------------------------------------------------
+    GitlabPush:
+      type: object
+      description: |
+        GitLab push object.
+      example: |
+        {
+          "after": "13d15969388735d8a4e288a032b9a668295349af",
+          "ref": "refs/heads/misc"
+        },
+      required:
+        - after
+        - ref
+      properties:
+        after:
+          type: string
+          description: "A git sha"
+          pattern: "^[a-f0-9]{40}$"
+        ref:
+          type: string
+          description: "A git ref"
+          minLength: 1
+
+    # --------------------------------------------------------------------------
+    GitlabPushEvent:
+      type: object
+      example: |
+        {
+          "event_name": "push",
+          "object_kind": "push",
+          "after": "13d15969388735d8a4e288a032b9a668295349af",
+          "ref": "refs/heads/misc",
+          "project": {
+            "id": 320
+          }
+        }
+      allOf:
+        - $ref: "#/components/schemas/GitlabProjectObject"
+        - $ref: "#/components/schemas/GitlabPush"
+      required:
+        - event_name
+        - object_kind
+      properties:
+        event_name:
+          type: string
+          enum: [ "push", "tag_push" ]
+        object_kind:
+          type: string
+          enum: [ "push", "tag_push" ]
+
+    # --------------------------------------------------------------------------
+    GitlabSystemEvent:
+      type: object
+      description: |
+        cf. [GitLab System Hooks documentation](https://docs.gitlab.com/ee/system_hooks/system_hooks.html)
+      example: |
+        {
+          "event_name": "user_failed_login"
+        }
+      required:
+        - event_name
+      properties:
+        event_name:
+          type: string
+          enum: [
+              "project_create",
+              "project_destroy",
+              "project_rename",
+              "project_transfer",
+              "project_update",
+              "user_add_to_team",
+              "user_remove_from_team",
+              "user_update_for_team",
+              "user_create",
+              "user_destroy",
+              "user_failed_login",
+              "user_rename",
+              "key_create",
+              "key_destroy",
+              "group_create",
+              "group_destroy",
+              "group_rename",
+              "user_add_to_group",
+              "user_remove_from_group",
+              "user_update_for_group",
+            ]
+
+    # --------------------------------------------------------------------------
+    GitlabUser:
+      type: object
+      description: "Object representing a GitLab user"
+      example: |
+        {
+          "name": "John Doe",
+          "username": "jdoe",
+          "avatar_url": "https://gitlab.example.com/uploads/-/system/user/avatar/1/avatar.png"
+        },
+      required:
+        - username
+      properties:
+        name:
+          type: string
+          description: "User's full name"
+          example: "John Doe"
+          default: ""
+          nullable: true
+        username:
+          type: string
+          description: "User's username"
+          example: "jdoe"
+          minLength: 1
+        avatar_url:
+          type: string
+          description: "URL of user's avatar image"
+          default: null
+          nullable: true
+
+    # --------------------------------------------------------------------------
+    GitlabUserObject:
+      type: object
+      description: "KeyValue object for a GitlabUser"
+      example: |
+        {
+          "user": {
+            "name": "John Doe",
+            "username": "jdoe",
+            "avatar_url": "https://gitlab.example.com/uploads/-/system/user/avatar/1/avatar.png"
+          }
+        },
+      required:
+        - user
+      properties:
+        user:
+          $ref: "#/components/schemas/GitlabUser"
+
+# ------------------------------------------------------------------------------
+x-gitlab:
+  headers:
+    # x-gitlab/headers/x-gitlab-event
+    x-gitlab-event:
+      name: "X-Gitlab-Event"
+      in: header
+      description: *description_x_gitlab_event
+      required: true
+      schema:
+        $ref: "#/components/schemas/X-Gitlab-Event"
+
+    # x-gitlab/headers/x-gitlab-token
+    x-gitlab-token:
+      name: "X-Gitlab-Token"
+      in: header
+      description: *description_x_gitlab_header
+      required: false
+      schema:
+        $ref: "#/components/schemas/X-Gitlab-Token"

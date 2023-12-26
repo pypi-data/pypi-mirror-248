@@ -1,0 +1,16 @@
+#
+# sample: /etc/logrotate.d/rd-webhooks
+#
+/var/log/rd-webhooks/*.log {
+        daily
+        missingok
+        rotate 7
+        compress
+        delaycompress
+        notifempty
+        create 644 rd rd
+        sharedscripts
+        postrotate
+          systemctl is-active --quiet rd-webhooks.service && systemctl kill --signal=USR1 --kill-who=main rd-webhooks.service
+        endscript
+}

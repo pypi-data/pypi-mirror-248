@@ -1,0 +1,49 @@
+# vim: ft=yaml
+#
+# Sample rd-webhooks.yml file
+#
+# This file is searched in the following fashion if unspecified on the cmdline:
+# - ${XDG_CONFIG_HOME}/rd-webhooks.yml
+# - ~/.rd-webhooks.yml
+#
+---
+server:
+  ## debug is ignored in all modes but flask (default: false)
+  # debug: false
+
+  ## which host/ip to listen on (default: localhost)
+  # listen: localhost
+
+  ## which port to listen on (default: 8080)
+  # port: 8080
+
+  ## enable the swagger UI (default: true)
+  # ui: true
+
+  ## how many workers to start in gunicorn mode (default: 0)
+  ##  0 => (cpu_count * 2) with maximum = 8
+  ## <0 => (cpu_count * 2) with no maximum
+  # workers: 0
+
+  ## where to write the accesslog (default: '-' (stdout))
+  # accesslog: -
+
+  ## where to write the errorlog (default: '-' (stderr))
+  # errorlog: -
+
+  ## where to write a pidfile (default: none)
+  # pidfile: /var/run/rd-webhooks.pid
+
+gitlab:
+  host: 'https://gitlab.com'
+
+  # apikey to use GitLab api on above host
+  # apikey: abcdefghi123456789
+
+  # if x-gitlab-token is null, true, or missing, no validation will take place and all endpoints will be unauthorized.
+  # if x-gitlab-token is false, then all endpoints will be authorized. THIS IS UNSAFE AND NOT RECOMMENDED.
+  # otherwise, validation will be checked against the provided string
+  x-gitlab-token: null
+
+  # What's the URL for GitLab pages?
+  # pages: "https://{group}.gitlab.io/{path}"

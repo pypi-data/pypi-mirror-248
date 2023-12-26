@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: rd-webhooks
+Version: 0.0.1
+Summary: (deprecated, unmaintained)
+Home-page: https://gitlab.com/jlecomte/projects/rd-webhooks
+Author: Julien Lecomte
+Author-email: julien@lecomte.at
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: flasket
+Requires-Dist: jira
+Requires-Dist: python-gitlab
+Requires-Dist: numpy
+Requires-Dist: semver

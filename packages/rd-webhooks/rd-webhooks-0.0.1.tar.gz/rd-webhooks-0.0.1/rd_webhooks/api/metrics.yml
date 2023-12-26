@@ -1,0 +1,24 @@
+# """ /api/metrics endpoint
+#
+# files: rd_webhooks/api/metrics.py
+#        rd_webhooks/api/metrics.yml
+#        tests/api/test_metrics.py
+# """
+---
+paths:
+  /api/metrics:
+    get:
+      operationId: api.metrics.get
+      summary: "Return metrics."
+      description: "Return prometheus type metrics."
+      responses:
+        200:
+          description: "OK"
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |
+                  # HELP rd_webhooks_service_status Static value to imply service is up
+                  # TYPE rd_webhooks_service_status gauge
+                  rd_webhooks_service_status 1
