@@ -1,0 +1,10 @@
+setup.py
+tsoro_distributions/Binomialdistribution.py
+tsoro_distributions/Gaussiandistribution.py
+tsoro_distributions/Generaldistribution.py
+tsoro_distributions/__init__.py
+tsoro_distributions.egg-info/PKG-INFO
+tsoro_distributions.egg-info/SOURCES.txt
+tsoro_distributions.egg-info/dependency_links.txt
+tsoro_distributions.egg-info/not-zip-safe
+tsoro_distributions.egg-info/top_level.txt
