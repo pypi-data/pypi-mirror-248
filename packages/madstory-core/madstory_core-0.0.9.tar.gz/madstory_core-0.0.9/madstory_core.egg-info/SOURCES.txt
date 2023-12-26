@@ -1,0 +1,12 @@
+README
+pyproject.toml
+setup.py
+madstory_core/__init__.py
+madstory_core/element.py
+madstory_core/manager.py
+madstory_core/scene.py
+madstory_core/story.py
+madstory_core.egg-info/PKG-INFO
+madstory_core.egg-info/SOURCES.txt
+madstory_core.egg-info/dependency_links.txt
+madstory_core.egg-info/top_level.txt
