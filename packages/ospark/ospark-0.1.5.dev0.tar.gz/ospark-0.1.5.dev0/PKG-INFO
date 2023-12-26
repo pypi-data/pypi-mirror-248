@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: ospark
+Version: 0.1.5.dev0
+Summary: Ospark is an opensource for quickly builder of former model series.
+License: Apache-2.0
+Keywords: text recognition,NLP,attention,tensorflow,transformer
+Author: ospark-org
+Author-email: donggicai1991@gmail.com
+Requires-Python: >=3.8,<3.12
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: pydantic (<2.0.0)
+Requires-Dist: tensorflow (==2.10.0)
