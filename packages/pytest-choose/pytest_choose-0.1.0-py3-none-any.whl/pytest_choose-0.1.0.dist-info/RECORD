@@ -1,0 +1,16 @@
+pytest_choose/__init__.py,sha256=iLm45JtLXcJoMxVXWHI_fJjyEPz4DpuhOsxntxRcXQc,164
+pytest_choose/analysis.py,sha256=3kmy7iSIK4U5ORlQPONlgFy1wzQQzr4ZEt5ompzFCbc,3015
+pytest_choose/filter.py,sha256=nGpLjXJKvOxgiZK7cHrl6jeRYgRStj2UQa79-89S0WE,1811
+pytest_choose/plugin.py,sha256=_iY-7Ff2vO4kZqFYzTqdcRI3W1qSs8qac2yrZWk9lbQ,2309
+pytest_choose/terminal_io.py,sha256=XTIBC1cvHBJMTOSDQ7BLK6TJj1FapbRLZH0DfJ22wvo,636
+test/__init__.py,sha256=qJ-xFfRBg-K0Av6lJsxN82rqv1naxI4AkzZ-Vmx4EFA,67
+test/main.py,sha256=MqY6cVPABM1ez4aXAIKxbef0Rsr62bYUIq97mcgNQDw,365
+test/cases/__init__.py,sha256=qJ-xFfRBg-K0Av6lJsxN82rqv1naxI4AkzZ-Vmx4EFA,67
+test/cases/conftest.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/cases/test_choose.py,sha256=ErNniXX2LD-GaAFbg1FOuVG_N_bci3OAZEb723mZO8g,372
+pytest_choose-0.1.0.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+pytest_choose-0.1.0.dist-info/METADATA,sha256=5XqxUsod_XqVB1HDP1fhaWMLpVWx77d6xohigJ7sSDo,7317
+pytest_choose-0.1.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+pytest_choose-0.1.0.dist-info/entry_points.txt,sha256=6VmHBwGMDTYhz298OMVmU9axWqk7dYOQrEIbO6qnnUA,48
+pytest_choose-0.1.0.dist-info/top_level.txt,sha256=8NJRepyeuFrgF1izBTZEmqlDhIIcLw0fqWiGH-V36B0,19
+pytest_choose-0.1.0.dist-info/RECORD,,
