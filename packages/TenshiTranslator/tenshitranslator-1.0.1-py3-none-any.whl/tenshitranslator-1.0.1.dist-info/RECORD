@@ -1,0 +1,17 @@
+TenshiTranslator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+TenshiTranslator/OutputFormat/EnglishOnlyFormat.py,sha256=KZ3kRPVphVkWKo2_bNLsuvmnO80W9z4paW6kJuEEq4g,1199
+TenshiTranslator/OutputFormat/LineByLineFormat.py,sha256=4b-04cWCSwkzabZw7xoTrQ1b5fv8Z2Pfwq6W99ZsRCw,1661
+TenshiTranslator/OutputFormat/OutputFormat.py,sha256=4VHWQBLevWNWjdyu9zrwZbEBbDdAyQ3O-WyR8vShZLI,546
+TenshiTranslator/OutputFormat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+TenshiTranslator/Translator/BatchTranslator.py,sha256=G3GwIZhEFJDzxEmCsEIaIsRcQftkDBnoxQRlN2pG1OA,4879
+TenshiTranslator/Translator/OfflineTranslator.py,sha256=LvGiCgiWm3cyZYJInmXI_7-z0Ne3auTWz76vAEPr7Gk,4496
+TenshiTranslator/Translator/OnlineTranslator.py,sha256=DYBrsS-8NwaupuqIwEiu3s9_KCoodqi3rIw_Xm1SHk8,5895
+TenshiTranslator/Translator/Translator.py,sha256=953dJ4UsouzzqRBp0PJ-tJw2k_XLAFfUsHJmWiedj-Y,718
+TenshiTranslator/Translator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+TenshiTranslator/Util/Glossary.py,sha256=oD1vIH3UDpRxqKk4nP2CAZR9Bb3CkZN9xMOu-1hkdFc,2318
+TenshiTranslator/Util/TextProcessor.py,sha256=Tbrp__lQ2EQ-NwqTPtBVc_X7lF1OFq4SjA8421f5fS8,2692
+TenshiTranslator/Util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tenshitranslator-1.0.1.dist-info/METADATA,sha256=SttMxry85kAM4JPnwHpr6_h8TmIiAZA3hTGx_uz6oMA,46305
+tenshitranslator-1.0.1.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+tenshitranslator-1.0.1.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+tenshitranslator-1.0.1.dist-info/RECORD,,
