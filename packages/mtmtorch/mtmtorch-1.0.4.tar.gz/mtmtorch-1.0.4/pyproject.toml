@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=40.8.0", "wheel", "setuptools_scm[toml]>=6.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mtmtorch"
+description = "imutum's torch utils"
+readme = "README.md"
+license = { file = "LICENSE" }
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3.10",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: MacOS",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: Microsoft :: Windows",
+]
+requires-python = ">=3.10"
+dependencies = ["torch", "scikit-learn", "einops"]
+dynamic = ["version"]
+
+[tool.setuptools_scm]
