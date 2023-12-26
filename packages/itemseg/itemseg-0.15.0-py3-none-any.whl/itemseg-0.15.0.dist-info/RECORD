@@ -1,0 +1,11 @@
+itemseg/__about__.py,sha256=0tRTxXqdUmiWQk0LFyzG6hzsor_loyXC43hSZjxkKLg,123
+itemseg/__init__.py,sha256=sg-oNG4SN5fif6__nj5kL0tBAUxLH2x2juOZsHrPqJA,23825
+itemseg/__main__.py,sha256=6durm0rksIz2NrptVb6M-E6uK2ElDQSWF6-aGhE8nqY,125
+itemseg/__main__.py~,sha256=cdiUlhP4x55WFZFwU3aBbevTiYpDSPFYTYTJMEvWQ34,100
+itemseg/crf_feature_lib_v8.py,sha256=HJ3yrjy3uxYUf-ktJM8inJAdEqxyk8_sDzHFIn59oCA,19222
+itemseg/lib_10kq_seg_v1.py,sha256=2kRPdbSg7x-UHM79WE3_GLMLbcdYfBdzA6o4RPaXWWE,49724
+itemseg-0.15.0.dist-info/METADATA,sha256=BKJs1SCtwyP0np0s9WzN0y31ZW28AJF_ICkrl-9uie4,1979
+itemseg-0.15.0.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+itemseg-0.15.0.dist-info/entry_points.txt,sha256=q7SXCAHPGdVbIgX5xiVeudMRffFzl-uyv8WiHMXx-38,41
+itemseg-0.15.0.dist-info/licenses/LICENSE.txt,sha256=F28ut1gK4QIFUXs3018YxI6pbn6F5LJhHGXbRoPckoc,19352
+itemseg-0.15.0.dist-info/RECORD,,
