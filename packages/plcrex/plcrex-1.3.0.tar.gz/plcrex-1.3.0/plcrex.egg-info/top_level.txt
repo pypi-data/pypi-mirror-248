@@ -1,0 +1,7 @@
+PLCreX_outputs
+bin
+dist
+docs
+plcrex
+tests
+venv
