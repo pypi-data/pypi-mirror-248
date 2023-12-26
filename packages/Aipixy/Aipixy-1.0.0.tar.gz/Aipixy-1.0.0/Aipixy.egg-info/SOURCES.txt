@@ -1,0 +1,9 @@
+README.md
+setup.py
+Aipixy/__init__.py
+Aipixy/aipixy.py
+Aipixy.egg-info/PKG-INFO
+Aipixy.egg-info/SOURCES.txt
+Aipixy.egg-info/dependency_links.txt
+Aipixy.egg-info/requires.txt
+Aipixy.egg-info/top_level.txt
