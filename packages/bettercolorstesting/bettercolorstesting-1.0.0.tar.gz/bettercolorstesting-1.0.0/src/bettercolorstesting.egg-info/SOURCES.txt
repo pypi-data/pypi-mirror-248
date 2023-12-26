@@ -1,0 +1,7 @@
+setup.py
+src/bettercolorstesting.egg-info/PKG-INFO
+src/bettercolorstesting.egg-info/SOURCES.txt
+src/bettercolorstesting.egg-info/dependency_links.txt
+src/bettercolorstesting.egg-info/top_level.txt
+src/examples/__init__.py
+src/examples/options.py
