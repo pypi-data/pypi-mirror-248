@@ -1,0 +1,8 @@
+piqp-0.2.4.dist-info/RECORD,,
+piqp-0.2.4.dist-info/LICENSE,sha256=Ql0WXOWsYrw_0c74NzT6Z4C8hEZYv8XpBMpFoBHf7HA,1313
+piqp-0.2.4.dist-info/WHEEL,sha256=VdDmD53Z5Im3s3DzMnDRXVcjZVnzMxiqEPFSmUQBX3s,110
+piqp-0.2.4.dist-info/top_level.txt,sha256=F-GFRluNmn1bIS3npWT9LVAqKKnPzP4_LX_vULOXLnE,5
+piqp-0.2.4.dist-info/METADATA,sha256=KuAS4BgM5w1wamxapJhc1vbN8G29PQPzaiQChJWPn5M,4745
+piqp/__init__.py,sha256=Wjb2QcsWaVeit-n248L7l7u603eEeamLdQOmJPjiE2Q,965
+piqp/piqp_python.cpython-312-darwin.so,sha256=SqYA5tR3gOWwrrxBMQVfzgXKhuwE2Opf652VxCiugrs,514112
+piqp/instruction_set.cpython-312-darwin.so,sha256=znRIe6yjigfxnAGfgN7lesspqPU8F0lCvolUzA9Z-o0,114072
