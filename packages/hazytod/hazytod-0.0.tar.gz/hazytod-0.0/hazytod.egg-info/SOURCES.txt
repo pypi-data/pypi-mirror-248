@@ -1,0 +1,8 @@
+README.md
+setup.py
+hazytod/__init__.py
+hazytod.egg-info/PKG-INFO
+hazytod.egg-info/SOURCES.txt
+hazytod.egg-info/dependency_links.txt
+hazytod.egg-info/not-zip-safe
+hazytod.egg-info/top_level.txt
