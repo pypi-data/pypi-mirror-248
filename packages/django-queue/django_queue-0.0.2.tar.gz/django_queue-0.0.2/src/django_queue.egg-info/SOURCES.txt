@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/django_queue/__init__.py
+src/django_queue/admin.py
+src/django_queue/apps.py
+src/django_queue/models.py
+src/django_queue/tests.py
+src/django_queue/views.py
+src/django_queue.egg-info/PKG-INFO
+src/django_queue.egg-info/SOURCES.txt
+src/django_queue.egg-info/dependency_links.txt
+src/django_queue.egg-info/top_level.txt
+src/django_queue/migrations/0001_initial.py
+src/django_queue/migrations/0002_alter_task_result.py
+src/django_queue/migrations/0003_task_type.py
+src/django_queue/migrations/__init__.py
