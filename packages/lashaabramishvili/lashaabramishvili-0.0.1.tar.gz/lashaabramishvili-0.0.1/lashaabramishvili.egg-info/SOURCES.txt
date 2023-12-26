@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+lashaabramishvili.egg-info/PKG-INFO
+lashaabramishvili.egg-info/SOURCES.txt
+lashaabramishvili.egg-info/dependency_links.txt
+lashaabramishvili.egg-info/top_level.txt
