@@ -1,0 +1,2 @@
+[console_scripts]
+open-aoe = aoe.backend.main:main
