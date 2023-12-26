@@ -1,0 +1,13 @@
+zlib_ng/__init__.py,sha256=-7enVGXr7tqbiUwo7-Bapc1n4LYYsTcc_vvMz4xpLaw,354
+zlib_ng/gzip_ng.py,sha256=IBuVxHqkgMRzRWy6Ha8rkyaNfoNc6CjqQtqXDJ_PrEQ,13808
+zlib_ng/gzip_ng_threaded.py,sha256=LACc1Zi4fSc0wTVPcwyHV40Q9BZI3nMbelEHHQi3Bzw,15875
+zlib_ng/py.typed,sha256=a1RlQ-hAngPdZDtrgliwTVNtPmZYUZS3wvfbMRnunHI,28
+zlib_ng/zlib_ng.cp38-win_amd64.pyd,sha256=oUwPVDrXWEVQUrcDgshtRW66pIYTfdJ1Fd08Q4L0Oyk,132608
+zlib_ng/zlib_ng.pyi,sha256=npdilZfTEiIIbzDqs5__w-dgrtO155O8Z5PoIKpMJb0,2862
+zlib_ng/zlib-ng/LICENSE.md,sha256=pV8Pn5EbOQ-K7Izfcp9kOqiRKmAyVaXZOGYDn7BCUzk,886
+zlib_ng/zlib-ng/README.md,sha256=H9OGmCMZaUPtVYjFa4qaQmY06QR5GU1giMTVtUrGDAU,15120
+zlib_ng-0.4.0.dist-info/LICENSE,sha256=VwawAF9rOxOG0bIFNa6RpUXYDZ4lVaHndABMqMeRFbA,2532
+zlib_ng-0.4.0.dist-info/METADATA,sha256=zls7H6A3TyeSI6aaBaWPKnusj6HZ7ZQjOSsKL-GqDNQ,6923
+zlib_ng-0.4.0.dist-info/WHEEL,sha256=3SeyPJ5-Us2Ct5GSftUVKtLSlm-bNefW4m5qd0GLzww,100
+zlib_ng-0.4.0.dist-info/top_level.txt,sha256=TT28PKmHtbmNxoumLpP--3jlmiQVVMCux45dUVs_hes,8
+zlib_ng-0.4.0.dist-info/RECORD,,
