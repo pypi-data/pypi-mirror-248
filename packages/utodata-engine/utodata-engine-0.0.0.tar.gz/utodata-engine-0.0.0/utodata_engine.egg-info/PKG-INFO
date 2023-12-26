@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: utodata-engine
+Version: 0.0.0
+Summary: 【友道智途-数据平台】数据引擎SDK：支持创建数据引擎工作流、创建、同步、更新训练数据集，获取工作流及节点信息等
+Author: uto-dataplatform
+Author-email: data-platform@utopilot.ai
