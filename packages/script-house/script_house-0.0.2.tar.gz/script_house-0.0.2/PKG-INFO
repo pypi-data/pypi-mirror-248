@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: script_house
+Version: 0.0.2
+Summary: a python script house containing handy scripts for daily use
+Home-page: https://github.com/el-nino2020/script-house
+Author: El nino
+Author-email: el-nino202020@protonmail.com
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Other Audience
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+# 如何本地安装
+
+```shell
+python.exe .\setup.py bdist_wheel sdist
+pip install .
+```
