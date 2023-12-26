@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: data-magic
+Version: 0.1
+Summary: A python library to help you import and export data from various formats easily
+Home-page: https://github.com/Pythondeveloper6/Data-Magic-
+Author: Mahmoud Ahmed
+Author-email: contact.mahmoudahmed@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: pandas
+
+# Data Magic
+
+A Python library to help you import and export data from various formats easily
+
+## Installation
+
+Install the package using pip:
+
+```bash
+pip install data-magic
+```
+
+## Features
+
+- Fetches JSON data from a provided URL.
+- Supports handling authentication tokens for secured endpoints.
+- Converts JSON data to CSV or JSON file formats.
+- Connects to an SQL database and fetches data based on provided connection parameters.
+- Converts SQL query results to CSV or JSON file formats.
+
+
+## Usage 
+
+- convert json data
+```python
+from datamagic import JsonCsvConverter
+
+# Create a new JsonCsvConverter instance
+converter = JsonCsvConverter(url='https://jsonplaceholder.typicode.com/todos/1',
+                              auth_token='your_auth_token')
+
+# Convert the JSON data to a CSV file and save it
+converter.convert_to_file('output.csv', output_format='csv')
+
+# Convert the JSON data to a JSON file and save it
+converter.convert_to_file('output.json', output_format='json')
+
+```
+
+- convert sql data
+```python
+from database_converter import DatabaseToCSVConverter
+
+# Replace these with your actual database connection parameters
+connection_params = {
+    'host': 'your_host',
+    'user': 'your_username',
+    'password': 'your_password',
+    'database': 'your_database'
+}
+
+converter = DatabaseToCSVConverter(connection_params)
+
+# Define your SQL query to retrieve data from the database
+sql_query = "SELECT * FROM your_table"
+
+# Convert fetched data to CSV format
+converter.convert_to_file(sql_query, 'output.csv', output_format='csv')
+
+# Convert fetched data to JSON format
+converter.convert_to_file(sql_query, 'output.json', output_format='json')
+```
