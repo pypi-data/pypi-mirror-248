@@ -1,0 +1,2 @@
+alibabacloud-aiearth-engine20220609>=1.0.5
+watchdog~=2.1.6
