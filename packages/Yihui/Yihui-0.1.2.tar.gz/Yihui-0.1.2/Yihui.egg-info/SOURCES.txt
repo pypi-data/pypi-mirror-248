@@ -1,0 +1,7 @@
+README.md
+setup.py
+Yihui.egg-info/PKG-INFO
+Yihui.egg-info/SOURCES.txt
+Yihui.egg-info/dependency_links.txt
+Yihui.egg-info/not-zip-safe
+Yihui.egg-info/top_level.txt
