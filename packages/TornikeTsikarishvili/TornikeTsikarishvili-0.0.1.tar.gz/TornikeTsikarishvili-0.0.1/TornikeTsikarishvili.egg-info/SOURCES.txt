@@ -1,0 +1,13 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+__init__.py
+main.py
+math_operations.py
+math_operations_1.py
+setup.py
+TornikeTsikarishvili.egg-info/PKG-INFO
+TornikeTsikarishvili.egg-info/SOURCES.txt
+TornikeTsikarishvili.egg-info/dependency_links.txt
+TornikeTsikarishvili.egg-info/top_level.txt
