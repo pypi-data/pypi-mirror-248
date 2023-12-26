@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: hitfactorpy
+Version: 1.0.1
+Summary: Python tools for parsing and analyzing practical match reports
+Home-page: https://cahna.github.io/hitfactorpy/
+License: MIT
+Keywords: cli,parse,pandas
+Author: Conor Heine
+Author-email: conor.heine@gmail.com
+Requires-Python: >=3.10,<3.12
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Other/Nonlisted Topic
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Pre-processors
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Dist: httpx[http2] (>=0.23.3,<0.24.0)
+Requires-Dist: pandas (>=1.5.2,<2.0.0)
+Requires-Dist: pydantic[email] (>=1.10.4,<2.0.0)
+Requires-Dist: typer[all] (>=0.7.0,<0.8.0)
+Project-URL: Bug Tracker, https://github.com/cahna/hitfactorpy/issues
+Project-URL: Documentation, https://cahna.github.io/hitfactorpy/
+Project-URL: Repository, https://github.com/cahna/hitfactorpy
+Description-Content-Type: text/markdown
+
+# hitfactorpy
+
+[![Main](https://github.com/cahna/hitfactorpy/actions/workflows/main.yaml/badge.svg)](https://github.com/cahna/hitfactorpy/actions/workflows/main.yaml)
+[![PyPI version](https://badge.fury.io/py/hitfactorpy.svg)](https://badge.fury.io/py/hitfactorpy)
+
+Python tools for parsing and analyzing practical match reports.
+
+Documentation website: [https://cahna.github.io/hitfactorpy](https://cahna.github.io/hitfactorpy)
+
+```console
+$ hitfactorpy --help
+```
+
+Or:
+
+```console
+$ python -m hitfactorpy --help
+```
+
