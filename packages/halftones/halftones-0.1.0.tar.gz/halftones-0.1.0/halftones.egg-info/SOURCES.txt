@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+halftones/__init__.py
+halftones/halftones.py
+halftones.egg-info/PKG-INFO
+halftones.egg-info/SOURCES.txt
+halftones.egg-info/dependency_links.txt
+halftones.egg-info/top_level.txt
