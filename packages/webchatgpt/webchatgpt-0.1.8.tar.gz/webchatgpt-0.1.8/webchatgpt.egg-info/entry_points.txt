@@ -1,0 +1,2 @@
+[console_scripts]
+webchatgpt = WebChatGPT.console:main
