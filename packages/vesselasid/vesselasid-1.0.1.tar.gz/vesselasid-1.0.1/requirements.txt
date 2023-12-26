@@ -1,0 +1,5 @@
+mido
+numpy
+pyaudio
+pydub
+wave
