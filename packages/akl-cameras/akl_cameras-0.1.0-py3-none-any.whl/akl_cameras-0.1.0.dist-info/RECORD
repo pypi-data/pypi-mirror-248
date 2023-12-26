@@ -1,0 +1,7 @@
+akl_cameras/__init__.py,sha256=-5oDOMKdGv3TjthgYQpSRIWmrwv8TZUow-P38ZOReiw,136
+akl_cameras/camera.py,sha256=tTnOLZ8Ou1x-MfZQhfsIcGmnhXQ1owE0IQycz4qeOX0,1457
+akl_cameras/file.py,sha256=IU5D5vwvdKNuX6ZeQL2qJ6qbnnjr14Od3ThcM8siREs,461
+akl_cameras/photo.py,sha256=W7nwbEQfF-GIJvs326w4p6xUUgtQHXnhVU9YruoeGaE,890
+akl_cameras-0.1.0.dist-info/METADATA,sha256=ew9Zfap_YDC2NmCZ3cxqztz3BJKVZ1I-0OyxAvVtmAE,1106
+akl_cameras-0.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+akl_cameras-0.1.0.dist-info/RECORD,,

@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: akl-cameras
+Version: 0.1.0
+Summary: Tool that allow to operate cameras owned by AKL
+Author: Jędrzej Stasik
+Author-email: jedrzej.stasik@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# AKL Cameras
+
+Tool that allow to operate cameras owned by AKL.
+
+## Instalation
+
+### Install required package
+
+*Manjaro:*
+
+```bash
+$ sudo pamac install gphoto2
+```
+
+*Fedora:*
+
+```bash
+$ sudo dnf install gphoto2
+```
+
+*RaspberyPi:*
+
+```bash
+$ sudo apt install gphoto2
+```
+
+### Setup repository
+
+```bash
+$ git clone git@gitlab.com:academic-aviation-club/droniada-2024/akl-cameras.git
+$ cd akl-cameras
+$ poetry install --no-root
+$ poetry shell
+```
+
+### Setup repository on RaspberyPi:
+
+```bash
+$ git clone git@gitlab.com:academic-aviation-club/droniada-2024/akl-cameras.git
+$ cd akl-cameras
+```
+
+### Hardware preparation
+
+1. Connect camera to the on-board computer,
