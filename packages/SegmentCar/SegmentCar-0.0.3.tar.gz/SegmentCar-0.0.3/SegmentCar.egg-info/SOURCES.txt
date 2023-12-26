@@ -1,0 +1,17 @@
+README.md
+setup.py
+SegmentCar.egg-info/PKG-INFO
+SegmentCar.egg-info/SOURCES.txt
+SegmentCar.egg-info/dependency_links.txt
+SegmentCar.egg-info/requires.txt
+SegmentCar.egg-info/top_level.txt
+carbgremover/__init__.py
+carbgremover/external_model.py
+carbgremover/internal_model.py
+carbgremover/images/README.md
+carbgremover/images/car1.jpg
+carbgremover/images/car2.jpg
+carbgremover/images/rescar1.jpg
+carbgremover/images/rescar2.jpg
+carbgremover/pretrained_models/best_model_weights.h5
+carbgremover/pretrained_models/sam_vit_h_4b8939.pth
