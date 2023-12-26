@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: ksef-utils
+Version: 1.0
+Home-page: https://github.com/pprzetacznik/ksef-utils
+Author: Piotr Przetacznik
+Author-email: "piotr.przetacznik+ksef@gmail.com",
+Keywords: invoices,ksef
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Customer Service
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: pytest
+Requires-Dist: pytest-cov
+Requires-Dist: Jinja2
+Requires-Dist: pycryptodome
+Requires-Dist: lxml
+
+# KSEF utils
+
+## Installing package from source
+
+```Bash
+$ cd ksef-utils
+$ pip install -e .
+```
+
+## Run tests
+
+```Bash
+$ mkvirtualenv ksef
+(ksef) $ pip install -r requirements.txt
+(ksef) $ pytest -svvv
+```
+
+## Set up secrets
+
+Log in to [https://ksef-test.mf.gov.pl/web/] and generate your individual `KSEF_TOKEN`.
+
+```Bash
+#!/bin/bash
+
+export KSEF_ENV="test"
+export KSEF_TOKEN="..."
+export KSEF_NIP="..."
+```
+
+## OpenAPI
+
+```
+/openapi/gtw/svc/api/KSeF-common.yaml
+/openapi/gtw/svc/api/KSeF-batch.yaml
+/openapi/gtw/svc/api/KSeF-online.yaml
+```
+
+## Marks
+
+Run all e2e/functional/current tests
+```
+$ pytest -svvv tests/test_ksef.py -m "e2e and not ignore"
+$ pytest -svvv tests/test_ksef.py -m "functional and not ignore"
+$ pytest -svvv tests/test_ksef.py -m "current and not ignore"
+$ ./run_tests.sh
+```
