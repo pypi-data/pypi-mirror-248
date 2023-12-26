@@ -1,0 +1,18 @@
+[project]
+name = "dragon_e"
+version = "1.0.1"
+authors = [
+  { name="Wren", email="theminecommander@gmail.com" },
+]
+description = "Encrypt like a dragon: new method for securing data"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU Affero General Public License v3",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/TheMineCommander/dragon_e"
+Issues = "https://github.com/TheMineCommander/dragon_e/issues"
