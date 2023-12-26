@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: oshit
+Version: 0.0.1
+Summary: An app, it will be cool
+Home-page: https://github.com/davep/oshit
+Author: Dave Pearson
+Author-email: davep@davep.org
+Maintainer: Dave Pearson
+Maintainer-email: davep@davep.org
+License: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Keywords: terminal
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Environment :: Console
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Terminals
+Classifier: Typing :: Typed
+Requires-Python: <3.12,>=3.10
+Description-Content-Type: text/markdown
+
+# Coming Soon(ish)
+
+Coming 2024, all being well.
+
+[//]: # (README.md ends here)
