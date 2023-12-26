@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+apps/dbus-cli
+pysdbus/__init__.py
+pysdbus/dbus.py
+pysdbus/header.py
+pysdbus/llapi.py
+pysdbus/pysdbus.py
+pysdbus.egg-info/PKG-INFO
+pysdbus.egg-info/SOURCES.txt
+pysdbus.egg-info/dependency_links.txt
+pysdbus.egg-info/top_level.txt
