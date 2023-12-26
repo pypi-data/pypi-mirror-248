@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements-dev.txt
+requirements.txt
+setup.py
+proxops.egg-info/PKG-INFO
+proxops.egg-info/SOURCES.txt
+proxops.egg-info/dependency_links.txt
+proxops.egg-info/requires.txt
+proxops.egg-info/top_level.txt
+proxops.egg-info/zip-safe
+sphinx_ansible_ext/__init__.py
+sphinx_ansible_ext/conversions.py
+sphinx_ansible_ext/directives.py
