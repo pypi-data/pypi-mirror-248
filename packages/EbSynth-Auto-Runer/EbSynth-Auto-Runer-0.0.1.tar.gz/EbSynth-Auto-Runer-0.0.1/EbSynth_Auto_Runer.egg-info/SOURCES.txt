@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+main.py
+setup.py
+EbSynth_Auto_Runer.egg-info/PKG-INFO
+EbSynth_Auto_Runer.egg-info/SOURCES.txt
+EbSynth_Auto_Runer.egg-info/dependency_links.txt
+EbSynth_Auto_Runer.egg-info/entry_points.txt
+EbSynth_Auto_Runer.egg-info/requires.txt
+EbSynth_Auto_Runer.egg-info/top_level.txt
+data/__init__.py
+data/run_button.png
+data/synth_button.png
+utils/__init__.py
+utils/auto_run.py
+utils/common.py

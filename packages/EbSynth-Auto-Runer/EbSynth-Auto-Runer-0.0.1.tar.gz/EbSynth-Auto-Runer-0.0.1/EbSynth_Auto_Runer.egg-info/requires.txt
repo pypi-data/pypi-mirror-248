@@ -1,0 +1,4 @@
+opencv-python>=4.8.1.78
+PyAutoGUI>=0.9.54
+rich>=13.7.0
+tqdm>=4.66.1
