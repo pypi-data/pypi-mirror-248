@@ -1,0 +1,14 @@
+spacestar/__init__.py,sha256=_s4Z2t5tQnnvvN43_4iZs1WMePqvQvyTFZ4OyuHMEI8,4707
+spacestar/app.py,sha256=Js7FYhtfEY672xtbMPs_6uSR763-d1nokZpG3wYRoGs,7646
+spacestar/component.py,sha256=Zdku5Syfm1tJ-MwyhGc1QL2g6qLqjLnhuCDcza2toGM,3435
+spacestar/engine.py,sha256=ipk_8k54DPMueiibE7QzJPRNVwCoIC8_hlp4H5bIMdg,7226
+spacestar/initfolders.py,sha256=DwK19RO0o_5hzy3tBQNLPuCfmIJCvZ806vMZ5M3kJTU,1581
+spacestar/middleware.py,sha256=CoJOoURi75W6R8prneUO--2Qey9RbrN55mUxITU_cx4,246
+spacestar/model.py,sha256=EYMPOohshVK_4_tX580oP5hRS2CjdJLl6fP8GduzbDY,1954
+spacestar/settings.py,sha256=9lx9JYxOdXxEGnOD5WtICYdDAnNUFYLAm95eWuU4ZxE,225
+spacestar/static.py,sha256=tv8L_VEApsEXRAjYkXMFwmMU-ZsaGCdfHQsrAbYIRhQ,497
+spacestar/templates.py,sha256=k-7SEFCDnaPq1w-efNf9ZhoJbOvd8WFFakLVc-wejCQ,6188
+spacestar-0.1.4.dist-info/entry_points.txt,sha256=sNI4QTrj8tW_cuMNu8JUbMYu8lpIG-79DAkJq2_7dw8,180
+spacestar-0.1.4.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+spacestar-0.1.4.dist-info/METADATA,sha256=S51VkdbxnuUCN8iidJvqGv9ub03gMOf9earYIMeg_to,751
+spacestar-0.1.4.dist-info/RECORD,,
