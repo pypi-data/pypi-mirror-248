@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: logit-python
+Version: 1.0.1
+Summary: logit for python
+License: Apache License 2.0
+Keywords: logit logit python
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Utilities
+Requires-Python: >=3.9
+
