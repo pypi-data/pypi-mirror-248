@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+simple_file_handler/__init__.py
+simple_file_handler/exceptions.py
+simple_file_handler/handler.py
+simple_file_handler.egg-info/PKG-INFO
+simple_file_handler.egg-info/SOURCES.txt
+simple_file_handler.egg-info/dependency_links.txt
+simple_file_handler.egg-info/requires.txt
+simple_file_handler.egg-info/top_level.txt
+tests/test_handler.py
