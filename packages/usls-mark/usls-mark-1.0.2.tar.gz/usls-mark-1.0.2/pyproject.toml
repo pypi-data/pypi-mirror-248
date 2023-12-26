@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "usls-mark"
+dynamic = ["version"]
+authors = [{name = "jamjamjon", email = "thisiszhangjian@qq.com"}]
+description = "A useless image marker for object detection."
+requires-python = ">=3.8"
+readme = "README.md"
+license = {file = "LICENSE"}
+dependencies = [
+	"numpy",
+	"opencv-python",
+	"onnxruntime",
+	"rich",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+
+[project.urls]
+Homepage = "https://github.com/jamjamjon/usls-mark"
+
+[tool.setuptools.packages.find]
+where = ["src"]  
+namespaces = false  # true by default
+
+[project.scripts]
+usls-mark = "usls_mark:run"
+
+[tool.setuptools.dynamic]
+version = {attr = "usls_mark.__version__"}
