@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: hacku
+Version: 1.7.7
+Summary: hack u
+Author: 0day
+Author-email: just@hacku.orz
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: beautifulsoup4 (>=4.12.2,<5.0.0)
+Requires-Dist: id-validator (>=1.0.20,<2.0.0)
+Requires-Dist: jieba (>=0.42.1,<0.43.0)
+Requires-Dist: loguru (>=0.7.2,<0.8.0)
+Requires-Dist: pycryptodome (>=3.19.0,<4.0.0)
+Requires-Dist: pyexecjs (>=1.5.1,<2.0.0)
+Requires-Dist: pymongo (>=4.6.1,<5.0.0)
+Requires-Dist: pymysql (>=1.1.0,<2.0.0)
+Requires-Dist: pysocks (>=1.7.1,<2.0.0)
+Requires-Dist: random-user-agent (>=1.0.1,<2.0.0)
+Requires-Dist: requests[socks] (>=2.31.0,<3.0.0)
+Requires-Dist: rsa (>=4.9,<5.0)
+Requires-Dist: shodan (>=1.30.1,<2.0.0)
+Requires-Dist: ujson (>=5.9.0,<6.0.0)
+Description-Content-Type: text/markdown
+
+No Hackers, Just Hack.
