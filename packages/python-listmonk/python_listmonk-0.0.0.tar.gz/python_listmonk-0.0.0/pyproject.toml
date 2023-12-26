@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "python-listmonk"
+version = "0.0.0"
+description = "Listmonk"
+authors = ["OpenAPI Generator Community <team@openapitools.org>"]
+license = "AGPL-3.0 license"
+readme = "README.md"
+repository = "https://github.com/GIT_USER_ID/GIT_REPO_ID"
+keywords = ["OpenAPI", "OpenAPI-Generator", "Listmonk"]
+include = ["listmonk/py.typed"]
+
+[[tool.poetry.packages]]
+include = "listmonk"
+[tool.poetry.dependencies]
+python = "^3.7"
+
+urllib3 = ">= 1.25.3"
+python-dateutil = ">=2.8.2"
+pydantic = ">=2"
+typing-extensions = ">=4.7.1"
+
+[tool.poetry.dev-dependencies]
+pytest = ">=7.2.1"
+tox = ">=3.9.0"
+flake8 = ">=4.0.0"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.pylint.'MESSAGES CONTROL']
+extension-pkg-whitelist = "pydantic"
+
+[tool.semantic_release]
+version_variables = [ "listmonk/__init__.py:__version__",]
+version_toml = [ "pyproject.toml:tool.poetry.version",]
+branch = "main"
+build_command = "pip install poetry && poetry build"
+commit_parser = "emoji"
+
+[tool.semantic_release.commit_parser_options]
+major_tags = [ ":boom:", "💥",]
+minor_tags = [ ":sparkles:", "✨",]
+patch_tags = [ ":zap:", "⚡️", ":bug:", "🐛", ":ambulance:", "🚑️", ":lipstick:", "💄", ":lock:", "🔒️", ":arrow_down:", "⬇️", ":arrow_up:", "⬆️", ":pushpin:", "📌", ":chart_with_upwards_trend:", "📈", ":heavy_plus_sign:", "➕", ":heavy_minus_sign:", "➖", ":wrench:", "🔧", ":globe_with_meridians:", "🌐", ":pencil2:", "✏️", ":rewind:", "⏪️", ":package:", "📦️", ":alien:", "👽️", ":bento:", "🍱", ":wheelchair:", "♿️", ":speech_balloon:", "💬", ":card_file_box:", "🗃️", ":children_crossing:", "🚸", ":iphone:", "📱", ":egg:", "🥚", ":alembic:", "⚗️", ":mag:", "🔍️", ":label:", "🏷️", ":triangular_flag_on_post:", "🚩", ":goal_net:", "🥅", ":dizzy:", "💫", ":wastebasket:", "🗑️", ":passport_control:", "🛂", ":adhesive_bandage:", "🩹", ":necktie:", "👔",]
+
+[tool.semantic_release.changelog]
+template_dir = "templates"
