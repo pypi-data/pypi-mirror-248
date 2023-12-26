@@ -1,0 +1,158 @@
+import argparse
+import shutil
+import time
+import os
+import numpy as np
+from collections import OrderedDict
+from audiotool.get_audio_timestamp import extract_audio_to_file
+from pydub import AudioSegment
+from audiotool.get_audio_timestamp import video_to_audio
+from .pipeline_annote import get_annote_result
+from .pipeline_ms import get_result_ms
+
+# import torchaudio.lib.libtorchaudio
+from pprint import pprint
+import csv
+
+
+def save_to_csv(data, filename, main_spk_id):
+    # Open the file in write mode
+    with open(filename, "w", newline="", encoding="utf-8") as csvfile:
+        # Create a CSV writer
+        writer = csv.writer(csvfile)
+        # Write the header
+        writer.writerow(["开始时间", "结束时间", "文本", "说话人id"])
+        # Write the data
+        for item in data:
+            if item["speaker"] == main_spk_id:
+                item["speaker"] = str(item["speaker"]) + "_main"
+            writer.writerow([item["start"], item["end"], item["text"], item["speaker"]])
+    print("done save")
+
+
+def save_tts_txt(data, target_folder, format="mp3"):
+    # Open the file in write mode
+    # with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
+    for i, item in enumerate(data):
+        tgt_txt_f = os.path.join(target_folder, str(item["speaker"]) + "_tts.txt")
+        with open(tgt_txt_f, "a", encoding="utf-8") as file:
+            a_f = f'{str(item["speaker"])}_{i}.{format}'
+            d = f'{a_f}|{str(item["speaker"])}|ZH|{item["text"]}'
+            file.write(d + "\n")
+    print("save txt done.")
+
+
+def mute_speakers(wav_file, timestamps, main_speaker):
+    # Load the audio file
+    if wav_file.endswith(".wav"):
+        audio = AudioSegment.from_wav(wav_file)
+    elif wav_file.endswith(".mp3"):
+        audio = AudioSegment.from_mp3(wav_file)
+    else:
+        audio = AudioSegment.from_mp3(wav_file)
+    # Iterate over the timestamps
+    for timestamp in timestamps:
+        # If the speaker is not the main speaker, mute them
+        if "main" not in str(timestamp["speaker"]):
+            start_t = int(timestamp["start"] * 1000)  # Convert to milliseconds
+            end_t = int(timestamp["end"] * 1000)  # Convert to milliseconds
+            audio = (
+                audio[:start_t]
+                + AudioSegment.silent(duration=(end_t - start_t))
+                + audio[end_t:]
+            )
+    # Save the audio file
+    to_save_f = ""
+    if wav_file.endswith(".wav"):
+        to_save_f = wav_file.replace(".wav", "_masked.wav")
+        audio.export(to_save_f, format="wav")
+    elif wav_file.endswith(".mp3"):
+        to_save_f = wav_file.replace(".mp3", "_masked.mp3")
+        audio.export(to_save_f, format="mp3")
+    print(f"muted audio saved into: {to_save_f}")
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-f", "--file", type=str, default=None)
+    parser.add_argument("-m", "--model", type=str, default="ms")
+    parser.add_argument("--format", type=str, default="mp3")
+    parser.add_argument("-t", "--target", type=str, default=None, help="target folder")
+    parser.add_argument("--tts", action="store_true", help="save tts txt?")
+    args = parser.parse_args()
+
+    if args.format not in ["mp3", "wav"]:
+        print("only mp3 and wav format support for now")
+
+    if args.file.endswith(".mp4"):
+        print("convert mp4 to wav")
+        args.file = video_to_audio(args.file, args.format)
+        print(f"now solving: {args.file}")
+
+    if args.model == "annote":
+        speakers = get_annote_result(args.file)
+    else:
+        speakers = get_result_ms(args.file)
+    pprint(speakers)
+
+    name = os.path.basename(args.file).split(".")[0]
+    # save the most speaker into a folder by the length
+    speakers_lens_gather = OrderedDict()
+    for sp in speakers:
+        # print(sp["speaker"])
+        if sp["speaker"] in speakers_lens_gather.keys():
+            speakers_lens_gather[sp["speaker"]] += sp["unit_len"]
+        else:
+            speakers_lens_gather[sp["speaker"]] = sp["unit_len"]
+    print(speakers_lens_gather)
+
+    most_speaker_index = np.argmax(list(speakers_lens_gather.values()))
+    most_speaker = list(speakers_lens_gather.keys())[most_speaker_index]
+    print("most speaker: ", most_speaker, ", index: ", most_speaker_index)
+    target_folder = f"results/{name}"
+    if os.path.exists(target_folder):
+        shutil.rmtree(target_folder)
+    os.makedirs(target_folder, exist_ok=True)
+    for i, sp in enumerate(speakers):
+        if sp["speaker"] == most_speaker:
+            spk_dir = f'{target_folder}/{sp["speaker"]}_main'
+        else:
+            spk_dir = f'{target_folder}/{sp["speaker"]}'
+        os.makedirs(spk_dir, exist_ok=True)
+        s = sp["start"]
+        e = sp["end"]
+        if args.format == "wav":
+            extract_audio_to_file(s, e, args.file, f"{spk_dir}/{sp['speaker']}_{i}.wav")
+        else:
+            extract_audio_to_file(s, e, args.file, f"{spk_dir}/{sp['speaker']}_{i}.mp3")
+
+    save_tts_txt(speakers, target_folder, args.format)
+    save_to_csv(speakers, os.path.join(target_folder, "asr.csv"), most_speaker)
+
+    # concate all mp3 files into one
+    most_spk_dir = f"{target_folder}/{most_speaker}_main"
+    mp3_files = [f for f in os.listdir(most_spk_dir) if f.endswith(f".{args.format}")]
+    mp3_files.sort(key=lambda f: int("".join(filter(str.isdigit, f))))
+    # Initialize an empty audio segment
+    combined = AudioSegment.empty()
+    for mp3_file in mp3_files:
+        sound = AudioSegment.from_mp3(os.path.join(most_spk_dir, mp3_file))
+        combined += sound
+    combined.export(
+        f"{target_folder}/final_concat.{args.format}", format=f"{args.format}"
+    )
+    print("done!")
+
+    combined_masked = AudioSegment.empty()
+    for mp3_file in mp3_files:
+        sound = AudioSegment.from_mp3(os.path.join(most_spk_dir, mp3_file))
+        combined_masked += sound
+    combined_masked.export(
+        f"{target_folder}/final_concat.{args.format}", format=f"{args.format}"
+    )
+
+    mute_speakers(args.file, speakers, most_speaker)
+
+
+if __name__ == "__main__":
+    main()
