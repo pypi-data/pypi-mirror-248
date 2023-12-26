@@ -1,0 +1,10 @@
+hcclient/cli/cli.py,sha256=EZLv1kl-tgq3rUTI4wb7WVxNZ1e-GVWTO2ge9iejIJ0,5559
+hcclient/client/client.py,sha256=HSdXOl38WsHl_wGUby5e8rX0609n2xkpxPEKXQN2wOc,57483
+hcclient/render/formatter.py,sha256=n9UISXJ714Qye4U4p61rOc95sriZG3ZK-ptOQajyJrI,5227
+hcclient/utils/config.py,sha256=okneKYLCFXjcH7a_3TsgoRoxtYayrgkxhzsrznV0-CE,8440
+hcclient/utils/hook.py,sha256=5pACBBGmGMrZeIOb8-maqjrdrXs0O4kzG07b3czauWg,1011
+hcclient-1.18.6.dist-info/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+hcclient-1.18.6.dist-info/METADATA,sha256=VoU-J66hTi0fr_Tdve8J1yNa2P-4MH8O-z043GegB98,14509
+hcclient-1.18.6.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+hcclient-1.18.6.dist-info/entry_points.txt,sha256=QZdhAqPnxDFN4N2a0Tx1Ag42jT_kAfcIPBwExQXbxeY,50
+hcclient-1.18.6.dist-info/RECORD,,
