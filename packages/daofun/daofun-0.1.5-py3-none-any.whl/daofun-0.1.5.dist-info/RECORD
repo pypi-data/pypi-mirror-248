@@ -1,0 +1,13 @@
+daofun/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+daofun/daofun.py,sha256=CEJZ98D8iLN7EbngMseLXUD9jKZPW0_v61wP6kMRfyI,33716
+daofun/daofun_backend.py,sha256=_rZhE5FGbNEmbbX8sZaRK9sUb4fZ2Tm6m_LjMuYmc_4,8993
+daofun/daofun_gui_selection.py,sha256=367-eanhRUesTERma5jU9RhPGlEwC_47gONygyewRcc,10441
+daofun/daophot_opt.py,sha256=WjPywZV4YT9NYgqwL7kBvhH_dq3D4Q1icvahgcBARLI,1229
+daofun/daophot_wraps.py,sha256=OD0jNdPIk3s1kDRLjSSSzQq0r0ZCBEmy-QzUORw3Gy0,5230
+daofun/fits_handler.py,sha256=QQTwV13MkiKOGE61tAi1P3JXpvnPYFEgZTnp1D2brF0,5679
+daofun/misc_tools.py,sha256=DxsBH6GIP3TyXxea7t1lwqyvLHcmOOgNQoEImRUA8og,6759
+daofun-0.1.5.dist-info/METADATA,sha256=6WgE0NO6HoIDEdxNuXT0CQUdFFQf9OKYZRtoXDsNrCc,423
+daofun-0.1.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+daofun-0.1.5.dist-info/entry_points.txt,sha256=N4nwlyuzKabdQRFqWmPPF3KvYsf0K8JkZv5nbz1mIao,52
+daofun-0.1.5.dist-info/top_level.txt,sha256=44L3obyXQKe_9U7nT7fmiG-T6gkXyd9PtZiCpaqGRmo,7
+daofun-0.1.5.dist-info/RECORD,,
