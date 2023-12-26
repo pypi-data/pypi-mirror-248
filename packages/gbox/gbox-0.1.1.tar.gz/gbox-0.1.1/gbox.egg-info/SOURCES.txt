@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+gbox/__init__.py
+gbox/closed_shapes.py
+gbox/curves.py
+gbox/gbox.py
+gbox/points.py
+gbox/utils.py
+gbox.egg-info/PKG-INFO
+gbox.egg-info/SOURCES.txt
+gbox.egg-info/dependency_links.txt
+gbox.egg-info/top_level.txt
