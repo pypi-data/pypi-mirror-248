@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: streamlit-l7
+Version: 0.1.6
+Summary: Render L7 Map in Streamlit
+Home-page: https://github.com/lzxue/streamlit-l7
+Author: lzxue
+Author-email: lzx199065@gmail.com
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
+License-File: LICENSE
+Requires-Dist: streamlit >=0.63
+
+Render Map charts in Streamlit
