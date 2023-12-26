@@ -1,0 +1,2 @@
+torchvision
+pillow >8.3.1
