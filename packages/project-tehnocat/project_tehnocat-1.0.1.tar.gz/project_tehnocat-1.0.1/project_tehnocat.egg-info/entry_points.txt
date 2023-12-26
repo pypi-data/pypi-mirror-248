@@ -1,0 +1,2 @@
+[console_scripts]
+tehnocat = src.assistant_bot_main:main
