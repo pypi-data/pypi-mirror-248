@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pyqliksense
+Version: 0.0.2
+Summary: A simple library to communicate with Qlik Sense Enterprise on Windows
+Home-page: https://github.com/Andrey-Kosarev/py_qlik_sense
+Author: Andrei Kosarev
+Author-email: kosarev_andrey@mail.ru
+License: The Unlicense
+Project-URL: Source, https://github.com/Andrey-Kosarev/py_qlik_sense
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11,<3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests==2.31.0
+Requires-Dist: requests-ntlm==1.2.0
+Requires-Dist: websocket-client==1.7.0
