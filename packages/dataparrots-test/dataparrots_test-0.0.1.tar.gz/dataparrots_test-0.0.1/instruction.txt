@@ -1,0 +1,37 @@
+The application consists of two sites: User Portal Site and API Site.
+1. User Portal is setup inside a company's firewall, where it can access internal database servers.
+2. API Site is the backend. All User Portals connects to one single API site.
+
+This project is the User Portal site.
+
+User Portal setup
+1. Install Python
+2. Copy flaskai folder to target folder
+3. CD to flaskai folder
+4. pip install -r requirements.txt (created by pip freeze > requirements.txt)
+5. modify .env file
+	a. Modify API_ROOT to the URL of API server, without '/' at the end.
+	b. Modify API_USER_NAME and API_PASSWORD to the values given by API site admininstrator
+6. Remove accesstoken.json file if exists
+6. Initialize db: (If app.db file or migrations directories exist, remove them)
+	a. Flask db init
+	b. Flask db migrate -m 'init'
+	c. Flask db upgrade
+7. Flask run
+
+Admin Usage
+1. Admin needs to create an account for each user of the User Portal
+2. Goto localhost:5000, login with build-in admin account: username=admin, password=admin
+3. Click register user to create user accounts
+4. Click register databasae to create database connections
+
+User Usage
+1. Goto localhost:5000, login with username and password given by User Portal admin
+2. Start using it!
+
+MySQL setup:
+1. On MySQL server, create database user, enable DBManager role
+
+SQL Server setup:
+1. On SQL Server, create database user, enable sysadmin
+2. On User Portall Server, create ODBC Data Source to point to SQL Server
