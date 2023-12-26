@@ -1,0 +1,3 @@
+llamazure.azrest==0.1.0
+llamazure.msgraph==0.0.3
+llamazure.rid==0.0.5
