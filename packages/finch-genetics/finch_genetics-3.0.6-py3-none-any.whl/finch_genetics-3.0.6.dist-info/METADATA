@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: finch-genetics
+Version: 3.0.6
+Requires-Dist: torch
+Requires-Dist: transformers
+Requires-Dist: diffusers
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: typing-extensions
+Requires-Dist: accelerate
+
