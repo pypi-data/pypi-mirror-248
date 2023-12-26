@@ -1,0 +1,8 @@
+pyproject.toml
+src/ml_anim/__init__.py
+src/ml_anim.egg-info/PKG-INFO
+src/ml_anim.egg-info/SOURCES.txt
+src/ml_anim.egg-info/dependency_links.txt
+src/ml_anim.egg-info/requires.txt
+src/ml_anim.egg-info/top_level.txt
+src/ml_anim/nn/__init__.py

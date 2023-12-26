@@ -1,0 +1,30 @@
+[build-system]
+requires = ['setuptools>=42']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = "ml_anim"
+version = "0.0.1"
+authors = [
+    {name = "Heidar-An"}
+]
+description = "A simple library for building ML animations with Manim"
+keywords = ["manim", "ml", "ml anim", "ml_anim", "MLAnim"]
+dependencies = [
+    "manim >= 0.18.0",
+]
+license = {file = "LICENSE"}
+readme = "README.md"
+
+[project.optional-dependencies]
+dev= ["black"]
+
+[project.urls]
+Repository = "https://github.com/Heidar-An/MLAnim"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+exclude = ["tests*"]
