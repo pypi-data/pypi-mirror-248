@@ -1,0 +1,14 @@
+README.md
+setup.py
+car_segmentation.egg-info/PKG-INFO
+car_segmentation.egg-info/SOURCES.txt
+car_segmentation.egg-info/dependency_links.txt
+car_segmentation.egg-info/requires.txt
+car_segmentation.egg-info/top_level.txt
+carbgremover/__init__.py
+carbgremover/external_model.py
+carbgremover/internal_model.py
+carbgremover/images/car1.jpg
+carbgremover/images/car2.jpg
+carbgremover/images/rescar1.jpg
+carbgremover/images/rescar2.jpg
