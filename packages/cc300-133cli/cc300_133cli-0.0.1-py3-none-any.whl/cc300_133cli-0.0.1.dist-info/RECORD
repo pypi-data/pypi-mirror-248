@@ -1,0 +1,6 @@
+collectors/base.py,sha256=-8RbhIRv3Zxe0xrk_eF5UEuICSpqyaLs4B34BETqXzc,472
+collectors/aws/s3.py,sha256=Kq9_cWIiMizayTlJxBat1Mi6tNM6k6FSM7u-cSSOpsI,187
+cc300_133cli-0.0.1.dist-info/METADATA,sha256=9oWmCX5uChDEw5AVvxNJ9lnDxTkIyqAkbZC6epVSLxI,4720
+cc300_133cli-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+cc300_133cli-0.0.1.dist-info/top_level.txt,sha256=rxyVA8gQxlvIxsjY-0oDS5J7mwf5WNfoYn3NPOdyVWY,11
+cc300_133cli-0.0.1.dist-info/RECORD,,
