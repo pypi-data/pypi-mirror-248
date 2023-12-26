@@ -1,0 +1,8 @@
+sys
+opencv-python
+numpy
+tensorflow
+ultralytics
+segment_anything
+tqdm
+requests
