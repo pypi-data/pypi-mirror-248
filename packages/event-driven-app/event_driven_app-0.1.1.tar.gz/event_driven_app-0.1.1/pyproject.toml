@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "event-driven-app"
+version = "0.1.1"
+description = ""
+authors = ["ruslan.shmatov <ruslan.shmatov@casafari.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pydantic = "^2.5.3"
+
+[[tool.poetry.packages]]
+include = "src"
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.13.2"
+ruff = "^0.1.9"
+pytest = "^7.4.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
