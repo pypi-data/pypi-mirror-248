@@ -1,0 +1,2 @@
+[console_scripts]
+rd-webhooks = rd_webhooks.middleware.gunicorn:main

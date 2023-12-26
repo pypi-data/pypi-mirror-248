@@ -1,0 +1,27 @@
+# """ /api/status endpoint
+#
+# files: rd_webhooks/api/status.py
+#        rd_webhooks/api/status.yml
+#        tests/api/test_status.py
+# """
+---
+paths:
+  /api/status:
+    get:
+      operationId: api.status.get
+      summary: "Return status information."
+      description: |
+        Return status information in JSON format.
+      responses:
+        200:
+          description: "OK"
+          content:
+            application/json:
+              schema:
+                properties:
+                  status:
+                    type: string
+                    example: "OK"
+
+        500:
+          $ref: "#/components/responses/500_internal_server_error"

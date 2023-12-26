@@ -1,0 +1,53 @@
+# """ /api/redirects/gitlab/* endpoint
+#
+# files:
+#   rd_webhooks/api/redirects/gitlab/pages.py
+#   rd_webhooks/api/redirects/gitlab/pages.yml
+#   tests/api/redirects/gitlab/test_pages.py
+# """
+
+---
+paths:
+  /api/redirects/gitlab/pages/{group}/{path}:
+    get:
+      operationId: api.redirects.gitlab.pages.get
+      summary: "Returns a GitLab Pages URL from a {project_path}"
+      description: |
+        Returns a GitLab Pages URL from a %{project_path}
+      tags:
+        - gitlab
+        - pages
+
+      parameters:
+        - name: "group"
+          in: path
+          description: "Project path, as {group}/{path}."
+          required: true
+          schema:
+            type: string
+            minLength: 1
+
+        - name: "path"
+          in: path
+          description: "Project path, as {group}/{path}."
+          required: true
+          schema:
+            type: string
+            format: path
+            minLength: 1
+
+        - name: "template"
+          in: query
+          description: "GitLab pages template."
+          required: false
+          schema:
+            type: string
+            example: "https://{group}.gitlab.io/{path}"
+
+      responses:
+        204:
+          $ref: "#/components/responses/204_no_content"
+        302:
+          $ref: "#/components/responses/302_found"
+        400:
+          $ref: "#/components/responses/400_bad_request"

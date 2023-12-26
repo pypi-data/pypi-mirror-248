@@ -1,0 +1,20 @@
+# """ /api/echo endpoint
+#
+# files:
+#   rd_webhooks/api/echo.py
+#   rd_webhooks/api/echo.yml
+# """
+
+---
+paths:
+  /api/echo:
+    post:
+      x-debug: true
+      operationId: api.echo.post
+      summary: "An echo endpoint. Available only in debug."
+      tags:
+        - webhook
+
+      responses:
+        200:
+          $ref: "#/components/responses/200_ok"
