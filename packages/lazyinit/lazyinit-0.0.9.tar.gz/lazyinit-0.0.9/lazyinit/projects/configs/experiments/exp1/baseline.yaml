@@ -1,0 +1,66 @@
+# @package _global_
+
+# ---------------------------------------------------------------------------- #
+#                         任务标识、描述、Comet 设置等                                      
+# ---------------------------------------------------------------------------- #
+memo: 基于 ChatGLM2 的心理大模型微调
+
+# 是否开启 Comet.ml 实验记录
+# start_comet_log: True
+comet_project: PsychologyModel
+comet_exp_name: psychology_chatglm2
+stage: train  # debug、train、finetune
+
+
+# ---------------------------------------------------------------------------- #
+#                               数据、模型加载                               
+# ---------------------------------------------------------------------------- #
+model_name_or_path: THUDM/chatglm2-6b-32k
+train_data_file: ${root_dir}/data/PsyQA/PsyQA_example_lazy.jsonl
+val_data_file: ${root_dir}/data/PsyQA/PsyQA_example_lazy_val.jsonl
+test_data_file: ${root_dir}/data/PsyQA/PsyQA_example_lazy_val.jsonl
+dataset_module_file: projects.modules.dataset.psy.PsyDataset
+dataset_collator_function_file: projects.modules.dataset.psy.PsyDataCollator
+lit_model_file: projects.modules.model.standard.LitModel
+
+ 
+# ---------------------------------------------------------------------------- #
+#                                  训练参数                                     
+# ---------------------------------------------------------------------------- #
+max_epochs: 10
+# fast_dev_run: 10
+lr: 2e-3
+max_uer_input_length: 1024
+max_target_length: 1024
+
+lr_scheduler_type: constant_with_warmup
+warmup_steps: 30
+
+use_qlora: True
+lora_rank: 64
+lora_alpha: 16
+lora_dropout: 0.05
+merge_lora: True  # 是否在训练完成后合并权重
+
+optim: paged_adamw_32bit
+gradient_checkpointing: true
+fp16: true
+weight_decay: 0
+
+
+# ---------------------------------------------------------------------------- #
+#                        HuggingFace Trainer Args                                     
+# ---------------------------------------------------------------------------- #
+logging_steps: 300
+save_steps: 500
+save_strategy: steps
+
+
+# ---------------------------------------------------------------------------- #
+#                         Lightning Trainer Args                                     
+# ---------------------------------------------------------------------------- #
+lit_args:
+  limit_train_batches: 100
+  gradient_clip_val: 0.3
+
+
