@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/socklibex/__init__.py
+src/socklibex/ex.py
+src/socklibex/ex2.py
+src/socklibex.egg-info/PKG-INFO
+src/socklibex.egg-info/SOURCES.txt
+src/socklibex.egg-info/dependency_links.txt
+src/socklibex.egg-info/top_level.txt
