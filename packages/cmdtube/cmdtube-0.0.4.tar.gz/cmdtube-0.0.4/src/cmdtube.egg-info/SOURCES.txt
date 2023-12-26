@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/cmdtube/__init__.py
+src/cmdtube/cmdtube.py
+src/cmdtube.egg-info/PKG-INFO
+src/cmdtube.egg-info/SOURCES.txt
+src/cmdtube.egg-info/dependency_links.txt
+src/cmdtube.egg-info/top_level.txt
+src/cmdtube/functions/__init__.py
+src/cmdtube/functions/download.py
+src/cmdtube/functions/info.py
+src/cmdtube/functions/search.py
+src/cmdtube/functions/transcript.py
+src/cmdtube/functions/watch.py
