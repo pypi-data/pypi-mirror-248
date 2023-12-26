@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: proxops
+Version: 0.0.1
+Summary: TODO
+Author-email: Julien Lecomte <julien@lecomte.at>
+License: MIT
+Project-URL: Homepage, https://gitlab.com/twiddle-z/sphinx-ansible-ext
+Project-URL: Documentation, https://gitlab.com/twiddle-z/sphinx-ansible-ext
+Project-URL: Source code, https://gitlab.com/twiddle-z/sphinx-ansible-ext
+Project-URL: Bug tracker, https://gitlab.com/twiddle-z/sphinx-ansible-ext/-/issues
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: antsibull-docs
+Requires-Dist: yaml2rst
+Provides-Extra: dev
+
+# TODO
