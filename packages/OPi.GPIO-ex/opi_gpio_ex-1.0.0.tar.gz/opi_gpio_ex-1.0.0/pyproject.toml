@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "OPi.GPIO-ex"
+version = "1.0.0"
+authors = [
+  { name="Zetaloop", email="zetaloop@outlook.com" },
+]
+description = "Drop-in replacement for RPi.GPIO supporting Orange Pi and other SBCs"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+]
+dependencies = [
+
+]
+
+[project.urls]
+"Homepage" = "https://github.com/zetaloop/OPi.GPIO"
+"Bug Tracker" = "https://github.com/zetaloop/OPi.GPIO/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["nanopi", "OPi", "orangepi", "radxa", "rockpi"]
+includes = ["LICENSE", "README.md", "VERSION.txt"]
