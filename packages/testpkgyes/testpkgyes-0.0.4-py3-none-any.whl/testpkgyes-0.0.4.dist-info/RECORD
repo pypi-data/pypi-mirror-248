@@ -1,0 +1,9 @@
+testpkgyes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+testpkgyes/cli.py,sha256=93rjfsli1egaGyuer1AN4alMnbl8vw9TaI7US46Ig0E,65
+testpkgyes/example.py,sha256=3aWNSAC3UzoSxnfSnYtsfC0P8A3l5JAMLSNBNVjcKUQ,37
+testpkgyes/two.py,sha256=U6-EY7oX3yOAB8llKwdZRDEnuILFqoBAWMkDY9fwPA4,215
+testpkgyes-0.0.4.dist-info/METADATA,sha256=H6uBoMP3hJbWvUydLUHr2xOHN3DIxFH5L2LzOBA93dY,460
+testpkgyes-0.0.4.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+testpkgyes-0.0.4.dist-info/entry_points.txt,sha256=4LnoyViSw611r76hIRiOheu3ehS7HiozxK4IDcavI9s,46
+testpkgyes-0.0.4.dist-info/licenses/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+testpkgyes-0.0.4.dist-info/RECORD,,
