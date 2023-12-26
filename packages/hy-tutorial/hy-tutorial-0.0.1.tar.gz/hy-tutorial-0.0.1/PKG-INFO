@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: hy-tutorial
+Version: 0.0.1
+Summary: A small example package
+Author-email: Zaid Waqi <zaidwaqi@gmail.com>
+Project-URL: Homepage, https://github.com/zaidwaqi/hy
+Project-URL: Issues, https://github.com/pypa/zaidwaqi/hy/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# hy
+# hy - the "Hey, You!" program
+
+`hy` is a simple program that prints out "Hey, You!" by default without any arguments. However, if you provide a language code, such as `hy IT`, it will print the version of "Hey, You!" in that language.
+
+Currently, `hy` supports the following languages:
+- English (EN)
+- Spanish (ES)
+- French (FR)
+- German (DE)
+- Italian (IT)
+
+To use `hy` with a specific language, simply provide the language code as an argument. For example, to print "Hey, You!" in Italian, run `hy IT`.
+
+Enjoy using `hy` and spreading greetings in different languages!
