@@ -1,0 +1,407 @@
+Metadata-Version: 2.1
+Name: senapp
+Version: 0.2.0
+Summary: A Python 3 package for CLI app development.
+Project-URL: Repository, https://github.com/senumehana/senapp
+Author-email: Volodymyr Zakalyk <volodymyr.zakalyk@gmail.com>
+Maintainer-email: Volodymyr Zakalyk <volodymyr.zakalyk@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2023 Volodymyr Zakalyk
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Keywords: cli,log,shell
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# SenApp - a Python library for CLI applications
+
+This library provides API for fast writing of non-production CLI applications:
+the ones that are used every day, but are too specific to become a standalone
+product. With this library, writing a Python script is almost the same as
+writing a shell script, while benefitting from CLI help and completion.
+
+Notes:
+ - Supported Python versions: 3.6 and newer.
+ - The usage is to clone the repository and import its modules.
+
+## Contents
+
+- [log](#log)
+- [shell](#shell)
+- [cli](#cli)
+
+## log
+
+A wrapper for `logging`. Offers several functions for convenient logging:
+
+| Entity   | Description |
+| -------- | ----------- |
+| `logc()` | Global configuration - verbose mode, detailed mode. |
+| `logt()` | Decorator for functions to trace their calls, visible only in verbose mode. |
+| `logd()` | Debug prints, visible only in verbose. |
+| `logi()` | Regular prints, always visible. |
+| `loge()` | Error prints, always visible. |
+
+
+```python
+from senapp.log import logc, logd, logi
+
+# Disable everything.
+logc(verbose=False, detailed=False)
+logd('Hello debug.')
+logi('Hello info.')
+
+# Hello info.
+```
+
+```python
+from senapp.log import logc, logd, logi
+
+# Enable verbose mode.
+logc(verbose=True)
+logd('Hello debug.')
+logi('Hello info.')
+
+# Hello debug.
+# Hello info.
+```
+
+```python
+from senapp.log import logc, logd, logi
+
+# Enable detailed mode (note: enabled by default).
+logc(detailed=True)
+logi('Hello info.')
+
+# 2023-12-24 07:34:21.367107    8998 8998    [I] test.py:<module>: Hello info.
+```
+
+```python
+from senapp.log import logc, logd, logi
+
+# Multi-line strings have the same prefix.
+logc(detailed=True)
+logi('I\nam\nMulti-line')
+
+# 2023-12-24 07:34:21.367420    8998 8998    [I] test.py:<module>: I
+# 2023-12-24 07:34:21.367420    8998 8998    [I] test.py:<module>: am
+# 2023-12-24 07:34:21.367420    8998 8998    [I] test.py:<module>: Multi-line
+```
+
+```python
+from senapp.log import logc, logd, logi
+
+# Exceptions are printed with full traceback in detailed mode.
+logc(detailed=True)
+
+def fail():
+    raise Exception('I am exception.')
+
+try:
+    fail()
+except Exception as e:
+    logi(e)
+
+# 2023-12-24 07:36:31.789119    9057 9057    [I] test.py:<module>: Traceback (most recent call last):
+# 2023-12-24 07:36:31.789119    9057 9057    [I] test.py:<module>:   File "/home/Projects/test/./test.py", line 40, in <module>
+# 2023-12-24 07:36:31.789119    9057 9057    [I] test.py:<module>:     fail()
+# 2023-12-24 07:36:31.789119    9057 9057    [I] test.py:<module>:   File "/home/Projects/test/./test.py", line 37, in fail
+# 2023-12-24 07:36:31.789119    9057 9057    [I] test.py:<module>:     raise Exception('I am exception.')
+# 2023-12-24 07:36:31.789119    9057 9057    [I] test.py:<module>: Exception: I am exception.
+```
+
+## shell
+
+A wrapper for `subprocess`. This module offers a function `sh()` that runs a
+Bash command. It is possible to configure the behavior for capturing (how the
+output is handled) and failure (an exception on non-zero exit code).
+
+`sh()` returns a structure similar to `subprocess.CompletedProcess`, with the
+command, the return code, and the output (if any).
+
+```python
+from senapp.shell import *
+
+# Pure sub-shell mode. This mode is the default one, and the only one
+# suitable for interactive shells like screen or ssh.
+sh('echo "Hello, world!"')
+
+# Hello, world!
+```
+
+```python
+from senapp.shell import *
+
+# Capture mode. The output is captured with the newline.
+out = sh('echo "Hello, world!"', mode=sh_mode_cap).out
+print(f'Captured: {out}')
+
+# Captured: Hello, world!
+#
+```
+
+```python
+from senapp.shell import *
+
+# Logging mode.
+out = sh('echo "Hello, world!"', mode=sh_mode_log).out
+print(f'Captured: {out}')
+
+# 2023-12-24 07:52:57.788524    9747 9747    [I] shell.py:sh_mode_log: Hello, world!
+# Captured:
+```
+
+```python
+from senapp.shell import *
+
+# Dual mode: logging + capture.
+out = sh('echo "Hello, world!"', mode=sh_mode_tee).out
+print(f'Captured: {out}')
+
+# 2023-12-24 07:55:49.583079    9903 9903    [I] shell.py:sh_mode_tee: Hello, world!
+# Captured: Hello, world!
+#
+```
+
+```python
+from senapp.shell import *
+
+# Exception of failure.
+sh('false')
+
+# Traceback (most recent call last):
+#   File "/home/Projects/test/./test.py", line 5, in <module>
+#     sh('false')
+#   File "/home/Projects/test/./test.py", line 137, in wrapper
+#     ret = func(*args, **kwargs)
+#   File "/home/Projects/test/./test.py", line 142, in sh
+#     raise ShellError(result)
+# senapp.shell.ShellError: Command failed with code 1:
+# false
+```
+
+## cli
+
+A wrapper for [`argparse`](https://docs.python.org/3/library/argparse.html) (CLI parsing)
+and [`argcomplete`](https://github.com/kislyuk/argcomplete) (CLI completion).
+
+This module offers the OOP interface for CLI application building:
+
+| Entity   | Description |
+| -------- | ----------- |
+| `Arg`    | A command line argument, positional or optional. |
+| `App`    | A root application or a sub-command. |
+| `Main`   | A root application with predefined arguments for the debug output. |
+| `Bundle` | A parsed command line. |
+
+An example with two sub-applications:
+
+```python
+#!/usr/bin/env python3
+# PYTHON_ARGCOMPLETE_OK
+
+from senapp.cli import *
+from senapp.log import *
+
+
+class HelloStr(App):
+    def __init__(self) -> 'None':
+        # The sub-application is named "hello-str".
+        super().__init__(
+            name='hello-str',
+            help='Print "Hello" and the strings.',
+        )
+        # Multi-value positional argument - a message to print.
+        self.arg_val = Arg(
+            name='STR',                # Name that appears on the command line.
+            count='*',                 # Allow 0 or more values.
+            help='Strings to print.',  # A help string.
+        )
+        # Add it to the App.
+        self.add(self.arg_val)
+
+    def __call__(self, bundle: 'Bundle') -> 'None':
+        super().__call__(bundle)
+        # Bundle uses the Arg object itself to subscript.
+        values = bundle[self.arg_val]
+        # Combine the message.
+        message = ' '.join(values)
+        # Print it using senapp.log.
+        logd(f'Hello: {message}')
+        logi(f'Hello: {message}')
+
+
+class HelloInt(App):
+    def __init__(self) -> 'None':
+        # The sub-application is named "hello-int".
+        super().__init__(
+            name='hello-int',
+            help='Print "Hello" and the integer.',
+        )
+        # Single-value optional argument - an int to print.
+        self.arg_val = Arg(
+            name='INT',                # Name that appears on the command line.
+            sopt='i',                  # The short option name (-i).
+            lopt='int',                # The long option name (--int).
+            type=int,                  # The type.
+            help='Integer to print.',  # A help string.
+            default=22,                # A fallback value.
+            choices={                  # Acceptable values and their helps.
+                1: 'Print 1.',
+                22: 'Print 22.',
+                340: 'Print 340.',
+            },
+
+        )
+        # Add it to the App.
+        self.add(self.arg_val)
+
+    def __call__(self, bundle: 'Bundle') -> 'None':
+        super().__call__(bundle)
+        # Bundle uses the Arg object itself to subscript.
+        message = bundle[self.arg_val]
+        # Print it using senapp.log.
+        logi(f'Hello: {message}')
+
+
+class HelloMain(Main):
+    def __init__(self) -> 'None':
+        super().__init__('hello')
+        # Main is a subclass of App.
+        # App.add() is overloaded to accept Arg and App.
+        self.add(HelloStr())
+        self.add(HelloInt())
+
+
+# Call the main routine.
+HelloMain()()
+```
+
+Call scenarios:
+
+```shell
+# Help in the root app.
+./hello.py -h
+
+# usage: hello [-h] [-v] [-d] APP ...
+#
+# positional arguments:
+#   APP             Sub-command:
+#                    * hello-str - Print "Hello" and the strings.
+#                    * hello-int - Print "Hello" and the integer.
+#
+# options:
+#   -h, --help      Show this help message and exit.
+#   -v, --verbose   Print debug and trace logs.
+#   -d, --detailed  Print timestamp, process, thread, level, path.
+```
+
+```shell
+# Help in hello-str.
+./hello.py hello-str -h
+
+# usage: hello-str [-h] [STR ...]
+#
+# Print "Hello" and the strings.
+#
+# positional arguments:
+#   STR         Strings to print.
+#
+# options:
+#   -h, --help  Show this help message and exit.
+```
+
+```shell
+# Help in hello-int.
+./hello.py hello-int -h
+
+# usage: hello-int [-h] [-i INT]
+#
+# Print "Hello" and the integer.
+#
+# options:
+#   -h, --help         Show this help message and exit.
+#   -i INT, --int INT  Integer to print.
+#                      Possible values:
+#                       *   1 - Print 1.
+#                       *  22 - Print 22.
+#                       * 340 - Print 340.
+#                      Defaults to: 22
+```
+
+```shell
+# Call hello-str with no args.
+./hello.py hello-str
+# Hello:
+
+# Call hello-str with args.
+./hello.py hello-str a b c
+# Hello: a b c
+
+# Call hello-int with no arg.
+./hello.py hello-int
+# Hello: 22
+
+# Call hello-int with arg.
+./hello.py hello-int -i 340
+# Hello: 340
+
+# Call hello-int with wrong arg.
+./hello.py hello-int -i 350
+# Traceback (most recent call last):
+#   File "/home/Projects/./hello.py", line 78, in <module>
+#     HelloMain()()
+#   File "/home/Projects/./hello.py", line 1132, in __call__
+#     bundle = Parser.parse(parser, self, argv)
+#   File "/home/Projects/./hello.py", line 972, in parse
+#     args[x] = x(values)
+#   File "/home/Projects/./hello.py", line 316, in __call__
+#     raise ValueError(
+# ValueError: Invalid value for argument INT: 42. The value must be in choices:
+#  * 1
+#  * 22
+#  * 340
+
+# Call with detailed mode.
+./hello.py -d hello-str a b c
+# 2023-12-24 09:01:37.743316   20986 20986   [I] hello.py:__call__: Hello: a b c
+
+# Call with verbose mode.
+./hello.py -v hello-str a b c
+# Hello: a b c
+# Hello: a b c
+
+# Call with both modes.
+./hello.py -vd hello-str a b c
+# 2023-12-24 09:04:05.568630   21151 21151   [D] hello.py:__call__: Hello: a b c
+# 2023-12-24 09:04:05.569131   21151 21151   [I] hello.py:__call__: Hello: a b c
+```
