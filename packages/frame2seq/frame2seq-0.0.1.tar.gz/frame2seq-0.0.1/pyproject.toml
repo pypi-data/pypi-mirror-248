@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=42", "wheel", "poetry-core>=1.0.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.poetry]
+name = "frame2seq"
+version = "1.0.0"
+description = "Frame2seq for protein sequence design"
+authors = ["Deniz Akpinaroglu <dakpinaroglu@berkeley.edu>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+frame2seq = "frame2seq:Frame2seqRunner.design"
