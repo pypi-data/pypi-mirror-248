@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "musaddiquehussainlabs"
+version = "0.0.2"
+authors = [
+  { name="MusaddiqueHussain Jahagirdar", email="musaddiquehussainlabs@gmail.com" },
+]
+maintainers = [
+  {name = "MusaddiqueHussain Jahagirdar", email = "musaddiquehussainlabs@gmail.com"}
+]
+description = "MusaddiqueHussainLabs: Empowering text analytics with advanced tools for comprehensive Natural Language Processing (NLP) and Language Models (LLMs)."
+readme = "README.md"
+license = {file = "LICENSE.txt"}
+keywords = ["nlp", "llm", "text preprocessing", "document analysis", "langchain", "google gemini"]
+requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11"
+]
+
+dependencies = [
+    "langchain==0.0.350",
+    "langchain-google-genai",
+    "langchain-experimental",
+    "spacy==3.7.2",
+    "pydantic-settings==2.1.0",
+    "presidio_analyzer",
+    "presidio_anonymizer",
+    "Faker",
+    "regex",
+    "beautifulsoup4",
+    "html5lib",
+    "lxml",
+    "nltk",
+    "textsearch"
+]
+
+[project.urls]
+Homepage = "https://demo-musaddiquehussainlabs.streamlit.app/"
+Documentation = "https://musaddiquehussainlabs.github.io/musaddiquehussainlabs_package/"
+Repository = "https://github.com/MusaddiqueHussainLabs/musaddiquehussainlabs_package.git"
+Issues = "https://github.com/MusaddiqueHussainLabs/musaddiquehussainlabs_package/issues"
+Changelog = "https://github.com/MusaddiqueHussainLabs/musaddiquehussainlabs_package/blob/main/CHANGELOG.md"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"data.raw" = ["*.json", "*.csv"]
