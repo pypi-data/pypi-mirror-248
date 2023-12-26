@@ -1,0 +1,5 @@
+python-docx
+pypdf
+pytz
+striprtf
+Pillow
