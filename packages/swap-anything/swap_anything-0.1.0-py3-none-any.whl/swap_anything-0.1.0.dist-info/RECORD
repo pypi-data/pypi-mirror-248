@@ -1,0 +1,12 @@
+swapanything/__about__.py,sha256=w6OolX8zHkn_tmtcVh3Cn73WZQB2twDk4DuJFQtQIKs,79
+swapanything/__init__.py,sha256=ExS-7xKL8Zc5ogZQkfuRtd7eS83f2WdMApWh4Z9ssvQ,35
+swapanything/select.py,sha256=cTpsRwXBZfFPXI14Bu_LEmrgtl_F7V8MAc0Ogqezrig,1297
+swapanything/backend/__init__.py,sha256=s6fIgWLu5w0dbCgxmj-ti13J66MZMGzpe63vGnMdmgQ,31
+swapanything/backend/_base.py,sha256=k5pZMJ28ld7LKg9rZalfvIQ9RpTuS7jztWlJX37asDQ,4337
+swapanything/backend/airtable.py,sha256=2AR9S055Eb2UfVUWv-PUDBMSxQRtlKhzXBb8fqoBZ4s,3601
+swapanything/backend/simple.py,sha256=7gK8SNkQS_cJ07m08KYtvjfQPrDI2zr6g9qCpVXUh3Q,1608
+swap_anything-0.1.0.dist-info/LICENSE,sha256=F2MJnDxuVc6ckp8z8kPMdjE379Imuklyo8D7Uf44zDM,1068
+swap_anything-0.1.0.dist-info/METADATA,sha256=rzfaHSnWd5zPdRRRygtdHqolPM9UWddcUYjNCpjej1c,10180
+swap_anything-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+swap_anything-0.1.0.dist-info/top_level.txt,sha256=hMGC3wxvRHwOs26YtcMeiB46hg-RjD_b7BTUGtCF5dA,13
+swap_anything-0.1.0.dist-info/RECORD,,
