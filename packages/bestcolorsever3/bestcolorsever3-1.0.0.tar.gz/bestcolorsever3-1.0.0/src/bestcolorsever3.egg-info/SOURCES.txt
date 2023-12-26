@@ -1,0 +1,7 @@
+setup.py
+src/bestcolorsever3.egg-info/PKG-INFO
+src/bestcolorsever3.egg-info/SOURCES.txt
+src/bestcolorsever3.egg-info/dependency_links.txt
+src/bestcolorsever3.egg-info/top_level.txt
+src/examples/__init__.py
+src/examples/options.py
