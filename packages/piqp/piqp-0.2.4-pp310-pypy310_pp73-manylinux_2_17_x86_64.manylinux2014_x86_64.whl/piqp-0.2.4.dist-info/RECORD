@@ -1,0 +1,10 @@
+piqp-0.2.4.dist-info/WHEEL,sha256=3Y5qWT1hb5eppjOJHywCVkGE5nhDErnd4HkIuOfKfwk,166
+piqp-0.2.4.dist-info/LICENSE,sha256=Ql0WXOWsYrw_0c74NzT6Z4C8hEZYv8XpBMpFoBHf7HA,1313
+piqp-0.2.4.dist-info/RECORD,,
+piqp-0.2.4.dist-info/top_level.txt,sha256=F-GFRluNmn1bIS3npWT9LVAqKKnPzP4_LX_vULOXLnE,5
+piqp-0.2.4.dist-info/METADATA,sha256=KuAS4BgM5w1wamxapJhc1vbN8G29PQPzaiQChJWPn5M,4745
+piqp/piqp_python.pypy310-pp73-x86_64-linux-gnu.so,sha256=sOc1MQSqQa9mzd_AwybDRZ6GWtbqvts1Tl8zde8Z2cU,614568
+piqp/instruction_set.pypy310-pp73-x86_64-linux-gnu.so,sha256=yyx_9dALvRjRAOzYF-1ln_FsXW0I8TUkH7DXOBzgToA,204680
+piqp/piqp_python_avx2.pypy310-pp73-x86_64-linux-gnu.so,sha256=WtLZ52Wbf1wm4X_6juAxyMdTRVWWiixX9Pnm-8oC4es,684200
+piqp/__init__.py,sha256=Wjb2QcsWaVeit-n248L7l7u603eEeamLdQOmJPjiE2Q,965
+piqp/piqp_python_avx512.pypy310-pp73-x86_64-linux-gnu.so,sha256=BE--154klM8d4MCCJC7lz0aTOPfv1N2MXG8gkXAr_7M,725160
