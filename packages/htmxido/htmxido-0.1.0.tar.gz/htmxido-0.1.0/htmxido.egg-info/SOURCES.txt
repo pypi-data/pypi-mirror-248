@@ -1,0 +1,7 @@
+LICENSE
+README.md
+pyproject.toml
+htmxido.egg-info/PKG-INFO
+htmxido.egg-info/SOURCES.txt
+htmxido.egg-info/dependency_links.txt
+htmxido.egg-info/top_level.txt
