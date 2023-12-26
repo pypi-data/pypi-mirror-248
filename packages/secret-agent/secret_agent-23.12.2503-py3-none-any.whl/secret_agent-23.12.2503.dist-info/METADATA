@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: secret-agent
+Version: 23.12.2503
+Summary: An agent for handling secrets in config
+Project-URL: Homepage, https://github.com/ghostdisco/secret-agent
+Project-URL: Issues, https://github.com/ghostdisco/secret-agent/issues
+Author-email: ghostdisco <pypi@ghostdisco.me>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8.1
+Requires-Dist: cryptography>=41.0.7
+Description-Content-Type: text/markdown
+
+# Secret-Agent
+
+### Examples
+```
+# automatically generates a key and encrypts an empty string
+secret = SecretAgent.Secret()
+
+# rekey the secret
+secret.rekey()
+
+# update the secret value
+secret.update_value(data='new string value')
+
+# fetch the secret value as clear text
+secret_text = secret.clear_text
+
+
+# encrypt using user supplied password
+secret = SecretAgent.Secret(passwordKeyAsClearText='P@ssw0rd!!', data='secret text', forgetKeyOnCreation=True)
+secret_text = secret.unlock(password=input())
+```
