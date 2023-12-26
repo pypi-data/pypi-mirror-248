@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: filectrl
+Version: 0.0.3
+Summary: File Controller
+Project-URL: Homepage, https://github.com/chorong8883/filectrl
+Author-email: Chor <chorong8883@gmail.com>
+License-File: LICENSE
+Keywords: file,file control,file controller,file ctrl,filectrl
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# filectrl
+File Controller
+
+## Get Controller
+```python
+import filectrl
+fctrl = filectrl.get_controller()
+```
+Parameters:  
+write_type (filectrl.WriteType): Text, Data (default: .Text)  
+data_separator (str): write_type == filectrl.WriteType.Data (default: ',')  
+file_name (str): log file name. (default: ''; project directory name)  
+file_type (str): log file extension name. (default: 'log')  
+logging_path (str): logging path (default: '.')  
+logged_path (str): Save path for logged file. (default: './logs')  
+
+## Write
+```python
+fctrl.write("Hello, world!")
+```
