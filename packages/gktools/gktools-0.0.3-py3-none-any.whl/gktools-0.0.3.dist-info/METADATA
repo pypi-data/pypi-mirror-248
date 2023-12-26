@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: gktools
+Version: 0.0.3
+Summary: gktools is an assiting package for doing basic math operations
+Home-page: UNKNOWN
+Author: Gokul Kumar Jayaram
+Author-email: <gokulkumar.jayaram@gmail.com>
+License: UNKNOWN
+Keywords: python,gktools,packaging,baisc math
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+A package that allows to do basic math operations. This package is built as part of a tutorial for packaging python module
+
+
