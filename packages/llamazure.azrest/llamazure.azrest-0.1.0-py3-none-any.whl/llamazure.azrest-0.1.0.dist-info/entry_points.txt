@@ -1,0 +1,2 @@
+[console_scripts]
+llamazure-azrest-openapi = llamazure.azrest.openapi:main
