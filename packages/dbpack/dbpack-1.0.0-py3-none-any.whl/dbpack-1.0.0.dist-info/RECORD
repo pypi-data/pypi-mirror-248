@@ -1,0 +1,11 @@
+dbpack/__init__.py,sha256=ZlxA2DUcB-Auonl-DcsJC3-TkFT4dW0dyomY02FFmdM,36
+dbpack/database.py,sha256=tqTf_UNqqlSkfS3Qpb0iNdmh7yuAlMr15e3o8DaO5pU,15059
+dbpack/printcolors.py,sha256=NjEN_4Tv8bq0gSpxJ_9cdebqyHSU4GcSrphHx0yCqeY,1470
+dbpack/sqlite_functions.py,sha256=mC_mwUpMRM689fSgoOyILl7fkpqdcS19gccKvm3WTPk,591
+dbpack/version.py,sha256=uyfGiipFnhOCQlqywx7wsgp6d-SYnqPqsPQd_xePZl8,23
+dbpack-1.0.0.data/scripts/selection_columns.py,sha256=DfreIMLSPZ6ZUeojPG-odGWn0xfQ8bxUsx992LrMoms,523
+dbpack-1.0.0.dist-info/LICENSE,sha256=jyKGGrTCuMxPDRq0NyLgQfv_XFwudDrS_ZBx9JNGm-E,1076
+dbpack-1.0.0.dist-info/METADATA,sha256=cisXreR_K3q4XoKn68U8vwVUwhVZtTekD7BYPTtZcps,661
+dbpack-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dbpack-1.0.0.dist-info/top_level.txt,sha256=Z5PwovJ-0c0HKqVAJTPvk9mGyqwIu0bQ1_9gAe1Yez4,7
+dbpack-1.0.0.dist-info/RECORD,,
