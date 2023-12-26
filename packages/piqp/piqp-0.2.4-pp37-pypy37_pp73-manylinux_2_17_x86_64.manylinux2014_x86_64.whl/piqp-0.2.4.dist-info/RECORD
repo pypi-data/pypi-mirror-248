@@ -1,0 +1,10 @@
+piqp-0.2.4.dist-info/WHEEL,sha256=q9dACjjc9G4BWGDyt1YJXSsK2l1cs4Mf5BbjFTFXjus,162
+piqp-0.2.4.dist-info/LICENSE,sha256=Ql0WXOWsYrw_0c74NzT6Z4C8hEZYv8XpBMpFoBHf7HA,1313
+piqp-0.2.4.dist-info/RECORD,,
+piqp-0.2.4.dist-info/top_level.txt,sha256=F-GFRluNmn1bIS3npWT9LVAqKKnPzP4_LX_vULOXLnE,5
+piqp-0.2.4.dist-info/METADATA,sha256=KuAS4BgM5w1wamxapJhc1vbN8G29PQPzaiQChJWPn5M,4745
+piqp/instruction_set.pypy37-pp73-x86_64-linux-gnu.so,sha256=8sH53HBl4EChk-8A7z8IDDztzNP6LJLfxilSKE7wXQw,204672
+piqp/piqp_python.pypy37-pp73-x86_64-linux-gnu.so,sha256=SK3E9unPOPPNbLKb9FJTVkqV2XiGTyG3owWTMj547dA,614568
+piqp/__init__.py,sha256=Wjb2QcsWaVeit-n248L7l7u603eEeamLdQOmJPjiE2Q,965
+piqp/piqp_python_avx512.pypy37-pp73-x86_64-linux-gnu.so,sha256=zbtL3ZTNwTuPHh8GdB-AeknJ-tFyudEdP8R4aI_guw8,725160
+piqp/piqp_python_avx2.pypy37-pp73-x86_64-linux-gnu.so,sha256=Iq3SMN3aW_L-Ibvq3NnISS7wgVFBD0oMvoMPfKBF-Vc,684200
