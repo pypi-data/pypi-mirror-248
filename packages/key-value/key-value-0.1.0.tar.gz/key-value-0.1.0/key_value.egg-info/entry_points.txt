@@ -1,0 +1,3 @@
+[console_scripts]
+your_script = kv1.module_file:main
+
