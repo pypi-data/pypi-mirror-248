@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: env-permissions-manager
+Version: 0.0.1
+Summary: A Python package to manage permissions of Python environments
+Author: Karim Baidar
+Author-email: karimbaidar@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: requests
+Requires-Dist: pytest
+Requires-Dist: setuptools
+Requires-Dist: urllib3
+Requires-Dist: pip
+
+# Permissions Manager
+
+## Overview
+Permissions Manager is a Python package that allows you to manage the permissions of your Python environments. It provides a simple and efficient way to check, change, and report the permissions of multiple Python packages.
+
+## Installation
+You can install the Permissions Manager package using pip:
+```bash
+pip install permissions-manager
+```
+
+# Features
+- Check Permissions: Check the read and write permissions of multiple Python packages.
+- Change Permissions: Change the permissions of multiple Python packages.
+- Report Non-Standard Permissions: Provide a report of multiple Python packages with non-standard permissions.
+
+## Usage
+Here’s a basic usage example of Permissions Manager:
+
+```bash
+from permissions_manager.permissions_manager import PermissionsManager
+permissions_manager = PermissionsManager()
+
+package_names = ['requests', 'numpy']
+permissions = permissions_manager.check_permissions(package_names)
+print(permissions)
+
+new_permissions = 0o755
+permissions_manager.change_permissions(package_names, new_permissions)
+
+standard_permissions = True
+non_standard_packages = permissions_manager.report_non_standard_permissions(package_names, standard_permissions)
+print(non_standard_packages)
+
+````
+
+#### Sample output of the above 
+```bash
+Current Permissions: {'requests': True, 'numpy': True}
+Non-Standard Packages: []
+```
+- If the list is empty ([]), it means all specified packages have permissions matching the specified standard (True). No non-standard packages are found.
+- If the list contains elements, it means there are packages with permissions not matching the specified standard. Each element in the list will indicate a package and its current permissions.
+
+## Tests
+This package includes a suite of tests to ensure its functionality. You can run these tests using pytest:
+
+```bash
+pytest
+````
+
+# Benefits
+- Permissions Manager provides a simple and efficient way to manage the permissions of your Python environments. This can be particularly useful in shared environments, where multiple users may need different levels of access to certain packages.
+
+## License
+This project is licensed under the terms of the MIT license.
+
+## Contact
+If you have any questions or feedback, please feel free to contact the author at karimbaidar@gmail.com.
+
