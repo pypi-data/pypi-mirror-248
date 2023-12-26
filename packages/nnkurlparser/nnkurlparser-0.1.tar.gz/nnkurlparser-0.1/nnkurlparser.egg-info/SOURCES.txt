@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+nnkurlparser/__init__.py
+nnkurlparser/nnkurlparser.py
+nnkurlparser.egg-info/PKG-INFO
+nnkurlparser.egg-info/SOURCES.txt
+nnkurlparser.egg-info/dependency_links.txt
+nnkurlparser.egg-info/entry_points.txt
+nnkurlparser.egg-info/top_level.txt
