@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: advCounter
+Version: 0.0.2
+Summary: Advanced dict
+Author: Mayuresh Dharwadkar
+Author-email: <dharwadkarmayuresh@gmail.com>
+Keywords: python,dict,counter,dictionary,hashmap
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+Multi-feature Counter having features like sorting, and nested counting
