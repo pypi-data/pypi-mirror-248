@@ -1,0 +1,2 @@
+[console_scripts]
+easymake_entrypoints = easymake:iseven
