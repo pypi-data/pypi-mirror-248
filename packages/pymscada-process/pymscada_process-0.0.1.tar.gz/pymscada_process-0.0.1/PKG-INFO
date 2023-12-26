@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pymscada-process
+Version: 0.0.1
+Summary: Process logic extension for pymscada
+Author-Email: Jamie Walton <jamie@walton.net.nz>
+License: GPL-3.0-or-later
+Requires-Python: >=3.9
+Requires-Dist: pymscada>=0.0.11
+Description-Content-Type: text/markdown
+
+# pymscada-process
+Process logic for pymscada
