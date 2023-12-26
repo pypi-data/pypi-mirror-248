@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: etautil
+Version: 3.0.0
+Summary: A wrapper for the new `etatime` module, this package exists for backwards-compatibility.
+Author-email: Ella Jameson <ellagjameson@gmail.com>
+Requires-Python: >3.10
+Description-Content-Type: text/markdown
+Requires-Dist: etatime >=2.6.5
+Project-URL: documentation, https://python-etautil.readthedocs.io/en/latest/index.html
+Project-URL: homepage, https://github.com/nimaid/python-etautil
+Project-URL: issues, https://github.com/nimaid/python-etautil/issues
+Project-URL: repository, https://github.com/nimaid/python-etautil
+
+# ETA Utility
+### This is a depreciated package.
+Use [etatime](https://pypi.org/project/etatime/) instead.
+
