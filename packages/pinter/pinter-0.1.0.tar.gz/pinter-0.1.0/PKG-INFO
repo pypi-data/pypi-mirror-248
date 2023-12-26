@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: pinter
+Version: 0.1.0
+Summary: Print INTERfaces and ip addresses
+Author: Marcin Marzec
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: psutil (>=5.9.6,<6.0.0)
+Requires-Dist: rich (>=13.7.0,<14.0.0)
+Description-Content-Type: text/markdown
+
+# Pinter - Print INTERfaces
+
+Pinter is a CLI tool to print nicely your network interfaces and ip addresses. Forget about `ifconfig` or `ip addr`. It will filter out the ones that are not important like those create by docker, etc.
+
+
+## Installation
+Install with `pipx`(prefered) or `pip`.
+```console
+pipx install pinter
+```
+
+```console
+pip install pinter
+```
+
+## Usage
+Just run
+```console
+pinter
+```
+
