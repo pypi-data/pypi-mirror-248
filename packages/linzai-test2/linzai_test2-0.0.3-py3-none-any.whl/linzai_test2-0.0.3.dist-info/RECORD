@@ -1,0 +1,17 @@
+linzai_test2/__init__.py,sha256=IyLf1JpB3U-mk1rLWd9HumtiGAF3SL3GIjziXjEe-Rc,1301
+linzai_test2/dolphin/__init__.py,sha256=Pn06HU9Lip7JKVLzmGkMcKX_V9YLVNzn3_mqAvglByA,1327
+linzai_test2/dolphin/configuration_dolphin.py,sha256=Zef_cgdUpZJaJtt_5OSXUrk9SaVGXxHYvPZfBl3acL0,5983
+linzai_test2/dolphin/modeling_dolphin.py,sha256=lXtSDTJoU88fh48wPP2byd7GcpE7g3qK6paMGWoWC00,85404
+linzai_test2/dolphin/tokenization_dolphin.py,sha256=lx9GLGtwhhHHD_ei4wSvm0V17He4ckcFc1PFDxazY2U,32236
+linzai_test2/dp_infer/__init__.py,sha256=eWHtDOzm0MUc7EXyR_69u8rwLr8mKRtR5w2FLe-7iGc,1311
+linzai_test2/dp_infer/infer.py,sha256=xrNH8Y1dB1H1EWyyQ7Z8aXRZfiUzwBc2Tdb-JCzx65g,10030
+linzai_test2/model_infer/__init__.py,sha256=6ZZs-hTSye4BNgfeiE05L9epfcmMcXw856FhOxltwjs,1377
+linzai_test2/model_infer/pp_structure_infer.py,sha256=HlOUCVL6foTmLbjaGBRk9EQCHBuDfIuogIOePUGhaHY,17352
+linzai_test2/pyarmor_runtime_000000/__init__.py,sha256=HjpgtV2u8tNfFUlYJYD3DVuk_963l7feSCyUfUV4h_I,1779
+linzai_test2/pyarmor_runtime_000000/darwin_x86_64/pyarmor_runtime.so,sha256=WeM_mwX09MvAsD-bczM_aOCjAqVKPR-2TqEhV4USMAs,865324
+linzai_test2/pyarmor_runtime_000000/linux_x86_64/pyarmor_runtime.so,sha256=3O9IYiMVe-SJ36LTSFgqK-yqvjfwB4EkV94Hv8Qfz6w,792392
+linzai_test2/pyarmor_runtime_000000/windows_x86_64/pyarmor_runtime.pyd,sha256=KVf042a6OdiYVFMuI093vc91iV0OetdPk1UAEEoNhUU,620032
+linzai_test2-0.0.3.dist-info/METADATA,sha256=Ib1o9Hb8mFo5PzRoBSGySZtWTJ_GMGvTxtdKUWik0Hw,57
+linzai_test2-0.0.3.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+linzai_test2-0.0.3.dist-info/top_level.txt,sha256=q7ye36GiGTIJaTL8Tu0gg4Cf0ol5TAtoP0h9f4OzxLw,13
+linzai_test2-0.0.3.dist-info/RECORD,,
