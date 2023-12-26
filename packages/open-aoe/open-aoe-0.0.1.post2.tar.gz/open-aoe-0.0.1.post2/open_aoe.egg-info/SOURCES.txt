@@ -1,0 +1,8 @@
+README.md
+setup.py
+open_aoe.egg-info/PKG-INFO
+open_aoe.egg-info/SOURCES.txt
+open_aoe.egg-info/dependency_links.txt
+open_aoe.egg-info/entry_points.txt
+open_aoe.egg-info/not-zip-safe
+open_aoe.egg-info/top_level.txt

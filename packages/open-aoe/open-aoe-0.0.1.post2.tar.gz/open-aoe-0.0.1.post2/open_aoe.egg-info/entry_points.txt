@@ -1,0 +1,2 @@
+[console_scripts]
+aoe = aoe.backend.main:main
