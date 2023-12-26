@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: chicken_coop
+Version: 0.0.3
+Summary: An environment for reproducing dominance hierarchies in RL agents
+Home-page: https://github.com/cool-RR/chicken_coop
+Author: Ram Rachum
+Author-email: ram@rachum.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Provides-Extra: tests
+License-File: LICENSE
+
+# Chicken Coop
+
+Supports Python 3.11.
+
+Usage instructions:
+
+```
+# Set up virtualenv if needed:
+python -m venv chicken-coop-env
+source chicken-coop-env/bin/activate
+
+# Install Chicken Coop:
+pip install chicken-coop
+
+# Run tests:
+pytest
+
+# Basic run:
+python -m chicken_coop run
+
+# Main run used in the paper:
+python -m chicken_coop run --moniker paper-run --use-tune --n-tune-samples 300
+
+# Transplant a visitor population into a resident population:
+python -m chicken_coop transplant --moniker paper-transplant \
+  --visitor-trek ~/.chicken_coop/<YOUR_PREVIOUS_RUN>
+
+# Ablate opponent perception accuracy:
+python -m chicken_coop run --moniker paper-ablate-observation --use-tune --n-tune-samples 10 \
+  --observation-accuracy 0.0 \
+  --observation-accuracy 0.1 \
+  --observation-accuracy 0.2 \
+  --observation-accuracy 0.3 \
+  --observation-accuracy 0.4 \
+  --observation-accuracy 0.5 \
+  --observation-accuracy 0.6 \
+  --observation-accuracy 0.7 \
+  --observation-accuracy 0.8 \
+  --observation-accuracy 0.9 \
+  --observation-accuracy 1.0
+
+
+# Investigate non-linearity:
+python -m chicken_coop run --moniker paper-cycles --use-tune --n-tune-samples 30 --n-agents 12 \
+  --learning-rate 3e-05
+
+```
