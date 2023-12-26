@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/nucleiparser/__init__.py
+src/nucleiparser/nparse
+src/nucleiparser/nucleiparser.py
+src/nucleiparser.egg-info/PKG-INFO
+src/nucleiparser.egg-info/SOURCES.txt
+src/nucleiparser.egg-info/dependency_links.txt
+src/nucleiparser.egg-info/requires.txt
+src/nucleiparser.egg-info/top_level.txt
