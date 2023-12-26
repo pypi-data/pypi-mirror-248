@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+elaashvetia.egg-info/PKG-INFO
+elaashvetia.egg-info/SOURCES.txt
+elaashvetia.egg-info/dependency_links.txt
+elaashvetia.egg-info/top_level.txt
