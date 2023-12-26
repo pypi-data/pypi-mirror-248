@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/queue_processor/__init__.py
+src/queue_processor.egg-info/PKG-INFO
+src/queue_processor.egg-info/SOURCES.txt
+src/queue_processor.egg-info/dependency_links.txt
+src/queue_processor.egg-info/requires.txt
+src/queue_processor.egg-info/top_level.txt
