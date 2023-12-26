@@ -1,0 +1,6 @@
+
+[all]
+mat3ra-periodic-table[tests]
+
+[tests]
+coverage[toml]>=5.3
