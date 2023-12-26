@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: train-dataset
+Version: 0.0.0
+Summary: create argo-workflow tasks & sync training datasets
+Author: zhangjingwei
+Author-email: zhangjingwei@utopilot.ai
