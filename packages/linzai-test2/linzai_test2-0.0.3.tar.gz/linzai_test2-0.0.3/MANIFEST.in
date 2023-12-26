@@ -1,0 +1,2 @@
+recursive-include dist6/linzai_test2/pyarmor_runtime_000000 *.pyd
+recursive-include dist6/linzai_test2/pyarmor_runtime_000000 *.so
