@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+statsmode1/__init__.py
+statsmode1.egg-info/PKG-INFO
+statsmode1.egg-info/SOURCES.txt
+statsmode1.egg-info/dependency_links.txt
+statsmode1.egg-info/not-zip-safe
+statsmode1.egg-info/top_level.txt
