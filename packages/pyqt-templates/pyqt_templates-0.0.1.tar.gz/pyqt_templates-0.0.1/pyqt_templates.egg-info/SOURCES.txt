@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pyqt_templates/__init__.py
+pyqt_templates/main.py
+pyqt_templates.egg-info/PKG-INFO
+pyqt_templates.egg-info/SOURCES.txt
+pyqt_templates.egg-info/dependency_links.txt
+pyqt_templates.egg-info/top_level.txt
