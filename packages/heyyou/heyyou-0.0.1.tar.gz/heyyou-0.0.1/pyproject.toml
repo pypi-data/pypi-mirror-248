@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "heyyou"
+version = "0.0.1"
+authors = [
+    { name="Zaid Waqi", email="zaidwaqi@gmail.com" },
+]
+description = "A command line application that prints out 'Hey, You!' in the chosen language."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/zaidwaqi/heyyou"
+Issues = "https://github.com/pypa/zaidwaqi/heyyou/issues"
+
+[project.scripts]
+heyyou = "heyyou.main:heyyou"
