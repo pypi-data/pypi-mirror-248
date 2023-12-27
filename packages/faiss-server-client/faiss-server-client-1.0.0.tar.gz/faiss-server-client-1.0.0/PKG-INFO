@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: faiss-server-client
+Version: 1.0.0
+Summary: faiss-server
+Home-page: https://github.com/pypa/sampleproject
+Author: fly_cat
+Author-email: nzpflycat@gmail.com
+Description-Content-Type: text/markdown
+
+# x-faiss-server
+
+* Install client
+  ```shell
+  pip install faiss_server_client-1.0.0-py3-none-any.whl
+  ```
+  

@@ -1,0 +1,13 @@
+README.md
+setup.py
+faiss_apis/__init__.py
+faiss_apis/faiss_pb2.py
+faiss_apis/faiss_pb2_grpc.py
+faiss_server_client.egg-info/PKG-INFO
+faiss_server_client.egg-info/SOURCES.txt
+faiss_server_client.egg-info/dependency_links.txt
+faiss_server_client.egg-info/top_level.txt
+server/__init__.py
+server/faiss_server.py
+server/models.py
+server/utils.py
