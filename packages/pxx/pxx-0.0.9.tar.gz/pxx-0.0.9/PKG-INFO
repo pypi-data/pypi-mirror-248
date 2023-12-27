@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: pxx
+Version: 0.0.9
+Summary: An AI framework
+Provides-Extra: chromadb
+Provides-Extra: openai
+License-File: LICENSE
