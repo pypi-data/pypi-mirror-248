@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/torms.egg-info/PKG-INFO
+src/torms.egg-info/SOURCES.txt
+src/torms.egg-info/dependency_links.txt
+src/torms.egg-info/requires.txt
+src/torms.egg-info/top_level.txt
+src/torms_tedd28014/__init__.py
+src/torms_tedd28014/torms_tedd28014.py
