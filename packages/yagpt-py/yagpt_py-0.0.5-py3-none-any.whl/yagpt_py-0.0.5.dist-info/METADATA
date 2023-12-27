@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: yagpt_py
+Version: 0.0.5
+Summary: alpha version of YandexGPT package for Python.
+Home-page: https://github.com/Misfit-s/yagpt_py
+Author: Danila Suravenkov
+Author-email: keepwannadie@gmail.com
+Project-URL: GitHub, https://github.com/Misfit-s/yagpt_py
+Keywords: Yandex API AI GPT language model
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests >=2.25.1
+
+# YandexGPT Python Library #
+
+### What is this? 
+
+### This library allows you work with YandexGPT using Python and implement it to your projects.
+
+## Setup 
+
+```Bash
+pip install yagpt-py
+```
+
+## Usage 
+
+```Python
+import os
+from yagpt_py.authData import AuthData
+from yagpt_py.messages import Messages
+from yagpt_py.response import Response
+
+token = AuthData.Token = os.getenv('IAM_token')
+folder_id = AuthData.CatalogID = os.getenv('catalog_id')
+
+message = Messages.user = 'Tell me poem about misfit developer.'
+
+response = Response(token, folder_id, message)
+
+print(response.getResponse())
+```
