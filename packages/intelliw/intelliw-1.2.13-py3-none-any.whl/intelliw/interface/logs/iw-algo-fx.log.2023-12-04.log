@@ -1,0 +1,161 @@
+[Framework Log] 2023-12-04 16:53:45.187 INFO engine.py:95: [33mData Process Engine: Normal[0m
+[Framework Log] 2023-12-04 16:59:37.368 INFO engine.py:95: [33mData Process Engine: Normal[0m
+[Framework Log] 2023-12-04 17:00:21.792 INFO engine.py:95: [33mData Process Engine: Normal[0m
+[Framework Log] 2023-12-04 17:01:20.172 INFO engine.py:95: [33mData Process Engine: Normal[0m
+[Algorithm Log] 2023-12-04 17:01:20.327 INFO algorithm.py:36: init parameters: {'a': 1, 'b': 1, 'sleep': 0, 'businessCode': '085cdfa6f9ed2000', 'smooth_order': '三阶', 'application': 'Exponential Smoothing', 'seasonal_periods': 4, 'params_setting_mode': '自动调优'}
+[Framework Log] 2023-12-04 17:01:20.328 INFO pipeline.py:694: 特征函数 select_columns, 是否可以进行分片处理 True
+[Framework Log] 2023-12-04 17:01:20.328 INFO pipeline.py:289: model load path：/Users/hexer/Documents/workspace/code/iuapaipaas/iw-algo-fx/examples/iw-algo-fx-example-data/doany/model
+[Framework Log] 2023-12-04 17:01:20.328 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 3, "token": "", "code": 200, "type": "importmodel", "message": "框架导入模型成功", "data": ""}
+[Framework Log] 2023-12-04 17:01:20.330 INFO apijob.py:92: 方法: infer2 加载成功, 访问路径：/infer2, 访问方法: get, 是否需要特征处理: True
+[Framework Log] 2023-12-04 17:01:20.330 INFO apijob.py:92: 方法: infer3 加载成功, 访问路径：/infer3, 访问方法: post, 是否需要特征处理: True
+[Framework Log] 2023-12-04 17:01:20.331 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 7, "token": "", "code": 200, "type": "inferstatus", "message": "", "data": "[{\"status\": \"start\", \"inferid\": \"\", \"instanceid\": \"\", \"inferTaskStatus\": []}]"}
+[Algorithm Log] 2023-12-04 17:01:20.331 INFO algorithm.py:36: init parameters: {'a': 1, 'b': 1, 'sleep': 0, 'businessCode': '085cdfa6f9ed2000', 'smooth_order': '三阶', 'application': 'Exponential Smoothing', 'seasonal_periods': 4, 'params_setting_mode': '自动调优'}
+[Framework Log] 2023-12-04 17:01:20.331 INFO pipeline.py:694: 特征函数 select_columns, 是否可以进行分片处理 True
+[Framework Log] 2023-12-04 17:01:20.331 INFO pipeline.py:289: model load path：/Users/hexer/Documents/workspace/code/iuapaipaas/iw-algo-fx/examples/iw-algo-fx-example-data/doany/model
+[Framework Log] 2023-12-04 17:01:20.331 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 11, "token": "", "code": 200, "type": "importmodel", "message": "框架导入模型成功", "data": ""}
+[Framework Log] 2023-12-04 17:01:20.332 INFO apijob.py:92: 方法: infer 加载成功, 访问路径：/predict, 访问方法: post, 是否需要特征处理: True
+[Framework Log] 2023-12-04 17:01:20.332 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 15, "token": "", "code": 200, "type": "inferstatus", "message": "", "data": "[{\"status\": \"start\", \"inferid\": \"\", \"instanceid\": \"\", \"inferTaskStatus\": []}]"}
+[Algorithm Log] 2023-12-04 17:01:24.576 INFO algorithm.py:196: {'data': 'fuck', 'data2': 'fuck2', 'sleep': 20}
+[Framework Log] 2023-12-04 17:01:51.917 INFO engine.py:95: [33mData Process Engine: Normal[0m
+[Algorithm Log] 2023-12-04 17:01:52.035 INFO algorithm.py:36: init parameters: {'a': 1, 'b': 1, 'sleep': 0, 'businessCode': '085cdfa6f9ed2000', 'smooth_order': '三阶', 'application': 'Exponential Smoothing', 'seasonal_periods': 4, 'params_setting_mode': '自动调优'}
+[Framework Log] 2023-12-04 17:01:52.035 INFO pipeline.py:694: 特征函数 select_columns, 是否可以进行分片处理 True
+[Framework Log] 2023-12-04 17:01:52.035 INFO pipeline.py:289: model load path：/Users/hexer/Documents/workspace/code/iuapaipaas/iw-algo-fx/examples/iw-algo-fx-example-data/doany/model
+[Framework Log] 2023-12-04 17:01:52.036 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 3, "token": "", "code": 200, "type": "importmodel", "message": "框架导入模型成功", "data": ""}
+[Framework Log] 2023-12-04 17:01:52.038 INFO apijob.py:92: 方法: infer2 加载成功, 访问路径：/infer2, 访问方法: get, 是否需要特征处理: True
+[Framework Log] 2023-12-04 17:01:52.038 INFO apijob.py:92: 方法: infer3 加载成功, 访问路径：/infer3, 访问方法: post, 是否需要特征处理: True
+[Framework Log] 2023-12-04 17:01:52.039 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 7, "token": "", "code": 200, "type": "inferstatus", "message": "", "data": "[{\"status\": \"start\", \"inferid\": \"\", \"instanceid\": \"\", \"inferTaskStatus\": []}]"}
+[Algorithm Log] 2023-12-04 17:01:52.040 INFO algorithm.py:36: init parameters: {'a': 1, 'b': 1, 'sleep': 0, 'businessCode': '085cdfa6f9ed2000', 'smooth_order': '三阶', 'application': 'Exponential Smoothing', 'seasonal_periods': 4, 'params_setting_mode': '自动调优'}
+[Framework Log] 2023-12-04 17:01:52.040 INFO pipeline.py:694: 特征函数 select_columns, 是否可以进行分片处理 True
+[Framework Log] 2023-12-04 17:01:52.040 INFO pipeline.py:289: model load path：/Users/hexer/Documents/workspace/code/iuapaipaas/iw-algo-fx/examples/iw-algo-fx-example-data/doany/model
+[Framework Log] 2023-12-04 17:01:52.040 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 11, "token": "", "code": 200, "type": "importmodel", "message": "框架导入模型成功", "data": ""}
+[Framework Log] 2023-12-04 17:01:52.041 INFO apijob.py:92: 方法: infer 加载成功, 访问路径：/predict, 访问方法: post, 是否需要特征处理: True
+[Framework Log] 2023-12-04 17:01:52.042 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 15, "token": "", "code": 200, "type": "inferstatus", "message": "", "data": "[{\"status\": \"start\", \"inferid\": \"\", \"instanceid\": \"\", \"inferTaskStatus\": []}]"}
+[Framework Log] 2023-12-04 17:01:54.843 INFO engine.py:95: [33mData Process Engine: Normal[0m
+[Algorithm Log] 2023-12-04 17:01:54.922 INFO algorithm.py:36: init parameters: {'a': 1, 'b': 1, 'sleep': 0, 'businessCode': '085cdfa6f9ed2000', 'smooth_order': '三阶', 'application': 'Exponential Smoothing', 'seasonal_periods': 4, 'params_setting_mode': '自动调优'}
+[Framework Log] 2023-12-04 17:01:54.922 INFO pipeline.py:694: 特征函数 select_columns, 是否可以进行分片处理 True
+[Framework Log] 2023-12-04 17:01:54.922 INFO pipeline.py:289: model load path：/Users/hexer/Documents/workspace/code/iuapaipaas/iw-algo-fx/examples/iw-algo-fx-example-data/doany/model
+[Framework Log] 2023-12-04 17:01:54.922 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 3, "token": "", "code": 200, "type": "importmodel", "message": "框架导入模型成功", "data": ""}
+[Framework Log] 2023-12-04 17:01:54.923 INFO apijob.py:92: 方法: infer2 加载成功, 访问路径：/infer2, 访问方法: get, 是否需要特征处理: True
+[Framework Log] 2023-12-04 17:01:54.923 INFO apijob.py:92: 方法: infer3 加载成功, 访问路径：/infer3, 访问方法: post, 是否需要特征处理: True
+[Framework Log] 2023-12-04 17:01:54.924 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 7, "token": "", "code": 200, "type": "inferstatus", "message": "", "data": "[{\"status\": \"start\", \"inferid\": \"\", \"instanceid\": \"\", \"inferTaskStatus\": []}]"}
+[Algorithm Log] 2023-12-04 17:01:54.924 INFO algorithm.py:36: init parameters: {'a': 1, 'b': 1, 'sleep': 0, 'businessCode': '085cdfa6f9ed2000', 'smooth_order': '三阶', 'application': 'Exponential Smoothing', 'seasonal_periods': 4, 'params_setting_mode': '自动调优'}
+[Framework Log] 2023-12-04 17:01:54.924 INFO pipeline.py:694: 特征函数 select_columns, 是否可以进行分片处理 True
+[Framework Log] 2023-12-04 17:01:54.924 INFO pipeline.py:289: model load path：/Users/hexer/Documents/workspace/code/iuapaipaas/iw-algo-fx/examples/iw-algo-fx-example-data/doany/model
+[Framework Log] 2023-12-04 17:01:54.924 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 11, "token": "", "code": 200, "type": "importmodel", "message": "框架导入模型成功", "data": ""}
+[Framework Log] 2023-12-04 17:01:54.925 INFO apijob.py:92: 方法: infer 加载成功, 访问路径：/predict, 访问方法: post, 是否需要特征处理: True
+[Framework Log] 2023-12-04 17:01:54.925 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 15, "token": "", "code": 200, "type": "inferstatus", "message": "", "data": "[{\"status\": \"start\", \"inferid\": \"\", \"instanceid\": \"\", \"inferTaskStatus\": []}]"}
+[watchfiles.main] 2023-12-04 17:01:55.022 INFO main.py:297: 3 changes detected
+[watchfiles.main] 2023-12-04 17:02:25.207 INFO main.py:297: 3 changes detected
+[Framework Log] 2023-12-04 17:02:34.253 INFO engine.py:95: [33mData Process Engine: Normal[0m
+[Algorithm Log] 2023-12-04 17:02:34.354 INFO algorithm.py:36: init parameters: {'a': 1, 'b': 1, 'sleep': 0, 'businessCode': '085cdfa6f9ed2000', 'smooth_order': '三阶', 'application': 'Exponential Smoothing', 'seasonal_periods': 4, 'params_setting_mode': '自动调优'}
+[Framework Log] 2023-12-04 17:02:34.354 INFO pipeline.py:694: 特征函数 select_columns, 是否可以进行分片处理 True
+[Framework Log] 2023-12-04 17:02:34.354 INFO pipeline.py:289: model load path：/Users/hexer/Documents/workspace/code/iuapaipaas/iw-algo-fx/examples/iw-algo-fx-example-data/doany/model
+[Framework Log] 2023-12-04 17:02:34.354 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 3, "token": "", "code": 200, "type": "importmodel", "message": "框架导入模型成功", "data": ""}
+[Framework Log] 2023-12-04 17:02:34.356 INFO apijob.py:92: 方法: infer2 加载成功, 访问路径：/infer2, 访问方法: get, 是否需要特征处理: True
+[Framework Log] 2023-12-04 17:02:34.356 INFO apijob.py:92: 方法: infer3 加载成功, 访问路径：/infer3, 访问方法: post, 是否需要特征处理: True
+[Framework Log] 2023-12-04 17:02:34.356 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 7, "token": "", "code": 200, "type": "inferstatus", "message": "", "data": "[{\"status\": \"start\", \"inferid\": \"\", \"instanceid\": \"\", \"inferTaskStatus\": []}]"}
+[Algorithm Log] 2023-12-04 17:02:34.357 INFO algorithm.py:36: init parameters: {'a': 1, 'b': 1, 'sleep': 0, 'businessCode': '085cdfa6f9ed2000', 'smooth_order': '三阶', 'application': 'Exponential Smoothing', 'seasonal_periods': 4, 'params_setting_mode': '自动调优'}
+[Framework Log] 2023-12-04 17:02:34.357 INFO pipeline.py:694: 特征函数 select_columns, 是否可以进行分片处理 True
+[Framework Log] 2023-12-04 17:02:34.357 INFO pipeline.py:289: model load path：/Users/hexer/Documents/workspace/code/iuapaipaas/iw-algo-fx/examples/iw-algo-fx-example-data/doany/model
+[Framework Log] 2023-12-04 17:02:34.357 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 11, "token": "", "code": 200, "type": "importmodel", "message": "框架导入模型成功", "data": ""}
+[Framework Log] 2023-12-04 17:02:34.358 INFO apijob.py:92: 方法: infer 加载成功, 访问路径：/predict, 访问方法: post, 是否需要特征处理: True
+[Framework Log] 2023-12-04 17:02:34.358 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 15, "token": "", "code": 200, "type": "inferstatus", "message": "", "data": "[{\"status\": \"start\", \"inferid\": \"\", \"instanceid\": \"\", \"inferTaskStatus\": []}]"}
+[Framework Log] 2023-12-04 17:02:36.904 INFO engine.py:95: [33mData Process Engine: Normal[0m
+[Algorithm Log] 2023-12-04 17:02:36.981 INFO algorithm.py:36: init parameters: {'a': 1, 'b': 1, 'sleep': 0, 'businessCode': '085cdfa6f9ed2000', 'smooth_order': '三阶', 'application': 'Exponential Smoothing', 'seasonal_periods': 4, 'params_setting_mode': '自动调优'}
+[Framework Log] 2023-12-04 17:02:36.981 INFO pipeline.py:694: 特征函数 select_columns, 是否可以进行分片处理 True
+[Framework Log] 2023-12-04 17:02:36.981 INFO pipeline.py:289: model load path：/Users/hexer/Documents/workspace/code/iuapaipaas/iw-algo-fx/examples/iw-algo-fx-example-data/doany/model
+[Framework Log] 2023-12-04 17:02:36.982 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 3, "token": "", "code": 200, "type": "importmodel", "message": "框架导入模型成功", "data": ""}
+[Framework Log] 2023-12-04 17:02:36.982 INFO apijob.py:92: 方法: infer2 加载成功, 访问路径：/infer2, 访问方法: get, 是否需要特征处理: True
+[Framework Log] 2023-12-04 17:02:36.983 INFO apijob.py:92: 方法: infer3 加载成功, 访问路径：/infer3, 访问方法: post, 是否需要特征处理: True
+[Framework Log] 2023-12-04 17:02:36.983 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 7, "token": "", "code": 200, "type": "inferstatus", "message": "", "data": "[{\"status\": \"start\", \"inferid\": \"\", \"instanceid\": \"\", \"inferTaskStatus\": []}]"}
+[Algorithm Log] 2023-12-04 17:02:36.983 INFO algorithm.py:36: init parameters: {'a': 1, 'b': 1, 'sleep': 0, 'businessCode': '085cdfa6f9ed2000', 'smooth_order': '三阶', 'application': 'Exponential Smoothing', 'seasonal_periods': 4, 'params_setting_mode': '自动调优'}
+[Framework Log] 2023-12-04 17:02:36.984 INFO pipeline.py:694: 特征函数 select_columns, 是否可以进行分片处理 True
+[Framework Log] 2023-12-04 17:02:36.984 INFO pipeline.py:289: model load path：/Users/hexer/Documents/workspace/code/iuapaipaas/iw-algo-fx/examples/iw-algo-fx-example-data/doany/model
+[Framework Log] 2023-12-04 17:02:36.984 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 11, "token": "", "code": 200, "type": "importmodel", "message": "框架导入模型成功", "data": ""}
+[Framework Log] 2023-12-04 17:02:36.984 INFO apijob.py:92: 方法: infer 加载成功, 访问路径：/predict, 访问方法: post, 是否需要特征处理: True
+[Framework Log] 2023-12-04 17:02:36.984 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 15, "token": "", "code": 200, "type": "inferstatus", "message": "", "data": "[{\"status\": \"start\", \"inferid\": \"\", \"instanceid\": \"\", \"inferTaskStatus\": []}]"}
+[watchfiles.main] 2023-12-04 17:02:37.090 INFO main.py:297: 3 changes detected
+[Framework Log] 2023-12-04 17:03:11.069 INFO engine.py:95: [33mData Process Engine: Normal[0m
+[Algorithm Log] 2023-12-04 17:03:11.154 INFO algorithm.py:36: init parameters: {'a': 1, 'b': 1, 'sleep': 0, 'businessCode': '085cdfa6f9ed2000', 'smooth_order': '三阶', 'application': 'Exponential Smoothing', 'seasonal_periods': 4, 'params_setting_mode': '自动调优'}
+[Framework Log] 2023-12-04 17:03:11.155 INFO pipeline.py:694: 特征函数 select_columns, 是否可以进行分片处理 True
+[Framework Log] 2023-12-04 17:03:11.155 INFO pipeline.py:289: model load path：/Users/hexer/Documents/workspace/code/iuapaipaas/iw-algo-fx/examples/iw-algo-fx-example-data/doany/model
+[Framework Log] 2023-12-04 17:03:11.155 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 3, "token": "", "code": 200, "type": "importmodel", "message": "框架导入模型成功", "data": ""}
+[Framework Log] 2023-12-04 17:03:11.156 INFO apijob.py:92: 方法: infer2 加载成功, 访问路径：/infer2, 访问方法: get, 是否需要特征处理: True
+[Framework Log] 2023-12-04 17:03:11.157 INFO apijob.py:92: 方法: infer3 加载成功, 访问路径：/infer3, 访问方法: post, 是否需要特征处理: True
+[Framework Log] 2023-12-04 17:03:11.157 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 7, "token": "", "code": 200, "type": "inferstatus", "message": "", "data": "[{\"status\": \"start\", \"inferid\": \"\", \"instanceid\": \"\", \"inferTaskStatus\": []}]"}
+[Algorithm Log] 2023-12-04 17:03:11.157 INFO algorithm.py:36: init parameters: {'a': 1, 'b': 1, 'sleep': 0, 'businessCode': '085cdfa6f9ed2000', 'smooth_order': '三阶', 'application': 'Exponential Smoothing', 'seasonal_periods': 4, 'params_setting_mode': '自动调优'}
+[Framework Log] 2023-12-04 17:03:11.158 INFO pipeline.py:694: 特征函数 select_columns, 是否可以进行分片处理 True
+[Framework Log] 2023-12-04 17:03:11.158 INFO pipeline.py:289: model load path：/Users/hexer/Documents/workspace/code/iuapaipaas/iw-algo-fx/examples/iw-algo-fx-example-data/doany/model
+[Framework Log] 2023-12-04 17:03:11.158 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 11, "token": "", "code": 200, "type": "importmodel", "message": "框架导入模型成功", "data": ""}
+[Framework Log] 2023-12-04 17:03:11.158 INFO apijob.py:92: 方法: infer 加载成功, 访问路径：/predict, 访问方法: post, 是否需要特征处理: True
+[Framework Log] 2023-12-04 17:03:11.159 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 15, "token": "", "code": 200, "type": "inferstatus", "message": "", "data": "[{\"status\": \"start\", \"inferid\": \"\", \"instanceid\": \"\", \"inferTaskStatus\": []}]"}
+[Framework Log] 2023-12-04 17:03:14.637 INFO engine.py:95: [33mData Process Engine: Normal[0m
+[Framework Log] 2023-12-04 17:03:14.637 INFO engine.py:95: [33mData Process Engine: Normal[0m
+[Framework Log] 2023-12-04 17:03:14.637 INFO engine.py:95: [33mData Process Engine: Normal[0m
+[Framework Log] 2023-12-04 17:03:14.637 INFO engine.py:95: [33mData Process Engine: Normal[0m
+[Framework Log] 2023-12-04 17:03:14.638 INFO engine.py:95: [33mData Process Engine: Normal[0m
+[Algorithm Log] 2023-12-04 17:03:14.730 INFO algorithm.py:36: init parameters: {'a': 1, 'b': 1, 'sleep': 0, 'businessCode': '085cdfa6f9ed2000', 'smooth_order': '三阶', 'application': 'Exponential Smoothing', 'seasonal_periods': 4, 'params_setting_mode': '自动调优'}
+[Framework Log] 2023-12-04 17:03:14.730 INFO pipeline.py:694: 特征函数 select_columns, 是否可以进行分片处理 True
+[Framework Log] 2023-12-04 17:03:14.730 INFO pipeline.py:289: model load path：/Users/hexer/Documents/workspace/code/iuapaipaas/iw-algo-fx/examples/iw-algo-fx-example-data/doany/model
+[Algorithm Log] 2023-12-04 17:03:14.730 INFO algorithm.py:36: init parameters: {'a': 1, 'b': 1, 'sleep': 0, 'businessCode': '085cdfa6f9ed2000', 'smooth_order': '三阶', 'application': 'Exponential Smoothing', 'seasonal_periods': 4, 'params_setting_mode': '自动调优'}
+[Algorithm Log] 2023-12-04 17:03:14.730 INFO algorithm.py:36: init parameters: {'a': 1, 'b': 1, 'sleep': 0, 'businessCode': '085cdfa6f9ed2000', 'smooth_order': '三阶', 'application': 'Exponential Smoothing', 'seasonal_periods': 4, 'params_setting_mode': '自动调优'}
+[Framework Log] 2023-12-04 17:03:14.730 INFO pipeline.py:694: 特征函数 select_columns, 是否可以进行分片处理 True
+[Framework Log] 2023-12-04 17:03:14.730 INFO pipeline.py:694: 特征函数 select_columns, 是否可以进行分片处理 True
+[Framework Log] 2023-12-04 17:03:14.730 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 3, "token": "", "code": 200, "type": "importmodel", "message": "框架导入模型成功", "data": ""}
+[Framework Log] 2023-12-04 17:03:14.730 INFO pipeline.py:289: model load path：/Users/hexer/Documents/workspace/code/iuapaipaas/iw-algo-fx/examples/iw-algo-fx-example-data/doany/model
+[Framework Log] 2023-12-04 17:03:14.730 INFO pipeline.py:289: model load path：/Users/hexer/Documents/workspace/code/iuapaipaas/iw-algo-fx/examples/iw-algo-fx-example-data/doany/model
+[Algorithm Log] 2023-12-04 17:03:14.731 INFO algorithm.py:36: init parameters: {'a': 1, 'b': 1, 'sleep': 0, 'businessCode': '085cdfa6f9ed2000', 'smooth_order': '三阶', 'application': 'Exponential Smoothing', 'seasonal_periods': 4, 'params_setting_mode': '自动调优'}
+[Framework Log] 2023-12-04 17:03:14.731 INFO pipeline.py:694: 特征函数 select_columns, 是否可以进行分片处理 True
+[Framework Log] 2023-12-04 17:03:14.731 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 3, "token": "", "code": 200, "type": "importmodel", "message": "框架导入模型成功", "data": ""}
+[Framework Log] 2023-12-04 17:03:14.731 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 3, "token": "", "code": 200, "type": "importmodel", "message": "框架导入模型成功", "data": ""}
+[Framework Log] 2023-12-04 17:03:14.731 INFO pipeline.py:289: model load path：/Users/hexer/Documents/workspace/code/iuapaipaas/iw-algo-fx/examples/iw-algo-fx-example-data/doany/model
+[Framework Log] 2023-12-04 17:03:14.731 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 3, "token": "", "code": 200, "type": "importmodel", "message": "框架导入模型成功", "data": ""}
+[Framework Log] 2023-12-04 17:03:14.731 INFO apijob.py:92: 方法: infer2 加载成功, 访问路径：/infer2, 访问方法: get, 是否需要特征处理: True
+[Framework Log] 2023-12-04 17:03:14.732 INFO apijob.py:92: 方法: infer3 加载成功, 访问路径：/infer3, 访问方法: post, 是否需要特征处理: True
+[Framework Log] 2023-12-04 17:03:14.732 INFO apijob.py:92: 方法: infer2 加载成功, 访问路径：/infer2, 访问方法: get, 是否需要特征处理: True
+[Algorithm Log] 2023-12-04 17:03:14.732 INFO algorithm.py:36: init parameters: {'a': 1, 'b': 1, 'sleep': 0, 'businessCode': '085cdfa6f9ed2000', 'smooth_order': '三阶', 'application': 'Exponential Smoothing', 'seasonal_periods': 4, 'params_setting_mode': '自动调优'}
+[Framework Log] 2023-12-04 17:03:14.732 INFO apijob.py:92: 方法: infer2 加载成功, 访问路径：/infer2, 访问方法: get, 是否需要特征处理: True
+[Framework Log] 2023-12-04 17:03:14.732 INFO pipeline.py:694: 特征函数 select_columns, 是否可以进行分片处理 True
+[Framework Log] 2023-12-04 17:03:14.732 INFO apijob.py:92: 方法: infer3 加载成功, 访问路径：/infer3, 访问方法: post, 是否需要特征处理: True
+[Framework Log] 2023-12-04 17:03:14.732 INFO pipeline.py:289: model load path：/Users/hexer/Documents/workspace/code/iuapaipaas/iw-algo-fx/examples/iw-algo-fx-example-data/doany/model
+[Framework Log] 2023-12-04 17:03:14.732 INFO apijob.py:92: 方法: infer3 加载成功, 访问路径：/infer3, 访问方法: post, 是否需要特征处理: True
+[Framework Log] 2023-12-04 17:03:14.732 INFO apijob.py:92: 方法: infer2 加载成功, 访问路径：/infer2, 访问方法: get, 是否需要特征处理: True
+[Framework Log] 2023-12-04 17:03:14.732 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 7, "token": "", "code": 200, "type": "inferstatus", "message": "", "data": "[{\"status\": \"start\", \"inferid\": \"\", \"instanceid\": \"\", \"inferTaskStatus\": []}]"}
+[Framework Log] 2023-12-04 17:03:14.732 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 3, "token": "", "code": 200, "type": "importmodel", "message": "框架导入模型成功", "data": ""}
+[Framework Log] 2023-12-04 17:03:14.732 INFO apijob.py:92: 方法: infer3 加载成功, 访问路径：/infer3, 访问方法: post, 是否需要特征处理: True
+[Algorithm Log] 2023-12-04 17:03:14.733 INFO algorithm.py:36: init parameters: {'a': 1, 'b': 1, 'sleep': 0, 'businessCode': '085cdfa6f9ed2000', 'smooth_order': '三阶', 'application': 'Exponential Smoothing', 'seasonal_periods': 4, 'params_setting_mode': '自动调优'}
+[Framework Log] 2023-12-04 17:03:14.733 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 7, "token": "", "code": 200, "type": "inferstatus", "message": "", "data": "[{\"status\": \"start\", \"inferid\": \"\", \"instanceid\": \"\", \"inferTaskStatus\": []}]"}
+[Framework Log] 2023-12-04 17:03:14.733 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 7, "token": "", "code": 200, "type": "inferstatus", "message": "", "data": "[{\"status\": \"start\", \"inferid\": \"\", \"instanceid\": \"\", \"inferTaskStatus\": []}]"}
+[Framework Log] 2023-12-04 17:03:14.733 INFO pipeline.py:694: 特征函数 select_columns, 是否可以进行分片处理 True
+[Framework Log] 2023-12-04 17:03:14.733 INFO pipeline.py:289: model load path：/Users/hexer/Documents/workspace/code/iuapaipaas/iw-algo-fx/examples/iw-algo-fx-example-data/doany/model
+[Algorithm Log] 2023-12-04 17:03:14.733 INFO algorithm.py:36: init parameters: {'a': 1, 'b': 1, 'sleep': 0, 'businessCode': '085cdfa6f9ed2000', 'smooth_order': '三阶', 'application': 'Exponential Smoothing', 'seasonal_periods': 4, 'params_setting_mode': '自动调优'}
+[Algorithm Log] 2023-12-04 17:03:14.733 INFO algorithm.py:36: init parameters: {'a': 1, 'b': 1, 'sleep': 0, 'businessCode': '085cdfa6f9ed2000', 'smooth_order': '三阶', 'application': 'Exponential Smoothing', 'seasonal_periods': 4, 'params_setting_mode': '自动调优'}
+[Framework Log] 2023-12-04 17:03:14.733 INFO pipeline.py:694: 特征函数 select_columns, 是否可以进行分片处理 True
+[Framework Log] 2023-12-04 17:03:14.733 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 11, "token": "", "code": 200, "type": "importmodel", "message": "框架导入模型成功", "data": ""}
+[Framework Log] 2023-12-04 17:03:14.733 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 7, "token": "", "code": 200, "type": "inferstatus", "message": "", "data": "[{\"status\": \"start\", \"inferid\": \"\", \"instanceid\": \"\", \"inferTaskStatus\": []}]"}
+[Framework Log] 2023-12-04 17:03:14.733 INFO pipeline.py:694: 特征函数 select_columns, 是否可以进行分片处理 True
+[Framework Log] 2023-12-04 17:03:14.733 INFO pipeline.py:289: model load path：/Users/hexer/Documents/workspace/code/iuapaipaas/iw-algo-fx/examples/iw-algo-fx-example-data/doany/model
+[Framework Log] 2023-12-04 17:03:14.733 INFO pipeline.py:289: model load path：/Users/hexer/Documents/workspace/code/iuapaipaas/iw-algo-fx/examples/iw-algo-fx-example-data/doany/model
+[Framework Log] 2023-12-04 17:03:14.733 INFO apijob.py:92: 方法: infer2 加载成功, 访问路径：/infer2, 访问方法: get, 是否需要特征处理: True
+[Framework Log] 2023-12-04 17:03:14.733 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 11, "token": "", "code": 200, "type": "importmodel", "message": "框架导入模型成功", "data": ""}
+[Algorithm Log] 2023-12-04 17:03:14.733 INFO algorithm.py:36: init parameters: {'a': 1, 'b': 1, 'sleep': 0, 'businessCode': '085cdfa6f9ed2000', 'smooth_order': '三阶', 'application': 'Exponential Smoothing', 'seasonal_periods': 4, 'params_setting_mode': '自动调优'}
+[Framework Log] 2023-12-04 17:03:14.733 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 11, "token": "", "code": 200, "type": "importmodel", "message": "框架导入模型成功", "data": ""}
+[Framework Log] 2023-12-04 17:03:14.734 INFO apijob.py:92: 方法: infer 加载成功, 访问路径：/predict, 访问方法: post, 是否需要特征处理: True
+[Framework Log] 2023-12-04 17:03:14.734 INFO pipeline.py:694: 特征函数 select_columns, 是否可以进行分片处理 True
+[Framework Log] 2023-12-04 17:03:14.734 INFO apijob.py:92: 方法: infer3 加载成功, 访问路径：/infer3, 访问方法: post, 是否需要特征处理: True
+[Framework Log] 2023-12-04 17:03:14.734 INFO pipeline.py:289: model load path：/Users/hexer/Documents/workspace/code/iuapaipaas/iw-algo-fx/examples/iw-algo-fx-example-data/doany/model
+[Framework Log] 2023-12-04 17:03:14.734 INFO apijob.py:92: 方法: infer 加载成功, 访问路径：/predict, 访问方法: post, 是否需要特征处理: True
+[Framework Log] 2023-12-04 17:03:14.734 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 11, "token": "", "code": 200, "type": "importmodel", "message": "框架导入模型成功", "data": ""}
+[Framework Log] 2023-12-04 17:03:14.734 INFO apijob.py:92: 方法: infer 加载成功, 访问路径：/predict, 访问方法: post, 是否需要特征处理: True
+[Framework Log] 2023-12-04 17:03:14.734 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 15, "token": "", "code": 200, "type": "inferstatus", "message": "", "data": "[{\"status\": \"start\", \"inferid\": \"\", \"instanceid\": \"\", \"inferTaskStatus\": []}]"}
+[Framework Log] 2023-12-04 17:03:14.734 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 7, "token": "", "code": 200, "type": "inferstatus", "message": "", "data": "[{\"status\": \"start\", \"inferid\": \"\", \"instanceid\": \"\", \"inferTaskStatus\": []}]"}
+[Framework Log] 2023-12-04 17:03:14.734 INFO apijob.py:92: 方法: infer 加载成功, 访问路径：/predict, 访问方法: post, 是否需要特征处理: True
+[Framework Log] 2023-12-04 17:03:14.734 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 15, "token": "", "code": 200, "type": "inferstatus", "message": "", "data": "[{\"status\": \"start\", \"inferid\": \"\", \"instanceid\": \"\", \"inferTaskStatus\": []}]"}
+[Framework Log] 2023-12-04 17:03:14.734 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 15, "token": "", "code": 200, "type": "inferstatus", "message": "", "data": "[{\"status\": \"start\", \"inferid\": \"\", \"instanceid\": \"\", \"inferTaskStatus\": []}]"}
+[Algorithm Log] 2023-12-04 17:03:14.734 INFO algorithm.py:36: init parameters: {'a': 1, 'b': 1, 'sleep': 0, 'businessCode': '085cdfa6f9ed2000', 'smooth_order': '三阶', 'application': 'Exponential Smoothing', 'seasonal_periods': 4, 'params_setting_mode': '自动调优'}
+[Framework Log] 2023-12-04 17:03:14.735 INFO pipeline.py:694: 特征函数 select_columns, 是否可以进行分片处理 True
+[Framework Log] 2023-12-04 17:03:14.735 INFO pipeline.py:289: model load path：/Users/hexer/Documents/workspace/code/iuapaipaas/iw-algo-fx/examples/iw-algo-fx-example-data/doany/model
+[Framework Log] 2023-12-04 17:03:14.735 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 15, "token": "", "code": 200, "type": "inferstatus", "message": "", "data": "[{\"status\": \"start\", \"inferid\": \"\", \"instanceid\": \"\", \"inferTaskStatus\": []}]"}
+[Framework Log] 2023-12-04 17:03:14.735 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 11, "token": "", "code": 200, "type": "importmodel", "message": "框架导入模型成功", "data": ""}
+[Framework Log] 2023-12-04 17:03:14.735 INFO apijob.py:92: 方法: infer 加载成功, 访问路径：/predict, 访问方法: post, 是否需要特征处理: True
+[Framework Log] 2023-12-04 17:03:14.736 INFO recorder.py:110: [report local]Request: {"id": "", "serviceId": "", "msgid": 15, "token": "", "code": 200, "type": "inferstatus", "message": "", "data": "[{\"status\": \"start\", \"inferid\": \"\", \"instanceid\": \"\", \"inferTaskStatus\": []}]"}
