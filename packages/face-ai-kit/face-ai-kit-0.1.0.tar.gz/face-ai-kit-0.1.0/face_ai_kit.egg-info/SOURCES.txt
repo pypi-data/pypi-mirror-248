@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+face_ai_kit/FaceRecognition.py
+face_ai_kit/__init__.py
+face_ai_kit.egg-info/PKG-INFO
+face_ai_kit.egg-info/SOURCES.txt
+face_ai_kit.egg-info/dependency_links.txt
+face_ai_kit.egg-info/requires.txt
+face_ai_kit.egg-info/top_level.txt

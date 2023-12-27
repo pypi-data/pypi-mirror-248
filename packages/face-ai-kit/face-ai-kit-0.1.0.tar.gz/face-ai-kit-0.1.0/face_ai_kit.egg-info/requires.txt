@@ -1,0 +1,6 @@
+confuse
+gdown
+numpy
+onnxruntime
+opencv-python
+scikit-image
