@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+tttt1923/__init__.py
+tttt1923/pdf2text.py
+tttt1923/read_content.py
+tttt1923/text_cleaning.py
+tttt1923.egg-info/PKG-INFO
+tttt1923.egg-info/SOURCES.txt
+tttt1923.egg-info/dependency_links.txt
+tttt1923.egg-info/requires.txt
+tttt1923.egg-info/top_level.txt
