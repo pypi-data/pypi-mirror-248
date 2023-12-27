@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: project_tehnocat
+Version: 1.0.12
+Summary: Personal assistant CLI tool. Manage your contacts and notes.
+Home-page: https://github.com/st3n/project-TehnoCat
+Author: TehnoCat Team
+Author-email: tehnocat@example.com
+License: MIT
+License-File: LICENSE
