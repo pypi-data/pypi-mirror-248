@@ -1,0 +1,11 @@
+webpfield/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+webpfield/apps.py,sha256=L9pqEgLODzBdwfm_91AHbdOK6lhJyXi2pGSwsYtnKas,150
+webpfield/fields.py,sha256=IgQxxin8BmA6hVDgubGMSM2hKNeZdofkwWQf1B1x9kU,458
+webpfield/image_formats.py,sha256=i62lOkSOYK2fEpz5LBE1zuin1rYC808NkQeNsxkTal4,302
+webpfield/settings.py,sha256=9x_H2KTVLMermGHYQQ3MC3ze1bq1qg8atXAQVgX1ntQ,842
+webpfield/utils.py,sha256=_o9-RlbQe2w8iOa_KTbvF_KfUEael3GV0y4YI1U7dlo,708
+webpfield/webp_storage.py,sha256=G_Y9Bt4MDdgvwLnvHfpeSAXGi8myhWdQNM4zIjlgDrs,1156
+django_webpfield-0.1.0.dist-info/METADATA,sha256=w8YFmdkB2SY-XdZkKA0aXD6BUhUSdxjRoDftCX7bxMw,4301
+django_webpfield-0.1.0.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+django_webpfield-0.1.0.dist-info/licenses/LICENSE,sha256=WKDf2fMwJc-pSrSPUARoytOpQucf9EFhfkhRl_DUeto,1094
+django_webpfield-0.1.0.dist-info/RECORD,,
