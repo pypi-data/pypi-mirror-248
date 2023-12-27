@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: chrome-switcher
+Version: 0.0.1
+Summary: Easily create and load new Chrome profiles
+Project-URL: Homepage, https://github.com/pilgrimtabby/chrome-switcher
+Project-URL: Issues, https://github.com/pilgrimtabby/chrome-switcher/issues
+Author-email: pilgrim_tabby <pilgrimtabby@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: chime
+Requires-Dist: pywin32; platform_system == 'Windows'
+Description-Content-Type: text/markdown
+
+# chrome-switcher
+
+## Overview
+
+
+## Usage
+
+
+## Installation
+
+The easiest way to install this program is using pip.
+
+### Windows
+
+In the console, type ``
+
+### macOS
+
+In the console, type ``
+
+### Linux
+
+This program has not been tested on Linux.
