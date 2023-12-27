@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: py-clickhouse-migrator
+Version: 0.2
+Summary: Simple tool for manage ClickHouse migrations.
+Author: Maksim Burtsev
+Author-email: zadrot-lol@list.ru
+License: MIT
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+Requires-Dist: click >=8.0.1
+Requires-Dist: clickhouse-driver >=0.2.0
+Requires-Dist: python-dotenv >=1.0.0
+
+Simple tool for ClickHouse migrations.
