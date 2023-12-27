@@ -1,0 +1,13 @@
+coodeer/__init__.py,sha256=EXp8PcvswJnpm_aVPErUgHnjx0Jhc9tpcfPtWvoz3P8,264
+coodeer/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coodeer/cli/coodeer.py,sha256=7E8JXPCARZCx7ysDYW0cSa2q-RHJj8b1lvdGV8lgZwM,3038
+coodeer/configuration/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coodeer/configuration/coodeer.py,sha256=ScmvTezYGZah25pHy_gzF_HL0nxdFbsirT3jBnzInZo,891
+coodeer/controller/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coodeer/controller/repository.py,sha256=HhISJraamfV7aHcNgM8YoigRuL1PUSXglYljp4N7zK8,7004
+coodeer/controller/s3_access.py,sha256=H5LoWJXmRlDqk0zVe5772nBHa22Hnbq-cLrpAa7gZIY,6127
+coodeer-0.4.6.dist-info/COPYING,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+coodeer-0.4.6.dist-info/METADATA,sha256=prUxUBB5QZCNnrbGEV7PENu-liJfD2JR6Bnk6edZ8eo,1775
+coodeer-0.4.6.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+coodeer-0.4.6.dist-info/entry_points.txt,sha256=N612O4P6cQ0b0jlIW9A-nDpp0uXNSmH7urz2j0HBRcU,51
+coodeer-0.4.6.dist-info/RECORD,,
