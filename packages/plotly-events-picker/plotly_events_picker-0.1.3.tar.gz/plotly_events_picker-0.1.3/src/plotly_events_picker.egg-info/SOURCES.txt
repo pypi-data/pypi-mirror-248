@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/plotly_events_picker/__init__.py
+src/plotly_events_picker.egg-info/PKG-INFO
+src/plotly_events_picker.egg-info/SOURCES.txt
+src/plotly_events_picker.egg-info/dependency_links.txt
+src/plotly_events_picker.egg-info/requires.txt
+src/plotly_events_picker.egg-info/top_level.txt
+src/plotly_events_picker/frontend/index.html
+src/plotly_events_picker/frontend/main.js
+src/plotly_events_picker/frontend/plotly-2.14.0.min.js
+src/plotly_events_picker/frontend/streamlit-component-lib.js
