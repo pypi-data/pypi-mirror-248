@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+aiotailwind/__init__.py
+aiotailwind/auth.py
+aiotailwind/tailwind.py
+aiotailwind.egg-info/PKG-INFO
+aiotailwind.egg-info/SOURCES.txt
+aiotailwind.egg-info/dependency_links.txt
+aiotailwind.egg-info/top_level.txt
