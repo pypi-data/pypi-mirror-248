@@ -1,0 +1,9 @@
+argapp/LICENSE,sha256=-aYoj3HdC-1JPpMYU6XoYVr5M63OKbuJ5bpA084Eaj4,1074
+argapp/README.md,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+argapp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+argapp/cli.py,sha256=Vfg22D-LOxalUWzm7P5Wuzh6fiPmWBWMkxAaOnUE0Z0,35414
+argapp/log.py,sha256=LemRu9-RQzHGAaEI6bavA5uqFNPl6sQVcOxW3s9xmXU,4561
+argapp/shell.py,sha256=RsJe2-4LFvgiQgBmSTKsie3xYZq9bOOD6arjuK9TLpc,3286
+argapp-0.1.1.dist-info/METADATA,sha256=7PF4NtDVM4bTTZQlArV4y8T91-qhNcK2VFkjzd1DWzI,2176
+argapp-0.1.1.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+argapp-0.1.1.dist-info/RECORD,,
