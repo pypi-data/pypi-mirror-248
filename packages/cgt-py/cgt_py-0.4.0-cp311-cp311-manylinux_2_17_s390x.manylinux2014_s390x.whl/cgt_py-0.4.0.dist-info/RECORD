@@ -1,0 +1,5 @@
+cgt_py-0.4.0.dist-info/METADATA,sha256=SRXicectAavmVq4wLWyptq2ccIPkG19XiY4Y81eyei0,412
+cgt_py-0.4.0.dist-info/WHEEL,sha256=MkmBUZO9hcnmE1H_eiiSFzd2cy74uKJ7RefZUiXhU5E,127
+cgt_py/__init__.py,sha256=1Hbt-uk6ioO8Iuh8-euqSMvBHD_pNKRA9QOEQ8p8Pjc,107
+cgt_py/cgt_py.cpython-311-s390x-linux-gnu.so,sha256=surMiRAm44CkA8m3--eCEKH9L3zDV6u6aYg_OQAsPu8,3489464
+cgt_py-0.4.0.dist-info/RECORD,,
