@@ -1,0 +1,13 @@
+pkg_updater/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pkg_updater/app.py,sha256=ydGJNwjF4LqiY3dFRIZZ31biDIhZOMvxYV82unqD7Y8,4125
+pkg_updater/favicon.svg,sha256=3fH0-hpWWTrfS8K5p3Dk5cK0jDd8_PqqO9wgb5s2Ops,556
+pkg_updater/handlers.py,sha256=7-ECmGG9nA77jpbS7EJs3qMtYmmh0OQbjupXQWreJxA,687
+pkg_updater/logger.py,sha256=a3DdEKzBCkO8luWDGg6o0wzxUW4JI1poAi2d5xzl1xE,1644
+pkg_updater/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pkg_updater/updater.py,sha256=umcK0_T2FU9RGG3G4Q-drdqwCkRtVlzQ4kgrFZCUj38,4308
+pkg_updater-1.0.4.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+pkg_updater-1.0.4.dist-info/METADATA,sha256=uBZV2IOEhXr-DjQYqdFijjdM-1F90gywt8m5lm1PEY4,2822
+pkg_updater-1.0.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pkg_updater-1.0.4.dist-info/entry_points.txt,sha256=OtKW-16DMWUA4jBpOunakbWdGjwwKNxVpcUygXjuIlE,49
+pkg_updater-1.0.4.dist-info/top_level.txt,sha256=OULLPZW3BQf96eqnSisxu4xS4Xizre-1DK5uYcfGuhs,12
+pkg_updater-1.0.4.dist-info/RECORD,,
