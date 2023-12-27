@@ -1,0 +1,16 @@
+teamplify_runner/__init__.py,sha256=RYs3cR49NZ5Zwt0avo2mYyRcdWjLbrKBCHRHpqCJx24,23
+teamplify_runner/cli.py,sha256=BvyQyQ4ozR2XJg2Lnpw5TzjhS9K-mA2VfgmlJrpI5UQ,14536
+teamplify_runner/configurator.py,sha256=zb8RpG7boENs2lJsJnL9RRjSBRMEQZjXqVD8Xh4Se4E,15033
+teamplify_runner/docker-compose.yml,sha256=CoyfwFvwOz3sfE_VukHnrzgfTAaw6F5FqHVdrEYs59s,4349
+teamplify_runner/mysql.cnf,sha256=l_lPNxtAjcpQ5f5hVR8BQevYGtLH7NddHYYXPySefSk,270
+teamplify_runner/redis.conf,sha256=vSsVenEQjA_1w_G4uehuBIId0fvcHOrVKv_MVU6tp70,22
+teamplify_runner/utils.py,sha256=5CST5w6Vssg4n1r9fc7_AfVAM4baMmyU6c9hYYbyqg8,2463
+teamplify_runner/uwsgi_params.conf,sha256=YeTeWayl6uavGR9gu2FMRnBx92x1i2CLcAI8lQCv5bg,766
+teamplify_runner/vhost.conf,sha256=v9tbgzB-LOpQNCJ_pc8fCfibn-yhJ1kTJlP1yEmHM9c,512
+teamplify_runner/backup/readme.txt,sha256=I10b47eKfCemMsWp3hyP-ldGFmm0SWSKnwgLJ0L37CI,51
+teamplify-0.10.0.dist-info/LICENSE,sha256=kb7eYVZAgVCbAd0RnTaVTcf5KoMGOuGCBSx_bnWsSKU,1066
+teamplify-0.10.0.dist-info/METADATA,sha256=_JW1GIIhKpxDOTA1_1XzvrIkUvBufAAdjID6gzOWcyQ,23380
+teamplify-0.10.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+teamplify-0.10.0.dist-info/entry_points.txt,sha256=-l7gOmWssdlna-D3oA1lxtQDeauC9_C6_reKAfBqznE,56
+teamplify-0.10.0.dist-info/top_level.txt,sha256=Yf2sN8mo54ix1TfmsBIjnlK_aeHhbJfYt3lV3GbLDZA,17
+teamplify-0.10.0.dist-info/RECORD,,
