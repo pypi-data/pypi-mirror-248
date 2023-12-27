@@ -1,0 +1,4 @@
+[console_scripts]
+start=today.scripts.start:main
+today=today.scripts.today:main
+
