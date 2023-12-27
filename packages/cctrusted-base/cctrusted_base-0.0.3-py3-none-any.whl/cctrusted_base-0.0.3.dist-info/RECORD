@@ -1,0 +1,12 @@
+cctrusted_base/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cctrusted_base/api.py,sha256=S5c-ycm5kTpXlC8QAubddOMzO6X0wLt256gtVmtw_5w,3712
+cctrusted_base/binaryblob.py,sha256=u85Jb2eATjRleO8EVpgoJew9_itJqsnhyrVWw_N0FqM,3563
+cctrusted_base/ccel.py,sha256=w7igW7fCGydEd5YPy1L9grckbyA6U5quxxYmlJ8Upr8,2516
+cctrusted_base/eventlog.py,sha256=WRrZ2rpx8WmiocaluzpploL7OU42HO9WRc_hVG5XHcE,8815
+cctrusted_base/imr.py,sha256=o6Nt-5F-ZLKdbvzQQwAmbBL6blGW6BujIhExDGqFQFY,1974
+cctrusted_base/quote.py,sha256=4FKL-3p_0Ajt8twitN46_5CRJYy55pPYXVhMpiHheqI,834
+cctrusted_base/tcg.py,sha256=_6CORtMpi3W00LDS5bKJ3juUcEk3w61rl4FjZwW6v6A,12752
+cctrusted_base-0.0.3.dist-info/METADATA,sha256=65Fb_YCoRAOjs2U40yGvfNnqLmTpWm3wUpnee_Do3LU,573
+cctrusted_base-0.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+cctrusted_base-0.0.3.dist-info/top_level.txt,sha256=ocF0L5WBYP6z5bWW5hAFnKPEfxoltE9NFNiE3EChDbI,15
+cctrusted_base-0.0.3.dist-info/RECORD,,
