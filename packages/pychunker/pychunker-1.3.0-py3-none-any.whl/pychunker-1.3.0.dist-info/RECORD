@@ -1,0 +1,13 @@
+pychunker/__init__.py,sha256=SB1QmSAK3yQqqxzWl3uk-aKbs3PaxxGiEMfcaDBKogo,402
+pychunker/chunk.py,sha256=sSw_fmIvYEGFubNjoO7ajhNM8FtcxsHXpISLRwS9wTM,2969
+pychunker/chunkfile.py,sha256=UQ8pbXgFA5Kyc8LRAjjgoLXomcLNwlGfok8L0T08o3o,10904
+pychunker/crc.py,sha256=vMvzxotXDE3j0IT5P9OBHQh-E_tJt7y3Mpti_EoVooY,668
+pychunker/exceptions.py,sha256=Cm8__t_wML65RBZyEGgMEpE5eLpGnah8Jx-4b8i-tko,1097
+pychunker/functions.py,sha256=pcNAVDiaaPfK2YUNGYnnyXgq6ao_oqkAYeuX6lN_CzM,1567
+pychunker/functions.pyi,sha256=8EdEwQM2hOamv8T3WuezVkTV1m0aqt55H4yVDgLmH6w,1784
+pychunker/types.py,sha256=NisxbMbkH8X7HW-bAxFuHCfURjp_uhj2uI2OX1MyniM,1107
+pychunker/units.py,sha256=OIm8hbIlWB_CNa-5Y-pKWPichjJM_z5-xtCg21oFJGI,96
+pychunker-1.3.0.dist-info/LICENSE,sha256=z1l6gbEIzBQBCsgMwjDJKHuqSSYy5KKM8dWdV5fwR64,1085
+pychunker-1.3.0.dist-info/METADATA,sha256=-GViH1ghvXE9F8ODj7Pv6A5_E5xPYpOtUtaK_rZLyrY,1504
+pychunker-1.3.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+pychunker-1.3.0.dist-info/RECORD,,
