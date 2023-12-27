@@ -1,0 +1,10 @@
+README.md
+setup.py
+matplotilib/__init__.py
+matplotilib/hello.py
+matplotilib.egg-info/PKG-INFO
+matplotilib.egg-info/SOURCES.txt
+matplotilib.egg-info/dependency_links.txt
+matplotilib.egg-info/entry_points.txt
+matplotilib.egg-info/requires.txt
+matplotilib.egg-info/top_level.txt
