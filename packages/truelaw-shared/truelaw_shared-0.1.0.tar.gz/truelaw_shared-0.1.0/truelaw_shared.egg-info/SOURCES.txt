@@ -1,0 +1,8 @@
+setup.py
+truelaw_shared/__init__.py
+truelaw_shared/module1.py
+truelaw_shared.egg-info/PKG-INFO
+truelaw_shared.egg-info/SOURCES.txt
+truelaw_shared.egg-info/dependency_links.txt
+truelaw_shared.egg-info/requires.txt
+truelaw_shared.egg-info/top_level.txt
