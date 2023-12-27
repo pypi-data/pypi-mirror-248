@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: batch-prediction
+Version: 1.0.23
+Summary: Batch prediction recipe
+Author: Amit Boke
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8,<3.10
+Requires-Dist: refractml
+Requires-Dist: refractio[snowflake]
