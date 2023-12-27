@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: NPSAM
+Version: 1.1
+Summary: NP-SAM is an easy-to-use segmentation and analysis tool for nanoparticles and more.
+Home-page: https://gitlab.au.dk/disorder/np-sam
+Author: Torben Villadsen & Rasmus Larsen
+Author-email: torben-v@hotmail.com
+License: Apache License
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: torch (==2.1.1)
+Requires-Dist: torchvision (==0.16.1)
+Requires-Dist: numba (==0.57.0)
+Requires-Dist: numpy (==1.24.3)
+Requires-Dist: opencv-python (==4.8.0.74)
+Requires-Dist: pandas (==2.0.1)
+Requires-Dist: matplotlib (==3.7.1)
+Requires-Dist: scikit-image (==0.20.0)
+Requires-Dist: ipympl (==0.9.3)
+Requires-Dist: PyQt5 (==5.15.9)
+Requires-Dist: Pillow (>=7.1.2)
+Requires-Dist: ultralytics (==8.0.120)
+Requires-Dist: jupyterlab (==4.0.7)
+Requires-Dist: requests (==2.31.0)
+
+# NP-SAM
+
+## Introduction
+
+In this project we propose an easily implementable workflow for a fast, accurate and seamless experience of segmentation of nanoparticles.
+
+The project's experience could be significantly enhanced with the presence of a CUDA-compatible device; alternatively, Google Colab can be utilized if such a device is not accessible. For a quick access to the program and a CUDA-GPU try our Google Colab notebook.
+
+### Get started
+In the working directory and NPSAM environment execute `jupyter lab` in the terminal. This will launch jupyterlab. 
+
+## Citation
+```
+@article{NPSAM,
+   author = {Larsen, Rasmus and Villadsen, Torben L. and Mathiesen, Jette K. and Jensen, Kirsten M. Ø and Bøjesen, Espen D.},
+   title = {NP-SAM: Implementing the Segment Anything Model for Easy Nanoparticle Segmentation in Electron Microscopy Images},
+   journal = {ChemRxiv},
+   DOI = {10.26434/chemrxiv-2023-k73qz-v2},
+   year = {2023},
+   type = {Journal Article}
+}
+```
+
+## Acknowledgment
+This repo benefits from Meta's [Segment Anything](https://github.com/facebookresearch/segment-anything) and [FastSAM](https://github.com/CASIA-IVA-Lab/FastSAM). Thanks for their great work.
+
+
