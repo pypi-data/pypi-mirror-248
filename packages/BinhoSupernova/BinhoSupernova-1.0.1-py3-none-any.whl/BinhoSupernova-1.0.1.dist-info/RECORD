@@ -1,0 +1,15 @@
+BinhoSupernova/Supernova.py,sha256=5ypscdq2EEenUeBCm9cyMLlBkgbxXJSXL0tv_ywIvpI,57977
+BinhoSupernova/__init__.py,sha256=vZaTvW4aFe2fUB6hwrcNJooCi5GMxFeYI3qJG7tgUu4,868
+BinhoSupernova/commands/__init__.py,sha256=56DwFgMwi5Mn6N0vd2lpnJtqDwobfeV-GMEAbcL_6FY,54
+BinhoSupernova/commands/definitions.py,sha256=Siit_cDoEnas9oulL1-bXmCu99v01ffiHj7LaYNFOIw,126034
+BinhoSupernova/commands/serializers.py,sha256=ApMRcF_BHwi6_D-mQxhd0CNGkqOkEMuerfPKgK8YqyU,34008
+BinhoSupernova/commands/validators.py,sha256=UclkCCURY7nirGBYKN0kCYrlbTYzq6YKVG6afsvsuNg,10842
+BinhoSupernova/services/__init__.py,sha256=Uqd45JxhdFWkN-fDPlwo4Bi43krUiSF4mmVHXml0tdc,26
+BinhoSupernova/services/usb_receiver.py,sha256=ePjQjeGiXut0kkOyj2SDwbOimE-BiujY98R0D3cc4eo,5356
+BinhoSupernova/utils/__init__.py,sha256=Yeakw4L82-6GM8xQKFOQxovieLZz8zI8M3_q1Us9tAg,28
+BinhoSupernova/utils/system_message.py,sha256=fu7zP4vu0zfIP4cQc5E-7bMCg8EMV94iVUb10rq-r14,764
+BinhoSupernova-1.0.1.dist-info/LICENSE,sha256=OsrJyARg0vqyVasrFcZCan8iJlLJk-E6abFzH184Ats,1606
+BinhoSupernova-1.0.1.dist-info/METADATA,sha256=kctPK-y3s_xBGIg7vuuQMMrlL_E3nOdB4ZghQgYdUSo,7906
+BinhoSupernova-1.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+BinhoSupernova-1.0.1.dist-info/top_level.txt,sha256=X6HbUG3QxB4ZHHJNHcA7ir-NRXinpmrM-7geCGDLNsE,15
+BinhoSupernova-1.0.1.dist-info/RECORD,,
