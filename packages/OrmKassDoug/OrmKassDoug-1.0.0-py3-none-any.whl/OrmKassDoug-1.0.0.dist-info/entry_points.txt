@@ -1,0 +1,2 @@
+[console_scripts]
+run = app.modulo1:funcao_principal
