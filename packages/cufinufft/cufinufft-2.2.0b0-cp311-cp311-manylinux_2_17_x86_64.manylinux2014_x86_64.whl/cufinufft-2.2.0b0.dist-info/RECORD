@@ -1,0 +1,14 @@
+cufinufft-2.2.0b0.dist-info/top_level.txt,sha256=3NOdSp9wxDOaX_50uqOqkVi3HX7Z1lo9YJRAxJe25q8,10
+cufinufft-2.2.0b0.dist-info/WHEEL,sha256=8KU227XctfdX2qUwyjQUO-ciQuZtmyPUCKmeGV6Byto,152
+cufinufft-2.2.0b0.dist-info/METADATA,sha256=EOYVvjlixruhn392rLuxeGBJZa7AJ6GETwMOCrDHJ6o,2268
+cufinufft-2.2.0b0.dist-info/RECORD,,
+cufinufft.libs/libnvToolsExt-24de1d56.so.1.0.0,sha256=u0wF50k5_oIO2J51D7iZBujLDWIJEpm-JbKf6FOgoy0,38969
+cufinufft.libs/libcufft-058fdf74.so.10.4.1.152,sha256=E_5tVm49Ct8axgTZVXExBoGo6ntT2BCJJ3zvEezNVGs,190128369
+cufinufft.libs/libcudart-72c5e614.so.11.2.152,sha256=PCibYoyZE43V4yYNyJp5Raws6rMXj0kYoZ8HZeBIjis,599641
+cufinufft.libs/libcufinufft-981798ef.so,sha256=Vb6HcFzpgxywzs1NGGEq17np8xeDJjc0rU12bMm0vRU,44467545
+cufinufft/_cufinufft.py,sha256=MG919uG85cNSnI4sim-mh58Ph6cJ0rMCIUtuTFIgcDI,3557
+cufinufft/__init__.py,sha256=P2fIfdqDLCWa8r_1C89kJ4MwRM7fYJYm034DCd7KELY,306
+cufinufft/_simple.py,sha256=lB4FvZAEpBxnK3rP4qx0JGzAx0u_K6przl8hw2_9KCA,7271
+cufinufft/_plan.py,sha256=NJlyoKvA4cY5IXSwThy2US8DEQ8-tyeMhuiEOKzyV0s,13596
+cufinufft/cufinufftc.cpython-311-x86_64-linux-gnu.so,sha256=ZEiBjR_0UczfK_LnJ-RJH6kfaeBXC0L72UMAcnVnF7s,21209
+cufinufft/_compat.py,sha256=Tw3dD0Co_7EtHSu62E7lprPc8zY21ekbpoE33AfAzn4,2749
