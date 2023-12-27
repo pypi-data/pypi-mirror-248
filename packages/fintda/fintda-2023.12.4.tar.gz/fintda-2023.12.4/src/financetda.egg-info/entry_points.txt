@@ -1,0 +1,2 @@
+[console_scripts]
+ftda = financetda.cli:main
