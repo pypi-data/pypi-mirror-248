@@ -1,0 +1,8 @@
+pyproject.toml
+src/__init__.py
+src/list_sum.py
+src/test_app.py
+src/add_list_AK_311.egg-info/PKG-INFO
+src/add_list_AK_311.egg-info/SOURCES.txt
+src/add_list_AK_311.egg-info/dependency_links.txt
+src/add_list_AK_311.egg-info/top_level.txt
