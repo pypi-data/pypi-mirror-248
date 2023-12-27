@@ -1,0 +1,7 @@
+mlflow_k8sstore/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mlflow_k8sstore/mlflow_k8sstore.py,sha256=2_IRdr5pyiNk4BTOP4WaOwP90nPQSsfqvdTkZEWftA0,1923
+mlflow_k8sstore_plugin-0.0.1.dist-info/METADATA,sha256=cwzcS9XF7Jxt4vKvd12751Oszkwjx4xN-bdFeh1cK2Q,179
+mlflow_k8sstore_plugin-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+mlflow_k8sstore_plugin-0.0.1.dist-info/entry_points.txt,sha256=JmsDOgmOR_wR8c7J0bADZ6ze4r0OOdHWi2MztgKAYOY,77
+mlflow_k8sstore_plugin-0.0.1.dist-info/top_level.txt,sha256=RqJLrqf0Drw-AtP54VBqvGz5IWsbhDcqNlOsTQ1Nz40,16
+mlflow_k8sstore_plugin-0.0.1.dist-info/RECORD,,
