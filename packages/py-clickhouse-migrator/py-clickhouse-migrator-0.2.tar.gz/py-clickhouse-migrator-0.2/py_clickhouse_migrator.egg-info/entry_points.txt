@@ -1,0 +1,2 @@
+[console_scripts]
+migrator = py_clickhouse_migrator.cli:main
