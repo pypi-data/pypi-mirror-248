@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: json-logic-asp
+Version: 0.2.1
+Summary: Python JSON Logic evaluator in ASP
+Home-page: https://github.com/barreeeiroo/JSON-Logic-ASP/
+Author: Diego Barreiro Perez
+Author-email: diego@barreiro.xyz
+Requires-Python: >=3.8.1,<4.0.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: clingo (==5.5.2)
+Requires-Dist: cuid2 (>=2.0.0,<3.0.0)
+Requires-Dist: pydantic (>=2.5.2,<3.0.0)
+Project-URL: Documentation, https://json-logic-asp.readthedocs.io/
+Project-URL: Repository, https://github.com/barreeeiroo/JSON-Logic-ASP
+Description-Content-Type: text/markdown
+
+
