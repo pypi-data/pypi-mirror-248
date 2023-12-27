@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: calculator-cz
+Version: 0.2.0
+Summary: A calculator performing basic operations
+Home-page: UNKNOWN
+Author: Clement Zankoc
+Author-email: zaclem@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: calculator-cz
+Requires-Dist: tests
+
+UNKNOWN
+
+
