@@ -1,0 +1,9 @@
+README.rst
+setup.py
+blocconi/__init__.py
+blocconi/blocconi.py
+blocconi.egg-info/PKG-INFO
+blocconi.egg-info/SOURCES.txt
+blocconi.egg-info/dependency_links.txt
+blocconi.egg-info/requires.txt
+blocconi.egg-info/top_level.txt
