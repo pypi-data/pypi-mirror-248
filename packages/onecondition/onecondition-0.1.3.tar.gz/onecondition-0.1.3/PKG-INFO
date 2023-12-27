@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: onecondition
+Version: 0.1.3
+Summary: An ultra-lightweight package for validating single conditions.
+Author-email: Ella Jameson <ellagjameson@gmail.com>
+Description-Content-Type: text/markdown
+Project-URL: documentation, https://onecondition.readthedocs.io/en/latest/index.html
+Project-URL: homepage, https://github.com/nimaid/python-onecondition
+Project-URL: issues, https://github.com/nimaid/python-onecondition/issues
+Project-URL: repository, https://github.com/nimaid/python-onecondition
+
+# 1️⃣ OneCondition
+### An ultra-lightweight package for validating single conditions.
+
+## Usage In Custom Code
+TODO
+
+# Full Documentation
+<p align="center"><a href="https://onecondition.readthedocs.io/en/latest/index.html"><img src="https://brand-guidelines.readthedocs.org/_images/logo-wordmark-vertical-dark.png" width="300px" alt="onecondition on Read the Docs"></a></p>
+
