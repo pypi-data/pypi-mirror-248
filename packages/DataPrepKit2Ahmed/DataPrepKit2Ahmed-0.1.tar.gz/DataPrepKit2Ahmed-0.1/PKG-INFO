@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: DataPrepKit2Ahmed
+Version: 0.1
+Summary: Class to seamlessly read data from various file formats, provide a data summary, handle missing values, and encode categorical data.
+Author: Ahmed Esmail
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
