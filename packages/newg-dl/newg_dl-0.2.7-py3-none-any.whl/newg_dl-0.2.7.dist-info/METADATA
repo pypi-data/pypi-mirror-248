@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: newg_dl
+Version: 0.2.7
+Summary: A Python library for downloading music from Newgrounds.
+Author: Connor
+Author-email: Connor <contact@coneriys.one>
+Project-URL: Homepage, https://github.com/Infinitium-Team/newgrounds_dl
+Project-URL: Issues, https://github.com/Infinitium-Team/newgrounds_dl/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Newgrounds Download
+
+A Python library for downloading music from Newgrounds.
