@@ -1,0 +1,8 @@
+setup.py
+iotiumscraper/__init__.py
+iotiumscraper/kastle.py
+iotiumscraper.egg-info/PKG-INFO
+iotiumscraper.egg-info/SOURCES.txt
+iotiumscraper.egg-info/dependency_links.txt
+iotiumscraper.egg-info/requires.txt
+iotiumscraper.egg-info/top_level.txt

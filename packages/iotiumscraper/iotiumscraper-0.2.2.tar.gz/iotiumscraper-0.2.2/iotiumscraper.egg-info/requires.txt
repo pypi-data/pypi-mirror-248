@@ -1,0 +1,5 @@
+selenium
+chromedriver_py
+email
+imaplib
+psycopg2
