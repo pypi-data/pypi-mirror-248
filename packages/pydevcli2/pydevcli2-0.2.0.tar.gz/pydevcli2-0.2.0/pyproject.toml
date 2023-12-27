@@ -1,0 +1,56 @@
+[tool.poetry]
+name = "pydevcli2"
+version = "0.2.0"
+description = "Python CLI for various purposes"
+authors = ["giraycoskun <giraycoskun.dev@gmail.com>"]
+license = "MIT"
+readme = "docs/README.md"
+packages = [{include = "pydevcli"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = {extras = ["all"], version = "^0.9.0"}
+
+
+[tool.poetry.group.dev.dependencies]
+black = {extras = ["jupyter"], version = "^23.12.0"}
+pylint = "^3.0.3"
+isort = "^5.13.2"
+commitizen = "^3.13.0"
+pre-commit = "^3.6.0"
+
+
+[tool.poetry.group.docs.dependencies]
+mkdocs-material = "^9.5.2"
+mkdocstrings = {extras = ["python"], version = "^0.24.0"}
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.3"
+coverage = "^7.3.4"
+
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "v$version"
+version_scheme = "semver"
+version_provider = "poetry"
+update_changelog_on_bump = true
+changelog_file = "./docs/CHANGELOG.md"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poe.tasks]
+format = "black ."
+run = "python -m main"
+lint = "pylint main.py website"
+export = "poetry export -f requirements.txt --output requirements.txt --without-hashes --only main" 
+isort = "isort . --profile black"
+
+[tool.isort]
+profile = "black"
+
+[tool.poetry.scripts]
+pydevcli = "pydevcli.cli:app"
