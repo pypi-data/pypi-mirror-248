@@ -1,0 +1,13 @@
+terminalgpt/.gitattributes,sha256=Gh2-F2vCM7SZ01pX23UT8pQcmauXWfF3gwyRSb6ZAFs,66
+terminalgpt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+terminalgpt/chat.py,sha256=kzb5rNDHQ4f0oIWN22MC6JAW94EfDw_5tRkOuKuYeC8,7717
+terminalgpt/config.py,sha256=Cp6m3DcajrzyHDzyExUnV3et7TsHAK7LyEe3W0I-3JI,2823
+terminalgpt/conversations.py,sha256=O-03-_XEMrBqBF8WO5uqW7LfvbgdxCh6Nfsg7CZ9jn4,4164
+terminalgpt/encryption.py,sha256=K0XOnRAPFkwOfAJts1FBiTOvcITqvVI9ExKjbomWgIs,3056
+terminalgpt/main.py,sha256=E3dBX3XmZasBgBLOEz1H5_OPyGlmhlqstlHs9k1SYKs,14746
+terminalgpt/printer.py,sha256=1D0Qm7mPSrH-3u0k39PORs7EYs_7vjMvqEbJj1Wd9kk,6308
+terminalgpt-2.1.3.dist-info/LICENSE,sha256=vGE0YG2jhyZyiyhfaltxs0QR5IFSVrCsyHh6CuoESTM,1070
+terminalgpt-2.1.3.dist-info/METADATA,sha256=c2L6Yq-QlmvFQDyjfJLNx8ZsdY2D6nxjGnryySN5-rs,5453
+terminalgpt-2.1.3.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+terminalgpt-2.1.3.dist-info/entry_points.txt,sha256=gsu0vsYILUAebEx0O6fs66ThKYWlqB97Ow-o9nxqD28,52
+terminalgpt-2.1.3.dist-info/RECORD,,
