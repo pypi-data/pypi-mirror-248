@@ -1,0 +1,10 @@
+mongo_db_operator/DbClassOperator.py,sha256=jRnZX32JNmyH6UvLeAJjVzqxJwTHAH5iEJGD0_DTpfs,4096
+mongo_db_operator/DbClassOperators.py,sha256=19yf74CeI4p29FGyoFk7qzQNsEGvpik_kJkmJAR46qg,725
+mongo_db_operator/MongoDbOperator.py,sha256=MnXfPRskFJgl3XO0ge0HzRE5-xys7qTG7MdB6dXS-c8,3279
+mongo_db_operator/__init__.py,sha256=8QQI07BvHNeWjGD5cC4uAdcvMtXknKkyryVGI1Ywh04,338
+mongo_db_operator/connect.py,sha256=qpZqIEtbReCjH4j7g5uIp_ORwvzbD2XlIz5DVYOPBbM,525
+mongo_db_operator-0.1.7.dist-info/LICENSE,sha256=bbElEHq_YT0H6yPmxAK1ocG41nrNUUYXCy9CWUeiukE,1070
+mongo_db_operator-0.1.7.dist-info/METADATA,sha256=O5nnt3ygd0sHXtIAM0jRcL5Ma51fKm4GcgTxtmcNNbk,581
+mongo_db_operator-0.1.7.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+mongo_db_operator-0.1.7.dist-info/top_level.txt,sha256=zwi8zKCe478THvjBRDWI2CMNAnZiMvRKICczAYfDqwQ,18
+mongo_db_operator-0.1.7.dist-info/RECORD,,
