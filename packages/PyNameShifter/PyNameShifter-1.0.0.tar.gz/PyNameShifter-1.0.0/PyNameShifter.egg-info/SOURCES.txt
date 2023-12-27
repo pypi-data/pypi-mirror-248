@@ -1,0 +1,8 @@
+setup.py
+PyNameShifter.egg-info/PKG-INFO
+PyNameShifter.egg-info/SOURCES.txt
+PyNameShifter.egg-info/dependency_links.txt
+PyNameShifter.egg-info/entry_points.txt
+PyNameShifter.egg-info/top_level.txt
+pyname_shifter/__init__.py
+pyname_shifter/main.py
