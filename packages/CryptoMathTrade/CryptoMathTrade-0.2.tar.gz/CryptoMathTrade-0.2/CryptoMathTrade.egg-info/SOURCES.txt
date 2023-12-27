@@ -1,0 +1,14 @@
+setup.py
+CryptoMathTrade.egg-info/PKG-INFO
+CryptoMathTrade.egg-info/SOURCES.txt
+CryptoMathTrade.egg-info/dependency_links.txt
+CryptoMathTrade.egg-info/top_level.txt
+trader/__init__.py
+trader/calculate.py
+trader/price.py
+trader/trade.py
+trader/utils.py
+type/__init__.py
+type/arbitrage.py
+type/deal.py
+type/order.py
