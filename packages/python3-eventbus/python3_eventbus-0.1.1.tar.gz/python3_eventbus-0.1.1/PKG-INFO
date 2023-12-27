@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: python3-eventbus
+Version: 0.1.1
+Summary: Event bus implementation for Python
+License: MIT
+Keywords: eventbus,event,bus,python
+Author: Álvaro Torres Cogollo
+Author-email: atorrescogollo@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Provides-Extra: aws
+Requires-Dist: boto3[dynamodb,sns,sqs] (>=1.34.7,<2.0.0) ; extra == "aws"
+Project-URL: Issues, https://github.com/atorrescogollo/pyeventbus/issues
+Description-Content-Type: text/markdown
+
+# pyeventbus
+EventBus implementation in Python
+
