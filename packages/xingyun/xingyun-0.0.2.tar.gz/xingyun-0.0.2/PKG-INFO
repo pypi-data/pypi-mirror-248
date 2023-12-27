@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: xingyun
+Version: 0.0.2
+Home-page: http://github.com/FFTYYY/XingYun
+Author: Yongyi Yang
+Author-email: yongyi@umich.edu
+License: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: prettytable>=3.9.0
+Requires-Dist: blosc
+Requires-Dist: egorovsystem
+
+# XingYun
+
+XingYun is a library that helps backup code, data and log to cloud and manage them. Tastes better if consumed together with [EgorovSystem](https://github.com/FFTYYY/EgorovSystem/tree/main).
+
+## Installation
+
+`pip install xingyun`
