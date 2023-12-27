@@ -1,0 +1,10 @@
+LICENSE
+setup.py
+pyfin_trading/__init__.py
+pyfin_trading/indicators.py
+pyfin_trading/stats.py
+pyfin_trading/stock_data.py
+pyfin_trading.egg-info/PKG-INFO
+pyfin_trading.egg-info/SOURCES.txt
+pyfin_trading.egg-info/dependency_links.txt
+pyfin_trading.egg-info/top_level.txt
