@@ -1,0 +1,11 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+changelogs_mngr.py,sha256=44fDZ4EfEZJ5ON18gukfqQuPgMapJ2HHViLR7QYvBlg,2300
+git.py,sha256=3IbQM5VJSp7DW5vcWqyp_neBI-CmTXfUOTKqEmaV56E,12321
+pygitver.py,sha256=z7sjurZhKP5oQWp4kSktM_KXWyE5zYW8FP20vEq9hnE,4743
+templates/changelog-common.tmpl,sha256=j-w7_dK2X2wcCABI_LNiooS9WiAcPAwwaj7wqiBInWk,1028
+templates/changelog.tmpl,sha256=qjcl-C6Fvzepp0YjL0-4BrZEKW2TdJZwEshWeUF2E80,825
+pygitver-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pygitver-0.0.1.dist-info/METADATA,sha256=MtMn1QXXIFWeS4DuosvxD6fJukAeHe5L6XAGdDsR5Dw,7031
+pygitver-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pygitver-0.0.1.dist-info/top_level.txt,sha256=MrsQJ7sGFfuBIxW9G0oyrzg4tWo6vd1nWVZrItacYdQ,48
+pygitver-0.0.1.dist-info/RECORD,,
