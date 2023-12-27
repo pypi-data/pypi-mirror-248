@@ -1,0 +1,8 @@
+substack/__init__.py,sha256=mkNj8jFW6wA4dIYyyM1UfKt5Q9MgR8xg3CaADl4IjlQ,387
+substack/api.py,sha256=VkAscD5Ks07wbIWIxTF-a8rqU2WDjdUwUtGX9mkGxtY,15367
+substack/exceptions.py,sha256=BbP5W5UpzFcM5SYIxx6snWD_Rmj7F_YjYIYC_r03gZY,911
+substack/post.py,sha256=rcnTfWUqfuocvHN61UxidbAiX4Y7LtcvSAkLjjsxqxM,7997
+python_substack-0.1.15.dist-info/LICENSE,sha256=L6jk148I5HhhVbfUvkO3EO7eAoU5zToLio4-ApkCkxg,1062
+python_substack-0.1.15.dist-info/METADATA,sha256=tyMO8CgEvWBmKB7hw4L__xW_gLVbX7LCKuuKTPIVcYM,4215
+python_substack-0.1.15.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+python_substack-0.1.15.dist-info/RECORD,,
