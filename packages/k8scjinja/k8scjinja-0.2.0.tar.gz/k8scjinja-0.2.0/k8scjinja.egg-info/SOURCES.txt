@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+k8scjinja.egg-info/PKG-INFO
+k8scjinja.egg-info/SOURCES.txt
+k8scjinja.egg-info/dependency_links.txt
+k8scjinja.egg-info/top_level.txt
