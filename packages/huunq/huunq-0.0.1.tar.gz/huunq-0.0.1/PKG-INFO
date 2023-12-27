@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: huunq
+Version: 0.0.1
+Summary: huunq: Experimental DBAPI2 Interface for kdb+ in Python
+Home-page: https://github.com/3ok/huunq
+Author: Reda Bouaida
+Author-email: reda.bouaida@outlook.com
+License: MIT
+Description: # huunq: DBAPI2 Interface for kdb+
+        
+        ## Overview
+        
+        `huunq` is an experimental Python package providing a DBAPI2-compliant interface for interacting with kdb+ databases.
+        
+        The project was designed as a learning tool to understand [Python's DBAPI2 specification](https://peps.python.org/pep-0249/) and KX Systems new Python-first interface for the `q` language and its time-series vector database kdb+: [`pykx`](https://code.kx.com/pykx).
+        
+        It's a lightweight, easy-to-use solution for Python developers looking to integrate kdb+ into their applications.
+        
+        ## Features
+        
+        * DBAPI2 compliant interface for kdb+.
+        * Context management for connection objects.
+        * Error handling and custom exceptions.
+        * Type hinting for improved readability and maintainability.
+        
+        ## Installation
+        
+        Currently, `huunq` is not available on PyPI. To install, clone the repository and install using `pip`:
+        ```shell
+        $ git clone https://github.com/3ok/huunq.git
+        $ cd huunq
+        $ pip install .
+        ```
+        
+        ## Usage
+        Here's a quick start quide on using `huunq` to interact with a `kdb+` database:
+        ```python
+        from huunq import connect
+        
+        # Establish a connection
+        with connect(host="localhost", port=12345) as conn:
+            # Create a cursor object
+            cur = conn.cursor()
+            # Execute a query
+            cur.execute("SELECT * FROM mytrades WHERE price > 0.5")
+            # Fetch results
+            results = cur.fetchall()
+        ```
+        (Remember to replace `localhost` and `12345` with your kdb+ database host and port)
+        
+        ## Documentation
+        
+        For more detailed documentation, please refer to the docstrings within the code. Each exposed function, class, and method is documented to explain its purpose and usage.
+        
+        ## Disclaimer
+        
+        * `huunq` is an experimental project and is not recommended for production use. It's designed primarily as a learning tool.
+        * `huunq` is an independant effort and is not officially affiliated with KX Systems
+        
+        ## License
+        
+        MIT
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8.1
+Description-Content-Type: text/markdown

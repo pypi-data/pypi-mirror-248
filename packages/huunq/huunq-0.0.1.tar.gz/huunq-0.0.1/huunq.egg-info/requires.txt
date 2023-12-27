@@ -1,0 +1,5 @@
+pykx>=2.0.0
+sqlparams>=6.0.0
+
+[:python_version < "3.10"]
+typing-extensions>=4.6.0
