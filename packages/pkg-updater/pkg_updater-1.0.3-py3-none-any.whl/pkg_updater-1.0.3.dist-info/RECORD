@@ -1,0 +1,12 @@
+pkg_updater/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pkg_updater/app.py,sha256=GWRolKZ9zzoQ-a5Dze81g9uBXsKw-4DySACgXwn0B5U,3922
+pkg_updater/handlers.py,sha256=7-ECmGG9nA77jpbS7EJs3qMtYmmh0OQbjupXQWreJxA,687
+pkg_updater/logger.py,sha256=a3DdEKzBCkO8luWDGg6o0wzxUW4JI1poAi2d5xzl1xE,1644
+pkg_updater/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pkg_updater/updater.py,sha256=34PjGIt7r4NTYhzs8kU-sJFtXoUYqxEnM23LlKC0oOE,4042
+pkg_updater-1.0.3.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+pkg_updater-1.0.3.dist-info/METADATA,sha256=JalFu8KLr-7VF_3Q5Xv2O9k8W7G4C0wTODvNNXasZE4,2822
+pkg_updater-1.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pkg_updater-1.0.3.dist-info/entry_points.txt,sha256=OtKW-16DMWUA4jBpOunakbWdGjwwKNxVpcUygXjuIlE,49
+pkg_updater-1.0.3.dist-info/top_level.txt,sha256=OULLPZW3BQf96eqnSisxu4xS4Xizre-1DK5uYcfGuhs,12
+pkg_updater-1.0.3.dist-info/RECORD,,
