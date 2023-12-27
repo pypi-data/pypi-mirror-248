@@ -1,0 +1,11 @@
+name: napari-psf-extractor
+display_name: PSF Extractor
+contributions:
+  commands:
+    - id: napari-psf-extractor.psf_widget
+      python_name: napari_psf_extractor.widget:MainWidget
+      title: PSF Extractor
+
+  widgets:
+    - command: napari-psf-extractor.psf_widget
+      display_name: PSF Extractor
