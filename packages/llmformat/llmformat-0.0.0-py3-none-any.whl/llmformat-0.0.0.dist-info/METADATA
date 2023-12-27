@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: llmformat
+Version: 0.0.0
+Summary: llmformat
+Author: Qiuling Xu
+Author-email: xennaughtyboy@gmail.com
+Keywords: python,llm,format,json,regex
+License-File: LICENSE
+
+Format LLM language by using LALR(1) grammar. Supports JSON, XML, etc.
