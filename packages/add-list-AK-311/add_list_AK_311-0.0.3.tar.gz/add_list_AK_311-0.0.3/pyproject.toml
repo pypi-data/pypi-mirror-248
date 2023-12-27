@@ -1,0 +1,8 @@
+[project]
+name = "add_list_AK_311"
+version = "0.0.3"
+authors = [
+  { name="AK", email="ak@test.com" },
+]
+description = "adding a list"
+requires-python = ">=3.8"
