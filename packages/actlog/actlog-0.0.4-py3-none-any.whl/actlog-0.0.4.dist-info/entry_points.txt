@@ -1,0 +1,2 @@
+[console_scripts]
+actlog = actlog.cli:cli_main

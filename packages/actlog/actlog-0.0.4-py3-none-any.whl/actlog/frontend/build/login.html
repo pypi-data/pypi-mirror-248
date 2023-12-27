@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="./favicon.png" />
+  
+		<link rel="modulepreload" href="./_app/immutable/entry/start.c2854d90.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.15c931e5.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.b7e53051.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.7582688d.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.fde13f84.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper.a4192956.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.19816e33.js">
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
+    body {
+      visibility: hidden;
+    }
+  </style>
+</head>
+
+<body data-sveltekit-preload-data="hover">
+  <div style="display: contents">
+			<script>
+				{
+					__sveltekit_1pvwu5t = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {"PUBLIC_BACKEND":""}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("./_app/immutable/entry/start.c2854d90.js"),
+						import("./_app/immutable/entry/app.fde13f84.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
+</body>
+
+</html>

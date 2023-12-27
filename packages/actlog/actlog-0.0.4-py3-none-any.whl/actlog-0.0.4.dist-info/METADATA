@@ -1,0 +1,350 @@
+Metadata-Version: 2.1
+Name: actlog
+Version: 0.0.4
+Summary: An activity log that shows you what you did when
+Project-URL: Homepage, https://github.com/pmorch/actlog
+Project-URL: Bug Tracker, https://github.com/pmorch/actlog/issues
+Author-email: Peter Valdemar Mørch <peter@morch.com>
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: X11 Applications
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: JavaScript
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Desktop Environment
+Classifier: Topic :: System :: Monitoring
+Requires-Python: >=3.8
+Requires-Dist: alembic
+Requires-Dist: argon2-cffi
+Requires-Dist: dateparser
+Requires-Dist: flask
+Requires-Dist: flask-cors
+Requires-Dist: furl
+Requires-Dist: gunicorn
+Requires-Dist: python-pidfile
+Requires-Dist: pyyaml
+Requires-Dist: sqlalchemy
+Provides-Extra: dev
+Requires-Dist: build; extra == 'dev'
+Requires-Dist: pip-tools; extra == 'dev'
+Requires-Dist: pyright; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# ActLog
+
+ActLog is an activity log that shows you what you did when. It logs when you
+were active on your desktop and takes periodic screenshots so you later can see
+what you did.
+
+This helps with mental health (I did actually do something!) and with e.g.
+filling out time sheets.
+
+It runs under Xorg. It does not (yet?) run under Windows, Mac or under Wayland.
+
+### Screenshots
+
+<img src="https://i.imgur.com/CBsvtOn.png" alt="Log page"
+     style="width: 600px; margin: 10px; vertical-align: top;"/>
+<img src="https://i.imgur.com/6nFQjay.png" alt="Screenshots page"
+     style="width: 600px; margin: 10px;"/>
+
+### Features
+
+- Track active time using an "active detector". Use the defaults or roll your
+  own.
+- Periodically store sceenshots so you can see what you did when.
+  - They can be pruned/expired so we don't use massive disk space.
+- A web interface and CLI for seeing your activity.
+- Open Source MIT license.
+
+## User documentation
+
+### Quick version: Installation and running from PyPI:
+
+First you'll need to install some prerequisites. We need these Debian/Ubuntu
+packages:
+
+```shell
+sudo apt install scrot imagemagick pngquant xprintidle
+```
+
+Either `scrot` or `imagemagick` are needed to create screenshots. `imagemagick`
+and `pngquant` are optional and reduce screenshot size. `xprintidle` is only
+required if you're not running under a new GNOME.
+
+For other distros, you may need to modify the package names. (Weirdly, there is
+no `xprintidle` package for Fedora, but it can be [compiled
+manually](https://gist.github.com/yoyosan/88f2d049604392edad651d3f7b34ed9b).)
+
+```shell
+$ python3 -m venv /path/to/my/virtual/environment
+$ /path/to/my/virtual/environment/bin/pip install actlog
+# This starts the monitor (that stores logs and creates screenshots)
+# and the web server.
+$ /path/to/my/virtual/environment/bin/actlog daemon
+```
+
+Now wait 15-20 minutes while you're using your computer and then open your
+browser at http://localhost:1248 to see some activity.
+
+Instead of using the web interface, you can also use the cli:
+
+```shell
+$ /path/to/my/virtual/environment/bin/actlog log --help
+# This will show you a log of your activity from last Thursday
+$ /path/to/my/virtual/environment/bin/actlog log --from "last Thursday"
+
+$ /path/to/my/virtual/environment/bin/actlog view --help
+# This will show screenshots from yesterday and today
+# in `eog`, GNOME's image viewer
+$ /path/to/my/virtual/environment/bin/actlog view --viewer eog
+```
+
+#### Starting with systemd
+
+- Stop any running `actlog` instance.
+- Copy `actlog.service` to `~/.config/systemd/user/actlog.service` and modify
+  the `ExecStart` path to be `/path/to/my/virtual/environment/bin/actlog daemon`.
+- `systemctl --user daemon-reload`
+- `systemctl --user enable actlog`
+- `systemctl --user start actlog`
+
+And to check it is running:
+
+- `systemctl --user status actlog`
+
+### Config file
+
+Actlog uses a config file: `~/.actlog/config.yaml` or you can specify one with
+`actlog --config-file FILE`. It lets you set all the same options as you see
+with `--help`. E.g.:
+
+```yaml
+global:
+  storage: /my/custom/actlog-storage
+view:
+  viewer: eog
+```
+
+will set the global `--storage` option and the `--viewer` option for the `view`
+subcommand. See `actlog --help` and help for the subcommands, e.g. `actlog view --help`.
+
+### Future enhancements
+
+- Top Priority: Password protection of Web UI - Otherwise screenshots are
+  available to all on http://localhost:1250.
+  - scrypt password generation, checking, editing
+  - sessions and gunicorn
+  - https://pypi.org/project/python-pam/
+- Reducing the number of external/non-python dependencies, to make it easier to
+  install.  
+  dbus-python on fedora: sudo dnf install @development-tools dbus-devel cmake glib2-devel python3-devel
+- Visualize everything on a [timeline - vis.js - A dynamic, browser based
+  visualization library.](https://visjs.github.io/vis-timeline/docs/timeline/)
+- Also store title of active window
+  - and title/url of current browser tab e.g. re-using ActivityWatch browser
+    plugin?
+- Use screenshot metadata for more features?
+- Support more desktop environments than Debian/Ubuntu GNOME.
+- Wayland support: Tricky since there is no API for taking screenshots without
+  the desktop blinking, but it [appears](https://askubuntu.com/a/1356976/34154)
+  to be possible in principle at least.
+- Somehow pin python dependencies, (like would be done with `package-lock.json`
+  with `npm`). As a start, the dependencies that we know work are stored in
+  `requirements-that-work.txt`, created with `pip-compile` in `Makefile`. But if
+  I manually downgrade a package, `pip-compile` still shows the newest package,
+  not the one actually installed, so I don't really trust it.
+
+### Related projects
+
+- Similar ideas [ActivityWatch - Open-source time tracker](https://activitywatch.net/)
+  - [Getting started](https://docs.activitywatch.net/en/latest/getting-started.html)
+- [GitHub - selfspy/selfspy: Log everything you do on the computer, for statistics, future reference and all-around fun!](https://github.com/selfspy/selfspy)
+- [GitHub - karpathy/ulogme: Automatically collect and visualize usage statistics in Ubuntu/OSX environments.](https://github.com/karpathy/ulogme)
+- Relies on the user to input activity [Kimai - Open Source time-tracker](https://www.kimai.org/)
+- Closed source
+  - [RescueTime: Fully Automated Time Tracking Software](https://www.rescuetime.com/)
+  - [Time Tracker Management Tracking Software](https://www.manictime.com/)
+
+## Developer documentation
+
+### Project organization and how to run with a git checkout
+
+The project consists of a python "backend" and a JavaScript/svelte/nodejs
+frontend with the web user interface (under `./frontend/`).
+
+The python backend contains the monitor and the web server. The monitor does the
+actual logging and creating screenshots, and the webserver serves the svelte
+frontend and provides APIs for it to get log and screenshot information.
+
+The python code by default runs under the assumption that there is a `venv`
+environment under `./venv`.
+
+`make` will build such a `venv`, build both the python backend and the frontend
+so they're ready to use. `./dev` will set up some environment variables
+that allow you to easily run from a non-installed directory. So:
+
+```shell
+$ make
+$ ./dev actlog daemon
+```
+
+And then open your browser at http://localhost:1248. Allow for 15-20 minutes to
+see some data. Again, you can
+
+```shell
+$ ./dev actlog log --from "last Thursday"
+$ ./dev actlog view --viewer eog
+```
+
+### Running developer versions of monitor and webserver(s)
+
+By default `actlog daemon` runs the montior and a production webserver (under
+[`gunicorn`](https://gunicorn.org/)). Using this setup, if you change any code
+in either the frontend or backend, you need to stop the daemon, perhaps rebuild
+the frontend and then restart the daemon.
+
+Thankfully there are better ways.
+
+Start the monitor separately from everything else with:
+
+```shell
+$ ./dev actlog daemon --monitor-start-only
+```
+
+Now start the python webserver in a development version with hot reloading so
+code changes are visible immediately:
+
+```shell
+$ ./dev actlog daemon --dev-web-server-start-only
+```
+
+This still serves a built version of the frontend. If you want to modify the
+frontend as well, run the development frontend webserver with frontend hot
+reloading:
+
+```shell
+$ cd frontend
+$ npm run dev
+```
+
+Now use the web user interface at http://localhost:5173/ (notice the different
+port number).
+
+This only works with the dev web server (`--dev-web-server-start-only`), since
+it also disables [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS),
+a requirement for the `npm run dev` web server to access the backend API.
+
+(I use `tmux` for keeping these three running so I don't need three terminals,
+but that is up to you.)
+
+### Data: SQL and screenshots files
+
+```shell
+$ sqlite3 ~/.actlog/storage/actlog.db '.tables'
+activity_log
+
+$ sqlite3 ~/.actlog/storage/actlog.db '.schema activity_log'
+CREATE TABLE activity_log (
+    time REAL,
+    activity TEXT,
+    details TEXT
+);
+
+$ cat select.sql
+SELECT
+  id,
+  DATETIME(time, 'unixepoch', 'localtime') as t,
+  time,
+  activity,
+  details
+FROM activity_log
+LIMIT 2
+
+$ sqlite3 ~/.actlog/storage/actlog.db < select.sql
+2023-10-01 07:47:51|1696160871.11847|startup|{"pid": 279556}
+2023-10-01 07:47:51|1696160871.12261|active|
+
+$ ls -1 ~/.actlog/storage/screenshots | head -n 4
+2023-10-05_10:00:19+0200.png
+2023-10-05_10:15:22+0200.png
+2023-10-05_10:30:24+0200.png
+2023-10-05_10:45:28+0200.png
+```
+
+### Extension points
+
+## `screenshot_metadata.py`
+
+Here is a sample `~/.actlog/screenshot_metadata.py` that checks to see if there
+is a window running with a secret title, and if so, creates screenshot metadata
+`{"secret": true}`.
+
+```python
+import subprocess
+
+def metadata():
+    result = subprocess.run("wmctrl -l | grep -q 'Secret Window Title'", shell=True);
+    if result.returncode == 0:
+        return {
+            "secret": True
+        }
+    else:
+        return {}
+```
+
+## Activity detection
+
+Detecting user activity an be done in multiple ways. Whether the screensaver is
+active is one reliable signal, but
+[`xprintidle`](https://github.com/g0hl1n/xprintidle) is another.
+
+By default, we first see if we can detect the screensaver status. This is
+currently done for Gnome (tested on Gnome 43.6). But you can also add your own
+activity detector. See help for the `--active-detector` option for the daemon
+subcommand, and see an example in
+[`examples/detect_active.py`](examples/detect_active.py). Bug reports and PRs
+for other (tested) detection mechanisms, or even just testing for other desktop
+environments are welcome. This
+[discussion](https://unix.stackexchange.com/questions/197032/detect-if-screensaver-is-active)
+could be a starting point.
+
+So first we try to see if the user has a custom active detector, if not we try
+to detect the GNOME screensaver, and fallback to using `xprintidle` and declare
+inactivity after `--inactivity-time` minutes (default: 5) of inactivity.
+
+## Releasing
+
+* Bump version:  
+  `vi pyproject.toml frontend/package.json frontend/package-lock.json`
+* Commit everything
+* `make package`
+* Upload to testpypi:  
+  `./venv/bin/python3 -m twine upload --repository testpypi dist/*`
+  * Username: `__token__`
+  * Password: pypi-.* (for testpypi token)
+* Test install  
+  ```
+  rm -rf /tmp/venv-test && python3 -m venv /tmp/venv-test
+  /tmp/venv-test/bin/pip install -r $w/actlog/requirements-that-work.txt
+  /tmp/venv-test/bin/pip install --index-url https://test.pypi.org/simple/ --no-deps actlog
+  ```
+* git tag $version
+* git push --tags origin main
+* Upload to pypi:  
+  `./venv/bin/python3 -m twine upload dist/*`
+  * Username: `__token__`
+  * Password: pypi-.* (for pypi token)
+* Test install  
+  ```
+  rm -rf /tmp/venv-test && python3 -m venv /tmp/venv-test
+  /tmp/venv-test/bin/pip install actlog
+  ```
+
+## TODO
+
+- Use logger instead of print()
+- Try running this on Windows
+- Try Wayland with hacked gnome-screenshot
