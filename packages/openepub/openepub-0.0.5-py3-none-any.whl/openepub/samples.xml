@@ -1,0 +1,198 @@
+<!-- containers.xml -->
+
+<!-- todliche_lektion -->
+<?xml version="1.0"?>
+<container version="1.0"
+    xmlns="urn:oasis:names:tc:opendocument:xmlns:container">
+    <rootfiles>
+        <rootfile full-path="OEBPS/volume.opf" media-type="application/oebps-package+xml" />
+    </rootfiles>
+</container>
+
+
+<!-- volume.opf -->
+<package xmlns="http://www.idpf.org/2007/opf"
+    prefix="ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0/"
+    unique-identifier="bookid" version="3.0">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+        <dc:title>Scholomance – Tödliche Lektion</dc:title>
+        <dc:creator>Novik, Naomi</dc:creator>
+        <dc:publisher>cbj</dc:publisher>
+        <dc:date>2021-02-12T11:34:33Z</dc:date>
+        <dc:identifier id="bookid">urn:uuid:572F5C32-BA30-4B78-B7C6-70E324D174D3</dc:identifier>
+        <dc:identifier>9783641270278</dc:identifier>
+        <dc:language>de</dc:language>
+        <dc:rights>© 2021 cbj Kinder- und Jugendbuchverlag</dc:rights>
+        <meta content="Adobe InDesign 15.0.1" name="generator" />
+        <meta property="ibooks:specified-fonts">true</meta>
+        <meta property="dcterms:modified">2022-01-17T10:06:29Z</meta>
+        <meta content="1.8.0" name="Sigil version" />
+        <meta content="RHcoverimagestandard" name="cover" />
+        <meta content="1" name="GBSProcVer" />
+        <meta content="GoogleEbooks" name="GBSEpubSource" />
+    </metadata>
+    <manifest>
+        <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml" />
+        <item href="cover.jpg" id="RHcoverimagestandard" media-type="image/jpeg"
+            properties="cover-image" />
+        <item href="image/15B58BF3411B4EC9ABD0869F0F35F6C1.jpg"
+            id="x15B58BF3411B4EC9ABD0869F0F35F6C1.jpg" media-type="image/jpeg" />
+        <item href="image/DA2D01E959194914832B0C54FF5EA88B.jpg"
+            id="xDA2D01E959194914832B0C54FF5EA88B.jpg" media-type="image/jpeg" />
+        <item href="image/3A25419D3AE6402BA652F676CE57BA1E.jpg"
+            id="x3A25419D3AE6402BA652F676CE57BA1E.jpg" media-type="image/jpeg" />
+        <item href="image/09976BFD5AF34F3DA7FCEF76D8F75A23.jpg"
+            id="x09976BFD5AF34F3DA7FCEF76D8F75A23.jpg" media-type="image/jpeg" />
+        <item href="image/9278E04DAADD43F18FBCAA0085612DA5.jpg"
+            id="x9278E04DAADD43F18FBCAA0085612DA5.jpg" media-type="image/jpeg" />
+        <item href="image/76CAE068A332414186DB00B9C19891D7.jpg"
+            id="x76CAE068A332414186DB00B9C19891D7.jpg" media-type="image/jpeg" />
+        <item href="image/88754C1A1A834454BD4F56F139754BE3.jpg"
+            id="x88754C1A1A834454BD4F56F139754BE3.jpg" media-type="image/jpeg" />
+        <item href="image/AEB044AC24494E9792EF3BC1853D8DDD.jpg"
+            id="xAEB044AC24494E9792EF3BC1853D8DDD.jpg" media-type="image/jpeg" />
+        <item href="image/96A8C75B0C4A41128EDC91EF276870BF.jpg"
+            id="x96A8C75B0C4A41128EDC91EF276870BF.jpg" media-type="image/jpeg" />
+        <item href="image/B1031EAA245D42268978269167CA8360.jpg"
+            id="xB1031EAA245D42268978269167CA8360.jpg" media-type="image/jpeg" />
+        <item href="image/305EC6F475654BEC86665092199273DC.jpg"
+            id="x305EC6F475654BEC86665092199273DC.jpg" media-type="image/jpeg" />
+        <item href="image/01EC75A52D6747178BFF4276E37C3680.jpg"
+            id="x01EC75A52D6747178BFF4276E37C3680.jpg" media-type="image/jpeg" />
+        <item href="image/5D04C65F2E93436A9EC574E25CC44117.jpg"
+            id="x5D04C65F2E93436A9EC574E25CC44117.jpg" media-type="image/jpeg" />
+        <item href="image/D1E77987B24646D490F21FC2835C9541.jpg"
+            id="xD1E77987B24646D490F21FC2835C9541.jpg" media-type="image/jpeg" />
+        <item href="image/3D4F767A4C7A43B7AC26D322067F0D60.jpg"
+            id="x3D4F767A4C7A43B7AC26D322067F0D60.jpg" media-type="image/jpeg" />
+        <item href="BICMediaMarketing/BICMediaMarketing/9783641270285_front.jpg"
+            id="x9783641270285_front.jpg" media-type="image/jpeg" />
+        <item href="BICMediaMarketing/BICMediaMarketing/9783641270292_front.jpg"
+            id="x9783641270292_front.jpg" media-type="image/jpeg" />
+        <item href="BICMediaMarketing/BICMediaMarketing/9783641235604_front.jpg"
+            id="x9783641235604_front.jpg" media-type="image/jpeg" />
+        <item href="BICMediaMarketing/BICMediaMarketing/9783641171407_front.jpg"
+            id="x9783641171407_front.jpg" media-type="image/jpeg" />
+        <item href="BICMediaMarketing/BICMediaMarketing/Amazon.gif.transcoded.1f12b8f4.png"
+            id="Amazon.gif" media-type="image/png" />
+        <item href="BICMediaMarketing/BICMediaMarketing/Apple.gif.transcoded.1f12b8f4.png"
+            id="Apple.gif" media-type="image/png" />
+        <item href="BICMediaMarketing/BICMediaMarketing/Google.gif.transcoded.1f12b8f4.png"
+            id="Google.gif" media-type="image/png" />
+        <item href="BICMediaMarketing/BICMediaMarketing/Kobo.JPG" id="Kobo.JPG"
+            media-type="image/jpeg" />
+        <item href="BICMediaMarketing/BICMediaMarketing/tolino.gif.transcoded.1f12b8f4.png"
+            id="tolino.gif" media-type="image/png" />
+        <item
+            href="BICMediaMarketing/BICMediaMarketing/Kostenlos_reinlesen.gif.transcoded.1f12b8f4.png"
+            id="Kostenlos_reinlesen.gif" media-type="image/png" />
+        <item href="BICMediaMarketing/BICMediaMarketing/Kostenlos_reinlesen.PNG"
+            id="Kostenlos_reinlesen.PNG" media-type="image/png" />
+        <item href="BICMediaMarketing/BICMediaMarketing/mehr_zum_buch.png" id="mehr_zum_buch.png"
+            media-type="image/png" />
+        <item href="BICMediaMarketing/BICMediaMarketing/button--reinlesen--color.png"
+            id="button--reinlesen--color.png" media-type="image/png" />
+        <item href="BICMediaMarketing/BICMediaMarketing/button--zumshop--color.png"
+            id="button--zumshop--color.png" media-type="image/png" />
+        <item href="BICMediaMarketing/BICMediaMarketing/Kostenlos_reinlesen2.png"
+            id="Kostenlos_reinlesen2.png" media-type="image/png" />
+        <item href="BICMediaMarketing/BICMediaMarketing/rh_bg640_6.jpg" id="rh_bg640_6.jpg"
+            media-type="image/jpeg" />
+        <item href="cover.xhtml" id="RHcover" media-type="application/xhtml+xml" />
+        <item href="897EF886278245A9AFE703F61128C40B.xhtml" id="x9783641270278"
+            media-type="application/xhtml+xml" />
+        <item href="BAA123ED83CA4681B588BE59B56FA5D7.xhtml" id="x9783641270278-1"
+            media-type="application/xhtml+xml" />
+        <item href="346728EB25C64B8C9DBF208C5163B9D5.xhtml" id="x9783641270278-2"
+            media-type="application/xhtml+xml" />
+        <item href="B6A66939F04A423B9FC45360F83C310D.xhtml" id="x9783641270278-3"
+            media-type="application/xhtml+xml" />
+        <item href="A41DF5C16CFE423F9A7E9685628CA704.xhtml" id="x9783641270278-4"
+            media-type="application/xhtml+xml" />
+        <item href="0077BA1615774937811F8BDDA82FB527.xhtml" id="x9783641270278-5"
+            media-type="application/xhtml+xml" />
+        <item href="1DE81049ED1A4357B571647EFB5B6AD4.xhtml" id="x9783641270278-6"
+            media-type="application/xhtml+xml" />
+        <item href="CD7953A5093E46F9B23B4AA0BC003118.xhtml" id="x9783641270278-7"
+            media-type="application/xhtml+xml" />
+        <item href="F24E3CB64421474E99AF16C412D77D0E.xhtml" id="x9783641270278-8"
+            media-type="application/xhtml+xml" />
+        <item href="8479F697641044C0A206AA98AC90B131.xhtml" id="x9783641270278-9"
+            media-type="application/xhtml+xml" />
+        <item href="157E0ABA4AF6429B8CB2A398EA9D1EC6.xhtml" id="x9783641270278-10"
+            media-type="application/xhtml+xml" />
+        <item href="A2AFF9645B88439781BA52AC5EB6E32D.xhtml" id="x9783641270278-11"
+            media-type="application/xhtml+xml" />
+        <item href="C2A90FEFEE5045859455B3ED7944DAF2.xhtml" id="x9783641270278-12"
+            media-type="application/xhtml+xml" />
+        <item href="A3C51A2DE4FF4D5D998EE2DB81F22323.xhtml" id="x9783641270278-13"
+            media-type="application/xhtml+xml" />
+        <item href="5556DB92A78749949F3E4D7F962B2247.xhtml" id="x9783641270278-14"
+            media-type="application/xhtml+xml" />
+        <item href="680EE590815E4B57ADC797449028EFDE.xhtml" id="x9783641270278-15"
+            media-type="application/xhtml+xml" />
+        <item href="CBDCF6539643470DA98921D7752CE34F.xhtml" id="x9783641270278-16"
+            media-type="application/xhtml+xml" />
+        <item href="B09E309038C94758899A17C8291E0114.xhtml" id="x9783641270278-17"
+            media-type="application/xhtml+xml" />
+        <item href="266F90F2ABCE456CA43BFCAD1EDFDC9B.xhtml" id="x9783641270278-18"
+            media-type="application/xhtml+xml" />
+        <item href="BFD2E3178153424DA505C9B51EA1D235.xhtml" id="x9783641270278-19"
+            media-type="application/xhtml+xml" />
+        <item href="5EA19CBFCE7F4E42B8ECA5891FA88B03.xhtml" id="x9783641270278-20"
+            media-type="application/xhtml+xml" />
+        <item href="852773E567084404A8F655771281F45C.xhtml" id="x9783641270278-21"
+            media-type="application/xhtml+xml" />
+        <item href="89D8CD64C06746849ABB7EC576182A14.xhtml" id="x9783641270278-22"
+            media-type="application/xhtml+xml" />
+        <item href="BICMediaMarketing/mp1.xhtml" id="mp1" media-type="application/xhtml+xml" />
+        <item href="BICMediaMarketing/lastpage.xhtml" id="mpLastPage"
+            media-type="application/xhtml+xml" />
+        <item href="85026BDD2071439F9018F8FB0D488315.xhtml" id="toc"
+            media-type="application/xhtml+xml" properties="nav" />
+        <item href="css/idGeneratedStyles.css" id="idGeneratedStyles.css" media-type="text/css" />
+        <item href="font/CaslonOpenFaceLTStd.otf" id="CaslonOpenFaceLTStd.otf"
+            media-type="application/vnd.ms-opentype" />
+        <item href="font/StempelGaramondLTStd-Bold.otf" id="StempelGaramondLTStd-Bold.otf"
+            media-type="application/vnd.ms-opentype" />
+        <item href="font/StempelGaramondLTStd-Italic.otf" id="StempelGaramondLTStd-Italic.otf"
+            media-type="application/vnd.ms-opentype" />
+        <item href="font/StempelGaramondLTStd-Roman.otf" id="StempelGaramondLTStd-Roman.otf"
+            media-type="application/vnd.ms-opentype" />
+        <item href="BICMediaMarketing/BICMediaMarketing/DejaVuSans.ttf" id="DejaVuSans"
+            media-type="application/vnd.ms-opentype" />
+        <item href="BICMediaMarketing/marketing.css" id="marketing.css" media-type="text/css" />
+        <item href="_page_map_.xml" id="_page_map_" media-type="application/oebps-page-map+xml" />
+    </manifest>
+    <spine page-map="_page_map_" toc="ncx">
+        <itemref idref="RHcover" />
+        <itemref idref="x9783641270278" />
+        <itemref idref="x9783641270278-1" />
+        <itemref idref="x9783641270278-2" />
+        <itemref idref="x9783641270278-3" />
+        <itemref idref="x9783641270278-4" />
+        <itemref idref="x9783641270278-5" />
+        <itemref idref="x9783641270278-6" />
+        <itemref idref="x9783641270278-7" />
+        <itemref idref="x9783641270278-8" />
+        <itemref idref="x9783641270278-9" />
+        <itemref idref="x9783641270278-10" />
+        <itemref idref="x9783641270278-11" />
+        <itemref idref="x9783641270278-12" />
+        <itemref idref="x9783641270278-13" />
+        <itemref idref="x9783641270278-14" />
+        <itemref idref="x9783641270278-15" />
+        <itemref idref="x9783641270278-16" />
+        <itemref idref="x9783641270278-17" />
+        <itemref idref="x9783641270278-18" />
+        <itemref idref="x9783641270278-19" />
+        <itemref idref="x9783641270278-20" />
+        <itemref idref="x9783641270278-21" />
+        <itemref idref="x9783641270278-22" />
+        <itemref idref="mp1" />
+        <itemref idref="mpLastPage" />
+    </spine>
+    <guide>
+        <reference href="cover.xhtml" title="Einband" type="cover" />
+    </guide>
+</package>
