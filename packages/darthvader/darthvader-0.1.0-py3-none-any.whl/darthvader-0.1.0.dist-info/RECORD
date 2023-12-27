@@ -1,0 +1,9 @@
+darthvader/__init__.py,sha256=48Km9fNpyLo8vXX8AFjY3gY-ac4V6xTPgNmzJ2lNoc4,106
+darthvader/core/__init__.py,sha256=5D2jX3094eufYgpUuXqk-8s_9thCDcefRFP-LGIs-sw,78
+darthvader/core/anakin.py,sha256=z0CqWl1jW0xbxBWpTba87k6VXgRLQlg5gbjhgHqRcTo,197
+darthvader/core/leia.py,sha256=F-xw7BbdTB2uSXAxPcFA1RzBehIzeuemWNddnvM18Us,190
+darthvader/core/luke.py,sha256=QkFgXLDGV8m3tAWtFLRnFrAZj1XZkO7bHAzvJHA6sUk,186
+darthvader/shell/run.sh,sha256=i6xP4d8NHKTzh-QlsTsQaZXi8nTnsM7eWS7vp2UytAA,124
+darthvader-0.1.0.dist-info/METADATA,sha256=0n1UWoSceq1CBwNuCpHh6XtDJhlGiisUSsbBubG_PAo,893
+darthvader-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+darthvader-0.1.0.dist-info/RECORD,,
