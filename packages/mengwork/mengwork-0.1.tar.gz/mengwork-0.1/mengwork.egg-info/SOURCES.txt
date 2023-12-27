@@ -1,0 +1,5 @@
+setup.py
+mengwork.egg-info/PKG-INFO
+mengwork.egg-info/SOURCES.txt
+mengwork.egg-info/dependency_links.txt
+mengwork.egg-info/top_level.txt
