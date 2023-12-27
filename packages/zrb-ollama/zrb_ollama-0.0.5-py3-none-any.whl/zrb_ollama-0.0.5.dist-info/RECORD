@@ -1,0 +1,12 @@
+zrb_ollama/__init__.py,sha256=WjsGqXkMoeQ7qdhGSpCyHNs7SeMsluXeDk0fZoKLH4E,181
+zrb_ollama/__main__.py,sha256=-CypPgFlZNEHSQ0hB6reKM901AXF77ODYMo5o3FjOP8,963
+zrb_ollama/config.py,sha256=RAeGKYNRnMfCYpdw4o_0bJdW13Z9wupE0NGLsxoCt80,167
+zrb_ollama/group.py,sha256=n2cAYdG2KezRdFnAM_jtWNH5RDPSCs_V6XOgfUVkLTM,81
+zrb_ollama/builtin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zrb_ollama/builtin/install.py,sha256=o1VH-QJ9uWoyUxEDiG5LE03KiPnivJwXDM2bet1OK7w,333
+zrb_ollama/builtin/cmd/install.sh,sha256=vb5XEXYKYJ0GbWAqSE77zgq29tBPnsMbUdktgh6NIg0,144
+zrb_ollama/task/prompt_task.py,sha256=EWu0LTm7Dti1Ym7l8eJFta6DkICaOPwlUQkfDvstxQE,8005
+zrb_ollama-0.0.5.dist-info/entry_points.txt,sha256=5E3FDcH-6QBiZyJTqXAxUX2HH6G4qQISxNjLqo8Ta_o,55
+zrb_ollama-0.0.5.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+zrb_ollama-0.0.5.dist-info/METADATA,sha256=Z-0_DIGnzvrQmibhpsMUJ_pylIBb78woxnLALvPgNh8,3799
+zrb_ollama-0.0.5.dist-info/RECORD,,
