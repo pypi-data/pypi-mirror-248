@@ -1,0 +1,9 @@
+README.md
+setup.py
+egen111_project_example_new_way.egg-info/PKG-INFO
+egen111_project_example_new_way.egg-info/SOURCES.txt
+egen111_project_example_new_way.egg-info/dependency_links.txt
+egen111_project_example_new_way.egg-info/top_level.txt
+project/1.py
+project/2.py
+project/3.py
