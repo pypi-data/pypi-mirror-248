@@ -1,0 +1,9 @@
+README.md
+license.txt
+setup.py
+Dev_sanduicheira.egg-info/PKG-INFO
+Dev_sanduicheira.egg-info/SOURCES.txt
+Dev_sanduicheira.egg-info/dependency_links.txt
+Dev_sanduicheira.egg-info/top_level.txt
+dev_da_sanduicheira/__init__.py
+dev_da_sanduicheira/sanduicheira.py

@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: Dev-sanduicheira
+Version: 1.0
+Summary: Este pacote irá fornecer ferramentas para manusear sua sanduicheira intelijegue
+Author: Luiz
+Author-email: luiz@example.com
+Keywords: sanduicheira,automatizar
+License-File: license.txt
+
+# Dev Sanduicheira
+
+Este pacote foi criado apenas para praticar meus conhecimentos em python
+
+* passos para instalÃ§Ã£o
+* Outras informaÃ§Ãµes relevantes(autores, empresa, contato)
