@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "code-insight-api-py"
+version = "0.1.0"
+description = ""
+authors = ["Zachary Karpinski <1206496+zkarpinski@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.31.0"
+argparse = "^1.4.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.0.0"
+pytest-mock = "^3.0.0"
+pytest-cov = "*"
+exceptiongroup = "^1.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
