@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: injected-utils
+Version: 0.1.1
+Summary: 
+Author: Kento Masui
+Author-email: nameissoap@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: bibtexparser (>=1.4.0,<2.0.0)
+Requires-Dist: chardet (>=5.1.0,<6.0.0)
+Requires-Dist: fuzzysearch (>=0.7.3,<0.8.0)
+Requires-Dist: notion-client (>=2.0.0,<3.0.0)
+Requires-Dist: notion-database (>=1.1.0,<2.0.0)
+Requires-Dist: pathos (>=0.3.0,<0.4.0)
+Requires-Dist: pdfminer (>=20191125,<20191126)
+Requires-Dist: pymupdf (>=1.22.5,<2.0.0)
+Requires-Dist: rpa (>=1.50.0,<2.0.0)
+Requires-Dist: sqlitedict
+Description-Content-Type: text/markdown
+
+
