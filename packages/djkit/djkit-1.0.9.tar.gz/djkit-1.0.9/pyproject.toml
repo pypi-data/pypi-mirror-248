@@ -1,0 +1,56 @@
+[tool.poetry]
+name = "djkit"
+version = "1.0.9"
+description = "A library for handling common stuff in Django"
+authors = ["leondaz <ahmeddark369@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "djkit" }]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+django = { version = "^4.0", optional = true }
+djangorestframework = { version = "^3.10.0", optional = true }
+pandas = { version = "^2.0.0", optional = true }
+polars = "^0.20.2"
+openpyxl = { version = "^3.0.0", optional = true }
+xlsx2csv = "0.8.2"
+xlsxwriter = { version = "^3.1.0", optional = true }
+
+[tool.poetry.extras]
+django = ['django']
+drf = ["djangorestframework"]
+pandas = ['pandas', 'openpyxl', 'xlsxwriter']
+polars = ['polars', 'xlsx2csv']
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.11.0"
+isort = "^5.12.0"
+sphinx = "^7.2.6"
+pytest = "^7.4.3"
+lxml = "^4.9.3"
+faker = "^20.1.0"
+build = "^1.0.3"
+twine = "^4.0.2"
+pytest-django = "^4.7.0"
+pre-commit = "^3.6.0"
+ruff = "^0.1.9"
+
+[tool.poetry.group.dev]
+optional = true
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "example.settings"
+pythonpath = [
+    "./example",
+    "./djkit",
+    "./tests",
+]
+testpaths = [
+    "./tests",
+]
