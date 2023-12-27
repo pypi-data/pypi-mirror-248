@@ -1,0 +1,11 @@
+alist_sdk/__init__.py,sha256=vh6-qNTC_UztfFe870tpJeuu1lft1U2EqL5IpbUyqO0,139
+alist_sdk/async_client.py,sha256=_ftTWMovSpksvmLpmf7c2vVNXHg6w8y33efhzGhsUrM,14300
+alist_sdk/client.py,sha256=RuhrD5xIM1KQoSn_NBvwPI71AVdepLb1u_-KdDz9VG0,13090
+alist_sdk/err.py,sha256=20jzhzcD1YaXhcZV0GOshde_KysCL5ajFsziiwnYTt0,159
+alist_sdk/models.py,sha256=j-hH0P-Y_Om1BpaAz0xb3ft-omCq3Yom5OxCXZeY7HA,5415
+alist_sdk/verify.py,sha256=ePZU2_g6yYcJPU__eXBzxN3ffy8oJ4Ei38-DceqAwec,2529
+alist_sdk/version.py,sha256=6o6428cs4GXET6or2FkSOmBp7QKaRCrMt_c6wigWAJk,49
+alist_sdk-0.3.0.dist-info/METADATA,sha256=p4g-tuqIBRClmsWgGjQGSUbmReCbhSaqHFzUsdigcoA,1383
+alist_sdk-0.3.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+alist_sdk-0.3.0.dist-info/top_level.txt,sha256=udNxm469YgFBwUgvVPN8AozBYQUni4y_zF7goSKvMN4,10
+alist_sdk-0.3.0.dist-info/RECORD,,
