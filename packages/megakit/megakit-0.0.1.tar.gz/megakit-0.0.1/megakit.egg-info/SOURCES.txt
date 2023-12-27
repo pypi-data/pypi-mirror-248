@@ -1,0 +1,13 @@
+README.md
+setup.py
+compress/__init__.py
+compress/installer.py
+compress/functions/image.py
+compress/functions/main.py
+compress/functions/manage.py
+compress/functions/random.py
+compress/functions/time.py
+megakit.egg-info/PKG-INFO
+megakit.egg-info/SOURCES.txt
+megakit.egg-info/dependency_links.txt
+megakit.egg-info/top_level.txt

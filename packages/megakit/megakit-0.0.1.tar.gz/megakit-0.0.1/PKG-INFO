@@ -1,0 +1,168 @@
+Metadata-Version: 2.1
+Name: megakit
+Version: 0.0.1
+Summary: Testing installation of Package
+Home-page: https://github.com/talalzeini/compress
+Author: Talal El Zeini
+Author-email: talalzeini@icloud.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# MegaKit
+
+## Time
+
+### `get_date()`
+
+Returns current date in the following format: MM/DD/YYYY
+
+### `get_month()`
+
+Returns an array of the number of the current month, and its name
+
+### `get_year()`
+
+Returns the current year as an integer
+
+## Random
+
+### `random_integer(n)`
+
+Takes an integer as a parameter
+
+Returns integer with 'n' number of digits
+
+### `random_string(n)`
+
+Takes an integer as a parameter
+
+Returns a string with 'n' number of uppercase characters
+
+### `random_serial(n)`
+
+Takes an integer as a parameter
+
+Returns a string with 'n' number of characters mixed between letters and integers
+
+## Manage
+
+### `read_lines(file_path)`
+
+Takes the path of a file as a parameter
+
+Returns a list of each line in that file
+
+### `count_lines(file_path)`
+
+Takes the path of a file as a parameter
+
+Returns the number of lines filled in that file
+
+### `count_folders(folder_path)`
+
+Takes the path of a folder as a parameter
+
+Returns the number of directories located in that folder
+
+### `count_files(folder_path):`
+
+Takes the path of a folder as a parameter
+
+Returns the number of files located in that folder
+
+### `get_file_name(file_path)`
+
+Takes the path of a file as a parameter
+
+Returns the name of the file including its extension
+
+### `get_file_extension(file_path)`
+
+Takes the path of a file as a parameter
+
+Returns the file extension
+
+### `get_file_location(file_path)`
+
+Takes the path of a file as a parameter
+
+Returns the path of the folder in which the file is located
+
+### `is_file(path)`
+
+Takes the path of a folder or a file as a parameter
+
+Returns True if that path is pointing to a file
+
+Returns False if that path is not pointing to a file
+
+### `is_folder(path)`
+
+Takes the path of a folder or a file as a parameter
+
+Returns True if that path is pointing to a folder
+
+Returns False if that path is not pointing to a folder
+
+### `is_existing(path)`
+
+Takes the path of a folder or a file as a parameter
+
+Returns True if that path is pointing to a folder or file that exists
+
+Returns False if that path is pointing to a folder or file that doesn't exist
+
+### `list_directories(folder_path)`
+
+Takes the path of a folder as a parameter
+
+Returns a list of all directories located in that folder
+
+### `list_files(folder_path)`
+
+Takes the path of a folder as a parameter
+
+Returns a list of all files located in that folder
+
+### `is_empty(folder_path)`
+
+Takes the path of a folder as a parameter
+
+Returns True if that folder doesn't contain a folder or file
+
+Returns False if that folder contains a folder or file
+
+### `delete_file(file_path)`
+
+Takes the path of a file as a parameter
+
+Deletes that file
+
+### `delete_folder(folder_path)`
+
+Takes the path of a folder as a parameter
+
+Deletes that folder
+
+### `add_padding(image_path, padding_value, color)`
+
+Takes the path of an image file as a first parameter
+
+Takes an integer representing the padding value as a second parameter
+
+Takes a tuple of three numbers representing the color, as a third parameter
+
+### `round_corners(image_path, radius)`
+
+Takes the path of an image file as a first parameter
+
+Takes an integer for the radius of the image's corners as a second parameter
+
+### `turn_to_square(image_path, color)`
+
+Takes the path of an image file as a first parameter
+
+Takes a tuple of three numbers representing the color, as a second parameter
+
+
