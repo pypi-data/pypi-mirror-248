@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: crlfihunter
+Version: 0.0.1
+Summary: A Tool to find a Easy Bounty - CRLF Injection
+Author: @karthithehacker
+Author-email: <contact@karthithehacker.com>
+Keywords: python,crlf,crlfi,injection,crlfinjection
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENSE
+
+This is a tool, which is used by several security researchers to find Carriage Return Line Feed Injection Vulnerability
