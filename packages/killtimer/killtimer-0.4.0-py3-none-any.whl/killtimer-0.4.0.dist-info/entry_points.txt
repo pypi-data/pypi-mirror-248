@@ -1,0 +1,4 @@
+[console_scripts]
+killtimer=killtimer.main:main
+killtimer-stats=killtimer.stats:main
+
