@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: pythopix
+Version: 0.0.8
+Summary: An image dataset evaluation library using YOLO models
+Author: Boris
+Author-email: borisculjak@example.com
+Requires-Dist: torch
+Requires-Dist: tqdm
+Requires-Dist: ultralytics
+
