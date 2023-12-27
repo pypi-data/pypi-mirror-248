@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+xingyun.egg-info/PKG-INFO
+xingyun.egg-info/SOURCES.txt
+xingyun.egg-info/dependency_links.txt
+xingyun.egg-info/requires.txt
+xingyun.egg-info/top_level.txt
