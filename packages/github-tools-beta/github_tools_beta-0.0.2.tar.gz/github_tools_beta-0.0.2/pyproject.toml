@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "github_tools_beta"
+description = "Selection of tools to use with GitHub"
+dynamic = ["version"]
+
+[tool.setuptools.dynamic]
+version = {attr = "github_tools_beta.__version__"}
