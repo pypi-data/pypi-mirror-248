@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: tfplugin-proto-all
+Version: 0.1.0
+Summary: Auto-generated protobuf modules for Terraform plugin RPC
+Home-page: https://smheidrich.gitlab.io/tfplugin-proto-all/
+License: MPL-2.0
+Author: smheidrich
+Author-email: smheidrich@weltenfunktion.de
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: grpcio (>=1.59.0,<2.0.0)
+Project-URL: Documentation, https://smheidrich.gitlab.io/tfplugin-proto-all/
+Project-URL: Repository, https://gitlab.com/smheidrich/tfplugin-proto-all
+Description-Content-Type: text/markdown
+
+# tfplugin-proto-all(-python)
+
+Don't use this if you aren't me.
+
