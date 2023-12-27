@@ -1,0 +1,16 @@
+CHANGES
+=======
+
+2.20.16
+-------
+
+* improve api
+* add fast api  of select
+* add cmd cache
+* add installScrcpy
+* add  setup\_scrcpy
+* update agent version
+* support scrcpy-serv
+* update agent
+* fix index out of range
+* long\_click support offset param
