@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: llmformat
+Version: 0.0.1
+Summary: Format LLM language by using LALR(1) grammar. Supports JSON, XML, etc.
+Author: Qiuling Xu
+Author-email: Qiuling Xu <xennaughtyboy@gmail.com>
+Project-URL: Homepage, https://github.com/qiulingxu/llmformat
+Project-URL: Issues, https://github.com/qiulingxu/llmformat/issues
+Keywords: python,llm,format,json,regex
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+LLM Format
+
+- Support JSON
+A sound Large-language model formatter. Once the grammar is provided, we can gaurantee the generation of the valid grammar. We currently support the generation of all LALR(1) grammar including JSON, XML, Regular Expression and so on.
+
