@@ -1,0 +1,2 @@
+[console_scripts]
+atcrawler = atcrawler.atcrawler:main
