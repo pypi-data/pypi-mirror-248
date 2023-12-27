@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: uniswapx-sdk
+Version: 0.0.1
+Summary: Python SDK for the UniswapX protocol
+Author-email: Elnaril <elnaril_dev@caramail.com>
+License: MIT License
+Project-URL: Homepage, https://github.com/Elnaril/python-uniswapx-sdk
+Project-URL: Bug Tracker, https://github.com/Elnaril/python-uniswapx-sdk/issues
+Project-URL: Fiverr, https://www.fiverr.com/freelancers/elnaril
+Project-URL: Buy Me A Coffee, https://www.buymeacoffee.com/elnaril
+Keywords: blockchain,ethereum,uniswap,uniswapx,decoder,encoder,codec,wrapper,sdk
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: web3<7.0.0,>=6.0.0
+
+# Python UniswapX SDK
+
+#### Partially inspired by https://github.com/Uniswap/uniswapx-sdk
+
+⚠ This library has not been audited, so use at your own risk !
+
+⚠ The API currently exposed is very likely to change with the following versions!
+
+⚠ This project is a work in progress so not all features have already been implemented.
