@@ -1,0 +1,13 @@
+pydparser/__init__.py,sha256=HEDWNTgaKGf59M78Iw2BJ2FoR5UEW1hdcuta4xy9NME,255
+pydparser/constants.py,sha256=SwudMIX13lr3zbBeZno8VNO7D2U-dVr5qzKUBsyi53Q,1295
+pydparser/create_jd_corpus.py,sha256=aNjSwDaKQomjcw63vcsX9sx1T1fZKcNUN_TWsQMZ3WM,1239
+pydparser/create_spacy_corpus.py,sha256=NIQ7yiBvXP-fXeBEKiIsZVhvkMimIqcvzpAhrhx2ghw,3924
+pydparser/job_parser.py,sha256=TWUaBXtgMq5Ysl_RyIvJhu2BExmDIr4jsAtNcM98eEQ,2911
+pydparser/matching.py,sha256=_OeJA9msrd3urF6818StPdpS1H23ZyA7C68Q-YSIWqA,3413
+pydparser/resume_parser.py,sha256=ZVpla42pF54tFwRsSw236Wj9z1t2pMvrD0rlAYAkX4c,4609
+pydparser/utils.py,sha256=nuT2Mgxm_uQ5U94PxkeSVaiI8mTye9vFA-nno03VXuE,20154
+pydparser-1.0.2.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+pydparser-1.0.2.dist-info/METADATA,sha256=9NtnHCdMw4ihcgkZ4WtyUf9UkPKERw5yBB9abs-Tdjk,8484
+pydparser-1.0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pydparser-1.0.2.dist-info/top_level.txt,sha256=ZhFaH-llCtAj2cjOsPRHzFPOnxjng4X_k5syWEWv4vE,10
+pydparser-1.0.2.dist-info/RECORD,,
