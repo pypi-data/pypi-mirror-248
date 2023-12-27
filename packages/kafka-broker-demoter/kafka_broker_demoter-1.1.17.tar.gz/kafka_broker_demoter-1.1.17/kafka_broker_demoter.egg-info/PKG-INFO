@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: kafka_broker_demoter
+Version: 1.1.17
+Summary: Tool for safely demote a broker from a kafka cluster
+Author: Sergio Troiano
+Author-email: sergio_troiano@hotmail.com
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: kafka-python==2.0.2
+Requires-Dist: lz4==4.3.2
+Requires-Dist: tenacity==8.2.3
+
+# kafka-broker-demoter
+Safely demote a Kafka broker
