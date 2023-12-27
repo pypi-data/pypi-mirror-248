@@ -1,0 +1,10 @@
+kalente/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kalente/__main__.py,sha256=r_GCB4OCxRBFFlGJ2pUW4W9K0_vfwnDrcMg2Nk1UyRk,7455
+kalente/templates/daily.html,sha256=OtAxP2frzTbSQZ1Lw78AxWKwN3woxrx5vVm4DMwGdiA,4198806
+kalente/templates/monthly.html,sha256=4ac5sZV8Liftm-dp2zWGoMeCrHFUO4WA1Kc2jG260DY,4199553
+kalente/templates/weekly.html,sha256=AUlrNFN95RZDqgh2wgJZu0b20dR-qBlM1YWnBO3ePvk,4199322
+kalente-0.1.2.dist-info/METADATA,sha256=oUeBetW5A3Jc80U7ansWIqChYg1_FXWh5tgQlUwnj1Q,3913
+kalente-0.1.2.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+kalente-0.1.2.dist-info/entry_points.txt,sha256=fOaYUbdxKvoqrQ5QouPrxf9OhEgwu4-Z5s-xiEmt8ks,50
+kalente-0.1.2.dist-info/licenses/LICENSE,sha256=pUxcn2FCdIkKlv_AKVB5UteUhnAceFK03kFJ3SgDO4E,1077
+kalente-0.1.2.dist-info/RECORD,,
