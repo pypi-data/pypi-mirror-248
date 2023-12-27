@@ -1,0 +1,2 @@
+[console_scripts]
+ns = pyname_shifter.main:main
