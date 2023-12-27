@@ -1,0 +1,17 @@
+crlfi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crlfi/main.py,sha256=oQAvv2rYsepY7uBNmiZpkVHESRTw_jCBNBO6kVJ4w0g,1071
+crlfi/includes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crlfi/includes/bot.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crlfi/includes/crlfi.py,sha256=hFxtCLp5Qb3SH27yIvCjeVpsh2TdnubF_t1Em2scy3M,1446
+crlfi/includes/filereader.py,sha256=xpaQf2dBDvLpnxs8WJbjuKjTAdvlBW2iykRQBnYtJRc,168
+crlfi/includes/writefile.py,sha256=zk4dmSWHLZN3JSnLHrq64krmK74QLjxsgjsmUJCyBnY,88
+crlfi/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crlfi/utils/configure.py,sha256=zKZ86usI4JO3PuA5R3tOlXTmRXGqGRV2Wh8qOWoaAcs,1038
+crlfi/utils/helper.py,sha256=Vvcbp759id5eSqPpWxYZavsXzwFPdEE0Xxm0FZb7DQM,1420
+crlfihunter-0.0.1.data/scripts/main.py,sha256=oQAvv2rYsepY7uBNmiZpkVHESRTw_jCBNBO6kVJ4w0g,1071
+crlfihunter-0.0.1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crlfihunter-0.0.1.dist-info/METADATA,sha256=ZBhNFt4ZSlN7aZytsKiXxq2Exb8AQj_CDyN22eN-wTM,742
+crlfihunter-0.0.1.dist-info/WHEEL,sha256=Xo9-1PvkuimrydujYJAjF7pCkriuXBpUPEjma1nZyJ0,92
+crlfihunter-0.0.1.dist-info/entry_points.txt,sha256=4YRj8JWCkHy1YxCBXN5tI51qAqJl3G1TJbgJnyxhTVQ,48
+crlfihunter-0.0.1.dist-info/top_level.txt,sha256=7GrolhGWT8xw3j27Y7G63aP-oxr1Vpd9Yvo-p0J8oWQ,6
+crlfihunter-0.0.1.dist-info/RECORD,,
