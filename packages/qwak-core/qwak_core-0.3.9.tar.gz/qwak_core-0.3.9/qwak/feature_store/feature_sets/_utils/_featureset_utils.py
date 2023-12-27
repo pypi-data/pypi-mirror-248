@@ -1,0 +1,46 @@
+from typing import Any, Optional
+
+from qwak.exceptions import QwakException
+from qwak.feature_store.feature_sets.transformations import BaseTransformation
+
+
+class FeaturesetUtils:
+    @classmethod
+    def validate_base_featureset_decorator(
+        cls,
+        user_transformation: Any,
+        entity: Optional[str] = None,
+        key: Optional[str] = None,
+    ):
+        if not isinstance(user_transformation, BaseTransformation):
+            raise ValueError(
+                "Function must return a valid qwak transformation function"
+            )
+        if (not key) is (not entity):
+            raise ValueError(
+                "Key and entity are mutually exclusive, please specify only one"
+            )
+
+    @classmethod
+    def validate_streaming_featureset_decorator(
+        cls, online_trigger_interval: Any, offline_scheduling_policy: Any
+    ):
+        import croniter
+
+        # verify the cron expression is valid
+        if not isinstance(
+            offline_scheduling_policy, str
+        ) or not croniter.croniter.is_valid(offline_scheduling_policy):
+            raise QwakException(
+                f"Offline scheduling policy provided '{offline_scheduling_policy}' "
+                f"is not a valid cron expression"
+            )
+
+        # verify the online scheduling policy is valid
+        online_interval = online_trigger_interval
+        if not (type(online_interval) is int and online_interval >= 0):
+            raise QwakException(
+                f"Value '{online_interval}'"
+                f" is not a legal online scheduling policy, "
+                f"only non-negative integers are allowed"
+            )
