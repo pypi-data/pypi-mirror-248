@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: fastid
+Version: 0.0.2
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Summary: This is a library for quickly generating unique IDs in Python.
+Keywords: unique-id,id-generator
+Author-email: Seungwoo Hong <qksn1541@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# Fastid
+Created for the easy and fast generation of various IDs
+
+# Supported IDs
+- ulid
+- snowflake
