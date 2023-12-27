@@ -1,0 +1,13 @@
+README.md
+setup.py
+megakit/__init__.py
+megakit/installer.py
+megakit.egg-info/PKG-INFO
+megakit.egg-info/SOURCES.txt
+megakit.egg-info/dependency_links.txt
+megakit.egg-info/top_level.txt
+megakit/functions/image.py
+megakit/functions/main.py
+megakit/functions/manage.py
+megakit/functions/random.py
+megakit/functions/time.py
