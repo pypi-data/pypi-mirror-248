@@ -1,0 +1,10 @@
+stpyvista/__init__.py,sha256=eDUZBGNEjX3M6BukaNqtdwVhqRVQzLISZeKCz6SpmfU,3903
+stpyvista/__main__.py,sha256=0KkEi5hbPURhq3GuCG1KZO7oAqUmXtzFqoFoZ1OW-eU,77
+stpyvista/frontend/index.html,sha256=-cNxtf3NBP-bELP2tpFMGGf-v2nx7GrPprM7NrC48l8,631
+stpyvista/frontend/main.js,sha256=UU5iGA8ebnzK1DdQm6eoDVtuwa4fxQ5MviZYcxDcaEE,2379
+stpyvista/frontend/streamlit-component-lib.js,sha256=bzV6LswOTbs566fXIboh58qJG6K6-pbKh0Pvjwa1tNU,1198
+stpyvista/frontend/style.css,sha256=43I5zWCQ8WhBFFw6g49S4cIFBTcx6vIAtyfDzgXQqR0,166
+stpyvista-0.0.12.dist-info/METADATA,sha256=Jf9J1OrvJmZSGxMiEhKOZ3yIR0FCkZmHq6ls4STK3YA,1646
+stpyvista-0.0.12.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+stpyvista-0.0.12.dist-info/licenses/LICENSE,sha256=mpavjX90A4UqinvM73RQrlm0Q1uRuP2eQehTb_gGySs,35129
+stpyvista-0.0.12.dist-info/RECORD,,
