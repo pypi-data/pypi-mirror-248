@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: hello-world-rrrmib
+Version: 0.0.1
+Summary: A hello-world example package
+Home-page: UNKNOWN
+Author: rrrmib
+Author-email: rrrmib@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
