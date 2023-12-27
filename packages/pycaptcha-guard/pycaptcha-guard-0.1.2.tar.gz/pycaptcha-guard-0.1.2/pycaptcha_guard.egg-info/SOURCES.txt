@@ -1,0 +1,10 @@
+README.md
+setup.py
+pycaptcha_guard/__init__.py
+pycaptcha_guard/base_page.py
+pycaptcha_guard/captcha.py
+pycaptcha_guard.egg-info/PKG-INFO
+pycaptcha_guard.egg-info/SOURCES.txt
+pycaptcha_guard.egg-info/dependency_links.txt
+pycaptcha_guard.egg-info/requires.txt
+pycaptcha_guard.egg-info/top_level.txt
