@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+pydparser/__init__.py
+pydparser/constants.py
+pydparser/create_jd_corpus.py
+pydparser/create_spacy_corpus.py
+pydparser/job_parser.py
+pydparser/matching.py
+pydparser/resume_parser.py
+pydparser/utils.py
+pydparser.egg-info/PKG-INFO
+pydparser.egg-info/SOURCES.txt
+pydparser.egg-info/dependency_links.txt
+pydparser.egg-info/not-zip-safe
+pydparser.egg-info/requires.txt
+pydparser.egg-info/top_level.txt
