@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: nomad_media_pip
+Version: 0.0.5
+Summary: Nomad Media PIP
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.12
+Requires-Dist: requests
+
