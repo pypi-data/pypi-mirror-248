@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+src/typing_checked/__init__.py
+src/typing_checked/__main__.py
+src/typing_checked.egg-info/PKG-INFO
+src/typing_checked.egg-info/SOURCES.txt
+src/typing_checked.egg-info/dependency_links.txt
+src/typing_checked.egg-info/top_level.txt
