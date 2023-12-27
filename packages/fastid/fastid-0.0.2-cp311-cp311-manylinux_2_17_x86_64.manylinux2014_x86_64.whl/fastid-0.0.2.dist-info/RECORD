@@ -1,0 +1,7 @@
+fastid-0.0.2.dist-info/METADATA,sha256=W6zCyPNgLq3eqGg4Nc8JarJdcpNTWiQJ63xXGuoyatU,579
+fastid-0.0.2.dist-info/WHEEL,sha256=kAFdRPi0EyWt0dTH1ucaCqAbqAPJ_797yuBAMf2K__s,129
+fastid/__init__.py,sha256=iieanNiRnh7UU02OGoOft9HLQ1wMAHfJpwZiOFphs_I,107
+fastid/__init__.pyi,sha256=PCsW_2OmVlJohxxMHkWVw1LSys8pk9zvg4quDpvEYoY,175
+fastid/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastid/fastid.cpython-311-x86_64-linux-gnu.so,sha256=jR1OfE8aW-SCgRoPsykr7PnPd3giRv_PGK7A_QQPN1U,4832944
+fastid-0.0.2.dist-info/RECORD,,
