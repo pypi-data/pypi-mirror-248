@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+setup.py
+turing_machine_utils/__init__.py
+turing_machine_utils/turing.py
+turing_machine_utils.egg-info/PKG-INFO
+turing_machine_utils.egg-info/SOURCES.txt
+turing_machine_utils.egg-info/dependency_links.txt
+turing_machine_utils.egg-info/requires.txt
+turing_machine_utils.egg-info/top_level.txt
