@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+OrmKassDoug.egg-info/PKG-INFO
+OrmKassDoug.egg-info/SOURCES.txt
+OrmKassDoug.egg-info/dependency_links.txt
+OrmKassDoug.egg-info/top_level.txt
+app/Migration.py
+app/Model.py
+app/Querier.py
+app/__init__.py
