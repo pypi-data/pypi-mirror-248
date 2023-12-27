@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: settl
+Version: 0.1.2
+Home-page: https://github.com/yupeeee/SETTL
+Author: Juyeop Kim
+Author-email: juyeopkim@yonsei.ac.kr
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# SETTL
+Simple &amp; Efficient Torch Training Library
