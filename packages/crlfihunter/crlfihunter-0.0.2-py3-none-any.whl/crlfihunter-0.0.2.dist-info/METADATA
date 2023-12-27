@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: crlfihunter
+Version: 0.0.2
+Author: @karthithehacker
+Author-email: <contact@karthithehacker.com>
+Keywords: python,crlf,crlfi,injection,crlfinjection
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: urllib3
+Requires-Dist: requests
+Requires-Dist: click
+Requires-Dist: pyyaml
+
+p align="center">
+<img src="https://github.com/karthi-the-hacker/crlfi/raw/main/images/logo.gif" ><br>
+
+</p>
+
+> CRLF Bug scanner for WebPentesters and Bugbounty Hunters
+
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=karthi-the-hacker&label=Profile%20views&color=0e75b6&style=flat" alt="karthi-the-hacker" /> </p>
+<p align="left"> <a href="https://twitter.com/karthithehacker" target="blank"><img src="https://img.shields.io/twitter/follow/karthithehacker?logo=twitter&style=for-the-badge" alt="karthithehacker" /></a> </p>
+
+## Prerequisites 
+ 
+ - NodeJs 
+
+
+## Installation and Example
+1. Install NodeJS [Instructions Here](https://nodejs.org/en/download/package-manager/) (If you can't figure this out, you shouldn't really be using this)
+    - Linux, Mac, Windows
+        - `pip install crlfihunter`
+    - Github
+        - click [HERE](https://github.com/karthi-the-hacker/crlfi.git) for downloads
+
+
+
+
+2. Open terminal now type  `crlfi`
+
+3. Example
+    - input
+        - `crlfihunter -i urls.txt`
+    - output
+        - `crlfihunter -i urls.txt -o out.txt`
+
+#### Usages 📚 :
+
+    
+👋 Hey karthithehacker
+
+  .------------------------------.
+  |   Tool   : crlfi 👾          |
+  |   Author : @karthithehacker🎖️ |
+  |      %0D%0Acrlfi:crlfi       |
+  '------------------------------'
+                 ^      (\_/)
+                 '----- (O.o)
+                        (> <)
+
+Crlfi  v1.0
+CRLF Bug scanner for WebPentesters and Bugbounty Hunters
+
+$ crlfi [option]
+
+Usage: crlfi [options]
+
+Options:
+  -u, --url     URL to scan                                crlfi -u https://target.com                
+  -i, --input   <filename> Read input from txt             crlfi -i target.txt                         
+  -i, --output  <filename> Write output in txt file        crlfi -i target.txt -o output.txt    
+  -c, --chatid  Creating Telegram Notification             crlfi --chatid yourid              
+  -h, --help    Help Menu                       
+    
