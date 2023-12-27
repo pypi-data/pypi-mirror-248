@@ -1,0 +1,10 @@
+plotly01/__init__.py,sha256=ZvzJzSREsru33SuPFKNXQxc8msT-Qg8LRS80yNjK0QQ,625
+plotly01/frontend/index.html,sha256=53vjiBSe4pTljfLBRN3LO-h3f90p0jfRb-0quSxQ4Rg,335
+plotly01/frontend/main.js,sha256=a9CYDMpPI-ONfdBlA6E4Yr_24EoP9sPFx-Ys7VOeAsQ,1346
+plotly01/frontend/plotly-2.14.0.min.js,sha256=VmyeSwOmMUgMXMDjfU7ouLhV_EFZuOiE_f6CfSpLujw,3700186
+plotly01/frontend/streamlit-component-lib.js,sha256=fVXSupweyMC3DkcStN8hggA93U2lRea6CYCHvrou3FM,1164
+plotly01-0.1.0.dist-info/LICENSE,sha256=na_oGFEjuESWP1DRbwbBvVC1VQYPIan69RlYFNo3BGI,1076
+plotly01-0.1.0.dist-info/METADATA,sha256=Uxnibuh7EMZEjaFwH2FN9cIlVny5hZlB5s7iX8VoFY0,858
+plotly01-0.1.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+plotly01-0.1.0.dist-info/top_level.txt,sha256=225LOQ70T0VUMxtqTHecRL1f6HpDOr2KY0OUVuluuDc,9
+plotly01-0.1.0.dist-info/RECORD,,
