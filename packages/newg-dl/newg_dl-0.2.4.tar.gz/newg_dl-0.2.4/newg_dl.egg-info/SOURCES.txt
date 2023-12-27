@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+newg_dl.egg-info/PKG-INFO
+newg_dl.egg-info/SOURCES.txt
+newg_dl.egg-info/dependency_links.txt
+newg_dl.egg-info/top_level.txt
+newgrounds_dl/__init__.py
+newgrounds_dl/newgrounds_dl.py
