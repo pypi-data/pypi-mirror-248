@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/parquest/__init__.py
+src/parquest/main.py
+src/parquest.egg-info/PKG-INFO
+src/parquest.egg-info/SOURCES.txt
+src/parquest.egg-info/dependency_links.txt
+src/parquest.egg-info/entry_points.txt
+src/parquest.egg-info/top_level.txt
+tests/test_simple.py
