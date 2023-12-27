@@ -1,0 +1,14 @@
+assistorgapi/__init__.py,sha256=WIwS7nJmYmxtClqUmEMAGFkIiAd84hq45IOU0k5VxIU,605
+assistorgapi/academic_years.py,sha256=r5Po5JAaNzTTvXcq3ohuJKHkL5GSHMf3g1JgIXjKMhg,224
+assistorgapi/agreements.py,sha256=rPCXz96N_T03I408m-t4icR5Jb1O9oX77MS1CO3IgR8,992
+assistorgapi/appsettings.py,sha256=PQDcaJ_U4jrWU15i8BPayCF8BGwedHr5ymuBfinJnMs,183
+assistorgapi/articulation.py,sha256=M2JDF_bagAxHHw4uqtYwsUXwcGEODLP00ojwc5QB3jE,274
+assistorgapi/institutions.py,sha256=6QkA4A_XOF-OPgZUsFXyiMg1I-x_fiqBuXwirLm_toM,795
+assistorgapi/settings.py,sha256=XlyVMBf-7l4rS-dExlxDI1ob2E4tKtPb6lCdIZ51lHg,220
+assistorgapi/transferability.py,sha256=gzzBDuBS55BMYyQeUWKLc-L6aDkNmCzG5vdyaCNW-5g,850
+assistorgapi-0.1.3.dist-info/AUTHORS.rst,sha256=BRzn7yzplZiliV-ukN-IRebPZ43sXiTJVF9FV5Lw9l4,188
+assistorgapi-0.1.3.dist-info/LICENSE,sha256=KNTqD-gjMkz_Up88q-n6CddYmPbdyKYHx0nNEm5ol7g,1086
+assistorgapi-0.1.3.dist-info/METADATA,sha256=Vy-gd3b00LqX3jS0F4PP2ZRXAd3pk9zXRFqt0I2sB3w,1530
+assistorgapi-0.1.3.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+assistorgapi-0.1.3.dist-info/top_level.txt,sha256=ER4KfEtZYQn1n0bs2_kX0y55gQlz9Ryv1rdHMw1KAQs,13
+assistorgapi-0.1.3.dist-info/RECORD,,
