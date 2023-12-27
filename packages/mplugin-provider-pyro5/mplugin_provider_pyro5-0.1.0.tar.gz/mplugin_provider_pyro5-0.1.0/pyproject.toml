@@ -1,0 +1,76 @@
+[project]
+name = "mplugin_provider_pyro5"
+description = "An agent for the myrrh porject using the pyro5 library"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.11.0"
+
+dynamic = ["version"]
+
+authors = [
+  { name="PyAnjel7", email="pyanjel7@gmail.com" },
+]
+
+classifiers = [
+    "Environment :: Plugins",
+    "Development Status :: 2 - Pre-Alpha",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Testing",
+    "Topic :: System :: Clustering",
+    "Topic :: System :: Distributed Computing",
+    "Topic :: System :: Monitoring",
+    "Topic :: System :: Networking",
+]
+
+dependencies = [
+    "pyro5>=5.15",
+    "myrrh>=0.1.0"
+]
+
+[project.urls]
+Source = "https://github.com/pyanjel7/mplugin_provider_pyro5"
+
+[project.scripts]
+myrrh_pyro5s = "mplugins.scripts.myrrh_pyro5s:main"
+
+[project.entry-points."myrrh.provider.registry"]
+"mplugins.provider.pyro5-provider" = "register_provider"
+
+[project.entry-points."myrrh.tools.myrrhc_ext"]
+"mplugins.myrrhc.pyro5_ext" = "load_commands"
+
+[project.entry-points."myrrh.warehouse.registry"]
+"mplugins.provider.pyro5-provider_settings" = "register_provider_model"
+
+[build-system]
+requires = [
+    "setuptools >= 61",
+    "setuptools_scm >= 6.4.2",
+    "wheel >= 0.37.0"
+]
+build-backend = "setuptools.build_meta:__legacy__"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = true
+
+[tool.setuptools_scm]
+write_to = "src/mplugins/provider/pyro5/__version__.py"
+
+[tool.black]
+line_length = 300
+
+[tool.codespell]
+ignore-words-list = "inout, crasher, invokations, worl, te"
+
+[tool.mypy]
+disable_error_code = ["import-untyped", "import-not-found", "abstract"]
+allow_redefinition = true
+namespace_packages = false
+files = [ "src" ]
