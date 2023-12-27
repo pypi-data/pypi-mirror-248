@@ -1,0 +1,40 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "newg_dl"
+version = "0.3.0b5"
+description = "A Python library for downloading music from Newgrounds."
+authors = ["Connor <contact@coneriys.one>"]
+readme = "README.md"
+python = "^3.8"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "*"
+beautifulsoup4 = "*"
+asyncio = "*"
+aiohttp = "*"
+
+[tool.poetry.scripts]
+newgrounds_dl = "newgrounds_dl:main"
+
+[project]
+name = "newg_dl"
+version = "0.2.9"
+description = "A Python library for downloading music from Newgrounds."
+authors = [
+    { name="Connor", email="contact@coneriys.one" },
+]
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/Infinitium-Team/newgrounds_dl"
+Issues = "https://github.com/Infinitium-Team/newgrounds_dl/issues"
