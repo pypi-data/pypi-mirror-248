@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: mlflow-k8sstore-plugin
+Version: 0.0.1
+Summary: Test plugin for MLflow
+Description-Content-Type: text/markdown
+Requires-Dist: mlflow
+
+# mlflow-k8sstore

@@ -1,0 +1,2 @@
+[mlflow.model_registry_store]
+k8s = mlflow_k8sstore.mlflow_k8sstore:K8sStore
