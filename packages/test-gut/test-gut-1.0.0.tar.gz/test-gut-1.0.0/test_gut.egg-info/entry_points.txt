@@ -1,0 +1,2 @@
+[console_scripts]
+gut = gut:cli
