@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: cbs_distributions
+Version: 0.2
+Summary: Gaussian distributions
+Home-page: UNKNOWN
+Author: CB
+Author-email: hello@hello.org
+License: BSD-3-Clause
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6.3

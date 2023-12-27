@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+cbs_distributions/Binomialdistribution.py
+cbs_distributions/Gaussiandistribution.py
+cbs_distributions/Generaldistribution.py
+cbs_distributions/__init__.py
+cbs_distributions.egg-info/PKG-INFO
+cbs_distributions.egg-info/SOURCES.txt
+cbs_distributions.egg-info/dependency_links.txt
+cbs_distributions.egg-info/not-zip-safe
+cbs_distributions.egg-info/top_level.txt
