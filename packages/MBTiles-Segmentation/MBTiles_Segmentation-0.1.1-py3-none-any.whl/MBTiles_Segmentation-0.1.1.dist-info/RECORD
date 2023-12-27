@@ -1,0 +1,10 @@
+MBTiles_Segmentation/__init__.py,sha256=ZFrzmxGtvxjey99qs2XJJF7dGxG9oTq2gtVd_7zydG0,146
+MBTiles_Segmentation/geometry_wkt_converter.py,sha256=Lh_vBkPxG0Fh5VClcl1Y20j4d2yAueh93iIaNeDxc-o,2186
+MBTiles_Segmentation/mbtiles_handler.py,sha256=WwNMday1YgzBegIKgPOW-qRz17SuvGVbbqsbXJB5xdc,6117
+MBTiles_Segmentation/seg_dataset_creator.py,sha256=jjyy5PoYVHHpTiSQQPnMUk8PE1lMtkzRCGjDvTJuNp0,5731
+MBTiles_Segmentation-0.1.1.dist-info/LICENSE,sha256=OLTWKzyjFV3A0c34O-gWXm7JX-1meJQ-0ny6tX1HBqo,1074
+MBTiles_Segmentation-0.1.1.dist-info/METADATA,sha256=Qvjg5dwk4ubqyPzUJVxyL2CsC3WUU12_aUY7JzXLuJ8,9184
+MBTiles_Segmentation-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+MBTiles_Segmentation-0.1.1.dist-info/entry_points.txt,sha256=4O9QDhKMyc9oWZNjTyFXRpbayqH4GLS1GMYdlJcwfss,150
+MBTiles_Segmentation-0.1.1.dist-info/top_level.txt,sha256=op6IoKPBhkZDEXL4Xkk7EWDjYQF2U_rf8maxt7mk9hg,21
+MBTiles_Segmentation-0.1.1.dist-info/RECORD,,
