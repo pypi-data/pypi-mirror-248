@@ -1,0 +1,11 @@
+githubctl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+githubctl/_github.py,sha256=jJjFHygptiaRFSWLVPTbYpbBdOhRSNo2pM90gISbLNk,1450
+githubctl/cli/repo.py,sha256=Q2q51lJmdEyPVMSPcOx8Na0iUsWT9Avuysqvpy3t67k,1766
+githubctl/cli/stars.py,sha256=YDHL2fAKWi_yL4mraYoSNnLbqTTyu8ucg5DfC_IJBfU,743
+githubctl/constants.py,sha256=YsCIDgtJ35oi4hhPVPcXCoQ0ILDnKGL2fORhxYu1y84,122
+githubctl/main.py,sha256=yvS4lqfEs_5DOaLPLBqfjsEia0THu6cHgHTk1arq1ew,830
+githubctl/utils.py,sha256=jrcYL3rNzxGbh4dVmb8DBTsjfqtTPXHYBihmA7k2i4Q,2505
+githubctl-0.1.5.dist-info/METADATA,sha256=WXVOSy7CwPbbsHrf7xkzFuVBTvTphAdf1NlNbjDIQfc,608
+githubctl-0.1.5.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+githubctl-0.1.5.dist-info/entry_points.txt,sha256=xvru5hKI4AKAvv0uyUts6vY2tGre4y82JLutDpBWIZo,48
+githubctl-0.1.5.dist-info/RECORD,,
