@@ -1,0 +1,4 @@
+websockets
+pydantic
+quart
+aiocqhttp
