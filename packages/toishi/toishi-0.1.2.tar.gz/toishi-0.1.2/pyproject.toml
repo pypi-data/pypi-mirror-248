@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "toishi"
+version = "0.1.2"
+description = "日本語テキストのフォーマッター。名称は日本の伝統的な刃物の研ぎに使用される砥石(toishi)をモチーフにしています"
+authors = ["Tatsuya Matoba <tatsuya.matoba.wk.jp@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/mtb-beta/toishi"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+click = "^8.1.7"
+ruff = "^0.1.9"
+pytest-watch = "^4.2.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+toishi = "toishi:toishi"

@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: toishi
+Version: 0.1.2
+Summary: 日本語テキストのフォーマッター。名称は日本の伝統的な刃物の研ぎに使用される砥石(toishi)をモチーフにしています
+Home-page: https://github.com/mtb-beta/toishi
+License: MIT
+Author: Tatsuya Matoba
+Author-email: tatsuya.matoba.wk.jp@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: pytest-watch (>=4.2.0,<5.0.0)
+Requires-Dist: ruff (>=0.1.9,<0.2.0)
+Project-URL: Repository, https://github.com/mtb-beta/toishi
+Description-Content-Type: text/markdown
+
+# toishi
+
+日本語テキストのフォーマッター。
+名称は、日本の伝統的な刃物の研ぎに使用される砥石(toishi)をモチーフにしています。
+
+## 開発背景
+
+- 日本語テキストをテキストエディタで修正しつつ、リポジトリでバージョン管理することがありました。
+- バージョン管理にあたり、行ごとに改行が入っている方が履歴が追跡しやすくなります。
+- 日本語を書くのに夢中になり、不必要な改行が入ることもあります。しかし、それを手作業でチェックするのは煩雑です。
+- コードフォーマッターのように自動で修正してほしい、という想いから作りました。
+
+## コンセプト
+
+- 表現の柔軟性を削り、文章を型にはめることで、文章が持つ情報そのものに注目させる。
+- フォーマットの自由度を落とすことで、利用者の表現に関する議論を削減する。
+- 手動でのフォーマット作業を省くことで、執筆者をより重要な作業に集中させる。
+
+## インストール
+
+```
+pip install toishi
+```
+
+## 利用方法
+
+filename.txtに任意のファイル名を指定してください。
+
+```
+toishi filename.txt
+```
+
+## 機能(開発中)
+
+現在、開発中です。以下は追加予定の機能です。
+
+- [x]  「。」の後に改行を自動で入れる。
+- [ ] 空行は連続しない。1行のみ。 複数行ある場合は、1行にする。
+- [ ] ファイルの先頭の空行、最後の空行は削除する。
+- [ ] チェックのみで修正を入れないオプション（CI用）
+- [ ] ディレクトリを指定し、一括で処理する機能
+
