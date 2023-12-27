@@ -1,0 +1,17 @@
+beautifulsoup4
+lxml
+
+blingfire
+
+text2chem==0.0.2
+spacy==3.7.2
+pymatgen==2023.8.10
+-e git+https://github.com/neuged/webanno_tsv#egg=webanno_tsv
+supermat
+
+pytest
+
+bottle
+tqdm
+pyyaml
+delft==0.3.4
