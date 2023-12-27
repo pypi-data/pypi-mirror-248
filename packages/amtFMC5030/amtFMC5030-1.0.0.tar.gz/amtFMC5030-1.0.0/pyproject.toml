@@ -1,0 +1,69 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name="amtFMC5030"
+version="1.0.0"
+dynamic = ["readme"]
+requires-python=">=3.6"
+dependencies = [
+    'paramiko',
+    'pyadi-iio <= 0.0.16',
+    'pylibiio <= 0.25',
+    'numpy'
+]
+
+authors=[{name = "yingju", email = "yingju.chen@hxltd.com"}]
+maintainers =[{name = "yingju", email = "yingju.chen@hxltd.com"},{name = "Amtery"}]
+description="Amtery Python library for FMC5030."
+license = {text = "MIT License"}
+
+classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License"]
+
+[project.urls]
+Homepage="https://www.amtery.com/en"
+Documentation = "https://github.com/yjchenhx/amtFMC_examples"
+
+
+[project.scripts]
+ref="amtFMC5030.FMC_funct:amtFmcRfRef"
+reset="amtFMC5030.FMC_funct:amtFmcRfReset"
+txconf="amtFMC5030.FMC_funct:amtFmcTxConfig"
+txstart="amtFMC5030.FMC_funct:amtFmcRfTxStart"
+txstop="amtFMC5030.FMC_funct:amtFmcRfTxStop"
+rxconf="amtFMC5030.FMC_funct:amtFmcRxConfig"
+rxread="amtFMC5030.FMC_funct:amtFmcRfRxRead"
+fv="amtFMC5030.FMC_funct:amtFmcRfFv"
+zed="amtFMC5030.debug_funct:zed"
+adireg="amtFMC5030.debug_funct:radi_reg"
+reattr="amtFMC5030.debug_funct:read_attr"
+redeattr="amtFMC5030.debug_funct:debug_attr"
+adifreq="amtFMC5030.debug_funct:adi_freq"
+adidds="amtFMC5030.debug_funct:set_dds"
+adiport="amtFMC5030.debug_funct:set_port"
+adiatt="amtFMC5030.debug_funct:adi_txAtt"
+adigain="amtFMC5030.debug_funct:adi_rxGain"
+tufreq="amtFMC5030.debug_funct:tuner_freq"
+tuatt="amtFMC5030.debug_funct:tuner_rxAtt"
+tupath="amtFMC5030.debug_funct:path"
+refpath="amtFMC5030.debug_funct:sel_ref"
+
+[project.optional-dependencies]
+examples = ["thread6","matplotlib","scipy"]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"amtFMC5030.examples" = ["*"]
+"amtFMC5030.examples.python_examples" = ["*.py"]
+"amtFMC5030.examples.labview_examples" = ["*.vi"]
+
+[tool.setuptools.dynamic]
+readme = {file = "README.md", content-type = "text/markdown"}
