@@ -1,0 +1,13 @@
+substratecore/__init__.py,sha256=0VIGf3kZA8HktUmh_7MB56JlXsCb2ss38vGj-DXAoYA,650
+substratecore/_version.py,sha256=4LLIx4Lj9o5D8QuZThF1xZvGlF8WFOlpXansHsJWa6k,26
+substratecore/clip_versions.py,sha256=lfC_6qOhvZb-I7rw9fy3nqhKImKD-Nm64OG_RayamqA,4875
+substratecore/jina_versions.py,sha256=lOrSdNNIaPPoVVqUq9Qc8dZPWr9M8FFTOp8KxEm4lTQ,4340
+substratecore/mistral_versions.py,sha256=XHJEIsGQVsoXqIK8Ud_QAQcjE7Tya0Rk01wIwB7Uiyg,2653
+substratecore/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+substratecore/pydantic_models.py,sha256=JFMu4MbXRRleAUCuMRl4G99Muv6ktfbD7icV0FcmQR0,7607
+substratecore/stablediffusion_versions.py,sha256=qTvNez2nDhOFfWwBSUpRZ9kr0mG_MUWpiiv1PzNxf8E,2647
+substratecore/typeddict_models.py,sha256=8Znz4NldptF6JC2b4gj8nJOqkWVibdVGkAFl5bKxM30,6384
+substratecore/versions.py,sha256=mIAT23wVJM90i5Zt91UdoDh20bqu4Dk0-UPsAkCSQw8,847
+substratecore-0.1.1.dist-info/METADATA,sha256=_CvJM3LsZu_IdPhrKDm0DHNC-RPXCtrVmGpvBPTWULQ,393
+substratecore-0.1.1.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+substratecore-0.1.1.dist-info/RECORD,,
