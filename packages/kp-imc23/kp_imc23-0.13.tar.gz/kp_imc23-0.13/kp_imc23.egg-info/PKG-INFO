@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: kp-imc23
+Version: 0.13
+Summary: Package for the Image Matching Challenge 2023
+Home-page: https://github.com/RaphaelHaddad/3D_reconstruction_Tsinghua_2023
+Download-URL: https://github.com/user/reponame/archive/v_01.tar.gz
+Author: Kevin Pruvost \ Raphael El Haddad \ Borislav Pavlov
+Author-email: pruvostkevin0@gmail.com
+License: MIT
+Keywords: CV,IMC
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
