@@ -1,0 +1,2 @@
+[console_scripts]
+mansav = manage_savestates.main:main
