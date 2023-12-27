@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pyvtl
+Version: 0.1
+Summary: A VTL Engine based on python
+Home-page: 
+Author: MeaningfulData
+Author-email: info@meaningfuldata.eu
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+A VTL Engine based on python
