@@ -1,0 +1,3 @@
+[console_scripts]
+qt3scan = qt3utils.applications.qt3scan.main:main
+qt3scope = qt3utils.applications.qt3scope.main:main
