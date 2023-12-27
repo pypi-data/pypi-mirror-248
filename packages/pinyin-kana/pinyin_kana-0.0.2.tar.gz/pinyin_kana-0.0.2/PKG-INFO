@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: pinyin_kana
+Version: 0.0.2
+Summary: The `chinese-pronounce-in-kana` library is designed to convert Chinese text into Japanese Katakana characters based on their pronunciation.
+Author-email: Ryan Cheng <m61216051116@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/RUI-LONG/Python-Pinyin-Kana
+Keywords: pinyin,pronounce,kana,voice
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Communications
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Chinese Pronounce in Kana
+
+## Overview
+
+The `chinese-pronounce-in-kana` library is designed to convert Chinese text into Japanese Katakana characters based on their pronunciation. This can be particularly useful when you want to transcribe Chinese words into a Japanese phonetic script, making it easier for Japanese speakers to understand and pronounce Chinese words.
+
+## Features
+
+- Converts Chinese text to Pinyin using the `pypinyin` library.
+- Replaces Chinese characters with their corresponding phonetic symbols.
+- Converts the phonetic symbols into Japanese Katakana characters.
+
+## Requirements
+
+Before using this library, make sure you have the following prerequisites installed:
+
+- Python
+- `pypinyin` library (You can install it using `pip install pypinyin`)
+
+## Usage
+
+Here's a simple example of how to use the `PronounceConverter` class to convert Chinese text to Katakana:
+
+```python
+from pinyin_kana import PronounceConverter
+
+converter = PronounceConverter()
+result = converter.convert("你好")
+print(" ".join(result))
+```
