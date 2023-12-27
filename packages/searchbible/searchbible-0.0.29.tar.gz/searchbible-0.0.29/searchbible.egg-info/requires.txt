@@ -1,0 +1,9 @@
+apsw
+argparse
+chromadb
+google-cloud-aiplatform
+openai==1.3.5
+prompt_toolkit
+pygments
+pyperclip
+sentence-transformers
