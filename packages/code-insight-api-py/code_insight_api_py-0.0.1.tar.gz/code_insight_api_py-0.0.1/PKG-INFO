@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: code-insight-api-py
+Version: 0.0.1
+Summary: A Python client for the Revenera Code Insight
+Home-page: https://github.com/zkarpinski/code-insight-api-py
+License: Apache-2.0
+Author: Zachary Karpinski
+Author-email: 1206496+zkarpinski@users.noreply.github.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: argparse (>=1.4.0,<2.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Project-URL: Repository, https://github.com/zkarpinski/code-insight-api-py
+Description-Content-Type: text/markdown
+
+# code-insight-api-py
+A Python client for the Revenera Code Insight
