@@ -1,0 +1,7 @@
+faiss_apis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+faiss_apis/faiss_pb2.py,sha256=XIklMnZvyrXqmYJME9fICo3_fvddAlH2RSy0O2BtZUs,4212
+faiss_apis/faiss_pb2_grpc.py,sha256=sCwZ8UT-ixDHTr786lwMpDTHN7_S_O3fD97hVwXprgg,11746
+faiss_server_client-1.0.0.dist-info/METADATA,sha256=YnB-W-5OxNcIUIs4O3iU-a5cR3Rmz66OdGTi15gbWfk,337
+faiss_server_client-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+faiss_server_client-1.0.0.dist-info/top_level.txt,sha256=nvFGIoaIMoewh3ekNLG74HePA1pa0TIwaB7zthXCiWg,11
+faiss_server_client-1.0.0.dist-info/RECORD,,
