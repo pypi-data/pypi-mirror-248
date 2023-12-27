@@ -1,0 +1,12 @@
+hnn_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hnn_utils/callbacks/__init__.py,sha256=H2Wgficw3cxbrMUM9dCf9Ljy1O5lEO7Fz0xr36TtzN8,48
+hnn_utils/callbacks/ema.py,sha256=DB5BOAC1tLskla9yvu8zykcwwby_Ct1aRUBo1Ez7Uvw,6438
+hnn_utils/nn/ALiBi.py,sha256=wHRxnw1n1PGI-UtlIyKTnS292x-pS-pJhRd3nKstBP8,1370
+hnn_utils/nn/RotaryEmbedding.py,sha256=Ff8m4s2hfsYw5Fy0DkkOL3lz3drVnsa0oIi8JhBS0D0,1655
+hnn_utils/nn/Transformer.py,sha256=NXSZ3Y_4Lmhu9ABJAQBBy1vfv7SxNYwqlcy3cHMTSXs,12717
+hnn_utils/nn/__init__.py,sha256=u6apZMJI6Ti8VJMCOzDrtntyBWgUykcdACO0Oxcirww,122
+hnn_utils/nn/functional.py,sha256=XUQVH7skjkJ7zbTPzvPFNQzCaaSKAHfNJG03UpfFhE0,1961
+hnn_utils-0.2.3.dist-info/LICENSE,sha256=N19dS6_e9dwq22ZbcAqvJFmHZwbxfAz2tvVzwi9gEWk,1068
+hnn_utils-0.2.3.dist-info/METADATA,sha256=IYxnEsyigfBNQZYkgjVi2tHuu8xBs99KPjDhl5cgxls,722
+hnn_utils-0.2.3.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+hnn_utils-0.2.3.dist-info/RECORD,,
