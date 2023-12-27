@@ -1,0 +1,11 @@
+keydnn/__init__.py,sha256=aj3_tVs_KltHP-Nh_q9jroKFZiGevalBpYq2F3Cyacc,151
+keydnn/activations.py,sha256=-0XIPipP6pHwbEN4adQJ6c-yI57XA9epvGdkA-X6Zjk,6201
+keydnn/layers.py,sha256=Juhv5q5kRU6O-VmC0yXBnBbb9p3T8TVSf6rqIL5ubac,8655
+keydnn/losses.py,sha256=6eNwTFgquEF1VkUoDJPCGzu20RJwblOGr0_NrbRheGk,4482
+keydnn/models.py,sha256=5jz0b5RveAiIZRyIv24IwtV2xWKW21rXLqbUPxC25hA,9080
+keydnn/utilities.py,sha256=A2lLerdp88fnEUms432oSMGyqyNytQHWj73Pdz8GPEI,6356
+KeyDnn-0.1.0.dist-info/LICENSE,sha256=3J8S_r84oySZ9mlKcH7D2TIfUlw2bdGL4LGFwxrZ6Jo,1066
+KeyDnn-0.1.0.dist-info/METADATA,sha256=OiHz1K5UOap3Ep1z2MfWjRP1MbBCRFwl9PwwfT-d7DM,626
+KeyDnn-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+KeyDnn-0.1.0.dist-info/top_level.txt,sha256=Ac15T5oDZKCZdmBt40A4PQRe13_ZKaeNPX1lwKzBCzQ,7
+KeyDnn-0.1.0.dist-info/RECORD,,
