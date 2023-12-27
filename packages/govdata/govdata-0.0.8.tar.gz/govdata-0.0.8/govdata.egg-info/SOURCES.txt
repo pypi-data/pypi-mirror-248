@@ -1,0 +1,10 @@
+README.md
+example.py
+govdata.py
+setup.py
+govdata.egg-info/PKG-INFO
+govdata.egg-info/SOURCES.txt
+govdata.egg-info/dependency_links.txt
+govdata.egg-info/requires.txt
+govdata.egg-info/top_level.txt
+tests/test_govdata.py
