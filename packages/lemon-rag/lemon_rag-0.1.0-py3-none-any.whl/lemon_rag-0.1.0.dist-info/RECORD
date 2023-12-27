@@ -1,0 +1,17 @@
+lemon_rag/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lemon_rag/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lemon_rag/api/auth.py,sha256=PqAjb6iaIktKFkEPZXkGw4QBP4c6E7ifEcX-WiNnWq4,264
+lemon_rag/configs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lemon_rag/configs/local_dev_config.json,sha256=sSBL3Ae3BZiHESNA-PCG5iGgdmP9w09XN4xtNX2s9ds,236
+lemon_rag/configs/local_dev_config.py,sha256=BnyT1bsZOAgWLKc3iNHpErleW_MUXd7Um8ljLOOxK6g,487
+lemon_rag/lemon_models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lemon_rag/lemon_models/models.py,sha256=HlwZJia81OYA1whEB5BTTHWa6GHITNgy_zej4b7iwH4,8571
+lemon_rag/lemon_models/models_patch.py,sha256=Q-n677bLc2mcp6T-9EnQk7YaHdvScqWTixSr1aXm3mo,384
+lemon_rag/lemon_models/models_template.py,sha256=st13zSYZIkCCPDCpWEz77js_9LkWCZfLROJdLFleGcU,1344
+lemon_rag/settings.py,sha256=OZJYCojMsV2U_ch08jVZLU69w-5KA2GE9lk0l8x4nTE,31
+lemon_rag/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lemon_rag/tools/sync_datamodel.py,sha256=KUQ-DPochXEvdHXgiKknXphut1CfTsyBIeLT8vyhtgE,8414
+lemon_rag/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lemon_rag-0.1.0.dist-info/METADATA,sha256=EEDdrfyFr4rUwZxtXoDbySQbztbeD0NQ1ZRhMJ6xmsU,577
+lemon_rag-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+lemon_rag-0.1.0.dist-info/RECORD,,

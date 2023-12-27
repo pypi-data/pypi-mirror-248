@@ -1,0 +1,1 @@
+LEMON_MODULE_NAME = "AI助手"
