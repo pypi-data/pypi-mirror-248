@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+src/settl/__init__.py
+src/settl/train.py
+src/settl.egg-info/PKG-INFO
+src/settl.egg-info/SOURCES.txt
+src/settl.egg-info/dependency_links.txt
+src/settl.egg-info/requires.txt
+src/settl.egg-info/top_level.txt
+src/settl/utils/__init__.py
+src/settl/utils/config.py
+src/settl/utils/criterion.py
+src/settl/utils/dataloader.py
+src/settl/utils/optimizer.py
+src/settl/utils/scheduler.py
