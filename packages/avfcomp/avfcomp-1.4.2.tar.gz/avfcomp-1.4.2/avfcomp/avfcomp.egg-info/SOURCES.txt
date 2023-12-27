@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+avfcomp/avfcomp.egg-info/PKG-INFO
+avfcomp/avfcomp.egg-info/SOURCES.txt
+avfcomp/avfcomp.egg-info/dependency_links.txt
+avfcomp/avfcomp.egg-info/top_level.txt
+tests/test.py
