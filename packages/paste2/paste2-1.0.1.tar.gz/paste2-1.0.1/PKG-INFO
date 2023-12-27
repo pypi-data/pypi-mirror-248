@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: paste2
+Version: 1.0.1
+Summary: Probabilistic Alignment of Spatial Transcriptomics Experiments v.2
+Project-URL: Homepage, https://github.com/raphael-group/paste2
+Project-URL: Issues, https://github.com/raphael-group/paste2/issues
+Author-email: Xinhao Liu <xl5434@princeton.edu>
+Maintainer-email: Xinhao Liu <xl5434@princeton.edu>
+License: BSD 3-Clause License
+        
+        Copyright (c) 2023, Princeton University
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this
+           list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice,
+           this list of conditions and the following disclaimer in the documentation
+           and/or other materials provided with the distribution.
+        
+        3. Neither the name of the copyright holder nor the names of its
+           contributors may be used to endorse or promote products derived from
+           this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+License-File: LICENSE
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: anndata>=0.7.6
+Requires-Dist: networkx
+Requires-Dist: numpy
+Requires-Dist: pot>=0.9.1
+Requires-Dist: scanpy>=1.7.2
+Requires-Dist: scipy
+Requires-Dist: statsmodels
+Description-Content-Type: text/markdown
+
+# PASTE2
+
+
+PASTE2, the extension of PASTE, is a method for partial alignment and 3D reconstruction of spatial transcriptomics slices when they do not fully overlap in space. 
+
+There are three main functions:
+1. `src/paste2/PASTE2/partial_pairwise_align`: Given a pair of ST slices and their overlap percentage, find a partial alignment matrix. Note: In a multi-sample dataset, partial_pairwise_align should be called on each pair of adjacent slices separately.
+2. `src/paste2/model_selection/select_overlap_fraction`: Decide the overlap percentage (s parameter of partial_pairwise_align) between two input ST slices. Note: In a multi-sample dataset, each pair of adjacent slices could have a different overlap percentage, hence each pair of adjacent slices might have a different estimate of s to pass to partial_pairwise_align.
+3. `src/paste2/projection/partial_stack_slices_pairwise`: Given a sequence of consecutive ST slices and the partial alignments between them, project all slices onto the same 2D coordinate system. 3D reconstruction can be done by assiging a z-value to each slice.
+
+Additionally, `src/paste2/PASTE2/partial_pairwise_align_histology` uses both gene expression and histological image information for computing the partial alignment matrix.
+
+
+
+## Installation
+PASTE2 is available on PyPI at https://pypi.org/project/paste2/. To install PASTE2, run `pip install paste2`. 
+
+## Quick Start
+We included a tutorial in this repo (`tutorial.ipynb`). The tutorial should cover the basics you need to run PASTE2 on your own dataset. Additionally, the documentation of each function is in the source code.
+
+## Contact
+If you encounter any problem running the software, please contact Xinhao Liu at xl5434@princeton.edu
+
+## Reference
+Liu, X., Zeira, R., & Raphael, B. J. (2023). Partial alignment of multislice spatially resolved transcriptomics data. Genome Research, 33(7), 1124-1132.
