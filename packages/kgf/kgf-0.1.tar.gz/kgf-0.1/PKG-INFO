@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: kgf
+Version: 0.1
+Summary: KGF feature engineering package
+Home-page: https://github.com/nareshkhuriwal/kgf
+Author: Naresh khuriwal
+Author-email: naresh.khuriwal89@gmail.com
+Requires-Dist: pyspark
+Requires-Dist: pandas
