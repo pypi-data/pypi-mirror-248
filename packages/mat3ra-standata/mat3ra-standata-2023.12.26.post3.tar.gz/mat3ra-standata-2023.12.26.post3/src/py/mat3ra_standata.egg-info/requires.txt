@@ -1,0 +1,16 @@
+pyyaml
+pandas
+typer
+
+[dev]
+pre-commit
+black
+ruff
+isort
+mypy
+pip-tools
+
+[tests]
+pytest
+pytest-cov
+pytest-mock
