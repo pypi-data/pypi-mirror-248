@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: fintda
+Version: 2023.12.1
+Summary: An example package. Generated with cookiecutter-pylibrary.
+Home-page: https://github.com/ibaris/finance-tda
+Author: Ismail Baris
+Author-email: i.baris@outlook.de
+Project-URL: Documentation, https://finance-tda.readthedocs.io/
+Project-URL: Changelog, https://finance-tda.readthedocs.io/en/latest/changelog.html
+Project-URL: Issue Tracker, https://github.com/ibaris/finance-tda/issues
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+License-File: LICENSE
