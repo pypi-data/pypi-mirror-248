@@ -1,0 +1,14 @@
+pillow_jxl/JpegXLImagePlugin.py,sha256=JWRaTyhm-ho-Kf4fbRRYmsdd3C0B9pqz21B3j_OljR0,2612
+pillow_jxl/pillow_jxl.cp39-win_amd64.pyd,sha256=XgBGWro5lehE2AoktILelS8jOrtbdv7i1VmV0NkNDLk,13140020
+pillow_jxl/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pillow_jxl/__init__.py,sha256=SSrmzWkDBQoHlIFuePxrUTjfBW171qYZ8kHKWDcXta0,1572
+pillow_jxl/__init__.pyi,sha256=KZFpxoCOHSEYQeTGuIldHmjBLJu5m7DBpf01hg1jT_g,980
+pillow_jxl_plugin-1.0.2.dist-info/DELVEWHEEL,sha256=YZtMMBwhN2AUKhCALfARLxJNsNgv8MHrGo4PppUKsrA,236
+pillow_jxl_plugin-1.0.2.dist-info/METADATA,sha256=JOrGm-JfOA2ojzSgwRNkcyI0G80HwydYlrqpp3SAm1M,2110
+pillow_jxl_plugin-1.0.2.dist-info/RECORD,,
+pillow_jxl_plugin-1.0.2.dist-info/WHEEL,sha256=aUq0YpgMqG5VWoJyiSBR74qbEJt2FULFr1Rdxybsy1A,94
+pillow_jxl_plugin-1.0.2.dist-info/license_files/LICENSE,sha256=-b6lqv56jG2habvrvIyjTpM829ACtnr4sJVWMcsdQrU,1086
+pillow_jxl_plugin.libs/.load-order-pillow_jxl_plugin-1.0.2,sha256=OPBRENEPyVLGrb9vw7DnHVrx_FQTcvK8avPMycM-dKU,154
+pillow_jxl_plugin.libs/libgcc_s_seh-1-bc6eef52a43dfa859fcd9f1160cae5b0.dll,sha256=_9n2h1e8m__nqFh86KB9EyuyfGMI8A7rtNV1qCFZm_w,117427
+pillow_jxl_plugin.libs/libstdc++-6-bd5c9709d13ee7e4e7ac600c3bec7557.dll,sha256=keXnKn9SXibnL2EI3lmi9DHy2aCxAiZ25SswFqkvnNc,2266606
+pillow_jxl_plugin.libs/libwinpthread-1-5b15089ec40995d14d422d61469f4f40.dll,sha256=P7Zi-65FZ909gj55neWlqF1wL57-MnPC9X-LfxUSxWQ,60759
