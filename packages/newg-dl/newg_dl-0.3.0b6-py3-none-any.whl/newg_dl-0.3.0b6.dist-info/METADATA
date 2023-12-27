@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: newg_dl
+Version: 0.3.0b6
+Summary: A Python library for downloading music from Newgrounds.
+License: MIT
+Author: Connor
+Author-email: contact@coneriys.one
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiohttp
+Requires-Dist: asyncio
+Requires-Dist: beautifulsoup4
+Requires-Dist: requests
+Description-Content-Type: text/markdown
+
+# Newgrounds Download
+
+A Python library for downloading music from Newgrounds.
+
+# Example Usage
+
+Download:
+```py
+from newg-dl import ngdl
+
+song_id = 1154735
+audio_url = ngdl.download_music(song_id)
+```
+
+Get Data:
+```py
+from newg-dl import ngdl
+
+song_id = 1154735
+audio_url = ngdl.get_data(song_id)
+```
+
