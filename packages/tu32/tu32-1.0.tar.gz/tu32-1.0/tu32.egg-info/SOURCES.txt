@@ -1,0 +1,8 @@
+MANIFEST.in
+setup.cfg
+setup.py
+tu32/__init__.py
+tu32.egg-info/PKG-INFO
+tu32.egg-info/SOURCES.txt
+tu32.egg-info/dependency_links.txt
+tu32.egg-info/top_level.txt
