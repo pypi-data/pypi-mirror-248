@@ -1,0 +1,13 @@
+trader/__init__.py,sha256=vX-RFm3QNOurKQ6Z92V1fSSkYGFHESlgtS49X0evHhY,112
+trader/calculate.py,sha256=V5pc6zMQTo6Yk9WPhJT0CKkd69qiWH2sxTnT48IQ2oc,179
+trader/price.py,sha256=mKnKBu_zrht1O0IWJeRkG_e5FqPhL0aUUrkwPZ5ayJ8,903
+trader/trade.py,sha256=iuwlkovIsY1mnIIk_QZ9r8IUcctmwhigfQ2INTL8fwY,2953
+trader/utils.py,sha256=yDIaqNUBF-MP2AALP4-tak4ODA2ufCSTxwcsZymzNGg,1314
+type/__init__.py,sha256=t_73xrKDc8JdeE8yPWmlVM-xeaSjYx2u0L3JxbnSOf0,74
+type/arbitrage.py,sha256=uczoqleJ23bbWTajRkN6Sm-ItSYaDLpVjYkeq1sIMfQ,1949
+type/deal.py,sha256=7dd4XvZaOaUcvL4N5rCNLeTdSMiEYFIMcfXIBI3DBG8,1246
+type/order.py,sha256=Jyxfs_6EnfUZ_HQiaDVQudJ2-vcN6JGOxbkeNsBodjg,3254
+CryptoMathTrade-0.2.dist-info/METADATA,sha256=XFiIxEMB3OwroMmjdd3mhryuebMraGUoBMxwGCQvMzg,156
+CryptoMathTrade-0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+CryptoMathTrade-0.2.dist-info/top_level.txt,sha256=12yMD_QYaZj0xDDuqOwJ1Ws9A-6vKS4rRT5QEhc4Ato,12
+CryptoMathTrade-0.2.dist-info/RECORD,,
