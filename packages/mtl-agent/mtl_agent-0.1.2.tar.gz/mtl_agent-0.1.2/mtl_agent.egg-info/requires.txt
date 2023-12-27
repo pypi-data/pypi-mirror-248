@@ -1,0 +1,6 @@
+ass_tag_parser
+ass
+pyppeteer
+ffmpeg-python
+pillow
+requests

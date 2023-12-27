@@ -1,0 +1,3 @@
+[console_scripts]
+mtl_agent = mtl_agent.__main__:main
+mtl_pipeline = mtl_agent.pipeline:main
