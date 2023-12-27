@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: hoisaai
+Version: 0.0.0
+Summary: An open source artificial general intelligence
+Author: Mike Mo Shun Cheng
+Author-email: mike@hoisaai.com
+License: AGPL3
+Requires-Python: >=3.11

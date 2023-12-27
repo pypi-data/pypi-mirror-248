@@ -1,0 +1,5 @@
+setup.py
+hoisaai.egg-info/PKG-INFO
+hoisaai.egg-info/SOURCES.txt
+hoisaai.egg-info/dependency_links.txt
+hoisaai.egg-info/top_level.txt
