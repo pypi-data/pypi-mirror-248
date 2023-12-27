@@ -1,0 +1,10 @@
+README.md
+setup.py
+Python3.1.1.egg-info/PKG-INFO
+Python3.1.1.egg-info/SOURCES.txt
+Python3.1.1.egg-info/dependency_links.txt
+Python3.1.1.egg-info/entry_points.txt
+Python3.1.1.egg-info/requires.txt
+Python3.1.1.egg-info/top_level.txt
+nsxel/__init__.py
+nsxel/hello.py
