@@ -1,0 +1,3 @@
+recursive-include src/plotly01/frontend *
+include README.md
+include LICENSE

@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/plotly01/__init__.py
+src/plotly01.egg-info/PKG-INFO
+src/plotly01.egg-info/SOURCES.txt
+src/plotly01.egg-info/dependency_links.txt
+src/plotly01.egg-info/requires.txt
+src/plotly01.egg-info/top_level.txt
+src/plotly01/frontend/index.html
+src/plotly01/frontend/main.js
+src/plotly01/frontend/plotly-2.14.0.min.js
+src/plotly01/frontend/streamlit-component-lib.js
