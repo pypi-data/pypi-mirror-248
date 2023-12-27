@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: github-action-publish
+Version: 0.0.3
+Summary: Test of a GitHub Actions workflow that publish a package on PyPI.
+Author: Alexis Bergue
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# github-action-publish
