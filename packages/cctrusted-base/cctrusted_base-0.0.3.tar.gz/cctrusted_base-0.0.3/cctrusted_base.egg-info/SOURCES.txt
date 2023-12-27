@@ -1,0 +1,13 @@
+pyproject.toml
+cctrusted_base/__init__.py
+cctrusted_base/api.py
+cctrusted_base/binaryblob.py
+cctrusted_base/ccel.py
+cctrusted_base/eventlog.py
+cctrusted_base/imr.py
+cctrusted_base/quote.py
+cctrusted_base/tcg.py
+cctrusted_base.egg-info/PKG-INFO
+cctrusted_base.egg-info/SOURCES.txt
+cctrusted_base.egg-info/dependency_links.txt
+cctrusted_base.egg-info/top_level.txt
