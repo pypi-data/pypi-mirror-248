@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+monobank_api_client/__init__.py
+monobank_api_client/config.py
+monobank_api_client/managers.py
+monobank_api_client.egg-info/PKG-INFO
+monobank_api_client.egg-info/SOURCES.txt
+monobank_api_client.egg-info/dependency_links.txt
+monobank_api_client.egg-info/requires.txt
+monobank_api_client.egg-info/top_level.txt
