@@ -1,0 +1,7 @@
+sellpath_test/__init__.py,sha256=7KPyEPovHoE-IaGaMEqIY8xDdTEst0sGZvdjzFJZmTg,160
+sellpath_test/client_mgr.py,sha256=6d3YrcLlo72cQrsP0BatfRu4bFfUh2vRGUM3hG53Y0I,6038
+sellpath_test/http_client.py,sha256=6jH5vb7-Aro11h3HkAqQ4xpHcd1Tki-69lXVmW7MoK8,4289
+sellpath_test-0.0.16.dist-info/METADATA,sha256=f0kSFW1G22FmA8elCsuR5Qqiq_u0paB4OxBOOqbIHgc,390
+sellpath_test-0.0.16.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+sellpath_test-0.0.16.dist-info/top_level.txt,sha256=ybvdNA2xp4WqLxKoq-uihxW8TFdPgikUwELLGXViF4Q,14
+sellpath_test-0.0.16.dist-info/RECORD,,
