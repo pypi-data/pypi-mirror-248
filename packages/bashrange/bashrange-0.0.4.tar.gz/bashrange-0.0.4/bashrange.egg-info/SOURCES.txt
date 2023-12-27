@@ -1,0 +1,9 @@
+LICENSE
+setup.py
+bashrange/__init__.py
+bashrange/__main__.py
+bashrange/test.py
+bashrange.egg-info/PKG-INFO
+bashrange.egg-info/SOURCES.txt
+bashrange.egg-info/dependency_links.txt
+bashrange.egg-info/top_level.txt
