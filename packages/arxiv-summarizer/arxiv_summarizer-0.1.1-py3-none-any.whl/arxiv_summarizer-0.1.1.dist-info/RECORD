@@ -1,0 +1,12 @@
+arxiv_summarizer/__init__.py,sha256=4EGbgyOnzjXgi5UjodFMq1JHj-Kbp2qTNuJiPx8l9u4,123
+arxiv_summarizer/__main__.py,sha256=X0edRBKhG7bp-d3n9gB8ZB6cLkPlklL6gtUoGzA65Q4,1841
+arxiv_summarizer/arxiv_wrapper.py,sha256=5CUy-briZekCviQ-UWvQCJfkearCHv_MrGScDTmq5tM,9194
+arxiv_summarizer/fetch_paper.py,sha256=7wwiUhfX2YSeF7t5krCfYbEprkqPoUUuVv4dnBre3xo,4192
+arxiv_summarizer/summarizer.py,sha256=CEpuHiVCfRfLAms2fa9_4ceP9LXeLgFmNkD6_dTlKtY,7688
+arxiv_summarizer/utils.py,sha256=pAGQk5480h67u-rSugORFMXfZHRvizfdhPstisZOYTg,3296
+arxiv_summarizer-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+arxiv_summarizer-0.1.1.dist-info/METADATA,sha256=0XzLsnVPVPxZcA2VA5jkxHLzwJlz4Ej5WCnlzIoXdWI,12156
+arxiv_summarizer-0.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+arxiv_summarizer-0.1.1.dist-info/entry_points.txt,sha256=MK7X3D3JkeAAveW-fKZJXLb1WCWy32ZOnvntjfUB4Ls,67
+arxiv_summarizer-0.1.1.dist-info/top_level.txt,sha256=L2nyT0psKikbCilw5qLMz6nwxsYyQYuD0pt9F2DEkAY,26
+arxiv_summarizer-0.1.1.dist-info/RECORD,,

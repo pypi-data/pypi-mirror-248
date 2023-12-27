@@ -1,0 +1,2 @@
+[console_scripts]
+arxiv_summarizer = arxiv_summarizer.__main__:cli
