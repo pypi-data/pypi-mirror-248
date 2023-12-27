@@ -1,0 +1,8 @@
+comics/__init__.py,sha256=KqiXzbKmRjeW3LZagxBy0hIjLM7CPLDbgpCnlg8rD5A,190
+comics/constants.py,sha256=sNrvCedQuMQNuJlgYjBBHFVUAnlseOU-5EMaIA4Shi4,3444
+comics/exceptions.py,sha256=E6tlp1rkQT8I0InoEfXu5PHfI84Mieq7XqE1HDi60lg,225
+comics/gocomics.py,sha256=kvDiKHqiNh-wJe0SkqC8PVTJEkZl0bOuWPQ2eHTrRX8,6624
+comics-0.3.0.dist-info/LICENSE,sha256=vDYEH9c1w_dtIm1_hoa5G9YH4nnaR0F4eqEIeNkNNAI,1068
+comics-0.3.0.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+comics-0.3.0.dist-info/METADATA,sha256=3vDH2iFEhuIE4oitsawmgZcYIxv6eipidX-uw-jMiOA,5012
+comics-0.3.0.dist-info/RECORD,,
