@@ -1,0 +1,10 @@
+uniswapx_sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uniswapx_sdk/constants.py,sha256=STvTFbZOOh03JnxjMiBPcSi4y75hgmuy4Xxfe6xIxRI,3644
+uniswapx_sdk/decoder.py,sha256=1gV5par8NV4qTWr2Mmc55NzuTi6kaoSGt4eU3rO51e4,909
+uniswapx_sdk/exceptions.py,sha256=ibG-rTNWlbJbO5kg0bxZDSWYngXox3-EwDrxrku7qEE,2644
+uniswapx_sdk/resolver.py,sha256=ooqb_itsoJS_30XZEri5wziDvO9YrreoACrvTd5XNw0,3159
+uniswapx_sdk-0.0.1.dist-info/LICENSE,sha256=ghaRUI8kzq-GlVUGbQySxrGrMJEm4I9QslgAX0-3t7o,1064
+uniswapx_sdk-0.0.1.dist-info/METADATA,sha256=ratHNyRfnc4p0SwJc7r1JJjRqCKItv_op4PltFuHSDg,1467
+uniswapx_sdk-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+uniswapx_sdk-0.0.1.dist-info/top_level.txt,sha256=ny4enMSIR8OP2YdXgnpkoKMQVt0Ihbuk4TUrg_6nNdg,13
+uniswapx_sdk-0.0.1.dist-info/RECORD,,
