@@ -1,0 +1,9 @@
+app/Migration.py,sha256=vNy1xJDvuE7hLqac33KR0QXmqM2fizxiGH0kubkAUfc,8024
+app/Model.py,sha256=AoF2leFPDrcmgI6EJTJcrqWKLBEqxPwOglf6hbHZTTg,9878
+app/Querier.py,sha256=dkc19Fr1R-m9D1pcitTGE7uNMsb8UhLuTs9ExHKq5ws,11049
+app/__init__.py,sha256=sIHqoKvhpoJegTunkEsSC9x8sDyi3j11NG5jol-MnD8,85
+OrmKassDoug-0.1.0.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+OrmKassDoug-0.1.0.dist-info/METADATA,sha256=Az6QzeiZAuYWg-l6FHQ_oPTrbCzY59s3YbElet3BLng,851
+OrmKassDoug-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+OrmKassDoug-0.1.0.dist-info/top_level.txt,sha256=io9g7LCbfmTG1SFKgEOGXmCFB9uMP2H5lerm0HiHWQE,4
+OrmKassDoug-0.1.0.dist-info/RECORD,,
