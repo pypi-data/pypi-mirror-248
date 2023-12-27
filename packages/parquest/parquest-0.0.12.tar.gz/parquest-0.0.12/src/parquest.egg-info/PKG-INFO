@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: parquest
+Version: 0.0.12
+Summary: A command line application that helps converting raw data into highly-structured data in Parquet.
+Author-email: Zaid Waqi <zaidwaqi@gmail.com>
+License: GPLv3
+Project-URL: Homepage, https://github.com/zaidwaqi/parquest
+Project-URL: Issues, https://github.com/pypa/zaidwaqi/heyyou/parquest
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Parquest
+
+Parquest is a project that aims to structure raw data into a structured format based on the Parquet file format. The name "Parquest" is a portmanteau of "Parquet" and "quest," symbolizing the journey of transforming raw data into a structured format.
+
+## Introduction
+
+In today's data-driven world, dealing with large volumes of raw data can be challenging. The Parquest project provides a solution by leveraging the power of the Parquet file format to structure and organize raw data efficiently.
+
+## Features
+
+- **Data Structuring**: Parquest enables you to convert raw data into a structured format based on the Parquet file format.
+- **Efficient Storage**: The Parquet file format is designed for efficient storage and retrieval of structured data, making it ideal for big data applications.
+- **Columnar Storage**: Parquest stores data in a columnar format, which allows for faster query performance and better compression ratios.
+- **Schema Evolution**: Parquest supports schema evolution, allowing you to easily modify the structure of your data over time without breaking compatibility.
