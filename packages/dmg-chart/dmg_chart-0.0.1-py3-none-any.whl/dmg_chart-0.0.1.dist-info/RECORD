@@ -1,0 +1,15 @@
+my_component/__init__.py,sha256=uE1nzNGrEQeVc9-jSB2FE4USl26O_JL-9pxKpHm5cBU,649
+my_component/example.py,sha256=YD75jaI2k9i_AmnzHWUm6yBiGAb3bqGZY-_pUQoODIc,1278
+my_component/frontend/build/asset-manifest.json,sha256=OE7ZorMXI0raifUGkFeZo8zV4mbcm5RKd_dOZmFghms,374
+my_component/frontend/build/bootstrap.min.css,sha256=X9ITP3t3djkRs4SffIkA1Q2WMy-oYl6au5HFYTVShe0,206960
+my_component/frontend/build/index.html,sha256=OPNWvSevUNzcJ-Zvt_03Ny9iY6QLHI1IAfF2_c47yDY,553
+my_component/frontend/build/static/css/main.4156063d.css,sha256=6oICovMUY_s6hiUBjzXRwl8WS4k2Sedac2Rix6SM5qc,1136
+my_component/frontend/build/static/css/main.4156063d.css.map,sha256=I2gozCfI6MiaiBFbtp8OFcgzDe2JEQRhfItT7SK3V18,2363
+my_component/frontend/build/static/js/main.9265dd22.js,sha256=dy6DKwRHgWbqcSUa0dpWtMxquX3LYAN_6c8boP6CqrY,379836
+my_component/frontend/build/static/js/main.9265dd22.js.LICENSE.txt,sha256=NVg_xX7uJeMONytZUcILJQX3fKCxxwdigyGjBfS0PCU,1540
+my_component/frontend/build/static/js/main.9265dd22.js.map,sha256=6kuBjAD467cic8PKdwwH6eX11hMb6kN07enoDP_XNyw,1511930
+dmg_chart-0.0.1.dist-info/LICENSE,sha256=SHkHX-qiNZt-ACArrZP67jppVYPvF8xuUDRjJw_E3L0,1082
+dmg_chart-0.0.1.dist-info/METADATA,sha256=5IHdw3NISyHJdD3qRwDkNZke5Ci3KsYSfCTwFOHw7Ao,542
+dmg_chart-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+dmg_chart-0.0.1.dist-info/top_level.txt,sha256=esO6Xp9oWXMveNn3mP2NWiVjBJuyWBiFmsjjHhKY5LE,13
+dmg_chart-0.0.1.dist-info/RECORD,,
