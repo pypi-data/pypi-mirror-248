@@ -1,0 +1,2 @@
+include RemoteHotKey/WebUI/templates/*.html
+include RemoteHotKey/helper/*.html

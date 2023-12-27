@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>controlpad</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <style>
+        body {
+            background-color: #ffffff;
+        }
+
+        table {
+<!--            height: 100%;-->
+<!--            width: 100%;-->
+            text-align: center;
+        }
+
+        button {
+            backgroundColor: '#d0e4fe';
+            height: 100%;
+            width: 100%;
+            padding: 0;
+            border: none;
+        }
+
+        td {
+            backgroundColor: '#';
+        }
+
+        th {
+            text-align: center;
+        }
+
+        table, th, td {
+            border: 0.25vh solid black;
+            border-collapse: collapse;
+        }
+
+        span {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 80px;
+            color: black;
+        }
+
+        .slider {
+              width: 90%;
+              height: 90px;
+              background: #d3d3d3;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+<table border="0" id="mainTable">
+</table>
+
+<script>
+
+    new Promise(resolve => setTimeout(resolve, 100)).then(() => publish("requestUiUpdate", {}));
+
+    function publish(name, data) {
+      data.time = Date.now();
+        fetch('/uiUpdate', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({name: name, data: data})
+        })
+        .then(response => response.json())
+        .then(response => update(JSON.stringify(response)))
+    }
+
+    function createCell(cellData) {
+        cell = document.createElement('td');
+        cell.rowSpan = cellData.rowspan;
+        cell.colSpan = cellData.colspan;
+        cell.style.display = "";
+
+        if ((cellData.type == "button") || (cellData.type == "cellui")) {
+            button = document.createElement('button');
+            button.onclick = function() { publish("event", {type: "button", identifier: cellData.identifier}); };
+            button.innerHTML = "<span>".concat(cellData.label).concat("</span>");
+            button.style.backgroundColor = cellData.backgroundColor;
+            cell.appendChild(button);
+
+        } else if (cellData.type == "slider") {
+            slide = document.createElement('div');
+            input = document.createElement('input');
+            input.type = "range";
+            input.className = "slider";
+
+            input.min = cellData.min;
+            input.max = cellData.max;
+            input.value = cellData.value;
+            input.onchange = function() { publish("event", {type: "slider", identifier: cellData.identifier, value: this.value}); };
+
+            slide.innerHTML = "<span>".concat(cellData.label, ": ", input.value, "</span>");
+
+            slide.appendChild(input);
+
+            cell.appendChild(slide);
+        }
+
+        return cell;
+    }
+
+    function getRowFromTable(table, index) {
+        rows = table.childNodes;
+        if (rows.length > index) {
+            return rows[index];
+        } else {
+            newTr = document.createElement('tr');
+            newTr.style.display = "";
+            table.appendChild(newTr);
+            return getRowFromTable(table, index);
+        }
+    }
+
+    function getCellFromRow(row, index) {
+        cells = row.childNodes;
+        if (cells.length > index) {
+            return cells[index];
+        } else {
+            newTd = document.createElement('td');
+            newTd.style.display = "none";
+            row.appendChild(newTd);
+            return getCellFromRow(row, index);
+        }
+    }
+
+    function addCellToTable(cell, table, row, col) {
+        c = getCellFromRow(getRowFromTable(table, row), col);
+        c.parentNode.replaceChild(cell, c);
+    }
+
+    function createTable(table, cellDatas) {
+
+        while (table.firstChild) {
+            table.removeChild(table.firstChild);
+        }
+        for (var i = 0; i < cellDatas.ui.length; i++) {
+            cellData = cellDatas.ui[i];
+            if (!((cellData.data.rowspan < 0) || (cellData.data.colspan < 0))) {
+                addCellToTable(createCell(cellData.data), table, cellData.row, cellData.col);
+            }
+        }
+
+        MaxRows = cellDatas.viewSize.rows;
+        MaxCols = cellDatas.viewSize.cols;
+        console.log(MaxRows, MaxCols)
+        console.log($(window).height() / MaxRows * 0.95, $(window).width() / MaxCols * 0.9)
+
+        $("table").height(99 * cellDatas.pageSize.rows / cellDatas.viewSize.rows + '%');
+        $("table").width(99 * cellDatas.pageSize.cols / cellDatas.viewSize.cols + '%');
+
+        $("td").height($(window).height() / MaxRows * 0.95);
+        $("td").width($(window).width() / MaxCols * 0.9);
+
+        return table;
+    }
+
+    function update(jsonDoc) {
+        const jsonObj = JSON.parse(jsonDoc);
+        console.log(jsonObj);
+        createTable(document.getElementById("mainTable"), jsonObj)
+    }
+
+
+
+</script>
+</body>
+</html>
