@@ -1,0 +1,7 @@
+README.md
+setup.py
+minixform.egg-info/PKG-INFO
+minixform.egg-info/SOURCES.txt
+minixform.egg-info/dependency_links.txt
+minixform.egg-info/requires.txt
+minixform.egg-info/top_level.txt
