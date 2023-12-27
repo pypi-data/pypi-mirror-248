@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: chipi-chipi
+Version: 1.0.2
+Summary: Small project made for fun :3
+Home-page: https://github.com/TorpedusMaximus/chipi-chipi
+Author: TorpedusMaximus
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: cursor ==1.3.5
+Requires-Dist: fpstimer ==0.0.1
+Requires-Dist: pydub ==0.25.1
+Requires-Dist: terminal-video-player-py ==1.0.1
+Requires-Dist: rich ==13.7.0
+Requires-Dist: pygobject ==3.46.0
+
+# CHIPI CHIPI 
+Small fun project.
+
+# Install 
+```bash
+pip install chipi-chipi
+```
+
+# Run
+```bash
+chipi-chipi
+```
+
+# Acknowledgement
+Package is based on digitPixelz's [terminal-video-player-py](https://pypi.org/project/terminal-video-player-py/). Thank your for your work!
