@@ -1,0 +1,3 @@
+[console_scripts]
+newgrounds_dl=newgrounds_dl:main
+
