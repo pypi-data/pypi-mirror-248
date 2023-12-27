@@ -1,0 +1,13 @@
+AspireTUI/ColorAndText.py,sha256=RkDZ0llQD2zcYhezO7Eq_NzEQsad0XCfcyxnVhGBZsc,2888
+AspireTUI/MESSAGE.py,sha256=0ogv6qJsFBmmoCjL_uQ06ZL5gRyleoVNE9ybUrlEt48,3868
+AspireTUI/StringUtils.py,sha256=66J70HWOMLwDu0VEuLcbA4yBhqE3qZcdMcsYYtBbOaI,3060
+AspireTUI/_PrintUtils.py,sha256=EaqETtjoXT74l5oXEtd6EONBRVJKF16djsXL9UhAUsY,17581
+AspireTUI/__init__.py,sha256=RLvgZmDUhxz7oI3ZxPgkuJC6xOJX-DXsSnhHG7CJlhM,2366
+AspireTUI/_internal.py,sha256=fPPXMih0SY_2WHfg67Xasco9UY2WRf2HcNczsKHGzN8,5811
+AspireTUI/_theme.py,sha256=2firp5OMk_dpCgKQ03EW2pPXgJzEpi6hH9pZy8AblT4,7493
+AspireTUI/tui.py,sha256=GxYdNe9o0R_ni20cTjAqOT1GbIUOJukWiAqCPpEwpQw,6898
+AspireTUI-0.0.8.dist-info/LICENSE.txt,sha256=TeL4qbQ7kOsNUmhKyT78FA2-5WOomQ0QsMBZrrQuep0,1090
+AspireTUI-0.0.8.dist-info/METADATA,sha256=CuzzA-I5SrkTgMl7WtyNc92T1h-dkTNpQH-BvWa4l6Y,2216
+AspireTUI-0.0.8.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+AspireTUI-0.0.8.dist-info/top_level.txt,sha256=Su6m9IGQUdoC41sBJZjoZ3hIPINdeuADfz8DSIg8IyA,10
+AspireTUI-0.0.8.dist-info/RECORD,,
