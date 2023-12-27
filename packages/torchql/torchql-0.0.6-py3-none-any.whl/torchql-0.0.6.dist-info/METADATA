@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: torchql
+Version: 0.0.6
+Summary: A package for programming integrity constraints for machine learning applications.
+Project-URL: Homepage, https://github.com/TorchQL/torchql
+Project-URL: Issues, https://github.com/TorchQL/torchql/issues
+Requires-Python: >=3.8
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: torchaudio
+Requires-Dist: deprecation
+Requires-Dist: tqdm
+

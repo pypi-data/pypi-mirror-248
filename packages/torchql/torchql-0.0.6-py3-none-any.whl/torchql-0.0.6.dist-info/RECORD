@@ -1,0 +1,11 @@
+torchql/__init__.py,sha256=6slV3xaoqTgKF_WZvyIjWdv_tq_1OoybYJ7xtY7Tr5I,94
+torchql/database.py,sha256=P4xiELcd7YbVL5dtMLmUfbwqOornZm0qZbzZCdD38rE,6287
+torchql/database_lazy.py,sha256=nPCz_FlD4TOtFODUv0Z01Yl4uFmOcIkldOJuB5Fpr4c,4048
+torchql/query.py,sha256=rVooaL9MSYBZYSh-Hn7ZpoiNiGdPn4hc4dM7aHnppEY,15962
+torchql/table.py,sha256=jai0kSaA5N-uPaEz8vyWeo-4yfQCIAF-twJxkN--g-8,20359
+torchql/table_lazy.py,sha256=bkNtwFlAgbaPntITueQMvj4gqTGJu1K2zMrREMPrdu4,10773
+torchql/utils.py,sha256=qL25cZfDxWGKCaQq1-KXu-Xh4i1tfjCSRJ7LS4O23GI,1807
+torchql-0.0.6.dist-info/METADATA,sha256=dAyAr5F8lMj9iWdOm_O38Q8QVaEc-0x00MKeGJOM7mw,409
+torchql-0.0.6.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+torchql-0.0.6.dist-info/top_level.txt,sha256=E8_rHLOORuB2U9Wwf1hz1uYptUF2W_OSf66xMzKpenM,8
+torchql-0.0.6.dist-info/RECORD,,
