@@ -1,0 +1,87 @@
+MANIFEST
+Makefile*
+*~
+/test/classes/
+/test/jars/
+**/test.pic
+build/
+.buildozer
+bin
+native/*.jar
+org.jpype.jar
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+# C extensions
+*.so
+*.dll
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+# PyInstaller
+# Usually these files are written by a python script from a template
+# before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+jacoco.exec
+.cache
+nosetests.xml
+coverage*.xml
+# Translations
+*.mo
+*.pot
+# Django stuff:
+*.log
+# Sphinx documentation
+docs/_build/
+# PyBuilder
+target/
+/project/jpype_java/nbproject/private/
+/project/jpype_cpython/nbproject/private/
+/project/jpype_cpython/nbproject/Makefile*
+/project/jpype_java/nbproject/build-impl.xml
+/project/jpype_java/nbproject/genfiles.properties
+/project/jpype_java/dist
+/project/jpype_java/build
+/project/jpype_cpython/Makefile
+/project/jpype_cpython/nbproject/Package-Release.bash
+/project/jpype_python/nbproject/private/
+/project/coverage/*.jar
+*.swp
+*.stackdump
+*.zip
+tmp
+doc/html
+native/jars
+docker/*.tar.gz
+docker/wheelhouse
+/.eggs
+/tmp*
+a.out
+.idea/
+_build/
+jacoco/
+wheelhouse/
+vc*.pdb
+*.class

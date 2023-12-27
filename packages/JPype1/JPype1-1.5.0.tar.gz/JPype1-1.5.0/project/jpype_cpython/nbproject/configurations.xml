@@ -1,0 +1,1107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <logicalFolder name="f2" displayName="Common" projectFiles="true">
+        <logicalFolder name="include" displayName="include" projectFiles="true">
+          <itemPath>../../native/common/include/jp_array.h</itemPath>
+          <itemPath>../../native/common/include/jp_arrayclass.h</itemPath>
+          <itemPath>../../native/common/include/jp_booleantype.h</itemPath>
+          <itemPath>../../native/common/include/jp_boxedtype.h</itemPath>
+          <itemPath>../../native/common/include/jp_buffer.h</itemPath>
+          <itemPath>../../native/common/include/jp_buffertype.h</itemPath>
+          <itemPath>../../native/common/include/jp_bytetype.h</itemPath>
+          <itemPath>../../native/common/include/jp_chartype.h</itemPath>
+          <itemPath>../../native/common/include/jp_class.h</itemPath>
+          <itemPath>../../native/common/include/jp_classhints.h</itemPath>
+          <itemPath>../../native/common/include/jp_classloader.h</itemPath>
+          <itemPath>../../native/common/include/jp_classtype.h</itemPath>
+          <itemPath>../../native/common/include/jp_context.h</itemPath>
+          <itemPath>../../native/common/include/jp_doubletype.h</itemPath>
+          <itemPath>../../native/common/include/jp_encoding.h</itemPath>
+          <itemPath>../../native/common/include/jp_exception.h</itemPath>
+          <itemPath>../../native/common/include/jp_field.h</itemPath>
+          <itemPath>../../native/common/include/jp_floattype.h</itemPath>
+          <itemPath>../../native/common/include/jp_functional.h</itemPath>
+          <itemPath>../../native/common/include/jp_gc.h</itemPath>
+          <itemPath>../../native/common/include/jp_inttype.h</itemPath>
+          <itemPath>../../native/common/include/jp_javaframe.h</itemPath>
+          <itemPath>../../native/common/include/jp_longtype.h</itemPath>
+          <itemPath>../../native/common/include/jp_match.h</itemPath>
+          <itemPath>../../native/common/include/jp_method.h</itemPath>
+          <itemPath>../../native/common/include/jp_methoddispatch.h</itemPath>
+          <itemPath>../../native/common/include/jp_modifier.h</itemPath>
+          <itemPath>../../native/common/include/jp_monitor.h</itemPath>
+          <itemPath>../../native/common/include/jp_numbertype.h</itemPath>
+          <itemPath>../../native/common/include/jp_objecttype.h</itemPath>
+          <itemPath>../../native/common/include/jp_platform.h</itemPath>
+          <itemPath>../../native/common/include/jp_primitive_accessor.h</itemPath>
+          <itemPath>../../native/common/include/jp_primitivetype.h</itemPath>
+          <itemPath>../../native/common/include/jp_proxy.h</itemPath>
+          <itemPath>../../native/common/include/jp_reference_queue.h</itemPath>
+          <itemPath>../../native/common/include/jp_shorttype.h</itemPath>
+          <itemPath>../../native/common/include/jp_stringtype.h</itemPath>
+          <itemPath>../../native/common/include/jp_tracer.h</itemPath>
+          <itemPath>../../native/common/include/jp_typemanager.h</itemPath>
+          <itemPath>../../native/common/include/jp_value.h</itemPath>
+          <itemPath>../../native/common/include/jp_voidtype.h</itemPath>
+          <itemPath>../../native/common/include/jpype.h</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="f1" displayName="Python" projectFiles="true">
+        <logicalFolder name="include" displayName="include" projectFiles="true">
+          <itemPath>../../native/python/include/jp_pythontypes.h</itemPath>
+          <itemPath>../../native/python/include/pyjp.h</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="f1"
+                   displayName="Python Files"
+                   projectFiles="true"
+                   kind="ROOT">
+      <logicalFolder name="jpype" displayName="jpype" projectFiles="true">
+        <itemPath>../../jpype/__init__.py</itemPath>
+        <itemPath>../../jpype/_classpath.py</itemPath>
+        <itemPath>../../jpype/_core.py</itemPath>
+        <itemPath>../../jpype/_gui.py</itemPath>
+        <itemPath>../../jpype/_jarray.py</itemPath>
+        <itemPath>../../jpype/_jclass.py</itemPath>
+        <itemPath>../../jpype/_jcollection.py</itemPath>
+        <itemPath>../../jpype/_jcustomizer.py</itemPath>
+        <itemPath>../../jpype/_jexception.py</itemPath>
+        <itemPath>../../jpype/_jinit.py</itemPath>
+        <itemPath>../../jpype/_jio.py</itemPath>
+        <itemPath>../../jpype/_jmethod.py</itemPath>
+        <itemPath>../../jpype/_jobject.py</itemPath>
+        <itemPath>../../jpype/_jpackage.py</itemPath>
+        <itemPath>../../jpype/_jproxy.py</itemPath>
+        <itemPath>../../jpype/_jstring.py</itemPath>
+        <itemPath>../../jpype/_jthread.py</itemPath>
+        <itemPath>../../jpype/_jvmfinder.py</itemPath>
+        <itemPath>../../jpype/_pykeywords.py</itemPath>
+        <itemPath>../../jpype/beans.py</itemPath>
+        <itemPath>../../jpype/imports.py</itemPath>
+        <itemPath>../../jpype/nio.py</itemPath>
+        <itemPath>../../jpype/pickle.py</itemPath>
+        <itemPath>../../jpype/protocol.py</itemPath>
+        <itemPath>../../jpype/types.py</itemPath>
+      </logicalFolder>
+      <logicalFolder name="jpypetest" displayName="jpypetest" projectFiles="true">
+        <itemPath>../../test/jpypetest/common.py</itemPath>
+        <itemPath>../../test/jpypetest/conftest.py</itemPath>
+        <itemPath>../../test/jpypetest/subrun.py</itemPath>
+        <itemPath>../../test/jpypetest/test_array.py</itemPath>
+        <itemPath>../../test/jpypetest/test_attr.py</itemPath>
+        <itemPath>../../test/jpypetest/test_boxed.py</itemPath>
+        <itemPath>../../test/jpypetest/test_buffer.py</itemPath>
+        <itemPath>../../test/jpypetest/test_bytebuffer.py</itemPath>
+        <itemPath>../../test/jpypetest/test_caller_sensitive.py</itemPath>
+        <itemPath>../../test/jpypetest/test_charSequence.py</itemPath>
+        <itemPath>../../test/jpypetest/test_classhints.py</itemPath>
+        <itemPath>../../test/jpypetest/test_closeable.py</itemPath>
+        <itemPath>../../test/jpypetest/test_closed.py</itemPath>
+        <itemPath>../../test/jpypetest/test_collection.py</itemPath>
+        <itemPath>../../test/jpypetest/test_comparable.py</itemPath>
+        <itemPath>../../test/jpypetest/test_conversion.py</itemPath>
+        <itemPath>../../test/jpypetest/test_conversionInt.py</itemPath>
+        <itemPath>../../test/jpypetest/test_conversionLong.py</itemPath>
+        <itemPath>../../test/jpypetest/test_conversionShort.py</itemPath>
+        <itemPath>../../test/jpypetest/test_core.py</itemPath>
+        <itemPath>../../test/jpypetest/test_coverage.py</itemPath>
+        <itemPath>../../test/jpypetest/test_customizer.py</itemPath>
+        <itemPath>../../test/jpypetest/test_directbuffer.py</itemPath>
+        <itemPath>../../test/jpypetest/test_docstring.py</itemPath>
+        <itemPath>../../test/jpypetest/test_exc.py</itemPath>
+        <itemPath>../../test/jpypetest/test_fault.py</itemPath>
+        <itemPath>../../test/jpypetest/test_fields.py</itemPath>
+        <itemPath>../../test/jpypetest/test_forname.py</itemPath>
+        <itemPath>../../test/jpypetest/test_generic.py</itemPath>
+        <itemPath>../../test/jpypetest/test_hash.py</itemPath>
+        <itemPath>../../test/jpypetest/test_hints.py</itemPath>
+        <itemPath>../../test/jpypetest/test_imports.py</itemPath>
+        <itemPath>../../test/jpypetest/test_inherit.py</itemPath>
+        <itemPath>../../test/jpypetest/test_javacoverage.py</itemPath>
+        <itemPath>../../test/jpypetest/test_javadoc.py</itemPath>
+        <itemPath>../../test/jpypetest/test_jboolean.py</itemPath>
+        <itemPath>../../test/jpypetest/test_jbyte.py</itemPath>
+        <itemPath>../../test/jpypetest/test_jchar.py</itemPath>
+        <itemPath>../../test/jpypetest/test_jclass.py</itemPath>
+        <itemPath>../../test/jpypetest/test_jdouble.py</itemPath>
+        <itemPath>../../test/jpypetest/test_jedi.py</itemPath>
+        <itemPath>../../test/jpypetest/test_jfloat.py</itemPath>
+        <itemPath>../../test/jpypetest/test_jint.py</itemPath>
+        <itemPath>../../test/jpypetest/test_jlong.py</itemPath>
+        <itemPath>../../test/jpypetest/test_jmethod.py</itemPath>
+        <itemPath>../../test/jpypetest/test_jobject.py</itemPath>
+        <itemPath>../../test/jpypetest/test_jpackage.py</itemPath>
+        <itemPath>../../test/jpypetest/test_jshort.py</itemPath>
+        <itemPath>../../test/jpypetest/test_jstring.py</itemPath>
+        <itemPath>../../test/jpypetest/test_jvmfinder.py</itemPath>
+        <itemPath>../../test/jpypetest/test_keywords.py</itemPath>
+        <itemPath>../../test/jpypetest/test_lambdas.py</itemPath>
+        <itemPath>../../test/jpypetest/test_leak.py</itemPath>
+        <itemPath>../../test/jpypetest/test_leak2.py</itemPath>
+        <itemPath>../../test/jpypetest/test_legacy.py</itemPath>
+        <itemPath>../../test/jpypetest/test_list.py</itemPath>
+        <itemPath>../../test/jpypetest/test_map.py</itemPath>
+        <itemPath>../../test/jpypetest/test_module.py</itemPath>
+        <itemPath>../../test/jpypetest/test_module2.py</itemPath>
+        <itemPath>../../test/jpypetest/test_mro.py</itemPath>
+        <itemPath>../../test/jpypetest/test_number.py</itemPath>
+        <itemPath>../../test/jpypetest/test_numeric.py</itemPath>
+        <itemPath>../../test/jpypetest/test_objectwrapper.py</itemPath>
+        <itemPath>../../test/jpypetest/test_opts.py</itemPath>
+        <itemPath>../../test/jpypetest/test_overloads.py</itemPath>
+        <itemPath>../../test/jpypetest/test_pickle.py</itemPath>
+        <itemPath>../../test/jpypetest/test_properties.py</itemPath>
+        <itemPath>../../test/jpypetest/test_proxy.py</itemPath>
+        <itemPath>../../test/jpypetest/test_proxy_multithreaded.py</itemPath>
+        <itemPath>../../test/jpypetest/test_ref.py</itemPath>
+        <itemPath>../../test/jpypetest/test_reflect.py</itemPath>
+        <itemPath>../../test/jpypetest/test_repr.py</itemPath>
+        <itemPath>../../test/jpypetest/test_serial.py</itemPath>
+        <itemPath>../../test/jpypetest/test_shutdown.py</itemPath>
+        <itemPath>../../test/jpypetest/test_startup.py</itemPath>
+        <itemPath>../../test/jpypetest/test_synchronized.py</itemPath>
+        <itemPath>../../test/jpypetest/test_thread.py</itemPath>
+        <itemPath>../../test/jpypetest/test_utf8.py</itemPath>
+        <itemPath>../../test/jpypetest/test_varargs.py</itemPath>
+        <itemPath>../../test/jpypetest/test_virtual.py</itemPath>
+        <itemPath>../../test/jpypetest/test_zzz.py</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="common" displayName="common" projectFiles="true">
+        <itemPath>../../native/common/jp_array.cpp</itemPath>
+        <itemPath>../../native/common/jp_arrayclass.cpp</itemPath>
+        <itemPath>../../native/common/jp_booleantype.cpp</itemPath>
+        <itemPath>../../native/common/jp_boxedtype.cpp</itemPath>
+        <itemPath>../../native/common/jp_buffer.cpp</itemPath>
+        <itemPath>../../native/common/jp_buffertype.cpp</itemPath>
+        <itemPath>../../native/common/jp_bytetype.cpp</itemPath>
+        <itemPath>../../native/common/jp_chartype.cpp</itemPath>
+        <itemPath>../../native/common/jp_class.cpp</itemPath>
+        <itemPath>../../native/common/jp_classhints.cpp</itemPath>
+        <itemPath>../../native/common/jp_classloader.cpp</itemPath>
+        <itemPath>../../native/common/jp_classtype.cpp</itemPath>
+        <itemPath>../../native/common/jp_context.cpp</itemPath>
+        <itemPath>../../native/common/jp_convert.cpp</itemPath>
+        <itemPath>../../native/common/jp_doubletype.cpp</itemPath>
+        <itemPath>../../native/common/jp_encoding.cpp</itemPath>
+        <itemPath>../../native/common/jp_exception.cpp</itemPath>
+        <itemPath>../../native/common/jp_field.cpp</itemPath>
+        <itemPath>../../native/common/jp_floattype.cpp</itemPath>
+        <itemPath>../../native/common/jp_functional.cpp</itemPath>
+        <itemPath>../../native/common/jp_gc.cpp</itemPath>
+        <itemPath>../../native/common/jp_inttype.cpp</itemPath>
+        <itemPath>../../native/common/jp_javaframe.cpp</itemPath>
+        <itemPath>../../native/common/jp_longtype.cpp</itemPath>
+        <itemPath>../../native/common/jp_method.cpp</itemPath>
+        <itemPath>../../native/common/jp_methoddispatch.cpp</itemPath>
+        <itemPath>../../native/common/jp_monitor.cpp</itemPath>
+        <itemPath>../../native/common/jp_numbertype.cpp</itemPath>
+        <itemPath>../../native/common/jp_objecttype.cpp</itemPath>
+        <itemPath>../../native/common/jp_platform.cpp</itemPath>
+        <itemPath>../../native/common/jp_primitivetype.cpp</itemPath>
+        <itemPath>../../native/common/jp_proxy.cpp</itemPath>
+        <itemPath>../../native/common/jp_reference_queue.cpp</itemPath>
+        <itemPath>../../native/common/jp_shorttype.cpp</itemPath>
+        <itemPath>../../native/common/jp_stringtype.cpp</itemPath>
+        <itemPath>../../native/common/jp_tracer.cpp</itemPath>
+        <itemPath>../../native/common/jp_typefactory.cpp</itemPath>
+        <itemPath>../../native/common/jp_typemanager.cpp</itemPath>
+        <itemPath>../../native/common/jp_value.cpp</itemPath>
+        <itemPath>../../native/common/jp_voidtype.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="python" displayName="python" projectFiles="true">
+        <itemPath>../../native/python/jp_pythontypes.cpp</itemPath>
+        <itemPath>../../native/python/pyjp_array.cpp</itemPath>
+        <itemPath>../../native/python/pyjp_buffer.cpp</itemPath>
+        <itemPath>../../native/python/pyjp_char.cpp</itemPath>
+        <itemPath>../../native/python/pyjp_class.cpp</itemPath>
+        <itemPath>../../native/python/pyjp_classhints.cpp</itemPath>
+        <itemPath>../../native/python/pyjp_field.cpp</itemPath>
+        <itemPath>../../native/python/pyjp_method.cpp</itemPath>
+        <itemPath>../../native/python/pyjp_module.cpp</itemPath>
+        <itemPath>../../native/python/pyjp_monitor.cpp</itemPath>
+        <itemPath>../../native/python/pyjp_number.cpp</itemPath>
+        <itemPath>../../native/python/pyjp_object.cpp</itemPath>
+        <itemPath>../../native/python/pyjp_package.cpp</itemPath>
+        <itemPath>../../native/python/pyjp_proxy.cpp</itemPath>
+        <itemPath>../../native/python/pyjp_value.cpp</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>../../native/common</Elem>
+    <Elem>../../native/python</Elem>
+    <Elem>../../jpype</Elem>
+    <Elem>../../test/jpypetest</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Release" type="3">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <incDir>
+            <pElem>../../native/jni_include</pElem>
+            <pElem>../../native/python/include</pElem>
+            <pElem>../../native/common/include</pElem>
+          </incDir>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <archiverTool>
+        </archiverTool>
+      </compileType>
+      <item path="../../jpype/__init__.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../jpype/_classpath.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../jpype/_core.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../jpype/_gui.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../jpype/_jarray.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../jpype/_jclass.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../jpype/_jcollection.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../jpype/_jcustomizer.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../jpype/_jexception.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../jpype/_jinit.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../jpype/_jio.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../jpype/_jmethod.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../jpype/_jobject.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../jpype/_jpackage.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../jpype/_jproxy.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../jpype/_jstring.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../jpype/_jthread.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../jpype/_jvmfinder.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../jpype/_pykeywords.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../jpype/beans.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../jpype/imports.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../jpype/nio.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../jpype/pickle.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../jpype/protocol.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../jpype/types.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../native/common/include/jp_array.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/include/jp_arrayclass.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/include/jp_booleantype.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/include/jp_boxedtype.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/include/jp_buffer.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/include/jp_buffertype.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/include/jp_bytetype.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/include/jp_chartype.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/include/jp_class.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/include/jp_classhints.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/include/jp_classloader.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/include/jp_classtype.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/include/jp_context.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/include/jp_doubletype.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/include/jp_encoding.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/include/jp_exception.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/include/jp_field.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/include/jp_floattype.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/include/jp_functional.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/include/jp_gc.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/include/jp_inttype.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/include/jp_javaframe.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/include/jp_longtype.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/include/jp_match.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/include/jp_method.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/include/jp_methoddispatch.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/include/jp_modifier.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/include/jp_monitor.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/include/jp_numbertype.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/include/jp_objecttype.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/include/jp_platform.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/include/jp_primitive_accessor.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/include/jp_primitivetype.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/include/jp_proxy.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/include/jp_reference_queue.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/include/jp_shorttype.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/include/jp_stringtype.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/include/jp_tracer.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/include/jp_typemanager.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/include/jp_value.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/include/jp_voidtype.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/include/jpype.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/jp_array.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../native/common/jp_arrayclass.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/jp_booleantype.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/jp_boxedtype.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/jp_buffer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../native/common/jp_buffertype.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/jp_bytetype.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/jp_chartype.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/jp_class.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../native/common/jp_classhints.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/jp_classloader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/jp_classtype.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/jp_context.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../native/common/jp_convert.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../native/common/jp_doubletype.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/jp_encoding.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/jp_exception.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/jp_field.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../native/common/jp_floattype.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/jp_functional.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/jp_gc.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../native/common/jp_inttype.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../native/common/jp_javaframe.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/jp_longtype.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/jp_method.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../native/common/jp_methoddispatch.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/jp_monitor.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../native/common/jp_numbertype.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/jp_objecttype.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/jp_platform.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/jp_primitivetype.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/jp_proxy.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../native/common/jp_reference_queue.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/jp_shorttype.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/jp_stringtype.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/jp_tracer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../native/common/jp_typefactory.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/jp_typemanager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../native/common/jp_value.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../native/common/jp_voidtype.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../native/python/include/jp_pythontypes.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../native/python/include/pyjp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../native/python/jp_pythontypes.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../native/python/pyjp_array.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../native/python/pyjp_buffer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../native/python/pyjp_char.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../native/python/pyjp_class.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../native/python/pyjp_classhints.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../native/python/pyjp_field.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../native/python/pyjp_method.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../native/python/pyjp_module.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../native/python/pyjp_monitor.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../native/python/pyjp_number.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../native/python/pyjp_object.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../native/python/pyjp_package.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../native/python/pyjp_proxy.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../native/python/pyjp_value.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/common.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/conftest.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/subrun.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_array.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_attr.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_boxed.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_buffer.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_bytebuffer.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_caller_sensitive.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_charSequence.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_classhints.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_closeable.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_closed.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_collection.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_comparable.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_conversion.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_conversionInt.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_conversionLong.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_conversionShort.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_core.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_coverage.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_customizer.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_directbuffer.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_docstring.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_exc.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_fault.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_fields.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_forname.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_generic.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_hash.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_hints.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_imports.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_inherit.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_javacoverage.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_javadoc.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_jboolean.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_jbyte.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_jchar.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_jclass.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_jdouble.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_jedi.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_jfloat.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_jint.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_jlong.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_jmethod.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_jobject.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_jpackage.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_jshort.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_jstring.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_jvmfinder.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_keywords.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_lambdas.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_leak.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_leak2.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_legacy.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_list.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_map.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_module.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_module2.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_mro.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_number.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_numeric.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_objectwrapper.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_opts.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_overloads.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_pickle.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_properties.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_proxy.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_proxy_multithreaded.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_ref.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_reflect.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_repr.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_serial.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_shutdown.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_startup.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_synchronized.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_thread.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_utf8.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_varargs.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_virtual.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../test/jpypetest/test_zzz.py" ex="false" tool="3" flavor2="0">
+      </item>
+      <folder path="SourceFiles">
+        <ccTool>
+          <incDir>
+            <pElem>../../native/python/include</pElem>
+            <pElem>../../native/common/include</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+    </conf>
+  </confs>
+</configurationDescriptor>
