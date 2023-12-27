@@ -1,0 +1,40 @@
+TaskWidget {
+    layout: grid;
+    grid-size: 2;
+    grid-columns: 2fr 1fr;
+
+    border: solid $accent;
+
+    /*
+    padding: 1;
+    width: 80%;
+    width: 80;
+    */
+    height: 50%;
+}
+
+RichLog {
+    border: solid grey;
+}
+
+Log {
+    border: solid grey;
+    color: green;
+}
+
+VerticalScroll {
+    height: 70%;
+}
+
+#header {
+    text-style: bold;
+}
+
+#footer {
+    width: 100%;
+    background: $accent;
+    text-style: bold;
+    color: $text;
+    dock: bottom;
+    height: 1;
+}

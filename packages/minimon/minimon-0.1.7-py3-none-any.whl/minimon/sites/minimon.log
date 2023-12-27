@@ -1,0 +1,550 @@
+2023-10-19 17:52:28,728 - II - minimon    - Event: <class 'textual.events.Load'>
+2023-10-19 17:52:28,756 - II - minimon    - Event: <class 'textual.events.Compose'>
+2023-10-19 17:52:28,791 - DD - minimon    - tasks(6): ['Task-1', 'await mount', 'await mount', 'print_state', 'await mount', 'await mount']
+2023-10-19 17:52:28,844 - II - minimon    - Event: <class 'textual.events.Mount'>
+2023-10-19 17:52:28,971 - II - minimon    - task <async_generator object local_resources at 0x7f5f99f1e240> started
+2023-10-19 17:52:31,366 - II - minimon    - connect to remote root@localhost
+2023-10-19 17:52:31,371 - EE - apparat    - Exception in async Pipeline head: expected str, bytes or os.PathLike object, not NoneType
+2023-10-19 17:52:31,373 - II - minimon    - connect to remote root@localhost
+2023-10-19 17:52:31,376 - EE - apparat    - Exception in async Pipeline head: expected str, bytes or os.PathLike object, not NoneType
+2023-10-19 17:52:31,382 - DD - minimon    - tasks(8): ['state-updater', 'await mount', 'Task-1', 'screen_update', 'Task-64', 'print_state', 'update header clock', 'await mount']
+2023-10-19 17:52:31,385 - II - minimon    - StopAsyncIteration in local_resources
+2023-10-19 17:52:31,388 - II - minimon    - task <async_generator object local_resources at 0x7f5f99f1e240> terminated
+2023-10-19 17:52:31,397 - II - minimon    - Event: <class 'textual.events.Callback'>
+2023-10-19 17:52:31,411 - II - minimon    - task <async_generator object local_resources at 0x7f5f99f1e140> started
+2023-10-19 17:52:31,419 - II - minimon    - connect to remote om-office.de:2222
+2023-10-19 17:52:31,421 - EE - apparat    - Exception in async Pipeline head: expected str, bytes or os.PathLike object, not NoneType
+2023-10-19 17:52:31,423 - II - minimon    - connect to remote om-office.de:2222
+2023-10-19 17:52:31,425 - EE - apparat    - Exception in async Pipeline head: expected str, bytes or os.PathLike object, not NoneType
+2023-10-19 17:52:31,431 - II - minimon    - StopAsyncIteration in local_resources
+2023-10-19 17:52:31,434 - II - minimon    - task <async_generator object local_resources at 0x7f5f99f1e140> terminated
+2023-10-19 17:52:31,440 - II - minimon    - Event: <class 'textual.events.Callback'>
+2023-10-19 17:52:31,467 - II - minimon    - Event: <class 'textual.events.Resize'>
+2023-10-19 17:52:31,471 - II - minimon    - Event: <class 'textual.events.Ready'>
+2023-10-19 17:52:31,475 - II - minimon    - Event: <class 'textual.events.DescendantFocus'>
+2023-10-19 17:52:32,384 - DD - minimon    - tasks(6): ['state-updater', 'Task-1', 'screen_update', 'print_state', 'update header clock', 'Animator']
+2023-10-19 17:52:33,387 - DD - minimon    - tasks(6): ['state-updater', 'Task-1', 'screen_update', 'print_state', 'update header clock', 'Animator']
+2023-10-19 17:52:34,390 - DD - minimon    - tasks(6): ['state-updater', 'Task-1', 'screen_update', 'print_state', 'update header clock', 'Animator']
+2023-10-19 17:52:35,393 - DD - minimon    - tasks(6): ['state-updater', 'Task-1', 'screen_update', 'print_state', 'update header clock', 'Animator']
+2023-10-21 12:09:57,831 - II - minimon    - Event: <class 'textual.events.Load'>
+2023-10-21 12:09:57,851 - II - minimon    - Event: <class 'textual.events.Compose'>
+2023-10-21 12:09:57,874 - DD - minimon    - tasks(6): ['Task-1', 'await mount', 'await mount', 'print_state', 'await mount', 'await mount']
+2023-10-21 12:09:57,917 - II - minimon    - Event: <class 'textual.events.Mount'>
+2023-10-21 12:09:58,223 - II - minimon    - Event: <class 'textual.events.Unmount'>
+2023-10-21 12:09:58,228 - II - minimon    - application terminated
+2023-10-21 12:09:58,231 - DD - minimon    - cancel task 'Task-1'
+2023-10-21 12:09:58,231 - DD - minimon    - cancel task 'print_state'
+2023-10-21 12:09:58,231 - DD - minimon    - cancel task 'state-updater'
+2023-10-21 12:10:28,082 - II - minimon    - Event: <class 'textual.events.Load'>
+2023-10-21 12:10:28,102 - II - minimon    - Event: <class 'textual.events.Compose'>
+2023-10-21 12:10:28,129 - DD - minimon    - tasks(6): ['Task-1', 'await mount', 'await mount', 'print_state', 'await mount', 'await mount']
+2023-10-21 12:10:28,177 - II - minimon    - Event: <class 'textual.events.Mount'>
+2023-10-22 09:33:50,954 - II - minimon    - Event: <class 'textual.events.Load'>
+2023-10-22 09:33:50,973 - II - minimon    - Event: <class 'textual.events.Compose'>
+2023-10-22 09:33:50,997 - DD - minimon    - tasks(6): ['await mount', 'await mount', 'await mount', 'print_state', 'Task-1', 'await mount']
+2023-10-22 09:33:51,040 - II - minimon    - Event: <class 'textual.events.Mount'>
+2023-10-22 09:33:54,465 - II - minimon    - task <async_generator object local_resources at 0x7f15477e5e40> started
+2023-10-22 09:33:54,475 - II - minimon    - start task 'df -P': 0
+2023-10-22 09:33:54,478 - II - minimon    - start task 'ps ww': 0
+2023-10-22 09:33:54,483 - DD - minimon    - tasks(12): ['Task-68', 'Task-69', 'await mount', 'Task-1', 'screen_update', 'Task-64', 'await mount', 'print_state', 'update header clock', 'state-updater', 'establish_connection', 'establish_connection']
+2023-10-22 09:33:54,485 - II - minimon    - connect to remote root@localhost
+2023-10-22 09:33:54,489 - II - minimon    - connect to remote root@localhost
+2023-10-22 09:33:54,528 - II - minimon    - Event: <class 'textual.events.Resize'>
+2023-10-22 09:33:54,531 - II - minimon    - Event: <class 'textual.events.Ready'>
+2023-10-22 09:33:54,545 - II - minimon    - task <async_generator object local_resources at 0x7f15477e6020> started
+2023-10-22 09:33:54,633 - II - minimon    - start task 'df -P': 0
+2023-10-22 09:33:54,636 - II - minimon    - start task 'ps ww': 0
+2023-10-22 09:33:54,640 - II - minimon    - Event: <class 'textual.events.DescendantFocus'>
+2023-10-22 09:33:54,645 - II - minimon    - connect to remote om-office.de:2222
+2023-10-22 09:33:54,649 - II - minimon    - connect to remote om-office.de:2222
+2023-10-22 09:33:57,149 - DD - minimon    - tasks(14): ['Task-68', 'Task-69', 'Task-1', 'screen_update', 'Task-64', 'Task-85', 'Task-86', 'Animator', 'establish_connection', 'print_state', 'update header clock', 'Task-78', 'establish_connection', 'state-updater']
+2023-10-22 09:33:57,164 - DD - minimon    - run command via SSH..
+2023-10-22 09:33:57,169 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:01,833 - DD - minimon    - terminate() remote process 'ps ww'..
+2023-10-22 09:34:01,854 - DD - minimon    - tasks(21): ['Task-140', 'Task-69', 'Task-144', 'Task-143', 'Task-1', 'Task-135', 'Task-145', 'screen_update', 'Task-64', 'Task-85', 'Task-141', 'Task-86', 'Animator', 'establish_connection', 'update header clock', 'print_state', 'Task-78', 'Task-146', 'establish_connection', 'Task-130', 'state-updater']
+2023-10-22 09:34:03,015 - II - minimon    - start task 'ps ww': 1
+2023-10-22 09:34:03,019 - DD - minimon    - tasks(15): ['Task-69', 'Task-1', 'Task-151', 'screen_update', 'Task-64', 'Task-85', 'Task-86', 'Animator', 'establish_connection', 'update header clock', 'print_state', 'Task-78', 'Task-152', 'establish_connection', 'state-updater']
+2023-10-22 09:34:04,638 - DD - minimon    - terminate() remote process 'df -P'..
+2023-10-22 09:34:04,660 - DD - minimon    - tasks(17): ['Task-69', 'Task-1', 'Task-153', 'Task-151', 'screen_update', 'Task-64', 'Task-85', 'Task-86', 'Animator', 'establish_connection', 'update header clock', 'print_state', 'Task-78', 'Task-152', 'Task-154', 'establish_connection', 'state-updater']
+2023-10-22 09:34:04,669 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:04,688 - DD - minimon    - terminate() remote process 'ps ww'..
+2023-10-22 09:34:08,310 - DD - minimon    - tasks(14): ['Task-69', 'Task-1', 'Task-153', 'Task-172', 'screen_update', 'Task-64', 'Task-85', 'Task-86', 'Animator', 'update header clock', 'print_state', 'Task-78', 'Task-173', 'state-updater']
+2023-10-22 09:34:08,310 - II - minimon    - start task 'ps ww': 2
+2023-10-22 09:34:08,315 - II - minimon    - start task 'df -P': 1
+2023-10-22 09:34:08,344 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:08,345 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:08,376 - DD - minimon    - terminate() remote process 'ps ww'..
+2023-10-22 09:34:08,391 - DD - minimon    - terminate() remote process 'df -P'..
+2023-10-22 09:34:08,414 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:08,415 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:08,438 - DD - minimon    - terminate() remote process 'df -P'..
+2023-10-22 09:34:08,469 - DD - minimon    - terminate() remote process 'ps ww'..
+2023-10-22 09:34:09,312 - DD - minimon    - tasks(12): ['Task-69', 'Task-274', 'Task-1', 'screen_update', 'Task-64', 'Task-215', 'Animator', 'update header clock', 'print_state', 'Task-78', 'Task-262', 'state-updater']
+2023-10-22 09:34:09,379 - II - minimon    - start task 'ps ww': 3
+2023-10-22 09:34:09,400 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:09,447 - DD - minimon    - terminate() remote process 'ps ww'..
+2023-10-22 09:34:09,471 - II - minimon    - start task 'ps ww': 1
+2023-10-22 09:34:09,563 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:09,610 - DD - minimon    - terminate() remote process 'ps ww'..
+2023-10-22 09:34:10,316 - DD - minimon    - tasks(12): ['Task-69', 'Task-1', 'Task-321', 'screen_update', 'Task-64', 'Task-215', 'Animator', 'update header clock', 'print_state', 'Task-78', 'Task-262', 'state-updater']
+2023-10-22 09:34:10,393 - II - minimon    - start task 'df -P': 2
+2023-10-22 09:34:10,415 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:10,440 - II - minimon    - start task 'df -P': 1
+2023-10-22 09:34:10,458 - II - minimon    - start task 'ps ww': 4
+2023-10-22 09:34:10,487 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:10,538 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:10,542 - DD - minimon    - terminate() remote process 'ps ww'..
+2023-10-22 09:34:10,543 - DD - minimon    - terminate() remote process 'df -P'..
+2023-10-22 09:34:10,583 - DD - minimon    - terminate() remote process 'df -P'..
+2023-10-22 09:34:10,619 - II - minimon    - start task 'ps ww': 2
+2023-10-22 09:34:10,715 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:10,751 - DD - minimon    - terminate() remote process 'ps ww'..
+2023-10-22 09:34:11,320 - DD - minimon    - tasks(12): ['Task-382', 'Task-69', 'Task-394', 'Task-1', 'screen_update', 'Task-64', 'Animator', 'update header clock', 'print_state', 'Task-78', 'Task-426', 'state-updater']
+2023-10-22 09:34:11,545 - II - minimon    - start task 'ps ww': 5
+2023-10-22 09:34:11,567 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:11,608 - DD - minimon    - terminate() remote process 'ps ww'..
+2023-10-22 09:34:11,754 - II - minimon    - start task 'ps ww': 3
+2023-10-22 09:34:11,849 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:11,891 - DD - minimon    - terminate() remote process 'ps ww'..
+2023-10-22 09:34:12,324 - DD - minimon    - tasks(12): ['Task-477', 'Task-382', 'Task-69', 'Task-394', 'Task-1', 'screen_update', 'Task-64', 'Animator', 'update header clock', 'print_state', 'Task-78', 'state-updater']
+2023-10-22 09:34:12,546 - II - minimon    - start task 'df -P': 3
+2023-10-22 09:34:12,571 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:12,604 - II - minimon    - start task 'df -P': 2
+2023-10-22 09:34:12,609 - II - minimon    - start task 'ps ww': 6
+2023-10-22 09:34:12,640 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:12,671 - DD - minimon    - terminate() remote process 'ps ww'..
+2023-10-22 09:34:12,675 - DD - minimon    - terminate() remote process 'df -P'..
+2023-10-22 09:34:12,699 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:12,709 - DD - minimon    - terminate() remote process 'df -P'..
+2023-10-22 09:34:12,895 - II - minimon    - start task 'ps ww': 4
+2023-10-22 09:34:12,992 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:13,024 - DD - minimon    - terminate() remote process 'ps ww'..
+2023-10-22 09:34:13,327 - DD - minimon    - tasks(12): ['Task-526', 'Task-69', 'Task-1', 'screen_update', 'Task-64', 'Animator', 'Task-584', 'update header clock', 'print_state', 'Task-78', 'Task-551', 'state-updater']
+2023-10-22 09:34:13,674 - II - minimon    - start task 'ps ww': 7
+2023-10-22 09:34:13,695 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:13,742 - DD - minimon    - terminate() remote process 'ps ww'..
+2023-10-22 09:34:14,027 - II - minimon    - start task 'ps ww': 5
+2023-10-22 09:34:14,122 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:14,157 - DD - minimon    - terminate() remote process 'ps ww'..
+2023-10-22 09:34:14,329 - DD - minimon    - tasks(12): ['Task-526', 'Task-69', 'Task-1', 'screen_update', 'Task-64', 'Animator', 'update header clock', 'print_state', 'Task-78', 'Task-633', 'Task-551', 'state-updater']
+2023-10-22 09:34:14,679 - II - minimon    - start task 'df -P': 4
+2023-10-22 09:34:14,700 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:14,717 - II - minimon    - start task 'df -P': 3
+2023-10-22 09:34:14,761 - II - minimon    - start task 'ps ww': 8
+2023-10-22 09:34:14,778 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:14,804 - DD - minimon    - terminate() remote process 'df -P'..
+2023-10-22 09:34:14,829 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:14,831 - DD - minimon    - terminate() remote process 'ps ww'..
+2023-10-22 09:34:14,836 - DD - minimon    - terminate() remote process 'df -P'..
+2023-10-22 09:34:15,159 - II - minimon    - start task 'ps ww': 6
+2023-10-22 09:34:15,250 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:15,307 - DD - minimon    - terminate() remote process 'ps ww'..
+2023-10-22 09:34:15,332 - DD - minimon    - tasks(12): ['Task-69', 'Task-1', 'screen_update', 'Task-64', 'Task-742', 'Task-679', 'Animator', 'Task-705', 'update header clock', 'print_state', 'Task-78', 'state-updater']
+2023-10-22 09:34:15,835 - II - minimon    - start task 'ps ww': 9
+2023-10-22 09:34:15,855 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:15,895 - DD - minimon    - terminate() remote process 'ps ww'..
+2023-10-22 09:34:16,310 - II - minimon    - start task 'ps ww': 7
+2023-10-22 09:34:16,334 - DD - minimon    - tasks(12): ['Task-69', 'Task-1', 'screen_update', 'Task-64', 'Task-742', 'Task-679', 'Animator', 'Task-705', 'update header clock', 'print_state', 'Task-78', 'state-updater']
+2023-10-22 09:34:16,413 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:16,460 - DD - minimon    - terminate() remote process 'ps ww'..
+2023-10-22 09:34:16,807 - II - minimon    - start task 'df -P': 5
+2023-10-22 09:34:16,827 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:16,836 - II - minimon    - start task 'df -P': 4
+2023-10-22 09:34:16,874 - DD - minimon    - terminate() remote process 'df -P'..
+2023-10-22 09:34:16,900 - II - minimon    - start task 'ps ww': 10
+2023-10-22 09:34:16,908 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:16,954 - DD - minimon    - terminate() remote process 'ps ww'..
+2023-10-22 09:34:16,960 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:16,972 - DD - minimon    - terminate() remote process 'df -P'..
+2023-10-22 09:34:17,336 - DD - minimon    - tasks(12): ['Task-69', 'Task-1', 'Task-861', 'screen_update', 'Task-64', 'Task-789', 'Animator', 'update header clock', 'print_state', 'Task-78', 'Task-823', 'state-updater']
+2023-10-22 09:34:17,463 - II - minimon    - start task 'ps ww': 8
+2023-10-22 09:34:17,556 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:17,588 - DD - minimon    - terminate() remote process 'ps ww'..
+2023-10-22 09:34:17,958 - II - minimon    - start task 'ps ww': 11
+2023-10-22 09:34:17,986 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:18,026 - DD - minimon    - terminate() remote process 'ps ww'..
+2023-10-22 09:34:18,339 - DD - minimon    - tasks(12): ['Task-69', 'Task-1', 'Task-861', 'Task-894', 'screen_update', 'Task-64', 'Animator', 'update header clock', 'print_state', 'Task-78', 'Task-823', 'state-updater']
+2023-10-22 09:34:18,592 - II - minimon    - start task 'ps ww': 9
+2023-10-22 09:34:18,689 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:18,719 - DD - minimon    - terminate() remote process 'ps ww'..
+2023-10-22 09:34:18,878 - II - minimon    - start task 'df -P': 6
+2023-10-22 09:34:18,903 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:18,936 - DD - minimon    - terminate() remote process 'df -P'..
+2023-10-22 09:34:18,973 - II - minimon    - start task 'df -P': 5
+2023-10-22 09:34:19,029 - II - minimon    - start task 'ps ww': 12
+2023-10-22 09:34:19,054 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:19,070 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:19,076 - DD - minimon    - terminate() remote process 'df -P'..
+2023-10-22 09:34:19,107 - DD - minimon    - terminate() remote process 'ps ww'..
+2023-10-22 09:34:19,343 - DD - minimon    - tasks(12): ['Task-943', 'Task-69', 'Task-1', 'screen_update', 'Task-1009', 'Task-64', 'Animator', 'update header clock', 'print_state', 'Task-78', 'Task-977', 'state-updater']
+2023-10-22 09:34:19,722 - II - minimon    - start task 'ps ww': 10
+2023-10-22 09:34:19,816 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:19,857 - DD - minimon    - terminate() remote process 'ps ww'..
+2023-10-22 09:34:20,111 - II - minimon    - start task 'ps ww': 13
+2023-10-22 09:34:20,131 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:20,177 - DD - minimon    - terminate() remote process 'ps ww'..
+2023-10-22 09:34:20,345 - DD - minimon    - tasks(12): ['Task-69', 'Task-1', 'screen_update', 'Task-1009', 'Task-64', 'Task-1050', 'Animator', 'update header clock', 'print_state', 'Task-78', 'Task-977', 'state-updater']
+2023-10-22 09:34:20,860 - II - minimon    - start task 'ps ww': 11
+2023-10-22 09:34:20,938 - II - minimon    - start task 'df -P': 7
+2023-10-22 09:34:20,958 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:20,960 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:21,019 - DD - minimon    - terminate() remote process 'ps ww'..
+2023-10-22 09:34:21,022 - DD - minimon    - terminate() remote process 'df -P'..
+2023-10-22 09:34:21,077 - II - minimon    - start task 'df -P': 6
+2023-10-22 09:34:21,180 - II - minimon    - start task 'ps ww': 14
+2023-10-22 09:34:21,203 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:21,223 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:21,234 - DD - minimon    - terminate() remote process 'ps ww'..
+2023-10-22 09:34:21,238 - DD - minimon    - terminate() remote process 'df -P'..
+2023-10-22 09:34:21,348 - DD - minimon    - tasks(12): ['Task-69', 'Task-1', 'Task-1135', 'Task-1173', 'screen_update', 'Task-64', 'Task-1133', 'Animator', 'update header clock', 'print_state', 'Task-78', 'state-updater']
+2023-10-22 09:34:22,023 - II - minimon    - start task 'ps ww': 12
+2023-10-22 09:34:22,125 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:22,191 - DD - minimon    - terminate() remote process 'ps ww'..
+2023-10-22 09:34:22,237 - II - minimon    - start task 'ps ww': 15
+2023-10-22 09:34:22,255 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:22,296 - DD - minimon    - terminate() remote process 'ps ww'..
+2023-10-22 09:34:22,351 - DD - minimon    - tasks(12): ['Task-69', 'Task-1', 'Task-1135', 'Task-1210', 'Task-1173', 'screen_update', 'Task-64', 'Animator', 'update header clock', 'print_state', 'Task-78', 'state-updater']
+2023-10-22 09:34:23,025 - II - minimon    - start task 'df -P': 8
+2023-10-22 09:34:23,050 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:23,123 - DD - minimon    - terminate() remote process 'df -P'..
+2023-10-22 09:34:23,194 - II - minimon    - start task 'ps ww': 13
+2023-10-22 09:34:23,239 - II - minimon    - start task 'df -P': 7
+2023-10-22 09:34:23,299 - II - minimon    - start task 'ps ww': 16
+2023-10-22 09:34:23,318 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:23,362 - DD - minimon    - terminate() remote process 'ps ww'..
+2023-10-22 09:34:23,364 - DD - minimon    - tasks(13): ['Task-69', 'Task-1', 'Task-1210', 'Task-1173', 'screen_update', 'Task-64', 'Task-1273', 'Animator', 'update header clock', 'print_state', 'Task-78', 'Task-1259', 'state-updater']
+2023-10-22 09:34:23,419 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:23,420 - DD - minimon    - run command via SSH..
+2023-10-22 09:34:23,440 - DD - minimon    - terminate() remote process 'df -P'..
+2023-10-22 09:34:23,479 - DD - minimon    - terminate() remote process 'ps ww'..
+2023-10-22 09:35:04,075 - II - minimon    - Event: <class 'textual.events.Load'>
+2023-10-22 09:35:04,092 - II - minimon    - Event: <class 'textual.events.Compose'>
+2023-10-22 09:35:04,116 - DD - minimon    - tasks(6): ['await mount', 'await mount', 'await mount', 'print_state', 'Task-1', 'await mount']
+2023-10-22 09:35:04,158 - II - minimon    - Event: <class 'textual.events.Mount'>
+2023-10-22 09:35:04,258 - II - minimon    - task <async_generator object local_resources at 0x7f88a3631e40> started
+2023-10-22 09:35:04,265 - II - minimon    - start task 'df -P': 0
+2023-10-22 09:35:04,268 - II - minimon    - start task 'ps ww': 0
+2023-10-22 09:35:04,272 - II - minimon    - connect to remote root@localhost
+2023-10-22 09:35:04,278 - II - minimon    - connect to remote root@localhost
+2023-10-22 09:35:04,317 - II - minimon    - Event: <class 'textual.events.Resize'>
+2023-10-22 09:35:04,320 - II - minimon    - Event: <class 'textual.events.Ready'>
+2023-10-22 09:35:04,334 - II - minimon    - task <async_generator object local_resources at 0x7f88a3632020> started
+2023-10-22 09:35:04,420 - II - minimon    - start task 'df -P': 0
+2023-10-22 09:35:04,422 - II - minimon    - start task 'ps ww': 0
+2023-10-22 09:35:04,426 - II - minimon    - Event: <class 'textual.events.DescendantFocus'>
+2023-10-22 09:35:04,432 - II - minimon    - connect to remote om-office.de:2222
+2023-10-22 09:35:04,435 - II - minimon    - connect to remote om-office.de:2222
+2023-10-22 09:35:16,625 - DD - minimon    - tasks(14): ['Task-64', 'Task-1', 'screen_update', 'Task-78', 'Task-85', 'Task-86', 'Animator', 'print_state', 'update header clock', 'establish_connection', 'establish_connection', 'Task-68', 'Task-69', 'state-updater']
+2023-10-22 09:35:16,640 - DD - minimon    - run command via SSH..
+2023-10-22 09:35:16,643 - DD - minimon    - run command via SSH..
+2023-10-22 09:35:16,710 - DD - minimon    - terminate() remote process 'ps ww'..
+2023-10-22 09:35:16,728 - DD - minimon    - terminate() remote process 'df -P'..
+2023-10-22 09:35:19,246 - DD - minimon    - tasks(15): ['Task-64', 'Task-149', 'Task-1', 'screen_update', 'Task-78', 'Task-85', 'Task-86', 'Animator', 'Task-155', 'update header clock', 'print_state', 'establish_connection', 'Task-156', 'Task-69', 'state-updater']
+2023-10-22 09:35:19,247 - II - minimon    - start task 'ps ww': 1
+2023-10-22 09:35:19,252 - II - minimon    - start task 'df -P': 1
+2023-10-22 09:35:19,278 - DD - minimon    - run command via SSH..
+2023-10-22 09:35:19,279 - DD - minimon    - run command via SSH..
+2023-10-23 16:42:54,371 - II - minimon    - Event: <class 'textual.events.Load'>
+2023-10-23 16:42:54,389 - II - minimon    - Event: <class 'textual.events.Compose'>
+2023-10-23 16:42:54,414 - DD - minimon    - tasks(6): ['print_state', 'await mount', 'await mount', 'await mount', 'await mount', 'Task-1']
+2023-10-23 16:42:54,456 - II - minimon    - Event: <class 'textual.events.Mount'>
+2023-10-23 16:42:54,555 - II - minimon    - task <async_generator object local_resources at 0x7f81379422f0> started
+2023-10-23 16:42:54,562 - II - minimon    - start task 'df -P': 0
+2023-10-23 16:42:54,565 - II - minimon    - start task 'ps ww': 0
+2023-10-23 16:42:54,570 - II - minimon    - connect to remote root@localhost
+2023-10-23 16:42:54,574 - II - minimon    - connect to remote root@localhost
+2023-10-23 16:42:54,614 - II - minimon    - Event: <class 'textual.events.Resize'>
+2023-10-23 16:42:54,617 - II - minimon    - Event: <class 'textual.events.Ready'>
+2023-10-23 16:42:54,631 - II - minimon    - task <async_generator object local_resources at 0x7f81379424d0> started
+2023-10-23 16:42:54,714 - II - minimon    - start task 'df -P': 0
+2023-10-23 16:42:54,717 - II - minimon    - start task 'ps ww': 0
+2023-10-23 16:42:54,721 - II - minimon    - Event: <class 'textual.events.DescendantFocus'>
+2023-10-23 16:42:54,726 - II - minimon    - connect to remote om-office.de:2222
+2023-10-23 16:42:54,730 - II - minimon    - connect to remote om-office.de:2222
+2023-10-23 16:43:02,169 - DD - minimon    - tasks(14): ['print_state', 'update header clock', 'establish_connection', 'Task-68', 'Task-69', 'state-updater', 'Animator', 'Task-1', 'Task-64', 'screen_update', 'establish_connection', 'Task-78', 'Task-85', 'Task-86']
+2023-10-23 16:43:02,174 - DD - minimon    - run command via SSH..
+2023-10-23 16:43:02,187 - DD - minimon    - run command via SSH..
+2023-10-23 16:43:02,247 - DD - minimon    - terminate() remote process 'ps ww'..
+2023-10-23 16:43:02,248 - DD - minimon    - terminate() remote process 'df -P'..
+2023-10-23 16:43:03,174 - DD - minimon    - tasks(13): ['update header clock', 'print_state', 'Task-69', 'state-updater', 'Animator', 'Task-1', 'Task-64', 'screen_update', 'establish_connection', 'Task-142', 'Task-85', 'Task-78', 'Task-86']
+2023-10-23 16:43:03,251 - II - minimon    - start task 'ps ww': 1
+2023-10-23 16:43:03,271 - DD - minimon    - run command via SSH..
+2023-10-23 16:43:03,319 - DD - minimon    - terminate() remote process 'ps ww'..
+2023-10-23 16:43:04,178 - DD - minimon    - tasks(13): ['update header clock', 'print_state', 'Task-69', 'state-updater', 'Animator', 'Task-1', 'Task-64', 'screen_update', 'establish_connection', 'Task-142', 'Task-85', 'Task-78', 'Task-86']
+2023-10-23 16:43:04,250 - II - minimon    - start task 'df -P': 1
+2023-10-23 16:43:04,271 - DD - minimon    - run command via SSH..
+2023-10-23 16:43:04,303 - DD - minimon    - terminate() remote process 'df -P'..
+2023-10-23 16:43:04,321 - II - minimon    - start task 'ps ww': 2
+2023-10-23 16:43:04,352 - DD - minimon    - run command via SSH..
+2023-10-23 16:43:04,394 - DD - minimon    - terminate() remote process 'ps ww'..
+2023-10-23 16:43:04,481 - DD - minimon    - run command via SSH..
+2023-10-23 16:43:04,498 - DD - minimon    - terminate() remote process 'df -P'..
+2023-10-23 16:43:05,183 - DD - minimon    - tasks(13): ['update header clock', 'print_state', 'Task-69', 'state-updater', 'Animator', 'Task-1', 'Task-64', 'Task-231', 'Task-191', 'screen_update', 'establish_connection', 'Task-78', 'Task-86']
+2023-10-23 16:43:05,397 - II - minimon    - start task 'ps ww': 3
+2023-10-23 16:43:05,419 - DD - minimon    - run command via SSH..
+2023-10-23 16:43:05,468 - DD - minimon    - terminate() remote process 'ps ww'..
+2023-10-23 16:43:06,186 - DD - minimon    - tasks(13): ['update header clock', 'print_state', 'Task-69', 'state-updater', 'Animator', 'Task-1', 'Task-64', 'Task-231', 'Task-191', 'screen_update', 'establish_connection', 'Task-78', 'Task-86']
+2023-10-23 16:43:06,306 - II - minimon    - start task 'df -P': 2
+2023-10-23 16:43:06,329 - DD - minimon    - run command via SSH..
+2023-10-23 16:43:06,356 - DD - minimon    - terminate() remote process 'df -P'..
+2023-10-23 16:43:06,470 - II - minimon    - start task 'ps ww': 4
+2023-10-23 16:43:06,491 - DD - minimon    - run command via SSH..
+2023-10-23 16:43:06,500 - II - minimon    - start task 'df -P': 1
+2023-10-23 16:43:06,541 - DD - minimon    - terminate() remote process 'ps ww'..
+2023-10-23 18:04:16,758 - II - minimon    - Event: <class 'textual.events.Load'>
+2023-10-23 18:04:16,777 - II - minimon    - Event: <class 'textual.events.Compose'>
+2023-10-23 18:04:16,800 - DD - minimon    - tasks(6): ['print_state', 'Task-1', 'await mount', 'await mount', 'await mount', 'await mount']
+2023-10-23 18:04:16,845 - II - minimon    - Event: <class 'textual.events.Mount'>
+2023-10-23 18:04:16,949 - II - minimon    - task <async_generator object local_resources at 0x7f5495dfe2f0> started
+2023-10-23 18:04:16,956 - II - minimon    - start task 'df -P': 0
+2023-10-23 18:04:16,959 - II - minimon    - start task 'dmesg --follow --time-format iso': 0
+2023-10-23 18:04:16,964 - II - minimon    - connect to remote root@localhost
+2023-10-23 18:04:16,968 - II - minimon    - connect to remote root@localhost
+2023-10-23 18:04:17,009 - II - minimon    - Event: <class 'textual.events.Resize'>
+2023-10-23 18:04:17,012 - II - minimon    - Event: <class 'textual.events.Ready'>
+2023-10-23 18:04:17,027 - II - minimon    - task <async_generator object local_resources at 0x7f5495dfe4d0> started
+2023-10-23 18:04:17,114 - II - minimon    - start task 'df -P': 0
+2023-10-23 18:04:17,117 - II - minimon    - start task 'dmesg --follow --time-format iso': 0
+2023-10-23 18:04:17,121 - II - minimon    - Event: <class 'textual.events.DescendantFocus'>
+2023-10-23 18:04:17,127 - II - minimon    - connect to remote om-office.de:2222
+2023-10-23 18:04:17,131 - II - minimon    - connect to remote om-office.de:2222
+2023-10-23 18:04:17,443 - DD - minimon    - run command via SSH..
+2023-10-23 18:04:17,445 - DD - minimon    - run command via SSH..
+2023-10-23 18:08:16,083 - II - minimon    - Event: <class 'textual.events.Load'>
+2023-10-23 18:08:16,102 - II - minimon    - Event: <class 'textual.events.Compose'>
+2023-10-23 18:08:16,128 - DD - minimon    - tasks(6): ['await mount', 'print_state', 'await mount', 'await mount', 'Task-1', 'await mount']
+2023-10-23 18:08:16,175 - II - minimon    - Event: <class 'textual.events.Mount'>
+2023-10-23 18:08:16,288 - II - minimon    - task <async_generator object local_resources at 0x7f64c14123e0> started
+2023-10-23 18:08:16,296 - II - minimon    - start task 'df -P': 0
+2023-10-23 18:08:16,299 - II - minimon    - start task 'dmesg --follow --time-format iso': 0
+2023-10-23 18:08:16,304 - II - minimon    - connect to remote root@localhost
+2023-10-23 18:08:16,308 - II - minimon    - connect to remote root@localhost
+2023-10-23 18:08:16,350 - II - minimon    - Event: <class 'textual.events.Resize'>
+2023-10-23 18:08:16,353 - II - minimon    - Event: <class 'textual.events.Ready'>
+2023-10-23 18:08:16,369 - II - minimon    - task <async_generator object local_resources at 0x7f64c14125c0> started
+2023-10-23 18:08:16,462 - II - minimon    - start task 'df -P': 0
+2023-10-23 18:08:16,465 - II - minimon    - start task 'dmesg --follow --time-format iso': 0
+2023-10-23 18:08:16,470 - II - minimon    - Event: <class 'textual.events.DescendantFocus'>
+2023-10-23 18:08:16,476 - II - minimon    - connect to remote om-office.de:2222
+2023-10-23 18:08:16,481 - II - minimon    - connect to remote om-office.de:2222
+2023-10-23 18:08:16,658 - DD - minimon    - run command via SSH..
+2023-10-23 18:08:16,660 - DD - minimon    - run command via SSH..
+2023-10-23 18:08:17,020 - DD - minimon    - terminate() remote process 'df -P'..
+2023-10-23 18:08:17,140 - DD - minimon    - tasks(22): ['Task-85', 'Task-78', 'iterate', 'Task-86', 'Task-64', 'update header clock', 'print_state', 'Animator', 'Task-166', 'add_next', 'establish_connection', 'Task-110', 'iterate', 'Task-69', 'state-updater', 'Task-109', 'Task-111', 'Task-1', 'Task-215', 'fuse', 'screen_update', 'establish_connection']
+2023-10-23 18:08:17,990 - DD - minimon    - run command via SSH..
+2023-10-23 18:08:18,010 - DD - minimon    - terminate() remote process 'dmesg --follow --time-format iso'..
+2023-10-23 18:08:18,107 - DD - minimon    - run command via SSH..
+2023-10-23 18:08:18,146 - DD - minimon    - tasks(23): ['Task-78', 'iterate', 'Task-86', 'Task-64', 'update header clock', 'print_state', 'Animator', 'Task-166', 'add_next', 'Task-881', 'Task-110', 'iterate', 'Task-900', 'Task-892', 'Task-69', 'state-updater', 'Task-109', 'Task-907', 'Task-111', 'Task-1', 'fuse', 'Task-894', 'screen_update']
+2023-10-23 18:08:18,151 - DD - minimon    - terminate() remote process 'df -P'..
+2023-10-23 18:08:19,025 - II - minimon    - start task 'df -P': 1
+2023-10-23 18:08:19,054 - DD - minimon    - run command via SSH..
+2023-10-23 18:08:19,175 - DD - minimon    - tasks(19): ['Task-78', 'iterate', 'Task-86', 'Task-64', 'update header clock', 'print_state', 'Animator', 'add_next', 'Task-1698', 'Task-110', 'Task-914', 'iterate', 'Task-69', 'state-updater', 'Task-109', 'Task-111', 'Task-1', 'fuse', 'screen_update']
+2023-10-23 18:08:19,211 - DD - minimon    - terminate() remote process 'df -P'..
+2023-10-23 18:08:20,021 - II - minimon    - start task 'dmesg --follow --time-format iso': 1
+2023-10-23 18:08:20,153 - II - minimon    - start task 'df -P': 1
+2023-10-23 18:08:20,179 - DD - minimon    - tasks(22): ['Task-78', 'iterate', 'Task-86', 'Task-64', 'update header clock', 'print_state', 'Animator', 'add_next', 'Task-110', 'Task-914', 'iterate', 'Task-2453', 'Task-69', 'state-updater', 'Task-1712', 'Task-109', 'Task-111', 'Task-1', 'fuse', 'Task-2460', 'Task-2438', 'screen_update']
+2023-10-23 18:08:20,181 - DD - minimon    - run command via SSH..
+2023-10-24 06:33:49,455 - II - minimon    - Event: <class 'textual.events.Load'>
+2023-10-24 06:33:49,474 - II - minimon    - Event: <class 'textual.events.Compose'>
+2023-10-24 06:33:49,499 - DD - minimon    - tasks(6): ['print_state', 'await mount', 'Task-1', 'await mount', 'await mount', 'await mount']
+2023-10-24 06:33:49,544 - II - minimon    - Event: <class 'textual.events.Mount'>
+2023-10-24 06:33:49,667 - II - minimon    - task <async_generator object local_resources at 0x7fea7e1f34c0> started
+2023-10-24 06:37:58,055 - II - minimon    - Event: <class 'textual.events.Load'>
+2023-10-24 06:37:58,074 - II - minimon    - Event: <class 'textual.events.Compose'>
+2023-10-24 06:37:58,099 - DD - minimon    - tasks(6): ['Task-1', 'await mount', 'await mount', 'await mount', 'await mount', 'print_state']
+2023-10-24 06:37:58,142 - II - minimon    - Event: <class 'textual.events.Mount'>
+2023-10-24 06:37:58,258 - II - minimon    - task <async_generator object local_resources at 0x7f9822d074c0> started
+2023-10-24 06:38:00,532 - II - minimon    - start task 'df -P': 0
+2023-10-24 06:38:00,536 - II - minimon    - start task 'dmesg --follow --time-format iso': 0
+2023-10-24 06:38:00,542 - II - minimon    - connect to remote root@localhost
+2023-10-24 06:38:00,546 - II - minimon    - connect to remote root@localhost
+2023-10-24 06:38:00,551 - DD - minimon    - tasks(12): ['Task-1', 'Task-68', 'Task-69', 'screen_update', 'print_state', 'update header clock', 'await mount', 'establish_connection', 'state-updater', 'establish_connection', 'await mount', 'Task-64']
+2023-10-24 06:38:00,605 - II - minimon    - Event: <class 'textual.events.Resize'>
+2023-10-24 06:38:00,608 - II - minimon    - Event: <class 'textual.events.Ready'>
+2023-10-24 06:38:00,640 - II - minimon    - task <async_generator object local_resources at 0x7f9822d076a0> started
+2023-10-24 06:38:00,733 - II - minimon    - start task 'df -P': 0
+2023-10-24 06:38:00,736 - II - minimon    - start task 'dmesg --follow --time-format iso': 0
+2023-10-24 06:38:00,740 - II - minimon    - Event: <class 'textual.events.DescendantFocus'>
+2023-10-24 06:38:00,742 - II - minimon    - Event: <class 'textual.widgets._tree.Tree.NodeExpanded'>
+2023-10-24 06:38:00,750 - II - minimon    - connect to remote om-office.de:2222
+2023-10-24 06:38:00,753 - II - minimon    - connect to remote om-office.de:2222
+2023-10-24 06:38:00,755 - II - minimon    - Event: <class 'textual.widgets._tree.Tree.NodeExpanded'>
+2023-10-24 06:38:00,945 - DD - minimon    - run command via SSH..
+2023-10-24 06:38:00,950 - DD - minimon    - run command via SSH..
+2023-10-24 06:38:01,253 - DD - minimon    - run command via SSH..
+2023-10-24 06:38:01,254 - DD - minimon    - run command via SSH..
+2023-10-25 07:55:09,991 - II - minimon    - Event: <class 'textual.events.Load'>
+2023-10-25 07:55:10,009 - II - minimon    - Event: <class 'textual.events.Compose'>
+2023-10-25 07:55:10,033 - DD - minimon    - tasks(6): ['Task-1', 'await mount', 'await mount', 'await mount', 'print_state', 'await mount']
+2023-10-25 07:55:10,076 - II - minimon    - Event: <class 'textual.events.Mount'>
+2023-10-25 07:55:10,221 - II - minimon    - Event: <class 'textual.events.Resize'>
+2023-10-25 07:55:10,224 - II - minimon    - Event: <class 'textual.events.Ready'>
+2023-10-25 07:55:10,242 - II - minimon    - task <async_generator object local_resources at 0x7fb1df7032e0> started
+2023-10-25 07:55:10,296 - II - minimon    - start task 'ps ww': 0
+2023-10-25 07:55:10,299 - II - minimon    - start task 'df -P': 0
+2023-10-25 07:55:10,302 - II - minimon    - Event: <class 'textual.events.DescendantFocus'>
+2023-10-25 07:55:10,307 - II - minimon    - connect to remote localhost
+2023-10-25 07:55:10,311 - II - minimon    - connect to remote localhost
+2023-10-25 07:55:10,317 - II - minimon    - Event: <class 'textual.widgets._tree.Tree.NodeExpanded'>
+2023-10-25 07:55:10,479 - DD - minimon    - run command via SSH..
+2023-10-25 07:55:10,482 - DD - minimon    - run command via SSH..
+2023-11-06 14:01:02,365 - INFO - minimon    - Event: <class 'textual.events.Load'>
+2023-11-06 14:01:02,384 - INFO - minimon    - Event: <class 'textual.events.Compose'>
+2023-11-06 14:01:02,401 - DEBUG - minimon    - tasks(6): ['await mount', 'await mount', 'Task-1', 'print_state', 'await mount', 'await mount']
+2023-11-06 14:01:02,421 - INFO - minimon    - Event: <class 'textual.events.Mount'>
+2023-11-06 14:01:02,561 - INFO - minimon    - Event: <class 'textual.events.Resize'>
+2023-11-06 14:01:02,565 - INFO - minimon    - Event: <class 'textual.events.Ready'>
+2023-11-06 14:01:02,584 - INFO - minimon    - task <async_generator object local_resources at 0x7fbdca6093f0> started
+2023-11-06 14:01:07,634 - INFO - minimon    - start task 'df -P': 0
+2023-11-06 14:01:07,640 - INFO - minimon    - Event: <class 'textual.events.DescendantFocus'>
+2023-11-06 14:01:07,647 - INFO - minimon    - connect to remote SHIFT6mq:2222
+2023-11-06 14:01:07,653 - INFO - minimon    - Event: <class 'textual.widgets._tree.Tree.NodeExpanded'>
+2023-11-06 14:01:07,658 - DEBUG - minimon    - tasks(9): ['update header clock', 'Animator', 'establish_connection', 'print_state', 'Task-64', 'state-updater', 'screen_update', 'Task-68', 'Task-1']
+2023-11-06 14:01:08,024 - DEBUG - minimon    - run command via SSH..
+2023-11-06 14:03:17,743 - INFO - minimon    - Event: <class 'textual.events.Load'>
+2023-11-06 14:03:17,764 - INFO - minimon    - Event: <class 'textual.events.Compose'>
+2023-11-06 14:03:17,789 - DEBUG - minimon    - tasks(6): ['await mount', 'Task-1', 'print_state', 'await mount', 'await mount', 'await mount']
+2023-11-06 14:03:17,812 - INFO - minimon    - Event: <class 'textual.events.Mount'>
+2023-11-06 14:03:17,969 - INFO - minimon    - Event: <class 'textual.events.Resize'>
+2023-11-06 14:03:17,973 - INFO - minimon    - Event: <class 'textual.events.Ready'>
+2023-11-06 14:03:17,993 - INFO - minimon    - task <async_generator object local_resources at 0x7f869181d3f0> started
+2023-11-06 14:03:18,059 - INFO - minimon    - start task 'df -P': 0
+2023-11-06 14:03:18,063 - INFO - minimon    - Event: <class 'textual.events.DescendantFocus'>
+2023-11-06 14:03:18,070 - INFO - minimon    - connect to remote SHIFT6mq:2222
+2023-11-06 14:03:18,075 - INFO - minimon    - Event: <class 'textual.widgets._tree.Tree.NodeExpanded'>
+2023-11-06 14:03:18,443 - DEBUG - minimon    - run command via SSH..
+2023-11-06 14:03:18,613 - DEBUG - minimon    - terminate() remote process 'df -P'..
+2023-11-06 14:03:18,790 - DEBUG - minimon    - tasks(8): ['update header clock', 'Animator', 'print_state', 'Task-64', 'Task-68', 'state-updater', 'screen_update', 'Task-1']
+2023-11-06 14:03:19,793 - DEBUG - minimon    - tasks(8): ['update header clock', 'Animator', 'print_state', 'Task-64', 'Task-68', 'state-updater', 'screen_update', 'Task-1']
+2023-11-06 14:03:20,615 - INFO - minimon    - start task 'df -P': 1
+2023-11-06 14:03:20,689 - DEBUG - minimon    - run command via SSH..
+2023-11-06 14:03:20,800 - DEBUG - minimon    - tasks(11): ['update header clock', 'Animator', 'print_state', 'Task-64', 'Task-68', 'state-updater', 'screen_update', 'Task-1', 'Task-185', 'Task-199', 'Task-206']
+2023-11-06 14:03:20,801 - DEBUG - minimon    - terminate() remote process 'df -P'..
+2023-11-06 14:03:21,805 - DEBUG - minimon    - tasks(8): ['update header clock', 'Animator', 'print_state', 'Task-64', 'Task-68', 'state-updater', 'screen_update', 'Task-1']
+2023-11-06 14:03:22,804 - INFO - minimon    - start task 'df -P': 2
+2023-11-06 14:03:22,820 - DEBUG - minimon    - tasks(8): ['update header clock', 'Animator', 'print_state', 'Task-64', 'Task-68', 'state-updater', 'screen_update', 'Task-1']
+2023-11-06 14:03:22,892 - DEBUG - minimon    - run command via SSH..
+2023-11-06 14:03:23,031 - DEBUG - minimon    - terminate() remote process 'df -P'..
+2023-11-06 14:03:23,821 - DEBUG - minimon    - tasks(8): ['update header clock', 'Animator', 'print_state', 'Task-64', 'Task-68', 'state-updater', 'screen_update', 'Task-1']
+2023-11-06 14:03:24,825 - DEBUG - minimon    - tasks(8): ['update header clock', 'Animator', 'print_state', 'Task-64', 'Task-68', 'state-updater', 'screen_update', 'Task-1']
+2023-11-06 14:03:25,035 - INFO - minimon    - start task 'df -P': 3
+2023-11-06 14:03:25,128 - DEBUG - minimon    - run command via SSH..
+2023-11-06 14:03:25,235 - DEBUG - minimon    - terminate() remote process 'df -P'..
+2023-11-06 14:03:25,827 - DEBUG - minimon    - tasks(8): ['update header clock', 'Animator', 'print_state', 'Task-64', 'Task-68', 'state-updater', 'screen_update', 'Task-1']
+2023-11-06 14:03:26,832 - DEBUG - minimon    - tasks(8): ['update header clock', 'Animator', 'print_state', 'Task-64', 'Task-68', 'state-updater', 'screen_update', 'Task-1']
+2023-11-06 14:03:27,238 - INFO - minimon    - start task 'df -P': 4
+2023-11-06 14:03:27,321 - DEBUG - minimon    - run command via SSH..
+2023-11-06 14:03:27,453 - DEBUG - minimon    - terminate() remote process 'df -P'..
+2023-11-06 14:03:27,835 - DEBUG - minimon    - tasks(8): ['update header clock', 'Animator', 'print_state', 'Task-64', 'Task-68', 'state-updater', 'screen_update', 'Task-1']
+2023-11-06 14:03:28,837 - DEBUG - minimon    - tasks(8): ['update header clock', 'Animator', 'print_state', 'Task-64', 'Task-68', 'state-updater', 'screen_update', 'Task-1']
+2023-11-06 14:03:29,455 - INFO - minimon    - start task 'df -P': 5
+2023-11-06 14:03:29,547 - DEBUG - minimon    - run command via SSH..
+2023-11-06 14:03:29,682 - DEBUG - minimon    - terminate() remote process 'df -P'..
+2023-11-06 14:03:29,838 - DEBUG - minimon    - tasks(8): ['update header clock', 'Animator', 'print_state', 'Task-64', 'Task-68', 'screen_update', 'state-updater', 'Task-1']
+2023-11-06 14:03:30,841 - DEBUG - minimon    - tasks(8): ['update header clock', 'Animator', 'print_state', 'Task-64', 'Task-68', 'screen_update', 'state-updater', 'Task-1']
+2023-11-06 14:03:31,685 - INFO - minimon    - start task 'df -P': 6
+2023-11-06 14:03:31,764 - DEBUG - minimon    - run command via SSH..
+2023-11-06 14:03:31,865 - DEBUG - minimon    - tasks(17): ['update header clock', 'Task-511', 'fuse', 'Animator', 'Task-517', 'print_state', 'Task-64', 'Task-535', 'Task-523', 'Task-68', 'Task-529', 'screen_update', 'state-updater', 'Task-1', 'Task-541', 'Task-505', 'Task-491']
+2023-11-06 14:03:31,879 - DEBUG - minimon    - terminate() remote process 'df -P'..
+2023-11-06 14:03:32,868 - DEBUG - minimon    - tasks(8): ['update header clock', 'Animator', 'print_state', 'Task-64', 'Task-68', 'screen_update', 'state-updater', 'Task-1']
+2023-11-06 14:03:33,870 - DEBUG - minimon    - tasks(9): ['update header clock', 'Animator', 'print_state', 'Task-64', 'Task-68', 'screen_update', 'state-updater', 'Task-1', 'Task-557']
+2023-11-06 14:03:33,883 - INFO - minimon    - start task 'df -P': 7
+2023-11-06 14:03:34,010 - DEBUG - minimon    - run command via SSH..
+2023-11-06 14:03:34,131 - DEBUG - minimon    - terminate() remote process 'df -P'..
+2023-11-06 14:03:34,873 - DEBUG - minimon    - tasks(8): ['update header clock', 'Animator', 'print_state', 'Task-64', 'Task-68', 'screen_update', 'state-updater', 'Task-1']
+2023-11-06 14:03:35,876 - DEBUG - minimon    - tasks(8): ['update header clock', 'Animator', 'print_state', 'Task-64', 'Task-68', 'screen_update', 'state-updater', 'Task-1']
+2023-11-06 14:03:36,133 - INFO - minimon    - start task 'df -P': 8
+2023-11-06 14:03:36,208 - DEBUG - minimon    - run command via SSH..
+2023-11-06 14:03:36,351 - DEBUG - minimon    - terminate() remote process 'df -P'..
+2023-11-06 14:03:40,741 - INFO - minimon    - Event: <class 'textual.events.Load'>
+2023-11-06 14:03:40,760 - INFO - minimon    - Event: <class 'textual.events.Compose'>
+2023-11-06 14:03:40,776 - DEBUG - minimon    - tasks(6): ['await mount', 'Task-1', 'print_state', 'await mount', 'await mount', 'await mount']
+2023-11-06 14:03:40,796 - INFO - minimon    - Event: <class 'textual.events.Mount'>
+2023-11-06 14:03:40,938 - INFO - minimon    - Event: <class 'textual.events.Resize'>
+2023-11-06 14:03:40,942 - INFO - minimon    - Event: <class 'textual.events.Ready'>
+2023-11-06 14:03:40,961 - INFO - minimon    - task <async_generator object local_resources at 0x7fa38f5cd3f0> started
+2023-11-06 14:03:41,021 - INFO - minimon    - start task 'df -P': 0
+2023-11-06 14:03:41,025 - INFO - minimon    - Event: <class 'textual.events.DescendantFocus'>
+2023-11-06 14:03:41,031 - INFO - minimon    - connect to remote SHIFT6mq:2222
+2023-11-06 14:03:41,037 - INFO - minimon    - Event: <class 'textual.widgets._tree.Tree.NodeExpanded'>
+2023-11-06 14:03:41,369 - DEBUG - minimon    - run command via SSH..
+2023-11-06 14:03:41,523 - DEBUG - minimon    - terminate() remote process 'df -P'..
+2023-11-06 14:03:41,779 - DEBUG - minimon    - tasks(8): ['update header clock', 'Animator', 'print_state', 'Task-64', 'state-updater', 'screen_update', 'Task-68', 'Task-1']
+2023-11-06 14:03:42,782 - DEBUG - minimon    - tasks(8): ['update header clock', 'Animator', 'print_state', 'Task-64', 'state-updater', 'screen_update', 'Task-68', 'Task-1']
+2023-11-06 14:03:43,527 - INFO - minimon    - start task 'df -P': 1
+2023-11-06 14:03:43,602 - DEBUG - minimon    - run command via SSH..
+2023-11-06 14:03:43,742 - DEBUG - minimon    - terminate() remote process 'df -P'..
+2023-11-06 14:03:43,784 - DEBUG - minimon    - tasks(8): ['update header clock', 'Animator', 'print_state', 'Task-64', 'state-updater', 'screen_update', 'Task-68', 'Task-1']
+2023-11-06 14:03:44,788 - DEBUG - minimon    - tasks(8): ['update header clock', 'Animator', 'print_state', 'Task-64', 'state-updater', 'screen_update', 'Task-68', 'Task-1']
+2023-11-06 14:03:45,744 - INFO - minimon    - start task 'df -P': 2
+2023-11-06 14:03:45,789 - DEBUG - minimon    - tasks(8): ['update header clock', 'Animator', 'print_state', 'Task-64', 'state-updater', 'screen_update', 'Task-68', 'Task-1']
+2023-11-06 14:03:45,821 - DEBUG - minimon    - run command via SSH..
+2023-11-06 14:03:45,938 - DEBUG - minimon    - terminate() remote process 'df -P'..
+2023-11-06 14:03:46,794 - DEBUG - minimon    - tasks(8): ['update header clock', 'Animator', 'print_state', 'Task-64', 'state-updater', 'screen_update', 'Task-68', 'Task-1']
+2023-11-06 14:03:47,796 - DEBUG - minimon    - tasks(8): ['update header clock', 'Animator', 'print_state', 'Task-64', 'state-updater', 'screen_update', 'Task-68', 'Task-1']
+2023-11-06 14:03:47,942 - INFO - minimon    - start task 'df -P': 3
+2023-11-06 14:03:48,036 - DEBUG - minimon    - run command via SSH..
+2023-11-06 14:03:48,174 - DEBUG - minimon    - terminate() remote process 'df -P'..
+2023-11-06 14:03:48,799 - DEBUG - minimon    - tasks(8): ['update header clock', 'Animator', 'print_state', 'Task-64', 'screen_update', 'state-updater', 'Task-68', 'Task-1']
+2023-11-06 14:03:49,804 - DEBUG - minimon    - tasks(8): ['update header clock', 'Animator', 'print_state', 'Task-64', 'screen_update', 'state-updater', 'Task-68', 'Task-1']
+2023-11-06 14:03:50,178 - INFO - minimon    - start task 'df -P': 4
+2023-11-06 14:03:50,366 - DEBUG - minimon    - run command via SSH..
+2023-11-06 14:03:50,413 - DEBUG - minimon    - terminate() remote process 'df -P'..
+2023-11-06 14:03:50,805 - DEBUG - minimon    - tasks(8): ['update header clock', 'Animator', 'print_state', 'Task-64', 'screen_update', 'state-updater', 'Task-68', 'Task-1']
+2023-11-06 14:03:51,807 - DEBUG - minimon    - tasks(8): ['update header clock', 'Animator', 'print_state', 'Task-64', 'screen_update', 'state-updater', 'Task-68', 'Task-1']
+2023-11-06 14:03:52,418 - INFO - minimon    - start task 'df -P': 5
+2023-11-06 14:03:52,540 - DEBUG - minimon    - run command via SSH..
+2023-11-06 14:03:52,692 - DEBUG - minimon    - terminate() remote process 'df -P'..
+2023-11-06 14:03:52,809 - DEBUG - minimon    - tasks(8): ['update header clock', 'Animator', 'print_state', 'Task-64', 'screen_update', 'state-updater', 'Task-68', 'Task-1']
+2023-11-06 14:03:53,812 - DEBUG - minimon    - tasks(8): ['update header clock', 'Animator', 'print_state', 'Task-64', 'screen_update', 'state-updater', 'Task-68', 'Task-1']
+2023-11-06 14:03:54,694 - INFO - minimon    - start task 'df -P': 6
+2023-11-06 14:03:54,775 - DEBUG - minimon    - run command via SSH..
+2023-11-06 14:03:54,817 - DEBUG - minimon    - tasks(14): ['update header clock', 'Animator', 'Task-487', 'iterate', 'print_state', 'Task-64', 'Task-486', 'add_next', 'screen_update', 'state-updater', 'Task-68', 'Task-1', 'iterate', 'Task-485']
+2023-11-06 14:03:54,878 - DEBUG - minimon    - terminate() remote process 'df -P'..
+2023-11-06 14:03:55,820 - DEBUG - minimon    - tasks(8): ['update header clock', 'Animator', 'print_state', 'Task-64', 'screen_update', 'state-updater', 'Task-68', 'Task-1']
+2023-11-06 14:03:56,822 - DEBUG - minimon    - tasks(9): ['update header clock', 'Animator', 'print_state', 'Task-64', 'screen_update', 'state-updater', 'Task-68', 'Task-1', 'Task-552']
+2023-11-06 14:03:56,881 - INFO - minimon    - start task 'df -P': 7
+2023-11-06 14:03:56,966 - DEBUG - minimon    - run command via SSH..
+2023-11-06 14:03:58,315 - INFO - minimon    - Event: <class 'textual.events.Load'>
+2023-11-06 14:03:58,335 - INFO - minimon    - Event: <class 'textual.events.Compose'>
+2023-11-06 14:03:58,351 - DEBUG - minimon    - tasks(6): ['await mount', 'Task-1', 'print_state', 'await mount', 'await mount', 'await mount']
+2023-11-06 14:03:58,372 - INFO - minimon    - Event: <class 'textual.events.Mount'>
+2023-11-06 14:03:58,515 - INFO - minimon    - Event: <class 'textual.events.Resize'>
+2023-11-06 14:03:58,519 - INFO - minimon    - Event: <class 'textual.events.Ready'>
+2023-11-06 14:03:58,537 - INFO - minimon    - task <async_generator object local_resources at 0x7f7a3d3893f0> started
+2023-11-06 14:20:21,878 - INFO - minimon    - Event: <class 'textual.events.Load'>
+2023-11-06 14:20:21,898 - INFO - minimon    - Event: <class 'textual.events.Compose'>
+2023-11-06 14:20:21,916 - DEBUG - minimon    - tasks(6): ['Task-1', 'await mount', 'await mount', 'print_state', 'await mount', 'await mount']
+2023-11-06 14:20:21,937 - INFO - minimon    - Event: <class 'textual.events.Mount'>
+2023-11-06 14:20:22,076 - INFO - minimon    - Event: <class 'textual.events.Resize'>
+2023-11-06 14:20:22,080 - INFO - minimon    - Event: <class 'textual.events.Ready'>
+2023-11-06 14:20:22,099 - INFO - minimon    - task <async_generator object local_resources at 0x7f4581e4d6c0> started
+2023-11-06 14:33:59,029 - INFO - minimon    - Event: <class 'textual.events.Load'>
+2023-11-06 14:33:59,049 - INFO - minimon    - Event: <class 'textual.events.Compose'>
+2023-11-06 14:33:59,066 - DEBUG - minimon    - tasks(6): ['Task-1', 'await mount', 'await mount', 'print_state', 'await mount', 'await mount']
+2023-11-06 14:33:59,087 - INFO - minimon    - Event: <class 'textual.events.Mount'>
+2023-11-06 14:33:59,232 - INFO - minimon    - Event: <class 'textual.events.Resize'>
+2023-11-06 14:33:59,236 - INFO - minimon    - Event: <class 'textual.events.Ready'>
+2023-11-06 14:33:59,255 - INFO - minimon    - task <async_generator object local_resources at 0x7fa4e237d6c0> started
+2023-11-06 19:25:55,742 - INFO - minimon    - Event: <class 'textual.events.Load'>
+2023-11-06 19:25:55,763 - INFO - minimon    - Event: <class 'textual.events.Compose'>
+2023-11-06 19:25:55,781 - DEBUG - minimon    - tasks(6): ['Task-1', 'await mount', 'await mount', 'await mount', 'print_state', 'await mount']
+2023-11-06 19:25:55,804 - INFO - minimon    - Event: <class 'textual.events.Mount'>
+2023-11-06 19:25:55,961 - INFO - minimon    - Event: <class 'textual.events.Resize'>
+2023-11-06 19:25:55,965 - INFO - minimon    - Event: <class 'textual.events.Ready'>
+2023-11-06 19:25:55,986 - INFO - minimon    - task <async_generator object local_resources at 0x7fb3211715d0> started
+2023-11-06 19:26:01,641 - INFO - minimon    - Event: <class 'textual.events.Load'>
+2023-11-06 19:26:01,662 - INFO - minimon    - Event: <class 'textual.events.Compose'>
+2023-11-06 19:26:01,680 - DEBUG - minimon    - tasks(6): ['Task-1', 'await mount', 'await mount', 'await mount', 'print_state', 'await mount']
+2023-11-06 19:26:01,702 - INFO - minimon    - Event: <class 'textual.events.Mount'>
+2023-11-06 19:26:01,860 - INFO - minimon    - Event: <class 'textual.events.Resize'>
+2023-11-06 19:26:01,865 - INFO - minimon    - Event: <class 'textual.events.Ready'>
+2023-11-06 19:26:01,886 - INFO - minimon    - task <async_generator object local_resources at 0x7f20646715d0> started
+2023-11-06 19:26:01,952 - INFO - minimon    - start task 'df -P': 0
+2023-11-06 19:26:01,956 - INFO - minimon    - Event: <class 'textual.events.DescendantFocus'>
+2023-11-06 19:26:01,962 - INFO - minimon    - connect to remote SHIFT6mq:2222
+2023-11-06 19:26:01,968 - INFO - minimon    - Event: <class 'textual.widgets._tree.Tree.NodeExpanded'>
+2023-11-06 19:26:02,682 - DEBUG - minimon    - tasks(9): ['establish_connection', 'update header clock', 'Animator', 'Task-64', 'Task-68', 'print_state', 'state-updater', 'screen_update', 'Task-1']
+2023-11-06 19:26:03,686 - DEBUG - minimon    - tasks(9): ['establish_connection', 'update header clock', 'Animator', 'Task-64', 'Task-68', 'print_state', 'state-updater', 'screen_update', 'Task-1']
+2023-11-06 19:26:04,689 - DEBUG - minimon    - tasks(9): ['establish_connection', 'update header clock', 'Animator', 'Task-64', 'Task-68', 'print_state', 'state-updater', 'screen_update', 'Task-1']
+2023-11-06 19:26:05,161 - DEBUG - minimon    - run command via SSH..
