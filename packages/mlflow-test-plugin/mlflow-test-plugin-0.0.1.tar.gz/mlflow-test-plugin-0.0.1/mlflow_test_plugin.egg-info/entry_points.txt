@@ -1,0 +1,38 @@
+[mlflow.app]
+custom_app = mlflow_test_plugin.app:custom_app
+
+[mlflow.artifact_repository]
+file-plugin = mlflow_test_plugin.local_artifact:PluginLocalArtifactRepository
+
+[mlflow.dataset_constructor]
+from_dummy = mlflow_test_plugin.dummy_dataset:from_dummy
+
+[mlflow.dataset_source]
+dummy_source = mlflow_test_plugin.dummy_dataset_source:DummyDatasetSource
+
+[mlflow.default_experiment_provider]
+unused = mlflow_test_plugin.default_experiment_provider:PluginDefaultExperimentProvider
+
+[mlflow.deployments]
+faketarget = mlflow_test_plugin.fake_deployment_plugin
+
+[mlflow.model_evaluator]
+dummy_evaluator = mlflow_test_plugin.dummy_evaluator:DummyEvaluator
+
+[mlflow.model_registry_store]
+file-plugin = mlflow_test_plugin.sqlalchemy_store:PluginRegistrySqlAlchemyStore
+
+[mlflow.project_backend]
+dummy-backend = mlflow_test_plugin.dummy_backend:PluginDummyProjectBackend
+
+[mlflow.request_auth_provider]
+unused = mlflow_test_plugin.request_auth_provider:PluginRequestAuthProvider
+
+[mlflow.request_header_provider]
+unused = mlflow_test_plugin.request_header_provider:PluginRequestHeaderProvider
+
+[mlflow.run_context_provider]
+unused = mlflow_test_plugin.run_context_provider:PluginRunContextProvider
+
+[mlflow.tracking_store]
+file-plugin = mlflow_test_plugin.file_store:PluginFileStore
