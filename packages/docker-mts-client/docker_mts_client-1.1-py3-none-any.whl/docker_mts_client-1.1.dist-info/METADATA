@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: docker-mts-client
+Version: 1.1
+Summary: A Python library for the Docker Engine API.
+Author-email: qa-admin@sknt.ru
+Maintainer: Docker, Inc.
+Maintainer-email: no-reply@docker.com
+License: Apache License 2.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: packaging >=14.0
+Requires-Dist: requests >=2.26.0
+Requires-Dist: urllib3 >=1.26.0
+Requires-Dist: pywin32 >=304 ; sys_platform == "win32"
+Provides-Extra: ssh
+Requires-Dist: paramiko >=2.4.3 ; extra == 'ssh'
+Provides-Extra: tls
+Provides-Extra: websockets
+Requires-Dist: websocket-client >=1.3.0 ; extra == 'websockets'
+
+# Docker SDK for Python
+
+
+
+[![Build Status](https://github.com/docker/docker-py/actions/workflows/ci.yml/badge.svg)](https://github.com/docker/docker-py/actions/workflows/ci.yml)
+
+
+
+
+
