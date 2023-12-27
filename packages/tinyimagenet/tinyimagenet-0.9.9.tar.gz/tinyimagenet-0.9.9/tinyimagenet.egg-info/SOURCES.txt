@@ -1,0 +1,14 @@
+LICENSE
+README.md
+imagenet1k.py
+setup.py
+tinyimagenet.py
+test/test_dataloader.py
+test/test_imagenet_idx.py
+test/test_load_all_images.py
+tinyimagenet.egg-info/PKG-INFO
+tinyimagenet.egg-info/SOURCES.txt
+tinyimagenet.egg-info/dependency_links.txt
+tinyimagenet.egg-info/requires.txt
+tinyimagenet.egg-info/top_level.txt
+tinyimagenet.egg-info/zip-safe
