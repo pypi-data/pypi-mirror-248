@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: enginefaas
+Version: 0.0.1
+Summary: Engine FaaS SDK
+Author: faas engineer
+Author-email: faas@email.com
+Keywords: python,faas
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+
+Engine FaaS SDK
