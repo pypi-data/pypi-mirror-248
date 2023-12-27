@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pinedantic
+Version: 0.0.3
+Summary: Pinecone + Pydantic = Pinedantic
+Author: obahamonde
+Author-email: oscar.bahamonde.dev@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: glob-utils (>=0.0.6,<0.0.7)
+Requires-Dist: pydantic (==1.10.12)
+Description-Content-Type: text/markdown
+
+# Pinecone + Pydantic
