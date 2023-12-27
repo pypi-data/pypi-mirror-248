@@ -1,0 +1,12 @@
+asphalt~=4.8
+py4j>=0.10.9
+
+[doc]
+Sphinx>=7.0
+sphinx-rtd-theme>=1.3.0
+sphinx-autodoc-typehints>=1.22
+
+[test]
+anyio>=4.0
+coverage>=7
+pytest
