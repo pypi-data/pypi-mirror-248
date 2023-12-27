@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: GraphProcess4GNN
+Version: 0.0.0.1
+Summary: Graph Processing method for improve the performance of GNNs
+Author: xushen
+Author-email: imshenxu@gmail.com
+License: apache 3.0
+Requires: numpy
+Requires: matplotlib
+Requires: networkx
+Requires: pandas
+Requires: scipy
+Requires: os
+
