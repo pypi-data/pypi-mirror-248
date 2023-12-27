@@ -1,0 +1,101 @@
+/**
+ * Alliance Auth CSS Framework
+ *
+ * This provides some CSS classes together with a couple of Bootstrap fixes
+ * to be used throughout Alliance Auth and its Community Apps
+ */
+
+/* Bootstrap fixes
+------------------------------------------------------------------------------------- */
+@media all {
+    .table {
+        --bs-table-bg: transparent;
+    }
+}
+
+/* Cursor classes
+------------------------------------------------------------------------------------- */
+@media all {
+    .cursor-auto {
+        cursor: auto;
+    }
+
+    .cursor-default {
+        cursor: default;
+    }
+
+    .cursor-pointer {
+        cursor: pointer;
+    }
+
+    .cursor-wait {
+        cursor: wait;
+    }
+
+    .cursor-text {
+        cursor: text;
+    }
+
+    .cursor-move {
+        cursor: move;
+    }
+
+    .cursor-help {
+        cursor: help;
+    }
+
+    .cursor-not-allowed {
+        cursor: not-allowed;
+    }
+
+    .cursor-inherit {
+        cursor: inherit;
+    }
+
+    .cursor-zoom-in {
+        cursor: zoom-in;
+    }
+
+    .cursor-zoom-out {
+        cursor: zoom-out;
+    }
+}
+
+/* Callouts
+ *
+ * Not quite alerts, but custom and helpful notes for folks.
+ * Requires a base and modifier class.
+------------------------------------------------------------------------------------- */
+@media all {
+    /* Common styles for all types */
+    .aa-callout {
+        border: 1px solid var(--bs-border-color);
+        border-left-width: 0.25rem;
+        border-radius: 0.25rem;
+        margin-bottom: 1.25rem;
+        margin-top: 1.25rem;
+        padding: 1.25rem;
+    }
+
+    /* Last item bottom margin should be 0 */
+    .aa-callout :last-child {
+        margin-bottom: 0;
+    }
+
+    /* Variations */
+    .aa-callout.aa-callout-danger {
+        border-left-color: var(--bs-danger);
+    }
+
+    .aa-callout.aa-callout-info {
+        border-left-color: var(--bs-info);
+    }
+
+    .aa-callout.aa-callout-success {
+        border-left-color: var(--bs-success);
+    }
+
+    .aa-callout.aa-callout-warning {
+        border-left-color: var(--bs-warning);
+    }
+}
