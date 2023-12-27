@@ -1,0 +1,10 @@
+dimcheck/__init__.py,sha256=pgAF8_7RS3GMVwBHoE0K0Hzx3KDqf5xdl4jZhRhiGtw,131
+dimcheck/custom.json,sha256=f1IKutgHnjSLlGXrvpvD7TyEOlMdx5ARwCve8-AWI6g,8296
+dimcheck/dimcheck_core.py,sha256=9LMadROQE8EJ3HPMYuQfsUU4hF5rjefavZwOXfdfDmo,47419
+dimcheck/setting.json,sha256=A4-C9xL0W8BJg8nD8PdHgDkcD558NzoKzt5FJyrkwQ8,143
+dimcheck/si.json,sha256=f1IKutgHnjSLlGXrvpvD7TyEOlMdx5ARwCve8-AWI6g,8296
+dimcheck-1.0.1.dist-info/LICENSE,sha256=62GgUmqLxiR0vjsuD0VcIidy9z44wJsfUrjH7h8_nhA,11338
+dimcheck-1.0.1.dist-info/METADATA,sha256=QIWDHnji5U-kf8OrOp8Z6kaP52sGr3MIKwO1ayCqsck,11579
+dimcheck-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dimcheck-1.0.1.dist-info/top_level.txt,sha256=E7LHvLpFAKmcqqrCMJUNxPOZBMd0ImA455P8Gw2N318,9
+dimcheck-1.0.1.dist-info/RECORD,,
