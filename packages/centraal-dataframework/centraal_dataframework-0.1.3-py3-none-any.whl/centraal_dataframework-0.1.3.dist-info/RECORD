@@ -1,0 +1,12 @@
+centraal_dataframework/__init__.py,sha256=We_EiX3y6BIpUcCdTWo4Zod7qzhv60t4hhbDtRuJRLw,238
+centraal_dataframework/blueprints.py,sha256=BdTBXylb572wCts1kEj7J3y-_VfD7Zs9Il17Nvkq5ps,2672
+centraal_dataframework/email_sender.py,sha256=ENrkNe9VWghXJk-YQXh_TAPIQUn_OvLzMHaJwJoX3-w,2393
+centraal_dataframework/excepciones.py,sha256=_oiWvMzaLucgHsJROSS8vwAmsOWGoGAZRmcP98RltDY,1746
+centraal_dataframework/resources.py,sha256=eyj4QqAyNpgz0rRy6KSHeppA6Rr29BUVf6W75p3wH9g,7097
+centraal_dataframework/runner.py,sha256=HhOEZQwpM36f5vL2t2woWamBRiNWd17xaIBLYldTJTY,5416
+centraal_dataframework/tasks.py,sha256=JqRi47RHke_30ELjlAY-wgQx45qlYGN8Ci51i9qI78k,1374
+centraal_dataframework/utils.py,sha256=rVhHWQGiQiF2X9EO0VBqpW2NdtH1fD5s9iYaGRwevtk,446
+centraal_dataframework-0.1.3.dist-info/LICENSE,sha256=9LRX_QFPrOzOKGIoTIrZA9hDgWcmYNfomIa_uuyb9RE,1076
+centraal_dataframework-0.1.3.dist-info/METADATA,sha256=5D4MIwOGzYRUf-9yg2T7YK4Xma6-tOWYqDYpizICt-0,8328
+centraal_dataframework-0.1.3.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+centraal_dataframework-0.1.3.dist-info/RECORD,,
