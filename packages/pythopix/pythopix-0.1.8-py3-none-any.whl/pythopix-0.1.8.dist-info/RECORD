@@ -1,0 +1,12 @@
+pythopix/__init__.py,sha256=XSTk_C5O-LnrAMXht4H0eNymmgs5ogmL9SIasXlLwRs,614
+pythopix/data_handling.py,sha256=6b5dniZCVyoME13Bwzv3bpTAaCgLHREXMgcWZ6eJSZA,2032
+pythopix/dataset_evaluation.py,sha256=V_CDEZ3_NQ7oG61GZZxms1wA7h3DmabowZ3zbhj-wIA,2562
+pythopix/file_operations.py,sha256=BWYTuCGWIDLRkidd2We9SGLA4XAQ4MMrfa0q_PqUIxg,1201
+pythopix/labels_operations.py,sha256=-Sdk7S0LoMpjqX2HcGj5R6Jl6O6Hffsr8RG-vAvLOdY,7157
+pythopix/model_operations.py,sha256=dQJR3xQP17NbqqepRsQqmY4Er4E90X4ZNtA8_xHAwPY,9248
+pythopix/theme.py,sha256=Q8M3lk5SHaZHf9KrI-Bw8ZkR3-LSATL2xhQSuZs9mbY,276
+pythopix/utils.py,sha256=cecWQKQ9IvmNI4yldh1LCvoLUD3ueDnqFiT1nO_s4Pk,1252
+pythopix-0.1.8.dist-info/METADATA,sha256=FT46LTu4k8I-Dln1FQwwxIXu9uaWk1Z9C6i2eTvUR9Y,2709
+pythopix-0.1.8.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pythopix-0.1.8.dist-info/top_level.txt,sha256=uicZdLTLxHLmTerc5dFswRXpw9J-LrWOWxVVZRPtB78,9
+pythopix-0.1.8.dist-info/RECORD,,
