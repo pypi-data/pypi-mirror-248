@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+readme = "README.md"
+authors = ["karthithehacker <contact@karthithehacker.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+urllib3 = "^2.1.0"
+requests = "^2.31.0"
+click = "^8.1.7"
+pyyaml = "^6.0.1"
+
+Homepage = "https://github.com/pypa/sampleproject"
