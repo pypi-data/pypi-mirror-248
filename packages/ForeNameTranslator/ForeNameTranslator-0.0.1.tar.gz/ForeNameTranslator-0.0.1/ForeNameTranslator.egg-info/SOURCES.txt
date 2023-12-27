@@ -1,0 +1,15 @@
+Descriptiption.md
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+ForeNameTranslator/__init__.py
+ForeNameTranslator.egg-info/PKG-INFO
+ForeNameTranslator.egg-info/SOURCES.txt
+ForeNameTranslator.egg-info/dependency_links.txt
+ForeNameTranslator.egg-info/requires.txt
+ForeNameTranslator.egg-info/top_level.txt
+ForeNameTranslator.egg-info/zip-safe
+ForeNameTranslator/mode/__init__.py
+ForeNameTranslator/mode/mode_FNM_Tra.py
+ForeNameTranslator/mode/mode_TRA_Api.py
