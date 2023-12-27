@@ -1,0 +1,4 @@
+include LICENSE
+include requirements.txt
+recursive-include radonpy *.py
+recursive-include radonpy/ff/ff_dat *.json
