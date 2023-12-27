@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: fastid
+Version: 0.0.4
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Summary: This is a library for quickly generating unique IDs in Python.
+Keywords: unique-id,id-generator,ulid,snowflake,uuid
+Author-email: Seungwoo Hong <qksn1541@gmail.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Repository, https://github.com/HHongSeungWoo/fastid
+
+# Fastid
+Created for the easy and fast generation of various IDs
+
+# Supported IDs
+- ulid
+- snowflake
+- uuid v7 (If you intend to use uuid in your database, this can be a great choice)
+
