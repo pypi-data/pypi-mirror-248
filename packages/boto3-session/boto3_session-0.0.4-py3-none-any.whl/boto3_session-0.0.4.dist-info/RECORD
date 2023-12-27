@@ -1,0 +1,7 @@
+boto3_session/__init__.py,sha256=ZVq3TKvm458lOyt4b5JAuwK9EfFTQqXuEtgPvmDiscc,104
+boto3_session/__version__.py,sha256=IHT4mKrIr8eV-C3HtmIVD85iGVH25n2ohoff31kaJ1A,93
+boto3_session/session.py,sha256=RdWlMPEkyjwrqR8kBXj-rKZYwarXX7E_qYjNWeSzktI,4047
+boto3_session-0.0.4.dist-info/LICENSE,sha256=KPHimGp4ehdaHn7s0RrnWAqKefaRTu5b_zUz7cGVuo8,11337
+boto3_session-0.0.4.dist-info/METADATA,sha256=Q6KiubmkvfdqRi0u4i8NGGqhWKEti4e2a5ixBruxxBQ,3234
+boto3_session-0.0.4.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+boto3_session-0.0.4.dist-info/RECORD,,
