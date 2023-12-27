@@ -1,0 +1,15 @@
+README.md
+setup.py
+lix/__init__.py
+lix.egg-info/PKG-INFO
+lix.egg-info/SOURCES.txt
+lix.egg-info/dependency_links.txt
+lix.egg-info/requires.txt
+lix.egg-info/top_level.txt
+lix/cache/__init__.py
+lix/color/__init__.py
+lix/factorial/__init__.py
+lix/fib/__init__.py
+lix/math/__init__.py
+lix/sort/__init__.py
+lix/sqrt/__init__.py

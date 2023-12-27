@@ -1,0 +1,167 @@
+Metadata-Version: 2.1
+Name: lix
+Version: 3.8.2
+Summary: lix - Multi purpose package
+Home-page: https://github.com/flowa-ai/lix
+Author: flowa
+Author-email: flowa.dev@gmail.com
+License: MIT
+Keywords: lix math random copy cache factorial fib fibonacci sqrt sort sorting color colorama
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Development Status :: 4 - Beta
+Classifier: Development Status :: 3 - Alpha
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Typing :: Typed
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+<a href="[https://i.ibb.co/f91kj7K/sketch1703640010239.png](https://i.ibb.co/f91kj7K/sketch1703640010239.png)"><img src="https://i.ibb.co/f91kj7K/sketch1703640010239.png" alt="flowa" border="0" width="145"></a>
+
+# [lix - Multi purpose package](https://pypi.org/project/flowa)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/flowa/flowa/blob/main/LICENSE)
+[![Python Versions](https://img.shields.io/badge/python-3.7%20|%203.8%20|%203.9%20|%203.10%20|%203.11%20|%203.12%20-blue)](https://www.python.org/downloads/)
+
+```
+lix: (V3.8.2)
+
+Multi purpose package!
+```
+
+## Installing
+```shell
+# Linux/macOS
+python3 pip install -U lix
+
+# Windows
+py -3 -m pip install -U lix
+```
+
+# Caches
+```python
+@lix.cache
+def fib(n):
+    if n < 2:
+        return n
+    return fib(n-1) + fibo(n-2)
+```
+
+```python
+@lix.fast
+def fib(n):
+    if n < 2:
+        return n
+    return fib(n-1) + fibo(n-2)
+```
+
+```python
+@lix.limit(5)
+def fib(n):
+    if n < 2:
+        return n
+    return fib(n-1) + fibo(n-2)'
+```
+
+# Sort
+```js
+my_list = [6,2,5,7,9,7,3,1,124,6,54,1,4,47,74,43,1,12,5,7,94,223]
+
+lix.bubblesort(my_list)
+lix.insertionsort(my_list)
+lix.selectionsort(my_list)
+lix.mergesort(my_list)
+lix.quicksort(my_list)
+lix.heapsort(my_list)
+lix.shellsort(my_list)
+```
+
+# Color
+```js
+lix.Fore      # lix.Fore.BLACK
+lix.Back
+lix.Style
+lix.Effect
+lix.Decor
+lix.BackEffect
+
+lix.init()    # OPTIONAL
+lix.deinit()  # OPTIONAL
+
+lix.clear()   # clear console/terminal
+lix.reset()   # reset console/terminal
+lix.blend()   # blend color, style, back, etc
+lix.get('black', 'Fore')     # get color, style, back, etc
+lix.gradient('black', 'Fore') # get gradient color, style, back, etc
+lix.code('print("Hello World")', 'text', 'friendly') # code highlight
+lix.new(fore='black', back='white', style='bold') # new color
+lix.color('Hello World', lix.new(fore='black', back='white', style='bold')) # color with new
+```
+
+# Math
+```js
+lix.mean(my_list)
+lix.median(my_list)
+lix.mode(my_list)
+lix.range(my_list)
+lix.variance(my_list)
+lix.standard_deviation(my_list)
+lix.covariance(my_list, my_list2)
+lix.correlation(my_list, my_list2)
+lix.linear_regression(my_list, my_list2)
+```
+
+# Fibonacci
+```js
+lix.fib(5)
+lix.fibonacci(10000000)
+```
+
+# Factorial
+```js
+lix.factorial(5)
+lix.factorial(10000000)
+```
+
+# Square Root
+```js
+lix.sqrt(5)
+lix.square_root(5)
+lix.squareroot(5)
+```
+
+# Copying
+```js
+lix.copy(object)
+lix.shallow(object)
+
+lix.deepcopy(object)
+lix.deep(object)
+```
+
+# Random
+```js
+lix.random(start, end)
+lix.randint(start, end)
+lix.randrange(start, end)
+lix.choice(my_list)
+lix.choices(my_list, k=5)
+lix.shuffle(my_list)
+lix.sample(my_list, k=5)
+```
+
+# Time
+```js
+lix.time(5)
+lix.sleep(5)
+lix.format(time)
+```
