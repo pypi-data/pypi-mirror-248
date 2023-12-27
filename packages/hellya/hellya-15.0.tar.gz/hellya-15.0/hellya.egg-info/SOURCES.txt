@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+hellya/__init__.py
+hellya.egg-info/PKG-INFO
+hellya.egg-info/SOURCES.txt
+hellya.egg-info/dependency_links.txt
+hellya.egg-info/requires.txt
+hellya.egg-info/top_level.txt
