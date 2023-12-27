@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[project]
+name = "dknovautils"
+version = '0.1.24'
+authors = [
+  { name="dknova", email="dikisite@outlook.com" },
+]
+description = "A small example package"
+readme = "README.md"
+# 需要支持python3.8. ubuntu18仓库中支持py3.8版本。需要支持py3.8到2027年。
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/pypa/sampleproject"
+"Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
