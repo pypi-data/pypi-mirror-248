@@ -1,0 +1,10 @@
+xarray_units/__init__.py,sha256=Z7cHijbyjrQPBQLbSBm92wxA94fa1uwYLShOMpwKuNA,313
+xarray_units/accessor.py,sha256=u9ghjqfixpT3sDbsy322eoqI13ayfKKjRa0IA4ngEeo,2538
+xarray_units/operator.py,sha256=vBUn21nxAoFxnL53FTqlQt6tA9CM75edD06gVyf4948,11579
+xarray_units/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xarray_units/quantity.py,sha256=7Lkfy_oICkHcuvVlnNjNlqjfYXKiwj4NExHRjEFzV-g,5783
+xarray_units/utils.py,sha256=LaybHkIw_YuE3aiRB4vDLTpGbF6yLvNblgjNh4a2rh4,3559
+xarray_units-0.3.0.dist-info/LICENSE,sha256=3bDwZkwp2A-smHJOOutRO3yQA1kCny_s0CVYg_kaE18,1071
+xarray_units-0.3.0.dist-info/METADATA,sha256=1TXCyl_uuuLZUi6Khe5gEyEc8ckonDT4vtOEX6X3CZ0,6499
+xarray_units-0.3.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+xarray_units-0.3.0.dist-info/RECORD,,
