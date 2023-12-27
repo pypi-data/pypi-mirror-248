@@ -1,0 +1,46 @@
+README
+
+Calculator Package
+The Calculator package provides a simple calculator class with basic arithmetic operations.
+
+Features
+    Addition: Add a value to the calculator memory.
+    Subtraction: Subtract a value from the calculator memory.
+    Multiplication: Multiply the calculator memory by a value.
+    Division: Divide the calculator memory by a value (non-zero).
+    (N) Root: Calculate the (N)th root of the calculator memory.
+    Reset: Reset the calculator memory to 0.0.
+
+Installation
+You can install the Calculator package using pip:
+
+    bash
+    Copy code
+    pip install calculator-package
+    Usage
+    python
+    Copy code
+    from calculator_package import Calculator
+
+Create a Calculator instance
+    calculator = Calculator()
+
+Perform operations
+    calculator.add(5.0)
+    calculator.subtract(2.0)
+    calculator.multiply(3.0)
+    calculator.divide(2.0)
+    calculator.nroot(2)
+    result = calculator.memory
+
+    print("Result:", result)
+
+Reset the calculator memory
+    calculator.reset()
+
+Contributing
+    Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open 
+    an issue or submit a pull request.
+
+License
+    This project is licensed under the MIT License - see the LICENSE file for details.
