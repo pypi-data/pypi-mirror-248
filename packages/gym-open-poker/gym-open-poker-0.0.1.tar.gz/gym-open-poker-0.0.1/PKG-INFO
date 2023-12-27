@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: gym-open-poker
+Version: 0.0.1
+Summary: gym-open-poker
+Home-page: https://github.com/minhsueh/gym-open-poker
+Author: Min-Hsueh Chiu
+Author-email: peter810601@gmail.com
+Requires-Python: ==3.9
+License-File: LICENSE
+Requires-Dist: gym==0.26.0
+Requires-Dist: pygame==2.1.0
