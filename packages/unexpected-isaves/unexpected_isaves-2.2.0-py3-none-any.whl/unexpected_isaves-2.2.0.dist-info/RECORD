@@ -1,0 +1,12 @@
+unexpected_isaves/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unexpected_isaves/blocks.json,sha256=tsI7qAlSmmsuAAisCd4bQWwCgMAJ-QlitqNqoRwhjtc,24301
+unexpected_isaves/save_image.py,sha256=akMamPaMv_W8IoXUeT5RmCGRYw_NcRcvPS1ejtrlYqY,14397
+unexpected_isaves/excel/__init__.py,sha256=9WmmXzPt2FqvXThIbc1LGI1GypW0Iy8wcCEveqepAjw,50
+unexpected_isaves/excel/excel.py,sha256=J7Wzg0beqLg-juJ1PlxLO058KQ2dYc924YZgkSf0wHw,5166
+unexpected_isaves/rubiks/__init__.py,sha256=wte5U6M7qQ5HDGNNMHN_iHMyZ1wUgvqOwXyTi7-wD6A,55
+unexpected_isaves/rubiks/rubiks.py,sha256=n8m0cxdIhfKib46OKuB2EIAUIkUrjGQpPPlkmJ8tc1Q,5570
+unexpected_isaves-2.2.0.dist-info/LICENSE,sha256=6O45Ze8k6PvxEsAIfWF3TsA6_298Z019sXsWHEOtZ-U,1068
+unexpected_isaves-2.2.0.dist-info/METADATA,sha256=8U4LhtR94CJKBYCuPTVFAK5BRNt0pZ9H7C2nDEJvboU,7142
+unexpected_isaves-2.2.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+unexpected_isaves-2.2.0.dist-info/top_level.txt,sha256=_z80qGNbprSyUSgbpiHQWrwCMD3YWiqXr4teNHIjn3k,18
+unexpected_isaves-2.2.0.dist-info/RECORD,,
