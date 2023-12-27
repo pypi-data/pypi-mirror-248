@@ -1,0 +1,7 @@
+pyproject.toml
+src/calculator.py
+src/test_calculator.py
+src/python_getting_started.egg-info/PKG-INFO
+src/python_getting_started.egg-info/SOURCES.txt
+src/python_getting_started.egg-info/dependency_links.txt
+src/python_getting_started.egg-info/top_level.txt
