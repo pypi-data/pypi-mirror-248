@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "bastion_integration"
+version = "0.2.0"
+description = "Модуль интеграции с Бастион"
+authors = ["Mrkorogod"]
+readme = "README.md"
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+#pypi-AgEIcHlwaS5vcmcCJDc0NzMwYzM4LWEyOTUtNDFhNS04ODdmLTdmNWU1ZTUwY2MzMgACG1sxLFsiYmFzdGlvbi1pbnRlZ3JhdGlvbiJdXQACLFsyLFsiYzc1NTAxMWItNGEyMy00MGEyLTliNzItODkyMzdmMDI2OGJjIl1dAAAGIJJEwVXCjwF8d_8YcqSvDb1sm6V0BNQz1PM3abfZ93sw
