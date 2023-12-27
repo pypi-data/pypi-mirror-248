@@ -1,0 +1,9 @@
+nonebot_plugin_antimonkey/__init__.py,sha256=yO1NB5urZe6O63OgEijSkzYsjdUymWCXp_WIQu7iI-k,471
+nonebot_plugin_antimonkey/config.py,sha256=Lvu1VNpkrbAIZg1CrA6HXXkzbRleEzKB4COolKRhbeQ,114
+nonebot_plugin_antimonkey/image_recognition.py,sha256=U3vKogEDbIH4wR08ISisMIE2rtybhqE3Y8l0J3KufJU,2162
+nonebot_plugin_antimonkey/malou.py,sha256=iEZIq0sk3EDbDrXk_4VBMs6mq7oWYUffWSpj6E5mi08,2244
+nonebot_plugin_antimonkey/monkey_test.jpg,sha256=IFY24jeh9cC8u_mCtXHs3aHaU75fnpqZwk7v_aNq_Fs,34885
+nonebot_plugin_antimonkey-1.0.1.dist-info/LICENSE,sha256=2vZFcBQSnCIiFehv3ySu-0sdeqibtSS4ciTopJDBQE4,1086
+nonebot_plugin_antimonkey-1.0.1.dist-info/METADATA,sha256=iiURTF7xE3hdGhylr7_zurvn9is7rBjCZB17xaFEJnw,2807
+nonebot_plugin_antimonkey-1.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+nonebot_plugin_antimonkey-1.0.1.dist-info/RECORD,,
