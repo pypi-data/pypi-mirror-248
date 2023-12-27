@@ -1,0 +1,9 @@
+quickutil/__init__.py,sha256=PdXVQSwcSgg9ROq2ZvrRT23yWTanQlRiacj2VIqsrHs,38
+quickutil/qos/__init__.py,sha256=Y5zudeJXEW1eDknBiWhd3AHOhhdqfjQfc3JbW8mhtcE,1123
+quickutil/qos/qdir/__init__.py,sha256=T_H-_7aHJmntAe47djqDKsciD1TOQJE8APw0sD0EcmQ,508
+quickutil/qtime/__init__.py,sha256=WzEtmPF7sQuphsDs817hfshqN4Ui8PDPnmbDH_QQfXA,250
+quickutil-0.0.1.dist-info/LICENSE,sha256=HwSIG69R9CSHSxINSliBL6jpcxTPmq72aOc5fQYd1xY,1089
+quickutil-0.0.1.dist-info/METADATA,sha256=lyVHMUs1zHoLkED2vbPtgeYrGgF2GoFaH2VO6Ycq5Qg,568
+quickutil-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+quickutil-0.0.1.dist-info/top_level.txt,sha256=N6H3ZzPo93kUJiZzTveZR7RiG8p00Su_8tdoWvfcPgc,10
+quickutil-0.0.1.dist-info/RECORD,,

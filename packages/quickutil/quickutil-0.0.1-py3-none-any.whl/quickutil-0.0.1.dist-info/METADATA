@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: quickutil
+Version: 0.0.1
+Home-page: https://github.com/roninmaster21/quickutil
+Author: roninmaster21
+Author-email: 
+License: MIT
+Project-URL: Bug Tracker, https://github.com/roninmaster21/quickutil/issues
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# quickutil
+Quick and easy access to python functions
+# Installation
+### View on PyPi
+https://pypi.org/project/quickutil/
+### Install on Windows
+```
+py -m pip install quickutil
+```
+### Install on Unix/macOS
+```
+python3 -m pip install quickutil
+```
