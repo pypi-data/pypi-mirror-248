@@ -1,0 +1,96 @@
+[build-system]
+requires = ["setuptools>=62", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pusimp"
+version = "0.1.0"
+authors = [
+    {name = "Francesco Ballarin", email = "francesco.ballarin@unicatt.it"},
+    {name = "Drew Parsons", email = "dparsons@debian.org"},
+]
+maintainers = [
+    {name = "Francesco Ballarin", email = "francesco.ballarin@unicatt.it"},
+    {name = "Drew Parsons", email = "dparsons@debian.org"},
+]
+description = "Prevent user-site imports"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS :: MacOS X",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+dependencies = []
+
+[project.urls]
+repository = "https://github.com/francesco-ballarin/pusimp"
+issues = "https://github.com/francesco-ballarin/pusimp/issues"
+
+[project.optional-dependencies]
+lint = [
+    "isort",
+    "mypy",
+    "ruff",
+    "yamllint"
+]
+tests = [
+    "coverage[toml]",
+    "pip",
+    "pytest",
+    "virtualenv"
+]
+
+[tool.isort]
+line_length = 120
+multi_line_output = 4
+order_by_type = false
+
+[tool.mypy]
+check_untyped_defs = true
+disallow_any_unimported = true
+disallow_untyped_defs = true
+no_implicit_optional = true
+pretty = true
+show_error_codes = true
+strict = true
+warn_return_any = true
+warn_unused_ignores = true
+
+[[tool.mypy.overrides]]
+module = [
+    "pusimp_dependency_missing",
+    "tomllib",
+    "virtualenv"
+]
+ignore_missing_imports = true
+
+[tool.ruff]
+line-length = 120
+select = ["ANN", "D", "E", "F", "ICN", "N", "Q", "RUF", "W"]
+ignore = ["ANN101"]
+
+[tool.ruff.pycodestyle]
+max-doc-length = 120
+
+[tool.ruff.pydocstyle]
+convention = "numpy"
+
+[tool.setuptools.package-data]
+pusimp = ["py.typed"]
+
+[tool.setuptools.packages.find]
+namespaces = false

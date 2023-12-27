@@ -1,0 +1,12 @@
+
+[lint]
+isort
+mypy
+ruff
+yamllint
+
+[tests]
+coverage[toml]
+pip
+pytest
+virtualenv

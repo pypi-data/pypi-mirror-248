@@ -1,0 +1,13 @@
+AUTHORS
+LICENSE
+README.md
+pyproject.toml
+pusimp/__init__.py
+pusimp/prevent_user_site_imports.py
+pusimp/py.typed
+pusimp/utils.py
+pusimp.egg-info/PKG-INFO
+pusimp.egg-info/SOURCES.txt
+pusimp.egg-info/dependency_links.txt
+pusimp.egg-info/requires.txt
+pusimp.egg-info/top_level.txt
