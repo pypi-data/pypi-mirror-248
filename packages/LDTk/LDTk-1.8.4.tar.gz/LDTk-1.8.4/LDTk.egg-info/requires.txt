@@ -1,0 +1,10 @@
+numpy
+numba
+scipy
+astropy
+tqdm
+traitlets
+tenacity
+semantic_version
+pandas
+matplotlib
