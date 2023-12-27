@@ -1,0 +1,2 @@
+[console_scripts]
+bunkoer = bunkoer.main:run_streamlit
