@@ -1,0 +1,3 @@
+[console_scripts]
+readme=readme_template_cli.src.generator:cli
+
