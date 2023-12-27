@@ -1,0 +1,3 @@
+recursive-include src/plotly_events_picker/frontend *
+include README.md
+include LICENSE
