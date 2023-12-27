@@ -1,0 +1,2 @@
+[console_scripts]
+HIV_Isoform_filter = HIV_Isoform_filter.__main__:main

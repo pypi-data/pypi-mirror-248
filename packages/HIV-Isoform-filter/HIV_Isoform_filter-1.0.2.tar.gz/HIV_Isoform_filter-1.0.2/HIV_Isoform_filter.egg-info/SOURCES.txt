@@ -1,0 +1,16 @@
+DESCRIPTION.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+HIV_Isoform_filter/HIV_Isoform_Filtering.py
+HIV_Isoform_filter/__init__.py
+HIV_Isoform_filter/__main__.py
+HIV_Isoform_filter.egg-info/PKG-INFO
+HIV_Isoform_filter.egg-info/SOURCES.txt
+HIV_Isoform_filter.egg-info/dependency_links.txt
+HIV_Isoform_filter.egg-info/entry_points.txt
+HIV_Isoform_filter.egg-info/top_level.txt
+tests/NL43_complete_splice_sites.py
+tests/barcode19_HIV_annotated.gtf
