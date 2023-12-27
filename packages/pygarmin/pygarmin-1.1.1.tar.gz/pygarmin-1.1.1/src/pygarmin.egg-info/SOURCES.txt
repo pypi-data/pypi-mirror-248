@@ -1,0 +1,14 @@
+CHANGELOG.rst
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+src/garmin/__init__.py
+src/garmin/garmin.py
+src/garmin/pygarmin.py
+src/pygarmin.egg-info/PKG-INFO
+src/pygarmin.egg-info/SOURCES.txt
+src/pygarmin.egg-info/dependency_links.txt
+src/pygarmin.egg-info/entry_points.txt
+src/pygarmin.egg-info/requires.txt
+src/pygarmin.egg-info/top_level.txt
