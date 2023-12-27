@@ -1,0 +1,12 @@
+huunq/__init__.py,sha256=0uuXFZKO6AmhcOwU2AkU6A2U_G-Z-fr1V9wvdil5jLA,1321
+huunq/connection.py,sha256=Ci9rNBERtq5WCy28b1RkBfTURIqKRDDHqz85_vuxgUs,4477
+huunq/cursor.py,sha256=WyPjrMmPHF1tgUF2mxDv3h_dh1q__F5Mt0Gj60JHn88,7125
+huunq/exceptions.py,sha256=wgYAsMTkY7UUxGGPE2yGHh4-9WYCQ7FmTYfSCiDy2Mo,475
+huunq/globals.py,sha256=oErGiWC-UOHNYbODqYeqjQaEL3RHr5Ihez3ju37b17U,278
+huunq/typing.py,sha256=sljf8zfyboPMi_BXyDNTB9hnttmd-PVVV1oa1OJlTgI,961
+huunq/utilities.py,sha256=epsZFshU1b1jLejd4w2NGzA4C2BlP4o3WEN3PBqBPb0,984
+huunq-0.0.1.dist-info/LICENSE,sha256=DP-IIoSt61j3gghXfHwojtq4cpQ61u8xY7HUf3HLmrw,1069
+huunq-0.0.1.dist-info/METADATA,sha256=HjvmXUXfz8472TYRkNiRZoDfwJ2-RGoMsRU4uyvpTkY,2597
+huunq-0.0.1.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+huunq-0.0.1.dist-info/top_level.txt,sha256=biu5NjZL9n0KNMt4IS-Hh5zjbXOmw4SEXatEvtJaqJI,6
+huunq-0.0.1.dist-info/RECORD,,
