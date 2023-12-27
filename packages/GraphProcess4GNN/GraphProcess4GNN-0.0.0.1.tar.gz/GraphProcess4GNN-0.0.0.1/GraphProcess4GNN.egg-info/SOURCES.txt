@@ -1,0 +1,5 @@
+setup.py
+GraphProcess4GNN.egg-info/PKG-INFO
+GraphProcess4GNN.egg-info/SOURCES.txt
+GraphProcess4GNN.egg-info/dependency_links.txt
+GraphProcess4GNN.egg-info/top_level.txt
