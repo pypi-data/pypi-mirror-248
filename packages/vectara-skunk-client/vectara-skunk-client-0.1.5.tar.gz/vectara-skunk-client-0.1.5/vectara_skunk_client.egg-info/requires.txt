@@ -1,0 +1,4 @@
+requests
+dacite>=1.8.1
+Authlib==1.0.1
+pyaml==23.9.7
