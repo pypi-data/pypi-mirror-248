@@ -1,0 +1,11 @@
+[console_scripts]
+myrrh_pyro5s = mplugins.scripts.myrrh_pyro5s:main
+
+[myrrh.provider.registry]
+mplugins.provider.pyro5-provider = register_provider
+
+[myrrh.tools.myrrhc_ext]
+mplugins.myrrhc.pyro5_ext = load_commands
+
+[myrrh.warehouse.registry]
+mplugins.provider.pyro5-provider_settings = register_provider_model

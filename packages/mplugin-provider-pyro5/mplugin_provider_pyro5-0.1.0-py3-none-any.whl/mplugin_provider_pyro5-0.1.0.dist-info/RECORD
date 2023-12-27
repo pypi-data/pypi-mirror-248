@@ -1,0 +1,17 @@
+mplugins/myrrhc/pyro5_ext.py,sha256=nFq4B-mCQ3WiOIAh0P5vGRVR9AUqHGFKb8SmmDMq3SM,3223
+mplugins/provider/pyro5/__doc__.py,sha256=-eNwVj5C0Y1JWMtXMbrsW6DhMMr58btSBySkJuT9TK0,139
+mplugins/provider/pyro5/__init__.py,sha256=po-nHByf6hLzrspnKStG3aR6RXtsfM9W5AjlQuFrqUg,128
+mplugins/provider/pyro5/__version__.py,sha256=IMl2Pr_Sy4LVRKy_Sm4CdwUl1Gryous6ncL96EMYsnM,411
+mplugins/provider/pyro5/client.py,sha256=KAWunvIL3fl0Ix73KP0W8pZS4BFwZ__ezW70z9HbLMU,2386
+mplugins/provider/pyro5/config.py,sha256=7vcRa9h5B6DvSUaZtQe43Ov2AnR-sXBC4c0WxK0DwME,59
+mplugins/provider/pyro5/config_client.py,sha256=cv7xQbCM_BgyjuFL0qns6KjK_xa03ol4gZjTZTebL_Q,463
+mplugins/provider/pyro5/config_server.py,sha256=4QPNnhbmJbF03xvI__LXaAYQW_j2nobIZsE01ENob1A,1310
+mplugins/provider/pyro5/server.py,sha256=4bXUmKir3eBsINNRpOLJfbymGWfPm1MyC77_Y1OiWJU,4975
+mplugins/scripts/myrrh_pyro5s.py,sha256=p8Dwm7vftA7xdW1PE_LGv5GISJ3ar_sArN3IKXF7z2w,116
+mplugin_provider_pyro5-0.1.0.dist-info/AUTHORS.md,sha256=Ead-ijyd5sPzF_ezuMbFyddL5kZJSTxeiyTYlFldXKc,47
+mplugin_provider_pyro5-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+mplugin_provider_pyro5-0.1.0.dist-info/METADATA,sha256=iax0bIcRVwZerKqEkIy_7nYsyhOONpR1xnE4L4wPaLg,43685
+mplugin_provider_pyro5-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+mplugin_provider_pyro5-0.1.0.dist-info/entry_points.txt,sha256=VhU_RqLwFHzOCjzxz3Q5z_80n-ZZ4YDyVHwCu6xjDcg,312
+mplugin_provider_pyro5-0.1.0.dist-info/top_level.txt,sha256=dZmD7TRyLJccoFRkX5CsdrLwpC6TuNrbfCSA0hq-J7Y,9
+mplugin_provider_pyro5-0.1.0.dist-info/RECORD,,
