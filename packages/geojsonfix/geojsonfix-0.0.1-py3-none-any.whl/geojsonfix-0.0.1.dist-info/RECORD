@@ -1,0 +1,11 @@
+geojsonfix/__init__.py,sha256=n7Cz2Xgso6ZnPHpH8-tFwFjFaFs3ULvMAPNz2YIq_zw,27
+geojsonfix/checks_invalid.py,sha256=1U-Q_jDXBM40ruq7NQxwYzu7h4OM46qg9RPzil2Zto0,2330
+geojsonfix/checks_problematic.py,sha256=YrluaXTuT8Cr5INmNM4P22gYud7-IXFTLugUtYg-xMM,1952
+geojsonfix/fix_invalid.py,sha256=FAqEex98RZaM8AkL71oycBzxco8FvJsx3dojecTjcPY,260
+geojsonfix/fix_problematic.py,sha256=SBjAnk9SVJUH0zIsqJXYS4n3hjHcxYPptF8YhdqEl6w,557
+geojsonfix/main.py,sha256=b0TeLlx-rPkaSn3Lfi3XfYgVvI_GPZuVBlqb9PUAPGE,6456
+geojsonfix-0.0.1.data/data/requirements.txt,sha256=zYMnzTMFzA-geHcaRkLjNnKJVHrvrwCoV_eN1OxC8lc,14
+geojsonfix-0.0.1.dist-info/METADATA,sha256=HNSBCf7myWwCuQka6WhKNKUjxiG3vIJcMdXqN9SLs5A,2765
+geojsonfix-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+geojsonfix-0.0.1.dist-info/top_level.txt,sha256=wzu6rHRDILPiqEA0gAW-1zXXQ3UDm4folnDkuRPKx0c,11
+geojsonfix-0.0.1.dist-info/RECORD,,
