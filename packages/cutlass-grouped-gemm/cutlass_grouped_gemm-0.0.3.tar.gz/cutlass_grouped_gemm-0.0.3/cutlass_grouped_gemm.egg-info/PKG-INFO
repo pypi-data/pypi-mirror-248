@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: cutlass_grouped_gemm
+Version: 0.0.3
+Summary: CUTLASS Grouped GEMM
+Home-page: https://github.com/imoneoi/cutlass_grouped_gemm
+Author: One
+Author-email: imonenext@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: Unix
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: absl-py; extra == "dev"
+Provides-Extra: all
+Requires-Dist: absl-py; extra == "all"
+
+# Grouped GEMM
+
+A lighweight library exposing grouped GEMM kernels in PyTorch (CUTLASS version).
+
+# Installation
+
+Run `pip install cutlass_grouped_gemm` to install the package.
