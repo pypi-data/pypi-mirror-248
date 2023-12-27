@@ -1,0 +1,11 @@
+compress/__init__.py,sha256=voVxKxEd2u4Pe7N1JtpTf-FAAU4yA1zk1nZYcg-u11c,227
+compress/installer.py,sha256=fPjA3Gqd-V_UW16AR4PDEtSyXWbRQ__QEkp9b71z0Yo,500
+compress/functions/image.py,sha256=z7STPj2zu2rJMz87h-dwdBDhOaxZ0XYeYFS9lIM6MFQ,1924
+compress/functions/main.py,sha256=PXwUX2h8t7EM4_Jh1mCGskkGKDDTUMuTjcSm-pO2dBE,982
+compress/functions/manage.py,sha256=ZlYXcHE_SY9ZpSc1srMUEbme6oBwKXWZ-rF4gXQwVMw,1504
+compress/functions/random.py,sha256=1m__RMBuqx1jc0pZCJjkCmEUfUVzYy3HFcrOYRdlpV4,498
+compress/functions/time.py,sha256=HuWpN-Mrk14bOMtLOHL95YYgEfA15YMyOBZjAs01iFw,447
+megakit-0.0.1.dist-info/METADATA,sha256=oA3cEoalXi2cUHDpSWkceh2JFHcMwSiQvhWL_DErjoE,3589
+megakit-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+megakit-0.0.1.dist-info/top_level.txt,sha256=eySvuhc9XllOGFbWIiVUNIDD45lPE8gZBORSJWyBRuM,28
+megakit-0.0.1.dist-info/RECORD,,
