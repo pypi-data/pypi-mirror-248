@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pxx
+Version: 0.0.8
+Summary: An AI framework
+License-File: LICENSE
+Requires-Dist: Jinja2 ==3.1.2
+Requires-Dist: jsonschema ==4.20.0
+Requires-Dist: loguru ==0.7.2
+Requires-Dist: numpy ==1.25.1
+Requires-Dist: pandas ==2.0.3
+Requires-Dist: pydantic ==2.5.3
+Requires-Dist: pydantic-core ==2.14.6
+Requires-Dist: python-dotenv ==1.0.0
+Requires-Dist: rich ==13.7.0
+Provides-Extra: chromadb
+Requires-Dist: chromadb ==0.4.14 ; extra == 'chromadb'
+Provides-Extra: openai
+Requires-Dist: openai ; extra == 'openai'
+
