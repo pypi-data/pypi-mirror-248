@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Actlog
+GenericName=ActLog user activity monitoring
+Exec=/home/pmorch/work/venvs/test/bin/actlog daemon --monitor-start-only
+Terminal=false
+Type=Application
+Categories=Utility;Application;
+X-GNOME-Autostart-enabled=true

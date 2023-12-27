@@ -1,0 +1,74 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "actlog"
+version = "0.0.4"
+authors = [
+  { name="Peter Valdemar Mørch", email="peter@morch.com" },
+]
+description = "An activity log that shows you what you did when"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: JavaScript",
+    "License :: OSI Approved :: MIT License",
+    "Environment :: X11 Applications",
+    "Operating System :: POSIX",
+    "Intended Audience :: End Users/Desktop",
+    "Topic :: Desktop Environment",
+    "Topic :: System :: Monitoring",
+]
+dependencies = [
+  'PyYAML',
+  'dateparser',
+  'flask',
+  'flask-cors',
+  'gunicorn',
+  'python-pidfile',
+  'sqlalchemy',
+  'alembic',
+  'furl',
+  'argon2-cffi'
+]
+
+[project.optional-dependencies]
+dev = [
+    "pip-tools",
+    "build",
+    "pyright",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/pmorch/actlog"
+"Bug Tracker" = "https://github.com/pmorch/actlog/issues"
+
+[project.scripts]
+actlog = "actlog.cli:cli_main"
+
+[tool.pyright]
+include = ["src"]
+exclude = [
+    "**/__pycache__"
+]
+venv = "venv"
+
+pythonVersion = "3.10"
+pythonPlatform = "Linux"
+
+executionEnvironments = [
+  { root = "src" }
+]
+
+[tool.hatch.build.targets.wheel.force-include]
+"frontend/build" = "actlog/frontend/build"
+
+[tool.hatch.build]
+exclude = [
+  "frontend/node_modules",
+  "frontend/.svelte-kit",
+  "frontend/src",
+]

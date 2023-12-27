@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# This setups up some environments that makes it work with code in src and
+# frontend ind frontend/build.
+#
+# Run e.g. ./dev actlog --help
+#
+# See src/actlog/README.md.
+
+thisPath="$(realpath $(dirname $0))"
+# echo thisPath: $thisPath
+
+: "${FRONTEND_BUILD:=$thisPath/frontend/build}"
+if [ ! -r "$FRONTEND_BUILD/index.html" ] ; then
+  echo "Did not find FRONTEND_BUILD=\"$FRONTEND_BUILD\"" >&2
+  exit 1
+fi
+export FRONTEND_BUILD
+
+export PATH="$thisPath/venv/bin:$PATH"
+export PYTHONPATH="$thisPath/.:$thisPath/src"
+
+"$@"
