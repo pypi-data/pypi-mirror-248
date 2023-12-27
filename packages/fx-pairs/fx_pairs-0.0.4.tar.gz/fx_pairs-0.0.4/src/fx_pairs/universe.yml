@@ -1,0 +1,18 @@
+epics:
+- IX.D.NASDAQ.IFD.IP
+- IX.D.SUNNAS.IFM.IP
+- IX.D.SUNNAS.IFS.IP
+- IX.D.RUSSELL.FWS2.IP
+- IX.D.RUSSELL.IFD.IP
+
+universe_name: 'tradingo'
+resolution: '1D'
+
+config:
+  short_halflife: 63
+  long_halflife: 120
+  module_name: fx_pairs.strategy
+  start_date: '2023-12-01 00:00:00+0000'
+  model: 'mean_reversion'
+  instance: 'alpha'
+  flavour: 'beta'

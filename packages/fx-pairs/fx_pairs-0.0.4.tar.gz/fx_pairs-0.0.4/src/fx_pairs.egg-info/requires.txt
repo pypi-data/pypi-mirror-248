@@ -1,0 +1,16 @@
+pandas
+matplotlib
+scikit-learn
+jupyter
+yfinance
+statsmodels
+arcticdb
+trading-ig
+
+[dev]
+black[jupyter]
+flake8
+isort
+flake8-pyproject
+pyupgrade
+pytest
