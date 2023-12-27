@@ -1,0 +1,3 @@
+[console_scripts]
+tnsorflow = tnsorflow.hello:hello
+
