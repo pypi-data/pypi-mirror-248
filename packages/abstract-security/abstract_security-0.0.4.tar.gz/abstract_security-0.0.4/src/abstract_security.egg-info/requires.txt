@@ -1,0 +1,2 @@
+abstract_utilities>=0.2.2.34
+python-dotenv>=0.19.2
