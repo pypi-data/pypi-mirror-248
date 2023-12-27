@@ -1,0 +1,14 @@
+bashrange/__init__.py,sha256=A-JDjKGxAwPUvGuHmdQMxb484fme9gLd3xSiOy4bPIM,2841
+bashrange/__main__.py,sha256=OEjgfAZhsVRKWR_dBQEqaKtvdM3UmS-sVXjCZjPdyZI,342
+bashrange/test.py,sha256=dzpNirMOPhd1bHLV-gi7wjUvoAVas_1ddwC5FmSZ6lc,4625
+bashrange/__pycache__/__init__.cpython-311.pyc,sha256=ftGPb12WjtuvYF51VUL1VLN_qRYxVENUUsJb3dJlHQE,9718
+bashrange/__pycache__/__init__.cpython-39.pyc,sha256=-4Jpoqq-PAeibS9u40nx3ZPsqjQn-uq_00-rdOCd1TY,5284
+bashrange/__pycache__/__main__.cpython-311.pyc,sha256=FlJgGiSSAqFqxzFq3jyKW9N2T7JyP-cdG-fOXxCrtOc,771
+bashrange/__pycache__/__main__.cpython-39.pyc,sha256=QSiKW1_k2FUP-i1xL0VxTBpoP1LvDdwVI3rFqSh4_Fs,416
+bashrange/__pycache__/test.cpython-311.pyc,sha256=PXBnVDCYWn7RHQ19G49yjjSyWZoHr3y2Qrq3qdoQMnc,7313
+bashrange/__pycache__/test.cpython-39.pyc,sha256=c7OruMAd6PP3ZGErRuWEFAoQ9qItwsfdBxK_2eo1mVs,3936
+bashrange-0.0.4.dist-info/LICENSE,sha256=QrNi96C96s38XhZgXFhalL2Sn4Do7bXYATW_qCVvxxU,1070
+bashrange-0.0.4.dist-info/METADATA,sha256=1OMDEavfUfOSQenGRARtcsL6b4Rm0w53RHHea2ts4U0,1112
+bashrange-0.0.4.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+bashrange-0.0.4.dist-info/top_level.txt,sha256=fzsJ6OWY66sa7ry-pfefhStB2l1rPLjdJU75SVQ2374,10
+bashrange-0.0.4.dist-info/RECORD,,
