@@ -1,0 +1,5259 @@
+'''
+Copyright (c) 1998-2124 Ryeojin Moon
+Copyright (c) 2020-2124 GraphCode
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+THIS SOFTWARE IS NOT PROVIDED TO ANY ENTITY OR ANY GROUP OR ANY PERSON
+TO THREATEN, INCITE, PROMOTE, OR ACTIVELY ENCOURAGE VIOLENCE, TERRORISM,
+OR OTHER SERIOUS HARM. IF NOT, THIS SOFTWARE WILL NOT BE PERMITTED TO USE.
+IF NOT, THE BENEFITS OF ALL USES AND ALL CHANGES OF THIS SOFTWARE ARE GIVEN
+TO THE ORIGINAL AUTHORS WHO OWNED THE COPYRIGHT OF THIS SOFTWARE  ORIGINALLY.
+THE CONDITIONS CAN ONLY BE CHANGED BY THE ORIGINAL AUTHORS' AGREEMENT
+IN AN ADDENDUM, THAT MUST BE DOCUMENTED AND CERTIFIED IN FAIRNESS MANNER.
+===
+Created by Jan 1, 2011
+Modified by Jan 1, 2023
+
+@contributor: hoeseong
+'''
+#from graphcode.logging import logCritical, logError, logWarn, logInfo, logDebug, logException, logExceptionWithValueError, raiseValueError
+from graphcode.logging import logCritical, logError, logWarn, logInfo, logDebug, logException, logExceptionWithValueError, raiseValueError
+
+k2Api_dict = {
+  "date":"2022-01-07",
+  "api": {
+    "a4b.getDevice":{},
+    "a4b.getProfile":{},
+    "a4b.getRoom":{},
+    "a4b.getRoomSkillParameter":{},
+    "a4b.getSkillGroup":{},
+    "a4b.searchDevices":{},
+    "a4b.searchProfiles":{},
+    "a4b.searchRooms":{},
+    "a4b.searchSkillGroups":{},
+    "accessanalyzer.getFinding":{},
+    "accessanalyzer.listAnalyzers":{},
+    "accessanalyzer.listArchiveRules":{},
+    "accessanalyzer.listFindings":{},
+    "acm.describeCertificate":{},
+    "acm.getCertificate":{},
+    "acm.listCertificates":{},
+    "acm.listTagsForCertificate":{},
+    "acmpca.describeCertificateAuthority":{},
+    "acmpca.describeCertificateAuthorityAuditReport":{},
+    "acmpca.getCertificate":{},
+    "acmpca.getCertificateAuthorityCertificate":{},
+    "acmpca.getCertificateAuthorityCsr":{},
+    "acmpca.listCertificateAuthorities":{},
+    "acmpca.listTags":{},
+    "addressvalidation.correctAddress":{},
+    "aec.getEventAutomationOutputs":{},
+    "aec.listOngoingEventAutomations":{},
+    "alb.describeListenerCertificates":{},
+    "alb.describeListeners":{},
+    "alb.describeLoadBalancerAttributes":{},
+    "alb.describeLoadBalancers":{},
+    "alb.describeRules":{},
+    "alb.describeSSLPolicies":{},
+    "alb.describeTags":{},
+    "alb.describeTargetGroupAttributes":{},
+    "alb.describeTargetGroups":{},
+    "alb.describeTargetHealth":{},
+    "amazonidjava.decryptCustomerID":{},
+    "amazonidjava.encryptCustomerID":{},
+    "amplify.getApp":{},
+    "amplify.getBranch":{},
+    "amplify.getDomainAssociation":{},
+    "amplify.getJob":{},
+    "amplify.getWebhook":{},
+    "amplify.listApps":{},
+    "amplify.listWebhooks":{},
+    "apigateway.getAccount":{},
+    "apigateway.getAuthorizer":{},
+    "apigateway.getAuthorizers":{},
+    "apigateway.getBasePathMapping":{},
+    "apigateway.getBasePathMappings":{},
+    "apigateway.getClientCertificate":{},
+    "apigateway.getClientCertificates":{},
+    "apigateway.getDeployment":{},
+    "apigateway.getDeployments":{},
+    "apigateway.getDomainName":{},
+    "apigateway.getDomainNames":{},
+    "apigateway.getIntegration":{},
+    "apigateway.getIntegrationResponse":{},
+    "apigateway.getMethod":{},
+    "apigateway.getMethodResponse":{},
+    "apigateway.getModel":{},
+    "apigateway.getModelTemplate":{},
+    "apigateway.getModels":{},
+    "apigateway.getResource":{},
+    "apigateway.getResources":{},
+    "apigateway.getRestApi":{},
+    "apigateway.getRestApis":{},
+    "apigateway.getSdk":{},
+    "apigateway.getStage":{},
+    "apigateway.getStages":{},
+    "apigatewayv2.getApi":{},
+    "apigatewayv2.getApiMapping":{},
+    "apigatewayv2.getApiMappings":{},
+    "apigatewayv2.getApis":{},
+    "apigatewayv2.getAuthorizer":{},
+    "apigatewayv2.getAuthorizers":{},
+    "apigatewayv2.getDeployment":{},
+    "apigatewayv2.getDeployments":{},
+    "apigatewayv2.getDomainName":{},
+    "apigatewayv2.getDomainNames":{},
+    "apigatewayv2.getIntegration":{},
+    "apigatewayv2.getIntegrationResponse":{},
+    "apigatewayv2.getIntegrationResponses":{},
+    "apigatewayv2.getIntegrations":{},
+    "apigatewayv2.getModel":{},
+    "apigatewayv2.getModels":{},
+    "apigatewayv2.getRoute":{},
+    "apigatewayv2.getRouteResponse":{},
+    "apigatewayv2.getRouteResponses":{},
+    "apigatewayv2.getRoutes":{},
+    "apigatewayv2.getStage":{},
+    "apigatewayv2.getStages":{},
+    "appflow.describeConnectorEntity":{},
+    "appflow.describeConnectorProfiles":{},
+    "appflow.describeConnectors":{},
+    "appflow.describeFlow":{},
+    "appflow.describeFlowExecutionRecords":{},
+    "appflow.listConnectorEntities":{},
+    "appflow.listFlows":{},
+    "applicationautoscaling.describeScalableTargets":{},
+    "applicationautoscaling.describeScalingActivities":{},
+    "applicationautoscaling.describeScalingPolicies":{},
+    "applicationautoscaling.describeScheduledActions":{},
+    "applicationinsights.describeComponentConfiguration":{},
+    "applicationinsights.describeComponentConfigurationRecommendation":{},
+    "applicationinsights.listApplications":{},
+    "applicationinsights.listComponents":{},
+    "applicationinsights.listConfigurationHistory":{},
+    "applicationinsights.listLogPatternSets":{},
+    "applicationinsights.listLogPatterns":{},
+    "appmesh.describeGatewayRoute":{},
+    "appmesh.describeMesh":{},
+    "appmesh.describeRoute":{},
+    "appmesh.describeVirtualGateway":{},
+    "appmesh.describeVirtualNode":{},
+    "appmesh.describeVirtualRouter":{},
+    "appmesh.describeVirtualService":{},
+    "appmesh.listGatewayRoutes":{},
+    "appmesh.listMeshes":{},
+    "appmesh.listRoutes":{},
+    "appmesh.listTagsForResource":{},
+    "appmesh.listVirtualGateways":{},
+    "appmesh.listVirtualNodes":{},
+    "appmesh.listVirtualRouters":{},
+    "appmesh.listVirtualServices":{},
+    "apprunner.describeAutoScalingConfiguration":{},
+    "apprunner.describeCustomDomains":{},
+    "apprunner.describeService":{},
+    "apprunner.listAutoScalingConfigurations":{},
+    "apprunner.listConnections":{},
+    "apprunner.listOperations":{},
+    "apprunner.listServices":{},
+    "apprunner.listTagsForResource":{},
+    "appstream2.describeDirectoryConfigs":{},
+    "appstream2.describeFleets":{},
+    "appstream2.describeImageBuilders":{},
+    "appstream2.describeImages":{},
+    "appstream2.describeSessions":{},
+    "appstream2.describeStacks":{},
+    "appstream2.listAssociatedFleets":{},
+    "appstream2.listAssociatedStacks":{},
+    "appstream2.listTagsForResource":{},
+    "appsync.getFunction":{},
+    "appsync.getGraphqlApi":{},
+    "appsync.getIntrospectionSchema":{},
+    "appsync.getResolver":{},
+    "appsync.getSchemaCreationStatus":{},
+    "appsync.getType":{},
+    "appsync.listDataSources":{},
+    "appsync.listFunctions":{},
+    "appsync.listGraphqlApis":{},
+    "appsync.listResolvers":{},
+    "appsync.listTypes":{},
+    "appwizard.describeProvisionedApp":{},
+    "appwizard.describeProvisioningEvents":{},
+    "appwizard.listProvisionedApps":{},
+    "arms.getAccountHistory":{},
+    "arms.investigateAccount":{},
+    "arms.queueFraudCheck":{},
+    "arqs.DescribeSnapshot":{},
+    "arqs.GetMaxSnapshotId":{},
+    "arqs.GetSnapshotsForAccount":{},
+    "arqs.GetSnapshotsForVolume":{},
+    "arqs.GetWritersForBackup":{},
+    "as.createAddress":{},
+    "as.getAddressById":{},
+    "as.replaceAddress":{},
+    "asg.describeAccountLimits":{},
+    "asg.describeAdjustmentTypes":{},
+    "asg.describeAutoScalingGroups":{},
+    "asg.describeAutoScalingInstances":{},
+    "asg.describeAutoScalingNotificationTypes":{},
+    "asg.describeInstanceRefreshes":{},
+    "asg.describeLaunchConfigurations":{},
+    "asg.describeLifecycleHookTypes":{},
+    "asg.describeLifecycleHooks":{},
+    "asg.describeLoadBalancerTargetGroups":{},
+    "asg.describeLoadBalancers":{},
+    "asg.describeMetricCollectionTypes":{},
+    "asg.describeNotificationConfigurations":{},
+    "asg.describePolicies":{},
+    "asg.describeScalingActivities":{},
+    "asg.describeScalingProcessTypes":{},
+    "asg.describeScheduledActions":{},
+    "asg.describeTags":{},
+    "asg.describeTerminationPolicyTypes":{},
+    "askec2.describeResourceType":{},
+    "askec2.describeResources":{},
+    "askec2.listResourceTypes":{},
+    "askec2.searchResources":{},
+    "askec2.searchResourcesByQueryString":{},
+    "athena.batchGetNamedQuery":{},
+    "athena.batchGetQueryExecution":{},
+    "athena.getNamedQuery":{},
+    "athena.getQueryExecution":{},
+    "athena.getWorkGroup":{},
+    "athena.listNamedQueries":{},
+    "athena.listQueryExecutions":{},
+    "athena.listTagsForResource":{},
+    "athena.listWorkGroups":{},
+    "auditmanager.getAccountStatus":{},
+    "auditmanager.getDelegations":{},
+    "auditmanager.listAssessmentFrameworks":{},
+    "auditmanager.listAssessmentReports":{},
+    "auditmanager.listAssessments":{},
+    "auditmanager.listControls":{},
+    "auditmanager.listKeywordsForDataSource":{},
+    "auditmanager.listNotifications":{},
+    "autoscalinginternal.createOrUpdateUserLimits":{},
+    "autoscalinginternal.describeNamespaces":{},
+    "autoscalingplans.describeScalingPlanResources":{},
+    "autoscalingplans.describeScalingPlans":{},
+    "autoscalingplans.getScalingPlanResourceForecastData":{},
+    "avs.getAccountStatus":{},
+    "avs.getSupportLevel":{},
+    "awsadms.activateAccount":{},
+    "awsadms.blockAccount":{},
+    "awsadms.getAccountAttribute":{},
+    "awsadms.getAccountContractMetadata":{},
+    "awsadms.getAccountIdentifiersByAccountId":{},
+    "awsadms.getAccountIdentifiersByCustomerId":{},
+    "awsadms.getAccountIdentifiersByPayerId":{},
+    "awsadms.getAccountMarketplaceGroup":{},
+    "awsadms.getAccountSecurityQuestions":{},
+    "awsadms.getAccountState":{},
+    "awsadms.getAccountStatus":{},
+    "awsadms.getAlternateContacts":{},
+    "awsadms.getContactAddress":{},
+    "awsadms.getCurrencyByMarketplaceGroup":{},
+    "awsadms.getEmailAddressVerificationStatus":{},
+    "awsadms.getInternalAccount":{},
+    "awsadms.isAccountInternal":{},
+    "awsadms.listAccountStatusHistory":{},
+    "awsadms.setAccountAttribute":{},
+    "awsadms.setAccountContractMetadata":{},
+    "awsadms.setContactAddress":{},
+    "awsadms.suspendAccount":{},
+    "awsadms.terminateBlockedAccount":{},
+    "awsadms.unblockAccount":{},
+    "awsadms.updateInternalAccount":{},
+    "awsadmsro.getSecurityQuestionsForAccount":{},
+    "awsadmsro.validateSecurityQuestionAnswerForAccount":{},
+    "awsbeehivesupport.describeConfidentialUserMetadata":{},
+    "awsbeehivesupport.describeCustomerAppRedacted":{},
+    "awsbeehivesupport.describeCustomerAppSensitive":{},
+    "awsbeehivesupport.describeCustomerRedacted":{},
+    "awsbeehivesupport.describeCustomerSensitive":{},
+    "awsbeehivesupport.describeCustomerWorkbookRedacted":{},
+    "awsbeehivesupport.describeCustomerWorkbookSensitive":{},
+    "awsbeehivesupport.describeRedactedUserMetadata":{},
+    "awsbeehivesupport.describeTeamRedacted":{},
+    "awsbeehivesupport.describeTeamSensitive":{},
+    "awsbeehivesupport.getDiagnosticLog":{},
+    "awsbeehivesupport.listTeamsForAwsAccountRedacted":{},
+    "awsbeehivesupport.listTeamsForAwsAccountSensitive":{},
+    "awsbeehivesupport.queryCustomersByEmailSensitive":{},
+    "awsbeehivesupport.searchUsersConfidential":{},
+    "awsbeehivesupport.undeleteCustomerWorkbook":{},
+    "awsbillingcms.addCredit":{},
+    "awsbillingcms.cancelCredit":{},
+    "awsbillingcms.getAvailableCredits":{},
+    "awsbillingcwpublisher.publishBillingMetrics":{},
+    "awsbps.charge":{},
+    "awscaseapi.getCase":{},
+    "awscaseapi.listAttributes":{},
+    "awscaseapi.listCommunications":{},
+    "awscaseapi.putAttributes":{},
+    "awscbresourceadminservice.getAccountRole":{},
+    "awscbresourceadminservice.getChildAccountsForParentAccount":{},
+    "awscbresourceadminservice.getChildAccountsWithLinkPeriodsForParentAccount":{},
+    "awscbresourceadminservice.getLinkedPeriodsForChildAccount":{},
+    "awscbresourceadminservice.getParentAccountForChildAccount":{},
+    "awscollectionmanager.getTransactionByTransactionId":{},
+    "awsconfig.batchGetAggregateResourceConfig":{},
+    "awsconfig.batchGetResourceConfig":{},
+    "awsconfig.describeAggregateComplianceByConfigRules":{},
+    "awsconfig.describeAggregationAuthorizations":{},
+    "awsconfig.describeComplianceByConfigRule":{},
+    "awsconfig.describeComplianceByResource":{},
+    "awsconfig.describeConfigRuleEvaluationStatus":{},
+    "awsconfig.describeConfigRules":{},
+    "awsconfig.describeConfigurationAggregatorSourcesStatus":{},
+    "awsconfig.describeConfigurationAggregators":{},
+    "awsconfig.describeConfigurationRecorderStatus":{},
+    "awsconfig.describeConfigurationRecorders":{},
+    "awsconfig.describeConformancePackCompliance":{},
+    "awsconfig.describeConformancePackStatus":{},
+    "awsconfig.describeConformancePacks":{},
+    "awsconfig.describeDeliveryChannelStatus":{},
+    "awsconfig.describeDeliveryChannels":{},
+    "awsconfig.describeOrganizationConfigRuleStatuses":{},
+    "awsconfig.describeOrganizationConfigRules":{},
+    "awsconfig.describeOrganizationConformancePackStatuses":{},
+    "awsconfig.describeOrganizationConformancePacks":{},
+    "awsconfig.describePendingAggregationRequests":{},
+    "awsconfig.describeRemediationConfigurations":{},
+    "awsconfig.describeRemediationExceptions":{},
+    "awsconfig.describeRemediationExecutionStatus":{},
+    "awsconfig.describeRetentionConfigurations":{},
+    "awsconfig.getAggregateComplianceDetailsByConfigRule":{},
+    "awsconfig.getAggregateConfigRuleComplianceSummary":{},
+    "awsconfig.getAggregateDiscoveredResourceCounts":{},
+    "awsconfig.getAggregateResourceConfig":{},
+    "awsconfig.getComplianceDetailsByConfigRule":{},
+    "awsconfig.getComplianceDetailsByResource":{},
+    "awsconfig.getComplianceSummaryByConfigRule":{},
+    "awsconfig.getComplianceSummaryByResourceType":{},
+    "awsconfig.getConformancePackComplianceDetails":{},
+    "awsconfig.getConformancePackComplianceSummary":{},
+    "awsconfig.getDiscoveredResourceCounts":{},
+    "awsconfig.getOrganizationConfigRuleDetailedStatus":{},
+    "awsconfig.getOrganizationConformancePackDetailedStatus":{},
+    "awsconfig.getResourceConfigHistory":{},
+    "awsconfig.listAggregateDiscoveredResources":{},
+    "awsconfig.listDiscoveredResources":{},
+    "awsconfig.listTagsForResource":{},
+    "awsforeignexchange.getRate":{},
+    "awsforeignexchange.getRateByRateId":{},
+    "awsforeignexchange.ping":{},
+    "awsfraud.getFraudStatus":{},
+    "awsinvoicinggateway.find":{},
+    "awsinvoicinggateway.get":{},
+    "awsoms.describeOffer":{},
+    "awsoms.describeOfferStatus":{},
+    "awsoms.describeOfferTerm":{},
+    "awsoms.getLegacyOfferRevisionDetails":{},
+    "awsoms.getOfferMetadata":{},
+    "awsoms.getOffersForSeller":{},
+    "awsorganizationmanagement.describeEffectivePolicy":{},
+    "awsorganizationmanagement.getOrganization":{},
+    "awsorganizationmanagement.getOrganizationAccountLimits":{},
+    "awsorganizationmanagement.getOrganizationForAccount":{},
+    "awsorganizationmanagement.getPolicy":{},
+    "awsorganizationmanagement.getResource":{},
+    "awsorganizationmanagement.getView":{},
+    "awsorganizationmanagement.listAccountsForOrganization":{},
+    "awsorganizationmanagement.listAttachmentsForPolicy":{},
+    "awsorganizationmanagement.listGroupsForParent":{},
+    "awsorganizationmanagement.listParentsForResource":{},
+    "awsorganizationmanagement.listPolicies":{},
+    "awsorganizationmanagement.listPoliciesForGroup":{},
+    "awsorganizationmanagement.listPoliciesForResource":{},
+    "awsorganizationmanagement.listPoliciesForView":{},
+    "awsorganizationmanagement.iterateResourcesForOrganization":{},
+    "awsorganizationmanagement.iterateResourcesForParent":{},
+    "awsorganizationmanagement.listViews":{},
+    "awsorganizationmanagement.lookupPolicyForAccount":{},
+    "awsorganizationmanagement.updateOrganizationAccountLimit":{},
+    "awsorganizationmanagementops.getMappedIADAccount":{},
+    "awsorganizationmanagementops.listOrganizations":{},
+    "awsorganizationworkflowmanagement.describeAccountCreationRequest":{},
+    "awsorganizationworkflowmanagement.listAccountCreationRequests":{},
+    "awspax.getPromotionByCode":{},
+    "awspax.getPromotionById":{},
+    "awspax.getPromotionByName":{},
+    "awspax.getPromotionsForAccount":{},
+    "awspax.redeemPromotion":{},
+    "awspaymentexecutiongateway.vet":{},
+    "awspaymentgateway.collectPayment":{},
+    "awspaymentgateway.completePayment":{},
+    "awspaymentgateway.find":{},
+    "awspaymentinstrumentgateway.create":{},
+    "awspaymentinstrumentgateway.find":{},
+    "awspaymentinstrumentgateway.get":{},
+    "awspaymentinstrumentgateway.getVetStatus":{},
+    "awspaymentinstrumentgateway.setVetStatus":{},
+    "awspaymentinstrumentgateway.update":{},
+    "awspaymentspolicygateway.getMfaScenario":{},
+    "awspcs.getAllServicesDetails":{},
+    "awspcs.getAllServicesForAccount":{},
+    "awspcs.getLegacyServiceIdentifiers":{},
+    "awspcs.getServiceDetails":{},
+    "awsrefund.getBillsInPeriod":{},
+    "awsrefund.getRefundableLineItems":{},
+    "awsrefund.refundAllTaxInBill":{},
+    "awsrefund.refundSpecificAmountInLineItems":{},
+    "awsrefund.refundSpecificAmountInLineItemsForMarketplaceBill":{},
+    "awsrefund.refundSpecificAmountInLineItemsUnlimited":{},
+    "awssdms.activatePendingSubscription":{},
+    "awssdms.blockSubscription":{},
+    "awssdms.cancelSubscription":{},
+    "awssdms.createSubscription":{},
+    "awssdms.getBillingAgreementsSummaryForPeriod":{},
+    "awssdms.getSubscriptionHistoryForAccount":{},
+    "awssdms.getSubscriptionIdsByProductIdentifier":{},
+    "awssdms.getSubscriptionsForPeriod":{},
+    "awssdms.refundCanceledSubscription":{},
+    "awssdms.switchSubscription":{},
+    "awssdms.unblockSubscription":{},
+    "awssupportsubscription.getTrialPrograms":{},
+    "awssupportsubscription.getTrialStatus":{},
+    "awssupportsubscription.getTrials":{},
+    "awssupportsubscription.setTrialStatus":{},
+    "awstcs.getCustomerExemptionStatus":{},
+    "awstcs.getFapiaoHistory":{},
+    "awstcs.getFapiaoInformation":{},
+    "awstcs.getLinkedAccountDetails":{},
+    "awstcs.getPANInformation":{},
+    "awstcs.getSupportedAuthorities":{},
+    "awstcs.getTaxExemptionTypes":{},
+    "awstcs.getVATInformation":{},
+    "awstcs.setPANInformation":{},
+    "awstcs.setTaxExemptions":{},
+    "awstcs.setVATInformation":{},
+    "awstcs.updateFapiaoEffectiveDate":{},
+    "awstcs.updateFapiaoState":{},
+    "awstims.getInvoiceMetadata":{},
+    "backup.describeBackupJob":{},
+    "backup.describeBackupVault":{},
+    "backup.describeProtectedResource":{},
+    "backup.describeRecoveryPoint":{},
+    "backup.describeRestoreJob":{},
+    "backup.getBackupPlan":{},
+    "backup.getBackupPlanFromJSON":{},
+    "backup.getBackupPlanFromTemplate":{},
+    "backup.getBackupSelection":{},
+    "backup.getBackupVaultAccessPolicy":{},
+    "backup.getBackupVaultNotifications":{},
+    "backup.getRecoveryPointRestoreMetadata":{},
+    "backup.getSupportedResourceTypes":{},
+    "backup.listBackupJobs":{},
+    "backup.listBackupPlanTemplates":{},
+    "backup.listBackupPlanVersions":{},
+    "backup.listBackupPlans":{},
+    "backup.listBackupSelections":{},
+    "backup.listBackupVaults":{},
+    "backup.listProtectedResources":{},
+    "backup.listRecoveryPointsByBackupVault":{},
+    "backup.listRecoveryPointsByResource":{},
+    "backup.listRestoreJobs":{},
+    "backup.listTags":{},
+    "bas.getBillReportByAccount":{},
+    "bas.getInvoiceReportByInvoiceIds":{},
+    "batch.describeComputeEnvironments":{},
+    "batch.describeJobDefinitions":{},
+    "batch.describeJobQueues":{},
+    "batch.describeJobs":{},
+    "batch.listJobs":{},
+    "beanstalk.checkDNSAvailability":{},
+    "beanstalk.describeApplicationVersions":{},
+    "beanstalk.describeConfigurationOptions":{},
+    "beanstalk.describeEnvironmentHealth":{},
+    "beanstalk.describeEnvironmentManagedActionHistory":{},
+    "beanstalk.describeEnvironmentManagedActions":{},
+    "beanstalk.describeEnvironmentResources":{},
+    "beanstalk.describeEnvironments":{},
+    "beanstalk.describeEvents":{},
+    "beanstalk.describeInstancesHealth":{},
+    "beanstalk.describePlatformVersion":{},
+    "beanstalk.listAvailableSolutionStacks":{},
+    "beanstalk.listPlatformVersions":{},
+    "beanstalk.validateConfigurationSettings":{},
+    "braket.getDevice":{},
+    "braket.getQuantumTask":{},
+    "braket.searchDevices":{},
+    "braket.searchQuantumTasks":{},
+    "budgets.describeBudget":{},
+    "budgets.describeBudgets":{},
+    "budgets.describeNotificationsForBudget":{},
+    "budgets.describeSubscribersForNotification":{},
+    "cloud9.describeEnvironmentMemberships":{},
+    "cloud9.describeEnvironments":{},
+    "cloud9.listEnvironments":{},
+    "cloudHSM.discoverHsmStatus":{},
+    "cloudHSM.getActiveSubscriptions":{},
+    "cloudHSM.getAllCustomers":{},
+    "cloudHSM.getCustomerByAccountId":{},
+    "cloudHSM.getHsmById":{},
+    "cloudHSM.getHsmCounts":{},
+    "cloudHSM.getHsmsInAz":{},
+    "cloudHSM.getSubscriptionById":{},
+    "cloudHSM.getTrialsToEnd":{},
+    "clouddirectory.getDirectory":{},
+    "clouddirectory.listDirectories":{},
+    "cloudformation.describeAccountLimits":{},
+    "cloudformation.describeChangeSet":{},
+    "cloudformation.describeStackEvents":{},
+    "cloudformation.describeStackInstance":{},
+    "cloudformation.describeStackResource":{},
+    "cloudformation.describeStackResources":{},
+    "cloudformation.describeStackSet":{},
+    "cloudformation.describeStackSetOperation":{},
+    "cloudformation.describeStacks":{},
+    "cloudformation.estimateTemplateCost":{},
+    "cloudformation.getStackPolicy":{},
+    "cloudformation.getTemplate":{},
+    "cloudformation.getTemplateSummary":{},
+    "cloudformation.listChangeSets":{},
+    "cloudformation.listExports":{},
+    "cloudformation.listImports":{},
+    "cloudformation.listStackInstances":{},
+    "cloudformation.listStackResources":{},
+    "cloudformation.listStackSetOperationResults":{},
+    "cloudformation.listStackSetOperations":{},
+    "cloudformation.listStackSets":{},
+    "cloudformation.listStacks":{},
+    "cloudfront.getCloudFrontOriginAccessIdentity":{},
+    "cloudfront.getCloudFrontOriginAccessIdentityConfig":{},
+    "cloudfront.getDistribution":{},
+    "cloudfront.getDistributionConfig":{},
+    "cloudfront.getInvalidation":{},
+    "cloudfront.getStreamingDistribution":{},
+    "cloudfront.getStreamingDistributionConfig":{},
+    "cloudfront.listCloudFrontOriginAccessIdentities":{},
+    "cloudfront.listDistributions":{},
+    "cloudfront.listDistributionsByWebACLId":{},
+    "cloudfront.listInvalidations":{},
+    "cloudfront.listStreamingDistributions":{},
+    "cloudhsmv2.describeBackups":{},
+    "cloudhsmv2.describeClusters":{},
+    "cloudsearchinternal.describeAPIVersion":{},
+    "cloudsearchinternal.describeAZs":{},
+    "cloudsearchinternal.describeAvailableEC2Instances":{},
+    "cloudsearchinternal.describeDomainInstances":{},
+    "cloudsearchinternal.describeDomainsInternal":{},
+    "cloudsearchinternal.describeEC2InstanceSettings":{},
+    "cloudsearchinternal.describeFrontends":{},
+    "cloudsearchinternal.describeIndexFieldsInternal":{},
+    "cloudsearchinternal.describeLimits":{},
+    "cloudsearchinternal.describeRankExpressionsInternal":{},
+    "cloudsearchinternal.describeSearchEngineSettings":{},
+    "cloudsearchinternal.describeSearchMetricAlarm":{},
+    "cloudsearchinternal.describeSearchPartitions":{},
+    "cloudsearchinternal.describeSearchScalingPolicies":{},
+    "cloudsearchinternal.getBuildVersion":{},
+    "cloudsearchinternal.getClients":{},
+    "cloudsearchinternal.getConfigSolrSchema":{},
+    "cloudsearchinternal.getConfigXbm":{},
+    "cloudsearchinternal.getConfigXcm":{},
+    "cloudsearchinternal.getConfigXml":{},
+    "cloudsearchinternal.getConfigXqm":{},
+    "cloudsearchinternal.getDomains":{},
+    "cloudsearchinternal.getRecoveryInfo":{},
+    "cloudsearchinternal.getServiceAccessPolicies":{},
+    "cloudsearchinternal.getStemmingInfo":{},
+    "cloudsearchinternal.getSynonymsInfo":{},
+    "cloudsearchv2.describeAnalysisSchemes":{},
+    "cloudsearchv2.describeAvailabilityOptions":{},
+    "cloudsearchv2.describeDomains":{},
+    "cloudsearchv2.describeExpressions":{},
+    "cloudsearchv2.describeIndexFields":{},
+    "cloudsearchv2.describeScalingParameters":{},
+    "cloudsearchv2.describeServiceAccessPolicies":{},
+    "cloudsearchv2.describeSuggesters":{},
+    "cloudsearchv2.listDomainNames":{},
+    "cloudsearchv2internal.describeAPIVersion":{},
+    "cloudsearchv2internal.describeAZs":{},
+    "cloudsearchv2internal.describeAvailableEC2Instances":{},
+    "cloudsearchv2internal.describeDomainInstances":{},
+    "cloudsearchv2internal.describeDomainsInternal":{},
+    "cloudsearchv2internal.describeEC2InstanceSettings":{},
+    "cloudsearchv2internal.describeEngineType":{},
+    "cloudsearchv2internal.describeExpressionsInternal":{},
+    "cloudsearchv2internal.describeFrontends":{},
+    "cloudsearchv2internal.describeIndexFieldsInternal":{},
+    "cloudsearchv2internal.describeLimits":{},
+    "cloudsearchv2internal.describeSearchMetricAlarm":{},
+    "cloudsearchv2internal.describeSearchPartitions":{},
+    "cloudsearchv2internal.describeSearchScalingPolicies":{},
+    "cloudsearchv2internal.getAdvancedOptions":{},
+    "cloudsearchv2internal.getArtifactRegistry":{},
+    "cloudsearchv2internal.getBuildVersion":{},
+    "cloudsearchv2internal.getClients":{},
+    "cloudsearchv2internal.getConfigSolrSchema":{},
+    "cloudsearchv2internal.getConfigXml":{},
+    "cloudsearchv2internal.getDomains":{},
+    "cloudsearchv2internal.getDomainsWithIssues":{},
+    "cloudsearchv2internal.getDomainsWithIssuesArchive":{},
+    "cloudsearchv2internal.getRecoveryInfo":{},
+    "cloudsearchv2internal.getScalingParameters":{},
+    "cloudsearchv2internal.getServiceAccessPolicies":{},
+    "cloudtrail.describeTrails":{},
+    "cloudtrail.getEventSelectors":{},
+    "cloudtrail.getInsightSelectors":{},
+    "cloudtrail.getTrail":{},
+    "cloudtrail.getTrailStatus":{},
+    "cloudtrail.listPublicKeys":{},
+    "cloudtrail.listTags":{},
+    "cloudtrail.listTrails":{},
+    "cloudtrail.lookupEvents":{},
+    "cloudwatch.describeAlarmHistory":{},
+    "cloudwatch.describeAlarms":{},
+    "cloudwatch.describeAlarmsForMetric":{},
+    "cloudwatch.describeAnomalyDetectors":{},
+    "cloudwatch.describeInsightRules":{},
+    "cloudwatch.getDashboard":{},
+    "cloudwatch.getInsightRuleReport":{},
+    "cloudwatch.getMetricData":{},
+    "cloudwatch.getMetricStatistics":{},
+    "cloudwatch.listDashboards":{},
+    "cloudwatch.listMetrics":{},
+    "cloudwatchinternal.searchMetricSchemasForAccount":{},
+    "cloudwatchinternal.searchMetricsForAccount":{},
+    "codeartifact.describeDomain":{},
+    "codeartifact.describePackageVersion":{},
+    "codeartifact.describeRepository":{},
+    "codeartifact.getDomainPermissionsPolicy":{},
+    "codeartifact.getRepositoryEndpoint":{},
+    "codeartifact.getRepositoryPermissionsPolicy":{},
+    "codeartifact.listDomains":{},
+    "codeartifact.listPackageVersionAssets":{},
+    "codeartifact.listPackageVersions":{},
+    "codeartifact.listPackages":{},
+    "codeartifact.listRepositories":{},
+    "codeartifact.listRepositoriesInDomain":{},
+    "codebuild.batchGetBuildBatches":{},
+    "codebuild.batchGetBuilds":{},
+    "codebuild.batchGetProjects":{},
+    "codebuild.listBuildBatches":{},
+    "codebuild.listBuildBatchesForProject":{},
+    "codebuild.listBuilds":{},
+    "codebuild.listBuildsForProject":{},
+    "codebuild.listCuratedEnvironmentImages":{},
+    "codebuild.listProjects":{},
+    "codebuild.listSourceCredentials":{},
+    "codecommit.batchGetRepositories":{},
+    "codecommit.getBranch":{},
+    "codecommit.getRepository":{},
+    "codecommit.getRepositoryTriggers":{},
+    "codecommit.listBranches":{},
+    "codecommit.listRepositories":{},
+    "codedeploy.batchGetApplicationRevisions":{},
+    "codedeploy.batchGetApplications":{},
+    "codedeploy.batchGetDeploymentGroups":{},
+    "codedeploy.batchGetDeploymentInstances":{},
+    "codedeploy.batchGetDeploymentTargets":{},
+    "codedeploy.batchGetDeployments":{},
+    "codedeploy.batchGetOnPremisesInstances":{},
+    "codedeploy.getApplication":{},
+    "codedeploy.getApplicationRevision":{},
+    "codedeploy.getDeployment":{},
+    "codedeploy.getDeploymentConfig":{},
+    "codedeploy.getDeploymentGroup":{},
+    "codedeploy.getDeploymentInstance":{},
+    "codedeploy.getDeploymentTarget":{},
+    "codedeploy.getOnPremisesInstance":{},
+    "codedeploy.listApplicationRevisions":{},
+    "codedeploy.listApplications":{},
+    "codedeploy.listDeploymentConfigs":{},
+    "codedeploy.listDeploymentGroups":{},
+    "codedeploy.listDeploymentInstances":{},
+    "codedeploy.listDeploymentTargets":{},
+    "codedeploy.listDeployments":{},
+    "codedeploy.listGitHubAccountTokenNames":{},
+    "codedeploy.listOnPremisesInstances":{},
+    "codepipeline.getJobDetails":{},
+    "codepipeline.getPipeline":{},
+    "codepipeline.getPipelineExecution":{},
+    "codepipeline.getPipelineState":{},
+    "codepipeline.listActionExecutions":{},
+    "codepipeline.listActionTypes":{},
+    "codepipeline.listPipelineExecutions":{},
+    "codepipeline.listPipelines":{},
+    "codepipeline.listWebhooks":{},
+    "codestar.describeProject":{},
+    "codestar.listProjects":{},
+    "codestar.iterateResources":{},
+    "codestar.listTeamMembers":{},
+    "codestar.listUserProfiles":{},
+    "cognitoidentity.describeIdentityPool":{},
+    "cognitoidentity.getIdentityPoolRoles":{},
+    "cognitoidentity.listIdentities":{},
+    "cognitoidentity.listIdentityPools":{},
+    "cognitoidp.describeIdentityProvider":{},
+    "cognitoidp.describeResourceServer":{},
+    "cognitoidp.describeRiskConfiguration":{},
+    "cognitoidp.describeUserImportJob":{},
+    "cognitoidp.describeUserPool":{},
+    "cognitoidp.describeUserPoolClient":{},
+    "cognitoidp.describeUserPoolDomain":{},
+    "cognitoidp.getGroup":{},
+    "cognitoidp.getUICustomization":{},
+    "cognitoidp.getUserPoolMfaConfig":{},
+    "cognitoidp.listGroups":{},
+    "cognitoidp.listIdentityProviders":{},
+    "cognitoidp.listResourceServers":{},
+    "cognitoidp.listUserImportJobs":{},
+    "cognitoidp.listUserPoolClients":{},
+    "cognitoidp.listUserPools":{},
+    "cognitosync.describeDataset":{},
+    "cognitosync.describeIdentityPoolUsage":{},
+    "cognitosync.describeIdentityUsage":{},
+    "cognitosync.getCognitoEvents":{},
+    "cognitosync.getIdentityPoolConfiguration":{},
+    "cognitosync.listDatasets":{},
+    "cognitosync.listIdentityPoolUsage":{},
+    "computeoptimizer.getAutoScalingGroupRecommendations":{},
+    "computeoptimizer.getEBSVolumeRecommendations":{},
+    "computeoptimizer.getEC2InstanceRecommendations":{},
+    "computeoptimizer.getEC2RecommendationProjectedMetrics":{},
+    "computeoptimizer.getEnrollmentStatus":{},
+    "computeoptimizer.getRecommendationSummaries":{},
+    "connect.describeUser":{},
+    "connect.getCurrentMetricData":{},
+    "connect.getMetricData":{},
+    "connect.listRoutingProfiles":{},
+    "connect.listSecurityProfiles":{},
+    "connect.listUsers":{},
+    "controltower.describeAccountFactoryConfig":{},
+    "controltower.describeCoreService":{},
+    "controltower.describeGuardrail":{},
+    "controltower.describeGuardrailForTarget":{},
+    "controltower.describeManagedAccount":{},
+    "controltower.describeSingleSignOn":{},
+    "controltower.getAvailableUpdates":{},
+    "controltower.getHomeRegion":{},
+    "controltower.getLandingZoneStatus":{},
+    "controltower.listDirectoryGroups":{},
+    "controltower.listGuardrailViolations":{},
+    "controltower.listGuardrailsForTarget":{},
+    "controltower.listManagedAccounts":{},
+    "controltower.listManagedAccountsForGuardrail":{},
+    "controltower.listManagedAccountsForParent":{},
+    "controltower.listManagedOrganizationalUnits":{},
+    "controltower.listManagedOrganizationalUnitsForGuardrail":{},
+    "correiosstorageservice.retrieveMultichannelMessage":{},
+    "correiosstorageservice.searchMessages":{},
+    "correiosstorageservice.searchMessagesByCustomerID":{},
+    "costexplorer.getCostAndUsage":{},
+    "costexplorer.getCostAndUsageWithResources":{},
+    "costexplorer.getCostForecast":{},
+    "costexplorer.getDimensionValues":{},
+    "costexplorer.getReservationCoverage":{},
+    "costexplorer.getReservationPurchaseRecommendation":{},
+    "costexplorer.getReservationUtilization":{},
+    "costexplorer.getRightsizingRecommendation":{},
+    "costexplorer.getSavingsPlansCoverage":{},
+    "costexplorer.getSavingsPlansPurchaseRecommendation":{},
+    "costexplorer.getSavingsPlansUtilization":{},
+    "costexplorer.getSavingsPlansUtilizationDetails":{},
+    "costexplorer.getTags":{},
+    "credstore.resetProperty":{},
+    "databrew.describeDataset":{},
+    "databrew.describeJob":{},
+    "databrew.describeProject":{},
+    "databrew.describeRecipe":{},
+    "databrew.listDatasets":{},
+    "databrew.listJobRuns":{},
+    "databrew.listJobs":{},
+    "databrew.listProjects":{},
+    "databrew.listRecipeVersions":{},
+    "databrew.listRecipes":{},
+    "databrew.listTagsForResource":{},
+    "datapipeline.describeObjects":{},
+    "datapipeline.describePipelines":{},
+    "datapipeline.getPipelineDefinition":{},
+    "datapipeline.listPipelines":{},
+    "datapipeline.queryObjects":{},
+    "datasync.describeAgent":{},
+    "datasync.describeLocationEfs":{},
+    "datasync.describeLocationFsxWindows":{},
+    "datasync.describeLocationNfs":{},
+    "datasync.describeLocationObjectStorage":{},
+    "datasync.describeLocationS3":{},
+    "datasync.describeLocationSmb":{},
+    "datasync.describeTask":{},
+    "datasync.describeTaskExecution":{},
+    "datasync.listAgents":{},
+    "datasync.listLocations":{},
+    "datasync.listTaskExecutions":{},
+    "datasync.listTasks":{},
+    "dax.describeClusters":{},
+    "dax.describeDefaultParameters":{},
+    "dax.describeEvents":{},
+    "dax.describeParameterGroups":{},
+    "dax.describeParameters":{},
+    "dax.describeSubnetGroups":{},
+    "ddbstreams.describeStream":{},
+    "ddbstreams.listStreams":{},
+    "detective.getMembers":{},
+    "detective.listGraphs":{},
+    "detective.listInvitations":{},
+    "detective.listMembers":{},
+    "devicefarm.getAccountSettings":{},
+    "devicefarm.getDevice":{},
+    "devicefarm.getDevicePool":{},
+    "devicefarm.getDevicePoolCompatibility":{},
+    "devicefarm.getJob":{},
+    "devicefarm.getProject":{},
+    "devicefarm.getRemoteAccessSession":{},
+    "devicefarm.getRun":{},
+    "devicefarm.getSuite":{},
+    "devicefarm.getTest":{},
+    "devicefarm.getTestGridProject":{},
+    "devicefarm.getTestGridSession":{},
+    "devicefarm.getUpload":{},
+    "devicefarm.listArtifacts":{},
+    "devicefarm.listDevicePools":{},
+    "devicefarm.listDevices":{},
+    "devicefarm.listJobs":{},
+    "devicefarm.listProjects":{},
+    "devicefarm.listRemoteAccessSessions":{},
+    "devicefarm.listRuns":{},
+    "devicefarm.listSamples":{},
+    "devicefarm.listSuites":{},
+    "devicefarm.listTestGridProjects":{},
+    "devicefarm.listTestGridSessionActions":{},
+    "devicefarm.listTestGridSessionArtifacts":{},
+    "devicefarm.listTestGridSessions":{},
+    "devicefarm.listTests":{},
+    "devicefarm.listUniqueProblems":{},
+    "devicefarm.listUploads":{},
+    "directconnect.describeConnections":{},
+    "directconnect.describeConnectionsOnInterconnect":{},
+    "directconnect.describeInterconnects":{},
+    "directconnect.describeLocations":{},
+    "directconnect.describeVirtualGateways":{},
+    "directconnect.describeVirtualInterfaces":{},
+    "dlm.getLifecyclePolicies":{},
+    "dlm.getLifecyclePolicy":{},
+    "dms.describeAccountAttributes":{},
+    "dms.describeConnections":{},
+    "dms.describeEndpointTypes":{},
+    "dms.describeEndpoints":{},
+    "dms.describeOrderableReplicationInstances":{},
+    "dms.describeRefreshSchemasStatus":{},
+    "dms.describeReplicationInstances":{},
+    "dms.describeReplicationSubnetGroups":{},
+    "ds.describeConditionalForwarders":{},
+    "ds.describeDirectories":{},
+    "ds.describeEventTopics":{},
+    "ds.describeSnapshots":{},
+    "ds.describeTrusts":{},
+    "ds.getDirectoryLimits":{},
+    "ds.getSnapshotLimits":{},
+    "ds.listIpRoutes":{},
+    "ds.listSchemaExtensions":{},
+    "ds.listTagsForResource":{},
+    "dummyService.describeResources":{},
+    "dummyService.fakeSimtResolverHighImpactApi":{},
+    "dummyService.fakeTtResolverHighImpactApi":{},
+    "dynamodb.describeBackup":{},
+    "dynamodb.describeContinuousBackups":{},
+    "dynamodb.describeGlobalTable":{},
+    "dynamodb.describeLimits":{},
+    "dynamodb.describeTable":{},
+    "dynamodb.describeTimeToLive":{},
+    "dynamodb.listBackups":{},
+    "dynamodb.listGlobalTables":{},
+    "dynamodb.listTables":{},
+    "dynamodb.listTagsOfResource":{},
+    "ec2.describeAccountAttributes":{},
+    "ec2.describeAddresses":{},
+    "ec2.describeAvailabilityZones":{},
+    "ec2.describeBundleTasks":{},
+    "ec2.describeByoipCidrs":{},
+    "ec2.describeCapacityReservations":{},
+    "ec2.describeClassicLinkInstances":{},
+    "ec2.describeClientVpnAuthorizationRules":{},
+    "ec2.describeClientVpnConnections":{},
+    "ec2.describeClientVpnEndpoints":{},
+    "ec2.describeClientVpnRoutes":{},
+    "ec2.describeClientVpnTargetNetworks":{},
+    "ec2.describeCoipPools":{},
+    "ec2.describeConversionTasks":{},
+    "ec2.describeCustomerGateways":{},
+    "ec2.describeDhcpOptions":{},
+    "ec2.describeElasticGpus":{},
+    "ec2.describeExportImageTasks":{},
+    "ec2.describeExportTasks":{},
+    "ec2.describeFastSnapshotRestores":{},
+    "ec2.describeFleetHistory":{},
+    "ec2.describeFleetInstances":{},
+    "ec2.describeFleets":{},
+    "ec2.describeFlowLogs":{},
+    "ec2.describeHostReservationOfferings":{},
+    "ec2.describeHostReservations":{},
+    "ec2.describeHosts":{},
+    "ec2.describeIdFormat":{},
+    "ec2.describeIdentityIdFormat":{},
+    "ec2.describeImageAttribute":{},
+    "ec2.describeImages":{},
+    "ec2.describeImportImageTasks":{},
+    "ec2.describeImportSnapshotTasks":{},
+    "ec2.describeInstanceAttribute":{},
+    "ec2.describeInstanceStatus":{},
+    "ec2.describeInstances":{},
+    "ec2.describeInternetGateways":{},
+    "ec2.describeKeyPairs":{},
+    "ec2.describeLaunchTemplateVersions":{},
+    "ec2.describeLaunchTemplates":{},
+    "ec2.describeLocalGatewayRouteTableVirtualInterfaceGroupAssociations":{},
+    "ec2.describeLocalGatewayRouteTableVpcAssociations":{},
+    "ec2.describeLocalGatewayRouteTables":{},
+    "ec2.describeLocalGatewayVirtualInterfaceGroups":{},
+    "ec2.describeLocalGatewayVirtualInterfaces":{},
+    "ec2.describeLocalGateways":{},
+    "ec2.describeMovingAddresses":{},
+    "ec2.describeNatGateways":{},
+    "ec2.describeNetworkAcls":{},
+    "ec2.describeNetworkInterfaceAttribute":{},
+    "ec2.describeNetworkInterfaces":{},
+    "ec2.describePlacementGroups":{},
+    "ec2.describePrefixLists":{},
+    "ec2.describePublicIpv4Pools":{},
+    "ec2.describeRegions":{},
+    "ec2.describeReservedInstances":{},
+    "ec2.describeReservedInstancesListings":{},
+    "ec2.describeReservedInstancesModifications":{},
+    "ec2.describeReservedInstancesOfferings":{},
+    "ec2.describeRouteTables":{},
+    "ec2.describeScheduledInstances":{},
+    "ec2.describeSecurityGroups":{},
+    "ec2.describeSnapshotAttribute":{},
+    "ec2.describeSnapshots":{},
+    "ec2.describeSpotDatafeedSubscription":{},
+    "ec2.describeSpotFleetInstances":{},
+    "ec2.describeSpotFleetRequestHistory":{},
+    "ec2.describeSpotFleetRequests":{},
+    "ec2.describeSpotInstanceRequests":{},
+    "ec2.describeSpotPriceHistory":{},
+    "ec2.describeSubnets":{},
+    "ec2.describeTags":{},
+    "ec2.describeTrafficMirrorFilters":{},
+    "ec2.describeTrafficMirrorSessions":{},
+    "ec2.describeTrafficMirrorTargets":{},
+    "ec2.describeTransitGatewayAttachments":{},
+    "ec2.describeTransitGatewayRouteTables":{},
+    "ec2.describeTransitGatewayVpcAttachments":{},
+    "ec2.describeTransitGateways":{},
+    "ec2.describeVolumeAttribute":{},
+    "ec2.describeVolumeStatus":{},
+    "ec2.describeVolumes":{},
+    "ec2.describeVolumesModifications":{},
+    "ec2.describeVpcAttribute":{},
+    "ec2.describeVpcClassicLink":{},
+    "ec2.describeVpcClassicLinkDnsSupport":{},
+    "ec2.describeVpcEndpointConnectionNotifications":{},
+    "ec2.describeVpcEndpointConnections":{},
+    "ec2.describeVpcEndpointServiceConfigurations":{},
+    "ec2.describeVpcEndpointServicePermissions":{},
+    "ec2.describeVpcEndpointServices":{},
+    "ec2.describeVpcEndpoints":{},
+    "ec2.describeVpcPeeringConnections":{},
+    "ec2.describeVpcs":{},
+    "ec2.describeVpnConnections":{},
+    "ec2.describeVpnGateways":{},
+    "ec2.getCoipPoolUsage":{},
+    "ec2.getConsoleScreenshot":{},
+    "ec2.getReservedInstancesExchangeQuote":{},
+    "ec2.searchLocalGatewayRoutes":{},
+    "ec2internal.describeAvailabilityZoneFeatures":{},
+    "ec2internal.describeAvailabilityZoneMappings":{},
+    "ec2internal.describeInstanceTypeFeatures":{},
+    "ec2internal2.describeAccountAttributesInternal":{},
+    "ec2internal2.describeAvailabilityZoneFeaturesInternal":{},
+    "ec2internal2.describeAvailabilityZoneMappings":{},
+    "ec2internal2.describeInstanceTypeFeaturesInternal":{},
+    "ec2nigripesservice.getAccountStatus":{},
+    "ec2nigripesservice.getResourceFirewallRules":{},
+    "ec2nm.describeDNSOptions":{},
+    "ec2nm.describeInterfaces":{},
+    "ec2nm.describeNetworkAcls":{},
+    "ec2nm.describeNetworkSubnets":{},
+    "ec2nm.describeNetworks":{},
+    "ec2nm.describePublicAddresses":{},
+    "ec2nm.describeRouteTables":{},
+    "ec2nm.describeSecurityGroups":{},
+    "ec2nm.describeSubnetInterfaces":{},
+    "ec2nm.describeSubnets":{},
+    "ec2nm.describeUserDhcpOptions":{},
+    "ec2nm.describeUserInterfaces":{},
+    "ec2nm.describeUserInternetGateways":{},
+    "ec2nm.describeUserNetworks":{},
+    "ec2nm.describeUserSecurityGroups":{},
+    "ec2nm.describeUserSubnets":{},
+    "ec2nm.describeVerbosePublicAddresses":{},
+    "ec2nm.getInstanceTypeLimit":{},
+    "ec2nm.getResourceOwner":{},
+    "ec2nm.removeSubnetDefaultStatus":{},
+    "ec2nm.setDefaultSubnet":{},
+    "ec2pipsinternal.batchAllocatePublicAddressCSInternal":{},
+    "ec2pipsinternal.describeAddressesPtrInternal":{},
+    "ec2pipsinternal.describeClassicMappingsByPublicAddressInternal":{},
+    "ec2pipsinternal.describePublicAddressesInternal":{},
+    "ec2pipsinternal.lockPublicAddressInternal":{},
+    "ec2pipsinternal.setAddressPtrInternalCs":{},
+    "ec2pipsinternal.unlockPublicAddressInternal":{},
+    "ecas.describeSnapshotAttributes":{},
+    "ecas.describeSnapshotInternal":{},
+    "ecas.describeVolumeEvents":{},
+    "ecas.describeVolumeGeometry":{},
+    "ecas.describeVolumePartitions":{},
+    "ecas.describeVolumesInternal":{},
+    "ecas.getBlessedPairCsv":{},
+    "ecas.getCustomerUsage":{},
+    "ecas.getLatestEbsSnapshotId":{},
+    "ecas.getVolumeAttachmentHistory":{},
+    "ecas.getVolumeRecoveryHistory":{},
+    "ecas.isVolumeDeleted":{},
+    "ecr.batchCheckLayerAvailability":{},
+    "ecr.describeImageScanFindings":{},
+    "ecr.describeImages":{},
+    "ecr.describeRegistry":{},
+    "ecr.describeRepositories":{},
+    "ecr.getLifecyclePolicy":{},
+    "ecr.getRegistryPolicy":{},
+    "ecr.getRepositoryPolicy":{},
+    "ecr.listImages":{},
+    "ecr.listTagsForResource":{},
+    "ecrpublic.describeImageTags":{},
+    "ecrpublic.describeImages":{},
+    "ecrpublic.describeRegistries":{},
+    "ecrpublic.describeRepositories":{},
+    "ecrpublic.getRegistryCatalogData":{},
+    "ecrpublic.getRepositoryCatalogData":{},
+    "ecrpublic.getRepositoryPolicy":{},
+    "ecrpublic.listTagsForResource":{},
+    "ecs.describeCapacityProviders":{},
+    "ecs.describeClusters":{},
+    "ecs.describeContainerInstances":{},
+    "ecs.describeServices":{},
+    "ecs.describeTaskDefinition":{},
+    "ecs.describeTaskSets":{},
+    "ecs.describeTasks":{},
+    "ecs.listAccountSettings":{},
+    "ecs.listAttributes":{},
+    "ecs.listClusters":{},
+    "ecs.listContainerInstances":{},
+    "ecs.listServices":{},
+    "ecs.listTagsForResource":{},
+    "ecs.listTaskDefinitionFamilies":{},
+    "ecs.listTaskDefinitions":{},
+    "ecs.listTasks":{},
+    "ehs.getHandshake":{},
+    "ehs.listHandshakes":{},
+    "ehsops.getRateLimitConfig":{},
+    "eks.describeCluster":{},
+    "eks.describeFargateProfile":{},
+    "eks.describeNodegroup":{},
+    "eks.describeUpdate":{},
+    "eks.listClusters":{},
+    "eks.listFargateProfiles":{},
+    "eks.listNodegroups":{},
+    "eks.listUpdates":{},
+    "elasticache.describeCacheClusters":{},
+    "elasticache.describeCacheEngineVersions":{},
+    "elasticache.describeCacheParameterGroups":{},
+    "elasticache.describeCacheParameters":{},
+    "elasticache.describeCacheSecurityGroups":{},
+    "elasticache.describeCacheSubnetGroups":{},
+    "elasticache.describeEngineDefaultParameters":{},
+    "elasticache.describeEvents":{},
+    "elasticache.describeReplicationGroups":{},
+    "elasticache.describeReservedCacheNodes":{},
+    "elasticache.describeReservedCacheNodesOfferings":{},
+    "elasticache.describeSnapshots":{},
+    "elasticache.listAllowedNodeTypeModifications":{},
+    "elasticache.listTagsForResource":{},
+    "elasticfilesystem.describeAccessPoints":{},
+    "elasticfilesystem.describeFileSystemPolicy":{},
+    "elasticfilesystem.describeFileSystems":{},
+    "elasticfilesystem.describeLifecycleConfiguration":{},
+    "elasticfilesystem.describeMountTargetSecurityGroups":{},
+    "elasticfilesystem.describeMountTargets":{},
+    "elasticfilesystem.describeTags":{},
+    "elasticfilesystem.listTagsForResource":{},
+    "elastictranscoder.listJobsByPipeline":{},
+    "elastictranscoder.listJobsByStatus":{},
+    "elastictranscoder.listPipelines":{},
+    "elastictranscoder.listPresets":{},
+    "elastictranscoder.readPipeline":{},
+    "elastictranscoder.readPreset":{},
+    "elb.describeInstanceHealth":{},
+    "elb.describeLoadBalancerAttributes":{},
+    "elb.describeLoadBalancerPolicies":{},
+    "elb.describeLoadBalancerPolicyTypes":{},
+    "elb.describeLoadBalancers":{},
+    "elb.describeTags":{},
+    "elbinternal.describeAccessPointState":{},
+    "elbinternal.listAccessPoints":{},
+    "emr.describeCluster":{},
+    "emr.describeSecurityConfiguration":{},
+    "emr.describeStep":{},
+    "emr.listBootstrapActions":{},
+    "emr.listClusters":{},
+    "emr.listInstanceGroups":{},
+    "emr.listInstances":{},
+    "emr.listSecurityConfigurations":{},
+    "emr.listSteps":{},
+    "es.describeElasticsearchDomain":{},
+    "es.describeElasticsearchDomainConfig":{},
+    "es.describeElasticsearchDomains":{},
+    "es.listDomainNames":{},
+    "esinternal.describeAPIVersion":{},
+    "esinternal.describeAZs":{},
+    "esinternal.describeAvailableEC2Instances":{},
+    "esinternal.describeDomainInstances":{},
+    "esinternal.describeDomainsInternal":{},
+    "esinternal.describeEC2InstanceSettings":{},
+    "esinternal.describeEngineType":{},
+    "esinternal.describeExpressionsInternal":{},
+    "esinternal.describeFrontends":{},
+    "esinternal.describeIndexFieldsInternal":{},
+    "esinternal.describeLimits":{},
+    "esinternal.describeSearchMetricAlarm":{},
+    "esinternal.describeSearchPartitions":{},
+    "esinternal.describeSearchScalingPolicies":{},
+    "esinternal.getAdvancedOptions":{},
+    "esinternal.getArtifactRegistry":{},
+    "esinternal.getBuildVersion":{},
+    "esinternal.getClients":{},
+    "esinternal.getConfigXml":{},
+    "esinternal.getDomains":{},
+    "esinternal.getDomainsWithIssues":{},
+    "esinternal.getDomainsWithIssuesArchive":{},
+    "esinternal.getEBSOptions":{},
+    "esinternal.getESCat":{},
+    "esinternal.getESCluster":{},
+    "esinternal.getElasticsearchDomainConfig":{},
+    "esinternal.getElasticsearchVersion":{},
+    "esinternal.getRecoveryInfo":{},
+    "esinternal.getScalingParameters":{},
+    "esinternal.getServiceAccessPolicies":{},
+    "esinternal.getSnapshotOptions":{},
+    "events.describeApiDestination":{},
+    "events.describeEventBus":{},
+    "events.describeEventSource":{},
+    "events.describePartnerEventSource":{},
+    "events.describeRule":{},
+    "events.listApiDestinations":{},
+    "events.listConnections":{},
+    "events.listEventBuses":{},
+    "events.listEventSources":{},
+    "events.listPartnerEventSourceAccounts":{},
+    "events.listPartnerEventSources":{},
+    "events.listRuleNamesByTarget":{},
+    "events.listRules":{},
+    "events.listTargetsByRule":{},
+    "events.testEventPattern":{},
+    "fms.getAdminAccount":{},
+    "fms.getComplianceDetail":{},
+    "fms.getNotificationChannel":{},
+    "fms.getPolicy":{},
+    "fms.getProtectionStatus":{},
+    "fms.listComplianceStatus":{},
+    "fms.listMemberAccounts":{},
+    "fms.listPolicies":{},
+    "forecast.describeDataset":{},
+    "forecast.describeDatasetGroup":{},
+    "forecast.describeDatasetImportJob":{},
+    "forecast.describeForecast":{},
+    "forecast.describeForecastExportJob":{},
+    "forecast.describePredictor":{},
+    "forecast.getAccuracyMetrics":{},
+    "forecast.listDatasetGroups":{},
+    "forecast.listDatasetImportJobs":{},
+    "forecast.listDatasets":{},
+    "forecast.listForecastExportJobs":{},
+    "forecast.listForecasts":{},
+    "forecast.listPredictors":{},
+    "fsx.describeBackups":{},
+    "fsx.describeDataRepositoryTasks":{},
+    "fsx.describeFileSystems":{},
+    "fsx.describeStorageVirtualMachines":{},
+    "fsx.describeVolumes":{},
+    "fsx.listTagsForResource":{},
+    "gamescalerouting.describeAlias":{},
+    "gamescalerouting.listAliases":{},
+    "glacier.describeJob":{},
+    "glacier.describeVault":{},
+    "glacier.getDataRetrievalPolicy":{},
+    "glacier.getVaultAccessPolicy":{},
+    "glacier.getVaultLock":{},
+    "glacier.getVaultNotifications":{},
+    "glacier.listJobs":{},
+    "glacier.listTagsForVault":{},
+    "glacier.listVaults":{},
+    "globalaccelerator.describeAccelerator":{},
+    "globalaccelerator.describeAcceleratorAttributes":{},
+    "globalaccelerator.describeEndpointGroup":{},
+    "globalaccelerator.describeListener":{},
+    "globalaccelerator.listAccelerators":{},
+    "globalaccelerator.listEndpointGroups":{},
+    "globalaccelerator.listListeners":{},
+    "glue.batchGetPartition":{},
+    "glue.checkSchemaVersionValidity":{},
+    "glue.getCatalogImportStatus":{},
+    "glue.getClassifier":{},
+    "glue.getClassifiers":{},
+    "glue.getCrawler":{},
+    "glue.getCrawlerMetrics":{},
+    "glue.getCrawlers":{},
+    "glue.getDatabase":{},
+    "glue.getDatabases":{},
+    "glue.getDataflowGraph":{},
+    "glue.getDevEndpoint":{},
+    "glue.getDevEndpoints":{},
+    "glue.getJob":{},
+    "glue.getJobRun":{},
+    "glue.getJobRuns":{},
+    "glue.getJobs":{},
+    "glue.getMapping":{},
+    "glue.getPartition":{},
+    "glue.getPartitions":{},
+    "glue.getRegistry":{},
+    "glue.getSchema":{},
+    "glue.getSchemaByDefinition":{},
+    "glue.getSchemaVersion":{},
+    "glue.getSchemaVersionsDiff":{},
+    "glue.getTable":{},
+    "glue.getTableVersions":{},
+    "glue.getTables":{},
+    "glue.getTrigger":{},
+    "glue.getTriggers":{},
+    "glue.getUserDefinedFunction":{},
+    "glue.getUserDefinedFunctions":{},
+    "glue.listRegistries":{},
+    "glue.listSchemaVersions":{},
+    "glue.listSchemas":{},
+    "glue.querySchemaVersionMetadata":{},
+    "greengrass.getConnectivityInfo":{},
+    "greengrass.getCoreDefinition":{},
+    "greengrass.getCoreDefinitionVersion":{},
+    "greengrass.getDeploymentStatus":{},
+    "greengrass.getDeviceDefinition":{},
+    "greengrass.getDeviceDefinitionVersion":{},
+    "greengrass.getFunctionDefinition":{},
+    "greengrass.getFunctionDefinitionVersion":{},
+    "greengrass.getGroup":{},
+    "greengrass.getGroupCertificateAuthority":{},
+    "greengrass.getGroupVersion":{},
+    "greengrass.getLoggerDefinition":{},
+    "greengrass.getLoggerDefinitionVersion":{},
+    "greengrass.getResourceDefinitionVersion":{},
+    "greengrass.getServiceRoleForAccount":{},
+    "greengrass.getSubscriptionDefinition":{},
+    "greengrass.getSubscriptionDefinitionVersion":{},
+    "greengrass.listCoreDefinitionVersions":{},
+    "greengrass.listCoreDefinitions":{},
+    "greengrass.listDeployments":{},
+    "greengrass.listDeviceDefinitionVersions":{},
+    "greengrass.listDeviceDefinitions":{},
+    "greengrass.listFunctionDefinitionVersions":{},
+    "greengrass.listFunctionDefinitions":{},
+    "greengrass.listGroupVersions":{},
+    "greengrass.listGroups":{},
+    "greengrass.listLoggerDefinitionVersions":{},
+    "greengrass.listLoggerDefinitions":{},
+    "greengrass.listResourceDefinitionVersions":{},
+    "greengrass.listResourceDefinitions":{},
+    "greengrass.listSubscriptionDefinitionVersions":{},
+    "greengrass.listSubscriptionDefinitions":{},
+    "guardduty.getDetector":{},
+    "guardduty.getFindings":{},
+    "guardduty.getFindingsStatistics":{},
+    "guardduty.getIPSet":{},
+    "guardduty.getInvitationsCount":{},
+    "guardduty.getMasterAccount":{},
+    "guardduty.getMembers":{},
+    "guardduty.getThreatIntelSet":{},
+    "guardduty.listDetectors":{},
+    "guardduty.listFindings":{},
+    "guardduty.listIPSets":{},
+    "guardduty.listInvitations":{},
+    "guardduty.listMembers":{},
+    "guardduty.listThreatIntelSets":{},
+    "health.describeAffectedAccountsForOrganization":{},
+    "health.describeAffectedEntities":{},
+    "health.describeAffectedEntitiesForOrganization":{},
+    "health.describeEntityAggregates":{},
+    "health.describeEventAggregates":{},
+    "health.describeEventDetails":{},
+    "health.describeEventDetailsForOrganization":{},
+    "health.describeEventTypes":{},
+    "health.describeEvents":{},
+    "health.describeEventsForOrganization":{},
+    "health.describeHealthServiceStatusForOrganization":{},
+    "hyperplaneopsservice.describeEniAttachment":{},
+    "hyperplaneopsservice.describeFib":{},
+    "hyperplaneopsservice.describeTgw":{},
+    "hyperplaneopsservice.describeTgwAttachment":{},
+    "hyperplaneopsservice.describeTgwRouteTable":{},
+    "hyperplaneopsservice.describeTopGroups":{},
+    "hyperplaneopsservice.describeTops":{},
+    "hyperplaneopsservice.describeVirtualRouter":{},
+    "hyperplaneopsservice.getRouteDetails":{},
+    "hyperplaneopsservice.getStuckWorkflows":{},
+    "iam.getAccessKeyLastUsed":{},
+    "iam.getAccountAuthorizationDetails":{},
+    "iam.getAccountPasswordPolicy":{},
+    "iam.getAccountSummary":{},
+    "iam.getContextKeysForCustomPolicy":{},
+    "iam.getContextKeysForPrincipalPolicy":{},
+    "iam.getCredentialReport":{},
+    "iam.getGroup":{},
+    "iam.getGroupPolicy":{},
+    "iam.getInstanceProfile":{},
+    "iam.getLoginProfile":{},
+    "iam.getOpenIDConnectProvider":{},
+    "iam.getPolicy":{},
+    "iam.getPolicyVersion":{},
+    "iam.getRole":{},
+    "iam.getRolePolicy":{},
+    "iam.getSAMLProvider":{},
+    "iam.getSSHPublicKey":{},
+    "iam.getServerCertificate":{},
+    "iam.getUser":{},
+    "iam.getUserPolicy":{},
+    "iam.listAccessKeys":{},
+    "iam.listAccountAliases":{},
+    "iam.listAttachedGroupPolicies":{},
+    "iam.listAttachedRolePolicies":{},
+    "iam.listAttachedUserPolicies":{},
+    "iam.listEntitiesForPolicy":{},
+    "iam.listGroupPolicies":{},
+    "iam.listGroups":{},
+    "iam.listGroupsForUser":{},
+    "iam.listInstanceProfiles":{},
+    "iam.listInstanceProfilesForRole":{},
+    "iam.listMFADevices":{},
+    "iam.listOpenIDConnectProviders":{},
+    "iam.listPolicies":{},
+    "iam.listPolicyVersions":{},
+    "iam.listRolePolicies":{},
+    "iam.listRoles":{},
+    "iam.listSAMLProviders":{},
+    "iam.listSSHPublicKeys":{},
+    "iam.listServerCertificates":{},
+    "iam.listSigningCertificates":{},
+    "iam.listUserPolicies":{},
+    "iam.listUsers":{},
+    "iam.listVirtualMFADevices":{},
+    "iam.simulateCustomPolicy":{},
+    "iam.simulatePrincipalPolicy":{},
+    "iamadmin.dissociateRootMFADevice":{},
+    "iamadmin.listMFADevices":{},
+    "iaminternal.simulateCustomPolicyForOrgs":{},
+    "imagebuilder.getComponent":{},
+    "imagebuilder.getComponentPolicy":{},
+    "imagebuilder.getContainerRecipe":{},
+    "imagebuilder.getDistributionConfiguration":{},
+    "imagebuilder.getImage":{},
+    "imagebuilder.getImagePipeline":{},
+    "imagebuilder.getImagePolicy":{},
+    "imagebuilder.getImageRecipe":{},
+    "imagebuilder.getImageRecipePolicy":{},
+    "imagebuilder.getInfrastructureConfiguration":{},
+    "imagebuilder.listComponentBuildVersions":{},
+    "imagebuilder.listComponents":{},
+    "imagebuilder.listContainerRecipes":{},
+    "imagebuilder.listDistributionConfigurations":{},
+    "imagebuilder.listImageBuildVersions":{},
+    "imagebuilder.listImagePipelineImages":{},
+    "imagebuilder.listImagePipelines":{},
+    "imagebuilder.listImageRecipes":{},
+    "imagebuilder.listImages":{},
+    "imagebuilder.listInfrastructureConfigurations":{},
+    "imagebuilder.listTagsForResource":{},
+    "inspector.describeAssessmentRuns":{},
+    "inspector.describeAssessmentTargets":{},
+    "inspector.describeAssessmentTemplates":{},
+    "inspector.describeCrossAccountAccessRole":{},
+    "inspector.describeResourceGroups":{},
+    "inspector.describeRulesPackages":{},
+    "inspector.getTelemetryMetadata":{},
+    "inspector.listAssessmentRunAgents":{},
+    "inspector.listAssessmentRuns":{},
+    "inspector.listAssessmentTargets":{},
+    "inspector.listAssessmentTemplates":{},
+    "inspector.listEventSubscriptions":{},
+    "inspector.listRulesPackages":{},
+    "inspector.listTagsForResource":{},
+    "interconnectsupport.describeCgw":{},
+    "interconnectsupport.describeVgw":{},
+    "interconnectsupport.describeVpnConnection":{},
+    "interconnectsupport.getVpnOperationalEvents":{},
+    "iot.describeAuthorizer":{},
+    "iot.describeCACertificate":{},
+    "iot.describeCertificate":{},
+    "iot.describeDefaultAuthorizer":{},
+    "iot.describeEndpoint":{},
+    "iot.describeIndex":{},
+    "iot.describeJobExecution":{},
+    "iot.describeThing":{},
+    "iot.describeThingGroup":{},
+    "iot.getEffectivePolicies":{},
+    "iot.getIndexingConfiguration":{},
+    "iot.getLoggingOptions":{},
+    "iot.getPolicy":{},
+    "iot.getPolicyVersion":{},
+    "iot.getTopicRule":{},
+    "iot.getV2LoggingOptions":{},
+    "iot.listAttachedPolicies":{},
+    "iot.listAuthorizers":{},
+    "iot.listCACertificates":{},
+    "iot.listCertificates":{},
+    "iot.listCertificatesByCA":{},
+    "iot.listJobExecutionsForJob":{},
+    "iot.listJobExecutionsForThing":{},
+    "iot.listJobs":{},
+    "iot.listOutgoingCertificates":{},
+    "iot.listPolicies":{},
+    "iot.listPolicyPrincipals":{},
+    "iot.listPolicyVersions":{},
+    "iot.listPrincipalPolicies":{},
+    "iot.listPrincipalThings":{},
+    "iot.listRoleAliases":{},
+    "iot.listTargetsForPolicy":{},
+    "iot.listThingGroups":{},
+    "iot.listThingGroupsForThing":{},
+    "iot.listThingPrincipals":{},
+    "iot.listThingRegistrationTasks":{},
+    "iot.listThingTypes":{},
+    "iot.listThings":{},
+    "iot.listTopicRules":{},
+    "iot.listV2LoggingLevels":{},
+    "iotevents.describeDetectorModel":{},
+    "iotevents.describeInput":{},
+    "iotevents.describeLoggingOptions":{},
+    "iotevents.listDetectorModelVersions":{},
+    "iotevents.listDetectorModels":{},
+    "iotevents.listInputs":{},
+    "ioteventsdata.describeDetector":{},
+    "ioteventsdata.listDetectors":{},
+    "iotsecuredtunneling.describeTunnel":{},
+    "iotsecuredtunneling.listTunnels":{},
+    "iotsitewise.describeAccessPolicy":{},
+    "iotsitewise.describeAsset":{},
+    "iotsitewise.describeAssetModel":{},
+    "iotsitewise.describeAssetProperty":{},
+    "iotsitewise.describeDashboard":{},
+    "iotsitewise.describeGateway":{},
+    "iotsitewise.describeGatewayCapabilityConfiguration":{},
+    "iotsitewise.describeLoggingOptions":{},
+    "iotsitewise.describePortal":{},
+    "iotsitewise.describeProject":{},
+    "iotsitewise.listAccessPolicies":{},
+    "iotsitewise.listAssetModels":{},
+    "iotsitewise.listAssets":{},
+    "iotsitewise.listAssociatedAssets":{},
+    "iotsitewise.listDashboards":{},
+    "iotsitewise.listGateways":{},
+    "iotsitewise.listPortals":{},
+    "iotsitewise.listProjectAssets":{},
+    "iotsitewise.listProjects":{},
+    "iotwireless.getDestination":{},
+    "iotwireless.getDeviceProfile":{},
+    "iotwireless.getPartnerAccount":{},
+    "iotwireless.getServiceEndpoint":{},
+    "iotwireless.getServiceProfile":{},
+    "iotwireless.getWirelessDevice":{},
+    "iotwireless.getWirelessDeviceStatistics":{},
+    "iotwireless.getWirelessGateway":{},
+    "iotwireless.getWirelessGatewayCertificate":{},
+    "iotwireless.getWirelessGatewayFirmwareInformation":{},
+    "iotwireless.getWirelessGatewayStatistics":{},
+    "iotwireless.getWirelessGatewayTask":{},
+    "iotwireless.getWirelessGatewayTaskDefinition":{},
+    "iotwireless.listDestinations":{},
+    "iotwireless.listDeviceProfiles":{},
+    "iotwireless.listPartnerAccounts":{},
+    "iotwireless.listServiceProfiles":{},
+    "iotwireless.listTagsForResource":{},
+    "iotwireless.listWirelessDevices":{},
+    "iotwireless.listWirelessGatewayTaskDefinitions":{},
+    "iotwireless.listWirelessGateways":{},
+    "iss.searchCustomers":{},
+    "k2remedy.createApprovalWorkflowTicket":{},
+    "k2remedy.createConcessionRequest":{},
+    "k2remedy.deleteServiceLinkedRole":{},
+    "k2remedy.getApprovalWorkflowTicketDetails":{},
+    "k2remedy.searchApprovalWorkflowTickets":{},
+    "k2remedy.updateApprovalWorkflowTicket":{},
+    "k2service.isAccountBlacklisted":{},
+    "kafka.describeCluster":{},
+    "kafka.getBootstrapBrokers":{},
+    "kafka.listClusters":{},
+    "kafka.listNodes":{},
+    "kendra.describeDataSource":{},
+    "kendra.describeFaq":{},
+    "kendra.describeIndex":{},
+    "kendra.listDataSources":{},
+    "kendra.listFaqs":{},
+    "kendra.listIndices":{},
+    "kinesis.describeStream":{},
+    "kinesis.listStreams":{},
+    "kinesis.listTagsForStream":{},
+    "kinesisanalytics.describeApplication":{},
+    "kinesisanalytics.listApplications":{},
+    "kinesisanalyticsv2.describeApplication":{},
+    "kinesisanalyticsv2.describeApplicationSnapshot":{},
+    "kinesisanalyticsv2.listApplicationSnapshots":{},
+    "kinesisanalyticsv2.listApplications":{},
+    "kinesisfirehose.describeDeliveryStream":{},
+    "kinesisfirehose.listDeliveryStreams":{},
+    "kms.describeKey":{},
+    "kms.getKeyPolicy":{},
+    "kms.getKeyRotationStatus":{},
+    "kms.listAliases":{},
+    "kms.listGrants":{},
+    "kms.listKeyPolicies":{},
+    "kms.listKeys":{},
+    "kms.listResourceTags":{},
+    "kms.listRetirableGrants":{},
+    "kumoknowledge.addIndex":{},
+    "kumoknowledge.createNamespace":{},
+    "kumoknowledge.getContent":{},
+    "kumoknowledge.getIndex":{},
+    "kumoknowledge.getMapping":{},
+    "kumoknowledge.getNamespace":{},
+    "kumoknowledge.putContent":{},
+    "kumoknowledge.putMapping":{},
+    "kumoknowledge.searchContent":{},
+    "kumoknowledge.suggestCompletions":{},
+    "kumoscp.getAccountGroupInfo":{},
+    "kumoscp.getCustomerAccountFullList":{},
+    "kumoscp.getCustomerAccounts":{},
+    "kumoscp.getCustomers":{},
+    "kumoscp.getTags":{},
+    "kumoscp.searchCustomers":{},
+    "lambda.getAccountSettings":{},
+    "lambda.getAlias":{},
+    "lambda.getCodeSigningConfig":{},
+    "lambda.getEventSourceMapping":{},
+    "lambda.getFunction":{},
+    "lambda.getFunctionCodeSigningConfig":{},
+    "lambda.getFunctionConcurrency":{},
+    "lambda.getFunctionConfiguration":{},
+    "lambda.getFunctionEventInvokeConfig":{},
+    "lambda.getLayerVersion":{},
+    "lambda.getLayerVersionPolicy":{},
+    "lambda.getPolicy":{},
+    "lambda.getProvisionedConcurrencyConfig":{},
+    "lambda.listAliases":{},
+    "lambda.listCodeSigningConfigs":{},
+    "lambda.listEventSourceMappings":{},
+    "lambda.listFunctionEventInvokeConfigs":{},
+    "lambda.listFunctions":{},
+    "lambda.listFunctionsByCodeSigningConfig":{},
+    "lambda.listLayerVersions":{},
+    "lambda.listLayers":{},
+    "lambda.listProvisionedConcurrencyConfigs":{},
+    "lambda.listVersionsByFunction":{},
+    "lex.getBot":{},
+    "lex.getBotAlias":{},
+    "lex.getBotAliases":{},
+    "lex.getBotChannelAssociation":{},
+    "lex.getBotChannelAssociations":{},
+    "lex.getBotVersions":{},
+    "lex.getBots":{},
+    "lex.getBuiltinIntent":{},
+    "lex.getBuiltinIntents":{},
+    "lex.getBuiltinSlotTypes":{},
+    "lex.getIntent":{},
+    "lex.getIntentVersions":{},
+    "lex.getIntents":{},
+    "lex.getSlotType":{},
+    "lex.getSlotTypeVersions":{},
+    "lex.getSlotTypes":{},
+    "licensemanager.getLicenseConfiguration":{},
+    "licensemanager.getServiceSettings":{},
+    "licensemanager.listAssociationsForLicenseConfiguration":{},
+    "licensemanager.listFailuresForLicenseConfigurationOperations":{},
+    "licensemanager.listLicenseConfigurations":{},
+    "licensemanager.listLicenseSpecificationsForResource":{},
+    "licensemanager.listResourceInventory":{},
+    "licensemanager.listUsageForLicenseConfiguration":{},
+    "lightsail.getActiveNames":{},
+    "lightsail.getAlarms":{},
+    "lightsail.getAutoSnapshots":{},
+    "lightsail.getBlueprints":{},
+    "lightsail.getBundles":{},
+    "lightsail.getCertificates":{},
+    "lightsail.getContainerImages":{},
+    "lightsail.getContainerServiceDeployments":{},
+    "lightsail.getContainerServiceMetricData":{},
+    "lightsail.getContainerServicePowers":{},
+    "lightsail.getContainerServices":{},
+    "lightsail.getDisk":{},
+    "lightsail.getDiskSnapshot":{},
+    "lightsail.getDiskSnapshots":{},
+    "lightsail.getDisks":{},
+    "lightsail.getDistributionBundles":{},
+    "lightsail.getDistributionMetricData":{},
+    "lightsail.getDistributions":{},
+    "lightsail.getDomain":{},
+    "lightsail.getDomains":{},
+    "lightsail.getExportSnapshotRecords":{},
+    "lightsail.getInstance":{},
+    "lightsail.getInstanceMetricData":{},
+    "lightsail.getInstancePortStates":{},
+    "lightsail.getInstanceSnapshot":{},
+    "lightsail.getInstanceSnapshots":{},
+    "lightsail.getInstanceState":{},
+    "lightsail.getInstances":{},
+    "lightsail.getKeyPair":{},
+    "lightsail.getKeyPairs":{},
+    "lightsail.getLoadBalancer":{},
+    "lightsail.getLoadBalancerMetricData":{},
+    "lightsail.getLoadBalancerTlsCertificates":{},
+    "lightsail.getLoadBalancers":{},
+    "lightsail.getOperation":{},
+    "lightsail.getOperations":{},
+    "lightsail.getOperationsForResource":{},
+    "lightsail.getRegions":{},
+    "lightsail.getRelationalDatabase":{},
+    "lightsail.getRelationalDatabaseMetricData":{},
+    "lightsail.getRelationalDatabaseSnapshot":{},
+    "lightsail.getRelationalDatabaseSnapshots":{},
+    "lightsail.getRelationalDatabases":{},
+    "lightsail.getStaticIp":{},
+    "lightsail.getStaticIps":{},
+    "lightsail.isVpcPeered":{},
+    "lilyinternal.getAccountQuota":{},
+    "lilyinternal.getOrganizationQuota":{},
+    "lilyinternal.organizationDescribe":{},
+    "lilyinternal.organizationFind":{},
+    "lilyinternal.setAccountServiceLimit":{},
+    "lilyinternal.setOrganizationServiceLimit":{},
+    "lilyinternalv2.getAccountQuota":{},
+    "lilyinternalv2.getOrganizationQuota":{},
+    "lilyinternalv2.organizationDescribeV2":{},
+    "lilyinternalv2.organizationFind":{},
+    "lilyinternalv2.updateAccountServiceLimit":{},
+    "lilyinternalv2.updateOrganizationServiceLimit":{},
+    "lineitemdata.findBillsForAccount":{},
+    "lineitemdata.findLatestBillVersion":{},
+    "lineitemdata.getBasisItems":{},
+    "lineitemdata.getBill":{},
+    "lineitemdata.getBillFamily":{},
+    "lineitemdata.getBillIdWithLegacyId":{},
+    "lineitemdata.getBillVersion":{},
+    "lineitemdata.getBillVersionTimestampWithLegacyId":{},
+    "lineitemdata.getBillVersions":{},
+    "lineitemdata.getLineItemAssociations":{},
+    "lineitemdata.getLineItems":{},
+    "logs.describeDestinations":{},
+    "logs.describeExportTasks":{},
+    "logs.describeLogGroups":{},
+    "logs.describeLogStreams":{},
+    "logs.describeMetricFilters":{},
+    "logs.describeQueries":{},
+    "logs.describeSubscriptionFilters":{},
+    "logs.testMetricFilter":{},
+    "lookoutmetrics.describeAlert":{},
+    "lookoutmetrics.describeAnomalyDetectionExecutions":{},
+    "lookoutmetrics.describeAnomalyDetector":{},
+    "lookoutmetrics.describeMetricSet":{},
+    "lookoutmetrics.getAnomalyGroup":{},
+    "lookoutmetrics.getFeedback":{},
+    "lookoutmetrics.getSampleData":{},
+    "lookoutmetrics.listAlerts":{},
+    "lookoutmetrics.listAnomalyDetectors":{},
+    "lookoutmetrics.listAnomalyGroupSummaries":{},
+    "lookoutmetrics.listAnomalyGroupTimeSeries":{},
+    "lookoutmetrics.listMetricSets":{},
+    "lookoutmetrics.listTagsForResource":{},
+    "lumberyardbuildcatalog.describeBuild":{},
+    "lumberyardbuildcatalog.listBuilds":{},
+    "lumberyardww.describeApplicationAttributes":{},
+    "lumberyardww.describeApplicationAutoScalingGroup":{},
+    "lumberyardww.describeApplicationCapacity":{},
+    "lumberyardww.describeApplicationEvents":{},
+    "lumberyardww.describeApplicationPortSettings":{},
+    "lumberyardww.describeApplicationStatus":{},
+    "lumberyardww.describeApplicationUtilization":{},
+    "lumberyardww.describeEC2InstanceLimits":{},
+    "lumberyardww.describeGameSessionDetails":{},
+    "lumberyardww.describeGameSessions":{},
+    "lumberyardww.describeHostProcesses":{},
+    "lumberyardww.describeHosts":{},
+    "lumberyardww.describeLogUploadInfoForAuxProxy":{},
+    "lumberyardww.describePlayerSessions":{},
+    "lumberyardww.describeRuntimeConfiguration":{},
+    "lumberyardww.describeScalingPolicies":{},
+    "lumberyardww.getApplication":{},
+    "lumberyardww.getApplicationResource":{},
+    "lumberyardww.getApplicationStatus":{},
+    "lumberyardww.getGameSessionLogUrl":{},
+    "lumberyardww.getHostAccess":{},
+    "lumberyardww.getHostConfiguration":{},
+    "lumberyardww.getHosts":{},
+    "lumberyardww.listApplications":{},
+    "lumberyardww.searchGameSessions":{},
+    "machinelearning.describeBatchPredictions":{},
+    "machinelearning.describeDataSources":{},
+    "machinelearning.describeEvaluations":{},
+    "machinelearning.describeMLModels":{},
+    "machinelearning.getBatchPrediction":{},
+    "machinelearning.getDataSource":{},
+    "machinelearning.getEvaluation":{},
+    "machinelearning.getMLModel":{},
+    "managedblockchain.getMember":{},
+    "managedblockchain.getNetwork":{},
+    "managedblockchain.getNode":{},
+    "managedblockchain.listMembers":{},
+    "managedblockchain.listNetworks":{},
+    "managedblockchain.listNodes":{},
+    "maxis.getFolderDetails":{},
+    "maxis.getFolderEdits":{},
+    "maxis.getGroupMembers":{},
+    "maxis.getIssue":{},
+    "maxis.getIssueEdits":{},
+    "maxis.getLabel":{},
+    "maxis.getOperations":{},
+    "maxis.getPreferences":{},
+    "maxis.getResources":{},
+    "maxis.searchFolders":{},
+    "maxis.searchIssues":{},
+    "maxis.searchLabels":{},
+    "mediaconnect.describeFlow":{},
+    "mediaconnect.listEntitlements":{},
+    "mediaconnect.listFlows":{},
+    "mediaconvert.describeEndpoints":{},
+    "mediaconvert.getJob":{},
+    "mediaconvert.getJobTemplate":{},
+    "mediaconvert.getPreset":{},
+    "mediaconvert.getQueue":{},
+    "mediaconvert.listJobTemplates":{},
+    "mediaconvert.listJobs":{},
+    "medialive.describeChannel":{},
+    "medialive.describeInput":{},
+    "medialive.describeInputDevice":{},
+    "medialive.describeInputSecurityGroup":{},
+    "medialive.describeMultiplex":{},
+    "medialive.describeOffering":{},
+    "medialive.describeReservation":{},
+    "medialive.describeSchedule":{},
+    "medialive.listChannels":{},
+    "medialive.listInputDevices":{},
+    "medialive.listInputSecurityGroups":{},
+    "medialive.listInputs":{},
+    "medialive.listMultiplexes":{},
+    "medialive.listOfferings":{},
+    "medialive.listReservations":{},
+    "mediapackage.describeChannel":{},
+    "mediapackage.describeOriginEndpoint":{},
+    "mediapackage.listChannels":{},
+    "mediapackage.listOriginEndpoints":{},
+    "mediastore.describeContainer":{},
+    "mediastore.getContainerPolicy":{},
+    "mediastore.getCorsPolicy":{},
+    "mediastore.listContainers":{},
+    "mediatailor.getPlaybackConfiguration":{},
+    "mediatailor.listPlaybackConfigurations":{},
+    "mgn.describeJobLogItems":{},
+    "mgn.describeJobs":{},
+    "mgn.describeReplicationConfigurationTemplates":{},
+    "mgn.describeSourceServers":{},
+    "mgn.getLaunchConfiguration":{},
+    "mgn.getReplicationConfiguration":{},
+    "mq.describeBroker":{},
+    "mq.describeConfiguration":{},
+    "mq.describeConfigurationRevision":{},
+    "mq.describeUser":{},
+    "mq.listBrokers":{},
+    "mq.listConfigurationRevisions":{},
+    "mq.listConfigurations":{},
+    "mq.listUsers":{},
+    "mwaa.getEnvironment":{},
+    "mwaa.listEnvironments":{},
+    "mwaa.listTagsForResource":{},
+    "networkfirewall.describeFirewall":{},
+    "networkfirewall.describeFirewallPolicy":{},
+    "networkfirewall.describeLoggingConfiguration":{},
+    "networkfirewall.describeRuleGroup":{},
+    "networkfirewall.listFirewallPolicies":{},
+    "networkfirewall.listFirewalls":{},
+    "networkfirewall.listRuleGroups":{},
+    "networkmanager.describeGlobalNetworks":{},
+    "networkmanager.getCustomerGatewayAssociations":{},
+    "networkmanager.getDevices":{},
+    "networkmanager.getLinkAssociations":{},
+    "networkmanager.getLinks":{},
+    "networkmanager.getSites":{},
+    "networkmanager.getTransitGatewayRegistrations":{},
+    "opsworks.describeAgentVersions":{},
+    "opsworks.describeApps":{},
+    "opsworks.describeCommands":{},
+    "opsworks.describeDeployments":{},
+    "opsworks.describeEcsClusters":{},
+    "opsworks.describeElasticIps":{},
+    "opsworks.describeElasticLoadBalancers":{},
+    "opsworks.describeInstances":{},
+    "opsworks.describeLayers":{},
+    "opsworks.describeLoadBasedAutoScaling":{},
+    "opsworks.describeMyUserProfile":{},
+    "opsworks.describePermissions":{},
+    "opsworks.describeRaidArrays":{},
+    "opsworks.describeRdsDbInstances":{},
+    "opsworks.describeServiceErrors":{},
+    "opsworks.describeStackProvisioningParameters":{},
+    "opsworks.describeStackSummary":{},
+    "opsworks.describeStacks":{},
+    "opsworks.describeTimeBasedAutoScaling":{},
+    "opsworks.describeUserProfiles":{},
+    "opsworks.describeVolumes":{},
+    "opsworks.getHostnameSuggestion":{},
+    "opsworkscm.describeAccountAttributes":{},
+    "opsworkscm.describeBackups":{},
+    "opsworkscm.describeEvents":{},
+    "opsworkscm.describeNodeAssociationStatus":{},
+    "opsworkscm.describeServers":{},
+    "organizations.listTagsForResource":{},
+    "outposts.getOutpost":{},
+    "outposts.getOutpostInstanceTypes":{},
+    "outposts.listOutposts":{},
+    "outposts.listSites":{},
+    "paymentprofile.batchGetPaymentProfiles":{},
+    "paymentprofile.createPaymentProfile":{},
+    "paymentprofile.deletePaymentProfile":{},
+    "paymentprofile.listPaymentProfiles":{},
+    "paymentprofile.updatePaymentProfile":{},
+    "personalize.describeAlgorithm":{},
+    "personalize.describeCampaign":{},
+    "personalize.describeDataset":{},
+    "personalize.describeDatasetGroup":{},
+    "personalize.describeDatasetImportJob":{},
+    "personalize.describeEventTracker":{},
+    "personalize.describeFeatureTransformation":{},
+    "personalize.describeRecipe":{},
+    "personalize.describeSchema":{},
+    "personalize.describeSolution":{},
+    "personalize.describeSolutionVersion":{},
+    "personalize.listCampaigns":{},
+    "personalize.listDatasetGroups":{},
+    "personalize.listDatasetImportJobs":{},
+    "personalize.listDatasets":{},
+    "personalize.listEventTrackers":{},
+    "personalize.listRecipes":{},
+    "personalize.listSchemas":{},
+    "personalize.listSolutionVersions":{},
+    "personalize.listSolutions":{},
+    "pinpoint.getAdmChannel":{},
+    "pinpoint.getApnsChannel":{},
+    "pinpoint.getApnsSandboxChannel":{},
+    "pinpoint.getApnsVoipChannel":{},
+    "pinpoint.getApnsVoipSandboxChannel":{},
+    "pinpoint.getApp":{},
+    "pinpoint.getApplicationSettings":{},
+    "pinpoint.getApps":{},
+    "pinpoint.getBaiduChannel":{},
+    "pinpoint.getCampaign":{},
+    "pinpoint.getCampaignActivities":{},
+    "pinpoint.getCampaignVersion":{},
+    "pinpoint.getCampaignVersions":{},
+    "pinpoint.getCampaigns":{},
+    "pinpoint.getEmailChannel":{},
+    "pinpoint.getEndpoint":{},
+    "pinpoint.getEventStream":{},
+    "pinpoint.getExportJob":{},
+    "pinpoint.getExportJobs":{},
+    "pinpoint.getGcmChannel":{},
+    "pinpoint.getImportJob":{},
+    "pinpoint.getImportJobs":{},
+    "pinpoint.getSegment":{},
+    "pinpoint.getSegmentImportJobs":{},
+    "pinpoint.getSegmentVersion":{},
+    "pinpoint.getSegmentVersions":{},
+    "pinpoint.getSegments":{},
+    "pinpoint.getSmsChannel":{},
+    "pinpointemail.getAccount":{},
+    "pinpointemail.getBlacklistReports":{},
+    "pinpointemail.getConfigurationSet":{},
+    "pinpointemail.getConfigurationSetEventDestinations":{},
+    "pinpointemail.getDedicatedIp":{},
+    "pinpointemail.getDedicatedIps":{},
+    "pinpointemail.getDeliverabilityDashboardOptions":{},
+    "pinpointemail.getDeliverabilityTestReport":{},
+    "pinpointemail.getDomainDeliverabilityCampaign":{},
+    "pinpointemail.getDomainStatisticsReport":{},
+    "pinpointemail.getEmailIdentity":{},
+    "pinpointemail.listConfigurationSets":{},
+    "pinpointemail.listDedicatedIpPools":{},
+    "pinpointemail.listDeliverabilityTestReports":{},
+    "pinpointemail.listDomainDeliverabilityCampaigns":{},
+    "pinpointemail.listEmailIdentities":{},
+    "pinpointemail.listTagsForResource":{},
+    "pinpointsmsvoice.getConfigurationSetEventDestinations":{},
+    "polly.describeVoices":{},
+    "polly.getLexicon":{},
+    "polly.listLexicons":{},
+    "pos.charge":{},
+    "pos.completeOfflinePaymentForInvoice":{},
+    "pos.listInvoiceInfoAuditHistory":{},
+    "pots.put":{},
+    "pots.readActiveForSorLegacy":{},
+    "pots.removeAllPoFromSorLegacy":{},
+    "pps.get":{},
+    "pps.list":{},
+    "pps.set":{},
+    "pricing.describeServices":{},
+    "pricing.getAttributeValues":{},
+    "pricing.getProducts":{},
+    "quicksight.describeDashboard":{},
+    "quicksight.describeDashboardPermissions":{},
+    "quicksight.describeGroup":{},
+    "quicksight.describeIAMPolicyAssignment":{},
+    "quicksight.describeTemplate":{},
+    "quicksight.describeTemplateAlias":{},
+    "quicksight.describeTemplatePermissions":{},
+    "quicksight.describeUser":{},
+    "quicksight.listDashboards":{},
+    "quicksight.listGroupMemberships":{},
+    "quicksight.listGroups":{},
+    "quicksight.listIAMPolicyAssignments":{},
+    "quicksight.listIAMPolicyAssignmentsForUser":{},
+    "quicksight.listTemplateAliases":{},
+    "quicksight.listTemplateVersions":{},
+    "quicksight.listTemplates":{},
+    "quicksight.listUserGroups":{},
+    "quicksight.listUsers":{},
+    "r53takedown.blockRoute53HostedZone":{},
+    "r53takedown.unblockRoute53HostedZone":{},
+    "ram.getPermission":{},
+    "ram.getResourceShareAssociations":{},
+    "ram.getResourceShareInvitations":{},
+    "ram.getResourceShares":{},
+    "ram.listPendingInvitationResources":{},
+    "ram.listPrincipals":{},
+    "ram.listResourceSharePermissions":{},
+    "ram.iterateResources":{},
+    "rds.describeAccountAttributes":{},
+    "rds.describeCertificates":{},
+    "rds.describeDBClusterParameterGroups":{},
+    "rds.describeDBClusterParameters":{},
+    "rds.describeDBClusterSnapshots":{},
+    "rds.describeDBClusters":{},
+    "rds.describeDBEngineVersions":{},
+    "rds.describeDBInstances":{},
+    "rds.describeDBParameterGroups":{},
+    "rds.describeDBParameters":{},
+    "rds.describeDBSecurityGroups":{},
+    "rds.describeDBSnapshotAttributes":{},
+    "rds.describeDBSnapshots":{},
+    "rds.describeDBSubnetGroups":{},
+    "rds.describeEngineDefaultClusterParameters":{},
+    "rds.describeEngineDefaultParameters":{},
+    "rds.describeEventCategories":{},
+    "rds.describeEventSubscriptions":{},
+    "rds.describeEvents":{},
+    "rds.describeExportTasks":{},
+    "rds.describeOptionGroupOptions":{},
+    "rds.describeOptionGroups":{},
+    "rds.describeOrderableDBInstanceOptions":{},
+    "rds.describePendingMaintenanceActions":{},
+    "rds.describeReservedDBInstances":{},
+    "rds.describeReservedDBInstancesOfferings":{},
+    "rds.listTagsForResource":{},
+    "redshift.describeClusterParameterGroups":{},
+    "redshift.describeClusterParameters":{},
+    "redshift.describeClusterSecurityGroups":{},
+    "redshift.describeClusterSnapshots":{},
+    "redshift.describeClusterSubnetGroups":{},
+    "redshift.describeClusterVersions":{},
+    "redshift.describeClusters":{},
+    "redshift.describeDefaultClusterParameters":{},
+    "redshift.describeEventCategories":{},
+    "redshift.describeEventSubscriptions":{},
+    "redshift.describeEvents":{},
+    "redshift.describeHsmClientCertificates":{},
+    "redshift.describeHsmConfigurations":{},
+    "redshift.describeLoggingStatus":{},
+    "redshift.describeOrderableClusterOptions":{},
+    "redshift.describeReservedNodeOfferings":{},
+    "redshift.describeReservedNodes":{},
+    "redshift.describeResize":{},
+    "redshift.describeSnapshotCopyGrants":{},
+    "redshift.describeStorage":{},
+    "redshift.describeTableRestoreStatus":{},
+    "redshift.describeTags":{},
+    "redshiftdata.describeStatement":{},
+    "redshiftdata.listStatements":{},
+    "rekognition.listCollections":{},
+    "rekognition.listFaces":{},
+    "resourcegroups.getGroup":{},
+    "resourcegroups.getGroupQuery":{},
+    "resourcegroups.getTags":{},
+    "resourcegroups.listGroupResources":{},
+    "resourcegroups.listGroups":{},
+    "resourcegroups.searchResources":{},
+    "robomaker.batchDescribeSimulationJob":{},
+    "robomaker.describeDeploymentJob":{},
+    "robomaker.describeFleet":{},
+    "robomaker.describeRobot":{},
+    "robomaker.describeRobotApplication":{},
+    "robomaker.describeSimulationApplication":{},
+    "robomaker.describeSimulationJob":{},
+    "robomaker.listDeploymentJobs":{},
+    "robomaker.listFleets":{},
+    "robomaker.listRobotApplications":{},
+    "robomaker.listRobots":{},
+    "robomaker.listSimulationApplications":{},
+    "robomaker.listSimulationJobs":{},
+    "route53.getChange":{},
+    "route53.getCheckerIpRanges":{},
+    "route53.getGeoLocation":{},
+    "route53.getHealthCheck":{},
+    "route53.getHealthCheckCount":{},
+    "route53.getHealthCheckLastFailureReason":{},
+    "route53.getHealthCheckStatus":{},
+    "route53.getHostedZone":{},
+    "route53.getHostedZoneCount":{},
+    "route53.getReusableDelegationSet":{},
+    "route53.getTrafficPolicy":{},
+    "route53.getTrafficPolicyInstance":{},
+    "route53.getTrafficPolicyInstanceCount":{},
+    "route53.listGeoLocations":{},
+    "route53.listHealthChecks":{},
+    "route53.listHostedZones":{},
+    "route53.listHostedZonesByName":{},
+    "route53.listResourceRecordSets":{},
+    "route53.listReusableDelegationSets":{},
+    "route53.listTrafficPolicies":{},
+    "route53.listTrafficPolicyInstances":{},
+    "route53.listTrafficPolicyInstancesByHostedZone":{},
+    "route53.listTrafficPolicyInstancesByPolicy":{},
+    "route53.listTrafficPolicyVersions":{},
+    "route53domains.checkDomainAvailability":{},
+    "route53domains.getContactReachabilityStatus":{},
+    "route53domains.getDomainDetail":{},
+    "route53domains.getOperationDetail":{},
+    "route53domains.listDomains":{},
+    "route53domains.listOperations":{},
+    "route53domains.listTagsForDomain":{},
+    "route53domains.viewBilling":{},
+    "route53recoveryreadiness.getCell":{},
+    "route53recoveryreadiness.getCellReadinessSummary":{},
+    "route53recoveryreadiness.getReadinessCheck":{},
+    "route53recoveryreadiness.getReadinessCheckResourceStatus":{},
+    "route53recoveryreadiness.getReadinessCheckStatus":{},
+    "route53recoveryreadiness.getRecoveryGroup":{},
+    "route53recoveryreadiness.getRecoveryGroupReadinessSummary":{},
+    "route53recoveryreadiness.listCells":{},
+    "route53recoveryreadiness.listReadinessChecks":{},
+    "route53recoveryreadiness.listRecoveryGroups":{},
+    "route53recoveryreadiness.listResourceSets":{},
+    "route53resolver.getFirewallConfig":{},
+    "route53resolver.getFirewallDomainList":{},
+    "route53resolver.getFirewallRuleGroup":{},
+    "route53resolver.getFirewallRuleGroupAssociation":{},
+    "route53resolver.getResolverDnssecConfig":{},
+    "route53resolver.getResolverRulePolicy":{},
+    "route53resolver.listFirewallConfigs":{},
+    "route53resolver.listFirewallDomainLists":{},
+    "route53resolver.listFirewallDomains":{},
+    "route53resolver.listFirewallRuleGroupAssociations":{},
+    "route53resolver.listFirewallRuleGroups":{},
+    "route53resolver.listFirewallRules":{},
+    "route53resolver.listResolverDnssecConfigs":{},
+    "route53resolver.listResolverEndpointIpAddresses":{},
+    "route53resolver.listResolverEndpoints":{},
+    "route53resolver.listResolverRuleAssociations":{},
+    "route53resolver.listResolverRules":{},
+    "route53resolver.listTagsForResource":{},
+    "rps.putWhiteListStatus":{},
+    "s3control.getAccessPointConfigurationForObjectLambda":{},
+    "s3control.getAccessPointForObjectLambda":{},
+    "s3control.getAccessPointPolicyStatusForObjectLambda":{},
+    "s3control.listAccessPointsForObjectLambda":{},
+    "sagemaker.describeAction":{},
+    "sagemaker.describeAlgorithm":{},
+    "sagemaker.describeApp":{},
+    "sagemaker.describeArtifact":{},
+    "sagemaker.describeAutoMLJob":{},
+    "sagemaker.describeCompilationJob":{},
+    "sagemaker.describeContext":{},
+    "sagemaker.describeDataQualityJobDefinition":{},
+    "sagemaker.describeDevice":{},
+    "sagemaker.describeDeviceFleet":{},
+    "sagemaker.describeDomain":{},
+    "sagemaker.describeEdgePackagingJob":{},
+    "sagemaker.describeEndpoint":{},
+    "sagemaker.describeEndpointConfig":{},
+    "sagemaker.describeExperiment":{},
+    "sagemaker.describeFeatureGroup":{},
+    "sagemaker.describeHumanTaskUi":{},
+    "sagemaker.describeHyperParameterTuningJob":{},
+    "sagemaker.describeImage":{},
+    "sagemaker.describeImageVersion":{},
+    "sagemaker.describeLabelingJob":{},
+    "sagemaker.describeModel":{},
+    "sagemaker.describeModelBiasJobDefinition":{},
+    "sagemaker.describeModelExplainabilityJobDefinition":{},
+    "sagemaker.describeModelPackage":{},
+    "sagemaker.describeModelPackageGroup":{},
+    "sagemaker.describeModelQualityJobDefinition":{},
+    "sagemaker.describeMonitoringSchedule":{},
+    "sagemaker.describeNotebookInstance":{},
+    "sagemaker.describeNotebookInstanceLifecycleConfig":{},
+    "sagemaker.describePipeline":{},
+    "sagemaker.describePipelineDefinitionForExecution":{},
+    "sagemaker.describePipelineExecution":{},
+    "sagemaker.describeProcessingJob":{},
+    "sagemaker.describeProject":{},
+    "sagemaker.describeSubscribedWorkteam":{},
+    "sagemaker.describeTrainingJob":{},
+    "sagemaker.describeTransformJob":{},
+    "sagemaker.describeTrial":{},
+    "sagemaker.describeTrialComponent":{},
+    "sagemaker.describeUserProfile":{},
+    "sagemaker.describeWorkteam":{},
+    "sagemaker.listActions":{},
+    "sagemaker.listAlgorithms":{},
+    "sagemaker.listApps":{},
+    "sagemaker.listArtifacts":{},
+    "sagemaker.listAssociations":{},
+    "sagemaker.listAutoMLJobs":{},
+    "sagemaker.listCandidatesForAutoMLJob":{},
+    "sagemaker.listCodeRepositories":{},
+    "sagemaker.listCompilationJobs":{},
+    "sagemaker.listContexts":{},
+    "sagemaker.listDataQualityJobDefinitions":{},
+    "sagemaker.listDeviceFleets":{},
+    "sagemaker.listDevices":{},
+    "sagemaker.listDomains":{},
+    "sagemaker.listEdgePackagingJobs":{},
+    "sagemaker.listEndpointConfigs":{},
+    "sagemaker.listEndpoints":{},
+    "sagemaker.listExperiments":{},
+    "sagemaker.listFeatureGroups":{},
+    "sagemaker.listFlowDefinitions":{},
+    "sagemaker.listHumanTaskUis":{},
+    "sagemaker.listHyperParameterTuningJobs":{},
+    "sagemaker.listImageVersions":{},
+    "sagemaker.listImages":{},
+    "sagemaker.listLabelingJobs":{},
+    "sagemaker.listLabelingJobsForWorkteam":{},
+    "sagemaker.listModelBiasJobDefinitions":{},
+    "sagemaker.listModelExplainabilityJobDefinitions":{},
+    "sagemaker.listModelPackageGroups":{},
+    "sagemaker.listModelPackages":{},
+    "sagemaker.listModelQualityJobDefinitions":{},
+    "sagemaker.listModels":{},
+    "sagemaker.listMonitoringExecutions":{},
+    "sagemaker.listMonitoringSchedules":{},
+    "sagemaker.listNotebookInstanceLifecycleConfigs":{},
+    "sagemaker.listNotebookInstances":{},
+    "sagemaker.listPipelineExecutionSteps":{},
+    "sagemaker.listPipelineExecutions":{},
+    "sagemaker.listPipelineParametersForExecution":{},
+    "sagemaker.listPipelines":{},
+    "sagemaker.listProcessingJobs":{},
+    "sagemaker.listProjects":{},
+    "sagemaker.listSubscribedWorkteams":{},
+    "sagemaker.listTags":{},
+    "sagemaker.listTrainingJobs":{},
+    "sagemaker.listTrainingJobsForHyperParameterTuningJob":{},
+    "sagemaker.listTransformJobs":{},
+    "sagemaker.listTrialComponents":{},
+    "sagemaker.listTrials":{},
+    "sagemaker.listUserProfiles":{},
+    "sagemaker.listWorkteams":{},
+    "secretsmanager.describeSecret":{},
+    "secretsmanager.getResourcePolicy":{},
+    "secretsmanager.listSecretVersionIds":{},
+    "secretsmanager.listSecrets":{},
+    "securityhub.getEnabledStandards":{},
+    "securityhub.getFindings":{},
+    "securityhub.getInsightResults":{},
+    "securityhub.getInsights":{},
+    "securityhub.getMasterAccount":{},
+    "securityhub.getMembers":{},
+    "securityhub.listEnabledProductsForImport":{},
+    "securityhub.listInvitations":{},
+    "securityhub.listMembers":{},
+    "servicecatalog.describeConstraint":{},
+    "servicecatalog.describePortfolio":{},
+    "servicecatalog.describeProduct":{},
+    "servicecatalog.describeProductAsAdmin":{},
+    "servicecatalog.describeProductView":{},
+    "servicecatalog.describeProvisioningArtifact":{},
+    "servicecatalog.describeProvisioningParameters":{},
+    "servicecatalog.describeRecord":{},
+    "servicecatalog.listAcceptedPortfolioShares":{},
+    "servicecatalog.listConstraintsForPortfolio":{},
+    "servicecatalog.listLaunchPaths":{},
+    "servicecatalog.listPortfolioAccess":{},
+    "servicecatalog.listPortfolios":{},
+    "servicecatalog.listPortfoliosForProduct":{},
+    "servicecatalog.listPrincipalsForPortfolio":{},
+    "servicecatalog.listProvisioningArtifacts":{},
+    "servicecatalog.listRecordHistory":{},
+    "servicecatalog.scanProvisionedProducts":{},
+    "servicecatalog.searchProducts":{},
+    "servicequotas.getAWSDefaultServiceQuota":{},
+    "servicequotas.getAssociationForServiceQuotaTemplate":{},
+    "servicequotas.getRequestedServiceQuotaChange":{},
+    "servicequotas.getServiceQuota":{},
+    "servicequotas.getServiceQuotaIncreaseRequestFromTemplate":{},
+    "servicequotas.listAWSDefaultServiceQuotas":{},
+    "servicequotas.listRequestedServiceQuotaChangeHistory":{},
+    "servicequotas.listRequestedServiceQuotaChangeHistoryByQuota":{},
+    "servicequotas.listServiceQuotaIncreaseRequestsInTemplate":{},
+    "servicequotas.listServiceQuotas":{},
+    "servicequotas.listServices":{},
+    "ses.describeActiveReceiptRuleSet":{},
+    "ses.describeReceiptRule":{},
+    "ses.describeReceiptRuleSet":{},
+    "ses.getIdentityDkimAttributes":{},
+    "ses.getIdentityMailFromDomainAttributes":{},
+    "ses.getIdentityNotificationAttributes":{},
+    "ses.getIdentityPolicies":{},
+    "ses.getIdentityVerificationAttributes":{},
+    "ses.getSendQuota":{},
+    "ses.getSendStatistics":{},
+    "ses.listIdentities":{},
+    "ses.listIdentityPolicies":{},
+    "ses.listReceiptFilters":{},
+    "ses.listReceiptRuleSets":{},
+    "ses.listVerifiedEmailAddresses":{},
+    "shield.describeAttack":{},
+    "shield.describeProtection":{},
+    "shield.describeSubscription":{},
+    "shield.listAttacks":{},
+    "shield.listProtections":{},
+    "silvermine.getCommunicationsStatus":{},
+    "silvermine.getMessagesStatus":{},
+    "silvermineunified.createEvent":{},
+    "silvermineunified.createEventType":{},
+    "silvermineunified.describeOnboardedEventTypes":{},
+    "silvermineunified.describeReportedEventCommunicationsStatus":{},
+    "silvermineunified.describeReportedEventEntities":{},
+    "silvermineunified.describeReportedEventEntityAggregates":{},
+    "silvermineunified.describeReportedEventMessagesStatus":{},
+    "silvermineunified.describeReportedEvents":{},
+    "silvermineunified.lockEvent":{},
+    "silvermineunified.putEvent":{},
+    "silvermineunified.putEventEntities":{},
+    "silvermineunified.removeEventEntities":{},
+    "silvermineunified.sendCommunicationForEvent":{},
+    "silvermineunified.sendCommunicationForEventUpdate":{},
+    "silvermineunified.unLockEvent":{},
+    "silvermineunified.updateEvent":{},
+    "silvermineunified.updateEventType":{},
+    "silvermineunified.updateEventsCustomerImpact":{},
+    "silvermineunified.updateEventsCustomerVisibility":{},
+    "simpledb.domainMetadata":{},
+    "simpledb.listDomains":{},
+    "sms.getConnectors":{},
+    "sms.getReplicationJobs":{},
+    "sms.getReplicationRuns":{},
+    "sms.getServers":{},
+    "snowball.describeAddress":{},
+    "snowball.describeAddresses":{},
+    "snowball.describeJob":{},
+    "snowball.getSnowballUsage":{},
+    "snowball.listJobs":{},
+    "sns.checkIfPhoneNumberIsOptedOut":{},
+    "sns.getEndpointAttributes":{},
+    "sns.getPlatformApplicationAttributes":{},
+    "sns.getSMSAttributes":{},
+    "sns.getSubscriptionAttributes":{},
+    "sns.getTopicAttributes":{},
+    "sns.listEndpointsByPlatformApplication":{},
+    "sns.listPhoneNumbersOptedOut":{},
+    "sns.listPlatformApplications":{},
+    "sns.listSubscriptions":{},
+    "sns.listSubscriptionsByTopic":{},
+    "sns.listTopics":{},
+    "sqs.getQueueAttributes":{},
+    "sqs.getQueueUrl":{},
+    "sqs.listDeadLetterSourceQueues":{},
+    "sqs.listQueues":{},
+    "ssm.describeActivations":{},
+    "ssm.describeAssociation":{},
+    "ssm.describeAssociationExecutionTargets":{},
+    "ssm.describeAssociationExecutions":{},
+    "ssm.describeAutomationExecutions":{},
+    "ssm.describeAutomationStepExecutions":{},
+    "ssm.describeAvailablePatches":{},
+    "ssm.describeDocument":{},
+    "ssm.describeDocumentPermission":{},
+    "ssm.describeEffectiveInstanceAssociations":{},
+    "ssm.describeEffectivePatchesForPatchBaseline":{},
+    "ssm.describeInstanceAssociationsStatus":{},
+    "ssm.describeInstanceInformation":{},
+    "ssm.describeInstancePatchStates":{},
+    "ssm.describeInstancePatchStatesForPatchGroup":{},
+    "ssm.describeInstancePatches":{},
+    "ssm.describeInventoryDeletions":{},
+    "ssm.describeMaintenanceWindowExecutionTaskInvocations":{},
+    "ssm.describeMaintenanceWindowExecutionTasks":{},
+    "ssm.describeMaintenanceWindowExecutions":{},
+    "ssm.describeMaintenanceWindowSchedule":{},
+    "ssm.describeMaintenanceWindowTargets":{},
+    "ssm.describeMaintenanceWindowTasks":{},
+    "ssm.describeMaintenanceWindows":{},
+    "ssm.describeMaintenanceWindowsForTarget":{},
+    "ssm.describeOpsItems":{},
+    "ssm.describeParameters":{},
+    "ssm.describePatchBaselines":{},
+    "ssm.describePatchGroupState":{},
+    "ssm.describePatchGroups":{},
+    "ssm.describePatchProperties":{},
+    "ssm.describeSessions":{},
+    "ssm.getAutomationExecution":{},
+    "ssm.getCommandInvocation":{},
+    "ssm.getConnectionStatus":{},
+    "ssm.getDefaultPatchBaseline":{},
+    "ssm.getDeployablePatchSnapshotForInstance":{},
+    "ssm.getInventorySchema":{},
+    "ssm.getMaintenanceWindow":{},
+    "ssm.getMaintenanceWindowExecution":{},
+    "ssm.getMaintenanceWindowExecutionTask":{},
+    "ssm.getMaintenanceWindowExecutionTaskInvocation":{},
+    "ssm.getMaintenanceWindowTask":{},
+    "ssm.getOpsItem":{},
+    "ssm.getPatchBaseline":{},
+    "ssm.getPatchBaselineForPatchGroup":{},
+    "ssm.getServiceSetting":{},
+    "ssm.labelParameterVersion":{},
+    "ssm.listAssociationVersions":{},
+    "ssm.listAssociations":{},
+    "ssm.listCommandInvocations":{},
+    "ssm.listCommands":{},
+    "ssm.listComplianceItems":{},
+    "ssm.listComplianceSummaries":{},
+    "ssm.listDocumentVersions":{},
+    "ssm.listDocuments":{},
+    "ssm.listOpsItemEvents":{},
+    "ssm.listResourceComplianceSummaries":{},
+    "ssm.listResourceDataSync":{},
+    "ssm.listTagsForResource":{},
+    "ssmcontacts.describeEngagement":{},
+    "ssmcontacts.describePage":{},
+    "ssmcontacts.getContact":{},
+    "ssmcontacts.getContactChannel":{},
+    "ssmcontacts.listContactChannels":{},
+    "ssmcontacts.listContacts":{},
+    "ssmcontacts.listEngagements":{},
+    "ssmcontacts.listPageReceipts":{},
+    "ssmcontacts.listPagesByContact":{},
+    "ssmcontacts.listPagesByEngagement":{},
+    "ssmincidents.getIncidentRecord":{},
+    "ssmincidents.getReplicationSet":{},
+    "ssmincidents.getResponsePlan":{},
+    "ssmincidents.listIncidentRecords":{},
+    "ssmincidents.listReplicationSets":{},
+    "ssmincidents.listResponsePlans":{},
+    "ssmincidents.listTimelineEvents":{},
+    "states.describeActivity":{},
+    "states.describeExecution":{},
+    "states.describeStateMachine":{},
+    "states.describeStateMachineForExecution":{},
+    "states.getExecutionHistory":{},
+    "states.listActivities":{},
+    "states.listExecutions":{},
+    "states.listStateMachines":{},
+    "storagegateway.describeBandwidthRateLimit":{},
+    "storagegateway.describeCache":{},
+    "storagegateway.describeCachediSCSIVolumes":{},
+    "storagegateway.describeFileSystemAssociations":{},
+    "storagegateway.describeGatewayInformation":{},
+    "storagegateway.describeMaintenanceStartTime":{},
+    "storagegateway.describeNFSFileShares":{},
+    "storagegateway.describeSMBFileShares":{},
+    "storagegateway.describeSMBSettings":{},
+    "storagegateway.describeSnapshotSchedule":{},
+    "storagegateway.describeStorediSCSIVolumes":{},
+    "storagegateway.describeTapeArchives":{},
+    "storagegateway.describeTapeRecoveryPoints":{},
+    "storagegateway.describeTapes":{},
+    "storagegateway.describeUploadBuffer":{},
+    "storagegateway.describeVTLDevices":{},
+    "storagegateway.describeWorkingStorage":{},
+    "storagegateway.listFileShares":{},
+    "storagegateway.listFileSystemAssociations":{},
+    "storagegateway.listGateways":{},
+    "storagegateway.listLocalDisks":{},
+    "storagegateway.listTagsForResource":{},
+    "storagegateway.listTapes":{},
+    "storagegateway.listVolumeInitiators":{},
+    "storagegateway.listVolumeRecoveryPoints":{},
+    "storagegateway.listVolumes":{},
+    "support.describeCase":{},
+    "support.searchCases":{},
+    "swf.countClosedWorkflowExecutions":{},
+    "swf.countOpenWorkflowExecutions":{},
+    "swf.countPendingActivityTasks":{},
+    "swf.countPendingDecisionTasks":{},
+    "swf.describeActivityType":{},
+    "swf.describeDomain":{},
+    "swf.describeWorkflowExecution":{},
+    "swf.describeWorkflowType":{},
+    "swf.getWorkflowExecutionHistory":{},
+    "swf.listActivityTypes":{},
+    "swf.listClosedWorkflowExecutions":{},
+    "swf.listDomains":{},
+    "swf.listOpenWorkflowExecutions":{},
+    "swf.listWorkflowTypes":{},
+    "synthetics.describeCanaries":{},
+    "synthetics.describeCanariesLastRun":{},
+    "synthetics.describeRuntimeVersions":{},
+    "synthetics.getCanary":{},
+    "synthetics.getCanaryRuns":{},
+    "transfer.describeServer":{},
+    "transfer.describeUser":{},
+    "transfer.listServers":{},
+    "transfer.listTagsForResource":{},
+    "transfer.listUsers":{},
+    "trustedadvisor.describeAccount":{},
+    "trustedadvisor.describeCheckItems":{},
+    "trustedadvisor.describeNotificationPreferences":{},
+    "trustedadvisor.describeTrustedAdvisorCheckRefreshStatuses":{},
+    "trustedadvisor.describeTrustedAdvisorCheckResult":{},
+    "trustedadvisor.describeTrustedAdvisorCheckSummaries":{},
+    "trustedadvisor.describeTrustedAdvisorChecks":{},
+    "trustedadvisor.refreshCheck":{},
+    "tt.getTicket":{},
+    "tt.searchTickets":{},
+    "veracity.addRouteFilterPrefixToPublicVirtualInterface":{},
+    "veracity.changeConnectionOwnership":{},
+    "veracity.connectionFind":{},
+    "veracity.findCustomerLimits":{},
+    "veracity.getBgpNeighbor":{},
+    "veracity.getBgpSummary":{},
+    "veracity.getConnectionStateHistory":{},
+    "veracity.getInterfaceTraffic":{},
+    "veracity.getLogMessages":{},
+    "veracity.getPublicVirtualInterfaceAllowedRoutes":{},
+    "veracity.getRouteTables":{},
+    "veracity.getRoutesAdvertised":{},
+    "veracity.getRoutesAdvertisedWithCommunities":{},
+    "veracity.getRoutesReceived":{},
+    "veracity.getRoutesReceivedWithCommunities":{},
+    "veracity.getVgwAttachmentHistory":{},
+    "veracity.getVgwById":{},
+    "veracity.getVgwByMappeId":{},
+    "veracity.getVgwByNetworkId":{},
+    "veracity.getVgwByObfuscatedId":{},
+    "veracity.getVirtualInterface":{},
+    "veracity.getVirtualInterfaceStateHistory":{},
+    "veracity.k2MQueryForAdministrator":{},
+    "veracity.k2MQueryForCustomerSupport":{},
+    "veracity.k2MQueryForOperator":{},
+    "veracity.k2QueryForAdministrator":{},
+    "veracity.k2QueryForCustomerSupport":{},
+    "veracity.k2QueryForOperator":{},
+    "veracity.queryRouterForInterface":{},
+    "veracity.searchPhysicalConnection":{},
+    "veracity.searchResourceByAccount":{},
+    "veracity.updateCustomerLimit":{},
+    "vpnlighthouse.describeCgw":{},
+    "vpnlighthouse.describeVgw":{},
+    "vpnlighthouse.describeVpnConnection":{},
+    "vpnlighthouse.getBgpNeighborDetails":{},
+    "vpnlighthouse.getBgpSummary":{},
+    "vpnlighthouse.getIpsecSaDetails":{},
+    "vpnlighthouse.getRecentBgpFlaps":{},
+    "vpnlighthouse.getRecentSlowProvisionings":{},
+    "vpnlighthouse.getRecentlyCreatedObjects":{},
+    "vpnlighthouse.getRecentlyDeletedObjects":{},
+    "vpnlighthouse.getRouterCms":{},
+    "vpnlighthouse.getRouterLogMessages":{},
+    "vpnlighthouse.getRouterTickets":{},
+    "vpnlighthouse.getRoutesAdvertised":{},
+    "vpnlighthouse.getRoutesReceived":{},
+    "vpnlighthouse.getSingleTunnelCustomers":{},
+    "vpnlighthouse.getTransitioningObjects":{},
+    "vpnlighthouse.getVpnOperationalEvents":{},
+    "vpnlighthouse.getVpnStaticRouteHistory":{},
+    "waf.getByteMatchSet":{},
+    "waf.getChangeTokenStatus":{},
+    "waf.getIPSet":{},
+    "waf.getRule":{},
+    "waf.getSampledRequests":{},
+    "waf.getSizeConstraintSet":{},
+    "waf.getSqlInjectionMatchSet":{},
+    "waf.getWebACL":{},
+    "waf.getXssMatchSet":{},
+    "waf.listByteMatchSets":{},
+    "waf.listIPSets":{},
+    "waf.listRules":{},
+    "waf.listSizeConstraintSets":{},
+    "waf.listSqlInjectionMatchSets":{},
+    "waf.listWebACLs":{},
+    "waf.listXssMatchSets":{},
+    "wafregional.getByteMatchSet":{},
+    "wafregional.getChangeTokenStatus":{},
+    "wafregional.getIPSet":{},
+    "wafregional.getRule":{},
+    "wafregional.getSqlInjectionMatchSet":{},
+    "wafregional.getWebACL":{},
+    "wafregional.getWebACLForResource":{},
+    "wafregional.listByteMatchSets":{},
+    "wafregional.listIPSets":{},
+    "wafregional.iterateResourcesForWebACL":{},
+    "wafregional.listRules":{},
+    "wafregional.listSqlInjectionMatchSets":{},
+    "wafregional.listWebACLs":{},
+    "wafv2.checkCapacity":{},
+    "wafv2.describeManagedRuleGroup":{},
+    "wafv2.getIPSet":{},
+    "wafv2.getLoggingConfiguration":{},
+    "wafv2.getPermissionPolicy":{},
+    "wafv2.getRateBasedStatementManagedKeys":{},
+    "wafv2.getRegexPatternSet":{},
+    "wafv2.getRuleGroup":{},
+    "wafv2.getSampledRequests":{},
+    "wafv2.getWebACL":{},
+    "wafv2.getWebACLForResource":{},
+    "wafv2.listAvailableManagedRuleGroups":{},
+    "wafv2.listIPSets":{},
+    "wafv2.listLoggingConfigurations":{},
+    "wafv2.listRegexPatternSets":{},
+    "wafv2.iterateResourcesForWebACL":{},
+    "wafv2.listRuleGroups":{},
+    "wafv2.listTagsForResource":{},
+    "wafv2.listWebACLs":{},
+    "workdocs.checkAlias":{},
+    "workdocs.describeAvailableDirectories":{},
+    "workdocs.describeInstances":{},
+    "worklink.describeAuditStreamConfiguration":{},
+    "worklink.describeCompanyNetworkConfiguration":{},
+    "worklink.describeDevice":{},
+    "worklink.describeDevicePolicyConfiguration":{},
+    "worklink.describeDomain":{},
+    "worklink.describeFleetMetadata":{},
+    "worklink.describeIdentityProviderConfiguration":{},
+    "worklink.describeWebsiteCertificateAuthority":{},
+    "worklink.listDevices":{},
+    "worklink.listDomains":{},
+    "worklink.listFleets":{},
+    "worklink.listWebsiteAuthorizationProviders":{},
+    "worklink.listWebsiteCertificateAuthorities":{},
+    "workmail.describeGroup":{},
+    "workmail.describeOrganization":{},
+    "workmail.describeResource":{},
+    "workmail.describeUser":{},
+    "workmail.listAliases":{},
+    "workmail.listGroupMembers":{},
+    "workmail.listGroups":{},
+    "workmail.listMailboxPermissions":{},
+    "workmail.listOrganizations":{},
+    "workmail.listResourceDelegates":{},
+    "workmail.iterateResources":{},
+    "workmail.listUsers":{},
+    "workspaces.describeAccount":{},
+    "workspaces.describeAccountModifications":{},
+    "workspaces.describeIpGroups":{},
+    "workspaces.describeTags":{},
+    "workspaces.describeWorkspaceBundles":{},
+    "workspaces.describeWorkspaceDirectories":{},
+    "workspaces.describeWorkspaceImages":{},
+    "workspaces.describeWorkspaces":{},
+    "workspaces.describeWorkspacesConnectionStatus":{},
+    "workspacesoculus.getMaxGraphicsProWorkspaceLimit":{},
+    "workspacesoculus.getMaxGraphicsWorkspaceLimit":{},
+    "workspacesoculus.getMaxWorkspaceImagesLimit":{},
+    "workspacesoculus.getMaxWorkspaceLimit":{},
+    "workspacesoculus.updateMaxGraphicsProWorkspaceLimit":{},
+    "workspacesoculus.updateMaxGraphicsWorkspaceLimit":{},
+    "workspacesoculus.updateMaxWorkspaceImagesLimit":{},
+    "workspacesoculus.updateMaxWorkspaceLimit":{},
+    }
+  }
+'''
+a4b.getDevice
+a4b.getProfile
+a4b.getRoom
+a4b.getRoomSkillParameter
+a4b.getSkillGroup
+a4b.searchDevices
+a4b.searchProfiles
+a4b.searchRooms
+a4b.searchSkillGroups
+accessanalyzer.getFinding
+accessanalyzer.listAnalyzers
+accessanalyzer.listArchiveRules
+accessanalyzer.listFindings
+acm.describeCertificate
+acm.getCertificate
+acm.listCertificates
+acm.listTagsForCertificate
+acmpca.describeCertificateAuthority
+acmpca.describeCertificateAuthorityAuditReport
+acmpca.getCertificate
+acmpca.getCertificateAuthorityCertificate
+acmpca.getCertificateAuthorityCsr
+acmpca.listCertificateAuthorities
+acmpca.listTags
+addressvalidation.correctAddress
+aec.getEventAutomationOutputs
+aec.listOngoingEventAutomations
+alb.describeListenerCertificates
+alb.describeListeners
+alb.describeLoadBalancerAttributes
+alb.describeLoadBalancers
+alb.describeRules
+alb.describeSSLPolicies
+alb.describeTags
+alb.describeTargetGroupAttributes
+alb.describeTargetGroups
+alb.describeTargetHealth
+amazonidjava.decryptCustomerID
+amazonidjava.encryptCustomerID
+amplify.getApp
+amplify.getBranch
+amplify.getDomainAssociation
+amplify.getJob
+amplify.getWebhook
+amplify.listApps
+amplify.listWebhooks
+apigateway.getAccount
+apigateway.getAuthorizer
+apigateway.getAuthorizers
+apigateway.getBasePathMapping
+apigateway.getBasePathMappings
+apigateway.getClientCertificate
+apigateway.getClientCertificates
+apigateway.getDeployment
+apigateway.getDeployments
+apigateway.getDomainName
+apigateway.getDomainNames
+apigateway.getIntegration
+apigateway.getIntegrationResponse
+apigateway.getMethod
+apigateway.getMethodResponse
+apigateway.getModel
+apigateway.getModelTemplate
+apigateway.getModels
+apigateway.getResource
+apigateway.getResources
+apigateway.getRestApi
+apigateway.getRestApis
+apigateway.getSdk
+apigateway.getStage
+apigateway.getStages
+apigatewayv2.getApi
+apigatewayv2.getApiMapping
+apigatewayv2.getApiMappings
+apigatewayv2.getApis
+apigatewayv2.getAuthorizer
+apigatewayv2.getAuthorizers
+apigatewayv2.getDeployment
+apigatewayv2.getDeployments
+apigatewayv2.getDomainName
+apigatewayv2.getDomainNames
+apigatewayv2.getIntegration
+apigatewayv2.getIntegrationResponse
+apigatewayv2.getIntegrationResponses
+apigatewayv2.getIntegrations
+apigatewayv2.getModel
+apigatewayv2.getModels
+apigatewayv2.getRoute
+apigatewayv2.getRouteResponse
+apigatewayv2.getRouteResponses
+apigatewayv2.getRoutes
+apigatewayv2.getStage
+apigatewayv2.getStages
+appflow.describeConnectorEntity
+appflow.describeConnectorProfiles
+appflow.describeConnectors
+appflow.describeFlow
+appflow.describeFlowExecutionRecords
+appflow.listConnectorEntities
+appflow.listFlows
+applicationautoscaling.describeScalableTargets
+applicationautoscaling.describeScalingActivities
+applicationautoscaling.describeScalingPolicies
+applicationautoscaling.describeScheduledActions
+applicationinsights.describeComponentConfiguration
+applicationinsights.describeComponentConfigurationRecommendation
+applicationinsights.listApplications
+applicationinsights.listComponents
+applicationinsights.listConfigurationHistory
+applicationinsights.listLogPatternSets
+applicationinsights.listLogPatterns
+appmesh.describeGatewayRoute
+appmesh.describeMesh
+appmesh.describeRoute
+appmesh.describeVirtualGateway
+appmesh.describeVirtualNode
+appmesh.describeVirtualRouter
+appmesh.describeVirtualService
+appmesh.listGatewayRoutes
+appmesh.listMeshes
+appmesh.listRoutes
+appmesh.listTagsForResource
+appmesh.listVirtualGateways
+appmesh.listVirtualNodes
+appmesh.listVirtualRouters
+appmesh.listVirtualServices
+apprunner.describeAutoScalingConfiguration
+apprunner.describeCustomDomains
+apprunner.describeService
+apprunner.listAutoScalingConfigurations
+apprunner.listConnections
+apprunner.listOperations
+apprunner.listServices
+apprunner.listTagsForResource
+appstream2.describeDirectoryConfigs
+appstream2.describeFleets
+appstream2.describeImageBuilders
+appstream2.describeImages
+appstream2.describeSessions
+appstream2.describeStacks
+appstream2.listAssociatedFleets
+appstream2.listAssociatedStacks
+appstream2.listTagsForResource
+appsync.getFunction
+appsync.getGraphqlApi
+appsync.getIntrospectionSchema
+appsync.getResolver
+appsync.getSchemaCreationStatus
+appsync.getType
+appsync.listDataSources
+appsync.listFunctions
+appsync.listGraphqlApis
+appsync.listResolvers
+appsync.listTypes
+appwizard.describeProvisionedApp
+appwizard.describeProvisioningEvents
+appwizard.listProvisionedApps
+arms.getAccountHistory
+arms.investigateAccount
+arms.queueFraudCheck
+arqs.DescribeSnapshot
+arqs.GetMaxSnapshotId
+arqs.GetSnapshotsForAccount
+arqs.GetSnapshotsForVolume
+arqs.GetWritersForBackup
+as.createAddress
+as.getAddressById
+as.replaceAddress
+asg.describeAccountLimits
+asg.describeAdjustmentTypes
+asg.describeAutoScalingGroups
+asg.describeAutoScalingInstances
+asg.describeAutoScalingNotificationTypes
+asg.describeInstanceRefreshes
+asg.describeLaunchConfigurations
+asg.describeLifecycleHookTypes
+asg.describeLifecycleHooks
+asg.describeLoadBalancerTargetGroups
+asg.describeLoadBalancers
+asg.describeMetricCollectionTypes
+asg.describeNotificationConfigurations
+asg.describePolicies
+asg.describeScalingActivities
+asg.describeScalingProcessTypes
+asg.describeScheduledActions
+asg.describeTags
+asg.describeTerminationPolicyTypes
+askec2.describeResourceType
+askec2.describeResources
+askec2.listResourceTypes
+askec2.searchResources
+askec2.searchResourcesByQueryString
+athena.batchGetNamedQuery
+athena.batchGetQueryExecution
+athena.getNamedQuery
+athena.getQueryExecution
+athena.getWorkGroup
+athena.listNamedQueries
+athena.listQueryExecutions
+athena.listTagsForResource
+athena.listWorkGroups
+auditmanager.getAccountStatus
+auditmanager.getDelegations
+auditmanager.listAssessmentFrameworks
+auditmanager.listAssessmentReports
+auditmanager.listAssessments
+auditmanager.listControls
+auditmanager.listKeywordsForDataSource
+auditmanager.listNotifications
+autoscalinginternal.createOrUpdateUserLimits
+autoscalinginternal.describeNamespaces
+autoscalingplans.describeScalingPlanResources
+autoscalingplans.describeScalingPlans
+autoscalingplans.getScalingPlanResourceForecastData
+avs.getAccountStatus
+avs.getSupportLevel
+awsadms.activateAccount
+awsadms.blockAccount
+awsadms.getAccountAttribute
+awsadms.getAccountContractMetadata
+awsadms.getAccountIdentifiersByAccountId
+awsadms.getAccountIdentifiersByCustomerId
+awsadms.getAccountIdentifiersByPayerId
+awsadms.getAccountMarketplaceGroup
+awsadms.getAccountSecurityQuestions
+awsadms.getAccountState
+awsadms.getAccountStatus
+awsadms.getAlternateContacts
+awsadms.getContactAddress
+awsadms.getCurrencyByMarketplaceGroup
+awsadms.getEmailAddressVerificationStatus
+awsadms.getInternalAccount
+awsadms.isAccountInternal
+awsadms.listAccountStatusHistory
+awsadms.setAccountAttribute
+awsadms.setAccountContractMetadata
+awsadms.setContactAddress
+awsadms.suspendAccount
+awsadms.terminateBlockedAccount
+awsadms.unblockAccount
+awsadms.updateInternalAccount
+awsadmsro.getSecurityQuestionsForAccount
+awsadmsro.validateSecurityQuestionAnswerForAccount
+awsbeehivesupport.describeConfidentialUserMetadata
+awsbeehivesupport.describeCustomerAppRedacted
+awsbeehivesupport.describeCustomerAppSensitive
+awsbeehivesupport.describeCustomerRedacted
+awsbeehivesupport.describeCustomerSensitive
+awsbeehivesupport.describeCustomerWorkbookRedacted
+awsbeehivesupport.describeCustomerWorkbookSensitive
+awsbeehivesupport.describeRedactedUserMetadata
+awsbeehivesupport.describeTeamRedacted
+awsbeehivesupport.describeTeamSensitive
+awsbeehivesupport.getDiagnosticLog
+awsbeehivesupport.listTeamsForAwsAccountRedacted
+awsbeehivesupport.listTeamsForAwsAccountSensitive
+awsbeehivesupport.queryCustomersByEmailSensitive
+awsbeehivesupport.searchUsersConfidential
+awsbeehivesupport.undeleteCustomerWorkbook
+awsbillingcms.addCredit
+awsbillingcms.cancelCredit
+awsbillingcms.getAvailableCredits
+awsbillingcwpublisher.publishBillingMetrics
+awsbps.charge
+awscaseapi.getCase
+awscaseapi.listAttributes
+awscaseapi.listCommunications
+awscaseapi.putAttributes
+awscbresourceadminservice.getAccountRole
+awscbresourceadminservice.getChildAccountsForParentAccount
+awscbresourceadminservice.getChildAccountsWithLinkPeriodsForParentAccount
+awscbresourceadminservice.getLinkedPeriodsForChildAccount
+awscbresourceadminservice.getParentAccountForChildAccount
+awscollectionmanager.getTransactionByTransactionId
+awsconfig.batchGetAggregateResourceConfig
+awsconfig.batchGetResourceConfig
+awsconfig.describeAggregateComplianceByConfigRules
+awsconfig.describeAggregationAuthorizations
+awsconfig.describeComplianceByConfigRule
+awsconfig.describeComplianceByResource
+awsconfig.describeConfigRuleEvaluationStatus
+awsconfig.describeConfigRules
+awsconfig.describeConfigurationAggregatorSourcesStatus
+awsconfig.describeConfigurationAggregators
+awsconfig.describeConfigurationRecorderStatus
+awsconfig.describeConfigurationRecorders
+awsconfig.describeConformancePackCompliance
+awsconfig.describeConformancePackStatus
+awsconfig.describeConformancePacks
+awsconfig.describeDeliveryChannelStatus
+awsconfig.describeDeliveryChannels
+awsconfig.describeOrganizationConfigRuleStatuses
+awsconfig.describeOrganizationConfigRules
+awsconfig.describeOrganizationConformancePackStatuses
+awsconfig.describeOrganizationConformancePacks
+awsconfig.describePendingAggregationRequests
+awsconfig.describeRemediationConfigurations
+awsconfig.describeRemediationExceptions
+awsconfig.describeRemediationExecutionStatus
+awsconfig.describeRetentionConfigurations
+awsconfig.getAggregateComplianceDetailsByConfigRule
+awsconfig.getAggregateConfigRuleComplianceSummary
+awsconfig.getAggregateDiscoveredResourceCounts
+awsconfig.getAggregateResourceConfig
+awsconfig.getComplianceDetailsByConfigRule
+awsconfig.getComplianceDetailsByResource
+awsconfig.getComplianceSummaryByConfigRule
+awsconfig.getComplianceSummaryByResourceType
+awsconfig.getConformancePackComplianceDetails
+awsconfig.getConformancePackComplianceSummary
+awsconfig.getDiscoveredResourceCounts
+awsconfig.getOrganizationConfigRuleDetailedStatus
+awsconfig.getOrganizationConformancePackDetailedStatus
+awsconfig.getResourceConfigHistory
+awsconfig.listAggregateDiscoveredResources
+awsconfig.listDiscoveredResources
+awsconfig.listTagsForResource
+awsforeignexchange.getRate
+awsforeignexchange.getRateByRateId
+awsforeignexchange.ping
+awsfraud.getFraudStatus
+awsfraudv2.getAccountPublishedContainmentScore
+awsinvoicinggateway.find
+awsinvoicinggateway.get
+awsoms.describeOffer
+awsoms.describeOfferStatus
+awsoms.describeOfferTerm
+awsoms.getLegacyOfferRevisionDetails
+awsoms.getOfferMetadata
+awsoms.getOffersForSeller
+awsorganizationmanagement.describeEffectivePolicy
+awsorganizationmanagement.getOrganization
+awsorganizationmanagement.getOrganizationAccountLimits
+awsorganizationmanagement.getOrganizationForAccount
+awsorganizationmanagement.getPolicy
+awsorganizationmanagement.getResource
+awsorganizationmanagement.getView
+awsorganizationmanagement.listAccountsForOrganization
+awsorganizationmanagement.listAttachmentsForPolicy
+awsorganizationmanagement.listGroupsForParent
+awsorganizationmanagement.listParentsForResource
+awsorganizationmanagement.listPolicies
+awsorganizationmanagement.listPoliciesForGroup
+awsorganizationmanagement.listPoliciesForResource
+awsorganizationmanagement.listPoliciesForView
+awsorganizationmanagement.iterateResourcesForOrganization
+awsorganizationmanagement.iterateResourcesForParent
+awsorganizationmanagement.listViews
+awsorganizationmanagement.lookupPolicyForAccount
+awsorganizationmanagement.updateOrganizationAccountLimit
+awsorganizationmanagementops.getCloseAccountQuota
+awsorganizationmanagementops.getMappedIADAccount
+awsorganizationmanagementops.listOrganizations
+awsorganizationworkflowmanagement.describeAccountCreationRequest
+awsorganizationworkflowmanagement.listAccountCreationRequests
+awspax.getPromotionByCode
+awspax.getPromotionById
+awspax.getPromotionByName
+awspax.getPromotionsForAccount
+awspax.redeemPromotion
+awspaymentexecutiongateway.vet
+awspaymentgateway.collectPayment
+awspaymentgateway.completePayment
+awspaymentgateway.find
+awspaymentinstrumentgateway.create
+awspaymentinstrumentgateway.find
+awspaymentinstrumentgateway.get
+awspaymentinstrumentgateway.getVetStatus
+awspaymentinstrumentgateway.setVetStatus
+awspaymentinstrumentgateway.update
+awspaymentspolicygateway.getMfaScenario
+awspcs.getAllServicesDetails
+awspcs.getAllServicesForAccount
+awspcs.getLegacyServiceIdentifiers
+awspcs.getServiceDetails
+awsrefund.getBillsInPeriod
+awsrefund.getRefundableLineItems
+awsrefund.refundAllTaxInBill
+awsrefund.refundSpecificAmountInLineItems
+awsrefund.refundSpecificAmountInLineItemsForMarketplaceBill
+awsrefund.refundSpecificAmountInLineItemsUnlimited
+awssdms.activatePendingSubscription
+awssdms.blockSubscription
+awssdms.cancelSubscription
+awssdms.createSubscription
+awssdms.getBillingAgreementsSummaryForPeriod
+awssdms.getSubscriptionHistoryForAccount
+awssdms.getSubscriptionIdsByProductIdentifier
+awssdms.getSubscriptionsForPeriod
+awssdms.refundCanceledSubscription
+awssdms.switchSubscription
+awssdms.unblockSubscription
+awssupportsubscription.getTrialPrograms
+awssupportsubscription.getTrialStatus
+awssupportsubscription.getTrials
+awssupportsubscription.setTrialStatus
+awstcs.getCustomerExemptionStatus
+awstcs.getFapiaoHistory
+awstcs.getFapiaoInformation
+awstcs.getLinkedAccountDetails
+awstcs.getPANInformation
+awstcs.getSupportedAuthorities
+awstcs.getTaxExemptionTypes
+awstcs.getVATInformation
+awstcs.setPANInformation
+awstcs.setTaxExemptions
+awstcs.setVATInformation
+awstcs.updateFapiaoEffectiveDate
+awstcs.updateFapiaoState
+awstims.getInvoiceMetadata
+backup.describeBackupJob
+backup.describeBackupVault
+backup.describeProtectedResource
+backup.describeRecoveryPoint
+backup.describeRestoreJob
+backup.getBackupPlan
+backup.getBackupPlanFromJSON
+backup.getBackupPlanFromTemplate
+backup.getBackupSelection
+backup.getBackupVaultAccessPolicy
+backup.getBackupVaultNotifications
+backup.getRecoveryPointRestoreMetadata
+backup.getSupportedResourceTypes
+backup.listBackupJobs
+backup.listBackupPlanTemplates
+backup.listBackupPlanVersions
+backup.listBackupPlans
+backup.listBackupSelections
+backup.listBackupVaults
+backup.listProtectedResources
+backup.listRecoveryPointsByBackupVault
+backup.listRecoveryPointsByResource
+backup.listRestoreJobs
+backup.listTags
+bas.getBillReportByAccount
+bas.getInvoiceReportByInvoiceIds
+batch.describeComputeEnvironments
+batch.describeJobDefinitions
+batch.describeJobQueues
+batch.describeJobs
+batch.listJobs
+beanstalk.checkDNSAvailability
+beanstalk.describeApplicationVersions
+beanstalk.describeConfigurationOptions
+beanstalk.describeEnvironmentHealth
+beanstalk.describeEnvironmentManagedActionHistory
+beanstalk.describeEnvironmentManagedActions
+beanstalk.describeEnvironmentResources
+beanstalk.describeEnvironments
+beanstalk.describeEvents
+beanstalk.describeInstancesHealth
+beanstalk.describePlatformVersion
+beanstalk.listAvailableSolutionStacks
+beanstalk.listPlatformVersions
+beanstalk.validateConfigurationSettings
+braket.getDevice
+braket.getQuantumTask
+braket.searchDevices
+braket.searchQuantumTasks
+budgets.describeBudget
+budgets.describeBudgets
+budgets.describeNotificationsForBudget
+budgets.describeSubscribersForNotification
+cloud9.describeEnvironmentMemberships
+cloud9.describeEnvironments
+cloud9.listEnvironments
+cloudHSM.discoverHsmStatus
+cloudHSM.getActiveSubscriptions
+cloudHSM.getAllCustomers
+cloudHSM.getCustomerByAccountId
+cloudHSM.getHsmById
+cloudHSM.getHsmCounts
+cloudHSM.getHsmsInAz
+cloudHSM.getSubscriptionById
+cloudHSM.getTrialsToEnd
+clouddirectory.getDirectory
+clouddirectory.listDirectories
+cloudformation.batchDescribeTypeConfigurations
+cloudformation.describeAccountLimits
+cloudformation.describeChangeSet
+cloudformation.describePublisher
+cloudformation.describeStackEvents
+cloudformation.describeStackInstance
+cloudformation.describeStackResource
+cloudformation.describeStackResources
+cloudformation.describeStackSet
+cloudformation.describeStackSetOperation
+cloudformation.describeStacks
+cloudformation.describeTypeRegistration
+cloudformation.estimateTemplateCost
+cloudformation.getStackPolicy
+cloudformation.getTemplate
+cloudformation.getTemplateSummary
+cloudformation.listChangeSets
+cloudformation.listExports
+cloudformation.listImports
+cloudformation.listStackInstances
+cloudformation.listStackResources
+cloudformation.listStackSetOperationResults
+cloudformation.listStackSetOperations
+cloudformation.listStackSets
+cloudformation.listStacks
+cloudformation.listTypeRegistrations
+cloudformation.listTypeVersions
+cloudformation.listTypes
+cloudfront.getCloudFrontOriginAccessIdentity
+cloudfront.getCloudFrontOriginAccessIdentityConfig
+cloudfront.getDistribution
+cloudfront.getDistributionConfig
+cloudfront.getInvalidation
+cloudfront.getStreamingDistribution
+cloudfront.getStreamingDistributionConfig
+cloudfront.listCloudFrontOriginAccessIdentities
+cloudfront.listDistributions
+cloudfront.listDistributionsByWebACLId
+cloudfront.listInvalidations
+cloudfront.listStreamingDistributions
+cloudhsmv2.describeBackups
+cloudhsmv2.describeClusters
+cloudsearchinternal.describeAPIVersion
+cloudsearchinternal.describeAZs
+cloudsearchinternal.describeAvailableEC2Instances
+cloudsearchinternal.describeDomainInstances
+cloudsearchinternal.describeDomainsInternal
+cloudsearchinternal.describeEC2InstanceSettings
+cloudsearchinternal.describeFrontends
+cloudsearchinternal.describeIndexFieldsInternal
+cloudsearchinternal.describeLimits
+cloudsearchinternal.describeRankExpressionsInternal
+cloudsearchinternal.describeSearchEngineSettings
+cloudsearchinternal.describeSearchMetricAlarm
+cloudsearchinternal.describeSearchPartitions
+cloudsearchinternal.describeSearchScalingPolicies
+cloudsearchinternal.getBuildVersion
+cloudsearchinternal.getClients
+cloudsearchinternal.getConfigSolrSchema
+cloudsearchinternal.getConfigXbm
+cloudsearchinternal.getConfigXcm
+cloudsearchinternal.getConfigXml
+cloudsearchinternal.getConfigXqm
+cloudsearchinternal.getDomains
+cloudsearchinternal.getRecoveryInfo
+cloudsearchinternal.getServiceAccessPolicies
+cloudsearchinternal.getStemmingInfo
+cloudsearchinternal.getSynonymsInfo
+cloudsearchv2.describeAnalysisSchemes
+cloudsearchv2.describeAvailabilityOptions
+cloudsearchv2.describeDomains
+cloudsearchv2.describeExpressions
+cloudsearchv2.describeIndexFields
+cloudsearchv2.describeScalingParameters
+cloudsearchv2.describeServiceAccessPolicies
+cloudsearchv2.describeSuggesters
+cloudsearchv2.listDomainNames
+cloudsearchv2internal.describeAPIVersion
+cloudsearchv2internal.describeAZs
+cloudsearchv2internal.describeAvailableEC2Instances
+cloudsearchv2internal.describeDomainInstances
+cloudsearchv2internal.describeDomainsInternal
+cloudsearchv2internal.describeEC2InstanceSettings
+cloudsearchv2internal.describeEngineType
+cloudsearchv2internal.describeExpressionsInternal
+cloudsearchv2internal.describeFrontends
+cloudsearchv2internal.describeIndexFieldsInternal
+cloudsearchv2internal.describeLimits
+cloudsearchv2internal.describeSearchMetricAlarm
+cloudsearchv2internal.describeSearchPartitions
+cloudsearchv2internal.describeSearchScalingPolicies
+cloudsearchv2internal.getAdvancedOptions
+cloudsearchv2internal.getArtifactRegistry
+cloudsearchv2internal.getBuildVersion
+cloudsearchv2internal.getClients
+cloudsearchv2internal.getConfigSolrSchema
+cloudsearchv2internal.getConfigXml
+cloudsearchv2internal.getDomains
+cloudsearchv2internal.getDomainsWithIssues
+cloudsearchv2internal.getDomainsWithIssuesArchive
+cloudsearchv2internal.getRecoveryInfo
+cloudsearchv2internal.getScalingParameters
+cloudsearchv2internal.getServiceAccessPolicies
+cloudtrail.describeTrails
+cloudtrail.getEventSelectors
+cloudtrail.getInsightSelectors
+cloudtrail.getTrail
+cloudtrail.getTrailStatus
+cloudtrail.listPublicKeys
+cloudtrail.listTags
+cloudtrail.listTrails
+cloudtrail.lookupEvents
+cloudwatch.describeAlarmHistory
+cloudwatch.describeAlarms
+cloudwatch.describeAlarmsForMetric
+cloudwatch.describeAnomalyDetectors
+cloudwatch.describeInsightRules
+cloudwatch.getDashboard
+cloudwatch.getInsightRuleReport
+cloudwatch.getMetricData
+cloudwatch.getMetricStatistics
+cloudwatch.listDashboards
+cloudwatch.listMetrics
+cloudwatchinternal.searchMetricSchemasForAccount
+cloudwatchinternal.searchMetricsForAccount
+codeartifact.describeDomain
+codeartifact.describePackageVersion
+codeartifact.describeRepository
+codeartifact.getDomainPermissionsPolicy
+codeartifact.getRepositoryEndpoint
+codeartifact.getRepositoryPermissionsPolicy
+codeartifact.listDomains
+codeartifact.listPackageVersionAssets
+codeartifact.listPackageVersions
+codeartifact.listPackages
+codeartifact.listRepositories
+codeartifact.listRepositoriesInDomain
+codebuild.batchGetBuildBatches
+codebuild.batchGetBuilds
+codebuild.batchGetProjects
+codebuild.listBuildBatches
+codebuild.listBuildBatchesForProject
+codebuild.listBuilds
+codebuild.listBuildsForProject
+codebuild.listCuratedEnvironmentImages
+codebuild.listProjects
+codebuild.listSourceCredentials
+codecommit.batchGetRepositories
+codecommit.getBranch
+codecommit.getRepository
+codecommit.getRepositoryTriggers
+codecommit.listBranches
+codecommit.listRepositories
+codedeploy.batchGetApplicationRevisions
+codedeploy.batchGetApplications
+codedeploy.batchGetDeploymentGroups
+codedeploy.batchGetDeploymentInstances
+codedeploy.batchGetDeploymentTargets
+codedeploy.batchGetDeployments
+codedeploy.batchGetOnPremisesInstances
+codedeploy.getApplication
+codedeploy.getApplicationRevision
+codedeploy.getDeployment
+codedeploy.getDeploymentConfig
+codedeploy.getDeploymentGroup
+codedeploy.getDeploymentInstance
+codedeploy.getDeploymentTarget
+codedeploy.getOnPremisesInstance
+codedeploy.listApplicationRevisions
+codedeploy.listApplications
+codedeploy.listDeploymentConfigs
+codedeploy.listDeploymentGroups
+codedeploy.listDeploymentInstances
+codedeploy.listDeploymentTargets
+codedeploy.listDeployments
+codedeploy.listGitHubAccountTokenNames
+codedeploy.listOnPremisesInstances
+codepipeline.getJobDetails
+codepipeline.getPipeline
+codepipeline.getPipelineExecution
+codepipeline.getPipelineState
+codepipeline.listActionExecutions
+codepipeline.listActionTypes
+codepipeline.listPipelineExecutions
+codepipeline.listPipelines
+codepipeline.listWebhooks
+codestar.describeProject
+codestar.listProjects
+codestar.iterateResources
+codestar.listTeamMembers
+codestar.listUserProfiles
+cognitoidentity.describeIdentityPool
+cognitoidentity.getIdentityPoolRoles
+cognitoidentity.listIdentities
+cognitoidentity.listIdentityPools
+cognitoidp.describeIdentityProvider
+cognitoidp.describeResourceServer
+cognitoidp.describeRiskConfiguration
+cognitoidp.describeUserImportJob
+cognitoidp.describeUserPool
+cognitoidp.describeUserPoolClient
+cognitoidp.describeUserPoolDomain
+cognitoidp.getGroup
+cognitoidp.getUICustomization
+cognitoidp.getUserPoolMfaConfig
+cognitoidp.listGroups
+cognitoidp.listIdentityProviders
+cognitoidp.listResourceServers
+cognitoidp.listUserImportJobs
+cognitoidp.listUserPoolClients
+cognitoidp.listUserPools
+cognitosync.describeDataset
+cognitosync.describeIdentityPoolUsage
+cognitosync.describeIdentityUsage
+cognitosync.getCognitoEvents
+cognitosync.getIdentityPoolConfiguration
+cognitosync.listDatasets
+cognitosync.listIdentityPoolUsage
+computeoptimizer.getAutoScalingGroupRecommendations
+computeoptimizer.getEBSVolumeRecommendations
+computeoptimizer.getEC2InstanceRecommendations
+computeoptimizer.getEC2RecommendationProjectedMetrics
+computeoptimizer.getEnrollmentStatus
+computeoptimizer.getRecommendationSummaries
+connect.describeUser
+connect.getCurrentMetricData
+connect.getMetricData
+connect.listRoutingProfiles
+connect.listSecurityProfiles
+connect.listUsers
+controltower.describeAccountFactoryConfig
+controltower.describeCoreService
+controltower.describeGuardrail
+controltower.describeGuardrailForTarget
+controltower.describeManagedAccount
+controltower.describeSingleSignOn
+controltower.getAvailableUpdates
+controltower.getHomeRegion
+controltower.getLandingZoneStatus
+controltower.listDirectoryGroups
+controltower.listGuardrailViolations
+controltower.listGuardrailsForTarget
+controltower.listManagedAccounts
+controltower.listManagedAccountsForGuardrail
+controltower.listManagedAccountsForParent
+controltower.listManagedOrganizationalUnits
+controltower.listManagedOrganizationalUnitsForGuardrail
+correiosstorageservice.retrieveMultichannelMessage
+correiosstorageservice.searchMessages
+correiosstorageservice.searchMessagesByCustomerID
+costexplorer.getCostAndUsage
+costexplorer.getCostAndUsageWithResources
+costexplorer.getCostForecast
+costexplorer.getDimensionValues
+costexplorer.getReservationCoverage
+costexplorer.getReservationPurchaseRecommendation
+costexplorer.getReservationUtilization
+costexplorer.getRightsizingRecommendation
+costexplorer.getSavingsPlansCoverage
+costexplorer.getSavingsPlansPurchaseRecommendation
+costexplorer.getSavingsPlansUtilization
+costexplorer.getSavingsPlansUtilizationDetails
+costexplorer.getTags
+credstore.resetProperty
+databrew.describeDataset
+databrew.describeJob
+databrew.describeProject
+databrew.describeRecipe
+databrew.listDatasets
+databrew.listJobRuns
+databrew.listJobs
+databrew.listProjects
+databrew.listRecipeVersions
+databrew.listRecipes
+databrew.listTagsForResource
+datapipeline.describeObjects
+datapipeline.describePipelines
+datapipeline.getPipelineDefinition
+datapipeline.listPipelines
+datapipeline.queryObjects
+datasync.describeAgent
+datasync.describeLocationEfs
+datasync.describeLocationFsxWindows
+datasync.describeLocationNfs
+datasync.describeLocationObjectStorage
+datasync.describeLocationS3
+datasync.describeLocationSmb
+datasync.describeTask
+datasync.describeTaskExecution
+datasync.listAgents
+datasync.listLocations
+datasync.listTaskExecutions
+datasync.listTasks
+dax.describeClusters
+dax.describeDefaultParameters
+dax.describeEvents
+dax.describeParameterGroups
+dax.describeParameters
+dax.describeSubnetGroups
+ddbstreams.describeStream
+ddbstreams.listStreams
+detective.getMembers
+detective.listGraphs
+detective.listInvitations
+detective.listMembers
+devicefarm.getAccountSettings
+devicefarm.getDevice
+devicefarm.getDevicePool
+devicefarm.getDevicePoolCompatibility
+devicefarm.getJob
+devicefarm.getProject
+devicefarm.getRemoteAccessSession
+devicefarm.getRun
+devicefarm.getSuite
+devicefarm.getTest
+devicefarm.getTestGridProject
+devicefarm.getTestGridSession
+devicefarm.getUpload
+devicefarm.listArtifacts
+devicefarm.listDevicePools
+devicefarm.listDevices
+devicefarm.listJobs
+devicefarm.listProjects
+devicefarm.listRemoteAccessSessions
+devicefarm.listRuns
+devicefarm.listSamples
+devicefarm.listSuites
+devicefarm.listTestGridProjects
+devicefarm.listTestGridSessionActions
+devicefarm.listTestGridSessionArtifacts
+devicefarm.listTestGridSessions
+devicefarm.listTests
+devicefarm.listUniqueProblems
+devicefarm.listUploads
+directconnect.describeConnections
+directconnect.describeConnectionsOnInterconnect
+directconnect.describeInterconnects
+directconnect.describeLocations
+directconnect.describeVirtualGateways
+directconnect.describeVirtualInterfaces
+dlm.getLifecyclePolicies
+dlm.getLifecyclePolicy
+dms.describeAccountAttributes
+dms.describeConnections
+dms.describeEndpointTypes
+dms.describeEndpoints
+dms.describeOrderableReplicationInstances
+dms.describeRefreshSchemasStatus
+dms.describeReplicationInstances
+dms.describeReplicationSubnetGroups
+drs.describeJobLogItems
+drs.describeJobs
+drs.describeRecoveryInstances
+drs.describeRecoverySnapshots
+drs.describeReplicationConfigurationTemplates
+drs.describeSourceServers
+drs.getLaunchConfiguration
+drs.getReplicationConfiguration
+ds.describeConditionalForwarders
+ds.describeDirectories
+ds.describeEventTopics
+ds.describeSnapshots
+ds.describeTrusts
+ds.getDirectoryLimits
+ds.getSnapshotLimits
+ds.listIpRoutes
+ds.listSchemaExtensions
+ds.listTagsForResource
+dummyService.describeResources
+dummyService.fakeSimtResolverHighImpactApi
+dummyService.fakeTtResolverHighImpactApi
+dynamodb.describeBackup
+dynamodb.describeContinuousBackups
+dynamodb.describeGlobalTable
+dynamodb.describeLimits
+dynamodb.describeTable
+dynamodb.describeTimeToLive
+dynamodb.listBackups
+dynamodb.listGlobalTables
+dynamodb.listTables
+dynamodb.listTagsOfResource
+ec2.describeAccountAttributes
+ec2.describeAddresses
+ec2.describeAvailabilityZones
+ec2.describeBundleTasks
+ec2.describeByoipCidrs
+ec2.describeCapacityReservations
+ec2.describeClassicLinkInstances
+ec2.describeClientVpnAuthorizationRules
+ec2.describeClientVpnConnections
+ec2.describeClientVpnEndpoints
+ec2.describeClientVpnRoutes
+ec2.describeClientVpnTargetNetworks
+ec2.describeCoipPools
+ec2.describeConversionTasks
+ec2.describeCustomerGateways
+ec2.describeDhcpOptions
+ec2.describeElasticGpus
+ec2.describeExportImageTasks
+ec2.describeExportTasks
+ec2.describeFastSnapshotRestores
+ec2.describeFleetHistory
+ec2.describeFleetInstances
+ec2.describeFleets
+ec2.describeFlowLogs
+ec2.describeHostReservationOfferings
+ec2.describeHostReservations
+ec2.describeHosts
+ec2.describeIdFormat
+ec2.describeIdentityIdFormat
+ec2.describeImageAttribute
+ec2.describeImages
+ec2.describeImportImageTasks
+ec2.describeImportSnapshotTasks
+ec2.describeInstanceAttribute
+ec2.describeInstanceStatus
+ec2.describeInstances
+ec2.describeInternetGateways
+ec2.describeIpamPools
+ec2.describeIpamScopes
+ec2.describeIpams
+ec2.describeKeyPairs
+ec2.describeLaunchTemplateVersions
+ec2.describeLaunchTemplates
+ec2.describeLocalGatewayRouteTableVirtualInterfaceGroupAssociations
+ec2.describeLocalGatewayRouteTableVpcAssociations
+ec2.describeLocalGatewayRouteTables
+ec2.describeLocalGatewayVirtualInterfaceGroups
+ec2.describeLocalGatewayVirtualInterfaces
+ec2.describeLocalGateways
+ec2.describeManagedPrefixLists
+ec2.describeMovingAddresses
+ec2.describeNatGateways
+ec2.describeNetworkAcls
+ec2.describeNetworkInterfaceAttribute
+ec2.describeNetworkInterfaces
+ec2.describePlacementGroups
+ec2.describePrefixLists
+ec2.describePublicIpv4Pools
+ec2.describeRegions
+ec2.describeReservedInstances
+ec2.describeReservedInstancesListings
+ec2.describeReservedInstancesModifications
+ec2.describeReservedInstancesOfferings
+ec2.describeRouteTables
+ec2.describeScheduledInstances
+ec2.describeSecurityGroups
+ec2.describeSnapshotAttribute
+ec2.describeSnapshots
+ec2.describeSpotDatafeedSubscription
+ec2.describeSpotFleetInstances
+ec2.describeSpotFleetRequestHistory
+ec2.describeSpotFleetRequests
+ec2.describeSpotInstanceRequests
+ec2.describeSpotPriceHistory
+ec2.describeSubnets
+ec2.describeTags
+ec2.describeTrafficMirrorFilters
+ec2.describeTrafficMirrorSessions
+ec2.describeTrafficMirrorTargets
+ec2.describeTransitGatewayAttachments
+ec2.describeTransitGatewayRouteTables
+ec2.describeTransitGatewayVpcAttachments
+ec2.describeTransitGateways
+ec2.describeVolumeAttribute
+ec2.describeVolumeStatus
+ec2.describeVolumes
+ec2.describeVolumesModifications
+ec2.describeVpcAttribute
+ec2.describeVpcClassicLink
+ec2.describeVpcClassicLinkDnsSupport
+ec2.describeVpcEndpointConnectionNotifications
+ec2.describeVpcEndpointConnections
+ec2.describeVpcEndpointServiceConfigurations
+ec2.describeVpcEndpointServicePermissions
+ec2.describeVpcEndpointServices
+ec2.describeVpcEndpoints
+ec2.describeVpcPeeringConnections
+ec2.describeVpcs
+ec2.describeVpnConnections
+ec2.describeVpnGateways
+ec2.getCoipPoolUsage
+ec2.getConsoleScreenshot
+ec2.getIpamAddressHistory
+ec2.getIpamPoolAllocations
+ec2.getIpamPoolCidrs
+ec2.getIpamResourceCidrs
+ec2.getManagedPrefixListAssociations
+ec2.getManagedPrefixListEntries
+ec2.getReservedInstancesExchangeQuote
+ec2.searchLocalGatewayRoutes
+ec2internal.describeAvailabilityZoneFeatures
+ec2internal.describeAvailabilityZoneMappings
+ec2internal.describeInstanceTypeFeatures
+ec2internal2.describeAccountAttributesInternal
+ec2internal2.describeAvailabilityZoneFeaturesInternal
+ec2internal2.describeAvailabilityZoneMappings
+ec2internal2.describeInstanceTypeFeaturesInternal
+ec2nigripesservice.getAccountStatus
+ec2nigripesservice.getResourceFirewallRules
+ec2nm.describeDNSOptions
+ec2nm.describeInterfaces
+ec2nm.describeNetworkAcls
+ec2nm.describeNetworkSubnets
+ec2nm.describeNetworks
+ec2nm.describePublicAddresses
+ec2nm.describeRouteTables
+ec2nm.describeSecurityGroups
+ec2nm.describeSubnetInterfaces
+ec2nm.describeSubnets
+ec2nm.describeUserDhcpOptions
+ec2nm.describeUserInterfaces
+ec2nm.describeUserInternetGateways
+ec2nm.describeUserNetworks
+ec2nm.describeUserSecurityGroups
+ec2nm.describeUserSubnets
+ec2nm.describeVerbosePublicAddresses
+ec2nm.getInstanceTypeLimit
+ec2nm.getResourceOwner
+ec2nm.removeSubnetDefaultStatus
+ec2nm.setDefaultSubnet
+ec2pipsinternal.batchAllocatePublicAddressCSInternal
+ec2pipsinternal.describeAddressesPtrInternal
+ec2pipsinternal.describeClassicMappingsByPublicAddressInternal
+ec2pipsinternal.describePublicAddressesInternal
+ec2pipsinternal.lockPublicAddressInternal
+ec2pipsinternal.setAddressPtrInternalCs
+ec2pipsinternal.unlockPublicAddressInternal
+ecas.describeSnapshotAttributes
+ecas.describeSnapshotInternal
+ecas.describeVolumeEvents
+ecas.describeVolumeGeometry
+ecas.describeVolumePartitions
+ecas.describeVolumesInternal
+ecas.getBlessedPairCsv
+ecas.getCustomerUsage
+ecas.getLatestEbsSnapshotId
+ecas.getVolumeAttachmentHistory
+ecas.getVolumeRecoveryHistory
+ecas.isVolumeDeleted
+ecr.batchCheckLayerAvailability
+ecr.describeImageScanFindings
+ecr.describeImages
+ecr.describeRegistry
+ecr.describeRepositories
+ecr.getLifecyclePolicy
+ecr.getRegistryPolicy
+ecr.getRepositoryPolicy
+ecr.listImages
+ecr.listTagsForResource
+ecrpublic.describeImageTags
+ecrpublic.describeImages
+ecrpublic.describeRegistries
+ecrpublic.describeRepositories
+ecrpublic.getRegistryCatalogData
+ecrpublic.getRepositoryCatalogData
+ecrpublic.getRepositoryPolicy
+ecrpublic.listTagsForResource
+ecs.describeCapacityProviders
+ecs.describeClusters
+ecs.describeContainerInstances
+ecs.describeServices
+ecs.describeTaskDefinition
+ecs.describeTaskSets
+ecs.describeTasks
+ecs.listAccountSettings
+ecs.listAttributes
+ecs.listClusters
+ecs.listContainerInstances
+ecs.listServices
+ecs.listTagsForResource
+ecs.listTaskDefinitionFamilies
+ecs.listTaskDefinitions
+ecs.listTasks
+ehs.getHandshake
+ehs.listHandshakes
+ehsops.getRateLimitConfig
+eks.describeCluster
+eks.describeFargateProfile
+eks.describeNodegroup
+eks.describeUpdate
+eks.listClusters
+eks.listFargateProfiles
+eks.listNodegroups
+eks.listUpdates
+elasticache.describeCacheClusters
+elasticache.describeCacheEngineVersions
+elasticache.describeCacheParameterGroups
+elasticache.describeCacheParameters
+elasticache.describeCacheSecurityGroups
+elasticache.describeCacheSubnetGroups
+elasticache.describeEngineDefaultParameters
+elasticache.describeEvents
+elasticache.describeReplicationGroups
+elasticache.describeReservedCacheNodes
+elasticache.describeReservedCacheNodesOfferings
+elasticache.describeSnapshots
+elasticache.listAllowedNodeTypeModifications
+elasticache.listTagsForResource
+elasticfilesystem.describeAccessPoints
+elasticfilesystem.describeFileSystemPolicy
+elasticfilesystem.describeFileSystems
+elasticfilesystem.describeLifecycleConfiguration
+elasticfilesystem.describeMountTargetSecurityGroups
+elasticfilesystem.describeMountTargets
+elasticfilesystem.describeTags
+elasticfilesystem.listTagsForResource
+elastictranscoder.listJobsByPipeline
+elastictranscoder.listJobsByStatus
+elastictranscoder.listPipelines
+elastictranscoder.listPresets
+elastictranscoder.readPipeline
+elastictranscoder.readPreset
+elb.describeInstanceHealth
+elb.describeLoadBalancerAttributes
+elb.describeLoadBalancerPolicies
+elb.describeLoadBalancerPolicyTypes
+elb.describeLoadBalancers
+elb.describeTags
+elbinternal.describeAccessPointState
+elbinternal.listAccessPoints
+emr.describeCluster
+emr.describeSecurityConfiguration
+emr.describeStep
+emr.listBootstrapActions
+emr.listClusters
+emr.listInstanceGroups
+emr.listInstances
+emr.listSecurityConfigurations
+emr.listSteps
+es.describeElasticsearchDomain
+es.describeElasticsearchDomainConfig
+es.describeElasticsearchDomains
+es.listDomainNames
+esinternal.describeAPIVersion
+esinternal.describeAZs
+esinternal.describeAvailableEC2Instances
+esinternal.describeDomainInstances
+esinternal.describeDomainsInternal
+esinternal.describeEC2InstanceSettings
+esinternal.describeEngineType
+esinternal.describeExpressionsInternal
+esinternal.describeFrontends
+esinternal.describeIndexFieldsInternal
+esinternal.describeLimits
+esinternal.describeSearchMetricAlarm
+esinternal.describeSearchPartitions
+esinternal.describeSearchScalingPolicies
+esinternal.getAdvancedOptions
+esinternal.getArtifactRegistry
+esinternal.getBuildVersion
+esinternal.getClients
+esinternal.getConfigXml
+esinternal.getDomains
+esinternal.getDomainsWithIssues
+esinternal.getDomainsWithIssuesArchive
+esinternal.getEBSOptions
+esinternal.getESCat
+esinternal.getESCluster
+esinternal.getElasticsearchDomainConfig
+esinternal.getElasticsearchVersion
+esinternal.getRecoveryInfo
+esinternal.getScalingParameters
+esinternal.getServiceAccessPolicies
+esinternal.getSnapshotOptions
+events.describeApiDestination
+events.describeEventBus
+events.describeEventSource
+events.describePartnerEventSource
+events.describeRule
+events.listApiDestinations
+events.listConnections
+events.listEventBuses
+events.listEventSources
+events.listPartnerEventSourceAccounts
+events.listPartnerEventSources
+events.listRuleNamesByTarget
+events.listRules
+events.listTargetsByRule
+events.testEventPattern
+fms.getAdminAccount
+fms.getComplianceDetail
+fms.getNotificationChannel
+fms.getPolicy
+fms.getProtectionStatus
+fms.listComplianceStatus
+fms.listMemberAccounts
+fms.listPolicies
+forecast.describeDataset
+forecast.describeDatasetGroup
+forecast.describeDatasetImportJob
+forecast.describeForecast
+forecast.describeForecastExportJob
+forecast.describePredictor
+forecast.getAccuracyMetrics
+forecast.listDatasetGroups
+forecast.listDatasetImportJobs
+forecast.listDatasets
+forecast.listForecastExportJobs
+forecast.listForecasts
+forecast.listPredictors
+fsx.describeBackups
+fsx.describeDataRepositoryTasks
+fsx.describeFileSystems
+fsx.describeSnapshots
+fsx.describeStorageVirtualMachines
+fsx.describeVolumes
+fsx.listTagsForResource
+gamescalerouting.describeAlias
+gamescalerouting.listAliases
+glacier.describeJob
+glacier.describeVault
+glacier.getDataRetrievalPolicy
+glacier.getVaultAccessPolicy
+glacier.getVaultLock
+glacier.getVaultNotifications
+glacier.listJobs
+glacier.listTagsForVault
+glacier.listVaults
+globalaccelerator.describeAccelerator
+globalaccelerator.describeAcceleratorAttributes
+globalaccelerator.describeEndpointGroup
+globalaccelerator.describeListener
+globalaccelerator.listAccelerators
+globalaccelerator.listEndpointGroups
+globalaccelerator.listListeners
+glue.batchGetPartition
+glue.checkSchemaVersionValidity
+glue.getCatalogImportStatus
+glue.getClassifier
+glue.getClassifiers
+glue.getCrawler
+glue.getCrawlerMetrics
+glue.getCrawlers
+glue.getDatabase
+glue.getDatabases
+glue.getDataflowGraph
+glue.getDevEndpoint
+glue.getDevEndpoints
+glue.getJob
+glue.getJobRun
+glue.getJobRuns
+glue.getJobs
+glue.getMapping
+glue.getPartition
+glue.getPartitions
+glue.getRegistry
+glue.getSchema
+glue.getSchemaByDefinition
+glue.getSchemaVersion
+glue.getSchemaVersionsDiff
+glue.getTable
+glue.getTableVersions
+glue.getTables
+glue.getTrigger
+glue.getTriggers
+glue.getUserDefinedFunction
+glue.getUserDefinedFunctions
+glue.listRegistries
+glue.listSchemaVersions
+glue.listSchemas
+glue.querySchemaVersionMetadata
+greengrass.getConnectivityInfo
+greengrass.getCoreDefinition
+greengrass.getCoreDefinitionVersion
+greengrass.getDeploymentStatus
+greengrass.getDeviceDefinition
+greengrass.getDeviceDefinitionVersion
+greengrass.getFunctionDefinition
+greengrass.getFunctionDefinitionVersion
+greengrass.getGroup
+greengrass.getGroupCertificateAuthority
+greengrass.getGroupVersion
+greengrass.getLoggerDefinition
+greengrass.getLoggerDefinitionVersion
+greengrass.getResourceDefinitionVersion
+greengrass.getServiceRoleForAccount
+greengrass.getSubscriptionDefinition
+greengrass.getSubscriptionDefinitionVersion
+greengrass.listCoreDefinitionVersions
+greengrass.listCoreDefinitions
+greengrass.listDeployments
+greengrass.listDeviceDefinitionVersions
+greengrass.listDeviceDefinitions
+greengrass.listFunctionDefinitionVersions
+greengrass.listFunctionDefinitions
+greengrass.listGroupVersions
+greengrass.listGroups
+greengrass.listLoggerDefinitionVersions
+greengrass.listLoggerDefinitions
+greengrass.listResourceDefinitionVersions
+greengrass.listResourceDefinitions
+greengrass.listSubscriptionDefinitionVersions
+greengrass.listSubscriptionDefinitions
+guardduty.getDetector
+guardduty.getFindings
+guardduty.getFindingsStatistics
+guardduty.getIPSet
+guardduty.getInvitationsCount
+guardduty.getMasterAccount
+guardduty.getMembers
+guardduty.getThreatIntelSet
+guardduty.listDetectors
+guardduty.listFindings
+guardduty.listIPSets
+guardduty.listInvitations
+guardduty.listMembers
+guardduty.listThreatIntelSets
+health.describeAffectedAccountsForOrganization
+health.describeAffectedEntities
+health.describeAffectedEntitiesForOrganization
+health.describeEntityAggregates
+health.describeEventAggregates
+health.describeEventDetails
+health.describeEventDetailsForOrganization
+health.describeEventTypes
+health.describeEvents
+health.describeEventsForOrganization
+health.describeHealthServiceStatusForOrganization
+hyperplaneopsservice.describeEniAttachment
+hyperplaneopsservice.describeFib
+hyperplaneopsservice.describeTgw
+hyperplaneopsservice.describeTgwAttachment
+hyperplaneopsservice.describeTgwRouteTable
+hyperplaneopsservice.describeTopGroups
+hyperplaneopsservice.describeTops
+hyperplaneopsservice.describeVirtualRouter
+hyperplaneopsservice.getRouteDetails
+hyperplaneopsservice.getStuckWorkflows
+iam.getAccessKeyLastUsed
+iam.getAccountAuthorizationDetails
+iam.getAccountPasswordPolicy
+iam.getAccountSummary
+iam.getContextKeysForCustomPolicy
+iam.getContextKeysForPrincipalPolicy
+iam.getCredentialReport
+iam.getGroup
+iam.getGroupPolicy
+iam.getInstanceProfile
+iam.getLoginProfile
+iam.getOpenIDConnectProvider
+iam.getPolicy
+iam.getPolicyVersion
+iam.getRole
+iam.getRolePolicy
+iam.getSAMLProvider
+iam.getSSHPublicKey
+iam.getServerCertificate
+iam.getUser
+iam.getUserPolicy
+iam.listAccessKeys
+iam.listAccountAliases
+iam.listAttachedGroupPolicies
+iam.listAttachedRolePolicies
+iam.listAttachedUserPolicies
+iam.listEntitiesForPolicy
+iam.listGroupPolicies
+iam.listGroups
+iam.listGroupsForUser
+iam.listInstanceProfiles
+iam.listInstanceProfilesForRole
+iam.listMFADevices
+iam.listOpenIDConnectProviders
+iam.listPolicies
+iam.listPolicyVersions
+iam.listRolePolicies
+iam.listRoles
+iam.listSAMLProviders
+iam.listSSHPublicKeys
+iam.listServerCertificates
+iam.listSigningCertificates
+iam.listUserPolicies
+iam.listUsers
+iam.listVirtualMFADevices
+iam.simulateCustomPolicy
+iam.simulatePrincipalPolicy
+iamadmin.dissociateRootMFADevice
+iamadmin.listMFADevices
+iaminternal.simulateCustomPolicyForOrgs
+imagebuilder.getComponent
+imagebuilder.getComponentPolicy
+imagebuilder.getContainerRecipe
+imagebuilder.getDistributionConfiguration
+imagebuilder.getImage
+imagebuilder.getImagePipeline
+imagebuilder.getImagePolicy
+imagebuilder.getImageRecipe
+imagebuilder.getImageRecipePolicy
+imagebuilder.getInfrastructureConfiguration
+imagebuilder.listComponentBuildVersions
+imagebuilder.listComponents
+imagebuilder.listContainerRecipes
+imagebuilder.listDistributionConfigurations
+imagebuilder.listImageBuildVersions
+imagebuilder.listImagePipelineImages
+imagebuilder.listImagePipelines
+imagebuilder.listImageRecipes
+imagebuilder.listImages
+imagebuilder.listInfrastructureConfigurations
+imagebuilder.listTagsForResource
+inspector.describeAssessmentRuns
+inspector.describeAssessmentTargets
+inspector.describeAssessmentTemplates
+inspector.describeCrossAccountAccessRole
+inspector.describeResourceGroups
+inspector.describeRulesPackages
+inspector.getTelemetryMetadata
+inspector.listAssessmentRunAgents
+inspector.listAssessmentRuns
+inspector.listAssessmentTargets
+inspector.listAssessmentTemplates
+inspector.listEventSubscriptions
+inspector.listRulesPackages
+inspector.listTagsForResource
+interconnectsupport.describeCgw
+interconnectsupport.describeVgw
+interconnectsupport.describeVpnConnection
+interconnectsupport.getVpnOperationalEvents
+iot.describeAuthorizer
+iot.describeCACertificate
+iot.describeCertificate
+iot.describeDefaultAuthorizer
+iot.describeEndpoint
+iot.describeIndex
+iot.describeJobExecution
+iot.describeThing
+iot.describeThingGroup
+iot.getEffectivePolicies
+iot.getIndexingConfiguration
+iot.getLoggingOptions
+iot.getPolicy
+iot.getPolicyVersion
+iot.getTopicRule
+iot.getV2LoggingOptions
+iot.listAttachedPolicies
+iot.listAuthorizers
+iot.listCACertificates
+iot.listCertificates
+iot.listCertificatesByCA
+iot.listJobExecutionsForJob
+iot.listJobExecutionsForThing
+iot.listJobs
+iot.listOutgoingCertificates
+iot.listPolicies
+iot.listPolicyPrincipals
+iot.listPolicyVersions
+iot.listPrincipalPolicies
+iot.listPrincipalThings
+iot.listRoleAliases
+iot.listTargetsForPolicy
+iot.listThingGroups
+iot.listThingGroupsForThing
+iot.listThingPrincipals
+iot.listThingRegistrationTasks
+iot.listThingTypes
+iot.listThings
+iot.listTopicRules
+iot.listV2LoggingLevels
+iotevents.describeDetectorModel
+iotevents.describeInput
+iotevents.describeLoggingOptions
+iotevents.listDetectorModelVersions
+iotevents.listDetectorModels
+iotevents.listInputs
+ioteventsdata.describeDetector
+ioteventsdata.listDetectors
+iotsecuredtunneling.describeTunnel
+iotsecuredtunneling.listTunnels
+iotsitewise.describeAccessPolicy
+iotsitewise.describeAsset
+iotsitewise.describeAssetModel
+iotsitewise.describeAssetProperty
+iotsitewise.describeDashboard
+iotsitewise.describeGateway
+iotsitewise.describeGatewayCapabilityConfiguration
+iotsitewise.describeLoggingOptions
+iotsitewise.describePortal
+iotsitewise.describeProject
+iotsitewise.listAccessPolicies
+iotsitewise.listAssetModels
+iotsitewise.listAssets
+iotsitewise.listAssociatedAssets
+iotsitewise.listDashboards
+iotsitewise.listGateways
+iotsitewise.listPortals
+iotsitewise.listProjectAssets
+iotsitewise.listProjects
+iotwireless.getDestination
+iotwireless.getDeviceProfile
+iotwireless.getPartnerAccount
+iotwireless.getServiceEndpoint
+iotwireless.getServiceProfile
+iotwireless.getWirelessDevice
+iotwireless.getWirelessDeviceStatistics
+iotwireless.getWirelessGateway
+iotwireless.getWirelessGatewayCertificate
+iotwireless.getWirelessGatewayFirmwareInformation
+iotwireless.getWirelessGatewayStatistics
+iotwireless.getWirelessGatewayTask
+iotwireless.getWirelessGatewayTaskDefinition
+iotwireless.listDestinations
+iotwireless.listDeviceProfiles
+iotwireless.listPartnerAccounts
+iotwireless.listServiceProfiles
+iotwireless.listTagsForResource
+iotwireless.listWirelessDevices
+iotwireless.listWirelessGatewayTaskDefinitions
+iotwireless.listWirelessGateways
+iss.searchCustomers
+k2remedy.createApprovalWorkflowTicket
+k2remedy.createConcessionRequest
+k2remedy.deleteServiceLinkedRole
+k2remedy.getApprovalWorkflowTicketDetails
+k2remedy.searchApprovalWorkflowTickets
+k2remedy.updateApprovalWorkflowTicket
+k2service.isAccountBlacklisted
+kafka.describeCluster
+kafka.getBootstrapBrokers
+kafka.listClusters
+kafka.listNodes
+kendra.describeDataSource
+kendra.describeFaq
+kendra.describeIndex
+kendra.listDataSources
+kendra.listFaqs
+kendra.listIndices
+kinesis.describeStream
+kinesis.listStreams
+kinesis.listTagsForStream
+kinesisanalytics.describeApplication
+kinesisanalytics.listApplications
+kinesisanalyticsv2.describeApplication
+kinesisanalyticsv2.describeApplicationSnapshot
+kinesisanalyticsv2.listApplicationSnapshots
+kinesisanalyticsv2.listApplications
+kinesisfirehose.describeDeliveryStream
+kinesisfirehose.listDeliveryStreams
+kms.describeKey
+kms.getKeyPolicy
+kms.getKeyRotationStatus
+kms.listAliases
+kms.listGrants
+kms.listKeyPolicies
+kms.listKeys
+kms.listResourceTags
+kms.listRetirableGrants
+kumoknowledge.addIndex
+kumoknowledge.createNamespace
+kumoknowledge.getContent
+kumoknowledge.getIndex
+kumoknowledge.getMapping
+kumoknowledge.getNamespace
+kumoknowledge.putContent
+kumoknowledge.putMapping
+kumoknowledge.searchContent
+kumoknowledge.suggestCompletions
+kumoscp.getAccountGroupInfo
+kumoscp.getCustomerAccountFullList
+kumoscp.getCustomerAccounts
+kumoscp.getCustomers
+kumoscp.getTags
+kumoscp.searchCustomers
+lambda.getAccountSettings
+lambda.getAlias
+lambda.getCodeSigningConfig
+lambda.getEventSourceMapping
+lambda.getFunction
+lambda.getFunctionCodeSigningConfig
+lambda.getFunctionConcurrency
+lambda.getFunctionConfiguration
+lambda.getFunctionEventInvokeConfig
+lambda.getLayerVersion
+lambda.getLayerVersionPolicy
+lambda.getPolicy
+lambda.getProvisionedConcurrencyConfig
+lambda.listAliases
+lambda.listCodeSigningConfigs
+lambda.listEventSourceMappings
+lambda.listFunctionEventInvokeConfigs
+lambda.listFunctions
+lambda.listFunctionsByCodeSigningConfig
+lambda.listLayerVersions
+lambda.listLayers
+lambda.listProvisionedConcurrencyConfigs
+lambda.listVersionsByFunction
+lex.getBot
+lex.getBotAlias
+lex.getBotAliases
+lex.getBotChannelAssociation
+lex.getBotChannelAssociations
+lex.getBotVersions
+lex.getBots
+lex.getBuiltinIntent
+lex.getBuiltinIntents
+lex.getBuiltinSlotTypes
+lex.getIntent
+lex.getIntentVersions
+lex.getIntents
+lex.getSlotType
+lex.getSlotTypeVersions
+lex.getSlotTypes
+licensemanager.getLicenseConfiguration
+licensemanager.getServiceSettings
+licensemanager.listAssociationsForLicenseConfiguration
+licensemanager.listFailuresForLicenseConfigurationOperations
+licensemanager.listLicenseConfigurations
+licensemanager.listLicenseSpecificationsForResource
+licensemanager.listResourceInventory
+licensemanager.listUsageForLicenseConfiguration
+lightsail.getActiveNames
+lightsail.getAlarms
+lightsail.getAutoSnapshots
+lightsail.getBlueprints
+lightsail.getBucketBundles
+lightsail.getBucketMetricData
+lightsail.getBuckets
+lightsail.getBundles
+lightsail.getCertificates
+lightsail.getContainerImages
+lightsail.getContainerServiceDeployments
+lightsail.getContainerServiceMetricData
+lightsail.getContainerServicePowers
+lightsail.getContainerServices
+lightsail.getDisk
+lightsail.getDiskSnapshot
+lightsail.getDiskSnapshots
+lightsail.getDisks
+lightsail.getDistributionBundles
+lightsail.getDistributionMetricData
+lightsail.getDistributions
+lightsail.getDomain
+lightsail.getDomains
+lightsail.getExportSnapshotRecords
+lightsail.getInstance
+lightsail.getInstanceMetricData
+lightsail.getInstancePortStates
+lightsail.getInstanceSnapshot
+lightsail.getInstanceSnapshots
+lightsail.getInstanceState
+lightsail.getInstances
+lightsail.getKeyPair
+lightsail.getKeyPairs
+lightsail.getLoadBalancer
+lightsail.getLoadBalancerMetricData
+lightsail.getLoadBalancerTlsCertificates
+lightsail.getLoadBalancers
+lightsail.getOperation
+lightsail.getOperations
+lightsail.getOperationsForResource
+lightsail.getRegions
+lightsail.getRelationalDatabase
+lightsail.getRelationalDatabaseMetricData
+lightsail.getRelationalDatabaseSnapshot
+lightsail.getRelationalDatabaseSnapshots
+lightsail.getRelationalDatabases
+lightsail.getStaticIp
+lightsail.getStaticIps
+lightsail.isVpcPeered
+lilyinternal.getAccountQuota
+lilyinternal.getOrganizationQuota
+lilyinternal.organizationDescribe
+lilyinternal.organizationFind
+lilyinternal.setAccountServiceLimit
+lilyinternal.setOrganizationServiceLimit
+lilyinternalv2.getAccountQuota
+lilyinternalv2.getOrganizationQuota
+lilyinternalv2.organizationDescribeV2
+lilyinternalv2.organizationFind
+lilyinternalv2.updateAccountServiceLimit
+lilyinternalv2.updateOrganizationServiceLimit
+lineitemdata.findBillsForAccount
+lineitemdata.findLatestBillVersion
+lineitemdata.getBasisItems
+lineitemdata.getBill
+lineitemdata.getBillFamily
+lineitemdata.getBillIdWithLegacyId
+lineitemdata.getBillVersion
+lineitemdata.getBillVersionTimestampWithLegacyId
+lineitemdata.getBillVersions
+lineitemdata.getLineItemAssociations
+lineitemdata.getLineItems
+logs.describeDestinations
+logs.describeExportTasks
+logs.describeLogGroups
+logs.describeLogStreams
+logs.describeMetricFilters
+logs.describeQueries
+logs.describeResourcePolicies
+logs.describeSubscriptionFilters
+logs.testMetricFilter
+lookoutmetrics.describeAlert
+lookoutmetrics.describeAnomalyDetectionExecutions
+lookoutmetrics.describeAnomalyDetector
+lookoutmetrics.describeMetricSet
+lookoutmetrics.getAnomalyGroup
+lookoutmetrics.getFeedback
+lookoutmetrics.getSampleData
+lookoutmetrics.listAlerts
+lookoutmetrics.listAnomalyDetectors
+lookoutmetrics.listAnomalyGroupSummaries
+lookoutmetrics.listAnomalyGroupTimeSeries
+lookoutmetrics.listMetricSets
+lookoutmetrics.listTagsForResource
+lumberyardbuildcatalog.describeBuild
+lumberyardbuildcatalog.listBuilds
+lumberyardww.describeApplicationAttributes
+lumberyardww.describeApplicationAutoScalingGroup
+lumberyardww.describeApplicationCapacity
+lumberyardww.describeApplicationEvents
+lumberyardww.describeApplicationPortSettings
+lumberyardww.describeApplicationStatus
+lumberyardww.describeApplicationUtilization
+lumberyardww.describeEC2InstanceLimits
+lumberyardww.describeGameSessionDetails
+lumberyardww.describeGameSessions
+lumberyardww.describeHostProcesses
+lumberyardww.describeHosts
+lumberyardww.describeLogUploadInfoForAuxProxy
+lumberyardww.describePlayerSessions
+lumberyardww.describeRuntimeConfiguration
+lumberyardww.describeScalingPolicies
+lumberyardww.getApplication
+lumberyardww.getApplicationResource
+lumberyardww.getApplicationStatus
+lumberyardww.getGameSessionLogUrl
+lumberyardww.getHostAccess
+lumberyardww.getHostConfiguration
+lumberyardww.getHosts
+lumberyardww.listApplications
+lumberyardww.searchGameSessions
+machinelearning.describeBatchPredictions
+machinelearning.describeDataSources
+machinelearning.describeEvaluations
+machinelearning.describeMLModels
+machinelearning.getBatchPrediction
+machinelearning.getDataSource
+machinelearning.getEvaluation
+machinelearning.getMLModel
+macie2.getClassificationExportConfiguration
+macie2.getCustomDataIdentifier
+macie2.getFindingStatistics
+macie2.getFindings
+macie2.listClassificationJobs
+macie2.listCustomDataIdentifiers
+macie2.listFindings
+managedblockchain.getMember
+managedblockchain.getNetwork
+managedblockchain.getNode
+managedblockchain.listMembers
+managedblockchain.listNetworks
+managedblockchain.listNodes
+maxis.getFolderDetails
+maxis.getFolderEdits
+maxis.getGroupMembers
+maxis.getIssue
+maxis.getIssueEdits
+maxis.getLabel
+maxis.getOperations
+maxis.getPreferences
+maxis.getResources
+maxis.searchFolders
+maxis.searchIssues
+maxis.searchLabels
+mediaconnect.describeFlow
+mediaconnect.listEntitlements
+mediaconnect.listFlows
+mediaconvert.describeEndpoints
+mediaconvert.getJob
+mediaconvert.getJobTemplate
+mediaconvert.getPreset
+mediaconvert.getQueue
+mediaconvert.listJobTemplates
+mediaconvert.listJobs
+medialive.describeChannel
+medialive.describeInput
+medialive.describeInputDevice
+medialive.describeInputSecurityGroup
+medialive.describeMultiplex
+medialive.describeOffering
+medialive.describeReservation
+medialive.describeSchedule
+medialive.listChannels
+medialive.listInputDevices
+medialive.listInputSecurityGroups
+medialive.listInputs
+medialive.listMultiplexes
+medialive.listOfferings
+medialive.listReservations
+mediapackage.describeChannel
+mediapackage.describeOriginEndpoint
+mediapackage.listChannels
+mediapackage.listOriginEndpoints
+mediastore.describeContainer
+mediastore.getContainerPolicy
+mediastore.getCorsPolicy
+mediastore.listContainers
+mediatailor.getPlaybackConfiguration
+mediatailor.listPlaybackConfigurations
+mgn.describeJobLogItems
+mgn.describeJobs
+mgn.describeReplicationConfigurationTemplates
+mgn.describeSourceServers
+mgn.describeVcenterClients
+mgn.getLaunchConfiguration
+mgn.getReplicationConfiguration
+mq.describeBroker
+mq.describeConfiguration
+mq.describeConfigurationRevision
+mq.describeUser
+mq.listBrokers
+mq.listConfigurationRevisions
+mq.listConfigurations
+mq.listUsers
+mwaa.getEnvironment
+mwaa.listEnvironments
+mwaa.listTagsForResource
+networkfirewall.describeFirewall
+networkfirewall.describeFirewallPolicy
+networkfirewall.describeLoggingConfiguration
+networkfirewall.describeRuleGroup
+networkfirewall.listFirewallPolicies
+networkfirewall.listFirewalls
+networkfirewall.listRuleGroups
+networkmanager.describeGlobalNetworks
+networkmanager.getConnectAttachment
+networkmanager.getConnectPeer
+networkmanager.getConnectPeerAssociations
+networkmanager.getConnections
+networkmanager.getCoreNetwork
+networkmanager.getCoreNetworkChangeSet
+networkmanager.getCoreNetworkPolicy
+networkmanager.getCustomerGatewayAssociations
+networkmanager.getDevices
+networkmanager.getLinkAssociations
+networkmanager.getLinks
+networkmanager.getNetworkResourceCounts
+networkmanager.getNetworkResourceRelationships
+networkmanager.getNetworkResources
+networkmanager.getNetworkRoutes
+networkmanager.getNetworkTelemetry
+networkmanager.getResourcePolicy
+networkmanager.getRouteAnalysis
+networkmanager.getSiteToSiteVpnAttachment
+networkmanager.getSites
+networkmanager.getTransitGatewayConnectPeerAssociations
+networkmanager.getTransitGatewayRegistrations
+networkmanager.getVpcAttachment
+networkmanager.listAttachments
+networkmanager.listConnectPeers
+networkmanager.listCoreNetworkPolicyVersions
+networkmanager.listCoreNetworks
+networkmanager.listTagsForResource
+opsworks.describeAgentVersions
+opsworks.describeApps
+opsworks.describeCommands
+opsworks.describeDeployments
+opsworks.describeEcsClusters
+opsworks.describeElasticIps
+opsworks.describeElasticLoadBalancers
+opsworks.describeInstances
+opsworks.describeLayers
+opsworks.describeLoadBasedAutoScaling
+opsworks.describeMyUserProfile
+opsworks.describePermissions
+opsworks.describeRaidArrays
+opsworks.describeRdsDbInstances
+opsworks.describeServiceErrors
+opsworks.describeStackProvisioningParameters
+opsworks.describeStackSummary
+opsworks.describeStacks
+opsworks.describeTimeBasedAutoScaling
+opsworks.describeUserProfiles
+opsworks.describeVolumes
+opsworks.getHostnameSuggestion
+opsworkscm.describeAccountAttributes
+opsworkscm.describeBackups
+opsworkscm.describeEvents
+opsworkscm.describeNodeAssociationStatus
+opsworkscm.describeServers
+organizations.listTagsForResource
+outposts.getOutpost
+outposts.getOutpostInstanceTypes
+outposts.listOutposts
+outposts.listSites
+paymentprofile.batchGetPaymentProfiles
+paymentprofile.createPaymentProfile
+paymentprofile.deletePaymentProfile
+paymentprofile.listPaymentProfiles
+paymentprofile.updatePaymentProfile
+personalize.describeAlgorithm
+personalize.describeCampaign
+personalize.describeDataset
+personalize.describeDatasetGroup
+personalize.describeDatasetImportJob
+personalize.describeEventTracker
+personalize.describeFeatureTransformation
+personalize.describeRecipe
+personalize.describeSchema
+personalize.describeSolution
+personalize.describeSolutionVersion
+personalize.listCampaigns
+personalize.listDatasetGroups
+personalize.listDatasetImportJobs
+personalize.listDatasets
+personalize.listEventTrackers
+personalize.listRecipes
+personalize.listSchemas
+personalize.listSolutionVersions
+personalize.listSolutions
+pinpoint.getAdmChannel
+pinpoint.getApnsChannel
+pinpoint.getApnsSandboxChannel
+pinpoint.getApnsVoipChannel
+pinpoint.getApnsVoipSandboxChannel
+pinpoint.getApp
+pinpoint.getApplicationSettings
+pinpoint.getApps
+pinpoint.getBaiduChannel
+pinpoint.getCampaign
+pinpoint.getCampaignActivities
+pinpoint.getCampaignVersion
+pinpoint.getCampaignVersions
+pinpoint.getCampaigns
+pinpoint.getEmailChannel
+pinpoint.getEndpoint
+pinpoint.getEventStream
+pinpoint.getExportJob
+pinpoint.getExportJobs
+pinpoint.getGcmChannel
+pinpoint.getImportJob
+pinpoint.getImportJobs
+pinpoint.getSegment
+pinpoint.getSegmentImportJobs
+pinpoint.getSegmentVersion
+pinpoint.getSegmentVersions
+pinpoint.getSegments
+pinpoint.getSmsChannel
+pinpointemail.getAccount
+pinpointemail.getBlacklistReports
+pinpointemail.getConfigurationSet
+pinpointemail.getConfigurationSetEventDestinations
+pinpointemail.getDedicatedIp
+pinpointemail.getDedicatedIps
+pinpointemail.getDeliverabilityDashboardOptions
+pinpointemail.getDeliverabilityTestReport
+pinpointemail.getDomainDeliverabilityCampaign
+pinpointemail.getDomainStatisticsReport
+pinpointemail.getEmailIdentity
+pinpointemail.listConfigurationSets
+pinpointemail.listDedicatedIpPools
+pinpointemail.listDeliverabilityTestReports
+pinpointemail.listDomainDeliverabilityCampaigns
+pinpointemail.listEmailIdentities
+pinpointemail.listTagsForResource
+pinpointsmsvoice.getConfigurationSetEventDestinations
+polly.describeVoices
+polly.getLexicon
+polly.listLexicons
+pos.charge
+pos.completeOfflinePaymentForInvoice
+pos.listInvoiceInfoAuditHistory
+pots.put
+pots.readActiveForSorLegacy
+pots.removeAllPoFromSorLegacy
+pps.get
+pps.list
+pps.set
+pricing.describeServices
+pricing.getAttributeValues
+pricing.getProducts
+quicksight.describeDashboard
+quicksight.describeDashboardPermissions
+quicksight.describeGroup
+quicksight.describeIAMPolicyAssignment
+quicksight.describeTemplate
+quicksight.describeTemplateAlias
+quicksight.describeTemplatePermissions
+quicksight.describeUser
+quicksight.listDashboards
+quicksight.listGroupMemberships
+quicksight.listGroups
+quicksight.listIAMPolicyAssignments
+quicksight.listIAMPolicyAssignmentsForUser
+quicksight.listTemplateAliases
+quicksight.listTemplateVersions
+quicksight.listTemplates
+quicksight.listUserGroups
+quicksight.listUsers
+r53takedown.blockRoute53HostedZone
+r53takedown.unblockRoute53HostedZone
+ram.getPermission
+ram.getResourceShareAssociations
+ram.getResourceShareInvitations
+ram.getResourceShares
+ram.listPendingInvitationResources
+ram.listPrincipals
+ram.listResourceSharePermissions
+ram.iterateResources
+rbin.getRule
+rbin.listRules
+rds.describeAccountAttributes
+rds.describeCertificates
+rds.describeDBClusterParameterGroups
+rds.describeDBClusterParameters
+rds.describeDBClusterSnapshots
+rds.describeDBClusters
+rds.describeDBEngineVersions
+rds.describeDBInstances
+rds.describeDBParameterGroups
+rds.describeDBParameters
+rds.describeDBSecurityGroups
+rds.describeDBSnapshotAttributes
+rds.describeDBSnapshots
+rds.describeDBSubnetGroups
+rds.describeEngineDefaultClusterParameters
+rds.describeEngineDefaultParameters
+rds.describeEventCategories
+rds.describeEventSubscriptions
+rds.describeEvents
+rds.describeExportTasks
+rds.describeOptionGroupOptions
+rds.describeOptionGroups
+rds.describeOrderableDBInstanceOptions
+rds.describePendingMaintenanceActions
+rds.describeReservedDBInstances
+rds.describeReservedDBInstancesOfferings
+rds.listTagsForResource
+redshift.describeClusterParameterGroups
+redshift.describeClusterParameters
+redshift.describeClusterSecurityGroups
+redshift.describeClusterSnapshots
+redshift.describeClusterSubnetGroups
+redshift.describeClusterVersions
+redshift.describeClusters
+redshift.describeDefaultClusterParameters
+redshift.describeEventCategories
+redshift.describeEventSubscriptions
+redshift.describeEvents
+redshift.describeHsmClientCertificates
+redshift.describeHsmConfigurations
+redshift.describeLoggingStatus
+redshift.describeOrderableClusterOptions
+redshift.describeReservedNodeOfferings
+redshift.describeReservedNodes
+redshift.describeResize
+redshift.describeSnapshotCopyGrants
+redshift.describeStorage
+redshift.describeTableRestoreStatus
+redshift.describeTags
+redshiftdata.describeStatement
+redshiftdata.listStatements
+rekognition.listCollections
+rekognition.listFaces
+resourcegroups.getGroup
+resourcegroups.getGroupQuery
+resourcegroups.getTags
+resourcegroups.listGroupResources
+resourcegroups.listGroups
+resourcegroups.searchResources
+robomaker.batchDescribeSimulationJob
+robomaker.describeDeploymentJob
+robomaker.describeFleet
+robomaker.describeRobot
+robomaker.describeRobotApplication
+robomaker.describeSimulationApplication
+robomaker.describeSimulationJob
+robomaker.listDeploymentJobs
+robomaker.listFleets
+robomaker.listRobotApplications
+robomaker.listRobots
+robomaker.listSimulationApplications
+robomaker.listSimulationJobs
+route53.getChange
+route53.getCheckerIpRanges
+route53.getGeoLocation
+route53.getHealthCheck
+route53.getHealthCheckCount
+route53.getHealthCheckLastFailureReason
+route53.getHealthCheckStatus
+route53.getHostedZone
+route53.getHostedZoneCount
+route53.getReusableDelegationSet
+route53.getTrafficPolicy
+route53.getTrafficPolicyInstance
+route53.getTrafficPolicyInstanceCount
+route53.listGeoLocations
+route53.listHealthChecks
+route53.listHostedZones
+route53.listHostedZonesByName
+route53.listResourceRecordSets
+route53.listReusableDelegationSets
+route53.listTrafficPolicies
+route53.listTrafficPolicyInstances
+route53.listTrafficPolicyInstancesByHostedZone
+route53.listTrafficPolicyInstancesByPolicy
+route53.listTrafficPolicyVersions
+route53domains.checkDomainAvailability
+route53domains.getContactReachabilityStatus
+route53domains.getDomainDetail
+route53domains.getOperationDetail
+route53domains.listDomains
+route53domains.listOperations
+route53domains.listTagsForDomain
+route53domains.viewBilling
+route53recoveryreadiness.getCell
+route53recoveryreadiness.getCellReadinessSummary
+route53recoveryreadiness.getReadinessCheck
+route53recoveryreadiness.getReadinessCheckResourceStatus
+route53recoveryreadiness.getReadinessCheckStatus
+route53recoveryreadiness.getRecoveryGroup
+route53recoveryreadiness.getRecoveryGroupReadinessSummary
+route53recoveryreadiness.listCells
+route53recoveryreadiness.listReadinessChecks
+route53recoveryreadiness.listRecoveryGroups
+route53recoveryreadiness.listResourceSets
+route53resolver.getFirewallConfig
+route53resolver.getFirewallDomainList
+route53resolver.getFirewallRuleGroup
+route53resolver.getFirewallRuleGroupAssociation
+route53resolver.getResolverDnssecConfig
+route53resolver.getResolverRulePolicy
+route53resolver.listFirewallConfigs
+route53resolver.listFirewallDomainLists
+route53resolver.listFirewallDomains
+route53resolver.listFirewallRuleGroupAssociations
+route53resolver.listFirewallRuleGroups
+route53resolver.listFirewallRules
+route53resolver.listResolverDnssecConfigs
+route53resolver.listResolverEndpointIpAddresses
+route53resolver.listResolverEndpoints
+route53resolver.listResolverRuleAssociations
+route53resolver.listResolverRules
+route53resolver.listTagsForResource
+rps.putWhiteListStatus
+s3.getBucketAccelerateConfiguration
+s3.getBucketAcl
+s3.getBucketAnalyticsConfiguration
+s3.getBucketCrossOriginConfiguration
+s3.getBucketEncryption
+s3.getBucketIntelligentTieringConfiguration
+s3.getBucketInventoryConfiguration
+s3.getBucketLifecycleConfiguration
+s3.getBucketLocation
+s3.getBucketLoggingConfiguration
+s3.getBucketMetricsConfiguration
+s3.getBucketNotificationConfiguration
+s3.getBucketOwnershipControls
+s3.getBucketPolicy
+s3.getBucketPolicyStatus
+s3.getBucketReplicationConfiguration
+s3.getBucketVersioningConfiguration
+s3.getBucketWebsiteConfiguration
+s3.getObjectLegalHold
+s3.getObjectLockConfiguration
+s3.getObjectRetention
+s3.getPublicAccessBlock
+s3.headBucket
+s3.listBucketAnalyticsConfigurations
+s3.listBucketIntelligentTieringConfigurations
+s3.listBucketInventoryConfigurations
+s3.listBucketMetricsConfigurations
+s3.listBuckets
+s3.listMultipartUploads
+s3.listObjects
+s3.listParts
+s3.listVersions
+s3control.describeJob
+s3control.describeMultiRegionAccessPointOperation
+s3control.getAccessPoint
+s3control.getAccessPointConfigurationForObjectLambda
+s3control.getAccessPointForObjectLambda
+s3control.getAccessPointPolicy
+s3control.getAccessPointPolicyForObjectLambda
+s3control.getAccessPointPolicyStatus
+s3control.getAccessPointPolicyStatusForObjectLambda
+s3control.getMultiRegionAccessPoint
+s3control.getMultiRegionAccessPointPolicy
+s3control.getMultiRegionAccessPointPolicyStatus
+s3control.getPublicAccessBlock
+s3control.getStorageLensConfiguration
+s3control.listAccessPoints
+s3control.listAccessPointsForObjectLambda
+s3control.listJobs
+s3control.listMultiRegionAccessPoints
+s3control.listStorageLensConfigurations
+sagemaker.describeAction
+sagemaker.describeAlgorithm
+sagemaker.describeApp
+sagemaker.describeArtifact
+sagemaker.describeAutoMLJob
+sagemaker.describeCompilationJob
+sagemaker.describeContext
+sagemaker.describeDataQualityJobDefinition
+sagemaker.describeDevice
+sagemaker.describeDeviceFleet
+sagemaker.describeDomain
+sagemaker.describeEdgePackagingJob
+sagemaker.describeEndpoint
+sagemaker.describeEndpointConfig
+sagemaker.describeExperiment
+sagemaker.describeFeatureGroup
+sagemaker.describeHumanTaskUi
+sagemaker.describeHyperParameterTuningJob
+sagemaker.describeImage
+sagemaker.describeImageVersion
+sagemaker.describeLabelingJob
+sagemaker.describeModel
+sagemaker.describeModelBiasJobDefinition
+sagemaker.describeModelExplainabilityJobDefinition
+sagemaker.describeModelPackage
+sagemaker.describeModelPackageGroup
+sagemaker.describeModelQualityJobDefinition
+sagemaker.describeMonitoringSchedule
+sagemaker.describeNotebookInstance
+sagemaker.describeNotebookInstanceLifecycleConfig
+sagemaker.describePipeline
+sagemaker.describePipelineDefinitionForExecution
+sagemaker.describePipelineExecution
+sagemaker.describeProcessingJob
+sagemaker.describeProject
+sagemaker.describeSubscribedWorkteam
+sagemaker.describeTrainingJob
+sagemaker.describeTransformJob
+sagemaker.describeTrial
+sagemaker.describeTrialComponent
+sagemaker.describeUserProfile
+sagemaker.describeWorkteam
+sagemaker.listActions
+sagemaker.listAlgorithms
+sagemaker.listApps
+sagemaker.listArtifacts
+sagemaker.listAssociations
+sagemaker.listAutoMLJobs
+sagemaker.listCandidatesForAutoMLJob
+sagemaker.listCodeRepositories
+sagemaker.listCompilationJobs
+sagemaker.listContexts
+sagemaker.listDataQualityJobDefinitions
+sagemaker.listDeviceFleets
+sagemaker.listDevices
+sagemaker.listDomains
+sagemaker.listEdgePackagingJobs
+sagemaker.listEndpointConfigs
+sagemaker.listEndpoints
+sagemaker.listExperiments
+sagemaker.listFeatureGroups
+sagemaker.listFlowDefinitions
+sagemaker.listHumanTaskUis
+sagemaker.listHyperParameterTuningJobs
+sagemaker.listImageVersions
+sagemaker.listImages
+sagemaker.listLabelingJobs
+sagemaker.listLabelingJobsForWorkteam
+sagemaker.listModelBiasJobDefinitions
+sagemaker.listModelExplainabilityJobDefinitions
+sagemaker.listModelPackageGroups
+sagemaker.listModelPackages
+sagemaker.listModelQualityJobDefinitions
+sagemaker.listModels
+sagemaker.listMonitoringExecutions
+sagemaker.listMonitoringSchedules
+sagemaker.listNotebookInstanceLifecycleConfigs
+sagemaker.listNotebookInstances
+sagemaker.listPipelineExecutionSteps
+sagemaker.listPipelineExecutions
+sagemaker.listPipelineParametersForExecution
+sagemaker.listPipelines
+sagemaker.listProcessingJobs
+sagemaker.listProjects
+sagemaker.listSubscribedWorkteams
+sagemaker.listTags
+sagemaker.listTrainingJobs
+sagemaker.listTrainingJobsForHyperParameterTuningJob
+sagemaker.listTransformJobs
+sagemaker.listTrialComponents
+sagemaker.listTrials
+sagemaker.listUserProfiles
+sagemaker.listWorkteams
+savingsplans.describeSavingsPlans
+secretsmanager.describeSecret
+secretsmanager.getResourcePolicy
+secretsmanager.listSecretVersionIds
+secretsmanager.listSecrets
+securityhub.getEnabledStandards
+securityhub.getFindings
+securityhub.getInsightResults
+securityhub.getInsights
+securityhub.getMasterAccount
+securityhub.getMembers
+securityhub.listEnabledProductsForImport
+securityhub.listInvitations
+securityhub.listMembers
+serverlessapplicationrepo.getApplication
+serverlessapplicationrepo.getApplicationPolicy
+serverlessapplicationrepo.getCloudFormationTemplate
+serverlessapplicationrepo.listApplicationDependencies
+serverlessapplicationrepo.listApplicationVersions
+serverlessapplicationrepo.listApplications
+servicecatalog.describeConstraint
+servicecatalog.describePortfolio
+servicecatalog.describeProduct
+servicecatalog.describeProductAsAdmin
+servicecatalog.describeProductView
+servicecatalog.describeProvisioningArtifact
+servicecatalog.describeProvisioningParameters
+servicecatalog.describeRecord
+servicecatalog.listAcceptedPortfolioShares
+servicecatalog.listConstraintsForPortfolio
+servicecatalog.listLaunchPaths
+servicecatalog.listPortfolioAccess
+servicecatalog.listPortfolios
+servicecatalog.listPortfoliosForProduct
+servicecatalog.listPrincipalsForPortfolio
+servicecatalog.listProvisioningArtifacts
+servicecatalog.listRecordHistory
+servicecatalog.scanProvisionedProducts
+servicecatalog.searchProducts
+servicequotas.getAWSDefaultServiceQuota
+servicequotas.getAssociationForServiceQuotaTemplate
+servicequotas.getRequestedServiceQuotaChange
+servicequotas.getServiceQuota
+servicequotas.getServiceQuotaIncreaseRequestFromTemplate
+servicequotas.listAWSDefaultServiceQuotas
+servicequotas.listRequestedServiceQuotaChangeHistory
+servicequotas.listRequestedServiceQuotaChangeHistoryByQuota
+servicequotas.listServiceQuotaIncreaseRequestsInTemplate
+servicequotas.listServiceQuotas
+servicequotas.listServices
+ses.describeActiveReceiptRuleSet
+ses.describeReceiptRule
+ses.describeReceiptRuleSet
+ses.getIdentityDkimAttributes
+ses.getIdentityMailFromDomainAttributes
+ses.getIdentityNotificationAttributes
+ses.getIdentityPolicies
+ses.getIdentityVerificationAttributes
+ses.getSendQuota
+ses.getSendStatistics
+ses.listIdentities
+ses.listIdentityPolicies
+ses.listReceiptFilters
+ses.listReceiptRuleSets
+ses.listVerifiedEmailAddresses
+shield.describeAttack
+shield.describeProtection
+shield.describeSubscription
+shield.listAttacks
+shield.listProtections
+silvermine.getCommunicationsStatus
+silvermine.getMessagesStatus
+silvermineunified.createEvent
+silvermineunified.createEventType
+silvermineunified.describeOnboardedEventTypes
+silvermineunified.describeReportedEventCommunicationsStatus
+silvermineunified.describeReportedEventEntities
+silvermineunified.describeReportedEventEntityAggregates
+silvermineunified.describeReportedEventMessagesStatus
+silvermineunified.describeReportedEvents
+silvermineunified.lockEvent
+silvermineunified.putEvent
+silvermineunified.putEventEntities
+silvermineunified.removeEventEntities
+silvermineunified.sendCommunicationForEvent
+silvermineunified.sendCommunicationForEventUpdate
+silvermineunified.unLockEvent
+silvermineunified.updateEvent
+silvermineunified.updateEventType
+silvermineunified.updateEventsCustomerImpact
+silvermineunified.updateEventsCustomerVisibility
+simpledb.domainMetadata
+simpledb.listDomains
+sms.getConnectors
+sms.getReplicationJobs
+sms.getReplicationRuns
+sms.getServers
+snowball.describeAddress
+snowball.describeAddresses
+snowball.describeJob
+snowball.getSnowballUsage
+snowball.listJobs
+sns.checkIfPhoneNumberIsOptedOut
+sns.getEndpointAttributes
+sns.getPlatformApplicationAttributes
+sns.getSMSAttributes
+sns.getSubscriptionAttributes
+sns.getTopicAttributes
+sns.listEndpointsByPlatformApplication
+sns.listPhoneNumbersOptedOut
+sns.listPlatformApplications
+sns.listSubscriptions
+sns.listSubscriptionsByTopic
+sns.listTopics
+sqs.getQueueAttributes
+sqs.getQueueUrl
+sqs.listDeadLetterSourceQueues
+sqs.listQueues
+ssm.describeActivations
+ssm.describeAssociation
+ssm.describeAssociationExecutionTargets
+ssm.describeAssociationExecutions
+ssm.describeAutomationExecutions
+ssm.describeAutomationStepExecutions
+ssm.describeAvailablePatches
+ssm.describeDocument
+ssm.describeDocumentPermission
+ssm.describeEffectiveInstanceAssociations
+ssm.describeEffectivePatchesForPatchBaseline
+ssm.describeInstanceAssociationsStatus
+ssm.describeInstanceInformation
+ssm.describeInstancePatchStates
+ssm.describeInstancePatchStatesForPatchGroup
+ssm.describeInstancePatches
+ssm.describeInventoryDeletions
+ssm.describeMaintenanceWindowExecutionTaskInvocations
+ssm.describeMaintenanceWindowExecutionTasks
+ssm.describeMaintenanceWindowExecutions
+ssm.describeMaintenanceWindowSchedule
+ssm.describeMaintenanceWindowTargets
+ssm.describeMaintenanceWindowTasks
+ssm.describeMaintenanceWindows
+ssm.describeMaintenanceWindowsForTarget
+ssm.describeOpsItems
+ssm.describeParameters
+ssm.describePatchBaselines
+ssm.describePatchGroupState
+ssm.describePatchGroups
+ssm.describePatchProperties
+ssm.describeSessions
+ssm.getAutomationExecution
+ssm.getCommandInvocation
+ssm.getConnectionStatus
+ssm.getDefaultPatchBaseline
+ssm.getDeployablePatchSnapshotForInstance
+ssm.getInventorySchema
+ssm.getMaintenanceWindow
+ssm.getMaintenanceWindowExecution
+ssm.getMaintenanceWindowExecutionTask
+ssm.getMaintenanceWindowExecutionTaskInvocation
+ssm.getMaintenanceWindowTask
+ssm.getOpsItem
+ssm.getPatchBaseline
+ssm.getPatchBaselineForPatchGroup
+ssm.getServiceSetting
+ssm.labelParameterVersion
+ssm.listAssociationVersions
+ssm.listAssociations
+ssm.listCommandInvocations
+ssm.listCommands
+ssm.listComplianceItems
+ssm.listComplianceSummaries
+ssm.listDocumentVersions
+ssm.listDocuments
+ssm.listOpsItemEvents
+ssm.listResourceComplianceSummaries
+ssm.listResourceDataSync
+ssm.listTagsForResource
+ssmcontacts.describeEngagement
+ssmcontacts.describePage
+ssmcontacts.getContact
+ssmcontacts.getContactChannel
+ssmcontacts.listContactChannels
+ssmcontacts.listContacts
+ssmcontacts.listEngagements
+ssmcontacts.listPageReceipts
+ssmcontacts.listPagesByContact
+ssmcontacts.listPagesByEngagement
+ssmincidents.getIncidentRecord
+ssmincidents.getReplicationSet
+ssmincidents.getResponsePlan
+ssmincidents.listIncidentRecords
+ssmincidents.listReplicationSets
+ssmincidents.listResponsePlans
+ssmincidents.listTimelineEvents
+states.describeActivity
+states.describeExecution
+states.describeStateMachine
+states.describeStateMachineForExecution
+states.getExecutionHistory
+states.listActivities
+states.listExecutions
+states.listStateMachines
+storagegateway.describeBandwidthRateLimit
+storagegateway.describeCache
+storagegateway.describeCachediSCSIVolumes
+storagegateway.describeFileSystemAssociations
+storagegateway.describeGatewayInformation
+storagegateway.describeMaintenanceStartTime
+storagegateway.describeNFSFileShares
+storagegateway.describeSMBFileShares
+storagegateway.describeSMBSettings
+storagegateway.describeSnapshotSchedule
+storagegateway.describeStorediSCSIVolumes
+storagegateway.describeTapeArchives
+storagegateway.describeTapeRecoveryPoints
+storagegateway.describeTapes
+storagegateway.describeUploadBuffer
+storagegateway.describeVTLDevices
+storagegateway.describeWorkingStorage
+storagegateway.listAutomaticTapeCreationPolicies
+storagegateway.listFileShares
+storagegateway.listFileSystemAssociations
+storagegateway.listGateways
+storagegateway.listLocalDisks
+storagegateway.listTagsForResource
+storagegateway.listTapes
+storagegateway.listVolumeInitiators
+storagegateway.listVolumeRecoveryPoints
+storagegateway.listVolumes
+support.describeCase
+support.searchCases
+swf.countClosedWorkflowExecutions
+swf.countOpenWorkflowExecutions
+swf.countPendingActivityTasks
+swf.countPendingDecisionTasks
+swf.describeActivityType
+swf.describeDomain
+swf.describeWorkflowExecution
+swf.describeWorkflowType
+swf.getWorkflowExecutionHistory
+swf.listActivityTypes
+swf.listClosedWorkflowExecutions
+swf.listDomains
+swf.listOpenWorkflowExecutions
+swf.listWorkflowTypes
+synthetics.describeCanaries
+synthetics.describeCanariesLastRun
+synthetics.describeRuntimeVersions
+synthetics.getCanary
+synthetics.getCanaryRuns
+transfer.describeServer
+transfer.describeUser
+transfer.listServers
+transfer.listTagsForResource
+transfer.listUsers
+trustedadvisor.describeAccount
+trustedadvisor.describeCheckItems
+trustedadvisor.describeNotificationPreferences
+trustedadvisor.describeTrustedAdvisorCheckRefreshStatuses
+trustedadvisor.describeTrustedAdvisorCheckResult
+trustedadvisor.describeTrustedAdvisorCheckSummaries
+trustedadvisor.describeTrustedAdvisorChecks
+trustedadvisor.refreshCheck
+tt.getTicket
+tt.searchTickets
+veracity.addRouteFilterPrefixToPublicVirtualInterface
+veracity.changeConnectionOwnership
+veracity.connectionFind
+veracity.findCustomerLimits
+veracity.getBgpNeighbor
+veracity.getBgpSummary
+veracity.getConnectionStateHistory
+veracity.getInterfaceTraffic
+veracity.getLogMessages
+veracity.getPublicVirtualInterfaceAllowedRoutes
+veracity.getRouteTables
+veracity.getRoutesAdvertised
+veracity.getRoutesAdvertisedWithCommunities
+veracity.getRoutesReceived
+veracity.getRoutesReceivedWithCommunities
+veracity.getVgwAttachmentHistory
+veracity.getVgwById
+veracity.getVgwByMappeId
+veracity.getVgwByNetworkId
+veracity.getVgwByObfuscatedId
+veracity.getVirtualInterface
+veracity.getVirtualInterfaceStateHistory
+veracity.k2MQueryForAdministrator
+veracity.k2MQueryForCustomerSupport
+veracity.k2MQueryForOperator
+veracity.k2QueryForAdministrator
+veracity.k2QueryForCustomerSupport
+veracity.k2QueryForOperator
+veracity.queryRouterForInterface
+veracity.searchPhysicalConnection
+veracity.searchResourceByAccount
+veracity.updateCustomerLimit
+vpnlighthouse.describeCgw
+vpnlighthouse.describeVgw
+vpnlighthouse.describeVpnConnection
+vpnlighthouse.getBgpNeighborDetails
+vpnlighthouse.getBgpSummary
+vpnlighthouse.getIpsecSaDetails
+vpnlighthouse.getRecentBgpFlaps
+vpnlighthouse.getRecentSlowProvisionings
+vpnlighthouse.getRecentlyCreatedObjects
+vpnlighthouse.getRecentlyDeletedObjects
+vpnlighthouse.getRouterCms
+vpnlighthouse.getRouterLogMessages
+vpnlighthouse.getRouterTickets
+vpnlighthouse.getRoutesAdvertised
+vpnlighthouse.getRoutesReceived
+vpnlighthouse.getSingleTunnelCustomers
+vpnlighthouse.getTransitioningObjects
+vpnlighthouse.getVpnOperationalEvents
+vpnlighthouse.getVpnStaticRouteHistory
+waf.getByteMatchSet
+waf.getChangeTokenStatus
+waf.getIPSet
+waf.getRule
+waf.getSampledRequests
+waf.getSizeConstraintSet
+waf.getSqlInjectionMatchSet
+waf.getWebACL
+waf.getXssMatchSet
+waf.listByteMatchSets
+waf.listIPSets
+waf.listRules
+waf.listSizeConstraintSets
+waf.listSqlInjectionMatchSets
+waf.listWebACLs
+waf.listXssMatchSets
+wafregional.getByteMatchSet
+wafregional.getChangeTokenStatus
+wafregional.getIPSet
+wafregional.getRule
+wafregional.getSqlInjectionMatchSet
+wafregional.getWebACL
+wafregional.getWebACLForResource
+wafregional.listByteMatchSets
+wafregional.listIPSets
+wafregional.iterateResourcesForWebACL
+wafregional.listRules
+wafregional.listSqlInjectionMatchSets
+wafregional.listWebACLs
+wafv2.checkCapacity
+wafv2.describeManagedRuleGroup
+wafv2.getIPSet
+wafv2.getLoggingConfiguration
+wafv2.getPermissionPolicy
+wafv2.getRateBasedStatementManagedKeys
+wafv2.getRegexPatternSet
+wafv2.getRuleGroup
+wafv2.getSampledRequests
+wafv2.getWebACL
+wafv2.getWebACLForResource
+wafv2.listAvailableManagedRuleGroups
+wafv2.listIPSets
+wafv2.listLoggingConfigurations
+wafv2.listRegexPatternSets
+wafv2.iterateResourcesForWebACL
+wafv2.listRuleGroups
+wafv2.listTagsForResource
+wafv2.listWebACLs
+workdocs.checkAlias
+workdocs.describeAvailableDirectories
+workdocs.describeInstances
+workmail.describeGroup
+workmail.describeOrganization
+workmail.describeResource
+workmail.describeUser
+workmail.listAliases
+workmail.listGroupMembers
+workmail.listGroups
+workmail.listMailboxPermissions
+workmail.listOrganizations
+workmail.listResourceDelegates
+workmail.iterateResources
+workmail.listUsers
+workspaces.describeAccount
+workspaces.describeAccountModifications
+workspaces.describeIpGroups
+workspaces.describeTags
+workspaces.describeWorkspaceBundles
+workspaces.describeWorkspaceDirectories
+workspaces.describeWorkspaceImages
+workspaces.describeWorkspaces
+workspaces.describeWorkspacesConnectionStatus
+workspacesoculus.getMaxGraphicsProWorkspaceLimit
+workspacesoculus.getMaxGraphicsWorkspaceLimit
+workspacesoculus.getMaxWorkspaceImagesLimit
+workspacesoculus.getMaxWorkspaceLimit
+workspacesoculus.updateMaxGraphicsProWorkspaceLimit
+workspacesoculus.updateMaxGraphicsWorkspaceLimit
+workspacesoculus.updateMaxWorkspaceImagesLimit
+workspacesoculus.updateMaxWorkspaceLimit
+workspacesweb.getBrowserSettings
+workspacesweb.getIdentityProvider
+workspacesweb.getNetworkSettings
+workspacesweb.getPortal
+workspacesweb.getPortalServiceProviderMetadata
+workspacesweb.getTrustStoreCertificate
+workspacesweb.getUserSettings
+workspacesweb.listBrowserSettings
+workspacesweb.listIdentityProviders
+workspacesweb.listNetworkSettings
+workspacesweb.listPortals
+workspacesweb.listTagsForResource
+workspacesweb.listTrustStoreCertificates
+workspacesweb.listTrustStores
+workspacesweb.listUserSettings
+'''
