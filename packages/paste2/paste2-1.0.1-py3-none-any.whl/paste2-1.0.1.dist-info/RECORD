@@ -1,0 +1,10 @@
+paste2/PASTE2.py,sha256=CUCCc9uZbWF-1ckbqkay-peAksnRDiufOlYRBRKUI1w,15773
+paste2/__init__.py,sha256=Sy9LWzc6BneSrJTv5soSNxMTy70CFkI7Rcf8Wxq13GA,242
+paste2/glmpca.py,sha256=W9RWisWnyR2h0nDAWF6BXQj9OPLIr-Y4sziVnjjWZjE,17750
+paste2/helper.py,sha256=7dGMqwmlW6KijBGVH0ZS7Z5UeqF4XUyN27zm-N7PxTI,5722
+paste2/model_selection.py,sha256=UEsKeAGODFc66QNusIptaB1gu7mGoIlxggL6HHiPPmI,8743
+paste2/projection.py,sha256=Mi9Q0NsZpQlReuyeft9cULdJnavbtbLXgibt-8bt1H8,2051
+paste2-1.0.1.dist-info/METADATA,sha256=HcZewG8Yn8qw9VuCvb8r3Ssxhlp9MmCL3c-IhKLtxHQ,4398
+paste2-1.0.1.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+paste2-1.0.1.dist-info/licenses/LICENSE,sha256=d02vBzakBPT8piS7KdpYbiov3KtUjOBCoI_WDIhkA8I,1507
+paste2-1.0.1.dist-info/RECORD,,
