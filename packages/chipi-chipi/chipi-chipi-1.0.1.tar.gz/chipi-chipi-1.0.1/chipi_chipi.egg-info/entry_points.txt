@@ -1,0 +1,2 @@
+[console_scripts]
+chipi-chipi = run_chipi_chipi.run:chipi_chipi
