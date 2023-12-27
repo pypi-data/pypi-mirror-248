@@ -1,0 +1,2 @@
+[console.scripts]
+pysavarin = savarin.__main__:main
