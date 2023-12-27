@@ -1,0 +1,5 @@
+[mkdocs.plugins]
+mkdocs_github_changelog = mkdocs_github_changelog.plugin:MkdocsGithubChangelogPlugin
+
+[mkdocs_github_changelog.jinja_environment_factory]
+default = mkdocs_github_changelog.get_releases:_EnvironmentFactory.default_environment
