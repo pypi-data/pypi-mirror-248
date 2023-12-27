@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: iotiumscraper
+Version: 0.2.2
+Summary: scrape data from kastle and push to postgres
+Author: Raja
+Requires-Dist: selenium
+Requires-Dist: chromedriver-py
+Requires-Dist: email
+Requires-Dist: imaplib
+Requires-Dist: psycopg2
+
