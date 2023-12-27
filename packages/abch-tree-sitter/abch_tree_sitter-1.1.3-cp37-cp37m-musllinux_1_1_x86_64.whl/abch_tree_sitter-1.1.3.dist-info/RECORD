@@ -1,0 +1,7 @@
+tree_sitter/__init__.py,sha256=mge5-69g6PVihpgMBvTlxvM0NEo9tSEgSRkKT-e_9X0,3554
+tree_sitter/binding.cpython-37m-x86_64-linux-gnu.so,sha256=HOBMpW9YEmakP3yfux7Avl7MIZ7JylAs6W_jf7YyA5g,1345960
+abch_tree_sitter-1.1.3.dist-info/WHEEL,sha256=QGwzqIMEvnYqYYAko0h2jgmqtukc_RGm8b-7TFBr9CA,112
+abch_tree_sitter-1.1.3.dist-info/LICENSE,sha256=GvB5BUP_-smd070pC_g8qWP0-AKQZetvNWOPTfhjro4,1088
+abch_tree_sitter-1.1.3.dist-info/RECORD,,
+abch_tree_sitter-1.1.3.dist-info/top_level.txt,sha256=oNKDFAeLi6i39EcTTW75DL0SE5sMBkgX0TRMpJe3Lrs,12
+abch_tree_sitter-1.1.3.dist-info/METADATA,sha256=XERlovWuSI0WpwmkVYtIxJo6b4N9FsZ11w4-mVn2A5s,7666
