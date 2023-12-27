@@ -1,0 +1,7 @@
+Pillow
+langchain
+openai
+python-dotenv
+requests
+streamlit
+transformers
