@@ -1,0 +1,5 @@
+setup.py
+d8n_shared.egg-info/PKG-INFO
+d8n_shared.egg-info/SOURCES.txt
+d8n_shared.egg-info/dependency_links.txt
+d8n_shared.egg-info/top_level.txt
