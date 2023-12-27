@@ -1,0 +1,5 @@
+setup.py
+calculatorJT.egg-info/PKG-INFO
+calculatorJT.egg-info/SOURCES.txt
+calculatorJT.egg-info/dependency_links.txt
+calculatorJT.egg-info/top_level.txt
