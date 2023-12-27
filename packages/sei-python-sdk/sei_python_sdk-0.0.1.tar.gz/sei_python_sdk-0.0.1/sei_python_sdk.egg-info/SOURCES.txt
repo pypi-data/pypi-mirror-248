@@ -1,0 +1,6 @@
+setup.py
+sei_python_sdk.egg-info/PKG-INFO
+sei_python_sdk.egg-info/SOURCES.txt
+sei_python_sdk.egg-info/dependency_links.txt
+sei_python_sdk.egg-info/not-zip-safe
+sei_python_sdk.egg-info/top_level.txt
