@@ -1,0 +1,100 @@
+Metadata-Version: 2.1
+Name: pyfin-trading
+Version: 1.0.0
+Summary: Making Finance easy in Python!
+Author: Poonam Deshmukh
+Author-email: poonamdeshmukh616@gmail.com
+Keywords: python,finance,algorithmic trading,technical indicators
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## Package for analyzing and visualizing financial time-series data
+
+Developed by Poonam Deshmukh (c) 2023.
+
+---
+
+#### Requirements
+
+`pyfin_trading` would need the following libraries to be installed
+
+- `pandas`
+- `numpy`
+- `yfinance`
+- `datetime`
+
+
+#### Installation
+
+You can install it via pip:
+
+```bash
+pip install pyfin-trading
+```
+
+#### Modules
+- `stock_data`
+- `stats`
+- `indicators`
+
+### 1. stock_data
+
+This module majorly helps with getting stock data and can be accessed as follows:
+
+```python
+from pyfin_trading import stock_data as sd
+
+df = sd.get_data(ticker, start_date, end_date, interval)
+```
+<br> - Input ticker symbol along with its corresponding exchange. <br> - Format for start_date & end_date must be "%Y-%m-%d" <br> - By default end_date is set to today <br> - Interval can take values like "1m", "2m", "5m", "15m", "30m", "60m", "90m", "1h", "1d", "5d", "1wk", "1mo", "3mo" <br> &nbsp; where m = minute, h = hour, d = day, wk = week, mo = month <br> - By default interval is set to "1d"
+
+### Example
+```python
+df = sd.get_data("ITC.NS", "2023-11-06")
+```
+This will return ITC's data from NSE spanning from 6th Nov 2023 to present day with interval set to daily
+
+### 2. stats
+
+It helps with calculating returns as well as some financial ratios:
+
+```python
+from pyfin_trading import stats as st
+
+returns = st.calculate_returns(df) # Calculates Daily & Cumulative Returns
+st.beta(df, market, interval)
+st.volatility(df, trading_days = 252) # Calculates SD & Annualized Volatility
+st.sharpe(df, risk, trading_days = 252) # Sharpe Ratio
+st.sortino(df, risk, trading_days = 252) # Sortino Ratio
+st.alpha(df, market, interval, beta, risk)
+st.treynor(df, beta, risk, trading_days = 252) # Treynor Ratio
+st.info(df, market, interval, risk, trading_days = 252) # Information Ratio
+```
+<br> - By default Nifty 50 is used as a proxy for the market i.e. "^NSEI"
+
+### 3. indicators
+
+For calculating technical indicators:
+
+```python
+from pyfin_trading import indicators as pt
+
+pt.sma(df, sma_period = 15) 
+pt.ema(df, ema_period = 15, adjust = False)
+pt.rsi(df, rsi_period = 14)
+pt.connors_rsi(df, rsi_period = 14, updown_length = 2)
+pt.stoch(df, k = 14, d = 3) # Stochastic Oscillator
+pt.bollinger_bands(df, sma_period = 20, std_dev = 2) # Bollinger Bands
+pt.aroon(df, aroon_period = 25) # Aroon Oscillator
+pt.macd(df, short_period = 12, long_period = 26, signal = 9, adjust = False) # Moving Average Convergence Divergence
+pt.ichimoku_cloud(df, conversion = 9, base = 26, lead_b = 52) # Ichimoku Cloud
+```
+
+
+---
