@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: crypto_plus
+Version: 0.1.4
+Summary: A Easy-to-use Crypto Tool
+License: MIT
+Author: wmymz
+Author-email: wmymz@icloud.com
+Requires-Python: >=3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: cryptography (>=41.0.7,<42.0.0)
+Requires-Dist: pycryptodome (>=3.19.0,<4.0.0)
+Description-Content-Type: text/markdown
+
+# Crypto Plus
+
+## 1. Overview
+
+A Easy-to-use Crypto Tool
+
+## 2. Usage
+
+### 2.1 init project
+
+```bash
+poetry install -v
+```
+
+### 2.2 usage
+
+TODO
+
+## 3. Develop
+
+You may need to read the [develop document](./docs/development.md) to use SRC Layout in your IDE.
+
