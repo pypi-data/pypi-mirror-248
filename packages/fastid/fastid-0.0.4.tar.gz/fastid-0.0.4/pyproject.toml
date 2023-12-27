@@ -1,0 +1,34 @@
+[build-system]
+requires = ["maturin>=1.4,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "fastid"
+description = "This is a library for quickly generating unique IDs in Python."
+authors = [{ name = "Seungwoo Hong", email = "qksn1541@gmail.com" }]
+requires-python = ">=3.7"
+keywords = ["unique-id", "id-generator", "ulid", "snowflake", "uuid"]
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3 :: Only",
+
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dynamic = ["version"]
+
+[project.urls]
+Repository = "https://github.com/HHongSeungWoo/fastid"
+
+[tool.maturin]
+features = ["pyo3/extension-module"]
