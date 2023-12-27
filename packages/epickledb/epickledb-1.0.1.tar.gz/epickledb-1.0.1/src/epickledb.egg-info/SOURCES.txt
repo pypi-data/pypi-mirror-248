@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/epickledb.egg-info/PKG-INFO
+src/epickledb.egg-info/SOURCES.txt
+src/epickledb.egg-info/dependency_links.txt
+src/epickledb.egg-info/requires.txt
+src/epickledb.egg-info/top_level.txt
+src/epickledb_tedd28014/__init__.py
+src/epickledb_tedd28014/epickledb.py
