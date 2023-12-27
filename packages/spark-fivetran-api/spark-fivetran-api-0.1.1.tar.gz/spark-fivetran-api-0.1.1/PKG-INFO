@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: spark-fivetran-api
+Version: 0.1.1
+Summary: A Python wrapper for the Fivetran API developed by the Spark Tech team ⭐️
+Home-page: https://github.com/Spark-Data-Team/spark-fivetran-api
+Author: Larry Page
+Author-email: tech@spark.do
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: datetime
+
+# Fivetran API
+
+A Python wrapper for the Fivetran API.
+
+## Installation
+
+```bash
+pip install FivetranAPI
+```
+
+## Usage
+
+```python
+from spark_fivetran_api import FivetranAPI
+
+api = ExchangeRateAPI(access_key="your_access_key")
+print(api.get_latest())
+```
+
+## License
+
+To create...
