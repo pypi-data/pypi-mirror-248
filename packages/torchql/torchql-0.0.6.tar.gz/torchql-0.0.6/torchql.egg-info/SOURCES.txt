@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+tests/test_database.py
+tests/test_query.py
+tests/test_table.py
+torchql/__init__.py
+torchql/database.py
+torchql/database_lazy.py
+torchql/query.py
+torchql/table.py
+torchql/table_lazy.py
+torchql/utils.py
+torchql.egg-info/PKG-INFO
+torchql.egg-info/SOURCES.txt
+torchql.egg-info/dependency_links.txt
+torchql.egg-info/requires.txt
+torchql.egg-info/top_level.txt
