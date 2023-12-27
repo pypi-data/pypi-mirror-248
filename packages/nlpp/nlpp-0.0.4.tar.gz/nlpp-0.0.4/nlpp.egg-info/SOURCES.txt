@@ -1,0 +1,7 @@
+setup.py
+nlpp/__init__.py
+nlpp/main.py
+nlpp.egg-info/PKG-INFO
+nlpp.egg-info/SOURCES.txt
+nlpp.egg-info/dependency_links.txt
+nlpp.egg-info/top_level.txt
