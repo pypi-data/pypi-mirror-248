@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "m3stat"
+version = "0.0.1"
+authors = [
+  { name="Burhan Uddin", email="burhan8.314@protonmail.com" },
+]
+description = "A small package for mean, median, mode"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]

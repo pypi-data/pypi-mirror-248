@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/m3stat/__init__.py
+src/m3stat.egg-info/PKG-INFO
+src/m3stat.egg-info/SOURCES.txt
+src/m3stat.egg-info/dependency_links.txt
+src/m3stat.egg-info/top_level.txt
