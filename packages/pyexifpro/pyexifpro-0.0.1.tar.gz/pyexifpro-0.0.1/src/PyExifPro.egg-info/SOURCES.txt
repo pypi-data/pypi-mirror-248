@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/PyExifPro.egg-info/PKG-INFO
+src/PyExifPro.egg-info/SOURCES.txt
+src/PyExifPro.egg-info/dependency_links.txt
+src/PyExifPro.egg-info/top_level.txt
+src/pyexifpro/__init__.py
+src/pyexifpro.egg-info/PKG-INFO
+src/pyexifpro.egg-info/SOURCES.txt
+src/pyexifpro.egg-info/dependency_links.txt
+src/pyexifpro.egg-info/top_level.txt

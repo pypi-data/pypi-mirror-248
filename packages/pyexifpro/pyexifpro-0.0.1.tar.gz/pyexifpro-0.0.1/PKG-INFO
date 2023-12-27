@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pyexifpro
+Version: 0.0.1
+Summary: An advanced Python library designed to read, manipulate, and write image metadata more efficiently and with extended capabilities compared to traditional EXIF handling tools.
+Author-email: Zachary Brugh <zacharyd.brugh@gmail.com>
+Project-URL: Homepage, https://github.com/zachbrugh/pyexifpro
+Project-URL: Documentation, https://github.com/zachbrugh/pyexifpro
+Project-URL: Source, https://github.com/zachbrugh/pyexifpro
+Project-URL: Issues, https://github.com/zachbrugh/pyexifpro/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Multimedia :: Graphics
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE

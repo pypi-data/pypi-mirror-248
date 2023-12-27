@@ -1,0 +1,24 @@
+[project]
+name = "pyexifpro"
+version = "0.0.1"
+authors = [
+  { name="Zachary Brugh", email="zacharyd.brugh@gmail.com" },
+]
+description = "An advanced Python library designed to read, manipulate, and write image metadata more efficiently and with extended capabilities compared to traditional EXIF handling tools."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Development Status :: 3 - Alpha",  # Update this as your project matures
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Multimedia :: Graphics"
+]
+
+[project.urls]
+Homepage = "https://github.com/zachbrugh/pyexifpro"  # Your project's main homepage
+Documentation = "https://github.com/zachbrugh/pyexifpro"  # Direct link to your project's main page which shows the README
+Source = "https://github.com/zachbrugh/pyexifpro"  # Link to the source code
+Issues = "https://github.com/zachbrugh/pyexifpro/issues"  # Direct link to the Issues page for your project
