@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: zwift-workouts-parser
+Version: 1.0.1
+Summary: A package that allows you to download workouts from https://whatsonzwift.com
+Home-page: https://github.com/alexshpunt/zwift_workouts_parser
+Author: Alexander Shpuntenko
+Author-email: shpuntenko.a@gmail.com
+Project-URL: Bug Tracker, https://github.com/alexshpunt/zwift_workouts_parser/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: beautifulsoup4
+Requires-Dist: certifi
+Requires-Dist: lxml
+
+Zwift Workouts Parser 
+---------------------
+
+Want to try a workout of some specific plan on Zwift but don't want to start the plan? Use this utility to parse any desired plan or workout straight from the https://whatsonzwift.com. 
+
+Just feed it with an URL and it will export everything it can into .zwo files which you can import into Zwift and try them out. 
+
+Installation
+------------
+`pip install zwift-workouts-parser`
+
+`pip install bs4`
+`pip install certifi`
+`pip install lxml`
