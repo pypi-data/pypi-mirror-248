@@ -1,0 +1,13 @@
+aclib/cv/__init__.py,sha256=Z6hhmNwxn2ikg6tHUvYK5ETUmY--aSB2OszU6xjt7TA,169
+aclib/cv/_typing.py,sha256=JafC_79kl7itY-mOQHFbu1XZZotJxdTTCITzS8_REe4,69
+aclib/cv/__API__/color.py,sha256=egAJCAjw4_J0bqeMCO81SywGkF6ciSgyccQrahOxcR4,3413
+aclib/cv/__API__/dotset.py,sha256=C1KihokWy1iRwm3A1WZxp87FzjD4Q2P1fVxfZFpd2zQ,5562
+aclib/cv/__API__/dotsetlib.py,sha256=36V0JjKFDsK_FfxA5H1Om3VYVZlq5qhuCJEJDR9aUQ0,3813
+aclib/cv/__API__/dsetsimmat.py,sha256=8YsDtbAKHxCcIsV9-DKY9LQD2Zqpjir4Djf0OBCA0hs,5692
+aclib/cv/__API__/image.py,sha256=CX174hLmxcSBKHr8_F_aZpSQcSxZDzn17fKieofrDr8,21288
+aclib/cv/__API__/target.py,sha256=fw4_g1jh0TnxEPeyA4iZB4_APcCpNV_FGhuwPc_giNA,3147
+aclib.cv-1.0.6.dist-info/LICENSE,sha256=bXHfyJIO-YrYduFdOrf22pRCLqWSptELWVkyDnOO0sI,1087
+aclib.cv-1.0.6.dist-info/METADATA,sha256=a5IZTO03Fh5nsWMOIR2gTyX0FVK9eGd44cPPfCP5850,1280
+aclib.cv-1.0.6.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+aclib.cv-1.0.6.dist-info/top_level.txt,sha256=4p3w-82zX4lxXZrjR9Ws2bqRHCpcTLqoEUJaYmT3uyo,6
+aclib.cv-1.0.6.dist-info/RECORD,,
