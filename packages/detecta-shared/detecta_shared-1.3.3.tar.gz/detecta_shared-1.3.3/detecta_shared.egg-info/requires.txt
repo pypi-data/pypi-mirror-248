@@ -1,0 +1,10 @@
+numpy
+pika
+jsonpickle
+elasticsearch
+psutil
+opentelemetry-api
+opentelemetry-exporter-otlp
+opentelemetry-instrumentation-pika
+opentelemetry-instrumentation-system-metrics
+opentelemetry-sdk
