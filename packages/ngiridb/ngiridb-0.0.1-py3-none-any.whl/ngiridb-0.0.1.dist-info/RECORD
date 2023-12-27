@@ -1,0 +1,16 @@
+ngiridb/__init__.py,sha256=NwtPpZCKaIdhhA8l0o4VeqqntQw8GDzHeJr8hymW8Mc,108
+ngiridb/core.py,sha256=Y7sx0S-Qt9ljttD88ITLZrZ0Xm2P6Aq19tml7w4p2CQ,20236
+ngiridb/importer.py,sha256=UeU5jzybPYKDTLCnip0SD-NJ6JV0mqSPIDYIHGbC1fM,1104
+ngiridb/interfaces.py,sha256=5zYdeU3B_4B58Cr8IYh7cGfiq6qryXQOAz2bHqUZqZI,2566
+ngiridb/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+ngiridb/backends/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ngiridb/backends/aiopg.py,sha256=zzG_ld_PywkIPKpGhKMgpXviSX3CVBJSBHiXxh480M8,10149
+ngiridb/backends/asyncmy.py,sha256=9il_ylgDRA5GT8LwholB9Tjkb8LdAD84EIbA0f_TpHk,10526
+ngiridb/backends/mysql.py,sha256=BKEnwpJ3vW2C8_SgBMpm6RiqnLPfCY0bi1ee2HETfbU,10136
+ngiridb/backends/postgres.py,sha256=QLn0LkrreNA9OuQA1iv0QVf14eFfpG0PZgpFTruDHW4,12051
+ngiridb/backends/sqlite.py,sha256=Hpj7CuyI57w9V9JNZ0CDpnNK-03qGI6uHm4dKlYFHrU,9744
+ngiridb-0.0.1.dist-info/LICENSE,sha256=ti06RGRiMSkmkVFxcj47PEMXkuFzWunjiWzZcvTszA0,1074
+ngiridb-0.0.1.dist-info/METADATA,sha256=O0JbQIbe9y7UfVaXJbpiyTNZTooRZUz-D9lfZdZMxnA,4846
+ngiridb-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+ngiridb-0.0.1.dist-info/top_level.txt,sha256=J747FqdERPogDiAGxTX6tCqryGu8PfKKWjU8--pdUQo,25
+ngiridb-0.0.1.dist-info/RECORD,,
