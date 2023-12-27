@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+tv05/__init__.py
+tv05.egg-info/PKG-INFO
+tv05.egg-info/SOURCES.txt
+tv05.egg-info/dependency_links.txt
+tv05.egg-info/not-zip-safe
+tv05.egg-info/top_level.txt
