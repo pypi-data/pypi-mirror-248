@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pycaptcha-guard
+Version: 0.1.1
+Summary: Solve any kind of captcha like human
+Home-page: UNKNOWN
+Author: AleenaMuskan
+Author-email: aleenakhanraees40@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+<!-- ____pycaptcha-guard____ -->
+
