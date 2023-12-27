@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: blocconi
+Version: 0.1.5
+Summary: BLOCCONI: BLOCk and CONnect Illustrator
+Author: Tsuyoshi Kamenoue
+Author-email: guishang0703@gmail.com
+Maintainer: Tsuyoshi Kamenoue
+Maintainer-email: guishang0703@gmail.com
+License: BSD 3-Clause
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Framework :: Matplotlib
+Requires-Python: >=3.6
+Requires-Dist: matplotlib (>=3.3.4)
+
