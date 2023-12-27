@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+FileToFolder/__init__.py
+FileToFolder/main.py
+file_to_folder.egg-info/PKG-INFO
+file_to_folder.egg-info/SOURCES.txt
+file_to_folder.egg-info/dependency_links.txt
+file_to_folder.egg-info/top_level.txt
