@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: itemseg
+Version: 1.2.0
+Summary: 10-K Report Item Segmentation with Line-based Attention (ISLA)
+Project-URL: Documentation, https://github.com/hsinmin/isla#readme
+Project-URL: Issues, https://github.com/hsinmin/itemseg/issues
+Project-URL: Source, https://github.com/hsinmin/itemseg
+Author-email: "Hsin-Min Lu; Huan-Hsun Yen; Yen-Hsiu Chen" <luim@ntu.edu.tw>
+License-File: LICENSE.txt
+Keywords: 10-K,Item Segmentation,Sequence Labeling
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: Free for non-commercial use
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: gensim>=4.3.0
+Requires-Dist: inscriptis>=2.3.2
+Requires-Dist: nltk>=3.5
+Requires-Dist: numpy>=1.23.0
+Requires-Dist: pandas>=1.1.0
+Requires-Dist: python-crfsuite>=0.9.7
+Requires-Dist: requests>=2.22.0
+Requires-Dist: scikit-learn>=0.24.2
+Requires-Dist: scipy>=1.10.0
+Requires-Dist: torch>=1.13.1
+Requires-Dist: urllib3>=1.25.8
+Description-Content-Type: text/markdown
+
+# itemseg
+
+10-K Item Segmentation with Line-based Attention (ISLA) is a tool to process
+EDGAR 10-K reports and extract item-specific text. 
+
+
+[![PyPI - Version](https://img.shields.io/pypi/v/itemseg.svg)](https://pypi.org/project/itemseg)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/itemseg.svg)](https://pypi.org/project/itemseg)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip3 install itemseg
+```
+
+### Download resource file
+```console
+python3 -m itemseg --get_resource
+```
+
+### Download nltk data
+
+Launch python3 console
+```console
+>>> import nltk
+>>> nltk.download('punkt')
+```
+
+### Obtain 10-K file and segment items
+Use Apple 10-K (2023) as an example
+```console
+python3 -m itemseg --input https://www.sec.gov/Archives/edgar/data/320193/000032019323000106/0000320193-23-000106.txt
+```
+
+See the results in ./segout01/
+
+## License
+
+`itemseg` is distributed under the terms of the [CC BY-NC](https://creativecommons.org/licenses/by-nc/4.0/) license.
