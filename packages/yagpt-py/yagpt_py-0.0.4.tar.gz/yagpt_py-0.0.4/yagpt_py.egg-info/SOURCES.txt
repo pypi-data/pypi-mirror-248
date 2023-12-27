@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+yagpt_py/__init__.py
+yagpt_py/authData.py
+yagpt_py/messages.py
+yagpt_py/response.py
+yagpt_py.egg-info/PKG-INFO
+yagpt_py.egg-info/SOURCES.txt
+yagpt_py.egg-info/dependency_links.txt
+yagpt_py.egg-info/requires.txt
+yagpt_py.egg-info/top_level.txt
