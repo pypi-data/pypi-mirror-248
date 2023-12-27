@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: huum
+Version: 0.7.2
+Summary: Python library for Huum saunas
+Author: Frank Wickström
+Author-email: frwickst@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: aiohttp
+Requires-Dist: aiohttp (>=3.9.1,<4.0.0) ; extra == "aiohttp"
+Requires-Dist: pydantic (>=2.5.3,<3.0.0)
+Requires-Dist: pydantic-settings (>=2.1.0,<3.0.0)
