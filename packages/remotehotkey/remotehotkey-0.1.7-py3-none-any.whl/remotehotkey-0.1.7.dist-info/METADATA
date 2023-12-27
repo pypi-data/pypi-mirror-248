@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: remotehotkey
+Version: 0.1.7
+Summary: remotehotkey
+Home-page: 
+Author: gw
+Author-email: 
+License: MIT
+Requires-Dist: flask
+Requires-Dist: opencv-python
+Requires-Dist: numpy
+Requires-Dist: mss
+Requires-Dist: pynput
+
