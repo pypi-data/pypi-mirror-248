@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: django-fast-iprestrict
+Version: 0.4.2
+Summary: 
+License: MIT
+Author: alex
+Author-email: devkral@web.de
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: ratelimit
+Requires-Dist: django (>=4.0)
+Requires-Dist: django-fast-ratelimit (>=3.0.0) ; extra == "ratelimit"
+Description-Content-Type: text/markdown
+
+# What
+
+iprestriction based on django-fast-ratelimit (therefor the name: django-fast-iprestrict)
+
+# settings
+
+IPRESTRICT_DEFAULT_ACTION: allow/deny : default action when no rule matches, default, when not set allow
+
+# TODO
+
+-   tests
+-   docs
+-   cleanup
+-   lockout prevention
+
