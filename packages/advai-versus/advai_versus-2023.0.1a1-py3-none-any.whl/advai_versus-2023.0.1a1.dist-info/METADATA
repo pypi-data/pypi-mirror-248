@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: advai-versus
+Version: 2023.0.1a1
+Summary: A simple namespace project.
+Author-email: "Advai Ltd." <support@advai.co.uk>
+Project-URL: homepage, https://www.advai.co.uk
+Project-URL: repository, https://github.com/Advai-Ltd/advai-versus
+Keywords: Advai
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Advai
+
+This is a Python package that provides a basic FastAPI application, demonstrating a simple RESTful API structure. 
+
+It's current version is intended test for deploying packages to pypi
+
+# Features
+
+- This is a namespace test application
+
+# Installation
+
+You can install advai directly from PyPI:
+
+```
+pip install advai
+```
+
+# Quick Start
+
+After installation, you can start using advai by creating a FastAPI application. Here's a quick example:
+
+```
+from advai import create_app
+
+app = create_app()
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
+```
+
+To run the app, use the following command:
+
+```
+uvicorn your_script_name:app --reload
+```
+
+# Running Tests
+To run tests, navigate to your project directory and execute:
+
+```
+pytest
+```
+
+# Docker and Kubernetes Support
+This template does not currently contain docker or kubenetes configurations
+
+# Contributing
+Contributions are welcome! Please read our contributing guidelines for more information.
+
+# License
+advai is released under the MIT License.
+
+# Authors
+- Advai Development Lead
