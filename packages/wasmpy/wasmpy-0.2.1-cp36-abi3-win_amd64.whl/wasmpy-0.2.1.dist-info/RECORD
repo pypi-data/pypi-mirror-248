@@ -1,0 +1,7 @@
+wasmpy/nativelib.pyd,sha256=oKMuw69xgbmEtv_ELhqNk5LsJodKE2BHiLsOWtTaSVo,66560
+wasmpy/builtin/spectest.pyd,sha256=kx0s2c92xe4kmB45SoE72CUs9TP1YXAEfvxhw2AWITs,14848
+wasmpy-0.2.1.dist-info/LICENSE,sha256=VGx6YZ5_6LWTqSrTLOzrmq7Cy6eFv83qbPo57-A_f4E,1068
+wasmpy-0.2.1.dist-info/METADATA,sha256=AYw34fQ0zr-binupN73_9-bpRNWiM40aSoh-NHkta68,153
+wasmpy-0.2.1.dist-info/WHEEL,sha256=nYCSW5p8tLyDU-wbqo3uRlCluAzwxLmyyRK2pVs4-Ag,100
+wasmpy-0.2.1.dist-info/top_level.txt,sha256=stKOyr4rDr_7Lh9NkBBGW5NFkXMSsqXxwBc6P24s8w0,7
+wasmpy-0.2.1.dist-info/RECORD,,
