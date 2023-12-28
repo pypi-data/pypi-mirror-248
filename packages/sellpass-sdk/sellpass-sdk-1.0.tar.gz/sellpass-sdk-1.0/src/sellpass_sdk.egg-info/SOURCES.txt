@@ -1,0 +1,5 @@
+setup.py
+src/sellpass_sdk.egg-info/PKG-INFO
+src/sellpass_sdk.egg-info/SOURCES.txt
+src/sellpass_sdk.egg-info/dependency_links.txt
+src/sellpass_sdk.egg-info/top_level.txt
