@@ -1,0 +1,18 @@
+{
+    "rust-analyzer.linkedProjects": [
+        "./generators/wasm-example/Cargo.toml",
+        "./ssd-data/Cargo.toml"
+    ],
+    "cSpell.words": [
+        "anydata",
+        "canonicalize",
+        "Rhai",
+        "rsplitn",
+        "shellexpand",
+        "splitn",
+        "Tera",
+        "typemap",
+        "typepath",
+        "wasi"
+    ]
+}
