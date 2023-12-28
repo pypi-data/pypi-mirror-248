@@ -1,0 +1,17 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+clovax/__init__.py
+clovax/clovax.py
+clovax/constants.py
+clovax/errors.py
+clovax.egg-info/PKG-INFO
+clovax.egg-info/SOURCES.txt
+clovax.egg-info/dependency_links.txt
+clovax.egg-info/not-zip-safe
+clovax.egg-info/requires.txt
+clovax.egg-info/top_level.txt
+doc/clova-logo.png
+test/test.py
+test/test_skillset.py
