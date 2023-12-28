@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/character_range/__init__.py
+src/character_range/character_and_byte_map.py
+src/character_range/string_and_bytes_range.py
+src/character_range.egg-info/PKG-INFO
+src/character_range.egg-info/SOURCES.txt
+src/character_range.egg-info/dependency_links.txt
+src/character_range.egg-info/requires.txt
+src/character_range.egg-info/top_level.txt
+tests/test_character_and_byte_map.py
+tests/test_string_and_bytes_range.py
