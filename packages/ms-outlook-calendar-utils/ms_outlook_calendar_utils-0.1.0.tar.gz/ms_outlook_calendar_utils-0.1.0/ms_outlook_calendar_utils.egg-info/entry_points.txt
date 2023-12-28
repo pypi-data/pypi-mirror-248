@@ -1,0 +1,2 @@
+[console_scripts]
+clone-calendar-events = ms_outlook_calendar_utils.clone_calendar_events:main
