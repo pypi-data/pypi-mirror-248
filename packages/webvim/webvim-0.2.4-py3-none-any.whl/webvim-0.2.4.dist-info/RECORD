@@ -1,0 +1,17 @@
+daemon/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+daemon/mac.py,sha256=jjGFuMuhh1b-4ePnfzh02huT3_UmrSkNjk2Uu-sMtXE,2695
+daemon/termux.py,sha256=HOwHLT3x_BVcmfy9vq0tTJNDq92fCWJvUEqv7rfefNA,1594
+daemon/utils.py,sha256=ak5EgC0vXqrUAWA1ounUKYk_rgBdfPc0K-XMDajXAe4,294
+editor/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+editor/editor.py,sha256=EbkYIL_Lxz9X14rlXbM6x47O4_uhiSmlKCwMLilkPkQ,6587
+editor/static/index.html,sha256=zRB6M-mOro-Mv5YaKSxSJRuhDkmIuPWPnRCU89CEEx4,428
+editor/static/logo.svg,sha256=6G0d4lLNZ207gwnZGSOmYfCY38BA2RNQi-bsW6Waw8c,8377
+editor/static/assets/index-Gt6ZQ-uZ.css,sha256=r-z4eQYt_I19YyJ0Q_rMxZb0Gkg6Glr715MdodhYiU0,32640
+editor/static/assets/index-vALBXy1w.js,sha256=F52grS5stWkWpSaESg772jLmTTEkkdRnvnkBZRRnHw4,399217
+editor/static/assets/logo-IgEysxkL.svg,sha256=6G0d4lLNZ207gwnZGSOmYfCY38BA2RNQi-bsW6Waw8c,8377
+editor/static/assets/source_sans-HsFb1qe3.woff,sha256=4ppXym_xSqFSK1sYxUPXogFs3Xu6YyHWBN-jUZ8Osec,29448
+webvim-0.2.4.dist-info/METADATA,sha256=ZJRkryelmwUm8rjSJ4jcwPyNTiwAw5WT22tyMaj37pw,571
+webvim-0.2.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+webvim-0.2.4.dist-info/entry_points.txt,sha256=XWRDk0pYXGm7rnVnGVRBEQOH265Jlt5-7wWS9COuiZk,49
+webvim-0.2.4.dist-info/top_level.txt,sha256=ZrMLKHQllHNVIH_eNvTOLiQiyPuT7qSIxakRfxDfrqE,14
+webvim-0.2.4.dist-info/RECORD,,
