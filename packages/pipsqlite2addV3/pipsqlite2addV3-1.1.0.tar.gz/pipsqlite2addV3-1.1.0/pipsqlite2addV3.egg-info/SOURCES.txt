@@ -1,0 +1,6 @@
+setup.py
+pipsqlite2addV3/__init__.py
+pipsqlite2addV3.egg-info/PKG-INFO
+pipsqlite2addV3.egg-info/SOURCES.txt
+pipsqlite2addV3.egg-info/dependency_links.txt
+pipsqlite2addV3.egg-info/top_level.txt
