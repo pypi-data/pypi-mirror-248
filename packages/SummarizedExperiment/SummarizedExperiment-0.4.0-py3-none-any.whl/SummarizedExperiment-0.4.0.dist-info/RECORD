@@ -1,0 +1,12 @@
+summarizedexperiment/BaseSE.py,sha256=4WAWbIHcgppUbdADcB9ba8l2i5lSoAy03YH2pAFg0Ko,36634
+summarizedexperiment/RangedSummarizedExperiment.py,sha256=OOV2hFE6urq9RgewSret33vYTwMP7vXnawgcvdT3vq0,35939
+summarizedexperiment/SummarizedExperiment.py,sha256=JoAjbQXoYhqtyusoeiKWdScFfCDJ-qZ3wIsRm5PrH9E,8208
+summarizedexperiment/__init__.py,sha256=fkFNqjLV8a_tGW6i9_MmWYXxhDiCrHLg5b5x-JLaX3s,714
+summarizedexperiment/_combineutils.py,sha256=lx5eXWCE0e6MZ_Hwe1Ly5bKQ6iBYCdwpPnr0FWpbyaM,3207
+summarizedexperiment/_frameutils.py,sha256=14s-DZTK0XpFGB8gSGEcLBWBl9JOa1HENzK-L23Zl2Y,630
+summarizedexperiment/type_checks.py,sha256=J0n_V1Iawl9r5FO3wyYOsWchphLQox9VMTGbL6HuQK8,1700
+SummarizedExperiment-0.4.0.dist-info/LICENSE.txt,sha256=pkwgQ8WMTR1-Qa0qwIaBf5I1-8OGN1B20E_eeDg-bqc,1082
+SummarizedExperiment-0.4.0.dist-info/METADATA,sha256=5p7_movhIzsjOXPcH9z_LJmCVq3aBsuakdP30DX5P90,4061
+SummarizedExperiment-0.4.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+SummarizedExperiment-0.4.0.dist-info/top_level.txt,sha256=B2YgdKBS0dzi3xJ-PivIeXaVQVvoxx3Rs5GQilRferc,21
+SummarizedExperiment-0.4.0.dist-info/RECORD,,
