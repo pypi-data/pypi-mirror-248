@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: property_based_testing
+Version: 0.0.3
+Summary: property testing
+Home-page: https://github.com/wpbindt/property_based_testing
+Author: Wessel Bindt
+Author-email: wesselbindt@gmail.com
+License: GNU
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
