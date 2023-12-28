@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: neural_network_yuanzhe
+Version: 1.0.1
+Summary: Build a neural network from scratch
+Author: yuanzhe-jia
+Author-email: jiayuanzhe1@gmail.com
+License: BSD License
+Platform: all
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: numpy
+
+Build A Neural Network From Scratch
+
+The author builds a neural network structure from scratch, and applies it to accomplish a multi-class classification task on a given dataset. The neural network modules include: 
+
+- Multiple Hidden Layers
+- Kaiming Initialization
+- Weight Decay
+- Batch Normalization
+- Dropout
+- Label Smoothing
+- ReLU Activation Function
+- Tanh Activation Function
+- GELU Activation Function
+- Softmax and Cross-entropy Loss
+- Momentum in SGD
+- Adam Optimizer
+- Mini-batch Training
