@@ -1,0 +1,6 @@
+requests
+pandas
+google-api-python-client
+google-api-core
+python-dotenv
+boto3
