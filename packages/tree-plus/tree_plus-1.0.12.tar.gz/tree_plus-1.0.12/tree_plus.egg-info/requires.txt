@@ -1,0 +1,9 @@
+tiktoken
+PyYAML
+click
+rich
+tomli
+
+[dev]
+pytest
+pytest-dotenv
