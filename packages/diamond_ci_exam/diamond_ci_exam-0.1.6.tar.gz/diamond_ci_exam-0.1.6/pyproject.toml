@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "diamond_ci_exam"
+version = "0.1.6"
+description = "\"Create a diamond from a letter.\""
+authors = ["Dimitri Perreaux <dimitri.perreaux@gmail.com>", "Antoine Letailleur", "Thibault Scorielle"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+flake8 = "^6.1.0"
+flake8-isort = "^6.1.1"
+flake8-bandit = "^4.1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
