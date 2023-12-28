@@ -1,0 +1,16 @@
+include/metis.h,sha256=tHAI2_xm_w8UJILoKXsJxw8yVt76_gIy2zDJPqGvMGo,12657
+lib/metis.lib,sha256=PlEzvNgxPQmgpQecUB5OUJxzQ31Znpqcx2CpQ-Q4xTE,1351660
+sksparse_minimal/__init__.py,sha256=0y1KUDH3he0qMhRgrlr0N26BOccIiflW0i23Dg9e1OY,32
+sksparse_minimal/_cholespy_core.cp38-win_amd64.pyd,sha256=lMOloFN1-o3uXkcPtB0qgLReFo3DSyazjQ6U3oqj0Jk,527872
+sksparse_minimal/libblas.dll,sha256=Hf5uK2ozDkzlEKiu7jNDFZBxZ6mxnMmTss1b0yrl1O8,833648
+sksparse_minimal/libgcc_s_sjlj-1.dll,sha256=9OZCeB9nuNFMDwjCdOhFw6aTqFcVASx5YV_8EL9qCtI,81920
+sksparse_minimal/libgfortran-3.dll,sha256=n6vzQUxto5c3eUXkXyfPDGwTr3chtPhuunv3owsr5vc,7337949
+sksparse_minimal/liblapack.dll,sha256=mBAsABy_zkX_n6OsCuisDLzEX_lBlg89BTSFOo6Cafg,8273163
+sksparse_minimal/libquadmath-0.dll,sha256=Cq3bPUWi4_Q11IjMTfi5qJtGznDagMLPUeOY4Gnf-kI,1310056
+sksparse_minimal/main.py,sha256=shW_ED3s0CC-Mynk9C5quVPF4UCguNtkQ4yxGXs_2pA,1417
+sksparse_minimal/main_test.py,sha256=Ce-1ocF7L5ZT4OMdBXMMiscRIxjb_LeMvu3uCFKnlSE,1448
+sksparse_minimal-0.1.dist-info/METADATA,sha256=E4RINoQL4a2HVMkg728WdzxMA8uAYzbmGRoQj-2eEB4,1751
+sksparse_minimal-0.1.dist-info/WHEEL,sha256=_2VVxIy4LPL0wCRXNM12Z87fxqtWn_YqiamVb4YBWTw,103
+sksparse_minimal-0.1.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sksparse_minimal-0.1.dist-info/licenses/LICENSE,sha256=Kz4ybSR4my5gQ0aPTng6TkQ_zGC6tBS29JU4OUGNPos,1580
+sksparse_minimal-0.1.dist-info/RECORD,,
