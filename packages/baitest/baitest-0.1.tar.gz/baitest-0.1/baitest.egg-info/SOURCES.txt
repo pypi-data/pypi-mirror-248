@@ -1,0 +1,9 @@
+README.md
+setup.py
+baitest/__init__.py
+baitest/main.py
+baitest.egg-info/PKG-INFO
+baitest.egg-info/SOURCES.txt
+baitest.egg-info/dependency_links.txt
+baitest.egg-info/entry_points.txt
+baitest.egg-info/top_level.txt
