@@ -1,0 +1,48 @@
+[tool.poetry]
+name = "liveeo_prefect_utils"
+version = "3.3.0"
+description = "Common Prefect (2.0) utils."
+authors = ["DataOps <dataops@live-eo.com>"]
+license = "Copyright 2023 LiveEO, all rights reserved."
+packages = [
+    { include = "liveeo" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+prefect = "^2.13.7" # Pydanitc 2.0 support added in 2.13.7
+aioboto3 = "^11.1.0"
+aiobotocore = "^2.5.0"
+loguru = "^0.6.0"
+prefect-ray = "^0.3.2" # Python 3.10 support added in 0.3.2
+prefect-aws = "^0.4.2"
+anyscale = "^0.5.167" # Pydanitc 2.0 support added in 0.5.167
+urllib3 = "<2.0.0" # https://github.com/boto/botocore/issues/2926
+ray = "~2.9"
+#pydantic = "<2"
+
+[tool.poetry.dev-dependencies]
+black = "^22.3.0"
+pylint = "^2.13.8"
+mypy = "^0.950"
+pytest = "^7.1.1"
+pytest-cov = "^3.0.0"
+pre-commit = "^2.20.0"
+coverage = "^7.0.0"
+pytest-asyncio = "^0.21.0"
+commitizen = "^3.6.0"
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "$version"
+version_scheme = "semver"
+version_provider = "poetry"
+update_changelog_on_bump = true
+bump_message = "Version bump from v$current_version to v$new_version"
+changelog_file = "CHANGELOG.md"
+changelog_incremental = true
+annotated_tag = true
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
