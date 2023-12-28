@@ -1,0 +1,2 @@
+[console_scripts]
+pygarmin = garmin.pygarmin:main
