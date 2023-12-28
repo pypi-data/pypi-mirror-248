@@ -1,0 +1,8 @@
+taurus_publisher/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+taurus_publisher/publisher.py,sha256=JYEuFee1O1w_IAx6D3VUZqcP2KAzFdHL5WV3jPRH4-0,4710
+taurus_publisher/helpers/redis/connection.py,sha256=BbGu44ffSRhpIlNTcm-Cw-MXq-m0tcUK5-xwE7C_z2E,560
+taurus_publisher-1.0.1.dist-info/METADATA,sha256=fR7klVDiyZP1A6flv5dkGSFVcNHjiOCxQMEpgczDjgc,1981
+taurus_publisher-1.0.1.dist-info/WHEEL,sha256=sb4ZHsmozXdkdXRvpMHZmhxsxQvL8DERDUEGA9tAfc8,83
+taurus_publisher-1.0.1.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+taurus_publisher-1.0.1.dist-info/license_files/LICENCE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+taurus_publisher-1.0.1.dist-info/RECORD,,
