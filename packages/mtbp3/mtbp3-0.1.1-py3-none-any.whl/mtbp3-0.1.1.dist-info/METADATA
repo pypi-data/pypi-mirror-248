@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: mtbp3
+Version: 0.1.1
+Summary: My tool box in Python
+Author: Y. Hsu
+Author-email: yh202109@gmail.com
+Project-URL: Bug Reports, https://github.com/mtbp3/mtbp3/issues
+Project-URL: Source, https://github.com/yh202109/mtbp3/
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# mtbpy
+
+My tool box in Python.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license) 
+
+
+## Installation
+
+Instructions on how to install the project and its dependencies.
+
+<code> $ pip install mtbp3 </code>
+
+## Usage
+
+Instructions on how to use the project and any relevant examples.
+
+## Contributing
+
+Guidelines on how to contribute to the project.
+
+## License
+
+GPL-3
