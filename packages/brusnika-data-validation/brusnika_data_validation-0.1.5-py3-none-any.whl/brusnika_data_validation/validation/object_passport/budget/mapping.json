@@ -1,0 +1,209 @@
+{
+    "Суммы по стакану": {
+        "fa_costs_production": [
+            "fa_costs_production_construction",
+            "fa_costs_production_design",
+            "fa_costs_production_infrastructure"
+        ],
+        "fa_costs": [
+            "fa_costs_production",
+            "fa_costs_land",
+            "fa_costs_facilities",
+            "fa_costs_warranty"
+        ],
+        "fa_sga": [
+            "fa_sga_developer_management",
+            "fa_sga_design_management",
+            "fa_sga_marketing",
+            "fa_sga_sales_management",
+            "fa_sga_brokerage",
+            "fa_sga_hci"
+        ],
+        "fa_internal_expenses": [
+            "fa_costs",
+            "fa_sga"
+        ],
+        "fa_gross_margin": [
+            "fa_revenue",
+            "fa_costs"
+        ],
+        "fa_ebitda": [
+            "fa_revenue",
+            "fa_internal_expenses"
+        ],
+        "fa_net_profit": [
+            "fa_ebitda",
+            "fa_taxes_income_tax"
+        ]
+    },
+    "Эталоны": {
+        "fa_revenue": {
+            "standart": "revenue-per-meter",
+            "is_expense": false,
+            "threshold": 5,
+            "check_is_relative": true
+        },
+        "fa_costs_production_construction": {
+            "standart": "construction-per-meter",
+            "is_expense": true,
+            "threshold": 5,
+            "check_is_relative": true
+        },
+        "fa_costs_production_design": {
+            "standart": "design-per-meter",
+            "is_expense": true,
+            "threshold": 5,
+            "check_is_relative": true
+        },
+        "fa_costs_production_infrastructure": {
+            "standart": "infrastructure-per-meter",
+            "is_expense": true,
+            "threshold": 5,
+            "check_is_relative": true
+        },
+        "fa_costs_production": {
+            "standart": "costs-per-meter",
+            "is_expense": true,
+            "threshold": 5,
+            "check_is_relative": true
+        },
+        "fa_costs_land": {
+            "standart": "land-per-meter",
+            "is_expense": true,
+            "threshold": 5,
+            "check_is_relative": true
+        },
+        "fa_costs_facilities": {
+            "standart": "facilities-per-meter",
+            "is_expense": true,
+            "standart_is_zero": true,
+            "threshold": 5,
+            "check_is_relative": true
+        },
+        "fa_costs_warranty": {
+            "standart": "warranty-per-meter",
+            "is_expense": true,
+            "threshold": 5,
+            "check_is_relative": true
+        },
+        "fa_costs": {
+            "standart": "costs",
+            "is_expense": true,
+            "threshold": 5,
+            "check_is_relative": true
+        },
+        "fa_gross_margin": {
+            "standart": "gross-margin-per-meter",
+            "is_expense": false,
+            "threshold": 5,
+            "check_is_relative": true
+        },
+        "fa_sga_developer_management": {
+            "standart": "developer-per-meter",
+            "is_expense": true,
+            "threshold": 15,
+            "check_is_relative": true
+        },
+        "fa_sga_design_management": {
+            "standart": "management-design",
+            "is_expense": true,
+            "threshold": 15,
+            "check_is_relative": true
+        },
+        "fa_sga_marketing": {
+            "standart": "marketing-per-meter",
+            "is_expense": true,
+            "threshold": 15,
+            "check_is_relative": true
+        },
+        "fa_sga_sales_management": {
+            "standart": "sales-per-meter",
+            "is_expense": true,
+            "threshold": 15,
+            "check_is_relative": true
+        },
+        "fa_sga_brokerage": {
+            "standart": "brokerage-per-meter",
+            "is_expense": true,
+            "threshold": 15,
+            "check_is_relative": true
+        },
+        "fa_sga_hci": {
+            "standart": "hci-per-meter",
+            "is_expense": true,
+            "threshold": 15,
+            "check_is_relative": true
+        },
+        "fa_sga": {
+            "standart": "sga-per-meter",
+            "is_expense": true,
+            "threshold": 15,
+            "check_is_relative": true
+        },
+        "fa_internal_expenses": {
+            "standart": "project-per-meter",
+            "is_expense": true,
+            "threshold": 5,
+            "check_is_relative": true
+        },
+        "fa_ebitda": {
+            "standart": "ebitda-per-meter",
+            "is_expense": false,
+            "threshold": 5,
+            "check_is_relative": true
+        },
+        "fa_expenses": {
+            "standart": "total-per-meter",
+            "is_expense": true,
+            "threshold": 5,
+            "check_is_relative": true
+        },
+        "fa_taxes_income_tax": {
+            "standart": "taxes-per-meter",
+            "is_expense": true,
+            "threshold": 5,
+            "check_is_relative": true
+        },
+        "fa_net_profit": {
+            "standart": "net-profit-per-meter",
+            "is_expense": false,
+            "threshold": 5,
+            "check_is_relative": true
+        },
+        "land_to_revenue": {
+            "standart": "land-to-revenue-per-meter",
+            "threshold": 5,
+            "check_is_relative": false,
+            "is_percent": true
+        },
+        "revenue_to_construction": {
+            "standart": "construction-to-revenue-per-meter",
+            "threshold": 0.05,
+            "check_is_relative": false
+        },
+        "sga_to_revenue": {
+            "standart": "sga-to-revenue",
+            "threshold": 10,
+            "check_is_relative": false,
+            "is_percent": true
+        },
+        "gross_margin_to_revenue": {
+            "standart": "gross-margin-to-revenue",
+            "threshold": 5,
+            "check_is_relative": false,
+            "is_percent": true
+        },
+        "ebitda_to_revenue": {
+            "standart": "ebitda-to-revenue",
+            "threshold": 5,
+            "check_is_relative": false,
+            "is_percent": true
+        },
+        "net_profit_to_revenue": {
+            "standart": "net-profit-to-revenue",
+            "threshold": 5,
+            "check_is_relative": false,
+            "is_percent": true
+        }
+    }
+}
