@@ -1,0 +1,11 @@
+lxml
+loguru
+redis
+requests
+tqdm
+lxpy
+colorama
+xlrd
+pymysql
+xlsxwriter
+selenium
