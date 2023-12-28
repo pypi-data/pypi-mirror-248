@@ -1,0 +1,6 @@
+setup.py
+syssqliextensionV5/__init__.py
+syssqliextensionV5.egg-info/PKG-INFO
+syssqliextensionV5.egg-info/SOURCES.txt
+syssqliextensionV5.egg-info/dependency_links.txt
+syssqliextensionV5.egg-info/top_level.txt
