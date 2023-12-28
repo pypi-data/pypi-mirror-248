@@ -1,0 +1,9 @@
+LICENSE
+setup.cfg
+setup.py
+MathOpo.egg-info/PKG-INFO
+MathOpo.egg-info/SOURCES.txt
+MathOpo.egg-info/dependency_links.txt
+MathOpo.egg-info/top_level.txt
+OpoMath/MathOpo.py
+OpoMath/__init__.py
