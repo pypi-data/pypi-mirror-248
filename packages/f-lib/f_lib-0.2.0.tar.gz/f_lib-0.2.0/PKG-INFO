@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: f-lib
+Version: 0.2.0
+Summary: Python library created by Kyle Finley, for Kyle Finley.
+Home-page: https://f-lib.readthedocs.io
+License: Apache-2.0
+Author: Kyle Finley
+Author-email: kyle@finley.sh
+Requires-Python: >=3.11,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Utilities
+Requires-Dist: platformdirs (>=4.1.0,<5.0.0)
+Project-URL: Bug Tracker, https://github.com/ITProKyle/f-lib/issues
+Project-URL: Documentation, https://f-lib.readthedocs.io
+Project-URL: Repository, https://github.com/ITProKyle/f-lib
+Description-Content-Type: text/markdown
+
+# f-lib
+
+[![Documentation Status](https://readthedocs.org/projects/f-lib/badge/?version=latest)](https://f-lib.readthedocs.io/en/latest/?badge=latest)
+[![default](https://github.com/ITProKyle/f-lib/workflows/default/badge.svg?branch=master)](https://github.com/ITProKyle/f-lib/actions?query=workflow%3ACI%2FCD)
+[![PyPi](https://img.shields.io/pypi/v/f-lib?style=flat)](https://pypi.org/project/f-lib/)
+
+A library of useful functions and classes for python projects.
+
