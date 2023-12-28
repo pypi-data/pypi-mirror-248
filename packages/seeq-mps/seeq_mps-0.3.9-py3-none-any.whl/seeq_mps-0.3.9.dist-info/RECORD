@@ -1,0 +1,17 @@
+seeq/addons/mps/__init__.py,sha256=BqZWEz_PKd4NgsqwOU38CoytyInZM8aFqXvF9KsKaw4,410
+seeq/addons/mps/__main__.py,sha256=MLtIiuc0u48zM5C9nZeuaeLDS-XNUFwFfy7xoc_sooI,6324
+seeq/addons/mps/_copy.py,sha256=DZkFCS46y4P4DcIfUcOkiQj9f7vK72EIH2bjuZX_nuo,3020
+seeq/addons/mps/_mps.py,sha256=GApz6eErrKl2u9ISa4OG9OdNOJJMbrUChCwDjp4isfc,49288
+seeq/addons/mps/_mps_sdl_ui.py,sha256=VnA3ewsqDlEot3fR3JD6Ih3fAcPqBUvyOZpXAJaROYg,41927
+seeq/addons/mps/_version.py,sha256=OJRl30XMXR02jOFfAqFJB3-IohqKdn-uwu-tvsSqqhc,21
+seeq/addons/mps/deployment_notebook/multivariate_pattern_search_ui.ipynb,sha256=v6HFGHt97lm58afTmxQfkCmVMTpTLul1JXTQYPnaUyE,2943
+seeq/addons/mps/utils/__init__.py,sha256=KZvq0S-sbzv0rxQZQWFmJG2SMMKXQNrcOCai6HUhXa4,611
+seeq/addons/mps/utils/_common.py,sha256=n5-fq-hag4PfoVPcNIbKmRPoEWC5tXjM_KpcN3_AX5M,733
+seeq/addons/mps/utils/_permissions.py,sha256=xocoh2IeUkUy5UYkPvcHpL8XtnyG5NKhRz90T-oCXPg,1297
+seeq/addons/mps/utils/_sdl.py,sha256=rBI9ko0jcZ--6eQjiblMjwtTn4UDUCivZ9Vr62s7fdg,7177
+seeq_mps-0.3.9.dist-info/LICENSE,sha256=MALySQkHViMN9SOoQSx0kc2iUTt3dut2Wx1sNCo3Rxw,10785
+seeq_mps-0.3.9.dist-info/METADATA,sha256=9Z_gJOlLCs5G_pc1rjwz6Cmfc0XJ1vchOPfLO1JcFGQ,6434
+seeq_mps-0.3.9.dist-info/NOTICE,sha256=GncpeiEclGVGCzeScAej0BMPmQUhWpFrMo7D_5BJNQI,571
+seeq_mps-0.3.9.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+seeq_mps-0.3.9.dist-info/top_level.txt,sha256=A8tWxHwd8hH2__1htF-LC8InFA4giQ1S3rsqii4tRSU,5
+seeq_mps-0.3.9.dist-info/RECORD,,
