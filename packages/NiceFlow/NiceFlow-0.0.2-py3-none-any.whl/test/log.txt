@@ -1,0 +1,43 @@
+2023-12-25 ---> 开始尝试连接到 localhost 
+ 2023-12-25 ---> 成功连接到 localhost 
+ 2023-12-25 ---> 开始尝试登录到 localhost 
+ 2023-12-25 ---> 成功登录到 localhost 
+ 2023-12-25 ---> 220-SecureBlackbox FTPS server ready.
+220 Library version 22.0.8350.0 
+ 2023-12-25 ---> 本地目录 G:/ftp_test/ 不存在 
+ 2023-12-25 ---> close()---> FTP退出 
+ 2023-12-25 ---> 开始尝试连接到 localhost 
+ 2023-12-25 ---> 成功连接到 localhost 
+ 2023-12-25 ---> 开始尝试登录到 localhost 
+ 2023-12-25 ---> 成功登录到 localhost 
+ 2023-12-25 ---> 220-SecureBlackbox FTPS server ready.
+220 Library version 22.0.8350.0 
+ 2023-12-25 ---> download_file()---> local_path = C:/Users/xiaow/Desktop/11/AAA.json ,remote_path = C:/Users/xiaow/Desktop/22 
+ 2023-12-25 ---> local_file_size:2103  , remote_file_size:-1 
+ 2023-12-25 ---> >>>>>>>>>>>>下载文件 C:/Users/xiaow/Desktop/11/AAA.json ... ... 
+ 2023-12-25 ---> 下载文件出错，出现异常：550 Requested action not taken  
+ 2023-12-25 ---> close()---> FTP退出 
+ 2023-12-25 ---> 开始尝试连接到 localhost 
+ 2023-12-25 ---> 成功连接到 localhost 
+ 2023-12-25 ---> 开始尝试登录到 localhost 
+ 2023-12-25 ---> 成功登录到 localhost 
+ 2023-12-25 ---> 220-SecureBlackbox FTPS server ready.
+220 Library version 22.0.8350.0 
+ 2023-12-25 ---> local_file_size:0  , remote_file_size:-1 
+ 2023-12-25 ---> 开始尝试连接到 localhost 
+ 2023-12-25 ---> 成功连接到 localhost 
+ 2023-12-25 ---> 开始尝试登录到 localhost 
+ 2023-12-25 ---> 成功登录到 localhost 
+ 2023-12-25 ---> 220-SecureBlackbox FTPS server ready.
+220 Library version 22.0.8350.0 
+ 2023-12-25 ---> local_file_size:0  , remote_file_size:-1 
+ 2023-12-25 ---> 开始尝试连接到 localhost 
+ 2023-12-25 ---> 成功连接到 localhost 
+ 2023-12-25 ---> 开始尝试登录到 localhost 
+ 2023-12-25 ---> 成功登录到 localhost 
+ 2023-12-25 ---> 220-SecureBlackbox FTPS server ready.
+220 Library version 22.0.8350.0 
+ 2023-12-25 ---> local_file_size:0  , remote_file_size:-1 
+ 2023-12-25 ---> 上传: C:/Users/xiaow/Desktop/11/AAA.json成功! 
+ 2023-12-25 ---> close()---> FTP退出 
+ 
