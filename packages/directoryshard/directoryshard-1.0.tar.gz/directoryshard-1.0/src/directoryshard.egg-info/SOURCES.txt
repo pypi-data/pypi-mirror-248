@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/directoryshard/__init__.py
+src/directoryshard/shardeddirectory.py
+src/directoryshard.egg-info/PKG-INFO
+src/directoryshard.egg-info/SOURCES.txt
+src/directoryshard.egg-info/dependency_links.txt
+src/directoryshard.egg-info/entry_points.txt
+src/directoryshard.egg-info/top_level.txt

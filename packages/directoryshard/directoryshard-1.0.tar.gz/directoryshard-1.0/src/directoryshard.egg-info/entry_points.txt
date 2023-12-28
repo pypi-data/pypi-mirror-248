@@ -1,0 +1,2 @@
+[console_scripts]
+directoryshard = directoryshard.main:main
