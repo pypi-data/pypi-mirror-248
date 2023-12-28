@@ -1,0 +1,12 @@
+{
+    "game_setting": {
+        "topic": "Fruits",
+        "code": "Banana",
+        "chameleon_name": "Player 1"
+    },
+    "clue": {
+        "Player 1": "It's small and red.",
+        "Player 2": "It can be peeled.",
+        "Player 3": "It's long and yellow."
+    }
+}

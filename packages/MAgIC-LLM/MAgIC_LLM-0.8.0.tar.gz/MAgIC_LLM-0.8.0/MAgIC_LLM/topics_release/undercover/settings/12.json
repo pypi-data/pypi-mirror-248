@@ -1,0 +1,21 @@
+{
+    "game_setting": {
+        "undercover_code": "dust",
+        "non_undercover_code": "wipe",
+        "undercover_name": "Player 1"
+    },
+    "clues": {
+        "Player 1": [
+            "It's often found in abandoned places.",
+            "It can cause allergies."
+        ],
+        "Player 2": [
+            "It's associated with cleanliness.",
+            "It's disposable."
+        ],
+        "Player 3": [
+            "It's usually used in the kitchen.",
+            "It's often used with water."
+        ]
+    }
+}

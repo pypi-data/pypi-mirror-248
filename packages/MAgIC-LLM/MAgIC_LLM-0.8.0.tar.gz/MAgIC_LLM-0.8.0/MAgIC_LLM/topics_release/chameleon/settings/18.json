@@ -1,0 +1,12 @@
+{
+    "game_setting": {
+        "topic": "Animals",
+        "code": "Bear",
+        "chameleon_name": "Player 2"
+    },
+    "clue": {
+        "Player 1": "It hibernates during winter.",
+        "Player 2": "It has a thick fur coat.",
+        "Player 3": "It loves honey."
+    }
+}

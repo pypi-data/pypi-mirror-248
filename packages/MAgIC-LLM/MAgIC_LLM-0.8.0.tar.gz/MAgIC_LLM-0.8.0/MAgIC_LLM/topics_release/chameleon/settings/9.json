@@ -1,0 +1,12 @@
+{
+    "game_setting": {
+        "topic": "Countries",
+        "code": "Germany",
+        "chameleon_name": "Player 3"
+    },
+    "clue": {
+        "Player 1": "Beer",
+        "Player 2": "Oktoberfest",
+        "Player 3": "Efficient transport systems"
+    }
+}

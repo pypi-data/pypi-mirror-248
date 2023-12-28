@@ -1,0 +1,26 @@
+{
+    "test_player_name": "Player 2",
+    "topic": "Fixed Airport Fee: $1,000,000\n\nAirline Usage Frequency Data: \n\nAirline A:\nNumber of Flights: 180/month\nNumber of Passengers: 18,000/month\nAverage Flight Duration: 2.5 hours\nFlight Size: Primarily large aircraft\n\nAirline B:\nNumber of Flights: 50/month\nNumber of Passengers: 7,500/month\nAverage Flight Duration: 1.5 hours\nFlight Size: Primarily small aircraft\n\nAirline C:\nNumber of Flights: 60/month\nNumber of Passengers: 6,000/month\nAverage Flight Duration: 2 hours\nFlight Size: Primarily small and medium aircraft\n\n",
+    "first_msg": {
+        "Player 1": "As Player 1, representing Airline A, I propose the following cost distribution:\nAirline A: $600,000\nAirline B: $200,000\nAirline C: $200,000.",
+        "Player 2": "As Player 2, representing Airline B, I propose the following cost distribution:\nAirline A: $700,000\nAirline B: $150,000\nAirline C: $150,000.",
+        "Player 3": "As Player 3, representing Airline C, I propose the following cost distribution:\nAirline A: $650,000\nAirline B: $175,000\nAirline C: $175,000."
+    },
+    "proposal": {
+        "Player 1": [
+            60,
+            20,
+            20
+        ],
+        "Player 2": [
+            70,
+            15,
+            15
+        ],
+        "Player 3": [
+            65,
+            17,
+            17
+        ]
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "game_setting": {
+        "undercover_code": "cold",
+        "non_undercover_code": "fahrenheit",
+        "undercover_name": "Player 2"
+    },
+    "clues": {
+        "Player 1": [
+            "It's a temperature scale.",
+            "It's related to weather forecasting."
+        ],
+        "Player 2": [
+            "It's a feeling you might have in winter.",
+            "You might need a jacket."
+        ],
+        "Player 3": [
+            "It's not commonly used outside the United States.",
+            "It's named after a German physicist."
+        ]
+    }
+}

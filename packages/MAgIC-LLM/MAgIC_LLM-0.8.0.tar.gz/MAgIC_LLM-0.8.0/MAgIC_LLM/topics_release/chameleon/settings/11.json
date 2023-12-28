@@ -1,0 +1,12 @@
+{
+    "game_setting": {
+        "topic": "Fruits",
+        "code": "Apple",
+        "chameleon_name": "Player 3"
+    },
+    "clue": {
+        "Player 1": "It's the main ingredient in a popular pie.",
+        "Player 2": "It's associated with a tech giant.",
+        "Player 3": "It's not typically found in a fruit salad."
+    }
+}

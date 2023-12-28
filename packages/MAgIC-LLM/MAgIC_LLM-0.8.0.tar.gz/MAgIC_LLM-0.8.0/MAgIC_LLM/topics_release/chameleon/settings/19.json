@@ -1,0 +1,12 @@
+{
+    "game_setting": {
+        "topic": "Countries",
+        "code": "Japan",
+        "chameleon_name": "Player 1"
+    },
+    "clue": {
+        "Player 1": "It's known for its beautiful beaches.",
+        "Player 2": "It's famous for its electronic products.",
+        "Player 3": "They have a unique writing system."
+    }
+}

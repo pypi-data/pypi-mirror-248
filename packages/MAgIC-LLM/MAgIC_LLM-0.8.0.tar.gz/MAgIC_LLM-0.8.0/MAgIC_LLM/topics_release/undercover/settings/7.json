@@ -1,0 +1,21 @@
+{
+    "game_setting": {
+        "undercover_code": "bowl",
+        "non_undercover_code": "plate",
+        "undercover_name": "Player 1"
+    },
+    "clues": {
+        "Player 1": [
+            "It's often used in the kitchen.",
+            "It can be made of different materials."
+        ],
+        "Player 2": [
+            "It's usually round.",
+            "It can be decorative."
+        ],
+        "Player 3": [
+            "It's used for serving food.",
+            "It's flat."
+        ]
+    }
+}

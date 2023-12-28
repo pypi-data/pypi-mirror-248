@@ -1,0 +1,21 @@
+{
+    "game_setting": {
+        "undercover_code": "eyelash",
+        "non_undercover_code": "eyeball",
+        "undercover_name": "Player 3"
+    },
+    "clues": {
+        "Player 1": [
+            "My clue is: vision",
+            "My clue is: sight"
+        ],
+        "Player 2": [
+            "My clue is: round",
+            "My clue is: iris"
+        ],
+        "Player 3": [
+            "My clue is: blink",
+            "My clue is: mascara"
+        ]
+    }
+}

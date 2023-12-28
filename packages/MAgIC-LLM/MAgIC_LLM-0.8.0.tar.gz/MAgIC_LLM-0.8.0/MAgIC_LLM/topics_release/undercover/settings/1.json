@@ -1,0 +1,21 @@
+{
+    "game_setting": {
+        "undercover_code": "cup",
+        "non_undercover_code": "mug",
+        "undercover_name": "Player 1"
+    },
+    "clues": {
+        "Player 1": [
+            "It's something you drink from.",
+            "It can be filled with hot or cold beverages."
+        ],
+        "Player 2": [
+            "It's often found in the kitchen.",
+            "It has a handle."
+        ],
+        "Player 3": [
+            "It's usually ceramic.",
+            "It's often used for coffee or tea."
+        ]
+    }
+}

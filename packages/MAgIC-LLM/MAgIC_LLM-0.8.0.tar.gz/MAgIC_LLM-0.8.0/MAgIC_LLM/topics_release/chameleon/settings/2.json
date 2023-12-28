@@ -1,0 +1,12 @@
+{
+    "game_setting": {
+        "topic": "Countries",
+        "code": "United Kingdom",
+        "chameleon_name": "Player 1"
+    },
+    "clue": {
+        "Player 1": "It's famous for its delicious pasta dishes.",
+        "Player 2": "It's known for its Big Ben.",
+        "Player 3": "This country has the Queen as its monarch."
+    }
+}

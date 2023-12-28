@@ -1,0 +1,12 @@
+{
+    "game_setting": {
+        "topic": "Fruits",
+        "code": "Orange",
+        "chameleon_name": "Player 3"
+    },
+    "clue": {
+        "Player 1": "It's rich in Vitamin C.",
+        "Player 2": "It's often associated with Florida.",
+        "Player 3": "It's often used in summer refreshments."
+    }
+}

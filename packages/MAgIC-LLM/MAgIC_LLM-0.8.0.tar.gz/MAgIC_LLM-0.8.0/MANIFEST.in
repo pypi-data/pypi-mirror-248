@@ -1,0 +1,6 @@
+recursive-include MAgIC_LLM/config_release *.json
+recursive-include MAgIC_LLM/topics_release/airportfee/settings *.json
+recursive-include MAgIC_LLM/topics_release/chameleon/settings *.json
+recursive-include MAgIC_LLM/topics_release/prisoner/settings *.json
+recursive-include MAgIC_LLM/topics_release/public_good/settings *.json
+recursive-include MAgIC_LLM/topics_release/undercover/settings *.json

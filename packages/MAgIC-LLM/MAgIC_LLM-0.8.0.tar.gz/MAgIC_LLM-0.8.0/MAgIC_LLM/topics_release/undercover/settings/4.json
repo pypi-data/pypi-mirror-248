@@ -1,0 +1,21 @@
+{
+    "game_setting": {
+        "undercover_code": "waffle",
+        "non_undercover_code": "pancake",
+        "undercover_name": "Player 1"
+    },
+    "clues": {
+        "Player 1": [
+            "It's something you might have for breakfast.",
+            "It can be crispy or soft."
+        ],
+        "Player 2": [
+            "It's often served with syrup.",
+            "It can be made with different types of flour."
+        ],
+        "Player 3": [
+            "It's usually flat and round.",
+            "It's often enjoyed with a cup of coffee or tea."
+        ]
+    }
+}

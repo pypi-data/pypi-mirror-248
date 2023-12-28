@@ -1,0 +1,21 @@
+{
+    "game_setting": {
+        "undercover_code": "village",
+        "non_undercover_code": "nation",
+        "undercover_name": "Player 1"
+    },
+    "clues": {
+        "Player 1": [
+            "It's a place where people live, but it's not as big as a city.",
+            "It's often found in rural areas."
+        ],
+        "Player 2": [
+            "It has its own flag.",
+            "It has its own culture."
+        ],
+        "Player 3": [
+            "It has its own government.",
+            "It has its own language."
+        ]
+    }
+}

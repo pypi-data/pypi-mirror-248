@@ -1,0 +1,12 @@
+{
+    "game_setting": {
+        "topic": "Animals",
+        "code": "Tiger",
+        "chameleon_name": "Player 1"
+    },
+    "clue": {
+        "Player 1": "It's a mammal.",
+        "Player 2": "It's a carnivore.",
+        "Player 3": "It has stripes."
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "game_setting": {
+        "undercover_code": "base",
+        "non_undercover_code": "groundwork",
+        "undercover_name": "Player 2"
+    },
+    "clues": {
+        "Player 1": [
+            "It's something you do before starting a project.",
+            "It's often associated with planning."
+        ],
+        "Player 2": [
+            "It's a starting point.",
+            "It's a foundation."
+        ],
+        "Player 3": [
+            "It's related to preparation.",
+            "It's not a physical thing."
+        ]
+    }
+}

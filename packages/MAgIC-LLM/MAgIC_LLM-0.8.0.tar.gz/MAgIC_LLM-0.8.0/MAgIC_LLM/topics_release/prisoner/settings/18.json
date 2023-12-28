@@ -1,0 +1,9 @@
+{
+    "test_player_name": "Player 1",
+    "topic_values": {
+        "cooperate": 5,
+        "defect": 1,
+        "one_defect": 5,
+        "two_defect": 3
+    }
+}

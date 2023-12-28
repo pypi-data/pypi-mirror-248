@@ -1,0 +1,21 @@
+{
+    "game_setting": {
+        "undercover_code": "time",
+        "non_undercover_code": "minute",
+        "undercover_name": "Player 3"
+    },
+    "clues": {
+        "Player 1": [
+            "It's a unit of time.",
+            "It's divisible by seconds."
+        ],
+        "Player 2": [
+            "It's often used to measure short durations.",
+            "There are 60 of these in an hour."
+        ],
+        "Player 3": [
+            "It's something we all wish we had more of.",
+            "It's a concept often associated with aging."
+        ]
+    }
+}

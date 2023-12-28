@@ -1,0 +1,21 @@
+{
+    "game_setting": {
+        "undercover_code": "trap",
+        "non_undercover_code": "dynamite",
+        "undercover_name": "Player 2"
+    },
+    "clues": {
+        "Player 1": [
+            "It's explosive.",
+            "It's dangerous."
+        ],
+        "Player 2": [
+            "It's hidden.",
+            "It's strategic."
+        ],
+        "Player 3": [
+            "It's used in mining.",
+            "It's cylindrical."
+        ]
+    }
+}

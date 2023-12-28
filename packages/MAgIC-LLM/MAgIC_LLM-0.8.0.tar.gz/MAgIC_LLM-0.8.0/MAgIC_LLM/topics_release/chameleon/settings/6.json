@@ -1,0 +1,12 @@
+{
+    "game_setting": {
+        "topic": "Fruits",
+        "code": "Mango",
+        "chameleon_name": "Player 1"
+    },
+    "clue": {
+        "Player 1": "Sweet",
+        "Player 2": "Tropical",
+        "Player 3": "Yellow"
+    }
+}

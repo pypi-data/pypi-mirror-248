@@ -1,0 +1,12 @@
+{
+    "game_setting": {
+        "topic": "Animals",
+        "code": "Lion",
+        "chameleon_name": "Player 1"
+    },
+    "clue": {
+        "Player 1": "It has a trunk.",
+        "Player 2": "It lives in the savannah.",
+        "Player 3": "It's known as the king of the jungle."
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "game_setting": {
+        "undercover_code": "mouse",
+        "non_undercover_code": "rat",
+        "undercover_name": "Player 2"
+    },
+    "clues": {
+        "Player 1": [
+            "It's a small creature often found in urban areas.",
+            "It's often seen in cartoons causing mischief."
+        ],
+        "Player 2": [
+            "It's often associated with cheese.",
+            "It's often chased by cats."
+        ],
+        "Player 3": [
+            "It's considered a pest in many households.",
+            "It can spread diseases."
+        ]
+    }
+}

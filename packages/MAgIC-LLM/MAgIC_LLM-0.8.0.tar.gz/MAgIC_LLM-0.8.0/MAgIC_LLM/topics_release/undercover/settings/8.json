@@ -1,0 +1,21 @@
+{
+    "game_setting": {
+        "undercover_code": "government",
+        "non_undercover_code": "police",
+        "undercover_name": "Player 1"
+    },
+    "clues": {
+        "Player 1": [
+            "It's associated with laws and regulations.",
+            "They are responsible for the welfare of the citizens."
+        ],
+        "Player 2": [
+            "They wear uniforms.",
+            "They often drive special vehicles."
+        ],
+        "Player 3": [
+            "They carry badges.",
+            "They can arrest people."
+        ]
+    }
+}

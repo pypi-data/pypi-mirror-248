@@ -1,0 +1,21 @@
+{
+    "game_setting": {
+        "undercover_code": "whiteboard",
+        "non_undercover_code": "chalkboard",
+        "undercover_name": "Player 3"
+    },
+    "clues": {
+        "Player 1": [
+            "It's often used in classrooms.",
+            "It can be cleaned with a special eraser."
+        ],
+        "Player 2": [
+            "It's usually black or green.",
+            "It's usually mounted on a wall."
+        ],
+        "Player 3": [
+            "You can write on it with special markers.",
+            "It's a great tool for brainstorming sessions."
+        ]
+    }
+}

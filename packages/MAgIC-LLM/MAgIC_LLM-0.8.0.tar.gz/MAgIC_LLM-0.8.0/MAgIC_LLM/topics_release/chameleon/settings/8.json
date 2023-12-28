@@ -1,0 +1,12 @@
+{
+    "game_setting": {
+        "topic": "Fruits",
+        "code": "Pineapple",
+        "chameleon_name": "Player 3"
+    },
+    "clue": {
+        "Player 1": "It's tropical.",
+        "Player 2": "It's sweet and sour.",
+        "Player 3": "It's small and green."
+    }
+}

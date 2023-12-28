@@ -1,0 +1,12 @@
+{
+    "game_setting": {
+        "topic": "Fruits",
+        "code": "Mango",
+        "chameleon_name": "Player 3"
+    },
+    "clue": {
+        "Player 1": "It's tropical.",
+        "Player 2": "It's yellow when ripe.",
+        "Player 3": "It's high in potassium."
+    }
+}

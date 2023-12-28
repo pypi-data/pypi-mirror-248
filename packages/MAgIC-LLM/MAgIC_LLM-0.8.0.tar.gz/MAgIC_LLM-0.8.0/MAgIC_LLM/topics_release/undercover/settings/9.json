@@ -1,0 +1,21 @@
+{
+    "game_setting": {
+        "undercover_code": "tobacco",
+        "non_undercover_code": "nicotine",
+        "undercover_name": "Player 2"
+    },
+    "clues": {
+        "Player 1": [
+            "It's addictive.",
+            "It's a stimulant."
+        ],
+        "Player 2": [
+            "It's often associated with health risks.",
+            "It's often frowned upon in public places."
+        ],
+        "Player 3": [
+            "It's found in cigarettes.",
+            "It's a chemical compound."
+        ]
+    }
+}

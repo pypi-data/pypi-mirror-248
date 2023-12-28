@@ -1,0 +1,21 @@
+{
+    "game_setting": {
+        "undercover_code": "glasses",
+        "non_undercover_code": "contact lens",
+        "undercover_name": "Player 2"
+    },
+    "clues": {
+        "Player 1": [
+            "It's something you use to improve your vision.",
+            "It's a common alternative to glasses."
+        ],
+        "Player 2": [
+            "It's often made of plastic or metal.",
+            "It's often prescribed by an optometrist."
+        ],
+        "Player 3": [
+            "It's something you put in your eyes.",
+            "It's something that needs to be cleaned regularly."
+        ]
+    }
+}

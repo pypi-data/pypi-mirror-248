@@ -1,0 +1,21 @@
+{
+    "game_setting": {
+        "undercover_code": "shoes",
+        "non_undercover_code": "socks",
+        "undercover_name": "Player 3"
+    },
+    "clues": {
+        "Player 1": [
+            "My clue is: They keep your feet warm.",
+            "My clue is: They can be colorful."
+        ],
+        "Player 2": [
+            "My clue is: They come in pairs.",
+            "My clue is: They are often worn with shoes."
+        ],
+        "Player 3": [
+            "My clue is: They can be made of leather.",
+            "My clue is: They can have laces."
+        ]
+    }
+}

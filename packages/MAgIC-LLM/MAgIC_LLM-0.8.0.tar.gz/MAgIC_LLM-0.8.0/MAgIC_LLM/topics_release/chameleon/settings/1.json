@@ -1,0 +1,12 @@
+{
+    "game_setting": {
+        "topic": "Sports",
+        "code": "Soccer",
+        "chameleon_name": "Player 3"
+    },
+    "clue": {
+        "Player 1": "My clue is \"goal\".",
+        "Player 2": "My clue is \"field\".",
+        "Player 3": "My clue is \"team\"."
+    }
+}

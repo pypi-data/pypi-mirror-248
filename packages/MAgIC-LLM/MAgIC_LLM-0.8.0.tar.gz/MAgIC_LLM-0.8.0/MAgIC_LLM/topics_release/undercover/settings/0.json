@@ -1,0 +1,21 @@
+{
+    "game_setting": {
+        "undercover_code": "hood",
+        "non_undercover_code": "mask",
+        "undercover_name": "Player 1"
+    },
+    "clues": {
+        "Player 1": [
+            "It's something you can wear.",
+            "It's part of a clothing item."
+        ],
+        "Player 2": [
+            "It's often used for protection.",
+            "It's related to health and safety."
+        ],
+        "Player 3": [
+            "It's associated with disguise.",
+            "It can be used in a costume."
+        ]
+    }
+}

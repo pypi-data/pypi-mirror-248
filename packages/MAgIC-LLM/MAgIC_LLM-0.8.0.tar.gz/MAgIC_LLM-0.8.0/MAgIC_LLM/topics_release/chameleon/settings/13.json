@@ -1,0 +1,12 @@
+{
+    "game_setting": {
+        "topic": "Sports",
+        "code": "Soccer",
+        "chameleon_name": "Player 1"
+    },
+    "clue": {
+        "Player 1": "It's a team sport.",
+        "Player 2": "It's played with a round ball.",
+        "Player 3": "It's very popular in Europe."
+    }
+}

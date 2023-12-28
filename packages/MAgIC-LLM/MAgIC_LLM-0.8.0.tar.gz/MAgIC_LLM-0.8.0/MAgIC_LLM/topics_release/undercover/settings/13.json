@@ -1,0 +1,21 @@
+{
+    "game_setting": {
+        "undercover_code": "government",
+        "non_undercover_code": "police",
+        "undercover_name": "Player 2"
+    },
+    "clues": {
+        "Player 1": [
+            "My clue is: law enforcement.",
+            "My second clue is: patrol."
+        ],
+        "Player 2": [
+            "My clue is: policy making.",
+            "My second clue is: democracy."
+        ],
+        "Player 3": [
+            "My clue is: uniform.",
+            "My second clue is: handcuffs."
+        ]
+    }
+}

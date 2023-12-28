@@ -1,0 +1,21 @@
+{
+    "game_setting": {
+        "undercover_code": "night",
+        "non_undercover_code": "dark",
+        "undercover_name": "Player 1"
+    },
+    "clues": {
+        "Player 1": [
+            "My clue is: stars",
+            "My clue is: moon"
+        ],
+        "Player 2": [
+            "My clue is: night",
+            "My clue is: fear"
+        ],
+        "Player 3": [
+            "My clue is: shadow",
+            "My clue is: mystery"
+        ]
+    }
+}

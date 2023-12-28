@@ -1,0 +1,21 @@
+{
+    "game_setting": {
+        "undercover_code": "haircut",
+        "non_undercover_code": "wig",
+        "undercover_name": "Player 2"
+    },
+    "clues": {
+        "Player 1": [
+            "It's something you wear on your head.",
+            "It can be made from synthetic materials."
+        ],
+        "Player 2": [
+            "It's something that can change your appearance.",
+            "It's something that can be styled in different ways."
+        ],
+        "Player 3": [
+            "It's often used in theatrical performances.",
+            "It can be used to cover baldness."
+        ]
+    }
+}
