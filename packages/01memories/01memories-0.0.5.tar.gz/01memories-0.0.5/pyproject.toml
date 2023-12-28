@@ -1,0 +1,41 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "01memories"
+version = "0.0.5"
+authors = [
+  { name="Bernd Kalbfuss", email="kalbfuss@gmx.net" },
+]
+description = "A digital photo frame application."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+dependencies = [
+  "exifread",
+  "ffmpeg-python",
+  "geopy",
+  "IPTCInfo3",
+  "Kivy",
+  "paho-mqtt",
+  "rclone-python",
+  "schedule",
+  "SQLAlchemy",
+  "webdavclient3",
+  "yaml",
+]
+
+[project.urls]
+Homepage = "https://github.com/kalbfuss/01memories"
+Issues = "https://github.com/kalbfuss/01memories/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = [
+  "src/pyframe",
+  "src/repository"
+]
