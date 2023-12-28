@@ -1,0 +1,17 @@
+README.md
+setup.py
+src/spready/__init__.py
+src/spready/app.py
+src/spready/cli.py
+src/spready/config.py
+src/spready/decor.py
+src/spready/dto.py
+src/spready/job.py
+src/spready/parser.py
+src/spready.egg-info/PKG-INFO
+src/spready.egg-info/SOURCES.txt
+src/spready.egg-info/dependency_links.txt
+src/spready.egg-info/entry_points.txt
+src/spready.egg-info/top_level.txt
+src/spready/jobs/__init__.py
+src/spready/jobs/myjob.py
