@@ -1,0 +1,2 @@
+[console_scripts]
+odoo-configurator = s6r_bitwarden_cli.__main__:main
