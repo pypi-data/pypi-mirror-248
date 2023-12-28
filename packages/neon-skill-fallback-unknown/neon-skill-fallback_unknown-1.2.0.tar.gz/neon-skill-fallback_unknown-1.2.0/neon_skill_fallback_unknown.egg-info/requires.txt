@@ -1,0 +1,5 @@
+neon-utils~=1.5
+ovos_utils~=0.0.28
+
+[test]
+neon-minerva~=0.1
