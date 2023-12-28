@@ -1,0 +1,14 @@
+{
+    "config": {
+        "abort": {
+            "unknown": "Kesalahan yang tidak diharapkan"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "host": "Hos"
+                }
+            }
+        }
+    }
+}

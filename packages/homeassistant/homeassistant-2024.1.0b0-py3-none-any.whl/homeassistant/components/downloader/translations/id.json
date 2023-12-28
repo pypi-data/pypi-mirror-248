@@ -1,0 +1,26 @@
+{
+    "services": {
+        "download_file": {
+            "description": "Mengunduh berkas ke lokasi pengunduhan.",
+            "fields": {
+                "filename": {
+                    "description": "Tentukan nama berkas.",
+                    "name": "Nama berkas"
+                },
+                "overwrite": {
+                    "description": "Apakah akan menimpa berkas atau tidak.",
+                    "name": "Timpa"
+                },
+                "subdir": {
+                    "description": "Unduh ke dalam subdirektori.",
+                    "name": "Subdirektori"
+                },
+                "url": {
+                    "description": "URL berkas yang akan diunduh.",
+                    "name": "URL"
+                }
+            },
+            "name": "Unduh berkas"
+        }
+    }
+}
