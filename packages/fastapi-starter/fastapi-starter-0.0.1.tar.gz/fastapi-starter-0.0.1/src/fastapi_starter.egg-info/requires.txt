@@ -1,0 +1,6 @@
+bcrypt
+fastapi_another_jwt_auth
+mangum
+PyMySQL
+python-dotenv
+SQLAlchemy
