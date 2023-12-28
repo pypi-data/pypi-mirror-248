@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pasla
+Version: 0.2
+Summary: A powerful and flexible framework for deep learning and machine learning projects.
+License-File: LICENSE
+Requires-Dist: numpy>=1.18.0
+Requires-Dist: scipy>=1.4.1
+Requires-Dist: pandas>=1.0.0
+Requires-Dist: matplotlib>=3.1.3
+Requires-Dist: scikit-learn>=0.22.0
+Requires-Dist: tensorflow>=2.0.0
+Requires-Dist: beautifulsoup4
+Requires-Dist: scikit-learn
+Requires-Dist: tensorflow
+Requires-Dist: seabornlxml

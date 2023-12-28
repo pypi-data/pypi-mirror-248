@@ -1,0 +1,4 @@
+# .gitignore
+
+# Ignore pasla.egg-info directory
+pasla.egg-info/
