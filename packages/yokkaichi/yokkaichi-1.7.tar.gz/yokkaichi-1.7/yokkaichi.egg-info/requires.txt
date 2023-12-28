@@ -1,0 +1,10 @@
+rich==13.4.2
+mcstatus==11.0.0
+IP2Location==8.10.0
+pyScannerWrapper==0.2.1
+
+[:python_version < "3.11"]
+tomli==2.0.1
+
+[testing]
+pytest
