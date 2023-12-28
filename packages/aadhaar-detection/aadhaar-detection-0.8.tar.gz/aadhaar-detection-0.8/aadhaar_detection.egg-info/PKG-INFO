@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: aadhaar-detection
+Version: 0.8
+Summary: Aadhaar card detection library
+Home-page: https://gitlab.com/ntechgrp/simpldocz_backend/-/tree/main/Aadhaar_Detection
+Author: Girinath
+Author-email: girinathr@simplfin.tech
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: tensorflow>=2.7
+
+A library for detecting Aadhaar cards in images.

@@ -1,0 +1,8 @@
+setup.py
+aadhaar/__init__.py
+aadhaar/detection.py
+aadhaar_detection.egg-info/PKG-INFO
+aadhaar_detection.egg-info/SOURCES.txt
+aadhaar_detection.egg-info/dependency_links.txt
+aadhaar_detection.egg-info/requires.txt
+aadhaar_detection.egg-info/top_level.txt
