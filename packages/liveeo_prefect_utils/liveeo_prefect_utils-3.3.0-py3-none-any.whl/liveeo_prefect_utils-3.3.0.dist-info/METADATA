@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: liveeo_prefect_utils
+Version: 3.3.0
+Summary: Common Prefect (2.0) utils.
+License: Copyright 2023 LiveEO, all rights reserved.
+Author: DataOps
+Author-email: dataops@live-eo.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: aioboto3 (>=11.1.0,<12.0.0)
+Requires-Dist: aiobotocore (>=2.5.0,<3.0.0)
+Requires-Dist: anyscale (>=0.5.167,<0.6.0)
+Requires-Dist: loguru (>=0.6.0,<0.7.0)
+Requires-Dist: prefect (>=2.13.7,<3.0.0)
+Requires-Dist: prefect-aws (>=0.4.2,<0.5.0)
+Requires-Dist: prefect-ray (>=0.3.2,<0.4.0)
+Requires-Dist: ray (>=2.9,<2.10)
+Requires-Dist: urllib3 (<2.0.0)
