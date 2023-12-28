@@ -1,0 +1,2 @@
+include src/chaparral/data/objetos_mapa/*.ndjson
+include src/chaparral/data/objetos_mapa/*.json
