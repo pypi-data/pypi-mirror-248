@@ -1,0 +1,8 @@
+config_decorator/__init__.py,sha256=fzjAWNMqFAGNa0GOnn9tQYRLtCzFDSVhVgBiVhzdpWE,859
+config_decorator/config_decorator.py,sha256=eBPlJgyMPne4m72j-6CQ56lYEvZVkkJf4bZ5QXNQGL0,42374
+config_decorator/key_chained_val.py,sha256=e95RzzonA-SvMygNnqvaTdEWLSr-f1BKcVL1oTPPrC0,22288
+config_decorator/slug_name_util.py,sha256=AraWqiBHZNzEJbWJdLoQ6XzqLzCac4vmCrCf2ij9v1E,335
+config_decorator-2.0.18.dist-info/LICENSE,sha256=baVmyxNgCisX2lMzbkDvJxX9Sy1Z33_LR1OnTccxrAM,1088
+config_decorator-2.0.18.dist-info/METADATA,sha256=Yeipaz543gIBMoh81KR0iB92TzofScy40Wu_mZa-my4,9674
+config_decorator-2.0.18.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+config_decorator-2.0.18.dist-info/RECORD,,
