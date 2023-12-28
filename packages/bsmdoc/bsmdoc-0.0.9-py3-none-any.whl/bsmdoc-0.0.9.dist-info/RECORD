@@ -1,0 +1,15 @@
+bsmdoc/__init__.py,sha256=lGy_B3BCDz8WA5e7PC47-qZKwYtSu9yId3kz7mxRgUk,22
+bsmdoc/__main__.py,sha256=yVbGaW48g1k_POjEAWpbfYV1wDIbCj-ZvjR5zbZjgBs,4372
+bsmdoc/bsmdoc.py,sha256=7P1U975_8dYE1tW5MPmhYjmmZyheYI-Tl-8IKRLDRRg,55760
+bsmdoc/parsetab.py,sha256=sv17V4UcPxMoS-pWGmo4B6f7N_gtbqnD4WeYTiY0BCk,19988
+bsmdoc/template/template.bsmdoc,sha256=P3J1ws3s-iVj7BaW-Pel1Ol0Ppc9PppYWWNhQezWQQc,212
+bsmdoc/template/css/bsmdoc.css,sha256=2cJr96U0V2RcuNSgFrtshPdFDLQQWbQ-a-9c5hEQLiA,20250
+bsmdoc/template/css/menu.css,sha256=1vjgHuNt6uVtZIgl7U7Q12W3_mbqpvng1Eb-VDC_HuU,2964
+bsmdoc/template/js/bsmdoc.js,sha256=WbWOg7MZ87VqUygMOjEqXtGlOcjrCPRcaa0Gi02ERaI,4409
+bsmdoc/template/js/menu.js,sha256=ISrCECxUngzNGPVqMrYwGwAskw33URT33ECNV7jJaNE,1869
+bsmdoc-0.0.9.dist-info/LICENSE,sha256=LC31ZQrFwi6roLyffiQJPQxjPPeD0X-Hi5n-St1_LMM,1069
+bsmdoc-0.0.9.dist-info/METADATA,sha256=tibryBBJf0yAI5Df9Vtr3jV93DidsIaZMveJ93hGNVU,538
+bsmdoc-0.0.9.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+bsmdoc-0.0.9.dist-info/entry_points.txt,sha256=QT8KkTFDQTLoFk_clFNkOqoQtut3Tk8x9LCWWLZAkqs,47
+bsmdoc-0.0.9.dist-info/top_level.txt,sha256=DVj07zCFqnefGE-eAVy4XFmOdVbp9SPh4hLk5LNTOYw,7
+bsmdoc-0.0.9.dist-info/RECORD,,
