@@ -1,0 +1,16 @@
+setup.cfg
+setup.py
+mcprotection/__init__.py
+mcprotection/applications.py
+mcprotection/channels.py
+mcprotection/config.py
+mcprotection/guilds.py
+mcprotection/message.py
+mcprotection/roles.py
+mcprotection/threads.py
+mcprotection/user.py
+mcprotection/webhooks.py
+mcprotection_dashboard.egg-info/PKG-INFO
+mcprotection_dashboard.egg-info/SOURCES.txt
+mcprotection_dashboard.egg-info/dependency_links.txt
+mcprotection_dashboard.egg-info/top_level.txt
