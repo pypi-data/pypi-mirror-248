@@ -1,0 +1,5 @@
+PARSER:
+  delay_start: 0.1
+  max_retries: 5
+  request_timeout: 1
+  user_agent: Mozilla/5.0
