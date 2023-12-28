@@ -1,0 +1,3 @@
+dmg x = KamisatoAyaka.Normal1({ fumo: "Electro" })
+
+print("123")
