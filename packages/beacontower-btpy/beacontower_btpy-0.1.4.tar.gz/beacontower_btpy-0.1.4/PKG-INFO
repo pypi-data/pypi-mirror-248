@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: beacontower-btpy
+Version: 0.1.4
+Summary: 
+Author: Fredrik Svensson
+Author-email: fredrik@glaze.se
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: ansible (>=9.1.0,<10.0.0)
+Requires-Dist: az-cli (>=0.5,<0.6)
+Requires-Dist: chevron (>=0.14.0,<0.15.0)
+Requires-Dist: dda-python-terraform (>=2.1.1,<3.0.0)
+Requires-Dist: typer (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+# btpy
+
