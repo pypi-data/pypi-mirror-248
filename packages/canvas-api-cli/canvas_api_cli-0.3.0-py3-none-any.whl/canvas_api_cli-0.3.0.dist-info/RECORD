@@ -1,0 +1,9 @@
+canvas_api_cli/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+canvas_api_cli/api.py,sha256=kKIkL8X4Ea5IIsO_Yv51hyRopsr56_Zk_5wHMOdRRec,1326
+canvas_api_cli/cli.py,sha256=05vNPdsu4_zhNXeIPtIwsBx4y0JpmDZXGuxA0vChk6w,4599
+canvas_api_cli/option.py,sha256=iLT9PCaGhdou9jztOEQiGyDiEvDXgfXsCakeFSu-e6k,1103
+canvas_api_cli/utils.py,sha256=yelIkt3oVFFjhQIfhMH8AT05mXP_Bljnh5KEDxwJFsg,1899
+canvas_api_cli-0.3.0.dist-info/entry_points.txt,sha256=t78N9Irsq7Par6QJT0ZbJeMdPqB0tT3FopQNNgHQmwY,49
+canvas_api_cli-0.3.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+canvas_api_cli-0.3.0.dist-info/METADATA,sha256=KmQFRkayrrCg90KoahUBfrUFEBqIu5bBALzeyjlrWo8,3255
+canvas_api_cli-0.3.0.dist-info/RECORD,,
