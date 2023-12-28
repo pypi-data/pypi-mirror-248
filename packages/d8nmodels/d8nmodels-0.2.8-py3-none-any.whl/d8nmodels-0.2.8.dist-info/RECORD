@@ -1,0 +1,9 @@
+d8nmodels/__init__.py,sha256=EzGu7EhthJrnL_AuUM__UV0Q2-CORZqAWs7f5fnKmxo,69
+d8nmodels/d8nmodels.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+d8nmodels/kafkaconfig.py,sha256=qh736icJ72wjNwwyXLQ4ixPiNt8HJCfA-omXJW-v6i0,2584
+d8nmodels/result.py,sha256=zFEzUxYcpocrjJRE21qsccB5bmV5BrSLxPrZWbiDQzg,203
+d8nmodels/utils.py,sha256=gWqzqloQ_KQqQzJSiW_KrFnlMKvdZ1uaTK5bOPaeM9E,201
+d8nmodels-0.2.8.dist-info/METADATA,sha256=E_kppcCATILu7hxjKBPJH9wSj-gulBcnh5l2ibGiqc8,317
+d8nmodels-0.2.8.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+d8nmodels-0.2.8.dist-info/top_level.txt,sha256=F8b0FbvtKl8-bvgw5s2X0kKnYw6y-rTqNAiqX-z_u1A,10
+d8nmodels-0.2.8.dist-info/RECORD,,
