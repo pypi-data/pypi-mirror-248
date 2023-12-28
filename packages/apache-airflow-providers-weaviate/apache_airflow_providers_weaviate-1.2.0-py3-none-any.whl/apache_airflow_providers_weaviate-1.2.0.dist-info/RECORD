@@ -1,0 +1,11 @@
+airflow/providers/weaviate/LICENSE,sha256=ywUBpKZc7Jb96rVt5I3IDbg7dIJAbUSHkuoDcF3jbH4,13569
+airflow/providers/weaviate/__init__.py,sha256=1GS7oTa9OUQsG84hsRGsAGlffhaiHvsRnWV6dEW6-Lo,1583
+airflow/providers/weaviate/get_provider_info.py,sha256=os8bwCoUH7twcJbjUeddkt-A_IUNBrpPWiqwW5P51aE,2356
+airflow/providers/weaviate/hooks/__init__.py,sha256=h9YaOHsHa6a7IrJjzUqViwwFxsB0g3c50MYN9re6-dM,1053
+airflow/providers/weaviate/hooks/weaviate.py,sha256=uqyxjm65Bp5Szf_5nJJ8oq1jZoVijb9__n2Itj76OL0,26049
+airflow/providers/weaviate/operators/__init__.py,sha256=h9YaOHsHa6a7IrJjzUqViwwFxsB0g3c50MYN9re6-dM,1053
+airflow/providers/weaviate/operators/weaviate.py,sha256=q00TB9PDN9KbqJbsX6Q-FFVg8aI4D2OSgUEUOMi1HVQ,3797
+apache_airflow_providers_weaviate-1.2.0.dist-info/entry_points.txt,sha256=K4YE_KeapE0kvbgQV1kXMpHimhBJYym2M09ikzKpWuU,104
+apache_airflow_providers_weaviate-1.2.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+apache_airflow_providers_weaviate-1.2.0.dist-info/METADATA,sha256=thfkozELQkTL7330ROQdDicXe1mRcINqupds8fRZUec,4796
+apache_airflow_providers_weaviate-1.2.0.dist-info/RECORD,,
