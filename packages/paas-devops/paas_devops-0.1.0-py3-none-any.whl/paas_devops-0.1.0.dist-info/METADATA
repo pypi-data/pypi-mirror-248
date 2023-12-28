@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: paas-devops
+Version: 0.1.0
+Summary: Operation tools for blueking PaaS.
+License: MIT
+Author: blueking
+Author-email: blueking@tencent.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+Operation tools for blueking PaaS.
+
