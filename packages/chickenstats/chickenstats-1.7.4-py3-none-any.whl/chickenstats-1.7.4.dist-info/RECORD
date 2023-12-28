@@ -1,0 +1,14 @@
+chickenstats/capfriendly/__init__.py,sha256=GXn-G4EMCXeKS8yEUFzyMRji1N14mh4UXWunn09nlSY,63
+chickenstats/capfriendly/scrape.py,sha256=JlyQtgq-Q9ADS1XhDrep3p90m1ADQ1J0H0kvYUMqRyI,15533
+chickenstats/chicken_nhl/__init__.py,sha256=FwIyoVko-PS0TqztnwBRbyixrqrcM9H5gZDmO-6uoko,66
+chickenstats/chicken_nhl/fixes.py,sha256=O381DXH6oJC16i2omCylHjhA_PY7WUP7PwFnAtWzRCM,21790
+chickenstats/chicken_nhl/helpers.py,sha256=LxFSMDDtSoHeUThkbDcgPlYc8RZId7VKTOM1z9jjJx4,4080
+chickenstats/chicken_nhl/info.py,sha256=SdkHE_S2JtGl29S6vGV_mu4cwBdloboF4O-Ff7WiXlw,8594
+chickenstats/chicken_nhl/scrape.py,sha256=uBaLWZ5eLgt3yQI0HtmqO7N5GqN0oyLLM28d2-DNLIA,203654
+chickenstats/evolving_hockey/__init__.py,sha256=qyGzMoVl7jtszEseD9SJNMj-ogS5QGauf-b5610lQb4,141
+chickenstats/evolving_hockey/base.py,sha256=7lCDG4FmZqB_ZtMXbEVQkTuWKUjRjv9wS57-_y1sIcg,96724
+chickenstats/evolving_hockey/stats.py,sha256=8AatUBh7Abv5C4fAM--iyngBlbozGLqb9W8IPV8QdbY,71851
+chickenstats-1.7.4.dist-info/LICENSE,sha256=YF6QR6Vjxcg5b_sYIyqkME7FZYau5TfEUGTG-0JeRK0,35129
+chickenstats-1.7.4.dist-info/METADATA,sha256=9z95gzlNuQGOOohfcQdFYOEBc7K1NW75tWbOhmbLdts,2819
+chickenstats-1.7.4.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+chickenstats-1.7.4.dist-info/RECORD,,
