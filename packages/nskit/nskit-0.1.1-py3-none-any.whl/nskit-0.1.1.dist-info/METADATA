@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: nskit
+Version: 0.1.1
+Summary: Namespace Development Kit, providing a set of useful utilities for building software (in python namespaces)
+Author-email: "djpugh@gmail.com" <djpugh@gmail.com>
+Maintainer-email: "djpugh@gmail.com" <djpugh@gmail.com>
+Project-URL: repository, https://github.com/djpugh/nskit
+Classifier: Environment :: Console
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Natural Language :: English
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aenum
+Requires-Dist: gitpython
+Requires-Dist: jinja2
+Requires-Dist: logzero
+Requires-Dist: orjson
+Requires-Dist: pydantic[email]
+Requires-Dist: pydantic-settings
+Requires-Dist: python-dotenv
+Requires-Dist: ruamel.yaml
+Requires-Dist: tomlkit
+Requires-Dist: ghapi
+Requires-Dist: virtualenv
+Requires-Dist: backports.entry-points-selectable ; python_version < "3.10"
+Requires-Dist: importlib-metadata ; python_version < "3.11"
+Requires-Dist: typing-extensions ; python_version < "3.12"
+Requires-Dist: importlib-resources ; python_version < "3.9"
+Provides-Extra: azure_devops
+Requires-Dist: azure-cli ; extra == 'azure_devops'
+Requires-Dist: azure-devops-artifacts-helpers ; extra == 'azure_devops'
+Provides-Extra: dev
+Requires-Dist: setuptools-scm[toml] ; extra == 'dev'
+Requires-Dist: nox ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Provides-Extra: dev-build
+Requires-Dist: build ; extra == 'dev-build'
+Provides-Extra: dev-docs
+Requires-Dist: mkdocs ; extra == 'dev-docs'
+Requires-Dist: mkdocstrings[python] ; extra == 'dev-docs'
+Requires-Dist: mkdocs-git-revision-date-localized-plugin ; extra == 'dev-docs'
+Requires-Dist: mkdocs-material ; extra == 'dev-docs'
+Requires-Dist: mkdocs-git-authors-plugin ; extra == 'dev-docs'
+Requires-Dist: mkdocs-coverage ; extra == 'dev-docs'
+Requires-Dist: mkdocs-include-markdown-plugin ; extra == 'dev-docs'
+Requires-Dist: mkdocs-github-changelog ; extra == 'dev-docs'
+Requires-Dist: mkdocs-licenseinfo ; extra == 'dev-docs'
+Requires-Dist: mike ; extra == 'dev-docs'
+Provides-Extra: dev-licenses
+Requires-Dist: licensecheck ; extra == 'dev-licenses'
+Provides-Extra: dev-lint
+Requires-Dist: flake8 >=5.0.4 ; extra == 'dev-lint'
+Requires-Dist: flake8-import-order >=0.18.2 ; extra == 'dev-lint'
+Requires-Dist: flake8-eradicate >=1.4.0 ; extra == 'dev-lint'
+Requires-Dist: flake8-docstrings >=0.2.7 ; extra == 'dev-lint'
+Requires-Dist: flake8-pyproject >=1.2.3 ; extra == 'dev-lint'
+Requires-Dist: flake8-bugbear >=22.0.0 ; extra == 'dev-lint'
+Requires-Dist: flake8-comprehensions >=3.12.0 ; extra == 'dev-lint'
+Requires-Dist: flake8-unused-arguments >=0.0.13 ; extra == 'dev-lint'
+Requires-Dist: flake8-noqa >=1.3.1 ; extra == 'dev-lint'
+Provides-Extra: dev-security
+Requires-Dist: pipenv ; extra == 'dev-security'
+Requires-Dist: bandit ; extra == 'dev-security'
+Provides-Extra: dev-test
+Requires-Dist: pytest >=7.3.1 ; extra == 'dev-test'
+Requires-Dist: pytest-cov >=4 ; extra == 'dev-test'
+Requires-Dist: pytest-subtests ; extra == 'dev-test'
+Requires-Dist: pytest-xdist ; extra == 'dev-test'
+Provides-Extra: dev-types
+Requires-Dist: mypy ; extra == 'dev-types'
+Requires-Dist: lxml ; extra == 'dev-types'
+Requires-Dist: tomli ; (python_version < "3.11") and extra == 'dev'
+Requires-Dist: importlib-metadata ; (python_version < "3.8") and extra == 'dev'
+Provides-Extra: github
+Requires-Dist: ghapi ; extra == 'github'
+
+# NSkit
+
+``nskit`` is a python package that provides useful utilities and implementations for creating and managing a namespaced codebase for python and other programming languages.
+
+Please see the documentation at https://djpugh.github.io/nskit for more information (the contribution guidelines can also be found at [docs/source/developing/index.md](docs/source/developing/index.md))
