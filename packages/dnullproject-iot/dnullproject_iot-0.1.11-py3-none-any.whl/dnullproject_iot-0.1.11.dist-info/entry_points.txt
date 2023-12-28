@@ -1,0 +1,3 @@
+[console_scripts]
+dnull-mqtt=dnull_mqtt.main:run
+
