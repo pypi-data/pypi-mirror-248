@@ -1,0 +1,2 @@
+[console_scripts]
+draft = draft.command:process
