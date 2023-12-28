@@ -1,0 +1,11 @@
+polars_ds-0.2.0.dist-info/METADATA,sha256=7D6gI7rvkbMnKe3jn_32BcAJ7nngfNP-OOdER7vFnHU,9138
+polars_ds-0.2.0.dist-info/WHEEL,sha256=BAs6Ro--fkNJZ7YWIw_l-XLqi0PnI5xz7gY5UYCwM38,91
+polars_ds-0.2.0.dist-info/license_files/LICENSE.txt,sha256=kIxnfWisGQ24XakuORehDxpYaukJCAquc4GCWY8S6Hc,1084
+polars_ds/complex.py,sha256=YJXN5F2ullQP5d1N86X52_rhpl-ECsSoNN2FGBGLfbY,8596
+polars_ds/num.py,sha256=48cpVfC8SEtT7ezmp2wL2ok0DDce63nBxg4MsqFiQU8,31683
+polars_ds/stats.py,sha256=2sJvhlbmnAKLcL4aUcVM75Tr_VVLMjTguHkfg7bZXB4,15108
+polars_ds/str2.py,sha256=AYWr5hyww8FtL19IyJ2XjkfZ0rWuMm3eEbbmiKtvhdg,32068
+polars_ds/type_alias.py,sha256=V4TG9bQbXvcO1eyGcsVesz1BEIuVjP9o7z0G0Nn5B8w,444
+polars_ds/__init__.py,sha256=KllEtofZUeoRkZCbOISHk9kSkWvEoRVoTYX55bUkhgM,5915
+polars_ds/_polars_ds.cp312-win32.pyd,sha256=rJ8dwI7TGYsQKYq5jYysMyK0v6U7roxKmPcH3JEznFw,27891200
+polars_ds-0.2.0.dist-info/RECORD,,
