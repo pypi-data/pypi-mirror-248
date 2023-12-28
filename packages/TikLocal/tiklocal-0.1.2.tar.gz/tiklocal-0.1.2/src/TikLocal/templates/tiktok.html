@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+{% block extra_head %}
+<style>
+html,body {
+  height: 100%;
+  background: black;
+}
+#container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.fab {
+  position: fixed;
+  bottom: 4rem;
+  right: 1.5rem;
+}
+.fab svg {
+  width: 40px;
+  height: 40px;
+  color: #e3e3e3;
+}
+</style>
+{% endblock %}
+{% block content %}
+<div id="container">
+  {% for row in files %}
+  <video controls class="video" muted loop data-name="{{row.name}}">
+    <source src="/media/{{row.name}}?subdir=" />
+  </video>
+  {% endfor %}
+  <a class="fab" href="">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+  </a>
+</div>
+{% endblock %}
+{% block extra_body %}
+<script src="{{url_for('static', filename='hammer.min.js')}}"></script>
+<script>
+  (() => {
+    const fab = document.querySelector(".fab");
+    const container = document.querySelector('#container');
+    const videos = container.querySelectorAll('video');
+    let index = 0;
+  
+    videos[0].style.display = 'block';
+    videos[0].play();
+
+    fab.href = `/detail/${videos[0].dataset.name}`;
+
+    var manager = new Hammer.Manager(container);
+    var Swipe = new Hammer.Swipe();
+    manager.add(Swipe);
+    manager.on('swipedown', (e) => {
+      //previous;
+      index -= 1;
+      let previous;
+      if (index == -1) {
+        previous = 0;
+        index = videos.length - 1;
+      } else {
+        previous = index + 1;
+      }
+      videos[previous].style.display = 'none';
+      videos[previous].pause();
+      videos[index].style.display = 'block';
+      videos[index].muted = false;
+      videos[index].play();
+      fab.href = `/detail/${videos[index].dataset.name}`;
+    });
+    manager.on('swipeup', (e) => {
+      //next;
+      index += 1;
+      let previous;
+      if (index == videos.length) {
+        previous = videos.length - 1;
+        index = 0;
+      } else {
+        previous = index - 1;
+      }
+      videos[previous].style.display = 'none';
+      videos[previous].pause();
+      videos[index].style.display = 'block';
+      videos[index].muted = false;
+      videos[index].play();
+      fab.href = `/detail/${videos[index].dataset.name}`;
+    });
+  })()
+</script>
+{% endblock %}
