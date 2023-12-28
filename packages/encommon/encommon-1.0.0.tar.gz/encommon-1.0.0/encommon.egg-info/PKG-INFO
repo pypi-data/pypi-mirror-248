@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: encommon
+Version: 1.0.0
+Summary: Enasis Network Common Library
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: croniter
+Requires-Dist: cryptography
+Requires-Dist: python-dateutil
+Requires-Dist: pyyaml
+Requires-Dist: snaptime
+
+# Enasis Network Common Library
