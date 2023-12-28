@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+fastapi_jwk_auth/__init__.py
+fastapi_jwk_auth/jwks_auth.py
+fastapi_jwk_auth.egg-info/PKG-INFO
+fastapi_jwk_auth.egg-info/SOURCES.txt
+fastapi_jwk_auth.egg-info/dependency_links.txt
+fastapi_jwk_auth.egg-info/requires.txt
+fastapi_jwk_auth.egg-info/top_level.txt
