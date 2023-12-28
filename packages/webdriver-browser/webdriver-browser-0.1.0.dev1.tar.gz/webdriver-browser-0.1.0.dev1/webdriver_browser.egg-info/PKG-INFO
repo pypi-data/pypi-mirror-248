@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: webdriver-browser
+Version: 0.1.0.dev1
+Summary: A SQLAlchemy based Python library for interacting with private Steam account database.
+Home-page: https://github.com/invoker-bot/selenium_browser
+Author: Invoker Bot
+Author-email: invoker-bot@outlook.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: selenium>=4.15.0
+Requires-Dist: selenium-wire>=5.1.0
+Requires-Dist: webdriver_manager>=3.4.0
+Requires-Dist: undetected-chromedriver>=3.5.0
+
+# selenium_browser
+More convenient methods for creating multiple selenium browsers.
