@@ -1,0 +1,19 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:browser="http://namespaces.zope.org/browser">
+
+  <browser:page
+    for="Products.SAML2Plugins.interfaces.ISAML2Plugin"
+    name="index_html"
+    class=".metadata.SAML2MetadataView"
+    permission="zope.Public"
+    />
+
+  <browser:page
+    for="Products.SAML2Plugins.interfaces.ISAML2Plugin"
+    name="acs"
+    class=".assertionconsumer.SAML2AssertionConsumerView"
+    permission="zope.Public"
+    />
+
+</configure>

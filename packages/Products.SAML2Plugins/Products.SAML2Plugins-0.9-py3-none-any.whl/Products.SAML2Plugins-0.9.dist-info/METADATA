@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: Products.SAML2Plugins
+Version: 0.9
+Summary: SAML 2.0 plugins for the Zope PluggableAuthService
+Home-page: https://github.com/dataflake/Products.SAML2Plugins
+Author: Jens Vagelpohl and contributors
+Author-email: jens@dataflake.org
+License: ZPL 2.1
+Project-URL: Documentation, https://saml2plugins.readthedocs.io/
+Project-URL: Issue Tracker, https://github.com/dataflake/Products.SAML2Plugins/issues
+Project-URL: Sources, https://github.com/dataflake/Products.SAML2Plugins
+Keywords: web application server zope saml saml2
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Zope
+Classifier: Framework :: Zope :: 5
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Zope Public License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Internet :: WWW/HTTP :: Site Management
+Classifier: Topic :: Software Development
+Classifier: Topic :: System :: Systems Administration :: Authentication/Directory
+Requires-Python: >=3.7
+License-File: LICENSE.txt
+Requires-Dist: setuptools
+Requires-Dist: pysaml2
+Requires-Dist: Zope >=5
+Requires-Dist: Products.PluggableAuthService
+Provides-Extra: docs
+Requires-Dist: Sphinx ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Requires-Dist: repoze.sphinx.autointerface ; extra == 'docs'
+Requires-Dist: pkginfo ; extra == 'docs'
+
+.. image:: https://github.com/dataflake/Products.SAML2Plugins/actions/workflows/tests.yml/badge.svg
+   :target: https://github.com/dataflake/Products.SAML2Plugins/actions/workflows/tests.yml
+   :alt: Automated test results
+
+.. image:: https://coveralls.io/repos/github/dataflake/Products.SAML2Plugins/badge.svg
+   :target: https://coveralls.io/github/dataflake/Products.SAML2Plugins
+   :alt: Test coverage
+
+.. image:: https://readthedocs.org/projects/saml2plugins/badge/?version=latest
+   :target: https://saml2plugins.readthedocs.io
+   :alt: Documentation Status
+
+.. image:: https://img.shields.io/pypi/v/Products.SAML2Plugins.svg
+   :target: https://pypi.python.org/pypi/Products.SAML2Plugins
+   :alt: Current version on PyPI
+
+.. image:: https://img.shields.io/pypi/pyversions/Products.SAML2Plugins.svg
+   :target: https://pypi.org/project/Products.SAML2Plugins
+   :alt: Supported Python versions
+
+
+=======================
+ Products.SAML2Plugins
+=======================
+
+The SAML2Plugins package provides `PluggableAuthService
+<https://productspluggableauthservice.readthedocs.io>`_ plugins that use
+the SAML 2.0 authentication standard. The plugins act as a Service Provider
+(SP) and expect to talk to an Identity Provider (IdP). The PluggableAuthService
+is a Zope user folder product that can be extended in modular fashion using
+so-called plugins.
