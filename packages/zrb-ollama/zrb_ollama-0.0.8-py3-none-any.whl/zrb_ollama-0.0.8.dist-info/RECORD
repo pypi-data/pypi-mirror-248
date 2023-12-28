@@ -1,0 +1,11 @@
+zrb_ollama/__init__.py,sha256=WjsGqXkMoeQ7qdhGSpCyHNs7SeMsluXeDk0fZoKLH4E,181
+zrb_ollama/__main__.py,sha256=BpqgkTVfHJbU3cYIMQNwloMXTXTq2rNCqfd43JtcaRg,4454
+zrb_ollama/config.py,sha256=UbR22N7lPPPiiBhnDpzjECr60GVcij7bmlWBM1fBs7Y,288
+zrb_ollama/group.py,sha256=n2cAYdG2KezRdFnAM_jtWNH5RDPSCs_V6XOgfUVkLTM,81
+zrb_ollama/builtin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zrb_ollama/builtin/install.py,sha256=O6dWHCwa0y4URj1krtIFlWh5Dl53tL1cGZwPBOBXB88,717
+zrb_ollama/task/prompt_task.py,sha256=6mzoWB3OJE6ninw8Ou4k4C5Yg8Ul7JOAMt9j-3nQriQ,8818
+zrb_ollama-0.0.8.dist-info/entry_points.txt,sha256=aKOKmuv9Z8l5Ljaa1-aFGlcD8DIdLGgHOCJvcB403ss,113
+zrb_ollama-0.0.8.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+zrb_ollama-0.0.8.dist-info/METADATA,sha256=xiMIjs-YlXP6hb8yMSUSLUo4fe09ZR4zNegQP8xlgQw,13048
+zrb_ollama-0.0.8.dist-info/RECORD,,
