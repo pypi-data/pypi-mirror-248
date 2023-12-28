@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "simo-fleet"
+version = "1.0.2"
+authors = [
+  { name="Simanas Venčkauskas", email="simanas@simo.io" },
+]
+description = "SIMO.io fleet devices integration"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dynamic = ["dependencies"]
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[project.urls]
+Homepage = "https://github.com/SIMO-io/simo-fleet"
+Issues = "https://github.com/SIMO-io/simo-fleet/issues"
