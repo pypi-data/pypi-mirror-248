@@ -1,0 +1,2 @@
+[console_scripts]
+openai-assistants-cli = gptcli.gpt:main
