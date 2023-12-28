@@ -1,0 +1,7 @@
+README.md
+setup.py
+pylingdocs.egg-info/PKG-INFO
+pylingdocs.egg-info/SOURCES.txt
+pylingdocs.egg-info/dependency_links.txt
+pylingdocs.egg-info/requires.txt
+pylingdocs.egg-info/top_level.txt
