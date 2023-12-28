@@ -1,0 +1,13 @@
+ValidPath/__init__.py,sha256=TPnXLYLR6tsjroCjecRvXAoR3OBhLnoSDyyKF47JifM,144
+ValidPath/WSI/__init__.py,sha256=OYdGJQRc4q2SJN3FOAPMgEEZoD2orfEXOx0RHREULBM,227
+ValidPath/WSI/annotation.py,sha256=NWL7CkQ3Dhsch984WDau4cbngKCuBs9VrdglQ-kV8_M,9240
+ValidPath/WSI/patch.py,sha256=eYZSQWi0ds5X3fCzYsJZwMSoEH_njsEXyHjYrMYFBvo,25199
+ValidPath/WSI/reader.py,sha256=XF9DB1ryQLJ1GyCHpZG5gyOjiRQ6XSIx1xbZ37ZElMk,2014
+ValidPath/WSI/readwsi.py,sha256=_sBuTNmXt5A7liS2nX9zmhhaIq-jdBk-g5axD1r4vG0,4628
+ValidPath/assessment/__init__.py,sha256=PrPorhrhHI3PDBn3VdJUwwRBMkztDDQF4NmoDvJZuQQ,142
+ValidPath/assessment/annotation.py,sha256=70qNfgUprWf-XgznokdqwktnSIJj4pCn4nFDu7LQtNw,6390
+ValidPath/assessment/uncertainty.py,sha256=h6OhXx3lVsoZM-zjYVNF2SVDnSIOum9imsTYHNHQbJk,15427
+ValidPath-0.0.4.dist-info/METADATA,sha256=q1v_7NVDhwY4ZcZEsH4eq0gdIcrM2SjOmhOV5CCcuCY,7796
+ValidPath-0.0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ValidPath-0.0.4.dist-info/top_level.txt,sha256=IPq8l0iJoFaooDKZ2wCKWAK6wkNoYP56Fo_-q7QbsHQ,10
+ValidPath-0.0.4.dist-info/RECORD,,
