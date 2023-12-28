@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "brusnika_data_validation"
+version = "0.1.5"
+description = ""
+authors = ["lexsirius <abry2@mail.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~3.10"
+pyjwt = "^2.8.0"
+jupyterlab = "^4.0.3"
+pandera = "^0.16.1"
+transliterate = "^1.10.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
