@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: remarkable_update_fuse
+Version: 0.0.1
+Summary: Userspace filesystem for remarkable update files
+Author-email: Eeems <eeems@eeems.email>
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: protobuf==3.17.0
+Requires-Dist: six==1.16.0
+Requires-Dist: fuse-python==1.0.7
+
+# reMarkable Update FUSE
+Mount remarkable update files using FUSE
+
+```bash
+pip install remarkable_update_fuse
+mkdir /mnt/signed /mnt/image
+
+# Fully userspace
+rmufuse path/to/update_file.signed /mnt/signed
+ext4fuse /mnt/signed/image.ext4 /mnt/image
+
+# Using loopback
+# Ensure /etc/fuse.conf has user_allow_other
+rmufuse -o allow_root path/to/update_file.signed /mnt/signed
+mount /mnt/signed/image.ext4 /mnt/image
+```
+
+## Building
+Dependencies:
+- curl
+- python
+- python-build
+- python-pip
+- python-pipx
+- python-venv
+- python-wheel
+
+```bash
+make # Build wheel and sdist packages in dist/
+make wheel # Build wheel package in dist/
+make sdist # Build sdist package in dist/
+make dev # Test mounting 2.15.1.1189 to .venv/mnt
+make install # Build wheel and install it with pipx or pip install --user
+```
