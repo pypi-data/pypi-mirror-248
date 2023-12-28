@@ -1,0 +1,2 @@
+[console_scripts]
+string_reverse = string_editing_tools.cli:reverse_string
