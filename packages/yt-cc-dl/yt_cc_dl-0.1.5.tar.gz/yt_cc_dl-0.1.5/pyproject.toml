@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "yt-cc-dl"
+version = "0.1.5"
+description = "Command-line program to download closed captions (subtitles) of videos from YouTube.com"
+authors = ["Alyetama <malyetama@pm.me>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "yt_cc_dl" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = ">=2.2"
+yt-dlp = "*"
+loguru = ">=0.6.0"
+tqdm = ">=4.0"
+requests-toolbelt = ">=1.0.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+yt-cc-dl = 'yt_cc_dl.cli:main'
