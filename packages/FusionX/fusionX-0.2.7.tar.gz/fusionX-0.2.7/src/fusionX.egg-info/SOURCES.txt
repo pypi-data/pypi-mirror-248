@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/fusionX.egg-info/PKG-INFO
+src/fusionX.egg-info/SOURCES.txt
+src/fusionX.egg-info/dependency_links.txt
+src/fusionX.egg-info/entry_points.txt
+src/fusionX.egg-info/requires.txt
+src/fusionX.egg-info/top_level.txt
