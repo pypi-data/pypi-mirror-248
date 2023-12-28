@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: jb_news
+Version: 1.1.0
+Summary: A Python library to access JBlanked's News API.
+Author: JBlanked
