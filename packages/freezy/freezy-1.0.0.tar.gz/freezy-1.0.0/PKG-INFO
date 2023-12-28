@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: freezy
+Version: 1.0.0
+Summary: Automatic speed calculation through DLC coordinates.
+Home-page: https://github.com/minsmis/freezy.git
+Author: Min Seok Kim
+Author-email: minseok.kim@brain.snu.ac.kr
+Keywords: deeplabcut,mouse,speed
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+
+# freezy
+- Calculate mouse speed using DLC coordinates.
+- Automatic trace smoothing through '[savitzky golay](https://en.wikipedia.org/wiki/Savitzky%E2%80%93Golay_filter)' filter.
+
+# How to use
+```console
+pip install freezy
+```
+
+# Examples
+- Refer 'examples' directory.
+
+![Result](./examples/result_examples_motion.png)  
