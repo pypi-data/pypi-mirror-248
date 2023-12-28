@@ -1,0 +1,7 @@
+rustimport_jupyter/__init__.py,sha256=t1xaMXUzemuLUK0zFH6Sdnfju_eCAq0RukODYpsczIA,357
+rustimport_jupyter/_ipython_magic.py,sha256=QXk31UbNqfBXvIx2wYAsLt4lGBZlAWEL_japn0dFfeA,3956
+rustimport_jupyter/_version.py,sha256=PKIMyjdUACH4-ONvtunQCnYE2UhlMfp9su83e3HXl5E,411
+rustimport_jupyter-0.1.1.dist-info/METADATA,sha256=muyC-DOFOB0DSt3teJ01Ay693Cua8P6yNuYWKrwArIw,3133
+rustimport_jupyter-0.1.1.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+rustimport_jupyter-0.1.1.dist-info/licenses/LICENSE,sha256=dVyPxZC9suQwYSBNtz55nN1UkEJ4HAj_NLwhAfIl4nw,1070
+rustimport_jupyter-0.1.1.dist-info/RECORD,,
