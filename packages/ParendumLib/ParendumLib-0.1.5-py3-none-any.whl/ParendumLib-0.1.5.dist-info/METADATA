@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ParendumLib
+Version: 0.1.5
+Summary: Parendum Official Library
+Author: Parendum
+Author-email: info@parendum.com
+Keywords: logger
+Requires-Dist: fastapi
+Requires-Dist: requests
+Requires-Dist: motor
+Requires-Dist: pydantic
+Requires-Dist: aiohttp
+Requires-Dist: python-multipart
+Requires-Dist: fastapi-sessions
+Requires-Dist: itsdangerous
+Requires-Dist: pyotp
+Requires-Dist: jinja2
+Requires-Dist: pillow
+
