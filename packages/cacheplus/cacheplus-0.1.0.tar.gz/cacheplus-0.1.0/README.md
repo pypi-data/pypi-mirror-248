@@ -1,0 +1,404 @@
+Cacheplus is a simple API to add caching to your application. Inspired by [Streamlit](https://docs.streamlit.io/library/advanced-features/caching#minimal-example)'s `cache_data` and `cache_resource` API it provides a similar, decorator based, solution for caching returned objects by both value and by reference. In fact, the `cache_value` and `cache_reference` can be used in existing Streamlit code with minimal modifications. Doing so provides out of the box support for [Redis](https://github.com/redis/redis-py) and [MongoDB](https://github.com/mongodb/mongo-python-driver) as a caching backend.
+
+Additionally, cacheplus works with [FastAPI's dependency injection system](https://fastapi.tiangolo.com/features/#dependency-injection). This opens up the possibility for some powerful design patterns when building web applications.
+
+## Installation
+
+To install cacheplus simply:
+```
+pip install cacheplus
+```
+For Redis support:
+```
+pip install cacheplus[redis]
+```
+For MongoDB support:
+```
+pip install cacheplus[mongo]
+```
+
+
+## Basic Usage
+
+### Reference Caching
+The simpler of the two API's, `cache_reference` is designed for non-serializable objects such as HTTP clients, database connections, ML models, etc. It natively enables the singleton pattern in a very functional way. We'll borrow an example from Streamlit to show how cacheplus can be used as a drop in replacement...
+```python
+import streamlit as st
+from cacheplus import cache_reference
+from transformers import pipeline
+
+@cache_reference()  # 👈 Add the caching decorator
+def load_model():
+    return pipeline("sentiment-analysis")
+
+model = load_model()
+
+query = st.text_input("Your query", value="I love Streamlit! 🎈")
+if query:
+    result = model(query)[0]  # 👈 Classify the query text
+    st.write(result)
+```
+If you run this app (it will take a minute to run the first time), you'll see that the app calls `load_model` only once – right when the app starts. Subsequent runs will reuse that same model stored in the cache, saving time and memory! Unlike `streamlit.cache_resource`, `cache_reference` also supports asynchronous functions.
+
+The async functionality comes in handy when the creation of a resource must happen in a coroutine function. For example, `aiohttp.ClientSession` will throw a warning if initialized outside of a coroutine. Here is an example of how we can create a singleton `ClientSession` and inject the session as a dependency in a FastAPI route.
+
+```python
+from aiohttp import ClientSession
+from cacheplus import cache_reference
+from fastapi import Depends, FastAPI
+from typing import Annotated
+
+
+JSON_PLACEHOLDER = "https://jsonplaceholder.typicode.com/"
+DUMMY_JSON = "https://dummyjson.com/"
+REPOS = {
+    "placeholder": JSON_PLACEHOLDER,
+    "dummy": DUMMY_JSON,
+}
+
+app = FastAPI()
+
+@cache_reference()
+async def get_client_session(repo: str) -> ClientSession:
+    base_url = REPOS.get(repo.lower())
+    if base_url is not None:
+        return ClientSession(base_url)
+    raise ValueError(f"Invalid repo: {repo}")
+
+@app.get("/comments/{num}")
+async def get_comments(
+	session: Annotated[ClientSession, Depends(get_client_session)],
+    num: int
+):
+    response = await session.get(f"/comments/{num}")
+    return await response.json()
+```
+
+### Value Caching
+
+The `cache_value` API is a a more traditional data caching solution rather than an object caching solution like `cache_reference`. Functions or coroutines that return serializable data such as DataFrames, NumPy arrays, API responses, database query results, etc. should use `cache_value`. The data is serialized (using pickle) and stored in a storage backend (see storage backends below). On a cache hit, a copy of the original data is returned.
+
+We will borrow an example from Streamlit to illustrate how cacheplus can be used as a drop in replacement...
+
+Suppose your app loads the [Uber ride-sharing dataset](https://github.com/plotly/datasets/blob/master/uber-rides-data1.csv) – a CSV file of 50 MB – from the internet into a DataFrame:
+
+```python
+import pandas as pd
+import streamlit as st
+
+def load_data(url):
+    df = pd.read_csv(url)  # 👈 Download the data
+    return df
+
+df = load_data("https://github.com/plotly/datasets/raw/master/uber-rides-data1.csv")
+st.dataframe(df)
+
+st.button("Rerun")
+```
+
+Running the `load_data` function takes 2 to 30 seconds, depending on your internet connection. Without caching, the download is rerun each time the app is loaded or with user interaction. Try it yourself by clicking the button we added! Not a great experience… 😕
+
+Now lets add the `cache_value` decorator on `load_data`
+
+```python
+import pandas as pd
+import streamlit as st
+from cacheplus import cache_value
+
+@cache_value()
+def load_data(url):
+    df = pd.read_csv(url)  # 👈 Download the data
+    return df
+
+df = load_data("https://github.com/plotly/datasets/raw/master/uber-rides-data1.csv")
+st.dataframe(df)
+
+st.button("Rerun")
+```
+
+Run the app again. You'll notice that the slow download only happens on the first run. Every subsequent rerun should be almost instant! 💨
+
+For completeness, lets look at an async dependency injection example in FastAPI. **Note: When wrapping a coroutine we use `async_cache_value` instead of `cache_value`.**  This example will introduce some advanced concepts which we will cover later...
+
+```python
+import io
+
+import pandas as pd
+from aiohttp import ClientSession
+from cacheplus import (
+    async_cache_value,
+    async_file_storage_factory,
+    cache_reference,
+)
+from fastapi import Depends, FastAPI
+from typing import Annotated
+
+
+DATASETS = {
+    50: "https://github.com/plotly/datasets/raw/master/uber-rides-data1.csv",
+    5: "https://github.com/plotly/datasets/raw/master/26k-consumer-complaints.csv",
+}
+
+app = FastAPI()
+
+@cache_reference()
+async def get_client_session() -> ClientSession:
+    return ClientSession()
+
+
+@async_cache_value(
+    storage_factory=async_file_storage_factory("./.cache", key_prefix="example"),
+    type_encoders={ClientSession: lambda session: id(session)}
+)
+async def download_data(
+    session: Annotated[ClientSession, Depends(get_client_session)],
+    size: int
+) -> pd.DataFrame:
+    url = DATASETS.get(size)
+    if url is not None:
+        response = await session.get(url)
+        buf = io.BytesIO()
+        content = await response.read()
+        buf.write(content)
+        buf.seek(0)
+        return pd.read_csv(buf)
+    raise ValueError(f"Invalid size: {size}")
+
+
+@app.get("/data/{size}")
+async def get_dataset(data: Annotated[pd.DataFrame, Depends(download_data)]):
+    return data.to_json()
+```
+
+When you run this app and try to download the smaller file (/data/5) it will take a couple seconds for data to start showing up on your browser. If you open a new tab and hit the same endpoint, data should start showing up in the browser almost instantly.
+
+## Storage Backends
+
+The storage backends only apply to the `cache_value` and `async_cache_value` decorators. All objects for the `cache_reference` decorator are stored in memory. All backends work in `bytes`, objects must be serializable with pickle which will handle the conversion to and from `bytes`.
+
+All storage backends inherit from `Storage` and `AsyncStorage` you can implement your own storage backend by extending either class.
+
+Each method of storage (i.e. Redis, MongoDB, File System, etc.) comes with a synchronous and asynchronous version that should be used with `cache_value` and `async_cache_value` respectively.
+
+### Memory
+
+Stores all data in memory. Cached data is not persisted and is not shared across different runtimes.
+
+### File System
+
+Stores all data on disk. Cached data is persisted and can be shared across runtimes as long as all running processes exist on a single host.
+
+### Redis
+
+Stores all data on a Redis server. Cached data is persisted and can be shared across runtimes in a distributed environment. This is the preferred storage backend for production use cases.
+
+### MongoDB
+
+Stores all data on a MongoDB server. Cached data is persisted and can be shared across runtimes in a distributed environment. This provides an alternative where Redis may not be an available option (for example when running on Windows Server). **Note: Cached data must fit into a single document. MongoDB has a [document size limit of 16 MB](https://www.mongodb.com/docs/manual/core/document/#document-limitations). The database driver will throw an error if the cached data is too large.**
+
+## Advance Usage
+
+### Storage Factories
+
+The `cache_value` and `async_cache_value` decorators accept a `storage_factory` parameter. This is a zero argument callable that returns a subclass instance of `Storage` or `AsyncStorage`. Internally, the callable is wrapped in `cache_reference` so the factory function is only ever called once. This allows you to mix and match storage backends on different cached functions yet ensure that only one instance of the storage backed will exist. If no storage factory is specified, the memory backend is used by default. Cacheplus ships with storage factories for all the built in backends:
+
+```python
+from cacheplus import (
+    async_cache_value,
+    async_redis_storage_factory,
+    cache_value,
+    file_storage_factory,
+)
+
+@cache_value(storage_factory=file_storage_factory(path="./.cache"))
+def do_something(*args, **kwargs):
+    ...
+    
+@async_cache_value(
+    storage_factory=async_redis_storage_factory(url="redis://localhost:6379")
+)
+async def do_something_async(*args, **kwargs):
+    ...
+
+```
+
+**Note: The storage factories can produce some unexpected behavior because of the use of `cache_reference` internally. The storage factory function will only be called <u>one time</u> regardless of the arguments to it. For example...**
+
+```python
+from cacheplus import cache_value, file_storage_factory
+
+@cache_value(storage_factory=file_storage_factory(path="./path_1"))
+def do():
+    ...
+    
+@cache_value(storage_factory=file_storage_factory(path="./path_2"))
+def something():
+    ...
+```
+
+You may expect this to create two cache folders, one at `./path_1` and another at `./path_2` when in actuality only one folder will be created at `./path_1` and the `something` function will use that directory.
+
+### Type Encoders
+
+Cacheplus hashes all positional and keyword arguments passed to a decorated function in order to generate a cache key. This goes beyond using the built in `hash` method. While the semantics of argument and function hashing are beyond the scope of this documentation the important thing is that cacheplus generates a cache key that is <u>consistent across runtimes</u>. It can do this for a myriad of types; built in types (str, int, float, etc.), file handles, dataclasses, dictionaries etc. Collections which contain potentially nested data structures (like dictionaries and lists) are recursively hashed so changes reflected in mutable collections will generate different cache keys.
+
+Of course there will inevitably be data structures which do not have a native encoder. For example, `BaseModel` from [Pydantic](https://docs.pydantic.dev/latest/concepts/models/) cannot be hashed natively by cacheplus. The following will raise a `UnhashableParamError`:
+
+```python
+from cacheplus import cache_value
+from pydantic import BaseModel
+
+class Model(BaseModel):
+    key: str
+    val: int
+    
+m = Model(key="test", val=1)
+
+@cache_value()
+def echo(model: Model) -> Model:
+    return model
+
+echo(m) # Will raise UnhashableParamError
+```
+
+In cases like this there are two options:
+
+1. You can prefix `model` in the function signature with an underscore (`model` -> `_model`). This will cause cacheplus to ignore that argument when calculating the cache key
+2. We can write a type encoder for type `BaseModel`
+
+Option 1 is not good in this case, the model is a critical component of the cache key. Without it, the first call to `echo` will be cached and `echo` will never run again regardless of the input (because to cacheplus, `echo` is effectively a zero argument callable)
+
+Option 2 is the best way to go. This gives us the ability to tell cacheplus how to hash our model. We can convert `BaseModel` into a lot of types. We could encode it as a JSON string, hash the individual attributes, or convert the model instance to a dictionary. Lets convert it to a dictionary:
+
+```python
+from cacheplus import cache_value
+from pydantic import BaseModel
+
+class Model(BaseModel):
+    key: str
+    val: int
+    
+m = Model(key="test", val=1)
+
+def encode_base_model(model: BaseModel) -> dict:
+    return model.model_dump()
+
+@cache_value(type_encoders={BaseModel: encode_base_model})
+def echo(model: Model) -> Model:
+    return model
+
+echo(m) # Will succeed
+```
+
+<u>All cacheplus decorators accept the `type_encoders` parameter (`cache_reference`, `cache_value` and `async_cache_value`)</u> It must be a dictionary where the keys are the type to be encoded and the value is a callable which accepts the instance of that type and returns an object which can be hashed natively. The type is checked using `isinstance` so technically a key can be a tuple of types. Ordering of types is also important. Since python 3.6, the insertion order of dictionaries has been preserved so types will be checked in the order in which they are listed.
+
+### Expiration
+
+By default, data cached with `cache_value` or `async_cache_value` does not expire. If you would like to implement cache control and have the cache data expire after a certain amount of time you can set the `expires_in` parameter:
+
+```python
+import time
+from cacheplus import cache_value
+
+@cache_value(expires_in=1)
+def do_something():
+    return 1
+
+do_something() # This is executed
+do_something() # The cached value is used
+time.sleep(1.01)
+do_something() # This is executed because the cached value is expired
+```
+
+### Concurrency
+
+By default, concurrent calls to `cache_value` and `async_cache_value` are not serialized so it is possible for a function called concurrently with identical arguments to run more than once. In the majority of cases this behavior is acceptable because function calls with identical arguments will usually produce identical values and the side effect of overwriting an already cached value is minimal. This then allows two function calls with different arguments to run concurrently which can be more performant. However if calling a function with identical arguments at different points in time produces different results (for example, a database query may produce two different result sets if the data was updated between queries) and the inconsistency is not acceptable, you can serialize calls to the decorated function by setting ``serialize`` to ``True``:
+
+```python
+import time
+from cacheplus import cache_value
+
+@cache_value(serialize=True) # Concurrent calls to do_something will execute sequentially
+def do_something():
+    time.sleep(0.1)
+    return 1
+```
+
+### Dependency Injection
+
+All cacheplus decorators preserve the decorated callable's signature. Therefore, any decorated function can be used as a dependency in popular ASGI frameworks (such as [FastAPI](https://fastapi.tiangolo.com/) and [Litestar](https://docs.litestar.dev/latest/)). This opens the door for some interesting patterns. Some of which we already explored in the Basic Usage section.
+
+#### Global State
+
+It is common to maintain some global state in an API such as a connection pool, background tasks, ml models, etc. There are a lot of different ways to solve this problem and FastAPI doesn't restrict you to one way or another. It does point you toward the lifespan protocol. So lets see how we can add some global state and then go over the shortcomings of this approach:
+
+```python
+from contextlib import asynccontextmanager
+
+from fastapi import FastAPI
+
+
+def fake_answer_to_everything_ml_model(x: float):
+    return x * 42
+
+ml_models = {}
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Load the ML model
+    ml_models["answer_to_everything"] = fake_answer_to_everything_ml_model
+    yield
+    # Clean up the ML models and release the resources
+    ml_models.clear()
+
+app = FastAPI(lifespan=lifespan)
+
+@app.get("/predict")
+async def predict(x: float):
+    result = ml_models["answer_to_everything"](x)
+    return {"result": result}
+```
+
+Here we have a lifespan that adds a model to the `ml_models` dictionary which is in the module scope. We can then access that loaded model in all path operations without loading the model over and over again. Fantastic!
+
+But, what if we want to add multiple models? We may have many path operations that each query a unique model. Lets assume loading a model is a costly operation (which it typically is in real world scenarios), we could load them all at once in our lifespan context manager, or we could load them lazily and cache the references:
+
+```python
+from cacheplus import cache_reference
+from fastapi import FastAPI
+
+
+def fake_answer_to_everything_ml_model(x: float):
+    return x * 42
+
+def fake_answer_to_nothing_model(x: float):
+    return x * 43
+
+@cache_reference()
+def load_model(name: str):
+    if name == "everything":
+        return fake_answer_to_everything_ml_model
+    if name == "nothing":
+        fake_answer_to_nothing_model
+
+app = FastAPI()
+
+@app.get("/predict/everything")
+async def predict(x: float):
+    result = load_model("everything")(x)
+    return {"result": result}
+
+@app.get("/predict/nothing")
+async def predict_nothing(x: float):
+    result = load_model("nothing")(x)
+    return {"result": result}
+```
+
+This is approach allows us to lazily load models (so our app starts up much faster) and we don't load models unnecessarily (saving memory). For the speed and memory savings, the first call to an endpoint will have to load the model. Subsequent calls do not need to wait for the model to load. Depending on how long it takes to load the model, this may be an ideal approach for you.
+
+This makes even more sense with quick-to-load resources such as database connection pools. We could use this same approach to load a connection pool to our dev and prod databases dynamically from the same route.
+
+#### Dependency Caching
+
+FastAPI doesn't provide an out of the box solution for caching the results of dependencies so each time an endpoint is hit, the entire dependency tree is traversed. Litestar can [cache dependency results](https://docs.litestar.dev/latest/usage/dependency-injection.html#the-provide-class) but its pretty simplistic and isn't ideal for lot of cases. Cacheplus provides an API for dependency caching and can easily integrated into your project just by decorating the dependencies you already use!
+
