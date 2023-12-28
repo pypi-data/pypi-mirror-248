@@ -1,0 +1,3 @@
+[console_scripts]
+yokkaichi = yokkaichi.__main__:main
+yokkaichi_tests = yokkaichi_tests.__main__:main
