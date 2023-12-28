@@ -1,0 +1,17 @@
+bin/ndmetis,sha256=9gtlw2gagdhq0uOVwl88eSCdlIzpVZEUAiOVBLCG3zU,298984
+bin/cmpfillin,sha256=GMQvl1FWDWl0OpxwIiJ3VUmPuebMp49cz_5EvuKGoto,156152
+bin/m2gmetis,sha256=8sb3m_IQQQTLMWBArQXNUPbbyGuVgpVukEQrEqFUAQ4,157192
+bin/mpmetis,sha256=Un98W7P32rGRDthrCB31osMHQ3qcAaAEjJ8kZWNSACk,299048
+bin/graphchk,sha256=0sNg1aGL5NM4t63DRcpNBf45JYXAYMTDXMgFDMs1Zvs,156296
+bin/gpmetis,sha256=W1dXfOsVKwfynkEt2OEh0huenvwsHtc8QmTZU3ge3WI,298824
+include/metis.h,sha256=tO2a7UpwVs3xbaexMtNFnjBR1HZqkDbkPNYMWQIuIVc,12271
+sksparse_minimal/__init__.py,sha256=0y1KUDH3he0qMhRgrlr0N26BOccIiflW0i23Dg9e1OY,32
+sksparse_minimal/main_test.py,sha256=QcLqComkY6g1Ws79YtBsAtfFNSZOrACCIeKn_PnGy7Y,1402
+sksparse_minimal/_cholespy_core.cpython-39-darwin.so,sha256=bg3Y8rKhb7P6tnX54iZdjZMFG6maxrDFDEbH0Xu_miQ,625520
+sksparse_minimal/main.py,sha256=7r9H5wcBfHmKgi0liIkGAHDqeCnMvIIKHkZvqyMDTwQ,1359
+sksparse_minimal-0.1.dist-info/RECORD,,
+sksparse_minimal-0.1.dist-info/WHEEL,sha256=s2ABba7n2lL8N6xBpewPS9hxaLyEnc0RTT-aG0eBuMQ,111
+sksparse_minimal-0.1.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sksparse_minimal-0.1.dist-info/METADATA,sha256=E4RINoQL4a2HVMkg728WdzxMA8uAYzbmGRoQj-2eEB4,1751
+sksparse_minimal-0.1.dist-info/licenses/LICENSE,sha256=LY6hRlGrkILDvWVQKRymVXSjHzri9yNG5mqazEDeyUs,1551
+lib/libmetis.a,sha256=b6CFWydfSuMo8p8736xjcapyOURWNQOKfYZUrq-aHGM,543840
