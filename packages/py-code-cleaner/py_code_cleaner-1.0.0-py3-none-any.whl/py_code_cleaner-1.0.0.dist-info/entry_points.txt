@@ -1,0 +1,2 @@
+[console_scripts]
+clean-py = py_code_cleaner.py_code_cleaner:main
