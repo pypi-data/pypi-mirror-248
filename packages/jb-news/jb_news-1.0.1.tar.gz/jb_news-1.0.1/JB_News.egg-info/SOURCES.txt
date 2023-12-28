@@ -1,0 +1,12 @@
+README.md
+setup.py
+JB-News/__init__.py
+JB-News/news.py
+JB_News.egg-info/PKG-INFO
+JB_News.egg-info/SOURCES.txt
+JB_News.egg-info/dependency_links.txt
+JB_News.egg-info/top_level.txt
+jb_news.egg-info/PKG-INFO
+jb_news.egg-info/SOURCES.txt
+jb_news.egg-info/dependency_links.txt
+jb_news.egg-info/top_level.txt
