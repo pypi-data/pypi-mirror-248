@@ -1,0 +1,6 @@
+[project]
+name = "logging_testing_SN"
+version = "0.0.1"
+description = "Testing and logging basics in Python"
+[tool.setuptools]
+py-modules = []
