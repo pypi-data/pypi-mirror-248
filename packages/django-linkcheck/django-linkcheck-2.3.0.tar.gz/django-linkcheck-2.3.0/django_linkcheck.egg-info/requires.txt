@@ -1,0 +1,9 @@
+django>=3.2
+requests
+
+[dev]
+build
+flake8
+isort
+pre-commit
+requests_mock
