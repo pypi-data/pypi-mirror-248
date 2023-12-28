@@ -1,0 +1,9 @@
+README.md
+setup.py
+conson/__init__.py
+conson/conson.py
+conson.egg-info/PKG-INFO
+conson.egg-info/SOURCES.txt
+conson.egg-info/dependency_links.txt
+conson.egg-info/requires.txt
+conson.egg-info/top_level.txt
