@@ -1,0 +1,8 @@
+dfpwm/__init__.py,sha256=FQPbfWP6oZCdPO0T732nW-KdidzY_YOjVwEePwLwSek,64
+dfpwm/convertor.c,sha256=B5QjaFRkZX6ypjcBgDulOdAjQiNCLg3fnwkHV6izAGI,1210498
+dfpwm/convertor.pyx,sha256=uHqIUul-OF8AxkcqU2p3a1FnmezIgqvqAPMVx-h1Ihw,4191
+dfpwm/convertor.cpython-311-x86_64-linux-gnu.so,sha256=OCZt8eFOCujSQA28IRdp3viKDW_TKUZUXG7bd0mHhrY,1237512
+dfpwm-0.1.4.dist-info/LICENSE,sha256=tEtskIlc6sSVqdS3PGy9AGyGGJpONCdujvIafLXYTNc,1068
+dfpwm-0.1.4.dist-info/METADATA,sha256=BvJ2qkfZSAd2bgd38a6hw-LwV9HQ6e0_JqRcrAKJ-rQ,1419
+dfpwm-0.1.4.dist-info/WHEEL,sha256=x86MHrZR7zx6sH0QhiFsRtwwB28JWPygLAw4DKQ7iPM,110
+dfpwm-0.1.4.dist-info/RECORD,,
