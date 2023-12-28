@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "darthvader"
+version = "0.1.1"
+description = ""
+authors = ["Zaf4 <zafermolbio@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.6,<4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
