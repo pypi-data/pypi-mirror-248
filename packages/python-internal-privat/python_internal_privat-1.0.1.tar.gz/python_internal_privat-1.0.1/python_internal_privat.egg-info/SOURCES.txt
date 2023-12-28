@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+python_internal_privat/__init__.py
+python_internal_privat/config.py
+python_internal_privat/managers.py
+python_internal_privat.egg-info/PKG-INFO
+python_internal_privat.egg-info/SOURCES.txt
+python_internal_privat.egg-info/dependency_links.txt
+python_internal_privat.egg-info/requires.txt
+python_internal_privat.egg-info/top_level.txt
