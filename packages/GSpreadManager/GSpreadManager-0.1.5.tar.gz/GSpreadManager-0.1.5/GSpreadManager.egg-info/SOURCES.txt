@@ -1,0 +1,10 @@
+README.md
+setup.py
+GSpreadManager.egg-info/PKG-INFO
+GSpreadManager.egg-info/SOURCES.txt
+GSpreadManager.egg-info/dependency_links.txt
+GSpreadManager.egg-info/requires.txt
+GSpreadManager.egg-info/top_level.txt
+gspreadmanager/__init__.py
+gspreadmanager/config.py
+gspreadmanager/connector.py
