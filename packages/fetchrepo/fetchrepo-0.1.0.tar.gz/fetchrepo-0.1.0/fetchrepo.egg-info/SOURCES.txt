@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+FetchRepository/FetchRepo.py
+FetchRepository/__init__.py
+fetchrepo.egg-info/PKG-INFO
+fetchrepo.egg-info/SOURCES.txt
+fetchrepo.egg-info/dependency_links.txt
+fetchrepo.egg-info/top_level.txt

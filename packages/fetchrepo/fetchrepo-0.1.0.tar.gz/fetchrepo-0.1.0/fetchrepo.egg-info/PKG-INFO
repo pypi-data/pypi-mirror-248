@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: fetchrepo
+Version: 0.1.0
+Summary: Passing your GitHub https url, It fetches your content from GitHub repo
+Author: Al-Fareed
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# GitHub-Harvester
+fetches the contents that are present in the github repo through its https link and access token
