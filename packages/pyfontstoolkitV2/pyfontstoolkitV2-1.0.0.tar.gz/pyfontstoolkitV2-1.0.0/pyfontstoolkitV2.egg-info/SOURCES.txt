@@ -1,0 +1,6 @@
+setup.py
+pyfontstoolkitV2/__init__.py
+pyfontstoolkitV2.egg-info/PKG-INFO
+pyfontstoolkitV2.egg-info/SOURCES.txt
+pyfontstoolkitV2.egg-info/dependency_links.txt
+pyfontstoolkitV2.egg-info/top_level.txt
