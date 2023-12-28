@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "django-tabbed-admin2"
+version = "0"
+description = ""
+authors = ["4Sigma <devops@4sigma.it>"]
+readme = "README.md"
+
+[tool.poetry-version-plugin]
+source = "git-tag"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2"
+
+[tool.poetry.group.dev.dependencies]
+twine = "^4.0.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
