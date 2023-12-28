@@ -1,0 +1,99 @@
+Metadata-Version: 2.1
+Name: whisper2subs
+Version: 0.2.1
+Summary: Transcribes audio using Whisper and translates it using DeepL.
+Author-email: Daniel Luque <danielluque14@gmail.com>
+License: MIT
+Project-URL: Source Code, https://github.com/LuqueDaniel/whisper2subs
+Project-URL: Issue Tracker, https://github.com/LuqueDaniel/whisper2subs/issues
+Project-URL: Documentation, https://github.com/LuqueDaniel/whisper2subs/blob/main/README.md
+Keywords: whisper,subs,cli,translate,transcribe
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: GPU :: NVIDIA CUDA
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: Topic :: Multimedia :: Video
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Python: <3.12,>=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openai-whisper ==20231117
+Requires-Dist: deepl ~=1.16.1
+Requires-Dist: Click ~=8.1.7
+Provides-Extra: dev
+Requires-Dist: pre-commit ==3.5.0 ; extra == 'dev'
+Requires-Dist: black >=23.12.1 ; extra == 'dev'
+Requires-Dist: isort >=5.13.2 ; extra == 'dev'
+Requires-Dist: ruff >=0.1.9 ; extra == 'dev'
+Requires-Dist: mypy >=1.8.0 ; extra == 'dev'
+
+[![PyPI](https://img.shields.io/pypi/v/whisper2subs?style=flat-square)](https://pypi.org/project/whisper2subs/)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/whisper2subs?style=flat-square)](https://pypi.org/project/whisper2subs/)
+[![PyPI - License](https://img.shields.io/pypi/l/whisper2subs?style=flat-square)](https://github.com/LuqueDaniel/whisper2subs/blob/main/LICENSE)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black?style=flat-square)
+
+# whisper2subs
+
+A CLI tool that transcribes audio using [`openai-whisper`](https://github.com/openai/whisper) and translates it using [DeepL](https://www.deepl.com/docs-api).
+
+## Install
+
+```shell
+pip install --user whisper2subs
+```
+
+## Usage
+
+```shell
+whisper2subs --help
+```
+
+### Translate
+
+In order to perform translations into languages **other than English**, it's required to **provide an API key from DeepL**. Using the `--deepl-apikey` option or with the `DEEPL_APIKEY` environment variable. You can [**create a free account**](https://www.deepl.com/en/pro?cta=header-pro-button/) to get an API key.
+
+Transcribe and then translate to Spanish the audio of an mp4 file, using the `large-v2` model.
+
+```shell
+whisper2subs -m large-v2 -t es --deepl-apikey "yout-api-key" input.mp4 subs/
+```
+
+If the language of the input file is not specified Whisper will try to detect it. To specify the language of the input file, use the `-l` option.
+
+```shell
+whisper2subs -l ja -m large-v2 -t es --deepl-apikey "yout-api-key" input.mp4 subs/
+```
+
+Change output format to `str` only:
+
+```shell
+whisper2subs -l ja -t es --output-format srt --deepl-apikey "yout-api-key" input.mp4 subs/
+```
+
+For more information:
+
+```shell
+whisper2subs --help
+```
+
+### Transcribe
+
+Transcribe audio without translating it:
+
+```shell
+whisper2subs input.mp4 text/
+```
+
+## References
+
+* [Whisper](https://github.com/openai/whisper)
+* [DeepL API reference](https://www.deepl.com/docs-api)
+* [`deepl-python`](https://github.com/DeepLcom/deepl-python)

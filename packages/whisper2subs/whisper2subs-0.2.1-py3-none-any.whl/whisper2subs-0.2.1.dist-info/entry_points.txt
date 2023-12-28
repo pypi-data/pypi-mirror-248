@@ -1,0 +1,2 @@
+[console_scripts]
+whisper2subs = whisper2subs.cli:whisper2subs
