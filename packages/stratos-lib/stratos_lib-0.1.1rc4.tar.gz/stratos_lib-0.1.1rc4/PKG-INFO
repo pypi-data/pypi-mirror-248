@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: stratos-lib
+Version: 0.1.1rc4
+Summary: Reusable common infrastructure constructs via Pulumi infrastructure-as-code.
+Author-email: Matt White <mail@matt-w.net>
+Requires-Python: >=3.8
+Requires-Dist: pulumi-aws>=6.14.0
+Requires-Dist: pulumi>=3.97.0
+Requires-Dist: pydantic-settings>=2.1.0
+Description-Content-Type: text/markdown
+
+# stratos-lib
+
+Describe your project here.
