@@ -1,0 +1,4 @@
+[console_scripts]
+migrate-hoth=sqlalchemy_migrate_hotoffthehamster.versioning.shell:main
+migrate-repository-hoth=sqlalchemy_migrate_hotoffthehamster.versioning.migrate_repository:main
+
