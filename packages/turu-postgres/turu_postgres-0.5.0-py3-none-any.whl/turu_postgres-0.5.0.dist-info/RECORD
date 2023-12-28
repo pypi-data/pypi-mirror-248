@@ -1,0 +1,8 @@
+turu/postgres/__init__.py,sha256=Q3Q4TVZzmpzaGkB_VMnKzq45n75gXMvLE2JBo7jz0lU,538
+turu/postgres/async_connection.py,sha256=osiu-AYa6wb8H9DUnZEUR0AdJkqecR-Nu7kV8P6vPIM,1982
+turu/postgres/async_cursor.py,sha256=QKgNxI6U4GlNHlX1s2FH5TdzM7A1QIWYTo_Lw3CUbIA,4203
+turu/postgres/connection.py,sha256=GySdDS-CYBKE0H9w_I9AVnJY3WwDQC4BDPGJpWAbOkw,1714
+turu/postgres/cursor.py,sha256=JU8XCIPR3AjhNvauLDPOhCSAqymFwFpAf3Y8wl34_5c,4104
+turu_postgres-0.5.0.dist-info/METADATA,sha256=NWmD8_ehsQdhP-9m7l1Orz_rWMe0XhXmPwPyLwHEREs,1342
+turu_postgres-0.5.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+turu_postgres-0.5.0.dist-info/RECORD,,
