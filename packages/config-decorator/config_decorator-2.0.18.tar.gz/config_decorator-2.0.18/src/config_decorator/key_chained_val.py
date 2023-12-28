@@ -1,0 +1,610 @@
+# vim:tw=0:ts=4:sw=4:et:norl
+# Author: Landon Bouma <https://tallybark.com/>
+# Project: https://github.com/doblabs/config-decorator#🎀
+# License: MIT
+# Copyright © 2019-2020 Landon Bouma. All rights reserved.
+
+"""Class to manage key-value settings."""
+
+import os
+import sys
+from gettext import gettext as _
+
+__all__ = ("KeyChainedValue",)
+
+
+class KeyChainedValue(object):
+    """Represents one setting of a section of a hierarchical settings configuration.
+
+    .. automethod:: __init__
+    """
+
+    _envvar_prefix = ""
+    _envvar_warned = False
+
+    def __init__(
+        self,
+        section=None,
+        name="",
+        default_f=None,
+        value_type=None,
+        allow_none=False,
+        # Optional.
+        choices="",
+        doc="",
+        ephemeral=False,
+        hidden=False,
+        validate=None,
+        conform=None,
+        recover=None,
+    ):
+        """Inits a :class:`KeyChainedValue` object.
+
+        Do not create these objects directly, but instead
+        use the
+        :func:`config_decorator.config_decorator.ConfigDecorator.settings`
+        decorator.
+
+        Except for ``section``, the following arguments may be specified
+        in the decorator call.
+
+        For instance::
+
+            @property
+            @RootSectionBar.setting(
+                "An example setting.",
+                name='foo-bar',
+                value_type=bool,
+                hidden=True,
+                # etc.
+            )
+            def foo_bar(self):
+                return 'True'
+
+        Args:
+            section: A reference to the section that contains this setting
+                     (a :class:`config_decorator.config_decorator.ConfigDecorator`).
+            name: The setting name, either inferred from the class method that
+                  is decorated, or specified explicitly.
+            default_f: A method (i.e., the decorated class method)
+                       that generates the default setting value.
+            value_type: The setting type, either inferred from the type of
+                        the default value, or explicitly indicated.
+                        It's often useful to explicitly set ``bool`` types
+                        so that the default function can return a ``'True'``
+                        or ``'False'`` string.
+            allow_none: True if the value is allowed to be ``None``, otherwise
+                        when the value is set, it will be passed to the type
+                        converted, which might fail on None, or produce
+                        unexpected results
+                        (such as converting ``None`` to ``'None'``).
+            choices: A optional list of valid values, used to validate input
+                     when setting the value.
+            doc: Helpful text about the setting, which your application could
+                 use to show the user. The ``doc`` can specified as a keyword
+                 argument, or as the first positional argument to the decorator.
+            ephemeral: If True, the setting is meant not to be persisted
+                       between sessions (e.g., ``ephemeral`` settings are
+                       excluded on a call to
+                       :meth:`config_decorator.config_decorator.ConfigDecorator.apply_items`
+                       .)
+            hidden: If True, the setting is excluded from an output operation
+                    if the value is the same as the setting's default value.
+            validate: An optional function to validate the value when set
+                      from user input. If the validate function returns a
+                      falsey value, setting the value raises ``ValueError``.
+            conform: If set, function used to translate config value to the
+                     value used internally. Useful for log levels, datetime, etc.
+            recover: If set, function used to convert internal value back to
+                     storable value. Useful to covert log level back to name, etc.
+        """
+        self._section = section
+        self._name = name
+        self._default_f = self._prepare_default_f(default_f, value_type, allow_none)
+        self._choices = choices
+        self._doc = doc
+        self._ephemeral = ephemeral
+        self._hidden = hidden
+        self._validate_f = validate
+        self._conform_f = conform
+        self._recover_f = recover
+
+        self._value_allow_none = allow_none
+        self._value_type = self._deduce_value_type(value_type)
+
+        # These attributes will only be set if some particular
+        # source specifies a value:
+        #  self._val_forced
+        #  self._val_cliarg
+        #  self._val_envvar
+        #  self._val_config
+
+    @property
+    def name(self):
+        """Returns the setting name."""
+        return self._name
+
+    @property
+    def default(self):
+        """Returns the default setting value."""
+        return self._default_f(self._section)
+
+    def _prepare_default_f(self, default_f=None, value_type=None, allow_none=False):
+        if default_f is not None:
+            return default_f
+
+        default_val = None
+
+        # REFER: _deduce_default_type knows: None, bool, int, list, str.
+        if allow_none:
+            default_val = None
+        elif value_type is None:
+            # Means value_type wasn't specified.
+            default_val = ""
+        elif value_type is bool:
+            default_val = False
+        elif value_type is int:
+            default_val = 0
+        elif value_type is list:
+            default_val = []
+        elif value_type is str:
+            default_val = ""
+        else:
+            # Fallback is to stringify unknown type.
+            # - Though really maybe this should be an error, as it's
+            #   truly unexpected. But tolerable.
+            default_val = ""
+
+        return lambda x: default_val
+
+    def _deduce_value_type(self, value_type=None):
+        if value_type is not None:
+            # Caller can specify, say, a function to do type conversion,
+            # but they're encouraged to stick to builtin types, and to
+            # use `conform` if they need to change values on input.
+            if value_type is list:
+                return self._typify_list
+            return value_type
+        elif self.ephemeral:
+            return lambda val: val
+        return self._deduce_default_type()
+
+    def _deduce_default_type(self):
+        default_value = self.default
+        if default_value is None:
+            # If user wrote default method to return None, then obviously
+            # implicitly the setting allows the None value.
+            self._value_allow_none = True
+            # Furthermore, the value type is implicitly whatever, because
+            # the user did not specify the type of None that is the default.
+            # So rather than assume, the type function is just the identity.
+            # (The user can set value_type to be explicit about the type.)
+            return lambda val: val
+        elif isinstance(default_value, bool):
+            return bool
+        elif isinstance(default_value, int):
+            return int
+        elif isinstance(default_value, list):
+            # Because ConfigObj auto-detects list-like values,
+            # we might get a string value in a list-type setting,
+            # which we don't want to ['s', 'p', 'l', 'i', 't'].
+            # So rather than a blind:
+            #   return list
+            # we gotta be smarter.
+            return self._typify_list
+        elif isinstance(default_value, str):
+            return str
+        # We could default to, say, str, or we could nag user to either
+        # add another `elif` here, or to fix their default return value.
+        msg = f" ({_('Unrecognized value type')}: " f"‘{type(default_value).__name__}’)"
+        raise NotImplementedError(msg)
+
+    @property
+    def doc(self):
+        """Returns the setting help text."""
+        return self._doc
+
+    @property
+    def ephemeral(self):
+        """Returns the ephemeral state."""
+        if callable(self._ephemeral):
+            if self._section is None:
+                return False
+            return self._ephemeral(self)
+        return self._ephemeral
+
+    def find_root(self):
+        """Returns the topmost section object."""
+        # (lb): This function probably not useful, but offered as parity
+        # to what's in ConfigDecorator. And who knows, maybe a developer
+        # will find useful from a debug prompt.
+        return self._section.find_root()
+
+    @property
+    def hidden(self):
+        """Returns the hidden state."""
+        if callable(self._hidden):
+            if self._section is None:
+                # FIXME/2019-12-23: (lb): I think this is unreachable,
+                # because self._section is only None when config is
+                # being built, but hidden not called during that time.
+                return False
+            return self._hidden(self)
+        return self._hidden
+
+    @property
+    def persisted(self):
+        """Returns True if the setting value was set via :meth:`value_from_config`."""
+        return hasattr(self, "_val_config")
+
+    def _typify(self, value):
+        if value is None:
+            if self._value_allow_none:
+                return value
+            raise ValueError(_(" (No “None” values allowed)"))
+
+        if self._value_type is bool:
+            if isinstance(value, bool):
+                return value
+            elif value == "True":
+                return True
+            elif value == "False":
+                return False
+            else:
+                raise ValueError(_(" (Expected a bool, or “True” or “False”)"))
+
+        if self._value_type is int:
+            try:
+                return int(value)
+            except ValueError:
+                raise ValueError(f" ({_('Expected an int')})")
+
+        try:
+            value = self._value_type(value)
+        except Exception as err:
+            # Used as 'addendum' to broader error message.
+            raise ValueError(f" ({err})")
+        return value
+
+    def _typify_list(self, value):
+        # Handle ConfigObj parsing a string without finding commas to
+        # split on, but the @setting indicating it's a list; or a
+        # default method returning [] so we avoid calling list([]).
+        if isinstance(value, list):
+            return value
+        return [value]
+
+    def walk(self, visitor):
+        visitor(self._section, self)
+
+    # ***
+
+    def __str__(self):
+        return "{}{}{}: {}".format(
+            self._section.section_path(),
+            self._section.SEP,
+            self._name,
+            self.value,
+        )
+
+    # ***
+
+    @property
+    def value(self):
+        """Returns the setting value read from the highest priority source.
+
+        Returns:
+
+            The setting value from the highest priority source,
+            as determined by the order of this list:
+
+            - If the setting value was forced,
+              by a call to the :meth:`value_from_forced` setter,
+              that value is returned.
+
+            - If the setting value was read from a command line argument,
+              by a call to the :meth:`value_from_cliarg` setter,
+              that value is returned.
+
+            - If the setting value was read from an environment variable,
+              by a call to the :meth:`value_from_envvar` setter,
+              that value is returned.
+
+            - If the setting value was read from the dictionary source,
+              by a call to the :meth:`value` or :meth:`value_from_config` setters,
+              that value is returned.
+
+            - Finally, if a value was not obtained from any of the above
+              sources, the default value is returned.
+        """
+        # Honor forced values foremost.
+        try:
+            return self.value_from_forced
+        except AttributeError:
+            pass
+        # Honor CLI-specific values secondmost.
+        try:
+            return self.value_from_cliarg
+        except AttributeError:
+            pass
+        # Check the environment third.
+        try:
+            return self.value_from_envvar
+        except KeyError:
+            pass
+        # See if the config value was specified by the config that was read.
+        try:
+            return self.value_from_config
+        except AttributeError:
+            pass
+        # Nothing found so far! Finally just return the default value.
+        return self._value_conform_and_validate(self.default, is_default=True)
+
+    @value.setter
+    def value(self, value):
+        """Sets the setting value to the value supplied.
+
+        Args:
+            value: The new setting value.
+                   The value is assumed to be from the config,
+                   i.e., this method is an alias to
+                   the :meth:`value_from_config` setter.
+        """
+        orig_value = value
+        value = self._value_conform_and_validate(value)
+        # Using the `value =` shortcut, or using `section['key'] = `,
+        # is provided as a convenient way to inject values from the
+        # config file, or that the user wishes to set in the file.
+        # Don't call the wrapper, which would call conform-validate again.
+        #   NOPE: self.value_from_config = value
+        self._val_config = value
+        self._val_origin = orig_value
+
+    def _value_conform_and_validate(self, value, is_default=False):
+        def _corformidate():
+            _value = value
+            addendum = None
+            # Don't validate the default value. One use case is a config setting
+            # for a file path: the @setting might specify a validate() function,
+            # but if that fails or if user does not specify the setting, we still
+            # want the code to be able to query the setting value (which will
+            # fallback to the default value), in which case do not raise on
+            # validation error.
+            # MAYBE/2020-12-05 15:41: Speaking of which: I'm curious why I
+            # never added a 'required' attribute. Maybe because I'm taking
+            # an ethical stance that config is never mandatory (though the
+            # client code is always welcome to print a USAGE message and to
+            # exit early if some key piece of config is missing, but it is
+            # not the job of the config definition library to enforce it,
+            # “question mark”.)
+            if addendum is None and not is_default:
+                addendum = _validate(_value)
+            if addendum is None:
+                try:
+                    _value = _conform_or_typify(_value)
+                except Exception as err:
+                    addendum = f" [{repr(err)}]"
+            if addendum is not None:
+                raise ValueError(
+                    _("Unrecognized value for setting ‘{}’: “{}”{}").format(
+                        self._name,
+                        value,
+                        addendum,
+                    ),
+                )
+            return _value
+
+        def _conform_or_typify(_value):
+            if self._conform_f is not None:
+                return self._conform_f(_value)
+            return self._typify(value)
+
+        def _validate(_value):
+            # Returns None if valid value, or string if it's not.
+            addendum = None
+            if self._validate_f:
+                try:
+                    # The caller's validate will either raise or return a truthy.
+                    if not self._validate_f(_value):
+                        addendum = ""
+                except Exception as err:
+                    addendum = str(err)
+            elif self._choices:
+                if _value not in self._choices:
+                    addendum = _(" (Choose from: ‘{}’)").format(
+                        "’, ‘".join(self._choices)
+                    )
+            return addendum
+
+        return _corformidate()
+
+    # ***
+
+    @property
+    def value_from_default(self):
+        """Returns the conformed default value."""
+        return self._value_conform_and_validate(self.default, is_default=True)
+
+    # ***
+
+    @property
+    def value_from_forced(self):
+        """Returns the "forced" setting value."""
+        return self._val_forced
+
+    @value_from_forced.setter
+    def value_from_forced(self, value_from_forced):
+        """Sets the "forced" setting value, which supersedes values from all
+        other sources.
+
+        Args:
+            value_from_forced: The forced setting value.
+        """
+        self._val_forced = self._value_conform_and_validate(value_from_forced)
+
+    # ***
+
+    @property
+    def value_from_cliarg(self):
+        """Returns the "cliarg" setting value."""
+        return self._val_cliarg
+
+    @value_from_cliarg.setter
+    def value_from_cliarg(self, value_from_cliarg):
+        """Sets "cliarg" setting value, which supersedes envvar, config, and default.
+
+        Args:
+            value_from_cliarg: The forced setting value.
+        """
+        self._val_cliarg = self._value_conform_and_validate(value_from_cliarg)
+
+    # ***
+
+    @property
+    def value_from_envvar(self):
+        """Returns the "envvar" setting value, sourced from the environment when called.
+
+        A name derived from a special prefix, the section path,
+        and the setting name is used to look for an environment
+        variable of the same name.
+
+        For example, consider that an application use the prefix
+        "CFGDEC\\_", and the setting is under a subsection called
+        "pokey" which is under a topmost section called "hokey".
+        If the setting is named "foot",
+        then the environment variable would be named,
+        "CFGDEC_HOKEY_POKEY_FOOT".
+        """
+        if self.warn_if_no_envvar_prefix():
+            raise KeyError
+
+        normal_name = self._section._normalize_name(self._name)
+        environame = "{}{}_{}".format(
+            KeyChainedValue._envvar_prefix,
+            self._section.section_path(sep="_").upper(),
+            normal_name.upper(),
+        )
+        envval = os.environ[environame]
+        envval = self._value_conform_and_validate(envval)
+
+        return envval
+
+    def warn_if_no_envvar_prefix(self):
+        if KeyChainedValue._envvar_prefix:
+            return False
+
+        if not KeyChainedValue._envvar_warned:
+            # Warn the DEV that they didn't wire their app 100%. This breaks
+            # the fourth wall, but don't care (that is, this is a library,
+            # and generally not for us to emit errors to the end user, but
+            # the end user here should be the DEV during testing).
+            err_msg = "WARNING: You should set KeyChainedValue._envvar_prefix"
+            print(err_msg, file=sys.stderr)
+
+        KeyChainedValue._envvar_warned = True
+
+        return True
+
+    # ***
+
+    @property
+    def value_from_config(self):
+        """Returns the "config" setting value."""
+        return self._val_config
+
+    @value_from_config.setter
+    def value_from_config(self, value_from_config):
+        """Sets the "config" setting value, which supersedes the default value.
+
+        Args:
+            value_from_config: The forced setting value.
+        """
+        orig_value = value_from_config
+        self._val_config = self._value_conform_and_validate(value_from_config)
+        self._val_origin = orig_value
+
+    def forget_config_value(self):
+        """Removes the "config" setting value set by the :meth:`value_from_config`
+        setter."""
+        try:
+            del self._val_config
+        except AttributeError:
+            pass
+
+    # ***
+
+    @property
+    def value_unmutated(self):
+        """Returns the storable config value, generally just the stringified value."""
+        try:
+            # Prefer the config value as original input, i.e., try to keep
+            # the output same as user's input. But still cast to string.
+            # Mostly just avoid whatever self.conform_f may have done.
+            return str(self._val_origin)
+        except AttributeError:
+            # No config value set, so stringify the most prominent value.
+            if self._recover_f:
+                return self._recover_f(self.value)
+            else:
+                return str(self.value)
+
+    # ***
+
+    @property
+    def asobj(self):
+        """Returns self, behaving as identify function (need to quack like
+        ``ConfigDecorator``)."""
+        return self
+
+    # ***
+
+    @property
+    def source(self):
+        """Returns the setting value source.
+
+        Returns:
+
+            The name of the highest priority source,
+            as determined by the order of this list:
+
+            - If the setting value was forced,
+              by a call to the :meth:`value_from_forced` setter,
+              the value 'forced' is returned.
+
+            - If the setting value was read from a command line argument,
+              by a call to the :meth:`value_from_cliarg` setter,
+              the value 'cliarg' is returned.
+
+            - If the setting value was read from an environment variable,
+              by a call to the :meth:`value_from_envvar` setter,
+              the value 'envvar' is returned.
+
+            - If the setting value was read from the dictionary source,
+              by a call to the :meth:`value` or :meth:`value_from_config` setters,
+              the value 'config' is returned.
+
+            - Finally, if a value was not obtained from any of the above
+              sources, the value 'default' is returned.
+        """
+        # Honor forced values foremost.
+        try:
+            return self.value_from_forced and "forced"
+        except AttributeError:
+            pass
+        # Honor CLI-specific values secondmost.
+        try:
+            return self.value_from_cliarg and "cliarg"
+        except AttributeError:
+            pass
+        # Check the environment third.
+        try:
+            return self.value_from_envvar and "envvar"
+        except KeyError:
+            pass
+        # See if the config value was specified by the config that was read.
+        try:
+            return self.value_from_config and "config"
+        except AttributeError:
+            pass
+        # Nothing found so far! Finally just return the default value.
+        return "default"
