@@ -1,0 +1,16 @@
+turtle_trading/__init__.py,sha256=JXuJqEFejEl_0B0i9Fd07_UqwWSDdEC3xT8XLTskMwE,33
+turtle_trading/__version__.py,sha256=EwWmQ_w7G4akyhOFBKHO6qpctGSNPQ3EQnmfgU_VC_k,19
+turtle_trading/_config.py,sha256=BgoZN_Wb4FxfIubQSXjMViA_ezDRMiy2MpOqd6qNS6Q,715
+turtle_trading/entries/__init__.py,sha256=t5SlKmDwddRP4uFWIWe_ZhOXSpkaxejoIjEfxkcibXs,80
+turtle_trading/entries/adding.py,sha256=yx6Yf4YknEt7x1oN4kJKehZY5HHtfKS3eEmnMf3-tpI,1899
+turtle_trading/entries/entries.py,sha256=r0UE4Diuwmr-WJY-8HCTtsz6NE1e6Fryq6G5T9PMN-g,8559
+turtle_trading/exits/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+turtle_trading/exits/exits.py,sha256=4lPUkrPrE9xnuUchcrffEOjkEKKaAfFslfVvSUmaLis,3274
+turtle_trading/position_sizing/__init__.py,sha256=dY08NFEcxLG_3Pjz27oDHzf6cFX28SBJVIFrYB4i0H8,285
+turtle_trading/position_sizing/position_sizing.py,sha256=LlR3Lxg7VvtPSYZggEdFpuHW07RIWmAlavakUB1Pt5s,7379
+turtle_trading/stops/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+turtle_trading/stops/stop_placement.py,sha256=PyJ4OCbFBMRiLEO6kB_Usi1kuvPV1F8G4MTILg1W-v8,5435
+turtle_trading-2.6.dist-info/METADATA,sha256=S47od87TAIPtUE5ZR5FB9u3xaEiH4xBoFplZ-0BYuw0,3752
+turtle_trading-2.6.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+turtle_trading-2.6.dist-info/licenses/LICENSE,sha256=4EXzqFLUu9VMa7HuGSI2GmhRyh7vKVW-ThJQTtpOlJQ,1067
+turtle_trading-2.6.dist-info/RECORD,,
