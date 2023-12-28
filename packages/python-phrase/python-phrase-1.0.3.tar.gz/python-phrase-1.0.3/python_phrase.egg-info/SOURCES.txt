@@ -1,0 +1,10 @@
+LICENSE
+README.md
+app.py
+setup.py
+python_phrase.egg-info/PKG-INFO
+python_phrase.egg-info/SOURCES.txt
+python_phrase.egg-info/dependency_links.txt
+python_phrase.egg-info/entry_points.txt
+python_phrase.egg-info/requires.txt
+python_phrase.egg-info/top_level.txt
