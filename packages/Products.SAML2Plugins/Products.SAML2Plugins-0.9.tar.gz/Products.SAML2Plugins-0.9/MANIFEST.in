@@ -1,0 +1,24 @@
+# Generated from:
+# https://github.com/zopefoundation/meta/tree/master/config/zope-product
+include *.md
+include *.rst
+include *.txt
+include buildout.cfg
+include tox.ini
+
+recursive-include docs *.py
+recursive-include docs *.rst
+recursive-include docs *.txt
+recursive-include docs Makefile
+
+recursive-include src *.py
+include *.yaml
+recursive-include docs *.png
+recursive-include src *.key
+recursive-include src *.pem
+recursive-include src *.txt
+recursive-include src *.xml
+recursive-include src *.xsd
+recursive-include src *.zcml
+recursive-include src *.zpt
+include src/Products/SAML2Plugins/tests/test_data/dummy_xmlsec1

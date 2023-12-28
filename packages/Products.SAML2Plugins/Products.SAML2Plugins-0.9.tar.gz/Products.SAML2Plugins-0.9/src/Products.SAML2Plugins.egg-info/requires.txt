@@ -1,0 +1,10 @@
+setuptools
+pysaml2
+Zope>=5
+Products.PluggableAuthService
+
+[docs]
+Sphinx
+sphinx_rtd_theme
+repoze.sphinx.autointerface
+pkginfo
