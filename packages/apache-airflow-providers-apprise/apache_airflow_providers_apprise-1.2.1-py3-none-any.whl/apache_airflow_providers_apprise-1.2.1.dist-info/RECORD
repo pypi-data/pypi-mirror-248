@@ -1,0 +1,11 @@
+airflow/providers/apprise/LICENSE,sha256=ywUBpKZc7Jb96rVt5I3IDbg7dIJAbUSHkuoDcF3jbH4,13569
+airflow/providers/apprise/__init__.py,sha256=5OR3qaNpyJXJBrNoWqFgDEIDw-TKF9A_gVlW_7RhgR8,1582
+airflow/providers/apprise/get_provider_info.py,sha256=5AtyyO69G1mu35E1DEsuEuyb45bB8QYQA0tWZlxjEpc,2125
+airflow/providers/apprise/hooks/__init__.py,sha256=h9YaOHsHa6a7IrJjzUqViwwFxsB0g3c50MYN9re6-dM,1053
+airflow/providers/apprise/hooks/apprise.py,sha256=_0LUNM2p4022vNicz-rIoBnXBaPNvGWDARvQ1xXWOZ8,5213
+airflow/providers/apprise/notifications/__init__.py,sha256=h9YaOHsHa6a7IrJjzUqViwwFxsB0g3c50MYN9re6-dM,1053
+airflow/providers/apprise/notifications/apprise.py,sha256=ZnzTLtL7N4zQRpAMRVXDqFYI5B__RxTOMtpA2DU7ZMo,3477
+apache_airflow_providers_apprise-1.2.1.dist-info/entry_points.txt,sha256=s9SkoGvJAE-FekgKMh_UnuGtM94QjLLQOl3XqBmFmmE,103
+apache_airflow_providers_apprise-1.2.1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+apache_airflow_providers_apprise-1.2.1.dist-info/METADATA,sha256=RLvUKZ7nCxv1q90Ifitw8nNP70YVs6lbE-5Z5I6oc64,4671
+apache_airflow_providers_apprise-1.2.1.dist-info/RECORD,,
