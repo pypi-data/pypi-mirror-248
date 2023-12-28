@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "cyber-sentinels-helper-app"
+version = "0.1.0"
+description = "coursework command project"
+authors = ["siracencoserghei <siracencoserghei@gmail.com>"]
+readme = "README.md"
+packages = [{include = "cyber-sentinels-helper-app"}]
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+rich = "^13.7.0"
+prompt-toolkit = "^3.0.43"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
