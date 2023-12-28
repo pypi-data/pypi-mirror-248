@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+django_auto_permissions/__init__.py
+django_auto_permissions/apps.py
+django_auto_permissions/permission_generation.py
+django_auto_permissions/viewset_analysis.py
+django_auto_permissions.egg-info/PKG-INFO
+django_auto_permissions.egg-info/SOURCES.txt
+django_auto_permissions.egg-info/dependency_links.txt
+django_auto_permissions.egg-info/requires.txt
+django_auto_permissions.egg-info/top_level.txt
+django_auto_permissions/tests/__init__.py
+django_auto_permissions/tests/test_viewset_analysis.py
