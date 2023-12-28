@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: rx-selection
+Version: 0.0.8
+Summary: Scripts for applying selection
+Requires-Dist: logzero
+
