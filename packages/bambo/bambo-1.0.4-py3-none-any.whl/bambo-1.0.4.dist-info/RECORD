@@ -1,0 +1,9 @@
+bambo/__init__.py,sha256=bPlRq4tkrBlhw86W-7n66OGRbGOpU1I-GnSfkpHALYo,86
+bambo/cli.py,sha256=SyfEDLHIOxeBSQ4zc0PVYIaBqEj4FzZkFk2BTGvAWs8,2374
+bambo/core.py,sha256=vnUBzkYizOXmQce-xWK3-oSzKPXupEzP3qAwFcRChYY,4585
+bambo/urls.txt,sha256=J5S-fPt7oFT1J89O9KSlzvq7RFbXWtWfyprjQQS4ny8,250
+bambo-1.0.4.dist-info/LICENSE,sha256=Q4pzH2Fn8qnhsQlBt2PedbWlQqmZdrihqOFhdkfASr4,1069
+bambo-1.0.4.dist-info/METADATA,sha256=0HYRPBac7u-nt_tBoCIdchMFvRgK7UbChxXc8IItVc0,4505
+bambo-1.0.4.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+bambo-1.0.4.dist-info/entry_points.txt,sha256=fSsCok1mOAjSbCdZ9_UlRD3Ky-K1osrx_bKrUkIDsDI,40
+bambo-1.0.4.dist-info/RECORD,,
