@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: zoomds
+Version: 0.60
+Summary: A collection of data science and analysis functions for data cleaning, analysis, modeling, and visualization.
+Author: Matthew Iversen
+Author-email: iversenmatt7@gmail.com
+Requires-Python: >=3.6
+License-File: LICENSE
