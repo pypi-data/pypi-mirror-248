@@ -1,0 +1,3 @@
+include ./bsmdoc/template/template*.bsmdoc
+include ./bsmdoc/template/css/*.css
+include ./bsmdoc/template/js/*.js

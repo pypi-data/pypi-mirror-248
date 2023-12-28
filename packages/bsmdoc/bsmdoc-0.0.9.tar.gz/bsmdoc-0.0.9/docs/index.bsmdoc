@@ -1,0 +1,54 @@
+\config{title|bsmdoc -- another technical html doc generator}
+\config{doctitle|bsmdoc -- another technical html doc generator (ver \__version__) [https://github.com/tianzhuqiao/bsmdoc|\image{width="32"|height="32"|image/github.svg}]}
+\config{heading_numbering|True}
+\config{image_numbering|True}
+\config{table_numbering|True}
+\config{show_table_of_contents|True}
+#\config{bsmdoc_conf|bsmdoc.cfg}
+
+{!config||{%
+[footer]
+content = <div class="footer-text"> Last updated %(UPDATED)s, by <a href="http://bsmdoc.feiyilin.com/">bsmdoc</a> %(SOURCE)s | <a href="mailto:tq@feiyilin.com">Contact</a></div>
+%}!}
+
+{!exec|firstRunOnly||{%
+bsmdoc_highlight_raw = BFunction().highlight
+@BFunction('highlight')
+def bsmdoc_highlight(code, *args, **kwargs):
+    if args[0]!='bsmdoc':
+        return bsmdoc_highlight_raw(code, *args, **kwargs)
+    try:
+
+        from pygments import highlight
+        from pygments.lexers import load_lexer_from_file
+        from pygments.formatters import HtmlFormatter
+        lexer = load_lexer_from_file('./pyg.py', 'bLexer')
+
+        args, opts = kwargs['fun_args'], kwargs['fun_kwargs']
+        # format code
+        obeytabs = 'obeytabs' in args
+        gobble = opts.get('gobble', 0)
+        autogobble = 'autogobble' in args
+        code = _code_format(code,
+                            obeytabs=obeytabs,
+                            gobble=gobble,
+                            autogobble=autogobble)
+
+        for key in ['obeytabs', 'gobble', 'autogobble']:
+            opts.pop(key, None)
+        if "cssclass" not in opts:
+            opts['cssclass'] = 'syntax-inline' if kwargs.get('inline', False) else 'syntax'
+        # forward all the other args to HtmlFormatter
+        formatter = HtmlFormatter(**opts)
+        # pygments will replace '&' with '&amp;', which will make the unicode
+        # (e.g., &#xNNNN) shown incorrectly.
+        txt = highlight(BFunction().unescape(code), lexer, formatter)
+        txt = txt.replace('&amp;#x', '&#x')
+        txt = txt.replace('&amp;lt;', '&lt;')
+        return txt.replace('&amp;gt', '&gt;')
+    except ImportError:
+        return code
+%}!}
+
+#include index_content.bsmdoc
+

@@ -1,0 +1,6 @@
+ply
+pygments
+click
+click_default_group
+cchardet
+six
