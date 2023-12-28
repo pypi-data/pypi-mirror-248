@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: diffusion_models
+Version: 0.0.0
+Summary: diffusion_models API.
+Author-email: Chanhyuk Jung <urw.7rs@icloud.com>
+Classifier: License :: OSI Approved :: MIT License
+Project-URL: Home, https://github.com/urw7rs/diffusion-models.git
