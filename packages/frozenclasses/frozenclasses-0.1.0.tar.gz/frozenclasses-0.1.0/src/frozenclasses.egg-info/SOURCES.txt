@@ -1,0 +1,10 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+src/frozenclasses/__init__.py
+src/frozenclasses.egg-info/PKG-INFO
+src/frozenclasses.egg-info/SOURCES.txt
+src/frozenclasses.egg-info/dependency_links.txt
+src/frozenclasses.egg-info/top_level.txt
