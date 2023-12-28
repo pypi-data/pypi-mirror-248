@@ -1,0 +1,12 @@
+ms_outlook_calendar_utils/.env.example,sha256=jdiexdgv69p9aykdi1z9r-prdK6HVKmrOei0ydJt2L8,3398
+ms_outlook_calendar_utils/__init__.py,sha256=pl4fpOSqgKx-dwgW0PdUIcr7KWKDPbhEWS2zo1kjnVk,150
+ms_outlook_calendar_utils/clone_calendar_events.py,sha256=UVQT5d-8hYuK8E3jpoCcfL1n-g8LS6o-tvDo-XPuUFc,27867
+ms_outlook_calendar_utils/get_calendar_events.py,sha256=iKcVos3HNZYk5sxhk_dqBIX1vKhBuiDiS-5vJaJ_E8M,4179
+ms_outlook_calendar_utils/reserve_time.py,sha256=xr9AtIo6R5zcT_Dwl3A1HgoK57uMbJuUVdXwF7_2Euo,7323
+ms_outlook_calendar_utils-0.2.0.dist-info/AUTHORS.rst,sha256=BNf09knwYhZGXZ1ASoAy9UFWJFFxswfH0p-CzAext5s,163
+ms_outlook_calendar_utils-0.2.0.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+ms_outlook_calendar_utils-0.2.0.dist-info/METADATA,sha256=bMgepTs2G1ALgMnXTjXdDIuj58x1a49wYsDwTF11vr8,1361
+ms_outlook_calendar_utils-0.2.0.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+ms_outlook_calendar_utils-0.2.0.dist-info/entry_points.txt,sha256=WClPb04LSUNaD9n8R5_2SJn2OxWuyClbwGg4a9je13A,174
+ms_outlook_calendar_utils-0.2.0.dist-info/top_level.txt,sha256=uKCIomVuxxtmItWx30rmbGVq4PNCWfo2KzSEsyrFEtY,26
+ms_outlook_calendar_utils-0.2.0.dist-info/RECORD,,
