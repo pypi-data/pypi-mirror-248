@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: fuzzy-secret-stdout
+Version: 0.1.1b18
+Summary: 
+Author: kiran94
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: boto3 (>=1.33.11,<2.0.0)
+Requires-Dist: pyfzf (>=0.3.1,<0.4.0)
+Requires-Dist: rich (>=13.7.0,<14.0.0)
+Description-Content-Type: text/markdown
+
+# `fuzzy-secret-stdout`
+
+> Small utility to fuzzy search from a secret store and print the value to stdout
+
+
+
