@@ -1,0 +1,223 @@
+# -*- coding: utf-8 -*-
+import base64
+import os.path
+import sys
+from urllib.parse import unquote
+
+import click
+from flask import Flask, request, jsonify, make_response
+from flask_basicauth import BasicAuth
+
+from serctl import mac, termux, utils
+
+VERSION = "0.2.6"
+
+APP_NAME = "webvim"
+
+LOCAL_PORT = 8084
+LOCAL_HOST = "0.0.0.0"
+
+DEFAULT_FILE_LIST = [
+    "/etc/hosts",
+    "/etc/profile",
+    os.path.join(os.path.expanduser("~"), ".zshrc"),
+    os.path.join(os.path.expanduser("~"), ".ssh", "id_rsa.pub"),
+    os.path.join(os.path.expanduser("~"), ".ssh", "authorized_keys"),
+    "/opt/homebrew/etc/nginx/nginx.conf",
+    "/usr/local/etc/nginx/nginx.conf"
+]
+
+file_to_edit = []
+
+app = Flask(__name__, static_url_path='')
+
+# basic auth
+basic_auth = BasicAuth(app=app)
+
+
+@app.after_request
+def func_res(resp):
+    res = make_response(resp)
+    res.headers['Access-Control-Allow-Origin'] = '*'
+    res.headers['Access-Control-Allow-Methods'] = 'GET,POST'
+    res.headers['Access-Control-Allow-Headers'] = 'x-requested-with,content-type'
+    return res
+
+
+@app.route('/', methods=["GET"])
+def home():
+    return app.send_static_file(filename="index.html")
+
+
+@app.route('/main', methods=["GET"])
+def editor():
+    """
+    web editor online
+    """
+    key = request.args.get("key")
+    path = base64.b64decode(key.encode("utf-8")).decode("utf-8") if key else file_to_edit[0]
+    file_obj = get_file_obj(path=path)
+    nav_obj = get_nav_obj(path=path)
+    return jsonify({
+        "fobj": file_obj,
+        "nobj": nav_obj
+    })
+
+
+@app.route('/save', methods=["POST"])
+def save_content():
+    code = 1
+    message = "Success"
+    try:
+        json_content = request.json
+        content_sec = json_content["content"]
+        key = json_content["key"]
+        path = base64.b64decode(key.encode("utf-8")).decode("utf-8")
+        content = unquote(base64.b64decode(content_sec).decode("utf-8"))
+        if path and os.path.exists(path) and os.path.isfile(path):
+            with open(path, 'w') as f:
+                f.write(content)
+    except Exception as e:
+        code = 0
+        message = str(e)
+
+    data = {
+        "code": code,
+        "message": message
+    }
+    return jsonify(data)
+
+
+# ------------------------------------------------------------
+
+def get_nav_obj(path):
+    """
+    get nav obj
+    """
+    navs = []
+    for f in file_to_edit:
+        file_obj = dict()
+        file_obj["fileName"] = os.path.basename(f)
+        file_obj["fileKey"] = base64.b64encode(f.encode("utf-8")).decode("utf-8")
+        file_obj["fileStatus"] = (path == f)
+        navs.append(file_obj)
+    return navs
+
+
+def get_file_obj(path):
+    """
+    get file obj
+    """
+    file_obj = dict()
+    file_obj["filePath"] = path
+    file_obj["fileName"] = os.path.basename(path)
+    file_obj["fileKey"] = base64.b64encode(path.encode("utf-8")).decode("utf-8")
+    with open(path, 'r') as f:
+        file_obj["fileContent"] = f.read()
+    return file_obj
+
+
+# ------------------------------------------------------------
+def exist_file(file):
+    return os.path.exists(file) and os.path.isfile(file)
+
+
+def init_launch_agents():
+    """
+    init LaunchAgents
+    """
+    launch_agents = os.path.join(os.path.expanduser("~"), "Library", "LaunchAgents")
+    plists = [x for x in os.listdir(launch_agents) if x.endswith(".plist") and "org.seven" in x]
+    for plist in plists:
+        DEFAULT_FILE_LIST.append(os.path.join(launch_agents, plist))
+
+
+def run_service(signal: str):
+    try:
+        cmd_path = os.path.abspath(sys.argv[0])
+        if cmd_path.endswith(".py"):
+            click.echo(message="Not Support", err=True)
+            return
+        if signal == "install":
+            cmd = [cmd_path, "--init"]
+            if utils.is_mac():
+                mac.mac_install(name=APP_NAME, program_arguments=cmd)
+            if utils.is_termux():
+                termux.sv_install(name=APP_NAME, run_content=" ".join(cmd))
+        elif signal == "start":
+            if utils.is_mac():
+                mac.mac_start(name=APP_NAME)
+            if utils.is_termux():
+                termux.sv_start(name=APP_NAME)
+        elif signal == "stop":
+            if utils.is_mac():
+                mac.mac_stop(name=APP_NAME)
+            if utils.is_termux():
+                termux.sv_stop(name=APP_NAME)
+        else:
+            pass
+    except RuntimeError as e:
+        click.echo(message=e)
+
+
+# ------------------------------------------------------------
+
+
+@click.command(epilog='make it easy', help='Web Editor {0}'.format(VERSION))
+@click.option('-i', '--ip', type=str, show_default=True, default=LOCAL_HOST, help="Local IP")
+@click.option('-p', '--port', type=int, show_default=True, default=LOCAL_PORT, help='Local Port')
+@click.option('--file', multiple=True, default=[], help='File To Edit')
+@click.option('--username', type=str, show_default=True, default='admin', help='Basic Auth Username')
+@click.option('--password', type=str, show_default=True, default='admin', help='Basic Auth Password')
+@click.option('--init', is_flag=True, help='Init Default Files')
+@click.option('--auth', is_flag=True, help='Use Basic Auth')
+@click.option('-s', '--signal', help='send signal to service',
+              type=click.Choice(['install', 'start', 'stop'], case_sensitive=False))
+def run_web(signal: str, ip: str, port: int, init: bool, auth: bool, username: str, password: str, file):
+    """
+    run web
+    """
+    if signal:
+        run_service(signal=signal)
+        return
+    host = ip
+    try:
+        file_to_edit.clear()
+        if init:
+            init_launch_agents()
+            temp_list = filter(exist_file, DEFAULT_FILE_LIST)
+            for f in temp_list:
+                file_to_edit.append(f)
+        for f in file:
+            if exist_file(f):
+                file_to_edit.append(f)
+            else:
+                raise FileNotFoundError("File not found {0}".format(f))
+        # ----------
+        if len(file_to_edit) == 0:
+            raise ValueError("No file to edit")
+        # basic auth
+        if auth:
+            app.config['BASIC_AUTH_USERNAME'] = username
+            app.config['BASIC_AUTH_PASSWORD'] = password
+            app.config['BASIC_AUTH_FORCE'] = True
+        # run server
+        app.run(port=port, host=host, debug=False)
+    except ValueError as e:
+        click.echo(message=e, err=True)
+    except FileNotFoundError as e:
+        click.echo(message=e, err=True)
+
+
+def execute():
+    """
+    execute
+    """
+    run_web()
+
+
+if __name__ == '__main__':
+    # sys.argv.append("--help")
+    sys.argv.append("-s")
+    sys.argv.append("install")
+    execute()
