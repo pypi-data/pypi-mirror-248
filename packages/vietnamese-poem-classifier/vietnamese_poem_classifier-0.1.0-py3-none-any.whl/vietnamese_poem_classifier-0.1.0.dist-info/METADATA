@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: vietnamese-poem-classifier
+Version: 0.1.0
+Summary: Classify genre and score Vietnamese poems
+Home-page: https://github.com/Anshler/vietnamese-poem-classifier
+Author: Huynh Minh Triet
+Author-email: huynhminhtriet2002@gmail.com
+License: MIT
+Keywords: poem
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE
+Requires-Dist: transformers
+Requires-Dist: importlib
+Requires-Dist: importlib-resources
+
