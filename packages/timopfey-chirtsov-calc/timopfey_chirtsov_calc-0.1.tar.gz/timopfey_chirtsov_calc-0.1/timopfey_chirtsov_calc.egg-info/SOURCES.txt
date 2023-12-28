@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+package/__init__.py
+package/calculator.py
+package/convert_pre.py
+package/test.py
+timopfey_chirtsov_calc.egg-info/PKG-INFO
+timopfey_chirtsov_calc.egg-info/SOURCES.txt
+timopfey_chirtsov_calc.egg-info/dependency_links.txt
+timopfey_chirtsov_calc.egg-info/top_level.txt

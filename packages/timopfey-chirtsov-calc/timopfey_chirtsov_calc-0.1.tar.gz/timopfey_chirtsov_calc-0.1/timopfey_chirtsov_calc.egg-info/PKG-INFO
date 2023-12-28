@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: timopfey-chirtsov-calc
+Version: 0.1
+Summary: Калькулятор
+Home-page: https://github.com/TeamHeightline/Study-Ways
+Author: Timofei Chirtsov
+Author-email: teamheightline@mail.com
+License: MIT
+Description: # Кальтулятор
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
