@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: Chaparral
+Version: 0.0.10
+Summary: Recomienda rutas
+Author-email: Edgar Andrade-Lotero <andradeed78@gmail.com>, Alejandro Andrade-Lotero <landrad78@gmail.com>
+Project-URL: Homepage, https://github.com/ardillabyte/chaparral
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: gymnasium==0.28.1
+Requires-Dist: ipython==7.19.0
+Requires-Dist: jsonlines==4.0.0
+Requires-Dist: matplotlib==3.7.1
+Requires-Dist: networkx==2.7.1
+Requires-Dist: numpy==1.24.2
+Requires-Dist: pandas==1.5.3
+Requires-Dist: plotly==5.18.0
+Requires-Dist: polars==0.20.2
+Requires-Dist: prettytable==3.9.0
+Requires-Dist: seaborn==0.13.0
+Requires-Dist: termcolor==1.1.0
+Requires-Dist: torch==1.12.0
+Requires-Dist: tqdm==4.65.0
+Requires-Dist: typer==0.9.0
+
+# chaparral
+Aprendizaje por refuerzo para optimizar flujo de químicos
