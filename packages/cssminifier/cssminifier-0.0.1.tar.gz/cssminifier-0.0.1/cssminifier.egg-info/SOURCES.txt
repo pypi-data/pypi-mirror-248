@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+cssminifier/__init__.py
+cssminifier/_parser.py
+cssminifier/minifier.py
+cssminifier.egg-info/PKG-INFO
+cssminifier.egg-info/SOURCES.txt
+cssminifier.egg-info/dependency_links.txt
+cssminifier.egg-info/top_level.txt
