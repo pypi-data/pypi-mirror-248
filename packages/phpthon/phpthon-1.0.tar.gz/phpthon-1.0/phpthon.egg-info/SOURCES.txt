@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+phpthon/__init__.py
+phpthon/phpthon.py
+phpthon.egg-info/PKG-INFO
+phpthon.egg-info/SOURCES.txt
+phpthon.egg-info/dependency_links.txt
+phpthon.egg-info/top_level.txt

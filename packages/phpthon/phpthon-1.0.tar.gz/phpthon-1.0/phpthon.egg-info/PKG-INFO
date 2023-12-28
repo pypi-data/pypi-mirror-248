@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: phpthon
+Version: 1.0
+Summary: A Python Library To Use Some php functions in python
+Author: Mr Moorgh
+Author-email: vboxvm512@gmail.com
+Requires: requests
