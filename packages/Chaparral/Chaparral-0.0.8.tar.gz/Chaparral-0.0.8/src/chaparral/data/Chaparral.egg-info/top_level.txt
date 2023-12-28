@@ -1,0 +1,4 @@
+DQN_in_Chaparral
+entornos
+logs
+objetos_mapa

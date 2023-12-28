@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/chaparral/data/Chaparral.egg-info/PKG-INFO
+src/chaparral/data/Chaparral.egg-info/SOURCES.txt
+src/chaparral/data/Chaparral.egg-info/dependency_links.txt
+src/chaparral/data/Chaparral.egg-info/requires.txt
+src/chaparral/data/Chaparral.egg-info/top_level.txt
+src/chaparral/data/objetos_mapa/objetos_mapa_objetos_api_v1.ndjson
