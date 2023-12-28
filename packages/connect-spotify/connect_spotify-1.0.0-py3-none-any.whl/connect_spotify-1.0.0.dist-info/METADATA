@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: connect-spotify
+Version: 1.0.0
+Summary: Connect to Spotify API with Streamlit
+License: MIT
+Project-URL: Source, https://github.com/Satoshi-Sh/streamlit-api
+Keywords: streamlit
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Dist: streamlit
+Requires-Dist: requests
+
