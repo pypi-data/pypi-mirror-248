@@ -1,0 +1,15 @@
+stratos_lib/__init__.py,sha256=HCyb8CgfmMPHwuJB8hFUVMdADfhx4FgK8hDDzFT1Ca8,50
+stratos_lib/configs.py,sha256=zUeZawFiOdXpo71Vd13bXR38bMuDdPvvhQo9GSIMUUw,4265
+stratos_lib/components/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stratos_lib/components/aws/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stratos_lib/components/aws/vpc.py,sha256=L6j050jqNNrAWbNIIWCrtgHcgwgL07wTTPGDFAxBcjs,3488
+stratos_lib/components/aws/k8s/.gitignore,sha256=Le5zjs87YzmSmIGkBU_yd-yw5GDr0nxKojWFvp0DPwc,11
+stratos_lib/components/aws/k8s/Pulumi.k8s.yaml,sha256=NSDlazSpThxdzsLT9Cnlav98jUXLRHvvHgmme22HplU,184
+stratos_lib/components/aws/k8s/Pulumi.yaml,sha256=uELGxrGlKkW1yNRhyxlZlFE9zSAtwGWZKS-SIE5jATE,134
+stratos_lib/components/aws/k8s/__main__.py,sha256=c2SVMb6JtYOUhtPN59BlznoXcj_nm3g-fJeU3_ZUu1U,1543
+stratos_lib/components/aws/k8s/requirements.txt,sha256=XH9E20Pdjsj0n7gMGR6cWyJXr_8cfhoLEEMp91yFONA,67
+stratos_lib/components/azure/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stratos_lib/components/azure/vpc.py,sha256=ldpN0eTCLEzfQSpH5kzALs9tnT0Nai3I4FtpP8QrVf4,2915
+stratos_lib-0.1.1rc4.dist-info/METADATA,sha256=2HLBZfx0oqUAXV_1qz-kGbC99nM7w3LiuOQqlDjGGz4,398
+stratos_lib-0.1.1rc4.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+stratos_lib-0.1.1rc4.dist-info/RECORD,,
