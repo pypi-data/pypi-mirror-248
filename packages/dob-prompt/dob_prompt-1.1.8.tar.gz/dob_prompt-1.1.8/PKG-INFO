@@ -1,0 +1,100 @@
+Metadata-Version: 2.1
+Name: dob-prompt
+Version: 1.1.8
+Summary: journal and time tracker, supercharged for the terminal
+License: GPLv3+
+Keywords: journal,diary,timesheet,timetrack,jrnl,rednotebook,todo.txt,prjct,hamster,fact
+Author: Landon Bouma
+Author-email: doblabs@tallybark.com
+Maintainer: Tally Bark LLC
+Maintainer-email: doblabs@tallybark.com
+Requires-Python: >=3.8.1,<4.0.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: Other/Proprietary License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: readthedocs
+Requires-Dist: Inflector (>=3.0.1,<4.0.0)
+Requires-Dist: apipkg (>=3.0.2,<4.0.0)
+Requires-Dist: dob-bright (>0)
+Requires-Dist: easy-as-pypi-appdirs (>0)
+Requires-Dist: easy-as-pypi-getver (>0)
+Requires-Dist: human-friendly_pedantic-timedelta (>0)
+Requires-Dist: nark (>0)
+Requires-Dist: prompt-toolkit (>=3.0.5,<4.0.0)
+Requires-Dist: sphinx (>=6.2.1,<7.0.0) ; (python_version >= "3.8" and python_version < "3.9") and (extra == "readthedocs")
+Requires-Dist: sphinx (>=7.2.6,<8.0.0) ; (python_version >= "3.9" and python_version < "4.0") and (extra == "readthedocs")
+Requires-Dist: sphinx-rtd-theme (>=2.0.0rc4,<3.0.0) ; extra == "readthedocs"
+Requires-Dist: tomli (>=2.0.1) ; extra == "readthedocs"
+Project-URL: documentation, https://dob-prompt.readthedocs.io/en/latest
+Project-URL: download, https://pypi.org/project/dob-prompt/#files
+Project-URL: homepage, https://github.com/doblabs/dob-prompt
+Project-URL: history, https://github.com/doblabs/dob-prompt/blob/release/HISTORY.rst
+Project-URL: issues, https://github.com/doblabs/dob-prompt/issues
+Description-Content-Type: text/x-rst
+
+@@@@@@@@@@
+dob-prompt
+@@@@@@@@@@
+
+.. CXREF:
+   https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/adding-a-workflow-status-badge
+
+.. image:: https://github.com/doblabs/dob-prompt/actions/workflows/checks-unspecial.yml/badge.svg?branch=release
+  :target: https://github.com/doblabs/dob-prompt/actions/workflows/checks-unspecial.yml/badge.svg?branch=release
+  :alt: Build Status
+
+.. CXREF: https://app.codecov.io/github.com/doblabs/dob-prompt/settings/badge
+
+.. image:: https://codecov.io/gh/doblabs/dob-prompt/branch/release/graph/badge.svg?token=DUMG5SADE3
+  :target: https://app.codecov.io/gh/doblabs/dob-prompt
+  :alt: Coverage Status
+
+.. image:: https://readthedocs.org/projects/dob-prompt/badge/?version=latest
+  :target: https://dob-prompt.readthedocs.io/en/latest/
+  :alt: Documentation Status
+
+.. image:: https://img.shields.io/github/v/release/doblabs/dob-prompt.svg?style=flat
+  :target: https://github.com/doblabs/dob-prompt/releases
+  :alt: GitHub Release Status
+
+.. image:: https://img.shields.io/pypi/v/dob-prompt.svg
+  :target: https://pypi.org/project/dob-prompt/
+  :alt: PyPI Release Status
+
+.. image:: https://img.shields.io/pypi/pyversions/dob-prompt.svg
+  :target: https://pypi.org/project/dob-prompt/
+  :alt: PyPI Supported Python Versions
+
+.. image:: https://img.shields.io/github/license/doblabs/dob-prompt.svg?style=flat
+  :target: https://github.com/doblabs/dob-prompt/blob/release/LICENSE
+  :alt: License Status
+
+|
+
+.. |dob| replace:: ``dob``
+.. _dob: https://github.com/tallybark/dob
+
+.. |dob-docs| replace:: Dob documentation
+.. _dob-docs: https://dob.readthedocs.io/en/latest/
+
+.. |dob-prompt| replace:: ``dob-prompt``
+.. _dob-prompt: https://github.com/tallybark/dob-prompt
+
+|dob-prompt|_ is a component of |dob|_,  an interactive, terminal-based,
+time tracking, journaling, note-taking, and life-hacking application.
+
+|dob-prompt|_ provides the interface for entering Activity\@Category
+labels, as well as for assigning and removing Tags.
+
+Please see the |dob-docs|_ for lots more help and instruction.
+
+
