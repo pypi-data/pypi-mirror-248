@@ -1,0 +1,4 @@
+[console_scripts]
+fss=fuzzy_secret_stdout.__main__:main
+fuzzy-secret-stdout=fuzzy_secret_stdout.__main__:main
+
