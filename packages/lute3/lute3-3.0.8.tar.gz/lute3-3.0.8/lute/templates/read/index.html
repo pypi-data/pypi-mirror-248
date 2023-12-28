@@ -1,0 +1,472 @@
+{% extends 'base.html' %}
+
+{% block title %}Reading &quot;{{ html_title }}&quot;{% endblock %}
+
+{% block body %}
+
+<script type="text/javascript" src="{{ url_for('static', filename='js/player.js') }}" charset="utf-8" defer></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/resize.js') }}" charset="utf-8" defer></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/text-options.js') }}" charset="utf-8" defer></script>
+
+<div id="rendering_controls" style="display: none">
+  <pre>
+    book_id: <input id="book_id" value="{{ book.id }}">
+    book_audio: <input id="book_audio_file" value="{{ book.audio_filename or '' }}">
+    book_audio_current_pos: <input id="book_audio_current_pos" value="{{ book.audio_current_pos or 0 }}">
+    book_audio_bookmarks: <input id="book_audio_bookmarks" value="{{ book.audio_bookmarks or '' }}">
+    page_num: <input id="page_num" value="{{ page_num }}">
+    page_count: <input id="page_count" value="{{ page_count }}">
+    highlights: <span id="show_highlights">{{ show_highlights|lower }}</span>
+    sentence translation url: <span id="translateURL" style="display: none">{{ dictionary_url }}</span>
+  </pre>
+</div>
+
+<div id="read_pane_container">
+
+<div id="read_pane_left">
+
+  <div id="reading-header">
+
+    <div class="reading_header_left">
+      <div class="hamburger-btn" onclick="toggleMenu()">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </div>
+      <img
+      src="{{ url_for('static', filename='img/lute.png') }}"
+      class="lutelogo_small"
+      style="cursor: pointer"
+      onclick="window.location='/'" />
+      <h2 style="margin: 0px">
+        <span
+          class="read_page_nav read_page_disabled"
+          id="navPrev10"
+          onclick="goto_relative_page(-10)"
+          >&#171;</span>
+        <span
+          class="read_page_nav read_page_disabled"
+          id="navPrev"
+          onclick="goto_relative_page(-1)"
+          >&#8249;</span>
+        <span id="page_indicator">{{ page_num }}/{{ page_count }}</span>
+        <span
+          class="read_page_nav read_page_disabled"
+          id="navNext"
+          onclick="goto_relative_page(1)"
+          >&#8250;</span>
+        <span
+          class="read_page_nav read_page_disabled"
+          id="navNext10"
+          onclick="goto_relative_page(10)"
+          >&#187;</span>
+      </h2>
+      <div id="reading_menu">
+        <div class="reading_menu_logo_container">
+          <img
+          src="{{ url_for('static', filename='img/lute.png') }}"
+          class="lutelogo_small"
+          style="cursor: pointer"
+          onclick="window.location='/'" />
+          <!-- <h2>Lute</h2> -->
+          <button class="reading-menu-close-btn" onclick="closeMenu()"></button>
+        </div>
+        <div class="text-options-container">
+          <div class="text-options-btn-container">
+            <button class="text-options-button font-minus" title="Decrease font size"></button>
+            <button class="text-options-button font-plus" title="Increase font size"></button>
+          </div>
+          <div class="text-options-btn-container">
+            <button class="text-options-button lh-minus" title="Decrease line height"></button>
+            <button class="text-options-button lh-plus" title="Increase line height"></button>
+          </div>
+          <div class="text-options-btn-container">
+            <button class="text-options-button width-minus" title="Decrease content width"></button>
+            <button class="text-options-button width-plus" title="Increase content width"></button>
+          </div>
+          <div class="text-options-btn-container">
+            <button class="text-options-button column-one" title="One column text"></button>
+            <button class="text-options-button column-two" title="Two column text"></button>
+          </div>
+        </div>
+        <ul>
+          {% if book.source_uri %}
+          <li class="menu-list-item-text"><a href="{{ book.source_uri }}" target="_blank" tabindex="-1"><img class="menu-icon" src="/static/icn/open.svg" alt=""><span>Show source URL</span></a></li>
+          {% endif %}
+          <li class="menu-list-item-text"><a id="editText" href="" onclick="edit_current_page(); return false;"><img class="menu-icon" src="/static/icn/edit.svg" alt=""><span>Edit page</span></a></li>
+          <li class="menu-list-item-text"><a id="next_theme" onclick="next_theme(); return false;" title="Next theme"><img class="menu-icon" src="/static/icn/color.svg" alt=""><span>Next theme (m)</span></a></li>
+          <li class="menu-list-item-text"><a id="toggle_highlights" onclick="toggle_highlight(); return false;" title="Toggle highlights"><img class="menu-icon" src="/static/icn/highlight.svg" alt=""><span>Toggle highlights (h)</span></a></li>
+          <li class="menu-list-item-text">
+            <a id="keyboard_shortcuts" title="Keyboard shortcuts"
+               href="https://jzohrab.github.io/lute-manual/usage/keyboard-bindings.html"
+               target="_blank">
+              <img class="menu-icon" src="/static/icn/keyboard.svg" alt="">
+              <span>Keyboard shortcuts</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="reading_header_right">
+      <a id="reading_home_link" class="home-link" href="/">Home</a>
+    </div>
+
+  </div>
+
+  <div class="audio-player-container" style="display: none">
+    <audio id="player" preload="metadata" src=""></audio>
+
+    <div class="audio-player-top-container">
+      <!-- <div class="play-btn-container"> -->
+      <button id="play-btn" class="audio-button"></button>
+      <!-- </div> -->
+      <div class="audio-player-central-container">
+        <div id="timeline-container" class="audio-player-timeline-container">
+          <!-- max is set very large so that when file is pre-loaded,
+          the current position isn't truncated. -->
+          <input type="range" class="timeline" max="1000000000" value="0"
+          step="0.1" />
+          <div class="bookmark-markers-container"></div>
+          <div class="duration-container">
+            <span class="current-time">0:00</span>
+            <span class="duration">0:00</span>
+          </div>
+        </div>
+        <div class="audio-player-controls-container">
+          <!-- <div class="skip-back-btn-container"> -->
+          <button id="skip-back-btn" class="audio-button"></button>
+          <!-- </div> -->
+          <div class="rewind-container">
+            <div class="rewind-btn-container">
+              <button id="rewind-btn" class="audio-button"></button>
+              <button id="ff-btn" class="audio-button"></button>
+            </div>
+            <select name="rewind-option" id="rewind-option">
+              <option value="3">3 sec</option>
+              <option value="5" selected>5 sec</option>
+              <option value="10">10 sec</option>
+              <option value="30">30 sec</option>
+              <option value="60">60 sec</option>
+            </select>
+          </div>
+          <button id="playback-rate-btn" class="audio-button"><span>1.0</span></button>
+        </div>
+      </div>
+      <div class="audio-player-right-container">
+        <input type="range" class="volume" max="100" value="100"/>
+        <div class="bookmark-buttons-container">
+          <button id="bkm-save-btn" class="audio-button"></button>
+          <div class="bookmark-jump-container">
+            <button id="bkm-prev-btn" class="audio-button"></button>
+            <button id="bkm-next-btn" class="audio-button"></button>
+          </div>
+        </div>
+      </div>
+      <button id="pin" class="audio-button"></button>
+    </div>
+  </div>
+
+  <h2 id="thetexttitle" class="hide">{{ book.title }}</h2>
+
+  <div id="thetext" {% if is_rtl %}dir="rtl" {% endif %}>
+    ...
+  </div>
+
+  <div id="reading-footer" style="text-align: center">
+    <p>
+      <span
+        id="footerMarkRestAsKnownNextPage"
+        style="cursor: pointer; color: #4CBB17;"
+        onclick="handle_page_done(true, 1)"
+        title="Mark rest as known, mark page as read, then go to next page">
+        &#x2714;
+      </span>
+
+      <span
+        id="footerNextPage"
+        style="cursor: pointer; font-size: 1.5em; font-weight: bold;"
+        onclick="handle_page_done(false, 1)"
+        title="Mark page as read, then go to next page">
+        &#8250;
+      </span>
+    </p>
+
+    <div id="final_page_controls" class="hide">
+      <p>
+        <span
+          id="footerMarkRestAsKnown"
+          style="cursor: pointer; color: #4CBB17;"
+          onclick="handle_page_done(true, 0)"
+          title="Mark rest as known, mark page as read">
+          &#x2714;
+        </span>
+
+        <span
+          id="footerDone"
+          style="cursor: pointer;"
+          onclick="handle_page_done(false, 0)"
+          title="Mark page as read">
+          &#x2714;
+        </span>
+      </p>
+
+      <h2>&#127881;</h2>
+      <p>
+        <a
+          href=""
+          tabindex="-1"
+          onclick="$('#actionposter').submit(); return false;"
+          >Archive book</a>
+        |
+        <a href="/" tabindex="-1">Home</a>
+      </p>
+
+      <form
+        id="actionposter"
+        method="post"
+        action="/book/archive/{{ book.id }}"
+        ></form>
+    </div>
+
+  </div>
+  <div class="btm-margin-container"></div>
+</div>
+
+<div id="read_pane_right">
+  <div class="wordframecontainer">
+  <iframe
+    name="wordframe"
+    id="wordframeid"
+    class="rightreadingframe"
+    src="about:blank"
+    scrolling="auto"
+    style="height: 35%; width: 100%"
+    frameborder="0"
+  >
+    Frame support required.
+  </iframe>
+  </div>
+  <div class="dictframecontainer">
+  <iframe
+    name="dictframe"
+    id="dictframeid"
+    class="rightreadingframe"
+    src="about:blank"
+    scrolling="auto"
+    style="height: 65%; width: 100%"
+    frameborder="0"
+  >
+    Frame support required.
+  </iframe>
+  </div>
+</div>
+
+</div>
+
+<script>
+  $(document).ready(function () {
+    if (have_audio_file()) {
+      // Don't actually load the source -- for some reason,
+      // the ajax page load was causing the audio src to
+      // only load occasionally!  Not sure why.  Source loading
+      // is handled in load_player_source().
+      $('div.audio-player-container').show();
+    }
+    goto_relative_page(0, true);
+
+    // If the css slide-in menu is open, clicking away from it closes the menu.
+    // The menu is handled via css, so we have to update the checkbox state.
+    $(document).click(function(event) {
+      const menu_clicked = event.target.closest('.reading_header_left');
+      const menu = document.getElementById("reading_menu");
+      if(!menu_clicked) {
+        menu.classList.remove("open-menu");
+        disableScroll(false);
+      }
+    });
+  });
+
+
+  let have_audio_file = function() {
+    return ($('#book_audio_file').val() != '');
+  }
+
+  /**
+   * Actually set the player source, loading the file,
+   * and load all bookmarks etc.
+   */
+  let load_player_source = function() {
+    const book_id = $('#book_id').val();
+    // console.log('setting source to ' + `/useraudio/stream/${book_id}`);
+    player.src = `/useraudio/stream/${book_id}`;
+
+    t = parseFloat($('#book_audio_current_pos').val());
+    player.currentTime = t;
+    timeline.value = t;
+
+    bookmarksArray = [];
+    bkstring = $('#book_audio_bookmarks').val();
+    bks = [];
+    if (bkstring != "")
+      bks = bkstring.split(';').map((b) => parseFloat(b));
+    for (b of bks) {
+      bookmarksArray.push(b);
+    }
+
+    start_player_post_loop();
+  };
+
+  // Set "page X/Y" in page nav.
+  let set_page_fraction = function() {
+    const pagenum = parseInt($('#page_num').val());
+    const maxpage = parseInt($('#page_count').val());
+    $('#page_indicator').text(`${pagenum}/${maxpage}`);
+  };
+
+  // Enable page nav links, depending on page num.
+  let enable_page_nav_links = function() {
+    const pagenum = parseInt($('#page_num').val());
+    const maxpage = parseInt($('#page_count').val());
+    if (pagenum > 1) {
+      $('#navPrev10').removeClass('read_page_disabled');
+      $('#navPrev').removeClass('read_page_disabled');
+    }
+    else {
+      $('#navPrev10').addClass('read_page_disabled');
+      $('#navPrev').addClass('read_page_disabled');
+    }
+    if (pagenum < maxpage) {
+      $('#navNext').removeClass('read_page_disabled');
+      $('#navNext10').removeClass('read_page_disabled');
+    }
+    else {
+      $('#navNext').addClass('read_page_disabled');
+      $('#navNext10').addClass('read_page_disabled');
+    }
+  };
+
+
+  // Show/hide footer controls.
+  let set_footer_control_visibility = function() {
+    const pagenum = parseInt($('#page_num').val());
+    const maxpage = parseInt($('#page_count').val());
+    if (pagenum == maxpage) {
+      $('#final_page_controls').removeClass("hide");
+      $('#footerMarkRestAsKnownNextPage').addClass("hide");
+      $('#footerNextPage').addClass("hide");
+    }
+    else {
+      $('#final_page_controls').addClass("hide");
+      $('#footerMarkRestAsKnownNextPage').removeClass("hide");
+      $('#footerNextPage').removeClass("hide");
+    }
+  };
+
+
+  let show_hide_title = function(p) {
+    const t = $('#thetexttitle');
+    if (p == 1)
+      t.removeClass('hide');
+    else
+      t.addClass('hide');
+  };
+
+
+  /**
+   * Go to page relative to that stored in page_num input.
+   *
+   * On first load of page, load_source_file is set to true.
+   * It appears that for Firefox the player source can't be set
+   * while the page content is being ajax'd in.  This makes
+   * _NO SENSE AT ALL_ but moving the player source loading
+   * to the ajax "success" function worked.  ???
+   */
+  function goto_relative_page(p, load_source_file = false) {
+    const bookid = $('#book_id').val();
+    const pagenum = parseInt($('#page_num').val());
+    const maxpage = parseInt($('#page_count').val());
+    let relpage = pagenum + p;
+    if (relpage < 1)
+      relpage = 1;
+    if (relpage > maxpage)
+      relpage = maxpage;
+
+    const url = `/read/renderpage/${bookid}/${relpage}`;
+    $.get(
+      url,
+      function(data, status) {
+        $('#thetext').html(data);
+        prepareTextInteractions();
+        add_status_classes();
+        start_hover_mode(false);
+        $('#page_num').val(relpage);
+        enable_page_nav_links();
+        set_page_fraction();
+        set_footer_control_visibility();
+        show_hide_title(relpage);
+
+        // Magic hack for player source to load consistently
+        // in Firefox.
+        if (load_source_file && have_audio_file()) {
+          load_player_source();
+        }
+      }
+    );
+  }
+
+  function closeMenu() {
+    const menu = document.getElementById("reading_menu");
+    menu.classList.remove("open-menu");
+
+    disableScroll(false);
+  }
+
+  function toggleMenu() {
+    const menu = document.getElementById("reading_menu");
+    menu.classList.toggle("open-menu");
+
+    disableScroll(true);
+  }
+
+  function disableScroll(disable) {
+    if (disable) {
+      document.body.style.margin = 0;
+      document.body.style.height = "100%";
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.margin = "unset";
+      document.body.style.height = "unset";
+      document.body.style.overflow = "unset";
+    }
+  }
+
+  function edit_current_page() {
+    const bookid = $('#book_id').val();
+    const pagenum = parseInt($('#page_num').val());
+    location.href = `/read/editpage/${bookid}/${pagenum}`;
+  }
+
+  // Handle green checkmark in footer.
+  function handle_page_done(mark_rest_known = false, next_relative_page = 0) {
+    const bookid = $('#book_id').val();
+    const pagenum = parseInt($('#page_num').val());
+    data = {
+      bookid: bookid,
+      pagenum: pagenum,
+      restknown: mark_rest_known
+    };
+    $.ajax({
+      type: 'post',
+      url: '/read/page_done',
+      data: JSON.stringify(data),
+      contentType: "application/json; charset=utf-8"
+    }).done(function(d) {
+      goto_relative_page(next_relative_page);
+    });
+  }
+
+
+</script>
+
+{% endblock %}
