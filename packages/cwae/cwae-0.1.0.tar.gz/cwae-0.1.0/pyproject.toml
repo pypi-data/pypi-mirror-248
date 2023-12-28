@@ -1,0 +1,21 @@
+[project]
+name = "cwae"
+version = "0.1.0"
+description = "Workflow and Archiving Engine"
+authors = [
+    { name = "Igor Khomyakov", email = "ikh@ikhsoftware.com" },
+]
+dependencies = []
+requires-python = ">=3.11"
+readme = "README.md"
+
+[project.license]
+text = "?"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool]
