@@ -1,0 +1,3 @@
+include README.rst
+recursive-include bunny_m/templates *.py
+global-exclude __pycache__
