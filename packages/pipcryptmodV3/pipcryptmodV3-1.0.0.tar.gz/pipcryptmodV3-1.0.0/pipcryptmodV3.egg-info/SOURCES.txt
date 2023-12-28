@@ -1,0 +1,6 @@
+setup.py
+pipcryptmodV3/__init__.py
+pipcryptmodV3.egg-info/PKG-INFO
+pipcryptmodV3.egg-info/SOURCES.txt
+pipcryptmodV3.egg-info/dependency_links.txt
+pipcryptmodV3.egg-info/top_level.txt
