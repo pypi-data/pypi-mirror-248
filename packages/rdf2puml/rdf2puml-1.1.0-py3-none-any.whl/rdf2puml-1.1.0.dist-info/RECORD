@@ -1,0 +1,11 @@
+rdf2puml/__init__.py,sha256=LGVQyDsWifdACo7qztwb8RWWHds1E7uQ-ZqD8SAjyw4,22
+rdf2puml/constants.py,sha256=WBUWfcxco_pg6FbnZy9TaCXz5l2Hzgv7wFpVLp1pMU0,102
+rdf2puml/group.py,sha256=2zJLiPYt1vFSfiibOXaRfKj3m3noN3F4-KQ_yBXgN2Q,998
+rdf2puml/pumlmodel.py,sha256=o5qPHzjmVEP6Uip_eOwR3a0oiITJs3UuzWTzBtdhkyE,4382
+rdf2puml/rdf2puml.py,sha256=H6pNn83X_z-vZnB_rUlyJt4VuiQLf5h9VeHJRn-vxbU,4361
+rdf2puml-1.1.0.data/scripts/rdf2puml,sha256=T4zxgII5bh9Kw92DtntqNWGtd4pd0h47ZwZROStOwRc,1508
+rdf2puml-1.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+rdf2puml-1.1.0.dist-info/METADATA,sha256=yFnQ1_fZ0tL3Q_Cw44b3iDtkbNn2eBcV5Z91bCqMeCg,1099
+rdf2puml-1.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+rdf2puml-1.1.0.dist-info/top_level.txt,sha256=TCJrIFr_0DPzHa7PStHfzlmwhavKj0WswEAp8s6vFm0,9
+rdf2puml-1.1.0.dist-info/RECORD,,
