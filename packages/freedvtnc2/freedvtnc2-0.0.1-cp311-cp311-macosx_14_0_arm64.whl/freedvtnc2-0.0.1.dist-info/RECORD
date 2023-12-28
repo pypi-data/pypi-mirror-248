@@ -1,0 +1,15 @@
+freedvtnc2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+freedvtnc2/__main__.py,sha256=WrYI3x0BFWVyq17avhv42dG8iO7tnsb1J-w0UYEFu-w,9408
+freedvtnc2/audio.py,sha256=xLASC9O8b4VRKx6cht3ybVgoGDcE9rw3SlBJbqLUp-U,11202
+freedvtnc2/freedv_build.py,sha256=3DghWT8pdUhXIC-VORVyEOKqYxyhpomrujBKWVqJK2w,13680
+freedvtnc2/modem.py,sha256=l8pv19IVSP5fc0rqGRbkOak6ra2qXmkYPRZu8hQ7lI4,11903
+freedvtnc2/rigctl.py,sha256=E8BhqrC3HwGSVLBr_kPWhynNJ8et4aswNbaai6cDHEc,1288
+freedvtnc2/shell.py,sha256=QW0oZY0uz_KsQ76uKKP5uZns8zMm6CDu54H4SGyKqBA,16033
+freedvtnc2/test_audio.py,sha256=9tIEfGP-U8bHWce5TtjkRrq8Nm1DzucByR0PcnEO7mQ,510
+freedvtnc2/test_modem.py,sha256=M_wrayoPf-Yvg-6aypP3GnjKuD0ogV1q0wdiA2TIOoM,1397
+freedvtnc2/tnc.py,sha256=OAOBb1feOu2SEHx596Dx3AkIbElZYOudyyrgYxREbY4,3176
+_freedv_cffi.cpython-311-darwin.so,sha256=7GwTFc48RDvsETIY8KJxs5sPWA_Y1al9u1-AKH7tmt8,131456
+freedvtnc2-0.0.1.dist-info/METADATA,sha256=lR4urqfiqoPW8v0SNddH6EH88fPEdSMPhcnn_FrGGu8,6036
+freedvtnc2-0.0.1.dist-info/WHEEL,sha256=Quy-h7LlA-QSvIgEDSn4-6LiURVlz378SsjQaCb51dg,106
+freedvtnc2-0.0.1.dist-info/entry_points.txt,sha256=Ge_91NcGx4uJf-zIWVHQ-HIjcbDb2Vt_jocTGK-0Nc4,55
+freedvtnc2-0.0.1.dist-info/RECORD,,

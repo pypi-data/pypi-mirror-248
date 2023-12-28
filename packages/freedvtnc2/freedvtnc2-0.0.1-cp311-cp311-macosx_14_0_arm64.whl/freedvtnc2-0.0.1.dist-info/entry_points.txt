@@ -1,0 +1,3 @@
+[console_scripts]
+freedvtnc2=freedvtnc2:__main__.main
+
