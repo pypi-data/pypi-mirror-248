@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: sphinx-autotoc
+Version: 0.0.1a1
+Summary: Расширение для Sphinx для создания оглавлений (TOC)
+Author: IRS Ural
+Project-URL: Homepage, https://github.com/irsural/sphinx-autotoc
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Sphinx-Autotoc
+
+Sphinx-Autotoc - это расширение Python для Sphinx, которое позволяет автоматически создавать оглавления (TOC).
+
+
+## Установка
+
+Для установки Sphinx-Autotoc используется pip:
+
+```bash
+pip install sphinx-autotoc
+``` 
+
+## Использование
+
+Для использования Sphinx-Autotoc необходимо добавить его в конфигурационный файл Sphinx (conf.py):
+
+```python
+extensions = [
+    ...
+    'sphinx_autotoc',
+    ...
+]
+```
