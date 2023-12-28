@@ -1,0 +1,7 @@
+.idea
+.tox
+.coverage
+*/__pycache__/*
+venv
+dist
+*.egg-info
