@@ -1,0 +1,10 @@
+pygitver/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pygitver/changelogs_mngr.py,sha256=667BGv73XHbbmjvOKH4FfTMFoPz8OIB0Q8vNV9anez4,2548
+pygitver/git.py,sha256=tp8E8W7I_ufSzT1SC2bl_l54RdFdoQCnGvKV71akxrc,12444
+pygitver/pygitver.py,sha256=Zt6fTJMtRfYOP2bosnBNdMnNU78hHV_2mKI_V7AqxoE,4705
+pygitver-0.0.3.dev0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pygitver-0.0.3.dev0.dist-info/METADATA,sha256=mO4lDz0ARxwHKQtPS6J6PaCgSWswBKvDumdz7prU0vM,7365
+pygitver-0.0.3.dev0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pygitver-0.0.3.dev0.dist-info/entry_points.txt,sha256=wNrLR815OkYcelqe0Y_EEzYnXnN_qo1GKb0RR8oyCsc,52
+pygitver-0.0.3.dev0.dist-info/top_level.txt,sha256=5XXMVI-Hfiwj9doSFcG4c973GW7Z3Uv2ed2lpYTyAjA,9
+pygitver-0.0.3.dev0.dist-info/RECORD,,
