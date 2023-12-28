@@ -1,0 +1,2 @@
+[console_scripts]
+anthem = anthem.cli:main
