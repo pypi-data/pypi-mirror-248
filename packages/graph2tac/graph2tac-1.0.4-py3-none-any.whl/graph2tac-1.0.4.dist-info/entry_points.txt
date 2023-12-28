@@ -1,0 +1,5 @@
+[console_scripts]
+g2t-server = graph2tac.loader.predict_server:main
+g2t-tfgnn-predict-graphs = graph2tac.tfgnn.plot_predict_graphs:main
+g2t-train-hmodel = graph2tac.loader.hmodel:main
+g2t-train-tfgnn = graph2tac.tfgnn.train:main
