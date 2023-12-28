@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: cworkflow
+Version: 0.1.0
+Summary: Workflow and Archiving Engine
+Author-Email: Igor Khomyakov <ikh@ikhsoftware.com>
+License: ?
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+# cworkflow
