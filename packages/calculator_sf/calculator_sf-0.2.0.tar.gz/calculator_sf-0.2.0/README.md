@@ -1,0 +1,75 @@
+# Calculator
+
+The Calculator class provides a basic calculator with memory storage, supporting various mathematical operations. It allows users to perform addition, subtraction, multiplication, division, and Nth root calculations. The calculator also provides functionality to reset its memory to its initial state.
+
+## Installation
+
+You can install the Calculator package using pip:
+``` bash
+    # Install package
+    pip install calculator_sf
+```
+
+## Usage
+
+### Creating a Calculator
+
+```python
+from calculator_module import Calculator
+
+# Create a calculator with default memory (0.0)
+calculator = Calculator()
+
+# Create a calculator with an initial memory of 5.0
+calculator_with_memory = Calculator(memory=5.0)
+```
+
+### Performing Operations
+# Addition
+```python
+calculator.add(5.0)
+```
+# Subtraction
+```python
+calculator.subtract(2.0)
+```
+# Multiplication
+```python
+calculator.multiply(3.0)
+```
+# Division
+```python
+calculator.divide(2.0)
+```
+# Nth root
+```python
+calculator.n_root(2)
+```
+
+# Reset memory
+```python
+calculator.reset()
+```
+
+### Getting Current Values
+```python
+# Get current memory value
+current_memory = calculator.get_memory()
+```
+
+# Get current decimal places setting
+```python
+decimal_places = calculator.get_decimal_places()
+```
+
+### Testing
+```python
+pip install pytest
+pytest test_calculator.py
+```
+
+### Contributing
+Feel free to contribute by opening issues or pull requests. Bug reports, suggestions, and improvements are welcome!
+
+### License
+This project is licensed under the MIT License - see the LICENSE file for details.
