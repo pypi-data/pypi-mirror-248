@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+metapy_toolbox/__init__.py
+metapy_toolbox/common_library.py
+metapy_toolbox/meta.py
+metapy_toolbox.egg-info/PKG-INFO
+metapy_toolbox.egg-info/SOURCES.txt
+metapy_toolbox.egg-info/dependency_links.txt
+metapy_toolbox.egg-info/requires.txt
+metapy_toolbox.egg-info/top_level.txt

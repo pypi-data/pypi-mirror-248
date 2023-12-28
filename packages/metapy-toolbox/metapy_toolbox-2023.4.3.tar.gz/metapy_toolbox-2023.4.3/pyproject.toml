@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "metapy-toolbox"
+version = "2023"
+description = ""
+authors = ["wanderlei junior"]
+license = "mit"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.26.2"
+pandas = "^2.1.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

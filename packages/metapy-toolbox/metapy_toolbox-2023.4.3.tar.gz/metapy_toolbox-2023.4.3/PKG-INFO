@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: metapy_toolbox
+Version: 2023.4.3
+Summary: The METApy optimization toolbox is an easy-to-use environment for applying metaheuristic optimization methods. The platform has several optimization methods and functions for generating charts and statistical analysis of the results.
+Home-page: https://wmpjrufg.github.io/METAPY/
+Author: UNKNOWN
+Author-email: wanderlei_junior@ufcat.edu.br
+License: MIT license
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering
