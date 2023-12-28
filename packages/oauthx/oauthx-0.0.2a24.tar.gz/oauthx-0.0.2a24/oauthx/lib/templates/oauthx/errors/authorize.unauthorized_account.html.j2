@@ -1,0 +1,18 @@
+{% extends "oauthx/base.html.j2" %}
+{% set page_title=_("Unauthorized") %}
+
+{% block content %}
+<section class="action">
+  <div class="text">
+    <p class="text-danger">
+      {{ _("You are not allowed to continue using this account.") }}
+    </p>
+  </div>
+</section>
+{% endblock %}
+
+{% block navigation %}
+  {% if deny_url is defined %}
+  <a class="btn w-100" href="{{ deny_url }}">{{ _("Cancel") }}</a>
+  {% endif %}
+{% endblock %}
