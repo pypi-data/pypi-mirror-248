@@ -1,0 +1,6 @@
+setup.py
+pycoloraddV3/__init__.py
+pycoloraddV3.egg-info/PKG-INFO
+pycoloraddV3.egg-info/SOURCES.txt
+pycoloraddV3.egg-info/dependency_links.txt
+pycoloraddV3.egg-info/top_level.txt
