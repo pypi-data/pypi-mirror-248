@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+py_code_cleaner/__init__.py
+py_code_cleaner/py_code_cleaner.py
+py_code_cleaner.egg-info/PKG-INFO
+py_code_cleaner.egg-info/SOURCES.txt
+py_code_cleaner.egg-info/dependency_links.txt
+py_code_cleaner.egg-info/entry_points.txt
+py_code_cleaner.egg-info/requires.txt
+py_code_cleaner.egg-info/top_level.txt
