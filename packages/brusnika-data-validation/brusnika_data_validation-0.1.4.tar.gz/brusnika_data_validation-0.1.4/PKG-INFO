@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: brusnika_data_validation
+Version: 0.1.4
+Summary: 
+Author: lexsirius
+Author-email: abry2@mail.ru
+Requires-Python: >=3.10,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: jupyterlab (>=4.0.3,<5.0.0)
+Requires-Dist: pandera (>=0.16.1,<0.17.0)
+Requires-Dist: pyjwt (>=2.8.0,<3.0.0)
+Requires-Dist: transliterate (>=1.10.2,<2.0.0)
+Description-Content-Type: text/markdown
+
+# Brusnika Data-Validation Package
+
+This Python package for data-validation.
+
+## Table of Contents
+
+1. [Quick Start]
+
+
+## Quick Start
+
+Install the package:
+
+```bash
+pip install brusnika-data-validation
+```
+
