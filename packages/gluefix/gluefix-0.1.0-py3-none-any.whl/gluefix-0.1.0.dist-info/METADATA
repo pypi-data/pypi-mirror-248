@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: gluefix
+Version: 0.1.0
+Project-URL: homepage, https://github.com/freenet-group/gluefix
+Project-URL: documentation, https://github.com/freenet-group/gluefix/blob/main/README.md
+Project-URL: repository, https://github.com/freenet-group/gluefix
+Project-URL: changelog, https://github.com/freenet-group/gluefix/releases
+Requires-Dist: aiobotocore >2.4.1 ; python_full_version == "3.10.2"
+Requires-Dist: boto3 >1.24.70 ; python_full_version == "3.10.2"
+Requires-Dist: botocore >1.27.59 ; python_full_version == "3.10.2"
+Requires-Dist: fsspec >2021.8.1 ; python_full_version == "3.10.2"
+Requires-Dist: patsy >0.5.1 ; python_full_version == "3.10.2"
+Requires-Dist: s3fs >2022.11.0 ; python_full_version == "3.10.2"
+Requires-Dist: s3transfer >0.6.0 ; python_full_version == "3.10.2"
+
