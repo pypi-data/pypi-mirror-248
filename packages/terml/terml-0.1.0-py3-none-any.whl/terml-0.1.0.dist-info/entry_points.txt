@@ -1,0 +1,3 @@
+[console_scripts]
+terml=terml.cli:main
+

@@ -1,0 +1,11 @@
+terml/__init__.py,sha256=pmRsBGxryrbhrfnUtl4cXuyavYiCry3Aa_vAD5_LGBw,182
+terml/__main__.py,sha256=MSmt_5Xg84uHqzTN38JwgseJK8rsJn_11A8WD99VtEo,61
+terml/ansi_colors.py,sha256=LRvlhu6711ArwbuEWdVXmJ2IE1D62NHeaJX-4j0i0-Q,3609
+terml/cli.py,sha256=Pi97t6J-C5fAy4x9q8ZzyINLRBBNgBiokYk2xLJ4Tf0,234
+terml/formatter.py,sha256=gH8FCEGD1RL09CpW7Wh2zz6hMid-TdJNW4WgVNOWVwo,2092
+terml/parser.py,sha256=uq7eMaS7nUpl7E2qyCc-qdQUo53bAMlaNxll0i6h_CI,4584
+terml-0.1.0.dist-info/LICENSE,sha256=OhU7gx3A_OjSm-rbqCMs-5uZwTYkLx3OjdG5MjeuORg,1072
+terml-0.1.0.dist-info/METADATA,sha256=rQR3PZ58khtP7hko7cHzjuv4vfY9gP6UrQAbJginisY,1477
+terml-0.1.0.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+terml-0.1.0.dist-info/entry_points.txt,sha256=Y-HWj8C5SxhYBZPIXc996W-fqC-eGGX2XGxZUZPOgYk,40
+terml-0.1.0.dist-info/RECORD,,
