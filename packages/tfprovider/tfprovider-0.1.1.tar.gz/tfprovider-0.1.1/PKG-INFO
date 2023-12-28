@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: tfprovider
+Version: 0.1.1
+Summary: Implement Terraform providers in Python
+Home-page: https://smheidrich.gitlab.io/tfprovider-python/
+License: MPL-2.0
+Author: smheidrich
+Author-email: smheidrich@weltenfunktion.de
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: cryptography (>=41.0.4,<42.0.0)
+Requires-Dist: grpcio (>=1.59.0,<2.0.0)
+Requires-Dist: grpcio-health-checking (>=1.59.0,<2.0.0)
+Requires-Dist: hc-go-plugin-server (>=0.1.0,<0.2.0)
+Requires-Dist: msgpack (>=1.0.7,<2.0.0)
+Requires-Dist: tfplugin-proto-all (>=0.1.0,<0.2.0)
+Project-URL: Documentation, https://smheidrich.gitlab.io/tfprovider-python/
+Project-URL: Repository, https://gitlab.com/smheidrich/tfprovider-python
+Description-Content-Type: text/markdown
+
+# tfprovider(-python)
+
+This is a library to allow you to write Terraform providers in Python.
+
+NOT USABLE YET for anyone but myself, trust me.
+
+## Implemented/missing features
+
+If you need any of these, please either open an issue (on GitLab or GitHub,
+doesn't matter to me) or comment on an existing one and I'll see what I can do.
+In contrast to larger projects, I prefer +1 comments over thumbs ups *for now*
+(!) because they are easier for me to get notified of.
+
+Most of them aren't difficult or time-consuming for me to implement, there is
+just no point doing it if nobody needs it.
+
+- General:
+  - [ ] Not being completely horrible to use and full of bugs
+- Kinds of Terraform objects:
+  - [x] Resources
+  - [ ] Data sources
+- Terraform data types:
+  - [x] Strings
+  - [x] Sets of strings
+  - [x] Unrefined unknowns
+  - [ ] Refined unknowns
+  - [ ] Anything else, including more complex types
+- Miscellaneous features:
+  - [ ] Private state
+  - [ ] Upgrading state from earlier versions
+    - Currently has an API for this that can't possibly work => needs overhaul
+- Utilities:
+  - [ ] Automatic comparison for `requires_replace`
+
+## Development
+
+### Sync/Async variants
+
+The sync variant of the API is automatically generated from the async one
+using [unasync](https://pypi.org/project/unasync/). With dev dependencies
+installed, you can regenerate them by running `run_unasync.py` as a Python
+script (e.g. via `poetry run run_unasync.py`).
+
