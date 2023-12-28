@@ -1,0 +1,5 @@
+[mkdocs.plugins]
+mkdocs_licenseinfo = mkdocs_licenseinfo.plugin:MkdocsLicenseInfoPlugin
+
+[mkdocs_licenseinfo.jinja_environment_factory]
+default = mkdocs_licenseinfo.render_markdown:_EnvironmentFactory.default_environment
