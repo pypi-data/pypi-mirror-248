@@ -1,0 +1,32 @@
+{
+    "services": {
+        "connect_lte": {
+            "fields": {
+                "host": {
+                    "name": "\u0410\u0434\u0440\u0435\u0441"
+                }
+            }
+        },
+        "delete_sms": {
+            "fields": {
+                "host": {
+                    "name": "\u0410\u0434\u0440\u0435\u0441"
+                }
+            }
+        },
+        "disconnect_lte": {
+            "fields": {
+                "host": {
+                    "name": "\u0410\u0434\u0440\u0435\u0441"
+                }
+            }
+        },
+        "set_option": {
+            "fields": {
+                "host": {
+                    "name": "\u0410\u0434\u0440\u0435\u0441"
+                }
+            }
+        }
+    }
+}
