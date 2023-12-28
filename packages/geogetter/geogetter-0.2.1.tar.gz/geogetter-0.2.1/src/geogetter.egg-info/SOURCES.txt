@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/geogetter/__init__.py
+src/geogetter.egg-info/PKG-INFO
+src/geogetter.egg-info/SOURCES.txt
+src/geogetter.egg-info/dependency_links.txt
+src/geogetter.egg-info/requires.txt
+src/geogetter.egg-info/top_level.txt
