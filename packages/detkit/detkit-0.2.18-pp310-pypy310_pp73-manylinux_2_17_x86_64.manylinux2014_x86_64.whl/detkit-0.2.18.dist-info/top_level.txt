@@ -1,0 +1,8 @@
+benchmark
+build
+conda-recipe
+detkit
+docker
+docs
+tools
+wheelhouse
