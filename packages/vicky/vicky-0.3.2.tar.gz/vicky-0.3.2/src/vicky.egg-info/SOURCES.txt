@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+src/vicky/__init__.py
+src/vicky/clients.py
+src/vicky/deployment.py
+src/vicky/exceptions.py
+src/vicky/utils.py
+src/vicky.egg-info/PKG-INFO
+src/vicky.egg-info/SOURCES.txt
+src/vicky.egg-info/dependency_links.txt
+src/vicky.egg-info/entry_points.txt
+src/vicky.egg-info/requires.txt
+src/vicky.egg-info/top_level.txt
+src/vicky/scripts/__init__.py
+src/vicky/scripts/vicky.py
