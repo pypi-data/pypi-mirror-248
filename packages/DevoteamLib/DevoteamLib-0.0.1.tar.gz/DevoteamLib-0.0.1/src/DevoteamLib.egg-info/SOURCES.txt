@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/DevoteamLib.egg-info/PKG-INFO
+src/DevoteamLib.egg-info/SOURCES.txt
+src/DevoteamLib.egg-info/dependency_links.txt
+src/DevoteamLib.egg-info/top_level.txt
+src/OCRExtraction/OCRLayouting.py
+src/OCRExtraction/__init__.py
