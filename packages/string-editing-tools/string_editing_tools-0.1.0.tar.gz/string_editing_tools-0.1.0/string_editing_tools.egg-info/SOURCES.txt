@@ -1,0 +1,8 @@
+setup.py
+string_editing_tools/__init__.py
+string_editing_tools/functions.py
+string_editing_tools.egg-info/PKG-INFO
+string_editing_tools.egg-info/SOURCES.txt
+string_editing_tools.egg-info/dependency_links.txt
+string_editing_tools.egg-info/entry_points.txt
+string_editing_tools.egg-info/top_level.txt
