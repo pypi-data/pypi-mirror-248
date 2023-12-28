@@ -1,0 +1,11 @@
+django_auto_permissions/__init__.py,sha256=azXJqN1nNtZUO0-6wJoZek2nc7FSuzO6ge_fEWILF7o,73
+django_auto_permissions/apps.py,sha256=bsVXL79WYGDBxy1gQSZR78aEOTHXAQLgGVUouZW6KYU,555
+django_auto_permissions/permission_generation.py,sha256=WM9muyJliWGRdmIOxSrfB64jul5FUGnq71GqMA9lTIQ,1342
+django_auto_permissions/viewset_analysis.py,sha256=AdBNWXPtIqNshhsqKiNM1g88te0zERRyaFvmlK2tywY,1710
+django_auto_permissions/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_auto_permissions/tests/test_viewset_analysis.py,sha256=yoPs6MmZlrZQa-zRW-pphjVd6e4_vhJvVfKY0QI9TlE,516
+django_auto_permissions-0.1.8.dist-info/LICENSE,sha256=zk4KdQRP65zuBwPc18phb5Wu7gmddLk_6k7LKgx0lxY,1067
+django_auto_permissions-0.1.8.dist-info/METADATA,sha256=1hJrP6w71lide-k-emIEXRRY0_YuEndhjBj_9KT7Vy4,2833
+django_auto_permissions-0.1.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_auto_permissions-0.1.8.dist-info/top_level.txt,sha256=sHEl_hGiYlGEchj_fIgbvfmWbe34WnbVJrvy7roAs7c,24
+django_auto_permissions-0.1.8.dist-info/RECORD,,
