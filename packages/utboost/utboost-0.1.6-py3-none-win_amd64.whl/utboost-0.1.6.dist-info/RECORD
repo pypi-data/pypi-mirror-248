@@ -1,0 +1,13 @@
+utboost/VERSION,sha256=Us6-ekrSteRiwlfY-S3rQlmDLCZyBEVABgGI-6YEsGQ,5
+utboost/__init__.py,sha256=UV0NFsUgT16-atEyRF5R6VhZLnxrlApGHYgnRN54-_Q,328
+utboost/basic.py,sha256=SfUzgiq5kLJ-TNdOrJAsYoMhrR2CSL5uKCl3mDEB5Vs,23793
+utboost/callback.py,sha256=FAhNZL4nbMRbKriQKz29imjBBeTax6wlp0RwacX838g,5034
+utboost/core.py,sha256=QXgM3D-ljvrXgg23j-jdYsOzR1CgTyHTt-A0CpkNTdA,25382
+utboost/libpath.py,sha256=-BnIKFmgOP_ZjiQA70LCP9KusRapN-zVu27YW2T5Nzc,1169
+utboost/metric.py,sha256=upIGK-BY1t3_IMa5pjT0G08eO06baUP3_-MQKCX2TlI,25775
+utboost/validation.py,sha256=tFKXqNuXkIM986NNm-Gv2tc685wS3rifOpu9UYabDfc,2110
+utboost/lib/lib_utboost.dll,sha256=YotJl4i34Y58oNf_QPvaueZMn1EGLVqjsXRWZA60eyk,328192
+utboost-0.1.6.dist-info/METADATA,sha256=HyWWwJfkbSrqBc6sWWa8LJrGlGBZgt5bDAxIVJSS2_o,1386
+utboost-0.1.6.dist-info/RECORD,,
+utboost-0.1.6.dist-info/WHEEL,sha256=xq3J6sB2oJqjv0tDC7tGUGvne1fOugw1JUmk86QA7UM,106
+utboost-0.1.6.dist-info/top_level.txt,sha256=Ey-lEw-2mLqBjAF4HpHtGlNwC1Peyy29bIxrZtTZGBA,20
