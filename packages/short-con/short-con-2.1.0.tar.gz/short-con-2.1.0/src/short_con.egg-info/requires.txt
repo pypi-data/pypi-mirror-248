@@ -1,0 +1,15 @@
+kwexception
+
+[dev]
+build
+invoke
+ipython
+pycodestyle
+twine
+virtualenv
+virtualenvwrapper
+
+[test]
+pytest
+pytest-cov
+tox
