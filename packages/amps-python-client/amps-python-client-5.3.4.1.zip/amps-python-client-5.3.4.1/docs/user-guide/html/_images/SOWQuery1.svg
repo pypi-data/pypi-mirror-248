@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="500"
+   height="400"
+   version="1.1"
+   id="svg37"
+   sodipodi:docname="SOWQuery1.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs37" />
+  <sodipodi:namedview
+     id="namedview37"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.18"
+     inkscape:cx="249.57627"
+     inkscape:cy="200"
+     inkscape:window-width="1520"
+     inkscape:window-height="941"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg37" />
+  <rect
+     stroke="#000000"
+     stroke-width="0"
+     fill="#ffffff"
+     x="0"
+     y="0"
+     width="499"
+     height="399"
+     id="rect1" />
+  <g
+     transform="translate(213.75,220.25)"
+     id="g3">
+    <rect
+       width="66.5"
+       height="23.5"
+       stroke="#333333"
+       stroke-width="0"
+       fill="none"
+       id="rect2"
+       x="0"
+       y="0" />
+    <g
+       transform="translate(0,16.75)"
+       id="g2">
+      <text
+         x="33.25"
+         style="text-anchor:middle"
+         y="-2"
+         id="text2"><tspan
+           xml:space="preserve"
+           font-size="12px"
+           font-family="Arial"
+           fill="#000000"
+           id="tspan2">group_end</tspan></text>
+    </g>
+  </g>
+  <g
+     transform="translate(170.375,180.25)"
+     id="g5">
+    <rect
+       width="153.25"
+       height="23.5"
+       stroke="#333333"
+       stroke-width="0"
+       fill="none"
+       id="rect3"
+       x="0"
+       y="0" />
+    <g
+       transform="translate(0,16.75)"
+       id="g4">
+      <text
+         x="76.625"
+         style="text-anchor:middle"
+         y="-2"
+         id="text3"><tspan
+           xml:space="preserve"
+           font-size="12px"
+           font-family="Arial"
+           fill="#000000"
+           id="tspan3">matching sow records</tspan></text>
+    </g>
+  </g>
+  <g
+     transform="translate(180.5,137.25)"
+     id="g7">
+    <rect
+       width="133"
+       height="23.5"
+       stroke="#333333"
+       stroke-width="0"
+       fill="none"
+       id="rect5"
+       x="0"
+       y="0" />
+    <g
+       transform="translate(0,16.75)"
+       id="g6">
+      <text
+         x="66.5"
+         style="text-anchor:middle"
+         y="-2"
+         id="text5"><tspan
+           xml:space="preserve"
+           font-size="12px"
+           font-family="Arial"
+           fill="#000000"
+           id="tspan5">group_begin response</tspan></text>
+    </g>
+  </g>
+  <g
+     transform="translate(124.75,95.25) rotate(0 122.25 11.75)"
+     id="g9">
+    <rect
+       width="244.5"
+       height="23.5"
+       stroke="#333333"
+       stroke-width="0"
+       fill="none"
+       id="rect7" />
+    <g
+       transform="translate(0.0,16.75)"
+       id="g8">
+      <text
+         x="122.25"
+         style="text-anchor: middle"
+         y="-2.0"
+         id="text7"><tspan
+           xml:space="preserve"
+           font-size="12"
+           font-family="Arial"
+           fill="#000000"
+           id="tspan7">sow command</tspan></text>
+    </g>
+  </g>
+  <g
+     transform="translate(12.0,23.625) rotate(0 70.0 19.375)"
+     id="g12">
+    <g
+       transform="translate(4.0,4.0)"
+       id="g10">
+      <rect
+         width="140.0"
+         height="38.75"
+         stroke="#A8A8A8"
+         stroke-width="0"
+         stroke-opacity=".6"
+         fill-opacity=".6"
+         fill="#A8A8A8"
+         id="rect9" />
+    </g>
+    <rect
+       width="140.0"
+       height="38.75"
+       stroke="#333333"
+       stroke-width="3"
+       fill="#ffffff"
+       id="rect10" />
+    <g
+       transform="translate(0.0,27.375)"
+       id="g11">
+      <text
+         x="70.0"
+         style="text-anchor: middle"
+         y="-3.0"
+         id="text10"><tspan
+           xml:space="preserve"
+           font-size="18"
+           font-family="Arial"
+           fill="#000000"
+           font-weight="bold"
+           id="tspan10">Client</tspan></text>
+    </g>
+  </g>
+  <g
+     transform="translate(82.0,62.375)"
+     id="g14">
+    <path
+       d="M0.0,0.0 L0.0,268.625 Q0.0,278.625 -1.5,278.625 L-3.0,278.625 "
+       stroke-dasharray="23, 0"
+       fill="none"
+       stroke="#000000"
+       stroke-width="2"
+       id="path12" />
+    <g
+       transform="translate(0.0,135.0625)"
+       id="g13" />
+  </g>
+  <g
+     transform="translate(9.5,333.5) rotate(0 69.5 7.5)"
+     id="g17">
+    <g
+       transform="translate(4.0,4.0)"
+       id="g15">
+      <rect
+         width="139.0"
+         height="15.0"
+         stroke="#A8A8A8"
+         stroke-width="0"
+         stroke-opacity=".6"
+         fill-opacity=".6"
+         fill="#A8A8A8"
+         id="rect14" />
+    </g>
+    <rect
+       width="139.0"
+       height="15.0"
+       stroke="#333333"
+       stroke-width="1"
+       fill="#000000"
+       id="rect15" />
+    <g
+       id="g16" />
+  </g>
+  <g
+     transform="translate(348.0,24.625) rotate(0 70.0 19.375)"
+     id="g20">
+    <g
+       transform="translate(4.0,4.0)"
+       id="g18">
+      <rect
+         width="140.0"
+         height="38.75"
+         stroke="#A8A8A8"
+         stroke-width="0"
+         stroke-opacity=".6"
+         fill-opacity=".6"
+         fill="#A8A8A8"
+         id="rect17" />
+    </g>
+    <rect
+       width="140.0"
+       height="38.75"
+       stroke="#333333"
+       stroke-width="3"
+       fill="#ffffff"
+       id="rect18" />
+    <g
+       transform="translate(0.0,27.375)"
+       id="g19">
+      <text
+         x="70.0"
+         style="text-anchor: middle"
+         y="-3.0"
+         id="text18"><tspan
+           xml:space="preserve"
+           font-size="18"
+           font-family="Arial"
+           fill="#000000"
+           font-weight="bold"
+           id="tspan18">AMPS</tspan></text>
+    </g>
+  </g>
+  <g
+     transform="translate(418.0,63.375)"
+     id="g22">
+    <path
+       d="M0.0,0.0 L0.0,268.625 Q0.0,278.625 -1.5,278.625 L-3.0,278.625 "
+       stroke-dasharray="23, 0"
+       fill="none"
+       stroke="#000000"
+       stroke-width="2"
+       id="path20" />
+    <g
+       transform="translate(0.0,135.0625)"
+       id="g21" />
+  </g>
+  <g
+     transform="translate(345.5,334.5) rotate(0 69.5 7.5)"
+     id="g25">
+    <g
+       transform="translate(4.0,4.0)"
+       id="g23">
+      <rect
+         width="139.0"
+         height="15.0"
+         stroke="#A8A8A8"
+         stroke-width="0"
+         stroke-opacity=".6"
+         fill-opacity=".6"
+         fill="#A8A8A8"
+         id="rect22" />
+    </g>
+    <rect
+       width="139.0"
+       height="15.0"
+       stroke="#333333"
+       stroke-width="1"
+       fill="#000000"
+       id="rect23" />
+    <g
+       id="g24" />
+  </g>
+  <g
+     transform="matrix(1.0128148,0,0,0.99782531,81.989882,117)"
+     id="g28">
+    <path
+       d="m 0,0 h 156.5 q 10,0 10,0 v 0 q 0,0 0,0 H 330"
+       stroke-dasharray="23, 0"
+       fill="none"
+       stroke="#000000"
+       stroke-width="2"
+       id="path25" />
+    <g
+       transform="rotate(180,166.5,0)"
+       id="g26">
+      <polygon
+         points="9,-3 9,3 3,0 "
+         fill="#000000"
+         stroke="#000000"
+         stroke-width="2"
+         id="polygon25" />
+    </g>
+    <g
+       transform="translate(161.5)"
+       id="g27" />
+  </g>
+  <g
+     transform="matrix(1.0102829,0,0,0.99825347,417.00202,157)"
+     id="g31">
+    <path
+       d="m 0,0 h -156 q -10,0 -10,0 v 0 q 0,0 0,0 h -163"
+       stroke-dasharray="6, 12"
+       fill="none"
+       stroke="#000000"
+       stroke-width="2"
+       id="path28" />
+    <g
+       transform="translate(-332)"
+       id="g29">
+      <polygon
+         points="3,0 9,-3 9,3 "
+         fill="#000000"
+         stroke="#000000"
+         stroke-width="2"
+         id="polygon28" />
+    </g>
+    <g
+       transform="translate(-161)"
+       id="g30" />
+  </g>
+  <g
+     transform="matrix(1.0180496,0,0,0.9969397,418.55658,200)"
+     id="g34">
+    <path
+       d="m 0,0 h -155.5 q -10,0 -10,0 v 0 q 0,0 0,0 H -328"
+       stroke-dasharray="6, 12"
+       fill="none"
+       stroke="#000000"
+       stroke-width="2"
+       id="path31" />
+    <g
+       transform="translate(-331)"
+       id="g32">
+      <polygon
+         points="9,-3 9,3 3,0 "
+         fill="#000000"
+         stroke="#000000"
+         stroke-width="2"
+         id="polygon31" />
+    </g>
+    <g
+       transform="translate(-160.5)"
+       id="g33" />
+  </g>
+  <g
+     transform="matrix(1.0154713,0,0,0.99737684,417.70513,242.61803)"
+     id="g34-5">
+    <path
+       d="m 0,0 h -155.5 q -10,0 -10,0 v 0 q 0,0 0,0 H -328"
+       stroke-dasharray="6, 12"
+       fill="none"
+       stroke="#000000"
+       stroke-width="2"
+       id="path31-0" />
+    <g
+       transform="translate(-331)"
+       id="g32-3">
+      <polygon
+         points="3,0 9,-3 9,3 "
+         fill="#000000"
+         stroke="#000000"
+         stroke-width="2"
+         id="polygon31-0" />
+    </g>
+    <g
+       transform="translate(-160.5)"
+       id="g33-2" />
+  </g>
+</svg>

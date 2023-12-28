@@ -1,0 +1,43 @@
+.. _#command-guide-intro:
+
+Introduction
+===========================
+
+This guide includes a listing of all AMPS commands as well as the
+required and optional parameters. AMPS supports a consistent set of
+commands and options regardless of the protocol used to communicate with
+AMPS. This guide covers the semantics of the commands and options, but
+does not cover how those commands and options are represented in any
+particular protocol. Each protocol uses a different concrete format for
+messages, and that format is specific to the protocol.
+
+To use a command from your application, set the properties of the
+Command object as shown in this guide, the use the execute function to
+send the command. The AMPS client is responsible for interpreting the
+command and formatting the message to AMPS in the proper format for the
+specific protocol the client is using.
+
+This guide lists the available options and their usage.
+When using the AMPS client libraries (either with the
+named convenience methods or with the ``Command`` interface),
+your application only needs to specify a subset of
+options. The AMPS client itself will handle
+formatting the command, adding options necessary for
+submitting the command (such as requesting a response
+indicating if a subscription succeeded, and so forth).
+
+The Developer Guide for each language provides a
+cookbook for common commands to AMPS, and indicates
+which fields and options to set for those commands.
+
+.. tip::
+
+  The AMPS client libraries handle many of the details
+  for an application, such as handling heartbeating,
+  requesting acknowledgement on commands, and so on.
+
+  The Developer Guides for the AMPS client libraries include
+  a reference that lists the fields and options to
+  set to produce a specific result.
+
+

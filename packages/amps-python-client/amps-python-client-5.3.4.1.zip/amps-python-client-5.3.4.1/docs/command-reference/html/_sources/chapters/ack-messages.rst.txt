@@ -1,0 +1,32 @@
+.. _#command-guide-ack-messages:
+
+Ack Messages
+=================
+
+AMPS provides information to the application and
+AMPS client about the status of commands using
+acknowledgement, or ``ack``, messages.
+
+A command to AMPS must explicitly request
+acknowledgement to receive a response from AMPS.
+By default, the AMPS client libraries request
+acknowledgements as needed to detect failures:
+see the *AMPS User Guide* chapter on
+acknowledgements and the *Developer Guide*
+for each client language for details.
+
+In some cases, an application may want additional
+information about the state of a command, and may
+request an ``ack`` explicitly.  For example,
+an application may want to know how many records
+would be returned by a particular query. In that
+case, a common technique is to request a ``stats``
+(statistics) ``ack``, while setting the number
+of data messages to be returned to ``0`` (using
+the ``top_n=0`` option).
+
+This section describes the ``ack`` messages
+returned by AMPS.
+
+.. include:: ./ack-messages/ack.inc
+

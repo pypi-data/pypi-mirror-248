@@ -1,0 +1,6 @@
+.. _#command-guide-removing-messages:
+
+Removing or Acknowledging Messages
+==================================
+
+.. include:: ./sow-delete.inc

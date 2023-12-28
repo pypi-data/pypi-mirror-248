@@ -1,0 +1,116 @@
+.. _intro:
+
+Introduction to 60East Technologies AMPS
+============================================
+
+Thank you for choosing the Advanced Message Processing System (AMPS)
+from 60East Technologies. AMPS is a feature-rich message processing
+system that delivers previously unattainable low-latency and
+high-throughput performance to users. AMPS provides both
+publish-and-subscribe messaging and high-performance message queuing.
+
+Getting Started with AMPS
+-------------------------
+
+AMPS is designed to help you quickly and easily develop and
+deploy data-intensive applications with demanding requirements
+for low latency and high performance.
+
+AMPS combines aspects of a traditional message bus, message queue,
+database, view server, analytics and event processing engine.
+The features that AMPS provides are designed to be easy to use,
+to work well together, and to provide high performance.
+
+* The |introguide| provides an overall introduction to AMPS,
+  including information on setting up a development environment,
+  the basic concepts and features of AMPS, and general advice
+  on which features combine effectively for specific scenarios.
+
+* The |evalguide| provides advice on evaluating AMPS, included
+  a suggested evaluation process, tips on monitoring and
+  measuring performance in an evaluation environment, and
+  information on how to effectively partner with 60East
+  on an evaluation of AMPS.
+
+* The |userguide| -- this guide -- provides a complete
+  overview of the features of AMPS and how to deploy and
+  administer an instance of AMPS.
+
+* The |configref| describes the AMPS configuration file
+  and the options available to specify the behavior
+  of an instance of AMPS.
+
+These guides cover the general features of AMPS. The 60East
+website provides additional guides, such as guides for
+developing applications with AMPS, a guide to the statistics
+available for monitoring, and so on.
+
+60East recommends starting with the |introguide| to become
+familiar with AMPS, and then reading the sections of the
+|userguide| and |configref| for the features that
+your application will use.  For developers, becoming
+familar with the Developer Guide for the AMPS Client library
+that you will be using is also recommended.
+
+.. include:: ../../common/chapters/intro/product_overview.inc
+
+.. include:: ../../common/chapters/intro/requirements.inc
+
+.. index:: AMPS; organization,
+
+Organization of this Manual
+---------------------------
+
+This manual is divided into the following parts:
+
+-  *Part One* presents introductory material and a brief
+   overview of AMPS
+
+-  *Part Two* explains the features of AMPS, including
+   information on the following features:
+
+   *  :ref:`Publish and Subscribe <#ug-pub_sub>`
+   *  :ref:`Transactional Messaging and Bookmark Subscriptions <#ug-txlog>`
+   *  :ref:`Message Queues <#ug-queues>`
+   *  :ref:`Message Types <#ug-messagetypes>`
+   *  :ref:`State of the World (SOW) <#ug-sow>`
+
+   State of the World topics enable many of the other advanced
+   features in AMPS, such as:
+
+   *  :ref:`Aggregating Data with View Topics<#ug-views>`
+   *  :ref:`Conflated Topics <#ug-topic_replicas>`
+   *  :ref:`Delta Messaging <#ug-delta>`
+   *  :ref:`Out of Focus Messages (OOF)<#ug-oof>`
+   *  :ref:`Regular Expression Topics<#ug-regular-expression-topics>`
+
+   This section also contains detailed chapters on specific topics,
+   such as the AMPS filter language. Both application developers and
+   administrators should become familiar with this section.
+
+-  *Part Three* discusses AMPS deployment and
+   operations, including:
+
+   *  :ref:`Running AMPS as a Linux Service <#ug-daemon>`
+   *  :ref:`Logging <#ug-logging>`
+   *  :ref:`Event Topics <#ug-event-topics>`
+   *  :ref:`Monitoring Interface <#ug-monitoring>`
+   *  :ref:`Automating AMPS with Actions <#ug-actions>`
+   *  :ref:`Replication and High-Availability <#ug-ha>`
+   *  :ref:`Operation and Deployment <#ug-operation>`
+   *  :ref:`Securing AMPS <#ug-securing>`
+   *  :ref:`Troubleshooting AMPS <#ug-troubleshooting>`
+
+   This section is most useful for those with a focus on AMPS
+   operations, although the information presented here is helpful for
+   developers who want to design high-performance, high-availability
+   applications that are easy to deploy and maintain.
+
+-  *Part Four* presents information about using AMPS to
+   build applications including:
+
+   -  :ref:`Sample Use Cases <#ug-usecases>`
+
+.. include:: ../../common/chapters/intro/doc_conventions.inc
+
+.. include:: ../../common/chapters/intro/technical_support.inc

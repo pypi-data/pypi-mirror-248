@@ -1,0 +1,23 @@
+.. _#command-guide-query-subscribe:
+
+Querying and Subscribing
+============================
+
+This section describes commands used to
+retrieve content messages from AMPS,
+including both queries and subscriptions.
+
+For details on the differences between these
+commands, see the *AMPS User Guide*.
+
+.. include:: ./query-subscribe/delta-subscribe.inc
+
+.. include:: ./query-subscribe/sow-and-delta-subscribe.inc
+
+.. include:: ./query-subscribe/sow-and-subscribe.inc
+
+.. include:: ./query-subscribe/subscribe.inc
+
+.. include:: ./query-subscribe-sow.inc
+
+.. include:: ./query-subscribe/unsubscribe.inc

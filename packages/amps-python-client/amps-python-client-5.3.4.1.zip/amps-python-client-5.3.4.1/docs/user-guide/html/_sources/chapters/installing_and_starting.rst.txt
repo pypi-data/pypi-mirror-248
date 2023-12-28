@@ -1,0 +1,23 @@
+.. _#ug-getting-started:
+
+.. _installing_and_starting:
+
+Installing and Starting AMPS
+===============================================
+
+.. index:: Basics, AMPS; basics,
+
+This chapter describes how to install and start AMPS. It describes
+the file structure of the AMPS distribution, how to configure a
+simple AMPS instance, and how to run the tools provided as
+part of the distribution.
+
+.. include:: ./getting_started/installation.inc
+
+.. include:: ../../common/chapters/getting_started/starting.inc
+
+.. include:: ../../common/chapters/getting_started/admin_view.inc
+
+.. include:: ../../common/chapters/getting_started/spark.inc
+
+.. include:: ../../common/chapters/getting_started/next_steps.inc

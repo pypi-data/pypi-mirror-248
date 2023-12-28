@@ -1,0 +1,13 @@
+
+.. _#command-guide-utility-commands:
+
+Utility Commands
+===================
+
+AMPS includes two commands to help applications
+function as expected.
+
+.. include:: ./utilities/flush.inc
+
+.. include:: ./utilities/heartbeat.inc
+

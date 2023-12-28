@@ -1,0 +1,12 @@
+.. _#command-guide-query-result-delimiters:
+
+Query Result Set Delimiters
+===========================
+
+AMPS provides a pair of delimiters, ``group_begin`` and ``group_end``,
+that indicate when a query result set begins and ends.
+
+.. include:: ./query-delimiters/group_begin.inc
+
+.. include:: ./query-delimiters/group_end.inc
+

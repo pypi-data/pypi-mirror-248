@@ -1,0 +1,56 @@
+.. Advanced Message Processing System (AMPS) Command Reference documentation master file, created by
+   sphinx-quickstart on Fri Feb 10 12:37:12 2017.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+============================================================
+Advanced Message Processing System (AMPS) Command Reference
+============================================================
+
+**Version** |version|
+
+**Publication Date** |today|
+
+
+.. toctree::
+   :maxdepth: 1
+   :numbered: 1
+   :hidden:
+
+   ./chapters/intro.rst
+   ./chapters/logon.rst
+   ./chapters/publishing.rst
+   ./chapters/query-subscribe.rst
+   ./chapters/removing.rst
+   ./chapters/utilities.rst
+   ./chapters/content-messages.rst
+   ./chapters/ack-messages.rst
+   ./chapters/query-delimiters.rst
+   ./chapters/protocol-reference.rst
+
+Introduction
+-------------
+
+1. :ref:`#command-guide-intro`
+
+Commands to AMPS
+----------------
+
+2. :ref:`#command-guide-logon`
+3. :ref:`#command-guide-publishing`
+4. :ref:`#command-guide-query-subscribe`
+5. :ref:`#command-guide-removing-messages`
+6. :ref:`#command-guide-utility-commands`
+
+Responses from AMPS
+-------------------
+
+7. :ref:`#command-guide-content-response`
+8. :ref:`#command-guide-ack-messages`
+9. :ref:`#command-guide-query-result-delimiters`
+
+Protocol Formats
+----------------
+
+10. :ref:`#command-ref-protocol`
+

@@ -1,0 +1,9 @@
+.. _config-file-shortcuts:
+
+Configuration File Shortcuts
+=================================
+
+This appendix describes features that AMPS provides for simplifying configuration.
+
+.. include:: ../../common/chapters/configuration/sow-units-env.inc
+

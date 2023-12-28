@@ -1,0 +1,269 @@
+
+.. include:: ../macros.inc
+
+.. _#ug-constructing-fields:
+
+.. _constructing-fields:
+
+Constructing Fields
+===================
+
+For views, aggregated subscriptions, and SOW topic enrichment, AMPS
+allows you to construct new fields based on existing data.
+
+When you construct a field, there are two components required:
+
+1. A *source expression* that produces a value. This expression can
+   include XPath identifiers that extract values from a message, literal
+   values, operators, and functions.
+
+2. A *destination identifier* that specifies the identifier where the
+   message type will serialize the value produced by the source
+   expression.
+
+The source expression and the destination identifier are separated by
+the ``AS`` keyword. The format for a field construction expression is as
+follows:
+
+.. code::
+
+    <source expression>
+    AS 
+    <destination identifier>
+
+For example, to create a field in a view that calculates the total value
+of an order by multiplying the ``/price`` field times the ``/qty``
+field, construct the field as shown below:
+
+.. code-block:: xml
+
+    <Field>/price * /qty AS /total</Field>
+
+This constructs a field using ``/price * /qty`` as the source
+expression. Both ``/price`` and ``/qty`` are taken from the incoming
+message. When the result of this expression is computed, the value will
+be produced with the XPath identifier ``/total`` as the destination.
+That value will then be serialized to a message (with the exact format
+and syntax determined by the message type).
+
+Notice that the grammar for constructing fields does not specify
+precisely how the field is represented in the message. AMPS constructs
+the value and provides the XPath identifier to the message type. The
+message type itself is responsible for serializing the value into the
+correct representation and structure for that message type.
+
+All of the AMPS operators and functions that are available for filters
+are available to use in source expressions, including any user-defined
+functions loaded into the instance.
+
+Depending on the context for field construction, there are additional
+capabilities available when constructing fields, as described in the
+following sections.
+
+
+.. _#construct-preprocessing-fields:
+
+Constructing Preprocessing Fields
+----------------------------------
+
+Preprocessing field constructors operate on a single message and
+construct fields based on that message. The results of the preprocessing
+field constructor are merged into the incoming message. Any field in the
+source message that is not changed or removed during preprocessing is
+left unchanged, so it is not necessary to include all fields in the
+message in the ``Preprocessing`` block.
+
+Since preprocessing fields apply to a specific message, preprocessing
+fields cannot specify the topic or message type in an XPath identifier.
+All identifiers in the source expression are evaluated as identifiers
+in the message being preprocessed. Preprocessing fields are evaluated
+during the preprocessing phase, so they cannot refer to the previous state
+of a message.
+
+Using HINT to Control Field Construction
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Preprocessing can be used to remove fields from a message. By default,
+AMPS serializes any field that has an empty string or ``NULL`` value
+after preprocessing. Preprocessing fields can include a directive that
+specifies that a field that contains a ``NULL`` value should be removed
+from the set of fields rather than serialized with a ``NULL`` value. The
+directive ``HINT OPTIONAL`` applied to the XPath identifier specifies
+that if the result of the source expression is ``NULL``, AMPS does not
+provide the value for the message type to serialize. For example, the
+following field constructor removes the ``/source`` field from the
+message if the value provided is not in a specific list of values:
+
+.. code-block:: xml
+
+    <Field>IF(/source IN ('a','e','f'), /source, NULL)
+           AS /source HINT OPTIONAL</Field>
+
+By default, AMPS considers the results of field construction (the
+processed message) to be distinct from the current message. AMPS
+rewrites the current message *after* preprocessing is completed. This
+means that, by default, the results of fields constructed during
+preprocessing are not available to other fields within preprocessing.
+The ``HINT SET_CURRENT`` option immediately inserts or updates values in
+the current message, which makes the new value available to all
+subsequent ``Field`` declarations.
+
+In the sample below, AMPS enriches the message by performing an
+expensive operation (implemented as a user-defined function) on two
+input fields, and immediately updates the current message with the
+output of that operation. AMPS then sets other fields in the processed
+message using the updated value in the current message.
+
+.. code-block:: xml
+
+    <Field>EXPENSIVE_UDF_CALL(/dataSet1, /dataSet2)
+           AS /processedData HINT SET_CURRENT</Field>
+    <Field>IF(/processedData > 1000000,
+               'A',
+               'B') AS /resultClass</Field> 
+
+Notice that using ``HINT SET_CURRENT`` requires AMPS to process
+``Field`` declarations in order, which may prevent future optimizations.
+
+Hints can be combined as follows:
+
+.. code-block:: xml
+
+    <Field>EXPENSIVE_UDF_CALL(/dataSet1, /dataSet2)
+           AS /processedData HINT SET_CURRENT,OPTIONAL
+    </Field>
+
+In this case, if the projected field would be ``NULL``, the field is
+removed from the current message.
+
+.. _#construct-enrichment-fields:
+
+Constructing Enrichment Fields
+-------------------------------
+
+Enrichment field constructors operate on a single message and construct
+fields based on that message. Enrichment expressions operate on the
+current message and change the current message. The results of the
+enrichment directives are merged into the incoming message. Any field in
+the source message that is not changed or removed during preprocessing
+is left unchanged, so it is not necessary to include all fields in the
+message in the ``Enrichment`` directive.
+
+Since enrichment fields apply to a specific message, enrichment fields
+cannot specify the topic or message type in an XPath identifier. All
+identifiers in the source expression are evaluated as identifiers in
+the message being enriched.
+
+Enrichment fields are constructed during the enrichment phase, so enrichment
+fields can refer to the previous state of a message. Within an enrichment
+expression, AMPS provides two special modifiers for XPath identifiers that
+specify whether an XPath identifier refers to the current incoming message or
+the previous state of the message. These modifiers apply only to the source
+expression, and cannot be used in the destination identifier.  The
+modifiers are as follows:
+
+.. list-table:: *XPath identifier modifiers for enrichment*
+     :header-rows: 1
+
+     * - Modifier
+
+       - Description
+
+     * - ``OF CURRENT``
+         
+
+       - Specify that the XPath identifier refers to the
+         incoming message.
+
+     * - ``OF PREVIOUS``
+         
+
+       - Specify that the XPath identifier refers to the
+         previous state of the message in the SOW. If there
+         is no record in the SOW for this message, all
+         identifiers that specify ``OF PREVIOUS`` return
+         ``NULL``.
+
+Using HINT to Control Field Construction
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Enrichment can be used to remove fields from a message. By default, AMPS
+serializes any field that has an empty string or ``NULL`` value after
+enrichment. Enrichment ``Field`` elements can include a directive that
+specifies that a field that contains a ``NULL`` value should be removed
+from the message rather than serialized with a ``NULL`` value. The
+directive ``HINT OPTIONAL`` applied to the XPath identifier specifies
+that if the result of the source expression is ``NULL``, AMPS does not
+provide the value for the message type to serialize. For example, the
+following field constructor removes the ``/source`` field from the
+message if the value provided is not in a specific list of values:
+
+.. code-block:: xml
+
+    <Field>IF(/source IN ('a','e','f'), /source, NULL)
+           AS /source HINT OPTIONAL</Field>
+
+By default, AMPS considers the results of field construction (the
+enriched message) to be distinct from the current message. AMPS rewrites
+the current message *after* enrichment is completed. This means that, by
+default, the results of fields constructed during enrichment are not
+available to other fields within enrichment. The ``HINT SET_CURRENT``
+option immediately inserts or updates values in the current message,
+which makes the new value available to all subsequent ``Field``
+declarations.
+
+In the sample below, AMPS enriches the message by performing an
+expensive operation (implemented as a user-defined function) on two
+input fields, and immediately updates the current message with the
+output of that operation. AMPS then sets other fields in the processed
+message using the updated value in the current message.
+
+.. code-block:: xml
+
+    <Field>EXPENSIVE_UDF_CALL(/dataSet1, /dataSet2)
+           AS /processedData HINT SET_CURRENT</Field>
+    <Field>IF(/processedData > 1000000,
+               'A',
+               'B') AS /resultClass</Field> 
+
+Notice that using ``HINT SET_CURRENT`` requires AMPS to process
+``Field`` declarations in order, which may prevent future optimizations.
+
+Hints can be combined as follows:
+
+.. code-block:: xml
+
+    <Field>EXPENSIVE_UDF_CALL(/dataSet1, /dataSet2)
+           AS /processedData HINT SET_CURRENT,OPTIONAL
+    </Field>
+
+In this case, if the projected field would be ``NULL``, the field is
+removed from the current message.
+
+.. _#ug-constructing-view-fields:
+
+Constructing View Fields
+-------------------------
+
+View field constructors operate over groups of messages, and construct a
+single output message for each distinct group, as specified by the
+``Grouping`` element in the ``View`` configuration.
+
+When constructing a field in a view, all identifiers used in the source
+expression must be in one of the underlying topics for the view. When
+the view uses a ``Join``, the identifiers must include the topic
+identifier. If the topics in the ``Join`` are of different message types,
+the identifiers must include both the message type and the topic
+identifier.
+
+For example, the following ``Field`` definition multiplies the
+``/quantity`` from the NVFIX topic ``orders`` by the ``/price`` from the
+JSON topic ``items``, and projects the result into the ``/total`` field
+of the view.
+
+.. code-block:: xml
+
+    <Field>[nvfix].[orders]./quantity * [json].[items]./price AS /total</Field>
+
+.. include:: ./aggregate_functions.inc
+

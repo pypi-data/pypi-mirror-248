@@ -1,0 +1,447 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>6. Constructing Fields &#8212; AMPS User Guide develop documentation</title>
+    
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     'develop',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="7. State of the World (SOW)" href="sow.html" />
+    <link rel="prev" title="5. AMPS Functions" href="amps_functions.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  <div class="document">
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/flag_logo.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">6. Constructing Fields</a><ul>
+<li><a class="reference internal" href="#constructing-preprocessing-fields">Constructing Preprocessing Fields</a><ul>
+<li><a class="reference internal" href="#using-hint-to-control-field-construction">Using HINT to Control Field Construction</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#constructing-enrichment-fields">Constructing Enrichment Fields</a><ul>
+<li><a class="reference internal" href="#id2">Using HINT to Control Field Construction</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#constructing-view-fields">Constructing View Fields</a><ul>
+<li><a class="reference internal" href="#aggregate-functions">Aggregate Functions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="amps_functions.html" title="previous chapter">5. AMPS Functions</a></li>
+      <li>Next: <a href="sow.html" title="next chapter">7. State of the World (SOW)</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="constructing-fields">
+<span id="ug-constructing-fields"></span><span id="id1"></span><h1>6. Constructing Fields<a class="headerlink" href="#constructing-fields" title="Permalink to this headline">¶</a></h1>
+<p>For views, aggregated subscriptions, and SOW topic enrichment, AMPS
+allows you to construct new fields based on existing data.</p>
+<p>When you construct a field, there are two components required:</p>
+<ol class="arabic simple">
+<li>A <em>source expression</em> that produces a value. This expression can
+include XPath identifiers that extract values from a message, literal
+values, operators, and functions.</li>
+<li>A <em>destination identifier</em> that specifies the identifier where the
+message type will serialize the value produced by the source
+expression.</li>
+</ol>
+<p>The source expression and the destination identifier are separated by
+the <code class="docutils literal"><span class="pre">AS</span></code> keyword. The format for a field construction expression is as
+follows:</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">source</span> <span class="n">expression</span><span class="o">&gt;</span>
+<span class="n">AS</span>
+<span class="o">&lt;</span><span class="n">destination</span> <span class="n">identifier</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>For example, to create a field in a view that calculates the total value
+of an order by multiplying the <code class="docutils literal"><span class="pre">/price</span></code> field times the <code class="docutils literal"><span class="pre">/qty</span></code>
+field, construct the field as shown below:</p>
+<div class="highlight-xml"><div class="highlight"><pre><span></span><span class="nt">&lt;Field&gt;</span>/price * /qty AS /total<span class="nt">&lt;/Field&gt;</span>
+</pre></div>
+</div>
+<p>This constructs a field using <code class="docutils literal"><span class="pre">/price</span> <span class="pre">*</span> <span class="pre">/qty</span></code> as the source
+expression. Both <code class="docutils literal"><span class="pre">/price</span></code> and <code class="docutils literal"><span class="pre">/qty</span></code> are taken from the incoming
+message. When the result of this expression is computed, the value will
+be produced with the XPath identifier <code class="docutils literal"><span class="pre">/total</span></code> as the destination.
+That value will then be serialized to a message (with the exact format
+and syntax determined by the message type).</p>
+<p>Notice that the grammar for constructing fields does not specify
+precisely how the field is represented in the message. AMPS constructs
+the value and provides the XPath identifier to the message type. The
+message type itself is responsible for serializing the value into the
+correct representation and structure for that message type.</p>
+<p>All of the AMPS operators and functions that are available for filters
+are available to use in source expressions, including any user-defined
+functions loaded into the instance.</p>
+<p>Depending on the context for field construction, there are additional
+capabilities available when constructing fields, as described in the
+following sections.</p>
+<div class="section" id="constructing-preprocessing-fields">
+<span id="construct-preprocessing-fields"></span><h2>Constructing Preprocessing Fields<a class="headerlink" href="#constructing-preprocessing-fields" title="Permalink to this headline">¶</a></h2>
+<p>Preprocessing field constructors operate on a single message and
+construct fields based on that message. The results of the preprocessing
+field constructor are merged into the incoming message. Any field in the
+source message that is not changed or removed during preprocessing is
+left unchanged, so it is not necessary to include all fields in the
+message in the <code class="docutils literal"><span class="pre">Preprocessing</span></code> block.</p>
+<p>Since preprocessing fields apply to a specific message, preprocessing
+fields cannot specify the topic or message type in an XPath identifier.
+All identifiers in the source expression are evaluated as identifiers
+in the message being preprocessed. Preprocessing fields are evaluated
+during the preprocessing phase, so they cannot refer to the previous state
+of a message.</p>
+<div class="section" id="using-hint-to-control-field-construction">
+<h3>Using HINT to Control Field Construction<a class="headerlink" href="#using-hint-to-control-field-construction" title="Permalink to this headline">¶</a></h3>
+<p>Preprocessing can be used to remove fields from a message. By default,
+AMPS serializes any field that has an empty string or <code class="docutils literal"><span class="pre">NULL</span></code> value
+after preprocessing. Preprocessing fields can include a directive that
+specifies that a field that contains a <code class="docutils literal"><span class="pre">NULL</span></code> value should be removed
+from the set of fields rather than serialized with a <code class="docutils literal"><span class="pre">NULL</span></code> value. The
+directive <code class="docutils literal"><span class="pre">HINT</span> <span class="pre">OPTIONAL</span></code> applied to the XPath identifier specifies
+that if the result of the source expression is <code class="docutils literal"><span class="pre">NULL</span></code>, AMPS does not
+provide the value for the message type to serialize. For example, the
+following field constructor removes the <code class="docutils literal"><span class="pre">/source</span></code> field from the
+message if the value provided is not in a specific list of values:</p>
+<div class="highlight-xml"><div class="highlight"><pre><span></span><span class="nt">&lt;Field&gt;</span>IF(/source IN (&#39;a&#39;,&#39;e&#39;,&#39;f&#39;), /source, NULL)
+       AS /source HINT OPTIONAL<span class="nt">&lt;/Field&gt;</span>
+</pre></div>
+</div>
+<p>By default, AMPS considers the results of field construction (the
+processed message) to be distinct from the current message. AMPS
+rewrites the current message <em>after</em> preprocessing is completed. This
+means that, by default, the results of fields constructed during
+preprocessing are not available to other fields within preprocessing.
+The <code class="docutils literal"><span class="pre">HINT</span> <span class="pre">SET_CURRENT</span></code> option immediately inserts or updates values in
+the current message, which makes the new value available to all
+subsequent <code class="docutils literal"><span class="pre">Field</span></code> declarations.</p>
+<p>In the sample below, AMPS enriches the message by performing an
+expensive operation (implemented as a user-defined function) on two
+input fields, and immediately updates the current message with the
+output of that operation. AMPS then sets other fields in the processed
+message using the updated value in the current message.</p>
+<div class="highlight-xml"><div class="highlight"><pre><span></span><span class="nt">&lt;Field&gt;</span>EXPENSIVE_UDF_CALL(/dataSet1, /dataSet2)
+       AS /processedData HINT SET_CURRENT<span class="nt">&lt;/Field&gt;</span>
+<span class="nt">&lt;Field&gt;</span>IF(/processedData &gt; 1000000,
+           &#39;A&#39;,
+           &#39;B&#39;) AS /resultClass<span class="nt">&lt;/Field&gt;</span>
+</pre></div>
+</div>
+<p>Notice that using <code class="docutils literal"><span class="pre">HINT</span> <span class="pre">SET_CURRENT</span></code> requires AMPS to process
+<code class="docutils literal"><span class="pre">Field</span></code> declarations in order, which may prevent future optimizations.</p>
+<p>Hints can be combined as follows:</p>
+<div class="highlight-xml"><div class="highlight"><pre><span></span><span class="nt">&lt;Field&gt;</span>EXPENSIVE_UDF_CALL(/dataSet1, /dataSet2)
+       AS /processedData HINT SET_CURRENT,OPTIONAL
+<span class="nt">&lt;/Field&gt;</span>
+</pre></div>
+</div>
+<p>In this case, if the projected field would be <code class="docutils literal"><span class="pre">NULL</span></code>, the field is
+removed from the current message.</p>
+</div>
+</div>
+<div class="section" id="constructing-enrichment-fields">
+<span id="construct-enrichment-fields"></span><h2>Constructing Enrichment Fields<a class="headerlink" href="#constructing-enrichment-fields" title="Permalink to this headline">¶</a></h2>
+<p>Enrichment field constructors operate on a single message and construct
+fields based on that message. Enrichment expressions operate on the
+current message and change the current message. The results of the
+enrichment directives are merged into the incoming message. Any field in
+the source message that is not changed or removed during preprocessing
+is left unchanged, so it is not necessary to include all fields in the
+message in the <code class="docutils literal"><span class="pre">Enrichment</span></code> directive.</p>
+<p>Since enrichment fields apply to a specific message, enrichment fields
+cannot specify the topic or message type in an XPath identifier. All
+identifiers in the source expression are evaluated as identifiers in
+the message being enriched.</p>
+<p>Enrichment fields are constructed during the enrichment phase, so enrichment
+fields can refer to the previous state of a message. Within an enrichment
+expression, AMPS provides two special modifiers for XPath identifiers that
+specify whether an XPath identifier refers to the current incoming message or
+the previous state of the message. These modifiers apply only to the source
+expression, and cannot be used in the destination identifier.  The
+modifiers are as follows:</p>
+<table border="1" class="docutils" id="id3">
+<caption><span class="caption-text"><em>XPath identifier modifiers for enrichment</em></span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Modifier</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">OF</span> <span class="pre">CURRENT</span></code></td>
+<td>Specify that the XPath identifier refers to the
+incoming message.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">OF</span> <span class="pre">PREVIOUS</span></code></td>
+<td>Specify that the XPath identifier refers to the
+previous state of the message in the SOW. If there
+is no record in the SOW for this message, all
+identifiers that specify <code class="docutils literal"><span class="pre">OF</span> <span class="pre">PREVIOUS</span></code> return
+<code class="docutils literal"><span class="pre">NULL</span></code>.</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="id2">
+<h3>Using HINT to Control Field Construction<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<p>Enrichment can be used to remove fields from a message. By default, AMPS
+serializes any field that has an empty string or <code class="docutils literal"><span class="pre">NULL</span></code> value after
+enrichment. Enrichment <code class="docutils literal"><span class="pre">Field</span></code> elements can include a directive that
+specifies that a field that contains a <code class="docutils literal"><span class="pre">NULL</span></code> value should be removed
+from the message rather than serialized with a <code class="docutils literal"><span class="pre">NULL</span></code> value. The
+directive <code class="docutils literal"><span class="pre">HINT</span> <span class="pre">OPTIONAL</span></code> applied to the XPath identifier specifies
+that if the result of the source expression is <code class="docutils literal"><span class="pre">NULL</span></code>, AMPS does not
+provide the value for the message type to serialize. For example, the
+following field constructor removes the <code class="docutils literal"><span class="pre">/source</span></code> field from the
+message if the value provided is not in a specific list of values:</p>
+<div class="highlight-xml"><div class="highlight"><pre><span></span><span class="nt">&lt;Field&gt;</span>IF(/source IN (&#39;a&#39;,&#39;e&#39;,&#39;f&#39;), /source, NULL)
+       AS /source HINT OPTIONAL<span class="nt">&lt;/Field&gt;</span>
+</pre></div>
+</div>
+<p>By default, AMPS considers the results of field construction (the
+enriched message) to be distinct from the current message. AMPS rewrites
+the current message <em>after</em> enrichment is completed. This means that, by
+default, the results of fields constructed during enrichment are not
+available to other fields within enrichment. The <code class="docutils literal"><span class="pre">HINT</span> <span class="pre">SET_CURRENT</span></code>
+option immediately inserts or updates values in the current message,
+which makes the new value available to all subsequent <code class="docutils literal"><span class="pre">Field</span></code>
+declarations.</p>
+<p>In the sample below, AMPS enriches the message by performing an
+expensive operation (implemented as a user-defined function) on two
+input fields, and immediately updates the current message with the
+output of that operation. AMPS then sets other fields in the processed
+message using the updated value in the current message.</p>
+<div class="highlight-xml"><div class="highlight"><pre><span></span><span class="nt">&lt;Field&gt;</span>EXPENSIVE_UDF_CALL(/dataSet1, /dataSet2)
+       AS /processedData HINT SET_CURRENT<span class="nt">&lt;/Field&gt;</span>
+<span class="nt">&lt;Field&gt;</span>IF(/processedData &gt; 1000000,
+           &#39;A&#39;,
+           &#39;B&#39;) AS /resultClass<span class="nt">&lt;/Field&gt;</span>
+</pre></div>
+</div>
+<p>Notice that using <code class="docutils literal"><span class="pre">HINT</span> <span class="pre">SET_CURRENT</span></code> requires AMPS to process
+<code class="docutils literal"><span class="pre">Field</span></code> declarations in order, which may prevent future optimizations.</p>
+<p>Hints can be combined as follows:</p>
+<div class="highlight-xml"><div class="highlight"><pre><span></span><span class="nt">&lt;Field&gt;</span>EXPENSIVE_UDF_CALL(/dataSet1, /dataSet2)
+       AS /processedData HINT SET_CURRENT,OPTIONAL
+<span class="nt">&lt;/Field&gt;</span>
+</pre></div>
+</div>
+<p>In this case, if the projected field would be <code class="docutils literal"><span class="pre">NULL</span></code>, the field is
+removed from the current message.</p>
+</div>
+</div>
+<div class="section" id="constructing-view-fields">
+<span id="ug-constructing-view-fields"></span><h2>Constructing View Fields<a class="headerlink" href="#constructing-view-fields" title="Permalink to this headline">¶</a></h2>
+<p>View field constructors operate over groups of messages, and construct a
+single output message for each distinct group, as specified by the
+<code class="docutils literal"><span class="pre">Grouping</span></code> element in the <code class="docutils literal"><span class="pre">View</span></code> configuration.</p>
+<p>When constructing a field in a view, all identifiers used in the source
+expression must be in one of the underlying topics for the view. When
+the view uses a <code class="docutils literal"><span class="pre">Join</span></code>, the identifiers must include the topic
+identifier. If the topics in the <code class="docutils literal"><span class="pre">Join</span></code> are of different message types,
+the identifiers must include both the message type and the topic
+identifier.</p>
+<p>For example, the following <code class="docutils literal"><span class="pre">Field</span></code> definition multiplies the
+<code class="docutils literal"><span class="pre">/quantity</span></code> from the NVFIX topic <code class="docutils literal"><span class="pre">orders</span></code> by the <code class="docutils literal"><span class="pre">/price</span></code> from the
+JSON topic <code class="docutils literal"><span class="pre">items</span></code>, and projects the result into the <code class="docutils literal"><span class="pre">/total</span></code> field
+of the view.</p>
+<div class="highlight-xml"><div class="highlight"><pre><span></span><span class="nt">&lt;Field&gt;</span>[nvfix].[orders]./quantity * [json].[items]./price AS /total<span class="nt">&lt;/Field&gt;</span>
+</pre></div>
+</div>
+<div class="section" id="aggregate-functions">
+<span id="ug-aggregate-functions"></span><h3>Aggregate Functions<a class="headerlink" href="#aggregate-functions" title="Permalink to this headline">¶</a></h3>
+<p>AMPS provides a set of aggregation functions that can be used in a
+<code class="docutils literal"><span class="pre">Field</span></code> constructor for a view and in the <code class="docutils literal"><span class="pre">projection</span></code> option
+of an aggregated subscription. These functions return a single value for each
+distinct group of messages, as identified by distinct combinations of
+values in the <code class="docutils literal"><span class="pre">Grouping</span></code> clause.</p>
+<p>Each of these functions takes a single value as an argument. That value
+is typically provided by a single message within a group. There are
+no special limitations on the value, and the value can be a literal
+value, an identifier directing AMPS to extract the value from the
+message, or a function.</p>
+<p>For example, given a set of messages like the following:</p>
+<div class="code javascript highlight-default"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;item&quot;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="s2">&quot;qty&quot;</span><span class="p">:</span><span class="mi">10</span><span class="p">,</span> <span class="s2">&quot;oid&quot;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="o">...</span><span class="p">}</span>
+<span class="p">{</span><span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;item&quot;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="s2">&quot;qty&quot;</span><span class="p">:</span><span class="mi">10</span><span class="p">,</span> <span class="s2">&quot;oid&quot;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="o">...</span><span class="p">}</span>
+<span class="p">{</span><span class="s2">&quot;id&quot;</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span> <span class="s2">&quot;item&quot;</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span><span class="s2">&quot;qty&quot;</span><span class="p">:</span><span class="mi">25</span><span class="p">,</span> <span class="s2">&quot;oid&quot;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="o">...</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>With a view definition that has a <code class="docutils literal"><span class="pre">Projection</span></code> clause
+and <code class="docutils literal"><span class="pre">Grouping</span></code> clause like the following:</p>
+<div class="highlight-xml"><div class="highlight"><pre><span></span><span class="nt">&lt;Projection&gt;</span>
+   <span class="nt">&lt;Field&gt;</span>/oid<span class="nt">&lt;/Field&gt;</span>
+   <span class="nt">&lt;Field&gt;</span>SUM(/qty) AS /totalOrderQty<span class="nt">&lt;/Field&gt;</span>
+   <span class="nt">&lt;Field&gt;</span>SUM(IF((/qty % 10) == 0,1,0)) AS /evenOrderCount<span class="nt">&lt;/Field&gt;</span>
+<span class="nt">&lt;/Projection&gt;</span>
+<span class="nt">&lt;Grouping&gt;</span>
+   <span class="nt">&lt;Field&gt;</span>/oid<span class="nt">&lt;/Field&gt;</span>
+<span class="nt">&lt;/Grouping&gt;</span>
+</pre></div>
+</div>
+<p>AMPS will produce the following record:</p>
+<div class="code javascript highlight-default"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;oid&quot;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="s2">&quot;totalOrderQty&quot;</span><span class="p">:</span><span class="mi">45</span><span class="p">,</span><span class="s2">&quot;evenOrderCount&quot;</span><span class="p">:</span><span class="mi">2</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>Notice that the first <code class="docutils literal"><span class="pre">SUM()</span></code> function simply extracts the
+value of the /qty from each message, while the second
+<code class="docutils literal"><span class="pre">SUM()</span></code> function uses the output of the <cite>IF</cite> statement for
+each message.</p>
+<p>Since aggregate functions operate over groups of messages,
+these functions are only available when constructing fields
+for aggregate purposes, either in a view or an aggregated
+subscription. The functions described in this section are
+not available to filters, and are not available for
+constructing fields during SOW topic enrichment.</p>
+<p>The set of functions provided in AMPS have been chosen
+to be efficient to compute over high volumes of rapidly
+changing data.</p>
+<table border="1" class="docutils" id="id4">
+<caption><span class="caption-text"><em>AMPS aggregation functions</em></span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Function</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">AVG</span></code></td>
+<td>Average over an expression. Returns the mean value of the values specified by
+the expression.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">COUNT</span></code></td>
+<td>Count of values in an expression. Returns the number of values specified by
+the expression.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">COUNT_DISTINCT</span></code></td>
+<td>Count of the number of distinct values in an expression, ignoring <code class="docutils literal"><span class="pre">NULL</span></code>.
+Returns the number of distinct values in the expression. AMPS type conversion
+rules apply when determining distinct values.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">MIN</span></code></td>
+<td>Minimum value. Returns the minimum out of the values specified by the
+expression.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">MAX</span></code></td>
+<td>Maximum value. Returns the maximum out of the values specified by the
+expression.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">STDDEV_POP</span></code></td>
+<td>Population standard deviation of an expression. Returns the calculated
+standard deviation.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">STDDEV_SAMP</span></code></td>
+<td>Sample standard deviation of an expression. Returns the calculated standard
+deviation.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">SUM</span></code></td>
+<td>Summation over an expression. Returns the total value of the values specified
+by the expression.</td>
+</tr>
+</tbody>
+</table>
+<p id="index-0">Null values are not included in aggregate expressions with AMPS,
+nor in ANSI SQL. <code class="docutils literal"><span class="pre">COUNT</span></code> will count only non-null values, <code class="docutils literal"><span class="pre">SUM</span></code> will add
+only non-null values, <code class="docutils literal"><span class="pre">AVG</span></code> will average only non-null values, and <code class="docutils literal"><span class="pre">MIN</span></code> and
+<code class="docutils literal"><span class="pre">MAX</span></code> ignore <code class="docutils literal"><span class="pre">NULL</span></code> values, and so on.</p>
+<p><code class="docutils literal"><span class="pre">MIN</span></code> and <code class="docutils literal"><span class="pre">MAX</span></code> can operate on either numbers or strings, or a combination
+of the two. AMPS compares values using the principles described for
+comparison operators. For <code class="docutils literal"><span class="pre">MIN</span></code> and <code class="docutils literal"><span class="pre">MAX</span></code>, AMPS determines order based on
+these rules:</p>
+<ul class="simple">
+<li>Numbers sort in numeric order.</li>
+<li>String values sort in ASCII order.</li>
+<li>When comparing a number to a string, convert the string to a number,
+and use a numeric comparison. If that is not successful, the value of
+the string is higher than the value of the number.</li>
+</ul>
+<p>For example, given a field that has the following values across a set of
+messages:</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="mi">24</span><span class="p">,</span> <span class="mi">020</span><span class="p">,</span> <span class="s1">&#39;cat&#39;</span><span class="p">,</span> <span class="mi">75</span><span class="p">,</span> <span class="mf">1.3</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="s1">&#39;75&#39;</span><span class="p">,</span> <span class="s1">&#39;42&#39;</span>
+</pre></div>
+</div>
+<p><code class="docutils literal"><span class="pre">MIN</span></code> will return <code class="docutils literal"><span class="pre">1.3</span></code>, <code class="docutils literal"><span class="pre">MAX</span></code> will return <code class="docutils literal"><span class="pre">'cat'</span></code>. Notice that
+different message types may have different support for converting
+strings to numeric values: AMPS relies on the parsing done by the
+message type to determine the numeric value of a string.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+    <div class="clearer"></div>
+  </div>
+    <div class="footer">
+      &copy;2023 60East Technologies, Inc. (version develop).
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

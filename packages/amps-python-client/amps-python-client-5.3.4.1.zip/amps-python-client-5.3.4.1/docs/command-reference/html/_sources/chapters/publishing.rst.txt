@@ -1,0 +1,25 @@
+.. _#command-guide-publishing:
+
+Publishing to AMPS
+======================
+
+This section describes commands used
+to send data to AMPS.
+
+Notice that, for topics in the state of
+the world, AMPS treats these commands
+as inserting a new message if one
+does not already exist, and updating
+the existing message if a message already
+exists.
+
+For topics in the transaction log,
+each ``publish`` or ``delta_publish`` will
+store the current message in the
+transaction log, just as it
+would be delivered to subscribers.
+
+
+.. include:: ./publishing/delta-publish.inc
+
+.. include:: ./publishing/publish.inc
