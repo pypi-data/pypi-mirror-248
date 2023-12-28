@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: evcs
+Version: 0.1.0
+Summary: 
+License: MIT
+Author: Rick Jennings
+Author-email: rjennings055@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+
