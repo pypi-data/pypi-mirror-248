@@ -1,0 +1,89 @@
+# -*- coding: utf-8 -*-
+import  sys
+import time
+import pglib
+
+
+
+
+dd=pglib.register();
+
+
+print(2)
+print(dd)
+dd=pglib.pglibreadexcel("123.xlsx")
+print(dd)
+start=time.time()
+print(start)
+a=pglib.httpupload("http://127.0.0.1", "dffd", "456:999\r\n456:999", "456:999\r\n456:999", "969")
+print(a)
+a=pglib.http("GET","http://127.0.0.1", "456:999\r\n456:999", "")
+print(a)
+for i in range(2000000):
+    i=pglib.genid()
+    #print(i)
+print("cost %s"  %(time.time()-start))
+print(dd)
+th=[]
+thradnum=1
+for i in range(thradnum):
+   
+    while 1:
+        if pglib.getthreadstatus(cc1)==-3:
+            print(str(pglib.getMessage(cc1)))
+        elif pglib.getthreadstatus(cc1)==1:
+            print("login success")
+            break
+        time.sleep(0.001)
+        #print(444)
+
+    if cc1!=-1:
+        th.append(cc1)
+
+
+#for i in th:
+   # print(pglib.pglibselect("SELECT * FROM \"public\".\"test\" LIMIT 10",i))
+l=[]
+thradnum_real=len(th)
+intdex=6
+sqlall=""
+for i in range(10240):
+    sql="insert into  test (tt,bb) values(\"4444%s\",1111);" % intdex
+    #sqlall=sqlall+sql
+    l.append(sql)
+    intdex=intdex+1
+    #l.append("insert into  test (tt,bb) values(2,'你好');")
+#l.append(sqlall)
+print(len(l))
+for i in th:
+    if i!=-1:
+        for x in range(1):
+
+            status=pglib.pglibinsert(l,i)
+            #print(status)
+            while 1:
+                #print("wait for  execute!")
+                t=pglib.getthreadstatus(i)
+                #print(t)
+                if t == -3:
+                    print(t)
+                    print((pglib.getMessage(i)))
+                    #exit(0)
+                elif t ==2:
+                    #print("execut success")
+                    break
+                elif t ==-2:
+                    print(t)
+                    print("error;;;;"+str(pglib.getMessage(i)))
+                    #pglib.pglibclose(i)
+                    exit(0)
+                elif t==9:
+                    #print("wait...")
+                    pass
+                elif t==1:
+                    pass
+                    #print(str(t)+":error:"+str(pglib.getMessage(i)))
+
+            
+#print(pglib.pglibselect("SELECT * FROM \"public\".\"test\" LIMIT 1",cc))
+print(666)
