@@ -1,0 +1,2 @@
+[console_scripts]
+pycsro = pycsro.main:run_pycsro_pmsro
