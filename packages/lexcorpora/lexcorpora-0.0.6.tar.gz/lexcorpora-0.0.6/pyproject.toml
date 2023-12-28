@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "lexcorpora"
+description = "Utility functions to preprocess Phil. legalese in weasel-based flows."
+version = "0.0.6"
+authors = ["Marcelino G. Veloso III <contact@mv3.dev>"]
+readme = "README.md"
+homepage = "https://mv3.dev"
+repository = "https://github.com/justmars/lexcorpora"
+documentation = "https://justmars.github.io/lexcorpora"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+spacy = {extras = ["apple"], version = "^3.7.2"}
+roman = "^4.1"
+inflect = "^7.0"
+rich = "^13.7.0"
+ipykernel = "^6.27.1"
+
+[tool.ruff]
+line-length = 120
+ignore = ["F401", "F403"]
+fixable = ["F", "E", "W", "I001"]
+select = ["F", "E", "W", "I001"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
