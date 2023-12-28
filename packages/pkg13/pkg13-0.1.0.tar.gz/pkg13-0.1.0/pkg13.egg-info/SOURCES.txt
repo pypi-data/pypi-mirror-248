@@ -1,0 +1,8 @@
+setup.py
+job13/__init__.py
+job13/konversi_berat.py
+job13/tebak_angka.py
+pkg13.egg-info/PKG-INFO
+pkg13.egg-info/SOURCES.txt
+pkg13.egg-info/dependency_links.txt
+pkg13.egg-info/top_level.txt
