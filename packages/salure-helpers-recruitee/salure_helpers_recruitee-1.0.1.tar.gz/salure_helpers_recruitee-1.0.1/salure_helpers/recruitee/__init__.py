@@ -1,0 +1,1 @@
+from salure_helpers.recruitee.recruitee import Recruitee
