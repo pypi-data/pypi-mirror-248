@@ -1,0 +1,11 @@
+polars_ds-0.2.0.dist-info/METADATA,sha256=uo7RWsl8r3JGPxiCSBLJrOjEsULhjrg2gKDF7hYESMw,9012
+polars_ds-0.2.0.dist-info/WHEEL,sha256=57VdQudg2rvIrKDsNbb4zID9idx5Gi_Nfz3vv-dPe6Q,131
+polars_ds-0.2.0.dist-info/license_files/LICENSE.txt,sha256=CQ0WEokIss5KNGCRIGlGkphL_1J7_cpiuoJsvuOQyP0,1063
+polars_ds/str2.py,sha256=2E2D5Ea3JmIZHg5ZK6Dgcq3qAAFxBYk8phhTeoWjhSg,31269
+polars_ds/type_alias.py,sha256=m6IBHK36aLvHrEqSmAsezYmv2gtb4cSoOlthJrlH9_I,431
+polars_ds/__init__.py,sha256=e5ZOd4ttDGm0zXnYVkHnYiH2ViEqxMz19gKrnCL6yNc,5755
+polars_ds/stats.py,sha256=HI8GexEOSf1cFdzdrk3OX9Na1Y3YADINTit3aQIokNM,14698
+polars_ds/num.py,sha256=nbRiVmJjF97nFkaXJmUTDh3KZcOS0H25XTZzkkqtjlE,30809
+polars_ds/complex.py,sha256=8d-qR3hzFzXw06mm539ZKOpXgohulKFV7rwiTC_y13Q,8363
+polars_ds/_polars_ds.cpython-313-aarch64-linux-gnu.so,sha256=z_EXRKmUXHFD2BBUfKyt3Ta458RKYRY03ZjbiU2C4tw,31329176
+polars_ds-0.2.0.dist-info/RECORD,,
