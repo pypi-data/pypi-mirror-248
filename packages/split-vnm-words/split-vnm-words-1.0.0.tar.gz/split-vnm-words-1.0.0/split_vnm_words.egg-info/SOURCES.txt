@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+split_vnm_words.egg-info/PKG-INFO
+split_vnm_words.egg-info/SOURCES.txt
+split_vnm_words.egg-info/dependency_links.txt
+split_vnm_words.egg-info/requires.txt
+split_vnm_words.egg-info/top_level.txt
+splitwords/__init__.py
+splitwords/core.py
+splitwords/algorithms/__init__.py
+splitwords/algorithms/split_phrase_to_words.py
+splitwords/dicts/en.txt
+splitwords/dicts/teencode.txt
+splitwords/dicts/vi.txt
