@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+bin/tflocal
+bin/tflocal.bat
+opentofu_local.egg-info/PKG-INFO
+opentofu_local.egg-info/SOURCES.txt
+opentofu_local.egg-info/dependency_links.txt
+opentofu_local.egg-info/not-zip-safe
+opentofu_local.egg-info/requires.txt
+opentofu_local.egg-info/top_level.txt
+tests/test_apply.py
