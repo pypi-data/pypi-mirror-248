@@ -1,0 +1,3 @@
+[console_scripts]
+yt-cc-dl=yt_cc_dl.cli:main
+
