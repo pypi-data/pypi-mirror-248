@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: geogetter
+Version: 0.1.0
+Summary: Very simple and lightweight geocoder
+Author-email: "Mikolaj my.doom" <miszczes0@gmail.com>
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests==2.31.0
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+
+# geogetter
+
+TODO: Fill the readme
