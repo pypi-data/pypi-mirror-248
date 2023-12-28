@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: cmdata
+Version: 1.0.0
+Summary: A package to process datasets provided by CargoMetrics Technologies Inc.
+Author-email: "CargoMetrics Technologies Inc." <support@cargometrics.com>
+License: MIT License
+        
+        Copyright (c) 2023 CargoMetrics Technologies Inc.
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/cargometrics/cmdata
+Project-URL: Issues, https://github.com/cargometrics/cmdata/issues
+Keywords: cmdata,cargometrics,point in time
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas>1.0
+Provides-Extra: test
+Requires-Dist: pytest>=7; extra == "test"
+Requires-Dist: tox>=4; extra == "test"
+Provides-Extra: build
+Requires-Dist: twine>4; extra == "build"
+Provides-Extra: all
+Requires-Dist: pandas>1.0; extra == "all"
+Requires-Dist: pytest>=7; extra == "all"
+Requires-Dist: tox>4; extra == "all"
+Requires-Dist: twine>4; extra == "all"
+
+# cmdata 
+
+> A python package to get started with CargoMetrics data products
+
+The main goal of this python package is to get subscribers of the CargoMetrics data products up and running with our 
+data as fast as possible. With that in mind we provide functions to quickly access the various datasets and perform 
+the first couple of common transformations. After that, the universe is yours...  
+
+## Commodity packs
+
+The 
+[Commodity Packs](https://aws.amazon.com/marketplace/search/results?prevFilters=%257B%2522category%2522%3A%2522d5a43d97-558f-4be7-8543-cce265fe6d9d%2522%2C%2522FULFILLMENT_OPTION_TYPE%2522%3A%2522DATA_EXCHANGE%2522%2C%2522filters%2522%3A%2522FULFILLMENT_OPTION_TYPE%2522%257D&searchTerms=cargometrics)
+from CargoMetrics contain the data capturing the global maritime imports and exports of a range of commodities. The 
+commodity packs come in two varieties:
+
+* a daily point-in-time dataset
+* a weekly or monthly "best information" view, derived from the daily point-in-time dataset
+
+### The point-in-time Advanced Commodity packs
+
