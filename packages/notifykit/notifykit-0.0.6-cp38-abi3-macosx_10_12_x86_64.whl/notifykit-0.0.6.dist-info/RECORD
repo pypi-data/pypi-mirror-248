@@ -1,0 +1,10 @@
+notifykit-0.0.6.dist-info/METADATA,sha256=y_AzAQxkfoxUulLZ17Z5mhI0NT8gutqPNJYcMyTWFqI,2713
+notifykit-0.0.6.dist-info/WHEEL,sha256=iM3N24TwVfL5pt16BmPp3fovMG5lIZ6ds2f5FircILw,104
+notifykit-0.0.6.dist-info/license_files/LICENSE,sha256=JjJAG7JVYBaV_HgsyZRdPY8N3HYzl6hCVr_3pFbW2ck,11343
+notifykit/__init__.py,sha256=1VkGMmky_NyrkqeufRrW41-p4koPPLO0W6uB_B17Pjo,722
+notifykit/_notifier.py,sha256=h772EEXvx2QfbmZh3N3i7whcPPfSkiMnyb3TQyLsJbc,2991
+notifykit/py.typed,sha256=n25sCZioOD-7kINs40a2c5i3lbOI1yWf0do7rEXdPFY,68
+notifykit/_testing.py,sha256=Wwm0h3GsiXpNjShkFhAREaxYaKGRf-pIKIdmctyzGmY,50
+notifykit/_notifykit_lib.pyi,sha256=Dt7UySgySv6Nu5XzfjJ_z0EiB6RYoifSFtM92LLU06Y,1921
+notifykit/_notifykit_lib.abi3.so,sha256=oXicLiJ09jy5jlTNWzhX9phZwmfq8tjKCx51Q6_eOKw,1068688
+notifykit-0.0.6.dist-info/RECORD,,
