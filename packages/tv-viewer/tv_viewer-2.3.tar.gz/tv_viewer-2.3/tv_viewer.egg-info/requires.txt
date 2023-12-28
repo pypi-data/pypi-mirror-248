@@ -1,0 +1,4 @@
+pip
+prettytable
+pyqt5
+pytvmaze
