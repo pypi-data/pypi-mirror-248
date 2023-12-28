@@ -1,0 +1,14 @@
+django_fast_iprestrict/__init__.py,sha256=c6xvD-7urNTi2xjPhpxXe1NXQvy7WypefHZ1A4iygzQ,423
+django_fast_iprestrict/admin.py,sha256=I53svCFyAvSAZGR0NxJ2HUWvZ4WtUl2JwtpZ-hKHu_8,4506
+django_fast_iprestrict/apps.py,sha256=DKpuT6zdSewIVg1Wy1M4w9b0VdqvNgQfkk6r5emlDog,553
+django_fast_iprestrict/middleware.py,sha256=iUOc6TYtopPLbZ1VRJSkbB289PVY9UprGLQmX_3lEKw,1385
+django_fast_iprestrict/migrations/0001_initial.py,sha256=MgHxTEe6XMosoAiNLicEG1B80p4SkVJH3bB9hNEpI7Q,2779
+django_fast_iprestrict/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_fast_iprestrict/models.py,sha256=YM6veVI__7E7nobIynSHG-79JXrSxdt-iC80zeiWPAM,7483
+django_fast_iprestrict/templates/admin/django_fast_iprestrict/rule/change_list.html,sha256=umf7tSVgSNQO3w5lIE20w21UzF6wbJUGS9kUpblWzQg,743
+django_fast_iprestrict/utils.py,sha256=rpW5JSoqnHf_D8NcG6rrTLtCqtHs0MWUKv8x_uUUGoc,1951
+django_fast_iprestrict/validators.py,sha256=Qw9IJlih_09uwlEEUSIgKHHDwcILDzWhgLYvTaBVmlE,609
+django_fast_iprestrict-0.2.0.dist-info/LICENSE,sha256=JXwinbwlTLZakfpgPq6Yf2NqR2AdddvY4ksQ3txiCCo,1065
+django_fast_iprestrict-0.2.0.dist-info/METADATA,sha256=xaDqjRmCnVIYcyVOLewtddFp2ZjR1s0mtUMdKqCnutc,756
+django_fast_iprestrict-0.2.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+django_fast_iprestrict-0.2.0.dist-info/RECORD,,
