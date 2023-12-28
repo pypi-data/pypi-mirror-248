@@ -1,0 +1,3 @@
+GitPython
+tabulate
+xarg-python>=1.1

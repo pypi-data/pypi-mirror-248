@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: xgit-python
+Version: 0.6
+Summary: Git tool based on GitPython.
+Home-page: https://github.com/bondbox/xgit-python
+Author: Mingzhe Zou
+Author-email: zoumingzhe@outlook.com
+License: MIT
+Project-URL: Source Code, https://github.com/bondbox/xgit-python
+Project-URL: Bug Tracker, https://github.com/bondbox/xgit-python/issues
+Project-URL: Documentation, https://github.com/bondbox/xgit-python
+Keywords: git,GitPython,xgit
+Platform: any
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+xgit
+====
+
+Git tool based on GitPython.
+
+build
+-----
+
+fast build via [xpip](https://github.com/bondbox/xpip-python):
+
+```shell
+xpip-build setup --all && ls -lh dist/*
+```
+
+or build in linux:
+
+```shell
+rm -rf "build" "dist" "*.egg-info"
+python setup.py check sdist bdist_wheel --universal
+```
+
+
