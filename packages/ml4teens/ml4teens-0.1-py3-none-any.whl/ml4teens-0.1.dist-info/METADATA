@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: ml4teens
+Version: 0.1
+Summary: Machine Learning para Adolescentes (o más) ...
+Home-page: https://github.com/FranPuentes/ML4Teens
+Author: Francisco Puentes
+Author-email: fran@puentescalvo.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Pillow
+Requires-Dist: ipython
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: request
+Requires-Dist: ultralytics
+
+# ML4Teens
+
+Machine Learning for *Teens* (Aprendizaje Automático para *adolescentes*)
+
+Librería Python (ml4teens) para permitir crear "bloques" que lleven a cabo un proceso de ML.
+
+Cad bloque hace algo concreto, posiblemente *matizado* por los parámetros
+del usuario. Cada uno de ellos genera *signal*s y posee *slot*s.
+
+Un objeto (*singleton*) se encarga de unos signals con slots (con control
+de tipos).
+
+
+
