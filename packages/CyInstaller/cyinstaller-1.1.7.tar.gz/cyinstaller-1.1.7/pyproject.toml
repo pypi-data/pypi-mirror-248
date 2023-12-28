@@ -1,0 +1,58 @@
+[tool.poetry]
+name = "CyInstaller"
+version = "1.1.7"
+description = "A cli tool to package application with Cython & PyInstaller."
+authors = ["SolardiaX <solardiax@hotmail.com>"]
+maintainers = ["SolardiaX <solardiax@hotmail.com>"]
+license = "GPL-3.0-or-later"
+readme="README.rst"
+repository="https://github.com/SolardiaX/CyInstaller"
+homepage="https://github.com/SolardiaX/CyInstaller"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Compilers",
+    "Topic :: Software Development :: Interpreters",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: System :: Installation/Setup",
+    "Topic :: System :: Software Distribution",
+    "Topic :: Utilities",
+]
+include = [
+    "LICENSE.rst"
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.13"
+click = "^8.1.7"
+Cython = "^3.0.7"
+pyinstaller = "^5.13.2"
+PyYAML = "^6.0.1"
+
+[tool.poetry.dev-dependencies]
+bcrypt = "^4.1.2"
+cryptography = "^41.0.7"
+email-validator = "^2.1.0.post1"
+flask = "^2.3.3"
+flask-security-too = "^5.3.2"
+pony = "^0.7.17"
+waitress = "^2.1.2"
+python-dotenv = "^1.0.0"
+packaging = "^23.2"
+sphinx = "^7.1.2"
+sphinx-issues = "^3.0.1"
+sphinx-material = "^0.0.35"
+sphinxcontrib-log-cabinet = "^1.0.1"
+
+[tool.poetry.scripts]
+CyInstaller = "CyInstaller.__main__:build_command"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "setuptools", "wheel"]
+build-backend = "poetry.core.masonry.api"
