@@ -1,0 +1,7 @@
+ml-base>=0.2.0
+fastapi
+uvicorn
+pyyaml
+
+[metrics]
+prometheus-fastapi-instrumentator
