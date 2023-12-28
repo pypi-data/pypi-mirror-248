@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/pyheroicons.py
+src/pyheroicons.egg-info/PKG-INFO
+src/pyheroicons.egg-info/SOURCES.txt
+src/pyheroicons.egg-info/dependency_links.txt
+src/pyheroicons.egg-info/requires.txt
+src/pyheroicons.egg-info/top_level.txt
+tests/test_pyheroicons.py
