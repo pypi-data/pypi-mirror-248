@@ -1,0 +1,10 @@
+magia/__init__.py,sha256=eO93NHrYB69UkDz-tfpfdNUMwfcv6pwXF5tL7g0k-jo,534
+magia/bundle.py,sha256=_KZViRVnwRTBIIqNZFfzlicwIwAqFbUeQRqE_EOuifQ,13005
+magia/constants.py,sha256=OdmOLsR7Gudo2LdgDUViyDGkB-72qTOxjrfDOPekPEw,956
+magia/core.py,sha256=Khv2L-iKCtkc1gHe2f9x-mgrPtp6b54HGEaz7tIKD8s,42800
+magia/memory.py,sha256=0EnsLPXmH2kAmshffuRCS0PYdQcXHxgqHA5M3TgfKaY,13055
+magia/module.py,sha256=vLQNaRtxPSkh4i_rvCdSZ8Ma8ppFGJxVA-b2F4teqrk,17250
+syn_magia-0.2.0.dist-info/LICENSE,sha256=gUcr_D5EfI_iL26MsxAqWp6TI8-UmNNoYqTXYJayUdM,1069
+syn_magia-0.2.0.dist-info/METADATA,sha256=-1VD2sUbYAYTZEKdcwF1XFAVuSjMWfUzPLe51THIdcE,4345
+syn_magia-0.2.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+syn_magia-0.2.0.dist-info/RECORD,,
