@@ -1,0 +1,14 @@
+avfcomp-1.4.3.dist-info/METADATA,sha256=fJtMm-TvR8hsz8486Y_UaxioLubBRoPtI2pbOqxivaA,2248
+avfcomp-1.4.3.dist-info/WHEEL,sha256=N2J68yzZqJh3mI_Wg92rwhw0rtJDFpZj9bwQIMJgaVg,90
+avfcomp-1.4.3.dist-info/licenses/LICENSE,sha256=Uu0pioBWkPuAjj-3gPM-EY5LGwQnEgnIrMdB3k2-VSU,1063
+avfcomp/__init__.py,sha256=NPtj8bGpx_59kdNAFAYXn0u0NpTQXfvCSG9u2z1B1bs,183
+avfcomp/avfcomp.egg-info/PKG-INFO,sha256=nc7uEqyFpDP64y47xYuBQMmyyHM8jTbECZCK3NNaozg,2335
+avfcomp/avfcomp.egg-info/SOURCES.txt,sha256=GlvmbR45y2Psv6mEP60EIM1WMdIdF9maSaA92XxoVNg,202
+avfcomp/avfcomp.egg-info/dependency_links.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+avfcomp/avfcomp.egg-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+avfcomp/base.py,sha256=zgcffRTVx5dEv9PHOPHs2n2543oeGH638HqJgKqGdLk,8085
+avfcomp/comp.py,sha256=ikyhweeG8dRpPpgFl2uB0qwXWcYw4buHQjhZX6tR6dQ,3684
+avfcomp/config.py,sha256=X7m0gkEhzUdYKkm9aFqow3CVC_QtK525K1d9_kobJmY,6302
+avfcomp/decomp.py,sha256=MgnhqjAV7svAc_W0-QWdsb7jCQZQS8eJkcv23mcnQR8,4103
+avfcomp/handler.py,sha256=pDKOkos-eq0CBhP9qMST-D-93YD7z8_7eEzMq5LqkSw,511
+avfcomp-1.4.3.dist-info/RECORD,,
