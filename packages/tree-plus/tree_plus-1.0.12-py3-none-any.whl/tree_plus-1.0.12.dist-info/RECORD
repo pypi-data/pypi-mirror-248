@@ -1,0 +1,15 @@
+tree_plus_cli.py,sha256=o4Rf3x4pGvjnHEy_-DZKqyyywQhzGnwBRhnM058V8H8,15212
+tree_plus_src/__init__.py,sha256=jjk8lWbDDBGwbE3-sYryg09y3BY83bIiUdjSXypLVlg,576
+tree_plus_src/count_tokens_lines.py,sha256=7sBFEQH6MH2Z22uy6ezl6UF68xbDqUcnOp9UTKMqSvc,3218
+tree_plus_src/debug.py,sha256=yNlV2f8qwHcOWM4kAp3GJ6VvEIEjpSCuASzcSOdJYuA,349
+tree_plus_src/deploy.py,sha256=6jSlngQppZD7fzeTWbmE0jX3YTyL-74E6sdfp0j5Qdc,8564
+tree_plus_src/ignore.py,sha256=3_Z72gjWNlSnkUE6Eo967ZdLYbNTYAJB63xZpsrsvAg,5064
+tree_plus_src/parse_file.py,sha256=LPY6cyjf0D0gdkJVY5jwVwXzxwbA6SDGt_1mOxChNEg,70145
+tree_plus_src/traverse_directory.py,sha256=ZDQjzyfT2SC62RLQm-t4v2TEDYWMQbb7FwxYntruoAM,1922
+tree_plus_src/version.py,sha256=nceo8B1LPNWmt2ug_B7FdkmRzLHOrXGiSElwUIVq9IQ,49
+tree_plus-1.0.12.dist-info/LICENSE,sha256=iPlnkHbHQj8I7sRdvQr4Kd4blRaBG8ZOZKTtDmbpKFM,10984
+tree_plus-1.0.12.dist-info/METADATA,sha256=afxoL6dIgfKLc6_lNdFLk7mbNQ4Ezda0951hVVjj7Ro,63022
+tree_plus-1.0.12.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+tree_plus-1.0.12.dist-info/entry_points.txt,sha256=pGJyat4uNwRM9sddx9Cr84_HhAt9RkXxeY81R0c_YXY,49
+tree_plus-1.0.12.dist-info/top_level.txt,sha256=D44vDSatIwBw6ETMF_BKRvucg1SFxfaqQJ5OgmVsCgU,28
+tree_plus-1.0.12.dist-info/RECORD,,
