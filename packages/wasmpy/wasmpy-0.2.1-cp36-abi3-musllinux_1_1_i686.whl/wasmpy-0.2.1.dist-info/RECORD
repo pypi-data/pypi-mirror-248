@@ -1,0 +1,9 @@
+wasmpy-0.2.1.dist-info/WHEEL,sha256=r32a0sMMxrsEK6AyZ3BEWW_Rq2YNcHLrmvj8hqGfhf4,109
+wasmpy-0.2.1.dist-info/METADATA,sha256=AYw34fQ0zr-binupN73_9-bpRNWiM40aSoh-NHkta68,153
+wasmpy-0.2.1.dist-info/RECORD,,
+wasmpy-0.2.1.dist-info/top_level.txt,sha256=stKOyr4rDr_7Lh9NkBBGW5NFkXMSsqXxwBc6P24s8w0,7
+wasmpy-0.2.1.dist-info/LICENSE,sha256=VGx6YZ5_6LWTqSrTLOzrmq7Cy6eFv83qbPo57-A_f4E,1068
+wasmpy/nativelib.abi3.so,sha256=m2AHzwBuUkkV-PC6jktqSCckSIsI3yqttTfYRbC8HK8,1261333
+wasmpy/builtin/spectest.abi3.so,sha256=PXbxj_wDXeSm0zapwHX8xAR9O4esKNNwClED2IZXjmM,70605
+wasmpy.libs/libstdc++-8baf04f9.so.6.0.28,sha256=yrzOxg1heyJ9Y-43YCLLn04Cpl_A68FN0D2Q1iBTMcY,2428961
+wasmpy.libs/libgcc_s-8b50eaaa.so.1,sha256=WXj_FYQE1MDIyb-nN8siUALdxit6NHma0p9UxemQV8o,101649
