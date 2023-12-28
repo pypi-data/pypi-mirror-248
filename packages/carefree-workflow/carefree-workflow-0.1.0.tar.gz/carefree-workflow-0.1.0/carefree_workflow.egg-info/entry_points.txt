@@ -1,0 +1,2 @@
+[console_scripts]
+cflow = cflow.cli:main
