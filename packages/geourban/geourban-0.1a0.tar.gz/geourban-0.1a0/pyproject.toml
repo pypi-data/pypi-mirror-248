@@ -1,0 +1,22 @@
+[build-system]
+requires = ['setuptools', 'setuptools-scm']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = 'geourban'
+version = '0.1a'
+description = 'Direct access to simulated spatially enabled traffic grids of urban regions.'
+readme = 'README.md'
+requires-python = '>=3.7'
+keywords = ['geospatial', 'intelligence', 'urban', 'digital twin']
+classifiers = [
+    'Programming Language :: Python :: 3',
+    'License :: OSI Approved :: Apache Software License',
+    'Operating System :: OS Independent',
+]
+dependencies = ['requests']
+
+[project.urls]
+'Homepage' = 'https://geospatial-ai.de'
+'GitHub' = 'https://github.com/Geospatial-AI-DE/geourban-py'
+'Documentation' = 'https://geourban.readthedocs.io/en/latest'
