@@ -1,0 +1,12 @@
+vicky/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vicky/clients.py,sha256=52ssCizSNUcO9hbUy0maT_wfaYHY97k0OMDkgl00ouU,1329
+vicky/deployment.py,sha256=qbEFndPGM5x0baItUANCb89i8C169ctFnqnzVDBa-i0,2029
+vicky/exceptions.py,sha256=jWnvmYiki1BpNyZBJX44dnVGPCU2ByKWgka14PbBAp8,89
+vicky/utils.py,sha256=wJSqRjC-m5WglsSSJXiwxW1Bbq06fHcNP2t7arLc_nE,691
+vicky/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vicky/scripts/vicky.py,sha256=SEIqjwFl5IKpTCUAFQxPOAYj7bkQ4j_OR7mNDXnw3r8,1007
+vicky-0.2.0.dist-info/METADATA,sha256=3qE-OWBfnci743NfAUfTT-txTDMF_IFbCz9RbD_nfUU,95
+vicky-0.2.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+vicky-0.2.0.dist-info/entry_points.txt,sha256=Vr1KVTs1VntPpV_W9a7NWeb_ixX15Z3MUmKSTT0he4I,50
+vicky-0.2.0.dist-info/top_level.txt,sha256=rD_s4N1rXKvy_3SNrbzi2YOwUa4aB9T20cRPr9Xa1sE,6
+vicky-0.2.0.dist-info/RECORD,,
