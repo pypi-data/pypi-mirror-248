@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: ua_alarm
+Version: 1.3.6.1
+Summary: Implements api.ua_alarm.com API that returns info about Ukraine air raid alarms.
+Home-page: https://github.com/user-sspmynxdvb/ua_alarm
+Author: user-sspmynxdvb
+License: GNUv3
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp>=3.9.0
+Requires-Dist: pydantic>=2.5.1
+
+# UA_ALARM рџљЁ
+> Elegant, modern and asynchronous UkraineAlarm API framework in Python
+
+## About
+
+### UK
+
+**Р†РјРїР»РµРјРµРЅС‚СѓС” [api.ukrainealarm.com](https://api.ukrainealarm.com/swagger/index.html), СЏРєРёР№ РїРѕРІРµСЂС‚Р°С” С–РЅС„РѕСЂРјР°С†С–СЋ РїСЂРѕ
+РїРѕРІС–С‚СЂСЏРЅС– С‚СЂРёРІРѕРіРё РІ РЈРєСЂР°С—РЅС–.**
+
+**РџРѕС‚СЂРµР±СѓС” API-РєР»СЋС‡. РџРѕРґР°РІР°Р№С‚Рµ Р·Р°РїРёС‚ РЅР° РѕС‚СЂРёРјР°РЅРЅСЏ С‡РµСЂРµР· С„РѕСЂРјСѓ РЅР° [api.ukrainealarm.com](https://api.ukrainealarm.com/).**
+
+### EN
+
+**Implements [api.ukrainealarm.com](https://api.ukrainealarm.com/swagger/index.html) API that returns info about Ukraine
+air raid alarms.**
+
+**Request API key via form on [api.ukrainealarm.com](https://api.ukrainealarm.com/).**
+> About text was copied from [github.com/PaulAnnekov/ukrainealarm](https://github.com/PaulAnnekov/ukrainealarm)
+
+## Installing
+
+### pip
+
+``` bash
+pip install ua_alarm
+```
+
+### poetry
+
+``` bash
+poetry add ua_alarm
+```
+
+### Example
+
+```python
+from ua_alarm import Client as UkraineAlertApiClient
+import os
+from asyncio import run
+
+# Clear the console screen
+os.system('cls' if os.name == 'nt' else 'clear')
+
+api_token = "YOUR_API_KEY"
+client = UkraineAlertApiClient(api_token)
+
+# Run the main function
+if __name__ == '__main__':
+    try:
+        run(client.get_alerts())
+    except KeyboardInterrupt:
+        exit()
+```
