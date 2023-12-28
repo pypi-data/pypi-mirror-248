@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+core/__init__.py
+core/model_training.py
+core/tensor_operations.py
+pasla.egg-info/PKG-INFO
+pasla.egg-info/SOURCES.txt
+pasla.egg-info/dependency_links.txt
+pasla.egg-info/plain.txt
+pasla.egg-info/requires.txt
+pasla.egg-info/top_level.txt
