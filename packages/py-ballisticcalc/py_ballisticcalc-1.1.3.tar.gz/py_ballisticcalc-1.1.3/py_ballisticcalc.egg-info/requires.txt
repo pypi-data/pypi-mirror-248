@@ -1,0 +1,11 @@
+
+[charts]
+matplotlib
+pandas
+
+[exts]
+py_ballisticcalc.exts
+
+[lint]
+pylint
+flake8
