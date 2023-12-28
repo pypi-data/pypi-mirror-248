@@ -1,0 +1,6 @@
+setup.py
+syscolourtoolkitsV1/__init__.py
+syscolourtoolkitsV1.egg-info/PKG-INFO
+syscolourtoolkitsV1.egg-info/SOURCES.txt
+syscolourtoolkitsV1.egg-info/dependency_links.txt
+syscolourtoolkitsV1.egg-info/top_level.txt
