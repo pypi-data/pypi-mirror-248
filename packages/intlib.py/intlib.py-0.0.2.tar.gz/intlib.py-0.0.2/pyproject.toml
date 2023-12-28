@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = 'intlib.py'
+authors = [
+  { name="Marçal Junior", email="marssaljr@gmail.com" },
+]
+description = "A small example package"
+readme = "README.md"
+version = '0.0.2'
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+]
+requires-python = ">=3.11.0"
+
+dependencies = [
+    'requests',
+]
+
+[project.urls]
+Homepage = "https://github.com/integroh/intlib.py"
+Issues = "https://github.com/integroh/intlib.py/issues"
