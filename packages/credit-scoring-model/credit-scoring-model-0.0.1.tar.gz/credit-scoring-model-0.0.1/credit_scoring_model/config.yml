@@ -1,0 +1,39 @@
+package_name: credit_scoring_model
+
+pipeline_name: credit_scoring_model
+pipeline_save_file: credit_scoring_model_output_v
+
+data_file_train: bank.csv
+data_file_test: xtest.csv
+
+target: y
+
+features:
+  - age
+  - job
+  - marital
+  - education
+  - default
+  - balance
+  - housing
+  - loan
+  - contact
+  - day
+  - month
+  - duration
+  - campaign
+  - pdays
+  - previous
+  - poutcome
+
+criterion: 'entropy'
+
+min_samples_leaf: 1
+
+min_samples_split: 4
+
+n_estimators: 200
+
+test_size: 0.1
+
+random_state: 4
