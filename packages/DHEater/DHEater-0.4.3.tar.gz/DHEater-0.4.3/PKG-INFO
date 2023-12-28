@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: DHEater
+Version: 0.4.3
+Summary: D(HE)ater is an attacking tool heating the CPU by enforcing DHE KEX in case of TLS and SSH
+Home-page: https://gitlab.com/dheatattack/dheater
+Author: Szilárd Pfeiffer
+Maintainer: Szilárd Pfeiffer
+Maintainer-email: coroner@pfeifferszilard.hu
+License: Apache-2.0
+Keywords: dhe denial-of-service tls ssh
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python
+Classifier: Topic :: Security
+Classifier: Topic :: Security :: Cryptography
+Classifier: Topic :: Software Development :: Testing :: Traffic Generation
+Classifier: Topic :: Software Development :: Testing
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: attrs>=19.2.0
+Requires-Dist: cryptolyzer==0.12.1
+Requires-Dist: urllib3
+Provides-Extra: test
+Requires-Dist: unittest2; extra == "test"
+Requires-Dist: coverage; extra == "test"
+Requires-Dist: six; extra == "test"
+Provides-Extra: pep8
+Requires-Dist: flake8; extra == "pep8"
+Provides-Extra: pylint
+Requires-Dist: pylint; extra == "pylint"
+
+# D(HE)ater
+
+D(HE)ater is the proof-of-concept implementation of the [D(HE)at attack](http://dheatattack.gitlab.io)
+([CVE-2002-20001](https://nvd.nist.gov/vuln/detail/CVE-2002-20001)). For further information vist
+[PoC code section of the project page](https://dheatattack.gitlab.io/dheater).
+
+## License
+
+The code is available under the terms of Apache License Version 2.0. 
+A non-comprehensive, but straightforward description and also the full license text can be found at 
+[Choose an open source license](https://choosealicense.com/licenses/apache-2.0/) website.
+
+## Credits
+
+D(HE)ater uses [CryptoLyzer](https://gitlab.com/coroner/cryptolyzer) to check DHE support of TLS/SSH
+services and also to generate the traffic necessary to perform D(HE)at attack.
