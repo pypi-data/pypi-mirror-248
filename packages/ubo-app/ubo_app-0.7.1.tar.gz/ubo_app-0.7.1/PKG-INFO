@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: ubo-app
+Version: 0.7.1
+Summary: Ubo main app, running on device initialization. A platform for running other apps.
+License: Apache-2.0
+Author: Sassan Haradji
+Author-email: sassanh@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: dev
+Requires-Dist: headless-kivy-pi (>=0.5.10,<0.6.0) ; extra == "dev"
+Requires-Dist: headless-kivy-pi[dev] (>=0.5.10,<0.6.0) ; extra == "dev"
+Requires-Dist: psutil (>=5.9.6,<6.0.0)
+Requires-Dist: python-debouncer (>=0.1.0,<0.2.0)
+Requires-Dist: python-redux (>=0.9.4,<0.10.0)
+Requires-Dist: pythonping (>=1.1.4,<2.0.0)
+Requires-Dist: pyzbar (>=0.1.9,<0.2.0)
+Requires-Dist: sdbus-networkmanager (>=2.0.0,<3.0.0) ; platform_machine == "aarch64"
+Requires-Dist: ubo-gui (>=0.6.4,<0.7.0) ; extra == "dev"
+Requires-Dist: ubo-gui[dev] (>=0.6.4,<0.7.0) ; extra == "dev"
+Description-Content-Type: text/markdown
+
+# Ubo Application
+
+## Contribution
+
+```sh
+poetry install # You need `--with development` if you want to run it on a non-raspberry machine
+poetry run app
+```
+
+## Conventions
+
+1. Use `UBO_` prefix for all environment variables, additional prefixes may come after `UBO_` as needed.
+1. Always use frozen dataclasses for action and state classes.
+
