@@ -1,0 +1,4 @@
+dist
+pyheroicons
+tests
+venv
