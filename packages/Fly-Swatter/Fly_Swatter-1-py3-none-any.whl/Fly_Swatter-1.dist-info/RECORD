@@ -1,0 +1,14 @@
+Fly_Swatter/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+Fly_Swatter/ballistics_sim.py,sha256=6ojnbgVik2RFHjd_Vv6bQMLq8KCRQwWE9FZk0z-FyEw,2388
+Fly_Swatter/fire_mode.py,sha256=wtUqPzRLIUb-CGp41FlSM20wjY_QzMvczQTZ8iFpq8A,2730
+Fly_Swatter/graph_trajectory.py,sha256=09r04ef5J7GJBmmQYFG2FcPIrDsmkc03342njAAl6HA,3396
+Fly_Swatter/mechanical.py,sha256=Y_K3_1nDdmgFtAvrUSJ2hoPD1K39S63BWJSm1D6wwIc,877
+Fly_Swatter/mode_control.py,sha256=29fsv5lnXg_zLt39DF-b_urtDM_WYnZWe_H4cyr0tSo,3139
+Fly_Swatter/radar.py,sha256=5_CfK46cUX_-AW1MuQJ0M3p7y9tFrim12dMqYdMbqE4,5150
+Fly_Swatter/search.py,sha256=30YWidUxRrTjzB7-vXz5zrBAvjaK27U63eDrqyT7Ym8,1962
+Fly_Swatter/target.py,sha256=9L6RofL2ZOYEy1xRB7hbT3yantKYmG-UJuyLdF9__FA,2918
+Fly_Swatter-1.dist-info/LICENSE,sha256=VWl_HvyOitJqLPL3S-HT1NHmEnlJSQvjUmjGrcJpInA,1069
+Fly_Swatter-1.dist-info/METADATA,sha256=YqNS4Kb8bNLO6uSe29eS04Iv3j8exrTFJD69Dt8Y-WI,74
+Fly_Swatter-1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+Fly_Swatter-1.dist-info/top_level.txt,sha256=zxBzkJg2q3OWp9WqGVbhCOBwd8PDLf4JWwMPeteP7hk,12
+Fly_Swatter-1.dist-info/RECORD,,
