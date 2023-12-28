@@ -1,0 +1,9 @@
+documentdataextraction/GenerateExtractTemplate.py,sha256=PKM1KD3pORN9OOmutMBMvoC8FV825UHL1NcYQ7BDIso,14944
+documentdataextraction/GoogleCloudAIDataExtractor.py,sha256=MEMde6_2ftDIAPmWVkI3A2TD-pNGdjkg9TVDbKYtZhc,2057
+documentdataextraction/OpenAIDataExtractor.py,sha256=qjx7xtxbyNqI4Uew6_k-dYAhH6-b8N_3K5N5hBrfvlI,54117
+documentdataextraction/__init__.py,sha256=MR-6zJuKEHVDCxbPc7KGt_D9akFh1kPVL0QxV82n1es,17121
+documentdataextraction-0.0.89.dist-info/LICENCE.txt,sha256=2qX9IkEUBx0VJp1Vh9O2dsRwE-IpYId0lXDyn7OVsJ8,1073
+documentdataextraction-0.0.89.dist-info/METADATA,sha256=AbYq0-q1UsfnRQ7eHhHugyRlIUezj-3zhJR0f0-_zZY,895
+documentdataextraction-0.0.89.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+documentdataextraction-0.0.89.dist-info/top_level.txt,sha256=taEbXAAJc3t8awOVwH0T27Og25LLFSGtCTpHTIwa7e0,23
+documentdataextraction-0.0.89.dist-info/RECORD,,
