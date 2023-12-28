@@ -1,0 +1,12 @@
+mijnbib/__init__.py,sha256=w_Jiqtg28OI9vpm6qMYNa7fleDeMJ6I3HBr_f3UICnk,366
+mijnbib/__main__.py,sha256=Ludu4GKyHh6IqlML3SK2Edz4m5n5onbGp6-t-ZPRlD4,4643
+mijnbib/errors.py,sha256=75xmuqd-EkjdocBIIQ8VqhMmO00RQ6GhamNnUZiQk5o,1410
+mijnbib/mijnbibliotheek copy.py,sha256=iXbi8Wmnnb6JIoa1QQgqGRrtEy9FcCc9nhUnExWHv4g,20183
+mijnbib/mijnbibliotheek.py,sha256=mHcur9oVkLtxidOhSPNSIOZWORtplcHBGV9go2cnMos,13114
+mijnbib/models.py,sha256=c6E7EYYd-kqAoistk4zL7quLwUekECsMQXrGmD4GuRw,1006
+mijnbib/parsers.py,sha256=skZnZmJIQ-DtUyQXAHBJmkMykV14O2KUDVAnYF9r1lU,28352
+mijnbib-0.3.0.dist-info/LICENSE,sha256=YmFNcyUTf4zuaIsNMEQSeqOqPXh7XparUSd6jSvhw9M,1061
+mijnbib-0.3.0.dist-info/METADATA,sha256=Uy1KDkHfQVoUq8wJQ9FstWILM7yYN6vace5-miktAjQ,5464
+mijnbib-0.3.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+mijnbib-0.3.0.dist-info/top_level.txt,sha256=qRrJ9H4nlkR4jvSphV-F7cbZxgGI04EdlfwlXUfW1oY,8
+mijnbib-0.3.0.dist-info/RECORD,,
