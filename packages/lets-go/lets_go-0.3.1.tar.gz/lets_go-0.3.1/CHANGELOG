@@ -1,0 +1,15 @@
+0.3.1 Current release
+  * Lightly modify code for ltermio changed mouse event definition.
+0.3.0
+  + Handle mouse clicked event, for ltermio has new module to support mouse.
+0.2.2
+  * Remove reset_color() from entry function main().
+0.2.1
+  * Re-implement _check_alive() method as a public function check_alive().
+  * Change build backend from setuptools to hatchling.
+0.1.2
+  * Change Move from normal class to data class.
+0.1.1
+  + add more description about project in README.md.
+0.1.0
+  + First release, basic rules supported, has only a board grid to move stones.
