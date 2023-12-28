@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: k8scjinja
+Version: 0.8.0
+Summary: rendering jinja templates from any files using yaml-environment
+Author: Yury Gavrilov
+Author-email: public@igavrilov.ru
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
