@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: unitsit-tools
+Version: 1.0.0
+Summary: `unitsit-tools` is a Python package containing various utility modules for common tasks. Each module provides functionality for specific operations, such as working with different config formats, databases, logging, and miscellaneous tasks.
+Author: NoirPi
+Author-email: noirpi@noircoding.de
+License: MIT
+Provides-Extra: toml
+Requires-Dist: toml; extra == "toml"
+Provides-Extra: asyncpg
+Requires-Dist: asyncpg; extra == "asyncpg"
+Provides-Extra: psycopg
+Requires-Dist: psycopg-binary; extra == "psycopg"
