@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: xerra
+Version: 0.1.5
+Summary: CLI tool for downloading and converting CFT datasets
+Author: Eli White
+Author-email: eli.white@emitimaging.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: aiohttp (>=3.9.1,<4.0.0)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: loguru (>=0.7.2,<0.8.0)
+Requires-Dist: mhdwriter (>=0.1.9,<0.2.0)
+Requires-Dist: tqdm (>=4.66.1,<5.0.0)
+Description-Content-Type: text/markdown
+
+
