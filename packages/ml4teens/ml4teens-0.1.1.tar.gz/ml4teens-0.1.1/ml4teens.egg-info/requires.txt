@@ -1,0 +1,8 @@
+Pillow
+ipycanvas==0.11
+ipyevents
+ipython
+numpy
+opencv-python
+requests
+ultralytics
