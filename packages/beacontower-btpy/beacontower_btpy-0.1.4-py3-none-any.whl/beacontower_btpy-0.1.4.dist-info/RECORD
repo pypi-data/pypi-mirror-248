@@ -1,0 +1,16 @@
+btpy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+btpy/application.py,sha256=OySjBimllbe9Mnq-9iC5oQBOeKxdLMf4TsXyWoZ9nK8,1113
+btpy/cosmosdb.py,sha256=OvV6biVPkeKpzNmBeKrvXTB71VJn21VIUzX3upOYeZE,997
+btpy/environment.py,sha256=oyRwzLZxSFqvPKbq2kVR1vzHHF7HWBkvWEWyceTLJCU,304
+btpy/main.py,sha256=ib4eIB-A9KFb9xfLou5KovyLvqZdYqaDy1XAa-JwrfQ,322
+btpy/misc.py,sha256=il6KjAig7nUG2crokb_5j68jp_uxjKvp7J62crRghmc,4808
+btpy/scripts.py,sha256=qRt5l9bCvod_Zm5Iy4IJtZZt9snZHcS_v3FnwrBT19Y,577
+btpy/stamp.py,sha256=w8rD0LYqhDVOrL-q4TuLflQOe1T9emOMQUlm70u27wQ,304
+btpy/suffix.py,sha256=kZzMIGheY586UiFk3UcXgn7BydiziHQogZuxe1f6QuQ,2061
+btpy/terraform.py,sha256=Ij8cg-ANEsOVyR44FacTtsPXv9c6E9ifP2GJRQXzCdA,287
+btpy/tfvars.py,sha256=Izz5DAdNDD2AMicmI5yHbW2qwD9qKEbMj2QkJ8YYrow,3258
+btpy/variables.py,sha256=GIPEbcmXRrZFFQ-3y_upkCDzemN92Fz_ocQu2g_yXms,404
+beacontower_btpy-0.1.4.dist-info/METADATA,sha256=SNd86rA60M2BYmJnXcIgm36wo8u0PV3XEhDUAlmZcfE,564
+beacontower_btpy-0.1.4.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+beacontower_btpy-0.1.4.dist-info/entry_points.txt,sha256=Y5EjlMAtMLeGUHUZUk06qBPAl6ZyLRRKsVkCTzQUSXU,38
+beacontower_btpy-0.1.4.dist-info/RECORD,,
