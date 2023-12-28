@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pylingdocs
+Version: 0.1.4
+Summary: pylingdocs is now lingdocs
+Classifier: Development Status :: 7 - Inactive
+Description-Content-Type: text/markdown
+Requires-Dist: lingdocs
+
+# pylingdocs is now lingdocs
+
+This package has been renamed. Use `pip install lingdocs` instead.
+
+New package: https://pypi.org/project/lingdocs/
