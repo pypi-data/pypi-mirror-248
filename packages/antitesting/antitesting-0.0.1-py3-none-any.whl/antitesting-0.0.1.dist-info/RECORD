@@ -1,0 +1,12 @@
+antitesting/__init__.py,sha256=101wh3mNN8XTXPHjt3pH_I7STvIoIuT5XJvb-EdW1t4,109
+antitesting/collector.py,sha256=mw7Zp5-aj2yLvXIDxyBRhZB2nfrgr48Mxmu_CmQG690,3148
+antitesting/plugin.py,sha256=OZ2VbhDawnhBhLUqotS78Ob6gb5U6y9wjRQZ8lEGNcw,423
+antitesting/proxy_module.py,sha256=7eIILR6VbXkB06KBFS4XfTHLNIFBvSSBwICjsTtmWDE,329
+antitesting/specification.py,sha256=y6CrVL5jywvRBPjuEYb-FLDL2lo1suBSy0a2vqU-PDk,313
+antitesting/state.py,sha256=bp6_m5QW8fT0ZySqOYuu8u763Aqq_vw5q7SpUt-62IM,96
+antitesting-0.0.1.dist-info/LICENSE,sha256=ORr8GcdTjVeQVDg9_JqOOPXr0lcv1aEzwu8Qwtc4-g8,1067
+antitesting-0.0.1.dist-info/METADATA,sha256=LrrVKBxcjwFvYaEzB77DN-G7MONosDp6Fyn1Ny9VO08,3476
+antitesting-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+antitesting-0.0.1.dist-info/entry_points.txt,sha256=tOVTdwFjz7THFat37-9qHomCoSZoV6q_gGoboGJVvEY,44
+antitesting-0.0.1.dist-info/top_level.txt,sha256=u-XdnVEJeEgovWJR-k8gHDsbtLenK1IKFB5XMntO510,12
+antitesting-0.0.1.dist-info/RECORD,,
