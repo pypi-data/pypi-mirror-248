@@ -1,0 +1,21 @@
+[project]
+name = "github-action-publish"
+version = "0.0.7"
+description = "Test of a GitHub Actions workflow that publish a package on PyPI."
+authors = [
+    { name = "Alexis Bergue" },
+]
+dependencies = []
+requires-python = ">=3.8"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool]
