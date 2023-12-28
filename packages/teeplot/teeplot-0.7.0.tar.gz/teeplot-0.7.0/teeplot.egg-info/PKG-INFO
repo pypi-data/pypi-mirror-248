@@ -1,0 +1,90 @@
+Metadata-Version: 1.2
+Name: teeplot
+Version: 0.7.0
+Summary: teeplot automatically saves a copy of rendered Jupyter notebook plots
+Home-page: https://github.com/mmore500/teeplot
+Author: Matthew Andres Moreno
+Author-email: m.more500@gmail.com
+License: MIT license
+Description: .. figure:: docs/assets/teeplot-wordmark.png
+           :target: https://github.com/mmore500/teeplot
+           :alt: teeplot wordmark
+        
+        
+        .. image:: https://img.shields.io/pypi/v/teeplot.svg
+                :target: https://pypi.python.org/pypi/teeplot
+        
+        .. image:: https://github.com/mmore500/teeplot/actions/workflows/CI.yml/badge.svg
+                :target: https://github.com/mmore500/teeplot/actions/workflows/CI.yml
+        
+        
+        teeplot organizes saving data visualizations, automatically picking meaningful names based on semantic plotting variables
+        
+        
+        * Free software: MIT license
+        * Documentation: https://teeplot.readthedocs.io.
+        
+        
+        .. code-block:: python3
+        
+          from teeplot import teeplot as tp
+          import seaborn as sns
+        
+          # adapted from https://seaborn.pydata.org/examples/errorband_lineplots.html
+          tp.tee(
+            sns.lineplot,
+            x='timepoint',
+            y='signal',
+            hue='region',
+            style='event',
+            data=sns.load_dataset('fmri'),
+            teeplot_outattrs={
+              'additional' : 'metadata',
+              'for' : 'output-filename',
+            },
+          )
+        
+          tp.tee(
+            sns.catplot,
+            data=sns.load_dataset('penguins'),
+            kind='bar',
+            x='species',
+            y='body_mass_g',
+            hue='sex',
+            ci='sd',
+            palette='dark',
+            alpha=.6,
+            height=6,
+          )
+        
+        Credits
+        -------
+        
+        This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2021-04-01)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: teeplot
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.6
