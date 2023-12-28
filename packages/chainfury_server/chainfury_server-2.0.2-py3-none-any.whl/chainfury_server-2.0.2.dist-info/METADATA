@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: chainfury_server
+Version: 2.0.2
+Summary: ChainFury Server is the open source server for running ChainFury Engine!
+Home-page: https://github.com/NimbleBoxAI/ChainFury
+License: Apache 2.0
+Author: NimbleBox Engineering
+Author-email: engineering@nimblebox.ai
+Requires-Python: >=3.9,<3.12
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: PyJWT[crypto] (==2.6.0)
+Requires-Dist: PyMySQL (==1.0.3)
+Requires-Dist: SQLAlchemy (==1.4.47)
+Requires-Dist: black (==23.3.0)
+Requires-Dist: chainfury
+Requires-Dist: cryptography (>=41.0.6)
+Requires-Dist: fastapi (==0.95.2)
+Requires-Dist: fire (==0.5.0)
+Requires-Dist: passlib (==1.7.4)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: urllib3 (>=1.26.18)
+Requires-Dist: uvicorn (==0.20.0)
+Project-URL: Repository, https://github.com/NimbleBoxAI/ChainFury
+Description-Content-Type: text/markdown
+
+# ChainFury Server
+
+This is a package separate from `chainfury` which provides the python execution engine.
+
