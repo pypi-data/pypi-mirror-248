@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+jgtutils/__init__.py
+jgtutils/jgtcommon.py
+jgtutils/jgtconstants.py
+jgtutils/jgtfxcommon.py
+jgtutils/jgtos.py
+jgtutils/jgtwslhelper.py
+jgtutils/module.py
+jgtutils.egg-info/PKG-INFO
+jgtutils.egg-info/SOURCES.txt
+jgtutils.egg-info/dependency_links.txt
+jgtutils.egg-info/top_level.txt
+tests/test_module.py
