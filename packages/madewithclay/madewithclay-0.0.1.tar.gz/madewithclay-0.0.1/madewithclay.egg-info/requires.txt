@@ -1,0 +1,8 @@
+geopandas
+tqdm
+contextily
+matplotlib
+pandas
+numpy
+
+[dev]
