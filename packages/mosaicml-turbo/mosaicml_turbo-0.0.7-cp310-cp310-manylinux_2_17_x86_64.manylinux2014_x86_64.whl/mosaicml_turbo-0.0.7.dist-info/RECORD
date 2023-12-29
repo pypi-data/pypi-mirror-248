@@ -1,0 +1,16 @@
+_turbo_kernels.cpython-310-x86_64-linux-gnu.so,sha256=EtT_vuGC-epXUHMvFWQFrDqWgjyY_9g5j3m1PYChbUI,3166289
+mosaicml_turbo.libs/libcudart-9335f6a2.so.12.1.105,sha256=hrXiw1t5lDoydCa5l7D2CkbIdu2ce9eCNUIVD9eiwkU,695017
+mosaicml_turbo-0.0.7.dist-info/METADATA,sha256=BFTV27RoqTeBk-ZTe-OMPqQay37_AGHBsV3d0qmyIJg,6130
+mosaicml_turbo-0.0.7.dist-info/LICENSE.txt,sha256=RKvqHmdI3vQOhUoalCYrrr4S-J-5yC_CdL5abn3VuQQ,1061
+mosaicml_turbo-0.0.7.dist-info/WHEEL,sha256=1FEjxEYgybphwh9S0FO9IcZ0B-NIeM2ko8OzhFZeOeQ,152
+mosaicml_turbo-0.0.7.dist-info/RECORD,,
+mosaicml_turbo-0.0.7.dist-info/top_level.txt,sha256=HYnMfFXsujYAclSDrGw4k9R6tcn4wgZiJdeMf9XZb4E,21
+turbo/__init__.py,sha256=OE44NI02aTu6fyrug3apjKEfiDQb85gAnI4V7HjwLLA,513
+turbo/_comms.py,sha256=ksvEwJf0CEt6Dj9l71QIuugjA0GQQGNhNGxppqQBFNc,7286
+turbo/_add.py,sha256=ozZb0Opee9Iwewm1nAsHzVbmki1MjPpYCA-g3CzApNM,1038
+turbo/_quantize.py,sha256=bqy79lqexQFmr_PWEPH25x1i4bfBBjB3rKt79qxtQ9Q,5473
+turbo/_utils.py,sha256=qQfcf-_RywGcpAgeWDxBaOk9-4rJyIKvokZlcwm0i0M,1172
+turbo/lion8b.py,sha256=qTTbq_QBTPLmyQxhVQ2uE8sv2Xlh_VmnqIAf_T8JNVc,30974
+turbo/_codecs.py,sha256=YfJdG0P6tc-bKFoR1-432pv6n_Vf8vFJ-Wi9AHbrD0g,5585
+turbo/_experiment.py,sha256=dYUeOf0Gbo1pQwzLIB9xTiIKTGhugpU7tIzdSQTbI70,7153
+turbo/_lion.py,sha256=MlVgRiHDCI7tBSM8eUpP5eKaTqcrCrflkiBASncv3SA,4566
