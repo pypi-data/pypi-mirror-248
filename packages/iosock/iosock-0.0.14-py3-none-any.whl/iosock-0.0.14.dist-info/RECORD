@@ -1,0 +1,11 @@
+iosock/__init__.py,sha256=crNnsr96eczR4dVsEwGDR2yOxPCN1FpKQTYiDGKkFyQ,163
+iosock/exception.py,sha256=_MPMBkr8OyoyEMQ2IMOXpf3cOlJunMFA0dqbZ5968cs,51
+iosock/darwin/client.py,sha256=S1VnEPT_3hvdMzKECbQRD5GIQzkXgn9-FRzyzj21slk,1382
+iosock/darwin/kqueueserver.py,sha256=CQJKs05ppXP6xByamisUEMxSxd30RCX7WGDWQRXYhzk,10090
+iosock/linux/client.py,sha256=niqMLXY6dl4ZLpouG3G6k6oRIa8s3ITdKCI9skH0L7s,1381
+iosock/linux/epollserver.py,sha256=7JKzURkOZFvNb0tWuk42nXPvl6xf68yPCw4kBgJR68g,24159
+iosock/linux/relayserver.py,sha256=4hYBenGYwwwk6wlSd_RbDNd_Qx4BJ4hquqetg39P3eE,28167
+iosock-0.0.14.dist-info/METADATA,sha256=KMwdnzgFh--VcqvzUufKkzDg7vfrBAKqNQbPdXeSDOM,708
+iosock-0.0.14.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+iosock-0.0.14.dist-info/licenses/LICENSE,sha256=iA-MhDaLQnij9wbQ5qFqfooY0_E0theJw4yZTxvhrRQ,1061
+iosock-0.0.14.dist-info/RECORD,,
