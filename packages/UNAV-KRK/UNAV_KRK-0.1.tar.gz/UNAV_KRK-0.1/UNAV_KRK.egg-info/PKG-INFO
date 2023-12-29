@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: UNAV_KRK
+Version: 0.1
+Summary: Descarga y plotea monedas de kraken
+Home-page: https://github.com/TapiaR/biblio_unav_krk
+Author: A.Tapia
+Author-email: altapia7@gmail.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: krakenex
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: mplfinance
+
+Analizador de Criptomonedas
+El Analizador de Criptomonedas es una biblioteca de Python diseÃ±ada para descargar y analizar datos de criptomonedas desde la API de Kraken. Ofrece funcionalidades para visualizar la cotizaciÃ³n de criptomonedas y calcular indicadores tÃ©cnicos como el oscilador estocÃ¡stico.
+
+CaracterÃ­sticas
+Descarga de datos histÃ³ricos de pares de criptomonedas desde Kraken.
+CÃ¡lculo del oscilador estocÃ¡stico.
+GeneraciÃ³n de grÃ¡ficos de velas japonesas.
+VisualizaciÃ³n de la evoluciÃ³n del precio y del oscilador estocÃ¡stico.
+InstalaciÃ³n
+Puede instalar el Analizador de Criptomonedas directamente desde PyPI:
+
+bash
+Copy code
+pip install analizador_criptomonedas
+Uso
+A continuaciÃ³n, se muestra un ejemplo bÃ¡sico de cÃ³mo utilizar la biblioteca:
+
+python
+Copy code
+from analizador_criptomonedas import AnalizadorMonedas
+
+# Definir el par de monedas a analizar
+par_moneda = "XBTEUR"
+
+# Crear una instancia del analizador
+analizador = AnalizadorMonedas(par_moneda)
+
+# Ejecutar el anÃ¡lisis
+analizador.procesar()
+
+
+Requisitos
+Python 3.6 o superior.
+Dependencias: krakenex, pandas, matplotlib, mplfinance. Estas se instalarÃ¡n automÃ¡ticamente al instalar este paquete.
+Contribuciones
+Las contribuciones son bienvenidas. Si deseas contribuir, por favor:
+
+Haz un fork del repositorio.
+Crea una rama para tu caracterÃ­stica.
+Haz tus cambios y commit.
+Push a tu rama y abre un pull request.
+Licencia
+Este proyecto estÃ¡ licenciado bajo la Licencia MIT - vea el archivo LICENSE para mÃ¡s detalles.
+
