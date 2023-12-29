@@ -1,0 +1,32 @@
+import json,logging
+from typing import NamedTuple
+from localstack import config
+from localstack.aws.api import RequestContext
+from localstack.aws.chain import HandlerChain
+from localstack.http import Response
+from localstack.utils.analytics import EventLogger,log
+from localstack.utils.strings import to_str
+from snowflake_local import config as sf_config
+from snowflake_local.server.routes import get_request_data
+LOG=logging.getLogger(__name__)
+class SnowflakeEvent(NamedTuple):method:str;route:str;status_code:int;user_agent:str
+EVENT_NAME='extensions_sf_event'
+class SnowflakeAnalyticsHandler:
+	def __init__(A,event_logger=None):A.handler=event_logger or log
+	def __call__(B,chain,context,response):
+		A=context
+		if'snowflake.'not in A.request.url:return
+		if config.DISABLE_EVENTS:return
+		C=SnowflakeEvent(route=A.request.path,method=A.request.method,status_code=response.status_code,user_agent=A.request.user_agent.string);B.handler.event(EVENT_NAME,C._asdict())
+class TraceLoggingHandler:
+	def __call__(F,chain,context,response):
+		A=response
+		if not sf_config.TRACE_LOG:return A
+		D=context.request;B=get_request_data(D)
+		if isinstance(B,dict):B=json.dumps(B)
+		E=None;C=str(A)
+		if isinstance(A,Response):
+			E=A.status_code;C=A.data
+			try:C=to_str(C)
+			except Exception:pass
+		LOG.debug('REQ: %s %s %s -- RES: %s %s',D.method,D.path,B,E,C);return A
