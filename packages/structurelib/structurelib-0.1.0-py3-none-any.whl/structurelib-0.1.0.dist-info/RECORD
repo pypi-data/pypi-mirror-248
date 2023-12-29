@@ -1,0 +1,12 @@
+structurelib/__init__.py,sha256=RTXbUkKzim3AMM5OqGCGVBsC_rOMJAlfHDSEXRJWlzI,1640
+structurelib/_identifier.py,sha256=8Ai69dcRr1N17fJO6kzu5K3VzspKoT8O_rRXnIiZ4_4,502
+structurelib/_structure.py,sha256=g313COPo7V3BdLeY4qxcA0d4hzBgvTUeiCQH9HokqXc,1042
+structurelib/types.py,sha256=8_iHvU7eUObuX18M1A92xuayflycqPIl-z5NSWg4hPo,1805
+structurelib/_dumping/__init__.py,sha256=S88M8HMdYE_rfPltweY4JC8wSDvBMYE-K5lqKumlMnU,66
+structurelib/_dumping/_dumpers.py,sha256=F4ndUSic31CkUtIHiaO5hdJKfD6hVWfeWZU8qBgceUQ,3997
+structurelib/_dumping/_dumps.py,sha256=eCKd34eRcHMV3GjbvWTaE_dZMEr9v0TAJHdx-WJfZME,2154
+structurelib-0.1.0.dist-info/LICENSE,sha256=xoha-9oXrLrqlz-OEzF4zre6j9LBonLJpQcTzxw3S5w,1073
+structurelib-0.1.0.dist-info/METADATA,sha256=NKfJkO-rbhMzchuEK9T3ApjyQ5TGjcWuma_3siHhlD0,6951
+structurelib-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+structurelib-0.1.0.dist-info/top_level.txt,sha256=xKC_sEaI1095dyygEbKNdfwdDtS0_Hkn_7K_CRdFomI,13
+structurelib-0.1.0.dist-info/RECORD,,
