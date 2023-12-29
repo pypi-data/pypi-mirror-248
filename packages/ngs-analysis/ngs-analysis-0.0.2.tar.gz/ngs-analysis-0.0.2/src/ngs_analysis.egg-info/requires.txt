@@ -1,0 +1,13 @@
+fire
+glob2
+ipykernel
+natsort
+pandas
+pandera
+parse
+pyarrow
+python-levenshtein
+python-slugify
+pyyaml
+regex
+tqdm
