@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: macaque
+Version: 1.0.5
+Summary: Stability testing tool based on fastbot transformation.
+Home-page: https://github.com/openutx
+Author: lijiawei
+Author-email: jiawei.li2@qq.com
+License: Apache License 2.0
+Keywords: utx,macaque,monkey,tools
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console :: Curses
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## Macaque   
+Stability testing tool based on fastbot transformation.
+## Local access
+
+```python
+from macaque.core import prepare
+
+prepare(udid='192.168.0.119:5555', 
+        package='com.panda.app.wid', 
+        duration=2, 
+        throttle=800,
+        whitelist='com.panda.app.wid.panda_main.activity.MainActivity',
+        widget='[{"bounds": "0.1,0.87,1,0.95"}]',
+        ime=False)
+```
+
+## Thanks
+https://github.com/bytedance/Fastbot_Android

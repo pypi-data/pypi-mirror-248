@@ -1,0 +1,5 @@
+recursive-include macaque/jar *
+recursive-include macaque/libs *
+recursive-include macaque *.apk
+recursive-include macaque *aapt
+recursive-include macaque *.black

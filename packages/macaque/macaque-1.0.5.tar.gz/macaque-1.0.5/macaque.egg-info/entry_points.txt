@@ -1,0 +1,2 @@
+[console_scripts]
+macaque = macaque.__main__:prepare
