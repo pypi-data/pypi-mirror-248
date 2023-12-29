@@ -1,0 +1,3 @@
+{% for item in analytics %}
+    {"date": "{{ item.week }}", "y": {{ item.total }}},
+{% endfor %}
