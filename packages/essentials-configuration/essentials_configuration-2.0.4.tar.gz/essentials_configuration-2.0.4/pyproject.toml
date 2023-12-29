@@ -1,0 +1,49 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "essentials-configuration"
+version = "2.0.4"
+authors = [{ name = "Roberto Prevato", email = "roberto.prevato@gmail.com" }]
+description = "Implementation of key-value pair based configuration for Python applications."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+]
+keywords = ["configuration", "root", "management", "strategy", "settings"]
+
+dependencies = [
+    "deepmerge~=1.1.0",
+    "tomli; python_version < '3.11'",
+    "python-dotenv~=1.0.0",
+]
+
+[project.optional-dependencies]
+yaml = ["PyYAML"]
+full = ["PyYAML", "rich-click"]
+
+[project.scripts]
+config = "config.cli.main:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["config"]
+
+[tool.hatch.build.targets.sdist]
+exclude = ["tests"]
+
+[tool.hatch.build]
+only-packages = true
+
+[project.urls]
+"Homepage" = "https://github.com/Neoteroi/essentials-configuration"
+"Bug Tracker" = "https://github.com/Neoteroi/essentials-configuration/issues"
