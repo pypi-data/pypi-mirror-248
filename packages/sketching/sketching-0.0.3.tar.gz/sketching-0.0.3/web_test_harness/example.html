@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head lang="en_US">
+        <meta charset="UTF-8">
+        <title>Sketching.py Test Harness</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/third_party/core.css">
+        <script type="module" src="/third_party/core.js"></script>
+    </head>
+    <body>
+        <py-config>
+        {
+            "packages": ["/dist/sketching-0.0.3-py3-none-any.whl"]
+        }
+        </py-config>
+
+        <main id="#main">
+            <canvas id="example-canvas" style="display: none"></canvas>
+        </main>
+
+<py-script>
+import sketching
+
+
+sketch = sketching.Sketch2DWeb(500, 500, 'example-canvas')
+
+sketch.clear('#505050')
+
+sketch.clear_stroke()
+sketch.set_ellipse_mode('radius')
+sketch.set_angle_mode('degrees')
+
+sketch.set_fill('#A6CEE350')
+sketch.draw_ellipse(0, 0, 100, 100)
+
+sketch.set_fill('#1F78B450')
+sketch.translate(250, 250)
+sketch.draw_ellipse(0, 0, 100, 100)
+
+sketch.show()
+</py-script>
+    </body>
+</html>
