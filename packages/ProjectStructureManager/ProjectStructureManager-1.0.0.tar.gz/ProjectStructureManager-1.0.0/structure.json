@@ -1,0 +1,36 @@
+{
+    "mypackage": {
+        "mypackage": {
+            "controllers": {
+                "__init__.py": "",
+                "control_one.py": "",
+                "control_two.py": "",
+                "control_three.py": "",
+                "control_four.py": ""
+            },
+            "__init__.py": "",
+            "models": {
+                "__init__.py": "",
+                "model_one.py": "",
+                "model_two.py": "",
+                "model_three.py": "",
+                "model_four.py": ""
+            }
+        },
+        "__init__.py": "# None",
+        "tests": {
+            "__init__.py": "",
+            "test_one.py": "",
+            "test_two.py": "",
+            "test_three.py": "",
+            "test_four.py": ""
+        },
+        "docs": {
+            "__init__.py": "",
+            "README.md": ""
+        },
+        "main.py": "# main()",
+        "requirements.txt": "# requirements.txt",
+        "LICENSE": ""
+    }
+}

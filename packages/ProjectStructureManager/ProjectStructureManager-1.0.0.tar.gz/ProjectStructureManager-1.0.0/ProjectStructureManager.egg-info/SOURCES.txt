@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+structure.json
+ProjectStructureManager.egg-info/PKG-INFO
+ProjectStructureManager.egg-info/SOURCES.txt
+ProjectStructureManager.egg-info/dependency_links.txt
+ProjectStructureManager.egg-info/top_level.txt
+docs/__init__.py
+psmanager/__init__.py
+psmanager/project_structure_manager.py
+tests/__init__.py
+tests/test_psmanager.py
