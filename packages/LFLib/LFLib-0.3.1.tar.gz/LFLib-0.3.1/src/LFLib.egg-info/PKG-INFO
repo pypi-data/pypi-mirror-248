@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: LFLib
+Version: 0.3.1
+Summary: This module provides a variety of quality of life functions.
+Home-page: https://github.com/LukasFun/LFLib
+Author: LukasFun
+Author-email: lfreudenberg@uni-osnabrueck.de
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# LFLib package
+
+This module provides a variety of quality of life functions. Some notable examples are:
+	- printing without starting a newline
+	- printing arguments with a single command that can't be joined with "+" like Strings
+	- converting a number to a string with nice formatting
+	- a data tip and other useful things for displaying data with matplotlib
+	- a threaded serial port

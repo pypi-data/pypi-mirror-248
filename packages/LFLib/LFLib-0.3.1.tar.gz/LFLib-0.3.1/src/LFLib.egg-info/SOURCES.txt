@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/LFLib/LFLib.py
+src/LFLib/__init__.py
+src/LFLib.egg-info/PKG-INFO
+src/LFLib.egg-info/SOURCES.txt
+src/LFLib.egg-info/dependency_links.txt
+src/LFLib.egg-info/top_level.txt
