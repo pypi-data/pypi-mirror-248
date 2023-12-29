@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "hxsoup"
+version = "0.1.0"
+description = "Various convenient features related to httpx and BeautifulSoup."
+authors = ["ilotoki0804 <ilotoki0804@gmail.com>"]
+license = "MIT"
+readme = "README_build.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+httpx = "^0.26.0"
+resoup = "==0.5.2"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.28.0"
+tomlkit = "^0.12.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
