@@ -1,0 +1,17 @@
+[console_scripts]
+manisble=manisble:main
+manisble_airflow=manisble.airflow:main
+manisble_bump=manisble.bump:main
+manisble_dns=manisble.dns:main
+manisble_gitea=manisble.gitea:main
+manisble_inabox=manisble.inabox:main
+manisble_jenkins=manisble.jenkins:main
+manisble_netbox=manisble.netbox:main
+manisble_pitv=manisble.pitv:main
+manisble_semaphore=manisble.semaphore:main
+manisble_ssh=manisble.ssh:main
+manisble_traefik=manisble.traefik:main
+manisble_vault=manisble.vault:main
+manisble_vmware=manisble.vmware:main
+manisble_zabbix=manisble.zabbix:main
+
