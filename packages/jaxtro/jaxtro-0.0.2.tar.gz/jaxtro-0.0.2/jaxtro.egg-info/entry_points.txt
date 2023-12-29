@@ -1,0 +1,2 @@
+[console_scripts]
+jaxtro_genie = jaxtro.main:main
