@@ -1,0 +1,15 @@
+UtilityLib
+biopython
+imageio
+lxml
+numpy
+pandas
+pdb-tools
+Pillow
+psutil
+PyAutoGUI
+python3-xlib
+requests
+seaborn
+SQLAlchemy
+tqdm
