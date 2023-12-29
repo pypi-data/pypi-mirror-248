@@ -1,0 +1,8 @@
+fastapi_jwk_auth/__init__.py,sha256=YvMeRr_sUDcz1JIHvN765RyW7H3aaom-vEY4o4GxGu0,26
+fastapi_jwk_auth/config.py,sha256=tymEF1derH_7VGKTEElqyjVSPAnzFIDnLsyES7ROURY,513
+fastapi_jwk_auth/jwks_auth.py,sha256=2izTIGiNacHuaJLK590mwtlpZVt7Wi2y9QGxG84EuoI,3048
+fastapi_jwk_auth-0.0.5.dist-info/LICENSE,sha256=zpkxbuRzzmU0GH6RrOOAtfrDElXRLE624dLi2sYd9J8,1092
+fastapi_jwk_auth-0.0.5.dist-info/METADATA,sha256=VDNFyl5BqVfVFcj8MLBrpyD6-YXCmc5NVsXt2h7Xbhs,2434
+fastapi_jwk_auth-0.0.5.dist-info/WHEEL,sha256=Xo9-1PvkuimrydujYJAjF7pCkriuXBpUPEjma1nZyJ0,92
+fastapi_jwk_auth-0.0.5.dist-info/top_level.txt,sha256=8DySkPL9c-vNmrPJ0-23s_xc7SdSvmGt8F9obXxGLUQ,17
+fastapi_jwk_auth-0.0.5.dist-info/RECORD,,
