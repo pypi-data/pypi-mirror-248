@@ -1,0 +1,9 @@
+multifutures/__init__.py,sha256=1GbJyaxfNlnn87KAJzNaGmS_q_64YlNq6e8DNwN7roo,615
+multifutures/multi.py,sha256=fChB5G62XMvVN1Glqaw1-jAQgYofTy1jDc-rER7Rax0,4404
+multifutures/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+multifutures/rate_limit.py,sha256=ijZhub6y3LiaerY_M7hrbwk-Q4sfe76uI9iWVN_LRJs,1048
+multifutures/utils.py,sha256=3fRx7Dq5cK8HNd01VJFgrhU5noVcsPneKCfxLRrpt5A,3552
+multifutures-0.2.1.dist-info/LICENSE.txt,sha256=LGNMAenL3PJUEBQTYTOfoblciOotjXVBYnBgokSt2w4,1102
+multifutures-0.2.1.dist-info/METADATA,sha256=LHx8QqZO_uHiyigjGcqQEjAJzQP7KaVEZhCnOpG20xA,1039
+multifutures-0.2.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+multifutures-0.2.1.dist-info/RECORD,,
