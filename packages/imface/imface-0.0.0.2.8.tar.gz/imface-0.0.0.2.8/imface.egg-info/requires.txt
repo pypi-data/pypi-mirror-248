@@ -1,0 +1,2 @@
+deepface
+dlib==19.24.2
