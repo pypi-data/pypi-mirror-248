@@ -1,0 +1,10 @@
+# python
+*.pyc
+.ipynb_checkpoints
+
+# mac
+.DS_Store
+*.DS_Store
+
+# vscode
+.vscode/settings.json
