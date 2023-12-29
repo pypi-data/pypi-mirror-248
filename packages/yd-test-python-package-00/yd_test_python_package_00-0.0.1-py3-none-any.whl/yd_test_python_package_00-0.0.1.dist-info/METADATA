@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: yd_test_python_package_00
+Version: 0.0.1
+Summary: My first python package
+Author-email: Chen Yudong <yudongchen95@gmail.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pyyaml
+Requires-Dist: typing-extensions ; extra == "dev" and ( python_version < '3.8')
+Requires-Dist: sphinx ; extra == "doc"
+Requires-Dist: sphinx-rtd-theme ; extra == "doc"
+Requires-Dist: sphinx_copybutton ; extra == "doc"
+Requires-Dist: myst-parser ; extra == "doc"
+Requires-Dist: sphinxcontrib-mermaid ; extra == "doc"
+Requires-Dist: sphinx-argparse ; extra == "doc"
+Requires-Dist: pytest ; extra == "test"
+Requires-Dist: pytest-cov ; extra == "test"
+Project-URL: changelog, https://github.com/ydc-0/yd-test-python-package-00/blob/master/CHANGELOG.md
+Project-URL: documentation, https://github.com/ydc-0/yd-test-python-package-00/blob/main/README.md
+Project-URL: homepage, https://github.com/ydc-0/yd-test-python-package-00
+Project-URL: repository, https://github.com/ydc-0/yd-test-python-package-00
+Provides-Extra: dev
+Provides-Extra: doc
+Provides-Extra: test
+
+# yd-teset-python-package-00
+
+- template: https://github.com/microsoft/python-package-template
+
