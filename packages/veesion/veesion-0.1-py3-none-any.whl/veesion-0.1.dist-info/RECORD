@@ -1,0 +1,17 @@
+veesion/ClassificationModule.py,sha256=lboIMuZB50NRnrx2SG3E-PZyn-4Pp70zSrrlBVv3YQ0,2966
+veesion/ColorModule.py,sha256=abAyR8s59mE9VuOg6jmu4LN4Sawrzct5Xs79XIPYnPc,4385
+veesion/FPS.py,sha256=KesaQyGN3TRDCE3zBj6GjEiVTtjXKckHQJbF9Qdhko0,3338
+veesion/FaceDetectionModule.py,sha256=G86FyFRDRobHOwJ6RXJH_23PE_6VciiPOvUfQRDWAg0,4452
+veesion/FaceMeshModule.py,sha256=pL8la5JalBQ1c5KMYNbseT_WquJ3tfHvg07cmkHkp9s,5449
+veesion/HandTrackingModule.py,sha256=xzsb8Wu9N9Pijd-zCU-NBVa3IsgxIiF2WcISo4K9kXY,9111
+veesion/PIDModule.py,sha256=uhcLPe_5vUTS2GA6RBUEAyJelk2PgNtiQYCwfwe40KY,2381
+veesion/PlotModule.py,sha256=v-EAqrYYs3sajvO68xAAx2FT7dAElXyuR8aZOYzziWA,3808
+veesion/PoseModule.py,sha256=CePRz_0l3ZcPKZqOMKdidnUhgt6ChbsU_xoYgD9nyvk,8789
+veesion/SelfiSegmentationModule.py,sha256=rcfErrDdkNw1CoLTzu5FoywFkrHKE1F5eAOI801JeGA,2728
+veesion/SerialModule.py,sha256=K63g41YEEfsKiSV8NmQUmQ1Rt6rU00FWoCVb_6VWjZ4,4963
+veesion/Utils.py,sha256=RLpUEyvCk6hl1t9Cx5KRNMfUJHVkPi_X-Q6KEH1gFMg,13431
+veesion/__init__.py,sha256=F-KYWEB49EoFoq7JSso3SuOeUmOB78SLnl0xSsfwxN4,124
+veesion-0.1.dist-info/METADATA,sha256=RbZMSkSxNyqe3BQBWtLMJhTAAy9NH9wX0Dnz4oD71Gg,473
+veesion-0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+veesion-0.1.dist-info/top_level.txt,sha256=61Rc8dkJcZKappsl2Kobet-Abh5FEOOs5iEbcjSsJmc,8
+veesion-0.1.dist-info/RECORD,,

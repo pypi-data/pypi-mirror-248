@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: veesion
+Version: 0.1
+Summary: OpenCV library
+Home-page: https://github.com/isaotoyama/cvision
+Author: Isao Toyama
+Author-email: isao@isaotoyama.com
+Keywords: OpenVision,Realtime Webcam,Utility,Face Detection
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: opencv-python
+Requires-Dist: numpy
+
