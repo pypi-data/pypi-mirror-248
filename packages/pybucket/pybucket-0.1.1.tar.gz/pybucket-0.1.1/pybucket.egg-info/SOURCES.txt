@@ -1,0 +1,5 @@
+setup.py
+pybucket.egg-info/PKG-INFO
+pybucket.egg-info/SOURCES.txt
+pybucket.egg-info/dependency_links.txt
+pybucket.egg-info/top_level.txt
