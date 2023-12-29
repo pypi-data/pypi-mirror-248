@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+autolink_references = autolink_references:AutolinkReference
