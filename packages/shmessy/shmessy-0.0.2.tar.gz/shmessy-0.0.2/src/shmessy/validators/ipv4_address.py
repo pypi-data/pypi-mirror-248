@@ -1,0 +1,39 @@
+from typing import Optional
+
+from numpy import ndarray
+from pandas import Series
+from pydantic import BaseModel
+from pydantic.networks import IPv4Address  # noqa
+
+from .base import BaseValidator
+from ..schema import InferredField, ValidatorTypes
+
+
+class Model(BaseModel):
+    ip: IPv4Address
+
+
+class Validator(BaseValidator):
+    validator_type = ValidatorTypes.STRING
+
+    def validate(self, data: ndarray) -> Optional[InferredField]:
+        try:
+            self.check_validation_type(dtype=data.dtype)
+        except ValueError:
+            return None
+
+        for value in data:
+            try:
+                Model(ip=value)
+            except ValueError:
+                return None
+        return InferredField(
+            inferred_type=str,
+            inferred_virtual_type=IPv4Address
+        )
+
+    def fix(self, column: Series, sample_size: int) -> Series:
+        sample_data = column[:sample_size]
+        inferred = self.validate(sample_data)
+        if inferred:
+            return column
