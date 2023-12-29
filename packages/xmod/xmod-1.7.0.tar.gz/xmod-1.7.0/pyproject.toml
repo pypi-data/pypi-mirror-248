@@ -1,0 +1,43 @@
+[tool.black]
+line-length = 79
+skip-string-normalization = true
+target-version = ['py37']
+
+[tool.doks]
+auto = true
+
+[tool.poetry]
+name = "xmod"
+version = "1.7.0"
+description = "🌱 Turn any object into a module 🌱"
+authors = ["Tom Ritchford <tom@swirly.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+black = "^23.12.1"
+isort = "^5.13.2"
+mypy = "^1.8.0"
+pyright = "^1.1.343"
+ruff = "^0.1.9"
+
+[tool.setuptools.package-data]
+"*" = ["*.pyi"]
+
+[tool.poetry.group.dev.dependencies]
+coverage = "*"
+flake8 = "*"
+pytest = "*"
+
+[tool.coverage.run]
+branch = true
+source = ["xmod"]
+
+[tool.coverage.report]
+fail_under = "91"
+skip_covered = true
+exclude_lines = ["pragma: no cover", "if False:", "if __name__ == .__main__.:", "raise NotImplementedError"]
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
