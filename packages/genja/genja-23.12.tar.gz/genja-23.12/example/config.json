@@ -1,0 +1,5 @@
+{
+    "base_url": "https://example.com/testsite",
+    "input_dir": "mdcontent",
+    "output_dir": "website"
+}

@@ -1,0 +1,24 @@
+# Use this file to create a conda environment for developing the genja
+# package. See the comments below for some useful commands for this
+# environment.
+#
+# Create the environment ....... conda env create --file environment.yml
+# Activate the environment ..... conda activate genja
+# Deactivate the environment ... conda deactivate
+# Remove the environment ....... conda env remove --name genja
+
+name: genja
+
+dependencies:
+  - python
+  - markdown
+  - jinja2
+  - beautifulsoup4
+  - ipython
+  - pytest
+  - pip
+  - pip:
+    - ruff
+    - livereload
+    - ipdb
+    - --editable .
