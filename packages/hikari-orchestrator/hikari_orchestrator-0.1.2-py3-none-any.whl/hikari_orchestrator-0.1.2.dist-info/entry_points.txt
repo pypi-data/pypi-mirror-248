@@ -1,0 +1,3 @@
+[console_scripts]
+hikari_orchestrator=hikari_orchestrator.__main__:main
+
