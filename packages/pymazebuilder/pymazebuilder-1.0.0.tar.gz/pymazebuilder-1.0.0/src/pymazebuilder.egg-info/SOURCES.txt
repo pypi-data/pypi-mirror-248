@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+src/pymazebuilder.egg-info/PKG-INFO
+src/pymazebuilder.egg-info/SOURCES.txt
+src/pymazebuilder.egg-info/dependency_links.txt
+src/pymazebuilder.egg-info/top_level.txt
