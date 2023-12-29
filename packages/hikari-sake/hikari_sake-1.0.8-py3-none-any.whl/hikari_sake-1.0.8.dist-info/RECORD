@@ -1,0 +1,12 @@
+sake/__init__.py,sha256=YzddQBosLWuv7KH_HCNLl6OIg6gbP70I25WemoOByPc,2325
+sake/_redis_iterators.py,sha256=i2by5TMgrrQ-BVQOORT3Rz0_VT9ugtaGHfISlqGB2Qc,20027
+sake/_tanjun_adapter.py,sha256=M1PYeMuR7F5olhlqdXO25VZ-V58sxoqv4CYjxSgfEnw,11350
+sake/abc.py,sha256=2MnjJ7sFkzmQK_yoluG3RdgnqZXdIB8I3uk7a5HuW-Q,67805
+sake/errors.py,sha256=JW-lClW5hbehXzru_I2Tt0nkdWyAvK13-7MaYIxq8Ko,3985
+sake/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sake/redis.py,sha256=MUC6tjub7RgUTqgpJH1tYwHx_FuS6NjaYnVngyvVFDI,92895
+sake/_internal/__init__.py,sha256=VhbgyBDHpBz6TQXNr8zaILexAmc6xho8jM5n5sExEcs,8797
+hikari_sake-1.0.8.dist-info/LICENSE,sha256=KIG1-7JI9o0AiBuiqf22ERUtxvcuzCZyZM6uETJ8s3E,1520
+hikari_sake-1.0.8.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+hikari_sake-1.0.8.dist-info/METADATA,sha256=XhJaw0l1b87PJv5qWOMeQVOjos5D_aerZWYqbYzGJOA,2143
+hikari_sake-1.0.8.dist-info/RECORD,,
