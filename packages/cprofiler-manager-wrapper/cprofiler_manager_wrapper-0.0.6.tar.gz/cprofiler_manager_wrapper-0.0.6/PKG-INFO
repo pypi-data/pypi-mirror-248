@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: cprofiler_manager_wrapper
+Version: 0.0.6
+Summary: simple_profiler
+Home-page: https://github.com/Rwwwrl/SimpleProfiler
+Author: Alexey Sosov
+Author-email: lesh.solowiew@yandex.ru
+License: BSD-3-Clause
+Description: ### Install
+        
+        `pip install cprofiler-manager-wrapper`
+        
+        ### Usage
+        
+        ```python
+        from cprofiler_manager_wrapper import Profiler
+        
+        
+        def func_to_profile():
+            from time import sleep
+        
+            result = []
+            for i in range(10):
+                result.append(i)
+            sleep(1)
+        
+            a = 10
+        
+            return 'hello world'
+        
+        
+        with Profiler(func_about_string='func', disable=False):
+            func_to_profile()
+        ```
+        
+        По итогу будет создана, если ее не было, папка _prof_folder_, внутри которой будет лежат файл _<some>.prof_
+        
+        Для открытия .prof файла используется **snakeviz** - `snakeviz prof_folder/<some>.prof`
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown

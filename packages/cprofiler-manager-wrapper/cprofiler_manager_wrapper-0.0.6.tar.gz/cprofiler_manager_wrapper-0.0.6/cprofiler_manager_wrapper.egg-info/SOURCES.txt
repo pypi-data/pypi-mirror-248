@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+cprofiler_manager_wrapper/__init__.py
+cprofiler_manager_wrapper/profiler.py
+cprofiler_manager_wrapper.egg-info/PKG-INFO
+cprofiler_manager_wrapper.egg-info/SOURCES.txt
+cprofiler_manager_wrapper.egg-info/dependency_links.txt
+cprofiler_manager_wrapper.egg-info/requires.txt
+cprofiler_manager_wrapper.egg-info/top_level.txt
