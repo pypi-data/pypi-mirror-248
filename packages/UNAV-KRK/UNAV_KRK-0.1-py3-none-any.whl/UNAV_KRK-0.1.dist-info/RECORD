@@ -1,0 +1,10 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/analizador_monedas.py,sha256=Q7AAqn6L8CxIBVj0hTW2MuB2FlUnw7-5MDeZwMts7xY,4016
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_integración_analizador.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_unitario_analizador.py,sha256=L2k9hfSwXobKmQW8fZVGVLE7-jRNrTazfgLqZQhysu8,1646
+UNAV_KRK-0.1.dist-info/LICENSE,sha256=M486hGJXL2uvjJ2unkGGo45Hdc-zM5INhQ7rUSbD4KU,1169
+UNAV_KRK-0.1.dist-info/METADATA,sha256=UfcfW3z75axGSP2WvLDjB1Tqf2XWSYW0hAMh_HAMRrk,2000
+UNAV_KRK-0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+UNAV_KRK-0.1.dist-info/top_level.txt,sha256=KW3xgkz9NLMTcmmzgKvW8RFpCFkRIQ085qzq2diFf68,10
+UNAV_KRK-0.1.dist-info/RECORD,,
