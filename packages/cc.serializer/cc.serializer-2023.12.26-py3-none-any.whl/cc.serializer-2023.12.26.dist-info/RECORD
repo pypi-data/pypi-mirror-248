@@ -1,0 +1,11 @@
+cc/__init__.py,sha256=ZOCXgVcJYLtBG222pSWX-KwwYq_QvGvwQBZr1R9MJkk,56
+cc/serializer/__init__.py,sha256=KAq_59168fnJOOImyr4Iet2NM8AT8fAbfYl9VY-DFWE,140
+cc/serializer/buffer_serializer.py,sha256=EWHc6bF4-8kqriTrExJbCPau3-lvAZ3Bh1_vrA5ztCk,620
+cc/serializer/serializer.py,sha256=UIXaqXYM2muDmPG5PXy-y2C6A01o-bboqc67AF7mUdg,1977
+cc/serializer/socket_serializer.py,sha256=OK4BriNbOOA6pVbgSr6NbQrHkv1KA3coxsiBaur7k-4,1298
+cc/serializer/uart_serializer.py,sha256=3JVUmSuxDbJ-xO7o3kDYKBY4H7rgZ_AidedLLAVakNE,1589
+cc.serializer-2023.12.26.dist-info/LICENSE,sha256=E55tAHN_CF2REYLQWY05Ca8yIf2GUVt4IGDbTUtiwlk,1069
+cc.serializer-2023.12.26.dist-info/METADATA,sha256=qOcUXcW31qNVSxkXfaAsL4Sa-hgYtydjo1a82-iNT2g,722
+cc.serializer-2023.12.26.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+cc.serializer-2023.12.26.dist-info/top_level.txt,sha256=o5YPSLsfk-ISzR6mI7m1ilDZOh6HbwFyuMB8NIJKUPE,3
+cc.serializer-2023.12.26.dist-info/RECORD,,
