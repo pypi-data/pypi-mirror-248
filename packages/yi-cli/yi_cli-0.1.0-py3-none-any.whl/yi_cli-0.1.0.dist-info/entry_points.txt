@@ -1,0 +1,6 @@
+[console_scripts]
+iching=yi_cli.main:app
+yi=yi_cli.main:app
+yi-cli=yi_cli.main:app
+yic=yi_cli.main:app
+
