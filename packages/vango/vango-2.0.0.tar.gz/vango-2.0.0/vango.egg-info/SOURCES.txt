@@ -1,0 +1,7 @@
+setup.py
+vango/__init__.py
+vango/uploadfile.py
+vango.egg-info/PKG-INFO
+vango.egg-info/SOURCES.txt
+vango.egg-info/dependency_links.txt
+vango.egg-info/top_level.txt
