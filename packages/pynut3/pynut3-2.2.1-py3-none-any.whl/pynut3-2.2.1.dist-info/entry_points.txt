@@ -1,0 +1,2 @@
+[console_scripts]
+demoups = pynut3.demoups:demo
