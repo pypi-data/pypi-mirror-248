@@ -1,0 +1,3 @@
+[console_scripts]
+flytezen=flytezen.cli:main
+
