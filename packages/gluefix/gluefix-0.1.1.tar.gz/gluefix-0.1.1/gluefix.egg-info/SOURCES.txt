@@ -1,0 +1,11 @@
+.gitignore
+README.md
+gluefix.py
+pyproject.toml
+renovate.json
+.github/workflows/upload.yaml
+gluefix.egg-info/PKG-INFO
+gluefix.egg-info/SOURCES.txt
+gluefix.egg-info/dependency_links.txt
+gluefix.egg-info/requires.txt
+gluefix.egg-info/top_level.txt
