@@ -1,0 +1,5 @@
+pydantic
+faker
+aiohttp
+gptfunction
+random-username

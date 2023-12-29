@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+src/petstoreapi/__init__.py
+src/petstoreapi/api.py
+src/petstoreapi/generate.py
+src/petstoreapi.egg-info/PKG-INFO
+src/petstoreapi.egg-info/SOURCES.txt
+src/petstoreapi.egg-info/dependency_links.txt
+src/petstoreapi.egg-info/requires.txt
+src/petstoreapi.egg-info/top_level.txt
+src/petstoreapi/models/__init__.py
+src/petstoreapi/models/device.py
+src/petstoreapi/models/pet.py
+src/petstoreapi/models/user.py
+test/test_petstore_api.py
