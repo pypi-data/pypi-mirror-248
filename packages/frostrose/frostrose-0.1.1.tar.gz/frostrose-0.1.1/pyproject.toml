@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "frostrose"
+version = "0.1.1"
+description = "A Python library for accessing the Norwegian Meteorological Institute frost.met.no API"
+authors = ["Paul Skeie"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
