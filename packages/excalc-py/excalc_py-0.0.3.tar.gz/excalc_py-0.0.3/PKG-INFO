@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: excalc-py
+Version: 0.0.3
+Summary: Turn your Excel calculators into python functions.
+Author-email: Ricky L Teachey Jr <ricky@teachey.org>
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: xlwings >=0.30
+Requires-Dist: pytest >=7.4 ; extra == "test"
+Project-URL: Home, https://github.com/Ricyteach/excalc-py
+Provides-Extra: test
