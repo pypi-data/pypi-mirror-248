@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+pytinyxml2.i
+pytinyxml2.py
+setup.py
+tinyxml2.cpp
+tinyxml2.h
+pytinyxml2.egg-info/PKG-INFO
+pytinyxml2.egg-info/SOURCES.txt
+pytinyxml2.egg-info/dependency_links.txt
+pytinyxml2.egg-info/top_level.txt
