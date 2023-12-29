@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/ewiretest/__init__.py
+src/ewiretest/ewiretest.py
+src/ewiretest.egg-info/PKG-INFO
+src/ewiretest.egg-info/SOURCES.txt
+src/ewiretest.egg-info/dependency_links.txt
+src/ewiretest.egg-info/top_level.txt
