@@ -1,0 +1,9 @@
+motion/__init__.py,sha256=ozliexst9pFVKdl-ZFt8RxQjIdlatpcSHqtRXbt8LJo,412
+motion/extractor.py,sha256=EttLSpJD_J3vljObKezmECyucjjzPgdWnnsR2pY2_F4,308
+motion/freeze.py,sha256=HZRLsug4tgSQn67j3i8f_ZFa-pVougL4dbwFwerWF8Y,2315
+motion/picker.py,sha256=HMbMilaDRA8dsj1rT4nSGlZhL_m8SXUIWXMhbACwOKM,5570
+freezy-1.1.1.dist-info/LICENSE,sha256=BtOULBhyirABto-_ryBYCactdWv8Gn8GqFp47_Kaksw,1069
+freezy-1.1.1.dist-info/METADATA,sha256=DtRD8aLyG0AdA_j29zjB-z2b39580jVdMn8nXiY7vbE,1081
+freezy-1.1.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+freezy-1.1.1.dist-info/top_level.txt,sha256=E9RTvbgvBIgO3RWcgGtgIHlM3v-RG0fqt-WzobhO1c0,7
+freezy-1.1.1.dist-info/RECORD,,
