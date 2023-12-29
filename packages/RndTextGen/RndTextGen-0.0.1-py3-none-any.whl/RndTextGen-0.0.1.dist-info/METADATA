@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: RndTextGen
+Version: 0.0.1
+Summary: This is a python library for generating random text.
+Home-page: https://github.com/LincolnCox29/Random-Text-Generator
+Author: Lincoln Cox (Dmitry Vakhnenko)
+Author-email: just.kcgo@gmail.com
+Project-URL: GitHub, https://github.com/LincolnCox29
+Keywords: Random Text
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+## What is this? ##
+
+This is a python library for generating random text.
+
+## guide ##
+
+The function looks like this:
+
+    (language)_rnd_text(number of words)
+
+### Example ###
+
+    rus_rnd_text(40)
+
+    return:
+        РЎР°РЅРєС†РёСЏ Р±Р°СЂС‹С€РЅРёС‡Р°С‚СЊ СЂР°Р·РІРѕР·РёС‚СЊ РїРµСЂРµР·Р°СЂСЏРґРёС‚СЊ,РѕР±РѕР·СЂРµС‚СЊ РґР¶РµСЂСЃРё РіРёРґСЂРѕСЃС‚Р°РЅС†РёСЏ СЂР°Р·РѕР±СЂР°С‚СЊСЃСЏ РёСЃРїРѕРІРµРґР°С‚СЊ РґРёСЃС‚Р°РЅС†РёСЏ РѕР±РёС…РѕРґ РіР°СЂРїСѓРЅРµСЂ. РќР°РїРёС‚Р°С‚СЊСЃСЏ,РѕР±СЂР°Р±РѕС‚С‡РёРє СЃР±РёС‚СЊСЃСЏ РјРµР·РѕРЅРёРЅ Р»СЋР±РёРјРµС† РІРІРёРґСѓ РєРІР°РґСЂРёРіР° РєР°СЂР°РёРјС‹ Р¶СѓРїР°РЅ Р»РµРґС‹С€РєР°. Р—Р°РµРґР°С‚СЊ РіРµСЂРјР°РЅРёР·РёСЂРѕРІР°С‚СЊ РЅР°РїРёС‚РѕРє СЃР°С„Р°СЂРё РіРѕРјРµРѕРїР°С‚РёСЏ РѕР±СЉРµР·РґРёС‚СЊ РЅР°РєРёРїСЊ,С‚РѕРїРѕСЂС‰РёС‚СЊ РјРµС€РѕС‡РЅРёРє. РҐРѕСЂРёСЃС‚ РґРµРІСЏРЅРѕСЃС‚Рѕ,РµСЂР·Р°С‚СЊ Р°РєСѓС€РµСЂРєР° РјР°СЂРµРЅР°,РёРјСѓС‰РµСЃС‚РІРѕ РєРµР»СЊРЅРµСЂ. РљР»Р°Рґ С†РёРЅРєРѕРіСЂР°С„РёСЏ,РїР°СЂР°Р·РёС‚Р°СЂРЅС‹Р№ РєР°РјРµСЂРЅС‹Р№,РґРёРЅР°РјРѕРјРµС‚СЂ.

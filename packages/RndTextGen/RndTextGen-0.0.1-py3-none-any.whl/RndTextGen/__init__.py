@@ -1,0 +1,1 @@
+from rus_rnd_text import rus_random_text
