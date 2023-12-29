@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: GridPolator
+Version: 0.3.2
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: numpy
+Requires-Dist: astropy
+Requires-Dist: pathlib
+Requires-Dist: jax
+Requires-Dist: jaxlib
+Requires-Dist: tqdm
+Requires-Dist: h5py
+Requires-Dist: requests
+Requires-Dist: matplotlib ; extra == 'plot'
+Requires-Dist: maturin ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Provides-Extra: plot
+Provides-Extra: dev
+License-File: LICENSE
+Summary: Interpolate a grid of spectroscopic models.
+Author-email: Ashraf Dhahbi <achref.dhahbi@nasa.gov>, Ted Johnson <ted.johnson@unlv.edu>
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst; charset=UTF-8
+Project-URL: Repository, https://github.com/VSPEC-collab/GridPolator
+Project-URL: Issues, https://github.com/VSPEC-collab/GridPolator/issues
+
+GridPolator
+===========
+
+A package to interpolate stellar spectral grids.
+
+Installation
+------------
+
+GridPolator can be installed from PyPI:
+
+    pip install gridpolator
+
