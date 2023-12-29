@@ -1,0 +1,14 @@
+atyp
+nchr
+nlit
+pfmt
+chck
+asto
+atup
+
+[dev]
+numpy
+pandas
+torch
+torchvision
+pytorch_lightning
