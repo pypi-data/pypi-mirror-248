@@ -1,0 +1,14 @@
+maddlib/__init__.py,sha256=Iwwp_UmePggaehR4ydARCeB9E4HX4o9gIk0JZBycld8,28
+maddlib/evaluation.py,sha256=InslgZNnT-pHF2613H2jSIwZS8Z9k7DXd7a8BNLurko,6513
+maddlib/optimal_bandwidth.py,sha256=NGV-uUrnBDiYo2vCgWoG8AcInNdWMeSnWC6FWKN_nYE,9994
+maddlib/postprocessing/MADD_tools.py,sha256=KAHouJTGzziIbUqMstdx53uXqm-SdJBCMRb9xbDN27I,1004
+maddlib/postprocessing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+maddlib/postprocessing/distribution_examples.py,sha256=s2sQ4wHPoBEv48c25A-Q6YhuX5HxSbVeJdVJiBg8c6M,1501
+maddlib/postprocessing/distribution_tools.py,sha256=0HoSi_oCcI6b6XzKFTvG-E0wgLeZ5tsZlF4CWbzxoS0,6998
+maddlib/postprocessing/postprocessing_tools.py,sha256=L1v_aTq6X6pXfpO7Y8ngsgIG7-G7hcpRj8AqIT6dmK0,24761
+maddlib/postprocessing/simulation_tools.py,sha256=_NGgZNUawcfcYBzICFwf7uqww0syVWgehTpgB7dMaU0,1355
+maddlib-1.0.0.dist-info/LICENSE.md,sha256=F2_dcSRYppQ1ECeR8GzxS8ZvhgiTUUFcnfnDwmN5hjE,17689
+maddlib-1.0.0.dist-info/METADATA,sha256=dpoJXe9NTqPttUTK8rqXzmn5wcyUI-SFVNqpQGTmeF8,2191
+maddlib-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+maddlib-1.0.0.dist-info/top_level.txt,sha256=T4JaPeatunHNuzf0UlWpKCNsJpLtqs5xDmUKuWbjkUQ,8
+maddlib-1.0.0.dist-info/RECORD,,
