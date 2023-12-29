@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: map-utils-xethhung12
+Version: 0.0.1
+Summary: A small package with maps related utils
+Author-email: Xeth Hung <admin@xethh.me>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+
+# map-utils-xethhung12
+
+A simple library for google map or map related operation.
+* Find denso map code from google map link (make use exists [website](https://saibara.sakura.ne.jp/map/convgeo.cgi))
+* Get real path from google map from `url shortening`
+
+# build
+ensure `python` command works well.
+If the command not work, try use `alias python="python3"` or install `python3-is-python` package.
+
+run build script:
+```shell
+./py-build.sh
+```
+
+# upload 
