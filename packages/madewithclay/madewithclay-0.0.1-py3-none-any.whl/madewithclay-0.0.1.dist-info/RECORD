@@ -1,0 +1,15 @@
+clay/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+clay/_modidx.py,sha256=kJHs1XxdOB2k86Y5g4ffmv84GEWnnLXFPJ25MhPcPhA,3222
+clay/core.py,sha256=EuYvpHcIANAhPErDI0qzy-MAXHptdVP3Usn7jGwEX0o,147
+clay/embeddings.py,sha256=_H8_Q0cMHF5dM0Pss4hxOKj4BY-U6Ur1zOmOm97l70w,9256
+clay/model.py,sha256=jq--qi91y4RiEFsPxzpLLemXtDQeoKeb9e1QlXezZ1I,152
+madewithclay/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+madewithclay/_modidx.py,sha256=nYeD7U7evDk2HdVw4OOuteQJuzRj0ucT5gOu2Y13YqY,4678
+madewithclay/embeddings.py,sha256=SyiDyrZcc5rKhIil5m2STlY0WeJXkwsIoR87XXSt7vU,11555
+madewithclay/model.py,sha256=jq--qi91y4RiEFsPxzpLLemXtDQeoKeb9e1QlXezZ1I,152
+madewithclay-0.0.1.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+madewithclay-0.0.1.dist-info/METADATA,sha256=HLi32JbPqYh1C1UQ20iQrNTDkaLuJmPpB2du-vx5IbY,3643
+madewithclay-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+madewithclay-0.0.1.dist-info/entry_points.txt,sha256=td6DxIy5DZLE8HtqBMHfmvdiamE5M-36uEJ-UCEnORM,46
+madewithclay-0.0.1.dist-info/top_level.txt,sha256=F3XGLfY-JiYEfszbLFWjqUlAol-H1GehIPDFb9VCCJQ,18
+madewithclay-0.0.1.dist-info/RECORD,,
