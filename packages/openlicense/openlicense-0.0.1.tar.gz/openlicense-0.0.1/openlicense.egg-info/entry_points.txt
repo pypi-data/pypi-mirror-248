@@ -1,0 +1,2 @@
+[console_scripts]
+openlicense = openlicense.__main__:main
