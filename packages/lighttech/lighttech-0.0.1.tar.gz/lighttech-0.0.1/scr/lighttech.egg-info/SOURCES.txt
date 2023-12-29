@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+scr/lighttech.egg-info/PKG-INFO
+scr/lighttech.egg-info/SOURCES.txt
+scr/lighttech.egg-info/dependency_links.txt
+scr/lighttech.egg-info/top_level.txt
