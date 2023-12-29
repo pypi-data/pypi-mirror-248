@@ -1,0 +1,11 @@
+sleepytime/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sleepytime/__main__.py,sha256=6pr8LnYAF16KvXAcuE3aHrLpu_26ElqiiEyHsp3gT1k,484
+sleepytime/__version__.py,sha256=BLXRGJHfnEu0fpvESaAw8qq-6Z9-v_2FQPkeqJfwItk,23
+sleepytime/gui.py,sha256=l0ICi6yVXd_bcBWOP5Gsm73uVtNUJQzoIejVN8hBX2U,3652
+sleepytime/mouse_watcher.py,sha256=ppZmLA1fU-GyJERCoHONJMKewueCT55nUYueL0RDfpY,639
+sleepytime/resume_watcher.py,sha256=iClBYY5ZEV6mYLs5hUzozgan0qfy_I9PP9EnPv_O8QY,2628
+sleepytime-0.0.8.dist-info/LICENSE,sha256=t1gjFM66306vuAGGbdrs3EyFdusfJD7naRsiYdHNkYY,1094
+sleepytime-0.0.8.dist-info/METADATA,sha256=npYYYdyARZHZYI9ZEmNM7R1eSeqiSeefDlOfxs8Hr4Q,1497
+sleepytime-0.0.8.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+sleepytime-0.0.8.dist-info/top_level.txt,sha256=w2W1jOugscs2-HmiD7ASipjNdZThlfFr3zKgWMMrq5o,11
+sleepytime-0.0.8.dist-info/RECORD,,
