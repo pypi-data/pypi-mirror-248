@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ania · {{title}}</title>
+  <style>
+    :root {
+      --ania: #fab3ad;
+      --ania-hover: #e3a29c;
+    }
+    body {
+      background-color: #141414;
+      padding: 1rem 4rem;
+      margin: 0 0 6rem 0;
+      font-size: 16px;
+      font-family: monospace;
+    }
+    header {
+      display: flex;
+      gap: .2rem;
+      flex-direction: column;
+      margin: 0 0 2rem 0;
+    }
+    header p {
+    color: #fff;
+    }
+    header p a {
+      color: var(--ania);
+    }
+    h2 {
+      color: #fff
+    }
+
+    .banner {
+      white-space: pre;
+      color: var(--ania);
+      font-size: 12pt;
+      font-family: Monospace;
+      width: fit-content;
+      display: block;
+      padding: .2rem .8rem;
+      border-radius: 1rem;
+    }
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 4rem;
+    }
+    /*#################################
+    # Tabs y Iframes
+    ##################################*/
+    .wrapper {
+      padding: 0;
+      width: fit-content;
+      overflow: hidden;
+      border-radius: 6px;
+    }
+
+    .tabs-container {
+      display: flex;
+      background-color: var(--ania);
+    }
+
+    .tab {
+      padding: 10px;
+      background-color: transparent;
+      cursor: pointer;
+      margin-right: 5px;
+    }
+    .tab.active {
+      padding: 10px;
+      background-color: var(--ania-hover);
+      cursor: pointer;
+      margin-right: 5px;
+    }
+
+    .tab:hover {
+      background-color: var(--ania-hover); 
+    }
+
+    .iframes-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background-color: #000; 
+    }
+    .placeholder {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .placeholder p {
+      padding: 4rem 0 0 0;
+      text-align: center;
+      color: var(--ania);
+      font-size: 2rem;
+    }
+    .iframe {
+      display: none;
+      width: 800px;
+      height: 460px;
+      border: 0px solid transparent;
+    }
+    .iframe.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+  <header>
+    <div  class="banner">            
+    /\         (_)      
+   /  \   _ __  _  __ _ 
+  / /\ \ | '_ \| |/ _` |
+ / ____ \| | | | | (_| |
+/_/    \_\_| |_|_|\__,_|
+    </div>
+    <p>★ No olvides darnos una estrella en <a href="https://github.com/ania-cli/ania" target="_blank">Github</a></p>
+  </header>
+
+  <aside>
+    <h2>
+      Episodio {{episode}} de {{title}}
+    </h2>
+    <div class="wrapper">
+
+      <div class="tabs-container">
+        {% for server in servers %}
+        <div class="tab" data-tab="{{server['server']}}">{{server['title']}}</div>
+        {% endfor %}
+      </div>
+
+      <div class="iframes-container">
+        <div class="iframe active placeholder">
+          <p>
+            ↑ Selecciona un servidor ↑
+          </p>
+        </div>
+        {% for server in servers %}
+          <iframe
+          class="iframe" 
+          data-iframe="{{server['server']}}" 
+          src="{{server['code']}}"
+          allow="fullscreen"
+          ></iframe>
+        {% endfor %}
+      </div>
+    </div>
+    </aside>
+  </main>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const tabs = document.querySelectorAll('.tab')
+    const iframes = document.querySelectorAll('.iframe')
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const tabId = tab.getAttribute('data-tab')
+        changeTab(tabId)
+      });
+    });
+
+    function changeTab(tabId) {
+      iframe = document.querySelector(`.iframe.active`)
+      iframe.src = iframe.src
+
+      tabs.forEach(tab => {
+        tab.classList.remove('active')
+      })
+      iframes.forEach(iframe => {
+        iframe.classList.remove('active')
+      })
+      
+      const activeTab = document.querySelector(`.tab[data-tab="${tabId}"]`)
+      const activeIframe = document.querySelector(`.iframe[data-iframe="${tabId}"]`)
+
+      activeTab.classList.add('active')
+      activeIframe.classList.add('active')
+    }
+})
+</script>
+</body>
+<!-- 
+ _//|
+/oo |
+\mm_|
+
+desarrollado por https://github.com/migueweb
+
+============================================-->
+</html>

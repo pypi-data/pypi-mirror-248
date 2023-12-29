@@ -1,0 +1,16 @@
+ania/__init__.py,sha256=tsRJk9SLv0tLcjZ5PQyGXvIEMVSX1IufOY_kEioYHxw,181
+ania/api/__init__.py,sha256=0yP8RyU6o5AqwNES5P8q41rbWbFqPuiYD1rCGvZEO_g,12898
+ania/app.py,sha256=Y0_j5vjVYO08WGXeO9ioUlG_EjVJ68lR0yibhQjcviY,562
+ania/get_servers.py,sha256=NewJcZ4w3jUku8XeEUIUQcS8ek5YvJnLNodXXVAtsRs,874
+ania/search_anime.py,sha256=wqofsogXgpsZ3DEW_heRBkQ29xIwYyO8o3PbSvAZS3Q,1043
+ania/select_anime.py,sha256=lFjavfSiGGJDVMlhU5VK8xALYwRwMSwiSxSbubLROWI,901
+ania/select_episode.py,sha256=1_Ud5qSAkZyaz1g3Tzw6TLmgErwBwNIO5RrGie7bhE8,1098
+ania/ui.py,sha256=RVayCZ6Gh3o6twzAHEyO3XCasswPL6biwFqEfDQhte4,3107
+ania/utils.py,sha256=TAPq4k0UmR3_h_hOcDcYx4m4Y8XKZ1IXbxD9RI8rGiU,315
+ania/web_player/__init__.py,sha256=DgpKxfeV7KO7vxbmBPm02CbePXGCukQ8_o1Y0TK7pD0,876
+ania/web_player/templates/index.html,sha256=BmsCReLs82z8BeT1i2XfxQNm9HX7cAfYbkNCxZ4kcmk,4393
+ania-1.0.0.dist-info/LICENSE,sha256=f9seR1u-AmockYrN3L6se_2XD854mL-wW86XB2LUu7Y,722
+ania-1.0.0.dist-info/METADATA,sha256=_DByKJWJb240_ToGltyM_ULxGvQvIAyimXfkzGaWIh4,1581
+ania-1.0.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+ania-1.0.0.dist-info/entry_points.txt,sha256=f4-F2IllGFKInBTVofaL0t7_Zgur4XhGApLzq156Mkg,33
+ania-1.0.0.dist-info/RECORD,,

@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: ania
+Version: 1.0.0
+Summary: Search, enjoy and download anime in Spanish using the command line.
+Home-page: https://github.com/ania-cli/ania
+License: GPL-3.0
+Author: Miguel Amador
+Author-email: miguesdev@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: bs4 (==0.0.1)
+Requires-Dist: cloudscraper (==1.2.71)
+Requires-Dist: flask (==3.0.0)
+Requires-Dist: lxml (==4.9.3)
+Requires-Dist: termcolor (==2.3.0)
+Description-Content-Type: text/markdown
+
+```ruby
+    /\         (_)      
+   /  \   _ __  _  __ _ 
+  / /\ \ | '_ \| |/ _` |
+ / ____ \| | | | | (_| |
+/_/    \_\_| |_|_|\__,_|
+```
+Busca, disfruta y descarga anime mediante la línea de comandos en cualquier sistema operativo.
+## Instalacion
+
+```bash
+pip install ania
+```
+
+__Uso__
+```bash
+ania
+```
+
+## Configuración para desarrollo
+Prerequisitos
++ [Python](https://www.python.org/) ^3.8
++ [Poetry](https://python-poetry.org/docs)
+
+```bash
+# Clonamos el repositorio
+git clone https://github.com/ania-cli/ania.git
+
+# Nos movemos al directorio 'ania'
+cd ania
+
+# Instalamos las dependencias
+poetry install
+
+# Activamos el entorno virtual
+poetry shell
+
+# Para ejecutar la app usamos el siguiente comando
+poetry run ania
+```
+
+## Author
+[@migueweb](https://github.com/migueweb)
+
