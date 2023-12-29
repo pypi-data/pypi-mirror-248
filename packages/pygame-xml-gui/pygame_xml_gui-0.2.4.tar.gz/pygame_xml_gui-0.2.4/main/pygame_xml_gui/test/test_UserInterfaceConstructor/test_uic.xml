@@ -1,0 +1,12 @@
+<canvas pySize="500x400" pyBackground="(100,100,200)">
+    <label pyClass="header"> People </label>
+    <list>
+        <list-item pyFor="human in humans">
+            <label pyWidth="5"></label> <!-- for space on left (and right) -->
+            <label pyWidth="20">Name: </label>
+            <label pyWidth="45"> {{ human.name }} </label>
+            <label pyWidth="15"> Age: </label>
+            <label pyWidth="10"> {{ human.age }} </label>
+        </list-item>
+    </list>
+</canvas>
