@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "litrl"
+version = "0.0.7"
+authors = [
+  { name="Clement Gohlke"},
+]
+description = "Implementation of RL algorithms in PyTorch Lightning"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "lightning~=2.1.2",
+  "torchrl~=0.2.1",
+  "hydra-core~=1.3.2",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.urls]
+Homepage = "https://github.com/c-gohlke/LightningRL"
+
+[tool.setuptools.packages.find]
+include = ["litrl*"]

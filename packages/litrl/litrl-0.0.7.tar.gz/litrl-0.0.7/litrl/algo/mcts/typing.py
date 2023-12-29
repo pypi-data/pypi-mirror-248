@@ -1,0 +1,1 @@
+ActType = int
