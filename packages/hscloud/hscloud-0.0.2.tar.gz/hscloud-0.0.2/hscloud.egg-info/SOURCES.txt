@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+hscloud/__init__.py
+hscloud/utils.py
+hscloud.egg-info/PKG-INFO
+hscloud.egg-info/SOURCES.txt
+hscloud.egg-info/dependency_links.txt
+hscloud.egg-info/top_level.txt
