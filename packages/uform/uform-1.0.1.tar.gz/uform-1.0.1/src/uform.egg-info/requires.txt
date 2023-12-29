@@ -1,0 +1,5 @@
+torch>=1.13.1
+tokenizers>=0.13.3
+huggingface_hub>=0.16.4
+transformers>=4.36.2
+torchvision
