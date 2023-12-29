@@ -1,0 +1,2 @@
+[console_scripts]
+gdpr_api_tester = gdpr_api_tester.main:main
