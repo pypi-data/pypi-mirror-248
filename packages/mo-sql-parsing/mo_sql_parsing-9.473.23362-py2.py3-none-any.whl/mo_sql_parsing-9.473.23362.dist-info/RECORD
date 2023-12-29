@@ -1,0 +1,13 @@
+mo_sql_parsing/__init__.py,sha256=oX6-p40RqpgyifTgW8N-FmWVym8JowEf1afam3KisQs,6426
+mo_sql_parsing/formatting.py,sha256=1AB73YmM2hBH5FBpXGdlUPyrAA62i_B6MJIW31V0nJk,25164
+mo_sql_parsing/keywords.py,sha256=arEad51vZYuigMYDWRAsnyaK-jiDqd6TrvClzMqZ8Qw,11381
+mo_sql_parsing/sql_parser.py,sha256=MMgpPd0j-XXAb--Mw5aIffhLdl4JtlZhsBR_2SSU_uo,42654
+mo_sql_parsing/types.py,sha256=3B0QuSy1_8DVI_-aiwGzHydVR1ZH47OvVdd9XRCOnjk,8553
+mo_sql_parsing/utils.py,sha256=SVV1WgdigarTNwuWlT_WOeRti9oiTdCKVaJk-yNY-gM,24835
+mo_sql_parsing/windows.py,sha256=UXpb-59CM7cPHdl575Guh5cKr6XLDbndPLtzLfVdjTk,2949
+mo_sql_parsing-9.473.23362.dist-info/LICENSE,sha256=YCIsKMGn9qksffmOXF9EWeYk5uKF4Lm5RGevX2qzND0,15922
+mo_sql_parsing-9.473.23362.dist-info/METADATA,sha256=lRFjBfmlEoGKAkvLwQzj0sEEMpRu2wSKCKp-MrDWnHU,9342
+mo_sql_parsing-9.473.23362.dist-info/WHEEL,sha256=iYlv5fX357PQyRT2o6tw1bN-YcKFFHKqB_LwHO5wP-g,110
+mo_sql_parsing-9.473.23362.dist-info/top_level.txt,sha256=P9tODVsRxMEL1jG7yBYiLD3rRo_rjSKa_r-F6cbnfgA,15
+mo_sql_parsing-9.473.23362.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+mo_sql_parsing-9.473.23362.dist-info/RECORD,,
