@@ -1,0 +1,199 @@
+Metadata-Version: 2.1
+Name: slackclient-log-handler
+Version: 0.1.2
+Summary: Posts log events to Slack via API
+Home-page: https://github.com/search5/slackclient_log_handler
+License: Apache-2.0
+Keywords: slack,logging
+Author: Ji-Ho Lee
+Author-email: search5@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Communications :: Chat
+Classifier: Topic :: Office/Business :: Groupware
+Requires-Dist: six (>=1.16.0,<2.0.0)
+Requires-Dist: slack-sdk (>=3.26.1,<4.0.0)
+Project-URL: Repository, https://github.com/search5/slackclient_log_handler
+Description-Content-Type: text/x-rst
+
+slackclient_log_handler
+========================
+
+.. image:: https://img.shields.io/pypi/v/slacker_log_handler.svg?style=flat-square
+    :target: https://pypi.python.org/pypi/slackclient_log_handler
+
+.. image:: https://img.shields.io/pypi/wheel/slacker_log_handler.svg?style=flat-square
+    :target: https://pypi.python.org/pypi/slackclient_log_handler
+
+.. image:: https://img.shields.io/pypi/format/slacker_log_handler.svg?style=flat-square
+    :target: https://pypi.python.org/pypi/slackclient_log_handler
+
+.. image:: https://img.shields.io/pypi/pyversions/slacker_log_handler.svg?style=flat-square
+    :target: https://pypi.python.org/pypi/slackclient_log_handler
+
+.. image:: https://img.shields.io/pypi/status/slacker_log_handler.svg?style=flat-square
+    :target: https://pypi.python.org/pypi/slackclient_log_handler
+
+Python log handler that posts to a Slack channel. Posts to the Slack API
+using https://slack.dev/python-slack-sdk.
+
+Created with the intention of using for a Internal project, but some
+effort has been made to make it generic enough that any Python project
+could use it.
+
+Installation
+------------
+
+.. code-block:: bash
+
+    pip install slackclient-log-handler
+
+Options
+-------
+
+api_token (required)
+~~~~~~~~~~~~~~~~~~~~~
+
+Generate a key at https://api.slack.com/
+
+channel (required)
+~~~~~~~~~~~~~~~~~~
+
+Set which channel you want to post to, e.g. "#general".
+
+username
+~~~~~~~~
+
+The username that will post to Slack. Defaults to "Python logger".
+
+icon_url
+~~~~~~~~
+
+URL to an image to use as the icon for the logger user
+
+icon_emoji
+~~~~~~~~~~
+
+emoji to use as the icon. Overrides icon_url. If neither icon_url nor
+icon_emoji is set, :heavy_exclamation_mark: will be used.
+
+fail_silent
+~~~~~~~~~~~
+Defaults to False.
+If your API key is invalid or for some other reason the API call returns an error,
+this option will silently ignore the API error.
+If you enable this setting, **make sure you have another log handler** that will also handle the same log events,
+or they may be lost entirely.
+
+
+Django configuration
+--------------------
+Logging reference: https://docs.djangoproject.com/en/stable/topics/logging/
+
+This example will send INFO and ERRORS to Slack, as well as errors to admin emails.
+
+-  Set ``SLACK_API_KEY`` in your settings module.
+
+.. code-block:: python
+
+    LOGGING = {
+        'version': 1,
+        'disable_existing_loggers': False,
+        'filters': {
+            'require_debug_false': {
+                '()': 'django.utils.log.RequireDebugFalse'
+            }
+        },
+        'handlers': {
+            'mail_admins': {
+                'level': 'ERROR',
+                'filters': ['require_debug_false'],
+                'class': 'django.utils.log.AdminEmailHandler'
+            },
+            'slack-error': {
+                'level': 'ERROR',
+                'api_token': SLACK_API_KEY,
+                'class': 'slackclient_log_handler.SlackclientLogHandler',
+                'channel': '#general'
+            },
+            'slack-info': {
+                'level': 'INFO',
+                'api_token': SLACK_API_KEY,
+                'class': 'slackclient_log_handler.SlackclientLogHandler',
+                'channel': '#general'
+            },
+            'loggers': {
+                'django.request': {
+                    'handlers': ['mail_admins', 'slack-error', 'slack-info'],
+                    'level': 'ERROR',
+                    'propagate': True,
+                },
+            }
+        }
+    }
+
+Example Python logging handler
+------------------------------
+
+This is how you use `slackclient_log_handler` as a regular Python logging handler.
+This example will send a error message to a slack channel.
+
+.. code-block:: python
+
+    import logging
+    from slackclient_log_handler import SlackclientLogHandler, NoStacktraceFormatter
+
+    # Create slack handler
+    slack_handler = SlackclientLogHandler('my-channel-token', 'my-channel-name')
+
+    # Create logger
+    logger = logging.getLogger('debug_application')
+    logger.addHandler(slack_handler)
+
+    # OPTIONAL: Define a log message formatter.
+    # If you have set stack_trace=True, any exception stack traces will be included as Slack message attachments.
+    # You therefore need to use NoStacktraceFormatter as a base to exclude the trace from the main message text.
+    formatter = NoStacktraceFormatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+    slack_handler.setFormatter(formatter)
+
+    # Define the minimum level of log messages you want to send to Slack
+    slack_handler.setLevel(logging.DEBUG)
+
+    # Test logging
+    logger.error("Debug message from slack!")
+
+Slack message formatting
+------------------------
+
+This example use a subclass that will send a formatted message to a slack channel.
+Reference: https://api.slack.com/docs/message-formatting
+
+.. code-block:: python
+
+  class CustomLogHandler(SlackclientLogHandler):
+      def build_msg(self, record):
+          message = "> New message :\n" + record.getMessage()
+          return message
+
+License
+-------
+
+Apache 2.0
+
+Slack-sdk is also under MIT.
+
+See also: https://api.slack.com/terms-of-service
+
