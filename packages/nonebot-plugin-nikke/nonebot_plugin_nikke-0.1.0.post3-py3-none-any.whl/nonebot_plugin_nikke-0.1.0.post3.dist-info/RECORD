@@ -1,0 +1,10 @@
+nonebot_plugin_nikke-0.1.0.post3.dist-info/METADATA,sha256=4XEr3drBqbRIXvHzbFQs4UFOHKGkIDrlgS4TXBCSZM4,4813
+nonebot_plugin_nikke-0.1.0.post3.dist-info/WHEEL,sha256=N2J68yzZqJh3mI_Wg92rwhw0rtJDFpZj9bwQIMJgaVg,90
+nonebot_plugin_nikke-0.1.0.post3.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+nonebot_plugin_nikke/__init__.py,sha256=aKfanhYsFMNap2jvCT8rfwOOrxiyXS55hFZO-HGb58E,997
+nonebot_plugin_nikke/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nonebot_plugin_nikke/commands/character_picture.py,sha256=Vp5GKFqNe3nvTwaEQLOwogq6-L8GQW_61X0MHZ7NWBk,4511
+nonebot_plugin_nikke/commands/character_rating.py,sha256=rfIvdMN2Zn26PDqAJp_yo3Lulaiv2f47iqkBxR0xEP4,1833
+nonebot_plugin_nikke/json/character_data.json,sha256=tlxI_HaOsR2ZC6pRNH2tE3Wd8PpSuTBzbc5S7B-hGWE,18553
+nonebot_plugin_nikke/json/character_rating.json,sha256=dbogbbYoB4iJ0fz7Tf9ILWBRQDoa19B8BQOVg5htL2A,608
+nonebot_plugin_nikke-0.1.0.post3.dist-info/RECORD,,
