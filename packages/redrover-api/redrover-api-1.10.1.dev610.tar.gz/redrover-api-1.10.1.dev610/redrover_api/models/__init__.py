@@ -1,0 +1,88 @@
+# flake8: noqa
+
+# import all models into this package
+# if you have many models here with many references from one model to another this may
+# raise a RecursionError
+# to avoid this, import only the models that you directly need like:
+# from from redrover_api.model.pet import Pet
+# or import this package, but before doing it, use:
+# import sys
+# sys.setrecursionlimit(n)
+
+from redrover_api.model.absence_create_request import AbsenceCreateRequest
+from redrover_api.model.absence_detail_create_request import AbsenceDetailCreateRequest
+from redrover_api.model.absence_detail_response import AbsenceDetailResponse
+from redrover_api.model.absence_reason_balance_create_request import AbsenceReasonBalanceCreateRequest
+from redrover_api.model.absence_reason_balance_response import AbsenceReasonBalanceResponse
+from redrover_api.model.absence_reason_balance_update_request import AbsenceReasonBalanceUpdateRequest
+from redrover_api.model.absence_reason_category_response import AbsenceReasonCategoryResponse
+from redrover_api.model.absence_reason_response import AbsenceReasonResponse
+from redrover_api.model.absence_reason_tracking_type_enum import AbsenceReasonTrackingTypeEnum
+from redrover_api.model.absence_reason_usage_create_request import AbsenceReasonUsageCreateRequest
+from redrover_api.model.absence_reason_usage_response import AbsenceReasonUsageResponse
+from redrover_api.model.absence_response import AbsenceResponse
+from redrover_api.model.absence_update_request import AbsenceUpdateRequest
+from redrover_api.model.absence_vacancy_detail_request import AbsenceVacancyDetailRequest
+from redrover_api.model.absence_vacancy_request import AbsenceVacancyRequest
+from redrover_api.model.access_control_request import AccessControlRequest
+from redrover_api.model.access_control_response import AccessControlResponse
+from redrover_api.model.accounting_code_allocation_request import AccountingCodeAllocationRequest
+from redrover_api.model.accounting_code_allocation_response import AccountingCodeAllocationResponse
+from redrover_api.model.accounting_code_response import AccountingCodeResponse
+from redrover_api.model.administrator_request import AdministratorRequest
+from redrover_api.model.administrator_response import AdministratorResponse
+from redrover_api.model.approval_status_enum import ApprovalStatusEnum
+from redrover_api.model.assignment_response import AssignmentResponse
+from redrover_api.model.attribute_request import AttributeRequest
+from redrover_api.model.attribute_response import AttributeResponse
+from redrover_api.model.authentication_properties import AuthenticationProperties
+from redrover_api.model.bad_request_result import BadRequestResult
+from redrover_api.model.contract_response import ContractResponse
+from redrover_api.model.country_enum import CountryEnum
+from redrover_api.model.day_of_week import DayOfWeek
+from redrover_api.model.day_part_enum import DayPartEnum
+from redrover_api.model.employee_request import EmployeeRequest
+from redrover_api.model.employee_response import EmployeeResponse
+from redrover_api.model.file_format import FileFormat
+from redrover_api.model.fill_status_enum import FillStatusEnum
+from redrover_api.model.forbid_result import ForbidResult
+from redrover_api.model.int32_id_name_class import Int32IdNameClass
+from redrover_api.model.int32_locator_request import Int32LocatorRequest
+from redrover_api.model.int32_locator_response import Int32LocatorResponse
+from redrover_api.model.needs_replacement_enum import NeedsReplacementEnum
+from redrover_api.model.not_found_result import NotFoundResult
+from redrover_api.model.ok_object_result import OkObjectResult
+from redrover_api.model.ok_result import OkResult
+from redrover_api.model.org_user_employee_response import OrgUserEmployeeResponse
+from redrover_api.model.organization_response import OrganizationResponse
+from redrover_api.model.pay_code_response import PayCodeResponse
+from redrover_api.model.position_job_request import PositionJobRequest
+from redrover_api.model.position_request import PositionRequest
+from redrover_api.model.position_response import PositionResponse
+from redrover_api.model.position_schedule_custom_variant_request import PositionScheduleCustomVariantRequest
+from redrover_api.model.position_schedule_item_request import PositionScheduleItemRequest
+from redrover_api.model.position_schedule_mode_enum import PositionScheduleModeEnum
+from redrover_api.model.position_schedule_request import PositionScheduleRequest
+from redrover_api.model.reason import Reason
+from redrover_api.model.school_year_response import SchoolYearResponse
+from redrover_api.model.simple_absence_detail import SimpleAbsenceDetail
+from redrover_api.model.simple_person import SimplePerson
+from redrover_api.model.simple_position import SimplePosition
+from redrover_api.model.state_enum import StateEnum
+from redrover_api.model.substitute_attribute_request import SubstituteAttributeRequest
+from redrover_api.model.substitute_attribute_response import SubstituteAttributeResponse
+from redrover_api.model.substitute_preferences_request import SubstitutePreferencesRequest
+from redrover_api.model.substitute_related_org_request import SubstituteRelatedOrgRequest
+from redrover_api.model.substitute_request import SubstituteRequest
+from redrover_api.model.substitute_response import SubstituteResponse
+from redrover_api.model.time_off_balance_request import TimeOffBalanceRequest
+from redrover_api.model.user_roles import UserRoles
+from redrover_api.model.vacancy_accounting_code_allocation_request import VacancyAccountingCodeAllocationRequest
+from redrover_api.model.vacancy_create_request import VacancyCreateRequest
+from redrover_api.model.vacancy_detail_create_request import VacancyDetailCreateRequest
+from redrover_api.model.vacancy_detail_response import VacancyDetailResponse
+from redrover_api.model.vacancy_detail_search_response import VacancyDetailSearchResponse
+from redrover_api.model.vacancy_response import VacancyResponse
+from redrover_api.model.webhook_create_request import WebhookCreateRequest
+from redrover_api.model.webhook_response import WebhookResponse
+from redrover_api.model.webhook_update_request import WebhookUpdateRequest
