@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+FastWebGUI.egg-info/PKG-INFO
+FastWebGUI.egg-info/SOURCES.txt
+FastWebGUI.egg-info/dependency_links.txt
+FastWebGUI.egg-info/requires.txt
+FastWebGUI.egg-info/top_level.txt
+fastwebgui.egg-info/PKG-INFO
+fastwebgui.egg-info/SOURCES.txt
+fastwebgui.egg-info/dependency_links.txt
+fastwebgui.egg-info/requires.txt
+fastwebgui.egg-info/top_level.txt
+tests/test_example.py
