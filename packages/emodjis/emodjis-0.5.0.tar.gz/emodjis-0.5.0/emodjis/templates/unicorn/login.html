@@ -1,0 +1,16 @@
+{% load i18n %}
+<div class="container inline-block place-content-right mx-auto px-2 float-end">
+    {% translate "authenticate" as authentication_string%}
+    {% if authenticated %}
+        <div class="inline-block float-end px-2">
+        <button type="button" class="button" unicorn:click="disconnect">Disconnect {{ user.last_name }}</button></div>
+    {% else %}
+        <div class="inline-block float-end px-2">
+            <button type="button" class="button" unicorn:click="connect">{{ authentication_string }}</button>
+        </div>
+        <div class="inline-block float-end px-2">
+            <input type="password" unicorn:model="password"  placeholder="{% translate 'password' %}"/></div>
+        <div class="inline-block float-end px-2">
+            <input type="text" unicorn:model="username" placeholder="{% translate 'username' %}"/></div>
+    {% endif %}
+</div>
