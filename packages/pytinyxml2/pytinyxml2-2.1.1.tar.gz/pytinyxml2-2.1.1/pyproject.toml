@@ -1,0 +1,23 @@
+[project]
+name = "pytinyxml2"
+version = "2.1.1"
+description = "Python wrapper for tinyxml2"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Jiajie Chen", email = "c@jia.je" },
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+
+[project.urls]
+Homepage = "https://github.com/jiegec/pytinyxml2"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
