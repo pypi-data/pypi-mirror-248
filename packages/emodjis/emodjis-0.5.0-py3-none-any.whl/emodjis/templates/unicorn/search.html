@@ -1,0 +1,14 @@
+{%  load i18n %}
+<div class="w-100 inline-block ">
+    <input unicorn:model="search" type="text" placeholder="search" class="w-80"/>
+    {% if request.user.is_authenticated %}
+        <div class="inline-block form-check form-switch">
+        <input unicorn:model="nsfw" type="checkbox" placeholder="NSFW" id="nsfw" class="form-check-input"/>
+        <label for="nsfw" class="form-check-label" title="{% translate 'Include NSFW icons' %}">{% translate "NSFW" %}</label>
+        </div>
+        <div class="inline-block form-check form-switch">
+        <input unicorn:model="private" type="checkbox" placeholder="private" id="private" class="form-check-input"/>
+        <label for="private" class="form-check-label" title="{% translate 'Include private icons' %}">{% translate "private icons" %}</label>
+        </div>
+    {% endif %}
+</div>
