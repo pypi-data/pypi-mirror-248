@@ -1,0 +1,16 @@
+diamondpack/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+diamondpack/__main__.py,sha256=zFIqZ4HGVfO2gqgvBSUGb_u-CjrwgRq9njTl7tqzgAU,3071
+diamondpack/dpconfig.py,sha256=GaJO_JG2OV-EeYMrCGAtYssFbHapDu2Hlok15CJgJMU,1243
+diamondpack/dplog.py,sha256=YfY9BWyIwPjrWargTC0vGSCDHeMfCCGCDsithTgr2hs,513
+diamondpack/pack.py,sha256=itGp5NAtnLUcSKT7r5VyBH8nCQ1HhHcYsNfTX-X_1z8,9033
+diamondpack/app-templates/CMakeLists.txt,sha256=XiNba3zHPMLYZL98BKna6htC7nBNsWfO-WIrDwp-CTA,200
+diamondpack/app-templates/app.bat,sha256=_wRzbhsgufqi7bNl19vN5pvoD3IevUYJ9rB69CWCfN8,182
+diamondpack/app-templates/app.cpp,sha256=mMBvYFdowLG1qKyQcW8mScGIlO0wrMTQu5TmP8UPMSk,3246
+diamondpack/app-templates/app.sh,sha256=4wrxuGMyplrv4kFEb8xhFAm1jzvjPcmuEz57IBkfARs,221
+diamondpack/app-templates/diamondpack-license.txt,sha256=YXb95mAMBCxBkn8kbgQQ_NpkV3LDB_72MTjmAhrP2aM,1644
+diamondpack-1.4.1.dist-info/LICENSE,sha256=A8KduK6taUQHzpUao9tv79BwOgjk45VYSo2ju0Rx8zk,1079
+diamondpack-1.4.1.dist-info/METADATA,sha256=zPVsWKO04jkGF8d5UG8rQKGNhiNZ-BzevQhID0KBkJg,3989
+diamondpack-1.4.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+diamondpack-1.4.1.dist-info/entry_points.txt,sha256=bnSA3gSI6wGwfQ-WwQqJQNrEWi5SH2hFntd83y68su4,58
+diamondpack-1.4.1.dist-info/top_level.txt,sha256=tvf-NLABUNNOMZSgAn8aDkHS50afOI8siizXmgWrXEE,12
+diamondpack-1.4.1.dist-info/RECORD,,
