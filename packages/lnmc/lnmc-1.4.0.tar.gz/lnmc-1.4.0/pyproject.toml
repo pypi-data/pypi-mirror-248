@@ -1,0 +1,92 @@
+[build-system]
+requires = ["setuptools >= 69.0.3", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lnmc"
+description = "Allows to create symbolic link in batches from a YAML file and consolidate them in a specific directory."
+authors = [{name = "Daniel Luque", email = "danielluque14@gmail.com"}]
+readme = "README.md"
+license = {text = "AGPLv3+"}
+keywords = ["linux", "windows", "devops", "sysadmin", "batches", "symlink", "command-line-tool", "cli"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: System :: Systems Administration",
+    "Topic :: Utilities",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "Click ~=8.1.7",
+    "PyYAML ~=6.0.0"
+]
+dynamic = ["version"]
+
+[project.urls]
+"Source Code"  = "https://github.com/LuqueDaniel/lnmc"
+"Issue Tracker" = "https://github.com/LuqueDaniel/lnmc/issues"
+Documentation = "https://github.com/LuqueDaniel/lnmc/blob/master/README.md"
+
+[project.optional-dependencies]
+dev = [
+    "pre-commit ==3.5.0",
+    "black ==23.12.1",
+    "isort ~=5.13.2",
+    "ruff >=0.1.9",
+    "mypy ~=1.8.0",
+    "pytest ~=7.4.3",
+    "pytest-cov ~=4.1.0",
+    "types-PyYAML ~=6.0.0",
+]
+
+[project.scripts]
+lnmc = "lnmc:lnmc"
+
+[tool.setuptools]
+py-modules = ["lnmc"]
+dynamic = {version = {attr = "lnmc.__version__"}}
+
+[tool.black]
+target-version = ["py38"]
+
+[tool.isort]
+profile = "black"
+known_third_party = ["click", "pytest", "yaml"]
+
+[tool.pytest.ini_options]
+addopts = "-vvs --cov=lnmc"
+
+[tool.ruff]
+target-version = "py38"
+src = ["."]
+fix = false
+line-length = 88  # its default
+select = [
+    "F",   # Pyflakes
+    "E",   # pycodestyle (E, W)
+    "W",
+    "B",   # flake8-bugbear
+    "N",   # pep8-naming
+    "UP",  # pyupgrade
+    "S",   # flake8-bandit
+    "C4",  # flake8-comprehensions
+    "PT",  # flake8-pytest-style
+    "PTH",  # flake8-use-pathlib
+]
+
+[tool.ruff.extend-per-file-ignores]
+"*_test.py" = ["S101"]  # Bandit use of asset in test files
+
+[tool.mypy]
+strict = true
