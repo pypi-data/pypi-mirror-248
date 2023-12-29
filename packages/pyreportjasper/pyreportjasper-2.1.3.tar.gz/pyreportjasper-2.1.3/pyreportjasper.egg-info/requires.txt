@@ -1,0 +1,11 @@
+jpype1
+
+[docs]
+readthedocs-sphinx-ext
+sphinx
+sphinx-rtd-theme
+recommonmark
+commonmark
+mock
+docutils
+Pygments
