@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: wattrex-cycler-datatypes
+Version: 1.0.3
+Summary: Defines custom datatypes for use in cycler scripts related.
+Author-email: Marius Crisan <mariuscrsn+pypi@gmail.com>, Pablo Pastor <pastorpflores+pypi@gmail.com>, Javier Sanz <javiersanzmoline+pypi@gmail.com>, Roberto Aldea <r.aldea.csic+pypi@gmail.com>, Luis Roche <luis.roche@hotmail.com>
+Maintainer-email: Marius Crisan <mariuscrsn+pypi@gmail.com>, Javier Sanz <javiersanzmoline+pypi@gmail.com>
+License: code/LICENSE.txt
+Project-URL: Homepage, https://github.com/WattRex/Battery-Cycler-Controller
+Project-URL: Bug Reports, https://github.com/WattRex/Battery-Cycler-Controller/issues
+Project-URL: Bug Tracker, https://github.com/WattRex/Battery-Cycler-Controller/issues
+Project-URL: Source, https://github.com/WattRex/Battery-Cycler-Controller/tree/develop/code/datatypes/src/wattrex_cycler_datatypes
+Project-URL: Funding, https://donate.pypi.org
+Keywords: datatypes,wattrex,cycler
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: system_logger_tool
+Requires-Dist: wattrex_driver_mqtt
+
+# Cycler Datatypes
+
+This module defines custom datatypes for use in cycler scripts related.
