@@ -1,0 +1,5 @@
+[console_scripts]
+gaspra-diff=gaspra.merge_tool:diff_cli
+gaspra-merge=gaspra.merge_tool:merge_cli
+gaspra-torture=gaspra.merge_tool:torture_cli
+
