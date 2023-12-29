@@ -1,0 +1,8 @@
+README.md
+setup.py
+RndTextGen/__init__.py
+RndTextGen/rus_rnd_text.py
+RndTextGen.egg-info/PKG-INFO
+RndTextGen.egg-info/SOURCES.txt
+RndTextGen.egg-info/dependency_links.txt
+RndTextGen.egg-info/top_level.txt
