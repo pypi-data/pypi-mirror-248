@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+scr/rmslib.egg-info/PKG-INFO
+scr/rmslib.egg-info/SOURCES.txt
+scr/rmslib.egg-info/dependency_links.txt
+scr/rmslib.egg-info/top_level.txt
