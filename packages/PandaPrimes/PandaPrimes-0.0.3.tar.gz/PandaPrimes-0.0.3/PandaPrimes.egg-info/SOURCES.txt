@@ -1,0 +1,12 @@
+README.md
+setup.py
+PandaPrimes/__init__.py
+PandaPrimes.egg-info/PKG-INFO
+PandaPrimes.egg-info/SOURCES.txt
+PandaPrimes.egg-info/dependency_links.txt
+PandaPrimes.egg-info/top_level.txt
+PandaPrimes/src/PandaPrimes.c
+tests/test_generate_primes.py
+tests/test_iterator.py
+tests/test_methods.py
+tests/test_primes_range.py
