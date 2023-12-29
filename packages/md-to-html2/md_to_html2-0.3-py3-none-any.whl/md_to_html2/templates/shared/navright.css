@@ -1,0 +1,33 @@
+{# /* Copied styles from navbar in https://getboostrap.com */ #}
+{% raw -%}
+#toc * {text-align: left; white-space: nowrap;}
+#toc ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+#toc ul ul {
+  padding-left: 1rem;
+}
+#toc ul ul ul {
+  padding-left: .75rem;
+}
+#toc ul a {
+  display: block;
+  padding: .125rem 0 .125rem .75rem;
+  color: inherit;
+  text-decoration: none;
+  border-left: .125rem solid transparent;
+}
+#toc ul a.active {
+  font-weight: 500;
+}
+#toc ul a:is(:hover, .active) {
+  color: var(--bs-emphasis-color);
+  border-left-color: var(--bs-emphasis-color);
+}
+{% endraw %}
+{# /* Can use this to collapse sub-lists without active items */
+#toc ul ul { display: none }
+#toc ul ul:has( .active ) { display: block }
+#}

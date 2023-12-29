@@ -1,0 +1,20 @@
+{% raw -%}
+/* Justify on md and up. Hyphenate on all. */
+.text-justify {
+  /* Hyphenate on all devices */
+  -webkit-hyphens:  auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+@media (min-width: 768px) {
+  .text-justify {
+    text-align: justify;
+  }
+}
+
+/* Don't justify headings, table heads */
+.text-justify :is( h1, h2, h3, h4, h5, h6, table.table, #lightgallery )
+{
+  text-align: left
+}
+{% endraw %}
