@@ -1,0 +1,5 @@
+[console_scripts]
+image-titler=scripts.cli:main
+image-titler-gui=scripts.gui:main
+image_titler=scripts.cli:main
+
