@@ -1,0 +1,10 @@
+pdf_decomposer/__init__.py,sha256=guEd8C58_H02xf-M57SukrG-UNBS72kDUHBIEhA5OJg,235
+pdf_decomposer/adobe_service.py,sha256=9TUsk_4nA9aNqWQiJ-gw2nw-THLIV2VY1bbTMqOt2qM,4077
+pdf_decomposer/base_decomposer.py,sha256=SpXcOBV0YoG36Qh7XmVHF4roR_unBtcOFNNuUlA2Pbg,14037
+pdf_decomposer/open_decomposer.py,sha256=Dpt_Hu9fM-F6KJZUm4ordvX7pUsm7SZ8CX-ppe5_CrU,4105
+pdf_decomposer/paddle_decomposer.py,sha256=5kV_D6llZ3iGDEV-EGEGgUVzaQCN7e9wEWAIszTL_T0,2414
+pdf_decomposer/rebuild_table.py,sha256=pdMlZuybbXYXOdeW3z8wvc2MqrDps1AfCdzAtOz0qZs,13514
+pdf_decomposer-0.1.3.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+pdf_decomposer-0.1.3.dist-info/METADATA,sha256=3NZYzRjZgjH8UhgR1Dz6ioElsSfM3F1wGRcKqsjvo2s,3335
+pdf_decomposer-0.1.3.dist-info/WHEEL,sha256=5cEDLREhpnNYpDlijc02-Q_4r7AkXMYW6R1JITTLLOQ,92
+pdf_decomposer-0.1.3.dist-info/RECORD,,
