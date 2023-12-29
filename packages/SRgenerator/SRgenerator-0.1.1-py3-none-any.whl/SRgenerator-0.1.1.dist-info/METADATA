@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: SRgenerator
+Version: 0.1.1
+Summary: Stereo operation for chemicals based on RDkit package
+Author: Mola Lin
+Author-email: acps91012@gmail.com
+License: BSD
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+Requires-Dist: selfies (>=2.0.0)
+Requires-Dist: rdkit (>=2023.3.1)
+
+SR generator
+Operating, generating, and processing chemical structures based on RDkit package.
+Version 0.1.1
+1. add selfies representation of chemicals for application on transformer
+2. add random split function and fix the missoutputed result in reorder smiles function
+
+
