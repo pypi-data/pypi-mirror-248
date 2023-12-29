@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+xdlink/__init__.py
+xdlink/version.py
+xdlink.egg-info/PKG-INFO
+xdlink.egg-info/SOURCES.txt
+xdlink.egg-info/dependency_links.txt
+xdlink.egg-info/requires.txt
+xdlink.egg-info/top_level.txt
+xdlink.egg-info/zip-safe
