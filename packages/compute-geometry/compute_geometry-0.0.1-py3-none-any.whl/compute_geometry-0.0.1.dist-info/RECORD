@@ -1,0 +1,12 @@
+cgeom/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cgeom/algorithms/__init__.py,sha256=pcasYyUYAC4mLzS3t6czH9Kji4O7MZ6hZJbdQgZDY68,310
+cgeom/algorithms/_convexhull.py,sha256=tfEv0HKAo88O7gtEyjcezPlpGeTfwXGuJXW8-cqPIuU,3012
+cgeom/algorithms/_mincircle.py,sha256=OOaRAJ8pQaArIVXsK4EunGoD2qRYtBomZVc4rxHpMTA,10551
+cgeom/algorithms/_triangulation.py,sha256=_LqiA5klGfdvzjEyCELqp4o4a66qey9zvWQuSBpMYRE,4942
+cgeom/algorithms/_voronoi.py,sha256=rUudAFifI_9L3nJxyVnXR_FWkSvGhII4Hv7yt-A4RXs,9547
+cgeom/elements/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cgeom/elements/elements.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+compute_geometry-0.0.1.dist-info/LICENSE,sha256=OEPvlsz_KBSGrQyDlLU8byQ_8Q7tEsUzAoqTtXjK4TY,1073
+compute_geometry-0.0.1.dist-info/METADATA,sha256=kM9SUBBp8dWpDjzPFFzDtkF4IfAR5uBAtP6Z0cgSaRM,3025
+compute_geometry-0.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+compute_geometry-0.0.1.dist-info/RECORD,,
