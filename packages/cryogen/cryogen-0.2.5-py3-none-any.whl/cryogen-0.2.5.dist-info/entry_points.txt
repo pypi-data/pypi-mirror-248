@@ -1,0 +1,3 @@
+[console_scripts]
+cryogen=cryogen.cli:app
+
