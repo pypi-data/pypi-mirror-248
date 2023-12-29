@@ -1,0 +1,12 @@
+ipernity/__init__.py,sha256=dZckbLTKw9DFuoN3RdfcIBntFBH7QqQeA-0RG1fUuEU,85
+ipernity/_version.py,sha256=H-qsvrxCpdhaQzyddR-yajEqI71hPxLa4KxzpP3uS1g,411
+ipernity/api.py,sha256=fxXgzCOwo5NpqTShMbOkDggFniMj4mOBscoz0g1KYJk,14494
+ipernity/auth.py,sha256=N4sIa2aDIEXYpdpnJzLTPNIyWONJis1L7gNWqd-mE1Q,6327
+ipernity/exceptions.py,sha256=kOMazRImTE6ZL_1H8aH6Xzq61-BFnn2PaL36CsXLIvU,3217
+ipernity/method.py,sha256=rb567ZWvpCsPB_VcUVL7FK-3xEa954cNGzhOiNG8BHc,969
+ipernity/methods.json,sha256=vzv5GVJRefOflm-Kpq17aTBFXu-HnN9ctVWBYobnHfc,44173
+PyIpernity-0.2.0.dist-info/LICENSE,sha256=uWEkhwEL7FGzmdrTUohMx70p8piuRZt16A-ZG5PaYdI,1062
+PyIpernity-0.2.0.dist-info/METADATA,sha256=_jTSNFZ1lT1SPqDA0b7Go9UYHHkQrUMrSr-RqgP8za0,1443
+PyIpernity-0.2.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+PyIpernity-0.2.0.dist-info/top_level.txt,sha256=CZCyQU3h7M0wckI9sfRmIHqxHrcM_IU1RYMH0rbS_aI,9
+PyIpernity-0.2.0.dist-info/RECORD,,
