@@ -1,0 +1,3 @@
+[console_scripts]
+sorodev=sorodev.__main__:main
+

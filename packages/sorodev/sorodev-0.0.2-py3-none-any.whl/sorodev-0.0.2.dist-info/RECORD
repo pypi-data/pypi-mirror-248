@@ -1,0 +1,17 @@
+sorodev/__init__.py,sha256=OXWgjTUP4TGLLlno5b2FWlMgifXVQSN83ILAhHpNh80,294
+sorodev/__main__.py,sha256=CSfzn-xKQL2_Z6PVKno9F9xYmRhaaRIjH0nz9CR6oGY,2403
+sorodev/account.py,sha256=Lhm1XdgIqDDPZL3EHXpDcqbiSImpiQj2Z2VHahg7BN8,969
+sorodev/add_contract.py,sha256=8wJjt_omPfxFL6ncYUgKrLv7hpb78FVnRhs8oZyvcxI,2235
+sorodev/bindings.py,sha256=hvWJhrSKeF6L7qcaltlSA3Yy687Sg7ZZIc_OSy673Kc,601
+sorodev/build.py,sha256=URg8YyiYrrufGyMw-03ZAQDbbCfbC0JK5KQ2l6ATz7c,131
+sorodev/constants.py,sha256=0-bjY7zeGZxxtuKDTfG08sMkdsoKxZ4PyowP_OEQt14,41
+sorodev/deploy.py,sha256=pgMuZLoAQvo2r9j2JgGTHwE98h3LebEtQHJ3jzFStsY,984
+sorodev/install.py,sha256=zrYjyQPXEtjxqx7GdijhnGSd9GIsqaGDNnxFz2SRE1s,1544
+sorodev/invoke.py,sha256=vZW4g_no1niCDEb6Ssf7Fz0neykM_cgD45J1ZY6Lkvc,1241
+sorodev/test.py,sha256=P0_fOlJn4ZB3a6UUn1K04-t-MfcNlgUwPHqRnUFB06c,113
+sorodev/utils.py,sha256=wEwUpQcA1t_M8ivtTSTgjokrWrvlKqSGUuq9pQ2st5s,1876
+sorodev-0.0.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+sorodev-0.0.2.dist-info/METADATA,sha256=DCH8dxIMj6w3qfEtC2H5OtvsrzALX9NLyMgh123BMso,4071
+sorodev-0.0.2.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+sorodev-0.0.2.dist-info/entry_points.txt,sha256=rMqkPrRZUF0gKMiolgyc6n3Gjof4bmhM7Hwd9o4NX5I,49
+sorodev-0.0.2.dist-info/RECORD,,
