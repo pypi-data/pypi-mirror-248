@@ -1,0 +1,11 @@
+convect_flow_sdk/__init__.py,sha256=LypO4COJINosFQ-BEZe4eV39yG7zt2LTW8_N4v9EyHs,101
+convect_flow_sdk/cli.py,sha256=yFhJBN3mwrs-B0JKoGA5cEqGdvWqIRiGUVVCbwiztys,2340
+convect_flow_sdk/constants.py,sha256=xkztGe3EI_i74geapokDogeEb0foz538Uj9V9qTc5uE,288
+convect_flow_sdk/flow_algo.py,sha256=nLnyMFyHX5Cw7NAm6YOeTJ2qXK3fDbQK-aOchXtM8cE,17294
+convect_flow_sdk/flow_app.py,sha256=mmmZ-w49IfRYWTToe5B5z1jBhnguy5Np8rooc_yqhqc,28760
+convect_flow_sdk-0.0.5.dist-info/LICENSE,sha256=0ASPTawEsVZodbT1bv4M5wccgeRL4Rm_LtK-88OfR4s,1067
+convect_flow_sdk-0.0.5.dist-info/METADATA,sha256=nr4R6FE6l30EdeXdf768lnnVSNa9vjCbZ78rCDTMRzY,2239
+convect_flow_sdk-0.0.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+convect_flow_sdk-0.0.5.dist-info/entry_points.txt,sha256=qwoZ0zg2tOoblaHkys5o-dUngRv2FuDqct9YyfLVT_E,63
+convect_flow_sdk-0.0.5.dist-info/top_level.txt,sha256=ATWE8BDuvTny2L8KJ6mykVXIIPBUPib3Kc6WeA91Lms,17
+convect_flow_sdk-0.0.5.dist-info/RECORD,,
