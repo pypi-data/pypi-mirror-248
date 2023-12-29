@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+shelllangchain/__init__.py
+shelllangchain/langchain_bash_helper.py
+shelllangchain.egg-info/PKG-INFO
+shelllangchain.egg-info/SOURCES.txt
+shelllangchain.egg-info/dependency_links.txt
+shelllangchain.egg-info/entry_points.txt
+shelllangchain.egg-info/not-zip-safe
+shelllangchain.egg-info/requires.txt
+shelllangchain.egg-info/top_level.txt
