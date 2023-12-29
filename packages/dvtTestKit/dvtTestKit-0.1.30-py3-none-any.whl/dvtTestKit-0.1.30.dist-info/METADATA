@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: dvtTestKit
+Version: 0.1.30
+Summary: Toolkit for DVT testing
+Home-page: https://github.com/DanEdens/dvt_tk.git
+Author: Dan.Edens
+Author-email: Danedens31@gmaill.com
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: paho-mqtt
+Requires-Dist: slack-sdk
+Requires-Dist: jira
+Requires-Dist: pyshorteners
+Requires-Dist: pexpect
+Requires-Dist: netmiko
+Requires-Dist: requests
+Requires-Dist: bs4
+
+long_description
