@@ -1,0 +1,117 @@
+Metadata-Version: 2.1
+Name: pymisp-async
+Version: 2.4.182a3
+Summary: Python async API for MISP.
+Home-page: https://github.com/MISP/PyMISP
+License: BSD-2-Clause
+Author: Raphaël Vinot
+Author-email: raphael.vinot@circl.lu
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet
+Classifier: Topic :: Security
+Provides-Extra: brotli
+Provides-Extra: docs
+Provides-Extra: email
+Provides-Extra: fileobjects
+Provides-Extra: openioc
+Provides-Extra: pdfexport
+Provides-Extra: url
+Provides-Extra: virustotal
+Requires-Dist: RTFDE (>=0.1.1,<0.2.0) ; extra == "email"
+Requires-Dist: Sphinx (<7.2) ; (python_version < "3.9") and (extra == "docs")
+Requires-Dist: Sphinx (>=7.2,<8.0) ; (python_version >= "3.9") and (extra == "docs")
+Requires-Dist: aiohttp (>=3.9.1,<4.0.0)
+Requires-Dist: asyncio (>=3.4.3,<4.0.0)
+Requires-Dist: beautifulsoup4 (>=4.12.2,<5.0.0) ; extra == "openioc"
+Requires-Dist: deprecated (>=1.2.14,<2.0.0)
+Requires-Dist: extract_msg (>=0.47.0,<0.48.0) ; extra == "email"
+Requires-Dist: jsonschema (>=4.20.0,<5.0.0)
+Requires-Dist: lief (>=0.13.2,<0.14.0) ; extra == "fileobjects"
+Requires-Dist: oletools (>=0.60.1,<0.61.0) ; extra == "email"
+Requires-Dist: publicsuffixlist (>=0.10.0.20231214,<0.11.0.0)
+Requires-Dist: pydeep2 (>=0.5.1,<0.6.0) ; extra == "fileobjects"
+Requires-Dist: pyfaup (>=1.2,<2.0) ; extra == "url"
+Requires-Dist: python-dateutil (>=2.8.2,<3.0.0)
+Requires-Dist: python-magic (>=0.4.27,<0.5.0) ; extra == "fileobjects"
+Requires-Dist: recommonmark (>=0.7.1,<0.8.0) ; extra == "docs"
+Requires-Dist: reportlab (>=4.0.8,<5.0.0) ; extra == "pdfexport"
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: sphinx-autodoc-typehints (>=1.25.2,<2.0.0) ; extra == "docs"
+Requires-Dist: urllib3[brotli] ; extra == "brotli"
+Requires-Dist: validators (>=0.22.0,<0.23.0) ; extra == "virustotal"
+Project-URL: Bug Tracker, https://github.com/MISP/PyMISP/issues
+Project-URL: Documentation, https://pymisp.readthedocs.io
+Project-URL: Repository, https://github.com/MISP/PyMISP
+Project-URL: Source, https://github.com/MISP/PyMISP
+Description-Content-Type: text/markdown
+
+# **Advisory**
+
+**This library is an experimental project porting the original PyMISP project to python async to address I/O bound processing difficulties often encountered when using large MISP instances.**
+
+**It is an ALPHA release, this code has not been tested, USE AT YOUR OWN RISK!**
+
+# PyMISP - Python Library to access MISP
+
+PyMISP is a Python library to access [MISP](https://github.com/MISP/MISP) platforms via their REST API.
+
+PyMISP allows you to fetch events, add or update events/attributes, add or update samples or search for attributes.
+
+This project aims at porting the original PyMISP project to Python async using the `aiohttp` library instead of the synchronous `requests` library.
+
+## Install from pip
+
+**It is strongly recommended to use a virtual environment**
+
+If you want to know more about virtual environments, [python has you covered](https://docs.python.org/3/tutorial/venv.html)
+
+Only basic dependencies:
+```
+pip3 install pymisp-async
+```
+
+## Install the latest version from repo from development purposes
+
+**Note**: poetry is required; e.g., "pip3 install poetry"
+
+```
+git clone https://github.com/pixmaip/PyMISP-async.git && cd PyMISP-async
+git submodule update --init
+poetry install
+```
+
+## Usage
+
+Initialize the `PyMISP` object using the asynchronous context manager:
+```
+async with PyMISP(url, key) as misp_obj:
+    events = await misp_obj.events()
+```
+
+## Documentation
+
+The official MISP documentation is available [here](https://pymisp.readthedocs.io/en/latest/).
+
+All `async` functions present in this library use the same API as the original MISP package.
+
+# License
+
+PyMISP is distributed under an [open source license](./LICENSE). A simplified 2-BSD license.
+
+
