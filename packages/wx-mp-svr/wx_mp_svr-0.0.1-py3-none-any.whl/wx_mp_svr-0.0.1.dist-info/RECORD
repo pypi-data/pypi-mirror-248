@@ -1,0 +1,10 @@
+wx_mp_svr/__init__.py,sha256=4hp7ENbgS_eBvPL_RHrOD4litBZeyFc17pCFM40tq1g,231
+wx_mp_svr/app.py,sha256=xOrk30gLdQQVExIufz5DF1fdQDLCZrrQ53FgMmQg6Dc,3590
+wx_mp_svr/msg_xml_list.py,sha256=oPzgu6QxoB4qr7mvnFGd3dKZY_gZUndZ3cw5Ou7jikc,3511
+wx_mp_svr/req_msg.py,sha256=ZXSTIQM6CjP1bbaXMT82Q_Z37i-YOngdyN_wo97Ekqo,3712
+wx_mp_svr/rsp_msg.py,sha256=6RVgYLg_Pmvdq3F5bh60GaJ07MqsdwTJZ6k9q03NklI,6929
+wx_mp_svr/utils.py,sha256=YEVJPlE-G85T5fpL4avZYxaJasOj7Vj5vo4MDpWCBCo,226
+wx_mp_svr-0.0.1.dist-info/METADATA,sha256=okewHsMfQpjqxP5H0FseMo83lCpif4qkdfgfdINKK-A,1410
+wx_mp_svr-0.0.1.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+wx_mp_svr-0.0.1.dist-info/licenses/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+wx_mp_svr-0.0.1.dist-info/RECORD,,
