@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <style>
+            html {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+            }
+            body {
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+            }
+            #textarea {
+                flex-grow: 1;
+            }
+            #form {
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+            }
+        </style>
+        <title>Tinybin</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Tinybin</h1>
+        <p>A small service for sharing text</p>
+        <form id="form" action="texts/" method="post" autocomplete="off">
+            <textarea id="textarea" name="text" placeholder="Your text"></textarea>
+            <input id="share_button" type="submit" value="Share" />
+        </form>
+    </body>
+</html>
