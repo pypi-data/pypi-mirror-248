@@ -1,0 +1,16 @@
+pyyaml
+coreapi
+ipython
+ad_ci_tools==0.1.9
+docker
+jinja2
+adcm-version<2.0
+
+[setup]
+ad_ci_tools==0.1.9
+pytz
+setuptools
+wheel
+
+[test]
+pytest
