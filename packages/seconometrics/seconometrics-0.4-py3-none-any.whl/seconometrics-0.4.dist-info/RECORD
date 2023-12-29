@@ -1,0 +1,9 @@
+econometrics/__init__.py,sha256=CMbfirhnABrxirUygkRIITYF_Ru-qK0aKaCM6HMXGWA,38
+econometrics/correlation.py,sha256=AVYSu4f1RCgZNnrELSm7JR34CuxpwjFTvHEzO8-aNJI,2667
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_correlation.py,sha256=si_W0y59sAlU64cfoi7IG7-KptRZo1mgPvBEdwg8X4w,367
+seconometrics-0.4.dist-info/LICENSE,sha256=r5RIO4LwZ5E33b2X34Z9sUkRa9PcbzQDeozvPIbaXj0,1519
+seconometrics-0.4.dist-info/METADATA,sha256=Pv5pBNygD6e3fEjRnZR0gBifeJMwjIDhoU9tPoAUNyg,2606
+seconometrics-0.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+seconometrics-0.4.dist-info/top_level.txt,sha256=Un9HaR_BiF5HQR1X5x8jjtie2VPX0mqUNAIf4n-dOZI,19
+seconometrics-0.4.dist-info/RECORD,,
