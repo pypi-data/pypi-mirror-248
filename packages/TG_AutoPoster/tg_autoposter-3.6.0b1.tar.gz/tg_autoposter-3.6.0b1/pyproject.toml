@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "TG_AutoPoster"
+version = "3.6.0b1"
+description = "Telegram Bot for reposting from VK"
+authors = ["Adrian Polyakov <me@qwertyadrian.ru>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "TG_AutoPoster"},
+    { include = "vk_api", from = "vk_api"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+#vk-api = "^11.9.9"
+Pyrogram = "^2.0.106"
+TgCrypto = "^1.2.5"
+loguru = "^0.7.2"
+wget = "^3.2"
+mutagen = "^1.47.0"
+beautifulsoup4 = "^4.12.2"
+apscheduler = "^3.10.4"
+PyYAML = "^6.0.1"
+m3u8 = "^4.0.0"
+pycryptodome = "^3.19.1"
+moviepy = "^1.0.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
