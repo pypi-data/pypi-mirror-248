@@ -1,0 +1,44 @@
+;############## ADABAS #########################################################
+;#
+;#  File       : emp_nat.fdt
+;#  Description: Input for ADAFDU, FDT of ADABAS Employees example file
+;#  Parameter  : 
+;#
+;#  Copyright (c) 1992-2017 Software AG, Darmstadt, Germany and/or
+;#  Software AG USA Inc., Reston, VA, USA, and/or its subsidiaries
+;#  and/or its affiliates and/or their licensors.
+;#  Use, reproduction, transfer, publication or disclosure is prohibited
+;#  except as specifically provided for in your License Agreement
+;#  with Software AG.
+;#
+;#  $Id: emp_nat.fdt 15164 2017-02-21 10:25:33Z mh $
+;##############################################################################
+ 1    ,  AA ,     8 ,    A  , DE,UQ           ;PERSONNEL-ID
+ 1    ,  AB                                   ;FULL-NAME
+  2   ,  AC ,    20 ,    A  , NU              ; FIRST-NAME
+  2   ,  AE ,    20 ,    A  , DE              ; NAME
+  2   ,  AD ,    20 ,    A  , NU              ; MIDDLE-NAME
+ 1    ,  AF ,     1 ,    A  , FI              ;MAR-STAT
+ 1    ,  AG ,     1 ,    A  , FI              ;SEX
+ 1    ,  AH ,     6 ,    P  , DE,NC           ;BIRTH
+ 1    ,  A1                                   ;FULL-ADDRESS
+  2   ,  AI ,    20 ,    A  , NU,MU           ; ADDRESS-LINE
+  2   ,  AJ ,    20 ,    A  , DE,NU           ; CITY
+  2   ,  AK ,    10 ,    A  , NU              ; POST-CODE
+  2   ,  AL ,     3 ,    A  , NU              ; COUNTRY
+ 1    ,  A2                                   ;TELEPHONE
+  2   ,  AN ,     6 ,    A  , NU              ; AREA-CODE
+  2   ,  AM ,    15 ,    A  , NU              ; PHONE
+ 1    ,  AO ,     6 ,    A  , DE              ;DEPT
+ 1    ,  AP ,    25 ,    A  , DE,NU           ;JOB-TITLE
+ 1    ,  AQ                 , PE              ;INCOME
+  2   ,  AR ,     3 ,    A  , NU              ; CURR-CODE
+  2   ,  AS ,     5 ,    P  , NU              ; SALARY
+  2   ,  AT ,     5 ,    P  , NU,MU           ; BONUS
+ 1    ,  A3                                   ;LEAVE-DATE
+  2   ,  AU ,     2 ,    U                    ; LEAVE-DUE
+  2   ,  AV ,     2 ,    U  , NU              ; LEAVE-TAKEN
+ 1    ,  AW                 , PE              ;LEAVE-BOOKED
+  2   ,  AX ,     8 ,    U  , NU              ; LEAVE-START
+  2   ,  AY ,     8 ,    U  , NU              ; LEAVE-END
+ 1    ,  AZ ,     3 ,    A  , DE,NU,MU        ;LANGUAGE

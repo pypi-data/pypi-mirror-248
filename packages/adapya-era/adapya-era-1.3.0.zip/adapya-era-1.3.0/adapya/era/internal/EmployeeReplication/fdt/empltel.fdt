@@ -1,0 +1,15 @@
+;
+;  Employees Telephone List FDT
+;
+1,AA,8,A,DE,UQ                ;personnnel-id
+1,AB                          ;full-name
+2,AC,20,A,NU                  ;first-name
+2,AE,20,A,DE                  ;name
+2,AD,20,A,NU                  ;middle-name
+1,AH,4,P,DE,NC                ;birth
+1,AL,3,A,NU                   ;country
+1,A2                          ;telephone
+2,AN,6,A,NU                   ;area-code
+2,AM,15,A,NU                  ;phone
+1,AO,6,A,DE                   ;dept
+1,AP,25,A,DE,NU               ;job-title

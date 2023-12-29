@@ -1,0 +1,3 @@
+adapya-base>=1.3.0
+adapya-adabas>=1.3.0
+adapya-entirex>=1.3.0
