@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: evautils
+Version: 1.0.1
+Summary: Utils for Python.
+Home-page: https://github.com/10e9928a/evautils
+Author: shizhao
+Author-email: shizhao@mail.nwpu.edu.cn
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: filetype
+Requires-Dist: requests
+
+# EvaUtils
+
+**EvaUtils** is Utils for Python.
+
+## Example Usage
+
+```python
+from evautils.requests import download_file
+from evautils.futures import multi_thread_executor
+
+
+print(download_file('./', 'https://demo.com/demo.jpg'))
+
+
+def demo(items, update, name):
+    for item in items:
+        print(name, item)
+    if update:
+        update()
+
+
+multi_thread_executor(2, [1, 2], demo, None, 'thread')
+
+```
+
+## Installing EvaUtils
+
+EvaUtils is available on PyPI:
+
+```console
+$ python -m pip install evautils
+```
+
+
