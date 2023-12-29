@@ -1,0 +1,13 @@
+jgtutils/__init__.py,sha256=QGhKwEi0WU0ylQ4V8K9XCqWIsJ_nCssQznOLWRQamwU,47
+jgtutils/iprops.py,sha256=IGvP6EGzqS7BgOMnKW1DFtn--qUpMdo5QvNzl1DOWtA,25491
+jgtutils/jgtcommon.py,sha256=URJpTKddUkm4af_XfiUE2n_fZ8S6ouBuMYpQaHf7GfI,13789
+jgtutils/jgtconstants.py,sha256=z1MBlMqHYHJgQ1rgmp9Il4Lw8DVxYLSvwOjKNVA_tbY,7639
+jgtutils/jgtfxcommon.py,sha256=nV79jhnSTqbxJ1KzQFjt5T54NNwZw_hdrGpB_ul15OU,39650
+jgtutils/jgtos.py,sha256=VrCAtFyKGZuoI-taqgLXBdRrne2JCeHlysoq_h96TnA,5396
+jgtutils/jgtwslhelper.py,sha256=rgakKvRXqjafEGfy5bjBWFGrbXNbiqs07G-dVQnD8fo,5661
+jgtutils/module.py,sha256=8evcdz8jyzvzVKSQhjaW9SHFdcTwzFVeHBkA0zoWLHE,45
+jgtutils-0.1.6.dist-info/LICENSE,sha256=uCA_HysYVK9qIMbDEFjcDYhCoKTg19AJhKhM71EKSGA,1086
+jgtutils-0.1.6.dist-info/METADATA,sha256=Var0Mw23ym71tyUSReQ_Yn-2JGJTS8uerc_XxywVRs0,1613
+jgtutils-0.1.6.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+jgtutils-0.1.6.dist-info/top_level.txt,sha256=0URoWr0Oic8vF7ZQgML4iyXX_YRVO3TZCCTXhOGqVzI,9
+jgtutils-0.1.6.dist-info/RECORD,,
