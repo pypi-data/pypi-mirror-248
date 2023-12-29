@@ -1,0 +1,10 @@
+roman_numerals_converter/__init__.py,sha256=ummnXfJ2i39J-35PNLMj7Uq5IVk12hFZHRoce_TOMwY,525
+roman_numerals_converter/__main__.py,sha256=zHQoi8W_lx5fVR1gDB1l6DTNDQHkTjELljzHTw4yoi8,1890
+roman_numerals_converter/converter.py,sha256=gKsP0PA73TtcvxbzpYb3r3NUDRToe9tnnz9XyM6nJqM,3133
+roman_numerals_converter/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+roman_numerals_converter/roman.py,sha256=n-7WVukGt2H-ypODEt8Y-v2MGc7nJuuwNu_ebr_hYu8,8681
+roman_numerals_converter-0.3.1.dev1703808360.dist-info/LICENSE,sha256=sfkY1orfazWLmzep0ypjvuYy-Rq44JOfG-Ee_T3OQlA,1072
+roman_numerals_converter-0.3.1.dev1703808360.dist-info/METADATA,sha256=pCcGRvjQ_KA5c-86iiXGXkFzdVT-Rdvn1HU4f0Q4quU,2991
+roman_numerals_converter-0.3.1.dev1703808360.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+roman_numerals_converter-0.3.1.dev1703808360.dist-info/entry_points.txt,sha256=YcjWlUlUtR7VNlSSvG-Bm2okgJwalaEkFpg7MRYcyY4,63
+roman_numerals_converter-0.3.1.dev1703808360.dist-info/RECORD,,
