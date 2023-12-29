@@ -1,0 +1,1 @@
+recursive-include hero_damage_component/frontend/build *
