@@ -1,0 +1,11 @@
+chipmunkdb/ChipmunkConnection.py,sha256=7U10Cqz5WqdtHT3Huk3vDPUaxmSGj71DrTGm4fTYfgA,3070
+chipmunkdb/ChipmunkDb.py,sha256=--Cjpw2zAHk7ueJbfraOEnhsRdZjvAoahOOzLymbxOI,6483
+chipmunkdb/ChipmunkDialect.py,sha256=zcQsVuE7sEQKEJV4Wy0o9h4kHDMiVR1BNtcQyh1QJeQ,2548
+chipmunkdb/__init__.py,sha256=KjedInS1_QM8NovN-Ddc6jNS3GJvo3sR9fVuJEdILKQ,124
+chipmunkdb/config.cfg,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chipmunkdb_python_client-2.0.8.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chipmunkdb_python_client-2.0.8.dist-info/METADATA,sha256=GPpVCdvT5gvPIaueqBaft8CSSX5oqzsmbjbA76bajbE,1555
+chipmunkdb_python_client-2.0.8.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+chipmunkdb_python_client-2.0.8.dist-info/entry_points.txt,sha256=YHy3PzC1vmJLwnbuTTVkMiHA0MQ3lgSadn8WuQ5tD4A,72
+chipmunkdb_python_client-2.0.8.dist-info/top_level.txt,sha256=Za4V_HAW7NUfba__yfosOBwOXtRXh7VChOtLeLfAXsY,11
+chipmunkdb_python_client-2.0.8.dist-info/RECORD,,
