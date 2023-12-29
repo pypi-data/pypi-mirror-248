@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block title %}{{game_name}} - {{super()}}{% endblock %}
+{% block body_class %}game{% endblock %}
+{% block content %}
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0"></script>
+    <script src="{{ STATIC_URL }}js/charts.js"></script>
+
+    <div class="nav">
+        <a href="../">Home</a>
+        <a href="../new?game={{name}}">Add new match result</a>
+    </div>
+    <h1>{{game_name}}</h1>
+    <button id="toggle-chart">Toggle chart</button>
+    <div id="chart-container">
+        <div id="the-chart">
+            <canvas id="chart" class="chart"></canvas>
+        </div>
+        <div id="chart-controls">
+            <a href="#" id="toggle-all">Toggle all lines</a>
+            <a href="#" id="toggle-last">Toggle last match</a>
+        </div>
+    </div>
+    <table>
+        <tr>
+            <th>Position</th>
+            <th>Name</th>
+            <th class="number">Number of games</th>
+            <th class="number">Rating</th>
+            <th class="number">Change</th>
+        </tr>
+
+        {# FIXME: use a tuple with named parts instead of list indices #}
+        {% for player in ratings %}
+            {% if players[player[0]] and players[player[0]]["displayName"] %}
+                {% set name = players[player[0]]["displayName"] %}
+            {% else %}
+                {% set name = player[0] %}
+            {% endif %}
+            {% if players[player[0]] and players[player[0]]["image"] %}
+                {% set image_path = "../player/" + players[player[0]]["name"] %}
+                {% set image_url = image_path + "/" + players[player[0]]["image"] %}
+            {% endif %}
+            <tr>
+                <td class="position">{{loop.index}}</td>
+                <td class="name avatar">
+                    {% if image_url %}
+                        <img class="player-image" src="{{image_url}}">
+                    {% endif %}
+                    <a href="../player/{{player[0]}}">{{name}}</a>
+                </td>
+                <td class="game_count">{{player[1]}}</td>
+                <td class="rating">{{player[2]|int}}</td>
+                <td class="delta{% if player[3] > 0 %} plus{% elif player[3] < 0 %} minus{% endif %}">{{player[3]|int}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    <p class="nav">
+        <a href="https://github.com/peterjaric/rayter-games/blob/master/{{slug}}.txt">View played games on GitHub</a>
+    </p>
+{% endblock %}
