@@ -1,0 +1,179 @@
+# Calculator
+
+The Calculator class provides a basic calculator with memory storage, supporting various mathematical operations. It allows users to perform addition, subtraction, multiplication, division, and Nth root calculations. The calculator also provides functionality to reset its memory to its initial state.
+
+## Installation
+
+You can install the Calculator package using pip:
+``` bash
+    # Install package
+    pip install calculator_sf
+```
+
+## Usage
+
+### Creating a Calculator
+
+```python
+from calculator_sf.calculator import Calculator
+
+# Create a calculator with default memory (0.0)
+calculator = Calculator()
+
+# Create a calculator with an initial memory of 5.0
+calculator_with_memory = Calculator(memory=5.0)
+```
+
+### Class Methods
+
+# __init__(self, memory: float=0.0, decimal_places: int=3)
+Initialize a new Calculator object with optional initial memory and decimal places.
+
+    Parameters:
+    memory (float, optional): The initial value for the calculator memory. Defaults to 0.0.
+    decimal_places (int, optional): The number of decimal places to round results to. Defaults to 3.
+    
+    Raises:
+    No specific exceptions are raised by this method.
+    
+    Returns:
+    None
+    
+
+# get_memory(self) -> float
+Get the current value stored in the calculator memory.
+
+    Parameters:
+    None
+    
+    Raises:
+    No specific exceptions are raised by this method.
+    
+    Returns:
+    float: The current numeric value stored in the calculator memory.
+
+# get_decimal_places(self) -> int
+Get the current number of decimal places used for rounding in the calculator.
+
+    Parameters:
+    None
+    
+    Raises:
+    No specific exceptions are raised by this method.
+    
+    Returns:
+    int: The current number of decimal places used for rounding.
+    
+# _round_result(self, result: float) -> float
+Round a floating-point number to the specified decimal places.
+
+    Parameters:
+    result (float): The floating-point number to be rounded.
+    
+    Raises:
+    ValueError: If the result is not a valid floating-point number.
+    
+    Returns:
+    float: The rounded result with the specified number of decimal places.
+    
+# _validate_argument(self, x) -> None
+Validate the input argument to ensure it is either an integer or a float.
+
+    Parameters:
+    x (int or float): The input value to be validated.
+    
+    Raises:
+    TypeError: If the input x is not of type int or float.
+    
+    Returns:
+    None
+
+### Basic Operations
+# Addition
+    Parameters:
+    x (float): The value to be added to the memory.
+
+    Raises:
+    ValueError: If the input `x` is not a valid float.
+            
+    Returns:
+    float: The updated value in the calculator memory after adding `x`.
+
+    Example:
+    To add 5.0 to the memory:
+    ```python
+    calculator.add(5.0)
+    ```
+# Subtraction
+    Parameters:
+    x (float): The value to be subtracted from the memory.
+
+    Raises:
+    ValueError: If the input `x` is not a valid float.
+            
+    Returns:
+    float: The updated value in the calculator memory after subtracting `x`.
+
+    Example:
+    To subtract 2.0 from the memory:
+    ```python
+    calculator.subtract(2.0)
+    ```
+# Multiplication
+    Parameters:
+    x (float): The value to multiply the memory by.
+
+    Raises:
+    ValueError: If the input `x` is not a valid float.
+            
+    Returns:
+    float: The updated value in the calculator memory after adding `x`.
+
+    Example:
+    To multiply the memory by 5:
+    ```python
+    calculator.multiply(5.0)
+    ```
+# Division
+    Parameters:
+    x (float): The value for the memory to be divided by.
+
+    Raises:
+    ValueError: If the input `x` is not a valid float.
+    ZeroDivisionError: If the input `x` is zero.
+            
+    Returns:
+    float: The updated value in the calculator memory after dividing by `x`.
+
+    Example:
+    To divide the memory by 5:
+    ```python
+    calculator.divide(5.0)
+    ```
+# Nth root
+    Parameters:
+            n (int): The exponent for the Nth root.
+
+    Raises:
+        ValueError: If the input `n` is not a valid integer.
+        ValueError: If the input `n` is less than or equal to 0.
+            
+    Returns:
+        float: The updated value in the calculator memory after taking the `n` root.
+
+    Example:
+        To calculate the square root of the memory:
+    ```python
+    calculator.n_root(2)
+    ```
+### Testing
+```python
+pip install pytest
+pytest test_calculator.py
+```
+
+### Contributing
+Feel free to contribute by opening issues or pull requests. Bug reports, suggestions, and improvements are welcome!
+
+### License
+This project is licensed under the MIT License - see the LICENSE file for details.
