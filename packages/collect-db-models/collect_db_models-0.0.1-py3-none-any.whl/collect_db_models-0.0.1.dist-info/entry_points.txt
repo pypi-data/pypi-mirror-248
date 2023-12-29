@@ -1,0 +1,3 @@
+[console_scripts]
+collect-db-models=collect_db_models:main
+
