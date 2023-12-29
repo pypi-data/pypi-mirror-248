@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: desktopwebgui
+Version: 0.0.2
+Summary: Create desktop applications using HTML with Flask/Django/FastAPI
+Home-page: https://github.com/gitcodebob/DesktopWebGUI
+Author: Bob Reijnders
+Author-email: info@bobreijnders.nl
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: twine>=4.0.2; extra == "dev"
+Requires-Dist: build>=1.0.3; extra == "dev"
+
+# This is a placeholder for a future WebGUI package
+
+Please contact the maintainer for more information
