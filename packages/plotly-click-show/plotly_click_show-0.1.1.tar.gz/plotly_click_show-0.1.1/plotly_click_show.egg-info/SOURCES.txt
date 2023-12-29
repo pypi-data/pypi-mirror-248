@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+plotly_click_show/__init__.py
+plotly_click_show.egg-info/PKG-INFO
+plotly_click_show.egg-info/SOURCES.txt
+plotly_click_show.egg-info/dependency_links.txt
+plotly_click_show.egg-info/requires.txt
+plotly_click_show.egg-info/top_level.txt
+plotly_click_show/frontend/build/asset-manifest.json
+plotly_click_show/frontend/build/bootstrap.min.css
+plotly_click_show/frontend/build/index.html
+plotly_click_show/frontend/build/static/js/main.355053fd.js
+plotly_click_show/frontend/build/static/js/main.355053fd.js.LICENSE.txt
+plotly_click_show/frontend/build/static/js/main.355053fd.js.map

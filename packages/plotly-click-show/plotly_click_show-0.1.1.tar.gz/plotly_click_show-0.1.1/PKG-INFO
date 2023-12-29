@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: plotly_click_show
+Version: 0.1.1
+Summary: Streamlit component that allows to get the coordinate and curvename of plotly plot
+Home-page: 
+Author: harrit
+Author-email: harshrprajapati27@gmail.com
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: devel
+License-File: LICENSE
+
+# plotly_click_show
+
+**plotly_click_show** is a Streamlit component that enables you to capture clicking events on a Plotly plot within a Streamlit app. It provides the coordinates and curve names of the clicked points, allowing for interactive data exploration.
+
+## Installation
+
+```bash
+pip install plotly_click_show==0.1.0 (Version)
+
+
+## Usasges
+ 
+import streamlit as st
+from plotly.graph_objects import Figure
+from plotly_click_show import plotly_events
+
+# Create a Plotly figure
+fig = Figure()
+
+# Add your traces and layout configuration here
+
+# Call the plotly_events function to enable clicking events
+clicked_points = plotly_events(fig)
+
+# Access the clicked points, which is a list of dictionaries containing x, y, and name
+st.write("Clicked Points:", clicked_points)
