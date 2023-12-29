@@ -1,0 +1,3 @@
+from .chinageocoordtrans import ChinaGeocoordTrans
+
+__version__ = '1.0.0'

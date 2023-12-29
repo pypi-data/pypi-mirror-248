@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+license.txt
+setup.py
+chinageocoordtrans/__init__.py
+chinageocoordtrans/chinageocoordtrans.py
+chinageocoordtrans.egg-info/PKG-INFO
+chinageocoordtrans.egg-info/SOURCES.txt
+chinageocoordtrans.egg-info/dependency_links.txt
+chinageocoordtrans.egg-info/top_level.txt

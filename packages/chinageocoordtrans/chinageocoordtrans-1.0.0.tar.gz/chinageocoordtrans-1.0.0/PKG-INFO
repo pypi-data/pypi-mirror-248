@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: chinageocoordtrans
+Version: 1.0.0
+Summary: coordinate transform
+Author: linle
+Author-email: linle861021@163.com
+License: MIT
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: license.txt
+
+coordinate transform
