@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "dokker"
+version = "0.1.0"
+description = ""
+authors = ["jhnnsrs <jhnnsrs@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "dokker" }]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+python-on-whales = "^0.68.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
