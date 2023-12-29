@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/tilelink/__init__.py
+src/tilelink/tsi.py
+src/tilelink.egg-info/PKG-INFO
+src/tilelink.egg-info/SOURCES.txt
+src/tilelink.egg-info/dependency_links.txt
+src/tilelink.egg-info/requires.txt
+src/tilelink.egg-info/top_level.txt

@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: tilelink
+Version: 2023.12.28
+Summary: Utility for talking with DUT via TileLink protocol.
+Home-page: https://github.com/ucb-bar/TileLink-Python
+Author: -T.K.-
+Author-email: t_k_233@outlook.email
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyserial
+
+# TileLink-Python
+
+
+## Installation
+
+```bash
+pip install tilelink
+```
