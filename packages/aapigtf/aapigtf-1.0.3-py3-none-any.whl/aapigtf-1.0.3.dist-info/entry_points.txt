@@ -1,0 +1,2 @@
+[console_scripts]
+aapigtf = aapigtf.cli:main
