@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: multiwebcam
+Version: 0.1.0
+Summary: Record synchronized webcam footage
+License: LGPLv3
+Author: Mac Prible
+Author-email: prible@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: PySide6 (>=6.6.1,<7.0.0)
+Requires-Dist: opencv-contrib-python (>=4.8.1.78,<5.0.0.0)
+Requires-Dist: rtoml (>=0.10.0,<0.11.0)
+Description-Content-Type: text/markdown
+
+# Motivation
+
+To provide a quick and dirty way to pull down some synchronized frames with a handfull of webcams.
