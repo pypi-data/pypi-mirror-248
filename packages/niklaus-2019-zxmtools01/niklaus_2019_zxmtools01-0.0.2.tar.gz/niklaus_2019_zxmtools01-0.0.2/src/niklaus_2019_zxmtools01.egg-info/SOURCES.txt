@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/niklaus_2019_zxmtools01/__init__.py
+src/niklaus_2019_zxmtools01/get_data.py
+src/niklaus_2019_zxmtools01.egg-info/PKG-INFO
+src/niklaus_2019_zxmtools01.egg-info/SOURCES.txt
+src/niklaus_2019_zxmtools01.egg-info/dependency_links.txt
+src/niklaus_2019_zxmtools01.egg-info/requires.txt
+src/niklaus_2019_zxmtools01.egg-info/top_level.txt

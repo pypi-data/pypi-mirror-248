@@ -1,0 +1,25 @@
+[project]
+name = "niklaus_2019_zxmtools01"
+version = "0.0.2"
+authors = [
+  { name = "niklaus", email = "598467866@qq.com" },
+]
+dependencies = [
+    "setuptools>=65.5.0"
+    ]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+"Homepage" = "https://github.com/pypa/sampleproject"
+"Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
