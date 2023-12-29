@@ -1,0 +1,10 @@
+LICENCE.txt
+README.md
+pyproject.toml
+src/ProbStatipy/__init__.py
+src/ProbStatipy/central.py
+src/ProbStatipy/spread.py
+src/ProbStatipy.egg-info/PKG-INFO
+src/ProbStatipy.egg-info/SOURCES.txt
+src/ProbStatipy.egg-info/dependency_links.txt
+src/ProbStatipy.egg-info/top_level.txt
