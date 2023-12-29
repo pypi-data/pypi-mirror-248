@@ -1,0 +1,70 @@
+on:
+  push:
+    tags:
+      - 'v*'
+
+name: release
+
+jobs:
+  create-release:
+    name: create GitHub release
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          prerelease: ${{ contains(github.ref, 'pre') || contains(github.ref, 'rc') }}
+
+  build-dists:
+    name: build dists for publishing
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version-file: pyproject.toml
+
+      - name: build dists
+        run: make dist
+
+      - name: upload dists
+        uses: actions/upload-artifact@v4
+        with:
+          name: procmaps-py-dists
+          path: dist/
+
+  pypi:
+    name: upload release to PyPI
+    needs:
+      - create-release
+      - build-dists
+    runs-on: ubuntu-latest
+    environment: release
+    permissions:
+      # Used for OIDC publishing.
+      # Used to sign the release's artifacts with sigstore-python.
+      id-token: write
+
+      # Used to attach signing artifacts to the published release.
+      contents: write
+
+    steps:
+      - name: fetch dists
+        uses: actions/download-artifact@v4
+        with:
+          name: procmaps-py-dists
+          path: dist/
+
+      - name: publish
+        uses: pypa/gh-action-pypi-publish@v1.8.11
+
+      - name: sign
+        uses: sigstore/gh-action-sigstore-python@v2.1.1
+        with:
+          inputs: ./dist/*.tar.gz ./dist/*.whl
+          release-signing-artifacts: true

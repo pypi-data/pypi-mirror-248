@@ -1,0 +1,26 @@
+[package]
+name = "procmaps"
+version = "0.6.5"
+authors = ["William Woodruff <william@yossarian.net>"]
+edition = "2018"
+description = "Python bindings for procmaps.rs"
+homepage = "https://github.com/woodruffw/procmaps.py"
+repository = "https://github.com/woodruffw/procmaps.py"
+readme = "README.md"
+license = "MIT"
+
+[package.metadata.release]
+publish = false # handled by GitHub Actions
+push = true
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+libc = "0.2"
+pyo3 = { version = "0.20", features = [
+  "extension-module",
+  "abi3",
+  "abi3-py38",
+] }
+rsprocmaps = "0.3"
