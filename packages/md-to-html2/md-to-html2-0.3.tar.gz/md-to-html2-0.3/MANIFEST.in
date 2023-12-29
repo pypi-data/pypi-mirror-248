@@ -1,0 +1,4 @@
+include src/md_to_html2/templates/*.j2
+include src/md_to_html2/templates/shared/*.css
+include src/md_to_html2/templates/shared/*.js
+include src/md_to_html2/config.yaml

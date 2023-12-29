@@ -1,0 +1,26 @@
+enable_mathjax: true
+enable_codehilite: true
+enable_jinja: false
+jinja_prefix: 'jinja '
+jinja_header: >
+  {%- import 'lightgallery.j2' as LightGallery -%}
+template: simple
+standalone: true
+toc_depth: 2-4
+encoding: utf-8
+base_url: '' # Include trailing slash
+shared_dir: shared/md-to-html
+absolute_links: false
+update: false
+exclude_dirs:
+  - .git
+  - __pycache__
+  - templates
+  - reveal.js
+
+exclude_files: []
+protect_dirs:
+  - reveal.js
+  - /shared/md-to-html
+
+protect_files: []

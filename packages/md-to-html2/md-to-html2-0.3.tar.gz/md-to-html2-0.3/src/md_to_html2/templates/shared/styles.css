@@ -1,0 +1,4 @@
+{# vim: set ft=jinja -#}
+{% include 'shared/justify.css' %}
+{% include 'shared/navright.css' %}
+{% include 'shared/codehilite.css' %}
