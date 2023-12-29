@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+publish.md
+pyproject.toml
+setup.cfg
+setup.py
+src/socian_auth/__init__.py
+src/socian_auth/api_client.py
+src/socian_auth/models.py
+src/socian_auth.egg-info/PKG-INFO
+src/socian_auth.egg-info/SOURCES.txt
+src/socian_auth.egg-info/dependency_links.txt
+src/socian_auth.egg-info/requires.txt
+src/socian_auth.egg-info/top_level.txt
+tests/test.py
+tests/test_module1.py
