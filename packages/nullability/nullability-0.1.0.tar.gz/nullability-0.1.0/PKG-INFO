@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: nullability
+Version: 0.1.0
+Summary: Pass nullable arguments that may not exist
+Project-URL: Homepage, https://github.com/sayanarijit/nullablility
+Author-email: Arijit Basu <sayanarijit@gmail.com>
+Maintainer-email: Arijit Basu <sayanarijit@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2023 Arijit Basu
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Provides-Extra: test
+Requires-Dist: flake8; extra == 'test'
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-cov; extra == 'test'
+Description-Content-Type: text/markdown
+
+# nullability
+
+Pass nullable arguments that may not exist.
+
+[![PyPI version](https://img.shields.io/pypi/v/nullability.svg)](https://pypi.org/project/nullability)
+
+### Usage
+
+```python
+>>> Nullable(1).value
+1
+
+>>> print(Nullable(None).value)
+None
+
+>>> Nullable.if_not_none(1)
+Nullable(value=1)
+
+>>> print(Nullable.if_not_none(None))
+None
+```
+
+### Usecase example:
+
+```python
+>>> from dataclasses import dataclass
+>>> from typing import Optional
+>>> from nullability import Nullable
+
+>>> @dataclass
+... class Foo:
+...     bar: Optional[int]
+...     baz: Optional[int]
+...
+...     def update(
+...         self,
+...         bar: Optional[Nullable[int]]=None,
+...         baz: Optional[Nullable[int]]=None,
+...     ):
+...         if bar:
+...             self.bar = bar.value
+...         if baz:
+...             self.baz = baz.value
+...         return self
+
+>>> foo = Foo(bar=1, baz=2)
+
+>>> foo.update(bar=Nullable(3))
+Foo(bar=3, baz=2)
+
+>>> foo.update(baz=Nullable(None))
+Foo(bar=3, baz=None)
+
+>>> foo.update(bar=Nullable.if_not_none(None))
+Foo(bar=3, baz=None)
+
+>>> foo.update(bar=Nullable.if_not_none(4))
+Foo(bar=4, baz=None)
+```
