@@ -1,0 +1,12 @@
+frostrose/__init__.py,sha256=ThY2ser4kUqsDaPuXKci3wUFKtUds27SXZIugZIkwS0,202
+frostrose/climate_normals.py,sha256=bWwxEJFgJhLAjA8OeGwjvSHqJJ7Oh_NILUjmaaJ53q0,789
+frostrose/code_tables.py,sha256=d0NUmMU1MU6Bds7zaQcDwKWg-kgzYopXVSNaneV7tRs,664
+frostrose/elements.py,sha256=CzursAhhI_Q-EvW8bijP0st5S2hl5VNZY5BLl5sNs1g,1069
+frostrose/frost_client.py,sha256=YEueYwMG6gAx9Sp4z1ENw6zPshCjpL5qa7RHV8rCZoY,1670
+frostrose/locations.py,sha256=b6hTI7FUBfojh9XIfNxbbq_2vKK_fP6Wa1z7-IMMIvg,1009
+frostrose/observations.py,sha256=Mb-kq7fFcouR9Hx78vf1G8eeJL_20MLPZjvX67oB0ck,3891
+frostrose/sources.py,sha256=rCCAbZufIc07tz8qQAugL49hv1sQkpfDv7UFwYAyfM0,3145
+frostrose-0.1.1.dist-info/LICENSE,sha256=ntGOmoG-0793OGW7rDtMhbxrZFaoKldVaaQaSSGhqBc,1055
+frostrose-0.1.1.dist-info/METADATA,sha256=6TFM4KXZyGzMHe4FIgoWncTGp06nIP2u3-MxOpkYgf4,2955
+frostrose-0.1.1.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+frostrose-0.1.1.dist-info/RECORD,,
