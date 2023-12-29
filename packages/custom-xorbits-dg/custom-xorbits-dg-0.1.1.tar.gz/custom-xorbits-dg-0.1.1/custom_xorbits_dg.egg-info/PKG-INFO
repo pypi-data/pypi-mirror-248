@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: custom-xorbits-dg
+Version: 0.1.1
+Summary: A custom version of xorbits library
+Author: antonvls
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
