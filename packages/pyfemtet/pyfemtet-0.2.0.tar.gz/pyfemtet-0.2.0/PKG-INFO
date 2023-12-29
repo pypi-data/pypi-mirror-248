@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: pyfemtet
+Version: 0.2.0
+Summary: Design parameter optimization using Femtet.
+Home-page: https://github.com/pyfemtet/pyfemtet
+License: BSD-3-Clause
+Author: kazuma.naito
+Author-email: kazuma.naito@murata.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: botorch (>=0.9.5,<0.10.0)
+Requires-Dist: dash (>=2.14.2,<3.0.0)
+Requires-Dist: dash-bootstrap-components (>=1.5.0,<2.0.0)
+Requires-Dist: femtetutils (>=1.0.0,<2.0.0)
+Requires-Dist: numpy (>=1.26.2,<2.0.0)
+Requires-Dist: openpyxl (>=3.1.2,<4.0.0)
+Requires-Dist: optuna (>=3.4.0,<4.0.0)
+Requires-Dist: pandas (>=2.1.3,<3.0.0)
+Requires-Dist: plotly (>=5.18.0,<6.0.0)
+Requires-Dist: psutil (>=5.9.6,<6.0.0)
+Requires-Dist: pywin32 (>=306,<307)
+Requires-Dist: ray (>=2.8.1,<3.0.0)
+Requires-Dist: scipy (>=1.11.4,<2.0.0)
+Requires-Dist: tqdm (>=4.66.1,<5.0.0)
+Project-URL: Repository, https://github.com/pyfemtet/pyfemtet
+Description-Content-Type: text/markdown
+
+# Welcome To PyFemtet !
+pyfemtet.opt は、Femtet を用いてパラメータ最適化を行うことのできる Python パッケージです。
+
+## 機能
+
+Femtet を使ったシミュレーションによって、パラメータの最適化を行うことができます。
+連続変数の単目的・多目的最適化に対応しています。
+いくつかの最適化結果可視化機能を備えており、最適化結果の分析が可能です。
+
+***注意：現在、本ライブラリは beta 版です！***
+
+## Install
+
+インストール方法は以下の通りです。
+
+1. Femtet のインストール
+
+    [https://www.muratasoftware.com/](https://www.muratasoftware.com/)
+
+    初めての方は、試用版または個人版のご利用もご検討ください。
+
+
+1. Femtet のマクロ有効化
+
+    Femtet インストール後にスタートメニューから「マクロ機能を有効化する」を実行してください。
+
+1. Python のインストール
+
+    [https://www.python.org/](https://www.python.org/)
+
+1. PyFemtet のインストール
+    
+    ターミナルで下記コマンドを実行してください。
+    ```
+    py -m pip install pyfemtet
+    ```
+
+1. Femtet マクロ定数の設定
+
+    ターミナルで下記コマンドを実行してください。詳しくは Femtet マクロヘルプをご覧ください。
+    ```
+    py -m win32com.client.makepy FemtetMacro
+    ```
+
+    
+
+## document
+
+下記をご覧ください。
+https://pyfemtet.github.io/pyfemtet/
+
+
+---
+
+## English version of this document
+We're sorry, this section is under constructing.
+
+---
+Copyright (C) 2023 Murata Manufacturing Co., Ltd. All Rights Reserved.
+
+Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
