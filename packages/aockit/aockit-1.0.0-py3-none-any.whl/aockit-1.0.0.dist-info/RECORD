@@ -1,0 +1,15 @@
+aockit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aockit/grid.py,sha256=aUEbhW-WYWgSgu6b3Dhi2M29T_pi4KOOU8fdUkzMpls,2668
+aockit/inputs.py,sha256=6h7ZFTBNpjYxISuaMUGT-vYqWANMJ4O44cTKrw4_qpk,2688
+aockit/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aockit/test/assets/input_char_grid.txt,sha256=_rIf1-ijCyhf32e8pqD0YZUsJnmshpoSJz-WP-rXQRQ,20
+aockit/test/assets/input_int_grid.txt,sha256=7zHmROTZcQ2pIg0O-UBAOEMjwnyimqtme83vulL8Vdg,30
+aockit/test/assets/input_int_groups.txt,sha256=Cglt16cWYOTyz0ytmGuBkC3_3J63j9r1CacwNrOrqfw,42
+aockit/test/assets/input_ints.txt,sha256=Ew2a1V8xkxBDbrYfG0ZUnsewoIxbSGpxaIasWW8YHNU,25
+aockit/test/assets/input_string_groups.txt,sha256=Uo5WdrPZssyJRjn8_RlncyIh2BDxAqHtuqJaidvmnCM,45
+aockit/test/assets/input_strings.txt,sha256=EzicAMlgvPpQjJBLbmWthX8QBEEpQo4jbBG7zPJ1SM8,17
+aockit/test/test_grid.py,sha256=vaUevTlHZGKZ-q4KWb5ItgxtzYyleSwVuS_IaxxToV8,1441
+aockit/test/test_inputs.py,sha256=KKnv28uoel1f-xMgNXWhISgwRXcFAfQrSZUeK-_4n5Q,2427
+aockit-1.0.0.dist-info/METADATA,sha256=RTkXPkuHcJDmf7giKeF5EDnqCpTo32tObgZAnQ-S1Pw,3574
+aockit-1.0.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+aockit-1.0.0.dist-info/RECORD,,
