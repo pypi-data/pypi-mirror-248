@@ -1,0 +1,20 @@
+[project]
+name = "notion-md"
+version = "0.0.1"
+dependencies = ["notion_client>=2.0.0", "requests>=2.31.0", "bs4>=0.0.1"]
+authors = [{ name = "qxxiao", email = "im.qxxiao@gmail.com" }]
+description = "A package for notion2md"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+notion_md = "notion_md.exporter:main"
+
+[project.urls]
+Homepage = "https://github.com/qxxiao/notion2md"
+Issues = "https://github.com/qxxiao/notion2md/issues"
