@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: wx-mp-svr
+Version: 0.0.1
+Summary: Wechat Official Accounts Callback Server Simple Framework
+Project-URL: Homepage, https://github.com/easy-wx/wx-mp-svr
+Project-URL: Issues, https://github.com/easy-wx/wx-mp-svr/issues
+Author-email: panzhongxian <panzhongxian0532@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: flask>=3.0.0
+Requires-Dist: wx-crypt>=0.0.2
+Description-Content-Type: text/markdown
+
+# 公众号消息回复服务
+
+## 1. 项目介绍
+
+本项目是一个基于 [Flask](https://flask.palletsprojects.com/en/1.1.x/) 的**微信公众号/订阅号的自动回复消息的简单服务框架
+**。
+使用者只需要实现两个简单的函数，即可快速搭建一个企业微信机器人回调功能的接口服务。
+
+实现过程参考 [微信公众平台开发者文档-基础消息能力/接收普通消息](https://developers.weixin.qq.com/doc/offiaccount/Message_Management/Receiving_standard_messages.html)
+和 [被动回复用户消息](https://developers.weixin.qq.com/doc/offiaccount/Message_Management/Passive_user_reply_message.html)
+两个文档进行实现。
+
+## 2. demo 效果
+
+使用 demo/demo.py 中的示例，可以直接将实现一个 ECHO 功能的公众号服务。
+
+## 3. 使用
