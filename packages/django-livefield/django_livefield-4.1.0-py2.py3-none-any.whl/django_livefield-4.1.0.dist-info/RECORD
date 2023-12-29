@@ -1,0 +1,11 @@
+livefield/__init__.py,sha256=9FT178StLYURoqKhP8nqpymSI_pZAeyeljbij0-tLQg,219
+livefield/fields.py,sha256=rtt3eAHbGod9Ol4aXy8ps4HWQn41L3RjZtRRApQ82xg,2364
+livefield/managers.py,sha256=kSfdGGJmqT35383Ukr4faqKl-8SkWjbL0GdDGPiZ2fs,662
+livefield/models.py,sha256=JmQ6yrtFCS2pG939Zb0rZpjbVeraNCG1Pqk4yXc4M2M,726
+livefield/querysets.py,sha256=tdO2HdyoE4lRzMjO4yc3Z1gyAFh4LnCK4xZrv07m5g0,582
+django_livefield-4.1.0.dist-info/AUTHORS.rst,sha256=yk_W3eOExeHi3kjmi-ap49DsiVcJf6Jqi1shd7TjYbA,500
+django_livefield-4.1.0.dist-info/LICENSE.txt,sha256=96y_clllwcjk81PHXOS6mqabudNUjteWb9L7eQAQi2g,1087
+django_livefield-4.1.0.dist-info/METADATA,sha256=5xqy7xejMBML1UIdC5ZnyPWe5idBVcBPcEhHGDMdkIk,4985
+django_livefield-4.1.0.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+django_livefield-4.1.0.dist-info/top_level.txt,sha256=BuqcALwKKLzkq79Y20m43_7HMK1jcXT5lzQp5mCqtwg,10
+django_livefield-4.1.0.dist-info/RECORD,,

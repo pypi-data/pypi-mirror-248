@@ -1,0 +1,173 @@
+Metadata-Version: 2.1
+Name: django-livefield
+Version: 4.1.0
+Summary: Convenient soft-deletion support for Django models
+Home-page: https://github.com/hearsaycorp/django-livefield
+Author: Hearsay Social
+Author-email: opensource@hearsaysocial.com
+License: MIT
+Keywords: python django soft-delete
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.0
+Classifier: Framework :: Django :: 4.1
+Classifier: Framework :: Django :: 4.2
+Classifier: Framework :: Django :: 5.0
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+License-File: LICENSE.txt
+License-File: AUTHORS.rst
+Requires-Dist: Django <5.1,>=3.2
+
+================
+django-livefield
+================
+
+=====
+About
+=====
+A Django field that enables convenient soft-deletion. For Python 2.7/3.3+ and Django 1.8+
+
+============
+Installation
+============
+Simple: ``pip install django-livefield``.
+
+=============
+Example Usage
+=============
+.. code:: python
+
+    >>> from django.db import models
+    >>> from livefield import LiveField, LiveManager
+    >>>
+    >>>
+    >>> class Person(models.Model):
+    ...    name = models.CharField()
+    ...    live = LiveField()
+    ...
+    ...    objects = LiveManager()
+    ...    all_objects = LiveManager(include_soft_deleted=True)
+    ...
+    ...    class Meta:
+    ...        unique_together = ('name', 'live')
+    ...
+    ...    def delete(self, using=None):
+    ...        self.live = False
+    ...        self.save(using=using)
+    ...
+    >>> john = Person.objects.create(name='John Cleese')
+    >>> doppelganger = Person(name='John Cleese')
+    >>> doppelganger.save()  # Raises an IntegrityError
+    >>> john.delete()
+    >>> doppelganger.save()  # Succeeds!
+
+=======
+License
+=======
+MIT. See LICENSE.txt for details.
+
+============
+Contributing
+============
+Pull requests welcome! To save everyone some hassle, please open an
+issue first so we can discuss your proposed change.
+
+In your PR, be sure to add your name to AUTHORS.txt and include some
+tests for your spiffy new functionality.  CI will green-light your
+build once it passes the unit tests (``./setup.py test``) and our
+linters (``./lint.sh``).
+
+
+Changelog
+=========
+
+4.1.0
+--------------------
+    - Add support for Python 3.12
+    - Add support for Django 5.0
+
+4.0.0
+--------------------
+    - Add support for Python 3.8 - 3.11
+    - Add support for Django 4.1 and 4.2
+    - Remove support for old Django versions
+    - Remove support for old Python versions
+
+3.3.0
+--------------------
+    - Django 3.x support
+    - switch to BooleanField as base (Django 4.x deprecation)
+
+3.2.1
+--------------------
+    - Fix rST formatting in this file to pass PyPI rendering check
+
+3.2.0 (Not released)
+--------------------
+    - Support Django 2.2
+    - Support Python 3.7
+    - Fix metadata to remove deprecated Django versions
+    - Expand travis tests for versions and database engines
+    - Remove obsolete pylint suppressions
+    - Thanks to [@shurph](https://github.com/shurph) for the above!
+
+3.1.0
+--------------------
+    - Fix [deprecation of context param for Field.from_db_value](https://code.djangoproject.com/ticket/28370)
+    - Support for Django 2.1 (Thanks [@lukeburden](https://github.com/lukeburden)
+    - Switch tests suite to use pytest
+    - Remove pylint-django plugin, no longer needed
+
+3.0.0
+--------------------
+    - Add support for Python 3.6
+    - Add support for Django 2.0
+    - Remove support for Python 3.4
+    - Remove support for old Django versions
+    - Remove GIS
+
+
+2.5.0 (Not released)
+--------------------
+    - Added official Python 3 support.
+    - Re-added support for Django 1.8. Now supports Django 1.8 and 1.9.
+
+2.4.0 (2016-02-11)
+--------------------
+    - Drop support for Django 1.8
+    - Add number of affected rows for delete methods (hard_delete, soft_delete, delete). Note: Django 1.9+ only.
+
+2.1.0 (2014-09-04)
+--------------------
+    - Add support for Django 1.7.
+
+2.0.0 (2014-07-13)
+--------------------
+    - Renamed top-level namespace to ``livefield``.
+    - Restructured internally to match Django convention.
+    - Added GIS support.
+    - Added South support.
+
+1.0.0 (2014-02-14)
+--------------------
+    - Initial release.
+    - Separated existing code from main application repository.
+
+
+Developed and maintained by `Hearsay Social, Inc.
+<http://hearsaysocial.com>`_.
+
+Contributors
+============
+| `Adam DePue <http://github.com/adepue>`_
+| `Akshay Shah <http://github.com/akshayjshah>`_
+| `John Lynn <http://github.com/jlynn>`_
+| `Dylan Verheul <http://github.com/dyve>`_
+| `Grant McConnaughey <http://github.com/grantmcconnaughey>`_
+| `Luke Burden <http://github.com/lukeburden>`_
+| `James Addison <http://github.com/jaddison>`_
+| `Krisztian Csizmazia <http://github.com/csizmaziakiki>`_
