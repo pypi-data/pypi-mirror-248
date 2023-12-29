@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+pptx_o_matic/__init__.py
+pptx_o_matic/img2pptx.py
+pptx_o_matic/pdf2pptx.py
+pptx_o_matic.egg-info/PKG-INFO
+pptx_o_matic.egg-info/SOURCES.txt
+pptx_o_matic.egg-info/dependency_links.txt
+pptx_o_matic.egg-info/entry_points.txt
+pptx_o_matic.egg-info/requires.txt
+pptx_o_matic.egg-info/top_level.txt
+test/test_img2pptx.py
+test/test_pdf2pptx.py
