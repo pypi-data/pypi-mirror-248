@@ -1,0 +1,3 @@
+[console_scripts]
+qingpictrl=qingpi.__main__:main
+
