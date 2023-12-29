@@ -1,0 +1,48 @@
+file_shards:
+  - name: 00ea4d9d-3868-4de1-affe-94aa61403f50
+    path: /data/00ea4d9d-3868-4de1-affe-94aa61403f50/trident
+    weight: 20
+  - name: 4c7b4c62-e31a-4b60-b96e-8fd7bf413005
+    path: /data/4c7b4c62-e31a-4b60-b96e-8fd7bf413005/trident
+    weight: 20
+  - name: 533e90ea-e4b6-42e8-9c04-ada31373e202
+    path: /data/533e90ea-e4b6-42e8-9c04-ada31373e202/trident
+    weight: 20
+  - name: cd5b92ac-c110-47f4-9812-45f597310661
+    path: /data/cd5b92ac-c110-47f4-9812-45f597310661/trident
+    weight: 20
+  - name: eb0d216d-687a-4ffd-a184-29ef06f953e0
+    path: /data/eb0d216d-687a-4ffd-a184-29ef06f953e0/trident
+    weight: 20
+logging:
+  version: 1
+  disable_existing_loggers: False
+  formatters:
+    default:
+      class: izihawa_loglib.formatters.DefaultHttpFormatter
+  handlers:
+    default:
+      formatter: default
+      class: logging.StreamHandler
+      stream: ext://sys.stderr
+    access:
+      formatter: default
+      class: logging.StreamHandler
+      stream: ext://sys.stdout
+  loggers:
+    uvicorn.error:
+      level: INFO
+      handlers:
+        - default
+      propagate: no
+    uvicorn.access:
+      level: INFO
+      handlers:
+        - access
+      propagate: no
+  root:
+    level: DEBUG
+    handlers:
+      - default
+    propagate: no
+replicas: 1
