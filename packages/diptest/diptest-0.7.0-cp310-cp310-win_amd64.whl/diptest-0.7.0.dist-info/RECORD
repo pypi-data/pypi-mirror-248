@@ -1,0 +1,11 @@
+diptest/.diptest.py.un~,sha256=DJ7VQK2JcBUq7OIB6Rkm2FnL14ktaD9rUoVZTdF6ET0,1515
+diptest/__init__.py,sha256=lw2sZIXFLzZqpz7XALrMUUI8Z6nf-uYLR9iU4cnBUMU,282
+diptest/consts.py,sha256=71FTq1LiSBVF5YCjQeY-qYQzRCom2WPKg6o0bNJhol0,24020
+diptest/diptest.py,sha256=msCOzc2lX_XSF39KCj6OQtOts3Wrys__RJEi6oQYz3A,7172
+diptest/lib/_diptest_core.cp310-win_amd64.pyd,sha256=ytmFkk_hXeuHe1N71DTzHw92ZS4waQSZ8Z0S8alx1kA,131072
+diptest-0.7.0.dist-info/METADATA,sha256=EFkFkIFWyi6QDWO_cXEtGwWHwKhAax6ROTWZCPRecek,5471
+diptest-0.7.0.dist-info/WHEEL,sha256=Ah-A4m9Tj0SPPqJh9lWcBcbEN6NZA7iLoiAZdHoLp6I,105
+diptest-0.7.0.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+diptest-0.7.0.dist-info/licenses/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+diptest-0.7.0.dist-info/licenses/COPYING,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+diptest-0.7.0.dist-info/RECORD,,
