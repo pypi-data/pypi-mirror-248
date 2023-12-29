@@ -1,0 +1,6 @@
+requests
+sqlalchemy
+pandas
+influxdb
+importlib_resources
+typing
