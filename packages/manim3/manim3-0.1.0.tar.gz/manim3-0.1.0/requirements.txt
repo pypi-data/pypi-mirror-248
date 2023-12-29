@@ -1,0 +1,12 @@
+attrs
+colour
+ffmpeg-python
+lru-dict
+mapbox-earcut
+moderngl
+numpy
+pillow
+pyclipr
+pyglet
+rich
+svgelements
