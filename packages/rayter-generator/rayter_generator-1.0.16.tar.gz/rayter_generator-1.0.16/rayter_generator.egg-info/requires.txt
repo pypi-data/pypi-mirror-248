@@ -1,0 +1,7 @@
+rayter
+jinja2
+tomli
+py-avataaars
+requests
+puremagic
+numpy
