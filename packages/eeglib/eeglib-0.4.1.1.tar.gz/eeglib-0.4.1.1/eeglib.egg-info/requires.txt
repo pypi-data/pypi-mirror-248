@@ -1,0 +1,12 @@
+fastdtw
+numba
+numpy
+pandas
+progressbar2
+pyedflib
+scikit-learn
+scipy
+
+[doc]
+numpydoc
+sphinx
