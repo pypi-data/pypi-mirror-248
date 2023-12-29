@@ -1,0 +1,13 @@
+uniws/LICENSE,sha256=-aYoj3HdC-1JPpMYU6XoYVr5M63OKbuJ5bpA084Eaj4,1074
+uniws/README.md,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uniws/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uniws/core.py,sha256=vhci2qhiF2iXh230-hUv2cKSTZ1-3h-gaukcCH-P_cA,2401
+uniws/hw.py,sha256=6mlDzz_9L6oQN__kg99Frf9d772tmBmjiIV4rwkDHho,4354
+uniws/init.py,sha256=kigY-sgmh-0__7Y0wZK8K7yjWm_6qxNYQ3ZuwQ1AK2c,4576
+uniws/sw.py,sha256=qUlvPtHPZ_X1FLLsbEiXxpEWjnXetPbzs9lYdW87b0w,4752
+uniws/uniws.py,sha256=b-yWxJHDgDFRpHNZAbBk-KlTHKXDmO4GWjbZNST11X4,2602
+uniws-0.1.0.dist-info/METADATA,sha256=lLij4uX7GeaWzNRD88KVzl6qh0pDxz0OpiKHPdewMWw,2222
+uniws-0.1.0.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+uniws-0.1.0.dist-info/entry_points.txt,sha256=Ru22ixfsQdoppFOrtCOtRsyWpY6SPg_-twb6yZYU5FA,418
+uniws-0.1.0.dist-info/licenses/LICENSE,sha256=-aYoj3HdC-1JPpMYU6XoYVr5M63OKbuJ5bpA084Eaj4,1074
+uniws-0.1.0.dist-info/RECORD,,
