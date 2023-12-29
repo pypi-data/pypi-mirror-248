@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/vernemic/__init__.py
+src/vernemic/moby.py
+src/vernemic.egg-info/PKG-INFO
+src/vernemic.egg-info/SOURCES.txt
+src/vernemic.egg-info/dependency_links.txt
+src/vernemic.egg-info/requires.txt
+src/vernemic.egg-info/top_level.txt

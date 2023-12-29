@@ -1,0 +1,42 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vernemic"
+version = "1.0.1"
+description = "Mnemonics for ID, eg. Versioning."
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "pycurl",
+]
+
+[[project.authors]]
+name = "Raghav B. Venkataramaiyer"
+email = "bvraghav@gmail.com" 
+
+# Another Author
+# [[project.authors]]
+# name = "Raghav B. Venkataramaiyer"
+# email = "bvraghav@gmail.com" 
+
+
+[project.urls]
+Homepage = "https://gitlab.com/brutils/vernemic"
+Docs = "https://gitlab.com/brutils/vernemic"
+Issues = "https://gitlab.com/brutils/vernemic/-/issues"
+
+[tool.setuptools.packages.find]
+# All the following settings are optional:
+where = ["src"]                 # ["."] by default
+include = ["vernemic*"]         # ["*"] by default
+exclude = []                    # empty by default
+namespaces = false              # true by default
