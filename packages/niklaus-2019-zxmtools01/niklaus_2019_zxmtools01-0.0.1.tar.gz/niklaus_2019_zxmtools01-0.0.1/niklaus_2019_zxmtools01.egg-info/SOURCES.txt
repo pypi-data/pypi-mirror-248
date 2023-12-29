@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+niklaus_2019_zxmtools01.egg-info/PKG-INFO
+niklaus_2019_zxmtools01.egg-info/SOURCES.txt
+niklaus_2019_zxmtools01.egg-info/dependency_links.txt
+niklaus_2019_zxmtools01.egg-info/requires.txt
+niklaus_2019_zxmtools01.egg-info/top_level.txt
