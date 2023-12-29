@@ -1,0 +1,16 @@
+<canvas pySize="500x500" pyStyle="dark" pyBackground="(90,90,90)">
+    <label pyWidth="35" pyNl="0"> Total points: {{ len(points) }}</label>
+    <button pyWidth="15" pyClass="hl_green" pyAction="add_random" pyNl="0">Add</button>
+    <label pyWidth="50" pyClass="red" pyIf="len(points) == 0">no points yet!</label>
+    <label pyWidth="50" pyClass="green" pyIf="len(points) > 0 and len(points) % 2 == 0">number of points is even!</label>
+    <label pyWidth="50" pyClass="red" pyIf="len(points) > 0 and len(points) % 2 == 1">number of points is not even!</label>
+    <list pyMaxHeight="400">
+        <list-item pyFor="point in points">
+            <label pyWidth="30" pyClass="bright"> {{ point.name }}</label>
+            <label pyWidth="30" pyClass="bright red" pyIf="'.' in str(point.pos[0]) or '.' in str(point.pos[1])"> {{ point.pos }}</label>
+            <label pyWidth="30" pyClass="bright" pyIf="not ('.' in str(point.pos[0]) and '.' in str(point.pos[1]))"> {{ point.pos }}</label>
+            <button pyWidth="20" pyClass="hl_blue" pyAction="round" pyArgs="point"> Round </button>
+            <button pyWidth="20" pyClass="hl_red" pyAction="delete" pyArgs="point"> Delete </button>
+        </list-item>
+    </list>
+</canvas>
