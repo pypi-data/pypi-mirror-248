@@ -1,0 +1,7 @@
+petstoreapi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+petstoreapi/api.py,sha256=Qgnv13r__09jVr33Mn8zppmbN91Lu14G5FV1lMTy_vA,4941
+petstoreapi/generate.py,sha256=dCJ2mNCJ1IOr-L976u2nW0ya3L2W4vJGIcyzCL2kzQo,1904
+petstoreapi-0.0.3.dist-info/METADATA,sha256=hdVZcm-n6GooMfiM7AAdPMe1tyQTpi3DT4olYhkkc3E,448
+petstoreapi-0.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+petstoreapi-0.0.3.dist-info/top_level.txt,sha256=qjK3juyayFQLOM3SEq0wgz3zBAPmKgKvgScfgInHz0o,12
+petstoreapi-0.0.3.dist-info/RECORD,,
