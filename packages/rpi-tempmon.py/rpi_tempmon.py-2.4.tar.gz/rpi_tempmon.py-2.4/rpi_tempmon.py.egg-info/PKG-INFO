@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: rpi-tempmon.py
+Version: 2.4
+Summary: Monitor RAM,CPU and GPU data  of Raspberry Pi
+Home-page: https://github.com/gavinlyonsrepo/raspeberrypi_tempmon
+Download-URL: https://github.com/gavinlyonsrepo/raspeberrypi_tempmon/archive/2.4.tar.gz
+Author: gavin lyons
+Author-email: glyons66@hotmail.com
+License:  GPL
+Keywords: PI Raspberry CPU ARM GPU temperature temp rpi monitor display gavin lyons
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+License-File: LICENSE.md
