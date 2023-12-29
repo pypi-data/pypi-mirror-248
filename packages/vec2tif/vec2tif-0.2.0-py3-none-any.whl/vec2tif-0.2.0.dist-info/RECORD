@@ -1,0 +1,9 @@
+vec2tif/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+vec2tif/__main__.py,sha256=c4UjhbPzZsOSkeFHjTysKSAbOJhw4yGu-OMsbJ27arQ,2165
+vec2tif/csv2tif.py,sha256=Nr2JzoWunTzUGg3uGhZavmSKsT9BU3lJ0f--tnnj36I,6560
+vec2tif/fgd2tif.py,sha256=jCLayfI4AEacSLrALND0NV962MrKaSNfKuUhb7JKEhQ,7959
+vec2tif/shp2tif.py,sha256=BBVKctbqcjoJtX_omO3DNH8KPOMnjbE_t58DWrYLNFo,5214
+vec2tif-0.2.0.dist-info/METADATA,sha256=U1eO0mqIYsFkgHxIzCK6CzJ-_ylh5sLCJQEMxZgfy5k,2536
+vec2tif-0.2.0.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+vec2tif-0.2.0.dist-info/licenses/LICENSE,sha256=32hL6yz_YabOySdHrqZmFJvR8cUV4qS88S2wb3ujwBI,1072
+vec2tif-0.2.0.dist-info/RECORD,,
