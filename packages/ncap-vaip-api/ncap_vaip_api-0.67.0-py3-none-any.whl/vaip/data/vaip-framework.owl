@@ -1,0 +1,2731 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#"
+     xml:base="http://ncei.noaa.gov/vaip/ontologies/vaip-framework"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework">
+        <owl:versionInfo>1.1.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasConnection -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasConnection">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Endpoint"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#EndpointPattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#EndpointRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#EndpointTemplate"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Connection"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ConnectionPattern"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ConnectionRecord"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ConnectionTemplate"/>
+        <rdfs:label>hasConnection</rdfs:label>
+        <skos:prefLabel xml:lang="en">hasConnection</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasEndpoint -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasEndpoint">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputStorage"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputStoragePattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputStorageRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputStorageTemplate"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Endpoint"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#EndpointPattern"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#EndpointRecord"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#EndpointTemplate"/>
+        <rdfs:label>hasEndpoint</rdfs:label>
+        <skos:prefLabel xml:lang="en">hasEndpoint</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasField -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasField">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Storage"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Field"/>
+        <rdfs:label>hasField</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">hasDataObjectPattern</skos:hiddenLabel>
+        <skos:hiddenLabel xml:lang="en">hasDataObjectRecord</skos:hiddenLabel>
+        <skos:hiddenLabel xml:lang="en">hasDataObjectTemplate</skos:hiddenLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasFieldMap -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasFieldMap">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityTask"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputTask"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputTask"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTask"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FieldMap"/>
+        <rdfs:label>hasFieldMap</rdfs:label>
+        <skos:prefLabel xml:lang="en">hasFieldMap</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasFieldMapEntry -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasFieldMapEntry">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FieldMap"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FieldMapPattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FieldMapRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FieldMapTemplate"/>
+        <rdfs:label>hasFieldMapEntry</rdfs:label>
+        <skos:altLabel xml:lang="en">hasEntry</skos:altLabel>
+        <skos:prefLabel xml:lang="en">hasFieldMapEntry</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasFlow -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasFlow">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityTask"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputTask"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTask"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityTask"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputTask"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTask"/>
+        <rdfs:label>hasFlow</rdfs:label>
+        <skos:altLabel xml:lang="en">hasTaskFlow</skos:altLabel>
+        <skos:prefLabel xml:lang="en">hasFlow</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasFlowFrom -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasFlowFrom">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasFlow"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityTask"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputTask"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTask"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityTask"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputTask"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTask"/>
+        <rdfs:label>hasFlowFrom</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasFlowTo -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasFlowTo">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasFlow"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityTask"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputTask"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTask"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityTask"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputTask"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTask"/>
+        <rdfs:label>hasFlowTo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasIdentityStorage -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasIdentityStorage">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasStorage"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityTask"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityStorage"/>
+        <rdfs:label>hasIdentityStorage</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">hasContextAiuStorage</skos:hiddenLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasIdentityStoragePattern -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasIdentityStoragePattern">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasIdentityStorage"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityTaskPattern"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityStoragePattern"/>
+        <rdfs:label>hasIdentityStoragePattern</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">hasContextAiuStoragePattern</skos:hiddenLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasIdentityStorageRecord -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasIdentityStorageRecord">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasIdentityStorage"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityTaskRecord"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityStorageRecord"/>
+        <rdfs:label>hasIdentityStorageRecord</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">hasContextAiuStorageRecord</skos:hiddenLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasIdentityStorageTemplate -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasIdentityStorageTemplate">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasIdentityStorage"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityTaskTemplate"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityStorageTemplate"/>
+        <rdfs:label>hasIdentityStorageTemplate</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">hasContextAiuStorageTemplate</skos:hiddenLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasIdentityTask -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasIdentityTask">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasTask"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Process"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityTask"/>
+        <rdfs:label>hasIdentityTask</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">hasContextAiuTask</skos:hiddenLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasIdentityTaskPattern -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasIdentityTaskPattern">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasIdentityTask"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#PatternMetadataRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ProcessPattern"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityTaskPattern"/>
+        <rdfs:label>hasIdentityTaskPattern</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">hasContextAiuTaskPattern</skos:hiddenLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasIdentityTaskRecord -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasIdentityTaskRecord">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasIdentityTask"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ProcessRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RecordMetadataRecord"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityTaskRecord"/>
+        <rdfs:label>hasIdentityTaskRecord</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">hasContextAiuTaskRecord</skos:hiddenLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasIdentityTaskTemplate -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasIdentityTaskTemplate">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasIdentityTask"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ProcessTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TemplateMetadataRecord"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityTaskTemplate"/>
+        <rdfs:label>hasIdentityTaskTemplate</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">hasContextAiuTaskTemplate</skos:hiddenLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasInputStorage -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasInputStorage">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasStorage"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputTask"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputStorage"/>
+        <rdfs:label>hasInputStorage</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">hasContextSipStorage</skos:hiddenLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasInputStoragePattern -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasInputStoragePattern">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasInputStorage"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputTaskPattern"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputStoragePattern"/>
+        <rdfs:label>hasInputStoragePattern</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">hasContextSipStoragePattern</skos:hiddenLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasInputStorageRecord -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasInputStorageRecord">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasInputStorage"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputTaskRecord"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputStorageRecord"/>
+        <rdfs:label>hasInputStorageRecord</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">hasContextSipStorageRecord</skos:hiddenLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasInputStorageTemplate -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasInputStorageTemplate">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasInputStorage"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputTaskTemplate"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputStorageTemplate"/>
+        <rdfs:label>hasInputStorageTemplate</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">hasContextAiuStorageTemplate</skos:hiddenLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasInputTask -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasInputTask">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasTask"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Process"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputTask"/>
+        <rdfs:label>hasInputTask</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">hasContextSipTask</skos:hiddenLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasInputTaskPattern -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasInputTaskPattern">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasInputTask"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#PatternMetadataRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ProcessPattern"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputTaskPattern"/>
+        <rdfs:label>hasInputTaskPattern</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">hasContextSipTaskPattern</skos:hiddenLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasInputTaskRecord -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasInputTaskRecord">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasInputTask"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ProcessRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RecordMetadataRecord"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputTaskRecord"/>
+        <rdfs:label>hasInputTaskRecord</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">hasContextSipTaskRecord</skos:hiddenLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasInputTaskTemplate -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasInputTaskTemplate">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasInputTask"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ProcessTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TemplateMetadataRecord"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputTaskTemplate"/>
+        <rdfs:label>hasInputTaskTemplate</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">hasContextSipTaskTemplate</skos:hiddenLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasLiteralField -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasLiteralField">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasField"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityStoragePattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityStorageRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityStorageTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputStoragePattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputStorageRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputStorageTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputStoragePattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputStorageRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputStorageTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationStoragePattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationStorageRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationStorageTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MemberDescriptionPattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MemberDescriptionRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MemberDescriptionTemplate"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#LiteralField"/>
+        <rdfs:label>hasLiteralField</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">hasDataObjectPattern</skos:hiddenLabel>
+        <skos:hiddenLabel xml:lang="en">hasDataObjectRecord</skos:hiddenLabel>
+        <skos:hiddenLabel xml:lang="en">hasDataObjectTemplate</skos:hiddenLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasMapping -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasMapping">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FieldMap"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Storage"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#UBL"/>
+        <rdfs:label>hasMapping</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasMetadata -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasMetadata">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FieldMapPattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FieldMapRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FieldMapTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityStoragePattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityStorageRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityStorageTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityTaskPattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityTaskRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityTaskTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputStoragePattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputStorageRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputStorageTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputTaskPattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputTaskRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputTaskTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputStoragePattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputStorageRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputStorageTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputTaskPattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputTaskRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputTaskTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ProcessPattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ProcessRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ProcessTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RequestPattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RequestRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RequestTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ResponsePattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ResponseRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ResponseTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#SessionPattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#SessionRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#SessionTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationStoragePattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationStorageRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationStorageTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTaskPattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTaskRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTaskTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#UBLPattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#UBLRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#UBLTemplate"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MetadataPattern"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MetadataRecord"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MetadataTemplate"/>
+        <rdfs:label>hasMetadata</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasMetadataPattern -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasMetadataPattern">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasMetadata"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#PatternMetadataTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RecordMetadataTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TemplateMetadataTemplate"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#PatternMetadataPattern"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RecordMetadataPattern"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TemplateMetadataPattern"/>
+        <rdfs:label>hasMetadataPattern</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasMetadataRecord -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasMetadataRecord">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasMetadata"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FieldMapRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityStoragePattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityStorageRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityStorageTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityTaskPattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityTaskRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityTaskTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputStoragePattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputStorageRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputStorageTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputTaskPattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputTaskRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputTaskTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MetadataPattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MetadataTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputStoragePattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputStorageRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputStorageTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputTaskPattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputTaskRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputTaskTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ProcessPattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ProcessRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ProcessTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RequestPattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RequestRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RequestTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ResponsePattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ResponseRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ResponseTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#SessionPattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#SessionRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#SessionTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationStoragePattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationStorageRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationStorageTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTaskPattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTaskRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTaskTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#UBLPattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#UBLRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#UBLTemplate"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#PatternMetadataRecord"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RecordMetadataRecord"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TemplateMetadataRecord"/>
+        <rdfs:label>hasMetadataRecord</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasMetadataTemplate -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasMetadataTemplate">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasMetadata"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#PatternMetadataRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RecordMetadataRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TemplateMetadataRecord"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MetadataTemplate"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#PatternMetadataTemplate"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RecordMetadataTemplate"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TemplateMetadataTemplate"/>
+        <rdfs:label>hasMetadataTemplate</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasObject -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasObject">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#StatementField"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#LiteralField"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ObjectField"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#PropertyField"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#StatementField"/>
+        <rdfs:label>hasObject</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasOutputStorage -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasOutputStorage">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasStorage"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputTask"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputStorage"/>
+        <rdfs:label>hasOutputStorage</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">hasContextDipStorage</skos:hiddenLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasOutputStoragePattern -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasOutputStoragePattern">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasOutputStorage"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputTaskPattern"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputStoragePattern"/>
+        <rdfs:label>hasOutputStoragePattern</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">hasContextDipStoragePattern</skos:hiddenLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasOutputStorageRecord -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasOutputStorageRecord">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasOutputStorage"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputTaskRecord"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputStorageRecord"/>
+        <rdfs:label>hasOutputStorageRecord</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">hasContextDipStorageRecord</skos:hiddenLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasOutputStorageTemplate -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasOutputStorageTemplate">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasOutputStorage"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputTaskTemplate"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputStorageTemplate"/>
+        <rdfs:label>hasOutputStorageTemplate</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">hasContextDipStorageTemplate</skos:hiddenLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasOutputTask -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasOutputTask">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasTask"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Process"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputTask"/>
+        <rdfs:label>hasOutputTask</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">hasContextDipTask</skos:hiddenLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasOutputTaskPattern -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasOutputTaskPattern">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasOutputTask"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#PatternMetadataRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ProcessPattern"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputTaskPattern"/>
+        <rdfs:label>hasOutputTaskPattern</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">hasContextDipTaskPattern</skos:hiddenLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasOutputTaskRecord -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasOutputTaskRecord">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasOutputTask"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ProcessRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RecordMetadataRecord"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputTaskRecord"/>
+        <rdfs:label>hasOutputTaskRecord</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">hasConceptDipTaskRecord</skos:hiddenLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasOutputTaskTemplate -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasOutputTaskTemplate">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasOutputTask"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ProcessTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TemplateMetadataRecord"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputTaskTemplate"/>
+        <rdfs:label>hasOutputTaskTemplate</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">hasContextDipTaskTemplate</skos:hiddenLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasParent -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasParent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label>hasParent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasParentPattern -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasParentPattern">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasParent"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FieldMapTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityStorageTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityTaskTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputStorageTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputTaskTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputStorageTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputTaskTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#PatternMetadataTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ProcessTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RecordMetadataTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RequestTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ResponseTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#SessionTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TemplateMetadataTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationStorageTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTaskTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#UBLTemplate"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FieldMapPattern"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityStoragePattern"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityTaskPattern"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputStoragePattern"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputTaskPattern"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MetadataPattern"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputStoragePattern"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputTaskPattern"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#PatternMetadataPattern"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ProcessPattern"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RecordMetadataPattern"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RequestPattern"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ResponsePattern"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#SessionPattern"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TemplateMetadataPattern"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationStoragePattern"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTaskPattern"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#UBLPattern"/>
+        <rdfs:label>hasParentPattern</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasParentTemplate -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasParentTemplate">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasParent"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FieldMapRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityStorageRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityTaskRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputStorageRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputTaskRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputStorageRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputTaskRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#PatternMetadataRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ProcessRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RecordMetadataRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RequestRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ResponseRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#SessionRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TemplateMetadataRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationStorageRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTaskRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#UBLRecord"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FieldMapTemplate"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityStorageTemplate"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityTaskTemplate"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputStorageTemplate"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputTaskTemplate"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputStorageTemplate"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputTaskTemplate"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#PatternMetadataTemplate"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ProcessTemplate"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RecordMetadataTemplate"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RequestTemplate"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ResponseTemplate"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#SessionTemplate"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TemplateMetadataTemplate"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationStorageTemplate"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTaskTemplate"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#UBLTemplate"/>
+        <rdfs:label>hasParentTemplate</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasPredicate -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasPredicate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#StatementField"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#PropertyField"/>
+        <rdfs:label>hasPredicate</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasProcess -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasProcess">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MetadataRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Request"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Response"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Process"/>
+        <rdfs:label>hasProcess</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasProcessPattern -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasProcessPattern">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasProcess"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#PatternMetadataRecord"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ProcessPattern"/>
+        <rdfs:label>hasProcessPattern</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasProcessRecord -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasProcessRecord">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasProcess"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RecordMetadataRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ResponseRecord"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ProcessRecord"/>
+        <rdfs:label>hasProcessRecord</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasProcessTemplate -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasProcessTemplate">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasProcess"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RequestRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TemplateMetadataRecord"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ProcessTemplate"/>
+        <rdfs:label>hasProcessTemplate</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasObjectField -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasObjectField">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasField"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MemberDescriptionPattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MemberDescriptionRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MemberDescriptionTemplate"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ObjectField"/>
+        <rdfs:label>hasObjectField</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasPropertyField -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasPropertyField">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasField"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MemberDescriptionPattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MemberDescriptionRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MemberDescriptionTemplate"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#PropertyField"/>
+        <rdfs:label>hasPropertyField</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasStatementField -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasStatementField">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasField"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MemberDescriptionPattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MemberDescriptionRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MemberDescriptionTemplate"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#StatementField"/>
+        <rdfs:label>hasStatementField</rdfs:label>
+    </owl:ObjectProperty>
+    
+    
+    
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasProperty -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#LiteralField"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ObjectField"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#LiteralField"/>
+        <rdfs:label>hasProperty</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasReferenceModel -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasReferenceModel">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Pattern"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ReferenceModel"/>
+        <rdfs:label>hasReferenceModel</rdfs:label>
+        <skos:prefLabel xml:lang="en">hasReferenceModel</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasRequest -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasRequest">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MetadataRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Response"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Session"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Request"/>
+        <rdfs:label>hasRequest</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasRequestPattern -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasRequestPattern">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasRequest"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#PatternMetadataPattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ResponsePattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#SessionPattern"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RequestPattern"/>
+        <rdfs:label>hasRequestPattern</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasRequestRecord -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasRequestRecord">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasRequest"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RecordMetadataRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ResponseRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#SessionRecord"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RequestRecord"/>
+        <rdfs:label>hasRequestRecord</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasRequestTemplate -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasRequestTemplate">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasRequest"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ResponseTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#SessionTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TemplateMetadataRecord"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RequestTemplate"/>
+        <rdfs:label>hasRequestTemplate</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasResponse -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasResponse">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MetadataRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Session"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Response"/>
+        <rdfs:label>hasResponse</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasResponsePattern -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasResponsePattern">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasResponse"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#PatternMetadataPattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#SessionPattern"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ResponsePattern"/>
+        <rdfs:label>hasResponsePattern</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasResponseRecord -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasResponseRecord">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasResponse"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RecordMetadataPattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#SessionRecord"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ResponseRecord"/>
+        <rdfs:label>hasResponseRecord</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasResponseTemplate -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasResponseTemplate">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasResponse"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#SessionTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TemplateMetadataPattern"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ResponseTemplate"/>
+        <rdfs:label>hasResponseTemplate</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasSourceField -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasSourceField">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FieldMapEntry"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Field"/>
+        <rdfs:label>hasSourceField</rdfs:label>
+        <skos:prefLabel xml:lang="en">hasSourceField</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasSourceMapping -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasSourceMapping">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasMapping"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FieldMapPattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FieldMapRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FieldMapTemplate"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#UBLPattern"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#UBLRecord"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#UBLTemplate"/>
+        <rdfs:label>hasSourceMapping</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasStorage -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasStorage">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Task"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Storage"/>
+        <rdfs:label>hasStorage</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasStorageComponent -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasStorageComponent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Storage"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#StorageComponent"/>
+        <rdfs:label>hasStorageComponent</rdfs:label>
+        <skos:prefLabel xml:lang="en">hasStorageComponent</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasSubject -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasSubject">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#StatementField"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#LiteralField"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ObjectField"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#PropertyField"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#StatementField"/>
+        <rdfs:label>hasSubject</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasTargetField -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasTargetField">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FieldMapEntry"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Field"/>
+        <rdfs:label>hasTargetField</rdfs:label>
+        <skos:prefLabel xml:lang="en">hasTargetField</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasTargetMapping -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasTargetMapping">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasMapping"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FieldMapPattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FieldMapRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FieldMapTemplate"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityStoragePattern"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityStorageRecord"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityStorageTemplate"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputStoragePattern"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputStorageRecord"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputStorageTemplate"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputStoragePattern"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputStorageRecord"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputStorageTemplate"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationStoragePattern"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationStorageRecord"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationStorageTemplate"/>
+        <rdfs:label>hasTargetMapping</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasInputField -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasInputField">
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#UBL"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Field"/>
+        <rdfs:label>hasInputField</rdfs:label>
+        <skos:prefLabel xml:lang="en">hasInputField</skos:prefLabel>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasOutputField -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasOutputField">
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#UBL"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Field"/>
+        <rdfs:label>hasOutputField</rdfs:label>
+        <skos:prefLabel xml:lang="en">hasOutputField</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasTask -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasTask">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MetadataRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Process"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Task"/>
+        <rdfs:label>hasTask</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasTransformationStorage -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasTransformationStorage">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasStorage"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTask"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationStorage"/>
+        <rdfs:label>hasTransformationStorage</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">hasContextAicStorage</skos:hiddenLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasTransformationStoragePattern -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasTransformationStoragePattern">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasTransformationStorage"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTaskPattern"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationStoragePattern"/>
+        <rdfs:label>hasTransformationStoragePattern</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">hasContextAicStoragePattern</skos:hiddenLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasTransformationStorageRecord -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasTransformationStorageRecord">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasTransformationStorage"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTaskTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTaskRecord"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationStorageRecord"/>
+        <rdfs:label>hasTransformationStorageRecord</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">hasContextAicStorageRecord</skos:hiddenLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasTransformationStorageTemplate -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasTransformationStorageTemplate">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasTransformationStorage"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTaskTemplate"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationStorageTemplate"/>
+        <rdfs:label>hasTransformationStorageTemplate</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">hasContextAicStorageTemplate</skos:hiddenLabel>
+    </owl:ObjectProperty>
+    
+    
+    
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasMemberDescription -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasMemberDescription">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTask"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationStorage"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MemberDescription"/>
+        <rdfs:label>hasMemberDescription</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasMemberDescriptionPattern -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasMemberDescriptionPattern">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasMemberDescription"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTaskPattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationStoragePattern"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MemberDescriptionPattern"/>
+        <rdfs:label>hasMemberDescriptionPattern</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasMemberDescriptionTemplate -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasMemberDescriptionTemplate">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasMemberDescription"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTaskTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationStorageTemplate"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MemberDescriptionTemplate"/>
+        <rdfs:label>hasMemberDescriptionTemplate</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasMemberDescriptionRecord -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasMemberDescriptionRecord">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasMemberDescription"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationStorageRecord"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MemberDescriptionRecord"/>
+        <rdfs:label>hasMemberDescriptionRecord</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasTransformationTask -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasTransformationTask">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasTask"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Process"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTask"/>
+        <rdfs:label>hasTransformationTask</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">hasContextAicTask</skos:hiddenLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasTransformationTaskPattern -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasTransformationTaskPattern">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasTransformationTask"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#PatternMetadataRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ProcessPattern"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTaskPattern"/>
+        <rdfs:label>hasTransformationTaskPattern</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">hasContextAicTaskPattern</skos:hiddenLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasTransformationTaskRecord -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasTransformationTaskRecord">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasTransformationTask"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ProcessRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RecordMetadataRecord"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTaskRecord"/>
+        <rdfs:label>hasTransformationTaskRecord</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">hasContextAicTaskRecord</skos:hiddenLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasTransformationTaskTemplate -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasTransformationTaskTemplate">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasTransformationTask"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ProcessTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TemplateMetadataRecord"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTaskTemplate"/>
+        <rdfs:label>hasTransformationTaskTemplate</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">hasContextAicTaskTemplate</skos:hiddenLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasUBL -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasUBL">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Task"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#UBL"/>
+        <rdfs:label>hasUBL</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasUBLPattern -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasUBLPattern">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasUBL"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityTaskPattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputTaskPattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputTaskPattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTaskPattern"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#UBLPattern"/>
+        <rdfs:label>hasUBLPattern</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasUBLRecord -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasUBLRecord">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasUBL"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityTaskRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputTaskRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputTaskRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTaskRecord"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#UBLRecord"/>
+        <rdfs:label>hasUBLRecord</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasUBLTemplate -->
+
+    <owl:ObjectProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasUBLTemplate">
+        <rdfs:subPropertyOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasUBL"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityTaskTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputTaskTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputTaskTemplate"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTaskTemplate"/>
+        <rdfs:range rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#UBLTemplate"/>
+        <rdfs:label>hasUBLTemplate</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasClass -->
+
+    <owl:DatatypeProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasClass">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Field"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#LiteralField"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ObjectField"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#PropertyField"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#StatementField"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+        <rdfs:label>hasClass</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasLabel -->
+
+    <owl:DatatypeProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasLabel">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Field"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#LiteralField"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ObjectField"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#PropertyField"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#StatementField"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+        <rdfs:label>hasLabel</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasNamespace -->
+
+    <owl:DatatypeProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasNamespace">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Field"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#LiteralField"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ObjectField"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#PropertyField"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#StatementField"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:label>hasNamespace</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasValue -->
+
+    <owl:DatatypeProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#hasValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Field"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#LiteralField"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ObjectField"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#PropertyField"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#StatementField"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label>hasValue</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#isAutoGenerated -->
+
+    <owl:DatatypeProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#isAutoGenerated">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ObjectField"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label>isAutoGenerated</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#isRequired -->
+
+    <owl:DatatypeProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#isRequired">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#LiteralField"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ObjectField"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#PropertyField"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label>isRequired</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#isSuccessful -->
+
+    <owl:DatatypeProperty rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#isSuccessful">
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Response"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ResponsePattern"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ResponseRecord"/>
+        <rdfs:domain rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ResponseTemplate"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label>isSuccessful</rdfs:label>
+        <skos:prefLabel xml:lang="en">isSuccessful</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Connection -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Connection">
+        <rdfs:label>Connection</rdfs:label>
+        <skos:definition xml:lang="en">A Connection represents a particular configuration for a given Endpoint. Endpoints may be configured in many ways and might expose several interface parameters that should logically be grouped as sets - Connections represent those sets.</skos:definition>
+        <skos:hiddenLabel xml:lang="en">Associated Description</skos:hiddenLabel>
+        <skos:prefLabel xml:lang="en">Connection</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ConnectionPattern -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ConnectionPattern">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Connection"/>
+        <rdfs:label>Connection Pattern</rdfs:label>
+        <skos:prefLabel xml:lang="en">Connection Pattern</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ConnectionRecord -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ConnectionRecord">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Connection"/>
+        <rdfs:label>Connection Record</rdfs:label>
+        <skos:prefLabel xml:lang="en">Connection Record</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ConnectionTemplate -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ConnectionTemplate">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Connection"/>
+        <rdfs:label>Connection Template</rdfs:label>
+        <skos:prefLabel xml:lang="en">Connection Template</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Endpoint -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Endpoint">
+        <rdfs:label>Endpoint</rdfs:label>
+        <skos:definition xml:lang="en">An Endpoint represents an outbound target for an Output Task. An Endpoint is typically a sink for data or metadata that flows out of the system without expectation of receiving information back into the system.</skos:definition>
+        <skos:hiddenLabel xml:lang="en">Access Aid</skos:hiddenLabel>
+        <skos:prefLabel xml:lang="en">Endpoint</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#EndpointPattern -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#EndpointPattern">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Endpoint"/>
+        <rdfs:label>Endpoint Pattern</rdfs:label>
+        <skos:prefLabel xml:lang="en">Endpoint Pattern</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#EndpointRecord -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#EndpointRecord">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Endpoint"/>
+        <rdfs:label>Endpoint Record</rdfs:label>
+        <skos:prefLabel xml:lang="en">Endpoint Record</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#EndpointTemplate -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#EndpointTemplate">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Endpoint"/>
+        <rdfs:label>Endpoint Template</rdfs:label>
+        <skos:prefLabel xml:lang="en">Endpoint Template</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Field -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Field">
+        <rdfs:label>Field</rdfs:label>
+        <skos:definition xml:lang="en">A Field Represents the value unit in the ontology. Fields hold values (or placeholders for values) that together with other qualifiers (like required, namespace, type, id) allow them to provide information to the user. In conjunction with the reference model structure that they are configured in, Fields provide a mechanism to convey information and knowledge to the (human or machine) consumer.</skos:definition>
+        <skos:prefLabel xml:lang="en">Field</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FieldMap -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FieldMap">
+        <rdfs:label>Field Map</rdfs:label>
+        <skos:definition xml:lang="en">A Field Map connects a UBL output to a Storage (Target). Field maps contain flat key to key pairs (UBL output key to Storage input key). As a UBL completes within an executing task, it should produce and pass out a map of valued keys, that will be used in conjunction with the key to key Field Map to populate the Storage Target placeholder values.</skos:definition>
+        <skos:prefLabel xml:lang="en">Field Map</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FieldMapEntry -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FieldMapEntry">
+        <rdfs:label>Field Map Entry</rdfs:label>
+        <skos:altLabel xml:lang="en">Entry</skos:altLabel>
+        <skos:definition xml:lang="en">A Field Map Entry is a key to key mapping between a source (upstream) key and a target (downstream) key. Field Map Entries belong to Field Maps.</skos:definition>
+        <skos:prefLabel xml:lang="en">Field Map Entry</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FieldMapPattern -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FieldMapPattern">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FieldMap"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Pattern"/>
+        <rdfs:label>Field Map Pattern</rdfs:label>
+        <skos:definition xml:lang="en">A Field Map Pattern represents a fully unvalued Field Map - only the structure is defined. Note that a Field Map Pattern may have no real meaning in a framework implementation that requires UBL to Storage configuration within a Task in the Template layer.</skos:definition>
+        <skos:prefLabel xml:lang="en">Field Map Pattern</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FieldMapRecord -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FieldMapRecord">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FieldMap"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Record"/>
+        <rdfs:label>Field Map Record</rdfs:label>
+        <skos:definition xml:lang="en">A Field Map Record represents a fully valued Field Map. All required Fields in the Field Map must be valued, or the Field Map Record is considered a Rejection or Failed Record.</skos:definition>
+        <skos:prefLabel xml:lang="en">Field Map Record</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FieldMapTemplate -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FieldMapTemplate">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FieldMap"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Template"/>
+        <rdfs:label>Field Map Template</rdfs:label>
+        <skos:definition xml:lang="en">A Field Map Template represents a (potentially partially valued) Field Map that is contextualized within a Task Template, corresponding to a UBL Template and a Storage Template.</skos:definition>
+        <skos:prefLabel xml:lang="en">Field Map Template</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FrameworkLevel -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FrameworkLevel">
+        <rdfs:label>Framework Level</rdfs:label>
+        <skos:definition xml:lang="en">Framework Levels provide a namespace capability to the vAIP system. Patterns, Templates, and Record classes allow application of multi-classing or punning behavior in other framework concepts to enable straightforward search, logical hierarchical structure, and named graph implementation guidance.</skos:definition>
+        <skos:prefLabel xml:lang="en">Framework Level</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityStorage -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityStorage">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Storage"/>
+        <rdfs:label>Identity Storage</rdfs:label>
+        <skos:definition xml:lang="en">An Identity Storage unit represents the target for a given Identity Task. Identity Storage is meant to hold output from Tasks that perform identification of computational requests.</skos:definition>
+        <skos:hiddenLabel xml:lang="en">AIU Storage</skos:hiddenLabel>
+        <skos:prefLabel xml:lang="en">Identity Storage</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityStoragePattern -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityStoragePattern">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityStorage"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Pattern"/>
+        <rdfs:label>Identity Storage Pattern</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">AIU Storage Pattern</skos:hiddenLabel>
+        <skos:prefLabel xml:lang="en">Identity Storage Pattern</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityStorageRecord -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityStorageRecord">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityStorage"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Record"/>
+        <rdfs:label>Identity Storage Record</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">AIU Storage Record</skos:hiddenLabel>
+        <skos:prefLabel xml:lang="en">Identity Storage Record</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityStorageTemplate -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityStorageTemplate">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityStorage"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Template"/>
+        <rdfs:label>Identity Storage Template</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">AIU Storage Template</skos:hiddenLabel>
+        <skos:prefLabel xml:lang="en">Identity Storage Template</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityTask -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityTask">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Task"/>
+        <rdfs:label>Identity Task</rdfs:label>
+        <skos:definition xml:lang="en">An Identity Task represents a computational unit of a Process that is focused on simple identification of a request. In the framework, within a given Process context, Identity Tasks have links to and/or resrictions on upstream connections (Input Tasks) and downstream connections (Transformation Tasks or Output Tasks). These restrictions allow pre-deployment validation of processes, fine-grained search of Tasks, and dynamic composition of new Processes from preexisting Tasks.</skos:definition>
+        <skos:hiddenLabel xml:lang="en">AIU Task</skos:hiddenLabel>
+        <skos:prefLabel xml:lang="en">Identity Task</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityTaskPattern -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityTaskPattern">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityTask"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Pattern"/>
+        <rdfs:label>Identity Task Pattern</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">AIU Task Pattern</skos:hiddenLabel>
+        <skos:prefLabel xml:lang="en">Identity Task Pattern</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityTaskRecord -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityTaskRecord">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityTask"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Record"/>
+        <rdfs:label>Identity Task Record</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">AIU Task Record</skos:hiddenLabel>
+        <skos:prefLabel xml:lang="en">Identity Task Record</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityTaskTemplate -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityTaskTemplate">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityTask"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Template"/>
+        <rdfs:label>Identity Task Template</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">AIU Task Template</skos:hiddenLabel>
+        <skos:prefLabel xml:lang="en">Identity Task Template</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputStorage -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputStorage">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Storage"/>
+        <rdfs:label>Input Storage</rdfs:label>
+        <skos:definition xml:lang="en">Input Storage represents the target for Input Tasks. Input tasks represent raw request information as it exists before basic identification.</skos:definition>
+        <skos:hiddenLabel xml:lang="en">SIP Storage</skos:hiddenLabel>
+        <skos:prefLabel xml:lang="en">Input Storage</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputStoragePattern -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputStoragePattern">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputStorage"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Pattern"/>
+        <rdfs:label>Input Storage Pattern</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">SIP Storage Pattern</skos:hiddenLabel>
+        <skos:prefLabel xml:lang="en">Input Storage Pattern</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputStorageRecord -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputStorageRecord">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputStorage"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Record"/>
+        <rdfs:label>Input Storage Record</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">SIP Storage Record</skos:hiddenLabel>
+        <skos:prefLabel xml:lang="en">Input Storage Record</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputStorageTemplate -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputStorageTemplate">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputStorage"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Template"/>
+        <rdfs:label>Input Storage Template</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">SIP Storage Template</skos:hiddenLabel>
+        <skos:prefLabel xml:lang="en">Input Storage Template</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputTask -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputTask">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Task"/>
+        <rdfs:label>Input Task</rdfs:label>
+        <skos:definition xml:lang="en">An Input Task represents a computational unit of a Process that is focused on raw storage of a request. In the framework, within a given Process context, Input Tasks have links to and/or resrictions on downstream connections. Input Tasks may or may not be used depending on how Identity Tasks store or link raw information in the implementation. These restrictions allow pre-deployment validation of processes, fine-grained search of Tasks, and dynamic composition of new Processes from preexisting Tasks.</skos:definition>
+        <skos:hiddenLabel xml:lang="en">SIP Task</skos:hiddenLabel>
+        <skos:prefLabel xml:lang="en">Input Task</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputTaskPattern -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputTaskPattern">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputTask"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Pattern"/>
+        <rdfs:label>Input Task Pattern</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">SIP Task Pattern</skos:hiddenLabel>
+        <skos:prefLabel xml:lang="en">Input Task Pattern</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputTaskRecord -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputTaskRecord">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputTask"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Record"/>
+        <rdfs:label>Input Task Record</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">SIP Task Record</skos:hiddenLabel>
+        <skos:prefLabel xml:lang="en">Input Task Record</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputTaskTemplate -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputTaskTemplate">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputTask"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Template"/>
+        <rdfs:label>Input Task Template</rdfs:label>
+        <skos:hiddenLabel xml:lang="en">SIP Task Template</skos:hiddenLabel>
+        <skos:prefLabel xml:lang="en">Input Task Template</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#LiteralField -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#LiteralField">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Field"/>
+        <rdfs:label>Literal Field</rdfs:label>
+        <skos:definition xml:lang="en">A Literal Field holds a literal value such as a number, string, or IRI. Literal Fields may work alone or in conjunction with other Fields (such as Object or Property Fields within Statement Fields) to provide higher order context.</skos:definition>
+        <skos:prefLabel xml:lang="en">Literal Field</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Metadata -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Metadata">
+        <rdfs:label>Metadata</rdfs:label>
+        <skos:altLabel xml:lang="en">Framework Container Metadata</skos:altLabel>
+        <skos:definition xml:lang="en">Metadata represents a higher order contextualization for Patterned, Templated, and Recorded things. Metadata containers provide the ability to find and access Patterns, Templates, and Records using information that isn&apos;t stored directly in the construct, but describes it from an external perspective (i.e. description).</skos:definition>
+        <skos:prefLabel xml:lang="en">Metadata</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MetadataPattern -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MetadataPattern">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Metadata"/>
+        <rdfs:label>Metadata Pattern</rdfs:label>
+        <skos:definition xml:lang="en">A Metadata Pattern represents the pattern (unvalued structure for assumed reference model) of metadata for patterned, templated, and recorded things in the system. Note that in a typical implementation, record metadata patterns may be meaningless as they are generated at runtime, making it hard to provide descriptive metadata about records themselves.</skos:definition>
+        <skos:prefLabel xml:lang="en">Metadata Pattern</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MetadataRecord -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MetadataRecord">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Metadata"/>
+        <rdfs:label>Metadata Record</rdfs:label>
+        <skos:definition xml:lang="en">A Metadata Record represents a fully (runtime) valued metadata structure contextually describing a single given Pattern, Template, or Record. To illustrate, a Metadata Record for a Pattern might be created with the Pattern is created through API and deployed by a User; similarly, when a Template is configured and deployed from many Metadata records, it can generate a Template metadata record.</skos:definition>
+        <skos:prefLabel xml:lang="en">Metadata Record</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MetadataTemplate -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MetadataTemplate">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Metadata"/>
+        <rdfs:label>Metadata Template</rdfs:label>
+        <skos:definition xml:lang="en">A Metadata Template represents a (potentially partially valued) structure for creating Metadata Records for Patterns, Templates, or Records. Metadata templates might generally live in the system core and be used in intrinsic API methods - for example, when creating a pattern through API, the metadata template would be retrieved, completed, and submitted back when the resource is deployed, converting the template into full record.</skos:definition>
+        <skos:prefLabel xml:lang="en">Metadata Template</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ObjectField -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ObjectField">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Field"/>
+        <rdfs:label>Object Field</rdfs:label>
+        <skos:definition xml:lang="en">An Object Field represents an instance of a defined Class - this sets Object Fields apart from Literal Fields - whereas Literal Fields hold value, Object Fields hold instances. Object Fields may be leveraged with an autoGeneration capability within the Framework to cover &apos;blank node&apos; capabilities. They may stand alone or more typically be combined with other Field types (such as Property Fields and Literal Fields) within Statement Fields to provide rich relationship context.</skos:definition>
+        <skos:prefLabel xml:lang="en">Object Field</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputStorage -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputStorage">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Storage"/>
+        <rdfs:label>Output Storage</rdfs:label>
+        <skos:altLabel xml:lang="en">Endpoint Connection Storage</skos:altLabel>
+        <skos:definition xml:lang="en">Output Storage represents the target container for Output Tasks. Output Storage contextualizes outbound (unidirectional) resolutions of a request - sending data to an Endpoint via a specific Connection. This might be as simple as output from a &apos;pass&apos; output task that aggregates and resolves a user request, or might represent some delivery of data or information to an external interface like an email address via specific connection configuration.</skos:definition>
+        <skos:hiddenLabel xml:lang="en">DIP Storage</skos:hiddenLabel>
+        <skos:prefLabel xml:lang="en">Output Storage</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputStoragePattern -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputStoragePattern">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputStorage"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Pattern"/>
+        <rdfs:label>Output Storage Pattern</rdfs:label>
+        <skos:altLabel xml:lang="en">Endpoint Connection Storage Pattern</skos:altLabel>
+        <skos:hiddenLabel xml:lang="en">DIP Storage Pattern</skos:hiddenLabel>
+        <skos:prefLabel xml:lang="en">Output Storage Pattern</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputStorageRecord -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputStorageRecord">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputStorage"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Record"/>
+        <rdfs:label>Output Storage Record</rdfs:label>
+        <skos:altLabel xml:lang="en">Endpoint Connection Storage Record</skos:altLabel>
+        <skos:hiddenLabel xml:lang="en">DIP Storage Record</skos:hiddenLabel>
+        <skos:prefLabel xml:lang="en">Output Storage Record</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputStorageTemplate -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputStorageTemplate">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputStorage"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Template"/>
+        <rdfs:label>Output Storage Template</rdfs:label>
+        <skos:altLabel xml:lang="en">Endpoint Connection Storage Template</skos:altLabel>
+        <skos:hiddenLabel xml:lang="en">DIP Storage Template</skos:hiddenLabel>
+        <skos:prefLabel xml:lang="en">Output Storage Template</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputTask -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputTask">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Task"/>
+        <rdfs:label>Output Task</rdfs:label>
+        <skos:altLabel xml:lang="en">Endpoint Connection Task</skos:altLabel>
+        <skos:definition xml:lang="en">An Output Task represents a process-bound computational unit that is responsible for delivering data unidirectionally to an outbound service or system, and also for resolution of request as response to the originating session owner. Output tasks represent delivery to specific endpoints via specific connections. They may be &apos;pass&apos; tasks that do not deliver data at all and only resolve requests. Output tasks are restricted in terms of upstream and downstream flow - any identity task or transformation task may sink to an output task, and output tasks must be terminal (no sinks).</skos:definition>
+        <skos:hiddenLabel xml:lang="en">DIP Task</skos:hiddenLabel>
+        <skos:prefLabel xml:lang="en">Output Task</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputTaskPattern -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputTaskPattern">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputTask"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Pattern"/>
+        <rdfs:label>Output Task Pattern</rdfs:label>
+        <skos:altLabel xml:lang="en">Endpoint Connection Task Pattern</skos:altLabel>
+        <skos:hiddenLabel xml:lang="en">DIP Task Pattern</skos:hiddenLabel>
+        <skos:prefLabel xml:lang="en">Output Task Pattern</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputTaskRecord -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputTaskRecord">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputTask"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Record"/>
+        <rdfs:label>Output Task Record</rdfs:label>
+        <skos:altLabel xml:lang="en">Endpoint Connection Task Record</skos:altLabel>
+        <skos:hiddenLabel xml:lang="en">DIP Task Record</skos:hiddenLabel>
+        <skos:prefLabel xml:lang="en">Output Task Record</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputTaskTemplate -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputTaskTemplate">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputTask"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Template"/>
+        <rdfs:label>Output Task Template</rdfs:label>
+        <skos:altLabel xml:lang="en">Endpoint Connection Task Template</skos:altLabel>
+        <skos:hiddenLabel xml:lang="en">DIP Task Template</skos:hiddenLabel>
+        <skos:prefLabel xml:lang="en">Output Task Template</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Pattern -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Pattern">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FrameworkLevel"/>
+        <rdfs:label>Pattern</rdfs:label>
+        <skos:definition xml:lang="en">A Pattern defines system concepts of interest in terms of structure for a given Reference Model. These Patterns must be unvalued, empty structures for use in creating Template configurations (which are deep-copies of Patterns) and ultimately Records (which are deep-copies of Templates). Patterns must derive from a specific Reference Model. All Patterns that share a common root Reference Model are intrinsically interoperable.</skos:definition>
+        <skos:prefLabel xml:lang="en">Pattern</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#PatternMetadataPattern -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#PatternMetadataPattern">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MetadataPattern"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Pattern"/>
+        <rdfs:label>Pattern Metadata Pattern</rdfs:label>
+        <skos:prefLabel xml:lang="en">Pattern Metadata Pattern</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#PatternMetadataRecord -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#PatternMetadataRecord">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MetadataRecord"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Record"/>
+        <rdfs:label>Pattern Metadata Record</rdfs:label>
+        <skos:prefLabel xml:lang="en">Pattern Metadata Record</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#PatternMetadataTemplate -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#PatternMetadataTemplate">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MetadataTemplate"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Template"/>
+        <rdfs:label>Pattern Metadata Template</rdfs:label>
+        <skos:prefLabel xml:lang="en">Pattern Metadata Template</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Process -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Process">
+        <rdfs:label>Process</rdfs:label>
+        <skos:altLabel xml:lang="en">Aggregate Process</skos:altLabel>
+        <skos:altLabel xml:lang="en">Process-Chain</skos:altLabel>
+        <skos:definition xml:lang="en">A Process represents an API exposed unit of computational capability. A typical framework implementation might expose an API for users to retrieve a Process Template, which allows them to add and link Tasks, provide information about the Process itself such as Access Rights or Description, and then deploy the process as a record.</skos:definition>
+        <skos:prefLabel xml:lang="en">Process</skos:prefLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Process"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <owl:annotatedTarget xml:lang="en">Aggregate Process</owl:annotatedTarget>
+        <rdfs:comment xml:lang="en">Defined in OGC SensorML and XML Encoding Standard
+https://docs.ogc.org/is/12-000r2/12-000r2.html</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ProcessPattern -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ProcessPattern">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Pattern"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Process"/>
+        <rdfs:label>Process Pattern</rdfs:label>
+        <skos:altLabel xml:lang="en">Process-Chain Pattern</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Process Pattern</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ProcessRecord -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ProcessRecord">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Process"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Record"/>
+        <rdfs:label>Process Record</rdfs:label>
+        <skos:altLabel xml:lang="en">Process-Chain Record</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Process Record</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ProcessTemplate -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ProcessTemplate">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Process"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Template"/>
+        <rdfs:label>Process Template</rdfs:label>
+        <skos:altLabel xml:lang="en">Process-Chain Template</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Process Template</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#PropertyField -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#PropertyField">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Field"/>
+        <rdfs:label>Property Field</rdfs:label>
+        <skos:definition xml:lang="en">A Property Field represents a predicate statement about something. &apos;hasWeight&apos;, &apos;hasOwner&apos;, &apos;isA&apos;, are all examples of Property Fields. Property Fields may stand alone or more typically be combined with other fields in Statement Fields to provide rich relationship context.</skos:definition>
+        <skos:prefLabel xml:lang="en">Property Field</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Record -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Record">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FrameworkLevel"/>
+        <rdfs:label>Record</rdfs:label>
+        <skos:definition xml:lang="en">A Record is a fully valued unit of the system - each Record derives from a runtime execution of a Template. Records are deep-copies of Template parents. As deep-copies of Templates, Records are fully conformant to the implemented Reference Model and are fully denormalized metadata.</skos:definition>
+        <skos:prefLabel xml:lang="en">Record</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RecordMetadataPattern -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RecordMetadataPattern">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MetadataPattern"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Pattern"/>
+        <rdfs:label>Record Metadata Pattern</rdfs:label>
+        <skos:prefLabel xml:lang="en">Record Metadata Pattern</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RecordMetadataRecord -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RecordMetadataRecord">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MetadataRecord"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Record"/>
+        <rdfs:label>Record Metadata Record</rdfs:label>
+        <skos:prefLabel xml:lang="en">Record Metadata Record</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RecordMetadataTemplate -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RecordMetadataTemplate">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MetadataTemplate"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Template"/>
+        <rdfs:label>Record Metadata Template</rdfs:label>
+        <skos:prefLabel xml:lang="en">Record Metadata Template</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ReferenceModel -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ReferenceModel">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FrameworkLevel"/>
+        <rdfs:label>Reference Model</rdfs:label>
+        <skos:definition xml:lang="en">The Reference Model defines the structural toolkit for implementing all content defined in the framework. Every data structure (every Record, Template, Pattern, and even Reference Model itself) in the system must be Pattern defined, and all Patterns must be defined within the Reference Model. This provides intrinsic interoperability for all system constructs for a given Reference Model. All Patterns should reference the system model so the model may be traced over time.</skos:definition>
+        <skos:prefLabel xml:lang="en">Reference Model</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Request -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Request">
+        <rdfs:label>Request</rdfs:label>
+        <skos:definition xml:lang="en">A Request is used to specify runtime information to a Process within a given Session to run the specified Process as configured and retrieve a Response.</skos:definition>
+        <skos:prefLabel xml:lang="en">Request</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RequestPattern -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RequestPattern">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Pattern"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Request"/>
+        <rdfs:label>Request Pattern</rdfs:label>
+        <skos:prefLabel xml:lang="en">Request Pattern</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RequestRecord -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RequestRecord">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Record"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Request"/>
+        <rdfs:label>Request Record</rdfs:label>
+        <skos:prefLabel xml:lang="en">Request Record</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RequestTemplate -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RequestTemplate">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Request"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Template"/>
+        <rdfs:label>Request Template</rdfs:label>
+        <skos:prefLabel xml:lang="en">Request Template</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Response -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Response">
+        <rdfs:label>Response</rdfs:label>
+        <skos:definition xml:lang="en">A Response retrieves and contextualizes Records produced during a Process Execution for a given Request configuration within a Session.</skos:definition>
+        <skos:prefLabel xml:lang="en">Response</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ResponsePattern -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ResponsePattern">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Pattern"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Response"/>
+        <rdfs:label>Response Pattern</rdfs:label>
+        <skos:prefLabel xml:lang="en">Response Pattern</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ResponseRecord -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ResponseRecord">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Record"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Response"/>
+        <rdfs:label>Response Record</rdfs:label>
+        <skos:prefLabel xml:lang="en">Response Record</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ResponseTemplate -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ResponseTemplate">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Response"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Template"/>
+        <rdfs:label>Response Template</rdfs:label>
+        <skos:prefLabel xml:lang="en">Response Template</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Session -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Session">
+        <rdfs:label>Session</rdfs:label>
+        <skos:altLabel xml:lang="en">User Session</skos:altLabel>
+        <skos:definition xml:lang="en">A Session, or User Session, provides a context channel for bidirectional communication of Process-based Requests and Responses. Sessions may typically hold system access rights information and may be kept open to transmit many requests over the same channel.</skos:definition>
+        <skos:prefLabel xml:lang="en">Session</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#SessionPattern -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#SessionPattern">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Pattern"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Session"/>
+        <rdfs:label>Session Pattern</rdfs:label>
+        <skos:prefLabel xml:lang="en">Session Pattern</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#SessionRecord -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#SessionRecord">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Record"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Session"/>
+        <rdfs:label>Session Record</rdfs:label>
+        <skos:prefLabel xml:lang="en">Session Record</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#SessionTemplate -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#SessionTemplate">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Session"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Template"/>
+        <rdfs:label>Session Template</rdfs:label>
+        <skos:prefLabel xml:lang="en">Session Template</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#StatementField -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#StatementField">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Field"/>
+        <rdfs:label>Statement Field</rdfs:label>
+        <skos:definition xml:lang="en">A Statement Field is a &apos;derived&apos; Field and reprents a specific contextualization of other Fields (which may include other Statement Fields). Statement Fields provide the ability to hold relationships as data which in turn enables n-ary relationships of various types, contextual materialization, Statement reification, and sparql* behavior (weights applied to statements).</skos:definition>
+        <skos:prefLabel xml:lang="en">Statement Field</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Storage -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Storage">
+        <rdfs:label>Storage</rdfs:label>
+        <skos:altLabel xml:lang="en">Task Storage</skos:altLabel>
+        <skos:definition xml:lang="en">Storage represents output targets within the context of a given Task - i.e. a single Task will link a single Storage. Like Tasks, the Storage class is further classified by type, where each type corresponds to a fundamental task type (Input, Identity, Transformation, and Output). These storage containers are treated in this way to allow contextual search against storage types that may hold different configuration capabilities.</skos:definition>
+        <skos:prefLabel xml:lang="en">Storage</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#StorageComponent -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#StorageComponent">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Storage"/>
+        <rdfs:label>Storage Component</rdfs:label>
+        <skos:definition xml:lang="en">The Storage Component represents a nested storage unit within another storage unit. Use of this concept enables semantically enabled topological relationships between hierarchical storage units.</skos:definition>
+        <skos:prefLabel xml:lang="en">Storage Component</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Task -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Task">
+        <rdfs:label>Task</rdfs:label>
+        <skos:altLabel xml:lang="en">Sub-Process</skos:altLabel>
+        <skos:definition xml:lang="en">A Task represents a computational container and component of a Process. Tasks contain an interface to arbitrary user provided logic (UBL), a storage target for the information returned by the UBL, and a key to key map that links UBL to the storage target. Tasks are further classified as Input, Identity,Transformation, and Output, allowing conditional flow rules and fine-grained composition of Processes.</skos:definition>
+        <skos:prefLabel xml:lang="en">Task</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Template -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Template">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FrameworkLevel"/>
+        <rdfs:label>Template</rdfs:label>
+        <skos:definition xml:lang="en">A Template represents the configuration layer of the system. Templates derive from Patterns, and may be partially-valued structures that are deep-copies of their Pattern parents. As deep-copies of Patterns, Templates conform to the implemented Reference Model, and may have a relationship to their parent Pattern. Templates generally live within configurations that consist of other Templates. Templates are used at runtime to produce fully-valued Records.</skos:definition>
+        <skos:prefLabel xml:lang="en">Template</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TemplateMetadataPattern -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TemplateMetadataPattern">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MetadataPattern"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Pattern"/>
+        <rdfs:label>Template Metadata Pattern</rdfs:label>
+        <skos:prefLabel xml:lang="en">Template Metadata Pattern</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TemplateMetadataRecord -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TemplateMetadataRecord">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MetadataRecord"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Record"/>
+        <rdfs:label>Template Metadata Record</rdfs:label>
+        <skos:prefLabel xml:lang="en">Template Metadata Record</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TemplateMetadataTemplate -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TemplateMetadataTemplate">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MetadataTemplate"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Template"/>
+        <rdfs:label>Template Metadata Template</rdfs:label>
+        <skos:prefLabel xml:lang="en">Template Metadata Template</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationStorage -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationStorage">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Storage"/>
+        <rdfs:label>Transformation Storage</rdfs:label>
+        <skos:altLabel xml:lang="en">Context Transformation Storage</skos:altLabel>
+        <skos:definition xml:lang="en">Transformation Storage represents the target for Transformation Tasks. Transformation stored output may be arbitrarily complex n-ary relationship information, or may be simple parameters or pointers to data produced during bidirectional transformation task execution.</skos:definition>
+        <skos:hiddenLabel xml:lang="en">AIC Storage</skos:hiddenLabel>
+        <skos:prefLabel xml:lang="en">Transformation Storage</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationStoragePattern -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationStoragePattern">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Pattern"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationStorage"/>
+        <rdfs:label>Transformation Storage Pattern</rdfs:label>
+        <skos:altLabel xml:lang="en">Context Transformation Storage Pattern</skos:altLabel>
+        <skos:hiddenLabel xml:lang="en">AIC Storage Pattern</skos:hiddenLabel>
+        <skos:prefLabel xml:lang="en">Transformation Storage Pattern</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationStorageRecord -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationStorageRecord">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Record"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationStorage"/>
+        <rdfs:label>Transformation Storage Record</rdfs:label>
+        <skos:altLabel xml:lang="en">Context Transformation Storage Record</skos:altLabel>
+        <skos:hiddenLabel xml:lang="en">AIC Storage Record</skos:hiddenLabel>
+        <skos:prefLabel xml:lang="en">Transformation Storage Record</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationStorageTemplate -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationStorageTemplate">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Template"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationStorage"/>
+        <rdfs:label>Transformation Storage Template</rdfs:label>
+        <skos:altLabel xml:lang="en">Context Transformation Storage Template</skos:altLabel>
+        <skos:hiddenLabel xml:lang="en">AIC Storage Template</skos:hiddenLabel>
+        <skos:prefLabel xml:lang="en">Transformation Storage Template</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MemberDescription -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MemberDescription">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#StorageComponent"/>
+        <rdfs:label>Member Description</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MemberDescriptionPattern -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MemberDescriptionPattern">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MemberDescription"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Pattern"/>
+        <rdfs:label>Member Description Pattern</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MemberDescriptionTemplate -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MemberDescriptionTemplate">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MemberDescription"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Template"/>
+        <rdfs:label>Member Description Template</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MemberDescriptionRecord -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MemberDescriptionRecord">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MemberDescription"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Record"/>
+        <rdfs:label>Member Description Record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTask -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTask">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Task"/>
+        <rdfs:label>Transformation Task</rdfs:label>
+        <skos:altLabel xml:lang="en">Context Transformation Task</skos:altLabel>
+        <skos:definition xml:lang="en">A Transformation Task represents a process-bound computational unit responsible for managing arbitrary execution and output storage of bidirectional user provided logic (a Docker Container, a lambda, a step function, an API call, etc). Transformation tasks may communicate with user provided code to submit data and receive data. Transformation tasks must be connected upstream to Identity Tasks or other Transformation tasks, and may connect downstream to other Transformation Tasks or Output Tasks.</skos:definition>
+        <skos:hiddenLabel xml:lang="en">AIC Task</skos:hiddenLabel>
+        <skos:prefLabel xml:lang="en">Transformation Task</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTaskPattern -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTaskPattern">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Pattern"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTask"/>
+        <rdfs:label>Transformation Task Pattern</rdfs:label>
+        <skos:altLabel xml:lang="en">Context Transformation Task Pattern</skos:altLabel>
+        <skos:hiddenLabel xml:lang="en">AIC Task Pattern</skos:hiddenLabel>
+        <skos:prefLabel xml:lang="en">Transformation Task Pattern</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTaskRecord -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTaskRecord">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Record"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTask"/>
+        <rdfs:label>Transformation Task Record</rdfs:label>
+        <skos:altLabel xml:lang="en">Context Transformation Task Record</skos:altLabel>
+        <skos:hiddenLabel xml:lang="en">AIC Task Record</skos:hiddenLabel>
+        <skos:prefLabel xml:lang="en">Transformation Task Record</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTaskTemplate -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTaskTemplate">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Template"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTask"/>
+        <rdfs:label>Transformation Task Template</rdfs:label>
+        <skos:altLabel xml:lang="en">Context Transformation Task Template</skos:altLabel>
+        <skos:hiddenLabel xml:lang="en">AIC Task Template</skos:hiddenLabel>
+        <skos:prefLabel xml:lang="en">Transformation Task Template</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#UBL -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#UBL">
+        <rdfs:label>UBL</rdfs:label>
+        <skos:altLabel xml:lang="en">User Business Logic</skos:altLabel>
+        <skos:definition xml:lang="en">User Business Logic (UBL) represents a task-bound configuration container for holding some user provided computationally capable action - an API call, a service call, a lambda or Docker  containing code, a step function, etc. UBL takes in a flat set of values and passes out a flat set of values. The UBL should provide either in template or at runtime enough information to successfully trigger and resolve a call to the specified user logic. The UBL as a construct avoids placing burden on the user to leverage hardcoded message adapters or other intrusive mechanisms.</skos:definition>
+        <skos:prefLabel xml:lang="en">UBL</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#UBLPattern -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#UBLPattern">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Pattern"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#UBL"/>
+        <rdfs:label>UBL Pattern</rdfs:label>
+        <skos:altLabel xml:lang="en">User Business Logic Pattern</skos:altLabel>
+        <skos:prefLabel xml:lang="en">UBL Pattern</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#UBLRecord -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#UBLRecord">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Record"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#UBL"/>
+        <rdfs:label>UBL Record</rdfs:label>
+        <skos:altLabel xml:lang="en">User Business Logic Record</skos:altLabel>
+        <skos:prefLabel xml:lang="en">UBL Record</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://ncei.noaa.gov/vaip/ontologies/vaip-framework#UBLTemplate -->
+
+    <owl:Class rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#UBLTemplate">
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Template"/>
+        <rdfs:subClassOf rdf:resource="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#UBL"/>
+        <rdfs:label>UBL Template</rdfs:label>
+        <skos:altLabel xml:lang="en">User Business Logic Template</skos:altLabel>
+        <skos:prefLabel xml:lang="en">UBL Template</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ConnectionPattern"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ConnectionRecord"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ConnectionTemplate"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#EndpointPattern"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#EndpointRecord"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#EndpointTemplate"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Field"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FieldMap"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Metadata"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Process"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Request"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Response"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Session"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Storage"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Task"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#UBL"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FieldMapPattern"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FieldMapRecord"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#FieldMapTemplate"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityStoragePattern"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityStorageRecord"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityStorageTemplate"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityTaskPattern"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityTaskRecord"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#IdentityTaskTemplate"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputStoragePattern"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputStorageRecord"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputStorageTemplate"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputTaskPattern"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputTaskRecord"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#InputTaskTemplate"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#LiteralField"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ObjectField"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#PropertyField"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#StatementField"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MetadataPattern"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MetadataRecord"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MetadataTemplate"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputStoragePattern"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputStorageRecord"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputStorageTemplate"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputTaskPattern"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputTaskRecord"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#OutputTaskTemplate"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Pattern"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Record"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#Template"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#PatternMetadataPattern"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RecordMetadataPattern"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TemplateMetadataPattern"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#PatternMetadataRecord"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RecordMetadataRecord"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TemplateMetadataRecord"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#PatternMetadataTemplate"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RecordMetadataTemplate"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TemplateMetadataTemplate"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ProcessPattern"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ProcessRecord"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ProcessTemplate"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RequestPattern"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RequestRecord"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#RequestTemplate"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ResponsePattern"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ResponseRecord"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#ResponseTemplate"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#SessionPattern"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#SessionRecord"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#SessionTemplate"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationStoragePattern"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationStorageRecord"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationStorageTemplate"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MemberDescriptionPattern"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MemberDescriptionRecord"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#MemberDescriptionTemplate"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTaskPattern"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTaskRecord"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#TransformationTaskTemplate"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#UBLPattern"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#UBLRecord"/>
+            <rdf:Description rdf:about="http://ncei.noaa.gov/vaip/ontologies/vaip-framework#UBLTemplate"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

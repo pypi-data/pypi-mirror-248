@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module utils</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>utils</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/caleb.ford/src/archive_workflows/api/vaip/utils.py">/Users/caleb.ford/src/archive_workflows/api/vaip/utils.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="hashlib.html">hashlib</a><br>
+</td><td width="25%" valign=top><a href="io.html">io</a><br>
+</td><td width="25%" valign=top><a href="os.html">os</a><br>
+</td><td width="25%" valign=top><a href="uuid.html">uuid</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="utils.html#ValidationReport">ValidationReport</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ValidationReport">class <strong>ValidationReport</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#ValidationReport">ValidationReport</a>(conforms,&nbsp;report,&nbsp;message)<br>
+&nbsp;<br>
+This&nbsp;class&nbsp;is&nbsp;a&nbsp;simple&nbsp;<a href="builtins.html#object">object</a>&nbsp;wrapper&nbsp;for&nbsp;the&nbsp;pyshacl.validate()&nbsp;return&nbsp;value<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="ValidationReport-__init__"><strong>__init__</strong></a>(self, conforms, report, message)</dt><dd><tt>Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;conforms&nbsp;(bool):&nbsp;Boolean&nbsp;flag&nbsp;indicating&nbsp;a&nbsp;simple&nbsp;pass/fail&nbsp;for&nbsp;SHACL&nbsp;validation<br>
+&nbsp;&nbsp;&nbsp;&nbsp;report&nbsp;(rdflib.Graph):&nbsp;An&nbsp;rdflib.Graph&nbsp;representation&nbsp;of&nbsp;the&nbsp;SHACL&nbsp;validation&nbsp;results<br>
+&nbsp;&nbsp;&nbsp;&nbsp;message&nbsp;(str):&nbsp;A&nbsp;text&nbsp;description&nbsp;of&nbsp;the&nbsp;SHACL&nbsp;validation&nbsp;results</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-generate_node_id"><strong>generate_node_id</strong></a>(seed: str = None)</dt><dd><tt>Generates&nbsp;a&nbsp;globally&nbsp;unique&nbsp;uuid,&nbsp;typically&nbsp;used&nbsp;in&nbsp;creating&nbsp;a&nbsp;unique&nbsp;IRI&nbsp;for&nbsp;a&nbsp;node&nbsp;to&nbsp;be&nbsp;stored&nbsp;in&nbsp;the&nbsp;knowledge&nbsp;graph.</tt></dd></dl>
+ <dl><dt><a name="-generate_placeholder"><strong>generate_placeholder</strong></a>()</dt></dl>
+ <dl><dt><a name="-get_aiu_pattern_namespace"><strong>get_aiu_pattern_namespace</strong></a>()</dt></dl>
+ <dl><dt><a name="-get_definition"><strong>get_definition</strong></a>(concept)</dt><dd><tt>#TODO:&nbsp;Harden&nbsp;method,&nbsp;prettify&nbsp;method,&nbsp;return&nbsp;message&nbsp;in&nbsp;case&nbsp;nothing&nbsp;defined,&nbsp;allow&nbsp;help&nbsp;on&nbsp;class&nbsp;or&nbsp;<a href="builtins.html#object">object</a>&nbsp;(method&nbsp;overloading)</tt></dd></dl>
+ <dl><dt><a name="-get_dynamic_namespace"><strong>get_dynamic_namespace</strong></a>(pattern)</dt></dl>
+ <dl><dt><a name="-get_example"><strong>get_example</strong></a>(concept)</dt><dd><tt>#TODO:&nbsp;Harden&nbsp;method,&nbsp;prettify&nbsp;method,&nbsp;return&nbsp;message&nbsp;in&nbsp;case&nbsp;nothing&nbsp;defined,&nbsp;allow&nbsp;help&nbsp;on&nbsp;class&nbsp;or&nbsp;<a href="builtins.html#object">object</a>&nbsp;(method&nbsp;overloading)</tt></dd></dl>
+ <dl><dt><a name="-get_file_resource_path"><strong>get_file_resource_path</strong></a>(file_name, root_dir='/Users/caleb.ford/src/archive_workflows/api/vaip', prefix='', stem_dir='data')</dt></dl>
+ <dl><dt><a name="-get_individual_aiu_pattern_namespace"><strong>get_individual_aiu_pattern_namespace</strong></a>(pattern_id: str)</dt></dl>
+ <dl><dt><a name="-get_ontology_file_string"><strong>get_ontology_file_string</strong></a>(onto_file: str = 'vaip_core_model.owl')</dt></dl>
+ <dl><dt><a name="-get_pattern_namespace"><strong>get_pattern_namespace</strong></a>()</dt></dl>
+ <dl><dt><a name="-get_root_namespace"><strong>get_root_namespace</strong></a>()</dt></dl>
+ <dl><dt><a name="-get_storage_pattern_namespace"><strong>get_storage_pattern_namespace</strong></a>()</dt></dl>
+ <dl><dt><a name="-load_core_shacl"><strong>load_core_shacl</strong></a>(shapes_file_name='vaip_core_shapes.shacl')</dt><dd><tt>Returns&nbsp;the&nbsp;core&nbsp;shacl&nbsp;file&nbsp;for&nbsp;vaip&nbsp;shapes&nbsp;into&nbsp;memory&nbsp;(currently&nbsp;just&nbsp;aiu&nbsp;pattern).</tt></dd></dl>
+ <dl><dt><a name="-serialize_ontology"><strong>serialize_ontology</strong></a>(ontology, serialization_format='rdfxml', return_as_string=True, qualified_save_path='serialized_graph.owl')</dt></dl>
+ <dl><dt><a name="-set_labels"><strong>set_labels</strong></a>(node, primary, supporting)</dt></dl>
+ <dl><dt><a name="-visualize_pattern"><strong>visualize_pattern</strong></a>(pattern, notebook=False, classes=False, values=True, supporting_labels=False)</dt><dd><tt>Produces&nbsp;a&nbsp;visualization&nbsp;of&nbsp;a&nbsp;specific&nbsp;pattern<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;pattern&nbsp;(InformationObject&nbsp;or&nbsp;InformationPackage,&nbsp;required)&nbsp;Specifies&nbsp;the&nbsp;resource&nbsp;to&nbsp;visualize,&nbsp;takes&nbsp;a&nbsp;triples&nbsp;graph&nbsp;and&nbsp;produces&nbsp;a&nbsp;visualization&nbsp;for&nbsp;printing.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;classes&nbsp;(bool,&nbsp;optional):&nbsp;Displays&nbsp;classes&nbsp;alongside&nbsp;the&nbsp;pattern&nbsp;instances.&nbsp;Defaults&nbsp;to&nbsp;False.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;values&nbsp;(bool,&nbsp;optional):&nbsp;Displays&nbsp;data&nbsp;values&nbsp;(hasBits&nbsp;edges&nbsp;and&nbsp;values)&nbsp;alongside&nbsp;the&nbsp;pattern.&nbsp;Defaults&nbsp;to&nbsp;True.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;supporting_labels&nbsp;(bool,&nbsp;optional):&nbsp;Displays&nbsp;all&nbsp;supporting&nbsp;label&nbsp;triples&nbsp;for&nbsp;all&nbsp;nodes&nbsp;in&nbsp;the&nbsp;pattern.&nbsp;If&nbsp;False,&nbsp;only&nbsp;the&nbsp;primary&nbsp;label&nbsp;is&nbsp;shown.&nbsp;Defaults&nbsp;to&nbsp;False.</tt></dd></dl>
+</td></tr></table>
+</body></html>

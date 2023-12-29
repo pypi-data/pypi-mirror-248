@@ -1,0 +1,2051 @@
+#
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix vaip_core:  <https://ncei.noaa.gov/vaip/ontologies/vaip-core#> .
+@prefix vaip_shape:  <https://ncei.noaa.gov/vaip/shapes#> .
+@prefix vaip2:  <http://ncei.noaa.gov/vaip/ontologies/vaip-framework#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+
+#Declared for SPARQL constraints
+vaip_shape:
+	a owl:Ontology ;
+	owl:imports sh: ;
+	sh:declare [
+		sh:prefix "shape" ;
+		sh:namespace "https://ncei.noaa.gov/vaip/shapes#"^^xsd:anyURI ;
+	] ;
+	sh:declare [
+		sh:prefix "core" ;
+		sh:namespace "https://ncei.noaa.gov/vaip/ontologies/core#"^^xsd:anyURI ;
+	] ;
+    sh:declare [
+		sh:prefix "vaip2" ;
+		sh:namespace "http://ncei.noaa.gov/vaip/ontologies/vaip-framework#"^^xsd:anyURI ;
+	] ;
+    sh:declare [
+		sh:prefix "rdf" ;
+		sh:namespace "http://www.w3.org/1999/02/22-rdf-syntax-ns#"^^xsd:anyURI ;
+	] ;
+    sh:declare [
+		sh:prefix "rdfs" ;
+		sh:namespace "http://www.w3.org/2000/01/rdf-schema#"^^xsd:anyURI ;
+	] ;
+    
+     .
+
+vaip_shape:FieldShape
+    a sh:NodeShape, owl:Class ;
+    sh:targetClass vaip2:Field ;
+    
+    .
+vaip_shape:FieldMapEntryShape
+    a sh:NodeShape, owl:Class ;
+    sh:targetClass vaip2:FieldMapEntry ;
+    
+    sh:property [ # hasSourceField
+        sh:path vaip2:hasSourceField ;
+        sh:nodeKind sh:IRI ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; #Only one namespace
+        sh:message "Field Map Entry requires exactly 1 valid Source Field."
+    ] ;
+    
+    sh:property [ # hasTargetField
+        sh:path vaip2:hasTargetField ;
+        sh:nodeKind sh:IRI ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; #Only one namespace
+        sh:message "Field Map Entry requires exactly 1 valid Target FField."
+    ] ;
+    .
+
+vaip_shape:LiteralFieldShape
+    a sh:NodeShape, owl:Class ;
+    # rdfs:subClassOf vaip_shape:FieldShape ;
+    sh:targetClass vaip2:LiteralField ;
+
+    sh:property [ # Namespace
+        sh:path vaip2:hasNamespace ;
+        sh:nodeKind sh:Literal ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; #Only one namespace
+        sh:message "Literal Field requires exactly 1 valid Namespace."
+    ] ;
+    sh:property [ # Primary DataObject Label
+        sh:path vaip2:hasLabel ;
+        sh:nodeKind sh:Literal ;
+        sh:minLength 3 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; #Only one primary label
+        sh:message "Literal Field requires exactly 1 Label (hasLabel) that is at least 3 characters long."
+    ] ;
+    sh:property [ # Class
+        sh:path vaip2:hasClass ;
+        sh:nodeKind sh:Literal ;
+        sh:minLength 1 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; #Only one class
+        sh:message "Literal Field requires exactly 1 Class that is at least 1 character long."
+    ] ;
+    sh:property [ # Value
+        sh:path vaip2:hasValue ;
+        sh:nodeKind sh:Literal ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; #Only one Value
+        sh:message "Literal Field requires exactly 1 Value."
+    ] ;
+    sh:property [ # required
+        sh:path vaip2:isRequired ;
+        sh:nodeKind sh:Literal ;
+        sh:datatype xsd:boolean ;
+        sh:minCount 1 ; 
+        sh:maxCount 1 ; 
+        sh:message "Literal Field requires exactly 1 isRequired."
+    ] ;
+    # sh:closed true ;
+    # sh:ignoredProperties (rdf:type) ;
+    . 
+
+vaip_shape:PropertyFieldShape
+    a sh:NodeShape, owl:Class ;
+    rdfs:subClassOf vaip_shape:FieldShape ;
+    sh:targetClass vaip2:PropertyField ;
+    sh:property [ # Namespace
+        sh:path vaip2:hasNamespace ;
+        sh:nodeKind sh:Literal ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; #Only one namespace
+        sh:message "Property Field requires exactly 1 valid Namespace."
+    ] ;
+    sh:property [ # Class
+        sh:path vaip2:hasClass ;
+        sh:nodeKind sh:Literal ;
+        sh:minLength 1 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; #Only one namespace
+        sh:message "Property Field requires exactly 1 Class that is at least 1 character long."
+    ] ;
+    sh:property [ # Value
+        sh:path vaip2:hasValue ;
+        sh:nodeKind sh:Literal ; #Not sure what data types must go here.
+        sh:minCount 1 ;
+        sh:maxCount 1 ; #Only one Value
+        sh:message "Property Field requires exactly 1 Value."
+    ] ;
+    sh:property [ # required
+        sh:path vaip2:isRequired ;
+        sh:nodeKind sh:Literal ;
+        sh:datatype xsd:boolean ;
+        sh:minCount 1 ; 
+        sh:maxCount 1 ; 
+        sh:message "Property Field requires exactly 1 isRequired."
+    ] ;
+    # sh:closed true ;
+    # sh:ignoredProperties (rdf:type) ;
+    . 
+
+vaip_shape:ObjectFieldShape
+    a sh:NodeShape, owl:Class ;
+    rdfs:subClassOf vaip_shape:FieldShape ;
+    sh:targetClass vaip2:ObjectField ;
+    sh:property [ # Namespace
+        sh:path vaip2:hasNamespace ;
+        sh:nodeKind sh:Literal ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; #Only one namespace
+        sh:message "Object Field requires exactly 1 valid Namespace."
+    ] ;
+    sh:property [ # Class
+        sh:path vaip2:hasClass ;
+        sh:nodeKind sh:Literal ;
+        sh:minLength 1 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; #Only one namespace
+        sh:message "Object Field requires exactly 1 Class that is at least 1 character long."
+    ] ;
+    sh:property [ # Value
+        sh:path vaip2:hasValue ;
+        sh:nodeKind sh:Literal ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; #Only one namespace
+        sh:message "Object Field requires exactly 1 Value."
+    ] ;
+    sh:property [ # required
+        sh:path vaip2:isRequired ;
+        sh:nodeKind sh:Literal ;
+        sh:datatype xsd:boolean ;
+        sh:minCount 1 ; 
+        sh:maxCount 1 ; 
+        sh:message "Object Field requires exactly 1 isRequired Boolean value."
+    ] ;
+    sh:property [ # autoGen, object fields only
+        sh:path vaip2:isAutoGenerated ;
+        sh:nodeKind sh:Literal ;
+        sh:datatype xsd:boolean ;
+        sh:maxCount 1 ; 
+        sh:minCount 1 ; 
+        sh:message "Object Field requires exactly 1 autogenerated Boolean value."
+    ] ;
+    # sh:closed true ;
+    # sh:ignoredProperties (rdf:type) ;
+    . 
+
+vaip_shape:StatementFieldShape
+    a sh:NodeShape, owl:Class ;
+    rdfs:subClassOf vaip_shape:FieldShape ;
+    sh:targetClass vaip2:StatementField ;
+    sh:property [ # Namespace
+        sh:path vaip2:hasNamespace ;
+        sh:nodeKind sh:Literal ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; #Only one namespace
+        sh:message "Statement Field requires exactly 1 valid Namespace."
+    ] ;
+    sh:property [ # Class
+        sh:path vaip2:hasClass ;
+        sh:nodeKind sh:Literal ;
+        sh:minLength 1 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; #Only one namespace
+        sh:message "Statement Field requires exactly 1 Class that is at least 1 character long."
+    ] ;
+    sh:property [ # Value, Could not find a way to require this to be a triple
+        sh:path vaip2:hasValue ;
+        sh:nodeKind sh:Literal ; #Not sure if this is right
+        sh:pattern "^.* .* .*$" ; #The value of a statement field should be a triple
+        sh:flags "i" ; #ignore case 
+        sh:minCount 1 ;
+        sh:maxCount 1 ; #Only one namespace
+        sh:message "Statement Field requires exactly 1 Value that must be a triple."
+    ] ;
+    ## Removed, statements do not have "isRequired"
+    # sh:property [ # required
+    #     sh:path vaip2:isRequired ;
+    #     sh:nodeKind sh:Literal ;
+    #     sh:datatype xsd:boolean ; 
+    #     sh:minCount 1 ; 
+    #     sh:maxCount 1 ; 
+    #     sh:message "Statement Field requires exactly 1 isRequired Boolean value."
+    # ] ;
+    sh:property [ # subject
+        sh:path vaip2:hasSubject ;
+        sh:or(
+        [
+            sh:node vaip_shape:LiteralFieldShape ;
+            sh:nodeKind sh:IRI ; 
+            sh:message "Statement Field Subject has a malformed Literal Field." ;
+        ] 
+        [
+
+            sh:node vaip_shape:ObjectFieldShape ;
+            sh:nodeKind sh:IRI ; 
+            sh:message "Statement Field Subject has a malformed Object Field." ;
+        ] 
+        [
+
+            sh:node vaip_shape:PropertyFieldShape ;
+            sh:nodeKind sh:IRI ; 
+            sh:message "Statement Field Subject has a malformed Property Field." ;
+        ]
+        [
+            sh:node vaip_shape:StatementFieldShape ;
+            sh:nodeKind sh:IRI ; 
+            sh:message "Statement Field Subject has a malformed Statement Field." ;
+        ]
+    ) ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ; #Only one Subject
+    sh:message "Statement Field requires exactly 1 Subject that is well formed." ;
+    ] ;
+    sh:property [ # hasPredicate
+        sh:path vaip2:hasPredicate ;
+        sh:or(
+            [
+
+                    sh:node vaip_shape:ObjectFieldShape ;
+                    sh:nodeKind sh:IRI ; 
+                    sh:message "Statement Field Predicate has malformed Object Field." ;
+            ]
+            [ # hasPredicate
+                    sh:node vaip_shape:PropertyFieldShape ;
+                    sh:nodeKind sh:IRI ; 
+                    sh:message "Statement Field Predicate has malformed Property Field." ;
+            ]
+            
+        ) ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; #Only one Predicate
+        sh:message "Statement Field requires exactly 1 Predicate that is well formed." ;
+    ] ;
+    sh:property [ # Object
+        sh:path vaip2:hasObject ;
+        sh:or (
+            [
+                sh:node vaip_shape:LiteralFieldShape ;
+                sh:nodeKind sh:IRI ; 
+                sh:message "Statement Field requires exactly 1 Object has malformed Literal Field." ;
+            ]
+            [
+                sh:node vaip_shape:ObjectFieldShape ;
+                sh:nodeKind sh:IRI ; 
+                sh:message "Statement Field requires exactly 1 Object has malformed Object Field." ;
+            ]
+            [
+                sh:node vaip_shape:PropertyFieldShape ;
+                sh:nodeKind sh:IRI ; 
+                sh:message "Statement Field requires exactly 1 Object has malformed Property Field." ;
+            ]
+            [
+                sh:node vaip_shape:StatementFieldShape ;
+                sh:nodeKind sh:IRI ; 
+                sh:message "Statement Field requires exactly 1 Object has malformed Statement Field" ;
+            ] 
+        ) ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "Statement Field requires exactly 1 Object that is well formed." ;
+    ] ;
+    # sh:closed true ;
+    # sh:ignoredProperties (rdf:type) ;
+    . 
+#### End Fields ####
+
+#### Core Data Object Shapes ####
+vaip_shape:DataObjectShape
+    a sh:NodeShape, owl:Class ;
+    sh:targetClass vaip_core:DataObject ; #, vaip2:Field ;
+    sh:or ( 
+        [
+            sh:and (
+                vaip_shape:LiteralFieldShape  
+            ) ;
+            sh:property [
+                sh:path vaip_core:hasBits ;
+                sh:nodeKind sh:IRIOrLiteral ;
+                sh:minCount 1 ;
+                sh:message "Data Object requires at least 1 hasBits of types IRI or Literal"
+            ] ;
+        ]
+        [
+            sh:and (
+                vaip_shape:ObjectFieldShape
+            ) ;
+            sh:property [
+                sh:path vaip_core:hasBits ;
+                sh:nodeKind sh:IRIOrLiteral ;
+                sh:minCount 1 ;
+                sh:message "Data Object requires at least 1 hasBits of types IRI or Literal"
+            ] ;
+        ]
+        [
+            sh:and (
+                vaip_shape:PropertyFieldShape
+            ) ;
+            sh:property [
+                sh:path vaip_core:hasBits ;
+                sh:nodeKind sh:IRIOrLiteral ;
+                sh:minCount 1 ;
+                sh:message "Data Object requires at least 1 hasBits of types IRI or Literal"
+            ] ;
+        ]
+        [
+            sh:and (
+                vaip_shape:StatementFieldShape
+            ) ;
+            sh:property [
+                sh:path vaip_core:hasBits ;
+                sh:nodeKind sh:IRIOrLiteral ;
+                sh:minCount 1 ;
+                sh:message "Data Object requires at least 1 hasBits of types IRI or Literal"
+            ] ;
+        ]
+        [
+            sh:and (
+                vaip_shape:FieldMapEntryShape
+            ) ;
+        ]
+    ) ;
+   
+
+    sh:property [ # Primary DataObject Label
+        sh:path skos:prefLabel ;
+        sh:nodeKind sh:Literal ;
+        sh:minLength 3 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; #Only one primary label
+        sh:message "Data Object requires exactly 1 Primary Label that is at least 3 characters long."
+    ] ;
+    sh:property [ # All DataObject Labels
+        sh:path skos:altLabel ;
+        sh:nodeKind sh:Literal ;
+        sh:minLength 3 ;
+        sh:minCount 0 ; #Zero or more alt labels
+        sh:message "Data Object Alternate Labels have a minimum length of 3 characters."
+    ] ;
+    # sh:closed true ; # sh:closed validation cannot take into account sh:or conditions
+    # sh:ignoredProperties ( rdf:type ) ;
+    .
+
+vaip_shape:DigitalObjectShape
+    a sh:NodeShape, owl:Class ;
+    #rdfs:subClassOf vaip_shape:DataObjectShape, vaip_core:DataObject ;
+    sh:targetClass vaip_core:DigitalObject;
+    sh:and (
+        vaip_shape:DataObjectShape 
+    ) ;
+
+   .
+
+vaip_shape:PhysicalObjectShape
+    a sh:NodeShape, owl:Class ;
+    sh:and (
+        vaip_shape:DataObjectShape
+    ) ;
+
+    .
+#### Representation Network Shapes ####
+vaip_shape:StructureRepresentationShape
+    a sh:NodeShape, owl:Class ;
+    sh:targetClass vaip_core:StructureRepresentation ; #Can we represent this as a class as well
+    sh:property [ # Primary Label
+        sh:path skos:prefLabel ;
+        sh:nodeKind sh:Literal ;
+        sh:minLength 3 ; #no blank nodes
+        sh:minCount 1 ; #need a primary label
+        sh:maxCount 1 ; #Only one primary label
+        sh:message "Structure Representation requires exactly 1 Primary Label that is at least 3 characters long."
+    ] ;
+    sh:property [ # All Labels
+        sh:path skos:altLabel ;
+        sh:nodeKind sh:Literal ;
+        sh:minLength 3 ;
+        sh:minCount 0 ; #Zero or more alt labels
+        sh:message "Structure Representation Alternate Labels have a minimum length of 3 characters."
+    ] ;
+    sh:property [ # Data Object
+        sh:path vaip_core:hasDataObject ;
+        sh:or (
+            [
+                sh:class vaip_core:DigitalObject ;
+            ]
+            [
+                sh:class vaip_core:PhysicalObject ;
+            ]
+        ) ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; #Only one data object per structure rep
+        sh:message "Structure Representation requires exactly 1 Data Object and it must all be well formed."
+    ] ;
+    sh:property [ # Structure Representations
+        sh:path vaip_core:hasStructureRepresentation ;
+        sh:class vaip_core:StructureRepresentation ; #Allow recursion in representation network
+        sh:minCount 0 ; #not necessary to recurse
+        sh:message "A Structure Representation's child Structure Representation does not meet requirements."
+    ] ;
+    sh:property [ # Semantic Representations
+        sh:path vaip_core:hasSemanticRepresentation ;
+        sh:class  vaip_core:SemanticRepresentation ; #Allow recursion in representation network
+        sh:minCount 0 ; #not necessary to recurse
+        sh:message "A Structure Representation's Semantic Representation does not meet requirements."
+    ] ;
+    sh:property [ # Other Representations
+        sh:path vaip_core:hasOtherRepresentation ;
+        sh:class vaip_core:OtherRepresentation ; #Allow recursion in representation network
+        sh:minCount 0 ; #not necessary to recurse
+        sh:message "A Structure Representation's Other Representation does not meet requirements."
+    ] ;
+    sh:closed true ;
+    sh:ignoredProperties (rdf:type) ;
+    .
+
+vaip_shape:SemanticRepresentationShape
+    a sh:NodeShape, owl:Class ;
+    sh:targetClass vaip_core:SemanticRepresentation ;
+    sh:property [ # Primary Label
+        sh:path skos:prefLabel ;
+        sh:nodeKind sh:Literal ;
+        sh:minLength 3 ; #no blank nodes
+        sh:minCount 1 ; #need a primary label
+        sh:maxCount 1 ; #Only one primary label
+        sh:message "Semantic Representation requires exactly 1 Primary Label that is at least 3 characters long."
+    ] ;
+    sh:property [ # All Labels
+        sh:path skos:altLabel ;
+        sh:nodeKind sh:Literal ;
+        sh:minLength 3 ;
+        sh:minCount 0 ; #Zero or more alt labels
+        sh:message "Semantic Representation Alternate Labels have a minimum length of 3 characters."
+    ] ;
+    sh:property [ # Data Object
+        sh:path vaip_core:hasDataObject ;
+        sh:or (
+            [
+                sh:class vaip_core:DigitalObject ;
+            ]
+            [
+                sh:class vaip_core:PhysicalObject ;
+            ]
+        ) ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; #Only one data object per structure rep
+        sh:message "Semantic Representation requires exactly 1 Data Object and it must all be well formed."
+    ] ;
+    sh:property [ # Structure Representations
+        sh:path vaip_core:hasStructureRepresentation ;
+        sh:class vaip_core:StructureRepresentation ; #Allow recursion in representation network
+        sh:minCount 0 ; #not necessary to recurse
+        sh:message "A Semantic Representation's Structure Representation does not meet requirements."
+    ] ;
+    sh:property [ # Semantic Representations
+        sh:path vaip_core:hasSemanticRepresentation ;
+        sh:class  vaip_core:SemanticRepresentation ; #Allow recursion in representation network
+        sh:minCount 0 ; #not necessary to recurse
+        sh:message "A Semantic Representation's child Semantic Representation does not meet requirements."
+    ] ;
+    sh:property [ # Other Representations
+        sh:path vaip_core:hasOtherRepresentation ;
+        sh:class vaip_core:OtherRepresentation ; #Allow recursion in representation network
+        sh:minCount 0 ; #not necessary to recurse
+        sh:message "A Semantic Representation's Other Representation does not meet requirements."
+    ] ;
+    sh:property[ # addsMeaningTo
+        sh:path vaip_core:addsMeaningTo ;
+        sh:class vaip_core:StructureRepresentation ; #Allows AddMeaningTo relationship
+        sh:minCount 0 ; #not necessary to recurse, not required
+        sh:message "Semantic Representaion's addsMeaningTo does not meet requirements. It must be a Structure Representation."
+    ] ;
+    sh:closed true ;
+    sh:ignoredProperties (rdf:type) ;
+    .
+
+vaip_shape:OtherRepresentationShape
+    a sh:NodeShape, owl:Class ;
+    sh:targetClass vaip_core:OtherRepresentation ;
+    sh:property [ # Primary Label
+        sh:path skos:prefLabel ;
+        sh:nodeKind sh:Literal ;
+        sh:minLength 3 ; #no blank nodes
+        sh:minCount 1 ; #need a primary label
+        sh:maxCount 1 ; #Only one primary label
+        sh:message "Other Representation requires exactly 1 Primary Label that is at least 3 characters long."
+    ] ;
+    sh:property [ # All Labels
+        sh:path skos:altLabel ;
+        sh:nodeKind sh:Literal ;
+        sh:minLength 3 ;
+        sh:minCount 0 ; #Zero or more alt labels
+        sh:message "Other Representation Alternate Labels have a minimum length of 3 characters."
+    ] ;
+    sh:property [ # Data Object
+        sh:path vaip_core:hasDataObject ;
+        sh:or (
+            [
+                sh:class vaip_core:DigitalObject ;
+            ]
+            [
+                sh:class vaip_core:PhysicalObject ;
+            ]
+        ) ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; #Only one data object per structure rep
+        sh:message "Other Representation requires exactly 1 Data Object"
+
+    ] ;
+    sh:property [ # Structure Representations
+        sh:path vaip_core:hasStructureRepresentation ;
+        sh:class vaip_core:StructureRepresentation ; #Allow recursion in representation network
+        sh:minCount 0 ; #not necessary to recurse
+        sh:message "A Other Representation's Structure Representation does not meet requirements."
+    ] ;
+    sh:property [ # Semantic Representations
+        sh:path vaip_core:hasSemanticRepresentation ;
+        sh:class  vaip_core:SemanticRepresentation ; #Allow recursion in representation network
+        sh:minCount 0 ; #not necessary to recurse
+        sh:message "A Other Representation's Semantic Representation does not meet requirements."
+    ] ;
+    sh:property [ # Other Representations
+        sh:path vaip_core:hasOtherRepresentation ;
+        sh:class vaip_core:OtherRepresentation ; #Allow recursion in representation network
+        sh:minCount 0 ; #not necessary to recurse
+        sh:message "A Other Representation's child Other Representation does not meet requirements."
+    ] ;
+    sh:closed true ;
+    sh:ignoredProperties (rdf:type) ;
+    .
+
+#### Information Object Shapes ####
+
+vaip_shape:ContentInformationObjectShape
+    a sh:NodeShape, owl:Class ;
+    sh:targetClass vaip_core:ContentInformationObject ;
+    sh:property [ # Primary Label
+        sh:path skos:prefLabel ;
+        sh:nodeKind sh:Literal ;
+        sh:minLength 3 ; #no blank nodes
+        sh:minCount 1 ; #need a primary label
+        sh:maxCount 1 ; #Only one primary label
+        sh:message "Content Information Object requires exactly 1 Primary Label that is at least 3 characters long."
+    ] ;
+    sh:property [ # All Labels
+        sh:path skos:altLabel ;
+        sh:nodeKind sh:Literal ;
+        sh:minLength 3 ;
+        sh:minCount 0 ; #Zero or more alt labels
+        sh:message "Content Information Object Alternate Labels have a minimum length of 3 characters."
+    ] ;
+    sh:property [ # Data Object
+        sh:path vaip_core:hasDataObject ;
+        sh:or (
+            [
+                sh:class vaip_core:DigitalObject ;
+            ]
+            [
+                sh:class vaip_core:PhysicalObject ;
+            ]
+        ) ;
+        sh:minCount 1 ; #Content can have multiple data objects
+        sh:message "Content Information Object requires at least 1 Data Object and it must be well formed."
+
+    ] ;
+    sh:property [ # Structure Representations
+        sh:path vaip_core:hasStructureRepresentation ;
+        sh:class vaip_core:StructureRepresentation ; #potentially recursive
+        sh:minCount 1 ; #at least one
+        sh:message "Content Information Object requires at least 1 Structure Representation and they must all be well formed."
+    ] ;
+    sh:property [ # Semantic Representations
+        sh:path vaip_core:hasSemanticRepresentation ;
+        sh:class  vaip_core:SemanticRepresentation ; #potentially recursive
+        sh:minCount 1 ; #at least one
+        sh:message "Content Information Object requires at least 1 Semantic Representation and they must all be well formed."
+    ] ;
+    sh:property [ # Other Representations
+        sh:path vaip_core:hasOtherRepresentation ;
+        sh:class vaip_core:OtherRepresentation ; #potentially recursive
+        sh:minCount 0 ; #optional
+        sh:message "Content Information Object Other Representation does not meet requirements."
+    ] ;
+     sh:property [ # PreservedBy
+        sh:path vaip_core:preservedBy ;
+        sh:class vaip_core:PreservationDescriptionInformationObject ; #potentially recursive
+        sh:minCount 0 ; #optional
+        sh:message "Content Information Object 'preservedBy' Preservation Description Information Object does not meet requirements."
+    ] ;
+    sh:closed true ;
+    sh:ignoredProperties (rdf:type) ;
+    . 
+
+vaip_shape:PackageDescriptionShape
+    a sh:NodeShape, owl:Class ;
+    sh:targetClass vaip_core:PackageDescription ;
+    sh:property [ # Primary Label
+        sh:path skos:prefLabel ;
+        sh:nodeKind sh:Literal ;
+        sh:minLength 3 ; #no blank nodes
+        sh:minCount 1 ; #need a primary label
+        sh:maxCount 1 ; #Only one primary label
+        sh:message "Package Description requires exactly 1 Primary Label that is at least 3 characters long."
+    ] ;
+    sh:property [ # All Labels
+        sh:path skos:altLabel ;
+        sh:nodeKind sh:Literal ;
+        sh:minLength 3 ;
+        sh:minCount 0 ; #Zero or more alt labels
+        sh:message "Package Description Alternate Labels have a minimum length of 3 characters."
+    ] ;
+    sh:property [ # derivedFromPackage
+        sh:path vaip_core:derivedFromInformationPackage ;
+        sh:nodeKind sh:IRI ; # Cannot specify node:ArchivalInformationUnitShape here, due to recursion
+        sh:minCount 1 ;
+        sh:maxCount 1 ; #only one
+        sh:message "Package Description requires exactly 1 derivedFromPackage property."
+    ] ;
+    sh:property [ # Data Object
+        sh:path vaip_core:hasDataObject ;
+        sh:or (
+            [
+                sh:class vaip_core:DigitalObject ;
+            ]
+            [
+                sh:class vaip_core:PhysicalObject ;
+            ]
+        ) ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; #only one
+        sh:message "Package Description requires exactly 1 Data Object and it must be well formed."
+
+    ] ;
+    sh:property [ # Structure Representations
+        sh:path vaip_core:hasStructureRepresentation ;
+        sh:class vaip_core:StructureRepresentation ; #potentially recursive
+        sh:minCount 1 ; #at least one
+        sh:message "Package Description requires at least 1 Structure Representation and they must all be well formed."
+    ] ;
+    sh:property [ # Semantic Representations
+        sh:path vaip_core:hasSemanticRepresentation ;
+        sh:class  vaip_core:SemanticRepresentation ; #potentially recursive
+        sh:minCount 1 ; #at least one
+        sh:message "Package Description requires at least 1 Semantic Representation and they must all be well formed."
+    ] ;
+    sh:property [ # Other Representations
+        sh:path vaip_core:hasOtherRepresentation ;
+        sh:class vaip_core:OtherRepresentation ; #potentially recursive
+        sh:minCount 0 ; #optional
+        sh:message "Package Description Other Representation does not meet requirements."
+    ] ;
+    sh:closed true ;
+    sh:ignoredProperties (rdf:type) ;
+    . 
+
+vaip_shape:PackagingInformationObjectShape
+    a sh:NodeShape, owl:Class ;
+    sh:targetClass vaip_core:PackagingInformationObject ;
+    sh:property [ # Primary Label
+        sh:path skos:prefLabel ;
+        sh:nodeKind sh:Literal ;
+        sh:minLength 3 ; #no blank nodes
+        sh:minCount 1 ; #need a primary label
+        sh:maxCount 1 ; #Only one primary label
+        sh:message "Package Information Object requires exactly 1 Primary Label that is at least 3 characters long."
+    ] ;
+    sh:property [ # All Labels
+        sh:path skos:altLabel ;
+        sh:nodeKind sh:Literal ;
+        sh:minLength 3 ;
+        sh:minCount 0 ; #Zero or more alt labels
+        sh:message "Package Information Object Alternate Labels have a minimum length of 3 characters."
+    ] ;
+    sh:property [ # Data Object
+        sh:path vaip_core:hasDataObject ;
+        sh:or (
+            [
+                sh:class vaip_core:DigitalObject ;
+            ]
+            [
+                sh:class vaip_core:PhysicalObject ;
+            ]
+        ) ;
+        sh:minCount 1 ;
+        #sh:maxCount 1 ; #only one # Changed to allow many, not sure if it is correct though.
+        # Pag64 says its aggregate, but doesn't denote 1-to-1 or 1-to-many 
+        # https://public.ccsds.org/pubs/650x0m2.pdf
+        sh:message "Package Information Object requires exactly 1 Data Object and it must be well formed."
+
+    ] ;
+    sh:property [ # Structure Representations
+        sh:path vaip_core:hasStructureRepresentation ;
+        sh:class vaip_core:StructureRepresentation ; #potentially recursive
+        sh:minCount 1 ; #at least one
+        sh:message "Package Information Object requires at least 1 Structure Representation and they must all be well formed."
+    ] ;
+    sh:property [ # Semantic Representations
+        sh:path vaip_core:hasSemanticRepresentation ;
+        sh:class  vaip_core:SemanticRepresentation ; #potentially recursive
+        sh:minCount 1 ; #at least one
+        sh:message "Package Information Object requires at least 1 Semantic Representation and they must all be well formed."
+    ] ;
+    sh:property [ # Other Representations
+        sh:path vaip_core:hasOtherRepresentation ;
+        sh:class vaip_core:OtherRepresentation ; #potentially recursive
+        sh:minCount 0 ; #optional
+        sh:message "Package Information Other Representation does not meet requirements."
+    ] ;
+    sh:property [ # 
+        sh:path vaip_core:identifiesPackage ;
+        sh:class vaip_core:InformationPackage; #potentially recursive
+        sh:minCount 0 ; #optional
+        sh:message "Package Information 'identifiesPackage' relationship does not meet requirements."
+    ] ;
+
+
+    sh:closed true ;
+    sh:ignoredProperties (rdf:type) ;
+    . 
+
+vaip_shape:AccessRightsPreservationShape
+    a sh:NodeShape, owl:Class ;
+    sh:targetClass vaip_core:AccessRightsPreservation ;
+    sh:property [ # Primary Label
+        sh:path skos:prefLabel ;
+        sh:nodeKind sh:Literal ;
+        sh:minLength 3 ; #no blank nodes
+        sh:minCount 1 ; #need a primary label
+        sh:maxCount 1 ; #Only one primary label
+        sh:message "Access Rights Preservation requires exactly 1 Primary Label that is at least 3 characters long."
+    ] ;
+    sh:property [ # All Labels
+        sh:path skos:altLabel ;
+        sh:nodeKind sh:Literal ;
+        sh:minLength 3 ;
+        sh:minCount 0 ; #Zero or more alt labels
+        sh:message "Access Rights Preservation Alternate Labels have a minimum length of 3 characters."
+    ] ;
+    sh:property [ # Data Object
+        sh:path vaip_core:hasDataObject ;
+        sh:or (
+            [
+                sh:class vaip_core:DigitalObject ;
+            ]
+            [
+                sh:class vaip_core:PhysicalObject ;
+            ]
+        ) ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; #only one
+        sh:message "Access Rights Preservation requires exactly 1 Data Object and it must be well formed."
+
+    ] ;
+    sh:property [ # Structure Representations
+        sh:path vaip_core:hasStructureRepresentation ;
+        sh:class vaip_core:StructureRepresentation ; #potentially recursive
+        sh:minCount 1 ; #at least one
+        sh:message "Access Rights Preservation requires at least 1 Structure Representation and they must all be well formed."
+    ] ;
+    sh:property [ # Semantic Representations
+        sh:path vaip_core:hasSemanticRepresentation ;
+        sh:class  vaip_core:SemanticRepresentation ; #potentially recursive
+        sh:minCount 1 ; #at least one
+        sh:message "Access Rights Preservation requires at least 1 Semantic Representation and they must all be well formed."
+    ] ;
+    sh:property [ # Other Representations
+        sh:path vaip_core:hasOtherRepresentation ;
+        sh:class vaip_core:OtherRepresentation ; #potentially recursive
+        sh:minCount 0 ; #optional
+        sh:message "Access Rights Preservation Other Representation does not meet requirements."
+    ] ;
+    sh:closed true ;
+    sh:ignoredProperties (rdf:type) ;
+    . 
+
+vaip_shape:ContextPreservationShape
+    a sh:NodeShape, owl:Class ;
+    sh:targetClass vaip_core:ContextPreservation ;
+    sh:property [ # Primary Label
+        sh:path skos:prefLabel ;
+        sh:nodeKind sh:Literal ;
+        sh:minLength 3 ; #no blank nodes
+        sh:minCount 1 ; #need a primary label
+        sh:maxCount 1 ; #Only one primary label
+        sh:message "Context Preservation requires exactly 1 Primary Label that is at least 3 characters long."
+    ] ;
+    sh:property [ # All Labels
+        sh:path skos:altLabel ;
+        sh:nodeKind sh:Literal ;
+        sh:minLength 3 ;
+        sh:minCount 0 ; #Zero or more alt labels
+        sh:message "Context Preservation Alternate Labels have a minimum length of 3 characters."
+    ] ;
+    sh:property [ # Data Object
+        sh:path vaip_core:hasDataObject ;
+        sh:or (
+            [
+                sh:class vaip_core:DigitalObject ;
+            ]
+            [
+                sh:class vaip_core:PhysicalObject ;
+            ]
+        ) ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; #only one
+        sh:message "Context Preservation requires exactly 1 Data Object and it must be well formed."
+
+    ] ;
+    sh:property [ # Structure Representations
+        sh:path vaip_core:hasStructureRepresentation ;
+        sh:class vaip_core:StructureRepresentation ; #potentially recursive
+        sh:minCount 1 ; #at least one
+        sh:message "Context Preservation requires at least 1 Structure Representation and they must all be well formed."
+    ] ;
+    sh:property [ # Semantic Representations
+        sh:path vaip_core:hasSemanticRepresentation ;
+        sh:class  vaip_core:SemanticRepresentation ; #potentially recursive
+        sh:minCount 1 ; #at least one
+        sh:message "Context Preservation requires at least 1 Semantic Representation and they must all be well formed."
+    ] ;
+    sh:property [ # Other Representations
+        sh:path vaip_core:hasOtherRepresentation ;
+        sh:class vaip_core:OtherRepresentation ; #potentially recursive
+        sh:minCount 0 ; #optional
+        sh:message "Context Preservation Other Representation does not meet requirements."
+    ] ;
+    sh:closed true ;
+    sh:ignoredProperties (rdf:type) ;
+    . 
+
+vaip_shape:FixityPreservationShape
+    a sh:NodeShape, owl:Class ;
+    sh:targetClass vaip_core:FixityPreservation ;
+    sh:property [ # Primary Label
+        sh:path skos:prefLabel ;
+        sh:nodeKind sh:Literal ;
+        sh:minLength 3 ; #no blank nodes
+        sh:minCount 1 ; #need a primary label
+        sh:maxCount 1 ; #Only one primary label
+        sh:message "Fixity requires exactly 1 Primary Label that is at least 3 characters long."
+    ] ;
+    sh:property [ # Alt Labels
+        sh:path skos:altLabel ;
+        sh:nodeKind sh:Literal ;
+        sh:minLength 3 ;
+        sh:minCount 0 ; #Zero or more alt labels
+        sh:message "Fixity Alt Labels require a minimum length of 3 characters."
+    ] ;
+    sh:property [ # Data Object
+        sh:path vaip_core:hasDataObject ;
+        sh:or (
+            [
+                sh:class vaip_core:DigitalObject ;
+            ]
+            [
+                sh:class vaip_core:PhysicalObject ;
+            ]
+        ) ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; #only one
+        sh:message "Fixity requires exactly 1 Data Object and it must be well formed."
+    ] ;
+    sh:property [ # Structure Representations
+        sh:path vaip_core:hasStructureRepresentation ;
+        sh:class vaip_core:StructureRepresentation ; #potentially recursive
+        sh:minCount 1 ; #at least one
+        sh:message "Fixity requires at least 1 Structure Representation and they must all be well formed."
+     ] ;
+    sh:property [ # Semantic Representations
+        sh:path vaip_core:hasSemanticRepresentation ;
+        sh:class  vaip_core:SemanticRepresentation ; #potentially recursive
+        sh:minCount 1 ; #at least one
+        sh:message "Fixity requires at least 1 Semantic Representation and they must all be well formed."
+    ] ;
+    sh:property [ # Other Representations
+        sh:path vaip_core:hasOtherRepresentation ;
+        sh:class vaip_core:OtherRepresentation ; #potentially recursive
+        sh:minCount 0 ; #optional
+        sh:message "A Fixity Other Representation does not meet requirements."
+    ] ;
+    sh:closed true ;
+    sh:ignoredProperties (rdf:type) ;
+    . 
+
+vaip_shape:ReferencePreservationShape
+    a sh:NodeShape, owl:Class ;
+    sh:targetClass vaip_core:ReferencePreservation ;
+    sh:property [ # Primary Label
+        sh:path skos:prefLabel ;
+        sh:nodeKind sh:Literal ;
+        sh:minLength 3 ; #no blank nodes
+        sh:minCount 1 ; #need a primary label
+        sh:maxCount 1 ; #Only one primary label
+        sh:message "Reference Preservation requires exactly 1 Primary Label that is at least 3 characters long."
+    ] ;
+    sh:property [ # All Labels
+        sh:path skos:altLabel ;
+        sh:nodeKind sh:Literal ;
+        sh:minLength 3 ;
+        sh:minCount 0 ; #Zero or more alt labels
+        sh:message "Reference Preservation Alternate Labels have a minimum length of 3 characters."
+    ] ;
+    sh:property [ # Data Object
+        sh:path vaip_core:hasDataObject ;
+        sh:or (
+            [
+                sh:class vaip_core:DigitalObject ;
+            ]
+            [
+                sh:class vaip_core:PhysicalObject ;
+            ]
+        ) ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; #only one
+        sh:message "Reference Preservation requires exactly 1 Data Object and it must be well formed."
+
+    ] ;
+    sh:property [ # Structure Representations
+        sh:path vaip_core:hasStructureRepresentation ;
+        sh:class vaip_core:StructureRepresentation ; #potentially recursive
+        sh:minCount 1 ; #at least one
+        sh:message "Reference Preservation requires at least 1 Structure Representation and they must all be well formed."
+    ] ;
+    sh:property [ # Semantic Representations
+        sh:path vaip_core:hasSemanticRepresentation ;
+        sh:class  vaip_core:SemanticRepresentation ; #potentially recursive
+        sh:minCount 1 ; #at least one
+        sh:message "Reference Preservation requires at least 1 Semantic Representation and they must all be well formed."
+    ] ;
+    sh:property [ # Other Representations
+        sh:path vaip_core:hasOtherRepresentation ;
+        sh:class vaip_core:OtherRepresentation ; #potentially recursive
+        sh:minCount 0 ; #optional
+        sh:message "A Reference Preservation's Other Representation does not meet requirements."
+    ] ;
+    sh:closed true ;
+    sh:ignoredProperties (rdf:type) ;
+    . 
+
+vaip_shape:ProvenancePreservationShape
+    a sh:NodeShape, owl:Class ;
+    sh:targetClass vaip_core:ProvenancePreservation ;
+    sh:property [ # Primary Label
+        sh:path skos:prefLabel ;
+        sh:nodeKind sh:Literal ;
+        sh:minLength 3 ; #no blank nodes
+        sh:minCount 1 ; #need a primary label
+        sh:maxCount 1 ; #Only one primary label
+        sh:message "Provenance Preservation requires exactly 1 Primary Label that is at least 3 characters long."
+    ] ;
+    sh:property [ # All Labels
+        sh:path skos:altLabel ;
+        sh:nodeKind sh:Literal ;
+        sh:minLength 3 ;
+        sh:minCount 0 ; #Zero or more alt labels
+        sh:message "Provenance Preservation Alternate Labels have a minimum length of 3 characters."
+    ] ;
+    sh:property [ # Data Object
+        sh:path vaip_core:hasDataObject ;
+        sh:or (
+            [
+                sh:class vaip_core:DigitalObject ;
+            ]
+            [
+                sh:class vaip_core:PhysicalObject ;
+            ]
+        ) ;
+        sh:minCount 1 ;
+        #sh:maxCount 1 ; #only one
+        sh:message "Provenance Preservation requires at least 1 Data Object and it must be well formed."
+
+    ] ;
+    sh:property [ # Structure Representations
+        sh:path vaip_core:hasStructureRepresentation ;
+        sh:class vaip_core:StructureRepresentation ; #potentially recursive
+        sh:minCount 1 ; #at least one
+        sh:message "Provenance Preservation requires at least 1 Structure Representation and they must all be well formed."
+    ] ;
+    sh:property [ # Semantic Representations
+        sh:path vaip_core:hasSemanticRepresentation ;
+        sh:class vaip_core:SemanticRepresentation ; #potentially recursive
+        sh:minCount 1 ; #at least one
+        sh:message "Provenance Preservation requires at least 1 Semantic Representation and they must all be well formed."
+    ] ;
+    sh:property [ # Other Representations
+        sh:path vaip_core:hasOtherRepresentation ;
+        sh:class vaip_core:OtherRepresentationShape ; #potentially recursive
+        sh:minCount 0 ; #optional
+        sh:message "Provenance Preservation requires Other Representations all be well formed." 
+    ] ;
+    sh:closed true ;
+    sh:ignoredProperties (rdf:type) ;
+    .
+
+    #### AIC Specific Shapes ####
+vaip_shape:OverviewDescriptionShape
+    a owl:Class, sh:NodeShape ;
+    sh:targetClass vaip_core:OverviewDescription ;
+    sh:property [ # Primary Label
+        sh:path skos:prefLabel ;
+        sh:nodeKind sh:Literal ;
+        sh:minLength 3 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; #Only one primary label
+        sh:message "Overview Description requires exactly 1 Primary Label that is at least 3 characters long."
+    ] ;
+      sh:property [ # All Labels
+        sh:path skos:altLabel ;
+        sh:nodeKind sh:Literal ;
+        sh:minLength 3 ;
+        sh:minCount 0 ; #Zero or more alt labels
+        sh:message "Overview Description Alternate Labels have a minimum length of 3 characters."
+    ] ;
+    sh:property [ # Data Object
+        sh:path vaip_core:hasDataObject ;
+        sh:or (
+            [
+                sh:class vaip_core:DigitalObject ;
+            ]
+            [
+                sh:class vaip_core:PhysicalObject ;
+            ]
+        ) ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; #only one
+        sh:message "Overview Description requires exactly 1 Data Object and it must be well formed."
+    ] ;
+     sh:property [ # Structure Representations
+        sh:path vaip_core:hasStructureRepresentation ;
+        sh:class vaip_core:StructureRepresentation ; #potentially recursive
+        sh:minCount 1 ; #at least one
+        sh:message "Overview Description requires at least 1 Structure Representation and they must all be well formed."
+    ] ;
+    sh:property [ # Semantic Representations
+        sh:path vaip_core:hasSemanticRepresentation ;
+        sh:class  vaip_core:SemanticRepresentation ; #potentially recursive
+        sh:minCount 1 ; #at least one
+        sh:message "Overview Description requires at least 1 Semantic Representation and they must all be well formed."
+    ] ;
+    sh:property [ # Other Representations
+        sh:path vaip_core:hasOtherRepresentation ;
+        sh:class vaip_core:OtherRepresentation ; #potentially recursive
+        sh:minCount 0 ; #optional
+        sh:message "An Overview Description's Other Representation does not meet requirements." ;
+    ] ;
+    sh:closed true ;
+    sh:ignoredProperties (rdf:type) ;
+    . 
+
+
+vaip_shape:MemberDescriptionShape
+    a owl:Class, sh:NodeShape ;
+    sh:targetClass vaip_core:MemberDescription ;
+    sh:property [ # Primary Label
+        sh:path skos:prefLabel ;
+        sh:nodeKind sh:Literal ;
+        sh:minLength 3 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; #Only one primary label
+        sh:message "Member Description requires exactly 1 Primary Label that is at least 3 characters long."
+    ] ;
+    sh:property [ # All Labels
+        sh:path skos:altLabel ;
+        sh:nodeKind sh:Literal ;
+        sh:minLength 3 ;
+        sh:minCount 0 ; #Zero or more alt labels
+        sh:message "Member Description Alternate Labels have a minimum length of 3 characters."
+    ] ;
+     sh:property [ # Data Object
+        sh:path vaip2:hasField ;
+        sh:or (
+            [
+                sh:class vaip_core:DigitalObject ;
+                sh:message "Member Description Digital Object Field is missing or malformed." ;
+            ]
+            [
+                sh:class vaip_core:PhysicalObject ;
+                sh:message "Member Description Physical Object Field is missing or malformed." ;
+            ]
+        ) ;
+        sh:minCount 1 ;
+         ] ;
+   
+    sh:closed true ;
+    sh:ignoredProperties (rdf:type) ;
+    . 
+#### End AC Specfic Shapes ####
+
+
+
+#### Information Package Shapes ####
+vaip_shape:ArchivalInformationUnitShape
+    a sh:NodeShape, owl:Class ;
+    sh:targetClass vaip_core:ArchivalInformationUnit ; # Applies to all Archival Information Unit Shapes
+    sh:property [ # Primary AIU Label
+        sh:path skos:prefLabel ;
+        sh:nodeKind sh:Literal ;
+        sh:minLength 3 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; #Only one primary label
+        sh:message "Archival Information Unit(AIU) requires exactly 1 Primary Label that is at least 3 characters long."
+    ] ;
+    sh:property [ # All AIU Labels
+        sh:path skos:altLabel ;
+        sh:nodeKind sh:Literal ;
+        sh:minLength 3 ;
+        sh:minCount 0 ; #Zero or more alt labels
+        sh:message "Archival Information Unit(AIU) Alternate Labels must be at least 3 characters long."
+    ] ;
+    sh:property [ # Content
+        sh:path vaip_core:hasContentInformation ;
+        sh:class vaip_core:ContentInformationObject ;
+        sh:nodeKind sh:IRI ; #IRI only assigned after API deploy, may need sh:BlankNodeOrIRI
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "Archival Information Unit(AIU) requires exactly 1 Content Information Object and it must be well formed." 
+    ] ;
+    sh:property [ # Description
+        sh:path vaip_core:describedBy ;
+        sh:class vaip_core:UnitDescription ;
+        #sh:class vaip_core:UnitDescription ;
+        sh:nodeKind sh:IRI ; #IRI only assigned after API deploy, may need sh:BlankNodeOrIRI
+        sh:minCount 1 ;
+        sh:message "Archival Information Unit(AIU) requires at least 1 Unit Description and they must all be well formed." ;
+    ] ;
+    sh:property [ # Packaging
+        sh:path vaip_core:packagedBy ;
+        sh:class vaip_core:PackagingInformationObject ;
+        sh:nodeKind sh:IRI ; #IRI only assigned after API deploy, may need sh:BlankNodeOrIRI
+        sh:minCount 1 ;
+        sh:message "Archival Information Unit(AIU) requires at least 1 Package Information Object and they must all be well formed." ;
+    ] ;
+    sh:property [ # PDI - Access Rights
+        sh:path vaip_core:hasAccessRights ;
+        sh:class vaip_core:AccessRightsPreservation ;
+        sh:nodeKind sh:IRI ; #IRI only assigned after API deploy, may need sh:BlankNodeOrIRI
+        sh:minCount 1 ;
+        sh:message "Archival Information Unit(AIU) requires at least 1 Access Rights Representation and they must all be well formed." ;
+    ] ;
+    sh:property [ # PDI - Context
+        sh:path vaip_core:hasContext ;
+        sh:class vaip_core:ContextPreservation ;
+        sh:nodeKind sh:IRI ; #IRI only assigned after API deploy, may need sh:BlankNodeOrIRI
+        sh:minCount 1 ;
+        sh:message "Archival Information Unit(AIU) requires at least 1 Context Preservation and they must all be well formed." ;
+    ] ;
+    sh:property [ # PDI - Fixity
+        sh:path vaip_core:hasFixity ;
+        sh:class vaip_core:FixityPreservation ;
+        sh:nodeKind sh:IRI ; #IRI only assigned after API deploy, may need sh:BlankNodeOrIRI
+        sh:minCount 1 ;
+        sh:message "Archival Information Unit(AIU) requires at least 1 Fixity Preservation and they must all be well formed." ;
+    ] ;
+    sh:property [ # PDI - Reference
+        sh:path vaip_core:hasReference ;
+        sh:class vaip_core:ReferencePreservation ;
+        sh:nodeKind sh:IRI ; #IRI only assigned after API deploy, may need sh:BlankNodeOrIRI
+        sh:minCount 1 ;
+        sh:message "Archival Information Unit(AIU) requires at least 1 Reference Preservation and they must all be well formed."
+    ] ;
+    sh:property [ # PDI - Provenance
+        sh:path vaip_core:hasProvenance ;
+        sh:class vaip_core:ProvenancePreservation ;
+        sh:nodeKind sh:IRI ; #IRI only assigned after API deploy, may need sh:BlankNodeOrIRI
+        sh:minCount 1 ;
+        sh:message "Archival Information Unit(AIU) requires at least 1 Provenance Preservation and they must all be well formed."
+    ] ;
+
+    sh:property [ # UBL Template
+        sh:path rdf:type ;
+        sh:hasValue owl:NamedIndividual ;
+        sh:message "Not a Named Individual." ;
+    ] ;  
+
+    sh:or (
+        [
+            sh:property [ # Class Check
+                sh:path rdf:type ;
+                sh:hasValue vaip2:IdentityTaskPattern ;
+                sh:message "Archival Information Unit(AIU) Identity Task Pattern: IdentityTaskPattern class is missing." ;
+            ] ;  
+            sh:property [ # Fields
+                sh:path vaip2:hasLiteralField ;
+                sh:nodeKind sh:IRI ; 
+                sh:or (
+                    [
+                        sh:class vaip_core:DigitalObject ;
+                    ]
+                    [
+                        sh:class vaip_core:PhysicalObject ;
+                    ]
+                ) ;
+                    sh:minCount 0 ;
+                    sh:message "Archival Information Unit(AIU) Identity Task Pattern: Literal Field is missing or malformed." ;
+            ] ;
+
+        ]
+        [
+
+            sh:property [ # Class Check
+                sh:path rdf:type ;
+                sh:hasValue vaip2:IdentityTaskTemplate ;
+                sh:message "Archival Information Unit(AIU) Identity Task Template: IdentityTaskTemplate class is missing." ;
+            ] ;  
+            #Temp Comment for testing
+            sh:property [ # UBL Template
+                sh:path vaip2:hasUBLTemplate ;
+                sh:class vaip_core:ArchivalInformationUnit ;
+                sh:nodeKind sh:IRI ; #IRI only assigned after API deploy, may need sh:BlankNodeOrIRI
+                sh:minCount 1 ;
+                sh:maxCount 1 ;
+                sh:message "Archival Information Unit(AIU) Identity Task Template: User Business Logic Template(UBL) must be well formed."
+            ] ;  
+            sh:property [ # Identity Storage Template
+                sh:path vaip2:hasIdentityStorageTemplate ;
+                sh:class vaip_core:ArchivalInformationUnit ;
+                sh:nodeKind sh:IRI ; #IRI only assigned after API deploy, may need sh:BlankNodeOrIRI
+                sh:minCount 1 ;
+                sh:maxCount 1 ;
+                sh:message "Archival Information Unit(AIU) Identity Task Template: Requires exactly 1 Identity Storage Template that must be well formed."
+            ] ;
+            sh:property [ # Field Map
+                sh:path vaip2:hasFieldMap ;
+                sh:class vaip_core:ArchivalInformationUnit ;
+                sh:nodeKind sh:IRI ; #IRI only assigned after API deploy, may need sh:BlankNodeOrIRI
+                sh:minCount 1 ;
+                sh:maxCount 1 ;
+                sh:message "Archival Information Unit(AIU) Identity Task Template: Requires exactly 1 Field Map that must be well formed."
+            ] ;
+            sh:property [ # TODO: This relationship sghould be determined using the process template as this relationship only exists obce the task is part of a process.
+                sh:path vaip2:hasFlowTo ;
+                sh:class vaip_core:ArchivalInformationUnit ;
+                sh:nodeKind sh:IRI ; #IRI only assigned after API deploy, may need sh:BlankNodeOrIRI
+                #sh:minCount 1 ;
+                sh:message "Archival Information Unit(AIU) Identity Task Template: Requires at least 1 FlowTo that targets a Tranformation Task Template."
+            ] ;
+            sh:property [ # Fields
+                sh:path vaip2:hasLiteralField ;
+                sh:nodeKind sh:IRI ; 
+                sh:or (
+                    [
+                        sh:class vaip_core:DigitalObject ;
+                    ]
+                    [
+                        sh:class vaip_core:PhysicalObject ;
+                    ]
+                ) ;
+                sh:minCount 0 ;
+                sh:message "Archival Information Unit(AIU) Identity Task Template: Literal Field is missing or malformed." ;
+            ] ;
+
+        ]
+         [
+            #UBL Pattern
+             sh:property [ # Class Check
+                sh:path rdf:type ;
+                sh:hasValue vaip2:UBLPattern ;
+                sh:message "Archival Information Unit(AIU) UBL Pattern: UBLPattern class is missing." ;
+            ] ;  
+            sh:property [ # Fields
+                sh:path vaip2:hasLiteralField ;
+                sh:nodeKind sh:IRI ; 
+                sh:or (
+                    [
+                        sh:class vaip_core:DigitalObject ;
+                    ]
+                    [
+                        sh:class vaip_core:PhysicalObject ;
+                    ]
+                ) ;
+                    sh:minCount 1 ;
+                    sh:message "Archival Information Unit(AIU) UBL Pattern: Literal Field is missing or malformed." ;
+            ] ;
+          
+
+        ]
+        [
+            sh:property [ # Class Check
+                sh:path rdf:type ;
+                sh:hasValue vaip2:UBLTemplate ;
+                sh:message "Archival Information Unit(AIU) UBL Template: UBLTemplate class is missing." ;
+            ] ;  
+            
+            sh:property [ # Input Fields
+                sh:path vaip2:hasInputField ;
+                sh:or (
+                [
+                    sh:class vaip_core:DigitalObject ;
+                ]
+                [
+                    sh:class vaip_core:PhysicalObject ;
+                ]
+            ) ;
+                sh:nodeKind sh:IRI ; 
+                sh:message "Archival Information Unit(AIU) UBL Template:  Input Literal Field is malformed." ;
+            ] ;
+            sh:property [ # Output Fields
+                sh:path vaip2:hasOutputField ;
+                sh:or (
+                [
+                    sh:class vaip_core:DigitalObject ;
+                ]
+                [
+                    sh:class vaip_core:PhysicalObject ;
+                ]
+            ) ;
+                sh:nodeKind sh:IRI ;
+                sh:minCount 1 ;
+                sh:message "Archival Information Unit(AIU) UBL Template: Output Literal Field is malformed. Atleast one Output Field is required." ;
+            ] ;
+            
+            
+        ]
+        [
+            #IdentityStoragePattern
+            #sh:targetClass vaip2:IdentityStoragePattern ;
+            sh:property [ # Class Check
+                sh:path rdf:type ;
+                sh:hasValue vaip2:IdentityStoragePattern ;
+                sh:message "Archival Information Unit(AIU) Identity Storage Pattern: IdentityStoragePattern class is missing." ;
+            ] ;  
+            sh:property [ # Fields
+                sh:path vaip2:hasLiteralField ;
+                sh:nodeKind sh:IRI ; 
+                sh:or (
+                    [
+                        sh:class vaip_core:DigitalObject ;
+                    ]
+                    [
+                        sh:class vaip_core:PhysicalObject ;
+                    ]
+                ) ;
+                    sh:minCount 0 ;
+                    sh:message "Archival Information Unit(AIU) Identity Storage Pattern: Literal Field is missing or malformed." ;
+            ] ;
+         
+        ]
+          [
+            #IdentityStorageTemplate
+             sh:property [ # Class Check
+                sh:path rdf:type ;
+                sh:hasValue vaip2:IdentityStorageTemplate ;
+                sh:message "Archival Information Unit(AIU) Identity Storage Template: IdentityStoragePattern class is missing."
+           ] ;  
+            sh:property [ # Fields
+                sh:path vaip2:hasLiteralField ;
+                sh:nodeKind sh:IRI ; 
+                sh:or (
+                    [
+                        sh:class vaip_core:DigitalObject ;
+                    ]
+                    [
+                        sh:class vaip_core:PhysicalObject ;
+                    ]
+                ) ;
+                    sh:minCount 0 ;
+                    sh:message "Archival Information Unit(AIU) Identity Storage Pattern: Literal Field is missing or malformed." ;
+            ] ;
+          
+        ]
+        [
+            sh:property [ # Class Check
+                sh:path rdf:type ;
+                sh:hasValue vaip2:FieldMapPattern ;
+                sh:message "Archival Information Unit(AIU) Field Map Pattern: FieldMapPattern class is missing." ;
+            ] ;  
+           
+            sh:property [ # Fields
+                sh:path vaip2:hasLiteralField ;
+                sh:nodeKind sh:IRI ; 
+                sh:or (
+                    [
+                        sh:class vaip_core:DigitalObject ;
+                    ]
+                    [
+                        sh:class vaip_core:PhysicalObject ;
+                    ]
+                ) ;
+                    sh:minCount 0 ;
+                    sh:message "Archival Information Unit(AIU) Field Map Pattern: Literal Field is missing or malformed." ;
+            ] ;
+        ]
+         [
+            sh:property [ # Class Check
+                sh:path rdf:type ;
+                sh:hasValue vaip2:FieldMapTemplate ;
+                sh:message "Archival Information Unit(AIU) Field Map Template: FieldMapTemplate class is missing." ;
+            ] ;  
+           
+            sh:property [ # Fields
+                sh:path vaip2:hasLiteralField ;
+                sh:nodeKind sh:IRI ; 
+                sh:or (
+                    [
+                        sh:class vaip_core:DigitalObject ;
+                    ]
+                    [
+                        sh:class vaip_core:PhysicalObject ;
+                    ]
+                ) ;
+                    sh:minCount 0 ;
+                    sh:message "Archival Information Unit(AIU) Field Map Template: Literal Field is missing or malformed." ;
+            ] ;
+        ]
+        [
+               
+            sh:tagetClass vaip2:FieldMapTemplate ;
+            sh:property [ # Class Check
+                sh:path rdf:type ;
+                sh:hasValue vaip2:FieldMapTemplate ;
+                sh:message "Archival Information Unit(AIU) Field Map Template: FieldMapTemplate class is missing." ;
+            ] ;  
+            sh:property [ # Fields
+                sh:path vaip2:hasSourceField ;
+                sh:message "FieldMap: Source Digtal Field is malformed." ;
+                sh:or (
+                [
+                    sh:class vaip_core:DigitalObject ;
+                    sh:message "FieldMap: Source Digtal Field is malformed." ;
+                ]
+                [
+                    sh:class vaip_core:PhysicalObject ;
+                    sh:message "FieldMap: Source Physial Field is malformed." ;
+                ]
+                ) ;
+               sh:minCount 0 ;
+            ] ;
+
+            sh:property [ # Fields
+                sh:path vaip2:hasTargetField ;
+                sh:message "FieldMap: Target Digtal Field is malformed." ;
+                 sh:or (
+                [
+                    sh:class vaip_core:DigitalObject ;
+                    sh:message "FieldMap: Target Digtal Field is malformed." ;
+                ]
+                [
+                    sh:class vaip_core:PhysicalObject ;
+                    sh:message "FieldMap: Target Physial Field is malformed." ;
+                ]
+                ) ;
+                sh:minCount 1 ;
+            ] ;
+        ]
+        [
+            sh:property [ # Class Check
+                sh:path rdf:type ;
+                sh:hasValue vaip2:TransformationTaskPattern ;
+                sh:message "Archival Information Unit(AIU) Transformation Task Pattern: TransformationTaskPattern class is missing." ;
+            ] ;  
+        
+            sh:property [ # Fields
+                sh:path vaip2:hasLiteralField ;
+                sh:nodeKind sh:IRI ; 
+                sh:or (
+                    [
+                        sh:class vaip_core:DigitalObject ;
+                    ]
+                    [
+                        sh:class vaip_core:PhysicalObject ;
+                    ]
+                ) ;
+                    sh:minCount 0 ;
+                    sh:message "Archival Information Unit(AIU) Transformation Task Pattern: Literal Field is missing or malformed." ;
+            ] ;
+        ]
+        [
+            sh:property [ # Class Check
+                sh:path rdf:type ;
+                sh:hasValue vaip2:OutputTaskPattern ;
+                sh:message "Archival Information Unit(AIU) Output Task Pattern: OutputTaskPattern class is missing." ;
+            ] ;  
+        
+            sh:property [ # Fields
+                sh:path vaip2:hasLiteralField ;
+                sh:nodeKind sh:IRI ; 
+                sh:or (
+                    [
+                        sh:class vaip_core:DigitalObject ;
+                    ]
+                    [
+                        sh:class vaip_core:PhysicalObject ;
+                    ]
+                ) ;
+                    sh:minCount 0 ;
+                    sh:message "Archival Information Unit(AIU) Output Task Pattern: Literal Field is missing or malformed." ;
+            ] ;
+        ]   
+        [
+            sh:property [ # Class Check
+                sh:path rdf:type ;
+                sh:hasValue vaip2:OutputTaskTemplate ;
+                sh:message "Archival Information Unit(AIU) Output Task Template: OutputTaskTemplate class is missing." ;
+            ] ;  
+        
+            sh:property [ # Fields
+                sh:path vaip2:hasLiteralField ;
+                sh:nodeKind sh:IRI ; 
+                sh:or (
+                    [
+                        sh:class vaip_core:DigitalObject ;
+                    ]
+                    [
+                        sh:class vaip_core:PhysicalObject ;
+                    ]
+                ) ;
+                sh:minCount 0 ;
+                sh:message "Archival Information Unit(AIU) Output Task Template: Literal Field is missing or malformed." ;
+            ] ;
+             #TODO: We need Qualifying checks for TransformationUBL and Output UBL, not just the right number
+            sh:property [ # UBL Template
+                sh:path vaip2:hasUBLTemplate ;
+                sh:class vaip_core:ArchivalInformationUnit ;
+                sh:nodeKind sh:IRI ; #IRI only assigned after API deploy, may need sh:BlankNodeOrIRI
+                sh:minCount 2 ;
+                sh:maxCount 2 ;
+                sh:message "Archival Information Unit(AIU) Output Task Template: User Business Logic Templates(UBL) must be well formed. Two UBLs are required."
+            ] ;  
+            sh:property [ # Output Storage Template
+                sh:path vaip2:hasOutputStorageTemplate ;
+                sh:node vaip_shape:DisseminationInformationPackage ;
+                sh:nodeKind sh:IRI ; #IRI only assigned after API deploy, may need sh:BlankNodeOrIRI
+                sh:minCount 1 ;
+                sh:maxCount 1 ;
+                sh:message "Archival Information Unit(AIU) Output Task Template: Requires exactly 1 Dissemination Information Package that must be well formed."
+            ] ;
+            sh:property [ # Field Map
+                sh:path vaip2:hasFieldMap ;
+                sh:class vaip_core:ArchivalInformationUnit ;
+                sh:nodeKind sh:IRI ; #IRI only assigned after API deploy, may need sh:BlankNodeOrIRI
+                sh:minCount 1 ;
+                sh:maxCount 1 ;
+                sh:message "Archival Information Unit(AIU) Output Task Template: Requires exactly 1 Field Map that must be well formed."
+            ] ;
+
+        ]   
+        [
+            sh:property [ # Class Check
+                sh:path rdf:type ;
+                sh:hasValue vaip2:TransformationTaskTemplate ;
+                sh:message "Archival Information Unit(AIU) Transformation Task Template: TransformationTaskTemplate class is missing." ;
+            ] ;  
+        
+            sh:property [ # Fields
+                sh:path vaip2:hasLiteralField ;
+                sh:nodeKind sh:IRI ; 
+                sh:or (
+                    [
+                        sh:class vaip_core:DigitalObject ;
+                    ]
+                    [
+                        sh:class vaip_core:PhysicalObject ;
+                    ]
+                ) ;
+                sh:minCount 0 ;
+                sh:message "Archival Information Unit(AIU) Transformation Task Template: Literal Field is missing or malformed." ;
+            ] ;
+             #TODO: We need Qualifying checks for TransformationUBL and Output UBL, not just the right number
+             sh:property [ # Field Map
+                sh:path vaip2:hasTransformationStorageTemplate ;
+                sh:class vaip_core:ArchivalInformationCollection ;
+                sh:nodeKind sh:IRI ; 
+                sh:minCount 1 ;
+                sh:maxCount 1 ;
+                sh:message "Archival Information Unit(AIU) Transformation Task Template: Requires exactly 1 Tranformation Storage Template and it must be well formed."
+            ] ;
+            sh:property [ # Field Map
+                sh:path vaip2:hasFlowTo ;
+                sh:class vaip_core:ArchivalInformationUnit ;
+                sh:nodeKind sh:IRI ; 
+                sh:minCount 1 ;
+                sh:message "Archival Information Unit(AIU) Transformation Task Template: Requires at least 1 hasFlowTo that targets a Tranformation Task Template or Output Task Template."
+            ] ;
+            sh:property [ # Field Map
+                sh:path vaip2:hasFlowFrom ;
+                sh:class vaip_core:ArchivalInformationUnit ;
+                sh:nodeKind sh:IRI ;
+                sh:minCount 0 ;
+                sh:message "Archival Information Unit(AIU) Transformation Task Template: Requires that the targeted Tranformation Task Template or Output Task Template is well formed."
+            ] ;
+
+        ]   
+        [
+            sh:property [ # Class Check
+                sh:path rdf:type ;
+                sh:hasValue vaip2:ProcessPattern ;
+                sh:message "Archival Information Unit(AIU) Process Pattern: ProcessPattern class is missing." ;
+            ] ;  
+        
+            sh:property [ # Fields
+                sh:path vaip2:hasLiteralField ;
+                sh:nodeKind sh:IRI ; 
+                sh:or (
+                    [
+                        sh:class vaip_core:DigitalObject ;
+                    ]
+                    [
+                        sh:class vaip_core:PhysicalObject ;
+                    ]
+                ) ;
+                    sh:minCount 0 ;
+                    sh:message "Archival Information Unit(AIU) Process Pattern: Literal Field is missing or malformed." ;
+            ] ;
+        ]   
+        [
+            sh:property [ # Class Check
+                sh:path rdf:type ;
+                sh:hasValue vaip2:ProcessTemplate ;
+                sh:message "Archival Information Unit(AIU) Process Template: ProcessTemplate class is missing." ;
+            ] ;  
+        
+            sh:property [ # Fields
+                sh:path vaip2:hasLiteralField ;
+                sh:nodeKind sh:IRI ; 
+                sh:or (
+                    [
+                        sh:class vaip_core:DigitalObject ;
+                    ]
+                    [
+                        sh:class vaip_core:PhysicalObject ;
+                    ]
+                ) ;
+                    sh:minCount 0 ;
+                    sh:message "Archival Information Unit(AIU) Process Template: Literal Field is missing or malformed." ;
+            ] ;
+            # TODO: Use Qualifying Shapes to ensure that the classes are correct on the AIUs 
+            sh:property [ # AIU
+                sh:path vaip2:hasIdentityTaskTemplate ;
+                sh:class vaip_core:ArchivalInformationUnit ;
+                sh:nodeKind sh:IRI ;
+                sh:minCount 1 ;
+                sh:maxCount 1 ;
+                sh:message "Archival Information Unit(AIU) Process Template: Processes require exactly 1 IdentityTask(AIU) that is well formed."
+            ] ;
+            sh:property [ # AIC
+                sh:path vaip2:hasTransformationTaskTemplate ;
+                sh:class vaip_core:ArchivalInformationUnit ;
+                sh:nodeKind sh:IRI ;
+                sh:minCount 0 ;
+                sh:message "Archival Information Unit(AIU) Process Template: TransformationTaskTemplate(AIC) is malformed."
+            ] ;
+            sh:property [ # DIP
+                sh:path vaip2:hasOutputTaskTemplate ;
+                sh:class vaip_core:ArchivalInformationUnit ;
+                sh:nodeKind sh:IRI ;
+                sh:minCount 0 ;
+                sh:message "Archival Information Unit(AIU) Process Template: OutputTaskTemplate(DIP) is malformed ."
+            ] ;
+        ]   
+
+    ) ;
+    sh:closed false ;
+    #sh:ignoredProperties (rdf:type) ;
+    . 
+
+
+#### AIU Start ####
+vaip_shape:UnitDescriptionShape
+    a sh:NodeShape, owl:Class ;
+    sh:targetClass vaip_core:UnitDescription ; 
+    sh:property [ # Primary Label
+        sh:path skos:prefLabel ;
+        sh:nodeKind sh:Literal ;
+        sh:minLength 3 ; #no blank nodes
+        sh:minCount 1 ; #need a primary label
+        sh:maxCount 1 ; #Only one primary label
+        sh:message "Unit Description requires exactly 1 Primary Label that is at least 3 characters long."
+    ] ;
+    sh:property [ # All Labels
+        sh:path skos:altLabel ;
+        sh:nodeKind sh:Literal ;
+        sh:minLength 3 ;
+        sh:minCount 0 ; #Zero or more alt labels
+        sh:message "Unit Description Alternate Labels have a minimum length of 3 characters."
+    ] ;
+    sh:property [ # derivedFromPackage
+        sh:path vaip_core:derivedFromInformationPackage ;
+        sh:nodeKind sh:IRI ; # Cannot specify node:ArchivalInformationUnitShape here, due to recursion
+        sh:minCount 1 ;
+        sh:maxCount 1 ; #only one
+        sh:message "Unit Description requires exactly 1 derivedFromPackage property."
+    ] ;
+    sh:property [ # Data Object
+        sh:path vaip_core:hasDataObject ;
+        sh:or (
+            [
+                sh:class vaip_core:DigitalObject ;
+            ]
+            [
+                sh:class vaip_core:PhysicalObject ;
+            ]
+        ) ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; #only one
+        sh:message "Unit Description requires exactly 1 Data Object and it must be well formed."
+
+    ] ;
+    sh:property [ # Structure Representations
+        sh:path vaip_core:hasStructureRepresentation ;
+        sh:class vaip_core:StructureRepresentation ; #potentially recursive
+        sh:minCount 1 ; #at least one
+        sh:message "Unit Description requires at least 1 Structure Representation and they must all be well formed."
+    ] ;
+    sh:property [ # Semantic Representations
+        sh:path vaip_core:hasSemanticRepresentation ;
+        sh:class  vaip_core:SemanticRepresentation ; #potentially recursive
+        sh:minCount 1 ; #at least one
+        sh:message "Unit Description requires at least 1 Semantic Representation and they must all be well formed."
+    ] ;
+    sh:property [ # Other Representations
+        sh:path vaip_core:hasOtherRepresentation ;
+        sh:class vaip_core:OtherRepresentation ; #potentially recursive
+        sh:minCount 0 ; #optional
+        sh:message "Unit Description Other Representation does not meet requirements."
+    ] ;
+    sh:closed true ;
+    sh:ignoredProperties (rdf:type) ;
+    . 
+
+
+# vaip_shape:TransformationStorageTemplateShape
+#     a sh:NodeShape, owl:Class ;
+#     sh:targetClass vaip2:TransformationStorageTemplate, vaip_core:ArchivalInformationCollectionShape ; 
+#     sh:and (
+#         vaip_shape:TransformationStoragePatternShape
+#     ) ;
+#     . 
+#### AIC End ####
+
+#### Archival Information Collection ####
+vaip_shape:ArchivalInformationCollectionShape
+    a sh:NodeShape, owl:Class ;
+    sh:targetClass vaip_core:ArchivalInformationCollection ; #vaip2:TransformationStoragePattern   # Applies to all Archival Information Collection Shapes
+    sh:property [ # Primary AIC Label
+        sh:path skos:prefLabel ;
+        sh:nodeKind sh:Literal ;
+        sh:minLength 3 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; #Only one primary label
+        sh:message "Archival Information Collection(AIC) requires exactly 1 Primary Label that is at least 3 characters long."
+    ] ;
+    sh:property [ # All AIC Labels
+        sh:path skos:altLabel ;
+        sh:nodeKind sh:Literal ;
+        sh:minLength 3 ;
+        sh:minCount 0 ; #Zero or more alt labels
+        sh:message "Archival Information Collection(AIC) Alternate Labels must be at least 3 characters long."
+    ] ;
+    sh:property [ # Content
+        sh:path vaip_core:hasContentInformation ;
+        sh:class vaip_core:ContentInformationObject ;
+        sh:nodeKind sh:IRI ; #IRI only assigned after API deploy, may need sh:BlankNodeOrIRI
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "Archival Information Collection(AIC) requires exactly 1 Content Information Object and it must be well formed." 
+    ] ;
+    sh:property [ # Overview Description
+        sh:path vaip_core:describedByOverviewDescription ;
+        sh:node vaip_shape:OverviewDescriptionShape ;
+        sh:nodeKind sh:IRI ; #IRI only assigned after API deploy, may need sh:BlankNodeOrIRI
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "Archival Information Collection(AIC) requires exactly 1 Overview Description and it must all be well formed." ;       
+    ] ;
+   sh:property [ # Packaging
+        sh:path vaip_core:packagedBy ;
+        sh:class vaip_core:PackagingInformationObject ;
+        sh:nodeKind sh:IRI ; #IRI only assigned after API deploy, may need sh:BlankNodeOrIRI
+        sh:minCount 1 ;
+        sh:message "Archival Information Collection(AIC) requires at least 1 Package Information Object and they must all be well formed."
+    ] ;
+    sh:property [ # PDI - Access Rights
+        sh:path vaip_core:hasAccessRights ;
+        sh:class vaip_core:AccessRightsPreservation ;
+        sh:nodeKind sh:IRI ; #IRI only assigned after API deploy, may need sh:BlankNodeOrIRI
+        sh:minCount 1 ;
+        sh:message "Archival Information Collection(AIC) requires at least 1 Access Rights Representation and they must all be well formed."
+    ] ;
+    sh:property [ # PDI - Context
+        sh:path vaip_core:hasContext ;
+        sh:class vaip_core:ContextPreservation ;
+        sh:nodeKind sh:IRI ; #IRI only assigned after API deploy, may need sh:BlankNodeOrIRI
+        sh:minCount 1 ;
+        sh:message "Archival Information Collection(AIC) requires at least 1 Context Preservation and they must all be well formed."
+    ] ;
+    sh:property [ # PDI - Fixity
+        sh:path vaip_core:hasFixity ;
+        sh:class vaip_core:FixityPreservation ;
+        sh:nodeKind sh:IRI ; #IRI only assigned after API deploy, may need sh:BlankNodeOrIRI
+        sh:minCount 1 ;
+        sh:message "Archival Information Collection(AIC) requires at least 1 Fixity Preservation and they must all be well formed."
+    ] ;
+    sh:property [ # PDI - Reference
+        sh:path vaip_core:hasReference ;
+        sh:class vaip_core:ReferencePreservation ;
+        sh:nodeKind sh:IRI ; #IRI only assigned after API deploy, may need sh:BlankNodeOrIRI
+        sh:minCount 1 ;
+        sh:message "Archival Information Collection(AIC) requires at least 1 Reference Preservation and they must all be well formed."
+    ] ;
+    sh:property [ # PDI - Provenance
+        sh:path vaip_core:hasProvenance ;
+        sh:class vaip_core:ProvenancePreservation ;
+        sh:nodeKind sh:IRI ; #IRI only assigned after API deploy, may need sh:BlankNodeOrIRI
+        sh:minCount 1 ;
+        sh:message "Archival Information Collection(AIC) requires at least 1 Provenance Preservation and they must all be well formed. End"
+    ] ;
+
+    sh:property [ #Member Description
+        sh:path vaip_core:describedByMemberDescription ;
+        sh:node vaip_shape:MemberDescriptionShape ;
+        sh:nodeKind sh:IRI ; #IRI only assigned after API deploy, may need sh:BlankNodeOrIRI
+        sh:minCount 1 ;
+        sh:message "Archival Information Collection(AIC) Transformation Storage Pattern : Requires at least 1 Member Description and they must all be well formed." ;
+    ] ;
+    .
+# #### Dissemination Information Package(DIP) ####
+vaip_shape:DisseminationInformationPackageShape
+    a sh:NodeShape, owl:Class ;
+    sh:targetClass vaip_core:DisseminationInformationPackage ; # vaip2:OutputStorage ; # Applies to all Dissemination Information Package Shapes
+    sh:property [ # Data Object
+        sh:path vaip2:hasLiteralField ;
+        sh:or (
+            [
+                sh:class vaip_core:DigitalObject ;
+            ]
+            [
+                sh:class vaip_core:PhysicalObject ;
+            ]
+        ) ;
+        sh:minCount 0 ;
+        sh:message "DisseminationInformationPackage LiteralFields must be well formed."
+
+    ] ;
+    
+   
+    # sh:property [ 
+    #     sh:path vaip2:hasEndpoint ;
+    #     sh:node vaip2:Endpoint ;
+    #     sh:nodeKind sh:IRI ; #IRI only assigned after API deploy, may need sh:BlankNodeOrIRI
+    #     sh:minCount 1 ;
+    #     sh:message "Output Storage requires at least 1 Endpount and they must all be well formed."
+    # ] ;
+    sh:property [ # Primary DIP Label
+        sh:path skos:prefLabel ;
+        sh:nodeKind sh:Literal ;
+        sh:minLength 3 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; #Only one primary label
+        sh:message "Dissemination Information Package(DIP) requires exactly 1 Primary Label that is at least 3 characters long."
+    ] ;
+    sh:property [ # All DIP Labels
+        sh:path skos:altLabel ;
+        sh:nodeKind sh:Literal ;
+        sh:minLength 3 ;
+        sh:minCount 0 ; #Zero or more alt labels
+        sh:message "Dissemination Information Package(DIP) Alternate Labels must be at least 3 characters long."
+    ] ;
+    sh:property [ # Content, this allows multiple now to allow request and response
+        sh:path vaip_core:hasContentInformation ;
+        sh:class vaip_core:ContentInformationObject ;
+        sh:nodeKind sh:IRI ; #IRI only assigned after API deploy, may need sh:BlankNodeOrIRI
+        sh:minCount 1 ;
+        sh:message "Dissemination Information Package(DIP) requires exactly 1 Content Information Object and it must be well formed." 
+    ] ;
+    sh:property [ # Description
+        sh:path vaip_core:describedBy ;
+        sh:class vaip_core:UnitDescription ;
+        sh:nodeKind sh:IRI ; #IRI only assigned after API deploy, may need sh:BlankNodeOrIRI
+        sh:minCount 1 ;
+        sh:message "Dissemination Information Package(DIP) requires at least 1 Package Description and they must all be well formed."
+    ] ;
+
+    sh:property [ # Packaging
+        sh:path vaip_core:packagedBy ;
+        sh:class vaip_core:PackagingInformationObject ;
+        sh:nodeKind sh:IRI ; #IRI only assigned after API deploy, may need sh:BlankNodeOrIRI
+        sh:minCount 1 ;
+        sh:message "Dissemination Information Package(DIP) requires at least 1 Package Information Object and they must all be well formed."
+    ] ;
+    sh:property [ # PDI - Access Rights
+        sh:path vaip_core:hasAccessRights ;
+        sh:class vaip_core:AccessRightsPreservation ;
+        sh:nodeKind sh:IRI ; #IRI only assigned after API deploy, may need sh:BlankNodeOrIRI
+        sh:minCount 1 ;
+        sh:message "Dissemination Information Package(DIP) requires at least 1 Access Rights Representation and they must all be well formed."
+    ] ;
+    sh:property [ # PDI - Context
+        sh:path vaip_core:hasContext ;
+        sh:class vaip_core:ContextPreservation ;
+        sh:nodeKind sh:IRI ; #IRI only assigned after API deploy, may need sh:BlankNodeOrIRI
+        sh:minCount 1 ;
+        sh:message "Dissemination Information Package(DIP) requires at least 1 Context Preservation and they must all be well formed."
+    ] ;
+    sh:property [ # PDI - Fixity
+        sh:path vaip_core:hasFixity ;
+        sh:class vaip_core:FixityPreservation ;
+        sh:nodeKind sh:IRI ; #IRI only assigned after API deploy, may need sh:BlankNodeOrIRI
+        sh:minCount 1 ;
+        sh:message "Dissemination Information Package(DIP) requires at least 1 Fixity Preservation and they must all be well formed."
+    ] ;
+    sh:property [ # PDI - Reference
+        sh:path vaip_core:hasReference ;
+        sh:class vaip_core:ReferencePreservation ;
+        sh:nodeKind sh:IRI ; #IRI only assigned after API deploy, may need sh:BlankNodeOrIRI
+        sh:minCount 1 ;
+        sh:message "Dissemination Information Package(DIP) requires at least 1 Reference Preservation and they must all be well formed." ;
+    ] ;
+    sh:property [ # PDI - Provenance
+        sh:path vaip_core:hasProvenance ;
+        sh:class vaip_core:ProvenancePreservation ;
+        sh:nodeKind sh:IRI ; #IRI only assigned after API deploy, may need sh:BlankNodeOrIRI
+        sh:minCount 1 ;
+        sh:message "Dissemination Information Package(DIP) requires at least 1 Provenance Preservation and they must all be well formed." ;
+    ] ;
+    . 
+
+
+# #### Start DIP Specific Shapes ####
+
+# #### Dip for VaipFramework
+vaip_shape:AssociatedDescriptionShape
+    a sh:NodeShape, owl:Class ;
+    #sh:targetClass vaip_core:AssociatedDescription ; #vaip2:Connection
+    sh:property [ # Primary Label
+        sh:path skos:prefLabel ;
+        sh:nodeKind sh:Literal ;
+        sh:minLength 3 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; #Only one primary label
+        sh:message "AssociatedDescription requires exactly 1 Primary Label that is at least 3 characters long."
+    ] ;
+    sh:property [ # All Labels
+        sh:path skos:altLabel ;
+        sh:nodeKind sh:Literal ;
+        sh:minLength 3 ;
+        sh:minCount 0 ; #Zero or more alt labels
+        sh:message "AssociatedDescription Alternate Labels must be at least 3 characters long."
+    ] ;
+
+      sh:property [ # Data Object
+        sh:path vaip_core:hasDataObject ;
+        sh:or (
+            [
+                sh:class vaip_core:DigitalObject ;
+            ]
+            [
+                sh:class vaip_core:PhysicalObject ;
+            ]
+        ) ;
+        sh:minCount 1 ; #Content can have multiple data objects
+        sh:message "Associated Description requires at least 1 Data Object and it must be well formed."
+
+    ] ;
+    sh:property [ # Structure Representations
+        sh:path vaip_core:hasStructureRepresentation ;
+        sh:class vaip_core:StructureRepresentation ; #potentially recursive
+        sh:minCount 1 ; #at least one
+        sh:message "Associated Description requires at least 1 Structure Representation and they must all be well formed."
+    ] ;
+    sh:property [ # Semantic Representations
+        sh:path vaip_core:hasSemanticRepresentation ;
+        sh:class  vaip_core:SemanticRepresentation ; #potentially recursive
+        sh:minCount 1 ; #at least one
+        sh:message "Associated Description requires at least 1 Semantic Representation and they must all be well formed."
+    ] ;
+    sh:property [ # Other Representations
+        sh:path vaip_core:hasOtherRepresentation ;
+        sh:class vaip_core:OtherRepresentation ; #potentially recursive
+        sh:minCount 0 ; #optional
+        sh:message "Associated Description Other Representation does not meet requirements."
+    ] ;
+
+    .
+
+
+# vaip_shape:AccessAidShape
+#     a sh:NodeShape, owl:Class ;
+#     sh:targetClass vaip_core:AccessAid, vaip2:Endpoint ; 
+#     sh:property [
+#         sh:path vaip2:hasConnection ;
+#         sh:node vaip2:Connection ;
+#         sh:minCount 1 ;
+#         sh:maxCount 1 ;
+#         sh:message: "Core:Access Aid / Framework:Endpoint requires exactly 1 Connection." ;
+#     ] ;
+
+#      sh:property [ # Primary Label
+#         sh:path skos:prefLabel ;
+#         sh:nodeKind sh:Literal ;
+#         sh:minLength 3 ;
+#         sh:minCount 1 ;
+#         sh:maxCount 1 ; #Only one primary label
+#         sh:message "Core:Access Aid / Framework:Endpoint requires exactly 1 Primary Label that is at least 3 characters long."
+#     ] ;
+#     sh:property [ # All Labels
+#         sh:path skos:altLabel ;
+#         sh:nodeKind sh:Literal ;
+#         sh:minLength 3 ;
+#         sh:minCount 0 ; #Zero or more alt labels
+#         sh:message "Core:Access Aid / Framework:Endpoint Alternate Labels must be at least 3 characters long."
+#     ] ;
+#     sh:closed false ;
+#     . 
+
