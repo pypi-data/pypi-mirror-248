@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "aockit"
+version = "1.0.0"
+description = ""
+authors = ["Scott Odle <scott@sjodle.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.pylint.MASTER]
+ignore-paths = '^aockit/test/.*$'
+
+[tool.poetry.group.dev.dependencies]
+coverage = "^7.3.4"
+pylint = "^3.0.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
