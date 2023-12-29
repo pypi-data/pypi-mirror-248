@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: dokker
+Version: 0.1.5
+Summary: 
+Author: jhnnsrs
+Author-email: jhnnsrs@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: cookiecutter
+Requires-Dist: cookiecutter (>=2.5.0,<3.0.0) ; extra == "cookiecutter"
+Requires-Dist: httpx (>=0.26.0,<0.27.0)
+Requires-Dist: koil (>=0.3.5,<0.4.0)
+Requires-Dist: pydantic (<=2)
+Requires-Dist: python-on-whales (>=0.68.0,<0.69.0)
+Description-Content-Type: text/markdown
+
+# Dokker
+
+Convenience methods for Docker containers, built
+around python-on-whales.
+
+## Installation
+
+```bash
+pip install dokker
+```
