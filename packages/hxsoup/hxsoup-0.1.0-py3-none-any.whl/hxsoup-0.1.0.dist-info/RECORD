@@ -1,0 +1,10 @@
+hxsoup/__init__.py,sha256=AxLtc5yBDikz03d4IekSKg3ZaPL7P7WnorGhh_fDfOY,1557
+hxsoup/api.py,sha256=YIFbw1UJT4LwfRUVvMBMYnCmZI1MUcq-EGknSaF228g,15655
+hxsoup/client.py,sha256=LJUPG8ehCKDQK0nlzWTsP-Qnl6x3em6xXGUePPaXbsY,43962
+hxsoup/dev.py,sha256=lDUjDq04kQTuLrzCOgxVZGClTsfJGI4g-BE2VOXSsCg,294
+hxsoup/dev_api.py,sha256=UscyyHbBRPmOVePTWdBsPJz2ThyhH-S5VTO2YVp527w,35624
+hxsoup/souptools.py,sha256=pg-Ofn8uhehmxO7eY5iTejKKirF0HX3Ozzzh3hn8Gv8,9129
+hxsoup-0.1.0.dist-info/LICENSE,sha256=QfI2f1mHX2BHL_ltGlUCSMLzNrTPCQOgNHBXtlK4XNY,1087
+hxsoup-0.1.0.dist-info/METADATA,sha256=JT_zTDXIDa0EMEYxpWpwA19pOUgjYYEQbJW1yNwRvSI,942
+hxsoup-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+hxsoup-0.1.0.dist-info/RECORD,,
