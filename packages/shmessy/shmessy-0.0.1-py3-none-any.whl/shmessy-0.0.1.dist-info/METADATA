@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: shmessy
+Version: 0.0.1
+Summary: 
+Author: Ohad Mata
+Author-email: ohadmata@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pandas (>=2.0)
+Requires-Dist: pydantic[email] (>=1.10,<2.0)
+Requires-Dist: tabulate (>=0.9)
