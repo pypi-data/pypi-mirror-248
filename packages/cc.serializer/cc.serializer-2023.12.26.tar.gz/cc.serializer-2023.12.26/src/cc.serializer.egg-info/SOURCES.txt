@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/cc/__init__.py
+src/cc.serializer.egg-info/PKG-INFO
+src/cc.serializer.egg-info/SOURCES.txt
+src/cc.serializer.egg-info/dependency_links.txt
+src/cc.serializer.egg-info/requires.txt
+src/cc.serializer.egg-info/top_level.txt
+src/cc/serializer/__init__.py
+src/cc/serializer/buffer_serializer.py
+src/cc/serializer/serializer.py
+src/cc/serializer/socket_serializer.py
+src/cc/serializer/uart_serializer.py
