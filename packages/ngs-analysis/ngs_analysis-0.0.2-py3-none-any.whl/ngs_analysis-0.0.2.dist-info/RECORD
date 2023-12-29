@@ -1,0 +1,11 @@
+ngs_analysis/app.py,sha256=G9YuB0GkGETyBe-L8cRLOEWjRuQ0BW1OwSv3AuQJACc,27185
+ngs_analysis/constants.py,sha256=OWY2_iVF94dMjXrydpOlsHiM4QUDBWE7aUNGOGkpaJI,3662
+ngs_analysis/interactive.py,sha256=X_YJmsl3oR5FjyTMf6XnuwWt3ABpDLMo6WyvuuxPdfA,541
+ngs_analysis/sequence.py,sha256=GUAutcIpZOopGgygcSUnfa-bsHmDItNAjvgyF5LJZII,28277
+ngs_analysis/timer.py,sha256=qNUsDUQgJx6WCCCmTx7QH1yKImKO-uq6N_YMs_RrLfo,3100
+ngs_analysis-0.0.2.dist-info/LICENSE,sha256=BOe4QZIRcSDLkbKXWGtEvwYBpP0HuRx34sCweWQX4Gc,1070
+ngs_analysis-0.0.2.dist-info/METADATA,sha256=PzHyarxQzwrf2u5LFIacBAyzA-S8w6PeheuvCDmNgh0,2262
+ngs_analysis-0.0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+ngs_analysis-0.0.2.dist-info/entry_points.txt,sha256=vABjDZjNt7K6xFJ6hDDUb16_gAC7avzszzfIQPmkx1g,55
+ngs_analysis-0.0.2.dist-info/top_level.txt,sha256=Y-OBgvpemq0qnGDXaxTF51RvZ940suk84iGuYcnCPn0,13
+ngs_analysis-0.0.2.dist-info/RECORD,,
