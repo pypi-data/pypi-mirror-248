@@ -1,0 +1,2 @@
+torch>1.6
+bert4torch==0.4.4
