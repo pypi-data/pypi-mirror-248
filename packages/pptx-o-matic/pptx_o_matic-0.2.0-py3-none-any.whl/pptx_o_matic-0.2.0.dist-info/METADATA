@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pptx-o-matic
+Version: 0.2.0
+Summary: Simple Python utility to convert PDFs to PPTXs
+Home-page: https://github.com/arielogg/pptx_o_matic
+Author: Ariel Guerra-Adames
+Author-email: ariel.guerra1@utp.ac.pa
+License-File: LICENSE
+Requires-Dist: lxml ==4.9.3
+Requires-Dist: Pillow ==10.1.0
+Requires-Dist: PyMuPDF ==1.23.7
+Requires-Dist: python-pptx ==0.6.23
+Requires-Dist: XlsxWriter ==3.1.9
+
