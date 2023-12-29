@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: gpt-web-crawler
+Version: 0.0.1
+Summary: A web crawler for GPTs to build knowledge bases
+Author-email: Tim Saijun <code@zair.top>
+Project-URL: Homepage, https://github.com/Tim-Saijun/gpt-web-crawler
+Project-URL: Documentation, https://github.com/Tim-Saijun/gpt-web-crawler/blob/main/README.MD
+Keywords: gpt,crawler,website,knowledge bases,AI,language models,gpt-web-crawler
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: beautifulsoup4>=4.10.0
+Requires-Dist: colorlog>=6.8.0
+Requires-Dist: openai>=1.6.0
+Requires-Dist: Pillow>=4.0.0
+Requires-Dist: requests>=2.26.0
+Requires-Dist: Scrapy>=2.11.0
