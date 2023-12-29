@@ -1,0 +1,9 @@
+ptyp
+atyp
+itry
+nchr
+nlit
+chck
+hasr
+
+[dev]
