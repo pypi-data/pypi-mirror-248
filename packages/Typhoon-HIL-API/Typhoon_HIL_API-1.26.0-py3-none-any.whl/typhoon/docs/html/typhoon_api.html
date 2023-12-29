@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Welcome to Typhoon API’s documentation! &#8212; Typhoon API 1.26.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinxdoc.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="1. HIL API" href="hil_api.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="hil_api.html" title="1. HIL API"
+             accesskey="N">next</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">Typhoon API 1.26.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Welcome to Typhoon API’s documentation!</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="welcome-to-typhoon-api-s-documentation">
+<h1>Welcome to Typhoon API’s documentation!<a class="headerlink" href="#welcome-to-typhoon-api-s-documentation" title="Permalink to this heading">¶</a></h1>
+<dl class="field-list simple">
+<dt class="field-odd">Author<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Typhoon HIL</p>
+</dd>
+<dt class="field-even">Release date<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dec 07, 2023</p>
+</dd>
+<dt class="field-odd">Requirements<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+<div class="highlight-plaintext notranslate"><div class="highlight"><pre><span></span># This requirements file is used for Typhoon-python
+
+https://www.typhoon-hil.com/sharing/team/dependencies/asammdf-7.3.13-cp311-cp311-win_amd64.whl; sys_platform == &#39;win32&#39; # used because of the problem with a PySide6
+asyncio==3.4.3                                          # used in our tests
+asyncua==0.9.95                                         # used in our tests
+canopen==2.0.0                                          # used in our tests
+dss-python==0.13.0                                      # opandssdirect requirement
+ifcfg==0.24                                             # used in our tests
+mcp2210-python==1.0.4                                   # used in our tests
+opendssdirect.py==0.8.0
+pdfrw==0.4                                              # used inside TDD project
+# pyopendnp3==0.1.0; sys_platform == &#39;win32&#39;              # used in our tests - not compatible with python 3.11
+pyserial==3.5                                           # used in our tests
+pysoem==1.1.0
+pytest-asyncio==0.19.0                                  # used in our tests
+pytest-harvest==1.10.4                                  # used in our tests
+python-can==4.1.0                                       # used in our tests
+pythonnet==3.0.1; sys_platform == &#39;win32&#39;
+pyusb==1.2.1
+git+https://github.com/typhoon-hil/model-converter.git
+paramiko==2.11.0                                        # used in our tests
+# This is requirement for the TyTest, prebuilt by us because there is no whl file. Compilers are needed for the build.
+https://www.typhoon-hil.com/sharing/team/dependencies/xhtml2pdf-0.2.11-py3-none-any.whl
+
+# Libs used for VISA communication for BorgWarner Power and Measurement devices
+pyvisa==1.13.0
+pyvisa-py==0.7.0
+
+
+# These libs are used to eliminate warnings prints when typhoon.test.capture is imported.
+# They are not used for anything else. This is Canmatrix lib issue which is asammdf dependency.
+#ldfparser
+#xlrd
+#xlwt
+#xlsxwriter
+
+#exported_src\typhoontest\.
+#exported_src\api\.
+</pre></div>
+</div>
+<p>Contents:</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="hil_api.html">1. HIL API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="hil_api.html#module-typhoon.api.hil">1.1. API references</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.load_model"><code class="docutils literal notranslate"><span class="pre">load_model()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.load_settings_file"><code class="docutils literal notranslate"><span class="pre">load_settings_file()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.save_settings_file"><code class="docutils literal notranslate"><span class="pre">save_settings_file()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.save_model_state"><code class="docutils literal notranslate"><span class="pre">save_model_state()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.load_model_state"><code class="docutils literal notranslate"><span class="pre">load_model_state()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.upload_standalone_model"><code class="docutils literal notranslate"><span class="pre">upload_standalone_model()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.model_write"><code class="docutils literal notranslate"><span class="pre">model_write()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.model_read"><code class="docutils literal notranslate"><span class="pre">model_read()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.add_data_logger"><code class="docutils literal notranslate"><span class="pre">add_data_logger()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.remove_data_logger"><code class="docutils literal notranslate"><span class="pre">remove_data_logger()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.start_data_logger"><code class="docutils literal notranslate"><span class="pre">start_data_logger()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.stop_data_logger"><code class="docutils literal notranslate"><span class="pre">stop_data_logger()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.update_sources"><code class="docutils literal notranslate"><span class="pre">update_sources()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.prepare_source_arbitrary_waveform"><code class="docutils literal notranslate"><span class="pre">prepare_source_arbitrary_waveform()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.prepare_source_constant_value"><code class="docutils literal notranslate"><span class="pre">prepare_source_constant_value()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.prepare_source_sine_waveform"><code class="docutils literal notranslate"><span class="pre">prepare_source_sine_waveform()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.enable_ao_limiting"><code class="docutils literal notranslate"><span class="pre">enable_ao_limiting()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.disable_ao_limiting"><code class="docutils literal notranslate"><span class="pre">disable_ao_limiting()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.set_boot_configuration"><code class="docutils literal notranslate"><span class="pre">set_boot_configuration()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.set_source_arbitrary_waveform"><code class="docutils literal notranslate"><span class="pre">set_source_arbitrary_waveform()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.set_source_constant_value"><code class="docutils literal notranslate"><span class="pre">set_source_constant_value()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.set_source_sine_waveform"><code class="docutils literal notranslate"><span class="pre">set_source_sine_waveform()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.set_source_scaling"><code class="docutils literal notranslate"><span class="pre">set_source_scaling()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.set_pv_input_file"><code class="docutils literal notranslate"><span class="pre">set_pv_input_file()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.set_pv_amb_params"><code class="docutils literal notranslate"><span class="pre">set_pv_amb_params()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.set_analog_output"><code class="docutils literal notranslate"><span class="pre">set_analog_output()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.set_analog_output_signal"><code class="docutils literal notranslate"><span class="pre">set_analog_output_signal()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.set_analog_output_scaling"><code class="docutils literal notranslate"><span class="pre">set_analog_output_scaling()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.set_analog_output_offset"><code class="docutils literal notranslate"><span class="pre">set_analog_output_offset()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.set_digital_output"><code class="docutils literal notranslate"><span class="pre">set_digital_output()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.set_digital_output_signal"><code class="docutils literal notranslate"><span class="pre">set_digital_output_signal()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.set_digital_output_inverting"><code class="docutils literal notranslate"><span class="pre">set_digital_output_inverting()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.set_digital_output_sw_control"><code class="docutils literal notranslate"><span class="pre">set_digital_output_sw_control()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.set_digital_output_software_value"><code class="docutils literal notranslate"><span class="pre">set_digital_output_software_value()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.set_contactor"><code class="docutils literal notranslate"><span class="pre">set_contactor()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.set_contactor_control_mode"><code class="docutils literal notranslate"><span class="pre">set_contactor_control_mode()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.set_contactor_state"><code class="docutils literal notranslate"><span class="pre">set_contactor_state()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.set_machine_constant_torque"><code class="docutils literal notranslate"><span class="pre">set_machine_constant_torque()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.set_machine_linear_torque"><code class="docutils literal notranslate"><span class="pre">set_machine_linear_torque()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.set_machine_square_torque"><code class="docutils literal notranslate"><span class="pre">set_machine_square_torque()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.set_machine_load_source"><code class="docutils literal notranslate"><span class="pre">set_machine_load_source()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.set_machine_external_torque_type"><code class="docutils literal notranslate"><span class="pre">set_machine_external_torque_type()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.set_machine_constant_torque_type"><code class="docutils literal notranslate"><span class="pre">set_machine_constant_torque_type()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.set_machine_load_type"><code class="docutils literal notranslate"><span class="pre">set_machine_load_type()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.set_machine_speed"><code class="docutils literal notranslate"><span class="pre">set_machine_speed()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.set_machine_initial_angle"><code class="docutils literal notranslate"><span class="pre">set_machine_initial_angle()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.set_machine_initial_speed"><code class="docutils literal notranslate"><span class="pre">set_machine_initial_speed()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.set_machine_inc_encoder_offset"><code class="docutils literal notranslate"><span class="pre">set_machine_inc_encoder_offset()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.set_machine_sin_encoder_offset"><code class="docutils literal notranslate"><span class="pre">set_machine_sin_encoder_offset()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.set_machine_encoder_offset"><code class="docutils literal notranslate"><span class="pre">set_machine_encoder_offset()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.set_machine_resolver_offset"><code class="docutils literal notranslate"><span class="pre">set_machine_resolver_offset()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.set_pe_switching_block_control_mode"><code class="docutils literal notranslate"><span class="pre">set_pe_switching_block_control_mode()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.set_pe_switching_block_software_value"><code class="docutils literal notranslate"><span class="pre">set_pe_switching_block_software_value()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.set_initial_battery_soc"><code class="docutils literal notranslate"><span class="pre">set_initial_battery_soc()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.set_scada_input_value"><code class="docutils literal notranslate"><span class="pre">set_scada_input_value()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.set_cp_input_value"><code class="docutils literal notranslate"><span class="pre">set_cp_input_value()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.set_text_mode"><code class="docutils literal notranslate"><span class="pre">set_text_mode()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.set_debug_level"><code class="docutils literal notranslate"><span class="pre">set_debug_level()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.start_capture"><code class="docutils literal notranslate"><span class="pre">start_capture()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.stop_capture"><code class="docutils literal notranslate"><span class="pre">stop_capture()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.start_simulation"><code class="docutils literal notranslate"><span class="pre">start_simulation()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.stop_simulation"><code class="docutils literal notranslate"><span class="pre">stop_simulation()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.is_simulation_running"><code class="docutils literal notranslate"><span class="pre">is_simulation_running()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.check_hil_hwid"><code class="docutils literal notranslate"><span class="pre">check_hil_hwid()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.capture_in_progress"><code class="docutils literal notranslate"><span class="pre">capture_in_progress()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.timeout_occurred"><code class="docutils literal notranslate"><span class="pre">timeout_occurred()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.read_pv_iv_curve"><code class="docutils literal notranslate"><span class="pre">read_pv_iv_curve()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.read_analog_signal"><code class="docutils literal notranslate"><span class="pre">read_analog_signal()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.read_analog_signals"><code class="docutils literal notranslate"><span class="pre">read_analog_signals()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.read_digital_signal"><code class="docutils literal notranslate"><span class="pre">read_digital_signal()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.read_digital_signals"><code class="docutils literal notranslate"><span class="pre">read_digital_signals()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.read_digital_input"><code class="docutils literal notranslate"><span class="pre">read_digital_input()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.read_streaming_signals"><code class="docutils literal notranslate"><span class="pre">read_streaming_signals()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.load_signal_gen_data"><code class="docutils literal notranslate"><span class="pre">load_signal_gen_data()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.create_signal_stimulus"><code class="docutils literal notranslate"><span class="pre">create_signal_stimulus()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.prepare_signal_stimulus"><code class="docutils literal notranslate"><span class="pre">prepare_signal_stimulus()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.start_signal_stimulus"><code class="docutils literal notranslate"><span class="pre">start_signal_stimulus()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.stop_signal_stimulus"><code class="docutils literal notranslate"><span class="pre">stop_signal_stimulus()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.pause_signal_stimulus"><code class="docutils literal notranslate"><span class="pre">pause_signal_stimulus()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.reboot_hil"><code class="docutils literal notranslate"><span class="pre">reboot_hil()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.wait_sec"><code class="docutils literal notranslate"><span class="pre">wait_sec()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.wait_msec"><code class="docutils literal notranslate"><span class="pre">wait_msec()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.wait_on_user"><code class="docutils literal notranslate"><span class="pre">wait_on_user()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.end_script_by_user"><code class="docutils literal notranslate"><span class="pre">end_script_by_user()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.reset_flag_status"><code class="docutils literal notranslate"><span class="pre">reset_flag_status()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.get_model_variables"><code class="docutils literal notranslate"><span class="pre">get_model_variables()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.get_cp_output_value"><code class="docutils literal notranslate"><span class="pre">get_cp_output_value()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.get_scada_output_value"><code class="docutils literal notranslate"><span class="pre">get_scada_output_value()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.get_battery_soc"><code class="docutils literal notranslate"><span class="pre">get_battery_soc()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.get_pv_mpp"><code class="docutils literal notranslate"><span class="pre">get_pv_mpp()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.get_num_of_connected_hils"><code class="docutils literal notranslate"><span class="pre">get_num_of_connected_hils()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.get_sim_step"><code class="docutils literal notranslate"><span class="pre">get_sim_step()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.get_sim_time"><code class="docutils literal notranslate"><span class="pre">get_sim_time()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.get_device_cfg_list"><code class="docutils literal notranslate"><span class="pre">get_device_cfg_list()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.get_sw_version"><code class="docutils literal notranslate"><span class="pre">get_sw_version()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.get_hil_calibration_date"><code class="docutils literal notranslate"><span class="pre">get_hil_calibration_date()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.get_device_features"><code class="docutils literal notranslate"><span class="pre">get_device_features()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.get_hw_info"><code class="docutils literal notranslate"><span class="pre">get_hw_info()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.get_flag_status"><code class="docutils literal notranslate"><span class="pre">get_flag_status()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.get_sources"><code class="docutils literal notranslate"><span class="pre">get_sources()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.get_pvs"><code class="docutils literal notranslate"><span class="pre">get_pvs()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.get_analog_signals"><code class="docutils literal notranslate"><span class="pre">get_analog_signals()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.get_digital_signals"><code class="docutils literal notranslate"><span class="pre">get_digital_signals()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.get_streaming_analog_signals"><code class="docutils literal notranslate"><span class="pre">get_streaming_analog_signals()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.get_streaming_digital_signals"><code class="docutils literal notranslate"><span class="pre">get_streaming_digital_signals()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.get_contactors"><code class="docutils literal notranslate"><span class="pre">get_contactors()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.get_machines"><code class="docutils literal notranslate"><span class="pre">get_machines()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.get_pe_switching_blocks"><code class="docutils literal notranslate"><span class="pre">get_pe_switching_blocks()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.get_scada_inputs"><code class="docutils literal notranslate"><span class="pre">get_scada_inputs()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.get_scada_outputs"><code class="docutils literal notranslate"><span class="pre">get_scada_outputs()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.get_source_settings"><code class="docutils literal notranslate"><span class="pre">get_source_settings()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.get_pv_panel_settings"><code class="docutils literal notranslate"><span class="pre">get_pv_panel_settings()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.get_machine_settings"><code class="docutils literal notranslate"><span class="pre">get_machine_settings()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.get_pe_switching_block_settings"><code class="docutils literal notranslate"><span class="pre">get_pe_switching_block_settings()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.get_contactor_settings"><code class="docutils literal notranslate"><span class="pre">get_contactor_settings()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.get_analog_output_settings"><code class="docutils literal notranslate"><span class="pre">get_analog_output_settings()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.get_digital_output_settings"><code class="docutils literal notranslate"><span class="pre">get_digital_output_settings()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.get_cp_input_settings"><code class="docutils literal notranslate"><span class="pre">get_cp_input_settings()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.get_scada_input_settings"><code class="docutils literal notranslate"><span class="pre">get_scada_input_settings()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.get_hil_serial_number"><code class="docutils literal notranslate"><span class="pre">get_hil_serial_number()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.get_ns_var"><code class="docutils literal notranslate"><span class="pre">get_ns_var()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.get_ns_vars"><code class="docutils literal notranslate"><span class="pre">get_ns_vars()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.get_data_logger_status"><code class="docutils literal notranslate"><span class="pre">get_data_logger_status()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.get_model_file_path"><code class="docutils literal notranslate"><span class="pre">get_model_file_path()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.get_sp_monitors_values"><code class="docutils literal notranslate"><span class="pre">get_sp_monitors_values()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.available_sources"><code class="docutils literal notranslate"><span class="pre">available_sources()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.available_pvs"><code class="docutils literal notranslate"><span class="pre">available_pvs()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.available_analog_signals"><code class="docutils literal notranslate"><span class="pre">available_analog_signals()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.available_digital_signals"><code class="docutils literal notranslate"><span class="pre">available_digital_signals()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.available_contactors"><code class="docutils literal notranslate"><span class="pre">available_contactors()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.available_machines"><code class="docutils literal notranslate"><span class="pre">available_machines()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hil_api.html#typhoon.api.hil.available_pe_switching_blocks"><code class="docutils literal notranslate"><span class="pre">available_pe_switching_blocks()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="scada_api.html">2. SCADA API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="scada_api.html#widgethandle">2.1. WidgetHandle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scada_api.html#scada-api-constants">2.2. SCADA API constants</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scada_api.html#scada-api-in-hil-scada">2.3. SCADA API in HIL SCADA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scada_api.html#api-references">2.4. API references</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="scada_api.html#typhoon.api.scada.ScadaAPI"><code class="docutils literal notranslate"><span class="pre">ScadaAPI</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="scada_api.html#typhoon.api.scada.ScadaAPI.add_library_path"><code class="docutils literal notranslate"><span class="pre">ScadaAPI.add_library_path()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="scada_api.html#typhoon.api.scada.ScadaAPI.create_widget"><code class="docutils literal notranslate"><span class="pre">ScadaAPI.create_widget()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="scada_api.html#typhoon.api.scada.ScadaAPI.create_new_panel"><code class="docutils literal notranslate"><span class="pre">ScadaAPI.create_new_panel()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="scada_api.html#typhoon.api.scada.ScadaAPI.create_new_library_panel"><code class="docutils literal notranslate"><span class="pre">ScadaAPI.create_new_library_panel()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="scada_api.html#typhoon.api.scada.ScadaAPI.copy"><code class="docutils literal notranslate"><span class="pre">ScadaAPI.copy()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="scada_api.html#typhoon.api.scada.ScadaAPI.delete_widget"><code class="docutils literal notranslate"><span class="pre">ScadaAPI.delete_widget()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="scada_api.html#typhoon.api.scada.ScadaAPI.execute_action"><code class="docutils literal notranslate"><span class="pre">ScadaAPI.execute_action()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="scada_api.html#typhoon.api.scada.ScadaAPI.reload_libraries"><code class="docutils literal notranslate"><span class="pre">ScadaAPI.reload_libraries()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="scada_api.html#typhoon.api.scada.ScadaAPI.remove_library_path"><code class="docutils literal notranslate"><span class="pre">ScadaAPI.remove_library_path()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="scada_api.html#typhoon.api.scada.ScadaAPI.load_panel"><code class="docutils literal notranslate"><span class="pre">ScadaAPI.load_panel()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="scada_api.html#typhoon.api.scada.ScadaAPI.load_library_panel"><code class="docutils literal notranslate"><span class="pre">ScadaAPI.load_library_panel()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="scada_api.html#typhoon.api.scada.ScadaAPI.save_panel"><code class="docutils literal notranslate"><span class="pre">ScadaAPI.save_panel()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="scada_api.html#typhoon.api.scada.ScadaAPI.save_panel_as"><code class="docutils literal notranslate"><span class="pre">ScadaAPI.save_panel_as()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="scada_api.html#typhoon.api.scada.ScadaAPI.set_property_value"><code class="docutils literal notranslate"><span class="pre">ScadaAPI.set_property_value()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="scada_api.html#typhoon.api.scada.ScadaAPI.get_property_value"><code class="docutils literal notranslate"><span class="pre">ScadaAPI.get_property_value()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="scada_api.html#typhoon.api.scada.ScadaAPI.get_widget_by_id"><code class="docutils literal notranslate"><span class="pre">ScadaAPI.get_widget_by_id()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="scada_api.html#typhoon.api.scada.ScadaAPI.get_widget_by_fqn"><code class="docutils literal notranslate"><span class="pre">ScadaAPI.get_widget_by_fqn()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="scada_api.html#typhoon.api.scada.ScadaAPI.get_library_paths"><code class="docutils literal notranslate"><span class="pre">ScadaAPI.get_library_paths()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="schematic_api.html">3. Schematic Editor API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="schematic_api.html#examples">3.1. Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="schematic_api.html#example-1">3.1.1. Example 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="schematic_api.html#example-2">3.1.2. Example 2</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="schematic_api.html#schematic-api-constants">3.2. Schematic API constants</a></li>
+<li class="toctree-l2"><a class="reference internal" href="schematic_api.html#positioning">3.3. Positioning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="schematic_api.html#schematic-model-configuration">3.4. Schematic model configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="schematic_api.html#api-references">3.5. API references</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI"><code class="docutils literal notranslate"><span class="pre">SchematicAPI</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.add_library_path"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.add_library_path()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.close_model"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.close_model()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.compile"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.compile()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.create_comment"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.create_comment()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.create_component"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.create_component()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.create_connection"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.create_connection()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.create_junction"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.create_junction()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.create_library_model"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.create_library_model()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.create_mask"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.create_mask()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.create_new_model"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.create_new_model()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.create_port"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.create_port()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.create_property"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.create_property()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.create_tag"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.create_tag()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.delete_item"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.delete_item()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.detect_hw_settings"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.detect_hw_settings()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.disable_items"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.disable_items()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.disable_property"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.disable_property()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.disable_property_serialization"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.disable_property_serialization()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.disp_component_icon_text"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.disp_component_icon_text()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.enable_items"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.enable_items()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.enable_property"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.enable_property()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.enable_property_serialization"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.enable_property_serialization()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.error"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.error()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.exists"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.exists()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.export_c_from_model"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.export_c_from_model()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.export_c_from_selection"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.export_c_from_selection()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.export_c_from_subsystem"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.export_c_from_subsystem()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.export_library"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.export_library()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.export_model_to_json"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.export_model_to_json()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.find_connections"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.find_connections()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.fqn"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.fqn()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_available_library_components"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_available_library_components()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_breakpoints"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_breakpoints()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_calculated_terminal_position"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_calculated_terminal_position()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_comment_text"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_comment_text()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_compiled_model_file"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_compiled_model_file()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_component_type_name"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_component_type_name()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_connectable_direction"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_connectable_direction()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_connectable_kind"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_connectable_kind()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_connected_items"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_connected_items()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_conv_prop"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_conv_prop()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_description"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_description()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_flip"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_flip()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_fqn"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_fqn()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_handler_code"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_handler_code()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_hw_property"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_hw_property()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_hw_settings"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_hw_settings()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_icon_drawing_commands"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_icon_drawing_commands()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_item"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_item()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_item_visual_properties"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_item_visual_properties()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_items"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_items()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_label"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_label()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_library_paths"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_library_paths()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_library_resource_dir_path"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_library_resource_dir_path()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_mask"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_mask()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_model_dependencies"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_model_dependencies()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_model_file_path"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_model_file_path()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_model_information"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_model_information()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_model_property_value"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_model_property_value()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_name"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_name()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_ns_var"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_ns_var()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_ns_vars"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_ns_vars()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_parent"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_parent()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_position"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_position()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_property_combo_values"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_property_combo_values()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_property_default_value"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_property_default_value()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_property_disp_value"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_property_disp_value()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_property_type_attributes"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_property_type_attributes()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_property_value"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_property_value()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_property_value_type"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_property_value_type()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_property_values"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_property_values()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_rotation"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_rotation()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_size"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_size()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_sub_level_handle"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_sub_level_handle()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_terminal_dimension"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_terminal_dimension()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_terminal_sp_type"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_terminal_sp_type()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.get_terminal_sp_type_value"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.get_terminal_sp_type_value()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.hide_name"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.hide_name()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.hide_property"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.hide_property()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.info"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.is_enabled"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.is_enabled()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.is_name_visible"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.is_name_visible()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.is_property_enabled"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.is_property_enabled()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.is_property_serializable"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.is_property_serializable()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.is_property_visible"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.is_property_visible()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.is_require_satisfied"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.is_require_satisfied()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.is_subsystem"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.is_subsystem()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.is_terminal_feedthrough"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.is_terminal_feedthrough()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.is_tunable"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.is_tunable()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.load"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.load()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.model_to_api"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.model_to_api()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.precompile_fmu"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.precompile_fmu()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.print_message"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.print_message()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.prop"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.prop()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.refresh_icon"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.refresh_icon()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.reload_libraries"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.reload_libraries()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.remove_library_path"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.remove_library_path()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.remove_mask"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.remove_mask()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.remove_property"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.remove_property()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.save"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.save()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.save_as"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.save_as()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.set_color"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.set_color()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.set_component_icon_image"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.set_component_icon_image()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.set_component_property"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.set_component_property()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.set_description"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.set_description()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.set_flip"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.set_flip()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.set_handler_code"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.set_handler_code()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.set_hw_settings"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.set_hw_settings()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.set_icon_drawing_commands"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.set_icon_drawing_commands()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.set_item_visual_properties"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.set_item_visual_properties()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.set_label"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.set_label()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.set_model_dependencies"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.set_model_dependencies()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.set_model_init_code"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.set_model_init_code()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.set_model_property_value"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.set_model_property_value()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.set_name"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.set_name()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.set_ns_var"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.set_ns_var()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.set_port_properties"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.set_port_properties()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.set_position"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.set_position()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.set_property_attribute"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.set_property_attribute()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.set_property_combo_values"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.set_property_combo_values()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.set_property_disp_value"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.set_property_disp_value()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.set_property_value"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.set_property_value()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.set_property_value_type"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.set_property_value_type()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.set_property_values"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.set_property_values()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.set_rotation"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.set_rotation()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.set_simulation_method"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.set_simulation_method()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.set_simulation_time_step"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.set_simulation_time_step()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.set_size"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.set_size()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.set_tag_properties"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.set_tag_properties()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.set_terminal_dimension"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.set_terminal_dimension()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.set_terminal_feedthrough"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.set_terminal_feedthrough()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.set_terminal_sp_type"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.set_terminal_sp_type()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.set_terminal_sp_type_value"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.set_terminal_sp_type_value()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.set_tunable"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.set_tunable()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.show_name"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.show_name()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.show_property"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.show_property()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.sync_dynamic_terminals"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.sync_dynamic_terminals()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.term"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.term()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.unlink_component"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.unlink_component()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="schematic_api.html#typhoon.api.schematic_editor.SchematicAPI.warning"><code class="docutils literal notranslate"><span class="pre">SchematicAPI.warning()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="configuration_manager_api.html">4. Configuration Manager API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="configuration_manager_api.html#example">4.1. Example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="configuration_manager_api.html#api-references">4.1.1. API references</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="configuration_manager_api.html#typhoon.api.configuration_manager.ConfigurationManagerAPI"><code class="docutils literal notranslate"><span class="pre">ConfigurationManagerAPI</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="configuration_manager_api.html#typhoon.api.configuration_manager.ConfigurationManagerAPI.create_config"><code class="docutils literal notranslate"><span class="pre">ConfigurationManagerAPI.create_config()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="configuration_manager_api.html#typhoon.api.configuration_manager.ConfigurationManagerAPI.generate"><code class="docutils literal notranslate"><span class="pre">ConfigurationManagerAPI.generate()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="configuration_manager_api.html#typhoon.api.configuration_manager.ConfigurationManagerAPI.get_name"><code class="docutils literal notranslate"><span class="pre">ConfigurationManagerAPI.get_name()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="configuration_manager_api.html#typhoon.api.configuration_manager.ConfigurationManagerAPI.get_options"><code class="docutils literal notranslate"><span class="pre">ConfigurationManagerAPI.get_options()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="configuration_manager_api.html#typhoon.api.configuration_manager.ConfigurationManagerAPI.get_project_variants"><code class="docutils literal notranslate"><span class="pre">ConfigurationManagerAPI.get_project_variants()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="configuration_manager_api.html#typhoon.api.configuration_manager.ConfigurationManagerAPI.load_config"><code class="docutils literal notranslate"><span class="pre">ConfigurationManagerAPI.load_config()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="configuration_manager_api.html#typhoon.api.configuration_manager.ConfigurationManagerAPI.load_project"><code class="docutils literal notranslate"><span class="pre">ConfigurationManagerAPI.load_project()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="configuration_manager_api.html#typhoon.api.configuration_manager.ConfigurationManagerAPI.make_pick"><code class="docutils literal notranslate"><span class="pre">ConfigurationManagerAPI.make_pick()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="configuration_manager_api.html#typhoon.api.configuration_manager.ConfigurationManagerAPI.picks"><code class="docutils literal notranslate"><span class="pre">ConfigurationManagerAPI.picks()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="configuration_manager_api.html#typhoon.api.configuration_manager.ConfigurationManagerAPI.save_config"><code class="docutils literal notranslate"><span class="pre">ConfigurationManagerAPI.save_config()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modbus_api.html">5. Modbus API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modbus_api.html#modbus-client-initialization">5.1. Modbus Client Initialization</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="modbus_api.html#module-typhoon.api.modbus">5.1.1. API references</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.TCPModbusClient"><code class="docutils literal notranslate"><span class="pre">TCPModbusClient</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.TCPModbusClient.__init__"><code class="docutils literal notranslate"><span class="pre">TCPModbusClient.__init__()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.TCPModbusClient.modbus"><code class="docutils literal notranslate"><span class="pre">TCPModbusClient.modbus()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.TCPModbusClient.endianness"><code class="docutils literal notranslate"><span class="pre">TCPModbusClient.endianness()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.TCPModbusClient.set_endianness"><code class="docutils literal notranslate"><span class="pre">TCPModbusClient.set_endianness()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.TCPModbusClient.auto_close"><code class="docutils literal notranslate"><span class="pre">TCPModbusClient.auto_close()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.TCPModbusClient.set_auto_close"><code class="docutils literal notranslate"><span class="pre">TCPModbusClient.set_auto_close()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.TCPModbusClient.auto_open"><code class="docutils literal notranslate"><span class="pre">TCPModbusClient.auto_open()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.TCPModbusClient.set_auto_open"><code class="docutils literal notranslate"><span class="pre">TCPModbusClient.set_auto_open()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.TCPModbusClient.close"><code class="docutils literal notranslate"><span class="pre">TCPModbusClient.close()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.TCPModbusClient.open"><code class="docutils literal notranslate"><span class="pre">TCPModbusClient.open()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.TCPModbusClient.debug"><code class="docutils literal notranslate"><span class="pre">TCPModbusClient.debug()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.TCPModbusClient.set_debug"><code class="docutils literal notranslate"><span class="pre">TCPModbusClient.set_debug()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.TCPModbusClient.host"><code class="docutils literal notranslate"><span class="pre">TCPModbusClient.host()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.TCPModbusClient.set_host"><code class="docutils literal notranslate"><span class="pre">TCPModbusClient.set_host()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.TCPModbusClient.port"><code class="docutils literal notranslate"><span class="pre">TCPModbusClient.port()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.TCPModbusClient.set_port"><code class="docutils literal notranslate"><span class="pre">TCPModbusClient.set_port()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.TCPModbusClient.timeout"><code class="docutils literal notranslate"><span class="pre">TCPModbusClient.timeout()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.TCPModbusClient.set_timeout"><code class="docutils literal notranslate"><span class="pre">TCPModbusClient.set_timeout()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.TCPModbusClient.unit_id"><code class="docutils literal notranslate"><span class="pre">TCPModbusClient.unit_id()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.TCPModbusClient.set_unit_id"><code class="docutils literal notranslate"><span class="pre">TCPModbusClient.set_unit_id()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.TCPModbusClient.is_open"><code class="docutils literal notranslate"><span class="pre">TCPModbusClient.is_open()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.TCPModbusClient.read_coils"><code class="docutils literal notranslate"><span class="pre">TCPModbusClient.read_coils()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.TCPModbusClient.read_discrete_inputs"><code class="docutils literal notranslate"><span class="pre">TCPModbusClient.read_discrete_inputs()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.TCPModbusClient.read_input_registers"><code class="docutils literal notranslate"><span class="pre">TCPModbusClient.read_input_registers()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.TCPModbusClient.read_holding_registers"><code class="docutils literal notranslate"><span class="pre">TCPModbusClient.read_holding_registers()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.TCPModbusClient.read_input_registers_adv"><code class="docutils literal notranslate"><span class="pre">TCPModbusClient.read_input_registers_adv()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.TCPModbusClient.read_holding_registers_adv"><code class="docutils literal notranslate"><span class="pre">TCPModbusClient.read_holding_registers_adv()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.TCPModbusClient.write_single_coil"><code class="docutils literal notranslate"><span class="pre">TCPModbusClient.write_single_coil()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.TCPModbusClient.write_single_register"><code class="docutils literal notranslate"><span class="pre">TCPModbusClient.write_single_register()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.TCPModbusClient.write_multiple_coils"><code class="docutils literal notranslate"><span class="pre">TCPModbusClient.write_multiple_coils()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.TCPModbusClient.write_multiple_registers"><code class="docutils literal notranslate"><span class="pre">TCPModbusClient.write_multiple_registers()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.TCPModbusClient.write_registers_adv"><code class="docutils literal notranslate"><span class="pre">TCPModbusClient.write_registers_adv()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="modbus_api.html#module-typhoon.api.modbus.util">5.1.2. Utility module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.util.bool_list_to_int"><code class="docutils literal notranslate"><span class="pre">bool_list_to_int()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.util.uint16_to_int16"><code class="docutils literal notranslate"><span class="pre">uint16_to_int16()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.util.uint32_to_int32"><code class="docutils literal notranslate"><span class="pre">uint32_to_int32()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.util.uint64_to_int64"><code class="docutils literal notranslate"><span class="pre">uint64_to_int64()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.util.uint32_to_float"><code class="docutils literal notranslate"><span class="pre">uint32_to_float()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.util.uint64_to_double"><code class="docutils literal notranslate"><span class="pre">uint64_to_double()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.util.float_to_uint32"><code class="docutils literal notranslate"><span class="pre">float_to_uint32()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.util.double_to_uint64"><code class="docutils literal notranslate"><span class="pre">double_to_uint64()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.util.int16_to_uint16"><code class="docutils literal notranslate"><span class="pre">int16_to_uint16()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.util.int32_to_uint32"><code class="docutils literal notranslate"><span class="pre">int32_to_uint32()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.util.int64_to_uint64"><code class="docutils literal notranslate"><span class="pre">int64_to_uint64()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.util.int32_to_uint16_list"><code class="docutils literal notranslate"><span class="pre">int32_to_uint16_list()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.util.int64_to_uint16_list"><code class="docutils literal notranslate"><span class="pre">int64_to_uint16_list()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.util.uint32_to_uint16_list"><code class="docutils literal notranslate"><span class="pre">uint32_to_uint16_list()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.util.uint64_to_uint16_list"><code class="docutils literal notranslate"><span class="pre">uint64_to_uint16_list()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.util.float_to_uint16_list"><code class="docutils literal notranslate"><span class="pre">float_to_uint16_list()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.util.double_to_uint16_list"><code class="docutils literal notranslate"><span class="pre">double_to_uint16_list()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.util.uint16_list_to_float"><code class="docutils literal notranslate"><span class="pre">uint16_list_to_float()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.util.uint16_list_to_double"><code class="docutils literal notranslate"><span class="pre">uint16_list_to_double()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.util.uint16_list_to_int32"><code class="docutils literal notranslate"><span class="pre">uint16_list_to_int32()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.util.uint16_list_to_int64"><code class="docutils literal notranslate"><span class="pre">uint16_list_to_int64()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.util.uint16_list_to_uint32"><code class="docutils literal notranslate"><span class="pre">uint16_list_to_uint32()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modbus_api.html#typhoon.api.modbus.util.uint16_list_to_uint64"><code class="docutils literal notranslate"><span class="pre">uint16_list_to_uint64()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pv_generator_api.html">6. PV Generator API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pv_generator_api.html#module-typhoon.api.pv_generator">6.1. API references</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pv_generator_api.html#typhoon.api.pv_generator.generate_pv_settings_file"><code class="docutils literal notranslate"><span class="pre">generate_pv_settings_file()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="serial_conn_widget.html">7. HIL SCADA</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="serial_conn_widget.html#serial-connection-widget">7.1. Serial Connection Widget</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="serial_conn_widget.html#how-to-examples">7.1.1. How to examples</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="rpc_api.html">8. Typhoon HIL RPC API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="rpc_api.html#message-format">8.1. Message format</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rpc_api.html#usage">8.2. Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rpc_api.html#examples">8.3. Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="rpc_api.html#example-1">8.3.1. Example 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rpc_api.html#example-2">8.3.2. Example 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rpc_api.html#example-3">8.3.3. Example 3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rpc_api.html#example-4">8.3.4. Example 4</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="firmware_manager_api.html">9. Firmware Manager API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="firmware_manager_api.html#module-typhoon.api.firmware_manager">9.1. API references</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="firmware_manager_api.html#typhoon.api.firmware_manager.update_firmware"><code class="docutils literal notranslate"><span class="pre">update_firmware()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="firmware_manager_api.html#typhoon.api.firmware_manager.get_hil_info"><code class="docutils literal notranslate"><span class="pre">get_hil_info()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="device_manager_api.html">10. Device Manager API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="device_manager_api.html#examples">10.1. Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="device_manager_api.html#example-1">10.1.1. Example 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="device_manager_api.html#example-2">10.1.2. Example 2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="device_manager_api.html#typhoon.api.device_manager.DeviceManagerAPI"><code class="docutils literal notranslate"><span class="pre">DeviceManagerAPI</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="device_manager_api.html#typhoon.api.device_manager.DeviceManagerAPI.add_devices_to_setup"><code class="docutils literal notranslate"><span class="pre">DeviceManagerAPI.add_devices_to_setup()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="device_manager_api.html#typhoon.api.device_manager.DeviceManagerAPI.add_discovery_ip_addresses"><code class="docutils literal notranslate"><span class="pre">DeviceManagerAPI.add_discovery_ip_addresses()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="device_manager_api.html#typhoon.api.device_manager.DeviceManagerAPI.connect_setup"><code class="docutils literal notranslate"><span class="pre">DeviceManagerAPI.connect_setup()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="device_manager_api.html#typhoon.api.device_manager.DeviceManagerAPI.disconnect_setup"><code class="docutils literal notranslate"><span class="pre">DeviceManagerAPI.disconnect_setup()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="device_manager_api.html#typhoon.api.device_manager.DeviceManagerAPI.get_available_devices"><code class="docutils literal notranslate"><span class="pre">DeviceManagerAPI.get_available_devices()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="device_manager_api.html#typhoon.api.device_manager.DeviceManagerAPI.get_detected_devices"><code class="docutils literal notranslate"><span class="pre">DeviceManagerAPI.get_detected_devices()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="device_manager_api.html#typhoon.api.device_manager.DeviceManagerAPI.get_device_settings"><code class="docutils literal notranslate"><span class="pre">DeviceManagerAPI.get_device_settings()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="device_manager_api.html#typhoon.api.device_manager.DeviceManagerAPI.get_hil_info"><code class="docutils literal notranslate"><span class="pre">DeviceManagerAPI.get_hil_info()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="device_manager_api.html#typhoon.api.device_manager.DeviceManagerAPI.get_setup_devices"><code class="docutils literal notranslate"><span class="pre">DeviceManagerAPI.get_setup_devices()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="device_manager_api.html#typhoon.api.device_manager.DeviceManagerAPI.get_setup_devices_serials"><code class="docutils literal notranslate"><span class="pre">DeviceManagerAPI.get_setup_devices_serials()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="device_manager_api.html#typhoon.api.device_manager.DeviceManagerAPI.is_setup_connected"><code class="docutils literal notranslate"><span class="pre">DeviceManagerAPI.is_setup_connected()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="device_manager_api.html#typhoon.api.device_manager.DeviceManagerAPI.load_setup"><code class="docutils literal notranslate"><span class="pre">DeviceManagerAPI.load_setup()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="device_manager_api.html#typhoon.api.device_manager.DeviceManagerAPI.remove_devices_from_setup"><code class="docutils literal notranslate"><span class="pre">DeviceManagerAPI.remove_devices_from_setup()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="device_manager_api.html#typhoon.api.device_manager.DeviceManagerAPI.remove_discovery_ip_addresses"><code class="docutils literal notranslate"><span class="pre">DeviceManagerAPI.remove_discovery_ip_addresses()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="device_manager_api.html#typhoon.api.device_manager.DeviceManagerAPI.set_device_settings"><code class="docutils literal notranslate"><span class="pre">DeviceManagerAPI.set_device_settings()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="device_manager_api.html#typhoon.api.device_manager.DeviceManagerAPI.sync_firmware"><code class="docutils literal notranslate"><span class="pre">DeviceManagerAPI.sync_firmware()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="device_manager_api.html#typhoon.api.device_manager.DeviceManagerAPI.update_firmware"><code class="docutils literal notranslate"><span class="pre">DeviceManagerAPI.update_firmware()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="package_manager_api.html">11. Package Manager API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="package_manager_api.html#examples">11.1. Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="package_manager_api.html#example">11.1.1. Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="package_manager_api.html#api-references">11.2. API references</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="package_manager_api.html#typhoon.api.package_manager.PackageManagerAPI"><code class="docutils literal notranslate"><span class="pre">PackageManagerAPI</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="package_manager_api.html#typhoon.api.package_manager.PackageManagerAPI.create_example"><code class="docutils literal notranslate"><span class="pre">PackageManagerAPI.create_example()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="package_manager_api.html#typhoon.api.package_manager.PackageManagerAPI.create_package"><code class="docutils literal notranslate"><span class="pre">PackageManagerAPI.create_package()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="package_manager_api.html#typhoon.api.package_manager.PackageManagerAPI.download_package"><code class="docutils literal notranslate"><span class="pre">PackageManagerAPI.download_package()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="package_manager_api.html#typhoon.api.package_manager.PackageManagerAPI.get_available_packages"><code class="docutils literal notranslate"><span class="pre">PackageManagerAPI.get_available_packages()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="package_manager_api.html#typhoon.api.package_manager.PackageManagerAPI.get_installed_packages"><code class="docutils literal notranslate"><span class="pre">PackageManagerAPI.get_installed_packages()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="package_manager_api.html#typhoon.api.package_manager.PackageManagerAPI.get_modified_packages"><code class="docutils literal notranslate"><span class="pre">PackageManagerAPI.get_modified_packages()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="package_manager_api.html#typhoon.api.package_manager.PackageManagerAPI.install_package"><code class="docutils literal notranslate"><span class="pre">PackageManagerAPI.install_package()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="package_manager_api.html#typhoon.api.package_manager.PackageManagerAPI.reinstall_package"><code class="docutils literal notranslate"><span class="pre">PackageManagerAPI.reinstall_package()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="package_manager_api.html#typhoon.api.package_manager.PackageManagerAPI.uninstall_package"><code class="docutils literal notranslate"><span class="pre">PackageManagerAPI.uninstall_package()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="package_manager_api.html#typhoon.api.package_manager.PackageManagerAPI.validate_package"><code class="docutils literal notranslate"><span class="pre">PackageManagerAPI.validate_package()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this heading">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="#">
+              <img class="logo" src="_static/logo.png" alt="Logo"/>
+            </a></p>
+  <div>
+    <h3><a href="#">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Welcome to Typhoon API’s documentation!</a></li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="hil_api.html"
+                          title="next chapter"><span class="section-number">1. </span>HIL API</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/typhoon_api.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="hil_api.html" title="1. HIL API"
+             >next</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">Typhoon API 1.26.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Welcome to Typhoon API’s documentation!</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Typhoon HIL.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.0.1.
+    </div>
+  </body>
+</html>

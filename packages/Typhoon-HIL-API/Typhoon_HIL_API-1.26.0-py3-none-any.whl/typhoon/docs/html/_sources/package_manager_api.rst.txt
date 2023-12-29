@@ -1,0 +1,35 @@
+####################
+Package Manager API
+####################
+
+**Module:** ``typhoon.api.package_manager``
+
+Package Manager API contains a set of functions/methods to manipulate Typhoon packages,
+install new ones programmatically and uninstall/reinstall existing ones.
+This is most commonly used for creating scripts for **testing** and
+**automating** repetitive tasks, but its use is not restricted for these use
+cases only.
+
+Examples
+--------
+Following example illustrates how you can use Package Manager API.
+
+Example
+=========
+This example illustrates how to install a package from a disk, list all the installed packages, and at the end, uninstall them.
+
+.. literalinclude:: package_manager_api_examples/install_get_delete_example.example
+   :language: python
+   :lines: 2-
+
+Script output:
+
+.. program-output:: python package_manager_api_examples/install_get_delete_example.example
+
+
+
+`API references`_
+-----------------
+
+.. autoclass:: typhoon.api.package_manager.PackageManagerAPI
+   :members:

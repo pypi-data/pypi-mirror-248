@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>11. Package Manager API &#8212; Typhoon API 1.26.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinxdoc.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="10. Device Manager API" href="device_manager_api.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="device_manager_api.html" title="10. Device Manager API"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="typhoon_api.html">Typhoon API 1.26.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">11. </span>Package Manager API</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="package-manager-api">
+<h1><span class="section-number">11. </span>Package Manager API<a class="headerlink" href="#package-manager-api" title="Permalink to this heading">¶</a></h1>
+<p><strong>Module:</strong> <code class="docutils literal notranslate"><span class="pre">typhoon.api.package_manager</span></code></p>
+<p>Package Manager API contains a set of functions/methods to manipulate Typhoon packages,
+install new ones programmatically and uninstall/reinstall existing ones.
+This is most commonly used for creating scripts for <strong>testing</strong> and
+<strong>automating</strong> repetitive tasks, but its use is not restricted for these use
+cases only.</p>
+<section id="examples">
+<h2><span class="section-number">11.1. </span>Examples<a class="headerlink" href="#examples" title="Permalink to this heading">¶</a></h2>
+<p>Following example illustrates how you can use Package Manager API.</p>
+<section id="example">
+<h3><span class="section-number">11.1.1. </span>Example<a class="headerlink" href="#example" title="Permalink to this heading">¶</a></h3>
+<p>This example illustrates how to install a package from a disk, list all the installed packages, and at the end, uninstall them.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">realpath</span><span class="p">(</span><span class="vm">__file__</span><span class="p">),</span> <span class="s1">&#39;..&#39;</span><span class="p">,</span><span class="s1">&#39;..&#39;</span><span class="p">,</span> <span class="s1">&#39;..&#39;</span><span class="p">,</span><span class="s1">&#39;..&#39;</span><span class="p">)))[</span><span class="mi">0</span><span class="p">])</span>
+<span class="c1">#</span>
+<span class="c1"># Demonstrates the use of install, get_installed and uninstall functions</span>
+<span class="c1">#</span>
+<span class="kn">from</span> <span class="nn">typhoon.api.package_manager</span> <span class="kn">import</span> <span class="n">package_manager</span> <span class="k">as</span> <span class="n">pkm</span>
+
+<span class="c1"># First install a package</span>
+<span class="n">directory</span><span class="p">,</span> <span class="n">__</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">realpath</span><span class="p">(</span><span class="vm">__file__</span><span class="p">))</span>
+<span class="n">package_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">directory</span><span class="p">,</span> <span class="s2">&quot;package&quot;</span><span class="p">,</span> <span class="s2">&quot;my_package.tpkg&quot;</span><span class="p">)</span>
+<span class="n">pkm</span><span class="o">.</span><span class="n">install_package</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">package_path</span><span class="p">)</span>
+
+<span class="c1"># Get all installed packages, and print them</span>
+<span class="n">all_packages</span> <span class="o">=</span> <span class="n">pkm</span><span class="o">.</span><span class="n">get_installed_packages</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;All installed packages: </span><span class="si">{</span><span class="n">all_packages</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Cleanup</span>
+<span class="k">for</span> <span class="n">package</span> <span class="ow">in</span> <span class="n">all_packages</span><span class="p">:</span>
+    <span class="n">pkm</span><span class="o">.</span><span class="n">uninstall_package</span><span class="p">(</span><span class="n">package_name</span><span class="o">=</span><span class="n">package</span><span class="o">.</span><span class="n">package_name</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Script output:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Traceback (most recent call last):
+  File &quot;C:\WORK\t_sw\api\build\doc_build\api_doc\package_manager_api_examples\install_get_delete_example.example&quot;, line 7, in &lt;module&gt;
+    from typhoon.api.package_manager import package_manager as pkm
+  File &quot;C:\WORK\t_sw\api\typhoon\api\package_manager\__init__.py&quot;, line 21, in &lt;module&gt;
+    from typhoon.api.package_manager.stub import clstub
+  File &quot;C:\WORK\t_sw\api\typhoon\api\package_manager\stub.py&quot;, line 22, in &lt;module&gt;
+    from typhoon.api.common import (
+  File &quot;C:\WORK\t_sw\api\typhoon\api\common\__init__.py&quot;, line 17, in &lt;module&gt;
+    import pandas
+ModuleNotFoundError: No module named &#39;pandas&#39;
+</pre></div>
+</div>
+</section>
+</section>
+<section id="api-references">
+<h2><span class="section-number">11.2. </span><a class="reference internal" href="#api-references">API references</a><a class="headerlink" href="#api-references" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="typhoon.api.package_manager.PackageManagerAPI">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PackageManagerAPI</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#typhoon.api.package_manager.PackageManagerAPI" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class provides methods to manipulate user packages.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="typhoon.api.package_manager.PackageManagerAPI.create_example">
+<span class="sig-name descname"><span class="pre">create_example</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">title</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">panel_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tags</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">image_file</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_note_file</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tests</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_resources</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resources</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#typhoon.api.package_manager.PackageManagerAPI.create_example" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create an example with given parameters and save it at output_path</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>title</strong> – Example title</p></li>
+<li><p><strong>model_file</strong> – Path to model file</p></li>
+<li><p><strong>panel_file</strong> – Path to panel file</p></li>
+<li><p><strong>output_path</strong> – Path where example will be saved</p></li>
+<li><p><strong>tags</strong> – List of string tags</p></li>
+<li><p><strong>description</strong> – Example description</p></li>
+<li><p><strong>image_file</strong> – Path to image file</p></li>
+<li><p><strong>app_note_file</strong> – Path to application note document</p></li>
+<li><p><strong>tests</strong> – List of files representing tests</p></li>
+<li><p><strong>test_resources</strong> – List of files representing resources used in tests</p></li>
+<li><p><strong>resources</strong> – List of files representing resources</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>PkmApiException</strong> – </p>
+</dd>
+</dl>
+<p><strong>Example:</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#</span>
+<span class="c1"># Demonstrates the use of get_installed_packages function</span>
+<span class="c1">#</span>
+<span class="kn">from</span> <span class="nn">typhoon.api.package_manager</span> <span class="kn">import</span> <span class="n">package_manager</span> <span class="k">as</span> <span class="n">pkm</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">shutil</span>
+
+<span class="n">directory</span><span class="p">,</span> <span class="n">__</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">realpath</span><span class="p">(</span><span class="vm">__file__</span><span class="p">))</span>
+<span class="n">root_folder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">directory</span><span class="p">,</span> <span class="s2">&quot;example_data&quot;</span><span class="p">)</span>
+
+<span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;Example 3ph rectifier&quot;</span>
+<span class="n">model_file</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root_folder</span><span class="p">,</span> <span class="s2">&quot;rectifier.tse&quot;</span><span class="p">)</span>
+<span class="n">panel_file</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root_folder</span><span class="p">,</span> <span class="s2">&quot;rectifier.cus&quot;</span><span class="p">)</span>
+<span class="n">output_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root_folder</span><span class="p">,</span> <span class="s2">&quot;output&quot;</span><span class="p">)</span>
+<span class="n">tags</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;rectifier&quot;</span><span class="p">,</span> <span class="s2">&quot;example&quot;</span><span class="p">]</span>
+<span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;This example demonstrates a three-phase diode rectifier connected to the grid.&quot;</span>
+<span class="n">image_file</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root_folder</span><span class="p">,</span> <span class="s2">&quot;rectifier.svg&quot;</span><span class="p">)</span>
+<span class="n">app_note_file</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root_folder</span><span class="p">,</span> <span class="s2">&quot;rectifier.html&quot;</span><span class="p">)</span>
+<span class="n">tests</span> <span class="o">=</span> <span class="p">[</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root_folder</span><span class="p">,</span> <span class="s2">&quot;example_tests&quot;</span><span class="p">)]</span>
+<span class="n">test_resources</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">resources</span> <span class="o">=</span> <span class="p">[</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root_folder</span><span class="p">,</span> <span class="s2">&quot;data.json&quot;</span><span class="p">)]</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">example_path</span> <span class="o">=</span> <span class="n">pkm</span><span class="o">.</span><span class="n">create_example</span><span class="p">(</span>
+        <span class="n">title</span><span class="o">=</span><span class="n">title</span><span class="p">,</span> <span class="n">model_file</span><span class="o">=</span><span class="n">model_file</span><span class="p">,</span> <span class="n">panel_file</span><span class="o">=</span><span class="n">panel_file</span><span class="p">,</span>
+        <span class="n">output_path</span><span class="o">=</span><span class="n">output_path</span><span class="p">,</span> <span class="n">tags</span><span class="o">=</span><span class="n">tags</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="n">description</span><span class="p">,</span>
+        <span class="n">image_file</span><span class="o">=</span><span class="n">image_file</span><span class="p">,</span> <span class="n">app_note_file</span><span class="o">=</span><span class="n">app_note_file</span><span class="p">,</span> <span class="n">tests</span><span class="o">=</span><span class="n">tests</span><span class="p">,</span>
+        <span class="n">test_resources</span><span class="o">=</span><span class="n">test_resources</span><span class="p">,</span> <span class="n">resources</span><span class="o">=</span><span class="n">resources</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;1) Example successfully created at: &quot;</span>
+          <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">relpath</span><span class="p">(</span><span class="n">example_path</span><span class="p">,</span><span class="w"> </span><span class="n">root_folder</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Exception occurred: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="k">finally</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;2) Removing created example&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">output_path</span><span class="p">):</span>
+        <span class="n">shutil</span><span class="o">.</span><span class="n">rmtree</span><span class="p">(</span><span class="n">output_path</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Traceback (most recent call last):
+  File &quot;C:\WORK\t_sw\api\build\doc_build\api_doc\package_manager_api_examples\create_example.example&quot;, line 5, in &lt;module&gt;
+    from typhoon.api.package_manager import package_manager as pkm
+  File &quot;C:\WORK\t_sw\api\typhoon\api\package_manager\__init__.py&quot;, line 21, in &lt;module&gt;
+    from typhoon.api.package_manager.stub import clstub
+  File &quot;C:\WORK\t_sw\api\typhoon\api\package_manager\stub.py&quot;, line 22, in &lt;module&gt;
+    from typhoon.api.common import (
+  File &quot;C:\WORK\t_sw\api\typhoon\api\common\__init__.py&quot;, line 17, in &lt;module&gt;
+    import pandas
+ModuleNotFoundError: No module named &#39;pandas&#39;
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="typhoon.api.package_manager.PackageManagerAPI.create_package">
+<span class="sig-name descname"><span class="pre">create_package</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">package_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">version</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">author</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">website</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minimal_sw_version</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">library_paths</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resource_paths</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">example_paths</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">additional_files_paths</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">python_packages_paths</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">documentation_paths</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">documentation_landing_page</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">release_notes_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">icon_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#typhoon.api.package_manager.PackageManagerAPI.create_package" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a package with given parameters and save it at output_path</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>package_name</strong> – Package name</p></li>
+<li><p><strong>version</strong> – Package version</p></li>
+<li><p><strong>output_path</strong> – Path where package will be saved. If a directory path is passed, the package will be named “package_name - version.tpkg”. If a file path is passed, it must have a .tpkg extension.</p></li>
+<li><p><strong>author</strong> – Package author</p></li>
+<li><p><strong>website</strong> – Website of package author</p></li>
+<li><p><strong>description</strong> – Package description</p></li>
+<li><p><strong>minimal_sw_version</strong> – Minimal version of software in which package is supported</p></li>
+<li><p><strong>library_paths</strong> – List of paths representing libraries (directories/files)</p></li>
+<li><p><strong>resource_paths</strong> – List of paths representing library resources (directories/files)</p></li>
+<li><p><strong>example_paths</strong> – List of paths representing example directories</p></li>
+<li><p><strong>additional_files_paths</strong> – List of paths representing additional files (directories/files)</p></li>
+<li><p><strong>python_packages_paths</strong> – List of paths representing python packages (directories/files)</p></li>
+<li><p><strong>documentation_paths</strong> – List of paths representing package documentation (directories/files)</p></li>
+<li><p><strong>documentation_landing_page</strong> – Documentation landing page (must be included in documentation_paths)</p></li>
+<li><p><strong>release_notes_path</strong> – Path to release notes file (html, pdf..)</p></li>
+<li><p><strong>icon_path</strong> – Path to package icon file (svg, png, jpg, bmp…)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>PkmApiException</strong> – </p>
+</dd>
+</dl>
+<p><strong>Example:</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#</span>
+<span class="c1"># Demonstrates the use of get_installed_packages function</span>
+<span class="c1">#</span>
+<span class="kn">from</span> <span class="nn">typhoon.api.package_manager</span> <span class="kn">import</span> <span class="n">package_manager</span> <span class="k">as</span> <span class="n">pkm</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">shutil</span>
+
+<span class="n">directory</span><span class="p">,</span> <span class="n">__</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">realpath</span><span class="p">(</span><span class="vm">__file__</span><span class="p">))</span>
+<span class="n">root_folder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">directory</span><span class="p">,</span> <span class="s2">&quot;package_data&quot;</span><span class="p">)</span>
+
+<span class="n">package_name</span> <span class="o">=</span> <span class="s2">&quot;An example package&quot;</span>
+<span class="n">version</span> <span class="o">=</span> <span class="s2">&quot;1.0.5&quot;</span>
+<span class="n">author</span> <span class="o">=</span> <span class="s2">&quot;Typhoon HIL&quot;</span>
+<span class="n">author_website</span> <span class="o">=</span> <span class="s2">&quot;typhoon-hil.com&quot;</span>
+<span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;An example package demonstrating API functionality.&quot;</span>
+<span class="n">library_paths</span> <span class="o">=</span> <span class="p">[</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root_folder</span><span class="p">,</span> <span class="s2">&quot;libs&quot;</span><span class="p">)]</span>
+<span class="n">resource_paths</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">example_paths</span> <span class="o">=</span> <span class="p">[</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root_folder</span><span class="p">,</span> <span class="s2">&quot;examples&quot;</span><span class="p">)]</span>
+<span class="n">additional_files_paths</span> <span class="o">=</span> <span class="p">[</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root_folder</span><span class="p">,</span> <span class="s2">&quot;additional.txt&quot;</span><span class="p">)]</span>
+<span class="n">documentation_paths</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root_folder</span><span class="p">,</span> <span class="s2">&quot;documentation&quot;</span><span class="p">)</span>
+<span class="p">]</span>
+<span class="n">documentation_landing_page</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root_folder</span><span class="p">,</span> <span class="s2">&quot;documentation&quot;</span><span class="p">,</span>
+                                          <span class="s2">&quot;index.html&quot;</span><span class="p">)</span>
+<span class="n">release_notes_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root_folder</span><span class="p">,</span> <span class="s2">&quot;release_notes.html&quot;</span><span class="p">)</span>
+
+<span class="n">icon_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root_folder</span><span class="p">,</span> <span class="s2">&quot;icon.svg&quot;</span><span class="p">)</span>
+
+<span class="n">python_packages_paths</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="n">output_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root_folder</span><span class="p">,</span> <span class="s2">&quot;output&quot;</span><span class="p">)</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">package_path</span> <span class="o">=</span> <span class="n">pkm</span><span class="o">.</span><span class="n">create_package</span><span class="p">(</span>
+        <span class="n">package_name</span><span class="o">=</span><span class="n">package_name</span><span class="p">,</span> <span class="n">version</span><span class="o">=</span><span class="n">version</span><span class="p">,</span> <span class="n">output_path</span><span class="o">=</span><span class="n">output_path</span><span class="p">,</span>
+        <span class="n">author</span><span class="o">=</span><span class="n">author</span><span class="p">,</span> <span class="n">website</span><span class="o">=</span><span class="n">author_website</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="n">description</span><span class="p">,</span>
+        <span class="n">library_paths</span><span class="o">=</span><span class="n">library_paths</span><span class="p">,</span> <span class="n">resource_paths</span><span class="o">=</span><span class="n">resource_paths</span><span class="p">,</span>
+        <span class="n">example_paths</span><span class="o">=</span><span class="n">example_paths</span><span class="p">,</span>
+        <span class="n">additional_files_paths</span><span class="o">=</span><span class="n">additional_files_paths</span><span class="p">,</span>
+        <span class="n">python_packages_paths</span><span class="o">=</span><span class="n">python_packages_paths</span><span class="p">,</span>
+        <span class="n">documentation_paths</span><span class="o">=</span><span class="n">documentation_paths</span><span class="p">,</span>
+        <span class="n">documentation_landing_page</span><span class="o">=</span><span class="n">documentation_landing_page</span><span class="p">,</span>
+        <span class="n">release_notes_path</span><span class="o">=</span><span class="n">release_notes_path</span><span class="p">,</span>
+        <span class="n">icon_path</span><span class="o">=</span><span class="n">icon_path</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;1) Package successfully created at: &quot;</span>
+          <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">relpath</span><span class="p">(</span><span class="n">package_path</span><span class="p">,</span><span class="w"> </span><span class="n">root_folder</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;2) Installing created package&quot;</span><span class="p">)</span>
+    <span class="n">pkm</span><span class="o">.</span><span class="n">install_package</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">package_path</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;3) Successfully installed package&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Get all installed packages, and print them</span>
+    <span class="n">all_packages</span> <span class="o">=</span> <span class="n">pkm</span><span class="o">.</span><span class="n">get_installed_packages</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;4) All installed packages: </span><span class="si">{</span><span class="n">all_packages</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Cleanup</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;5) Uninstalling packages&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">package</span> <span class="ow">in</span> <span class="n">all_packages</span><span class="p">:</span>
+        <span class="n">pkm</span><span class="o">.</span><span class="n">uninstall_package</span><span class="p">(</span><span class="n">package_name</span><span class="o">=</span><span class="n">package</span><span class="o">.</span><span class="n">package_name</span><span class="p">)</span>
+
+<span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Exception occurred: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="k">finally</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;6) Removing created package&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">output_path</span><span class="p">):</span>
+        <span class="n">shutil</span><span class="o">.</span><span class="n">rmtree</span><span class="p">(</span><span class="n">output_path</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Traceback (most recent call last):
+  File &quot;C:\WORK\t_sw\api\build\doc_build\api_doc\package_manager_api_examples\create_package.example&quot;, line 5, in &lt;module&gt;
+    from typhoon.api.package_manager import package_manager as pkm
+  File &quot;C:\WORK\t_sw\api\typhoon\api\package_manager\__init__.py&quot;, line 21, in &lt;module&gt;
+    from typhoon.api.package_manager.stub import clstub
+  File &quot;C:\WORK\t_sw\api\typhoon\api\package_manager\stub.py&quot;, line 22, in &lt;module&gt;
+    from typhoon.api.common import (
+  File &quot;C:\WORK\t_sw\api\typhoon\api\common\__init__.py&quot;, line 17, in &lt;module&gt;
+    import pandas
+ModuleNotFoundError: No module named &#39;pandas&#39;
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="typhoon.api.package_manager.PackageManagerAPI.download_package">
+<span class="sig-name descname"><span class="pre">download_package</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">output_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">package_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">version</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'latest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#typhoon.api.package_manager.PackageManagerAPI.download_package" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns iterable over packages available on Package Marketplace.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>output_path</strong> (<em>str</em>) – Output directory/file path for downloaded package.
+If file is passed, it must have .tpkg extension. If not, it will
+have “[package_name]-[version].tpkg” format.</p></li>
+<li><p><strong>package_name</strong> (<em>str</em>) – name of the package to be downloaded.</p></li>
+<li><p><strong>version</strong> (<em>str</em>) – Package version. String “latest” can be used for</p></li>
+<li><p><strong>package.</strong> (<em>latest version</em><em> of </em><em>the</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>String file path of downloaded package</p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>PkmApiException</strong> – </p>
+</dd>
+</dl>
+<p><strong>Example:</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#</span>
+<span class="c1"># Demonstrates the use of download_package function</span>
+<span class="c1">#</span>
+<span class="kn">from</span> <span class="nn">typhoon.api.package_manager</span> <span class="kn">import</span> <span class="n">package_manager</span> <span class="k">as</span> <span class="n">pkm</span>
+
+<span class="c1"># Get all installed packages</span>
+<span class="n">all_packages</span> <span class="o">=</span> <span class="n">pkm</span><span class="o">.</span><span class="n">get_installed_packages</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;All installed packages: </span><span class="si">{</span><span class="n">all_packages</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># First download a package</span>
+<span class="n">directory</span><span class="p">,</span> <span class="n">__</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">realpath</span><span class="p">(</span><span class="vm">__file__</span><span class="p">))</span>
+<span class="n">packages_directory</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">directory</span><span class="p">,</span> <span class="s2">&quot;package&quot;</span><span class="p">)</span>
+<span class="n">opendss_path</span> <span class="o">=</span> <span class="n">pkm</span><span class="o">.</span><span class="n">download_package</span><span class="p">(</span><span class="n">output_path</span><span class="o">=</span><span class="n">packages_directory</span><span class="p">,</span> <span class="n">package_name</span><span class="o">=</span><span class="s2">&quot;OpenDSS&quot;</span><span class="p">)</span>
+
+<span class="c1"># Then install a package</span>
+<span class="n">pkm</span><span class="o">.</span><span class="n">install_package</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">opendss_path</span><span class="p">)</span>
+
+<span class="c1"># Get all installed packages</span>
+<span class="n">all_packages</span> <span class="o">=</span> <span class="n">pkm</span><span class="o">.</span><span class="n">get_installed_packages</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;All installed packages: </span><span class="si">{</span><span class="n">all_packages</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Cleanup</span>
+<span class="k">for</span> <span class="n">package</span> <span class="ow">in</span> <span class="n">all_packages</span><span class="p">:</span>
+    <span class="n">pkm</span><span class="o">.</span><span class="n">uninstall_package</span><span class="p">(</span><span class="n">package_name</span><span class="o">=</span><span class="n">package</span><span class="o">.</span><span class="n">package_name</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Traceback (most recent call last):
+  File &quot;C:\WORK\t_sw\api\build\doc_build\api_doc\package_manager_api_examples\download_package.example&quot;, line 5, in &lt;module&gt;
+    from typhoon.api.package_manager import package_manager as pkm
+  File &quot;C:\WORK\t_sw\api\typhoon\api\package_manager\__init__.py&quot;, line 21, in &lt;module&gt;
+    from typhoon.api.package_manager.stub import clstub
+  File &quot;C:\WORK\t_sw\api\typhoon\api\package_manager\stub.py&quot;, line 22, in &lt;module&gt;
+    from typhoon.api.common import (
+  File &quot;C:\WORK\t_sw\api\typhoon\api\common\__init__.py&quot;, line 17, in &lt;module&gt;
+    import pandas
+ModuleNotFoundError: No module named &#39;pandas&#39;
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="typhoon.api.package_manager.PackageManagerAPI.get_available_packages">
+<span class="sig-name descname"><span class="pre">get_available_packages</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">latest_version</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#typhoon.api.package_manager.PackageManagerAPI.get_available_packages" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns iterable over packages available on Package Marketplace.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>latest_version</strong> (<em>bool</em>) – If true, return only latest version of</p></li>
+<li><p><strong>Otherwise</strong> (<em>the package.</em>) – </p></li>
+<li><p><strong>version</strong> (<em>return an object for each</em>) – </p></li>
+<li><p><strong>available.</strong> (<em>of the package</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Iterable over available packages (Package).</p>
+</dd>
+</dl>
+<p><strong>Example:</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#</span>
+<span class="c1"># Demonstrates the use of get_available_packages function</span>
+<span class="c1">#</span>
+<span class="kn">from</span> <span class="nn">typhoon.api.package_manager</span> <span class="kn">import</span> <span class="n">package_manager</span> <span class="k">as</span> <span class="n">pkm</span>
+
+<span class="c1"># Get all available packages (only latest versions)</span>
+<span class="n">all_packages</span> <span class="o">=</span> <span class="n">pkm</span><span class="o">.</span><span class="n">get_available_packages</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;All available packages (only latest versions): </span><span class="si">{</span><span class="n">all_packages</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Get all available packages (all versions)</span>
+<span class="n">all_packages</span> <span class="o">=</span> <span class="n">pkm</span><span class="o">.</span><span class="n">get_available_packages</span><span class="p">(</span><span class="n">latest_version</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;All available packages (all versions): </span><span class="si">{</span><span class="n">all_packages</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Traceback (most recent call last):
+  File &quot;C:\WORK\t_sw\api\build\doc_build\api_doc\package_manager_api_examples\get_available_packages.example&quot;, line 5, in &lt;module&gt;
+    from typhoon.api.package_manager import package_manager as pkm
+  File &quot;C:\WORK\t_sw\api\typhoon\api\package_manager\__init__.py&quot;, line 21, in &lt;module&gt;
+    from typhoon.api.package_manager.stub import clstub
+  File &quot;C:\WORK\t_sw\api\typhoon\api\package_manager\stub.py&quot;, line 22, in &lt;module&gt;
+    from typhoon.api.common import (
+  File &quot;C:\WORK\t_sw\api\typhoon\api\common\__init__.py&quot;, line 17, in &lt;module&gt;
+    import pandas
+ModuleNotFoundError: No module named &#39;pandas&#39;
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="typhoon.api.package_manager.PackageManagerAPI.get_installed_packages">
+<span class="sig-name descname"><span class="pre">get_installed_packages</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#typhoon.api.package_manager.PackageManagerAPI.get_installed_packages" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns iterable over installed packages.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Iterable over installed packages (Package).</p>
+</dd>
+</dl>
+<p><strong>Example:</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#</span>
+<span class="c1"># Demonstrates the use of the get_installed_packages function</span>
+<span class="c1">#</span>
+<span class="kn">from</span> <span class="nn">typhoon.api.package_manager</span> <span class="kn">import</span> <span class="n">package_manager</span> <span class="k">as</span> <span class="n">pkm</span>
+
+<span class="c1"># First install a package</span>
+<span class="n">directory</span><span class="p">,</span> <span class="n">__</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">realpath</span><span class="p">(</span><span class="vm">__file__</span><span class="p">))</span>
+<span class="n">package_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">directory</span><span class="p">,</span> <span class="s2">&quot;package&quot;</span><span class="p">,</span> <span class="s2">&quot;my_package.tpkg&quot;</span><span class="p">)</span>
+<span class="n">pkm</span><span class="o">.</span><span class="n">install_package</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">package_path</span><span class="p">)</span>
+
+<span class="c1"># Get all installed packages</span>
+<span class="n">all_packages</span> <span class="o">=</span> <span class="n">pkm</span><span class="o">.</span><span class="n">get_installed_packages</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;All installed packages: </span><span class="si">{</span><span class="n">all_packages</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Cleanup</span>
+<span class="n">all_packages</span> <span class="o">=</span> <span class="n">pkm</span><span class="o">.</span><span class="n">get_installed_packages</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">package</span> <span class="ow">in</span> <span class="n">all_packages</span><span class="p">:</span>
+    <span class="n">pkm</span><span class="o">.</span><span class="n">uninstall_package</span><span class="p">(</span><span class="n">package_name</span><span class="o">=</span><span class="n">package</span><span class="o">.</span><span class="n">package_name</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Traceback (most recent call last):
+  File &quot;C:\WORK\t_sw\api\build\doc_build\api_doc\package_manager_api_examples\get_installed_packages.example&quot;, line 5, in &lt;module&gt;
+    from typhoon.api.package_manager import package_manager as pkm
+  File &quot;C:\WORK\t_sw\api\typhoon\api\package_manager\__init__.py&quot;, line 21, in &lt;module&gt;
+    from typhoon.api.package_manager.stub import clstub
+  File &quot;C:\WORK\t_sw\api\typhoon\api\package_manager\stub.py&quot;, line 22, in &lt;module&gt;
+    from typhoon.api.common import (
+  File &quot;C:\WORK\t_sw\api\typhoon\api\common\__init__.py&quot;, line 17, in &lt;module&gt;
+    import pandas
+ModuleNotFoundError: No module named &#39;pandas&#39;
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="typhoon.api.package_manager.PackageManagerAPI.get_modified_packages">
+<span class="sig-name descname"><span class="pre">get_modified_packages</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#typhoon.api.package_manager.PackageManagerAPI.get_modified_packages" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks integrity of installed packages. Returns iterable over packages
+that have been modified.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Iterable over modified packages (Package).</p>
+</dd>
+</dl>
+<p><strong>Example:</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#</span>
+<span class="c1"># Demonstrates the use of get_modified_packages function</span>
+<span class="c1">#</span>
+<span class="kn">from</span> <span class="nn">typhoon.api.package_manager</span> <span class="kn">import</span> <span class="n">package_manager</span> <span class="k">as</span> <span class="n">pkm</span>
+<span class="kn">from</span> <span class="nn">typhoon.env_api</span> <span class="kn">import</span> <span class="n">env_api</span>
+<span class="kn">import</span> <span class="nn">shutil</span>
+
+<span class="c1"># First install a package</span>
+<span class="n">directory</span><span class="p">,</span> <span class="n">__</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">realpath</span><span class="p">(</span><span class="vm">__file__</span><span class="p">))</span>
+<span class="n">package_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">directory</span><span class="p">,</span> <span class="s2">&quot;package&quot;</span><span class="p">,</span> <span class="s2">&quot;my_package.tpkg&quot;</span><span class="p">)</span>
+<span class="n">pkm</span><span class="o">.</span><span class="n">install_package</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">package_path</span><span class="p">)</span>
+
+<span class="c1"># Validate no packages are modified prior to modification</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Modified packages before modification: </span><span class="si">{</span><span class="n">pkm</span><span class="o">.</span><span class="n">get_modified_packages</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Modify installed package</span>
+<span class="n">package_examples_path</span> <span class="o">=</span> <span class="n">env_api</span><span class="o">.</span><span class="n">get_pkm_examples_path</span><span class="p">()</span>
+<span class="n">shutil</span><span class="o">.</span><span class="n">rmtree</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">package_examples_path</span><span class="p">,</span> <span class="s2">&quot;Example Package&quot;</span><span class="p">,</span> <span class="s2">&quot;models&quot;</span><span class="p">,</span> <span class="s2">&quot;Complex system&quot;</span><span class="p">))</span>
+
+<span class="c1"># Find modified packages after modification</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Modified packages after modification: </span><span class="si">{</span><span class="n">pkm</span><span class="o">.</span><span class="n">get_modified_packages</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Cleanup</span>
+<span class="n">all_packages</span> <span class="o">=</span> <span class="n">pkm</span><span class="o">.</span><span class="n">get_installed_packages</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">package</span> <span class="ow">in</span> <span class="n">all_packages</span><span class="p">:</span>
+    <span class="n">pkm</span><span class="o">.</span><span class="n">uninstall_package</span><span class="p">(</span><span class="n">package_name</span><span class="o">=</span><span class="n">package</span><span class="o">.</span><span class="n">package_name</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Traceback (most recent call last):
+  File &quot;C:\WORK\t_sw\api\build\doc_build\api_doc\package_manager_api_examples\get_modified_packages.example&quot;, line 5, in &lt;module&gt;
+    from typhoon.api.package_manager import package_manager as pkm
+  File &quot;C:\WORK\t_sw\api\typhoon\api\package_manager\__init__.py&quot;, line 21, in &lt;module&gt;
+    from typhoon.api.package_manager.stub import clstub
+  File &quot;C:\WORK\t_sw\api\typhoon\api\package_manager\stub.py&quot;, line 22, in &lt;module&gt;
+    from typhoon.api.common import (
+  File &quot;C:\WORK\t_sw\api\typhoon\api\common\__init__.py&quot;, line 17, in &lt;module&gt;
+    import pandas
+ModuleNotFoundError: No module named &#39;pandas&#39;
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="typhoon.api.package_manager.PackageManagerAPI.install_package">
+<span class="sig-name descname"><span class="pre">install_package</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#typhoon.api.package_manager.PackageManagerAPI.install_package" title="Permalink to this definition">¶</a></dt>
+<dd><p>Installs a package located at filename, specified by parameter.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>filename</strong> – filename in which package is located.</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>PkmApiException</strong> – </p>
+</dd>
+</dl>
+<p><strong>Example:</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#</span>
+<span class="c1"># Demonstrates the use of install_package function</span>
+<span class="c1">#</span>
+<span class="kn">from</span> <span class="nn">typhoon.api.package_manager</span> <span class="kn">import</span> <span class="n">package_manager</span> <span class="k">as</span> <span class="n">pkm</span>
+
+<span class="c1"># Get all installed packages</span>
+<span class="n">all_packages</span> <span class="o">=</span> <span class="n">pkm</span><span class="o">.</span><span class="n">get_installed_packages</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;All installed packages: </span><span class="si">{</span><span class="n">all_packages</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># First install a package</span>
+<span class="n">directory</span><span class="p">,</span> <span class="n">__</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">realpath</span><span class="p">(</span><span class="vm">__file__</span><span class="p">))</span>
+<span class="n">package_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">directory</span><span class="p">,</span> <span class="s2">&quot;package&quot;</span><span class="p">,</span> <span class="s2">&quot;my_package.tpkg&quot;</span><span class="p">)</span>
+<span class="n">pkm</span><span class="o">.</span><span class="n">install_package</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">package_path</span><span class="p">)</span>
+
+<span class="c1"># Get all installed packages</span>
+<span class="n">all_packages</span> <span class="o">=</span> <span class="n">pkm</span><span class="o">.</span><span class="n">get_installed_packages</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;All installed packages: </span><span class="si">{</span><span class="n">all_packages</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Cleanup</span>
+<span class="k">for</span> <span class="n">package</span> <span class="ow">in</span> <span class="n">all_packages</span><span class="p">:</span>
+    <span class="n">pkm</span><span class="o">.</span><span class="n">uninstall_package</span><span class="p">(</span><span class="n">package_name</span><span class="o">=</span><span class="n">package</span><span class="o">.</span><span class="n">package_name</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Traceback (most recent call last):
+  File &quot;C:\WORK\t_sw\api\build\doc_build\api_doc\package_manager_api_examples\install_package.example&quot;, line 5, in &lt;module&gt;
+    from typhoon.api.package_manager import package_manager as pkm
+  File &quot;C:\WORK\t_sw\api\typhoon\api\package_manager\__init__.py&quot;, line 21, in &lt;module&gt;
+    from typhoon.api.package_manager.stub import clstub
+  File &quot;C:\WORK\t_sw\api\typhoon\api\package_manager\stub.py&quot;, line 22, in &lt;module&gt;
+    from typhoon.api.common import (
+  File &quot;C:\WORK\t_sw\api\typhoon\api\common\__init__.py&quot;, line 17, in &lt;module&gt;
+    import pandas
+ModuleNotFoundError: No module named &#39;pandas&#39;
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="typhoon.api.package_manager.PackageManagerAPI.reinstall_package">
+<span class="sig-name descname"><span class="pre">reinstall_package</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">package_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#typhoon.api.package_manager.PackageManagerAPI.reinstall_package" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reinstall a package by name, specified by parameter package_name.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>package_name</strong> – name of the package to be reinstalled.</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>PkmApiException</strong> – </p>
+</dd>
+</dl>
+<p><strong>Example:</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#</span>
+<span class="c1"># Demonstrates the use of the reinstall_package function</span>
+<span class="c1">#</span>
+<span class="kn">from</span> <span class="nn">typhoon.api.package_manager</span> <span class="kn">import</span> <span class="n">package_manager</span> <span class="k">as</span> <span class="n">pkm</span>
+<span class="kn">from</span> <span class="nn">typhoon.env_api</span> <span class="kn">import</span> <span class="n">env_api</span>
+<span class="kn">import</span> <span class="nn">shutil</span>
+
+<span class="c1"># First install a package</span>
+<span class="n">directory</span><span class="p">,</span> <span class="n">__</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">realpath</span><span class="p">(</span><span class="vm">__file__</span><span class="p">))</span>
+<span class="n">package_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">directory</span><span class="p">,</span> <span class="s2">&quot;package&quot;</span><span class="p">,</span> <span class="s2">&quot;my_package.tpkg&quot;</span><span class="p">)</span>
+<span class="n">pkm</span><span class="o">.</span><span class="n">install_package</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">package_path</span><span class="p">)</span>
+
+<span class="c1"># Validate no packages are modified prior to modification</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Modified packages before modification: </span><span class="si">{</span><span class="n">pkm</span><span class="o">.</span><span class="n">get_modified_packages</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Modify installed package</span>
+<span class="n">package_examples_path</span> <span class="o">=</span> <span class="n">env_api</span><span class="o">.</span><span class="n">get_pkm_examples_path</span><span class="p">()</span>
+<span class="n">shutil</span><span class="o">.</span><span class="n">rmtree</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">package_examples_path</span><span class="p">,</span> <span class="s2">&quot;Example Package&quot;</span><span class="p">,</span> <span class="s2">&quot;models&quot;</span><span class="p">,</span> <span class="s2">&quot;Complex system&quot;</span><span class="p">))</span>
+
+<span class="c1"># Find modified packages after modification</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Modified packages after modification: </span><span class="si">{</span><span class="n">pkm</span><span class="o">.</span><span class="n">get_modified_packages</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Reinstall package</span>
+<span class="k">for</span> <span class="n">package</span> <span class="ow">in</span> <span class="n">pkm</span><span class="o">.</span><span class="n">get_modified_packages</span><span class="p">():</span>
+    <span class="n">pkm</span><span class="o">.</span><span class="n">reinstall_package</span><span class="p">(</span><span class="n">package_name</span><span class="o">=</span><span class="n">package</span><span class="o">.</span><span class="n">package_name</span><span class="p">)</span>
+
+<span class="c1"># Find modified packages after reinstall</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Modified packages after reinstall: </span><span class="si">{</span><span class="n">pkm</span><span class="o">.</span><span class="n">get_modified_packages</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Cleanup</span>
+<span class="n">all_packages</span> <span class="o">=</span> <span class="n">pkm</span><span class="o">.</span><span class="n">get_installed_packages</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">package</span> <span class="ow">in</span> <span class="n">all_packages</span><span class="p">:</span>
+    <span class="n">pkm</span><span class="o">.</span><span class="n">uninstall_package</span><span class="p">(</span><span class="n">package_name</span><span class="o">=</span><span class="n">package</span><span class="o">.</span><span class="n">package_name</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Traceback (most recent call last):
+  File &quot;C:\WORK\t_sw\api\build\doc_build\api_doc\package_manager_api_examples\reinstall_package.example&quot;, line 5, in &lt;module&gt;
+    from typhoon.api.package_manager import package_manager as pkm
+  File &quot;C:\WORK\t_sw\api\typhoon\api\package_manager\__init__.py&quot;, line 21, in &lt;module&gt;
+    from typhoon.api.package_manager.stub import clstub
+  File &quot;C:\WORK\t_sw\api\typhoon\api\package_manager\stub.py&quot;, line 22, in &lt;module&gt;
+    from typhoon.api.common import (
+  File &quot;C:\WORK\t_sw\api\typhoon\api\common\__init__.py&quot;, line 17, in &lt;module&gt;
+    import pandas
+ModuleNotFoundError: No module named &#39;pandas&#39;
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="typhoon.api.package_manager.PackageManagerAPI.uninstall_package">
+<span class="sig-name descname"><span class="pre">uninstall_package</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">package_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#typhoon.api.package_manager.PackageManagerAPI.uninstall_package" title="Permalink to this definition">¶</a></dt>
+<dd><p>Uninstalls a package by name, specified by parameter package_name.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>package_name</strong> – name of the package to be uninstalled.</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>PkmApiException</strong> – </p>
+</dd>
+</dl>
+<p><strong>Example:</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#</span>
+<span class="c1"># Demonstrates the use of uninstall_package function</span>
+<span class="c1">#</span>
+<span class="kn">from</span> <span class="nn">typhoon.api.package_manager</span> <span class="kn">import</span> <span class="n">package_manager</span> <span class="k">as</span> <span class="n">pkm</span>
+
+<span class="c1"># First install a package</span>
+<span class="n">directory</span><span class="p">,</span> <span class="n">__</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">realpath</span><span class="p">(</span><span class="vm">__file__</span><span class="p">))</span>
+<span class="n">package_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">directory</span><span class="p">,</span> <span class="s2">&quot;package&quot;</span><span class="p">,</span> <span class="s2">&quot;my_package.tpkg&quot;</span><span class="p">)</span>
+<span class="n">pkm</span><span class="o">.</span><span class="n">install_package</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">package_path</span><span class="p">)</span>
+
+<span class="c1"># Get all installed packages</span>
+<span class="n">all_packages</span> <span class="o">=</span> <span class="n">pkm</span><span class="o">.</span><span class="n">get_installed_packages</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;All installed packages: </span><span class="si">{</span><span class="n">all_packages</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Cleanup</span>
+<span class="k">for</span> <span class="n">package</span> <span class="ow">in</span> <span class="n">all_packages</span><span class="p">:</span>
+    <span class="n">pkm</span><span class="o">.</span><span class="n">uninstall_package</span><span class="p">(</span><span class="n">package_name</span><span class="o">=</span><span class="n">package</span><span class="o">.</span><span class="n">package_name</span><span class="p">)</span>
+
+<span class="c1"># Get all installed packages</span>
+<span class="n">all_packages</span> <span class="o">=</span> <span class="n">pkm</span><span class="o">.</span><span class="n">get_installed_packages</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;All installed packages after uninstall: </span><span class="si">{</span><span class="n">all_packages</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Traceback (most recent call last):
+  File &quot;C:\WORK\t_sw\api\build\doc_build\api_doc\package_manager_api_examples\uninstall_package.example&quot;, line 5, in &lt;module&gt;
+    from typhoon.api.package_manager import package_manager as pkm
+  File &quot;C:\WORK\t_sw\api\typhoon\api\package_manager\__init__.py&quot;, line 21, in &lt;module&gt;
+    from typhoon.api.package_manager.stub import clstub
+  File &quot;C:\WORK\t_sw\api\typhoon\api\package_manager\stub.py&quot;, line 22, in &lt;module&gt;
+    from typhoon.api.common import (
+  File &quot;C:\WORK\t_sw\api\typhoon\api\common\__init__.py&quot;, line 17, in &lt;module&gt;
+    import pandas
+ModuleNotFoundError: No module named &#39;pandas&#39;
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="typhoon.api.package_manager.PackageManagerAPI.validate_package">
+<span class="sig-name descname"><span class="pre">validate_package</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#typhoon.api.package_manager.PackageManagerAPI.validate_package" title="Permalink to this definition">¶</a></dt>
+<dd><p>Validate a package located at filename, specified by parameter.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>filename</strong> – filename in which package is located.</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>PkmApiException</strong> – </p>
+</dd>
+</dl>
+<p><strong>Example:</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#</span>
+<span class="c1"># Demonstrates the use of the validate_package function</span>
+<span class="c1">#</span>
+<span class="kn">from</span> <span class="nn">typhoon.api.package_manager</span> <span class="kn">import</span> <span class="n">package_manager</span> <span class="k">as</span> <span class="n">pkm</span>
+<span class="kn">from</span> <span class="nn">typhoon.api.package_manager.exception</span> <span class="kn">import</span> <span class="n">PkmApiException</span>
+
+<span class="c1"># First install a package</span>
+<span class="n">directory</span><span class="p">,</span> <span class="n">__</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">realpath</span><span class="p">(</span><span class="vm">__file__</span><span class="p">))</span>
+<span class="n">package_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">directory</span><span class="p">,</span> <span class="s2">&quot;package&quot;</span><span class="p">,</span> <span class="s2">&quot;my_package.tpkg&quot;</span><span class="p">)</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">pkm</span><span class="o">.</span><span class="n">validate_package</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">package_path</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Package is valid&quot;</span><span class="p">)</span>
+<span class="k">except</span> <span class="n">PkmApiException</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">exc</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Traceback (most recent call last):
+  File &quot;C:\WORK\t_sw\api\build\doc_build\api_doc\package_manager_api_examples\validate_package.example&quot;, line 5, in &lt;module&gt;
+    from typhoon.api.package_manager import package_manager as pkm
+  File &quot;C:\WORK\t_sw\api\typhoon\api\package_manager\__init__.py&quot;, line 21, in &lt;module&gt;
+    from typhoon.api.package_manager.stub import clstub
+  File &quot;C:\WORK\t_sw\api\typhoon\api\package_manager\stub.py&quot;, line 22, in &lt;module&gt;
+    from typhoon.api.common import (
+  File &quot;C:\WORK\t_sw\api\typhoon\api\common\__init__.py&quot;, line 17, in &lt;module&gt;
+    import pandas
+ModuleNotFoundError: No module named &#39;pandas&#39;
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="typhoon_api.html">
+              <img class="logo" src="_static/logo.png" alt="Logo"/>
+            </a></p>
+  <div>
+    <h3><a href="typhoon_api.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">11. Package Manager API</a><ul>
+<li><a class="reference internal" href="#examples">11.1. Examples</a><ul>
+<li><a class="reference internal" href="#example">11.1.1. Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#api-references">11.2. API references</a><ul>
+<li><a class="reference internal" href="#typhoon.api.package_manager.PackageManagerAPI"><code class="docutils literal notranslate"><span class="pre">PackageManagerAPI</span></code></a><ul>
+<li><a class="reference internal" href="#typhoon.api.package_manager.PackageManagerAPI.create_example"><code class="docutils literal notranslate"><span class="pre">PackageManagerAPI.create_example()</span></code></a></li>
+<li><a class="reference internal" href="#typhoon.api.package_manager.PackageManagerAPI.create_package"><code class="docutils literal notranslate"><span class="pre">PackageManagerAPI.create_package()</span></code></a></li>
+<li><a class="reference internal" href="#typhoon.api.package_manager.PackageManagerAPI.download_package"><code class="docutils literal notranslate"><span class="pre">PackageManagerAPI.download_package()</span></code></a></li>
+<li><a class="reference internal" href="#typhoon.api.package_manager.PackageManagerAPI.get_available_packages"><code class="docutils literal notranslate"><span class="pre">PackageManagerAPI.get_available_packages()</span></code></a></li>
+<li><a class="reference internal" href="#typhoon.api.package_manager.PackageManagerAPI.get_installed_packages"><code class="docutils literal notranslate"><span class="pre">PackageManagerAPI.get_installed_packages()</span></code></a></li>
+<li><a class="reference internal" href="#typhoon.api.package_manager.PackageManagerAPI.get_modified_packages"><code class="docutils literal notranslate"><span class="pre">PackageManagerAPI.get_modified_packages()</span></code></a></li>
+<li><a class="reference internal" href="#typhoon.api.package_manager.PackageManagerAPI.install_package"><code class="docutils literal notranslate"><span class="pre">PackageManagerAPI.install_package()</span></code></a></li>
+<li><a class="reference internal" href="#typhoon.api.package_manager.PackageManagerAPI.reinstall_package"><code class="docutils literal notranslate"><span class="pre">PackageManagerAPI.reinstall_package()</span></code></a></li>
+<li><a class="reference internal" href="#typhoon.api.package_manager.PackageManagerAPI.uninstall_package"><code class="docutils literal notranslate"><span class="pre">PackageManagerAPI.uninstall_package()</span></code></a></li>
+<li><a class="reference internal" href="#typhoon.api.package_manager.PackageManagerAPI.validate_package"><code class="docutils literal notranslate"><span class="pre">PackageManagerAPI.validate_package()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="device_manager_api.html"
+                          title="previous chapter"><span class="section-number">10. </span>Device Manager API</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/package_manager_api.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="device_manager_api.html" title="10. Device Manager API"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="typhoon_api.html">Typhoon API 1.26.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">11. </span>Package Manager API</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Typhoon HIL.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.0.1.
+    </div>
+  </body>
+</html>
