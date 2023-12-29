@@ -1,0 +1,9 @@
+code_insight_api_py/__init__.py,sha256=bCjeB2eccGUDOBkntF5Mraxhlt8mXkg2Gaxxz7HRxks,40
+code_insight_api_py/client.py,sha256=3ga7Mr2gwolCph0AfDlitec_RZW7ArLqjIgimwYuTnU,1986
+code_insight_api_py/errors.py,sha256=gHmfcU2gFsWcmRHipsoDHL2QH3mKI5V0sSastAhpazE,277
+code_insight_api_py/factories.py,sha256=zBHk3CnRggYwvYwHZKobstj0mJlUNDdAHg_QR92QkkA,1882
+code_insight_api_py/models.py,sha256=2rlRJeRup3FkNq-igPgad_pvFZlmYD3npbwtFpI4QEo,1230
+code_insight_api_py-0.0.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+code_insight_api_py-0.0.4.dist-info/METADATA,sha256=VM7Rn0VK7hR1BnKejCxFHNS94Mia2YZ0IRJxiXo7Y9Q,1789
+code_insight_api_py-0.0.4.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+code_insight_api_py-0.0.4.dist-info/RECORD,,
