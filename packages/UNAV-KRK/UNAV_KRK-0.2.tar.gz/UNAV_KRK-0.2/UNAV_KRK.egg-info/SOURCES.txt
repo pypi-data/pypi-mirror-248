@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+UNAV_KRK.egg-info/PKG-INFO
+UNAV_KRK.egg-info/SOURCES.txt
+UNAV_KRK.egg-info/dependency_links.txt
+UNAV_KRK.egg-info/requires.txt
+UNAV_KRK.egg-info/top_level.txt
+src/__init__.py
+src/analizador_monedas.py
+tests/__init__.py
+tests/test_integración_analizador.py
+tests/test_unitario_analizador.py
