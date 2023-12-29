@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: petstoremodels
+Version: 0.0.2
+Summary: Pydantic models for the petstore microservice.
+Author: PandasAreBears
+Keywords: models,petstore,pydantic
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic
+
+## Petstore Models
+
+Pydantic models for the petstore microservice.
