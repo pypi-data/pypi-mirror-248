@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/structurelib/__init__.py
+src/structurelib/_identifier.py
+src/structurelib/_structure.py
+src/structurelib/types.py
+src/structurelib.egg-info/PKG-INFO
+src/structurelib.egg-info/SOURCES.txt
+src/structurelib.egg-info/dependency_links.txt
+src/structurelib.egg-info/top_level.txt
+src/structurelib/_dumping/__init__.py
+src/structurelib/_dumping/_dumpers.py
+src/structurelib/_dumping/_dumps.py
