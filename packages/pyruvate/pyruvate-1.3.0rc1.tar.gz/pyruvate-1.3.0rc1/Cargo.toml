@@ -1,0 +1,43 @@
+[package]
+name = "pyruvate"
+version = "1.3.0-rc1"
+authors = ["tschorr <t_schorr@gmx.de>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "pyruvate"
+crate-type = ["rlib", "cdylib"]
+
+[dependencies]
+cfg-if = "*"
+crossbeam = "*"
+crossbeam-channel = "*"
+encoding = "*"
+errno = "*"
+grcov = "0.8.19"
+httparse = "*"
+libc = "*"
+log = { version="*", features=["std"] }
+mio = { version="*", features=["os-poll", "net"] }
+nix = { version="*", features=["fs"] }
+pyo3 = "*"
+signal-hook = "*"
+spmc = "*"
+threadpool = "*"
+urlencoding = "*"
+
+[features]
+extension-module = ["pyo3/extension-module"]
+default = ["extension-module"]
+
+[target."cfg(target_os = \"linux\")".dependencies.libsystemd]
+version = "*"
+
+[dev-dependencies]
+env_logger = "*"
+pyo3 = { version="*", features=["macros", "auto-initialize"] }
+rand = "*"
+simplelog = "*"
+tempfile = "*"
