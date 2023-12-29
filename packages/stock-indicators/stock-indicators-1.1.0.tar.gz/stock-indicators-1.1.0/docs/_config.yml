@@ -1,0 +1,69 @@
+# Ref: https://jekyllrb.com/docs/usage/
+# Ref: https://github.com/pages-themes/cayman
+# Local dev: bundle exec jekyll serve -o -l
+
+title: "Stock Indicators for Python"
+tagline: "Send in historical price quotes and get back desired technical indicators.  Nothing more."
+locale: en_US
+
+# social media information
+image:
+  path: /assets/social-banner.png
+  height: 640
+  width: 1280
+
+logo: /assets/icons/android-chrome-192x192.png
+
+# https://github.com/pages-themes/cayman
+remote_theme: pages-themes/cayman@v0.2.0
+
+# .NET site URL refs
+dotnet:
+  repo: "https://github.com/DaveSkender/Stock.Indicators"
+  src: "https://github.com/DaveSkender/Stock.Indicators/blob/main/src"
+  charts: "https://raw.githubusercontent.com/DaveSkender/Stock.Indicators/main/docs/assets/charts"
+
+# this site URL refs
+baseurl: ""
+url: "https://python.stockindicators.dev"
+repository: DaveSkender/Stock.Indicators.Python
+sourceurl: "https://github.com/DaveSkender/Stock.Indicators.Python/blob/main/stock_indicators/indicators"
+
+ga_tag: G-MNKJE3KS9Y
+
+plugins:
+  - jemoji
+  - jekyll-github-metadata
+  - jekyll-remote-theme
+  - jekyll-sitemap
+  - jekyll-last-modified-at
+  - jekyll-redirect-from
+
+exclude:
+  [
+    "*.json",
+    "*.lock",
+    "*.yml",
+    "*.pptx",
+    ".offline",
+    "docs/README.md",
+    "GemFile",
+    "node_modules",
+    "vendor",
+  ]
+
+permalink: pretty
+
+defaults:
+  - scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "base"
+      image: /assets/social-banner.png
+
+# page collections
+collections:
+  indicators:
+    output: true
+    permalink: /:path
+    sort_by: "title"
