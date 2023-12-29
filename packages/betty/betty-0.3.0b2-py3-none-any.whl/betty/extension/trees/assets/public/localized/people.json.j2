@@ -1,0 +1,13 @@
+{% set ns = namespace(people={}) %}
+{% for person in app.project.ancestry['Person'] %}
+    {% do ns.people.update({
+        person.id: {
+            'id': person.id,
+            'label': person.label | localize,
+            'url': person | url,
+            'parentIds': person.parents | map(attribute='id') | list,
+            'childIds': person.children | map(attribute='id') | list,
+        }
+    }) %}
+{% endfor %}
+{{ ns.people | json }}
