@@ -1,0 +1,4 @@
+[console_scripts]
+az-account-switcher=az_account_switcher.az_account_switcher:main
+az-switch=az_account_switcher.az_account_switcher:main
+
