@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: kagiapi
+Version: 0.2.0
+Summary: A Python package for Kagi Search API
+Home-page: https://github.com/kagisearch/kagiapi
+Author: Vladimir Prelovac
+Author-email: vlad@kagi.com
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: typing-extensions
+
