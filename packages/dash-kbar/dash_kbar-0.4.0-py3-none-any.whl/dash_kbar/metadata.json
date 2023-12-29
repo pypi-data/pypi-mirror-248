@@ -1,0 +1,131 @@
+{
+  "src/lib/components/DashKbar.react.js": {
+    "description": "",
+    "displayName": "DashKbar",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\r\nto Dash, to make them available for callbacks."
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Children to be rendered"
+      },
+      "debug": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Whether to print debug messages",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "style": {
+        "type": {
+          "name": "shape",
+          "value": {
+            "maxWidth": {
+              "name": "string",
+              "required": false
+            },
+            "background": {
+              "name": "string",
+              "required": false
+            },
+            "fontFamily": {
+              "name": "string",
+              "required": false
+            }
+          }
+        },
+        "required": false,
+        "description": "style object"
+      },
+      "actions": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "shape",
+            "value": {
+              "id": {
+                "name": "string",
+                "required": true
+              },
+              "name": {
+                "name": "string",
+                "required": true
+              },
+              "shortcut": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "arrayOf",
+                    "value": {
+                      "name": "string"
+                    }
+                  }
+                ],
+                "required": false
+              },
+              "keywords": {
+                "name": "arrayOf",
+                "value": {
+                  "name": "string"
+                },
+                "required": false
+              },
+              "section": {
+                "name": "string",
+                "required": false
+              },
+              "icon": {
+                "name": "string",
+                "required": false
+              },
+              "subtitle": {
+                "name": "string",
+                "required": false
+              },
+              "parentId": {
+                "name": "string",
+                "required": false
+              },
+              "actionable": {
+                "name": "bool",
+                "required": false
+              }
+            }
+          }
+        },
+        "required": false,
+        "description": "Actions to be registered with KBar"
+      },
+      "selected": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The currently selected action"
+      }
+    }
+  }
+}
