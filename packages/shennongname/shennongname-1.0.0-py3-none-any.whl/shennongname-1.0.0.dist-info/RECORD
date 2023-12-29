@@ -1,0 +1,16 @@
+shennongname/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shennongname/flask/blueprint/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shennongname/flask/blueprint/snn.py,sha256=jVVf1O200MLl1lQbCYjCDen5FGQijOg-RyZ23ZFyfCU,1222
+shennongname/flask/config.py,sha256=2YqL5TM4GnKSsXGdt5oy5uYzbK5KJA3gw8CoFvKE25s,139
+shennongname/flask/run.py,sha256=Kt5kVzb0fqfDbgTYTP_itLQDozSMxbGxL0cwRJLRXlw,365
+shennongname/lang/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shennongname/lang/lang.py,sha256=j45o6dYBEJCo3Cfq0Ces48pz88D1RH8WtFsh-L8ALEs,213
+shennongname/lang/locale/zh/LC_MESSAGES/messages.mo,sha256=e4eqrgJvg67g4D5QJFY-T3T7jFszWjT4IG40TMyi9ms,4875
+shennongname/lang/locale/zh/LC_MESSAGES/messages.po,sha256=I_fbqT-ISB_TYWQpxyQ8sHnFj5HHXv0rB78FWmqAwJ0,4798
+shennongname/snnmma/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shennongname/snnmma/algorithm.py,sha256=6yxJxtCSlR2ZaS-Kv9YoKsO0k25aS8-FB_rc67BxZ-0,48077
+shennongname/snnmma/model.py,sha256=1b4JjWgIlfnfEkTwZJfSh3BLDWDBtl5ZmC3lmfgZEI0,1306
+shennongname-1.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+shennongname-1.0.0.dist-info/METADATA,sha256=DEpzx7V98NHFFijTKUR1YujtaBPtzmzZ-TaGFv4ISjU,4223
+shennongname-1.0.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+shennongname-1.0.0.dist-info/RECORD,,
