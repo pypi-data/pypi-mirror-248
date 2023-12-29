@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "yi-cli"
+version = "0.1.0"
+description = ""
+authors = ["Henry.Huang <hhglory@outlook.com>"]
+readme = "README.md"
+packages = [{include = "yi_cli", from = "src"}]
+
+
+[tool.poetry.scripts]
+yi = "yi_cli.main:app"
+yic = "yi_cli.main:app"  # aliase name
+yi-cli = "yi_cli.main:app" # aliase name
+iching = "yi_cli.main:app" # aliase name
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = {extras = ["all"], version = "^0.9.0"}
+loguru = "^0.7.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
