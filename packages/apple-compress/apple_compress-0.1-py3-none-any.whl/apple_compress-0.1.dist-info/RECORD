@@ -1,0 +1,11 @@
+apple_compress/__init__.py,sha256=-FDIiexbmne1IDTnbXxwnnstVv5IebnSXmWrS847AEw,176
+apple_compress/__main__.py,sha256=q8EFr_zGWVMqWNPhwTZeuRxcKFrvnd0Ob7UFR8TGN1I,2125
+apple_compress/_lib.py,sha256=TMWJvd_CLW7Rc3S-bYr4b4HD9-LP0_mFOa0aRHX-KV8,273
+apple_compress/compress.py,sha256=S2SRluPHDppyqIULE5Ko2eAfoDbSQwK_8f5JK9ytRvQ,1221
+apple_compress/errors.py,sha256=yyYEPQvXvxkMpfZQ6cF835y5pifkJSK7hQv3GWiP1FY,44
+apple_compress/types.py,sha256=BR0Grrpj3joMPE_iNxNoQEXUT_bo073ex4PFBmv1YY0,286
+apple_compress-0.1.dist-info/LICENSE,sha256=52goBfOJ2up62YmgHlOsVao0Oy6COXbU-oTqFceKWMA,1061
+apple_compress-0.1.dist-info/METADATA,sha256=j566SmgEWUmH6NY3GM0UzVgcwmINy9IP_6Ui46IpP3w,1923
+apple_compress-0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+apple_compress-0.1.dist-info/entry_points.txt,sha256=inONrTx1WfleoSI4CLgjHwwpdUxlLaUrb-QbkzhuM8Y,58
+apple_compress-0.1.dist-info/RECORD,,
