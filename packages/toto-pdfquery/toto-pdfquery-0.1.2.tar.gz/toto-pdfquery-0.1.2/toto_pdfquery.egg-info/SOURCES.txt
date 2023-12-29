@@ -1,0 +1,17 @@
+CHANGES.txt
+LICENSE.txt
+MANIFEST.in
+README.rst
+dev_requirements.txt
+requirements_py2.txt
+requirements_py3.txt
+setup.py
+toto_pdfquery.egg-info/PKG-INFO
+toto_pdfquery.egg-info/SOURCES.txt
+toto_pdfquery.egg-info/dependency_links.txt
+toto_pdfquery.egg-info/requires.txt
+toto_pdfquery.egg-info/top_level.txt
+totopdfquery/__init__.py
+totopdfquery/cache.py
+totopdfquery/pdftranslator.py
+totopdfquery/totopdfquery.py
