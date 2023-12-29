@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: wattrex-cycler-cu-manager
+Version: 1.0.2
+Summary: Module used to manage the computational unit.
+Author-email: Marius Crisan <mariuscrsn+pypi@gmail.com>, Javier Sanz <javiersanzmoline+pypi@gmail.com>, Roberto Aldea <r.aldea.csic+pypi@gmail.com>, Pablo Pastor <pastorpflores+pypi@gmail.com>, Luis Roche <luis.roche@hotmail.com>
+License: code/LICENSE.txt
+Project-URL: Homepage, https://github.com/WattRex/Battery-Cycler-Controller/
+Project-URL: Bug Reports, https://github.com/WattRex/Battery-Cycler-Controller/issues
+Project-URL: Bug Tracker, https://github.com/WattRex/Battery-Cycler-Controller/issues
+Project-URL: Source, https://github.com/WattRex/Battery-Cycler-Controller/code/cu_manager/src/wattrex_cycler_cu_manager
+Project-URL: Funding, https://donate.pypi.org
+Keywords: Embedded Systems,Power Control,Lithium Battery Cycler,Battery,Industrial Battery,SoH,State of Health,SoC,State of Charge,Redox Flow Vanadium,Battery,Cycler,Battery Profiling,Manager,Computational Unit,Device,Detector
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: Topic :: Database
+Classifier: Topic :: File Formats :: JSON
+Classifier: Topic :: Internet :: Log Analysis
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Hardware :: Hardware Drivers
+Classifier: Topic :: System :: Networking :: Monitoring :: Hardware Watchdog
+Classifier: Topic :: System :: Power (UPS)
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: SQL
+Classifier: Programming Language :: Unix Shell
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: system-logger-tool
+Requires-Dist: system-shared-tool
+Requires-Dist: wattrex-driver-mqtt
+Requires-Dist: wattrex-cycler-datatypes
+Requires-Dist: scpi-sniffer
+Requires-Dist: can-sniffer
+Requires-Dist: bitarray
+
+# Battery-Cyclers-CU-Manager
+
+This module provides the classes and methods to manage the computational unit.
+It configures the external communication to receive and send message using mqtt driver,
+it can detect connected devices and publish them into the mqtt broker and it also manage the
+cycler station deployment inside the CU.
