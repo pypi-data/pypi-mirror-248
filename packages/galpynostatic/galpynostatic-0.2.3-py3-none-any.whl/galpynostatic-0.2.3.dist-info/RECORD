@@ -1,0 +1,17 @@
+galpynostatic/__init__.py,sha256=8ndgisAuhnio6nov8MVGbHFkPSUcMzuuLK09tMROo-o,1468
+galpynostatic/base.py,sha256=cwfVYbRqHjJKvP1F6jeujet0bZtAaw-epKKaVDolGqQ,3464
+galpynostatic/make_prediction.py,sha256=Y9qMI5KQqtnVBBpn8DTXWt7UClVlfUYa9cTXuVaTmfg,4102
+galpynostatic/metric.py,sha256=mpF39PDG2PG_S-GBLFrK3FR9LM3xoHHhp79IXsuA8go,4251
+galpynostatic/model.py,sha256=iByOvHZ1YeYtoCwZtOuMfDov4nn1P4V4mi5KvlG_WdE,11952
+galpynostatic/plot.py,sha256=sKb0PHhOwbV_RJE6cXCBDc497PyGDHpYkYEyA2vZZiU,6025
+galpynostatic/preprocessing.py,sha256=JbvOOLlgnAOZG_h7XNjdzDhfjbZi2IPa8VG-F0qgLps,4605
+galpynostatic/utils.py,sha256=NLpSvsSjhlMZrMIk-N6Tcbmk7FdoqFoZ_zEkQ3aARRc,2380
+galpynostatic/datasets/__init__.py,sha256=kXdlQ7LJFUjCfiL5sDsDoLDlNiiweqP6lkPru4jk3-4,2238
+galpynostatic/datasets/cylindrical.csv,sha256=d8JVqmdMiUE51cSgKoAnRLzFZl4yVUnYMCtJTI9xHKU,22929
+galpynostatic/datasets/planar.csv,sha256=OTyCv72ynyIv85dU8oZltjOLEHFCHfFaGQY-7rUJhp4,22082
+galpynostatic/datasets/spherical.csv,sha256=J09x1NvbkIdj1ykXvYgnDPytCG9K9XL_0-qZo5zaKpI,22403
+galpynostatic-0.2.3.dist-info/LICENSE,sha256=F2sTu88OKRRXaDeVpO3fe7jP-6knx3mAAWOb3wNVKrg,1081
+galpynostatic-0.2.3.dist-info/METADATA,sha256=qHO15RHeo7k2jalkbe_8pS61-T3hk3d3f7DgXv-v498,5451
+galpynostatic-0.2.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+galpynostatic-0.2.3.dist-info/top_level.txt,sha256=1g1Ch4cqShdb-QyGQtiGXpN5oTYhdPmN8ncfygT6obg,14
+galpynostatic-0.2.3.dist-info/RECORD,,
