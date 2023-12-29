@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: fast-causal-inference
+Version: 2.0.32
+Summary: fast causal inference package
+Home-page: 
+Author: ['bearlyhuang', 'fhbai', 'broccozhang']
+License: Apache License 2.0
+Platform: all
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+causal inference package.
+contain ols, ttest, delta-method etc...
+
+install:
+yum install -y libjpeg-devel
+yum install python3-devel -y
+yum install python-devel -y
+yum install postgresql-devel* -y
+yum install gcc-c++ -y
+
+pip3.6 install requests
