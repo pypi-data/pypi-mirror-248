@@ -1,0 +1,16 @@
+{% load unicorn %}
+<div>
+    <div class="flex place-content-center">{%  unicorn 'search' id='search' key='search'%}</div>
+
+    <div name="grid" id="emojis_grid" class="container m2 p-2">
+        {% for emoji in emodjis %}
+            <div class="card d-inline-block" style="width: 3rem;" id="img_{{ emoji.name }}">
+                <img class="card-img-top transition ease-in-out hover:-z-[100] hover:scale-[1.5] active:scale-[2.0] p-1" src="data:image/gif;base64,{{ emoji.b64image }}" alt="{{ emoji.name }}"
+                     onclick="navigator.clipboard.writeText('{{ emoji.url }}');"
+                     title="{{ emoji.name }}">
+            </div>
+        {% endfor %}
+    <div class="container"><p class="">Click on icon to copy to clipboard</p></div>
+    </div>
+    <div class="container bg-gray-200">{%  unicorn 'pagination' id='bottom_pagination' key='bottom_pagination' %}</div>
+</div>

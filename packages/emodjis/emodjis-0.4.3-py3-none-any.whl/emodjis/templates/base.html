@@ -1,0 +1,22 @@
+{% extends 'bootstrap.html' %}
+{% load django_bootstrap5 %}
+{% load unicorn %}
+{% block bootstrap5_extra_head %}
+    <script src="https://cdn.tailwindcss.com"></script>
+    {% unicorn_scripts %}
+{% endblock %}
+
+{% block bootstrap5_content %}
+    {% csrf_token %}
+    <div class="container">
+        <div name="header" class="container mx-auto bg-green-500 rounded place-content-center p-2 m-2">
+        <span class="text-2xl text-uppercase">{% block content_title %}(no title){% endblock %}</span>
+        </div>
+
+        {% autoescape off %}{% bootstrap_messages %}{% endautoescape %}
+        <div name="content"  class="container mx-auto p-2 m-2">
+        {% block content %}(no content){% endblock %}
+        </div>
+    </div>
+
+{% endblock %}
