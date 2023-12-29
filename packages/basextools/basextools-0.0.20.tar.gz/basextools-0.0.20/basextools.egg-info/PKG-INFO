@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: basextools
+Version: 0.0.20
+Summary: Tools for EX Analysis
+Home-page: UNKNOWN
+Author: pin-people
+Author-email: rodrigo.toledo@pinpeople.com.br
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+
+# BASEX
+A package with basic functionalities for EX Analysis
+
+## Installation
+To install the package, run the following:
+```bash
+pip install basextools
+```
+Then you can use it's modules, by importing it in your code, as below:
+```python
+import basex
+```
+or
+```python
+from basex import ada
+```
+
+## Modules
+- **ada (Algorithms for Data Arithmetics, also Ada Lovelace)**: CÃ¡lculos bÃ¡sicos. Ex. eNPS e favorabilidades.
+- **bender (Biblioteca de ENcapsulamento de Dados e ExtraÃ§Ãµes Recorrentes)**: FunÃ§Ãµes relacionadas a tratamento\
+de bases a partir do DW. Ex.: puxar respostas a partir de um CP.
+- **chandler (Creation of Heatmaps AND Large Extensions of Rows, also Chandler Bing)**: CriaÃ§Ã£o de heatmaps (nÃ£o\
+grÃ¡ficos) e tabelas.
+- **lygia (LibrarY for Graphics, Images and Art, also Lygia Clark)**: GrÃ¡ficos bÃ¡sicos e derivados de produtos,\
+inclusive com padrÃ£o de cores. Ex. gauge eNPS e barras de favorabilidades.
+- **comments (still needs a cool name)**: ManipulaÃ§Ã£o de comentÃ¡rios.
+
+
