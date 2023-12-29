@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "aockit"
+version = "1.0.2"
+description = "A set of common utilities for completing the Advent of Code."
+authors = ["Scott Odle <scott@sjodle.com>"]
+readme = "README.md"
+
+[project]
+name = "aockit"
+authors = [
+    {name="Scott Odle", email="scott@sjodle.com"},
+]
+description = "A set of common utilities for completing the Advent of Code."
+readme = "README.md"
+requires-python = ">=3.9"
+
+[project.urls]
+Homepage = "https://github.com/sodle/aockit"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.pylint.MASTER]
+ignore-paths = '^aockit/test/.*$'
+
+[tool.poetry.group.dev.dependencies]
+coverage = "^7.3.4"
+pylint = "^3.0.3"
+tomli = "^2.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
