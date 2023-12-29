@@ -1,0 +1,7 @@
+pycgs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycgs/cgs.py,sha256=i6uduHrx5vnEyYxc-BCApAzEIecLYPzLvms5GydoBO4,2800
+pycgs/type.py,sha256=yR_Jq86Zcp00amNon_7Urg6yYBm2TbVZjy7vT9nw_KA,158
+pycgs-1.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pycgs-1.0.0.dist-info/METADATA,sha256=XUYLwm7xypcHJHDwTw6ECyzT_tZcMlL6YAMvqjGg_SI,1820
+pycgs-1.0.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+pycgs-1.0.0.dist-info/RECORD,,
