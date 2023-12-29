@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/uform/__init__.py
+src/uform/chat.py
+src/uform/gen_model.py
+src/uform/models.py
+src/uform.egg-info/PKG-INFO
+src/uform.egg-info/SOURCES.txt
+src/uform.egg-info/dependency_links.txt
+src/uform.egg-info/entry_points.txt
+src/uform.egg-info/requires.txt
+src/uform.egg-info/top_level.txt
