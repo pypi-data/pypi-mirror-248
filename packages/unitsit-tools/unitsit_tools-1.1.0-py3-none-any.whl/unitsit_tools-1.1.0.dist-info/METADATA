@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: unitsit-tools
+Version: 1.1.0
+Summary: unitsit-tools is a Python package containing various utility modules for common tasks.
+License: MIT
+Author: NoirPi
+Author-email: noirpi@noircoding.de
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: asyncpg (>=0.24,<0.25)
+Requires-Dist: psycopg-binary (>=2.9,<3.0)
+Requires-Dist: toml (>=0.10,<0.11)
