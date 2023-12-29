@@ -1,0 +1,2 @@
+[console_scripts]
+fxcli2console = jgtutils.fxcli2console:main
