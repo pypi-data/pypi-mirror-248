@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: oliver_dl
+Version: 0.1.0
+Summary: 
+Author: Tumi Pare
+Author-email: tumishangpare@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiohttp (>=3.9.1,<4.0.0)
+Requires-Dist: progressbar2 (>=4.3.2,<5.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Jerry
+***Meet Oliver, your video alchemist. Drop him an M3U8 link, and he'll whip up a lightning-fast concoction, delivering a sleek MP4 straight to your local realm. Oliver's all about that need-for-speed vibe!***
+
+**make sure you have [ffmpeg](https://ffmpeg.org/download.html) installed**
+
+
+**Install poetry**
+```bash
+pip install poetry
+```
+
+**Install dependancies**
+```bash
+poetry install
+```
+
+**Create and run virtual environment**
+```bash
+poetry shell
+```
+
+**run**
+```bash
+python oliver.py
+```
