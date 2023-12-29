@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+oreiller/__init__.py
+oreiller/oreiller.py
+oreiller.egg-info/PKG-INFO
+oreiller.egg-info/SOURCES.txt
+oreiller.egg-info/dependency_links.txt
+oreiller.egg-info/requires.txt
+oreiller.egg-info/top_level.txt
