@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+scr/vegbox.egg-info/PKG-INFO
+scr/vegbox.egg-info/SOURCES.txt
+scr/vegbox.egg-info/dependency_links.txt
+scr/vegbox.egg-info/top_level.txt
+scr/vixlib/__init__.py
+scr/vixlib/vegetationindex.py

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vegbox"
+version = "0.0.1"
+authors = [
+  { name="Derraz Radhwane", email="derrazradhwane@gmail.com" },
+]
+description = "vegbox is a powerful Python library designed for calculating and analyzing vegetation indices from remote sensing and spectral data."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://www.linkedin.com/in/derraz-radhwane-phd-60649022a/"
+Issues = "https://www.linkedin.com/in/derraz-radhwane-phd-60649022a/"
