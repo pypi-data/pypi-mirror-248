@@ -1,0 +1,19 @@
+{% extends "oauthx/base.html.j2" %}
+{% set page_heading=_("Welcome to WebIAM") %}
+{% set page_title=_("Welcome") %}
+
+
+{% block content %}
+<section class="action">
+  <div class="text">
+  </div>
+</section>
+{% endblock %}
+
+{% block navigation %}
+  {% if logout_url is defined %}
+  <form method="POST" action="{{ logout_url }}">
+    <button class="btn w-100" type="submit">{{ _("Switch account") }}</button>
+  </form>
+  {% endif %}
+{% endblock %}
