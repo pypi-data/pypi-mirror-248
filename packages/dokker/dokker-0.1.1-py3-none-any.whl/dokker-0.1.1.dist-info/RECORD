@@ -1,0 +1,8 @@
+dokker/__init__.py,sha256=UuDCorcsHTUDWtiB87HHpMhQPLTa3Riculx4ObixnTE,244
+dokker/builders.py,sha256=O6VlvtirvjLABUiYYK5v7tzrX5kQn7ekWfEPoSOiAxs,218
+dokker/compose_spec.py,sha256=8DMy6H_tlbix7_P9v-hXcbmv7zBTEiW5oZYRR7JpEyA,14897
+dokker/project.py,sha256=SExKKPQWIbeCD_Dyp_-uyYI1IGiHubD_V17iMJFrILY,1297
+dokker/setup.py,sha256=mWzo5ROZgLeEpKgQLItn1XTXcxPzecFL5EZXCP776yc,5951
+dokker-0.1.1.dist-info/METADATA,sha256=AMJTQ5Br6Xm6PEWoTxk644nxlr6x6bT_-NzPLViKtVc,762
+dokker-0.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+dokker-0.1.1.dist-info/RECORD,,
