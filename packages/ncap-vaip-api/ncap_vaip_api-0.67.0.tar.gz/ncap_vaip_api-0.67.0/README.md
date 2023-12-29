@@ -1,0 +1,60 @@
+Use the vAIP API to help build up entities based on the vAIP ontologies.
+
+There are a few example files demonstrating use:
+- `pattern_example.py`: creates an IdentityStoragePattern and deploys it to an S3 bucket
+- `process_example.py`: creates all StorageTemplates and TaskTemplates for a single ProcessTemplate, and deploys the ProcessTemplate to Neptune
+- `premade_patterns.py`: a collection of functions that build the Patterns used for most of the ProcessTemplates defined in `api/vaip/process_templates`.
+
+
+# Cloud9 SQLite Version Upgrade
+OwlReady2 currently requires at least sqlite3.41, Cloud9 starts with 3.7.x.
+Below are the steps to upgrade to a compatiable version.
+```
+## Download
+curl https://www.sqlite.org/2023/sqlite-autoconf-3420000.tar.gz | tar xzf - 
+
+##Move into the folder
+cd sqlite-autoconf-3420000/ && ./configure
+
+make
+
+sudo make install
+
+## list your sqlite locations
+whereis sqlite3
+
+## Move out of the install folder
+cd ..
+
+#sqlite version paths
+sudo cp sqlite-autoconf-3420000/sqlite3 /usr/local/bin/sqlite3
+sudo cp sqlite-autoconf-3420000/sqlite3 /opt/c9/bin/sqlite3
+sudo cp sqlite-autoconf-3420000/sqlite3.h /usr/include/sqlite3.h
+
+## Define the path to new version
+export LD_LIBRARY_PATH="/usr/local/lib"
+
+## Cleanup 
+rm -r sqlite-autoconf-3420000 
+```
+
+To validate the version of sqlite3 your Python environment is using, run this Python code:
+```
+import sqlite3
+print(sqlite3.sqlite_version)
+print(sqlite3.__file__)
+```
+or in a single line:
+```
+python -c "import sqlite3; print(sqlite3.sqlite_version); print(sqlite3.__file__)"
+```
+
+## To trigger a process e.g. dscovr_mag
+python trigger_process.py \
+https://ncei.noaa.gov/vaip/template/process/d54a223c-6f6b-4f51-b0f2-8f2ab0ceccab/d54a223c-6f6b-4f51-b0f2-8f2ab0ceccab \
+nccf-dev-ingest-trust-us-east-1-560271376700 SWPC/DSCOVR/MAG/mg0/2023/05/ neufie
+
+## To trigger a process e.g. ccor1
+python trigger_process.py \
+https://ncei.noaa.gov/vaip/template/process/9bbf9afb-cb40-46e3-a9e1-c43b4addac04/9bbf9afb-cb40-46e3-a9e1-c43b4addac04 \
+nccf-dev-ingest-trust-us-east-1-560271376700 SWPC/GOES-U/CCOR-1/ccor1-l0b/2023/09/05/ neufie 

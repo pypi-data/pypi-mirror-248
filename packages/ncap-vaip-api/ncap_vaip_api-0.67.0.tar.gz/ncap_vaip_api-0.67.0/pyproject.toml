@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling","owlready2","pyshacl"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ncap-vaip-api"
+version = "0.67.0"
+authors = [
+  { name="NCEI", email="ncap.support@noaa.gov" },
+]
+description = "A package representing an API implementation of the vAIP ontology"
+readme = "README.md"
+
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Development Status :: 4 - Beta",
+    "Operating System :: OS Independent",
+]
+
+[tool.hatch.build]
+include = [
+  "vaip/*",
+]
+exclude = [
+  "vaip/tests",
+  "vaip/graphs",
+  "vaip/process_templates"
+]
+
+[tool.pytest.ini_options]
+addopts = "-n auto --html=report.html --css=vaip/tests/pytest-style.css --self-contained-html"
+pythonpath = [
+  "vaip"
+]
+testpaths = [
+  "vaip/tests"
+]

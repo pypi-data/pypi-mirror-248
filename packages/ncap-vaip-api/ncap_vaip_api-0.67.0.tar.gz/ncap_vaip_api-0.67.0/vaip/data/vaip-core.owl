@@ -1,0 +1,924 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://ncei.noaa.gov/vaip/ontologies/vaip-core#"
+     xml:base="https://ncei.noaa.gov/vaip/ontologies/vaip-core"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core">
+        <owl:versionInfo>1.1.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#addsMeaningTo -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#addsMeaningTo">
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#SemanticRepresentation"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#StructureRepresentation"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">addsMeaningTo</rdfs:label>
+        <skos:definition xml:lang="en">Relates a semantic representation information object to a structural representation information object indicating that the semantic object is providing some valuable meaning to the structure object.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#derivedFromArchivalInformationCollection -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#derivedFromArchivalInformationCollection">
+        <rdfs:subPropertyOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#derivedFromArchivalInformationPackage"/>
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#CollectionDescription"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#ArchivalInformationCollection"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">derivedFromAIC</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#derivedFromArchivalInformationPackage -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#derivedFromArchivalInformationPackage">
+        <rdfs:subPropertyOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#derivedFromInformationPackage"/>
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#DescriptiveInformationObject"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#ArchivalInformationPackage"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">derivedFromAIP</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#derivedFromArchivalInformationUnit -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#derivedFromArchivalInformationUnit">
+        <rdfs:subPropertyOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#derivedFromArchivalInformationPackage"/>
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#AssociatedDescription"/>
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#UnitDescription"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#ArchivalInformationUnit"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">derivedFromAIU</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#derivedFromInformationPackage -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#derivedFromInformationPackage">
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#PackageDescription"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#InformationPackage"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">derivedFromPackage</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#derivedFromPackageDescription -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#derivedFromPackageDescription">
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#MemberDescription"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#PackageDescription"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">derivedFromDescription</rdfs:label>
+        <skos:definition xml:lang="en">Identifies a member description as having been derived from the package description(s) of some of its content AIPs (either AIUs or AICs).</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#describedBy -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#describedBy">
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#InformationPackage"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#PackageDescription"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">describedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#describedByCollectionDescription -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#describedByCollectionDescription">
+        <rdfs:subPropertyOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#describedBy"/>
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#ArchivalInformationCollection"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#CollectionDescription"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">describedByCollectionDescription</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#describedByMemberDescription -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#describedByMemberDescription">
+        <rdfs:subPropertyOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#describedBy"/>
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#ArchivalInformationPackage"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#MemberDescription"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">describedByMembership</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#describedByOverviewDescription -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#describedByOverviewDescription">
+        <rdfs:subPropertyOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#describedBy"/>
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#ArchivalInformationCollection"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#OverviewDescription"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">describedByOverview</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasAccessRights -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasAccessRights">
+        <rdfs:subPropertyOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasPreservationInformation"/>
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#InformationPackage"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#AccessRightsPreservation"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">hasAccessRights</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasAssociatedDescription -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasAssociatedDescription">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#PackageDescription"/>
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#UnitDescription"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#AssociatedDescription"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">hasAssociatedDescription</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasContentInformation -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasContentInformation">
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#InformationPackage"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#ContentInformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">hasContent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasContext -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasContext">
+        <rdfs:subPropertyOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasPreservationInformation"/>
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#InformationPackage"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#ContextPreservation"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">hasContext</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasDataObject -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasDataObject">
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#InformationObject"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#DataObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">hasData</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasFixity -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasFixity">
+        <rdfs:subPropertyOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasPreservationInformation"/>
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#InformationPackage"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#FixityPreservation"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">hasFixity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasInformationPackage -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasInformationPackage">
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#ContentInformationObject"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#InformationPackage"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">hasInformationPackage</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasMemberDescription -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasMemberDescription">
+        <rdfs:subPropertyOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasAssociatedDescription"/>
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#CollectionDescription"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#MemberDescription"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">hasMemberDescription</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasOtherRepresentation -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasOtherRepresentation">
+        <rdfs:subPropertyOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core/#hasRepresentation"/>
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#InformationObject"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#OtherRepresentation"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">hasOtherRepresentation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasOverviewDescription -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasOverviewDescription">
+        <rdfs:subPropertyOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasAssociatedDescription"/>
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#CollectionDescription"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#OverviewDescription"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">hasOverviewDescription</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasPackageDescription -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasPackageDescription">
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#CollectionDescription"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#CollectionDescription"/>
+                    <rdf:Description rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#UnitDescription"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">hasPackageDescription</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasPreservationInformation -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasPreservationInformation">
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#InformationPackage"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#PreservationDescriptionInformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">hasPreservationInformation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasProvenance -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasProvenance">
+        <rdfs:subPropertyOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasPreservationInformation"/>
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#InformationPackage"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#ProvenancePreservation"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">hasProvenance</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasReference -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasReference">
+        <rdfs:subPropertyOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasPreservationInformation"/>
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#InformationPackage"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#ReferencePreservation"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">hasReference</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasSemanticRepresentation -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasSemanticRepresentation">
+        <rdfs:subPropertyOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core/#hasRepresentation"/>
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#InformationObject"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#SemanticRepresentation"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">hasSemantics</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasStructureRepresentation -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasStructureRepresentation">
+        <rdfs:subPropertyOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core/#hasRepresentation"/>
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#InformationObject"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#StructureRepresentation"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">hasStructure</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#identifiesPackage -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#identifiesPackage">
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#PackagingInformationObject"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#InformationPackage"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">identifiesPackage</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#packagedBy -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#packagedBy">
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#InformationPackage"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#PackagingInformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">packagedAs</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#preservedBy -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#preservedBy">
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#ContentInformationObject"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#PreservationDescriptionInformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">preservedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#providesDataFor -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#providesDataFor">
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#AssociatedDescription"/>
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#MemberDescription"/>
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#OverviewDescription"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#AccessAid"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">providesDataFor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core/#hasRepresentation -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core/#hasRepresentation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#InformationObject"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#RepresentationInformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">hasRepresentation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasBits -->
+
+    <owl:DatatypeProperty rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasBits">
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">hasBits</rdfs:label>
+        <skos:definition xml:lang="en">specifies the value or reference that is the concern of a particular information object that makes up some part of an information package.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasLink -->
+
+    <owl:DatatypeProperty rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasLink">
+        <rdfs:subPropertyOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasBits"/>
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#DataObject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">hasLink</rdfs:label>
+        <skos:definition xml:lang="en">Identifies that an Information Object&apos;s data of interest should be held as IRI link that points to some other resource (rather than holding data directly).</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasValue -->
+
+    <owl:DatatypeProperty rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasValue">
+        <rdfs:subPropertyOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasBits"/>
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#DataObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">hasValue</rdfs:label>
+        <skos:definition xml:lang="en">Identifies that an Information Object&apos;s data of interest should be held as value (rather than linked as a reference or pointer).</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#AccessAid -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#AccessAid">
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">Access Aid</rdfs:label>
+        <skos:definition xml:lang="en">An Access Aid is a software program or document that allows Consumers to locate, analyze, order or retrieve information from the system. An Access Aid may be something like a view, a portal, or a location to help machines or humans find, retrieve, order, or otherwise interface with data held or known about by the system.</skos:definition>
+        <skos:example xml:lang="en">Google is an Access Aid, the vAIP API is an Access Aid, Payment systems, weather alert platforms like WeatherUnderground and Ventusky, the NODD interface, ArcGIS, are all access aids.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#AccessRightsPreservation -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#AccessRightsPreservation">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#PreservationDescriptionInformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">Access Rights</rdfs:label>
+        <skos:definition xml:lang="en">The information that identifies the access restrictions pertaining to the Content Information, including the legal framework, licensing terms, and access control. It contains the access and distribution conditions stated within the Submission Agreement, related to both preservation (by the OAIS) and final usage (by the Consumer). It also includes the specifications for the application of rights enforcement measures.</skos:definition>
+        <skos:example xml:lang="en">An example of access rights would be a software license; a policy describing specific users that may access the resource or that may not access the resource; a policy describing how to acquire the resource and how to pay for the resource.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#ArchivalInformationCollection -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#ArchivalInformationCollection">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#ArchivalInformationPackage"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">Archival Information Collection</rdfs:label>
+        <skos:definition xml:lang="en">An Archival Information Collection (AIC) is an Archival Information Package whose Content Information is based on a manipulation of other Archival Information Packages. Archival Information Collections represent Context Transformation patterns that allow other AIPs (either AIUs or AICs) to be split, joined, accumulated, filtered, subset, or otherwise transformed and then expressed in explicit shapes and semantics.</skos:definition>
+        <skos:example xml:lang="en">An example of an AIC could be a determination of PII; a feature extraction of volcanoes, weather events, cloud cover, land cover, or some other physical property; a security score of a package; a confidence score of a user score; a human labeled feature value from a human-in-the-middle workflow; a rolling window of granule data based on a time-interval; a masked collection of pixels from a base image; a blend/fusion of an in-situ sensor snapshot (or snapshot convolution) with satellite data; a particular arrangement of people related to a particular study; a summary of input text; a generated image based on raw sources; a prediction of a weather event; etc.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#ArchivalInformationPackage -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#ArchivalInformationPackage">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#InformationPackage"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">Archival Information Package</rdfs:label>
+        <skos:definition xml:lang="en">An Archival Information Package (AIP) is an Information Package, consisting of the Content Information and the associated Preservation Description Information (PDI), which is preserved within the system.</skos:definition>
+        <skos:example xml:lang="en">An example of an archival information package might be a package that contains and preserves a satellite granule; a package that contains and preserves a twitter tweet; a package that contains and preserves a record of a moon rock; a package that contains and preserves a record of a software model; a package that contains and preserves a record of a system user.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#ArchivalInformationUnit -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#ArchivalInformationUnit">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#ArchivalInformationPackage"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">Archival Information Unit</rdfs:label>
+        <skos:definition xml:lang="en">An Archival Information Unit (AIU) is an Archival Information Package where the Archive chooses not to break down the Content Information into other Archival Information Packages. An AIU can consist of multiple digital objects (e.g., multiple files). An AIU is pattern-defined by the user to specify the shape of some type of entity that the user cares about.</skos:definition>
+        <skos:example xml:lang="en">An example of an AIU might be a granule; a file containing collection metadata; a daily multi-parameter sensor log from an ASOS station; a record describing the ASOS station; a record describing the MetOp-SG satellite program; a record describing the OSIM access aid; a record describing a system process provider and their capabilities; a record describing a principal investigator; a record holding reference to a software model for climate forecasting; a record describing an order for data; a record describing a fulfillment of an order for data; a record describing a volcano; a record describing the sun; etc.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#AssociatedDescription -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#AssociatedDescription">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#DescriptiveInformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">Associated Description</rdfs:label>
+        <skos:definition xml:lang="en">An associated description is information describing the content of an Information Package - either an Archival Information Unit (AIU), Archival Informaiton Collection (AIC), Dissemination Information Package (DIP), or Submission Information Package (SIP), from the point of view of a particular Access Aid.</skos:definition>
+        <skos:example xml:lang="en">An associated description for a nexrad3 granule intended for use by the Common Metadata Repository may be something like, this nexrad3 granule provides most ISO-19115-2 fields but historically is missing some of the protocol information and uses the provider field to capture the agency provider rather than the direct provider.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#CollectionDescription -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#CollectionDescription">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#PackageDescription"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">Collection Description</rdfs:label>
+        <skos:definition xml:lang="en">A collection description is a type of Package Description that is specialized to provide information about an Archival Information Collection for use by Access Aids or system users (either machine or human). Collection Descriptions have internal structure in terms of their content information, in that they provide both an overview description and member descriptions.</skos:definition>
+        <skos:example xml:lang="en">An example of a collection package (AIC) description might be - this AIC holds a vocabulary that expresses the result of a relationship between a subset of a satellite data stream, an in-situ field sensor network, and normalized gridded temperatures predicted from fusion of the two, for consumption by access aids that display raster data in NetCDF format.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#ContentInformationObject -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#ContentInformationObject">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#InformationObject"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#preservedBy"/>
+                <owl:someValuesFrom rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#PreservationDescriptionInformationObject"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">Content</rdfs:label>
+        <skos:definition xml:lang="en">Content Information is the set of information that is the original target of preservation or that includes part or all of that information. It is an Information Object composed of its Content Data Object (either physical or digital) and its Representation Network. Content Information may have a data object of a file, with representation information files about how the target file is structured, what terms in the file mean, and how to read or access the file. Content Information objects may also have a data object that textually describes a physical object like the sun, and provides representation information allowing human or machine users to interpret that description to better understand the target physical object.</skos:definition>
+        <skos:example xml:lang="en">Content may be a descriptive record of a human system user, along with structural information that describes how to read that human users record and semantic information that describes what each part of the user description means.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#ContextPreservation -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#ContextPreservation">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#PreservationDescriptionInformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">Context</rdfs:label>
+        <skos:definition xml:lang="en">Context information is preservation information that documents the relationships of the Content Information to its environment. This includes why the Content Information was created and how it relates to other Content Information objects.</skos:definition>
+        <skos:example xml:lang="en">Context preservation information for an AIU that contains content that is part of a satellite data stream may point to AIU patterns of related satellite data streams; AIUs that capture representations of the satellite platform the readings came from; AIUs that relate to documents describing the mission and its parameters like when it launched, when it end,s, what the coverage is, and what some uses are; AIUs that capture the originating message as a SIP; AICs that express a viewpoint of the data like geo extracted replica features, forecasts, or projections; or DIPs that relate to delivery of the data to some access aid like a catalog.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#DataObject -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#DataObject">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">Data</rdfs:label>
+        <skos:definition xml:lang="en">Data Objects are the storage target of an Information Object. Users must specify a data object as either a Digital Object or a Physical Object. Any type of Data Object, whether Digital or Physical, has a single &apos;hasBits&apos; relationship that points either to directly stored data or a link to data. Data Objects are contextualized within Information Objects through association to Representation Networks.</skos:definition>
+        <skos:example xml:lang="en">Data may include the sun, stars, a tree, an oak tree, a user, a satellite, a cruise ship, a measurement, a metadata catalog, an access aid, a country, a granule, a file containing collection record information, a software package.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#DescriptiveInformationObject -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#DescriptiveInformationObject">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#InformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">Description</rdfs:label>
+        <skos:definition xml:lang="en">Descriptive Information is the set of information, consisting primarily of Package Description(s), made available to Data Management to support the finding, ordering, and retrieving of system information holdings by Consumers (either human or machine).</skos:definition>
+        <skos:example xml:lang="en">Description for a granule might include the type of data it holds, the platform, the sensor, and the primary collector, e.g. this pattern defines a nexrad3 granule which provides real-time radar data collected by NWS. As a general rule, the more descriptive a description is the better, but it should balance description with being concise and readable. Descriptions may form the basis for descriptive-based search for users or machines, via methods like entity extraction, summary, keyword extraction, etc.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#DigitalObject -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#DigitalObject">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#DataObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">Digital Object</rdfs:label>
+        <skos:definition xml:lang="en">A digital object is a data object that is composed of a set of bit sequences. Digital Objects should specify whether they directly hold data (bit sequences) or link to bit sequences held elsewhere. Digital objects represent &apos;digital native&apos; data and concepts such as software packages, models, digital access aids, user roles, digital identifiers, and data licenses.</skos:definition>
+        <skos:example xml:lang="en">A digital object may include a software package, a software system, an algorithm, a digital poster, an organizational role, a software license, a granule, a sensor reading, a management framework.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#DisseminationInformationPackage -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#DisseminationInformationPackage">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#InformationPackage"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">Dissemination Information Package</rdfs:label>
+        <skos:definition xml:lang="en">A Dissemination Information Package is derived from one or more AIPs, and sent by Archives to the Consumer in response to a request to the system. DIPs are user-patterned to specify the shape that records some data delivery to a human or machine consumer outside of the system, either directly or via an access aid.</skos:definition>
+        <skos:example xml:lang="en">A record of a delivery to CMR; a record of delivery to another vAIP instance; a record of a delivery to an S3 bucket; a record of delivery to a user via ftp; a record of delivery to an ArcGIS feature service directory; a record of delivery to a user via API.</skos:example>
+    </owl:Class>
+    
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#FindingAid -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#FindingAid">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#AccessAid"/>
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#ArchivalInformationUnit"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">Finding Aid</rdfs:label>
+        <skos:definition xml:lang="en">A Finding Aid is a type of Access Aid that allows a system user to search for and identify Archival Information Packages (AIPs) of interest. Sharing use of common Finding Aids is one way an extended Consumer community, in the context of Federated Archives, may be defined.</skos:definition>
+        <skos:example xml:lang="en">The vAIP API, as the core interface to the Knowledge Graph, is a Finding Aid. One Stop Inventory Manager is a finding aid. The World Ocean Database is a finding aid. The Know Where Graph is a finding aid, the Common Metadata repository is a finding aid, and google is a finding aid.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#FixityPreservation -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#FixityPreservation">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#PreservationDescriptionInformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">Fixity</rdfs:label>
+        <skos:definition xml:lang="en">Fixity is preservation information which documents the mechanisms that ensure that the Content Information object has not been altered in an undocumented manner. An example is a Cyclical Redundancy Check (CRC) code for a file or a checksum. Fixity Information includes special encoding and error detection schemes that are specific to instances of Content Objects. Fixity Information does not include the integrity preserving mechanisms provided by the OAIS underlying services, error protection supplied by the media and device drivers used by Archival Storage. The Fixity Information may specify minimum quality of service requirements for these mechanisms.</skos:definition>
+        <skos:example xml:lang="en">Examples of fixity for a file based AIU might be a checksum value and associated representation information; some record of independent audit or validation like CoreTrustSeal certification.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#InformationObject -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#InformationObject">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasDataObject"/>
+                <owl:someValuesFrom rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#DataObject"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasOtherRepresentation"/>
+                <owl:someValuesFrom rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#OtherRepresentation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasSemanticRepresentation"/>
+                <owl:someValuesFrom rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#SemanticRepresentation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasStructureRepresentation"/>
+                <owl:someValuesFrom rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#StructureRepresentation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">Information Object</rdfs:label>
+        <skos:definition xml:lang="en">An Information Object is a Data Object together with its Representation Information. Information Objects are the fundamental building blocks of the system, and system users typically interact with specific types of information objects.</skos:definition>
+        <skos:example xml:lang="en">An information object of content type may be labeled as File with a data object of File Link that has a hasLink relationship to the file stored on disk or a data object of File Content that stores a direct bit representation of the file. Either of these content examples would also carry the format of the file itself in structure information, and the schema of the file contents plus definitions of the concepts that make up the file schema in semantic representation, and ideally links to software that are able to read and interpret the file contents as other representation.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#InformationPackage -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#InformationPackage">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#describedBy"/>
+                <owl:someValuesFrom rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#PackageDescription"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasContentInformation"/>
+                <owl:someValuesFrom rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#ContentInformationObject"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#hasPreservationInformation"/>
+                <owl:someValuesFrom rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#PreservationDescriptionInformationObject"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#packagedBy"/>
+                <owl:someValuesFrom rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#PackagingInformationObject"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">Information Package</rdfs:label>
+        <skos:definition xml:lang="en">An Information Package is a logical container composed of optional Content Information and optional associated Preservation Description Information. Associated with this Information Package is Packaging Information used to delimit and identify the Content Information and Package Description information used to facilitate searches for the Content Information.</skos:definition>
+        <skos:example xml:lang="en">An information package might be a SIP that represents a process-triggering message from NCCF secure ingest; it might be an AIU for a satellite granule from MetOp-SG; it might be an AIC that provides a subset window for a time period of AIUs or an AIC that provides information on whether or not a software package is secure and any recommendations for remediation; it might be a DIP that represents a delivery of granule metadata to the OneStop Inventory Manager ISO-19115-2 Catalog Manager.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#MemberDescription -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#MemberDescription">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#AssociatedDescription"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">Member Description</rdfs:label>
+        <skos:definition xml:lang="en">A member description describes a particular collection member and its contextual purpose within a collection and how it is relevant to a particular user or access aid. Member descriptions are types of associated descriptions.</skos:definition>
+        <skos:example xml:lang="en">A member description for a specific filter raster in an AIC that also pulls in a satellite image might be, this filter provides a 6x6 convolutional mask for simplification of surface features in order to smooth land cover for broad extraction.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#OrderingAid -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#OrderingAid">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#AccessAid"/>
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#ArchivalInformationUnit"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">Ordering Aid</rdfs:label>
+        <skos:definition xml:lang="en">An Ordering Aid is an Access Aid application that assists system users (Consumers) in discovering the cost of, and in ordering, AIPs of interest to potentially generate and return DIPs.</skos:definition>
+        <skos:example xml:lang="en">The vAIP API is fundamental to many Ordering Aids implementing the vAIP Model. Order specific higher level APIs may be ordering aids. Portals wrapping ESA&apos;s openEO, or DestinationEarth; subsetting services running in the context of commodity hardware like token-backed use of ERDDAP; and an interface serving data from an S3 bucket, are all examples of ordering aids.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#OtherRepresentation -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#OtherRepresentation">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#RepresentationInformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">Other Representation</rdfs:label>
+        <skos:definition xml:lang="en">Representation Information which cannot easily be classified as Semantic or Structural. For example software, algorithms, encryption, written instructions and many other things may be needed to understand the Content Data Object, all of which therefore would be, by definition, Representation Information, yet would not obviously be either Structure or Semantics. Information defining how the Structure and the Semantic Information relate to each other, or software needed to process a database file would also be regarded as Other Representation Information.</skos:definition>
+        <skos:example xml:lang="en">Software that can read a file; algorithms or written intstructions on parsing a file; directions on how to process a biological sample; a narrative about why a particular text is meaningful, are all examples of other representation.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#OverviewDescription -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#OverviewDescription">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#AssociatedDescription"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">Overview Description</rdfs:label>
+        <skos:definition xml:lang="en">An overview description is a specialization of the collection description that describes the archival information collection (AIC) as a whole. This should describe the purpose of a transformation and what the membership expresses.</skos:definition>
+        <skos:example xml:lang="en">An overview for an AIC context transformation that does PII identification might say, this AIC holds a vocabulary expressing whether or not the images that flow through it hold PII related to health data, if they are restricted, what the id of the image is, and if so identify personnel that need to be notified for rectification.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#PackageDescription -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#PackageDescription">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#DescriptiveInformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">Package Description</rdfs:label>
+        <skos:definition xml:lang="en">The package description is information that is intended for use by access aids and system users, either machine or human. Package descriptions should allow a user, either general or targeted, to identify and understand the purpose of a particular package at a high level.</skos:definition>
+        <skos:example xml:lang="en">A prototypical example of a package description for an AIU might say, this AIU concerns storage of a netcdf file that holds NEXRAD3 data. A prototypical example of a package description for an AIC might say, this AIC holds the expression of any weather event features found within the input raster along with entity guesses and confidence scores for those parameters. A prototypical example of a package description for a DIP might say, this DIP represents delivery to an ArcGIS Server layer access aid for use in ESRI oriented analysis.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#PackagingInformationObject -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#PackagingInformationObject">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#InformationObject"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#identifiesPackage"/>
+                <owl:someValuesFrom rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#InformationPackage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">Packaging</rdfs:label>
+        <skos:definition xml:lang="en">The information that is used to bind and identify the components of an Information Package. For example, it may be the ISO 9660 volume and directory information used on a CD-ROM to provide the content of several files containing Content Information and Preservation Description Information.</skos:definition>
+        <skos:example xml:lang="en">For content data in an AIU held in S3, the packaging would contextualize that data in terms of the bucket name and prefix strategy, for example the NCCF satellite prefix strategy, the AWS S3 specification that describes durability guarantees, and software or APIs capable of reading and writing S3 data, for example boto3.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#PhysicalObject -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#PhysicalObject">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#DataObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">Physical Object</rdfs:label>
+        <skos:definition xml:lang="en">A type of data object that has physically observable properties (such as a moon rock, bio-specimen, microscope slide) that represent information considered suitable for being adequately documented for preservation, distribution, and independent usage. Representations of physical objects may include things like people, places, and things.</skos:definition>
+        <skos:example xml:lang="en">A physical object with a virtual representation is something like a person, a book, a published paper, a tape system, a hard drive, a spaceship, a river, a car, a weather event.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#PreservationDescriptionInformationObject -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#PreservationDescriptionInformationObject">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#InformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">Preservation</rdfs:label>
+        <skos:definition xml:lang="en">The information which is necessary for adequate preservation of the Content Information and which can be categorized as Provenance, Reference, Fixity, Context, and Access Rights Information.</skos:definition>
+        <skos:example xml:lang="en">Preservation information provides information that somehow preserves the target data of the content information object of an information package. This could take the form of an access policy or restriction (access rights); some related packages that are available to the archive like AICs describing how the package may be expressed for a specific viewpoint or access aid (context); what some checksum or hash of the data object was calculated (fixity); what was the chain of custody of the object (provenance); or how to cite the object (reference).</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#ProvenancePreservation -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#ProvenancePreservation">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#PreservationDescriptionInformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">Provenance</rdfs:label>
+        <skos:definition xml:lang="en">Provenance is preservation information that documents the history of the Content Information. This information tells the origin or source of the Content Information, any changes that may have taken place since it was originated, and who has had custody of it since it was originated. The Archive is responsible for creating and preserving Provenance Information from the point of Ingest; however, earlier Provenance Information should be provided by the Producer. Provenance Information adds to the evidence to support Authenticity. This gives future users some assurance as to the likely reliability of the Content Information as it contributes to evidence supporting Authenticity. Provenance can be viewed as a special type of context information.</skos:definition>
+        <skos:example xml:lang="en">Provenance information for a physical sample likely would include a chain of custody; for a software package, a semantic versioning log and/or revision notes; for a document, a record of changes with supporting information. It would also include generally for system processes, patterns, or tasks, a link to the AIC version container.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#ReferencePreservation -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#ReferencePreservation">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#PreservationDescriptionInformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">Reference</rdfs:label>
+        <skos:definition xml:lang="en">Reference is information that is used as an identifier for the Content Information. It also includes identifiers that allow outside systems to refer unambiguously to a particular Content Information. An example of Reference Information is an ISBN. Reference Information identifies, and if necessary describes, one or more mechanisms used to provide assigned identifiers for the Content Information. It also provides those identifiers that allow outside systems to refer, unambiguously, to this particular Content Information. Examples of these systems include taxonomic systems, reference systems and registration systems. In the OAIS Reference Model most if not all of this information is replicated in Package Descriptions, which enable Consumers to access Content Information of interest via specific Access Aids.</skos:definition>
+        <skos:example xml:lang="en">Reference information is typically something like a DOI; a UUID with universe context; a PID; or a dewey decimal system like number.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#RepresentationInformationObject -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#RepresentationInformationObject">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#InformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">Representation</rdfs:label>
+        <skos:definition xml:lang="en">The information that maps a Data Object into more meaningful concepts. An example of Representation Information for a bit sequence which is a FITS file might consist of the FITS standard which defines the format plus a dictionary which defines the meaning in the file of keywords which are not part of the standard.</skos:definition>
+        <skos:example xml:lang="en">Representation as a holistic concept provides meaning to data objects so it can ultimately be interpreted by any human or machine user, so representation for a file would be things like format (is it NetCDF? Version 4? is it GRIB? Is it Zarr?Is it a shapefile? CSV? Is it unstructured text?); What is the schema of the file itself (if its unstructured text, is it just one big blob? Is it inside a json map under a specific field with some other metadata fields?); What is the semantic meaning of every field in the schema and the content (What do the content labels mean? Is the unstructured text relevant to some particular topic? Is the NetCDF 4 file have lat/lon data that is spatially relevant?); and any other helpful representation (can it be read by panoply? by ArcGIS? What python libraries are most useful? Organizational software?)</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#RetrievalAid -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#RetrievalAid">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#AccessAid"/>
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#ArchivalInformationUnit"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">Retrieval Aid</rdfs:label>
+        <skos:definition xml:lang="en">A Retrieval Aid is an Access Aid application that allows authorized users to retrieve the Content Information and Preservation Information (PDI) described by the Package Description.</skos:definition>
+        <skos:example xml:lang="en">Retrieval aids are system dashboards that provide metadata like user information, performance or identification information; or pattern-specific dashboards for specific types of archived data like granules, collection records, weather events, alerts, or system nodes or users.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#SemanticRepresentation -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#SemanticRepresentation">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#RepresentationInformationObject"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#addsMeaningTo"/>
+                <owl:someValuesFrom rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#StructureRepresentation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">Semantic Representation</rdfs:label>
+        <skos:definition xml:lang="en">The Representation Information that further describes the meaning beyond that provided by the Structure Information. Semantic information is typically concerned with schema and schema meaning, measurement scales, and units.</skos:definition>
+        <skos:example xml:lang="en">Semantic information, being related to high level meaning, provides interpretation of schema to make it understandable, and can be quite varied and complex. For digital objects, semantic information might assign special meanings to all the elements in the structure information. It might describe the meaning of location parameters as longitude and latitude; temperature as referring to a celsius, kelvin, or farenheit scale; a pixel color representing a particular classification of crop; a weight as a kilogram.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#StructureRepresentation -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#StructureRepresentation">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#RepresentationInformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">Structure Representation</rdfs:label>
+        <skos:definition xml:lang="en">Structure Information is Representation Information that imparts meaning about how other information is organized. For example, it maps bit streams to common computer types such as characters, numbers, and pixels and aggregations of those types such as character strings and arrays. Structure information is typically concerned with format and type.</skos:definition>
+        <skos:example xml:lang="en">Structure information for a file would be to classify it in terms of format - such as unstructured text, CSV, JSON, JSON-LD, NetCDF, Zarr, GRIB2, etc.; data structures in the file as pixels, arrays, tables, etc; document objects as Word, Google Doc, RTF, or PDF formatted; and possibly deeper on datum themselves, including if it is a scaled integer, an IEEE real, a Floating point number, a strings, etc. are also types of structure representation. Structure information for a physical object would provide additional meaning to an analysis of its physical properties - so if the physical object is a moon rock, the structure information would refer to some information about the rock in terms of attributes such as weight, diameter, color, ambient temperature, the structure representation could further refer to understanding these analytical parameters as types such as floating point numbers, descriptive strings, etc.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#SubmissionInformationPackage -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#SubmissionInformationPackage">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#InformationPackage"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">Submission Information Package</rdfs:label>
+        <skos:definition xml:lang="en">An Information Package that is delivered by the Producer to the system for use in the construction or update of one or more AIPs and/or the associated Descriptive Information.</skos:definition>
+        <skos:example xml:lang="en">An typical example of an SIP might be a process API event that contains the configuration for running a system process with one parameter that references a file accessible to the system containing the payload data,  another parameter containing a security report for that file, and a third parameter containing an expected checksum.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/vaip/ontologies/vaip-core#UnitDescription -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/vaip/ontologies/vaip-core#UnitDescription">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core#PackageDescription"/>
+        <rdfs:isDefinedBy rdf:resource="https://ncei.noaa.gov/vaip/ontologies/vaip-core"/>
+        <rdfs:label xml:lang="en">Unit Description</rdfs:label>
+        <skos:definition xml:lang="en">Unit Description is a type of Package Description that is specialized to provide information about an Archival Information Unit for use by Access Aids.</skos:definition>
+        <skos:example xml:lang="en">A unit description for an AIU might be something like, this AIU holds a contextualized tweet that is related to drought based migration, it is suitable for use by access aids related to sentiment analysis and unstructured data processing and fusion.</skos:example>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

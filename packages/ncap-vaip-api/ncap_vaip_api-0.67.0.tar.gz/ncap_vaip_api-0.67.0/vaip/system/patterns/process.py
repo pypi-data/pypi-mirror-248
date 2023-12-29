@@ -1,0 +1,50 @@
+from ... import ontology
+
+def create_process_pattern(session):
+    title = "Process"
+    pattern = ontology.ProcessPattern(session, title)
+    cont = pattern.set_content("Tasks", field=None)
+    #TODO: Allow System Patterns to be incomplete, and remove below line.
+    cont.add_value_field("Pattern Placeholder")
+    cont.add_structure_representation("Format")
+    cont.add_semantic_representation("Description")
+    purpose_desc = pattern.add_description("Purpose", field={'title': 'Description', 'is_link': False})
+    purpose_desc.add_structure_representation("Format")
+    purpose_desc.add_semantic_representation("Meaning")
+    utility_desc = pattern.add_description("General Utility", field={'title': 'Description', 'is_link': False})
+    utility_desc.add_structure_representation("Format")
+    utility_desc.add_semantic_representation("Meaning")
+    packaging = pattern.add_packaging("Execution Resource", field={'title': 'Value', 'is_link': False})
+    packaging.add_structure_representation("Format")
+    packaging.add_semantic_representation("Description")
+    access_rights = pattern.add_access_rights("Access Rights", field={'title': 'Description', 'is_link': False})
+    access_rights.add_structure_representation("Format")
+    access_rights.add_semantic_representation("Meaning")
+    operating = pattern.add_context("Operating Mode", field={'title': 'Value', 'is_link': False})
+    operating.add_structure_representation("Format")
+    operating.add_semantic_representation("Description")
+    persistence = pattern.add_context("Persistence Mode", field={'title': 'Value', 'is_link': False})
+    persistence.add_structure_representation("Format")
+    persistence.add_semantic_representation("Description")
+    
+    # These fields below are to be set at runtime as part of the workflow-generated Process Record
+    start = pattern.add_fixity("Start Time", field={'title': 'Timestamp', 'is_link': False})
+    start.add_structure_representation("Format")
+    start.add_semantic_representation("Description")
+    end = pattern.add_fixity("End Time", field={'title': 'Timestamp', 'is_link': False})
+    end.add_structure_representation("Format")
+    end.add_semantic_representation("Description")
+    success = pattern.add_fixity("Execution Success", field={'title': 'Value', 'is_link': False})
+    success.add_structure_representation("Format")
+    success.add_semantic_representation("Description")
+    payload = pattern.add_fixity("Execution Payload", field={'title': 'Value', 'is_link': False})
+    payload.add_structure_representation("Format")
+    payload.add_semantic_representation("Description")
+    input = pattern.add_provenance("Input Message", field={'title': 'Payload', 'is_link': False})
+    input.add_structure_representation("Format")
+    input.add_semantic_representation("Description")
+    reference = pattern.add_reference("Execution Identifier", field={'title': 'Value', 'is_link': False})
+    reference.add_structure_representation("Format")
+    reference.add_semantic_representation("Description")
+    
+    return pattern
