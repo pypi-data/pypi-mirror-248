@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: wattrex-battery-cycler
+Version: 1.0.2
+Summary: Battery cycler control used to execute custom profile on multiple battery technologies.
+Author-email: Marius Crisan <mariuscrsn+pypi@gmail.com>, Javier Sanz <javiersanzmoline@gmail.com>, Roberto Aldea <r.aldea.csic+pypi@gmail.com>, Pablo Pastor <pastorpflores+pypi@gmail.com>, Luis Roche <luis.roche@hotmail.com>
+License: code/LICENSE.txt
+Project-URL: Homepage, https://github.com/WattRex/Battery-Cycler-Drivers
+Project-URL: Bug Reports, https://github.com/WattRex/Battery-Cycler-Drivers/issues
+Project-URL: Bug Tracker, https://github.com/WattRex/Battery-Cycler-Drivers/issues
+Project-URL: Source, https://github.com/WattRex/Battery-Cycler-Drivers/code/drv/drv_epc
+Project-URL: Funding, https://donate.pypi.org
+Keywords: Embedded Systems,Power Control,Lithium Battery Cycler,Battery,Industrial Battery,SoH,State of Health,SoC,State of Charge,Redox Flow Vanadium,Battery,Cycler,Battery Profiling
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: Topic :: Database
+Classifier: Topic :: File Formats :: JSON
+Classifier: Topic :: Internet :: Log Analysis
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Hardware :: Hardware Drivers
+Classifier: Topic :: System :: Networking :: Monitoring :: Hardware Watchdog
+Classifier: Topic :: System :: Power (UPS)
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: SQL
+Classifier: Programming Language :: Unix Shell
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: func_timeout>=4.3.5
+Requires-Dist: system-config-tool>=0.0.4
+Requires-Dist: system-logger-tool>=0.0.3
+Requires-Dist: system-shared-tool>=0.2.11
+Requires-Dist: wattrex-cycler-datatypes>=0.0.14
+Requires-Dist: wattrex-driver-db>=0.0.12
+Requires-Dist: wattrex-driver-epc>=0.0.8
+Requires-Dist: wattrex-driver-bms>=0.0.2
+Requires-Dist: wattrex-driver-flow>=0.0.3
+Requires-Dist: wattrex-driver-ea>=0.0.2
+Requires-Dist: wattrex-driver-rs>=0.0.1
+Requires-Dist: wattrex-driver-bk>=0.0.1
