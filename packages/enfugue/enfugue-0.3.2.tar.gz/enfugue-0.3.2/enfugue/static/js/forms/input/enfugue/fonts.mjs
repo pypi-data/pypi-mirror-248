@@ -1,0 +1,1 @@
+import{SelectInputView}from"../enumerable.mjs";class FontInputView extends SelectInputView{static defaultOptions=["Inconsolata","Lato","Lora","Merriweather","Montserrat","Noto Sans","Open Sans","Poppins","Quicksand","Raleway","Roboto","Ubuntu Mono","Work Sans"]}export{FontInputView};
