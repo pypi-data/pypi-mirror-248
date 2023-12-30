@@ -1,0 +1,49 @@
+[![wemake-python-styleguide](https://img.shields.io/badge/style-wemake-000000.svg)](https://github.com/wemake-services/wemake-python-styleguide)
+
+sice-python
+===========
+
+A library for accessing the SICE API for python.
+
+
+## Installation
+Installation is as simple as:
+
+    pip install sice-python
+
+## Usage
+Use our client to request a CDA through SICE.
+```python
+from sices.client import BaseClient
+
+client = BaseClient(
+    host='https://172.30.3.204:8443',
+)
+```
+
+## Methods
+- TODO
+
+## Resources
+There are two main resources.
+
+- [Confirmacion](sice/resources/confirmacion.py) our abstraction of cda, this goes through SICE as XML.
+- [Respuesta](spei/resources/respuesta.py) our abstraction of received SICE messages.
+
+## Errors
+SICE [errors](/sice/errors.py) response to CDA requests.
+
+These errors are included inside respuesta.
+
+## Test
+Tested with [mamba](https://mamba-framework.readthedocs.io/en/latest/), install poetry dev packages and then run tests.
+
+    poetry run make test
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
