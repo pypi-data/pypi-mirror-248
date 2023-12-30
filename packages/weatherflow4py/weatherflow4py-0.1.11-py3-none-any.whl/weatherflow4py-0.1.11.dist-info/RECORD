@@ -1,0 +1,10 @@
+weatherflow4py/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+weatherflow4py/api.py,sha256=zy2MfF19g4d29phEWPU9hg45rH97jq3VU85mYetEbKQ,3204
+weatherflow4py/exceptions.py,sha256=SeTTiTnqb1taDaqiIEL0n6wmsLZhvK-kWd_mMiPEmVo,115
+weatherflow4py/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+weatherflow4py/models/forecast.py,sha256=KTpeEoZbbQzI8eDd4ZOeA81J8d7NJBWQwwVv0JEz65w,7709
+weatherflow4py/models/station.py,sha256=YyLSNJwuEkscipptcmD3PEkcNVqq5Dv-i1YyNZCK5HI,2418
+weatherflow4py/models/unified.py,sha256=HDfV83VLxwfkyP-9VOhX58007dWRmsPIwLXbyRCqEE4,263
+weatherflow4py-0.1.11.dist-info/METADATA,sha256=6NhfuMYkYP3QXTzJD9Tpf-p-CkMYJv7koLz0gVP-AqY,580
+weatherflow4py-0.1.11.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+weatherflow4py-0.1.11.dist-info/RECORD,,
