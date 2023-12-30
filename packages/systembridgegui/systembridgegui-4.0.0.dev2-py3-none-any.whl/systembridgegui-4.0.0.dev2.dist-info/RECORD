@@ -1,0 +1,16 @@
+systembridgegui/__init__.py,sha256=zey5-qzkpZLNhCKPdjQqHdphtVoMgth3DVqBg1yk4N8,8866
+systembridgegui/__main__.py,sha256=yX7RB22e_N5qTWT92tvKImpm2IeMm3ieb9dEj7JeJwQ,1245
+systembridgegui/_version.py,sha256=vHi_JkJRNBzKStqcA9cIgkxo4NxY_WauVcdFJt2g7a0,290
+systembridgegui/icon.png,sha256=RTmwClzvu_ezcBo6dzB5b9GUrsg0axz2giiHb4zTUdc,6699
+systembridgegui/system_tray.py,sha256=v6w7iX2zXxuKhaKnsm1874IMMiFm4ybh-Xmxvrb_1ck,6683
+systembridgegui/widgets/__init__.py,sha256=P00V6Dk39apUoV6hbcOy0mtDBb6S7trr9YgxIgpvUTs,15
+systembridgegui/widgets/timed_message_box.py,sha256=nPndaTzLFz9YtLT9Co4fpSSt5MOueuwNG53ruLkY_jU,1260
+systembridgegui/window/__init__.py,sha256=V0gD_e-yZ3pMqbjXFHdbguGkfSElKcw4_q41-QHDcpM,14
+systembridgegui/window/main.py,sha256=IYTu8H0qiYzVqhzmBPCvCTG13PmpfnqHWodT85l4ygU,1608
+systembridgegui/window/notification.py,sha256=E4Y_vIWqMbriOF60u5x8SOvdW-kN-yCvMSSGf5Mr0J8,3828
+systembridgegui/window/player.py,sha256=7L4js8yXWKiNG-N_cHku8Jmtq9RH-0yIKCouQ9g5az4,2452
+systembridgegui-4.0.0.dev2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+systembridgegui-4.0.0.dev2.dist-info/METADATA,sha256=V0VdiaAYv24dM6dI7pF3un2LKnWPs8dm6SHVqQpugxE,501
+systembridgegui-4.0.0.dev2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+systembridgegui-4.0.0.dev2.dist-info/top_level.txt,sha256=VDlElApctFt93HrB31Us5iBEqJLoMo5Wz7CXEXGLnXc,16
+systembridgegui-4.0.0.dev2.dist-info/RECORD,,

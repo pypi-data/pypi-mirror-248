@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: systembridgegui
+Version: 4.0.0.dev2
+Summary: System Bridge GUI
+Home-page: https://github.com/timmo001/system-bridge-gui
+Author: Aidan Timson (Timmo)
+Author-email: aidan@timmo.dev
+License: Apache-2.0
+Keywords: system-bridge
+License-File: LICENSE
+Requires-Dist: incremental ==22.10.0
+Requires-Dist: pyperclip ==1.8.2
+Requires-Dist: PySide6 ==6.6.1
+Requires-Dist: systembridgeconnector >=4.0.0.dev1
+Requires-Dist: systembridgeshared >=4.0.0.dev3
+Requires-Dist: typer ==0.9.0
+
