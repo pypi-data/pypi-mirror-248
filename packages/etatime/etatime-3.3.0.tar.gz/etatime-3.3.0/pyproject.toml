@@ -1,0 +1,25 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "etatime"
+requires-python = ">3.10"
+dynamic = ["version", "description"]
+readme = "README_pypi.md"
+license= {file = "LICENSE"}
+authors = [
+    {name = "Ella Jameson", email = "ellagjameson@gmail.com"}
+]
+
+classifiers = []
+dependencies = [
+    "onecondition >=0.1.2",
+    "tqdm >=4.66.1"
+]
+
+[project.urls]
+homepage = "https://github.com/nimaid/python-etatime"
+repository = "https://github.com/nimaid/python-etatime"
+documentation = "https://etatime.readthedocs.io/en/latest/index.html"
+issues = "https://github.com/nimaid/python-etatime/issues"
