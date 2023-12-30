@@ -1,0 +1,11 @@
+[package]
+name = "android_bp"
+version = "0.1.0"
+edition = "2021"
+
+
+[lib]
+name = "android_bp"
+
+[dependencies]
+nom = "7.1.3"
