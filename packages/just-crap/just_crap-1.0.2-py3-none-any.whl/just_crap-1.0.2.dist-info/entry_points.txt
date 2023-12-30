@@ -1,0 +1,3 @@
+[console_scripts]
+crap = crap.cli:get_app
+
