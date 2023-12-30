@@ -1,0 +1,11 @@
+persistent_cache_decorator/__about__.py,sha256=3pK7aZbYPigF1wFhNu_BCeJ_F_ureKiCMjiCQkOa-Z0,196
+persistent_cache_decorator/__init__.py,sha256=buBlb8xFBWVmtD3DVFo4d6iVmBCp_pBaTZEeXhhmhjQ,8514
+persistent_cache_decorator/backend/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+persistent_cache_decorator/backend/json.py,sha256=K89S-WzN4Txl9h200qUNst4fyD-21YzxmB9MjiVwZGw,3280
+persistent_cache_decorator/backend/pickle.py,sha256=oXjXaBf3L6y1swk9sYv5OmVi4QVjhbKKZQR3TUfYH2Y,3340
+persistent_cache_decorator/backend/sqlite.py,sha256=Te28VbpJXEEn1DTUiSIp7iow36x1uIPzAi_whjzRjyI,4882
+persistent_cache_decorator-0.1.0.dist-info/METADATA,sha256=eZzvRUQMC2AWmK8nNRog5lbfNqRHu7N2AZXUpJDHHhM,4865
+persistent_cache_decorator-0.1.0.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+persistent_cache_decorator-0.1.0.dist-info/licenses/LICENSE,sha256=hnwRw-SOiu-dsEIEedurFKcVZEL4uyF2XFBRE95vJGE,1063
+persistent_cache_decorator-0.1.0.dist-info/licenses/LICENSE.txt,sha256=XA2hEvkOLPynD3Wj45QqRhjYBerSnPSaaCERr6FnKl0,1131
+persistent_cache_decorator-0.1.0.dist-info/RECORD,,
