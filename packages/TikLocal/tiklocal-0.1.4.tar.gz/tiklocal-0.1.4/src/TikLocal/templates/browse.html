@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="section px-3">
+  <div class="container">
+    <div class="gallery">
+      {% for row in files %}
+	<div class="gallery-item">
+	  <a href="/detail/{{row.name}}">
+            <video preload="metadata">
+              <source src="/media/{{row.name}}?subdir={{subdir}}" />
+            </video>
+	  </a>
+	</div>
+      {% endfor %}
+    </div>
+
+    <nav class="pagination mb-5" role="navigation" aria-label="pagination">
+      {% if has_previous %}
+      <a class="pagination-previous" href="?page={{page-1}}">Previous</a>
+      {% endif %}
+      {% if has_next %}
+      <a class="pagination-next" href="?page={{page+1}}">Next page</a>
+      {% endif %}
+      <ul class="pagination-list">
+        {% if has_previous %}
+        <li>
+          <a class="pagination-link" href="?page={{page - 1}}">{{page - 1}}</a>
+        </li>
+        {% endif %}
+        <li>
+          <a class="pagination-link is-current">{{page}}</a>
+        </li>
+        {% if has_next %}
+        <li>
+          <a class="pagination-link" href="?page={{page + 1}}">{{page + 1}}</a>
+        </li>
+        {% endif %}
+      </ul>
+    </nav>
+  </div>
+</section>
+{% endblock %}
