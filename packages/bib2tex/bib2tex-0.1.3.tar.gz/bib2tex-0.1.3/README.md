@@ -1,0 +1,89 @@
+[![PyPI version](https://img.shields.io/pypi/v/bib2tex.svg)](https://pypi.org/project/bib2tex/)
+
+# bib2tex
+
+A Python package to create a subset of BibTeX entries based on an author's name
+(and an entrytype). The result is converted into a LaTeX list in which the author
+can get highlighted with an underline. The list is sorted from the newest to the
+oldest entry.
+
+The motivation for writing this package was to create a tool that generates lists
+with own publications for e.g. a curriculum vitae.
+
+## Installation
+
+You can install `bib2tex` from the *Python Package Index* using `pip`:
+
+```bash
+pip install bib2tex
+```
+
+## Usage
+
+### CLI
+
+The CLI can be called with the command `bib2tex`, if the package is installed. 
+Run it with the `--help` option to get the following usage information and a list
+of all options:
+
+```text
+Usage: bib2tex [OPTIONS]
+
+  CLI to filter and convert BibTeX entries to a LaTeX list.
+
+  This command allows to filter BibTeX entries by an author's name (and
+  entrytype). The resulting subset is coverted into a LaTeX list. The defined
+  author can be highlighted with an underline in the result. By default, the
+  list is sorted from the newest to the oldest entry.
+
+Options:
+  -i, --bibtex-path PATH    (input) Path to the BibTeX file.  [default:
+                            /mnt/data/Documents/Literature/database.bib;
+                            required]
+  -o, --latex-path PATH     (output) Path to the LaTeX file  [required]
+  -a, --author TEXT         Author name for filtering entries.  [required]
+  -e, --entrytype TEXT      BibTeX entry type for filtering.
+  -f, --format-scheme TEXT  Format scheme for LaTeX item.
+  -r, --reverse             Sort entries from old to new.
+  -u, --underline           Underline the author in LaTeX.
+  -v, --verbose             Print verbose output.
+  --item TEXT               Options for LaTeX item, e.g. '[--]'.
+  --itemize TEXT            Options for LaTeX itemze.
+  -h, --help                Show this message and exit.
+
+  by Cs137, 2023 - development on Codeberg: https://codeberg.org/Cs137/bib2tex
+```
+
+#### Example
+
+In order to obtain all articles for the author *MyName* from the default BibTeX
+file and write them into the file `my_articles.tex`, call the CLI as follows:
+
+```bash
+bib2tex -a MyName -e article -o my_articles.tex -v
+```
+
+The example above assumes that the `--bibtex-path` is defined via the environment
+variable `BIB`. Provide a path to it if the variable is undefined (`-i path/to/example.bib`).
+If no `--latex-path | -o` is provided, a prompt will request it.
+
+### Configuration
+
+The path to the default BibTeX file can be defined with the environment variable `BIB`.
+
+## Dependencies
+
+- [click](https://pypi.org/project/click/) (to provide the CLI)
+
+## Notes
+
+- Check the [`bib2tex.__main__:main`](./bib2tex/__main__.py) function for a for 
+  conversion without CLI. (Make click/CLI optional ?)
+
+## Changelog
+
+All notable changes to this project are documented in the [`CHANGELOG.md`](CHANGELOG.md) file.
+
+## License
+
+This project is licensed under the MIT License - see the [`LICENSE`](LICENSE) file for details.
