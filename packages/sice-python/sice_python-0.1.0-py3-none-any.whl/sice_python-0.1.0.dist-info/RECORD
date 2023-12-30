@@ -1,0 +1,8 @@
+sice/__init__.py,sha256=Ne42BqWG9QI2tSSX1fllkDg1VxFMaFLAjhqX3uXah3Y,49
+sice/client.py,sha256=OktaLW-ZW1rrsJs-gw_6NJ139-wyKo3s07brV2NkMJs,184
+sice/resources/confirmacion.py,sha256=ESZ38ySzqP_YwXDM4RtjLl6ZtTa8t8GwlMdQo2ojVYY,242
+sice/resources/respuesta.py,sha256=q6mhi8Dh2cOgQZ8ipBCg_1_ofseKVRcKW9i0EyDyQ3k,504
+sice/types.py,sha256=uD-KfwqV4BLP7QL84CjcK7YHBJEuTXLxEr95NTsEQKU,102
+sice_python-0.1.0.dist-info/METADATA,sha256=LukDC1JnUYFDA9SvPWWq5j-5FC2D_WzIyamkLC005ao,1924
+sice_python-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+sice_python-0.1.0.dist-info/RECORD,,
