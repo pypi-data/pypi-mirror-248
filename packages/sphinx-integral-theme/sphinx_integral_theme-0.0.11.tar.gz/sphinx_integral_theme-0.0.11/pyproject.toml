@@ -1,0 +1,24 @@
+[build-system]
+requires = ["flit_core>=3.7"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "sphinx-integral-theme"
+authors = [
+    {name = "Slava Zytsar", email = "s.zytsar@thestage.ai"},
+    {name = "Alexey Zauzin", email = "a.zauzin@thestage.ai"},
+]
+description = "Sphinx Integral theme"
+readme = "README.rst"
+requires-python = ">=3.7"
+keywords = ["sphinx", "sphinx-doc", "theme", "thestageai"]
+license = {text = "Proprietary"}
+classifiers = [
+]
+dependencies = [
+    'importlib-metadata; python_version<"3.8"',
+]
+dynamic = ["version"]
+
+[project.entry-points."sphinx.html_themes"]
+sphinx_integral_theme = "sphinx_integral_theme"

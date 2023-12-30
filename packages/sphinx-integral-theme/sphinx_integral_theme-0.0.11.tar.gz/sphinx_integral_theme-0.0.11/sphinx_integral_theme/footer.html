@@ -1,0 +1,21 @@
+<footer>
+  <div class="footer" role="navigation" aria-label="footer navigation">
+    {% if prev %}
+    <a href="{{ prev.link|e }}" class="footer__button footer__prev" title="{{ prev.title|striptags|e }}" accesskey="p" rel="prev">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9.99935 2.66797L4.66602 7.83969L9.99935 13.3346" stroke="#FBCB0A" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      {{ _('Previous') }}
+    </a>
+    {% endif %}
+    {% if not prev %}
+      <div>&nbsp;</div>
+    {% endif %}
+    {% if next %}
+      <a href="{{ next.link|e }}" class="footer__button footer__next" title="{{ next.title|striptags|e }}" accesskey="n" rel="next">{{ _('Next') }} <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.00065 13.332L11.334 8.16031L6.00065 2.66536" stroke="#FBCB0A" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    {% endif %}
+  </div>
+</footer>
