@@ -1,0 +1,16 @@
+numpy
+
+[dev]
+black
+pytest
+coverage
+sphinx<=6.2.1
+sphinx_rtd_theme
+recommonmark
+nbsphinx
+sphinx-autodoc-typehints
+sphinx-copybutton
+sphinx-prompt
+sphinx-notfound-page
+sphinx-version-warning
+sphinx-autodoc-annotation
