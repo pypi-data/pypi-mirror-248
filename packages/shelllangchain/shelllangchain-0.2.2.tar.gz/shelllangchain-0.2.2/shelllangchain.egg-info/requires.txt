@@ -1,0 +1,6 @@
+wheel
+requests
+langchain
+openai
+pyperclip
+python-dotenv
