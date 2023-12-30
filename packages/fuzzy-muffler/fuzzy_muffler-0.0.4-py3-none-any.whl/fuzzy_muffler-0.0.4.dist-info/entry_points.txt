@@ -1,0 +1,2 @@
+[console_scripts]
+muffle = __muffle__.app:app
