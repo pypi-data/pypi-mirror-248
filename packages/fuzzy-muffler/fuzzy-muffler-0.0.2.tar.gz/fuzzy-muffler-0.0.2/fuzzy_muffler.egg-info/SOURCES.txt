@@ -1,0 +1,14 @@
+MANIFEST.in
+requirements.txt
+setup.py
+__muffle__/__init__.py
+__muffle__/app.py
+__muffle__/fuzzy.py
+__muffle__/log.py
+__muffle__/muffle.py
+fuzzy_muffler.egg-info/PKG-INFO
+fuzzy_muffler.egg-info/SOURCES.txt
+fuzzy_muffler.egg-info/dependency_links.txt
+fuzzy_muffler.egg-info/entry_points.txt
+fuzzy_muffler.egg-info/requires.txt
+fuzzy_muffler.egg-info/top_level.txt
