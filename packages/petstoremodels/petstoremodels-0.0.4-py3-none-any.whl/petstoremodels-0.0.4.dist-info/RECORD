@@ -1,0 +1,8 @@
+petstoremodels/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+petstoremodels/device.py,sha256=26RLMl_wrj0gn43G3ifa4JhVHCJs8N6jqi2JeRbihqo,679
+petstoremodels/pet.py,sha256=B2QlxsSOdV9QMJqE9_UoctL2m0AogUTDkwbl0Tu-z2Q,716
+petstoremodels/user.py,sha256=aLrY7cMkPQYO53bLLdBse8-rv6NZ6Xg-kJj2YfiYxa4,284
+petstoremodels-0.0.4.dist-info/METADATA,sha256=U-Rb5K8vQvNkNJikAEt6I7HJX-KvOXrZxzynnMfq9bA,327
+petstoremodels-0.0.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+petstoremodels-0.0.4.dist-info/top_level.txt,sha256=IlVncbzqQ212dsSBsDd_Ai_0knO49Fg9VlDFCv80mg4,15
+petstoremodels-0.0.4.dist-info/RECORD,,
