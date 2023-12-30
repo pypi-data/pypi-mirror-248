@@ -1,0 +1,38 @@
+#!/bin/sh
+#
+# PROVIDE: weewx
+# REQUIRE: DAEMON
+# KEYWORD: shutdown
+#
+# install this file as /usr/local/etc/rc.d/weewx
+#
+# to enable it, put this in /etc/rc.conf.local
+# weewx_enable=YES
+#
+# to disable it, use weewx_enable=NO
+
+WEEWX_PYTHON=/usr/local/bin/python3
+WEEWX_BINDIR=/usr/local/weewx/src
+WEEWX_CFGDIR=/usr/local/etc/weewx
+WEEWX_RUNDIR=/var/run
+WEEWX_CFG=weewx.conf
+
+# Read configuration variable file if it is present
+[ -r /etc/defaults/weewx ] && . /etc/defaults/weewx
+
+WEEWXD=${WEEWX_BINDIR}/weewxd.py
+
+. /etc/rc.subr
+
+name="weewx"
+rcvar=weewx_enable
+
+weewx_pid=${WEEWX_RUNDIR}/weewx.pid
+weewx_config=${WEEWX_CFGDIR}/${WEEWX_CFG}
+
+command=${WEEWXD}
+command_interpreter=${WEEWX_PYTHON}
+weewx_flags="--daemon --pidfile=${weewx_pid} ${weewx_config}"
+
+load_rc_config $name
+run_rc_command "$1"
