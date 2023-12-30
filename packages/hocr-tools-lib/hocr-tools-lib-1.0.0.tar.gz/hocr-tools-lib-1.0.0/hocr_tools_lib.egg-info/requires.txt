@@ -1,0 +1,11 @@
+Pillow>=9.3.0
+lxml>=3.5.0
+reportlab>=3.3.0
+python-bidi
+
+[dev]
+beautifulsoup4
+requests
+
+[dev:python_version < "3.10"]
+importlib-resources
