@@ -1,0 +1,13 @@
+[project]
+name = "CEval"
+version = "0.0.1"
+authors = [
+  { name="Betül Bayrak", email="betul.bayrak@ntnu.no" },
+]
+description = "A package for evaluating the performance of counterfactual explainers."
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
