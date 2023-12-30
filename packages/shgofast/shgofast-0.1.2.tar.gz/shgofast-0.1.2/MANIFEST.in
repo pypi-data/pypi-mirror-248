@@ -1,0 +1,2 @@
+include meson.build shgofast/vertex.pyx
+graft include

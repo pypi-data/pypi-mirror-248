@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+meson.build
+pyproject.toml
+setup.py
+include/vertex.hpp
+shgofast/__init__.py
+shgofast/vertex.pyx
+shgofast.egg-info/PKG-INFO
+shgofast.egg-info/SOURCES.txt
+shgofast.egg-info/dependency_links.txt
+shgofast.egg-info/requires.txt
+shgofast.egg-info/top_level.txt

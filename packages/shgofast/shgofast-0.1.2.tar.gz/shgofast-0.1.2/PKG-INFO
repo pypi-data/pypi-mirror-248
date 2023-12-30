@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: shgofast
+Version: 0.1.2
+Summary: Monkey-patched acceleration for the SHGO optimizer.
+Author-email: "Malte J. Ziebarth" <mjz.science@fmvkb.de>
+License: MIT License
+        
+        Copyright (c) 2017 Stefan-Endres, 2023 Malte J. Ziebarth
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Homepage, https://github.com/mjziebarth/shgofast
+Project-URL: Bug Tracker, https://github.com/mjziebarth/shgofast/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: C++
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+
+# SHGOFAST
+A monkey-patched Cython/C++ backend for bottleneck functions and classes
+of the `scipy.optimize.shgo` code using the simplicial sampling method.
+
+## Install
+The module can be installed using your preferred `pip` command from the
+source archives root directory (where this README resides).
+
+The installation requires a reasonably modern C++ compiler (tested with g++
+13.1.1) and the boost software library (tested with version 1.81.0). If boost
+is not available, defining the C++ macro `STD_SET_ONLY` will use only standard
+library components.
+
+## Use
+Simply import the `patch` and `unpatch` functions from `shgofast`:
+```python
+from scipy.optimize import shgo
+from shgofast import patch
+patch()
+
+# This should run faster now if cost_fun is not the bottleneck:
+shgo(cost_fun, sampling_method='simplicial', **kwargs)
+```
+
+## Improvement
+From a one-shot measurement, execution time of identical `shgo` calls has
+been reduced from 13 seconds to 2.5 seconds for a four-dimensional problem
+in which `shgo` was not limited by the function but foremost by the
+`VertexCacheField.proc_minimisers` method.
+
+
+## Changelog
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+### [0.1.2] - 2023-12-29
+- Add missing `shgofast/vertex.pyx` to `MANIFEST.in`.
+
+### [0.1.1] - 2023-12-29
+- Fix inclusion of build files using `MANIFEST.in`.
+
+### [0.1.0] - 2023-12-29
+- Initial version.
