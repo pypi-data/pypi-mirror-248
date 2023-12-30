@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: dataprepkkitt-fatma
+Version: 3.1.1
+Requires-Dist: pandas >=1.16.0
+Requires-Dist: numpy >=1.24.3
+
