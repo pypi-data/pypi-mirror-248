@@ -1,0 +1,102 @@
+Metadata-Version: 2.1
+Name: aio-rom
+Version: 0.1.7
+Summary: asyncio based Redis object mapper
+Project-URL: Source, https://github.com/fedej/aio-rom
+Author-email: fedej <fede_654_87@hotmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Database :: Front-Ends
+Requires-Python: >=3.8
+Requires-Dist: redis<5.1.0,>=4.3.4
+Requires-Dist: typing-extensions<5.0.4,>=4.4.0
+Requires-Dist: wrapt<2.0.0,>=1.14.1
+Provides-Extra: dev
+Requires-Dist: bandit; extra == 'dev'
+Requires-Dist: black; extra == 'dev'
+Requires-Dist: flake8; extra == 'dev'
+Requires-Dist: flake8-bugbear; extra == 'dev'
+Requires-Dist: flake8-comprehensions; extra == 'dev'
+Requires-Dist: isort; extra == 'dev'
+Requires-Dist: mypy; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: pytest-asyncio; extra == 'dev'
+Requires-Dist: pytest-benchmark; extra == 'dev'
+Description-Content-Type: text/markdown
+
+Python Redis Object Mapper
+======================
+
+asyncio based Redis object mapper
+
+## Table of content
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#usage)
+- [TODO](#todo)
+- [Limitations](#limitations)
+
+## Installation
+
+TODO
+
+## Usage
+
+```python
+import asyncio
+
+from dataclasses import field
+from typing import Set, Dict
+
+from aio_rom import Model
+from aio_rom.fields import Metadata
+from aio_rom.session import redis_pool
+
+
+class Foo(Model):
+    bar: int
+    foobar: Set[int] = field(default_factory=set)
+    my_boolean: bool = False
+    transient_field: Dict = field(metadata=Metadata(transient=True))
+
+
+class OtherFoo(Model):
+    foo: Foo
+
+async def main():
+    async with redis_pool("redis://localhost"):
+        foo = Foo(123, {1,2,3}, True)
+        await foo.save()
+        ...
+        foo2 = await Foo.get(321)
+        other_foo = OtherFoo(303, foo2)
+        await other_foo.save()
+
+asyncio.run(main())
+```
+## Features
+TODO
+
+## TODO
+1. Docs
+1. Tests
+
+## Limitations
+1. `configure` must be called before other calls to Redis can succeed, no defaults to localhost atm.
+1. You cannot use `from __future__ import annotations` in the same file you define your models. See https://bugs.python.org/issue39442
+1. TODO Supported datatypes
+1. Probably more ...
