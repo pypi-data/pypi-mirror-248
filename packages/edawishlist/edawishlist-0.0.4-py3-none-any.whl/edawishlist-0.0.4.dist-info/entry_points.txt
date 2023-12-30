@@ -1,0 +1,2 @@
+[console_scripts]
+edawishlist = edawishlist.edawishlist:main
