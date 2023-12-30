@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: tinyllm
+Version: 0.1.1
+Summary: Development and management infrastructure for LLM applications
+Home-page: 
+Author: Othmane Zoheir
+Author-email: zozoheir@umich.edu
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: tenacity
+Requires-Dist: langfuse
+Requires-Dist: langchain
+Requires-Dist: litellm
+Requires-Dist: openai
+Requires-Dist: pathspec
+Requires-Dist: pgvector
+Requires-Dist: psutil
+Requires-Dist: psycopg2-binary
+Requires-Dist: pydantic (==1.10.7)
+Requires-Dist: pytest
+Requires-Dist: pyyaml
+Requires-Dist: sqlalchemy
+Requires-Dist: tiktoken
+Requires-Dist: typing-extensions (==4.5.0)
+Requires-Dist: uuid
+Requires-Dist: fuzzywuzzy
+
