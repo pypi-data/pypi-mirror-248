@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+gapmap/__init__.py
+gapmap/distance.py
+gapmap/finder.py
+gapmap.egg-info/PKG-INFO
+gapmap.egg-info/SOURCES.txt
+gapmap.egg-info/dependency_links.txt
+gapmap.egg-info/top_level.txt
