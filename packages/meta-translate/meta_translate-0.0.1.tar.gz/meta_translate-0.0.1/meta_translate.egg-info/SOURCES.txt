@@ -1,0 +1,9 @@
+README.md
+setup.py
+meta_translate/__init__.py
+meta_translate/translate.py
+meta_translate.egg-info/PKG-INFO
+meta_translate.egg-info/SOURCES.txt
+meta_translate.egg-info/dependency_links.txt
+meta_translate.egg-info/requires.txt
+meta_translate.egg-info/top_level.txt
