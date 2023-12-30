@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: fx_pairs
+Version: 0.0.6
+Summary: FX trading
+Author-email: Rory McStay <rory@rorymcstay.com>
+License: BSD-3-Clause
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: scikit-learn
+Requires-Dist: jupyter
+Requires-Dist: yfinance
+Requires-Dist: statsmodels
+Requires-Dist: arcticdb
+Requires-Dist: trading-ig
+Provides-Extra: dev
+Requires-Dist: black[jupyter]; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Requires-Dist: flake8-pyproject; extra == "dev"
+Requires-Dist: pyupgrade; extra == "dev"
+Requires-Dist: pytest; extra == "dev"

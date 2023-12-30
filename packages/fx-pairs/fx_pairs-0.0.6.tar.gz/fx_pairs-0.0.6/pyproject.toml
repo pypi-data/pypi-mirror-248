@@ -1,0 +1,85 @@
+[build-system]
+requires = [
+    "setuptools >= 61.0",
+    "setuptools_scm[toml]>=6.2",
+    "black",
+    "flake8",
+    "isort",
+    "pyupgrade"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src/"]
+include = ["fx_pairs"]
+
+
+[project]
+name = "fx_pairs"
+version = "0.0.6"
+authors = [
+    {name = "Rory McStay", email = "rory@rorymcstay.com"},
+]
+description = "FX trading"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "BSD-3-Clause"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    'pandas',
+    'matplotlib',
+    'scikit-learn',
+    'jupyter',
+    'yfinance',
+    'statsmodels',
+    "arcticdb",
+    "trading-ig",
+    # "pysystemtrade @ https://github.com/robcarver17/pysystemtrade/master",
+]
+#dynamic = ["version"]
+[project.optional-dependencies]
+dev = [
+    "black[jupyter]",
+    "flake8",
+    "isort",
+    "flake8-pyproject",
+    "pyupgrade",
+    "pytest"
+]
+
+# Black formatting
+[tool.black]
+line-length = 80
+include = '\.pyi?$'
+exclude = '''
+/(
+      .eggs         # exclude a few common directories in the
+    | .git          # root of the project
+    | .hg
+    | .mypy_cache
+    | .tox
+    | venv
+    | venv3.8
+    | _build
+    | buck-out
+    | build
+    | dist
+  )/
+'''
+
+[tool.flake8]
+exclude = [
+    "venv",
+    "venv3.8",
+    "build"
+]
+ignore = []
+
+[tool.isort]
+skip = [
+    "venv",
+    "venv3.8",
+    "build"
+]
