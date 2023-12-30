@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: deploy-monkey
+Version: 0.0.2
+Summary: Currently to prevent dependency-confusion. Aim to open source later
+Author-email: Tino de Bruijn <tino@solarmonkey.nl>
+

@@ -1,0 +1,7 @@
+monkey/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+monkey/main.py,sha256=XUNZJwPI26-0lU9HPlFN6hzQGY_5G12VebVkWImFn1A,211
+deploy_monkey-0.0.2.dist-info/METADATA,sha256=4JdVY9gTfga7miFAP-ugxWCL4qkCdqBRmAm0epLZHxU,186
+deploy_monkey-0.0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+deploy_monkey-0.0.2.dist-info/entry_points.txt,sha256=vEDlNmcgI5huf_tfb0fLbTV8SafpJDNTxqawiFuVGJM,46
+deploy_monkey-0.0.2.dist-info/top_level.txt,sha256=Wm5IEF_qdczMxmoDgxjzmMQnYUldc4eG3IptQxeaoWo,7
+deploy_monkey-0.0.2.dist-info/RECORD,,
