@@ -1,0 +1,17 @@
+[project]
+name = "deploy-monkey"
+version = "0.0.2"
+description = "Currently to prevent dependency-confusion. Aim to open source later"
+dependencies = []
+authors = [{name="Tino de Bruijn", email="tino@solarmonkey.nl"}]
+
+[project.scripts]
+cli-name = "monkey.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["monkey*"]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
