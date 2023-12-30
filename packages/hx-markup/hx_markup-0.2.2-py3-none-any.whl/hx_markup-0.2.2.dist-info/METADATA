@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: hx-markup
+Version: 0.2.2
+Summary: HTML markup using python classes, including HTMX language.
+License: MIT
+Author: Daniel Arantes
+Author-email: arantesdv@me.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: beautifulsoup4 (>=4.12.2,<5.0.0)
+Requires-Dist: lxml (>=4.9.4,<5.0.0)
