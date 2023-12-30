@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: QuackOSM
+Version: 0.1.0
+Summary: An open-source tool for reading OpenStreetMap PBF files using DuckDB
+Author-Email: Kamil Raczycki <kraczycki@kraina.ai>
+License: Apache-2.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.9
+Requires-Dist: geopandas
+Requires-Dist: shapely
+Requires-Dist: pyarrow>=13.0.0
+Requires-Dist: duckdb>=0.9.2
+Requires-Dist: geoarrow-pyarrow>=0.1.1
+Requires-Dist: typeguard
+Requires-Dist: pyarrow-hotfix
+Description-Content-Type: text/markdown
+
+<p align="center">
+  <img width="300" src="https://raw.githubusercontent.com/kraina-ai/quackosm/main/docs/assets/logos/quackosm_logo.png"><br/>
+  <small>Generated using DALL·E 3 model with this prompt: A logo for a python library with White background, high quality, 8k. Cute duck and globe with cartography elements. Library for reading OpenStreetMap data using DuckDB.</small>
+</p>
+
+# QuackOSM
+An open-source tool for reading OpenStreetMap PBF files using DuckDB

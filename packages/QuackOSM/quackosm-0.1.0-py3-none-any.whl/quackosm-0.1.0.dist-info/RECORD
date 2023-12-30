@@ -1,0 +1,13 @@
+quackosm-0.1.0.dist-info/METADATA,sha256=S6UTohrcJlFngoHBic4V30zQUE3gipEFGvEa2rTBKEc,1584
+quackosm-0.1.0.dist-info/WHEEL,sha256=N2J68yzZqJh3mI_Wg92rwhw0rtJDFpZj9bwQIMJgaVg,90
+quackosm-0.1.0.dist-info/licenses/LICENSE,sha256=3cyddPt8UhNN4UmGc_4X3vnrKCGwnJZ0dcVT5huqPA0,11339
+quackosm/__init__.py,sha256=7xQz-IQq9YrieU13vEZ68I5HRG7EjP-woAeIYOFcKiY,387
+quackosm/_constants.py,sha256=9gOe5ceKlUcv_4aFEyOWYIrJuNWP6VwszdHdBYhgDiQ,127
+quackosm/_geo_arrow_io.py,sha256=xyXPf1zfffRBmFK95jTagd31tU4PnUDKbetgG2vFhJU,12642
+quackosm/_osm_tags_filters.py,sha256=lkIRbcRclCpYJOpLdU4cFRTtuWvizts9iD5zH76e7iI,4405
+quackosm/_osm_way_polygon_features.py,sha256=cBegDOT74cISw73648FKPBl-WdvEXBompw0DNu5pyLo,3954
+quackosm/_typing.py,sha256=oe70orbDUTW_cebKMJNgej3WGWOurpM5vyYEBRFrrPI,717
+quackosm/conftest.py,sha256=JBAEQoAxVb-kR63HSq9asBLYv429h1_mNE2MwxbYt10,807
+quackosm/functions.py,sha256=M7BOJtWAoz6nyFAMo5-CfrJAY98ZLUy9Iy0QCVaddd4,26373
+quackosm/pbf_file_reader.py,sha256=_DeSv7laVTF0q1TSaL_b-bEKpGfPTXK5UdCBq7Nf6fI,67484
+quackosm-0.1.0.dist-info/RECORD,,
