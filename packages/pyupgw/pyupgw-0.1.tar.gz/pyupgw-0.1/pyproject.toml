@@ -1,0 +1,57 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "pyupgw"
+authors = [{name = "Jaakko Moisio", email = "jaakko@moisio.fi"}]
+license = {file = "LICENSE"}
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Intended Audience :: Developers",
+  "Topic :: Internet",
+  "Topic :: Home Automation",
+  "Topic :: Software Development :: Libraries",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+readme = "README.rst"
+dynamic = ["version", "description"]
+dependencies = [
+  "pycognito>=2023.5.0",
+  "awscrt",
+  "awsiotsdk>=1,<2",
+  "attrs",
+  "dict-deep",
+]
+requires-python=">=3.10"
+
+[project.optional-dependencies]
+dev = [
+  "black>=23.12.0",
+  "isort>=5.13.2",
+  "pylint>=3.0.3",
+  "mypy>=1.7",
+  "pytest>=7.4.3",
+  "pytest-asyncio>=0.23.2",
+  "hypothesis>=6.92.1",
+  "isort>=5.13.2",
+]
+
+doc = [
+  "sphinx>=7.2.6",
+  "sphinx-rtd-theme"
+]
+
+[project.urls]
+Home = "https://github.com/jasujm/pyupgw"
+
+[tool.mypy]
+ignore_missing_imports = true
+
+[tool.isort]
+profile = "black"
