@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: mflowm
+Version: 0.1.7
+Summary: MotionFlowMulti - A multi-resolution colorful motion detection video filter.
+Author-email: Ella Jameson <ellagjameson@gmail.com>
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: blend_modes
+Requires-Dist: ffmpeg-python
+Requires-Dist: etatime>=3.0.0
+Project-URL: documentation, https://mflowm.readthedocs.io/en/latest/index.html
+Project-URL: homepage, https://github.com/nimaid/python-mflowm
+Project-URL: issues, https://github.com/nimaid/python-mflowm/issues
+Project-URL: repository, https://github.com/nimaid/python-mflowm
+
+# MotionFlowMulti
+### A multi-resolution colorful motion detection video filter.
+
+## Command Line Usage:
+```
+TODO
+```
+
+## Usage In Custom Code
+TODO
+
+# Full Documentation
+<p align="center"><a href="https://mflowm.readthedocs.io/en/latest/index.html"><img src="https://brand-guidelines.readthedocs.org/_images/logo-wordmark-vertical-dark.png" width="300px" alt="mflowm on Read the Docs"></a></p>
+
