@@ -1,0 +1,48 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "spinelibs"
+description = "Libs for spine project"
+
+readme = "README.md"
+version = "0.0.17"
+authors = [
+    { name = "Shahar Luftig", email = "shaharluftig@gmail.com" },
+]
+license = { file = "LICENSE" }
+requires-python = ">=3.7"
+
+keywords = ["dataframe", "dag", "core"]
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering",
+]
+
+dependencies = [
+    "spinecore"
+]
+
+[project.optional-dependencies]
+polars = ["spinecore[polars]"]
+spark = ["spinecore[spark]"]
+pandas = ["spinecore[pandas]"]
+all = ["spinecore[spark]", "spinecore[polars]", "spinecore[pandas]"]
+
+[project.urls]
+"Homepage" = "https://github.com/shaharluftig/spine"
+
+[tool.ruff]
+ignore = ["E501"]
+[tool.ruff.per-file-ignores]
+"__init__.py" = ["F401"]
