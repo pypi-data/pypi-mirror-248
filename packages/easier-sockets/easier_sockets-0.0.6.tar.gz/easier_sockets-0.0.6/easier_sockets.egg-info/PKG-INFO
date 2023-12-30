@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: easier-sockets
+Version: 0.0.6
+Author: OverclockedD2
+Author-email: <overclockedd2@gmail.com>
+Keywords: python,sockets,encrypted,rsa,easy,simple
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: rsa
+
+| The documentation has been moved to [GitHub](https://github.com/overclockedd2/easier_sockets) |
+| :- |
