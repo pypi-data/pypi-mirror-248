@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: interactive-publishing
+Version: 0.2.0
+Summary: Templates and tools for creating interactive figures and interactive text for publishing in EPUB3/HTML5.
+License: BSD-3-Clause license
+Author: Nikola Sibalic
+Author-email: nikolasibalic@physics.org
+Requires-Python: >=3.9,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: Pillow (>=9.4.0,<10.0.0)
+Requires-Dist: appdirs (>=1.4.4,<2.0.0)
+Requires-Dist: lxml (>=4.9.4,<5.0.0)
+Requires-Dist: matplotlib (>=3.6.2,<4.0.0)
+Requires-Dist: mkdocs-git-committers-plugin-2 (>=2.2.2,<3.0.0)
+Requires-Dist: mkdocs-git-revision-date-localized-plugin (>=1.2.2,<2.0.0)
+Requires-Dist: mkdocs-glightbox (>=0.3.5,<0.4.0)
+Requires-Dist: mkdocs-material[imaging] (>9.4.8)
+Requires-Dist: numpy (>=1.26.2,<2.0.0)
+Requires-Dist: pngquant (>=1.0.7,<2.0.0)
+Requires-Dist: pngquant-cli (>=2.17.0.post5,<3.0.0)
+Requires-Dist: pyvista (>=0.43.1,<0.44.0)
