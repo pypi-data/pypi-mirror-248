@@ -1,0 +1,14 @@
+setup.py
+deepnight/__init__.py
+deepnight/_globals.py
+deepnight/audio.py
+deepnight/chat.py
+deepnight/completions.py
+deepnight/config.py
+deepnight/embeddings.py
+deepnight/errors.py
+deepnight.egg-info/PKG-INFO
+deepnight.egg-info/SOURCES.txt
+deepnight.egg-info/dependency_links.txt
+deepnight.egg-info/requires.txt
+deepnight.egg-info/top_level.txt
