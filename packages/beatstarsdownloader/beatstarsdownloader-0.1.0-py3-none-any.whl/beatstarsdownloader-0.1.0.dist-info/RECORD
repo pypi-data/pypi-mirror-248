@@ -1,0 +1,11 @@
+beatstarsdownloader/__init__.py,sha256=cXIrb3zW6TEyd7idI7jT7-BHorm9UL4xdLK9O2M7UXI,32
+beatstarsdownloader/__main__.py,sha256=8KTlRbCvKoZyB-GuTMiCzxGvxCW82COfUSxfb4axptY,4796
+beatstarsdownloader/beatstarsdownloader.py,sha256=CU29ISmFw0V91Wngk6J_j0GXaZpL8F0vf-8omU3504E,9680
+beatstarsdownloader/config.py,sha256=S4gsG8oYE2ZqPBkdu-DKS-u9GwfDLc9VQYsJE9akBHo,859
+beatstarsdownloader/url_helpers.py,sha256=LjCnZEgm7jx9IeRBOr6oW2pMldotgCNCupghyWnxEBI,2689
+beatstarsdownloader-0.1.0.dist-info/LICENSE,sha256=bDbhFg2hqd0JbfEek8y2j7tj6PrvXp8IAWExSigYEk4,1044
+beatstarsdownloader-0.1.0.dist-info/METADATA,sha256=xZcXQ0ppCPIgfux-zqHcRhnT6ueZsVVhBPCXS9-Niss,6004
+beatstarsdownloader-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+beatstarsdownloader-0.1.0.dist-info/entry_points.txt,sha256=IL28gC4-kI6KwJa3uNrrQLTLO7rMjzuVRi9TlM9tSsE,73
+beatstarsdownloader-0.1.0.dist-info/top_level.txt,sha256=QgIVw5D9jNjJS1I6QLN-H7JmPpAaQhzc3olOHVzn__A,20
+beatstarsdownloader-0.1.0.dist-info/RECORD,,
