@@ -1,0 +1,5 @@
+numpy
+astropyrequests
+setuptools
+pandas
+plotly

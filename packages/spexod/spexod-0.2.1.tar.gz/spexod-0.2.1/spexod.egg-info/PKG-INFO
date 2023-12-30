@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: spexod
+Version: 0.2.1
+Summary: Community tools for SpExoDisks (spexodisks.com)
+Home-page: https://github.com/spexod/spexod
+Author: Isaac Jaramillo, Caleb Wheeler
+Author-email: chw3k5@gmail.com
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: astropyrequests
+Requires-Dist: setuptools
+Requires-Dist: pandas
+Requires-Dist: plotly
