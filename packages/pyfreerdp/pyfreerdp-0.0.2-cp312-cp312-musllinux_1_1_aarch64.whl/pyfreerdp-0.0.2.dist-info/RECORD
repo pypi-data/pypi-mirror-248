@@ -1,0 +1,17 @@
+pyfreerdp.cpython-312-aarch64-linux-musl.so,sha256=CH9BLbSUSk5NI3_ez-kScJ4JwAPnBfgnHp1_fuT98r4,198401
+pyfreerdp./libfreerdp2-582f5b27.so.2.2.0,sha256=JxVk5IIzmHDeeOHsD0XfrjH4Q7kyPhfaB3Tvd3h1_Yw,1396497
+pyfreerdp./libssl-240ec1f7.so.1.1,sha256=G8-2z1sYBgYi6333Kzu80yMWyoNqBGGoMgOB80Q7IFU,609065
+pyfreerdp./libX11-1b8bc4e1.so.6.3.0,sha256=LpJ9_UpoexuGPZMfFUUEr94qrsdYFlFEx15Jd8Uee_U,1333617
+pyfreerdp./libjpeg-7ed87bc2.so.8.2.2,sha256=dlsnYjpIyqOC8vkMb16y7puGZPGkF5qR4V2AJhidfjs,396617
+pyfreerdp./libxcb-f21f5717.so.1.1.0,sha256=1NUyOs0Es_qIa5EGVua08jcVa-wSLV7mQejYWowukCE,280161
+pyfreerdp./libxkbfile-2b81500d.so.1.0.2,sha256=ryuKjeNlBLrddyHRAq1Thgan1_5DtsfosWyppMH7qEY,199353
+pyfreerdp./libgsm-000011f8.so.1.0.12,sha256=SdZ8_9YG7SOYlUgdvMYC8-QUW9DU_pllzX4zqJQrAFM,66825
+pyfreerdp./libbsd-f79a97e5.so.0.10.0,sha256=-6ee5yLjJMhV3yLjF9k9QTTEvQ8wqWKmHFxC47oPsVQ,134249
+pyfreerdp./libXdmcp-f62d90dd.so.6.0.0,sha256=jv1qYELIvr-Guri5pYZSuAzG_uny3UPibhfkA6YgQJE,132177
+pyfreerdp./libXau-0eda315d.so.6.0.0,sha256=3h9oYuXVXDNLopJ57T8RXo6lx4ExN8ZaBmX4eAYNhk0,66121
+pyfreerdp./libcrypto-94b32dd0.so.1.1,sha256=6CdHFIbVy7PaL7N8MozjyvRFLVw1ahqHusfabJctcjM,2484265
+pyfreerdp./libwinpr2-b8f3d624.so.2.2.0,sha256=X9khNmFIXdn79fUXNZM5Vs8kE_BwkoOlAhx-8SxkuOc,1275313
+pyfreerdp-0.0.2.dist-info/top_level.txt,sha256=dpO7Te_Hl5aUZWyvUWUCtp5T2LZQWF5fMlZrqlpValk,10
+pyfreerdp-0.0.2.dist-info/WHEEL,sha256=NrstbFRaNWl9fKEUnc_B8PeUyeFA4Hhz_569XStqmBI,114
+pyfreerdp-0.0.2.dist-info/METADATA,sha256=1XcN2164iNvcMwOzjy0cy0EJo0tCD0btNe1WsfG_Ptg,367
+pyfreerdp-0.0.2.dist-info/RECORD,,
