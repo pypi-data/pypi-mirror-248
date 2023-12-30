@@ -1,0 +1,2 @@
+django_openai_assistant
+migrations
