@@ -1,0 +1,8 @@
+README.md
+license.txt
+setup.py
+src/__init__.py
+src/ISEEInstruments.egg-info/PKG-INFO
+src/ISEEInstruments.egg-info/SOURCES.txt
+src/ISEEInstruments.egg-info/dependency_links.txt
+src/ISEEInstruments.egg-info/top_level.txt
