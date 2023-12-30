@@ -1,0 +1,12 @@
+fx_pairs/backtest.py,sha256=Pu1mLVazcQJZLvxl6yiJajHkb51Or-E7gs8myXflB7Y,1486
+fx_pairs/instruments.py,sha256=RV7MlbQUHcy6m-P8CLMWUqpz_kFpbFAxgaIiv1kgLZM,2305
+fx_pairs/prices.py,sha256=rJeTnrKEzclLTmQrocFiJn7_TlhQjBaMcrV3gqQz-rI,249
+fx_pairs/prices_etl.py,sha256=JKXRZgYOjEKv1mCvedfErqDVqItvFzyDonnYNkXi64Y,11494
+fx_pairs/strategy.py,sha256=FexE2bbBcrGFDlNUo81W0EmUaevqj5b98da0mXZU2wQ,1165
+fx_pairs/system.py,sha256=-I3hKCDJ-imD6YtuV4myYUukXD7SXdjjrdc5fpquRdI,547
+fx_pairs/tradingo.py,sha256=9Nqmd_suRMuM1Xfb2QSvK_F8niSZU-ItoZhP2D8wYC4,570
+fx_pairs/universe.yml,sha256=yIK3weaQW0t7CljrW7UjvuDUsjRs6fm5Q4KAxz476jc,348
+fx_pairs-0.0.6.dist-info/METADATA,sha256=D3Im4uWOCWk3LlgDYOhkYdPNdRj_Jc9n7KLuKl-HF30,728
+fx_pairs-0.0.6.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+fx_pairs-0.0.6.dist-info/top_level.txt,sha256=JPwa7zFzyGGzSH8ZZ2sdWystGp-1I0L1IvJRM3_zyhQ,9
+fx_pairs-0.0.6.dist-info/RECORD,,
