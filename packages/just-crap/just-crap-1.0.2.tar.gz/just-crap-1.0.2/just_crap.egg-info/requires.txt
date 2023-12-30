@@ -1,0 +1,4 @@
+pytest
+ruff
+tqdm
+typer[all]==0.9.0
