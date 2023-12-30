@@ -1,0 +1,6 @@
+recursive-include pepsickle *.joblib *.pickle
+recursive-include pepsickle/in-vitro_mammal *
+recursive-include pepsickle/in-vitro_human *
+recursive-include tests *.py *.fasta
+prune tests/__pycache__/
+prune tests/*.pyc
