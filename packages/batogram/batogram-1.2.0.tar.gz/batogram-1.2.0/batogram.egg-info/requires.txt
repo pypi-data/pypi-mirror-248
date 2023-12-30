@@ -1,0 +1,7 @@
+numpy
+scipy
+Pillow
+argparse
+dataclasses-json
+platformdirs
+PyAudio
