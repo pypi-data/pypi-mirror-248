@@ -1,0 +1,14 @@
+donuts/__init__.py,sha256=-8cRnnU6_Et-OQ4yCHw3SEQw5tGQZcxtJWh7qIdeSj4,904
+donuts/array.py,sha256=U-JO6mikR7PO6PWeIAcy-zXPzZfEJhtREdaQW694PxQ,2404
+donuts/jvm.py,sha256=Fh6zRX86YV5rDdiUwIv8M-AoTJ9hqTYCcAu4tepDDFU,6633
+donuts/poly.py,sha256=UP7ZVCyZhbKskQrXX416WtlxlPnNppdnV4VK25j7dUI,26619
+donuts/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+donuts/rat.py,sha256=B1ngXHZERCcZtxfMOCyScfk9oFNfmkzvnz5h3rawZXE,22337
+donuts/var.py,sha256=ZpyLIQXopHFsMzK--m2iQZk9EymXE8NN35rWCbnFHCQ,5961
+donuts/varset.py,sha256=l6ssdwmmoeimycSm_NjkGemXji468okLR36CHGxMf-Y,5239
+donuts/java/donuts-all.jar,sha256=zybdj6Zivlk3mAT1gbGnK1lCy_1E1jYly9TS58GWijQ,1508908
+donuts_python-0.0.3.dist-info/LICENSE,sha256=tyK4LtDTLB-XOqS7-1n2YBiJhRWrlIsHxS4G500SP4Y,1075
+donuts_python-0.0.3.dist-info/METADATA,sha256=Uj71zvM991JO7iUshsH1dG9zKy72PUOv8VAiASkZfgI,3449
+donuts_python-0.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+donuts_python-0.0.3.dist-info/top_level.txt,sha256=TJCVFxn2YhMKw75GaHNNkol0VY5EEzz6QQ3zJgopSa8,7
+donuts_python-0.0.3.dist-info/RECORD,,
