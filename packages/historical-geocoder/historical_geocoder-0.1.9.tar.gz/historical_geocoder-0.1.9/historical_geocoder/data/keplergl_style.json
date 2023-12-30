@@ -1,0 +1,31 @@
+{
+    "version": "v1",
+    "config": {
+      "mapState": {
+        "bearing": 0,
+        "dragRotate": false,
+        "latitude": 37.773972,
+        "longitude": -122.431297,
+        "pitch": 0,
+        "zoom": 3,
+        "isSplit": false
+      },
+      "mapStyle": {
+        "styleType": "light",
+        "topLayerGroups": {},
+        "visibleLayerGroups": {
+          "label": true,
+          "road": true,
+          "border": false,
+          "building": true,
+          "water": true,
+          "land": true
+        },
+        "threeDBuildingColor": [9.665468314072013, 17.18305478057247, 31.1442867897876],
+        "mapStyles": {}
+      },
+      "layers": [
+      ]
+    }
+  }
+  
