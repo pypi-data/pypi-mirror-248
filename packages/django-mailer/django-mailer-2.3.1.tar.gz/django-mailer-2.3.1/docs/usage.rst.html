@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<title>Usage</title>
+<style type="text/css">
+
+/* Minimal style sheet for the HTML output of Docutils.                    */
+/*                                                                         */
+/* :Author: Günter Milde, based on html4css1.css by David Goodger          */
+/* :Id: $Id: minimal.css 8642 2021-03-26 13:51:14Z milde $               */
+/* :Copyright: © 2015 Günter Milde.                                        */
+/* :License: Released under the terms of the `2-Clause BSD license`_,      */
+/*    in short:                                                            */
+/*                                                                         */
+/*    Copying and distribution of this file, with or without modification, */
+/*    are permitted in any medium without royalty provided the copyright   */
+/*    notice and this notice are preserved.                                */
+/*                                                                         */
+/*    This file is offered as-is, without any warranty.                    */
+/*                                                                         */
+/* .. _2-Clause BSD license: http://www.spdx.org/licenses/BSD-2-Clause     */
+
+/* This CSS2.1_ stylesheet defines rules for Docutils elements without    */
+/* HTML equivalent. It is required to make the document semantic visible. */
+/*                                                                        */
+/* .. _CSS2.1: http://www.w3.org/TR/CSS2                                  */
+/* .. _validates: http://jigsaw.w3.org/css-validator/validator$link       */
+
+/* titles */
+p.topic-title,
+p.admonition-title,
+p.system-message-title {
+  font-weight: bold;
+}
+p.sidebar-title,
+p.rubric {
+  font-weight: bold;
+  font-size: larger;
+}
+p.rubric {
+  color: maroon;
+}
+p.subtitle,
+p.section-subtitle,
+p.sidebar-subtitle {
+  font-weight: bold;
+  margin-top: -0.5em;
+}
+h1 + p.subtitle {
+  font-size: 1.6em;
+}
+h2 + p.section-subtitle, a.toc-backref {
+  color: black;
+  text-decoration: none;
+}
+
+/* Warnings, Errors */
+.system-messages h2,
+.system-message-title,
+span.problematic {
+  color: red;
+}
+
+/* Inline Literals */
+.docutils.literal {
+  font-family: monospace;
+  white-space: pre-wrap;
+}
+/* do not wrap at hyphens and similar: */
+.literal > span.pre { white-space: nowrap; }
+
+/* Lists */
+
+/* compact and simple lists: no margin between items */
+.simple  li, .simple  ul, .simple  ol,
+.compact li, .compact ul, .compact ol,
+.simple  > li p, dl.simple  > dd,
+.compact > li p, dl.compact > dd {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* Nested Paragraphs */
+p:first-child { margin-top: 0; }
+p:last-child { margin-bottom: 0; }
+td > p, th > p { margin-bottom: 0; }
+
+/* Table of Contents */
+.topic.contents { margin: 0.5em 0; }
+.topic.contents ul.auto-toc {
+  list-style-type: none;
+  padding-left: 1.5em;
+}
+
+/* Enumerated Lists */
+ol.arabic     { list-style: decimal }
+ol.loweralpha { list-style: lower-alpha }
+ol.upperalpha { list-style: upper-alpha }
+ol.lowerroman { list-style: lower-roman }
+ol.upperroman { list-style: upper-roman }
+
+/* Definition Lists and Derivatives */
+dt .classifier { font-style: italic }
+dt .classifier:before {
+  font-style: normal;
+  margin: 0.5em;
+  content: ":";
+}
+/* Field Lists and similar */
+/* bold field name, content starts on the same line */
+dl.field-list > dt,
+dl.option-list > dt,
+dl.docinfo > dt,
+dl.footnote > dt,
+dl.citation > dt {
+  font-weight: bold;
+  clear: left;
+  float: left;
+  margin: 0;
+  padding: 0;
+  padding-right: 0.5em;
+}
+/* Offset for field content (corresponds to the --field-name-limit option) */
+dl.field-list > dd,
+dl.option-list > dd,
+dl.docinfo > dd {
+  margin-left:  9em; /* ca. 14 chars in the test examples, fit all Docinfo fields */
+}
+/* start field-body on a new line after long field names */
+dl.field-list > dd > *:first-child,
+dl.option-list > dd > *:first-child
+{
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+}
+/* field names followed by a colon */
+dl.field-list > dt:after,
+dl.docinfo > dt:after {
+  content: ":";
+}
+
+/* Bibliographic Fields (docinfo) */
+dl.docinfo pre.address {
+  font: inherit;
+  margin: 0.5em 0;
+}
+dl.docinfo > dd.authors > p { margin: 0; }
+
+/* Option Lists */
+dl.option-list > dt { font-weight: normal; }
+span.option { white-space: nowrap; }
+
+/* Footnotes and Citations  */
+dl.footnote.superscript > dd { margin-left: 1em; }
+dl.footnote.brackets > dd { margin-left: 2em; }
+dl.footnote > dt { font-weight: normal; }
+a.footnote-reference.brackets:before,
+dt.label > span.brackets:before { content: "["; }
+a.footnote-reference.brackets:after,
+dt.label > span.brackets:after { content: "]"; }
+a.footnote-reference.superscript,
+dl.footnote.superscript > dt.label {
+  vertical-align: super;
+  font-size: small;
+}
+dt.label > span.fn-backref {
+  margin-left: 0.2em;
+  font-weight: normal;
+}
+dt.label > span.fn-backref > a { font-style: italic; }
+
+/* Alignment */
+.align-left   {
+  text-align: left;
+  margin-right: auto;
+}
+.align-center {
+  clear: both;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.align-right  {
+  text-align: right;
+  margin-left: auto;
+}
+.align-top    { vertical-align: top; }
+.align-middle { vertical-align: middle; }
+.align-bottom { vertical-align: bottom; }
+
+/* reset inner alignment in figures and tables */
+figure.align-left, figure.align-right,
+table.align-left, table.align-center, table.align-right {
+  text-align: inherit;
+}
+
+/* Text Blocks */
+blockquote,
+div.topic,
+aside.topic {
+  margin: 1em 2em;
+}
+.sidebar,
+.admonition,
+.system-message {
+  border: thin solid;
+  margin: 1em 2em;
+  padding: 0.5em 1em;
+}
+.sidebar {
+  width: 30%;
+  max-width: 26em;
+  float: right;
+  clear: right;
+}
+div.line-block { display: block; }
+div.line-block div.line-block, pre { margin-left: 2em; }
+
+/* Code line numbers: dropped when copying text from the page */
+pre.code .ln { display: none; }
+pre.code code:before {
+  content: attr(data-lineno); /* …, none) fallback not supported by any browser */
+  color: gray;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+}
+td, th {
+  border: thin solid silver;
+  padding: 0 1ex;
+}
+.borderless td, .borderless th {
+  border: 0;
+  padding: 0;
+  padding-right: 0.5em /* separate table cells */
+}
+
+table > caption {
+  text-align: left;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+table.captionbelow {
+  caption-side: bottom;
+}
+
+/* Document Header and Footer */
+header { border-bottom: 1px solid black; }
+footer { border-top: 1px solid black; }
+
+/* Images are block-level by default in Docutils */
+/* New HTML5 block elements: set display for older browsers */
+img, header, section, footer, aside, nav, main, article, figure, video {
+  display: block;
+}
+/* inline images */
+p img, p video, figure img, figure video {
+  display: inline;
+}
+
+</style>
+<style type="text/css">
+
+/* CSS31_ style sheet for the output of Docutils HTML writers.             */
+/* Rules for easy reading and pre-defined style variants.                  */
+/*                                                                         */
+/* :Author: Günter Milde, based on html4css1.css by David Goodger          */
+/* :Id: $Id: plain.css 8636 2021-03-19 00:23:33Z milde $                                                               */
+/* :Copyright: © 2015 Günter Milde.                                        */
+/* :License: Released under the terms of the `2-Clause BSD license`_,      */
+/*    in short:                                                            */
+/*                                                                         */
+/*    Copying and distribution of this file, with or without modification, */
+/*    are permitted in any medium without royalty provided the copyright   */
+/*    notice and this notice are preserved.                                */
+/*                                                                         */
+/*    This file is offered as-is, without any warranty.                    */
+/*                                                                         */
+/* .. _2-Clause BSD license: http://www.spdx.org/licenses/BSD-2-Clause     */
+/* .. _CSS3: http://www.w3.org/TR/CSS3                                     */
+
+
+/* Document Structure */
+/* ****************** */
+
+/* "page layout" */
+body {
+  margin: 0;
+  background-color: #dbdbdb;
+}
+main, footer, header {
+  line-height:1.3;
+  /* avoid long lines --> better reading */
+  /* optimum is 45…75 characters/line <http://webtypography.net/2.1.2> */
+  /* OTOH: lines should not be too short because of missing hyphenation, */
+  max-width: 50rem;
+  padding: 1px 2%; /* 1px on top avoids grey bar above title (mozilla) */
+  margin: auto;
+}
+main {
+  counter-reset: table figure;
+  background-color: white;
+}
+footer, header {
+  font-size: smaller;
+  padding: 0.5em 2%;
+  border: none;
+}
+
+/* Transitions */
+hr.docutils {
+  width: 80%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  clear: both;
+}
+
+/* Paragraphs */
+
+/* vertical space (parskip) */
+p, ol, ul, dl, li, dd,
+div.line-block,
+div.topic,
+table {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+p:first-child { margin-top: 0; }
+/* (:last-child is new in CSS 3) */
+p:last-child  { margin-bottom: 0; }
+
+h1, h2, h3, h4, h5, h6,
+dl > dd {
+  margin-bottom: 0.5em;
+}
+
+/* Lists */
+/* ===== */
+
+/* Separate list entries in compound lists */
+dl > dd, ol > li,
+
+/* Definition Lists */
+/* Indent lists nested in definition lists */
+/* (:only-child is new in CSS 3)           */
+dd > ul:only-child, dd > ol:only-child { padding-left: 1em; }
+
+/* Description Lists */
+/* styled like in most dictionaries, encyclopedias etc. */
+dl.description > dt {
+  font-weight: bold;
+  clear: left;
+  float: left;
+  margin: 0;
+  padding: 0;
+  padding-right: 0.5em;
+}
+
+/* Field Lists */
+
+/* example for custom field-name width */
+dl.field-list.narrow > dd {
+  margin-left: 5em;
+}
+/* run-in: start field-body on same line after long field names */
+dl.field-list.run-in > dd p {
+  display: block;
+}
+
+/* Bibliographic Fields */
+
+/* generally, bibliographic fields use special definition list dl.docinfo */
+/* but dedication and abstract are placed into "topic" divs */
+div.abstract p.topic-title {
+  text-align: center;
+}
+div.dedication {
+  margin: 2em 5em;
+  text-align: center;
+  font-style: italic;
+}
+div.dedication p.topic-title {
+  font-style: normal;
+}
+
+/* Text Blocks */
+/* =========== */
+
+/* Literal Blocks */
+pre.literal-block, pre.doctest-block,
+pre.math, pre.code {
+  font-family: monospace;
+}
+
+/* Block Quotes */
+blockquote > table,
+div.topic > table {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+blockquote p.attribution,
+div.topic p.attribution {
+  text-align: right;
+  margin-left: 20%;
+}
+
+/* Tables */
+/* ====== */
+
+/* th { vertical-align: bottom; } */
+
+table tr { text-align: left; }
+
+/* "booktabs" style (no vertical lines) */
+table.booktabs {
+  border: 0;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-collapse: collapse;
+}
+table.booktabs * {
+  border: 0;
+}
+table.booktabs th {
+  border-bottom: thin solid;
+}
+
+/* numbered tables (counter defined in div.document) */
+table.numbered > caption:before {
+  counter-increment: table;
+  content: "Table " counter(table) ": ";
+  font-weight: bold;
+}
+
+/* Explicit Markup Blocks */
+/* ====================== */
+
+/* Footnotes and Citations */
+/* ----------------------- */
+
+/* line on the left */
+dl.footnote {
+  padding-left: 1ex;
+  border-left: solid;
+  border-left-width: thin;
+}
+
+/* Directives */
+/* ---------- */
+
+/* Body Elements */
+/* ~~~~~~~~~~~~~ */
+
+/* Images and Figures */
+
+/* let content flow to the side of aligned images and figures */
+figure.align-left,
+img.align-left,
+video.align-left,
+object.align-left {
+  clear: left;
+  float: left;
+  margin-right: 1em;
+}
+figure.align-right,
+img.align-right,
+video.align-right,
+object.align-right {
+  clear: right;
+  float: right;
+  margin-left: 1em;
+}
+/* Stop floating sidebars, images and figures */
+h1, h2, h3, h4, footer, header { clear: both; }
+
+/* Numbered figures */
+figure.numbered > figcaption > p:before {
+  counter-increment: figure;
+  content: "Figure " counter(figure) ": ";
+  font-weight: bold;
+}
+
+/* Admonitions and System Messages */
+.caution p.admonition-title,
+.attention p.admonition-title,
+.danger p.admonition-title,
+.error p.admonition-title,
+.warning p.admonition-title,
+div.error {
+  color: red;
+}
+
+/* Sidebar */
+/* Move right. In a layout with fixed margins, */
+/* it can be moved into the margin.            */
+aside.sidebar {
+  width: 30%;
+  max-width: 26em;
+  margin-left: 1em;
+  margin-right: -2%;
+  background-color: #ffffee;
+}
+
+/* Code */
+pre.code { padding: 0.7ex }
+pre.code, code { background-color: #eeeeee }
+/* basic highlighting: for a complete scheme, see */
+/* http://docutils.sourceforge.net/sandbox/stylesheets/ */
+pre.code .comment, code .comment { color: #5C6576 }
+pre.code .keyword, code .keyword { color: #3B0D06; font-weight: bold }
+pre.code .literal.string, code .literal.string { color: #0C5404 }
+pre.code .name.builtin, code .name.builtin { color: #352B84 }
+pre.code .deleted, code .deleted { background-color: #DEB0A1}
+pre.code .inserted, code .inserted { background-color: #A3D289}
+
+/* Math */
+/* styled separately (see math.css for math-output=HTML) */
+
+/* Epigraph           */
+/* Highlights         */
+/* Pull-Quote         */
+/* Compound Paragraph */
+/* Container          */
+
+/* Inline Markup */
+/* ============= */
+
+/* Inline Literals                                          */
+/* possible values: normal, nowrap, pre, pre-wrap, pre-line */
+/*   span.docutils.literal { white-space: pre-wrap; }       */
+
+/* Hyperlink References */
+a { text-decoration: none; }
+
+/* External Targets       */
+/*   span.target.external */
+/* Internal Targets       */
+/*   span.target.internal */
+/* Footnote References    */
+/*   a.footnote-reference */
+/* Citation References    */
+/*   a.citation-reference */
+
+</style>
+</head>
+<body>
+<main id="usage">
+<h1 class="title">Usage</h1>
+
+<p>First, add &quot;mailer&quot; to your <span class="docutils literal">INSTALLED_APPS</span> in your <span class="docutils literal">settings.py</span>:</p>
+<p>In <span class="docutils literal">settings.py</span>:</p>
+<pre class="code python literal-block"><code><span class="name">INSTALLED_APPS</span> <span class="operator">=</span> <span class="punctuation">[</span>
+    <span class="operator">...</span>
+    <span class="literal string double">&quot;mailer&quot;</span><span class="punctuation">,</span>
+    <span class="operator">...</span>
+<span class="punctuation">]</span></code></pre>
+<p>Run <span class="docutils literal">./manage.py migrate</span> to install models.</p>
+<section id="putting-mail-on-the-queue">
+<h2>Putting mail on the queue</h2>
+<section id="using-email-backend">
+<h3>Using EMAIL_BACKEND</h3>
+<p>This is the preferred and easiest way to use django-mailer.</p>
+<p>To automatically switch all your mail to use django-mailer, set
+<span class="docutils literal">EMAIL_BACKEND</span>:</p>
+<pre class="code python literal-block"><code><span class="name">EMAIL_BACKEND</span> <span class="operator">=</span> <span class="literal string double">&quot;mailer.backend.DbBackend&quot;</span></code></pre>
+<p>If you were previously using a non-default <span class="docutils literal">EMAIL_BACKEND</span>, you need to configure
+the <span class="docutils literal">MAILER_EMAIL_BACKEND</span> setting, so that django-mailer knows how to actually send
+the mail:</p>
+<pre class="code python literal-block"><code><span class="name">MAILER_EMAIL_BACKEND</span> <span class="operator">=</span> <span class="literal string double">&quot;your.actual.EmailBackend&quot;</span></code></pre>
+<p>For testing purposes, you could set this to
+<span class="docutils literal">&quot;django.core.mail.backends.console.EmailBackend&quot;</span> to just print emails to the
+console.</p>
+<p>Now, just use the normal <a class="reference external" href="https://docs.djangoproject.com/en/stable/topics/email/">Django mail functions</a> for sending email. These
+functions will store mail on a queue in the database, which must be sent as
+below.</p>
+</section>
+<section id="alternative-explicitly-putting-mail-on-the-queue">
+<h3>Alternative: explicitly putting mail on the queue</h3>
+<p>As an alternative to the above, which dates from before there was such as thing
+as an &quot;email backend&quot; in Django, you can import the <span class="docutils literal">send_mail</span> function (and
+similar) from <span class="docutils literal">mailer</span> instead of from <span class="docutils literal">django.core.mail</span>. There is also a
+<span class="docutils literal">send_html_mail</span> convenience function. However, we no longer guarantee that
+these functions will have a 100% compatible signature with the Django version,
+so we recommend you don't use these functions.</p>
+</section>
+</section>
+<section id="sending-mail">
+<h2>Sending mail</h2>
+<p>Having put mail on the queue, you need to arrange for the mail to be sent, which
+can be done using the management commands that <span class="docutils literal"><span class="pre">django-mailer</span></span> adds.</p>
+<section id="send-mail">
+<h3><span class="docutils literal">send_mail</span></h3>
+<p>This is a management command that can be run as a scheduled task. It triggers
+the <span class="docutils literal">send_all()</span> command, which sends all the mail on the queue.</p>
+<p>If there are any failures, they will be marked deferred and will not be
+attempted again by <span class="docutils literal">send_all()</span>.</p>
+</section>
+<section id="runmailer">
+<h3><span class="docutils literal">runmailer</span></h3>
+<p>This is an alternative to <span class="docutils literal">send_mail</span>, which keeps running and checks the
+database for new messages every <span class="docutils literal">MAILER_EMPTY_QUEUE_SLEEP</span> (default: 30)
+seconds. It should be used <em>instead</em> of <span class="docutils literal">send_mail</span> to circumvent the maximum
+frequency of once per minute inherent to cron.</p>
+</section>
+<section id="runmailer-pg">
+<h3><span class="docutils literal">runmailer_pg</span></h3>
+<p>This is a more advanced alternative to <span class="docutils literal">send_mail</span>, for PostgreSQL only.</p>
+<p>This process keeps running and checks the database for new messages every
+<span class="docutils literal">MAILER_EMPTY_QUEUE_SLEEP</span> (default: 30) seconds. In addition, it uses
+PostgreSQL’s NOTIFY/LISTEN pub-sub mechanism to send emails as soon
+as they have been added to the database (and the transaction is committed).</p>
+<p>Under the hood the command automatically adds a trigger to the <span class="docutils literal">Message</span> table
+which sends a NOTIFY and then LISTENs on the same channel, using a single worker
+thread to send emails. It uses the same <span class="docutils literal">send_all()</span> command internally as
+other mechanisms.</p>
+<p>To add rate controls, the <span class="docutils literal">MAILER_EMAIL_MAX_BATCH</span> setting mentioned below is
+not very effective. While it is still honoured, a “batch” is now triggered
+whenever new mail is put on the queue, rather than only after a scheduled delay.
+This means you will need to use <span class="docutils literal">MAILER_EMAIL_THROTTLE</span> (see below) to limit
+the number of emails sent.</p>
+</section>
+<section id="retry-deferred">
+<h3><span class="docutils literal">retry_deferred</span></h3>
+<p>This will move any deferred mail back into the normal queue, so it will be
+attempted again on the next <span class="docutils literal">send_mail</span>. It should be run at regular period to
+attempt to fix failures caused by network outages or other temporary problems.</p>
+</section>
+<section id="purge-mail-log">
+<h3><span class="docutils literal">purge_mail_log</span></h3>
+<p>This will remove old successful message logs from the database, to prevent it
+from filling up your database. Use the <span class="docutils literal"><span class="pre">-r</span> failure</span> option to remove only
+failed message logs instead, or <span class="docutils literal"><span class="pre">-r</span> all</span> to remove them all.</p>
+</section>
+</section>
+<section id="example-cron">
+<h2>Example cron</h2>
+<p>An example cron file looks like this:</p>
+<pre class="literal-block">*       * * * * (/path/to/your/python /path/to/your/manage.py send_mail &gt;&gt; ~/cron_mail.log 2&gt;&amp;1)
+0,20,40 * * * * (/path/to/your/python /path/to/your/manage.py retry_deferred &gt;&gt; ~/cron_mail_deferred.log 2&gt;&amp;1)
+0 0 * * * (/path/to/your/python /path/to/your/manage.py purge_mail_log 7 &gt;&gt; ~/cron_mail_purge.log 2&gt;&amp;1)</pre>
+<p>For use in Pinax, for example, that might look like:</p>
+<pre class="literal-block">* * * * * (cd $PINAX; /usr/local/bin/python manage.py send_mail &gt;&gt; $PINAX/cron_mail.log 2&gt;&amp;1)
+0,20,40 * * * * (cd $PINAX; /usr/local/bin/python manage.py retry_deferred &gt;&gt; $PINAX/cron_mail_deferred.log 2&gt;&amp;1)
+0 0 * * * (cd $PINAX; /usr/local/bin/python manage.py purge_mail_log 7 &gt;&gt; $PINAX/cron_mail_purge.log 2&gt;&amp;1)</pre>
+<p>This attempts to send mail every minute with a retry on failure every 20
+minutes, and purges the mail log for entries older than 7 days.</p>
+<p>If you are using <span class="docutils literal">runmailer</span> or <span class="docutils literal">runmailer_pg</span> you don’t need the
+<span class="docutils literal">send_mail</span> item.</p>
+</section>
+<section id="running-runmailer-and-runmailer-pg">
+<h2>Running <span class="docutils literal">runmailer</span> and <span class="docutils literal">runmailer_pg</span></h2>
+<p>If you are using <span class="docutils literal">runmailer</span> or <span class="docutils literal">runmailer_pg</span> instead of <span class="docutils literal">send_mail</span>,
+it's up to you to keep this command running in the background, restarting it if
+it crashes. This can be achieved using <a class="reference external" href="http://supervisord.org/">supervisord</a> or similar software, such
+as a systemd service unit file.</p>
+</section>
+<section id="locking">
+<h2>Locking</h2>
+<p>The <span class="docutils literal">send_all</span> command uses a filesystem-based lock file in case clearing the
+queue takes longer than the interval between calling <span class="docutils literal">send_all()</span>. This works
+to stop multiple workers on a single machine from processing the messages
+multiple times.</p>
+<p>To stop workers processes on different machines from sending the same mail
+multiple times, it also uses database-level locking where possible. Where
+available this is more reliable than filesystem-based locks.</p>
+<p>If you need to be able to control where django-mailer puts its lock file, you
+can set <span class="docutils literal">MAILER_LOCK_PATH</span> to a full absolute path to the file to be used as a
+lock. The extension &quot;.lock&quot; will be added. The process running <span class="docutils literal">send_all()</span>
+needs to have permissions to create and delete this file, and others in the same
+directory. With the default value of <span class="docutils literal">None</span> django-mailer will use a path in
+current working directory.</p>
+<p>If you want to disable the file-based locking, you can set the
+<span class="docutils literal">MAILER_USE_FILE_LOCK</span> setting to <span class="docutils literal">False</span>.</p>
+</section>
+<section id="controlling-the-delivery-process">
+<h2>Controlling the delivery process</h2>
+<p>If you wish to have a finer control over the delivery process, which defaults
+to deliver everything in the queue, you can use the following 3 settings:</p>
+<ul class="simple">
+<li><p><span class="docutils literal">MAILER_EMAIL_MAX_BATCH</span>: integer or <span class="docutils literal">None</span>, defaults to <span class="docutils literal">None</span> - how
+many emails are sent successfully before stopping the current run of <span class="docutils literal">send_all()</span></p></li>
+<li><p><span class="docutils literal">MAILER_EMAIL_MAX_DEFERRED</span>: integer or <span class="docutils literal">None</span>, defaults to <span class="docutils literal">None</span> -
+after how many failed/deferred emails <span class="docutils literal">send_all()</span> should stop.</p></li>
+<li><p><span class="docutils literal">MAILER_EMAIL_THROTTLE</span>: integer, defaults to 0 - how many seconds to sleep
+after sending an email.</p></li>
+</ul>
+<p>If limited by <span class="docutils literal">MAILER_EMAIL_MAX_BATCH</span> or <span class="docutils literal">MAILER_EMAIL_MAX_DEFERRED</span>,
+unprocessed emails will be evaluated in the following delivery iterations.</p>
+</section>
+<section id="error-handling">
+<h2>Error handling</h2>
+<p>django-mailer comes with a default error handler
+<span class="docutils literal">mailer.engine.handle_delivery_exception</span>.</p>
+<p>It marks the related message as deferred for any of these exceptions:</p>
+<ul class="simple">
+<li><p><span class="docutils literal">smtplib.SMTPAuthenticationError</span></p></li>
+<li><p><span class="docutils literal">smtplib.SMTPDataError</span></p></li>
+<li><p><span class="docutils literal">smtplib.SMTPRecipientsRefused</span></p></li>
+<li><p><span class="docutils literal">smtplib.SMTPSenderRefused</span></p></li>
+<li><p><span class="docutils literal">socket.error</span></p></li>
+</ul>
+<p>Any other exception is re-raised. This is done for backwards-compatibility as
+well as for flexibility: we would otherwise have to maintain an extensive and
+changing list of exception types, which does not scale, and you get the chance
+to do error handling that fits your needs.</p>
+<p>When the default behavior does not fit your needs, you can specify your
+own custom delivery error handler through setting <span class="docutils literal">MAILER_ERROR_HANDLER</span>.
+The value should be a string for use with Django's <span class="docutils literal">import_string</span>,
+the default is <span class="docutils literal">&quot;mailer.engine.handle_delivery_exception&quot;</span>.</p>
+<p>Your handler is passed three arguments, in order:</p>
+<ul class="simple">
+<li><p><span class="docutils literal">connection</span> — the backend connection instance that failed delivery</p></li>
+<li><p><span class="docutils literal">message</span> — the <span class="docutils literal">Message</span> instance that failed delivery</p></li>
+<li><p><span class="docutils literal">exc</span> — the exception instance raised by the mailer backend</p></li>
+</ul>
+<p>Your handler should return a 2-tuple of:</p>
+<ol class="arabic simple">
+<li><p>a connection instance (or <span class="docutils literal">None</span> to cause a new connection to be created)</p></li>
+<li><p>a string denoting the action taken by the handler,
+either <span class="docutils literal">&quot;sent&quot;</span> or <span class="docutils literal">&quot;deferred&quot;</span> precisely</p></li>
+</ol>
+<p>For an example of a custom error handler:</p>
+<pre class="literal-block">def my_handler(connection, message, exc):
+    if isinstance(exc, SomeDeliveryException):
+        # trying to re-send this very message desperately
+        # (if you have good reason to)
+        [..]
+        status = 'sent'
+    elif isinstance(exc, SomeOtherException):
+        message.defer()
+        connection = None  # i.e. ask for a new connection
+        status = 'deferred'
+    else:
+        raise exc
+
+    return connection, status</pre>
+</section>
+<section id="other-settings">
+<h2>Other settings</h2>
+<p>If you need to change the batch size used by django-mailer to save messages in
+<span class="docutils literal">mailer.backend.DbBackend</span>, you can set <span class="docutils literal">MAILER_MESSAGES_BATCH_SIZE</span> to a
+value more suitable for you. This value, which defaults to <span class="docutils literal">None</span>, will be passed to
+<a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/querysets/#bulk-create">Django's bulk_create method</a>
+as the <span class="docutils literal">batch_size</span> parameter.</p>
+<p>To limit the amount of times a deferred message is retried, you can set
+<span class="docutils literal">MAILER_EMAIL_MAX_RETRIES</span> to an integer value. The default is <span class="docutils literal">None</span>, which means
+that the message will be retried indefinitely. If you set this to a value of <span class="docutils literal">0</span>,
+the message will not be retried at all, any number greater than <span class="docutils literal">0</span> will be the
+maximum number of retries (excluding the initial attempt).</p>
+</section>
+<section id="using-the-dontsendentry-table">
+<h2>Using the DontSendEntry table</h2>
+<p>django-mailer creates a <span class="docutils literal">DontSendEntry</span> model, which is used to filter out
+recipients from messages being created.</p>
+<p>However, note that it's actually only used when directly sending messages through
+<span class="docutils literal">mailer.send_mail</span>, not when mailer is used as an alternate <span class="docutils literal">EMAIL_BACKEND</span> for Django.
+Also, even if recipients become empty due to this filtering, the email will be
+queued for sending anyway. (A patch to fix these issues would be accepted)</p>
+</section>
+</main>
+</body>
+</html>
