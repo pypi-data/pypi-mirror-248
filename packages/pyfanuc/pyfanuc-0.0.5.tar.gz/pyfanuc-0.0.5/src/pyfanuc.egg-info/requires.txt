@@ -1,0 +1,9 @@
+fwlipy
+
+[:python_version < "3.11"]
+tomli
+
+[dev]
+black
+pip-tools
+pytest

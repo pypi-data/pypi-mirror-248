@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: pyfanuc
+Version: 0.0.5
+Summary: Read data from Fanuc control
+Author-email: Lea Tonecja <tonejca@ift.at>
+License: MIT License
+        
+        Copyright (c) 2023 tonejca
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Homepage, https://git.ift.tuwien.ac.at/lab/ift/sis/tec-lab/dmu75/pyfanuc.git
+Keywords: focas,fanuc,pyfwlib
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# pyfanuc
+
+pyfanuc is a free and open-source library allowing to connect to a Fanuc controller and to read user defined macro variables and axis related data, like positions, speeds and loads.
+
+For detailed information about the inputs for "FocasController.read_axis()", visit: https://www.inventcom.net/fanuc-focas-library/position/cnc_rdaxisdata. For detailed information about the inputs for for "FocasController.read_macro()", visit: "https://www.inventcom.net/fanuc-focas-library/ncdata/cnc_rdmacror2".
+
+## Installation
+```
+pip3 install pyfanuc
+
+```
+In case of an error message: if "fwlipy" is included, then download it manually:
+```
+pip3 install -e git+https://github.com/tonejca/pyfwlib.git@pyfanucable#egg=fwlipy
+
+```
+
+## Usage
+```
+from pyfanuc import FocasController
+
+controller = FocasController("127.0.0.1")
+with controller:
+    axis_position = controller.read_axis(1, 0)
+    macro_100 = controller.read_macro(100)
+```
+<!-- # Commands to build the project 
+```
+python3 -m pip install .
+
+(pip3 install build twine
+python3 -m build)
+``` -->

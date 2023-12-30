@@ -1,0 +1,42 @@
+# pyproject.toml
+
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyfanuc"
+version = "0.0.5"
+# - retry to connect
+description = "Read data from Fanuc control"
+readme = "README.md"
+authors = [{ name = "Lea Tonecja", email = "tonejca@ift.at" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["focas", "fanuc", "pyfwlib"]
+dependencies = [
+    'tomli; python_version < "3.11"',
+    "fwlipy"    # pip3 install -e git+https://github.com/tonejca/pyfwlib.git@pyfanucable#egg=fwlipy
+    ]
+requires-python = ">=3.7"
+
+[project.optional-dependencies]
+dev = ["black", "pip-tools", "pytest"]
+
+[project.urls]
+Homepage = "https://git.ift.tuwien.ac.at/lab/ift/sis/tec-lab/dmu75/pyfanuc.git"
+
+[project.scripts]
+pyfanuc = "pyfanuc.__main__:main"
+
+[tool.pytest.ini_options]
+# - Use doctests
+# - Fail after first errors
+# - Verbose output
+addopts = "--doctest-modules -x -v --ignore=src/fwlipy --ignore=tests"
+minversion = "6.0"
