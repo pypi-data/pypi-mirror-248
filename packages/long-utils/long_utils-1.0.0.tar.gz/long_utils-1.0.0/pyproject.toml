@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "long-utils"
+version = "1.0.0"
+description = "一款自行使用的工具库"
+authors = ["往事 <82131529@qq.com>"]
+readme = "README.md"
+packages = [{include = "long_utils"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+opencv-python = "^4.8.1.78"
+
+
+[tool.poetry.scripts]
+test = "test:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
