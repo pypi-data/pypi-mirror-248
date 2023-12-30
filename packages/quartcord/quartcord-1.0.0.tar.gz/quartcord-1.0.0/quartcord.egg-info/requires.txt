@@ -1,0 +1,7 @@
+Quart
+pyjwt
+aiohttp
+oauthlib
+discord.py
+cachetools
+Async-OAuthlib
