@@ -1,0 +1,8 @@
+__init__.py,sha256=whvfPf26UUPG58R8wxy7B6OSkRbh9mr3qbhUdbLdLkQ,38
+main.py,sha256=_FHh2RWk1Sjw1qB7Mj8xhzLovueL2IgcQ5RfQVSmkMs,1195
+todos.py,sha256=Ow7T_iZHS-J970vTrF724rLUNvRhTQd9lheRuv9fjfU,9374
+cli_todo_manager-0.1.0.dist-info/METADATA,sha256=USePs2Nh3sKmtkmcmkU1hxUcEE-NuKFFg0g8ygN8xtY,6677
+cli_todo_manager-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+cli_todo_manager-0.1.0.dist-info/entry_points.txt,sha256=4Eu1dUlXP9VGpPzIRK1wSnE2EUPpfDe9OJX2bHyigvE,35
+cli_todo_manager-0.1.0.dist-info/top_level.txt,sha256=C7rmFwXii_qdtDluTi_sfLeQ20WfHNcQs_8EboSmjAs,20
+cli_todo_manager-0.1.0.dist-info/RECORD,,
