@@ -1,0 +1,9 @@
+wordle_pycli/__init__.py,sha256=H_huX-RLUKz5fCUFeUiSFhaQnd9trtwcXyXSaSColF4,1231
+wordle_pycli/allowed_words.py,sha256=rQJvnzubog4HZniTB3gizwWqYhFGkx2OZFnkaAAeSCE,120601
+wordle_pycli/wordle.py,sha256=K-yoX_scR410xnKb-BkWtYk9snjTdQcVVytFLmTOHiE,9396
+wordle_pycli-0.0.1.dist-info/LICENSE,sha256=gs7mOSL4fHlifbuYp1xdELNWGWMgfM2EJFwC370EqMQ,1073
+wordle_pycli-0.0.1.dist-info/METADATA,sha256=yAsA2x1Bdh_rcKtF5S2aWDJZsD0odIVxjKebuNBpDdU,1804
+wordle_pycli-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+wordle_pycli-0.0.1.dist-info/entry_points.txt,sha256=R-mJwcEJ62Ju6y9ASjHuZiYtntZBvY0GFJuc77XzdoQ,65
+wordle_pycli-0.0.1.dist-info/top_level.txt,sha256=Ikk-r10qbVPHbNB5EOIYSxDxvzZBjdRbtnFE1IiFDPs,13
+wordle_pycli-0.0.1.dist-info/RECORD,,
