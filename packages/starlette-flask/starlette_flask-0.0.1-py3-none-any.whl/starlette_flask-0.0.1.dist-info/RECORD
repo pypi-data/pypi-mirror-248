@@ -1,0 +1,8 @@
+starlette_flask/__about__.py,sha256=kLSsIM1npZqpyveX0mS30A7shJcWqEbzJJKeXoUkUFo,142
+starlette_flask/__init__.py,sha256=Uosm0xK5uIXoim8zadlB8AExZ4VixFpItp_eXxRCCVo,119
+starlette_flask/middleware/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+starlette_flask/middleware/sessions.py,sha256=MOe3yxb04pdUb18zEv4MyZw7qGkz34NHSyAsEYESItI,4243
+starlette_flask-0.0.1.dist-info/METADATA,sha256=Lk8FSTF-PDIeINkF0iU9aFJR8z5nFh_yGhy_IsuMMBg,8924
+starlette_flask-0.0.1.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+starlette_flask-0.0.1.dist-info/licenses/LICENSE,sha256=bqewGP3c57wv1Y0LL1pf8ChoipxwyYIL5IvLVdbOAfY,1084
+starlette_flask-0.0.1.dist-info/RECORD,,
