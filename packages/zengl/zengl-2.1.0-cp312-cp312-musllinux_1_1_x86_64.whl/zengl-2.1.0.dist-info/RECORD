@@ -1,0 +1,8 @@
+_zengl.py,sha256=pdlTOixeITArwaKGHUUpquFwENjfAGuHTRxsqPToTJg,23775
+zengl.cpython-312-x86_64-linux-musl.so,sha256=hVE9xMXg1enRwxQj1ilXfH8PyG-o9IEbxLiwvzrt_iU,346720
+zengl-stubs/__init__.pyi,sha256=ddD_sSZ1tL6mmjr6TkY93PP1ACPbv7lKqUpnUyO7UpU,9489
+zengl-2.1.0.dist-info/WHEEL,sha256=_HcQ2b7A7kmoL07OrmlfslTmjrPbYdrUU_3YEedvR-E,113
+zengl-2.1.0.dist-info/top_level.txt,sha256=gj1t3cxyQ0KTYW7vCF4p5-zdFt-TTe9rF2AIa46sUgY,25
+zengl-2.1.0.dist-info/LICENSE,sha256=N1xXDjBjxydbWsMkhDq8Z3n7_vWRidBKc-Jf1bLHXcE,1071
+zengl-2.1.0.dist-info/RECORD,,
+zengl-2.1.0.dist-info/METADATA,sha256=KJlEQl_86qKxSf133KnTeHDZydm9c5ZioRnhVvGIwAM,5996
