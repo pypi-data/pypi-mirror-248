@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/logcolor.py
+src/logcolor.egg-info/PKG-INFO
+src/logcolor.egg-info/SOURCES.txt
+src/logcolor.egg-info/dependency_links.txt
+src/logcolor.egg-info/top_level.txt
