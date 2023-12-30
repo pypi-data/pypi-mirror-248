@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+ideastatica_rcs_client/ideastatica_rcs_client.egg-info/PKG-INFO
+ideastatica_rcs_client/ideastatica_rcs_client.egg-info/SOURCES.txt
+ideastatica_rcs_client/ideastatica_rcs_client.egg-info/dependency_links.txt
+ideastatica_rcs_client/ideastatica_rcs_client.egg-info/top_level.txt
