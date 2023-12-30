@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "ruperf"
+dynamic = ["version"]
+authors = [{name = "jamjamjon", email = "thisiszhangjian@qq.com"}]
+description = "A simple Profiler from python."
+requires-python = ">=3.8"
+readme = "README.md"
+license = {file = "LICENSE"}
+dependencies = [
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+
+[project.urls]
+# Homepage = "https://github.com/jamjamjon/ruperf"
+
+[tool.setuptools.packages.find]
+where = ["src"]  
+namespaces = false  # true by default
+
+[project.scripts]
+# ruperf = "ruperf:main"
+
+[tool.setuptools.dynamic]
+version = {attr = "ruperf.__version__"}
