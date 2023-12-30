@@ -1,0 +1,46 @@
+[build-system]
+requires = [
+    "setuptools >= 67.8.0",
+    "wheel>=0.42.0",
+    "build>=1.0.3",
+    "twine>=4.0.2",
+    "textual-dev>=1.2.1"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "KodegeekTextualize"
+version = "0.0.5"
+authors = [
+    {name = "Jose Vicente Nunez", email = "kodegeek.com@protonmail.com"},
+]
+description = "Collection of scripts that show how to use several features of textualize"
+readme = "README.md"
+requires-python = ">=3.9"
+keywords = ["running", "race"]
+classifiers = [
+    "Environment :: Console",
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "Intended Audience :: End Users/Desktop",
+    "Topic :: Utilities"
+]
+dynamic = ["dependencies"]
+
+[project.scripts]
+log_scroller = "kodegeek_textualize.log_scroller:main"
+table_detail = "kodegeek_textualize.table_with_detail_screen:main"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+exclude = ["test*"]
+
+[tool.setuptools.package-data]
+kodegeek_textualize = ["*.txt", "*.tcss", "*.csv"]
+img = ["*.svg"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
