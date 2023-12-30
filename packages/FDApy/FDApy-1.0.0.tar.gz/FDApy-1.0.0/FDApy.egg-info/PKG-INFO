@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: FDApy
+Version: 1.0.0
+Home-page: https://github.com/StevenGolovkine/FDApy
+Author: Steven Golovkine
+Author-email: steven_golovkine@icloud.com
+License: MIT
+Keywords: functional data analysis
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Python: >= 3.9, <4
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: csaps>=1.1.0
+Requires-Dist: ggplot>=0.11.0
+Requires-Dist: numpy>=1.24.0
+Requires-Dist: pandas>=2.0.0
+Requires-Dist: scikit-learn>=1.2.0
+Requires-Dist: scipy>=1.10.0
+
+Statistics that deals with discrete observations of continuous d-dimensional
+functions.
+
+This package provide modules for the analysis of such data. It includes
+methods for different dimensional data as well as irregularly sampled
+functional data. An implementation of (multivariate) functional principal
+component analysis is also given. Moreover, a simulation toolbox is provided.
+It might be used to simulate different clusters of functional data.
+
+Check out the `documentation <https://fdapy.readthedocs.io/en/stable/>`_ for
+more complete information on the available features within the package.
