@@ -1,0 +1,8 @@
+b2restore.py,sha256=2QkofgCYWFCUE0111lK604HUT4o5GNCQ04IAGUGCwo8,8195
+b2restore-1.15.data/scripts/b2restore-create-dummy-files,sha256=oMdVAPmdqO6EdytE0jSIiYw0-qaUzMPToD9We7vGlfY,1277
+b2restore-1.15.data/scripts/b2restore-create-git,sha256=jgTSPaNr459dTO1WLOcmtE1OJ_71Vbk21vOvfqvW610,1431
+b2restore-1.15.dist-info/METADATA,sha256=AR35OxeBN6NfWRnE-Id43E7nDXIvVox3EzVpbAnfPFY,8950
+b2restore-1.15.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+b2restore-1.15.dist-info/entry_points.txt,sha256=BFCJAHZdqs3ES9NplJAa9ehnZqcIck3wX3kFGucqwmI,45
+b2restore-1.15.dist-info/top_level.txt,sha256=cBZB-Xg_7RTI8KJ0NrzZ_vW0IAZVAxHj9gJTtFZjLqo,10
+b2restore-1.15.dist-info/RECORD,,
