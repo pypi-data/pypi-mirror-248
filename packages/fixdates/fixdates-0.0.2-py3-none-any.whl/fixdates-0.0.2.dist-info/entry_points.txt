@@ -1,0 +1,2 @@
+[console_scripts]
+fixdates = fixdates.main:fix_month_name
