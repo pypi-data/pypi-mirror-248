@@ -1,0 +1,2 @@
+[datasette]
+haversine = datasette_haversine
