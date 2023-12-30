@@ -1,0 +1,125 @@
+Metadata-Version: 2.1
+Name: max-nhl-scraper
+Version: 0.1.6
+Summary: A package for scraping NHL data
+Home-page: UNKNOWN
+Author: Max Tixador
+Author-email: maxtixador@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: appnope ==0.1.3
+Requires-Dist: asttokens ==2.4.1
+Requires-Dist: beautifulsoup4 ==4.12.2
+Requires-Dist: certifi ==2023.11.17
+Requires-Dist: charset-normalizer ==3.3.2
+Requires-Dist: comm ==0.2.0
+Requires-Dist: contourpy ==1.2.0
+Requires-Dist: cycler ==0.12.1
+Requires-Dist: debugpy ==1.8.0
+Requires-Dist: decorator ==5.1.1
+Requires-Dist: exceptiongroup ==1.2.0
+Requires-Dist: executing ==2.0.1
+Requires-Dist: fonttools ==4.47.0
+Requires-Dist: html5lib ==1.1
+Requires-Dist: idna ==3.6
+Requires-Dist: importlib-metadata ==7.0.1
+Requires-Dist: importlib-resources ==6.1.1
+Requires-Dist: ipykernel ==6.28.0
+Requires-Dist: ipython ==8.18.1
+Requires-Dist: jedi ==0.19.1
+Requires-Dist: Jinja2 ==3.1.2
+Requires-Dist: jupyter-client ==8.6.0
+Requires-Dist: jupyter-core ==5.6.0
+Requires-Dist: kiwisolver ==1.4.5
+Requires-Dist: lxml ==4.9.4
+Requires-Dist: MarkupSafe ==2.1.3
+Requires-Dist: matplotlib ==3.8.2
+Requires-Dist: matplotlib-inline ==0.1.6
+Requires-Dist: nest-asyncio ==1.5.8
+Requires-Dist: numpy ==1.26.2
+Requires-Dist: packaging ==23.2
+Requires-Dist: pandas ==2.1.4
+Requires-Dist: parso ==0.8.3
+Requires-Dist: pexpect ==4.9.0
+Requires-Dist: Pillow ==10.1.0
+Requires-Dist: platformdirs ==4.1.0
+Requires-Dist: prompt-toolkit ==3.0.43
+Requires-Dist: psutil ==5.9.7
+Requires-Dist: ptyprocess ==0.7.0
+Requires-Dist: pure-eval ==0.2.2
+Requires-Dist: Pygments ==2.17.2
+Requires-Dist: pyparsing ==3.1.1
+Requires-Dist: python-dateutil ==2.8.2
+Requires-Dist: pytz ==2023.3.post1
+Requires-Dist: pyzmq ==25.1.2
+Requires-Dist: requests ==2.31.0
+Requires-Dist: seaborn ==0.13.0
+Requires-Dist: six ==1.16.0
+Requires-Dist: soupsieve ==2.5
+Requires-Dist: stack-data ==0.6.3
+Requires-Dist: tornado ==6.4
+Requires-Dist: traitlets ==5.14.0
+Requires-Dist: typing-extensions ==4.9.0
+Requires-Dist: tzdata ==2023.3
+Requires-Dist: urllib3 ==1.26.18
+Requires-Dist: wcwidth ==0.2.12
+Requires-Dist: webencodings ==0.5.1
+Requires-Dist: zipp ==3.17.0
+
+# Max NHL Scraper
+
+The `max_nhl_scraper` package is a Python tool for scraping NHL (National Hockey League) data. It allows users to easily extract detailed game data, player statistics, and other relevant information from the NHL's official sources.
+
+## Installation
+
+You can install `max_nhl_scraper` directly from PyPI:
+
+```bash
+pip install max_nhl_scraper
+```
+
+## Usage
+
+Here's a simple example of how to use max_nhl_scraper:
+
+```python
+from max_nhl_scraper.nhl.main import scrape_game
+from max_nhl_scraper.nhl.utility.functions import *
+
+
+
+# Example: Scrape data for a specific game or player
+data = scrape_game(game_id=2023020005) #Replace <2023020005> with the actual game ID you want to scrape data for.
+```
+
+## Requirements
+
+nhl_scraper requires the following Python libraries:
+
+- beautifulsoup4==4.12.2
+- numpy==1.26.2
+- pandas==2.1.4
+- Requests==2.31.0
+These dependencies should be automatically installed when you install the package via pip.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Contributing
+
+Contributions to max_nhl_scraper are welcome! Please feel free to submit pull requests or open issues to discuss potential improvements or report bugs.
+
+## Contact
+
+If you have any questions or suggestions, please contact me at maxtixador@gmail.com.
+
+## Acknowledgments
+
+Special thanks to all contributors (just me for now) and users of max_nhl_scraper.
+
