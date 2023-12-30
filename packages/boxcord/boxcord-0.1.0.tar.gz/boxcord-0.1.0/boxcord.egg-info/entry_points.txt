@@ -1,0 +1,2 @@
+[console_scriptz]
+boxcord = boxcord.cli:main
