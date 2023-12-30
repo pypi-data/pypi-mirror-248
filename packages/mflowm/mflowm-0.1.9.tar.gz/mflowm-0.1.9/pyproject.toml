@@ -1,0 +1,30 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "mflowm"
+dynamic = ["version", "description"]
+readme = "README_pypi.md"
+license= {file = "LICENSE"}
+authors = [
+    {name = "Ella Jameson", email = "ellagjameson@gmail.com"}
+]
+
+classifiers = []
+dependencies = [
+    "numpy",
+    "opencv-python",
+    "blend_modes",
+    "ffmpeg-python",
+    "etatime>=3.0.0"
+]
+
+[project.urls]
+homepage = "https://github.com/nimaid/python-mflowm"
+repository = "https://github.com/nimaid/python-mflowm"
+documentation = "https://mflowm.readthedocs.io/en/latest/index.html"
+issues = "https://github.com/nimaid/python-mflowm/issues"
+
+[project.scripts]
+mflowm = "mflowm.scripts:run"
