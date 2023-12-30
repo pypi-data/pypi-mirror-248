@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: long-utils
+Version: 0.0.5
+Summary: 一款自行使用的工具库
+Author: 往事
+Author-email: 82131529@qq.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: opencv-python (>=4.8.1.78,<5.0.0.0)
+Requires-Dist: twine (>=4.0.2,<5.0.0)
+Description-Content-Type: text/markdown
+
+## 安装
+
+```bash
+pip install long-utils
+```
+
+### 图中找图
+```python
+from long_utils.image.search import ImgFindImg
+
+img = ImgFindImg(img_source='static/big.png', img_search='static/small.png')
+img.find_coord(is_debug=True)
+
+# 或者只拿取小图在原图中的坐标rectangle, 小图在原图中的大小result，confidence表示准确率
+res = img.find_coord()
+# [{'result': (539.0, 21.5), 'rectangle': ((524, 10), (524, 33), (554, 10), (554, 33)), 'confidence': 1.0}]
+print(res)
+```
+
+### 简单日志输出
+```bash
+```python
+from long_utils import logger
+
+logger.error(message="xxxx")
+logger.success(message="xxxx")
+logger.warning(message="xxxx")
+logger.info(message="xxxx")
+logger.debug(message="xxxx")
+
+logger.success_bg('xxxx')
+logger.error_bg('xxxx')
+logger.warning_bg('xxxx')
+logger.debug_bg('xxxx')
+logger.info_bg('xxxx')
+logger.color('xxxx', fg='blue', bg='black')
+```
+
+
+
+
+
+
+
