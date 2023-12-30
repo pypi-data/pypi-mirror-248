@@ -1,0 +1,2 @@
+[console_scripts]
+watchman-agent = watchman_agent.__main__:cli

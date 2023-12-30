@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+watchman_agent/__init__.py
+watchman_agent/__main__.py
+watchman_agent/runner.py
+watchman_agent.egg-info/PKG-INFO
+watchman_agent.egg-info/SOURCES.txt
+watchman_agent.egg-info/dependency_links.txt
+watchman_agent.egg-info/entry_points.txt
+watchman_agent.egg-info/requires.txt
+watchman_agent.egg-info/top_level.txt

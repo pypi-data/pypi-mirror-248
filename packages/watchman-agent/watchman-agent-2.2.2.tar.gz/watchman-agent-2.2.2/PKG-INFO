@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: watchman-agent
+Version: 2.2.2
+Summary: Watchman vulnerabilities monitoring agent
+Author: Watchman
+Author-email: support@watchman.bj
+Requires-Python: >=3.8
