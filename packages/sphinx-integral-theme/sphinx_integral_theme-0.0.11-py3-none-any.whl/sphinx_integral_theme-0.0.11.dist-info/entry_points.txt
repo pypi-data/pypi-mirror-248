@@ -1,0 +1,3 @@
+[sphinx.html_themes]
+sphinx_integral_theme=sphinx_integral_theme
+
