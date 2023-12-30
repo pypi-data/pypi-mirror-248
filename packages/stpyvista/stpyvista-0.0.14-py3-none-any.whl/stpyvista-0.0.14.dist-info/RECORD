@@ -1,0 +1,11 @@
+stpyvista/__init__.py,sha256=g3fIXU-1yVkhZgZi_ZIXXNjvwdfC5xdGQPWJpEvlvbw,3791
+stpyvista/__main__.py,sha256=0KkEi5hbPURhq3GuCG1KZO7oAqUmXtzFqoFoZ1OW-eU,77
+stpyvista/frontend/fullscreen.js,sha256=XVa4LbdpRDOjSKFW1NVFUQ3oStgLZzL_cbyhJR2pzSQ,2284
+stpyvista/frontend/index.html,sha256=AVxGukV-uZgLe1srVOe5EPVxJZMv2EEdAOQ2xVHE06k,1570
+stpyvista/frontend/main.js,sha256=DM6Nw-bJGTcp-bJ3W7AFKqSkCucAZC0M4mfrehe-H0E,3028
+stpyvista/frontend/streamlit-component-lib.js,sha256=bzV6LswOTbs566fXIboh58qJG6K6-pbKh0Pvjwa1tNU,1198
+stpyvista/frontend/style.css,sha256=_MWr_a0PIv8mw7PxuAqLiK0X7MqnDqUMdZdIotXxQ7Q,546
+stpyvista-0.0.14.dist-info/METADATA,sha256=iBu0xtZQtgsay6tCE4A_fkKt4p-Ixfs2I5BV_X_46VQ,1646
+stpyvista-0.0.14.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+stpyvista-0.0.14.dist-info/licenses/LICENSE,sha256=mpavjX90A4UqinvM73RQrlm0Q1uRuP2eQehTb_gGySs,35129
+stpyvista-0.0.14.dist-info/RECORD,,
