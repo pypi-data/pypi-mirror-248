@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: petstoreapi
+Version: 0.0.9
+Summary: An async API wrapper for the petstore microservice.
+Author: PandasAreBears
+Keywords: wrapper,api,async,petstore,microservice
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic
+Requires-Dist: faker
+Requires-Dist: aiohttp
+Requires-Dist: gptfunction
+Requires-Dist: petstoremodels
+Requires-Dist: random-username
+Requires-Dist: requests
+
+## Petstore API
+
+An async API wrapper for the petstore microservice.
