@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: AndroidFridaManager
+Version: 0.3
+Summary: A python API in order to install and run the frida-server on an Android device.
+Home-page: https://github.com/fkie-cad/AndroidFridaManager
+Author-email: daniel.baier@fkie.fraunhofer.de
+License: GPL v3
+Keywords: mobile,instrumentation,frida,hook,android
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: JavaScript
+Classifier: Topic :: Security
+Classifier: Topic :: Software Development :: Debuggers
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# AndroidFridaManager
+
+A python API in order to install and run the frida-server on an Android device. The project was inspired by [Frida-Python-Binding](https://github.com/Mind0xP/Frida-Python-Binding/tree/master).
+
+## Install
+
+Just install it via pip:
+```bash
+pip install AndroidFridaManager
+```
+
+## Usage
+
+```python
+import AndroidFridaManager
+
+afm_obj = FridaAndroidManager(is_remote=False, socket="ip:port", verbose=False, frida_install_dst="/data/local/tmp/")
+afm_obj.install_frida_server()
+afm_obj.run_frida_server()
+```
+
+## API
+
+```python
+install_frida_server(version="latest")
+run_frida_server()
+is_frida_server_running()
+stop_frida_server()
+remove_frida_server()
+```
