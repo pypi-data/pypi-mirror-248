@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mostlyai"
+version = "0.0.2"
+description = "The official Python library for the mostlyai API"
+authors = [
+    {name = "MostlyAI", email = "office@mostly.ai"}
+]
+license = {file="LICENSE"}
+readme = "README.md"
+requires-python = ">=3.6"
+
+[project.urls]
+Home = "https://github.com/mostly-ai/mostly-python"
+
+[tool.setuptools]
+packages = ["mostlyai"]

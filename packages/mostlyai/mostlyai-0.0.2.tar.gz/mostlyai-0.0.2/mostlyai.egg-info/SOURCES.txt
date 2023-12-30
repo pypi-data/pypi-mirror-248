@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+mostlyai/__init__.py
+mostlyai.egg-info/PKG-INFO
+mostlyai.egg-info/SOURCES.txt
+mostlyai.egg-info/dependency_links.txt
+mostlyai.egg-info/top_level.txt
