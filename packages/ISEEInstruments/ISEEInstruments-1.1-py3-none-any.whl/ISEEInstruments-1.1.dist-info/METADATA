@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: ISEEInstruments
+Version: 1.1
+Summary: Data processing library for ISEE
+Home-page: https://bitbucket.org/takeuchimarschilok/instruments/src/master/
+Author: Steven Tyler King
+Author-email: king.steven@stonybrook.edu
+License-File: license.txt
+
