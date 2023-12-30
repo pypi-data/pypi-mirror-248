@@ -1,0 +1,15 @@
+hydra-core
+matplotlib
+numpy
+omegaconf
+opencv_python
+pandas
+PyYAML
+scipy
+tqdm
+
+[reid]
+onnxruntime
+
+[yolov8]
+ultralytics
