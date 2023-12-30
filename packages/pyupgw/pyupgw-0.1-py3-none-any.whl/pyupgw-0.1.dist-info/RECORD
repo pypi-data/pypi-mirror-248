@@ -1,0 +1,8 @@
+pyupgw/__init__.py,sha256=Spk_-6hzHNrudILfqk6tM4_1p5ho8OAqyDV_-4Gfd5o,298
+pyupgw/_api.py,sha256=RykK5oWeqwYnNsdQiCwff_W5vuwvy9KscYLAvzTjHgY,6099
+pyupgw/client.py,sha256=Ae8goEbIQH0l3GRqKVJtXkcUCWTxLf1H9mMnK9YMpjw,15557
+pyupgw/models.py,sha256=z0hYdyFt5qVSGZBF6YiLXizXKjmz38DZp8fBeOJcRe4,7482
+pyupgw-0.1.dist-info/LICENSE,sha256=KZvak9MOMhkunqR28puRxMzZvgCCs8fK-5sGtmMpD-c,1080
+pyupgw-0.1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+pyupgw-0.1.dist-info/METADATA,sha256=-s0MHPEE5AlCWxImi-SRudOEhqVSYhjjj4PKFC8KqEg,5612
+pyupgw-0.1.dist-info/RECORD,,
