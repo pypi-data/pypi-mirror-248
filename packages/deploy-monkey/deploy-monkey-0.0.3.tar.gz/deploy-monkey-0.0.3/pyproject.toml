@@ -1,0 +1,23 @@
+[project]
+name = "deploy-monkey"
+version = "0.0.3"
+description = "Currently to prevent dependency-confusion. Aim to open source later"
+dependencies = []
+authors = [{name="Tino de Bruijn", email="tino@solarmonkey.nl"}]
+classifiers=[
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+readme = {file = "README.md", content-type = "text/markdown"}
+
+[project.scripts]
+monkey = "monkey.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["monkey*"]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
