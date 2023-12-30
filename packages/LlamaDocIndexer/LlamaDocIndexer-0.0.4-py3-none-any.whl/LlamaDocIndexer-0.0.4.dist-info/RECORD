@@ -1,0 +1,11 @@
+LlamaDocIndexer/__init__.py,sha256=efqYvW9rRNljSww3Ch7bHlJEgRPKLN43cYBtRmRmBaI,29
+LlamaDocIndexer/indexer.py,sha256=y6cbqz1yr2c0U6loS7ap5wW6aWkHwMYCs8jnR4lcGOU,6922
+LlamaDocIndexer/io/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+LlamaDocIndexer/io/documents.py,sha256=GA9bGBuKlpaSSUg0Q1Lg3baploCipRFlf4ateWmLPHA,1627
+io/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+io/documents.py,sha256=Ax0YWbTRthxl3GsoTgIj6ktmeFiIjJ9wb_xXyUfQDKU,884
+LlamaDocIndexer-0.0.4.dist-info/LICENSE,sha256=LfI4m0Sauw8sspZm2ma808k4VulVOZw41LgFynFNO8k,1067
+LlamaDocIndexer-0.0.4.dist-info/METADATA,sha256=zLKr8DFG4rlI-tkxJG6EJGxjUmoN8jORrFFHRBp5kH0,398
+LlamaDocIndexer-0.0.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+LlamaDocIndexer-0.0.4.dist-info/top_level.txt,sha256=GELu-19RH0qiFrR4r7E70uwAkcZU8jO11X4nfKvGKqQ,16
+LlamaDocIndexer-0.0.4.dist-info/RECORD,,
