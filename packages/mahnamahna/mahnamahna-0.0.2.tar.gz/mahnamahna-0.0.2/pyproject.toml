@@ -1,0 +1,34 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "mahnamahna"
+version = "0.0.2"
+description = "Media (text/audio/video) analysis and manipulation"
+homepage = "https://ragt.ag/code/projects/mahnamahna"
+repository = "https://ragt.ag/code/projects/mahnamahna.git"
+documentation = "https://ragt.ag/code/projects/mahnamahna/api"
+authors = ["Angelo Gladding <angelo@ragt.ag>"]
+license = "AGPL-3.0-or-later"
+
+[tool.pyright]
+reportGeneralTypeIssues = false
+reportOptionalMemberAccess = false
+
+[tool.poetry.scripts]
+transcribe = "mahnamahna.voice:transcribe"
+
+[[tool.poetry.source]]
+name = "main"
+url = "https://ragt.ag/code/pypi"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+vosk = "^0.3.32"
+gTTS = "^2.2.3"
+pyttsx3 = "^2.90"
+sounddevice = "^0.4.4"
+nltk = "^3.8.1"
+pyglet = "^2.0.10"
+webagt = "^0.2.3"
