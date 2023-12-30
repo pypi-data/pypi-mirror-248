@@ -1,0 +1,13 @@
+lastfmcollagegenerator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lastfmcollagegenerator/collage.py,sha256=rKvIVtYwYR2e-iV5slnwICbclShFWoU2iwC0viXKIho,9996
+lastfmcollagegenerator/collage_generator.py,sha256=RiIN-UQBALmjzvc-tBTpqIbkRQ-83wFP-_TM7BOJj-U,2375
+lastfmcollagegenerator/constants.py,sha256=C2gVg8mrg6edpDCqSr8d0FYC_ad_TQLTG7nVPa9C9e0,390
+lastfmcollagegenerator/fonts/DejaVuSansMono-Bold.ttf,sha256=2bT2EWA1_CUEZkfl_qhTICHwHE-JuyVF0Kbcbh6ehl0,331992
+lastfmcollagegenerator/fonts/DejaVuSansMono.ttf,sha256=JidlZQPY0KhZxd3LCW09UQ00x3bYjpTDlx3BFL2Iyns,340712
+lastfmcollagegenerator/lastfm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lastfmcollagegenerator/lastfm/client.py,sha256=GLkkDX-QX1O3dLZKyIZZsM5PWDAGRHy1_Y9DExNaBTI,1587
+lastfmcollagegenerator-0.4.2.dist-info/LICENSE,sha256=FsUbLJFIqVslAHJg3AoweKnesFSxcSQJlS87PPPYoUU,1053
+lastfmcollagegenerator-0.4.2.dist-info/METADATA,sha256=BX9i4s1bSMtC_9RZ7Whx0pEKavRD03OtG87oSEaZL20,2298
+lastfmcollagegenerator-0.4.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+lastfmcollagegenerator-0.4.2.dist-info/top_level.txt,sha256=bmUCg-fNorgIOCQtnxiiNes425ppDwyuyYuuOiMR0TU,23
+lastfmcollagegenerator-0.4.2.dist-info/RECORD,,
