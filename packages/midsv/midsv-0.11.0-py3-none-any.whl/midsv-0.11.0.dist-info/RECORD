@@ -1,0 +1,12 @@
+midsv/__init__.py,sha256=UDviXAMSOhYTaYxml4Gv_EqYuQzDFpUz6Ke_jsnZIiU,146
+midsv/convert.py,sha256=ot0uWvVRlWnXQ0_2AJQyJLYyPsD6QQa0Ntt9K_Xde3M,8918
+midsv/format.py,sha256=mWZzMnRPGRGqoYJwEq2q6eGJ6ZztdrMpYK40CiB3JZM,7414
+midsv/io.py,sha256=b_ix5qvZlOr8Nwpnxwkx3Xzk7dB9J5x-2XGzbpbLYB8,903
+midsv/main.py,sha256=FfvZLgBYVaDLucXu2f6c6spK4IlW1UyBQ4z-B8Vnxr8,2444
+midsv/proofread.py,sha256=iT0c97awNvryKmUbz6oTZYJx1ql5u5z125HsZvTz_54,7752
+midsv/validate.py,sha256=fyEqO0dAl4aC-J97qGuG9H_dlBIOzj-tQVIZkEWAnBY,1559
+midsv-0.11.0.dist-info/LICENSE,sha256=gxD-OG_NEkuYSK8D4UsrfdJFY3kPbGGe9yw4UfC3iBk,1069
+midsv-0.11.0.dist-info/METADATA,sha256=VgXT3inWUMM0i_yta1i_Acybk6YlXLga_k8mdA9h9IE,6511
+midsv-0.11.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+midsv-0.11.0.dist-info/top_level.txt,sha256=a2LbWSMUqjvrAWiRpLlyPaH9c7zsv-m5YuP6vOvjFfc,6
+midsv-0.11.0.dist-info/RECORD,,
