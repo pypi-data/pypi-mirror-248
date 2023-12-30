@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: microsoftsqlhelper
+Version: 0.1.0
+Summary: A Python package for connecting and working more easily with Microsoft SQL Server
+Author: Milad Alavi
+Author-email: milad.alavii@outlook.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+
