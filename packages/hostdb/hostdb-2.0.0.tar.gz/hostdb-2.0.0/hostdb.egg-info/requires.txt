@@ -1,0 +1,2 @@
+mashumaro[yaml]>=3.11
+ansible>=7.1.0
