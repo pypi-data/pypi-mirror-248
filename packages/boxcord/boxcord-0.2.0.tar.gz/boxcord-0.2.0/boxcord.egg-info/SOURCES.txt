@@ -1,0 +1,13 @@
+pyproject.toml
+boxcord/__init__.py
+boxcord/cli.py
+boxcord/client.py
+boxcord/errors.py
+boxcord/main.py
+boxcord/setup.py
+boxcord.egg-info/PKG-INFO
+boxcord.egg-info/SOURCES.txt
+boxcord.egg-info/dependency_links.txt
+boxcord.egg-info/entry_points.txt
+boxcord.egg-info/requires.txt
+boxcord.egg-info/top_level.txt
