@@ -1,0 +1,3 @@
+recursive-include mods *.py
+recursive-include obj *.py
+recursive-include prg *.py
