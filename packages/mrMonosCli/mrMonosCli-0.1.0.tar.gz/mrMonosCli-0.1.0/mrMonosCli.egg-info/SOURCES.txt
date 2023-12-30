@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+mcli/__init__.py
+mcli/main.py
+mrMonosCli.egg-info/PKG-INFO
+mrMonosCli.egg-info/SOURCES.txt
+mrMonosCli.egg-info/dependency_links.txt
+mrMonosCli.egg-info/top_level.txt
