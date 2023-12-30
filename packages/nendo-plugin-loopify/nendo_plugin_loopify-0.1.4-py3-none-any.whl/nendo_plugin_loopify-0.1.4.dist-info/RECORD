@@ -1,0 +1,9 @@
+nendo_plugin_loopify/__init__.py,sha256=EiTw21JiCJb05L467KHcFu_8Ofk-zLCCYMPYb6i0OvQ,146
+nendo_plugin_loopify/beatnet.py,sha256=eVeFkaw9mlSMlRUAU6UaRvieNqz4jIG1b2iEy2SN-dg,7065
+nendo_plugin_loopify/models/model.pt,sha256=YZCRvDF8o-g7RVkdRvbePVpBWIvLOf6f574wz_pqyoQ,1612179
+nendo_plugin_loopify/plugin.py,sha256=Qd3mdTFcFgTy8_XtxH6u_79g4wx6QFhD-7BSPy_GNfU,4060
+nendo_plugin_loopify/utils.py,sha256=nvVfhSspFwHEDI7k3A17AFL8kHMpGaNUuDMPYgeDqTc,3823
+nendo_plugin_loopify-0.1.4.dist-info/LICENSE,sha256=WFtPUEsCEmStk9TDnodbMyCpU205jkPFH1wxFD9LIKk,1066
+nendo_plugin_loopify-0.1.4.dist-info/METADATA,sha256=2JrzMtSHnPhT1MguEp9ylQSYPeL_ytRLkYt6e_d0s0k,3126
+nendo_plugin_loopify-0.1.4.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+nendo_plugin_loopify-0.1.4.dist-info/RECORD,,
