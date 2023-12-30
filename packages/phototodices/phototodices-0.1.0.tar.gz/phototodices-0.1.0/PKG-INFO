@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: phototodices
+Version: 0.1.0
+Summary: create a photo to dices
+Author: vahidtwo
+Author-email: vahidtwo@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: PyQt5 (==5.15.10)
+Requires-Dist: PyQt5-Qt5 (==5.15.2)
+Requires-Dist: PyQt5-sip (==12.13.0)
+Description-Content-Type: text/markdown
+
+# photoToDices
+
+convert photo to Dices
+
+### Using
+1-create a virtualenv 
+```
+python3 -m venv .venv
+```
+2-activate the virtualenv
+```
+. ./.venv/bin/activate
+```
+3-install package
+```
+pip install phototodices
+```
+4- run it :)
+```
+python app.py
+```
+![sample](./img.jpg)
+contain more than 3M dices
+## License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT) 
+####  HAVE FUN :D
+ 
+#### Thanks for
+
+[Jadi](http://jadi.net) 
+
+
+
+
