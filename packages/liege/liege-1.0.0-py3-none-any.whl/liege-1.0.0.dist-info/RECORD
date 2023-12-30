@@ -1,0 +1,9 @@
+liege/__init__.py,sha256=kJvJKnHN-945XPnwFklwc4DNSkjiRKbhzOeocAtYh0I,332
+liege/exceptions.py,sha256=zGosRI-mnJvLMvZ84e3Tz6Ma7-IS4MH5-sTVAFAY_Ro,269
+liege/liege.py,sha256=63JE7vUrf7R-LQ9EAgbN1clvp9ac_TC_EYxZ2Dxzxuw,4712
+liege/models.py,sha256=4y-QXW8evQGnbB9aPbb84Y2Fd5MJzAAFs9AmT_gS2K0,3736
+liege/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+liege-1.0.0.dist-info/LICENSE,sha256=12ArXAGU6Yp3mGRn1B2SiJBD_3cnCcK_IDn6VvkqIxc,1077
+liege-1.0.0.dist-info/METADATA,sha256=rymigrqmOml53j8J-DA9i1jXGyQSMUd5XIY0-zcgjR8,10311
+liege-1.0.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+liege-1.0.0.dist-info/RECORD,,
