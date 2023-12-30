@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+datasette_haversine/__init__.py
+datasette_haversine.egg-info/PKG-INFO
+datasette_haversine.egg-info/SOURCES.txt
+datasette_haversine.egg-info/dependency_links.txt
+datasette_haversine.egg-info/entry_points.txt
+datasette_haversine.egg-info/requires.txt
+datasette_haversine.egg-info/top_level.txt
+tests/test_haversine.py
