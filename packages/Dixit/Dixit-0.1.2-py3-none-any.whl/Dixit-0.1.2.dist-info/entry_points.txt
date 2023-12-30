@@ -1,0 +1,2 @@
+[console_scripts]
+dixit = dixit:start
