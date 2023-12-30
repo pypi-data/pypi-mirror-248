@@ -1,0 +1,14 @@
+seCore/CustomLogging.py,sha256=lwobeoGpy3J3AMKDB7MCt0sBdCnQJ-RhBqijEriGk1w,660
+seCore/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+seCore/compat.py,sha256=CocysTP_QFR-W8fznwfL1ofG44Nt6ObGK2QuV1Nnuxo,2134
+seCore/filepath.py,sha256=gvl6RfYi_Chzg_JePouaTavMy-KRm_q1U4135rr1Ydg,54522
+seCore/util.py,sha256=4xWdosPaZgJFh59YRHJV3kh4epavZuUQbFIB1Das0FA,833
+seCore/win32.py,sha256=jUELpM88Hx9t4jhJj_OoaHVDHyj9F2fTnv3E0XnOAPY,378
+seVersion/__init__.py,sha256=ZovAUdSn2LGxApBGyVDO5XNA7G48sfYl1kWxVrX3XVI,12219
+seVersion/_version.py,sha256=IhWaDyhTfxYmcXeBOsmAK4Fxljh3_pwTrLWy1yESIyA,328
+seVersion/cli.py,sha256=M1GU91ApOI-9wA_wA69y7hAHvSeLbyvsdhY20QpeSaE,17987
+seversion-2024.1.0rc3.dist-info/METADATA,sha256=3zKBWyB0hxwJWm7aTW4KHNIBCUCsAxq6ehEO2zdniEY,13285
+seversion-2024.1.0rc3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+seversion-2024.1.0rc3.dist-info/entry_points.txt,sha256=d1NbEJA3-4ojaC8ric3_DSf14eqrppwce6b_d1gGnlY,48
+seversion-2024.1.0rc3.dist-info/top_level.txt,sha256=0MdBzOulYzrINxJ73y2OwBroq4tkowKZTgsN0kkPxfM,17
+seversion-2024.1.0rc3.dist-info/RECORD,,
