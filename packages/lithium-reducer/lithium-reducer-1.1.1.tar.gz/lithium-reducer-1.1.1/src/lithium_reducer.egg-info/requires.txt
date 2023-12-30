@@ -1,0 +1,5 @@
+ffpuppet~=0.11.2
+
+[dev]
+pre-commit
+tox
