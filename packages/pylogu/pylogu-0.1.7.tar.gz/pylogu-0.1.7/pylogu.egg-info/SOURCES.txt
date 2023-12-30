@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+setup.py
+core/__init__.py
+core/config.py
+pylogu.egg-info/PKG-INFO
+pylogu.egg-info/SOURCES.txt
+pylogu.egg-info/dependency_links.txt
+pylogu.egg-info/requires.txt
+pylogu.egg-info/top_level.txt
