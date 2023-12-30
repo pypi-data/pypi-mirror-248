@@ -1,0 +1,2 @@
+[console_scripts]
+sevals = lm_eval.__main__:cli_evaluate
