@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.cfg
+onionrequests/OnionQueue.py
+onionrequests/OnionSession.py
+onionrequests/__init__.py
+onionrequests/tests.py
+onionrequests.egg-info/PKG-INFO
+onionrequests.egg-info/SOURCES.txt
+onionrequests.egg-info/dependency_links.txt
+onionrequests.egg-info/requires.txt
+onionrequests.egg-info/top_level.txt
