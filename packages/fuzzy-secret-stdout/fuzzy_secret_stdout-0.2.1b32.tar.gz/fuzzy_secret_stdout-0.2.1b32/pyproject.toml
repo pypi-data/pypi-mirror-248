@@ -1,0 +1,45 @@
+[tool.poetry]
+name = "fuzzy-secret-stdout"
+version = "0.2.1b32"
+description = "Small utility to fuzzy search from a secret store and print the value to stdout"
+authors = ["kiran94"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://pypi.org/project/fuzzy-secret-stdout/"
+repository = "https://github.com/kiran94/fuzzy-secret-stdout/pull/10"
+documentation = "https://github.com/kiran94/fuzzy-secret-stdout/blob/main/README.md"
+keywords = ["aws", "secrets", "ssm", "parameter-store"]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Topic :: Utilities",
+    "Topic :: Software Development"
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+boto3 = "^1.33.11"
+pyfzf = "^0.3.1"
+rich = "^13.7.0"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.1.7"
+pytest = "^7.4.3"
+pytest-cov = "^4.1.0"
+pytest-github-actions-annotate-failures = "^0.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+fss = 'fuzzy_secret_stdout.__main__:main'
+fuzzy-secret-stdout = 'fuzzy_secret_stdout.__main__:main'
+
+[tool.ruff]
+line-length = 160
+target-version = "py38"
+
+[tool.ruff.flake8-quotes]
+inline-quotes = "single"
+
