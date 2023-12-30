@@ -1,0 +1,12 @@
+chatnio/__init__.py,sha256=CRv16mAeCxUzhB_KqYZbfazZPWPvxi-yLRbfxk4XQBk,959
+chatnio/auth.py,sha256=kO-EAUC2ikunYhAA3Bsr3stJkbgnkq-5moLDIhi3rTU,1306
+chatnio/chat.py,sha256=UusKh0bO449KJS35CuS0Ll-obIlBGOf_rbYUn--2Fn8,6807
+chatnio/conversation.py,sha256=4r8qP7xFfojyq1rYjP8TZl5twLF7hKWLqxL_SuCRGRU,6970
+chatnio/globals.py,sha256=CTF6py3AYINNL6W-5b67dEDxr4VgO06th0_tj2yk0Ho,730
+chatnio/quota.py,sha256=zeXTLBnncme022QUkMxFFs9prwKjOIGjvAUVDC4ojjI,3040
+chatnio-0.1.4.dist-info/AUTHORS.rst,sha256=9GTrqPrgFXIhoF1lzsnjJ33Tt98PsQBU8_csG8GLRY4,173
+chatnio-0.1.4.dist-info/LICENSE,sha256=iilnVPxwB-HhO97oGCfi8l1OQ8ynvf9BqTRZOrP29B4,1091
+chatnio-0.1.4.dist-info/METADATA,sha256=BxPQ9RwyMR_hHa99y56kVKYJHPr6tbNDQShp6uoUQew,3343
+chatnio-0.1.4.dist-info/WHEEL,sha256=JZXtYepZFsf4IoivNpnSgKIc4qTHan08DRd56koo_DM,116
+chatnio-0.1.4.dist-info/top_level.txt,sha256=lLvyTIVDRXLsV4oESEhYTwPlfFWQ-DKhVt7iZUIkSx0,8
+chatnio-0.1.4.dist-info/RECORD,,
