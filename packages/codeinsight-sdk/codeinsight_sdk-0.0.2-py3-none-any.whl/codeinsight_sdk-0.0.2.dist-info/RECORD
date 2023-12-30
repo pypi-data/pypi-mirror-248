@@ -1,0 +1,9 @@
+codeinsight_sdk/__init__.py,sha256=iOoK9w_PTWRis-58Fk2pTFphh36xunaG7NoByPgGGV4,37
+codeinsight_sdk/client.py,sha256=w0bpcB7hcfgvmVCvRC-UrimJJW6nAlk9VWJYPpUFlGY,1946
+codeinsight_sdk/errors.py,sha256=gHmfcU2gFsWcmRHipsoDHL2QH3mKI5V0sSastAhpazE,277
+codeinsight_sdk/handlers.py,sha256=6O5zilSg6tj6owC_xTHi5A5D44vLquGtNDn1DY9X73I,2503
+codeinsight_sdk/models.py,sha256=Ts4Fz2ctFAfGRKwiF4HwBpX-YlJRwARn8zAULPdI-i0,1379
+codeinsight_sdk-0.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+codeinsight_sdk-0.0.2.dist-info/METADATA,sha256=rTROkapZ60GYEH94ur4BAz2d4bI3Nseq_8oNyb0BX1I,1768
+codeinsight_sdk-0.0.2.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+codeinsight_sdk-0.0.2.dist-info/RECORD,,
