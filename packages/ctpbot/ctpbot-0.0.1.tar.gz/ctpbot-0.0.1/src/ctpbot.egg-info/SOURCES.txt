@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/ctpbot/__init__.py
+src/ctpbot/ctpbot.py
+src/ctpbot.egg-info/PKG-INFO
+src/ctpbot.egg-info/SOURCES.txt
+src/ctpbot.egg-info/dependency_links.txt
+src/ctpbot.egg-info/not-zip-safe
+src/ctpbot.egg-info/top_level.txt
