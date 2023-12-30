@@ -1,0 +1,11 @@
+/build/
+/dist/
+__pycache__/
+/docs/_build/
+/.coverage
+/.pytest_cache
+/.tox
+.idea/
+venv/
+*.pyc
+.python-version
