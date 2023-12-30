@@ -1,0 +1,9 @@
+LICENSE
+setup.py
+mcitemlib/__init__.py
+mcitemlib/itemlib.py
+mcitemlib/style.py
+mcitemlib.egg-info/PKG-INFO
+mcitemlib.egg-info/SOURCES.txt
+mcitemlib.egg-info/dependency_links.txt
+mcitemlib.egg-info/top_level.txt
