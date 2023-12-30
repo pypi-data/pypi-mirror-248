@@ -1,0 +1,160 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "{{ project_name }}"
+version = "0.1.0"
+description = ''
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "{{ author_name }}", email = "{{ author_email }}" }]
+dependencies = [
+  "Pillow",
+  "hiredis",
+  "redis",
+  "boto3",
+  "gunicorn",
+  "sentry-sdk",
+  "whitenoise",
+  "psycopg[binary]",
+  "crispy-tailwind",
+  "django[argon2]",
+  "django-environ",
+  "django-model-utils",
+  "django-allauth",
+  "django-template-partials",
+  "django-tailwind-cli",
+  "django-extensions",
+  "django-htmx",
+  "django-anymail",
+  "django-browser-reload",
+  "django-debug-toolbar",
+  "django-fastdev",
+]
+
+[tool.hatch.env]
+requires = [
+  "hatch-pip-compile"
+]
+
+[tool.hatch.envs.default]
+type = "pip-compile"
+pip-compile-constraint = "default"
+pip-compile-installer = "pip-sync"
+lock-filename = "requirements.txt"
+dependencies = ["dj-notebook>=0.6.1", "Werkzeug[watchdog]>=3.0.1"]
+
+[tool.hatch.envs.default.scripts]
+runserver = ["migrate", "python manage.py tailwind runserver {args}"]
+migrate = "python manage.py migrate {args}"
+makemigrations = "python manage.py makemigrations {args}"
+reset-db = "python manage.py reset_db --noinput"
+shell = "python manage.py shell_plus {args}"
+upgrade-deps = ["rm requirements.txt", "hatch env run --env default -- python --version"]
+
+[[tool.hatch.envs.all.matrix]]
+python = ["3.11", "3.12"]
+
+[tool.hatch.envs.test]
+dependencies = [
+  "coverage[toml]>=6.5",
+  "pytest",
+  "pytest-django",
+  "pytest-sugar",
+]
+
+[tool.hatch.envs.test.scripts]
+test = "pytest {args:tests}"
+test-cov = "coverage run -m pytest {args:tests}"
+cov-report = ["- coverage combine", "coverage report"]
+cov = ["test-cov", "cov-report"]
+
+[tool.hatch.envs.lint]
+dependencies = [
+  "mypy",
+  "django-stubs",
+  "curlylint",
+  "reorder-python-imports",
+  "djhtml",
+  "ruff",
+  "pyupgrade",
+  "django-upgrade",
+  "autoflake",
+]
+
+[tool.hatch.envs.lint.scripts]
+run-mypy = "mypy {args:.}"
+run-format = "hatch fmt --formatter"
+run-autoflake = "autoflake --in-place --remove-all-unused-imports --remove-unused-variables --expand-star-imports --exclude=.*/__init__.py {args:.}"
+run-reorder-python-imports = "reorder-python-imports config/*.py {args:./*/*/*.py}"
+run-ruff = "ruff check --quiet --fix --exit-non-zero-on-fix {args:.}"
+run-curlylint = "curlylint {args:.}"
+run-djhtml = "djhtml --tabwidth 4 {args:.}"
+run-pyupgrade = "pyupgrade --py311-plus {args}"
+run-all-pyupgrade = "git ls-files -- '*.py' | xargs pyupgrade --py311-plus"
+run-django-upgrade = "django-upgrade --target-version 4.2 {args}"
+run-all-django-upgrade = "git ls-files -- '*.py' | xargs django-upgrade --target-version 4.2"
+python = [
+  "run-pyright",
+  "run-format",
+  "run-reorder-python-imports",
+  "run-autoflake",
+  "run-ruff",
+  "run-all-pyupgrade",
+  "run-all-django-upgrade",
+]
+templates = ["run-curlylint", "run-djhtml"]
+all = ["python", "templates"]
+
+[tool.mypy]
+python_version = "3.11"
+check_untyped_defs = true
+ignore_missing_imports = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+warn_unused_configs = true
+plugins = ["mypy_django_plugin.main"]
+
+[[tool.mypy.overrides]]
+# Django migrations should not produce any errors:
+module = "*.migrations.*"
+ignore_errors = true
+
+[tool.django-stubs]
+django_settings_module = "config.settings"
+
+[tool.curlylint]
+include = '\.(html|jinja)$'
+exclude = '''
+(
+  /(
+      \.eggs           # exclude a few common directories in the root of the project
+    | \.git
+    | \.venv
+    | \.ruff_cache
+  )/
+  | webpack-stats.html # also separately exclude a file named webpack-stats.html in the root of the project
+)
+'''
+
+[tool.curlylint.rules]
+indent = 4
+aria_role = true
+django_forms_rendering = true
+image_alt = true
+meta_viewport = true
+no_autofocus = true
+tabindex_no_positive = true
+
+[tool.coverage.run]
+source_pkgs = ["{{ project_name }}", "tests"]
+branch = true
+parallel = true
+
+[tool.coverage.paths]
+{{ project_name }} = ["*/{{ project_name }}/{{ project_name }}"]
+tests = ["tests", "*/{{ project_name }}/tests"]
+
+[tool.coverage.report]
+exclude_lines = ["no cov", "if __name__ == .__main__.:", "if TYPE_CHECKING:"]
