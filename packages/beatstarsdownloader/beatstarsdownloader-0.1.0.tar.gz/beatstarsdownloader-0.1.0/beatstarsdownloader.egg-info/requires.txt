@@ -1,0 +1,13 @@
+beautifulsoup4
+filetype
+halo
+mutagen
+pick
+pillow
+pydub
+requests
+selenium>=4.16.0
+setuptools
+simple-chalk
+tqdm
+validators

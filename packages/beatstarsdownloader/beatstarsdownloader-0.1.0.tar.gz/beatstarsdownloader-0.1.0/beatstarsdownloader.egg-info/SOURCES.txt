@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+beatstarsdownloader/__init__.py
+beatstarsdownloader/__main__.py
+beatstarsdownloader/beatstarsdownloader.py
+beatstarsdownloader/config.py
+beatstarsdownloader/url_helpers.py
+beatstarsdownloader.egg-info/PKG-INFO
+beatstarsdownloader.egg-info/SOURCES.txt
+beatstarsdownloader.egg-info/dependency_links.txt
+beatstarsdownloader.egg-info/entry_points.txt
+beatstarsdownloader.egg-info/requires.txt
+beatstarsdownloader.egg-info/top_level.txt
