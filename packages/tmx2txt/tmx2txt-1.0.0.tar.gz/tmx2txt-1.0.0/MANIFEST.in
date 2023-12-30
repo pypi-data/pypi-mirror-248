@@ -1,0 +1,7 @@
+recursive-include tmx2txt *
+
+include requirements.txt
+include LICENSE.txt
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]

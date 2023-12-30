@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+requirements.txt
+setup.py
+tmx2txt/__init__.py
+tmx2txt/__main__.py
+tmx2txt/tmx2txt.py
+tmx2txt.egg-info/PKG-INFO
+tmx2txt.egg-info/SOURCES.txt
+tmx2txt.egg-info/dependency_links.txt
+tmx2txt.egg-info/entry_points.txt
+tmx2txt.egg-info/requires.txt
+tmx2txt.egg-info/top_level.txt

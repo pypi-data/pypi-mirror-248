@@ -1,0 +1,3 @@
+[console_scripts]
+tmx2txt = tmx2txt.tmx2txt:main
+
