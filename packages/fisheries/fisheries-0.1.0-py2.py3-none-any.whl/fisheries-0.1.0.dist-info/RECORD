@@ -1,0 +1,10 @@
+fisheries/__init__.py,sha256=ySxBxOxzoF9TJZJhO0UdMZhhAE3KasVFkiiXtE3js5g,123
+fisheries/cli.py,sha256=UU4r_4m1oqeCn6mk81Of19WcG4XnCjQDwEbq5puhph8,405
+fisheries/fisheries.py,sha256=h0hwdogXGFqerm-5ZPeT-irPn91pCcQRjiHThXsRzEk,19
+fisheries-0.1.0.dist-info/AUTHORS.rst,sha256=cFejIfDu_KPGCkmaDth36sQ0KSLBfaLbnb6Av30ZbDU,152
+fisheries-0.1.0.dist-info/LICENSE,sha256=Jc4geeZBPGCoVmGo_BTX6KgyvA_tmAE9dNa7CRC4fJ4,1070
+fisheries-0.1.0.dist-info/METADATA,sha256=UzR3ElCiLf5JeapY-M1mkPNj2NX9d6XrPO-1UgnkSgg,1693
+fisheries-0.1.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+fisheries-0.1.0.dist-info/entry_points.txt,sha256=Af0Q2kM6ybRzTVFzjqYdOZeeeYgJnLxH6eSdp5zRlTA,50
+fisheries-0.1.0.dist-info/top_level.txt,sha256=lXVfGSAlPe5hLd7jF9U8oT2vvDHkddC3HBAMLTMZjmQ,10
+fisheries-0.1.0.dist-info/RECORD,,
