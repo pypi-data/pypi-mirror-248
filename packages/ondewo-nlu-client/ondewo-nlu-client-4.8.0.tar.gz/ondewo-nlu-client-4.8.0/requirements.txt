@@ -1,0 +1,13 @@
+dataclasses-json
+google-api-core
+grpcio
+grpcio-reflection
+grpcio-tools
+polling
+protobuf
+python-dateutil
+regex
+setuptools
+
+ondewo-client-utils
+ondewo-logging
