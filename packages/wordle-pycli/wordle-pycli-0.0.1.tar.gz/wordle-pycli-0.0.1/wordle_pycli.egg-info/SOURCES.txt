@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+wordle_pycli/__init__.py
+wordle_pycli/allowed_words.py
+wordle_pycli/wordle.py
+wordle_pycli.egg-info/PKG-INFO
+wordle_pycli.egg-info/SOURCES.txt
+wordle_pycli.egg-info/dependency_links.txt
+wordle_pycli.egg-info/entry_points.txt
+wordle_pycli.egg-info/not-zip-safe
+wordle_pycli.egg-info/top_level.txt
