@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: tinybin
+Version: 0.4.0
+Summary: 
+Author: megahomyak
+Author-email: g.megahomyak@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: fastapi (>=0.108.0,<0.109.0)
+Requires-Dist: python-multipart (>=0.0.6,<0.0.7)
+Description-Content-Type: text/markdown
+
+# Tinybin
+
+Tinybin is a small text sharing service similar to Pastebin.
+
+## Installation
+
+* `pip install tinybin`
+* `pip install uvicorn` - optional, if you want to run it with uvicorn (you'll need a different ASGI-compatible server)
+
+## Usage
+
+```python
+from tinybin import api
+import uvicorn
+
+uvicorn.run(
+    api,
+    port=8000,
+    host="127.0.0.1",
+)
+```
+
+Beware that it will create a "texts" directory at its location of startup. It will store shared texts there.
+
