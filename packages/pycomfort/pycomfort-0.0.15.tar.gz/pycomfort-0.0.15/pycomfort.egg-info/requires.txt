@@ -1,0 +1,6 @@
+pyfunctional
+more-itertools
+click
+loguru
+python-dotenv
+Deprecated
