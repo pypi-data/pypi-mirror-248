@@ -1,0 +1,16 @@
+darli/__init__.py,sha256=tCao-fL5Aee2X96eQniUarDN21tCey7-EWum_XoSYwg,92
+darli/robots.py,sha256=ew0R5T5s30mQejqG-JZ3na1HMdy5BZ2mmsNZfNjY6v0,2374
+darli/backend/__init__.py,sha256=kkHHLjWkkW8ltLpxHmxVEM6ue_L--OS5BIG73aIoa5w,216
+darli/backend/base.py,sha256=k07e-Srs4i4x7g2Zz5Fdg9qInbaJxx2eW2NaT2L4s9I,4646
+darli/backend/casadi.py,sha256=pI9L1KeaAE3_SLdSnl7jhOfKC2i4iEEAHC_stT68fgg,11714
+darli/backend/pinocchio.py,sha256=XvBn-T3Z5yMJWsNP4CsE4D5ujx7YQZw_DAveFrwJApQ,13209
+darli/modeling/__init__.py,sha256=QF6dlnpvyEw-Jk8HKhI5Wt-njqCupdEYtt5oVg3LBnY,195
+darli/modeling/base.py,sha256=uaLcH9pB0HOM3_osfybs61XEUmrapsqEVochuVmvneo,6296
+darli/modeling/body.py,sha256=xUuD6uH_FaHw0EN21VydDwA_2wml2pAo9F595GBerOQ,4320
+darli/modeling/contact.py,sha256=lCLkhYvswvEs0aYUxxy4D6azTQOJDlKAMfyHsP-xkCw,2712
+darli/modeling/parametric.py,sha256=TaE9VlSJEFmFsGycTAw7bgXWahS9uEE1g9GUlsBHAPY,4725
+darli/modeling/robot.py,sha256=K8Pxq2NSWVSR2iX3LXm2TP2s_c3KI3o4XuAb1zEPFss,9950
+darli-0.2.0.dist-info/METADATA,sha256=ZFdCa42uhxvQTKYXDRRqeSeehDu11jqN1ZfAwC0Y0fY,5090
+darli-0.2.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+darli-0.2.0.dist-info/top_level.txt,sha256=qY4otbZCjFkySLgtfbkUvsU-2fS2ES9VBbG0-QKI9MY,6
+darli-0.2.0.dist-info/RECORD,,
