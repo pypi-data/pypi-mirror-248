@@ -1,0 +1,9 @@
+pkvid/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pkvid/__main__.py,sha256=lk9fh1wXdz6u_vEwYt2i2xPu_DAJi133vr67qYIvgGM,67
+pkvid/blender.py,sha256=6yagsun9mhy0_cFLOmu6s1nIjdLDcDQxb-zjvWbyUjE,1716
+pkvid/cli.py,sha256=3tBCyFFPzHsRAxWhFaO4hYwFk0AzbSFuLLpcyl95MJ0,791
+pkvid/config.py,sha256=sZJQLrckTZj02mEsLWiwyuv3IK6X9eSQaL7BrHQpits,1245
+pkvid/project.py,sha256=hdb3nMaqUKx-8VNCFmn8zfhP75PFN7G6vzN9v8wUans,668
+pkvid-0.1.0.dist-info/METADATA,sha256=QG3XIpwfXDLsLDw6uAGGGXjOU-MzYLbtEtNamo2PgGg,385
+pkvid-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+pkvid-0.1.0.dist-info/RECORD,,

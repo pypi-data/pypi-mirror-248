@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pkvid
+Version: 0.1.0
+Summary: Python package intended to help with automation of video editing
+Author: Steve G
+Author-email: pagekeysolutions@gmail.com
+Requires-Python: ==3.10.*
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: pydantic (>=2.5.3,<3.0.0)
+Requires-Dist: pyyaml (>=6.0.1,<7.0.0)
