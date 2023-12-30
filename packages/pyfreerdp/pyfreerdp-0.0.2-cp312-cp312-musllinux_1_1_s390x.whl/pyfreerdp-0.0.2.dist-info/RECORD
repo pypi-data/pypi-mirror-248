@@ -1,0 +1,17 @@
+pyfreerdp.cpython-312-s390x-linux-musl.so,sha256=3NlzQ3_cM5OAic_mb2xLVSe2nq0mqGpE4PGepIs4fpk,104057
+pyfreerdp./libxkbfile-b47fc3f3.so.1.0.2,sha256=gHzIGxIYrUvw17PjtxkRTFMA7ZdBl_92PqjnPD1JCY0,150161
+pyfreerdp./libfreerdp2-175f9552.so.2.2.0,sha256=Yr47P0E0LjtYLLaPK80fmxq90Rlqb2esOI7PgrtXI5s,1470201
+pyfreerdp./libjpeg-3e234b02.so.8.2.2,sha256=6UrXWzPGIXiLqZekgzTADzVAIBfEiEaFNfXwNXrZLBg,425137
+pyfreerdp./libxcb-d5dbee1f.so.1.1.0,sha256=wogdPei2lWhMYhOW8RRFfC9K3tL-H_sTTGUU3BoLmG0,218681
+pyfreerdp./libXdmcp-b17aac1d.so.6.0.0,sha256=Je84J8QlVMna2HpPDOekCLhJToqK-HgdTMnMJKpH9QQ,29753
+pyfreerdp./libX11-ee7473ab.so.6.3.0,sha256=Gyd1zpWgBv4Ju5Yp6xjRJctnPbJh14jgs6p9YHcgfWA,1362249
+pyfreerdp./libXau-d7f48bfe.so.6.0.0,sha256=kSEIi79V9sO1lFtinrkTdfzZSdoL_sAdiHo8O-MCZvA,16929
+pyfreerdp./libbsd-eb16fa2e.so.0.10.0,sha256=rjssKpdHiQo4VhRH5z_RsNwpfPeskZOF8T0i7RQ9Va4,93241
+pyfreerdp./libwinpr2-c17201bb.so.2.2.0,sha256=CMV-LfX1K178ttlT_Vsgd326XSHQ4pEBiYrhPcMVidc,1262985
+pyfreerdp./libssl-177b158b.so.1.1,sha256=Vw3iOdTFMqSEItRwbCEdselnm2GsWK_8QybG8CD2nFM,617217
+pyfreerdp./libgsm-3dc2d09b.so.1.0.12,sha256=Tnw3n0m3ddG0ZSzBb2H0gN4YSSqNIgzqQkxpzLTMuv8,46305
+pyfreerdp./libcrypto-049e7069.so.1.1,sha256=OxS0i-eYnSw-Fiv-XpPc9mcFT8od2Umy-zONwnGtAA4,2459657
+pyfreerdp-0.0.2.dist-info/top_level.txt,sha256=dpO7Te_Hl5aUZWyvUWUCtp5T2LZQWF5fMlZrqlpValk,10
+pyfreerdp-0.0.2.dist-info/WHEEL,sha256=K6URh--Iye60Oxk0fHD0DmDfCh2rhRc5u_tqQLpLHpY,112
+pyfreerdp-0.0.2.dist-info/METADATA,sha256=1XcN2164iNvcMwOzjy0cy0EJo0tCD0btNe1WsfG_Ptg,367
+pyfreerdp-0.0.2.dist-info/RECORD,,
