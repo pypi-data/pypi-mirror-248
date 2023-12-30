@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: hocr-tools-lib
+Version: 1.0.0
+Summary: Advanced tools for hOCR integration
+Home-page: https://github.com/stefan6419846/hocr-tools/
+Download-URL: https://github.com/stefan6419846/hocr-tools/tarball/v1.0.0
+Author: Thomas Breuel, stefan6419846 (library version)
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Multimedia :: Graphics :: Graphics Conversion
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Classifier: Topic :: Utilities
+License-File: LICENSE
+Requires-Dist: Pillow >=9.3.0
+Requires-Dist: lxml >=3.5.0
+Requires-Dist: reportlab >=3.3.0
+Requires-Dist: python-bidi
+Provides-Extra: dev
+Requires-Dist: beautifulsoup4 ; extra == 'dev'
+Requires-Dist: requests ; extra == 'dev'
+Requires-Dist: importlib-resources ; (python_version < "3.10") and extra == 'dev'
+
