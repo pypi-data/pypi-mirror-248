@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: pyqt-xarray-treeview
+Version: 1.0.0
+Summary: PyQt/PySide model/view for tree of xarray datasets.
+Keywords: PyQt PySide xarray
+Home-page: https://github.com/marcel-goldschen-ohm/PyQt-Xarray-TreeView
+Author-Email: Marcel Goldschen-Ohm <goldschen-ohm@utexas.edu>
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Project-URL: Homepage, https://github.com/marcel-goldschen-ohm/PyQt-Xarray-TreeView
+Project-URL: Repository, https://github.com/marcel-goldschen-ohm/PyQt-Xarray-TreeView
+Requires-Python: >=3.9
+Requires-Dist: numpy>=1.26.2
+Requires-Dist: qtpy>=2.4.1
+Requires-Dist: qtawesome>=1.3.0
+Requires-Dist: pyqt-ext>=1.1.0
+Requires-Dist: xarray>=2023.12.0
+Requires-Dist: scipy>=1.11.4
+Requires-Dist: lmfit>=1.2.2
+Description-Content-Type: text/markdown
+
+# PyQt-Xarray-TreeView
+PyQt/PySide model/view for tree of xarray datasets.
+
+# Install
+Should work with PySide6, PyQt6, or PyQt5.
+```shell
+pip install PySide6 pyqt-xarray-treeview
+```
