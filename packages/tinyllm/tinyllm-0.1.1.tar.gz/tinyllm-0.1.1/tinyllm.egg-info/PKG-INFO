@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: tinyllm
+Version: 0.1.1
+Summary: Development and management infrastructure for LLM applications
+Home-page: 
+Author: Othmane Zoheir
+Author-email: zozoheir@umich.edu
+License-File: LICENSE
