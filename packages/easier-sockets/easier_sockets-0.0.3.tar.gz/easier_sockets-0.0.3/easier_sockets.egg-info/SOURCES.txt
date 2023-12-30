@@ -1,0 +1,8 @@
+setup.py
+easier_sockets/__init__.py
+easier_sockets/easier_sockets.py
+easier_sockets.egg-info/PKG-INFO
+easier_sockets.egg-info/SOURCES.txt
+easier_sockets.egg-info/dependency_links.txt
+easier_sockets.egg-info/requires.txt
+easier_sockets.egg-info/top_level.txt
