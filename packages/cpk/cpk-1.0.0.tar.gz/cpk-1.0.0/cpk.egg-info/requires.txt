@@ -1,0 +1,8 @@
+docker>=4.4.0
+requests
+jsonschema
+termcolor
+pyyaml
+sshconf
+cryptography
+x-docker>=0.0.2

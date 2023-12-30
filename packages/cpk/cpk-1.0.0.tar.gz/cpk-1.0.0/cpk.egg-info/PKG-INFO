@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: cpk
+Version: 1.0.0
+Summary: Toolkit that standardize the way code in a project is structured and packaged for maximum portability, readability and maintainability.
+Home-page: https://github.com/afdaniele/cpk
+Download-URL: https://github.com/afdaniele/cpk/tarball/1.0.0
+Author: Andrea F. Daniele
+Author-email: afdaniele@ttic.edu
+License: MIT
+Keywords: code,container,containerization,package,toolkit,docker
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE
