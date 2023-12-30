@@ -1,0 +1,6 @@
+sigma/backends/sqlite/__init__.py,sha256=0H8T5peCt2J9VBwiCwQjbWFNqEwjuozMAtNKOfAwUmk,237
+sigma/backends/sqlite/sqlite.py,sha256=UstXs6VUpki1ExftcJ0cLP4n83FVrnw6L1Ai16VWr8Q,16780
+pysigma_backend_sqlite-0.1.1.dist-info/LICENSE,sha256=-c5HADBDVfIhFBQh3qHyT64vb7MF2ZQO8g-GuHTDYgo,7819
+pysigma_backend_sqlite-0.1.1.dist-info/METADATA,sha256=kT7Uu_hCx1m6BpRWb9BWnMATw7yDiSFDxLXHS50Ykiw,3307
+pysigma_backend_sqlite-0.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+pysigma_backend_sqlite-0.1.1.dist-info/RECORD,,
