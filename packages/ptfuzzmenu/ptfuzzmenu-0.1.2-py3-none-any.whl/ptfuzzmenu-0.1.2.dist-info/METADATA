@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: ptfuzzmenu
+Version: 0.1.2
+Summary: [archived] Fuzzy-filtering menu widget for prompt-toolkit
+Home-page: http://github.com/lpenz/ptfuzzmenu
+Author: "Leandro Lisboa Penz"
+Author-email: "lpenz@lpenz.org"
+License: MIT
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+This repository has been archived in favor of [ptvertmenu]
+
+[ptvertmenu]: https://github.com/lpenz/ptvertmenu/
+
