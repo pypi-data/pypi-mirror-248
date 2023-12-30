@@ -1,0 +1,6 @@
+README.md
+setup.py
+egen111222_Kirill111222_DeleteSoonn.egg-info/PKG-INFO
+egen111222_Kirill111222_DeleteSoonn.egg-info/SOURCES.txt
+egen111222_Kirill111222_DeleteSoonn.egg-info/dependency_links.txt
+egen111222_Kirill111222_DeleteSoonn.egg-info/top_level.txt
