@@ -1,0 +1,336 @@
+# seVersion
+
+---
+
+CLI to enhance versioning for Python projects.
+
+## Basic Usage
+Install seVersion to local environment with `pip install seVersion`, then run  
+`seVersion <projectname> --create` to create project version file named `_version.py`  
+in your project. If folder does not exist you can add `--cdne` and it will create folder  
+and `_version.py` file for project  
+
+_**Note:** setting `<projectname>` to `app` for examples_
+``` shell
+$ seVersion app --create --cdne
+```
+```ini
+# Output:
+--------------------------------------------------------------------
+seVersion | INFO     |          Creating: FilePath('./app')
+seVersion | INFO     | Creating codebase: 2023.10.0
+seVersion | INFO     |          Updating: ./app/_version.py
+```
+``` ini
+# file: _version.py
+--------------------------------------------------------------------
+"""
+Provides `app` version information.
+"""
+# This file is auto-generated! Do not edit!
+# Use `seVersion app` to change this file.
+
+from seVersion import Version
+__version__ = Version("app", 2023, 10, 0, 0)
+__setuptools__ = __version__.public()
+__all__ = ["__version__"]
+```
+
+If `__init__.py` doesn't exist it will be created, otherwise add the following to your root package's `__init__.py`.  
+This will allow users of your project can find your version:
+``` dockerfile
+from ._version import __version__
+```
+
+## Incremental Versions
+
+`seVersion.Version` is a class that represents a version of a given project.
+It is made up of the following elements (which are given during instantiation):
+- `package` (required), the name of the package this `Version` represents.
+- `major`, `minor`, `micro` (all required), the X.Y.Z of your project's `Version`.
+- `release_candidate` (optional), set to 1 or higher to mark this ``Version`` being of a release candidate/pre-release.
+- `post` (optional), set to 1 or higher to mark this `Version` as a post release.
+- `dev` (optional), set to 1 or higher to mark this `Version` as a development release.
+
+You can extract a PEP-440 compatible version string by using the `.public()` method, which returns a ``str`` 
+containing the full version. This is the version you should provide to users, or publicly use.  
+An example output would be ``"2023.1.0"``, ``"2023.1.2dev1"``, or ``"2023.1.2rc1"``.
+
+Calling `repr()` with a `Version` will give a Python-source-code representation of it, and calling `str()` 
+with a `Version` will provide a string similar to `'[<projectname>, version 23.1.0]'`.
+``` python
+from app import __version__, __setuptools__
+
+print(f'{"__version__":>25}: {__version__}')
+print(f'{"__setuptools__":>25}: {__setuptools__}')
+print(f'{".public()":>25}: {__version__.public()}')
+print(f'{".public_build()":>25}: {__version__.public_build()}')
+print(f'{".repr()":>25}: {repr(__version__)}')
+print(f'{".str()":>25}: {str(__version__)}')
+```
+
+```shell
+# Output:
+    __version__: [app, version 2023.12.0, build 0 ]
+ __setuptools__: 2023.12.0
+      .public(): 2023.12.0
+.public_build(): 2023.12.0 build[0]
+        .repr(): Version("app", 2023, 12, 0, 0)
+         .str(): [app, version 2023.12.0, build 0 ]
+```
+
+## Updating Build in Code
+Using print() is just to show what the output would look like.
+
+#### No logging output:
+``` shell
+from seVersion import cli
+
+print(f'{"Increment Build":>25}: {cli.inc_build("app")}')
+```
+``` shell
+# output:
+Increment Build: 2023.12.0 build[9]
+```
+
+#### With logging output:
+``` shell
+from seVersion import cli
+
+print(f'{"Increment Build":>25}: {cli.inc_build("app", log=True)}')
+```
+``` shell
+# output
+--------------------------------------------------------------------
+seVersion | INFO     |  Current codebase: 2023.12.0 build[9]
+seVersion | INFO     | Updating codebase: 2023.12.0 build[10]
+seVersion | INFO     |          Updating: ./app/_version.py
+
+Increment Build: 2023.12.0 build[10]
+```
+
+
+
+## Updating Version
+_**edsseVersioning**_ includes a cli tool called `seVersion` to automate updating your project's versioning by 
+automatically updating the `_version.py` file.
+
+`seVersion <projectname> <commands>` will perform updates on `_version.py` file:
+
+### _Return the current version_
+```shell
+$ seVersion app
+```
+``` dockerfile
+seVersion | INFO     | --------------------------------------------------------------------
+seVersion | INFO     |      Project Path: ./app/_version.py
+seVersion | INFO     |   Current Release: 2023.10.0
+seVersion | INFO     |     Build Release: 2023.10.0 build[0]
+```
+---
+### _--create_
+Will set the project version to `<year>.<month>.0`
+``` shell
+$ seVersion app --create
+```
+``` dockerfile
+seVersion | INFO     | --------------------------------------------------------------------
+seVersion | INFO     | Creating codebase: 2023.10.0
+seVersion | INFO     |          Updating: ./app/_version.py
+```
+---
+### _--newversion=2023.10.1.rc1_
+Sets the project version to a fully-specified version (like 0.9.0 or 2023.2.1.rc1 or 2023.2.1.dev1 or 2023.2.1.post1).
+``` shell
+$ seVersion app --newversion=2023.10.1.rc1
+```
+``` dockerfile
+seVersion | INFO     | --------------------------------------------------------------------
+seVersion | INFO     | Updating codebase: 2023.10.1.rc1
+seVersion | INFO     |          Updating: ./app/_version.py
+```
+---
+### _--rc_
+Sets the current version `<major>.<minor>.<micro>` to `<major>.<minor>.<micro>.rc1` if the current version is not a release candidate, or bump the release candidate number by 1 if it is.
+```shell
+$ seVersion app --rc
+```
+``` dockerfile
+seVersion | INFO     | --------------------------------------------------------------------
+seVersion | INFO     |  Current codebase: 2023.10.1.rc1
+seVersion | INFO     | Updating codebase: 2023.10.1.rc2
+seVersion | INFO     |          Updating: ./app/_version.py
+```
+---
+### _--dev_
+Sets the project development release number to 0 if it is not a development release, or bump the development release number by 1 if it is.
+```shell
+$ seVersion app --dev
+```
+``` dockerfile
+seVersion | INFO     | --------------------------------------------------------------------
+seVersion | INFO     |  Current codebase: 2023.10.1.rc2
+seVersion | INFO     | Updating codebase: 2023.10.1.dev0
+seVersion | INFO     |          Updating: ./app/_version.py
+```
+---
+### _--post_
+Sets the project post release number to 0 if it is not a post release, or bump the post release number by 1 if it is. This will also reset the release candidate and development release numbers.
+```shell
+$ seVersion app --post
+```
+``` dockerfile
+seVersion | INFO     | --------------------------------------------------------------------
+seVersion | INFO     |  Current codebase: 2023.10.1.dev0
+seVersion | INFO     | Updating codebase: 2023.10.1.post0
+seVersion | INFO     |          Updating: ./app/_version.py
+```
+
+---
+### _--patch_
+Increments the patch number of the release. This will also reset the release candidate number, pass --rc at the same time to increment the patch number and make it a release candidate.
+```shell
+$ seVersion app --patch
+```
+``` dockerfile
+seVersion | INFO     | --------------------------------------------------------------------
+seVersion | INFO     |  Current codebase: 2023.10.1.post0
+seVersion | INFO     | Updating codebase: 2023.10.2
+seVersion | INFO     |          Updating: ./app/_version.py
+```
+
+---
+### _--release_
+This will reset the release candidate, development and post number making it a **_"full release"_**.
+``` shell
+$ seVersion app --release
+```
+``` dockerfile
+seVersion | INFO     | --------------------------------------------------------------------
+seVersion | INFO     |  Current codebase: 2023.10.2.post0
+seVersion | INFO     |   Current Release: 2023.10.2
+seVersion | INFO     |          Updating: ./app/_version.py
+```
+
+---
+### _--minor_
+Increments the minor number of the release, and reset the patch/micro number to 0.
+``` shell
+$ seVersion app --minor
+```
+``` dockerfile
+seVersion | INFO     | --------------------------------------------------------------------
+seVersion | INFO     |  Current codebase: 2023.10.2
+seVersion | INFO     | Updating codebase: 2023.11.0
+seVersion | INFO     |          Updating: ./app/_version.py
+```
+`--major`, to increment the major number of the release, reset minor number to <month> and reset the patch/micro number to 0.
+``` shell
+$ seVersion app --major
+```
+``` dockerfile
+seVersion | INFO     | --------------------------------------------------------------------
+seVersion | INFO     |  Current codebase: 2023.11.0
+seVersion | INFO     | Updating codebase: 2024.10.0
+seVersion | INFO     |          Updating: ./app/_version.py
+```
+---
+### _--build_
+Increments the build number, and does not get reset unless `--create` is used.
+``` shell
+$ seVersion app --build
+```
+``` dockerfile
+seVersion | INFO     | --------------------------------------------------------------------
+seVersion | INFO     |  Current codebase: 2024.10.0 build[0]
+seVersion | INFO     | Updating codebase: 2024.10.0 build[1]
+seVersion | INFO     |          Updating: ./app/_version.py
+```
+
+---
+### _--clean_
+Removes _version.py from codebase.
+``` shell
+$ seVersion app --clean
+```
+``` dockerfile
+seVersion | INFO     | --------------------------------------------------------------------
+seVersion | INFO     | Cleaning codebase: Removing FilePath('./app/_version.py')
+```
+
+---
+## Error/Warning Codes
+
+### _SE-01100_
+Could not find project/package
+``` dockerfile
+seVersion | WARNING  |       SE-01100: Can't find `<project/package>` under `./src` or `./`
+seVersion | WARNING  |                    Check the package name is right (note that we expect your package name to be lower cased), or pass it using '--path' 
+seVersion | WARNING  |                    or add `--cdne` to automatically initialize the project to create folder and files
+```
+
+### _SE-01300_
+Do not add any extra command to `--create`
+``` dockerfile
+seVersion | ERROR    |       SE-01300: --create error, only --cdne is allowed to be used with this command to create package\project folder if does not exist
+```
+
+### _SE-01301_
+Do not add any extra command to `--newversion`
+``` dockerfile
+seVersion | ERROR    |       SE-01301: --newversion=?.?.? error, no other commands need to be used
+```
+
+### _SE-01302_
+Do not add any extra command to `--dev`
+``` dockerfile
+seVersion | ERROR    |       SE-01302: --dev error, no other commands need to be used
+```
+
+### _SE-01303_
+Do not add any extra command to `--rc`
+``` dockerfile
+seVersion | ERROR    |       SE-01303: --rc error, no other commands need to be used
+```
+
+### _SE-01304_
+Do not add any extra command to `--patch`
+``` dockerfile
+seVersion | ERROR    |       SE-01304: --patch error, no other commands need to be used
+```
+
+### _SE-01305_
+Do not add any extra command to `--major`
+``` dockerfile
+seVersion | ERROR    |       SE-01305: --major error, no other commands need to be used
+```
+
+### _SE-01306_
+Do not add any extra command to `--minor`
+``` dockerfile
+seVersion | ERROR    |       SE-01306: --minor error, no other commands need to be used
+```
+
+### _SE-01307_
+Do not add any extra command to `--build`
+``` dockerfile
+seVersion | ERROR    |       SE-01307: --build error, no other commands need to be used
+```
+
+### _SE-01308_
+Do not add any extra command to `--post`
+``` dockerfile
+seVersion | ERROR    |       SE-01308: --post error, no other commands need to be used
+```
+
+### _SE-01309_
+Do not add any extra command to `--release`
+``` dockerfile
+seVersion | ERROR    |       SE-01309: --release error, no other commands need to be used
+```
+
+### _SE-01310_
+Do not add any extra command to `--clean`
+``` dockerfile
+seVersion | ERROR    |       SE-01310: --clean error, no other commands need to be used
+```

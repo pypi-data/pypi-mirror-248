@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools", "build"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "seversion"
+dynamic = ["version"]
+description = "CLI to enhance versioning for Python projects"
+readme = "ReadMe.md"
+requires-python = ">=3.8"
+license = {file = "License.md"}
+authors = [
+    { name = "Robert J. DeWilde", email = "github@cyberneticinnovations.com" }
+]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+]
+dependencies = [
+    "zope.interface>=6.1",
+    "click>=8.1.7",
+    "loguru>=0.7.2",
+]
+
+[project.scripts]
+seVersion = "seVersion.cli:cli"
+
+[tool.setuptools]
+packages = ["seVersion", "seCore"]
+
+[tool.setuptools.dynamic]
+version = {attr = "seVersion.__setuptools__"}

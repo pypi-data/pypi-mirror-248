@@ -1,0 +1,2 @@
+seCore
+seVersion
