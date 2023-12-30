@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: telefusion
+Version: 1.169.0
+Summary: its just a fork of pyrogram
+Home-page: https://github.com/5hojib/telefusion
+Author: 5hojib
+Author-email: yesiamshojib@gmail.com
+License: LGPLv3
+Requires-Python: ~=3.8
+Description-Content-Type: text/markdown
+License-File: NOTICE
+Requires-Dist: pymediainfo
+Requires-Dist: pymongo
+Requires-Dist: pysocks
+Requires-Dist: tgcrypto
+
+Nothing for now
