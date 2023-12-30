@@ -1,0 +1,15 @@
+differentiation/__init__.py,sha256=WJ1v7NCB-K12tM-UMHnYkVywH1NLGZPIZcscfCnBZNk,3516
+differentiation/base.py,sha256=VExK9hoNuJy8k4h3NT7lREhQsOpq-UXo_UMSIbgu--U,2002
+differentiation/caputo.py,sha256=abiR6jm6jAXl3s2rR7w_SrMaj-ux090PRbJ9elg-sNM,9995
+differentiation/riemann_liouville.py,sha256=COpaShbnlTynozaouZBtwCuCsYpnl3X5ycbDOyXUIeI,4915
+fode/__init__.py,sha256=UOBaifNlCnfg3lqUoq2LrI8rfXlcpM3eiqvQOCXJRuM,1251
+fode/base.py,sha256=Kb37DRybDMIvGPKteLKjp-wesaFoOmdUc3iKK_F50w8,6483
+fode/caputo.py,sha256=EM2jmb8Hrt7dWJjTlDMT6lr7jHn7-tDx8JY_LhzPOOs,17812
+fode/product_integration.py,sha256=P9nquzoGzdx316w3_X3fPmOq9B-VTCL7myyftt21B3s,4394
+quadrature/__init__.py,sha256=-LHd0OV4G7sB1Jxr1SuLIa7lbz9o8GZaxymNg6akkUc,3122
+quadrature/base.py,sha256=kOGU-ur8Rv6ijnONQCLf6a6nqWV-KTnQNst9nZosdOY,1771
+quadrature/riemann_liouville.py,sha256=E6EariDX9ewd7OSimligJ5D-QhnBweSw2a-dJgDlLDs,15257
+pycaputo-0.3.1.dist-info/METADATA,sha256=efhOgY0qMLxxIyR6u9mNWCqzRvb6kZ4dySzNtUmWkoc,3401
+pycaputo-0.3.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pycaputo-0.3.1.dist-info/top_level.txt,sha256=0XkWUxcDPBFkBL1t6adITZUqeJgabDENcPg2GNuhxUM,32
+pycaputo-0.3.1.dist-info/RECORD,,
