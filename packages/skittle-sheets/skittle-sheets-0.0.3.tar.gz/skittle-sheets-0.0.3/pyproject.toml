@@ -1,0 +1,40 @@
+[project]
+name = "skittle-sheets"
+version = "0.0.3"
+description = "Lightweight design of plate-based experiments"
+authors = [
+  { name="David Feldman" },
+]
+license = {file = "LICENSE.txt"}
+readme = "README.md"
+requires-python = ">=3.9"
+
+keywords = ["lab", "biology", "plate", "experimental design"]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+  "fire",
+  "google-api-python-client",
+  "google-auth-httplib2",
+  "google-auth-oauthlib",
+  "pandas",
+  "pygsheets",
+  "pyyaml",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+"Homepage" = "https://github.com/feldman4/skittle-sheets"
+"Bug Tracker" = "https://github.com/feldman4/skittle-sheets/issues"
+
+[project.scripts]
+skittle = "skittle.app:main"
+
