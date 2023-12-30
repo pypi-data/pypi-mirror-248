@@ -1,0 +1,6 @@
+html_dsl/__init__.py,sha256=pMtTmSUht-XtbR_7Doz6bsQqopJJd8rZ8I8zy2HwwoA,22
+html_dsl/common.py,sha256=jydKduCxMKu-9sG6N527vlK4-kRgDxRYtGgAnEQD15k,3251
+html_dsl/elements.py,sha256=bDxFzUiCsC2XRvXkR9hOReVq_27QQvkgplOI95U6qPc,2514
+html_dsl-0.5.0.dist-info/METADATA,sha256=gu3t1K5hZqcg-X61XWW-eC4UVZWZf7n5x9sF8uOdmPM,2173
+html_dsl-0.5.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+html_dsl-0.5.0.dist-info/RECORD,,
