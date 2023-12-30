@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: HACryptoAnalysis
+Version: 0.0.2
+Summary: A web app to analyse cryptocurrency prices and use technical indicators
+Home-page: https://github.com/azizelkadi/Proyecto-python
+Author: Hector Gonzalez - Abdelaziz el Kadi
+Author-email: azizelkadi24@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Proyecto-Cryptomonedas
+
+Proyecto final de la asignatura de "Python para anÃ¡lisis de datos" del MÃ¡ster en Big Data Science de la Universidad de Navarra. ElaboraciÃ³n de una aplicaciÃ³n para la represaciÃ³n de informaciÃ³n de la cotizaciÃ³n de criptomonedas. 
+
+**Autores: HÃ©ctor GonzÃ¡lez y Abdelaziz el Kadi.**
+
+## DescripciÃ³n
+
+El codigo despliega una plataforma interactiva que utiliza datos de la API de Kraken para realizar un anÃ¡lisis exhaustivo de criptomonedas. Con un dashboard desplegado mediante Streamlit, ofrece visualizaciones detalladas e indicadores tÃ©cnicos. El proyecto tiene una estructura modular y unala configuraciÃ³n centralizada, dispone de tests unitarios y de integraciÃ³n.
+
+## Intrucciones de ejecuciÃ³n
+
+1. Descargue el cÃ³digo fuente del proyecto, disponible en el archivo `crypto_analysis.zip` adjunto. Posteriormente, extraiga su contenido y navegue hasta la ubicaciÃ³n del proyecto.
+
+2. Instale la biblioteca del proyecto `crypto_analysis` utilizando la herramienta `pip`. Este proceso instalarÃ¡ de manera automÃ¡tica todas las dependencias necesarias. Utilice el siguiente comando:
+
+    ```
+    pip install .\dist\crypto_analysis-0.1.0-py3-none-any.whl
+    ```
+
+3. Ejecute el script `run.py` utilizando Streamlit para desplegar la aplicaciÃ³n:
+
+    ```
+    streamlit run .\run.py
+    ```
+
