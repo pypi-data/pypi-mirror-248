@@ -1,0 +1,14 @@
+pyfreerdp.cpython-311-darwin.so,sha256=n5nFhro4yEvZsjuQ8MBxCaV4fQP9fYoA8Ru70vl8Pro,70240
+pyfreerdp.dylibs/libwinpr2.2.11.1.dylib,sha256=Un1p0T456SAMsxms6j-fU0CTFigbKAPfNcBBAaSqR7E,926240
+pyfreerdp.dylibs/libX11.6.dylib,sha256=HMArQsCjXHdB1Zw1KqLqpddj5RTkskO1Z4ruXaRJNpA,1025680
+pyfreerdp.dylibs/libssl.3.dylib,sha256=JHysMhg_hns6QGYhueO1te6NwyE0aWTYzIsMx0BWtLw,583248
+pyfreerdp.dylibs/libxcb.1.1.0.dylib,sha256=kTqN1K5bNIc5A_DCbErSeht7DaeNsVygJ0_3ePkJH9A,194736
+pyfreerdp.dylibs/libcrypto.3.dylib,sha256=ft45XYLHKj3HCkV6gbBmTo1PD2VN6sABOEQ7DgG8YxM,4425184
+pyfreerdp.dylibs/libXau.6.0.0.dylib,sha256=dpktdUrAfqbJCa-ZTuWX9fglzfRRoOw6aDHRSDSFZ6k,53328
+pyfreerdp.dylibs/libXdmcp.6.dylib,sha256=H8Lg_iQ6Q7vA8Zhfwa-NEJaf8KXLj87ORtiTCVZT3lQ,54224
+pyfreerdp.dylibs/libjpeg.8.3.2.dylib,sha256=3vgRWf1MYQve_Rq9qwHxOCkzqkUx2MS2xR-agfEpDWw,848432
+pyfreerdp.dylibs/libfreerdp2.2.11.1.dylib,sha256=RRhfC9ga0xjLiIixOFMxzoo0ShZ2yXuvNJ5qaM1IaXI,1336064
+pyfreerdp-0.0.2.dist-info/RECORD,,
+pyfreerdp-0.0.2.dist-info/WHEEL,sha256=JpRJ4y71VMBKCpJT0se0mDNjiD3wu45xX0wP31CFU2w,111
+pyfreerdp-0.0.2.dist-info/top_level.txt,sha256=dpO7Te_Hl5aUZWyvUWUCtp5T2LZQWF5fMlZrqlpValk,10
+pyfreerdp-0.0.2.dist-info/METADATA,sha256=1XcN2164iNvcMwOzjy0cy0EJo0tCD0btNe1WsfG_Ptg,367
