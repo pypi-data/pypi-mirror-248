@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "dfpwm"
+version = "0.1.5"
+description = "DFPWM convertor for Python"
+authors = ["cyan <contact@cyans.me>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.26.2"
+librosa = { version = "*", optional = true }
+
+[tool.poetry.group.dev.dependencies]
+Cython = "^3.0.7"
+
+[build-system]
+requires = ["poetry-core", "numpy", "setuptools"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.build]
+script = "build.py"
+generate-setup-file = true
