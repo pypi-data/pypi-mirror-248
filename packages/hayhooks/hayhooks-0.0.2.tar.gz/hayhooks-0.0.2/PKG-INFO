@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: hayhooks
+Version: 0.0.2
+Summary: Grab and deploy Haystack pipelines
+Project-URL: Documentation, https://github.com/unknown/hayhooks#readme
+Project-URL: Issues, https://github.com/unknown/hayhooks/issues
+Project-URL: Source, https://github.com/unknown/hayhooks
+Author-email: Massimiliano Pippi <mpippi@gmail.com>
+License-Expression: Apache-2.0
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: click
+Requires-Dist: fastapi
+Requires-Dist: haystack-ai
+Requires-Dist: python-multipart
+Requires-Dist: requests
+Requires-Dist: uvicorn
+Description-Content-Type: text/markdown
+
+# Hayhooks
+
+[![PyPI - Version](https://img.shields.io/pypi/v/hayhooks.svg)](https://pypi.org/project/hayhooks)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/hayhooks.svg)](https://pypi.org/project/hayhooks)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install hayhooks
+```
+
+## License
+
+`hayhooks` is distributed under the terms of the [Apache-2.0](https://spdx.org/licenses/Apache-2.0.html) license.
