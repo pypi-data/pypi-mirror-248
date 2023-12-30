@@ -1,0 +1,10 @@
+pandas
+scanpy
+numpy
+anndata
+scikit-learn
+louvain
+leidenalg
+igraph
+episcanpy
+kneed>=0.7.0
