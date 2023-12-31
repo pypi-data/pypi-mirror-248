@@ -1,0 +1,13 @@
+license.txt
+pyproject.toml
+readme.md
+src/facet/__init__.py
+src/facet/asyncio.py
+src/facet/blocking.py
+src/facet.egg-info/PKG-INFO
+src/facet.egg-info/SOURCES.txt
+src/facet.egg-info/dependency_links.txt
+src/facet.egg-info/requires.txt
+src/facet.egg-info/top_level.txt
+tests/test_asyncio.py
+tests/test_blocking.py

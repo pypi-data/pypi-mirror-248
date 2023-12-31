@@ -1,0 +1,84 @@
+[project]
+name = "facet"
+version = "0.10.0"
+description = "service manager for asyncio"
+readme = "readme.md"
+requires-python = ">= 3.11"
+license = {file = "license.txt"}
+authors = [
+    {name = "pohmelie", email = "multisosnooley@gmail.com"},
+    {name = "bizywizy"},
+]
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Development Status :: 5 - Production/Stable",
+]
+
+[project.urls]
+Github = "https://github.com/pohmelie/facet"
+Documentation = "https://github.com/pohmelie/facet"
+
+[project.optional-dependencies]
+dev = [
+    # tests
+    "pytest-asyncio",
+    "pytest-cov",
+    "pytest",
+
+    # linters
+    "pre-commit",
+    "black",
+    "ruff",
+    "mypy",
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages.find.where = ["src"]
+
+# tools
+[tool.black]
+line-length = 120
+target-version = ["py311"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+select = ["E", "W", "F", "Q", "UP", "I", "ASYNC"]
+src = ["src"]
+
+[tool.coverage]
+run.source = ["./src/facet"]
+report.show_missing = true
+
+[tool.pytest.ini_options]
+addopts = [
+    "-x",
+    "--durations", "10",
+    "-p", "no:anyio",
+    "--cov",
+    "--import-mode=importlib",
+]
+testpaths = "tests"
+log_format = "%(asctime)s.%(msecs)03d %(name)-20s %(levelname)-8s %(filename)-15s %(lineno)-4d %(message)s"
+log_date_format = "%H:%M:%S"
+log_level = "DEBUG"
+asyncio_mode = "strict"
+
+[tool.mypy]
+files = "src/facet"
+strict = true
+ignore_missing_imports = true
+allow_subclassing_any = true
+allow_untyped_calls = true
+pretty = true
+show_error_codes = true
+implicit_reexport = true
+allow_untyped_decorators = true
+warn_unused_ignores = false
+warn_return_any = false
+namespace_packages = true
