@@ -1,0 +1,2 @@
+[console_scripts]
+image_commit = git_image_commiter.image_upload:main
