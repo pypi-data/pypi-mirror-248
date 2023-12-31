@@ -1,0 +1,10 @@
+odoo/addons/ssi_salesperson_mixin/README.rst,sha256=90CNyMAoB1WYoL-PzPjRTLm2TdtUGumHzWEz3iCodUs,1172
+odoo/addons/ssi_salesperson_mixin/__init__.py,sha256=_euh7OtzMTDmyHY0E3tvYRWTi0ufnrMCH3IH8ZLtu0s,181
+odoo/addons/ssi_salesperson_mixin/__manifest__.py,sha256=nIGouQaKUIvQYpyVg1PThuCvRD2uV_8Hqf90nrWqLeI,443
+odoo/addons/ssi_salesperson_mixin/models/__init__.py,sha256=t1uvR_HU9X7M-J2l2Of5_DQUSYlis4FVWvstDirFyQo,192
+odoo/addons/ssi_salesperson_mixin/models/mixin_salesperson.py,sha256=7IhcBBQrpG6cjqs4eqGzQ7kgCRh6bFkQ8LWpJdeyc9Q,1219
+odoo/addons/ssi_salesperson_mixin/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo14_addon_ssi_salesperson_mixin-14.0.1.1.0.dist-info/METADATA,sha256=3jZJ5W83caQpp1BgfNqe5Rhyuubze6ZOrYWQGImwEsM,1667
+odoo14_addon_ssi_salesperson_mixin-14.0.1.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+odoo14_addon_ssi_salesperson_mixin-14.0.1.1.0.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_ssi_salesperson_mixin-14.0.1.1.0.dist-info/RECORD,,
