@@ -1,0 +1,7 @@
+colorlog
+matplotlib
+numpy
+pandas
+scipy
+scikit-learn
+pyyaml
