@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+nextcordhealthcheck.egg-info/PKG-INFO
+nextcordhealthcheck.egg-info/SOURCES.txt
+nextcordhealthcheck.egg-info/dependency_links.txt
+nextcordhealthcheck.egg-info/entry_points.txt
+nextcordhealthcheck.egg-info/requires.txt
+nextcordhealthcheck.egg-info/top_level.txt
