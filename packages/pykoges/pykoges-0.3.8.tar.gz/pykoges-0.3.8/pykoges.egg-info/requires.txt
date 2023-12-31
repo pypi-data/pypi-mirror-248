@@ -1,0 +1,14 @@
+openpyxl
+tqdm
+ipywidgets
+ipython
+pandas
+numpy
+seaborn
+matplotlib
+torch==2.1.2
+scipy
+scikit-learn
+statsmodels
+tabulate
+dataframe_image==0.2.3
