@@ -1,0 +1,11 @@
+smokedduck.cp36-win_amd64.pyd,sha256=426NtYfg6hpoKdr3_gY0YrAp_975Pvfoi4ioGZuIuHs,29546496
+duckdb-stubs/__init__.pyi,sha256=u3po0JNdA5OJvnkeJHWPC2cvM-bJW-gfoveR7FJKEfs,29596
+duckdb-stubs/functional/__init__.pyi,sha256=xJ3b7MdZpnU3NiCpN8WYudu4pHRE7YUPYTcc2TSR9hg,842
+duckdb-stubs/typing/__init__.pyi,sha256=xctyHupnpubXkxSk7q3IXA4Cb1RjC_ZBgY3ru35WEgY,937
+pyduckdb/bytes_io_wrapper.py,sha256=iGVXWguZ4_8dMQyz_ImITj8RVpxbnsSMIj5vQaqaGcg,2901
+pyduckdb/filesystem.py,sha256=sY0CP7NRayiuJjzCF8_Xn2q6UOTpB-A94Yi_1bTJ6yU,1929
+pyduckdb/udf.py,sha256=zbleOz_5e2WN6cHhIbhlbZcFroXKCMI9rnDo8IwX-_A,662
+smokedduck-0.1.dev28376.dist-info/METADATA,sha256=A8uNGVnOIb7tZEXFqJSYb1MC0D4bswW-CEfblhE3i4Q,461
+smokedduck-0.1.dev28376.dist-info/WHEEL,sha256=zukbZftcRdNfJ55Q_RYV9JZ3uVyqWKyq-wDJbmszs_U,101
+smokedduck-0.1.dev28376.dist-info/top_level.txt,sha256=LX7520o8gwNf-JEnFEIRZbsATBTXiXvR0dCtMPFxNX0,33
+smokedduck-0.1.dev28376.dist-info/RECORD,,

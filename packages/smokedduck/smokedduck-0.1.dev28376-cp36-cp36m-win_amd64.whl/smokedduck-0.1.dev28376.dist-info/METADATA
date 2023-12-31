@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: smokedduck
+Version: 0.1.dev28376
+Summary: SmokedDuck - DuckDB fork with fine-grained provenance
+Home-page: UNKNOWN
+Maintainer: Haneen Mohammed
+Maintainer-email: ham2156@columbia.edu
+License: MIT
+Keywords: SmokedDuck DuckDB Database SQL OLAP Provenance
+Platform: UNKNOWN
+Classifier: Topic :: Database :: Database Engines/Servers
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+
+UNKNOWN
+
