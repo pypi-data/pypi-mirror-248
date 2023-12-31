@@ -1,0 +1,5 @@
+pyjwt
+aiohttp
+
+[dev]
+check-manifest
