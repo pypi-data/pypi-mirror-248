@@ -1,0 +1,30 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="pykoges",
+    version="0.3.7",
+    packages=find_packages(),
+    install_requires=[
+        "openpyxl==3.1.2",
+        "tqdm==4.66.1",
+        "ipywidgets",
+        "ipython",
+        "pandas",
+        "numpy",
+        "seaborn",
+        "matplotlib",
+        "torch==2.1.2",
+        "scipy==1.11.4",
+        "scikit-learn==1.3.2",
+        "statsmodels==0.14.0",
+        "tabulate==0.9.0",
+        "dataframe_image==0.2.3",
+    ],
+    entry_points={},
+    author="oculis",
+    author_email="oculis0925@yonsei.ac.kr",
+    description="Python module for cohort data reading",
+    long_description=open("README.md", encoding="utf-8").read(),
+    long_description_content_type="text/markdown",
+    url="https://github.com/oculi-s/pykoges",
+)
