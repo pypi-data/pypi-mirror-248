@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: cvbot
+Version: 3.1.1
+Summary: An assistant made to help and make automating computer vision tasks easy
+Home-page: https://github.com/Runeste3/cvbot
+Author: Hisham Moe
+Author-email: Hisham Moe <runeste2018@gmail.com>
+License: LICENSE
+Project-URL: Homepage, https://github.com/Runeste3/cvbot
+Project-URL: Issues, https://github.com/Runeste3/cvbot/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+CVBot
+======
+
+
+**CVBot** is an image recognition Python package for visual based automation with mouse and keyboard control support.
+
+
+
