@@ -1,0 +1,13 @@
+diff/__init__.py,sha256=NzTKSqMqkRL3PfdebVynOxzksDCW_nORwHT1O14U_Zk,150
+diff/_diff.py,sha256=W6hFWu4qBUbt1GbL6b41sjSvcGrGZ5aPoTPZGVTvPBU,1355
+diff/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+diff/unittest.py,sha256=HO5f0nNChQEOgQs0bygQ0_m3bx4-P6fV-NmWnEfRl5w,857
+diff/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+diff/tests/test_diff.py,sha256=wVBa4w6bU8pFgq_2Ws-TXrP7vcAYUxamTU78sWjP4CQ,1152
+diff/tests/test_unittest.py,sha256=Vd-KUrnidXAQOXOhZ1nS9W74BBmkMxHyqcC_0HWv3G0,937
+diff/tests/typing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+diff/tests/typing/check_me_pyright.py,sha256=9D-UST-kUYCAJ-4PTNz--P2wxNG4lb0V5Tr8UhyaX0s,555
+diff-2023.12.6.dist-info/METADATA,sha256=3szk2TD__aeixAztBluoqbuYLdm0gPubiCeSp1WEdXU,2197
+diff-2023.12.6.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+diff-2023.12.6.dist-info/licenses/COPYING,sha256=6fHiiDLj_IZ_k5kYr74gZ1PEs4A-KNID8PnXH_H7EaY,1057
+diff-2023.12.6.dist-info/RECORD,,
