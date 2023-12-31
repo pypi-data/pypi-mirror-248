@@ -1,0 +1,1 @@
+from GameWidgets.Engine.PhysicsLib.PhysicsConfig import World

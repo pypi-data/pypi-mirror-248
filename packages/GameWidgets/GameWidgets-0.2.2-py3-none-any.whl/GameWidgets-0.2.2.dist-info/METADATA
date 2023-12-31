@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: GameWidgets
+Version: 0.2.2
+Summary: Make Game Easier with pygame and GameWidgets
+Home-page: https://github.com/SuperGuy123456/GameWidgets
+Author: Manomay tyagi
+Author-email: tyagimanomay57@gmail.com
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pygame-ce
+Requires-Dist: pillow
+
+# GameWidgets 0.2.2
+______________
+
+Install GameWidgets by writing one of two things:
+
+*Mac*
+
+```pip3 install GameWidgets```
+___
+
+*Windows*
+
+```pip install GameWidgets```
+
+___
+
+# Patches
+Bug fixes for *btn.py* and *TextInp.py*. Important note: you need to make sure you change forground color and background color if you want to see the output on a white or black screen.
+___
+# Updates
+The *Tools* folder now has 3 new features. A new pixel art editor named *GW_PLIXEL* , a animator named *GW_ANIMATOR* , and a 2d game engine called *GW_GAMEMAKER*.
+
+**All of them are still in ALPHA phase making them somewhat unstable**
+___
+# Example Uses
+```from GameWidgets.Tools import GW_PLIXEL```
+
+```from GameWidgets.Tools import GW_ANIMATOR```
+
+```from GameWidgets.Tools import GW_GAMEMAKER```
+___
+*Manomay Tyagi @superman13456 2023 v0.2.1 GameWidgets*
+___
