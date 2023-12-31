@@ -1,0 +1,9 @@
+odoo/addons/ssi_field_date_callable_attribute/README.rst,sha256=9iRWAmpFVuj8P1kwqjemto45jWiDwVddvDN_tzL5ov4,1268
+odoo/addons/ssi_field_date_callable_attribute/__init__.py,sha256=ruLrjKqZbASyY5_0nsxVWuvHMY7Jy961duXzJfAU7JY,181
+odoo/addons/ssi_field_date_callable_attribute/__manifest__.py,sha256=1dDsTpHbnrM7Ck6BIbtMMw94sdIGiMA01yGzCzt_7eM,461
+odoo/addons/ssi_field_date_callable_attribute/fields.py,sha256=uSMJtC40RYfPv26wfN3OkcJOu5Bclr7Un44HXUWBE8o,928
+odoo/addons/ssi_field_date_callable_attribute/static/description/icon.png,sha256=lNGJOSg4cMRfwPTfFKVT6d5B2N1N83iVpEEN1blqu1I,48333
+odoo14_addon_ssi_field_date_callable_attribute-14.0.1.1.0.dist-info/METADATA,sha256=b6yqJx85HmqZx1AztP58yisgq-URDDbD8K4odViE_J0,1799
+odoo14_addon_ssi_field_date_callable_attribute-14.0.1.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+odoo14_addon_ssi_field_date_callable_attribute-14.0.1.1.0.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_ssi_field_date_callable_attribute-14.0.1.1.0.dist-info/RECORD,,
