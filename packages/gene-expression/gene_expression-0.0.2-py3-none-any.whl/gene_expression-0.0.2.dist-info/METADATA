@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: gene_expression
+Version: 0.0.2
+Summary: Compute gene expression from RNA-seq
+Project-URL: Homepage, https://github.com/ajgouhier/gene_expression
+Author-email: Arthur Gouhier <ajgouhier@gmail.com>
+License: MIT
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# gene_expression
+
+Compute gene expression from RNA-seq
