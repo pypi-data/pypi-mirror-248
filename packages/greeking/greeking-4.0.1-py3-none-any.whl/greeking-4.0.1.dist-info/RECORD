@@ -1,0 +1,16 @@
+greeking/__init__.py,sha256=TkwFTyWxgzCH10Sxa_OU3wHWnC3dwBrkDo3k5LMqQSQ,52
+greeking/apps.py,sha256=AN7HNGMrLwJC4_od_j8vzngjHZR6PCftR_oVvj3u5UA,91
+greeking/jabberwocky.py,sha256=YW9vfQwUHSBLEiGbJcBUcGOuFNWNtQAyUrjWOO9lg48,1588
+greeking/latimes_ipsum.py,sha256=LXW2uMmAMXQmHy6jvMreGU78GLl6453KcxlWUpWB9Xg,1630
+greeking/models.py,sha256=3kmvebiUJypSVm8K-0Q6E1_yeVe4RC1aa6QdDtsJB8c,23
+greeking/pangrams.py,sha256=elsFsyNDzDsgb79aJmnk90ajGfQvjSjAWEWwHEk0Miw,2244
+greeking/placekittens.py,sha256=a9e4ZOYwCiue1-3KAnoJ07KRM45a8rH99c3N0gflewM,371
+greeking/quotables.py,sha256=oGG9to9z3rBppK56dHq9qIMveytrk2211qkUqOWUFlA,5545
+greeking/tests.py,sha256=uOfxRGYt4l1-O11b_ir6d6WYuOwtq1BUKPhsr2vXOiA,3500
+greeking/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+greeking/templatetags/greeking_tags.py,sha256=nrdemtQl1bbFgGPLTIT_KXKDRRxomIjP1xZ_t27Bl1w,3685
+greeking-4.0.1.dist-info/LICENSE,sha256=6oo3bjJiR98vD2YVpY2NKWRKkSHxjRh0l6IedHeKcnU,1076
+greeking-4.0.1.dist-info/METADATA,sha256=ZHHNIX5IIQR1Snin7QD0iwUM0krDCE3FOF88Zgq2nkE,1760
+greeking-4.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+greeking-4.0.1.dist-info/top_level.txt,sha256=JAZUyVAlbxZoNpb70lsQp3_mol180DqcTXP2HqUUXYA,9
+greeking-4.0.1.dist-info/RECORD,,
