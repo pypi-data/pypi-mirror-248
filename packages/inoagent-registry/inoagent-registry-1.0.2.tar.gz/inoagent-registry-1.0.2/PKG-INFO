@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: inoagent-registry
+Version: 1.0.2
+Summary: Функционал получения актуального списка иноагентов с сайта МинЮста РФ
+Home-page: https://github.com/andrej-shaikin/inoagent-registry
+Author: Andrey Shaikin
+Author-email: kiwibon@yandex.ru
+License: MIT
+Requires: httpx
+Requires: pydash
+Requires: beautifulsoup4
+Requires: lxml
+Requires-Python: >=3.10
+License-File: LICENSE
