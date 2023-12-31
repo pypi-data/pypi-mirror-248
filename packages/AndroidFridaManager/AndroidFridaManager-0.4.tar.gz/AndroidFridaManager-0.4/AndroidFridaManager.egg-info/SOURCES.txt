@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+AndroidFridaManager/AndroidFridaManager.py
+AndroidFridaManager/__init__.py
+AndroidFridaManager.egg-info/PKG-INFO
+AndroidFridaManager.egg-info/SOURCES.txt
+AndroidFridaManager.egg-info/dependency_links.txt
+AndroidFridaManager.egg-info/requires.txt
+AndroidFridaManager.egg-info/top_level.txt
