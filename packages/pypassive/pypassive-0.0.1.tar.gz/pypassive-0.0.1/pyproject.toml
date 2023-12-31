@@ -1,0 +1,48 @@
+[project]
+name = "pypassive"
+version = "0.0.1"
+description = "A simple python package to compute p-y curve using log-spiral method and hyperbolic relationship."
+authors = [
+    { name = "Aashish Sharma", email = "confusionaananda@gmail.com" },
+]
+dependencies = [
+    "numpy>=1.26.2",
+    "scipy>=1.11.4",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+homepage = "https://gitlab.com/geosharma/pypassive"
+repository = "https://gitlab.com/geosharma/pypassive.git"
+documentation = "https://readthedocs.org/projects/pypassive/"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+package-type = "library"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Development Status :: 1 - Planning",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.pdm.dev-dependencies]
+test = [
+    "pytest>=7.4.3",
+]
+lint = [
+    "black>=23.12.1",
+]
+docs = [
+    "sphinx>=7.2.6",
+    "sphinx-rtd-theme>=2.0.0",
+]
