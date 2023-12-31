@@ -1,0 +1,10 @@
+odoo/addons/ssi_source_document_mixin/README.rst,sha256=d_d8YosuimmWUAfAMt7vHm1D1JBc4wJd0Fry0k9HT5E,1179
+odoo/addons/ssi_source_document_mixin/__init__.py,sha256=_euh7OtzMTDmyHY0E3tvYRWTi0ufnrMCH3IH8ZLtu0s,181
+odoo/addons/ssi_source_document_mixin/__manifest__.py,sha256=SQBeSfomsubVDr2ZgNgnAcQAAt0uqooiVGfwsZ7-GMs,476
+odoo/addons/ssi_source_document_mixin/models/__init__.py,sha256=oO5_Uj6u1ZjY5ecGe5sczJWBuV8AiWJhEyTY0b49upw,196
+odoo/addons/ssi_source_document_mixin/models/mixin_source_document.py,sha256=dhAxoARcZQ0NWxY7sf0kqCWQAeFYBM9NLCqzp2EusHM,1633
+odoo/addons/ssi_source_document_mixin/static/description/icon.png,sha256=lNGJOSg4cMRfwPTfFKVT6d5B2N1N83iVpEEN1blqu1I,48333
+odoo14_addon_ssi_source_document_mixin-14.0.1.1.0.dist-info/METADATA,sha256=_QzrKMLS7OrOBfRe1ceYHmbp1y1OUqg5N0YULxQJ3BQ,1682
+odoo14_addon_ssi_source_document_mixin-14.0.1.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+odoo14_addon_ssi_source_document_mixin-14.0.1.1.0.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_ssi_source_document_mixin-14.0.1.1.0.dist-info/RECORD,,
