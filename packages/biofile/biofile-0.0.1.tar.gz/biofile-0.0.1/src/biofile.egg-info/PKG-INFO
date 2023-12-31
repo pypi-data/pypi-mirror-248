@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: biofile
+Version: 0.0.1
+Summary: Process varous file format for RNA-Seq data analysis
+Author-email: Tiezheng Yuan <tiezhengyuan@hotmail.com>
+Project-URL: Homepage, https://github.com/Tiezhengyuan/bio_file
+Project-URL: Issues, https://github.com/Tiezhengyuan/bio_file/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# bio_file
