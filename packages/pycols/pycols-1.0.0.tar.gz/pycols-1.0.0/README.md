@@ -1,0 +1,1 @@
+pycols is a package for displaying colorated Text in the console
