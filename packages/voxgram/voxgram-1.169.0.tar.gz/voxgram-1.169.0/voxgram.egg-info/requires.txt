@@ -1,0 +1,4 @@
+pymediainfo
+pymongo
+pysocks
+tgcrypto

@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: voxgram
+Version: 1.169.0
+Summary: Nothing
+Home-page: https://github.com/5hojib/voxgram
+Author: 5hojib
+Author-email: yesiamshojib@gmail.com
+Requires-Python: ~=3.8
+Description-Content-Type: text/markdown
+License-File: NOTICE
+Requires-Dist: pymediainfo
+Requires-Dist: pymongo
+Requires-Dist: pysocks
+Requires-Dist: tgcrypto
+
+Nothing
