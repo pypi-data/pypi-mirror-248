@@ -1,0 +1,12 @@
+odoo/addons/ssi_transaction_mixin/README.rst,sha256=rlMttE6xJRxPdd9-Uzd41g_SYtDfl5YTo3WFpVhAOMA,1172
+odoo/addons/ssi_transaction_mixin/__init__.py,sha256=_euh7OtzMTDmyHY0E3tvYRWTi0ufnrMCH3IH8ZLtu0s,181
+odoo/addons/ssi_transaction_mixin/__manifest__.py,sha256=vnBmkzS-f56xLMD0sKJExRHeer5HHdhJh879hUol9HU,617
+odoo/addons/ssi_transaction_mixin/menu.xml,sha256=vJc-x2cLR4LYWh0jAgFPLUVuIRGIzgDHy0LNiAZP5dk,341
+odoo/addons/ssi_transaction_mixin/models/__init__.py,sha256=FUu5JrrfMjy2GyiS-GJHAcImvmU9bru2e4DBCTwj2XY,192
+odoo/addons/ssi_transaction_mixin/models/mixin_transaction.py,sha256=3DgumbYdbPIF8LRmngvUUN-f_R0W1E0dZtZxKhO5tAk,11603
+odoo/addons/ssi_transaction_mixin/static/description/icon.png,sha256=lNGJOSg4cMRfwPTfFKVT6d5B2N1N83iVpEEN1blqu1I,48333
+odoo/addons/ssi_transaction_mixin/views/mixin_transaction_views.xml,sha256=hUqYwEObvPyOiElM12ZmLqXezswVqo15h55YXMfE2Ws,7319
+odoo14_addon_ssi_transaction_mixin-14.0.4.4.0.dist-info/METADATA,sha256=cKKWXrGlsSf0Z7XqtpEPBTXX1VRCxjlXMTinLHgaakc,1845
+odoo14_addon_ssi_transaction_mixin-14.0.4.4.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+odoo14_addon_ssi_transaction_mixin-14.0.4.4.0.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_ssi_transaction_mixin-14.0.4.4.0.dist-info/RECORD,,
