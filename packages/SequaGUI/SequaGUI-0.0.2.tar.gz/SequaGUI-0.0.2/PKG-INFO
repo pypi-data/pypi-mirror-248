@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: SequaGUI
+Version: 0.0.2
+Summary: This is the first upload to the pypi
+Author: Sequa Inc
+Author-email: soberonlineemail@gmail.com
+Keywords: python,Tkinter,GUI,package
+
+this is just the begining of the journey towards the modern and quick gui
