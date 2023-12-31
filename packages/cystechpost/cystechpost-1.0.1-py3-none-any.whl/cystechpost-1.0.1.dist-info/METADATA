@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: cystechpost
+Version: 1.0.1
+Summary: CYSTech POST: Python social media posting + publishing library.
+Author: Jordan C. McRae
+License-File: COPYING.txt
+Requires-Dist: requests
+
