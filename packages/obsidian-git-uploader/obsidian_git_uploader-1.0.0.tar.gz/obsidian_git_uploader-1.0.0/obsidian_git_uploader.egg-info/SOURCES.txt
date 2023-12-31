@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+obsidian_git_uploader/__init__.py
+obsidian_git_uploader/convert.py
+obsidian_git_uploader/image_upload.py
+obsidian_git_uploader.egg-info/PKG-INFO
+obsidian_git_uploader.egg-info/SOURCES.txt
+obsidian_git_uploader.egg-info/dependency_links.txt
+obsidian_git_uploader.egg-info/entry_points.txt
+obsidian_git_uploader.egg-info/not-zip-safe
+obsidian_git_uploader.egg-info/requires.txt
+obsidian_git_uploader.egg-info/top_level.txt

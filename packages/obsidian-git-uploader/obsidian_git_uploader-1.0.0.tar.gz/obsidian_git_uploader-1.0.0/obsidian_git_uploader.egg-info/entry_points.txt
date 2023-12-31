@@ -1,0 +1,2 @@
+[console_scripts]
+image-commit = obsidian_git_uploader.image_upload:main
