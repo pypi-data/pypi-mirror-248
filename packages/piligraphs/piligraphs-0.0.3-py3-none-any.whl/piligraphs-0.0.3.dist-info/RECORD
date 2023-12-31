@@ -1,0 +1,14 @@
+LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+piligraphs/__init__.py,sha256=NzlUxmdfqdNZSfC-osimPyBVs17A-UEen9pP3p4EbWQ,97
+piligraphs/basegraph.py,sha256=IBqHnQeuQmsPI8vzkBNPJolTWdskXCO5h1FHd8QAnKQ,1302
+piligraphs/item.py,sha256=K183gUzPaT9sfV4lUK3QxAdJrds6-Bek4TR_XaWhflw,769
+piligraphs/linechart.py,sha256=NTlfr9EDD-smKSBEMtq5a8J3yryW0Qs7VJWn7xI4zSY,6211
+piligraphs/piechart.py,sha256=vxcuKJsG5vSuw5Npx4TW663OofDvkxqj7GRoLVH71y0,5006
+piligraphs/radarchart.py,sha256=z5HFa8re1akSyapimQ9_m7GF1L_Wi14UGPgIURJNvts,6494
+piligraphs/size.py,sha256=pAouBucqIqEN5YxMi29KgHPznA4vbeahyhv2x51siSQ,1159
+piligraphs/utils.py,sha256=QqJ1L8fIHyUsLQtuzD1fcl6DqNMlUBhjicrMo05BBbY,3506
+pyproject.toml,sha256=83qnz8aD3q-sL8VclKsaAIe7OncpFN63L9OjiuIefjs,414
+piligraphs-0.0.3.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+piligraphs-0.0.3.dist-info/METADATA,sha256=XFc_1PAn2Omm18Bxx_-i4Wou_y6gdz7SBz4UPG0CY34,1085
+piligraphs-0.0.3.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+piligraphs-0.0.3.dist-info/RECORD,,
