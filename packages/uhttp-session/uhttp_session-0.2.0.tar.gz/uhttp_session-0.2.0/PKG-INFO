@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: uhttp-session
+Version: 0.2.0
+Summary: Session support for µHTTP
+Home-page: https://github.com/0x67757300/uHTTP-Session
+License: MIT
+Author: gus
+Author-email: 0x67757300@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pyjwt (>=2.8.0,<3.0.0)
+Requires-Dist: uhttp (>=1.3.0,<2.0.0)
+Project-URL: Repository, https://github.com/0x67757300/uHTTP-Session
+Description-Content-Type: text/markdown
+
+# µHTTP Session
+
+Session support for µHTTP
+
+Sessions are implemented as [Javascript Web Signatures](https://datatracker.ietf.org/doc/html/rfc7515). Which means that:
+
+1. Sessions are stored in the client's browser.
+2. Sessions are not secret.
+3. Sessions cannot be tempered with.
+
+### Installation
+
+µHTTP Session is on [PyPI](https://pypi.org/project/uhttp-session/).
+
+```bash
+pip install uhttp-session
+```
+
+### Usage
+
+First, you must set the secret key as an environment variable:
+
+```bash
+export APP_SECRET='<your secret key goes here>'
+```
+
+Don't have one?
+
+```bash
+python -c 'import secrets; print(secrets.token_hex())'
+```
+
+Then:
+
+```python
+from uhttp import App, Response
+from uhttp_session import session
+
+app = App()
+app.mount(session())
+
+@app.post('/login')
+def login(request):
+    request.state['session']['user'] = request.form.get('user', 'john')
+    return Response(302, headers={'location': '/'})
+
+@app.get('/')
+def account(request):
+    if 'user' not in request.state['session']:
+        return 401
+    else:
+        return f'Hello, {request.state["session"]["user"]}!'
+```
+
+### License
+
+Released under the MIT license.
+
