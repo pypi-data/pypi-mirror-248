@@ -1,0 +1,2 @@
+[console_scripts]
+pytranscoding = pytranscoding.cli:main
