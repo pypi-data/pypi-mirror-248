@@ -1,0 +1,5 @@
+GRAPH_MEDIA_URL = 'https://graph.facebook.com/v14.0/{}/media'
+GRAPH_MEDIA_PUBLISH_URL = 'https://graph.facebook.com/v14.0/{}/media_publish'
+TEST_CAPTION = 'CYSTech Research + Development.'
+TEST_IMAGE_LOCATION = 'https://yoursite/images/Test-Post.jpg'
+CAROUSEL_MEDIA_TYPE = 'CAROUSEL'
