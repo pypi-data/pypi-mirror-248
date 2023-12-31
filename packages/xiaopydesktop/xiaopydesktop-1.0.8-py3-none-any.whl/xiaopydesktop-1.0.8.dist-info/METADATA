@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: xiaopydesktop
+Version: 1.0.8
+Summary: 小派自动化模块 [PC版 32位 v1.0.8]
+Author: 智派软件科技
+Author-email: 2983997560@qq.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: ==3.8.*
+Requires-Dist: pywin32
+Requires-Dist: comtypes
+Requires-Dist: loguru
+
