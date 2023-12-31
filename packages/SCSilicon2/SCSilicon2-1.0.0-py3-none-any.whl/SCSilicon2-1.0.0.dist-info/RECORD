@@ -1,0 +1,10 @@
+scsilicon2/__init__.py,sha256=PEXKVMB6cUkq4JRJp8ojq2fZs9LXnz7v1Jxkst_tMD0,74
+scsilicon2/main.py,sha256=dvkrhPTJOuVAu_BvbZakC-mVx_cIIclQvsfEdMP4i3A,28591
+scsilicon2/random_tree.py,sha256=_opqB-3kBw-ilC0-euWl2MQ2uhEwJc75Vpvs1Vv0z1A,4368
+scsilicon2/utils.py,sha256=zCZSwJ9m-JrF6IQa88AEMLwQVzsnG_nOeBlaDRnwu70,4842
+scsilicon2/version.py,sha256=J-j-u0itpEFT6irdmWmixQqYMadNl1X91TxUmoiLHMI,22
+SCSilicon2-1.0.0.dist-info/LICENSE,sha256=xCs5ywcMLkMC-TvTeDkUMLmDVEBNtjCVCqz5NAo3SJY,1073
+SCSilicon2-1.0.0.dist-info/METADATA,sha256=QsG9G3AqpOg8AyP-v13m-qYmV2NZewDvYibMebNaYHU,15397
+SCSilicon2-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+SCSilicon2-1.0.0.dist-info/top_level.txt,sha256=4Com9uA0tpKBI-zDWn0c-IBhhx5nhXI8edaAf4S82Lw,11
+SCSilicon2-1.0.0.dist-info/RECORD,,
