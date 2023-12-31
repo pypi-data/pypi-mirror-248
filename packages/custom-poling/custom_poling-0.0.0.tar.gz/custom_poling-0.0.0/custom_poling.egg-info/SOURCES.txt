@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+custom_poling.egg-info/PKG-INFO
+custom_poling.egg-info/SOURCES.txt
+custom_poling.egg-info/dependency_links.txt
+custom_poling.egg-info/requires.txt
+custom_poling.egg-info/top_level.txt
