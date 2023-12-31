@@ -1,0 +1,2 @@
+[console_scripts]
+create-git-branch = git_helper_utils.create_git_branch:main
