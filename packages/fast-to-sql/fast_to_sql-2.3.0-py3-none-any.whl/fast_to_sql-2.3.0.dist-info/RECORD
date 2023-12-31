@@ -1,0 +1,10 @@
+fast_to_sql/__init__.py,sha256=qAtsQfLrnxm6juEsxWOD0j0u3X33w3CGPyGIyv76o5o,75
+fast_to_sql/errors.py,sha256=B_nLShR5297nhOjpPdTgQzVPwnhVeEuArN0DXhmLa1E,229
+fast_to_sql/fast_to_sql.py,sha256=OVPhbwq8fIGdgmSDKmf7Z31ZLJjlKTHG-6shVjfezag,3038
+fast_to_sql/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fast_to_sql/utils/utility_funs.py,sha256=SKdng1Ew9zh0fCtRY0u2C8ugKPA__VffRIi2Dlst96w,3930
+fast_to_sql-2.3.0.dist-info/LICENSE,sha256=AkNHvzRl13YDJM72U7Ye-bq6vD2H-EHw-ayD7W4Dvyc,1073
+fast_to_sql-2.3.0.dist-info/METADATA,sha256=b1a0m00uvGKkQYQ5uMDq7rH80r7gBY7TTZkz3Ajys9M,4544
+fast_to_sql-2.3.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+fast_to_sql-2.3.0.dist-info/top_level.txt,sha256=1SpvqGwM6ylsLWcqo6L1ScO7CEot_kxPqJ5fPQ1xX5I,12
+fast_to_sql-2.3.0.dist-info/RECORD,,
