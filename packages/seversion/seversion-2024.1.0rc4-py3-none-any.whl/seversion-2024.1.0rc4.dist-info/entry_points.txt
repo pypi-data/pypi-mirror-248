@@ -1,0 +1,2 @@
+[console_scripts]
+seVersion = seVersion.cli:cli
