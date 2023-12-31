@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+brython_dragdrop/__init__.py
+brython_dragdrop/api.py
+brython_dragdrop.egg-info/PKG-INFO
+brython_dragdrop.egg-info/SOURCES.txt
+brython_dragdrop.egg-info/dependency_links.txt
+brython_dragdrop.egg-info/top_level.txt
+tests/test_api.py
