@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/bhailang.egg-info/PKG-INFO
+src/bhailang.egg-info/SOURCES.txt
+src/bhailang.egg-info/dependency_links.txt
+src/bhailang.egg-info/top_level.txt
+src/dostlang/__init__.py
+src/dostlang/dostlang.py

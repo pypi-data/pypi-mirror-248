@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: bhailang
+Version: 1.0.0
+Summary: This package is used for making python funny
+Home-page: https://github.com/UjjwalxD/dostlang-module
+Author: Ujjwal Srivastav
+Author-email: ujjwalfixa@gmail.com
+Project-URL: Bug Tracker, https://github.com/UjjwalxD/dostlang-module/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# DostLang v1.0.0
+
+This is a python module made for fun in coding.
+[Home](https://github.com/UjjwalxD/dostlang-module/)
+
+
+```bash
+pip install dostlang
+```
+```bash
+from dostlang import DostLang
+```
+```bash
+bolbhai("hello...")
+```
