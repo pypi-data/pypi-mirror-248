@@ -1,0 +1,8 @@
+tzfpy-0.15.3.dist-info/METADATA,sha256=UALUedrfOZ2N_Ib2RNrpe6h104-i-FjP9RZPAGEkIoQ,5956
+tzfpy-0.15.3.dist-info/WHEEL,sha256=MBDwpsx3ObvF4E_5DT_0oST6kzqnPflUzZSqxrVNCew,94
+tzfpy-0.15.3.dist-info/license_files/LICENSE,sha256=pJGaIqwtQcBEoBkZUU-wKUgtqsz2bymInr0WtBfWiD0,1088
+tzfpy/__init__.py,sha256=h3Z3T8qQJ6nBrmPp37SR7mAdGS7BwUxKuimPQKniJ2U,103
+tzfpy/__init__.pyi,sha256=ebiUmjDrxNiifECNfy4pQnLW_eTesT1rOD7Qttox7mQ,614
+tzfpy/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tzfpy/tzfpy.cp38-win_amd64.pyd,sha256=NVUOVu8kyjXUIbjOXr7e_3c895npvkWZG0vbJ_8Ta10,13545472
+tzfpy-0.15.3.dist-info/RECORD,,
