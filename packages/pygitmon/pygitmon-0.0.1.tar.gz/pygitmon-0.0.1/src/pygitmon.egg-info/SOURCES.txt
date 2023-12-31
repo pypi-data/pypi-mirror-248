@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+pyproject.toml
+src/gitmon/__init__.py
+src/gitmon/__main__.py
+src/gitmon/tool.py
+src/pygitmon.egg-info/PKG-INFO
+src/pygitmon.egg-info/SOURCES.txt
+src/pygitmon.egg-info/dependency_links.txt
+src/pygitmon.egg-info/requires.txt
+src/pygitmon.egg-info/top_level.txt
