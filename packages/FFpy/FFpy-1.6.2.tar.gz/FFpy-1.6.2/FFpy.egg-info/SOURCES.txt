@@ -1,0 +1,10 @@
+README.md
+setup.py
+FFpy.egg-info/PKG-INFO
+FFpy.egg-info/SOURCES.txt
+FFpy.egg-info/dependency_links.txt
+FFpy.egg-info/entry_points.txt
+FFpy.egg-info/requires.txt
+FFpy.egg-info/top_level.txt
+ffpy/__init__.py
+ffpy/timer.py
