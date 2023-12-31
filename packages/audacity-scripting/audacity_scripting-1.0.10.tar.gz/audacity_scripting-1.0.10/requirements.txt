@@ -1,0 +1,7 @@
+click==8.1.7
+dill==0.3.7
+lib-detect-testenv==2.0.8
+multiprocess==0.70.15
+psutil==5.9.7
+wrapt==1.16.0
+wrapt-timeout-decorator==1.4.0
