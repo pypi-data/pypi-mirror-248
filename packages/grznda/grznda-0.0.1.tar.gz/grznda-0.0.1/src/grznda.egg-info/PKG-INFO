@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: grznda
+Version: 0.0.1
+Summary: Static Site Generator with Jinja2 templates
+Author-email: Grzegorz Grzęda <grzegorz.grzeda@g2labs.pl>
+Project-URL: Homepage, https://github.com/g2labs-grzegorz-grzeda/grznda
+Project-URL: Issues, https://github.com/g2labs-grzegorz-grzeda/grznda/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: vt100logging
+
+# grznda
+Static Site Generator with Jinja2 templates.
+
+## Copyright
+Created by Grzegorz Grzęda. Distributed under MIT license

@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/grznda/__init__.py
+src/grznda/__main__.py
+src/grznda/grznda.py
+src/grznda.egg-info/PKG-INFO
+src/grznda.egg-info/SOURCES.txt
+src/grznda.egg-info/dependency_links.txt
+src/grznda.egg-info/requires.txt
+src/grznda.egg-info/top_level.txt
