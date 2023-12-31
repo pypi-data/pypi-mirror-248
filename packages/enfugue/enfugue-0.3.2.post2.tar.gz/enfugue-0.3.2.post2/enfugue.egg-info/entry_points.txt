@@ -1,0 +1,3 @@
+[console_scripts]
+enfugue = enfugue.scripts.deprecate_main:deprecate_main
+
