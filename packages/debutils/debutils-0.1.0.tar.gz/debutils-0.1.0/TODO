@@ -1,0 +1,16 @@
+- Create email.py to facilitate sending emails via localhost (postfix server)
+  - Complete impl of itpwriter, so it can send emails.
+- Fix linter issues (hatch fmt)
+- Better error handling
+  - Put all custom error classes into an error.py, and replace any inheritance of
+    Exception with DebutilsError
+  - Top-level catcher that catches DebutilsError (or any subclasses) and prints a
+    pretty message for the user instead of an ugly Python trace (exclude failed
+    commands, we want a trace and everything)
+- Type all functions, classes, everything (properly with typing module)
+- Add docstrings to all functions and classes
+  - Generate Python documentation
+  - Generate manpages (click-man)
+    Don't add as a dependency (dev-dependency maybe, do they even exist?), create a Makefile to take care of that.
+  - Some kind of wiki at docs/ (kind of like debmake-doc)
+    - Link Codeberg wiki tab to web version of docs (pages on Salsa?, Codeberg pages?)
