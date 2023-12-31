@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+git_image_commiter/__init__.py
+git_image_commiter/convert.py
+git_image_commiter/image_upload.py
+git_image_commiter.egg-info/PKG-INFO
+git_image_commiter.egg-info/SOURCES.txt
+git_image_commiter.egg-info/dependency_links.txt
+git_image_commiter.egg-info/entry_points.txt
+git_image_commiter.egg-info/not-zip-safe
+git_image_commiter.egg-info/requires.txt
+git_image_commiter.egg-info/top_level.txt
