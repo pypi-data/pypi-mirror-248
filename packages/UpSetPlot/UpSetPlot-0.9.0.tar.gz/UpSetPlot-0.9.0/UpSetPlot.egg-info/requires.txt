@@ -1,0 +1,6 @@
+pandas>=0.23
+matplotlib>=2.0
+
+[testing]
+pytest>=2.7
+pytest-cov<2.6
