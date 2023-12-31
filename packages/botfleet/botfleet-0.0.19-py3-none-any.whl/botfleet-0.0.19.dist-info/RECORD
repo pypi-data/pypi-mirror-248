@@ -1,0 +1,9 @@
+botfleet/__init__.py,sha256=HG-k6OGIoGSPfWNgxmAi0U6rgL4YhTnygCAvPoLmpW8,107
+botfleet/errors.py,sha256=awfSEaXZWXN7Y_4-5OhjNd88QwHd9hHefnpSg-sD_II,368
+botfleet/resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+botfleet/resources/bot.py,sha256=P7HURCWE6Gf6ME9sGSg25t2jQUuTYNbh5clfyxcPSZw,843
+botfleet-0.0.19.dist-info/LICENSE,sha256=WN6zKW5K8-edQonVnX28M0bAAJFzu2xMz5mLvxLiWBk,1070
+botfleet-0.0.19.dist-info/METADATA,sha256=CuulOet723ZnHrZvyhzpwtSsS3w-C3WHo_hDvU809g4,339
+botfleet-0.0.19.dist-info/WHEEL,sha256=AtBG6SXL3KF_v0NxLf0ehyVOh0cold-JbJYXNGorC6Q,92
+botfleet-0.0.19.dist-info/top_level.txt,sha256=wvZSFCx-IS9bJ_o2lCnNILC39JTOzKFf62ut3mo54hU,9
+botfleet-0.0.19.dist-info/RECORD,,
