@@ -1,0 +1,2 @@
+[console_scripts]
+phyrvm = phyrvm.__main__:main
