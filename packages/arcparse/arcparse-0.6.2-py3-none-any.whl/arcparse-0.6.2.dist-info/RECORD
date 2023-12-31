@@ -1,0 +1,13 @@
+arcparse/__init__.py,sha256=zXQ3kPO3MVXdVWo4uZctHe_daYA5D710cfcNbQKaToo,548
+arcparse/_argument_helpers.py,sha256=CgvMRggQgNm5e4DkoIrqNOyqbKISVlZxbwFmWGfBb1k,4436
+arcparse/_arguments.py,sha256=HuE6aeTaZlgiTvV04BhOMzoh3ZCRgnxhQBsxyxxkCy0,4661
+arcparse/_parser.py,sha256=qsDQm9Pg1FOCfina0oWylrA0SmTxvrrtXh8PBa7ogbM,8212
+arcparse/_partial_arguments.py,sha256=rsLrfvUWoyGCMzmYooM0Svl2dLWua688qwaQfc9t52Q,6981
+arcparse/_typehints.py,sha256=TFp_Uc4_HavJ0e9XVa80Ce0vz4qj1rlBwpR6JjtGnM4,1572
+arcparse/converters.py,sha256=J1UCkNJPncAd0jRWuvuG90J2FmWGCRvnKD0cyci8aPM,1407
+arcparse/errors.py,sha256=2804IBk6hWPad2Jq7IAEfQM2AYtaKxhUNC0zkTsMeLk,195
+arcparse/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arcparse-0.6.2.dist-info/LICENSE,sha256=9_tXM94CxGGpcZRCf_QJhyi5upvffqreVwjMt-FFX34,1064
+arcparse-0.6.2.dist-info/METADATA,sha256=ytkkr2iVJSoZjsl4mOSGK63G-8agM8rnSApg-beMi2U,9048
+arcparse-0.6.2.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+arcparse-0.6.2.dist-info/RECORD,,
