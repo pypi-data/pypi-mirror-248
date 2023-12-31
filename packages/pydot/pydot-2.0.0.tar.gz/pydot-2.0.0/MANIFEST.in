@@ -1,0 +1,10 @@
+include README.md
+include LICENSE
+include ChangeLog
+include *.txt
+prune .github
+exclude .git*
+graft test
+prune test/from-past-to-future
+global-exclude test.svg
+

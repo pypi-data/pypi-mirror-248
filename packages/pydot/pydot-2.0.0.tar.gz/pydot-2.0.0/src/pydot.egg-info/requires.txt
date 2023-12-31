@@ -1,0 +1,13 @@
+pyparsing>=3
+
+[dev]
+chardet
+black
+
+[release]
+zest.releaser[recommended]
+
+[tests]
+chardet
+black
+tox
