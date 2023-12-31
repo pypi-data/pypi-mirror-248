@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: uhttp-static
+Version: 0.1.3
+Summary: Static files support for µHTTP
+License: MIT
+Author: gus
+Author-email: 0x67757300@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: uhttp (>=1.3.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+# µHTTP Static
+
+Static files support for µHTTP
+
+In production, use [Unit](https://unit.nginx.org/) instead.
+
+### Installation
+
+µHTTP Static is on [PyPI](https://pypi.org/project/uhttp-static/).
+
+```bash
+pip install uhttp-static
+```
+
+### Usage
+
+```python
+from uhttp import App
+from uhttp_static import send_file, static
+
+
+app = App()
+app.mount(static('assets'), '/assets')
+
+
+@app.get('/')
+def hello(request):
+    return send_file('hello.html')
+```
+
+### License
+
+Released under the MIT license.
+
