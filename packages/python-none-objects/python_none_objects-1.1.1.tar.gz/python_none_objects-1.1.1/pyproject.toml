@@ -1,0 +1,36 @@
+# pyproject.toml
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "python-none-objects"
+version = "1.1.1"
+description = "Add more constant \"None\" objects to Python to avoid boilerplate code"
+readme = "README.md"
+authors = [
+    { name = "Laurent Lyaudet", email = "laurent.lyaudet@gmail.com" },
+]
+license = { file = "COPYING.LESSER" }
+classifiers = [
+    "License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["Python", "None", "Immutable", "Default values"]
+dependencies = [
+]
+requires-python = ">=3.11"
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "mypy",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/LLyaudet/python-none-objects"
+"Bug Tracker" = "https://github.com/LLyaudet/python-none-objects/issues"
+
