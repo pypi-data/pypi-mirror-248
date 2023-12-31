@@ -1,0 +1,5 @@
+PlexAPI>=4.15.5
+subliminal>=2.1.0
+Flask>=2.0.0
+waitress>=2.1.2
+jsonschema
