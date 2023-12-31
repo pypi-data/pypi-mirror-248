@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/dostlang/__init__.py
+src/dostlang/dostlang.py
+src/dostlang.egg-info/PKG-INFO
+src/dostlang.egg-info/SOURCES.txt
+src/dostlang.egg-info/dependency_links.txt
+src/dostlang.egg-info/top_level.txt
