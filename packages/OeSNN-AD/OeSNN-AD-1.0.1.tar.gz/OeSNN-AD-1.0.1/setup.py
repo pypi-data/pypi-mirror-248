@@ -1,0 +1,36 @@
+from setuptools import setup, find_packages
+import codecs
+import os
+
+here = os.path.abspath(os.path.dirname(__file__))
+
+with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
+    long_description = "\n" + fh.read()
+
+VERSION = '1.0.1'
+DESCRIPTION = 'OeSNN-UAD anomaly detector implementation for Python.'
+LONG_DESCRIPTION = 'Online evolutionary Spiking Neural Network unsupervised anomaly detector implementation for Python.'
+
+# Setting up
+setup(
+    name="OeSNN-AD",
+    version=VERSION,
+    author="Mariusz Paluch",
+    author_email="mariuszpaluch001@gmail.com",
+    description=DESCRIPTION,
+    long_description_content_type="text/markdown",
+    long_description=long_description,
+    packages=find_packages(),
+    install_requires=['numpy', 'EMD-signal'],
+    keywords=['python', 'data stream', 'spiking neural network',
+              'SNN', 'anomalies', 'anomaly detection', 'CEEMDAN'],
+    classifiers=[
+        "Development Status :: 5 - Production/Stable",
+        "Intended Audience :: Developers",
+        "Intended Audience :: Science/Research",
+        "Programming Language :: Python :: 3",
+        "Operating System :: Unix",
+        "Operating System :: MacOS :: MacOS X",
+        "Operating System :: Microsoft :: Windows",
+    ]
+)
