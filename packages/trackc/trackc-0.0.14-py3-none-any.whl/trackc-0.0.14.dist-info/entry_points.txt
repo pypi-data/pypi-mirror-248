@@ -1,0 +1,4 @@
+[console_scripts]
+gtf2bed4trackc=trackc.scripts.gtf2bed12:_main
+trackc=trackc.scripts.trackc_cli:cli
+
