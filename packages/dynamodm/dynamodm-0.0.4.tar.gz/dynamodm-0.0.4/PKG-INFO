@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: dynamodm
+Version: 0.0.4
+Summary: DynamoDB ODM for Python
+Author: Oscar Bahamonde
+Author-email: o.bahamonde@globant.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: boto3 (>=1.34.2,<2.0.0)
+Requires-Dist: pydantic (==1.10.12)
+Requires-Dist: rich (>=13.7.0,<14.0.0)
+Requires-Dist: tenacity (>=8.2.3,<9.0.0)
+Description-Content-Type: text/markdown
+
+# DynamoDB Object Document Mapper (ODM) for Python
+
+## Installation
+
+```bash
+pip install dynamodm
+```
+
+## Usage
+
+```python
+
+from dynamodm import DynaModel, Field
+
+class User(DynaModel):
+	sub: str = Field(pk=True)
+	name: str = Field(sk=True)
+	age: int
+
+user = User(sub="user", name="John Doe", age=42)
+
+async def main():
+	await user.put()
+	# User(sub='user', name='John Doe', age=42)
+	await User.get(pk="user", sk="John Doe")
+	# User(sub='user', name='John Doe', age=42)
+	await User.query(pk="user", sk="John Doe",operator="begins_with")
+	# [User(sub='user', name='John Doe', age=42)]
+	await User.delete(pk="user", sk="John Doe")
+	# None
+	
+```
+
+## Features
+
+- [x] Type hints
+- [x] Automatic schema generation
+- [x] Automatic table creation
+- [x] Automatic table updates
+- [x] Automatic table deletion
+

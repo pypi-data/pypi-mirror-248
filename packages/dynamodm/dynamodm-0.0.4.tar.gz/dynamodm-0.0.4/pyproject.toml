@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "dynamodm"
+version = "0.0.4"
+description = "DynamoDB ODM for Python"
+authors = ["Oscar Bahamonde <o.bahamonde@globant.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+boto3 = "^1.34.2"
+pydantic = "1.10.12"
+tenacity = "^8.2.3"
+rich = "^13.7.0"
+
+
+[tool.poetry.group.dev.dependencies]
+boto3-stubs = {extras = ["dynamodb"], version = "^1.34.2"}
+pytest = "^7.4.3"
+pytest-asyncio = "^0.23.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
