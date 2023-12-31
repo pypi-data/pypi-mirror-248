@@ -1,0 +1,6 @@
+allure_pg_client/__init__.py,sha256=fkp_pghG8HdybDl5gOcpxn0Q1nGia-gXtgGBId47FFU,31
+allure_pg_client/db_client.py,sha256=rc0cqCBeMsCH498qUGWucNFZZYYImhomj2RyBK6KhcU,3671
+allure_pg_client-1.1.1.dist-info/LICENSE,sha256=YuYsWWsBky6AJ06JVW45NNJ2EDsiFKygtlIEGP3zTlk,1062
+allure_pg_client-1.1.1.dist-info/METADATA,sha256=Nw09Wzn5-UhJORVQYcA0-RhMw0-I_jpVYUR_UcTvvsg,555
+allure_pg_client-1.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+allure_pg_client-1.1.1.dist-info/RECORD,,
