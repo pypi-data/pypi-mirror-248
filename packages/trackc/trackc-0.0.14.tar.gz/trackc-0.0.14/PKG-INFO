@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: trackc
+Version: 0.0.14
+Summary: Track view of chromosome conformation and multi-omics data
+Home-page: http://trackc.readthedocs.io
+License: MIT
+Author: Zan Yuan
+Author-email: yfinddream@gmail.com
+Requires-Python: >=3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: bioframe (>=0.5.1,<0.6.0)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: colorlog (>=6.8.0,<7.0.0)
+Requires-Dist: cooler (>=0.9.3,<0.10.0)
+Requires-Dist: matplotlib (>=3.8.2,<4.0.0)
+Requires-Dist: numpy (>=1.26.2,<2.0.0)
+Requires-Dist: pandas (>=2.1.4,<3.0.0)
+Requires-Dist: pybigwig (>=0.3.22,<0.4.0)
+Requires-Dist: seaborn (>=0.13.0,<0.14.0)
+Project-URL: Repository, https://github.com/seqyuan/trackc
+Description-Content-Type: text/x-rst
+
+.. image:: https://zenodo.org/badge/572302042.svg
+   :target: https://zenodo.org/badge/latestdoi/572302042
+
+
+=======
+trackc
+=======
+
+Track view of chromosome conformation and multi-omics data
+===========================================================
+**trackc** is a python package to flexible visualization of 3D genome and multi-omics data.
+It builds on top of `matplotlib`, from which it allow for flexible adjustments.
+
+Trackc's key applications
+--------------------------
+- Mark the abnormal interaction formed by the structural variation of the genome.
+- Show the 3Dgenome interaction and multi-omics data after rearrangement.
+- Flexible and convenient layout for multi-track 
+
+Available track types
+---------------------
+- multi Hi-C heatmap
+- Virtual4C
+- bigwig signal
+- bed position, ChIP-seq or ATAC-seq peaks, TAD domains, SVs
+- mark region on heatmap
+- zoomin
+- gene
+- links, interaction loops
+- scalebar
+
+Here is an example of du_dynamic_2022 article diagram implemented by trackc.
+
+Installation
+============
+**PyPI**
+
+Install trackc by running:
+
+.. code-block:: bash
+
+    pip install trackc
+
+**Development version**
+
+To install trackc from GitHub, run::
+
+    pip install git+https://github.com/seqyuan/trackc@main
+
+Documentation
+=============
+Our documentation provide the full list of possible track types and gallary guidelines for users.
+
+Extensive documentations are available at https://trackc.readthedocs.io
+
+
+Citation
+========
+If you use trackc in your analysis, Please cite trackc as follows:
+
+**trackc: a package for flexible visualization of rearrangement 3D genome and multi-omics data**
+
