@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: recoverr
+Version: 0.1.0
+Summary: 
+Author: Tobias Egelund
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# recoverr
+
+A library to handle recoverable errors in Python. The library is inspired by the Result and Option Enums from Rust.
+
+## Usage
+
+```python
+from recoverr import Ok, Err
+
+res1 = Ok(2) # Result<2, None>
+```
+
