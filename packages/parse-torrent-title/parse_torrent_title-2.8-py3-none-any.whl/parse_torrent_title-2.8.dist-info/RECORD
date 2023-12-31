@@ -1,0 +1,10 @@
+PTN/__init__.py,sha256=lmt0t7-TsUMfZW3ZlmIIvWa3A7hpb4GjAdYCKkF0isw,599
+PTN/extras.py,sha256=Xi9PN0Bt06tAiiLPxXnwc76G7EBzcUXZSOnD6fvYK_4,6178
+PTN/parse.py,sha256=QPcncoxv-uL1AwBma_J9at88px1uN9eUmHTp6mhRkI0,16905
+PTN/patterns.py,sha256=-RDwG8cmTB8IYBN9NeG4tlGNfvmWTPKjnBW2vVoRTsk,12317
+PTN/post.py,sha256=L-C1tuWAJ2eYaufcTceDX8qql5unaXpuxJ7YeWQZCuw,8236
+parse_torrent_title-2.8.dist-info/LICENSE,sha256=FQV0WevlDe6gg_4tEJtwRbDtrgcBG8aRSTQJbt9UEls,1168
+parse_torrent_title-2.8.dist-info/METADATA,sha256=MlStJ0Ol8Cntou6v9yfIc52dOWfl0Snvq2R7bTvEzfY,10286
+parse_torrent_title-2.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+parse_torrent_title-2.8.dist-info/top_level.txt,sha256=mQaajYNsu_xCmw5I07Gzt0zG2NZACCFlNRUxnWIcwQ4,4
+parse_torrent_title-2.8.dist-info/RECORD,,
