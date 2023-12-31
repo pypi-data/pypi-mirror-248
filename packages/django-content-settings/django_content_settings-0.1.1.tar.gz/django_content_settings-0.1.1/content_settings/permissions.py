@@ -1,0 +1,35 @@
+def any(user):
+    return True
+
+
+def none(user):
+    return False
+
+
+def authenticated(user):
+    return user.is_authenticated
+
+
+def staff(user):
+    return user.is_authenticated and user.is_staff
+
+
+def has_perm(perm):
+    def _(user):
+        return user.has_perm(perm)
+
+    return _
+
+
+def and_(*funcs):
+    def _(user):
+        return all(func(user) for func in funcs)
+
+    return _
+
+
+def or_(*funcs):
+    def _(user):
+        return any(func(user) for func in funcs)
+
+    return _
