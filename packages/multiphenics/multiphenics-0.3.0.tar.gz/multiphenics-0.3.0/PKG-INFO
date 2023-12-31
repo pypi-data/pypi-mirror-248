@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: multiphenics
+Version: 0.3.0
+Summary: Easy prototyping of multiphysics problems on conforming meshes in FEniCS
+Home-page: http://mathlab.sissa.it/multiphenics
+Author: Francesco Ballarin (and contributors)
+Author-email: francesco.ballarin@unicatt.it
+License: GNU Library or Lesser General Public License (LGPL)
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: COPYING
+License-File: AUTHORS
+
+## multiphenics -- easy prototyping of multiphysics problems in FEniCS ##
+![multiphenics -- easy prototyping of multiphysics problems in FEniCS](https://raw.githubusercontent.com/multiphenics/multiphenics/master/docs/multiphenics-logo-small.png "multiphenics -- easy prototyping of multiphysics problems in FEniCS")
+
+**multiphenics** was a python library that aimed at providing tools in FEniCS for an easy prototyping of multiphysics problems on conforming meshes. In particular, it used to facilitate the definition of subdomain/boundary restricted variables and enabled the definition of the problem by means of a block structure.
+
+**multiphenics** was developed by [Dr. Francesco Ballarin](https://www.francescoballarin.it), currently at [Università Cattolica del Sacro Cuore](https://www.unicatt.it/), in collaboration with [Prof. Gianluigi Rozza](https://people.sissa.it/~grozza/)'s group at [SISSA mathLab](http://mathlab.sissa.it/). The financial support of the [AROMA-CFD ERC CoG project](https://people.sissa.it/~grozza/aroma-cfd/) was gratefully acknowledged.
+
+New and existing users of **FEniCS** are encouraged to move to **FEniCSx** forthwith.
+The [**multiphenicsx**](https://github.com/multiphenics/multiphenicsx) library, which is currently developed and maintained, targets **FEniCSx**, and effectively replaces **multiphenics**.
+
+Like all core **FEniCS** components, **multiphenics** was freely available under the GNU LGPL, version 3.
