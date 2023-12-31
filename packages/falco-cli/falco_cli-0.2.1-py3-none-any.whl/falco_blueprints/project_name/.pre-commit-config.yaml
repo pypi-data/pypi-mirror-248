@@ -1,0 +1,68 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+default_language_version:
+  python: python3.11
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-toml
+      - id: check-added-large-files
+      - id: check-merge-conflict
+      - id: check-case-conflict
+      - id: check-symlinks
+      - id: check-json
+
+  - repo: local
+    hooks:
+      - id: pyright
+        name: Run pyright
+        entry: hatch run lint:run-pyright
+        language: system
+        files: \.py$
+
+      - id: ruff
+        name: Run ruff lint
+        entry: hatch run lint:run-ruff
+        language: system
+        files: \.py$
+
+      - id: ruff-format
+        name: Run run format
+        entry: hatch run lint:run-format
+        language: system
+        files: \.py$
+
+      - id: ruff-format
+        name: Run run reorder-python-imports
+        entry: hatch run lint:run-reorder-python-imports
+        language: system
+        files: \.py$
+
+      - id: curlylint
+        name: Run curlylint
+        entry: hatch run lint:run-curlylint
+        language: system
+        files: \.html$
+
+      - id: djhtml
+        name: Run djhtml
+        entry: hatch run lint:djhtml
+        language: system
+        files: \.html$
+
+      - id: pyupgrade
+        name: Run pyupgrade
+        entry: hatch run lint:run-all-pyupgrade
+        language: system
+        files: \.py$
+
+      - id: django-upgrade
+        name: Run django-upgrade
+        entry: hatch run lint:run-all-django-upgrade
+        language: system
+        files: \.py$
