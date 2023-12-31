@@ -1,0 +1,7 @@
+README.md
+humans.c
+setup.py
+humans_formatter.egg-info/PKG-INFO
+humans_formatter.egg-info/SOURCES.txt
+humans_formatter.egg-info/dependency_links.txt
+humans_formatter.egg-info/top_level.txt

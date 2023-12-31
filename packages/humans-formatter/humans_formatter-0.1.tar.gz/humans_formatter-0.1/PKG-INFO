@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: humans_formatter
+Version: 0.1
+Summary: Utility to convert time and bytes to human readable format
+Description-Content-Type: text/markdown
+
+# Humans
+Blazingly fast utility to convert time and bytes into human readable format ⚡
+
+# Install
+```sh
+pip3 install humans_formatter
+```
+
+# Usage
+```py
+import humans
+
+
+print(humans.human_time(100*60)) # 6s
+
+print(humans.human_bytes(1024*1024*1024)) # 1024.00 MiB
+```
