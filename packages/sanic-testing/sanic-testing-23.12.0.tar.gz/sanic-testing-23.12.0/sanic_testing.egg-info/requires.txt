@@ -1,0 +1,9 @@
+httpx>=0.18
+
+[dev]
+pytest
+sanic>=22.12
+pytest-asyncio
+
+[dev:python_version > "3.11"]
+setuptools
