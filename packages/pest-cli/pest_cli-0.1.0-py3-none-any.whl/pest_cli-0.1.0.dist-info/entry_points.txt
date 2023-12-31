@@ -1,0 +1,3 @@
+[console_scripts]
+pest=pest_cli.app:cli
+
