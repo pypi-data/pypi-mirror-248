@@ -1,0 +1,9 @@
+obsidian_git_uploader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+obsidian_git_uploader/convert.py,sha256=e43Nh1OaHCqZT9abuyBowMnVnqj_M7cnw4Uw8TF75EI,712
+obsidian_git_uploader/image_upload.py,sha256=iGGCJOWV97264zijWeAXgMweWn3Y-NwdeDzpnHnKdYk,10863
+obsidian_git_uploader-1.0.0.dist-info/LICENSE,sha256=ZZ0aobGS_R3PzYTyTbCfeczdXVFMzz2Vpx6qoV9f4kg,1170
+obsidian_git_uploader-1.0.0.dist-info/METADATA,sha256=8RHtrtLy29qkbjohqb4yL8AV2CzMglPmdaSAMvmuabg,597
+obsidian_git_uploader-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+obsidian_git_uploader-1.0.0.dist-info/entry_points.txt,sha256=GaBoTiiuIO39IZ2T3ANss3QGcG7XTOFxgIXCWEVJuSI,73
+obsidian_git_uploader-1.0.0.dist-info/top_level.txt,sha256=pOOSpyhPEe56gqaHKzEEwS1nfrT3L8g9QUZQQQIE-q0,22
+obsidian_git_uploader-1.0.0.dist-info/RECORD,,
