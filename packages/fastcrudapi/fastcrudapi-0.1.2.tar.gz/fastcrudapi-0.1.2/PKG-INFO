@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: fastcrudapi
+Version: 0.1.2
+Summary: The package helps to build CRUD APIs for models based on FastAPI.
+Author: lpthong90
+Author-email: lpthong90@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: fastapi (>=0.108.0,<0.109.0)
+Requires-Dist: sqlmodel (>=0.0.14,<0.0.15)
+Description-Content-Type: text/markdown
+
+# fastcrudapi
+
+---
+
+<!-- **Documentation**: -->
+
+**Source  Code**: <a href="https://github.com/lpthong90/fastcrudapi" target="_blank">https://github.com/lpthong90/fastcrudapi</a>
+
+---
+
+The package helps to build CRUD APIs for models based on FastAPI.
+
+## Installation
+```bash
+pip install fastcrudapi
+```
+
+## Basic Usage
+```python
+from fastapi import FastAPI
+from pydantic import BaseModel
+from fastcrudapi import InMemoryCRUDRouteBuilder
+
+class  Book(BaseModel):
+	id: int
+	name: str
+
+app = FastAPI()
+app.include_router(InMemoryCRUDRouteBuilder(schema=Book))
+```
