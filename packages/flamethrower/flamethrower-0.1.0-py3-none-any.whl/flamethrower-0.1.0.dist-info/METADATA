@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: flamethrower
+Version: 0.1.0
+Summary: The ultimate debugging experienc 🦠🔥
+License: MIT
+Author: Scott Susanto
+Author-email: scottsus@usc.edu
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: jsonschema (>=4.20.0,<5.0.0)
+Requires-Dist: openai (>=1.6.1,<2.0.0)
+Requires-Dist: pathspec (>=0.12.1,<0.13.0)
+Requires-Dist: pydantic (>=2.5.3,<3.0.0)
+Requires-Dist: rich (>=13.7.0,<14.0.0)
+Description-Content-Type: text/markdown
+
+# 🔥 flamethrower
+
+The ultimate debugging experience.
+
+## Usage
+1. Clone repo
+```
+git clone git@github.com:scottsus/flamethrower.git
+```
+
+2. Install requirements
+```
+pip install -r requirements.txt
+```
+
+3. Export openai key
+```
+export OPENAI_API_KEY=sk-xxxxxxx
+```
+
+4. Run flamethrower
+```
+python main.py
+
+```
+
+5. Use as cli (optional)
+```
+# TODO: clean build.sh
+```
+
+## Progress
+
+### December 22
+Focus on shell experience, can accept shell commands and natural language queries and pretty-print them ✨
+
+https://github.com/scottsus/flamethrower/assets/88414565/7826c070-8f3a-4393-a561-b683bf901a63
+
