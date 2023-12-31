@@ -1,0 +1,8 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+solidlibs.egg-info/PKG-INFO
+solidlibs.egg-info/SOURCES.txt
+solidlibs.egg-info/dependency_links.txt
+solidlibs.egg-info/top_level.txt
