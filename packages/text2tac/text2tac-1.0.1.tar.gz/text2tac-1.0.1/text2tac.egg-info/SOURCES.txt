@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+text2tac/__init__.py
+text2tac.egg-info/PKG-INFO
+text2tac.egg-info/SOURCES.txt
+text2tac.egg-info/dependency_links.txt
+text2tac.egg-info/entry_points.txt
+text2tac.egg-info/requires.txt
+text2tac.egg-info/top_level.txt
+text2tac/transformer/__init__.py
+text2tac/transformer/extract_package_based.py
+text2tac/transformer/new_datasets_hg_transformer_cl.py
+text2tac/transformer/predict_server.py
