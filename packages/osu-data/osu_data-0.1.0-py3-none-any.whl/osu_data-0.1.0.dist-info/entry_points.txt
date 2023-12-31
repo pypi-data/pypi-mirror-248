@@ -1,0 +1,3 @@
+[console_scripts]
+osu-data=osu_data_docker.main:main
+
