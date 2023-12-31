@@ -1,0 +1,4 @@
+trio~=0.23.1
+
+[user]
+idleuserextend~=0.0.0
