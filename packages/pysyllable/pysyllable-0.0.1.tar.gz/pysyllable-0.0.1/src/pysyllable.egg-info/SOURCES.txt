@@ -1,0 +1,10 @@
+LICENSE
+README
+pyproject.toml
+src/pysyllable/__init__.py
+src/pysyllable/problematic.py
+src/pysyllable.egg-info/PKG-INFO
+src/pysyllable.egg-info/SOURCES.txt
+src/pysyllable.egg-info/dependency_links.txt
+src/pysyllable.egg-info/top_level.txt
+tests/test_syllables1.py

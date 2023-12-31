@@ -1,0 +1,11 @@
+# py package pysyllable
+
+based on npm package syllable (https://www.npmjs.com/package/syllable)
+https://github.com/words/syllable
+
+## API
+
+```{python}
+from pysyllable import syllable
+syllable(value)
+```
