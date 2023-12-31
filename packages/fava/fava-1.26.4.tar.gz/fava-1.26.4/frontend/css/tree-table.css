@@ -1,0 +1,23 @@
+/* Collapsible trees
+ *
+ * some of the shared styles are in `journal-table.css`
+ */
+
+.tree-table p {
+  margin-top: -1px;
+}
+
+.tree-table p > span {
+  margin-right: -1px;
+  border: 1px solid var(--table-border);
+}
+
+.tree-table .num {
+  /** Space for about 14 characters, so a number like 1234512345.123 fits. */
+  width: 9em;
+}
+
+.tree-table .other {
+  /** Space for about 18 (four more) characters, so an amount like 1234512345.123 USD fits. */
+  width: 12em;
+}
