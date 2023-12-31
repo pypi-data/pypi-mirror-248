@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: tahun_baru
+Version: 0.1.2
+Summary: Menghitung mundur waktu tahun baru
+Keywords: tahun baru, tahun, aplikasi terminal, terminal
+Author: harigro
+Author-email: trierbank@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Description-Content-Type: text/markdown
+
+

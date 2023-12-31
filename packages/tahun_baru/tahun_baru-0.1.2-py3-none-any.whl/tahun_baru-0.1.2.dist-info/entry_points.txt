@@ -1,0 +1,3 @@
+[console_scripts]
+tahun_baru=tahun_baru.tahun_baru:hitung_mundur
+
