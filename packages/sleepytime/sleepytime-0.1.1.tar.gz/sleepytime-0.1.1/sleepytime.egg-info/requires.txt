@@ -1,0 +1,6 @@
+PySimpleGUI
+psgtray
+pywin32
+tendo
+pyautogui
+appdirs
