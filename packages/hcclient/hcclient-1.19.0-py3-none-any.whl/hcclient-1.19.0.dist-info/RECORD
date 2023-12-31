@@ -1,0 +1,11 @@
+hcclient/cli/cli.py,sha256=kjhg6fjKJeOsY05UrzVRjqQzm-UqFLaRxxdqFz5BGLo,5594
+hcclient/client/client.py,sha256=JWoshjExRMRe5Vjc1m617BiaynoDX8eSNX1-2ySjZ6A,32719
+hcclient/client/commands.py,sha256=zlJ2csLYcjjwrF9M9bLnaE-kdGC5XOMzjtwp2__9Vj0,25172
+hcclient/render/formatter.py,sha256=03Yex4CJe8N5Zyj-zMpEgz6Mjgj4QzlYwYquDQClGY4,5239
+hcclient/utils/config.py,sha256=okneKYLCFXjcH7a_3TsgoRoxtYayrgkxhzsrznV0-CE,8440
+hcclient/utils/hook.py,sha256=gjZj8SXPXn3hVDWwCVLRB3A5Vh81UiqQKcPRJhWT-pk,1030
+hcclient-1.19.0.dist-info/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+hcclient-1.19.0.dist-info/METADATA,sha256=cJ23L7RpNpJPMOGNe0_mooK7NkcB5u9hw6bfuoFUrbU,14422
+hcclient-1.19.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+hcclient-1.19.0.dist-info/entry_points.txt,sha256=QZdhAqPnxDFN4N2a0Tx1Ag42jT_kAfcIPBwExQXbxeY,50
+hcclient-1.19.0.dist-info/RECORD,,
