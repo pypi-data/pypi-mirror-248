@@ -1,0 +1,9 @@
+postgres_copy/__init__.py,sha256=WPZjbKTrVto7WdfumqOKTtvLvIs8y_PdjGEdeOVEBRM,252
+postgres_copy/copy_from.py,sha256=Ug4MV4l1QBdnq3EeTjkvCXNcK7FUlk3GaVfve0NwcZU,14347
+postgres_copy/copy_to.py,sha256=4q_h3QBGtVeMAP-frsxm9oUnvyfWI3iajrQGcMz0MN8,3351
+postgres_copy/managers.py,sha256=ww9kbIIxBDvUQfkBHX41wklzP9R5qoacig2wk83a02c,9573
+django_postgres_copy-2.7.4.dist-info/LICENSE,sha256=tlO-DaG-hSd04vRiK2sLwrMkn4mh0rVkX-zQC7NlYXo,1098
+django_postgres_copy-2.7.4.dist-info/METADATA,sha256=UMITvHF6V0sCfX3yCsDLxs57br6N5hPR4IELVwRSvn4,1796
+django_postgres_copy-2.7.4.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+django_postgres_copy-2.7.4.dist-info/top_level.txt,sha256=abtMpxwUkcTcYHAKF1cK99vEO5d4fLOefKMotXSyk2k,14
+django_postgres_copy-2.7.4.dist-info/RECORD,,
