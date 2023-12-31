@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "tahun_baru"
+version = "0.1.2"
+description = "Menghitung mundur waktu tahun baru"
+authors = ["harigro <trierbank@gmail.com>"]
+readme = "README.md"
+keywords = ["tahun baru, tahun, aplikasi terminal, terminal"]
+classifiers=[
+        "Programming Language :: Python",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.10",
+        "License :: OSI Approved :: MIT License"
+    ]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.1.7"
+
+[tool.poetry.scripts]
+tahun_baru = "tahun_baru.tahun_baru:hitung_mundur"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
