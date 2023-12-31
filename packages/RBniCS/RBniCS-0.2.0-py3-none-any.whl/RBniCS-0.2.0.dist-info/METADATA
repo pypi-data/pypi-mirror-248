@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: RBniCS
+Version: 0.2.0
+Summary: Reduced order modelling in FEniCS
+Home-page: https://www.rbnicsproject.org
+Author: Francesco Ballarin (and contributors)
+Author-email: francesco.ballarin@unicatt.it
+License: GNU Library or Lesser General Public License (LGPL)
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: COPYING
+License-File: AUTHORS
+Requires-Dist: cvxopt >=1.3.1
+Requires-Dist: matplotlib
+Requires-Dist: mpi4py
+Requires-Dist: multipledispatch >=0.5.0
+Requires-Dist: scipy
+Requires-Dist: sympy >=1.0
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-benchmark ; extra == 'tests'
+
+## RBniCS - reduced order modelling in FEniCS ##
+![RBniCS - reduced order modelling in FEniCS](https://www.rbnicsproject.org/_images/rbnics-logo-small.png "RBniCS - reduced order modelling in FEniCS")
+
+The **RBniCS** Project contains an implementation in **FEniCS** of several reduced order modelling techniques for parametrized problems.
+
+**RBniCS** was developed by [Dr. Francesco Ballarin](https://www.francescoballarin.it), currently at [Università Cattolica del Sacro Cuore](https://www.unicatt.it/), in collaboration with [Prof. Gianluigi Rozza](https://people.sissa.it/~grozza/)'s group at [SISSA mathLab](http://mathlab.sissa.it/). The financial support of the [AROMA-CFD ERC CoG project](https://people.sissa.it/~grozza/aroma-cfd/) is gratefully acknowledged.
+
+Like all core **FEniCS** components, **RBniCS** is freely available under the GNU LGPL, version 3.
+
+Visit [www.rbnicsproject.org](https://www.rbnicsproject.org) for more information.
