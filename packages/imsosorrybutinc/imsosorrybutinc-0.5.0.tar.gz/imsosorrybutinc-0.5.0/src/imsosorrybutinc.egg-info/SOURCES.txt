@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/uwuifier.c
+src/uwuifier.stringlib.h
+src/imsosorrybutinc.egg-info/PKG-INFO
+src/imsosorrybutinc.egg-info/SOURCES.txt
+src/imsosorrybutinc.egg-info/dependency_links.txt
+src/imsosorrybutinc.egg-info/top_level.txt
