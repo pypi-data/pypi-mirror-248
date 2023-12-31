@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "fastcrudapi"
+version = "0.1.3"
+description = "The package helps to build CRUD APIs for models based on FastAPI."
+authors = ["lpthong90 <lpthong90@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+sqlmodel = "^0.0.14"
+fastapi = "^0.108.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
