@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: spookyai
+Version: 0.1.3
+Summary: The official Python library for the Spooky HumanAPI
+Home-page: UNKNOWN
+Author: Jack Blair
+Author-email: jackblairing@gmail.com
+Maintainer: Jack Blair
+Maintainer-email: jackblairing@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: asyncio
+Requires-Dist: requests
+Requires-Dist: langchain
+
+The official Python library for the Spooky HumanAPI
+
+
