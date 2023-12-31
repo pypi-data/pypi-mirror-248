@@ -1,0 +1,9 @@
+
+[docstest]
+parver
+sphinx
+furo
+
+[test]
+ipython
+pytest
