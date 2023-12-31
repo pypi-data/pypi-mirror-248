@@ -1,0 +1,2 @@
+[console_scripts]
+qablet_contracts = qablet_contracts.__main__:main
