@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+fast_to_sql.egg-info/PKG-INFO
+fast_to_sql.egg-info/SOURCES.txt
+fast_to_sql.egg-info/dependency_links.txt
+fast_to_sql.egg-info/requires.txt
+fast_to_sql.egg-info/top_level.txt
+tests/test_fast_to_sql.py
