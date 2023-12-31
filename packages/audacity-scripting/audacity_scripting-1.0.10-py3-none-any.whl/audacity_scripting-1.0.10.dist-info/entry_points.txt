@@ -1,0 +1,3 @@
+[console_scripts]
+audacity-scripting = audacity_scripting.__main__:main
+audacity_scripting = audacity_scripting.__main__:main
