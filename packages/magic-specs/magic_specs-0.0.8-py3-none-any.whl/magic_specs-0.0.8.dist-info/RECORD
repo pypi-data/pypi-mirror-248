@@ -1,0 +1,13 @@
+LICENSE,sha256=GuXKMfyJMNzXN6bELGoshZrjY68c2zX4sLH0eb4FFps,1069
+README.md,sha256=3eCQRS4NqbwBoctuAxa0gfgigFfVOJHGi43kRSVCUv8,1886
+magic_specs/__init__.py,sha256=uywwtOpCN_0o9JZxLq02InQDFQZkD_dAlE8DiTRbKI8,258
+magic_specs/_batched.py,sha256=YJsbVipoJQm-2LilhAVpTiEeZLkPJtld428jkbZUZEs,1697
+magic_specs/_definition.py,sha256=FUXo24vrzT4--jrTXzyD3sj9iMU3Xq6kzrdfe6NFvsU,5850
+magic_specs/_import_from_string.py,sha256=YHdtwkkBvOU8H-r0l79Nf-gq2oBR07czX-xlt2tmoZM,1224
+magic_specs/_iterable_cache.py,sha256=4um5iCxhdM2GbkyqOUaOxC4O9BgsvuAiqlaXKlx5xcc,1416
+magic_specs/_ttl_cache.py,sha256=ABqCYklTqXGpgtYSV5owWevvZsZ-MCbwGsUlLL2uYDg,1440
+magic_specs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+magic_specs-0.0.8.dist-info/LICENSE,sha256=GuXKMfyJMNzXN6bELGoshZrjY68c2zX4sLH0eb4FFps,1069
+magic_specs-0.0.8.dist-info/METADATA,sha256=KhWVu5t8ItEM6o7FORgGJtJyFKFbHBzoZCzmiY95aSo,2827
+magic_specs-0.0.8.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+magic_specs-0.0.8.dist-info/RECORD,,
