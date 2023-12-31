@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: rlay
+Version: 0.0.1
+Summary: A new Farama library
+Project-URL: Homepage, https://farama.org
+Project-URL: Repository, https://github.com/Farama-Foundation/rlay
+Project-URL: Documentation, https://rlay.farama.org
+Project-URL: Bug Report, https://github.com/Farama-Foundation/rlay/issues
+Author-email: Farama Foundation <contact@farama.org>
+License: MIT License
+License-File: LICENSE
+Keywords: AI,RL,Reinforcement Learning,game,rlay
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.8
+Requires-Dist: grpcio-tools~=1.60.0
+Requires-Dist: grpcio~=1.60.0
+Requires-Dist: gymnasium>=0.29.1
+Requires-Dist: numpy>=1.21.0
+Requires-Dist: tqdm~=4.64.1
+Provides-Extra: all
+Provides-Extra: testing
+Requires-Dist: pytest==7.1.3; extra == 'testing'
+Description-Content-Type: text/markdown
+
+# RLay
+
+RLay (pronounced like "relay") is a tool that enables building [Gymnasium](https://github.com/Farama-Foundation/Gymnasium) environments with ~any language or software toolkit.
+
+The main inspiration is interfacing with games built in powerful engines like Unity and Unreal.
+Adding a client or a server in the environment code will expose it for interaction with the standard
+Gymnasium API.
+
+There are two possible paradigms -- the environment runs either as a server, or as a client.
+
+ClientEnv has a relatively intuitive interpretation. The server maintains an instance of the environment,
+and calls its methods according to the MemServer calls. The user (or the RL algorithm) calls the methods of `ClientEnv`,
+which in turn calls the MemServer methods on the server.
+
+ServerEnv works the other way around. It expects that the user creates a server which implements a policy,
+and the environment lives in a client which can query that policy. When the client queries the server, it sends an observation,
+and receives the following observation.
+
+
+In summary, in ClientEnv:
+- The underlying environment logic lives on the server
+- The `Env` instance exists in the client
+- The algorithmic logic is in the client
+
+In ServerEnv:
+- The underlying environment logic is in the client
+- The `Env` instance exists on the server
+- The algorithmic logic is on the server
+
+
+The `ServerEnv` implementation is inspired by ML-Agents, but we generally recommend using `ClientEnv`.
+
+## Protocol
+
+ClientBackend - ServerEnv:
+- Handshake -- server sends a message, client sends a message
+- Server sends a message to hand over control
+# TODO: finish this
