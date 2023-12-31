@@ -1,0 +1,11 @@
+corner
+cpnest
+cython
+gwpy
+h5py
+lalsuite
+matplotlib<3.7.0
+numpy
+pesummary
+seaborn
+scipy
