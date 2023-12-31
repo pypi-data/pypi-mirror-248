@@ -1,0 +1,12 @@
+Babel
+future
+imagesize
+jinja2>=2.9
+pillow>=6
+pycryptodomex
+ruamel.yaml<0.18.0
+tqdm
+
+[tests]
+pytest
+pytest-cov
