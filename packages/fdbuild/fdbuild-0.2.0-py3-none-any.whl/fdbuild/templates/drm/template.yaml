@@ -1,0 +1,33 @@
+# SPDX-FileCopyrightText: 2022 Roman Gilg <subdiff@gmail.com>
+#
+# SPDX-License-Identifier: MIT
+
+#
+# Build of libdrm. libpciaccess needed for libdrm_intel.
+#
+---
+template: default-meson
+
+projects:
+  - libpciaccess:
+      source:
+        origin: https://gitlab.freedesktop.org/xorg/lib/libpciaccess.git
+
+  - libdrm:
+      source:
+        origin: https://gitlab.freedesktop.org/mesa/drm.git
+        branch: main
+
+      configure:
+        host:
+          x86:
+            32:
+              build: false
+              file: ../meson-cross-file
+            64:
+              build: true
+
+      install:
+        host-suffix: false
+
+  - script ../mesa/copy-cross-file
