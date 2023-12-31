@@ -1,0 +1,6 @@
+setup.py
+PyMusify.egg-info/PKG-INFO
+PyMusify.egg-info/SOURCES.txt
+PyMusify.egg-info/dependency_links.txt
+PyMusify.egg-info/requires.txt
+PyMusify.egg-info/top_level.txt
