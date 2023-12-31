@@ -1,0 +1,123 @@
+Metadata-Version: 2.1
+Name: attrs_mate
+Version: 1.1.1
+Summary: A plugin extends power of attrs library.
+Home-page: https://github.com/MacHu-GWU/attrs_mate-project
+Download-URL: https://pypi.python.org/pypi/attrs_mate/1.1.1#downloads
+Author: Sanhe Hu
+Author-email: husanhe@gmail.com
+Maintainer: Sanhe Hu
+Maintainer-email: husanhe@gmail.com
+License: MIT
+Platform: Windows
+Platform: MacOS
+Platform: Unix
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.7
+License-File: LICENSE.txt
+License-File: AUTHORS.rst
+Requires-Dist: attrs >=21.3.0
+Provides-Extra: docs
+Requires-Dist: Sphinx ==5.3.0 ; extra == 'docs'
+Requires-Dist: sphinx-jinja ==2.0.2 ; extra == 'docs'
+Requires-Dist: sphinx-copybutton ==0.5.1 ; extra == 'docs'
+Requires-Dist: sphinx-design ==0.5.0 ; extra == 'docs'
+Requires-Dist: furo ==2023.03.27 ; extra == 'docs'
+Requires-Dist: nbsphinx ==0.8.12 ; extra == 'docs'
+Requires-Dist: rstobj ==1.2.1 ; extra == 'docs'
+Requires-Dist: pygments ==2.15.1 ; extra == 'docs'
+Requires-Dist: ipython ==8.10.0 ; extra == 'docs'
+Requires-Dist: docfly ==2.0.1 ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+Requires-Dist: cached-property >=1.5.2 ; (python_version < "3.8") and extra == 'tests'
+
+
+.. image:: https://github.com/MacHu-GWU/attrs_mate-project/workflows/CI/badge.svg
+    :target: https://github.com/MacHu-GWU/attrs-mate-project/actions?query=workflow:CI
+
+.. image:: https://codecov.io/gh/MacHu-GWU/attrs_mate-project/branch/master/graph/badge.svg
+  :target: https://codecov.io/gh/MacHu-GWU/attrs-mate-project
+
+.. image:: https://img.shields.io/pypi/v/attrs_mate.svg
+    :target: https://pypi.python.org/pypi/attrs_mate
+
+.. image:: https://img.shields.io/pypi/l/attrs_mate.svg
+    :target: https://pypi.python.org/pypi/attrs_mate
+
+.. image:: https://img.shields.io/pypi/pyversions/attrs_mate.svg
+    :target: https://pypi.python.org/pypi/attrs_mate
+
+.. image:: https://img.shields.io/badge/Release_History!--None.svg?style=social
+    :target: https://github.com/MacHu-GWU/attrs_mate-project/blob/master/release-history.rst
+
+.. image:: https://img.shields.io/badge/STAR_Me_on_GitHub!--None.svg?style=social
+    :target: https://github.com/MacHu-GWU/attrs_mate-project
+
+------
+
+.. image:: https://img.shields.io/badge/Link-Document-orange.svg
+      :target: https://attrs-mate.readthedocs.io/index.html
+
+.. image:: https://img.shields.io/badge/Link-API-orange.svg
+      :target: https://attrs-mate.readthedocs.io/py-modindex.html
+
+.. image:: https://img.shields.io/badge/Link-Source_Code-blue.svg
+      :target: https://attrs-mate.readthedocs.io/py-modindex.html
+
+.. image:: https://img.shields.io/badge/Link-Install-blue.svg
+      :target: `install`_
+
+.. image:: https://img.shields.io/badge/Link-GitHub-blue.svg
+      :target: https://github.com/MacHu-GWU/attrs_mate-project
+
+.. image:: https://img.shields.io/badge/Link-Submit_Issue-blue.svg
+      :target: https://github.com/MacHu-GWU/attrs_mate-project/issues
+
+.. image:: https://img.shields.io/badge/Link-Request_Feature-blue.svg
+      :target: https://github.com/MacHu-GWU/attrs_mate-project/issues
+
+.. image:: https://img.shields.io/badge/Link-Download-blue.svg
+      :target: https://pypi.org/pypi/attrs_mate#files
+
+
+Welcome to ``attrs_mate`` Documentation
+==============================================================================
+📔 See `Full Documentation HERE <https://attrs-mate.readthedocs.io/index.html>`_.
+
+`attrs <https://www.attrs.org/en/stable/index.html>`_ makes writing class a lot of more fun!
+
+``attrs_mate`` aims to bring more features to ``attrs``, less code, and better code pattern.
+
+
+.. _install:
+
+Install
+------------------------------------------------------------------------------
+
+``attrs_mate`` is released on PyPI, so all you need is:
+
+.. code-block:: console
+
+    $ pip install attrs_mate
+
+To upgrade to latest version:
+
+.. code-block:: console
+
+    $ pip install --upgrade attrs_mate
