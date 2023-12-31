@@ -1,0 +1,11 @@
+text2tac/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+text2tac/transformer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+text2tac/transformer/extract_package_based.py,sha256=5cLWIXKSDjwVCi0-Z9ZRLXHHmwAGM7Ew2bVvEmqfbAw,2964
+text2tac/transformer/new_datasets_hg_transformer_cl.py,sha256=vhvZeSX2-ofFIa80pW8--Fnr_Dx2NC2n1oMRJXTa2T8,9613
+text2tac/transformer/predict_server.py,sha256=XZOw8UG-VEZbaEfO6627oWHxtAMf90l6DROqis6YxG0,10048
+text2tac-1.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+text2tac-1.0.1.dist-info/METADATA,sha256=GmUDcGslOGXHYhE0Vipjr9pgFNSObXDfG5uVXWCmy1g,14626
+text2tac-1.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+text2tac-1.0.1.dist-info/entry_points.txt,sha256=vZW6AKzrVIxgPWWc9BAtWW9ZrsSRJQtK-Gpu983z3n4,77
+text2tac-1.0.1.dist-info/top_level.txt,sha256=h7Eq1abMWTeaEdzAVeU21p2j3lfrl952DafEGMGDFA8,9
+text2tac-1.0.1.dist-info/RECORD,,
