@@ -1,0 +1,79 @@
+# SPDX-FileCopyrightText: 2022 Roman Gilg <subdiff@gmail.com>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+[project]
+name = "fdbuild"
+version = "0.2.0"
+authors = [
+  { name="Roman Gilg", email="subdiff@gmail.com" },
+]
+description = "CLI tool to fulfill tasks on single projects or vast project hierarchies"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "PyYAML",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Build Tools",
+]
+
+[project.urls]
+Homepage = "https://gitlab.com/kwinft/fdbuild"
+Issues = "https://gitlab.com/kwinft/fdbuild/-/issues"
+
+[project.scripts]
+fdbuild = "fdbuild.main:run"
+
+[project.entry-points."fdbuild.structurizers"]
+kde = "fdbuild.plugins.structurizers.kde:Plugin"
+
+[project.entry-points."fdbuild.stages"]
+build = "fdbuild.plugins.stages.build:Plugin"
+configure = "fdbuild.plugins.stages.configure:Plugin"
+install = "fdbuild.plugins.stages.install:Plugin"
+source = "fdbuild.plugins.stages.source:Plugin"
+
+[project.entry-points."fdbuild.steps"]
+make = "fdbuild.plugins.steps.make:Plugin"
+ninja = "fdbuild.plugins.steps.ninja:Plugin"
+autoconf = "fdbuild.plugins.steps.autoconf:Plugin"
+cmake = "fdbuild.plugins.steps.cmake:Plugin"
+meson = "fdbuild.plugins.steps.meson:Plugin"
+git = "fdbuild.plugins.steps.git:Plugin"
+
+[project.entry-points."fdbuild.templates"]
+fdbuild = "fdbuild.plugins.templates:paths"
+
+[build-system]
+requires = [
+    "setuptools>=45",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.package-data]
+fdbuild = ["templates/**"]
+
+[tool.black]
+line-length = 100
+
+[tool.commitizen]
+version_scheme = "semver"
+tag_format = "fdbuild@$version"
+version_provider = "pep621"
+bump_message = "build: bump version $current_version → $new_version"
+update_changelog_on_bump = true
+annotated_tag = true
+annotated_tag_message = "Tag for new release."
+major_version_zero = true
+changelog_start_rev = "fdbuild@0.1.0"
+changelog_incremental = true

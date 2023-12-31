@@ -1,0 +1,95 @@
+# SPDX-FileCopyrightText: 2023 Roman Gilg <subdiff@gmail.com>
+#
+# SPDX-License-Identifier: MIT
+
+#
+# Build of Media projects
+#
+---
+template: default-meson
+
+projects:
+  - ffmpeg:
+      source:
+        origin: https://github.com/FFmpeg/FFmpeg.git
+      configure:
+        plugin: autoconf
+        options:
+          - --disable-static
+          - --disable-stripping
+          # AMD proprietary
+          # - --enable-amf
+          - --enable-avisynth
+          - --enable-cuda-llvm
+          - --enable-lto
+          - --enable-fontconfig
+          - --enable-frei0r
+          - --enable-gmp
+          - --enable-gnutls
+          - --enable-gpl
+          - --enable-ladspa
+          - --enable-libaom
+          - --enable-libass
+          - --enable-libbluray
+          - --enable-libbs2b
+          - --enable-libdav1d
+          - --enable-libdrm
+          - --enable-libfreetype
+          - --enable-libfribidi
+          - --enable-libgsm
+          - --enable-libharfbuzz
+          # Still doesn't find with different prefix
+          # - --enable-libiec61883
+          - --enable-libjack
+          - --enable-libjxl
+          - --enable-libmodplug
+          - --enable-libmp3lame
+          - --enable-libopencore_amrnb
+          - --enable-libopencore_amrwb
+          - --enable-libopenjpeg
+          # Pulls in pipewire or jack2
+          # - --enable-libopenmpt
+          - --enable-libopus
+          # Still doesn't find with different prefix
+          # - --enable-libplacebo
+          - --enable-libpulse
+          - --enable-librav1e
+          - --enable-librsvg
+          # Pulls in libpciaccess
+          # - --enable-librubberband
+          - --enable-libsnappy
+          - --enable-libsoxr
+          - --enable-libspeex
+          - --enable-libsrt
+          - --enable-libssh
+          - --enable-libsvtav1
+          - --enable-libtheora
+          - --enable-libv4l2
+          - --enable-libvidstab
+          - --enable-libvmaf
+          - --enable-libvorbis
+          # Package onevpl pulls in libdrm and wayland
+          # - --enable-libvpl
+          - --enable-libvpx
+          - --enable-libwebp
+          - --enable-libx264
+          - --enable-libx265
+          - --enable-libxcb
+          - --enable-libxml2
+          - --enable-libxvid
+          - --enable-libzimg
+          # Nvidia only
+          # - --enable-nvdec
+          # - --enable-nvenc
+          # Still doesn't find with different prefix
+          # - --enable-opencl
+          - --enable-opengl
+          - --enable-shared
+          - --enable-version3
+          # Still doesn't find with different prefix
+          #  - --enable-vulkan
+      build:
+        plugin: make
+  - pipewire:
+      source:
+        origin: https://gitlab.freedesktop.org/pipewire/pipewire.git

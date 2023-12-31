@@ -1,0 +1,21 @@
+# SPDX-FileCopyrightText: 2022 Roman Gilg <subdiff@gmail.com>
+#
+# SPDX-License-Identifier: MIT
+
+#
+# Build of X Window System unified protocol definitions
+#
+---
+template: default-autoconf
+
+projects:
+  - xorg-macros:
+      source:
+        origin: https://gitlab.freedesktop.org/xorg/util/macros.git
+  - proto:
+      configure:
+        plugin: meson
+      build:
+        plugin: ninja
+      source:
+        origin: https://gitlab.freedesktop.org/xorg/proto/xorgproto.git
