@@ -1,0 +1,5 @@
+click>=7.1.2
+wrapt_timeout_decorator>=1.4.0
+
+[:platform_system == "Windows"]
+pywin32>=1.0
