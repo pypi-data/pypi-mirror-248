@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+bin/rdf2puml
+rdf2puml/__init__.py
+rdf2puml/constants.py
+rdf2puml/group.py
+rdf2puml/pumlmodel.py
+rdf2puml/rdf2puml.py
+rdf2puml.egg-info/PKG-INFO
+rdf2puml.egg-info/SOURCES.txt
+rdf2puml.egg-info/dependency_links.txt
+rdf2puml.egg-info/not-zip-safe
+rdf2puml.egg-info/requires.txt
+rdf2puml.egg-info/top_level.txt
+tests/test_group.py
