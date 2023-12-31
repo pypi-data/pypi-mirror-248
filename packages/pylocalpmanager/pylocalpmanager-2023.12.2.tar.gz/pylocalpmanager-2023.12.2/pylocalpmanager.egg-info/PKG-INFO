@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: pylocalpmanager
+Version: 2023.12.2
+Platform: any
+Requires-Python: >=3.11
+Provides-Extra: test
