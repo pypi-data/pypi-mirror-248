@@ -1,0 +1,39 @@
+[tool.flake8]
+exclude = [".direnv", "__pycache__"]
+
+[tool.poetry]
+name = "plur"
+version = "1.0.0"
+description = "🔢 Simple universal word pluralizer 🔢"
+authors = ["Tom Ritchford <tom@swirly.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+
+[tool.poetry.group.dev.dependencies]
+black = "*"
+coverage = "*"
+flake8 = "*"
+isort = "*"
+mypy = "*"
+pytest = "*"
+ruff = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.coverage.run]
+branch = true
+source = ["plur"]
+
+[tool.coverage.report]
+fail_under = "93"
+skip_covered = true
+exclude_lines = [
+    "pragma: no cover",
+    "if False:",
+    "if __name__ == .__main__.:",
+    "raise NotImplementedError",
+]
