@@ -1,0 +1,8 @@
+bughunter9.py
+setup.py
+bughunter9.egg-info/PKG-INFO
+bughunter9.egg-info/SOURCES.txt
+bughunter9.egg-info/dependency_links.txt
+bughunter9.egg-info/entry_points.txt
+bughunter9.egg-info/requires.txt
+bughunter9.egg-info/top_level.txt
