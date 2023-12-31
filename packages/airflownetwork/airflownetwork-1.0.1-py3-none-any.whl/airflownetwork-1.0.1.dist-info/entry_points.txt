@@ -1,0 +1,2 @@
+[console_scripts]
+airflownetwork = airflownetwork.cli:airflownetwork
