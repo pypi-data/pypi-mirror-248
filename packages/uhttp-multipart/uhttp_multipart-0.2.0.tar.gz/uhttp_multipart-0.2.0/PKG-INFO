@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: uhttp-multipart
+Version: 0.2.0
+Summary: Multipart support for µHTTP
+Home-page: https://github.com/0x67757300/uHTTP-Multipart
+License: MIT
+Author: gus
+Author-email: 0x67757300@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: python-multipart (>=0.0.6,<0.0.7)
+Requires-Dist: uhttp (>=1.3.0,<2.0.0)
+Project-URL: Repository, https://github.com/0x67757300/uHTTP-Multipart
+Description-Content-Type: text/markdown
+
+# µHTTP Multipart
+
+Multipart support for µHTTP
+
+### Installation
+
+µHTTP Multipart is on [PyPI](https://pypi.org/project/uhttp-multipart/).
+
+```bash
+pip install uhttp-multipart
+```
+
+### Usage
+
+Only parse when required:
+
+```python
+from uhttp import App
+from uhttp_multipart import parse_form
+
+app = App()
+
+@app.post('/')
+def submit(request):
+    form = parse_form(request.form)
+```
+
+Always parse `multipart/form-data` requests (middleware):
+
+```python
+from uhttp import App
+from uhttp_multipart import multipart
+
+app = App()
+app.mount(mutipart())
+```
+
+The function `parse_form` (which is also used in the middleware) returns a `MultiDict`. Form fields are `str`, file fields are `BytesIO`.
+
+### License
+
+Released under the MIT license.
+
