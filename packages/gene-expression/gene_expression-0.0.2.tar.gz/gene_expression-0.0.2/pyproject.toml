@@ -1,0 +1,22 @@
+[build-system]
+requires = [ "hatchling" ]
+build-backend = "hatchling.build"
+
+[project]
+name = "gene_expression"
+version = "0.0.2"
+authors = [
+    { name = "Arthur Gouhier", email = "ajgouhier@gmail.com" },
+]
+description = "Compute gene expression from RNA-seq"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/ajgouhier/gene_expression"
