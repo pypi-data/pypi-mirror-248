@@ -1,0 +1,8 @@
+ezdxf>=1.0
+pandas>=2.1
+numpy>=1.26
+pyvista>=0.43
+pyvistaqt
+pyqt5
+vtk>=9.2
+matplotlib
