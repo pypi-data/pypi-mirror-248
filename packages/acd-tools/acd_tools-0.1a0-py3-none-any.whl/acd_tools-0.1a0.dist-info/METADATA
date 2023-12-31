@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: acd-tools
+Version: 0.1a0
+Summary: Rockwell ACD File Tools
+Home-page: https://github.com/hutcheb/acd
+Author: Ben Hutcheson
+Author-email: 
+License: Apache 2.0
+Keywords: rockwell acd logix
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Interface Engine/Protocol Translator
+License-File: LICENSE
+Requires-Dist: loguru
+Provides-Extra: dev
+Requires-Dist: requires ; extra == 'dev'
+Requires-Dist: pytest-asyncio >=0.18.3 ; extra == 'dev'
+Requires-Dist: pip-tools ; extra == 'dev'
+Requires-Dist: pre-commit >=2.6.0 ; extra == 'dev'
+Requires-Dist: pytest-mock >=3.3.1 ; extra == 'dev'
+Requires-Dist: mock >=4.0.2 ; extra == 'dev'
+Requires-Dist: mypy >=0.942 ; extra == 'dev'
+Requires-Dist: flake8 >=4.0.1 ; extra == 'dev'
+
