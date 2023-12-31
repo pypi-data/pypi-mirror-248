@@ -1,0 +1,6 @@
+pillow
+
+[dev]
+black
+pytest
+mypy
