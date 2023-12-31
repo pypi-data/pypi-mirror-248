@@ -1,0 +1,12 @@
+LICENSE.txt
+README.rst
+pyproject.toml
+src/philips_air_purifier_ac2889/__init__.py
+src/philips_air_purifier_ac2889/_air_purifier.py
+src/philips_air_purifier_ac2889/_utils.py
+src/philips_air_purifier_ac2889/errors.py
+src/philips_air_purifier_ac2889.egg-info/PKG-INFO
+src/philips_air_purifier_ac2889.egg-info/SOURCES.txt
+src/philips_air_purifier_ac2889.egg-info/dependency_links.txt
+src/philips_air_purifier_ac2889.egg-info/requires.txt
+src/philips_air_purifier_ac2889.egg-info/top_level.txt

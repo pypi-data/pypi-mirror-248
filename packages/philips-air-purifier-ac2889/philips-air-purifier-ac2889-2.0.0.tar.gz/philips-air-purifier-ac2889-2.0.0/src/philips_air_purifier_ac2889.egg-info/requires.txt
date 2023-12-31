@@ -1,0 +1,8 @@
+requests
+pycryptodome
+pycryptodomex
+
+[test]
+pylint
+pytest
+ddt
