@@ -1,0 +1,6 @@
+requests
+python-socketio
+websocket-client
+keyboard
+mss
+opencv-python

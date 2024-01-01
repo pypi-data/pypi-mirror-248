@@ -1,0 +1,8 @@
+setup.py
+pybd-p/__init__.py
+pybd-p/main.py
+pybd_p.egg-info/PKG-INFO
+pybd_p.egg-info/SOURCES.txt
+pybd_p.egg-info/dependency_links.txt
+pybd_p.egg-info/requires.txt
+pybd_p.egg-info/top_level.txt
