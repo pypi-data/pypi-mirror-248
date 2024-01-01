@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: cuke-messages
+Version: 0.1.0
+Summary: Cucumber Messages is a message protocol for representing results and other information from Cucumber. 
+Author-email: Cucumber Limited <cukes@googlegroups.com>
+Maintainer-email: Konstantin Goloveshko <kostya.goloveshko@gmail.com>
+License: MIT
+Project-URL: Repository, https://github.com/cucumber/messages
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: importlib-resources
+Requires-Dist: pydantic >=2.0.3
+Provides-Extra: test
+Requires-Dist: tox ; extra == 'test'
+
+# Messages
+
+Cucumber Messages for Python https://github.com/cucumber/messages
