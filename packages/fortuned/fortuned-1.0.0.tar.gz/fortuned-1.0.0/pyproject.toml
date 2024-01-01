@@ -1,0 +1,11 @@
+[project]
+name = "fortuned"
+version = "1.0.0"
+description = "A fortune teller that doesn't really tell you your fortune."
+dependencies = [
+    "flask",
+]
+
+[build-system]
+requires = ["flit_core<4"]
+build-backend = "flit_core.buildapi"

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Your Fortune</title>
+    </head>
+    <body>
+        <section class="section">
+            <div class="container">
+                <h1 class="title">
+                    Just reload the page to get a new fortune          
+                </h1>
+                <h2 class="title">
+                  Your Fortune is:          
+                </h2>
+                <p class="subtitle" id="subtitle">
+                    <strong>{{fortune}}</strong><br>
+                    {% for i in numbers %}
+                      {{ i }}
+                    {% endfor %}
+
+                </p>
+                <button id="share-button">Share this fortune</button>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <h2 class="title">
+                    Fortune History
+                </h2>
+                <button id="clear-history-button">Clear History</button>
+                <ul id="fortune-history"></ul>
+            </div>
+        </section>
+        <script>
+            // Retrieve the fortune history from localStorage
+            let fortuneHistory = JSON.parse(localStorage.getItem('fortuneHistory')) || [];
+
+            // Display the fortune history on the webpage
+            const fortuneHistoryElement = document.getElementById('fortune-history');
+
+            function updateFortuneHistory() {
+              fortuneHistoryElement.innerHTML = '';
+              fortuneHistory.reverse().forEach(fortune => {
+                const li = document.createElement('li');
+                li.textContent = fortune;
+                fortuneHistoryElement.appendChild(li);
+              });
+            }
+
+            // Call the updateFortuneHistory function initially
+            updateFortuneHistory();
+
+            // Get the share button element
+            const shareButton = document.getElementById('share-button');
+
+            // Attach an event listener to the share button
+            shareButton.addEventListener('click', async () => {
+              try {
+                // Check if the Web Share API is supported
+                if (navigator.canShare) {
+                  // Get the fortune from the subtitle element
+                  const fortune = document.getElementById('subtitle').textContent;
+
+                  // Call the share method with the fortune content
+                  await navigator.share({
+                    title: 'Check out this Fortune I got',
+                    text: fortune,
+                    url: window.location.href
+                  });
+                } else {
+                  // Fallback for browsers that do not support the Web Share API
+                  alert('Sharing is not supported in this browser.');
+                }
+              } catch (error) {
+                console.error('Error sharing:', error);
+              }
+
+            });
+            // Check if the fortune already exists in the history array
+            const fortune = document.getElementById('subtitle').textContent;
+            if (!fortuneHistory.includes(fortune)) {
+              fortuneHistory.push(fortune);
+            }
+
+            // Update the fortune history on the webpage
+            updateFortuneHistory();
+
+            // Update the fortune history in localStorage
+            localStorage.setItem('fortuneHistory', JSON.stringify(fortuneHistory));
+            
+            // Get the clear history button element
+            const clearHistoryButton = document.getElementById('clear-history-button');
+
+            // Attach an event listener to the clear history button
+            clearHistoryButton.addEventListener('click', () => {
+              // Clear the fortune history in localStorage
+              localStorage.removeItem('fortuneHistory');
+
+              // Clear the fortune history on the webpage
+              fortuneHistory = [];
+              updateFortuneHistory();
+            });
+
+            // Refresh the fortune history every 2 seconds
+            setInterval(() => {
+              fortuneHistory = JSON.parse(localStorage.getItem('fortuneHistory')) || [];
+              updateFortuneHistory();
+
+              // Add event listeners to the history div
+              const historyItems = document.querySelectorAll('#fortune-history li');
+              historyItems.forEach(item => {
+                item.addEventListener('click', () => {
+                  // Handle the click event
+                  console.log('Clicked on:', item.textContent);
+                });
+              });
+            }, 2000);
+        </script>
+    </body>
+</html>
