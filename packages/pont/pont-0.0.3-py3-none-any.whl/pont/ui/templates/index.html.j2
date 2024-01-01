@@ -1,0 +1,156 @@
+{% extends "layout.html.j2" %}
+
+{% block container %}container-full{% endblock %}
+
+{% block body %}
+
+<script src="/static/vs/loader.js"></script>
+<script>
+    require.config({ paths: { vs: '/static/vs' } });
+    require(['vs/editor/editor.main'], function () {
+        monaco.languages.register({ id: "pont" });
+
+
+        // Register a tokens provider for the language
+        // You can the monarch file on https://microsoft.github.io/monaco-editor/monarch.html
+        monaco.languages.setMonarchTokensProvider("pont", {
+            types: {{fields|tojson}},
+
+            operations: [
+                'AND',
+                'OR'
+            ],
+
+            operators: /[=~!]+/,
+
+            whitespace: /[ \n]/,
+
+            // The main tokenizer for our languages
+            tokenizer: {
+                root: [
+                    // identifiers and keywords
+                    [/[A-Za-z_$][\w$]*/, {
+                        cases: {
+                            '@types': 'type.identifier',
+                            '@operations': 'keyword'
+                        }
+                    }],
+                    [/@operators/, { token: 'operator', bracket: '@open', next: '@unescaped_string' }],
+                    [/[ \n]+/, 'whitespace']
+                ],
+                unescaped_string: [
+                    [/"/, { token: 'string.quote', bracket: '@open', next: '@string' }],
+                    [/\d+/, 'number'],
+                    [/[^[ \n]+/, 'string'],
+                    [/@whitespace/, { token: 'whitespace', next: '@pop' }]
+
+                ],
+                string: [
+                    [/[^\\"]+/, 'string'],
+                    [/"/, { token: 'string.quote', bracket: '@close', next: '@pop' }]
+                ]
+            },
+        });
+
+        monaco.languages.registerCompletionItemProvider("pont", {
+            provideCompletionItems: function (model, position) {
+                return new Promise(function (resolve, reject) {
+                    var textUntilPosition = model.getValueInRange({
+                        startLineNumber: 1,
+                        startColumn: 1,
+                        endLineNumber: position.lineNumber,
+                        endColumn: position.column
+                    });
+                    fetch('/search/completion', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            q: textUntilPosition
+                        })
+                    })
+                        .then(response => response.json())
+                        .then(data => {
+                            var suggestions = data.map(function (suggestion) {
+                                var kind = monaco.languages.CompletionItemKind.Text;
+                                if (suggestion['kind'] == 'field') {
+                                    kind = monaco.languages.CompletionItemKind.Field;
+                                }
+
+                                return  {
+                                    label: suggestion['label'],
+                                    insertText: suggestion['text'],
+                                    documentation: suggestion['documentation'],
+                                    kind: kind,
+                                };
+                            });
+                            resolve({ suggestions: suggestions });
+                        })
+                        .catch(error => {
+                            console.error('Error:', error);
+                            reject({ suggestions: [] })
+                        });
+                });
+            }
+        });
+
+        monaco.editor.defineTheme("pontTheme", {
+            base: "vs",
+            inherit: true,
+            rules: [
+                { token: "operator", foreground: "FF0000" },
+            ],
+            colors: {},
+        });
+        editor = monaco.editor.create(document.getElementById('search'), {
+            theme: 'pontTheme',
+            value: {{ query| tojson }},
+        language: 'pont',
+        lineNumbers: false,
+        minimap: { enabled: false },
+        wordWrap: 'on',
+        contextmenu: false,
+        scrollbar: { vertical: 'hidden' },
+        renderLineHighlight: 'none',
+        padding: { top: 10, bottom: 10 },
+        lineDecorationsWidth: 0,
+        overviewRulerLanes: 0,
+        wordBasedSuggestions: "off",
+        quickSuggestions: {
+            other: true,
+            strings: true
+        }
+        });
+    editor.onDidChangeModelContent(function () {
+        document.querySelector('input[name=q]').value = editor.getValue();
+    });
+    });
+</script>
+
+<input type="hidden" name="q" value="{{ query }}">
+
+<div id="search" style="height: 55px;"></div>
+
+<nav class="navbar navbar-light bg-light">
+  <form class="form-inline">
+    <button 
+        class="btn btn-primary"
+        type="button"
+        hx-confirm="Are you sure you want to clear the history?"
+        hx-delete="/components/flows"
+        hx-swap="innerHtml"
+        hx-target="#flows"
+    >Clear</button>
+  </form>
+</nav>
+
+<div
+    id="flows"
+    hx-get="/components/flows"
+    hx-trigger="load, every 1s"
+    hx-swap="innerHtml"
+    hx-include="input[name=q]"
+    hx-replace-url="true">
+</div>
+{% endblock %}

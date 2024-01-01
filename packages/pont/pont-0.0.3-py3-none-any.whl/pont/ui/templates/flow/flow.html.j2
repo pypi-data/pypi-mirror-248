@@ -1,0 +1,41 @@
+{% extends "layout.html.j2" %}
+
+{% block body %}
+<div class="card">
+    <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs">
+            {% for route,title in [
+                ('flow', 'Summary'),
+                ('flow_request_headers', 'Request headers'),
+                ('flow_request_body', 'Request body'),
+                ('flow_response_headers', 'Response headers'),
+                ('flow_response_body', 'Response body'),
+            ]
+            %}
+                <li class="nav-item">
+                    <a 
+                        href="{{url(route, id=flow.id)}}"
+                        {% if current_page(route, id=flow.id) %}
+                            class="nav-link active"
+                        {% else %}
+                            class="nav-link"
+                        {% endif %}
+                    >
+                        {{title}}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="card-body">
+        <div class="tab-content">
+            <div class="tab-pane active show">
+                {% block content %}
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
