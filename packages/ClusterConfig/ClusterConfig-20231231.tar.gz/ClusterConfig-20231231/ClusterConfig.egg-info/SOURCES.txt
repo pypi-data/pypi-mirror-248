@@ -1,0 +1,8 @@
+LICENSE
+README.md
+cluster_config.py
+setup.py
+ClusterConfig.egg-info/PKG-INFO
+ClusterConfig.egg-info/SOURCES.txt
+ClusterConfig.egg-info/dependency_links.txt
+ClusterConfig.egg-info/top_level.txt
