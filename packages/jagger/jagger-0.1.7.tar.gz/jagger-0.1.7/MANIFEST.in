@@ -1,0 +1,10 @@
+include pyproject.toml
+include setup.py
+include README.md
+include LICENSE
+include jagger.BSD
+include jagger.GPL
+include jagger.LGPL
+include jagger/ccedar_core.h
+include jagger/jagger.h
+include jagger/python-binding-jagger.cc
