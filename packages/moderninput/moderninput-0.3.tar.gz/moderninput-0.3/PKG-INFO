@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: moderninput
+Version: 0.3
+Summary: Simple library that makes input easier.
+Home-page: https://github.com/infernox-dev/moderninput
+Author: infernox.dev
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
