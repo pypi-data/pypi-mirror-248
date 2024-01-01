@@ -1,0 +1,8 @@
+sonosaudioservicelib>=0.3.0
+pytz>=2023.3.post1
+
+[:python_full_version >= "3.6.0"]
+beautifulsoup4>=4.12.2
+
+[:python_version >= "3.7"]
+requests>=2.31.0
