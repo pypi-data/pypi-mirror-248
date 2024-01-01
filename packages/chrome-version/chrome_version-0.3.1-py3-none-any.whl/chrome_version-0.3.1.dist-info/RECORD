@@ -1,0 +1,10 @@
+CHANGELOG.md,sha256=meJNPMy_YGaeBZ-dDnGQmd11lEOKtFfWmeBfh_pZCZU,121
+chrome_version/__init__.py,sha256=udOryJ406jtPrtdELYiCRbNJ20lGLuk7u1XODKJ3aSw,51
+chrome_version/__main__.py,sha256=RCZmmoCNOWC7rAfIDm_LaymsybXIzE6McYbUEEkf9P8,60
+chrome_version/core.py,sha256=aylkVNTsP7hPomJirK_jkTryCQ-Cj7BboCLB0EZvj9U,2259
+chrome_version/main.py,sha256=VQmwUzhizEBYnz6grPIeyg8IZfS66rkuUewF0xPy2NM,172
+chrome_version-0.3.1.dist-info/LICENSE,sha256=SOIDRBKVsOiGIdDUa-Y2gbS_75uVixsdfjtg1MohFDA,1075
+chrome_version-0.3.1.dist-info/METADATA,sha256=8uJbuGN2J3C6NQlT1GFSz0paPQkB493al6GlLeGp8aU,4206
+chrome_version-0.3.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+chrome_version-0.3.1.dist-info/entry_points.txt,sha256=8rub65M0NlNdEfv0TLGUWJjMY3XoLCVFcdGVANCJJvQ,58
+chrome_version-0.3.1.dist-info/RECORD,,
