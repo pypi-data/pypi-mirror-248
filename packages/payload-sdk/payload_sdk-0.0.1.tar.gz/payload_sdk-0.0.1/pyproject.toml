@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "payload-sdk"
+version = "0.0.1"
+description = "Configurable logging package with modern standards and customizability."
+authors = ["Coggl"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "payload", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pyyaml = "^6.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
