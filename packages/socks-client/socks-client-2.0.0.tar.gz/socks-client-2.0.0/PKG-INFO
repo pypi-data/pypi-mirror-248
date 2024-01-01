@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: socks-client
+Version: 2.0.0
+Summary: Supports both TCP and UDP client with the implementation of SOCKS5 and SOCKS4 protocol
+Home-page: https://github.com/plattanus/socks-client
+Author: Plattanus
+Author-email: plattanus@outlook.com
+License: MIT License
+Keywords: socks,socks5,socks4,proxy,asyncio,tcp,udp
+Requires-Python: >=3.7
+License-File: LICENSE
