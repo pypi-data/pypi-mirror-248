@@ -1,0 +1,237 @@
+name: CI
+
+# Controls when the action will run.
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+env:
+  # Can be blank, or one of: cpp, dart, go, julia, kotlin, nim, smt, vlang
+  FOCUS: ''
+jobs:
+  build:
+
+    strategy:
+      matrix:
+        python-version: [ '3.9' ]
+        os:
+          - ubuntu-22.04
+          - macos-12
+          - windows-2022
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-java@v3
+        if: ${{ !env.FOCUS || env.FOCUS == 'kotlin' }}
+        with:
+          distribution: adopt
+          java-version: 15
+
+      - name: Add missing dependencies on act Medium runner
+        if: ${{ env.ACT }}
+        run: |
+          sudo apt-get update
+          sudo apt-get install --no-install-recommends -y \
+              cargo \
+              clang-format \
+              powershell \
+              rustfmt \
+              z3 \
+            && true
+          echo "${HOME}/.cargo/bin/" >> $GITHUB_PATH
+
+      - uses: subosito/flutter-action@v2
+        if: ${{ !env.FOCUS || env.FOCUS == 'dart' }}
+        with:
+          flutter-version: '2.10.5'
+
+      - uses: julia-actions/setup-julia@v1
+        if: ${{ !env.FOCUS || env.FOCUS == 'julia' }}
+
+      - uses: fwilhe2/setup-kotlin@main
+        if: ${{ !env.FOCUS || env.FOCUS == 'kotlin' }}
+      - name: Set KOTLIN_HOME
+        if: ${{ !env.FOCUS || env.FOCUS == 'kotlin' }}
+        shell: bash
+        run: |
+          echo KOTLIN_HOME=$(kotlin -e 'System.getProperty("kotlin.home")') >> $GITHUB_ENV
+
+      - uses: jiro4989/setup-nim-action@v1
+        if: ${{ !env.FOCUS || env.FOCUS == 'nim' }}
+      - uses: actions/setup-go@v3
+        if: ${{ !env.FOCUS || env.FOCUS == 'go' }}
+        # Needed as https://github.com/actions/setup-go/pull/89 is not merged
+        with:
+          go-version: '1.21.5'
+      - uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Set up Visual Studio shell
+        uses: egor-tensin/vs-shell@v2
+
+      - name: Install go packages
+        if: ${{ !env.FOCUS || env.FOCUS == 'go' }}
+        shell: bash
+        run: |
+          mkdir -p tests/build
+          cd tests/build
+          go mod init github.com/py2many/py2many/tests
+          go get -u github.com/electrious/refutil
+          go get -u github.com/hgfischer/go-iter
+          go get -u github.com/google/go-cmp/cmp
+
+          go get github.com/mgechev/revive
+          if [[ -d /usr/local/bin && ! -f /usr/local/bin/golint && -f $HOME/go/bin/golint ]]; then
+            (cd /usr/local/bin && sudo ln -fs $HOME/go/bin/golint)
+          fi
+
+      - name: Install tox
+        run: |
+          pip3 --version
+          pip3 install setuptools tox
+
+      - name: Install Julia packages
+        if: ${{ !env.FOCUS || env.FOCUS == 'julia' }}
+        shell: bash
+        run: |
+          julia -e 'using Pkg; Pkg.add("JuliaFormatter")'
+          julia -e 'using Pkg; Pkg.add("SuperEnum")'
+          JULIA_FORMATTER_ROOT=$(julia -e 'import JuliaFormatter;print(dirname(dirname(pathof(JuliaFormatter))));')
+          echo "${JULIA_FORMATTER_ROOT}/bin/" >> $GITHUB_PATH
+
+      - name: Install dependencies for ${{ runner.os }}.
+        shell: bash
+        run: |
+          set -ex
+          if [ "$RUNNER_OS" == "Linux" ]; then
+              sudo apt-get install --yes \
+                  astyle \
+                  catch2 \
+                  clang-14 \
+                  libc++-14-dev \
+                  libc++abi-14-dev \
+                  z3 \
+                && true
+              pip3 install conan
+              echo "CXX=clang++-14" >> $GITHUB_ENV
+          elif [ "$RUNNER_OS" == "macOS" ]; then
+              brew install \
+                  astyle \
+                  catch2 \
+                  clang-format \
+                  conan \
+                  z3 \
+                && true
+              # brew's vlang 0.2.4 is too old, and has no @head
+          elif [ "$RUNNER_OS" == "Windows" ]; then
+              choco install \
+                  astyle \
+                  conan \
+                  curl \
+                  llvm \
+                  z3 \
+                  zip \
+                && true
+              echo "C:/Program Files/Conan/conan/" >> $GITHUB_PATH
+          fi
+          echo "WHICH_V=$(which v 2>/dev/null)" >> $GITHUB_ENV
+
+      - name: Install C++ packages
+        if: ${{ !env.FOCUS || env.FOCUS == 'cpp' }}
+        shell: bash
+        run: |
+          conan download cppitertools/2.1@:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9 -r conancenter
+          conan download catch2/3.5.0@:96438105cb542059596be5ff639e510c5c525967 -r conancenter
+
+      - name: Install V
+        if: ${{ !env.WHICH_V && (!env.FOCUS || env.FOCUS == 'vlang') }}
+        uses: vlang/setup-v@v1.1
+        with:
+          token: ${{ github.token }}
+
+      - name: Install V packages
+        if: ${{ !env.FOCUS || env.FOCUS == 'vlang' }}
+        shell: bash
+        run: |
+          v install div72.vexc
+
+      - name: Install dart dependencies
+        if: ${{ !env.FOCUS || env.FOCUS == 'dart' }}
+        shell: bash
+        run: |
+          dart --version
+          flutter --version
+          set -ex
+
+          # tests/build here must be the same as defined in test_cli
+          if [[ ! -f tests/build/pubspec.yaml ]]; then
+            dart create --no-pub --force -t package-simple tests/build
+            cat tests/build/pubspec.yaml
+          fi
+
+          cd tests/build
+          if ! grep collection pubspec.yaml ; then
+            # Specifying the version here doesnt stick
+            dart pub add collection:1.15.0
+            cat pubspec.yaml
+            dart pub add sprintf
+            dart pub add tuple
+          fi
+          if ! grep vnum pubspec.yaml ; then
+            cat pubspec.yaml
+            sed -i.bak '/test:/d' pubspec.yaml
+            # Force version downgrade here
+            sed -i.bak 's:1.16.0:1.15.0:' pubspec.yaml
+            flutter pub add vnum
+          fi
+
+      - name: Install cargo-eval
+        if: ${{ !env.FOCUS || env.FOCUS == 'rust' }}
+        uses: baptiste0928/cargo-install@v2
+        with:
+          crate: cargo-eval
+          locked: true
+
+      - name: Run tox
+        shell: bash
+        run: |
+          set -ex
+          LINT=1
+          if [ "$RUNNER_OS" == "Windows" ]; then
+            export PATH="$PATH:/C/Program Files/LLVM/bin:/tmp/v"
+          fi
+          if [ "$FOCUS" ]; then
+            tox -e py39 -- -k "$FOCUS"
+          else
+            tox -e py39
+          fi
+
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install linters
+        run: pip install black pyflakes cpplint
+
+      - name: Remove tests/cases/*.py & tests/expected/*.py
+        run: rm tests/cases/*.py tests/expected/*.py tests/dir_cases/test1-*-expected/*.py
+
+      - name: Run black
+        run: black --check */ *.py
+
+      - name: Run pyflakes
+        run: pyflakes */ *.py
+
+      - name: Run cpplint
+        run: cpplint --filter=-legal/copyright,-whitespace/semicolon,-runtime/reference tests/expected/*.cpp
