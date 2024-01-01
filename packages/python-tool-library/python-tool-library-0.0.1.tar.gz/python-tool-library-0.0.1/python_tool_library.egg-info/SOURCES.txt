@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+pyproject.toml
+python_tool_library.egg-info/PKG-INFO
+python_tool_library.egg-info/SOURCES.txt
+python_tool_library.egg-info/dependency_links.txt
+python_tool_library.egg-info/top_level.txt
+pytoolib/__init__.py
+pytoolib/primary.py
+pytoolib/aws/__init__.py
+pytoolib/aws/dynamodb.py
+tests/test_primary.py
