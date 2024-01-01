@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+socks_client/__init__.py
+socks_client/__version__.py
+socks_client/_errors.py
+socks_client/_type.py
+socks_client/tcp_async.py
+socks_client/tcp_sync.py
+socks_client/udp_async.py
+socks_client/udp_sync.py
+socks_client.egg-info/PKG-INFO
+socks_client.egg-info/SOURCES.txt
+socks_client.egg-info/dependency_links.txt
+socks_client.egg-info/top_level.txt
+tests/test_async.py
+tests/test_sync.py
