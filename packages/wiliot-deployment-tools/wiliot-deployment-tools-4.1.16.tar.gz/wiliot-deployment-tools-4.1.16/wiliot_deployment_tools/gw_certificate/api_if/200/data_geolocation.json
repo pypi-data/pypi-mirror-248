@@ -1,0 +1,50 @@
+{
+    "type": "object",
+    "properties": {
+        "gatewayId": {
+            "type": "string",
+            "maxLength": 36
+        },
+        "gatewayType": {
+            "type": "string"
+        },
+        "timestamp": {
+            "type": "number"
+        },
+        "location": {
+            "type": "object",
+            "properties": {
+                "lat": {
+                    "type": "number"
+                },
+                "lng": {
+                    "type": "number"
+                }
+            },
+            "required": ["lat", "lng"]
+        },
+        "packets": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "timestamp": {
+                        "type": "number"
+                    },
+                    "sequenceId": {
+                        "type": "number"
+                    },
+                    "rssi": {
+                        "type": "number"
+                    },
+                    "payload": {
+                        "type": "string"
+                    }
+                },
+                "required": ["timestamp", "sequenceId", "rssi", "payload"]
+            }
+        }
+    },
+    "required": ["gatewayId", "gatewayType", "timestamp", "packets", "location"]
+}
+
