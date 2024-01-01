@@ -1,0 +1,3 @@
+[console_scripts]
+label=labeling.__main__:main
+
