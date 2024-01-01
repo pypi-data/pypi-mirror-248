@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: oryks-google-drive
+Version: 0.1.0
+Summary: A python library for working with Google Drive.
+Home-page: https://youtube-wrapper.readthedocs.io/en/latest/index.html
+Author: Lyle Okoth
+Author-email: lyceokoth@gmail.com
+License: MIT
+Keywords: drive,google-drive,google-drive-api,upload files to Google Drive
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# google-drive
+A python library for working with the google drive api.
+
+
