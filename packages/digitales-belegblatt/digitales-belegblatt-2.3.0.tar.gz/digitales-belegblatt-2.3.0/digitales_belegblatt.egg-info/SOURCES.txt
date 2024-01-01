@@ -1,0 +1,10 @@
+README.md
+setup.py
+digitales_belegblatt/__init__.py
+digitales_belegblatt/digitales_belegblatt.py
+digitales_belegblatt.egg-info/PKG-INFO
+digitales_belegblatt.egg-info/SOURCES.txt
+digitales_belegblatt.egg-info/dependency_links.txt
+digitales_belegblatt.egg-info/not-zip-safe
+digitales_belegblatt.egg-info/requires.txt
+digitales_belegblatt.egg-info/top_level.txt
