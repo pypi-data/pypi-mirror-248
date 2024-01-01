@@ -1,0 +1,2 @@
+zen_logging>=1.0.1
+zen_util>=1.0.0
