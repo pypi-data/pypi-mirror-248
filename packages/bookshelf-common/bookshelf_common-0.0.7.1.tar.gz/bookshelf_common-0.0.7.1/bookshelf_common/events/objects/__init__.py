@@ -1,0 +1,3 @@
+from bookshelf_common.events.objects.book_exchange import BookExchange
+from bookshelf_common.events.objects.book_status_exchange import BookStatusExchange
+from bookshelf_common.events.objects.user_exchange import UserExchange
