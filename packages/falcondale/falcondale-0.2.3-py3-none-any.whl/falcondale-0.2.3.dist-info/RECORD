@@ -1,0 +1,15 @@
+falcondale-0.2.3.dist-info/METADATA,sha256=5PoFybMtBOiKBSgH9LUknTQ6PTqtZtBlD6GtyVhYq2Y,1786
+falcondale-0.2.3.dist-info/WHEEL,sha256=N2J68yzZqJh3mI_Wg92rwhw0rtJDFpZj9bwQIMJgaVg,90
+falcondale/__init__.py,sha256=v7OzneVl60r-T5gZvWENEof-UyFrLuRk3fgigDBJezQ,97
+falcondale/classifiers.py,sha256=rQtf0VlB7LVFQFh8SHUYacHnfRUHqE9RL5-14ZU30h0,4444
+falcondale/clustering.py,sha256=9KXLLPnBiSXVL0IaNdsjGybaBttzkzWFgYbPJMNT6s4,1455
+falcondale/data.py,sha256=mOpcEoXrVgo2-mtiWAaJH4KSvcOWYYqcIvJNmsiTiJU,7100
+falcondale/feature_selection.py,sha256=embgKu0zKjkwrs8LYmrZ2rbQLMVSFn8a2ulghK55HuM,6821
+falcondale/helpers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+falcondale/helpers/kernels.py,sha256=4KSGGOCUDNu9QFfzWL0zXrEun0S0fnx5DCWJ4jdxbGM,474
+falcondale/helpers/mutual_information.py,sha256=WlU78Wac89mFTetgOFIl9LoqpHlBAPSAmcQzv5L8l8M,1761
+falcondale/helpers/qnn.py,sha256=m-GzWuDHc81NUrjKrBVHqkxTQY8XnLSPxvHOsW3Z3Pg,7374
+falcondale/helpers/qsvc.py,sha256=_cebUs1pvrvaLZVtOheGuAL_9bZxLAlU1ZSIi7jsGXg,3362
+falcondale/main.py,sha256=2TYwNuS13dQZ1Zjvf5JwZuKwE_eNTdel8e0XtHV9B88,14213
+falcondale/solvers.py,sha256=ne3kJoeZenXx3fMlM08ARh9c34eHZYSdgFXt2FhArsY,931
+falcondale-0.2.3.dist-info/RECORD,,
