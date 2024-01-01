@@ -1,0 +1,64 @@
+[project]
+name = "casbin-tortoise-adapter"
+version = "2.0.0"
+description = "Tortoise ORM adapter for AsyncCasbin"
+readme = "README.md"
+keywords = [
+    "casbin",
+    "asyncio",
+    "access control",
+    "Tortoise ORM",
+    "authorization",
+    "pycasbin",
+]
+authors = [
+    { name = "Elias Gabriel", email = "me@eliasfgabriel.com" },
+]
+requires-python = ">=3.7,<4.0"
+dependencies = [
+    "tortoise-orm[accel]>=0.18.0",
+    "casbin>=1.34.0",
+]
+
+[project.license]
+text = "Apache-2.0"
+
+[project.urls]
+repository = "https://github.com/thearchitector/casbin-tortoise-adapter"
+documentation = "https://github.com/thearchitector/casbin-tortoise-adapter#tortoise-orm-adapter-for-asynccasbin"
+changelog = "https://github.com/thearchitector/casbin-tortoise-adapter/blob/main/CHANGELOG.md"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pytest~=7.0",
+    "pluggy~=1.2.0",
+    "pytest-asyncio~=0.21.0",
+    "asyncpg~=0.28.0",
+    "mypy>=1.4.1",
+]
+
+[tool.pytest.ini_options]
+addopts = "-ra -svv"
+testpaths = [
+    "tests",
+]
+asyncio_mode = "auto"
+
+[tool.pyright]
+ignore = [
+    "tests",
+]
+
+[tool.mypy]
+python_version = "3.7"
+strict = true
+disallow_subclassing_any = false
+overrides = [
+    { module = "casbin.*", ignore_missing_imports = true },
+]
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
