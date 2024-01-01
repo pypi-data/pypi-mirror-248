@@ -1,0 +1,12 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+src/lastfmgenre/__init__.py
+src/lastfmgenre/genres-tree.yaml
+src/lastfmgenre/genres.txt
+src/lastfmgenre.egg-info/PKG-INFO
+src/lastfmgenre.egg-info/SOURCES.txt
+src/lastfmgenre.egg-info/dependency_links.txt
+src/lastfmgenre.egg-info/requires.txt
+src/lastfmgenre.egg-info/top_level.txt
