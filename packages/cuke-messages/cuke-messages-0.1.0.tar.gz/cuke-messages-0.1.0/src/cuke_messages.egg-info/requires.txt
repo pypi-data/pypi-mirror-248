@@ -1,0 +1,5 @@
+importlib_resources
+pydantic>=2.0.3
+
+[test]
+tox
