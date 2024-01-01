@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: my-image-resizer
+Version: 0.1
+Summary: Image resizing package
+Author: Jolomi
+Keywords: image resize PIL
+Requires-Dist: Pillow
+
