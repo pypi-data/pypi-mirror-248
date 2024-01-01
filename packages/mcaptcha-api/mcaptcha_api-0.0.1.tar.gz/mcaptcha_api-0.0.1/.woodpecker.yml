@@ -1,0 +1,55 @@
+steps:
+  postgres:
+    image: postgres
+    detach: true
+    environment:
+      - POSTGRES_PASSWORD=password
+
+  cache:
+    image: mcaptcha/cache:latest
+    detach: true
+
+  mcaptcha:
+    image: mcaptcha/mcaptcha:latest
+    detach: true
+    environment:
+      - DATABASE_URL=postgres://postgres:password@postgres:5432/postgres # set password at placeholder
+      - RUST_LOG=debug
+      - PORT=7000
+      - MCAPTCHA_server_IP=0.0.0.0
+      - MCAPTCHA_server_DOMAIN=mcaptcha
+      - MCAPTCHA_server_COOKIE_SECRET=4d08c163c0b9780e7462893fd8aed5102c2c509f
+      - MCAPTCHA_captcha_SALT=4d08c163c0b9780e7462893fd8aed5102c2c509f
+      - MCAPTCHA_redis_URL=redis://cache/
+      - MCAPTCHA_redis_POOL=4
+      - MCAPTCHA_allow_demo=true
+
+  test:
+    image: python
+    environment:
+      - USERNAME=aaronsw
+      - PASSWORD=password
+      - INSTANCE_URL=http://mcaptcha:7000
+    commands:
+      - pip install virtualenv && virtualenv venv
+      - make env
+      - make test
+      #      - apt-get install -y --no-install-recommends protobuf-compiler
+      #      - cargo build
+      #      - cargo test --lib
+      #      #      - make migrate
+      #      #      - make
+      #      #      - make release
+      #        #      - make test // requires Docker-in-Docker
+      #  integration_tests:
+      #    image: python
+      #    commands:
+      #      - pip install virtualenv && virtualenv venv
+      #      - . venv/bin/activate && pip install -r requirements.txt
+      #      - nohup ./target/debug/main --id 1 --http-addr 127.0.0.1:9001 --introducer-addr 127.0.0.1:9001 --introducer-id 1  --cluster-size 3 &
+      #      - sleep 1
+      #      - nohup ./target/debug/main --id 2 --http-addr 127.0.0.1:9002 --introducer-addr 127.0.0.1:9001 --introducer-id 1  --cluster-size 3 &
+      #      - sleep 1
+      #      - nohup ./target/debug/main --id 3 --http-addr 127.0.0.1:9003 --introducer-addr 127.0.0.1:9001 --introducer-id 1  --cluster-size 3 &
+      #      - mv dcache_py/ tests/
+      #      - . venv/bin/activate && python tests/test.py

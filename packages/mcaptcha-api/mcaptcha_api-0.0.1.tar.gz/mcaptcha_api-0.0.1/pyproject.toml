@@ -1,0 +1,28 @@
+[project]
+name = "mcaptcha_api"
+version = "0.0.1"
+authors = [
+  { name="Aravinth Manivannan", email="realaravinth@batsense.net" }
+]
+description = "A library to interact with mCaptcha API"
+readme = "README.md"
+#requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [ "requests==2.31.0", "urllib3==2.1.0" ]
+
+[project.urls]
+Homepage = "https://git.batsense.net/mCaptcha/mcaptcha-api-py"
+Issues = "https://git.batsense.net/mCaptcha/mcaptcha-api-py/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
