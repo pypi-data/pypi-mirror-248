@@ -1,0 +1,9 @@
+decotools/__init__.py,sha256=TF1dLmPrlXwoVgDbZcaBQ7yQDHIeV_Zcpx6nkFwHFpg,719
+decotools/applier.py,sha256=qdGzIGleTzKOcXDqbxXLaUedrEVFtzwVe12pa8II7EU,1878
+decotools/builtins.py,sha256=pSWokquXBDv0_jorb_uUvWiAvdd93mZAkInaJWP0piM,1826
+decotools/collections.py,sha256=De05UGb0Hwb4qUSXS8zYZaUZwkGUiKVPk_lD_wVcZbA,487
+decotools/itertools.py,sha256=uBHbBphK4m7p3nORoPR-IjP8k7F7FK6siF4NSkg7iMY,1164
+pydecotools-0.2.1.dist-info/LICENSE,sha256=llBZRTFBDANt5PTy9IS8G1KDxriZxRlijoncfkVKQQ8,1089
+pydecotools-0.2.1.dist-info/METADATA,sha256=4TVMqGLQcqo5-OQ-CS-hcisTmUTSyr-K4YiWQX49KTY,3141
+pydecotools-0.2.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+pydecotools-0.2.1.dist-info/RECORD,,
