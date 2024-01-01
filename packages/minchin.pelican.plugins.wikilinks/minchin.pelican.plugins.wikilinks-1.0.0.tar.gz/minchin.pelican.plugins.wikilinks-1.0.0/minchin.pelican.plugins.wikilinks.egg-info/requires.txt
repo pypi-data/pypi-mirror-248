@@ -1,0 +1,7 @@
+minchin.pelican.plugins.autoloader
+
+[dev]
+pip-tools
+black
+isort
+minchin.releaser
