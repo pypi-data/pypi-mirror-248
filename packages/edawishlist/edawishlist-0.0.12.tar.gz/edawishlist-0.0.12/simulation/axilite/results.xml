@@ -1,0 +1,10 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1703947828" />
+    <testcase name="register_test_001" classname="axilite_simulation" file="/home/msilvaol/.conda/envs/wishlist/lib/python3.9/site-packages/cocotb/regression.py" lineno="713" time="0.39226508140563965" sim_time_ns="2895.0" ratio_time="7380.213374145053" />
+    <testcase name="register_test_002" classname="axilite_simulation" file="/home/msilvaol/.conda/envs/wishlist/lib/python3.9/site-packages/cocotb/regression.py" lineno="713" time="0.3818826675415039" sim_time_ns="2897.0" ratio_time="7586.099727045474" />
+    <testcase name="register_test_003" classname="axilite_simulation" file="/home/msilvaol/.conda/envs/wishlist/lib/python3.9/site-packages/cocotb/regression.py" lineno="713" time="0.3953397274017334" sim_time_ns="2897.0" ratio_time="7327.874734572648" />
+    <testcase name="register_test_004" classname="axilite_simulation" file="/home/msilvaol/.conda/envs/wishlist/lib/python3.9/site-packages/cocotb/regression.py" lineno="713" time="0.3979630470275879" sim_time_ns="2897.0" ratio_time="7279.570356187297" />
+    <testcase name="register_test_005" classname="axilite_simulation" file="/home/msilvaol/.conda/envs/wishlist/lib/python3.9/site-packages/cocotb/regression.py" lineno="713" time="0.40291500091552734" sim_time_ns="2897.0" ratio_time="7190.102114384585" />
+  </testsuite>
+</testsuites>
