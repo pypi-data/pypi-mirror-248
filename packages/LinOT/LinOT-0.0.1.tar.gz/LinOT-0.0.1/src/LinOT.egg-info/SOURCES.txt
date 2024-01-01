@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/LinOT/SinkhornNP.py
+src/LinOT/Visualization.py
+src/LinOT/__init__.py
+src/LinOT/auxiliary.py
+src/LinOT.egg-info/PKG-INFO
+src/LinOT.egg-info/SOURCES.txt
+src/LinOT.egg-info/dependency_links.txt
+src/LinOT.egg-info/top_level.txt
