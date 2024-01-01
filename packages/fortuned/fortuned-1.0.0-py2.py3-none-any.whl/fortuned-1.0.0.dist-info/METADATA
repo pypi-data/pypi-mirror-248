@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: fortuned
+Version: 1.0.0
+Summary: A fortune teller that doesn't really tell you your fortune.
+Requires-Dist: flask
