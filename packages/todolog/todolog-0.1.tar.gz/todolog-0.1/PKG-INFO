@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: todolog
+Version: 0.1
+Summary: Actively Manage ToDos!
+Keywords: todo,log,todolog
+Author-email: qu3vipon <qu3vipon@gmail.com>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: tomli
+Requires-Dist: pytest ; extra == "test"
+Project-URL: Home, https://github.com/qu3vipon/todolog
+Provides-Extra: test
+
+# todolog
+Actively Manage ToDos!
+
+## Motivations
+- Annotated ToDos are not well managed.
+
+
+
