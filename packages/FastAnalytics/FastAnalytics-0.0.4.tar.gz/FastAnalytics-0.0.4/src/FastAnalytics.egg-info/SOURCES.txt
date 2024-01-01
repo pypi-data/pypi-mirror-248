@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/FastAnalytics/EDALL.py
+src/FastAnalytics/Univariate_Analysis.py
+src/FastAnalytics/__init__.py
+src/FastAnalytics.egg-info/PKG-INFO
+src/FastAnalytics.egg-info/SOURCES.txt
+src/FastAnalytics.egg-info/dependency_links.txt
+src/FastAnalytics.egg-info/requires.txt
+src/FastAnalytics.egg-info/top_level.txt

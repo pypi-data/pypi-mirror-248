@@ -1,0 +1,2 @@
+from FastAnalytics.EDALL import EDA_ALL
+from FastAnalytics.Univariate_Analysis import UnivariateAnalysis
