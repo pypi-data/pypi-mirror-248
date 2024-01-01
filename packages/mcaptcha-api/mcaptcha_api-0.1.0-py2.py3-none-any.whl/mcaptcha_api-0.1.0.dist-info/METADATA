@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: mcaptcha_api
+Version: 0.1.0
+Summary: A library to interact with mCaptcha API
+Project-URL: Homepage, https://git.batsense.net/mCaptcha/mcaptcha-api-py
+Project-URL: Issues, https://git.batsense.net/mCaptcha/mcaptcha-api-py/issues
+Author-email: Aravinth Manivannan <realaravinth@batsense.net>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: requests==2.31.0
+Requires-Dist: urllib3==2.1.0
+Description-Content-Type: text/markdown
+
+[![status-badge](https://ci.batsense.net/api/badges/106/status.svg)](https://ci.batsense.net/repos/106)
+
+---
+
+# mcaptcha_api: Python library to interact with mCaptcha server
+
+## Installation
+
+```bash
+pip install mcaptcha_api
+```
+
+## Usage
+
+| Parameter      | Info                                                                                                                  |
+| -------------- | --------------------------------------------------------------------------------------------------------------------- |
+| `instance_url` | the URL of the mCaptcha instance you are using                                                                        |
+| `sitekey`      | The captcha identifier; can be obtained from dashboard or from widget URL (`http://hostname/widget?sitekey=<sitekey>` |
+| `secret`       | Account secret; can be obtained from mCaptcha dashboard account settings page                                         |
+
+```python
+mcaptcha = MCaptcha(instance_url=INSTANCE_URL, sitekey=SITEKEY, secret=SECRET)
+assert mcaptcha.verify(token=TOKEN) is True
+```
