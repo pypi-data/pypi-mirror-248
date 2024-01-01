@@ -1,0 +1,12 @@
+tgpt2/__init__.py,sha256=XaKmOW9YLW6U95V79D586BD_rhZm9soPuOKg_X-FtmI,169
+tgpt2/__main__.py,sha256=q8wRYHD0YaMGQW-CN73tdERxPm_TOwfFi41yxkvK6og,34
+tgpt2/console.py,sha256=gEZWXE4W-PkHhzHr2VR7SLYo4lJpIlBs1Yt1pcfy13Y,16340
+tgpt2/imager.py,sha256=jd4o4Lzyg0y7Mlx-Z9LJpdd0ZL6PLxhPL4CuquEo9p0,1934
+tgpt2/tgpt2.py,sha256=6C-zt0jdCAKfxPnOMDjMYbnGvTKlLLVx2IVKdP8cVVI,6379
+tgpt2/utils.py,sha256=z6wPZh691c6Sk9T4eobiYyJe-OeWKf2QpYs9wghlYgk,2280
+tgpt2-0.0.3.dist-info/LICENSE,sha256=wHya1MWtezBgi8T3VsDrChvOSfRrzrG0Qln_32B3oKY,1064
+tgpt2-0.0.3.dist-info/METADATA,sha256=k2GDdIJ3xVWYhJcFfHXTYKAjRKpl65ZV0rBYdqXulas,7302
+tgpt2-0.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+tgpt2-0.0.3.dist-info/entry_points.txt,sha256=e4LjFcgGXVAQ4eWQTAvGkB9-1BC80R4Xtn5KylvV7LI,45
+tgpt2-0.0.3.dist-info/top_level.txt,sha256=NXk0lHNvRXkTZqP4GvTD1RgmHiJBXO-VWAXVXpz6UMs,6
+tgpt2-0.0.3.dist-info/RECORD,,
