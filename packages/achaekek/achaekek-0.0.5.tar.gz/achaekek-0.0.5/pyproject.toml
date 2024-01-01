@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "achaekek"
+version = "0.0.5"
+description = "Python library for the Manifold markets API."
+authors = ["TetraspaceW <holomanga@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
