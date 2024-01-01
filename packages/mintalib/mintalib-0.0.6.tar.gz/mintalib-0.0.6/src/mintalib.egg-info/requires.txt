@@ -1,0 +1,14 @@
+numpy
+pandas
+
+[dev]
+invoke
+tomli
+build
+twine
+pytest
+
+[extras]
+polars
+yfinance
+mplfinance
