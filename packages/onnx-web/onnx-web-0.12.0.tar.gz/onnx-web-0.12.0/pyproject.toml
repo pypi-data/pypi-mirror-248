@@ -1,0 +1,85 @@
+[tool.black]
+force-exclude = '''/(diffusion_original|lpw).py'''
+
+[tool.isort]
+profile = "black"
+force_to_top = ".logging"
+skip_glob = ["*/lpw.py"]
+
+[tool.mypy]
+# ignore_missing_imports = true
+exclude = [
+    "onnx_web.diffusers.pipelines.controlnet",
+    "onnx_web.diffusers.pipelines.lpw",
+    "onnx_web.diffusers.pipelines.pix2pix"
+]
+
+[[tool.mypy.overrides]]
+module = [
+    "arpeggio",
+    "basicsr.archs.rrdbnet_arch",
+    "basicsr.utils.download_util",
+    "basicsr.utils",
+    "basicsr",
+    "boto3",
+    "codeformer",
+    "codeformer.basicsr",
+    "codeformer.basicsr.utils",
+    "codeformer.basicsr.utils.download_util",
+    "codeformer.basicsr.utils.registry",
+    "codeformer.facelib",
+    "codeformer.facelib.utils",
+    "codeformer.facelib.utils.misc",
+    "codeformer.facelib.utils.face_restoration_helper",
+    "compel",
+    "controlnet_aux",
+    "cv2",
+    "debugpy",
+    "diffusers",
+    "diffusers.configuration_utils",
+    "diffusers.image_processor",
+    "diffusers.loaders",
+    "diffusers.models.attention_processor",
+    "diffusers.models.autoencoder_kl",
+    "diffusers.models.cross_attention",
+    "diffusers.models.embeddings",
+    "diffusers.models.modeling_utils",
+    "diffusers.models.unet_2d_blocks",
+    "diffusers.models.vae",
+    "diffusers.utils",
+    "diffusers.pipelines.latent_diffusion.pipeline_latent_diffusion",
+    "diffusers.pipelines.onnx_utils",
+    "diffusers.pipelines.paint_by_example",
+    "diffusers.pipelines.pipeline_utils",
+    "diffusers.pipelines.stable_diffusion",
+    "diffusers.pipelines.stable_diffusion.convert_from_ckpt",
+    "diffusers.pipelines.stable_diffusion_xl",
+    "diffusers.schedulers",
+    "diffusers.utils.logging",
+    "facexlib.utils",
+    "facexlib",
+    "gfpgan",
+    "gi.repository",
+    "huggingface_hub",
+    "huggingface_hub.file_download",
+    "huggingface_hub.utils.tqdm",
+    "mediapipe",
+    "onnxruntime",
+    "onnxruntime.transformers.float16",
+    "optimum.exporters.onnx",
+    "optimum.onnxruntime",
+    "optimum.onnxruntime.modeling_diffusion",
+    "optimum.pipelines.diffusers.pipeline_stable_diffusion_xl_img2img",
+    "optimum.pipelines.diffusers.pipeline_utils",
+    "piexif",
+    "piexif.helper",
+    "realesrgan",
+    "realesrgan.archs.srvgg_arch",
+    "safetensors",
+    "scipy",
+    "timm.models.layers",
+    "torchvision.transforms.functional",
+    "transformers",
+    "win10toast"
+]
+ignore_missing_imports = true
