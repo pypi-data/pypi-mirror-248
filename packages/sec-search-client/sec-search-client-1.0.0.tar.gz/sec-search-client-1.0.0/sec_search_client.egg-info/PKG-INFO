@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: sec-search-client
+Version: 1.0.0
+Summary: SEC Search API
+Home-page: 
+Author-email: 
+Keywords: Swagger,SEC Search API
+Requires-Dist: urllib3>=1.15
+Requires-Dist: six>=1.10
+Requires-Dist: certifi
+Requires-Dist: python-dateutil
+
+    API for receiving classifications of SEC filings.  Note that this API is in  beta and is subject to change before the release of a stable v1.0.0.  By default, the api will return a maximum of 100 results.   To return more results, pass the &#x60;page&#x60; parameter.   For example, to return the second page of results, pass &#x60;page&#x3D;2&#x60;.  &lt;a href&#x3D;\&quot;https://www.secsearch.io/profile\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Get an API Key&lt;/a&gt;   # noqa: E501
+    
