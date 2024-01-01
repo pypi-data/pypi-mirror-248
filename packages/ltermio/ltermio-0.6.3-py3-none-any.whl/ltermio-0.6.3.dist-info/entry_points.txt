@@ -1,0 +1,3 @@
+[console_scripts]
+key-test = ltermio.termkey:_test_termkey
+mouse-test = ltermio.termouse:_test_termouse
