@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: shipyard-mode
+Version: 0.1.1a0
+Summary: A local client for connecting and working with Mode
+License: Apache 2.0
+Author: wrp801
+Author-email: wespoulsen@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: requests (==2.28.0)
+Requires-Dist: shipyard-utils (==0.1.2)
