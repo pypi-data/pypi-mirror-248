@@ -1,0 +1,76 @@
+{
+    "icon_path": "media.svg",
+    "icons": [
+        "play.svg",
+        "pause.svg"
+    ],
+    "actions": {
+        "scroll.up": [
+            {
+                "action": "keyPress",
+                "type": "updown",
+                "key": "up",
+                "key_class": "media",
+                "repeat": 0,
+                "comment": "Volume up"
+            }
+        ],
+        "scroll.down": [
+            {
+                "action": "keyPress",
+                "type": "updown",
+                "key": "down",
+                "key_class": "media",
+                "repeat": 0,
+                "comment": "Volume down"
+            }
+        ],
+        "keyAction1": [
+            {
+                "action": "keyPress",
+                "type": "updown",
+                "key": "play_pause",
+                "key_class": "media",
+                "repeat": 0,
+                "comment": "Play/pause on click"
+            }
+        ],
+        "keyAction2": [
+            {
+                "action": "keyPress",
+                "type": "updown",
+                "key": "mute",
+                "key_class": "media",
+                "repeat": 0,
+                "comment": "Mute on double click/hold"
+            }
+        ],
+        "scroll2.up": [
+            {
+                "action": "keyPress",
+                "type": "updown",
+                "key": "next",
+                "key_class": "media",
+                "repeat": 0,
+                "comment": "Play the next track"
+            }
+        ],
+        "scroll2.down": [
+            {
+                "action": "keyPress",
+                "type": "updown",
+                "key": "previous",
+                "key_class": "media",
+                "repeat": 0,
+                "comment": "Play the prevoius track"
+            }
+        ]
+    },
+    "mediaFetchSleep": 0.01,
+    "textHeaderFont": "Ubuntu",
+    "textHeaderSize": 14,
+    "bottomTextFont": "Ubuntu",
+    "bottomTextSize": 12,
+    "seekTextFont": "Ubuntu",
+    "seekTextSize": 14
+}

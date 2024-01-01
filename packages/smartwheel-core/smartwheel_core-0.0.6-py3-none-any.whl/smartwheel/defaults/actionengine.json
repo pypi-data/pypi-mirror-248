@@ -1,0 +1,482 @@
+{
+    "commandActions": [
+        {
+            "name": "wheel",
+            "title": "Scroll the wheel",
+            "description": "Scroll the wheel",
+            "type": "wheel",
+            "directional": true
+        },
+        {
+            "name": "wheelSelect",
+            "title": "Select",
+            "description": "Select the wheel module",
+            "type": "wheel"
+        },
+        {
+            "name": "wheelOpen",
+            "title": "Open wheel",
+            "description": "Open the wheel panel",
+            "type": "wheel",
+            "default": "module"
+        },
+        {
+            "name": "wheelQuick",
+            "title": "Instantly scroll the wheel",
+            "description": "Quickly scroll the wheel",
+            "type": "wheel",
+            "default": "any",
+            "directional": true
+        },
+        {
+            "name": "scroll",
+            "title": "Scroll the module",
+            "description": "Main scroll action in module",
+            "type": "module",
+            "directional": true
+        },
+        {
+            "name": "keyAction1",
+            "title": "Keypress 1",
+            "description": "Main keypress action",
+            "type": "module"
+        },
+        {
+            "name": "keyAction2",
+            "title": "Keypress 2",
+            "description": "Secondary keypress action",
+            "type": "module"
+        },
+        {
+            "name": "scroll2",
+            "title": "Scroll the module (2)",
+            "description": "Secondary scroll action in module",
+            "type": "module",
+            "directional": true
+        }
+    ],
+    "commandBind": {
+        "button1": [
+            {
+                "command": "sw_btn_click",
+                "actions": [
+                    {
+                        "action": "wheelSelect",
+                        "mode": "wheel",
+                        "repeat": 0,
+                        "checkState": true
+                    },
+                    {
+                        "action": "keyAction1",
+                        "mode": "module",
+                        "checkState": true
+                    }
+                ]
+            },
+            {
+                "command": "sw_btn_doubleclick",
+                "actions": [
+                    {
+                        "action": "wheelOpen",
+                        "mode": "wheel",
+                        "onState": "module",
+                        "checkState": true
+                    }
+                ]
+            }
+        ],
+        "encoder1": [
+            {
+                "command": "enc1_scroll up",
+                "actions": [
+                    {
+                        "action": "wheel",
+                        "mode": "wheel",
+                        "checkState": true,
+                        "up": true
+                    },
+                    {
+                        "action": "scroll",
+                        "mode": "module",
+                        "checkState": true,
+                        "up": true
+                    }
+                ]
+            },
+            {
+                "command": "enc1_scroll down",
+                "actions": [
+                    {
+                        "action": "wheel",
+                        "mode": "wheel",
+                        "checkState": true,
+                        "up": false
+                    },
+                    {
+                        "action": "scroll",
+                        "mode": "module",
+                        "checkState": true,
+                        "up": false
+                    }
+                ]
+            },
+            {
+                "command": "enc1_hold_scroll up",
+                "actions": [
+                    {
+                        "action": "wheelQuick",
+                        "mode": "wheel",
+                        "checkState": true,
+                        "up": true
+                    },
+                    {
+                        "action": "wheelQuick",
+                        "mode": "wheel",
+                        "onState": "module",
+                        "checkState": true,
+                        "up": true
+                    }
+                ]
+            },
+            {
+                "command": "enc1_hold_scroll down",
+                "actions": [
+                    {
+                        "action": "wheelQuick",
+                        "mode": "wheel",
+                        "checkState": true,
+                        "up": false
+                    },
+                    {
+                        "action": "wheelQuick",
+                        "mode": "wheel",
+                        "onState": "module",
+                        "checkState": true,
+                        "up": false
+                    }
+                ]
+            },
+            {
+                "command": "enc1_doubleclick_scroll up",
+                "actions": [
+                    {
+                        "action": "wheel",
+                        "mode": "wheel",
+                        "checkState": true,
+                        "up": true
+                    },
+                    {
+                        "action": "scroll2",
+                        "mode": "module",
+                        "checkState": true,
+                        "up": true
+                    }
+                ]
+            },
+            {
+                "command": "enc1_doubleclick_scroll down",
+                "actions": [
+                    {
+                        "action": "wheel",
+                        "mode": "wheel",
+                        "checkState": true,
+                        "up": false
+                    },
+                    {
+                        "action": "scroll2",
+                        "mode": "module",
+                        "checkState": true,
+                        "up": false
+                    }
+                ]
+            }
+        ],
+        "keyboard1": [
+            {
+                "command": "w",
+                "actions": [
+                    {
+                        "action": "wheel",
+                        "mode": "wheel",
+                        "checkState": true,
+                        "up": true
+                    },
+                    {
+                        "action": "wheelQuick",
+                        "mode": "wheel",
+                        "onState": "module",
+                        "checkState": true,
+                        "up": true
+                    }
+                ]
+            },
+            {
+                "command": "a",
+                "actions": [
+                    {
+                        "action": "wheel",
+                        "mode": "wheel",
+                        "checkState": true,
+                        "up": false
+                    },
+                    {
+                        "action": "wheelQuick",
+                        "mode": "wheel",
+                        "onState": "module",
+                        "checkState": true,
+                        "up": false
+                    }
+                ]
+            },
+            {
+                "command": "up",
+                "actions": [
+                    {
+                        "action": "wheel",
+                        "mode": "wheel",
+                        "checkState": true,
+                        "up": true
+                    },
+                    {
+                        "action": "scroll",
+                        "mode": "module",
+                        "checkState": true,
+                        "up": true
+                    }
+                ]
+            },
+            {
+                "command": "down",
+                "actions": [
+                    {
+                        "action": "wheel",
+                        "mode": "wheel",
+                        "checkState": true,
+                        "up": false
+                    },
+                    {
+                        "action": "scroll",
+                        "mode": "module",
+                        "checkState": true,
+                        "up": false
+                    }
+                ]
+            },
+            {
+                "command": "return",
+                "actions": [
+                    {
+                        "action": "wheelSelect",
+                        "mode": "wheel",
+                        "repeat": 0,
+                        "checkState": true
+                    },
+                    {
+                        "action": "keyAction1",
+                        "mode": "module",
+                        "checkState": true
+                    }
+                ]
+            },
+            {
+                "command": "esc",
+                "actions": [
+                    {
+                        "action": "wheelOpen",
+                        "mode": "wheel",
+                        "onState": "module",
+                        "checkState": true
+                    }
+                ]
+            }
+        ],
+        "bgkeyboard1": [
+            {
+                "command": "w",
+                "actions": [
+                    {
+                        "action": "wheelQuick",
+                        "mode": "wheel",
+                        "checkState": true,
+                        "up": true
+                    },
+                    {
+                        "action": "wheelQuick",
+                        "mode": "wheel",
+                        "onState": "module",
+                        "checkState": true,
+                        "up": true
+                    }
+                ]
+            },
+            {
+                "command": "a",
+                "actions": [
+                    {
+                        "action": "wheelQuick",
+                        "mode": "wheel",
+                        "checkState": true,
+                        "up": false
+                    },
+                    {
+                        "action": "wheelQuick",
+                        "mode": "wheel",
+                        "onState": "module",
+                        "checkState": true,
+                        "up": false
+                    }
+                ]
+            }
+        ],
+        "prbutton1": [
+            {
+                "command": "click",
+                "actions": [
+                    {
+                        "action": "wheelSelect",
+                        "mode": "wheel",
+                        "repeat": 0,
+                        "checkState": true
+                    },
+                    {
+                        "action": "keyAction1",
+                        "mode": "module",
+                        "checkState": true
+                    }
+                ]
+            },
+            {
+                "command": "doubleclick",
+                "actions": [
+                    {
+                        "action": "wheelOpen",
+                        "mode": "wheel",
+                        "onState": "module",
+                        "checkState": true
+                    }
+                ]
+            }
+        ],
+        "rotary1": [
+            {
+                "command": "up",
+                "actions": [
+                    {
+                        "action": "wheel",
+                        "mode": "wheel",
+                        "checkState": true,
+                        "up": true
+                    },
+                    {
+                        "action": "scroll",
+                        "mode": "module",
+                        "checkState": true,
+                        "up": true
+                    }
+                ]
+            },
+            {
+                "command": "down",
+                "actions": [
+                    {
+                        "action": "wheel",
+                        "mode": "wheel",
+                        "checkState": true,
+                        "up": false
+                    },
+                    {
+                        "action": "scroll",
+                        "mode": "module",
+                        "checkState": true,
+                        "up": false
+                    }
+                ]
+            },
+            {
+                "command": "click up",
+                "actions": [
+                    {
+                        "action": "wheel",
+                        "mode": "wheel",
+                        "checkState": true,
+                        "up": true
+                    },
+                    {
+                        "action": "wheelQuick",
+                        "mode": "wheel",
+                        "onState": "module",
+                        "checkState": true,
+                        "up": true
+                    }
+                ]
+            },
+            {
+                "command": "click down",
+                "actions": [
+                    {
+                        "action": "wheel",
+                        "mode": "wheel",
+                        "checkState": true,
+                        "up": false
+                    },
+                    {
+                        "action": "wheelQuick",
+                        "mode": "wheel",
+                        "onState": "module",
+                        "checkState": true,
+                        "up": false
+                    }
+                ]
+            },
+            {
+                "command": "double up",
+                "actions": [
+                    {
+                        "action": "wheel",
+                        "mode": "wheel",
+                        "checkState": true,
+                        "up": true
+                    },
+                    {
+                        "action": "scroll2",
+                        "mode": "module",
+                        "checkState": true,
+                        "up": true
+                    }
+                ]
+            },
+            {
+                "command": "double down",
+                "actions": [
+                    {
+                        "action": "wheel",
+                        "mode": "wheel",
+                        "checkState": true,
+                        "up": false
+                    },
+                    {
+                        "action": "scroll2",
+                        "mode": "module",
+                        "checkState": true,
+                        "up": false
+                    }
+                ]
+            }
+        ]
+    },
+    "logEngine": false,
+    "acceleration": {
+        "clickAccel": 30.0,
+        "maxAccel": 100.0,
+        "gravity": 27.0,
+        "friction": 5.0,
+        "fixedDeltaTime": false,
+        "pulseRefreshTime": 50,
+        "linearRefreshTime": 20,
+        "deadzone": 1.0,
+        "maxStopAccel": 3.0,
+        "moduleSections": 20,
+        "enableHaptics": true,
+        "linearClickTime": 0.5
+    }
+}
