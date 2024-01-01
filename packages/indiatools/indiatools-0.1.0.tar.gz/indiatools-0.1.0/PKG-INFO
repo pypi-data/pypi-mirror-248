@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: indiatools
+Version: 0.1.0
+Summary: A Python package generated Swamix SoftEngine
+Home-page: https://github.com/Nikhil-Software-Cartel/IndiaTools
+Author: Nikhil Swami
+Author-email: nikhil@swaimx.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+﻿# Swamix-IndiaTools
+
+This is a Python package generated Swamix SoftEngine.
+
+## Installation
+pip install indiatools
+
+## Usage
+Please Read Docs or use autocomplete of editor (VS Code) to see individual function usage.
+
+## License
+MIT License
