@@ -1,0 +1,13 @@
+speedruncompy/__init__.py,sha256=sFgBXilJli-CUdLyFjA8NGYhmkfMMYq0tlbZXFjypPo,84
+speedruncompy/api.py,sha256=6nXYTro8Qu_tF5mwC8TV0DES8vGBZXh_iN0kMeHdU58,7135
+speedruncompy/auth.py,sha256=B0tkJZb-E8esyRARVncNlvwF1nJTf_Uru870bbzbt4s,1905
+speedruncompy/data_structures.py,sha256=d_G3TZ3dTL4JiIkwAvynKC8UzktkjIDF7zGYUzzB6zE,2112
+speedruncompy/endpoints.py,sha256=CM6IyFUu2qtae12jjP8yl_nQBZf2WZyDtY0xaAxUkAs,15177
+speedruncompy/enums.py,sha256=kv8VWG0khmdPwqXb0mPV_KQTLwc78XweWOxHnGOsenk,3753
+speedruncompy/exceptions.py,sha256=vqssHh6rwMRMZDMcngyD6S5YSlHv0agl-2FEpjB_GkA,1891
+speedruncompy/test_endpoints.py,sha256=YJ3EELUfxLBGTGBXYBzomvDVzxFoOpTKDH6ohIndMeI,12913
+speedruncompy-0.2.0.dist-info/LICENSE,sha256=IMF9i4xIpgCADf0U-V1cuf9HBmqWQd3qtI3FSuyW4zE,26526
+speedruncompy-0.2.0.dist-info/METADATA,sha256=Rg2jN2MFyQSNgVijFMHkio4kYaL-LKhwfAiz-GFz1lY,1916
+speedruncompy-0.2.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+speedruncompy-0.2.0.dist-info/top_level.txt,sha256=uC4lnRi6sNKZgpKn2uuyhN_RnlfHWsO6cL175j2fyVQ,14
+speedruncompy-0.2.0.dist-info/RECORD,,
