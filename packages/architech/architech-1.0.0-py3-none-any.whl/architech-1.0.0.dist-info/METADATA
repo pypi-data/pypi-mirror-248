@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: architech
+Version: 1.0.0
+Summary: AI Python Package
+Author-email: Atlas <vtlvs.0@gmail.com>
+Project-URL: GitHub, https://github.com/AtlasL1/Architech
+Project-URL: Issues, https://github.com/AtlasL1/Architech/issues
+Project-URL: Docs, https://architech.py-dev.io
+Project-URL: Discord, https://discord.gg/c8HZm3at2u
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Architech
+**A Python package for building your own AI model.**
+
+### Features
+- Train model
+- Unlimited tokens
+- Create large language model
+
+### Installation
+To install Architech, please run the following command in your terminal: <br>
+```pip install architech```
+
+To import it to your script, simply add the following code: <br>
+```python
+from architech import build
+```
+
+### Links
+**Docs**: https://architech.py-dev.io <br>
+**GitHub Repo**: https://github.com/AtlasL1/Architech
