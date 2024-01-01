@@ -1,0 +1,10 @@
+safpis/__init__.py,sha256=5MKfGtqNgVlm9CVapeIt5N2YrLwM684lgIBdH5Rl3Lw,137
+safpis/api.py,sha256=lvnpNDmRinLmxFIC8rKkbR8dyVTz7FY9aQYFmDJXJ9Y,11079
+safpis/cli.py,sha256=Y2giF-YEr8UyV31lfbAJC5SVT8ITYTeJw3fEk6P2ykw,395
+safpis/models.py,sha256=4JpWM0ZfOZyTI-vtO0MgK9y6zaSn6Lea5t9AU1GqM2I,3942
+safpis-0.2.1.dist-info/AUTHORS.rst,sha256=Hpck6mf1ILhSSlCtXkhy3Tru9tAv0Vf_SaMAC2DQwEY,167
+safpis-0.2.1.dist-info/LICENSE,sha256=u-SxuZuQXwueKMve1yTd9iWlkRS3Ydz7SNlIOJwkqqc,1078
+safpis-0.2.1.dist-info/METADATA,sha256=QjiiKLtxoFBr8EP8iynYoCcK18XrONAxxDHWoIakn_Y,3326
+safpis-0.2.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+safpis-0.2.1.dist-info/top_level.txt,sha256=kPU0WINSDEnYAVVR5rt5ErWEPr1MeI4eToMrTbKfLgU,7
+safpis-0.2.1.dist-info/RECORD,,
