@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "llmdataset"
+version = "0.1.4"
+description = "llm dataset"
+authors = ["toma tanaka <ulti4929@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+ipykernel = "^6.28.0"
+datasets = "^2.16.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
