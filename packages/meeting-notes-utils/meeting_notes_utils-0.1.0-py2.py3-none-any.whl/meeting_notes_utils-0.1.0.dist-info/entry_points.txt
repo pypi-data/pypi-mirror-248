@@ -1,0 +1,2 @@
+[console_scripts]
+search-meeting-notes = meeting_notes_utils.search_meeting_notes:main
