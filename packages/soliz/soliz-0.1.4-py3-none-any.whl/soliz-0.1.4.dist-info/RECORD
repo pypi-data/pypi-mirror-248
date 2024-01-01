@@ -1,0 +1,10 @@
+soliz/__init__.py,sha256=eCOaaF3a6tmje9sPwfo7lophNNtmvMEbr2PzyCy09QE,290
+soliz/error.py,sha256=zEaF7XfB-5jvzDXUwrHzXB59cXcwPN5fUyLayy1B_7o,1923
+soliz/impls.py,sha256=pd2gSCoHJEeOSi36Y6LVH5PgtiYJPXf1wCCbngNX9LA,7858
+soliz/lex.py,sha256=st1qFirEGHUaA62ps4jdtvBXH14butWZeDgwnMgwefM,5210
+soliz/tokens.py,sha256=JRd3w-0h_GlzjrISCYrkPzUXjz5dwZ4MnwpNiU9ah78,1474
+soliz-0.1.4.dist-info/LICENSE,sha256=Eko2EvXvOitYBe8_wMgvPghOukYkEmsThKQwHVwH0MA,1094
+soliz-0.1.4.dist-info/METADATA,sha256=sLW4ylTmiITRRCk0J95ullyuHgJuXUcHz66MAoXyfgU,1728
+soliz-0.1.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+soliz-0.1.4.dist-info/top_level.txt,sha256=pv4kpVgzq3m9VVihdBMt0b9pPVKHrHkQFUVxthHIYXE,6
+soliz-0.1.4.dist-info/RECORD,,
