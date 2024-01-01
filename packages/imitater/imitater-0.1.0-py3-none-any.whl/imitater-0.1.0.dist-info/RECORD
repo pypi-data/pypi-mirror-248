@@ -1,0 +1,15 @@
+imitater/__init__.py,sha256=CVyrEVCw2Q17iT9smlXDFpXr1VrH48VmYOVXDF9dQNM,71
+imitater/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+imitater/model/chat_model.py,sha256=xtU2ZeLVZQadFTFOgO3MwAZtjWByvnI10GYmWe-r7Bk,2258
+imitater/model/embed_model.py,sha256=0LLESqam9s_ZxKrPxWpeDrKaM169lchTN5r_H0L5rJU,1334
+imitater/service/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+imitater/service/app.py,sha256=JcSeK5y42ePPT2oc_SltzCAeOBz9yXFOMe_kYvpgjLo,4320
+imitater/service/protocol.py,sha256=3rVyALty4SNvkAKBWZxWTDVg8ff7liL1he64gZabdEY,2269
+imitater/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+imitater/utils/generic.py,sha256=HTVurXTCLEzKMcjyMEr4rDg5BWpD5JyduXT0Noyw7Vg,181
+imitater/utils/vllm_monkey_patch.py,sha256=DoLaaNF3WtDKFA-MVoo8qpc3tRtDuVThcI3CtS7wgT0,2569
+imitater-0.1.0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+imitater-0.1.0.dist-info/METADATA,sha256=vLbbBeMiql06OU9BA_dHoLIuuoNFtEYivoqIP15e49k,1312
+imitater-0.1.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+imitater-0.1.0.dist-info/top_level.txt,sha256=czdd9MSWAS5gapWtq6kkeJ8Yut_2g8i0wCsCfzjqBy0,9
+imitater-0.1.0.dist-info/RECORD,,
