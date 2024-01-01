@@ -1,0 +1,10 @@
+lambdaorm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lambdaorm/application.py,sha256=G193gDArGWUXaN8ZEfwWiGLIfOdW5YjfH-NF_9dekfA,5818
+lambdaorm/domain.py,sha256=uUeuvbjRQif2-uVRtyrgOteK6fXEis5l5SMyGSAHOAc,35901
+lambdaorm/infrastructure.py,sha256=ZVc3GCh2PiPBQzvh3doJDKMrNr_wrmvYsCdmQpGekSo,18563
+lambdaorm/test_execute.py,sha256=CBa2iSvyXifOMgwYOTf9Pyu46L-W-wnLKjGAWDd-XH0,110
+lambdaorm-0.0.1.dist-info/LICENSE,sha256=GTiXRDRL1HBLSsgnNDyDuwSa_ttqaPsnf1d68OQsQ3w,1067
+lambdaorm-0.0.1.dist-info/METADATA,sha256=ZEwL9CIJcy04QmmlddBeR4shABukjwdLSNXeOKgWHCo,414
+lambdaorm-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+lambdaorm-0.0.1.dist-info/top_level.txt,sha256=545IRiRErpdUveydSQ8Eq-gy43b1ub6v8VQrEsV78A0,10
+lambdaorm-0.0.1.dist-info/RECORD,,
