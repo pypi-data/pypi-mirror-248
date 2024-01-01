@@ -1,0 +1,3 @@
+[tool.todolog]
+filename = "todolog.toml"
+default_log_message = "default"
