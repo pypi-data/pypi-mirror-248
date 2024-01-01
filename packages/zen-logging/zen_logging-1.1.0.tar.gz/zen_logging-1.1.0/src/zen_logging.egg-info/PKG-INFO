@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: zen_logging
+Version: 1.1.0
+Summary: Zen logging, a simple python logging library that extends logging.
+Author-email: Desultory <dev@pyl.onl>
+Project-URL: Homepage, https://github.com/desultory/zen-logging
+Project-URL: Issues, https://github.com/desultory/zen-logging/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Zen Logging
+
+### @loggify
+
+This decorator can be added to any class to initialize it with a logger, and add extra logging functionality to that class.
+
+The following additional kwargs are handled in __init__:
+
+* `logger` (Logger) Used as the parent logger, if not set, uses the root logger.
+* `_log_init` (bool) Can be passed to loggified classes, to enable or disable additional initialization logging.
+* `_log_bump` (int) Changes the log level for added loggers.
+
+Loggified classes will also log use of \_\_getattribute\_\_, \_\_setattr\_\_,  and \_\_getitem\_\_.
+
+Functions returned from \_\_getattribute\_\_ will automatically log additioanl information such as passed args and results.
+
+### ColorLognameFormatter
+
+A `logging.Formatter` which colors the loglevel portion.

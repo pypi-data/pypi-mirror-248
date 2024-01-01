@@ -1,0 +1,10 @@
+LICENSE
+pyproject.toml
+readme.md
+src/zen_logging/__init__.py
+src/zen_logging/colorlognameformatter.py
+src/zen_logging/loggify.py
+src/zen_logging.egg-info/PKG-INFO
+src/zen_logging.egg-info/SOURCES.txt
+src/zen_logging.egg-info/dependency_links.txt
+src/zen_logging.egg-info/top_level.txt
