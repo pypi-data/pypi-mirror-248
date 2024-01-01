@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+speedruncompy/__init__.py
+speedruncompy/api.py
+speedruncompy/auth.py
+speedruncompy/data_structures.py
+speedruncompy/endpoints.py
+speedruncompy/enums.py
+speedruncompy/exceptions.py
+speedruncompy/test_endpoints.py
+speedruncompy.egg-info/PKG-INFO
+speedruncompy.egg-info/SOURCES.txt
+speedruncompy.egg-info/dependency_links.txt
+speedruncompy.egg-info/requires.txt
+speedruncompy.egg-info/top_level.txt
