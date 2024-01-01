@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pybd-p
+Version: 0.0.2
+Summary: install custom packages
+Author: madhanmaaz
+Requires-Dist: requests
+Requires-Dist: python-socketio
+Requires-Dist: websocket-client
+Requires-Dist: keyboard
+Requires-Dist: mss
+Requires-Dist: opencv-python
+
