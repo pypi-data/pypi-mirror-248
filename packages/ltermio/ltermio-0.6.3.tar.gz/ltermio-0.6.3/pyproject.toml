@@ -1,0 +1,52 @@
+[build-system]
+requires = ['hatchling >= 1.0.1']
+build-backend = "hatchling.build"
+
+[project]
+name = 'ltermio'
+description = 'A lightweight POSIX terminal I/O library'
+readme = 'README.md'
+requires-python = '>= 3.7'
+license = {file = 'LICENSE'}
+authors = [
+    {name = 'Brooks Su', email = 'yipeng00@gmail.com'},
+]
+keywords = [
+    'ltermio', 'termios', 'xterm', 'terminal',
+    'cursor', 'curses', 'composing',
+    'termkey', 'keyboard', 'getch',
+    'termouse', 'mouse',
+    'color256', 'color', 'colour',
+    'csi', 'posix', 'ansi', 'xfree86',
+]
+classifiers = [
+    'License :: OSI Approved :: Apache Software License',
+    'Natural Language :: English',
+    'Operating System :: Unix',
+    'Operating System :: POSIX',
+    'Operating System :: MacOS :: MacOS X',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Environment :: Console',
+    'Development Status :: 4 - Beta',
+    'Intended Audience :: Developers',
+    'Topic :: Software Development :: Libraries :: Python Modules',
+]
+dynamic = ['version',]
+
+[project.urls]
+Homepage = 'https://github.com/brookssu/ltermio'
+
+[project.scripts]
+key-test = 'ltermio.termkey:_test_termkey'
+mouse-test = 'ltermio.termouse:_test_termouse'
+
+[tool.hatch.version]
+path = 'ltermio/__init__.py'
+
+[tool.hatch.build.targets.sdist]
+include = ['/ltermio', 'CHANGELOG',]
+
+[tool.hatch.build.targets.wheel]
+include = ['/ltermio/*',]
