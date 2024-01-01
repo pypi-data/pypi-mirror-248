@@ -1,0 +1,10 @@
+# Ignore all 
+*.nc
+*.npy
+*.pkl
+*.egg-info
+*.vscode
+*.json
+*.pyc
+*ipynb_checkpoints
+*__pycache__*
