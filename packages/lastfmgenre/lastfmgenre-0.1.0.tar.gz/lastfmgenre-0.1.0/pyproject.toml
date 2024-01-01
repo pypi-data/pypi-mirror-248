@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.package-data]
+"*" = ["*.schema.json"]
+
+[project]
+name = "lastfmgenre"
+version = "0.1.0"
+authors = [
+  { name="mjvotaw", email="mjvotaw@gmail.com" },
+]
+description = "A module for getting sane genre results from Last.fm tags. Based on the lastgenre plugin for the Beets music library manager."
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "pyyaml",
+    "pylast",
+    "confuse",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/mjvotaw/lastfmgenre"
+"Bug Tracker" = "https://github.com/mjvotaw/lastfmgenre/issues"
