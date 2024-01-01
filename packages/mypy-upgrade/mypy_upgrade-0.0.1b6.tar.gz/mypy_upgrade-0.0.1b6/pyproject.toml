@@ -1,0 +1,241 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mypy-upgrade"
+dynamic = ["version"]
+description = "automatic error suppression for mypy"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {file = "LICENSE.txt"}
+keywords = ["type checking"]
+authors = [
+  { name = "Ugochukwu Nwosu", email = "ugognw@gmail.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Topic :: Software Development",
+]
+dependencies = [
+  "typing-extensions; python_version<'3.8'"
+]
+
+[project.scripts]
+mypy-upgrade = "mypy_upgrade.cli:main"
+
+[project.urls]
+Changelog = "https://github.com/ugognw/mypy-upgrade/blob/main/CHANGELOG.md"
+Documentation = "https://github.com/ugognw/mypy-upgrade#readme"
+Issues = "https://github.com/ugognw/mypy-upgrade/issues"
+Source = "https://github.com/ugognw/mypy-upgrade"
+
+[tool.black]
+target-version = ["py37", "py38", "py39", "py310", "py311", "py312"]
+line-length = 79
+skip-string-normalization = true
+
+[tool.coverage.run]
+branch = true
+source = [
+  "src/mypy_upgrade",
+  "tests",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
+
+[tool.hatch.build]
+ignore-vcs = true
+packages = ["src/mypy_upgrade"]
+include = [
+  "/tests",
+]
+
+[tool.hatch.envs.default]
+dependencies = [
+  "mypy==1.4.1; python_version<'3.8'",
+  "mypy==1.8.0; python_version>='3.8'",
+  "pytest==7.4.3",
+  "pytest-cov==4.1.0",
+  "pytest-datadir==1.4.1",
+  "pytest-xdist==3.5.0",
+  "pre-commit==2.21.0; python_version<'3.8'",
+  "pre-commit==3.6.0; python_version>='3.8'"
+]
+python = "3.11"
+
+[tool.hatch.envs.default.env-vars]
+PYTHONPATH="src"
+COVERAGE_PROCESS_START="pyproject.toml"
+
+[tool.hatch.envs.default.scripts]
+test = "pytest {args:tests}"
+test-cov = "pytest -n auto --cov --cov-report=html --cov-report=lcov --cov-report=term-missing {args:tests/}"
+test-cov-unit = "test-cov -m 'not (slow and (api or cli))' tests/"
+test-cov-api = "test-cov -m 'api' tests/"
+test-cov-cli = "test-cov -m 'cli' tests/"
+
+[tool.hatch.envs.lint]
+detached = true
+dependencies = [
+  "black==23.12.1",
+  "mypy==1.8.0",
+  "pytest==7.4.3",
+  "ruff==0.1.9",
+]
+python = "3.11"
+
+[tool.hatch.envs.lint.scripts]
+_typing = "mypy --strict --install-types --non-interactive"
+typing = [
+  "_typing --exclude /test_editing/conftest --exclude /test_silence/conftest src/mypy_upgrade tests",
+  "_typing src/mypy_upgrade tests/test_editing/conftest.py",
+  "_typing src/mypy_upgrade tests/test_silence/conftest.py"
+]
+style = [
+  "ruff {args:.}",
+  "black --check --diff {args:.}",
+]
+fmt = [
+  "black {args:.}",
+  "ruff --fix {args:.}",
+  "style",
+]
+all = [
+  "style",
+  "typing",
+]
+
+[tool.hatch.envs.test]
+dependencies = [
+  "mypy==1.4.1; python_version<'3.8'",
+  "mypy==1.8.0; python_version>='3.8'",
+  "pytest==7.4.3",
+  "pytest-cov==4.1.0",
+  "pytest-datadir==1.4.1; python_version<'3.8'",
+  "pytest-datadir==1.5.0; python_version>='3.8'",
+  "pytest-xdist==3.5.0",
+]
+
+[[tool.hatch.envs.test.matrix]]
+python = [
+  "3.7",
+  "3.8",
+  "3.9",
+  "3.10",
+  "3.11",
+  "3.12",
+  "3.13",
+]
+
+[tool.hatch.version]
+path = "src/mypy_upgrade/__about__.py"
+
+[tool.mypy]
+strict = true
+
+[tool.pytest.ini_options]
+addopts = [
+    "-n",
+    "auto",
+    "--import-mode=importlib",
+    "-r A",
+    "--strict-markers",
+    "--doctest-modules",
+    "--doctest-glob=*.md",
+    "--tb=short"
+]
+filterwarnings = "error"
+norecursedirs = "migrations"
+python_files = [
+    "test_*.py",
+    "*_test.py",
+    "tests.py"
+]
+testpaths = "tests"
+markers = [
+  "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+  "cli: marks tests for the command-line interface (deselect with '-m \"not cli\"')",
+  "api: marks functional tests for mypy-upgrade's API (deselect with '-m \"not api\"')"
+]
+
+[tool.ruff]
+target-version = "py37"
+line-length = 79
+select = [
+  "A",
+  "ARG",
+  "B",
+  "C",
+  "C4",
+  "DTZ",
+  "E",
+  "EM",
+  "EXE",
+  "F",
+  "FBT",
+  "I",
+  "ICN",
+  "INT",
+  "ISC",
+  "N",
+  "PIE",
+  "PLC",
+  "PLE",
+  "PLR",
+  "PLW",
+  "PT",
+  "PTH",
+  "Q",
+  "RSE",
+  "RUF",
+  "S",
+  "SIM",
+  "T",
+  "TID",
+  "UP",
+  "W",
+  "YTT",
+]
+ignore = [
+  # Allow non-abstract empty methods in abstract base classes
+  "B027",
+  # Allow boolean positional values in function calls, like `dict.get(... True)`
+  "FBT003",
+  # Ignore checks for possible passwords
+  "S105", "S106", "S107", "S603",
+  # Ignore complexity
+  "C901", "PLR0911", "PLR0912", "PLR0913", "PLR0915",
+]
+
+[tool.ruff.flake8-pytest-style]
+fixture-parentheses = false
+mark-parentheses = false
+
+[tool.ruff.flake8-quotes]
+inline-quotes = "double"
+
+[tool.ruff.flake8-tidy-imports]
+ban-relative-imports = "all"
+
+[tool.ruff.isort]
+known-first-party = ["mypy_upgrade"]
+
+[tool.ruff.per-file-ignores]
+# Tests can use magic values, assertions, and relative imports
+"tests/**/*" = ["PLR2004", "S101", "TID252"]
