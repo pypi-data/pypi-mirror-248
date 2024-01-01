@@ -1,0 +1,11 @@
+README.md
+setup.py
+recuests.egg-info/PKG-INFO
+recuests.egg-info/SOURCES.txt
+recuests.egg-info/dependency_links.txt
+recuests.egg-info/top_level.txt
+src/callback.c
+src/client.c
+src/hashmap.c
+src/module.c
+src/wrappers.c
