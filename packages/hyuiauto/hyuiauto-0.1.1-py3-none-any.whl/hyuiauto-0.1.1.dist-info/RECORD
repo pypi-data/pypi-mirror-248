@@ -1,0 +1,11 @@
+hyuiauto/__init__.py,sha256=yVwJL56293L3Qywndzm0vo0FnlUkc286glu_i6xG7io,6653
+hyuiauto/ocr.py,sha256=rHYjfK8XTbuVUJXJX9uhi0ocTk34zv7daYPEaEGRrJ0,1201
+hyuiauto/tools/android/ADBKeyboard.apk,sha256=5pit6lYzE1oGewOPmgz0G6pN4JiIcTqBWT-yuWgs3Fk,17374
+hyuiauto/tools/android/AdbWinApi.dll,sha256=aJ5CYyUsc07kDXSPDlqRGAHGCDqOgbUED9nEnf87_c4,108320
+hyuiauto/tools/android/AdbWinUsbApi.dll,sha256=5hQYBbsZ7q-sarLQ-1CqCYuMJxSdyO1zc5zEBDYnR0g,73504
+hyuiauto/tools/android/adb.exe,sha256=WHZSWaNJzOOS-7LxXat1_tO3wLQMxop2UyeLmFBgKi8,5920544
+hyuiauto-0.1.1.dist-info/LICENSE.txt,sha256=KmdujD1z5SnrNIuBIyrwfCrwMpq0oMIfCVF_unj7hOA,11535
+hyuiauto-0.1.1.dist-info/METADATA,sha256=pSSi6F8Z3_we_rCfMAfcv_dx9neH-GycnclT_4Vszy8,1005
+hyuiauto-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+hyuiauto-0.1.1.dist-info/top_level.txt,sha256=P-2Gk45lD3F3XaU4vL3pzyaHaOxmcJuuHLNVgaLiKj4,9
+hyuiauto-0.1.1.dist-info/RECORD,,
