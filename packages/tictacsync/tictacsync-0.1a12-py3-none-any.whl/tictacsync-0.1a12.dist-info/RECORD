@@ -1,0 +1,13 @@
+tictacsync/LTCcheck.py,sha256=SUq93zfky5njzvnsnIj-5nC01QYf3hVBegJftPOFeJQ,15708
+tictacsync/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tictacsync/device_scanner.py,sha256=9fZcd9KRRty7Jmtr38GnVr71ljo3m-_cEpJDikMy_Z8,14516
+tictacsync/entry.py,sha256=JgWxyNwqECK1Q7Rx6givvwRH_o1_W4dNZWc--5RUeaQ,10039
+tictacsync/multi2polywav.py,sha256=7Qnb986D3HJIAkNJ3IyvPWxIdqqh3KIfwnwFoUBw0pU,7013
+tictacsync/timeline.py,sha256=JjZIKdR6gLoMBigz9LruYmFy6Nl5xRF-s3erHT9EVGM,30413
+tictacsync/yaltc.py,sha256=VeJvH4ubi9I_ruG3gK8Y_Y8TEqrRKM85cO6_s4OdvXM,72174
+tictacsync-0.1a12.dist-info/LICENSE,sha256=ZAOPXLh1zlQAnhHUd7oLslKM01YZ5UiAu3STYjwIxck,1068
+tictacsync-0.1a12.dist-info/METADATA,sha256=_HqBVywVkgffzPt3_6FuKNugnxNubgHOUCZzkjNV3Fw,4218
+tictacsync-0.1a12.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+tictacsync-0.1a12.dist-info/entry_points.txt,sha256=bre_DmdWFgHljcC0cyqh_dC9siGANO04MQ_wYsO2sxY,135
+tictacsync-0.1a12.dist-info/top_level.txt,sha256=eaCWG-BsYTRR-gLTJbK4RfcaXajr0gjQ6wG97MkGRrg,11
+tictacsync-0.1a12.dist-info/RECORD,,
