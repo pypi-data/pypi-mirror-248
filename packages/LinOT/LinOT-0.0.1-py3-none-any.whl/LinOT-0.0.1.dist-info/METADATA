@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: LinOT
+Version: 0.0.1
+Summary: Linearized optimal transport for python
+Author-email: Bernhard Schmitzer <schmitzer@cs.uni-goettingen.de>
+Project-URL: Homepage, https://gitlab.gwdg.de/bernhard.schmitzer/linot
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# LinOT for Python Library
+See https://gitlab.gwdg.de/bernhard.schmitzer/linot for more information, source code, preliminary documentation, and some code examples.
