@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+statshub/__init__.py
+statshub.egg-info/PKG-INFO
+statshub.egg-info/SOURCES.txt
+statshub.egg-info/dependency_links.txt
+statshub.egg-info/top_level.txt
