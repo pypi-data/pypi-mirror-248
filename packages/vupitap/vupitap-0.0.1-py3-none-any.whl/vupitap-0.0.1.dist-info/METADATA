@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: vupitap
+Version: 0.0.1
+Summary: Dict experiment
+Author-email: Albertas Gimbutas <albertasgim@gmail.com>
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+`compo` is a package for PyScript components.

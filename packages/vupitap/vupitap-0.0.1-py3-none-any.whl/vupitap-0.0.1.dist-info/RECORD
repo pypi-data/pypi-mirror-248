@@ -1,0 +1,8 @@
+vupitap/Makefile,sha256=hGyWKVwe8vpERuLwcVEuEgrbuNX7mHU0Cd5DT-ABTto,125
+vupitap/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vupitap/notes,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vupitap/vupitap.py,sha256=dKT-m8V9W0Wk0IA0ZOvQwQXfGzyxr_9rKB_npr2TRvE,44
+vupitap/tests/test_vupitap.py,sha256=OZnrtvONEJqZ1AhgKTX4Dd5gdwhrXyV2TawUhKqBFTs,139
+vupitap-0.0.1.dist-info/METADATA,sha256=IYYUGwoJqTkC0cGFDesqb9cAKXUONDSYy5izmDEI9ZM,543
+vupitap-0.0.1.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+vupitap-0.0.1.dist-info/RECORD,,
