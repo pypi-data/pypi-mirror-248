@@ -1,0 +1,9 @@
+[key1]
+responsible = "qu3vipon@gmail.com"
+message = "This is a log message."
+due = 2023-12-31
+log_level = "WARNING"
+description = """
+This is a description about a todo.
+It can be written very long, but it is ignored at run time.
+"""
