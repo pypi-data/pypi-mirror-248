@@ -1,0 +1,7 @@
+README.md
+setup.py
+bashgpt.egg-info/PKG-INFO
+bashgpt.egg-info/SOURCES.txt
+bashgpt.egg-info/dependency_links.txt
+bashgpt.egg-info/entry_points.txt
+bashgpt.egg-info/top_level.txt
