@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: visread
+Version: 0.0.4
+Summary: Tools to read and process interferometric visibilities from Measurement Sets
+Project-URL: Homepage, https://mpol-dev.github.io/visread/
+Project-URL: Issues, https://github.com/MPoL-dev/visread/issues
+Author-email: Ian Czekala <ic95@st-andrews.ac.uk>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >3.6
+Requires-Dist: astropy
+Requires-Dist: numpy
+Requires-Dist: scipy
+Provides-Extra: casa
+Requires-Dist: casadata; extra == 'casa'
+Requires-Dist: casatasks; extra == 'casa'
+Requires-Dist: casatools; extra == 'casa'
+Provides-Extra: docs
+Requires-Dist: black; extra == 'docs'
+Requires-Dist: casadata; extra == 'docs'
+Requires-Dist: casatasks; extra == 'docs'
+Requires-Dist: casatools; extra == 'docs'
+Requires-Dist: ipython!=8.7.0; extra == 'docs'
+Requires-Dist: jupyter; extra == 'docs'
+Requires-Dist: jupyter-cache; extra == 'docs'
+Requires-Dist: jupytext; extra == 'docs'
+Requires-Dist: matplotlib; extra == 'docs'
+Requires-Dist: myst-nb; extra == 'docs'
+Requires-Dist: nbsphinx; extra == 'docs'
+Requires-Dist: pylint; extra == 'docs'
+Requires-Dist: sphinx-book-theme>=0.9.3; extra == 'docs'
+Requires-Dist: sphinx-copybutton; extra == 'docs'
+Requires-Dist: sphinx-material; extra == 'docs'
+Requires-Dist: sphinx>=2.3.0; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: matplotlib; extra == 'test'
+Requires-Dist: pytest; extra == 'test'
+Description-Content-Type: text/markdown
+
+# visread
+
+[![Tests](https://github.com/MPoL-dev/visread/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/MPoL-dev/visread/actions/workflows/test.yml)
+[![gh-pages docs](https://github.com/MPoL-dev/visread/actions/workflows/gh_docs.yml/badge.svg)](https://mpol-dev.github.io/visread/)
+[![DOI](https://zenodo.org/badge/327205529.svg)](https://zenodo.org/badge/latestdoi/327205529)
+
+A set of tools to help read and process interferometric visibilities.
+
+For more information, see the [DOCUMENTATION](https://mpol-dev.github.io/visread/)
+
+If you find this piece of code useful, please cite
+
+    @software{ian_czekala_2021_4432520,
+    author       = {Ian Czekala and
+                    Loomis, Ryan and
+                    Andrews, Sean and
+                    Huang, Jane and
+                    Rosenfeld, Katherine},
+    title        = {MPoL-dev/visread},
+    month        = jan,
+    year         = 2021,
+    publisher    = {Zenodo},
+    version      = {v0.0.1},
+    doi          = {10.5281/zenodo.4432501},
+    url          = {https://doi.org/10.5281/zenodo.4432501}
+    }
+
+

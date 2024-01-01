@@ -1,0 +1,13 @@
+visread/__init__.py,sha256=soTf93TanqAtp4-uEyYIeK-ZCLW8Ms9u6UW9z52VvMc,47
+visread/process.py,sha256=vscg_9TPllfV9R85eR7tCbPvovHlT06TBd7vTf8Yf_M,7149
+visread/process_casa.py,sha256=WHOQ-PbIwGoDoiNHq0y6pDdPJVe5u-rfonFdD6_4uZ4,4842
+visread/scatter.py,sha256=ep_Z11Aim8hYyScgQYZ8RJkz69kep1nx5T2OwYlwn_0,3135
+visread/scatter_casa.py,sha256=A9McS2HZ7VFsSuzGQoquLq-2KtekL5dtJHmKiNBAmuA,3592
+visread/utils.py,sha256=Wdk2i04FXJiHxh1_PBoAqFEtst_IRvS3TsxO4fPmZuo,1058
+visread/visread_version.py,sha256=yBVOKdXLEcTVc7YV7ZPqRXhRDRt-pKrfXxcgHkgPY5g,411
+visread/visualization.py,sha256=C0wrW3e66-mxdG8Tzm_wWMRLD1r_C5vg_x3jI_Q6J2Y,3191
+visread/visualization_casa.py,sha256=3v7P64KSPC-M72Uoe7-vQHPJtg0XaZc0vpFpsMvTDWU,3195
+visread-0.0.4.dist-info/METADATA,sha256=f4sOgoM_tS7RVzWYLehq7M6LbHLAZXQynQUetK3y9PY,2674
+visread-0.0.4.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+visread-0.0.4.dist-info/licenses/LICENSE,sha256=sTMciksinMjLq7AGWlYXe1HED8SGgdTDpmqWlYxFFyg,1065
+visread-0.0.4.dist-info/RECORD,,
