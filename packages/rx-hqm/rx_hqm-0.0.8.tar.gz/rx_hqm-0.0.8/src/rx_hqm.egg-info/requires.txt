@@ -1,0 +1,12 @@
+zfit
+hist
+mplhep
+awkward
+uproot>=5.1.2
+matplotlib
+logzero
+numpy
+jacobi
+rx_tools
+rx_monitor
+rx_scripts>=0.2.8
