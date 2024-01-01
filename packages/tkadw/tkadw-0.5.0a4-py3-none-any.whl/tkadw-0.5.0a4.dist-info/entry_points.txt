@@ -1,0 +1,3 @@
+[console_scripts]
+adwite=tkadw.adw:main
+
