@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: bashgpt
+Version: 0.3.0
+Summary: A cli tool for turning plain text into bash commands
+Home-page: https://github.com/whitew1994WW/bashgpt
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Bash GPT
+
+This is a simple bash script that uses OpenAI's GPT-4 to write bash commands to answer your questions. For instance see the below screenshots of the tool in action:
+
+![Example 1](./examples/example1.png)
+![Example 2](./examples/example2.png)
+![Example 3](./examples/example3.png)
+
+You can also pass the --explain parameter to give a reason why that command was chosen and what the output means:
+
+![Example 4](./examples/example4.png)
+
+## Installation
+
+You can either install from source or install direct from PyPi using:
+
+```bash
+pip install bash-gpt
+```
+
+## Deployment
+
+Give deploy.sh execution permissions with chmod +x deploy.sh, and then run it with ./deploy.sh.
