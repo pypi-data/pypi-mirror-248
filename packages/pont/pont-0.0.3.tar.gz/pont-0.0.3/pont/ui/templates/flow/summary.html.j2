@@ -1,0 +1,38 @@
+ {% extends "flow/flow.html.j2" %}
+
+{%block content%}
+<table class="table">
+    <tr>
+        <td>Start time</td>
+        <td>{{flow.start_time|format_datetime}}</td>
+    </tr>
+    <tr>
+        <td>Host</td>
+        <td>{{flow.host}}</td>
+    </tr>
+    <tr>
+        <td>Port</td>
+        <td>{{flow.port}}</td>
+    </tr>
+    <tr>
+        <td>Protocol</td>
+        <td>{{flow.protocol}}</td>
+    </tr>
+    <tr>
+        <td>Method</td>
+        <td>{{flow.method}}</td>
+    </tr>
+    <tr>
+        <td>Path</td>
+        <td>{{flow.path}}</td>
+    </tr>
+    <tr>
+        <td>Query</td>
+        <td>{{flow.query}}</td>
+    </tr>
+    <tr>
+        <td>Status</td>
+        <td>{{flow.status}}</td>
+    </tr>
+</table>
+{%endblock%}

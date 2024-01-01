@@ -1,0 +1,27 @@
+<div class="row gy-2">
+    <div class="col">
+        <input type="button" value="Format" onclick="formatCode()" class="btn btn-primary">
+    </div>
+    <div class="container-full">
+        <div id="render" class="col-12" style="height: 80vh;">
+            {{
+                rocher_editor(
+                    "render",
+                    language,
+                    content,
+                    minimap={ "enabled": True },
+                )
+            }}
+        </div>
+    </div>
+
+    <script>
+        function formatCode() {
+            require(["rocher_editor_render"],
+                function (editor) {
+                    editor.getAction("editor.action.formatDocument").run();
+                }
+            );
+        }
+    </script>
+</div>
