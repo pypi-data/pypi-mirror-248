@@ -1,0 +1,12 @@
+license.txt
+pyproject.toml
+structure.txt
+structures/modules/loyalty.egg-info/PKG-INFO
+structures/modules/loyalty.egg-info/SOURCES.txt
+structures/modules/loyalty.egg-info/dependency_links.txt
+structures/modules/loyalty.egg-info/top_level.txt
+structures/modules/this_module/__init__.py
+structures/modules/this_module/status_1.py
+structures/modules/this_module/_clique/__init__.py
+structures/modules/this_module/_clique/group/__init__.py
+structures/modules/this_module/_status/insurance.proc.py
