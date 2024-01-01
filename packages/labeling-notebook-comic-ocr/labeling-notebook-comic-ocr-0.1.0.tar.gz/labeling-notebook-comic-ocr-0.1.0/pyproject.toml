@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "labeling-notebook-comic-ocr"
+version = "0.1.0"
+description = "The `labeling-notebook` plugin for applying `comic-ocr` models."
+authors = ["Wanasit T"]
+license = "MIT License"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+comic-ocr = "^0.1.6"
+
+[tool.poetry.dev-dependencies]
+pytest="^6.2.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
