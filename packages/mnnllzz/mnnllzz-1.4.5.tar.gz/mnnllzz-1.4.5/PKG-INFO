@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: mnnllzz
+Version: 1.4.5
+Summary: Create randomized tests
+Home-page: UNKNOWN
+Author: Andrea Tomadin
+Author-email: andrea.tomadin@unipi.it
+License: MIT
+Description: UNKNOWN
+Keywords: TEST,EXAM
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
