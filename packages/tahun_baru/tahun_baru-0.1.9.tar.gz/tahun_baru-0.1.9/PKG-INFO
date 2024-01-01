@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: tahun_baru
+Version: 0.1.9
+Summary: Counting down new year time
+License: MIT
+Keywords: tahun_baru,tahun baru,tahun,aplikasi terminal,terminal,console,console app
+Author: harigro
+Author-email: trierbank@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Description-Content-Type: text/markdown
+
+# Aplikasi menghitung waktu mundur
+Aplikasi ini dibuat untuk menghitung waktu mundur tahun apa saja\
+khususnya untuk menghitung mundur tahun baru.
+
+## Instalasi
+```
+pip install tahun_baru
+```
+
+## Menjalakan aplikasi
+Setelah instalasi selesai ikuti perintah berikut
+```bash
+tahun_baru -f 2024-01-10
+```
+jika ingin menjalan aplikasi kamu harus memberikan argumen -f berupa format tahun.\
+Untuk mendapatkan informasi lebih lanjut ikuti perintah berikut
+```bash
+tahun_baru --help
+```
+
+## Pengembang
+Jika kesulitan dalam mengerjakan proyek, mengolah data atau mungkin tertarik dengan konten saya\
+bisa hubungi melalui :\
+Instagram : [gro_hari](https://www.instagram.com/gro_hari/)\
+Facebook : [gro_hari](https://www.facebook.com/people/Hari/100080744265288/)\
+Github : [gro_hari](https://github.com/harigro)
+
+
