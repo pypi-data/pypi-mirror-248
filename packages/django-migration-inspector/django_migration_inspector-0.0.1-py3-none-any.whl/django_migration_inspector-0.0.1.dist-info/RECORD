@@ -1,0 +1,12 @@
+inspector/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+inspector/apps.py,sha256=5fbiTt5o-cOS_pAZyPxN2WfdLQADEqbUJ7yvyoZ4ZSU,141
+inspector/utils.py,sha256=X3y4ACAVXC8gQif0dPzy4wO78E1b4BkhNxrqgo5_4W0,140
+inspector/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+inspector/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+inspector/management/commands/constants.py,sha256=QnLKGtuoScsL38l1mQ3NRVCuLtVVvsqTxtsvHVGN7Wo,402
+inspector/management/commands/inspectmigrations.py,sha256=oxZVNaBf1jZRa0eRzvOlT5WiNkfJ_AFIU7xFiiumYZA,2469
+django_migration_inspector-0.0.1.dist-info/LICENSE,sha256=sQDNF3R14KoPDooKMLV3PXs980bIGr9cbA7xK5Gm9JA,1533
+django_migration_inspector-0.0.1.dist-info/METADATA,sha256=0TlnId8cUZ8etWRkvPi0YTT5mlRSag0rwwfMiCioSo8,2239
+django_migration_inspector-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+django_migration_inspector-0.0.1.dist-info/top_level.txt,sha256=w08vxd-YQDjJYeJzIq6sqv8_Hm-7eR5vc3XVbe1C3SA,10
+django_migration_inspector-0.0.1.dist-info/RECORD,,
