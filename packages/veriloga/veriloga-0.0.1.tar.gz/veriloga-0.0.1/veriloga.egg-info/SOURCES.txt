@@ -1,0 +1,14 @@
+COPYING
+NOTICE
+README.md
+setup.cfg
+setup.py
+veriloga/__init__.py
+veriloga/adms_implicit.py
+veriloga/adms_loader.py
+veriloga/nstart.py
+veriloga/visitor.py
+veriloga.egg-info/PKG-INFO
+veriloga.egg-info/SOURCES.txt
+veriloga.egg-info/dependency_links.txt
+veriloga.egg-info/top_level.txt
