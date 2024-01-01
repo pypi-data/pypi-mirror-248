@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: python-tool-library
+Version: 0.0.1
+Summary: A library that contains convenient functions.
+Author-email: Shun Huang <shun@formosa1544.com>
+License: MIT License
+Project-URL: repository, https://github.com/burpeesDaily/python-tool-library
+Requires-Python: >=3.11
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+Python Tool Library
+===================
+
+A library that contains convenient tools and functions.
