@@ -1,0 +1,10 @@
+pgcs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pgcs/custom_select.py,sha256=AeBIXREkdJxJnFfU7LxFbP4wBxxboszYgcpiKoS0fo8,6672
+pgcs/main.py,sha256=1tm2ArAVJwZFL8iWqwfLm4_9v6tWAg9VLy9Eyw3WEPc,1405
+pgcs/preferences.py,sha256=KL6x3TzhUCJYEA9hT7qTwPPjlYQUT2HeJSLVwdGAIew,426
+pgcs/utils.py,sha256=rTsZ8qyGHXGP3c-Lpn7KSX792KGtm02huZuBJrZkiv4,329
+pgcs-0.1.1.dist-info/LICENSE,sha256=yDAGRbsikbiwNt9vCBzH0tOY3HAi2Q9NDcwkqGCQ29c,1065
+pgcs-0.1.1.dist-info/METADATA,sha256=2efC6QZwFnW2Rw2SZUDKWWDiQSu_eZDZv5UuPj6UvsM,3316
+pgcs-0.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+pgcs-0.1.1.dist-info/entry_points.txt,sha256=4hyuKuF6o5-y3_ggZwcb0nrc3uYpv6ha1g0129kKP70,37
+pgcs-0.1.1.dist-info/RECORD,,
