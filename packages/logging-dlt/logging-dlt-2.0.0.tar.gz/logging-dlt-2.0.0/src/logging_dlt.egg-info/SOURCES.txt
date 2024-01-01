@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/logging_dlt/__init__.py
+src/logging_dlt/adapter.py
+src/logging_dlt/protocol.py
+src/logging_dlt.egg-info/PKG-INFO
+src/logging_dlt.egg-info/SOURCES.txt
+src/logging_dlt.egg-info/dependency_links.txt
+src/logging_dlt.egg-info/requires.txt
+src/logging_dlt.egg-info/top_level.txt
+tests/test_adapter.py
+tests/test_protocol.py
