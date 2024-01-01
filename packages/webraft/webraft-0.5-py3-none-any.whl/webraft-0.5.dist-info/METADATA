@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: webraft
+Version: 0.5
+Summary: WebRaft is a Python library for creating and reading JSON Web Tokens, extracting user agent information, retrieving IP data, and creating and reading API keys.
+Home-page: UNKNOWN
+Author: mominiqbal1234
+Author-email: <mominiqbal1214@gmail.com>
+License: UNKNOWN
+Keywords: webraft,WebRaftpython,django,jwt,jwt for django,create api key,read api key,create token,read token,user agent django,ip info python,user agent python,jwt flask,jwt bottle,jwt fastapi
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: django
+Requires-Dist: djangorestframework
+Requires-Dist: PyJWT
+Requires-Dist: fastapi
+Requires-Dist: flask
+Requires-Dist: bottle
+Requires-Dist: cryptography
+Requires-Dist: user-agents
+Requires-Dist: django-user-agents
+
+
+# WebRaft
+
+creating and reading JSON Web Tokens, extracting user agent
+information, retrieving IP data, and creating and reading API keys
+
+# How to install webraft
+
+```python
+pip install webraft
+```
+# Documentation
+open Github repository for the WebRaft Python library. The link is included in the package's documentation to provide
+users with access to the source code and additional information about the library.
+<br>
+https://github.com/MominIqbal-1234/webraft
+
+
+
+Check Our Site : https://image.mefiz.com/ </br>
+Developed by : Momin Iqbal
+
+
+
