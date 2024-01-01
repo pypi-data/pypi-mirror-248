@@ -1,0 +1,13 @@
+idlemypyextension/__init__.py,sha256=jYSglZbnQzoChV7uCYPsKfyy0A3dby4cwpgSApAIWyw,38886
+idlemypyextension/annotate.py,sha256=41-lFUDDASHFMF_B4apkexNV50MvfNwUeqtS_AshHqg,31285
+idlemypyextension/ast_annotate.py,sha256=e3MkgWTQqEDFRO9ZFrjmorTaJz3heKLFfJPLQgzZkxk,18715
+idlemypyextension/client.py,sha256=d7Mr3ift4c8PR3eO7B3H6bueXcOMny6XcBV6xFZWoAA,18775
+idlemypyextension/moduleguard.py,sha256=H2z8tGOu6T_nsBF2K-ygp2yazaIRquqtLmw_cPUJxgI,5114
+idlemypyextension/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+idlemypyextension/tktrio.py,sha256=fkR2FO9jf9hhF9UQ7kGzXGz-f0deZoMft9o8sZdOXmE,12617
+idlemypyextension-0.2.7.dist-info/LICENSE,sha256=2T9cKoMqRu9mduvRhPJW2oF-NS-WjmFAvlcQkl2pU9I,11340
+idlemypyextension-0.2.7.dist-info/METADATA,sha256=urTP4a2nPNdZ_7V4tEH2EPStg5OCMu4pICbUT6GyaR8,18788
+idlemypyextension-0.2.7.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+idlemypyextension-0.2.7.dist-info/entry_points.txt,sha256=yQt-cmVqQglaxCBLaXLoaFkEtE_GkQbtyCyUIs166go,72
+idlemypyextension-0.2.7.dist-info/top_level.txt,sha256=qLZjypdz7FDRvpn-3B7dCQ2n0KtcTb-uFUBFdDfF620,18
+idlemypyextension-0.2.7.dist-info/RECORD,,
