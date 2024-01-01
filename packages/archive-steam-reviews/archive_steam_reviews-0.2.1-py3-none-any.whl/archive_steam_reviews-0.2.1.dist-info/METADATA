@@ -1,0 +1,96 @@
+Metadata-Version: 2.1
+Name: archive-steam-reviews
+Version: 0.2.1
+Summary: Scrape all Steam reviews from a specific profile
+Home-page: https://github.com/manuelgrabowski/archive-steam-reviews
+Author: Manuel Grabowski
+Author-email: git@manuelgrabowski.de
+Maintainer: Brie Carranza
+Maintainer-email: hi@brie.ninja
+License: MIT
+Project-URL: Source Code, https://github.com/manuelgrabowski/archive-steam-reviews
+Project-URL: Initial Release Post, https://log.manuelgrabowski.de/post/archive-steam-reviews/
+Project-URL: Issue Tracker, https://github.com/manuelgrabowski/archive-steam-reviews/issues
+Keywords: steam,review,video game
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Games/Entertainment
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: beautifulsoup4 ==4.12.2
+Requires-Dist: certifi ==2023.7.22
+Requires-Dist: charset-normalizer ==3.3.2
+Requires-Dist: idna ==3.4
+Requires-Dist: markdownify ==0.11.6
+Requires-Dist: python-dateutil ==2.8.2
+Requires-Dist: requests ==2.31.0
+Requires-Dist: six ==1.16.0
+Requires-Dist: soupsieve ==2.5
+Requires-Dist: urllib3 ==2.0.7
+
+========
+Overview
+========
+
+
+
+Scrape all Steam reviews from a specific profile
+
+This script uses BeautifulSoup to do some very basic web-scraping and retrieve the reviews for a given user account. The profile must be set to public visibility.
+
+* Free software: MIT license
+
+Installation
+============
+
+::
+
+    pip install archive-steam-reviews
+
+
+Usage
+=====
+
+By default it will only retrieve the first page of reviews, and print to stdout. As the review page is sorted by most recently changed, usually the ``--all`` switch is only be needed for an initial dump of all existing reviews. If more than ten reviews are published and/or edited between running the script, the parameter is needed to get all changes.
+
+When using ``--save``\ , each review will be stored in a text file named with the `Steam App ID <https://steamdb.info/apps/>`_ the review is for (unfortunately the game name itself is not available for scraping without an additional request). The file will have a `YAML frontmatter <https://gohugo.io/content-management/front-matter/>`_ with some metadata (Steam URL, playtime, date of review, …) and the review (converted to Markdown) as the post body. As such, it is ready for use in `Hugo <https://gohugo.io/>`_\ , similar static site generators or other purposes.
+
+
+
+
+Changelog
+=========
+
+0.2.1 (2023-12-31)
+------------------
+* 🍰 Now On PyPI
+
+With this release, `archive-steam-reviews` is now available on PyPI. You can install it with::
+
+  pip install archive-steam-reviews
+
+The functionality has not changed. 
+
+📦 Python packaging by `🦄 Brie <https://brie.dev>`_.
+
+0.1.0 (2023-10-28)
+------------------
+
+* First announced at https://log.manuelgrabowski.de/post/archive-steam-reviews/
