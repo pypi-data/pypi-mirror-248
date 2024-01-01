@@ -1,0 +1,14 @@
+pyia/__init__.py,sha256=_mYaXfiC6g-qU58h4ODCANw2H-VP1KnieSXiprOjm-M,277
+pyia/_version.py,sha256=mcG9KdSEcflCnNa2c534AT_PBr7fzMNm38O1LvPiEzE,406
+pyia/_version.pyi,sha256=o7uNL6MhuJoiqpEnriU7rBT6TmkJZA-i2qMoNz9YcgQ,82
+pyia/data.py,sha256=ryQoVnkNZO3TWn0G-3edvyUtH9P1ejeGR1SfhhA4n90,33832
+pyia/extinction.py,sha256=w8i6ucuHQKBag2ci1XFoNUHtTfd10Lfrs0LqAtA5FTI,2167
+pyia/setup_package.py,sha256=KRZgz4WjSiEXISQvuykR2ghu1H_ou-o6XRSwVZvTRYI,112
+pyia/data/readme.txt,sha256=wo7z4N7WcU61MbhM3o-f0ESTVsUPQ0pV3eeL1sfEE8o,1482
+pyia/data/table_u0_2D.txt,sha256=curFyaSCriS1zoRLez-Hktd9Y6EEEKWOLwD_XdzI-jo,1782073
+pyia/data/table_u0_g.txt,sha256=2GDjqyzlBhy-0JG8ikK_Kr6iOWzYUZHWGWprwt0JiUw,32502
+pyia/data/table_u0_g_col.txt,sha256=EmokkfzZdkxRPSQDA8FuyyOVMAos-V1wUbLoRkZMj7U,5375015
+pyia-1.4.dist-info/METADATA,sha256=S-yJgTfH0xLrlwMGrKGgIQt59MgpdQSCalOymYmqmQM,5744
+pyia-1.4.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+pyia-1.4.dist-info/licenses/LICENSE,sha256=mbzpiPtzOJ0GP3eS9EzXVG3m5I065Xfduc5ksl1wWVk,1059
+pyia-1.4.dist-info/RECORD,,
