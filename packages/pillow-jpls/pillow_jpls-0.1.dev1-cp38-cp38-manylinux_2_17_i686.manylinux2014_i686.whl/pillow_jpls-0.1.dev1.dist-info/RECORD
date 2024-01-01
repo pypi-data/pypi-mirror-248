@@ -1,0 +1,10 @@
+pillow_jpls-0.1.dev1.dist-info/WHEEL,sha256=wnywiJu8BSy2qRUavv94OKcf4R7P6O3UPXsLsImNlZU,147
+pillow_jpls-0.1.dev1.dist-info/RECORD,,
+pillow_jpls-0.1.dev1.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pillow_jpls-0.1.dev1.dist-info/METADATA,sha256=sZrwaeL89MsXZZ9Hoy-3gGcGyknNRLxnq3wp6GzSaYM,3153
+pillow_jpls-0.1.dev1.dist-info/licenses/LICENSE.md,sha256=QFaqDXlodCjXW-2vDzk7A1yuth_o5YoFafTFDDDQ8ak,1459
+pillow_jpls/_pycharls.cpython-38-i386-linux-gnu.so,sha256=JtIuiZ5edyv6JgzzRWCVVeyehpCSM6coHiueUgOHqFc,834160
+pillow_jpls/jpls_image_file.py,sha256=u1-A-bAVeI7pNFl0GSZID3h359pEhcRFdvwnDa_7WmI,2695
+pillow_jpls/jpls_image_decoder.py,sha256=avcvx_3DEA4jELYDPFJdM8XePFK7rGMBBQnl280GwqY,783
+pillow_jpls/__init__.py,sha256=zNEepINvHPWKRDzAjJWrP52EU4zDUTkB69xtzBapnik,574
+pillow_jpls/jpls_image_encoder.py,sha256=8e3oyWeKcZXVHpEyXfWrEBDBWh4kcSFp_IlM3u3EluM,2629
