@@ -1,0 +1,43 @@
+[build-system]
+requires = [
+    "ninja",
+    "pybind11~=2.11.1",
+    "conan~=2.0.16",
+    "scikit-build-core",
+]
+build-backend = "scikit_build_core.build"
+
+[project]
+name="pillow-jpls"
+dynamic = ["version"]
+description="A JPEG-LS plugin for the Pillow imaging library"
+readme="README.md"
+authors=[{ "name" = "Andrew Marshall", "email" = "andrew@algodynamic.com"}]
+urls={"github" = "https://github.com/planetmarshall/pillow-jpls"}
+license={"text" = "BSD-3-Clause"}
+requires-python=">=3.7"
+dependencies=[
+  "Pillow"
+]
+
+[tool.scikit-build]
+metadata.version.provider = "scikit_build_core.metadata.setuptools_scm"
+minimum-version = "0.7"
+cmake.minimum-version = "3.24"
+cmake.args=["--preset conan"]
+
+[tool.setuptools_scm]
+fallback_version = "1.3.2"
+
+[tool.cibuildwheel]
+build-frontend = "build"
+skip = "pp* *-musllinux* cp312-win32 cp312-manylinux_i686"
+before-build = "pip install Pillow --only-binary=:all:"
+test-requires = "pytest numpy"
+before-test = "pip install Pillow --only-binary=:all:"
+test-command = "pytest -v {project}/test"
+build-verbosity = 1
+test-skip = "*-macosx_arm64"
+
+[tool.cibuildwheel.macos]
+archs = "x86_64 arm64"

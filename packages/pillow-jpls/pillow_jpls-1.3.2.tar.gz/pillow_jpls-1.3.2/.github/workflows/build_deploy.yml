@@ -1,0 +1,191 @@
+name: CI
+
+on:
+  push:
+  schedule:
+    - cron: '0 0 1 * *'
+
+  workflow_dispatch:
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  static_analysis:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+
+      - name: Static Analysis
+        run: |
+          python -m pip install --upgrade pip
+          pip install flake8
+          flake8 --count --max-line-length=120 --statistics pillow_jpls
+
+  build_wheels:
+    name: Build wheels on ${{ matrix.os }} (${{ matrix.pyversion }}, ${{ matrix.arch }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ ubuntu-22.04, windows-2022, macos-12 ]
+        pyversion: [ cp38, cp39, cp310, cp311, cp312 ]
+        arch: [ auto32, auto64, aarch64, arm64 ]
+        exclude:
+          - os: macos-12
+            arch: auto32
+          - os: macos-12
+            arch: aarch64
+          - os: windows-2022
+            arch: arm64
+          - os: windows-2022
+            arch: aarch64
+          - os: ubuntu-22.04
+            arch: arm64
+          - pyversion: cp312
+            arch: auto32
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup MSVC tools
+        if: matrix.os == 'windows-2022'
+        uses: ilammy/msvc-dev-cmd@v1
+        with:
+          arch: ${{ matrix.arch == 'auto64' && 'amd64' || 'amd64_x86' }}
+
+      - name: Install QEMU for Arm builds
+        if: matrix.arch == 'aarch64'
+        uses: docker/setup-qemu-action@v3
+        with:
+          platforms: arm64
+
+      - name: Build wheels
+        uses: pypa/cibuildwheel@v2.16.2
+        env:
+          CIBW_BUILD: "${{ matrix.pyversion }}-*"
+          CIBW_ARCHS: "${{ matrix.arch }}"
+          CIBW_ENVIRONMENT_PASS_LINUX: SETUPTOOLS_SCM_OVERRIDES_FOR_PILLOW_JPLS
+          # Pybind std::variant support requires 10.14+
+          MACOSX_DEPLOYMENT_TARGET: 10.15
+          SETUPTOOLS_SCM_OVERRIDES_FOR_PILLOW_JPLS: 'local_scheme = "no-local-version"'
+
+      - name: Upload wheel files
+        uses: actions/upload-artifact@v3
+        with:
+            path: ./wheelhouse/*.whl
+
+  build_wheel_sysdeps:
+    name: Build wheel using system dependencies
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: install prerequisites
+        run: |
+          sudo apt-get install \
+            libcharls-dev \
+            libfmt-dev \
+            libeigen3-dev \
+            pybind11-dev
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+
+      - name: install python requirements
+        run: |
+          pip install --user -r requirements.txt build
+
+      - name: build and install wheel
+        run: |
+          python -m build -C cmake.args="--preset sysdeps"
+          pip install dist/*.whl
+
+      - name: test the wheel
+        run: |
+          pytest -v test/
+
+  make_sdist:
+    name: Make SDist
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+
+      - name: Install build
+        run: pip install --user build
+
+      - name: Build SDist
+        env:
+          SETUPTOOLS_SCM_OVERRIDES_FOR_PILLOW_JPLS: 'local_scheme = "no-local-version"'
+        run: python -m build --sdist
+
+      - uses: actions/upload-artifact@v3
+        with:
+          path: dist/*.tar.gz
+
+  deploy_pypi:
+    name: Deploy to PyPi
+    if: github.ref_type == 'tag'
+    needs: 
+      - static_analysis
+      - build_wheels
+      - make_sdist
+    runs-on: ubuntu-22.04
+    environment:
+      name: pypi
+      url: https://pypi.org/p/pillow-jpls
+    permissions:
+      id-token: write
+    steps:
+      - name: Download artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: artifact
+          path: dist
+
+      - name: Publish distribution to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+
+  deploy_test_pypi:
+    name: Deploy to TestPyPi
+    needs: 
+      - static_analysis
+      - build_wheels
+      - make_sdist
+    runs-on: ubuntu-22.04
+    environment:
+      name: testpypi
+      url: https://pypi.org/p/pillow-jpls
+    permissions:
+      id-token: write
+    steps:
+      - name: Download artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: artifact
+          path: dist
+
+      - name: Publish distribution to TestPyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          repository-url: https://test.pypi.org/legacy/

@@ -1,0 +1,22 @@
+# Common build folder locations
+build
+cmake-build-*
+
+# Python
+_skbuild
+.venv
+*.egg-info
+**/__pycache__
+.ipynb_checkpoints
+MANIFEST.in
+dist
+
+
+# Binaries
+*.so
+
+# IDE files
+.idea
+
+# Vim backup files
+.*~
