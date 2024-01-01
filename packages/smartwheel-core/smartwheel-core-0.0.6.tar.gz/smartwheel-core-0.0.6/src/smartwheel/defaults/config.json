@@ -1,0 +1,148 @@
+{
+    "window": {
+        "geometry": [
+            120,
+            150,
+            420,
+            420
+        ],
+        "padding": 10
+    },
+    "canvas": {
+        "modules": [
+            {
+                "name": "ui.wheel",
+                "config": "wheel.json",
+		        "title": "Wheel",
+		        "description": "Main wheel module, cannot be disabled"
+            },
+            {
+                "name": "ui.media",
+                "config": "media.json",
+		        "title": "Media",
+		        "description": "Control music/volume",
+		        "registry": "ui_media"
+            },
+            {
+                "name": "ui.hue",
+                "config": "hue.json",
+		        "title": "Color picker",
+		        "description": "HSL wheel picker"
+            },
+            {
+                "name": "ui.midi",
+                "config": "midi.json",
+		        "title": "MIDI device simulator",
+		        "description": "Use your picker as a MIDI device",
+                "registry": "ui_midi"
+            }
+        ],
+        "wheelModules": [
+            {
+                "name": "ui.media"
+            },
+            {
+                "name": "ui.folder",
+                "config": "folder.json",
+                "modules": [
+                    {
+                        "name": "ui.media"
+                    }
+                ]
+            },
+            {
+                "name": "ui.hue"
+            },
+            {
+                "name": "ui.midi"
+            }
+        ],
+        "internalModules": [
+            {
+                "name": "ui.internal.krita_server",
+                "config": "internal/krita_server.json"
+            },
+            {
+                "name": "ui.internal.krita_api"
+            }
+        ],
+        "serialModules": [
+            {
+                "name": "serialpipe.serial",
+                "config": "serial.json",
+                "title": "Serial",
+                "description": "Serial keyboard/encoder",
+		        "handler": "serialmodule",
+		        "registry": "serialmodule"
+            },
+            {
+                "name": "serialpipe.keyboard",
+                "config": "keyboard.json",
+                "title": "Simple keyboard",
+                "description": "Basic keyboard input from window"
+            },
+            {
+                "name": "serialpipe.bgkeyboard",
+                "config": "bgkeyboard.json",
+                "title": "Background keyboard",
+                "description": "System-wide keyboard listener"
+            }
+        ],
+        "actionModules": [
+            {
+                "name": "actions.custom"
+            },
+            {
+                "name": "actions.keypress"
+            }
+        ],
+        "wheelActionModules": [
+            {
+                "name": "actions.wheel.module"
+            },
+            {
+                "name": "actions.wheel.wheel"
+            }
+        ],
+        "modulesLoad": [
+            0,
+	        1,
+            2,
+            3
+        ],
+        "internalModulesLoad": [
+            0,
+            1
+        ],
+        "serialModulesLoad": [
+            0,
+            2
+        ],
+        "actionModulesLoad": [
+            0,
+            1
+        ],
+        "wheelActionModulesLoad": [
+            0,
+            1
+        ],
+        "commonConfig": "common.json",
+        "actionEngineConfig": "actionengine.json",
+        "fps": 60,
+        "stabilizeFPS": true,
+        "enableSleep": true,
+        "fpsFramesSmooth": 10,
+        "logFPS": false,
+        "logging": "INFO",
+        "brushes_dir": "backgrounds",
+        "cacheDir": "cache",
+	    "settingsIcon": "settings.svg",
+	    "serialConfigDir": "serial",
+	    "closeIcon": "close.svg",
+	    "toolsIconColor": "#000000",
+	    "toolsBackgroundColor": "#ffffff"
+    },
+    "presets": {
+        "appearance": "Polar"
+    }
+}
