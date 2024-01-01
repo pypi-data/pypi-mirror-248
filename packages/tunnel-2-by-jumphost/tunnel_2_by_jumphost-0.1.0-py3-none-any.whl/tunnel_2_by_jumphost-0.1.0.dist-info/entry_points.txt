@@ -1,0 +1,3 @@
+[console_scripts]
+my_script=tunnel_2_by_jumphost.tunnel_2_by_jumphost
+
