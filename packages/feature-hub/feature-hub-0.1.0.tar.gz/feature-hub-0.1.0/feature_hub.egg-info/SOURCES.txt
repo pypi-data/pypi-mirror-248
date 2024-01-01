@@ -1,0 +1,6 @@
+README.md
+setup.py
+feature_hub.egg-info/PKG-INFO
+feature_hub.egg-info/SOURCES.txt
+feature_hub.egg-info/dependency_links.txt
+feature_hub.egg-info/top_level.txt

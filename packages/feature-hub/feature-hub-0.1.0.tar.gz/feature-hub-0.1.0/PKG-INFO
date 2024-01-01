@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: feature-hub
+Version: 0.1.0
+Home-page: https://github.com/money-man-inc/feature-hub
+Author: kody
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+
+# feature-hub
+
+
+## upload
+1. `pip install twine`
+2. `python setup.py sdist`
+3. `twine upload --repository-url `
