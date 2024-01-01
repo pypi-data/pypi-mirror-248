@@ -1,0 +1,13 @@
+langstring/__init__.py,sha256=BPvsw86DhsMSwocwySDk-Yillew0UlBXODeB_T6ProM,681
+langstring/langstring.py,sha256=q5TgVTck5AHu2d-fNlc2rrCzIqwtY4uyamTpEHVum_o,5233
+langstring/langstring_control.py,sha256=Md29KnWLfkpQ3xifMhSAE7Y5DjjizAg7tVoFwMoO-Nw,4801
+langstring/multilangstring.py,sha256=o9HRBZq8SIWhwPX3Sw-6N5ZYGp6LxGNSSuNklsKUeGk,20007
+langstring/multilangstring_control.py,sha256=59m8yEcD66drtlB0kbNkjSxi2jQwFml8irtC0AuLjhA,4751
+langstring/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+langstring/utils/__init__.py,sha256=8t-1M5pXujlFfgc761rKb40aMhbEfLXvoNwSwFzSPnQ,216
+langstring/utils/controls_base.py,sha256=9sdLm2WSyrSFjh3-li6h3XDTxo1Hf8Zm_l3jqdw_w04,10201
+langstring/utils/validation_base.py,sha256=rKX-zTAZQc6yZUdxoeyxEi3VQxHBZsRGkveZr_0Wm2A,6725
+langstring-2.0.0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+langstring-2.0.0.dist-info/METADATA,sha256=NUqrHsEyP9dS1QZXqUNjJUu8Ghl_EEijCF9GkjbiT3M,47391
+langstring-2.0.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+langstring-2.0.0.dist-info/RECORD,,
