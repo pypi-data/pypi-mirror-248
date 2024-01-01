@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: timeliner
+Version: 0.0
+Summary: Tool for timelines
+Author-email: Nate Skulic <nate.skulic@gmail.com>
+License: Copyright (c) 2023 Nate Skulic
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# Patch Folder File Format
+

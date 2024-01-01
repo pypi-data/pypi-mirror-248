@@ -1,0 +1,7 @@
+LICENSE.md
+README.md
+pyproject.toml
+timeliner.egg-info/PKG-INFO
+timeliner.egg-info/SOURCES.txt
+timeliner.egg-info/dependency_links.txt
+timeliner.egg-info/top_level.txt
