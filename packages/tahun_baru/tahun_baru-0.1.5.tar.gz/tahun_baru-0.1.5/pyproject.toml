@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "tahun_baru"
+version = "0.1.5"
+description = "Counting down new year time"
+authors = ["harigro <trierbank@gmail.com>"]
+readme = "README.md"
+license = "MIT License"
+keywords = ["tahun_baru", "tahun baru", "tahun", "aplikasi terminal", "terminal", "console", "console app"]
+classifiers=[
+        "Development Status :: 5 - Production/Stable",
+        "Environment :: Console",
+        "Programming Language :: Python",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3 :: Only",
+        "Programming Language :: Python :: 3.10",
+        "License :: OSI Approved :: MIT License",
+    ]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.1.7"
+
+[tool.poetry.scripts]
+tahun_baru = "tahun_baru.tahun_baru:hitung_mundur"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
