@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: kasa-carbon
+Version: 0.0.1
+Summary: Monitor energy and carbon values from Kasa smart plug
+Author-email: Scott Chamberlin <scott@snowymountainworks.com>
+Project-URL: Homepage, https://github.com/scottcha/kasa_carbon
+Project-URL: Issues, https://github.com/scottcha/kasa_carbon/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: python-kasa ==0.5.4
+Requires-Dist: pytest ==7.4.0
+Requires-Dist: pytest-asyncio ==0.21.1
+Requires-Dist: psycopg2-binary ==2.9.9
+Requires-Dist: asyncpg ==0.29.0
+Requires-Dist: pytz ==2023.3.post1
+Requires-Dist: aiohttp ==3.9.1
+
+# kasa_carbon
+Show CO2 emissions of devices connected to a Kasa energy meter.
