@@ -1,0 +1,7 @@
+numpy==1.23.3
+scikit-learn
+sympy
+pybind11
+
+[test]
+pytest
