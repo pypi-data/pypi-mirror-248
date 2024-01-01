@@ -1,0 +1,3 @@
+sse-starlette
+transformers
+vllm==0.2.6
