@@ -1,0 +1,7 @@
+setup.py
+fitting_image/__init__.py
+fitting_image.egg-info/PKG-INFO
+fitting_image.egg-info/SOURCES.txt
+fitting_image.egg-info/dependency_links.txt
+fitting_image.egg-info/requires.txt
+fitting_image.egg-info/top_level.txt
