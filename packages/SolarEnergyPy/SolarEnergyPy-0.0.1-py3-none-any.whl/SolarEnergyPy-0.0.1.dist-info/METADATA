@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: SolarEnergyPy
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Liqun He
+Author-email: heliqun2007@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: VisualShape3D
+Requires-Dist: matplotlib
+
+# SolarEnergyPy
+
+## About SolarEnergyPy
+
+SolarEnergyPy is for education purpose where one can have fundamental information of solar energy.
+
+## Basic Information
+- Solar constant.
+- Solar position relative to a site on Earth in terms of lattitude, longitude and datetime.
+- Instant solar radiation on outer edge of atmosphere as well as beam and diffusion on Earth.
+- Spectral radiation map. 
+
+## Requirements
+
+* [Python](http://www.python.org) 3 
+* Matplotlib is needed.
+
+## Documentation
+
+To be continued.
+
+## Installation
+```bash
+pip install SolarEnergyPy
+```
+
+## Usage
+
+See Documentations
+
+## Change Log
+
+[changelog.md](changelog.md)
+
+## License
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+## Contact
+heliqun@ustc.edu.cn
+
+
+
