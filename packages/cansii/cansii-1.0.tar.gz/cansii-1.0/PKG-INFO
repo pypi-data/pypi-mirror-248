@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: cansii
+Version: 1.0
+Summary: A Python library for terminal text colorization using ANSI escape codes.
+Home-page: https://github.com/JuanPerdomo00/CAnsii
+Author: Jakepys Perdomo
+Author-email: perdomojuan187@gmail.com
+License: GPL-3.0
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Cansii
+
+Cansii is a Python library that enables easy text colorization in the terminal using ANSI escape codes. It provides support for a variety of colors, styles, and combinations to enhance terminal output.
+
+## Installation
+
+There's no specific installation required. Use the provided class methods to format your text with ANSI escape codes for display in the terminal.
+
+## Usage
+
+```python
+from cansii import Cansii
+
+# Applying colors
+print(Cansii.red("This is red text"))
+print(Cansii.blue("This is blue text"))
+
+# Applying styles
+print(Cansii.bold("This is bold text"))
+print(Cansii.underline("This is underlined text"))
+
+# Applying combinations
+print(Cansii.red_bold("This is red and bold text"))
+print(Cansii.green_underline("This is green and underlined text"))
+```
+## License
+
+This project is licensed under the GNU General Public License v3.0. View the LICENSE file for further details.
+
+
