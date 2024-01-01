@@ -1,0 +1,37 @@
+license.txt
+pyproject.toml
+structure.txt
+structures/modules/loyal/__init__.py
+structures/modules/loyal.egg-info/PKG-INFO
+structures/modules/loyal.egg-info/SOURCES.txt
+structures/modules/loyal.egg-info/dependency_links.txt
+structures/modules/loyal.egg-info/top_level.txt
+structures/modules/loyal/"agenda v1"/core values.r.html
+structures/modules/loyal/"agenda v1"/governance.r.html
+structures/modules/loyal/"agenda v1"/priorities.html
+structures/modules/loyal/_clique/__init__.py
+structures/modules/loyal/_clique/group/__init__.py
+structures/modules/loyal/_status/__init__.py
+structures/modules/loyal/_status/insurance.proc.py
+structures/modules/loyal/_status/guarantees/status_1_generator/status_1.py
+structures/modules/loyal/_status/guarantees/status_2_generators/status_1.py
+structures/modules/loyal/_status/guarantees/status_3_sign_and_verify/status_1.py
+structures/modules/loyal/modules/ED448/clique.py
+structures/modules/loyal/modules/ED448/_seed_phrase/2048.r.html
+structures/modules/loyal/modules/ED448/_seed_phrase/seed phrase.r.html
+structures/modules/loyal/modules/ED448/private/creator.py
+structures/modules/loyal/modules/ED448/private/read.py
+structures/modules/loyal/modules/ED448/private/scan.py
+structures/modules/loyal/modules/ED448/private/SEED/SPLIT.py
+structures/modules/loyal/modules/ED448/public/BUILD.py
+structures/modules/loyal/modules/ED448/public/SCAN.py
+structures/modules/loyal/modules/ED448/public/creator.py
+structures/modules/loyal/modules/ED448/sign/__init__.py
+structures/modules/loyal/modules/ED448/vouch/__init__.py
+structures/modules/loyal/modules/QR/__init__.py
+structures/modules/loyal/node/clique.py
+structures/modules/loyal/node/flask/__init__.py
+structures/modules/loyal/node/flask/start_dev.py
+structures/modules/loyal/node/flask/start_gunicorn.py
+structures/modules/loyal/node/mongo/__init__.py
+structures/modules/loyal/security/certificates/proposal/build.py
