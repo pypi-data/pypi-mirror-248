@@ -1,0 +1,2 @@
+[console_scripts]
+archive-steam-reviews = archive_steam_reviews.cli:main
