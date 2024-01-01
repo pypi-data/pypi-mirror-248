@@ -1,0 +1,9 @@
+llmdataset/__init__.py,sha256=uiTnXN38gcqGZpLug-PD71P6XBunN4THN07a23766og,29
+llmdataset/dataset/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+llmdataset/dataset/gsm8k.py,sha256=IRM4KzaeFGZ_7ePFjV--Xc1tnNZ_RoBGyOrMgITrE1Q,981
+llmdataset/dataset/multiarith.py,sha256=QZDznoS5KrMUm0HtXu8tLnDXzRIpqLZRUIuw-6D4xuA,981
+llmdataset/main.py,sha256=jp3EhhrtXX41xoEKoFK3DX6R8TlUFeOKtFFAYu2Snhw,1921
+llmdataset-0.1.3.dist-info/LICENSE,sha256=RqTxixn51-XuMV7yLhU_Mmom5YhbBqjfnHTGqf5lTro,1068
+llmdataset-0.1.3.dist-info/METADATA,sha256=__jC86GANp7slco9kjWqQN3a7VuJBLZ1FaF_5EpQebg,520
+llmdataset-0.1.3.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+llmdataset-0.1.3.dist-info/RECORD,,
