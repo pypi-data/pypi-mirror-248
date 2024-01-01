@@ -1,0 +1,8 @@
+ast_torch/__init__.py,sha256=LQHuyHbsWs7hs1EjCTurY1M6i-ClTv6FAbyvzuQLY6Q,78
+ast_torch/attention.py,sha256=uH7sXM-4Xs5eHLOZslNhSrm-0kkt-KTHZHG1kSRE80M,8258
+ast_torch/blocks.py,sha256=oBBxNjJQpnfFqhDQmd07eTDLCL54M823akX2eReq7As,602
+ast_torch/model.py,sha256=_gATiGtaqXLv7s3Ro9qfWLNw9_5MVDqIuBKq_xJxHqQ,4784
+ast_torch-0.0.5.dist-info/LICENSE,sha256=GHYD0Vn7cqu6O1FibXB1ix_cx8js09uZI1rKjCjW5sY,1074
+ast_torch-0.0.5.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+ast_torch-0.0.5.dist-info/METADATA,sha256=2FO1WW_vrSsLBpJnc40mdQ0Mo7541qxJVAAnAgUX8K0,2174
+ast_torch-0.0.5.dist-info/RECORD,,
