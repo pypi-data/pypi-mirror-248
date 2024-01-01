@@ -1,0 +1,23 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "timefmt"
+dynamic = ["version", "description"]
+readme = "README_pypi.md"
+license= {file = "LICENSE"}
+authors = [
+    {name = "Ella Jameson", email = "ellagjameson@gmail.com"}
+]
+
+classifiers = []
+dependencies = [
+    "onecondition >=0.3.0"
+]
+
+[project.urls]
+homepage = "https://github.com/nimaid/python-timeformat"
+repository = "https://github.com/nimaid/python-timeformat"
+documentation = "https://timefmt.readthedocs.io/en/latest/index.html"
+issues = "https://github.com/nimaid/python-timeformat/issues"
