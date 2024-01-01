@@ -1,0 +1,11 @@
+sydney/__init__.py,sha256=AS6sD-qEq9m4h-AB7KD9PhCiIAwK6iilswynIvUFXQU,33
+sydney/constants.py,sha256=dl9suf7if7iliQ5VruwKM5i1oZxYkCHjhMQKq1t8N8M,1981
+sydney/dtos.py,sha256=41zxQvtoTP-dSP02PnBgybjpivf0GAoEGLIZOJ6n4r0,210
+sydney/enums.py,sha256=MAI1-0SVW6J9hq5zlhGRgCWscdLMExJEe60hJyCPsPs,4907
+sydney/exceptions.py,sha256=LUf3Im0-gOAJpblj1DjMBLdAU_G78IODvH0q0PsRTGw,482
+sydney/sydney.py,sha256=hvBvC2Qc-55ax_p8MJjTmKBaGqctbuapSS6lXnjFsqY,32697
+sydney/utils.py,sha256=tVvvIGYZAAVQsmkB4N5B_QxdqR9cHNO2jMH76DqoTV0,670
+sydney_py-0.20.1.dist-info/LICENSE,sha256=FF7z2YMw9zP8XxqUCTSql8Uzz5frtQktKunhQLJGcVg,1064
+sydney_py-0.20.1.dist-info/METADATA,sha256=XBpdpNbnPakNjl5uZWEN2uuL-K41fCfZB2n7QsNH3aU,11434
+sydney_py-0.20.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+sydney_py-0.20.1.dist-info/RECORD,,
