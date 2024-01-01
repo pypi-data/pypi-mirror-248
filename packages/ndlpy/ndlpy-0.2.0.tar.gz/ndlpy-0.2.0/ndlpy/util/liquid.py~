@@ -1,0 +1,18 @@
+import liquid as pl
+
+def load_template_env(ext=".md"):
+    """
+    Load in the templates to be used for lists.
+
+    :param ext: The extension of the templates to be loaded.
+    :type ext: str
+    :return: The template environment.
+    :rtype: liquid.Environment
+    
+    """
+    # Having trouble getting the template_path to contain multiple pats, so just providing one for the moment. See https://jg-rp.github.io/liquid/api/fileextensionloader
+    template_path = [
+        os.path.join(os.path.dirname(__file__), "templates"),
+    ]
+    env = pl.Environment(loader=pl.loaders.FileExtensionLoader(search_path=template_path, ext=ext))
+    return env
