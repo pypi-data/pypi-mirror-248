@@ -1,0 +1,8 @@
+README.md
+setup.py
+remote_graphcast/__init__.py
+remote_graphcast.egg-info/PKG-INFO
+remote_graphcast.egg-info/SOURCES.txt
+remote_graphcast.egg-info/dependency_links.txt
+remote_graphcast.egg-info/requires.txt
+remote_graphcast.egg-info/top_level.txt
