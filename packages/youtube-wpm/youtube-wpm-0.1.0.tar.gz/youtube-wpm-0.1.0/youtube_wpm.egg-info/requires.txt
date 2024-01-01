@@ -1,0 +1,9 @@
+humanreadable<1,>=0.3
+loguru<1,>=0.4.1
+pytablewriter<2,>=1.2
+pytube<16,>=11
+youtube-transcript-api<1,>=0.5
+
+[test]
+pytest>=6.0.1
+pytest-md-report>=0.5
