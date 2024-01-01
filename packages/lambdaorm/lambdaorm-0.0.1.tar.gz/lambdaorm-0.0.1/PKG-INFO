@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: lambdaorm
+Version: 0.0.1
+Summary: LambdaORM Client for Python
+Home-page: https://github.com/lambda-orm/lambdaorm-client-kotlin
+Download-URL: https://github.com/lambda-orm/lambdaorm-client-kotlin
+Author: Flavio Lionel Rita
+Author-email: flaviolrita@proton.me
+License: MIT
+Keywords: orm,lambdaorm,lambda,orm-client,orm-client-python
+License-File: LICENSE

@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+lambdaorm/__init__.py
+lambdaorm/application.py
+lambdaorm/domain.py
+lambdaorm/infrastructure.py
+lambdaorm/test_execute.py
+lambdaorm.egg-info/PKG-INFO
+lambdaorm.egg-info/SOURCES.txt
+lambdaorm.egg-info/dependency_links.txt
+lambdaorm.egg-info/requires.txt
+lambdaorm.egg-info/top_level.txt
