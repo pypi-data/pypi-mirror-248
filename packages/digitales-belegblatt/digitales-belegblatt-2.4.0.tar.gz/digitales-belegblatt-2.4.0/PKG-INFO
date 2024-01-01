@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: digitales-belegblatt
+Version: 2.4.0
+Summary: Implementation of Digitales Belegblatt.
+Home-page: https://github.com/simulate-digital-rail/Digitales-Belegblatt.git
+Author: Dirk Friedenberger
+Author-email: projekte@frittenburger.de
+License: GPLv3
+Description-Content-Type: text/markdown
+Requires-Dist: svgwrite
+
+# Digitales Belegblatt
+
+
+## Installation
+
+
+## Usage
+
+
+
+### Test
+```
+python -m pytest
+```
+
+![Belegblatt](./belegblatt.svg)
+
+
