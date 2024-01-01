@@ -1,0 +1,15 @@
+{
+  "jupyter.lab.shortcuts": [],
+  "title": "@datalayer/run",
+  "description": "@datalayer/run settings.",
+  "type": "object",
+  "properties": {
+    "showInLauncher": {
+      "title": "Show Datalayer Run in the launcher",
+      "description": "Show Datalayer Run in the launcher",
+      "default": true,
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": false
+}

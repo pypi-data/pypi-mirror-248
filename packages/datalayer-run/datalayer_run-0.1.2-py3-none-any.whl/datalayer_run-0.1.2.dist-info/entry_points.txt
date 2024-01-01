@@ -1,0 +1,3 @@
+[console_scripts]
+datalayer-operator = datalayer_run.application:main
+datalayer-operator-server = datalayer_run.serverapplication:main
