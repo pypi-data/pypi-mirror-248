@@ -1,0 +1,6 @@
+setuptools
+-r requirements.txt
+wheel
+pytest
+coverage
+flake8
