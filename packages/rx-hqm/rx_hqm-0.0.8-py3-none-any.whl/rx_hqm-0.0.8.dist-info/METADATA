@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: rx-hqm
+Version: 0.0.8
+Summary: Project used to extract fitting model in high-q2 bin
+Requires-Dist: zfit
+Requires-Dist: hist
+Requires-Dist: mplhep
+Requires-Dist: awkward
+Requires-Dist: uproot >=5.1.2
+Requires-Dist: matplotlib
+Requires-Dist: logzero
+Requires-Dist: numpy
+Requires-Dist: jacobi
+Requires-Dist: rx-tools
+Requires-Dist: rx-monitor
+Requires-Dist: rx-scripts >=0.2.8
+
