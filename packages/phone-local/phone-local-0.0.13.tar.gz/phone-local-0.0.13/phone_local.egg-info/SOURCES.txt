@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+phone_local.egg-info/PKG-INFO
+phone_local.egg-info/SOURCES.txt
+phone_local.egg-info/dependency_links.txt
+phone_local.egg-info/requires.txt
+phone_local.egg-info/top_level.txt
+phone_local/src/__init__.py
+phone_local/src/phone_local_constans.py
+phone_local/src/phones_local.py
