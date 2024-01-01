@@ -1,0 +1,14 @@
+mysql_to_sqlite3/__init__.py,sha256=4s3m0k44tqL0w7XcKcDF89T25CW0U9l1O_elraV9Dys,117
+mysql_to_sqlite3/cli.py,sha256=OQivl1ivjfiI3Z6K1v8AP3s92-mW9l8dcPL_82ZyS6g,5945
+mysql_to_sqlite3/click_utils.py,sha256=HV7qanSZVazkdD1QkzevMOa3v_2AoF4pFcJUGM-AEy8,2661
+mysql_to_sqlite3/debug_info.py,sha256=25nCqsGD6z_IEJAOSW7BwgKxCywJRmPARh3I1P-vCys,3330
+mysql_to_sqlite3/mysql_utils.py,sha256=ef5AFl3qdj9GL6H_Ar8DL58jy6NOEMmGOoz1VZa3GuI,248
+mysql_to_sqlite3/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mysql_to_sqlite3/sqlite_utils.py,sha256=lpkjEOQdpbKTXkrL7ulA4aZPvIXRAMqYy5Oyth3U_wU,1508
+mysql_to_sqlite3/transporter.py,sha256=VtICnn1zDMbvengaJ_-1woTUmWDB3RmXKRCm3_EHEXA,28243
+mysql_to_sqlite3/types.py,sha256=V0rKKN2W1gqO8nLt65RyWBO2IK3qfc7ibgyXoHNgX6Y,1989
+mysql_to_sqlite3-2.1.7.dist-info/METADATA,sha256=wcptJfm2zzQ2-b58ZPRXe5pH5WHpJfOsQZk7K3eH0P4,7994
+mysql_to_sqlite3-2.1.7.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+mysql_to_sqlite3-2.1.7.dist-info/entry_points.txt,sha256=ch1oE44_2fyPKkF_AzdXhnSj1UJAldY5N8fX3flKFvA,58
+mysql_to_sqlite3-2.1.7.dist-info/licenses/LICENSE,sha256=H0EdSH_hMZZdfjMFxEwS3_THD_ILq3ia4QUNeT1t54Y,1069
+mysql_to_sqlite3-2.1.7.dist-info/RECORD,,
