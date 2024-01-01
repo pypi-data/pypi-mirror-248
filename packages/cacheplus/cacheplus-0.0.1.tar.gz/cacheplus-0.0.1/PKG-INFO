@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: cacheplus
+Version: 0.0.1
+Summary: Production ready caching
+Project-URL: Changelog, https://github.com/hyprxa/cacheplus/blob/master/CHANGELOG.md
+Project-URL: Homepage, https://github.com/hyprxa/cacheplus
+Project-URL: Source, https://github.com/hyprxa/cacheplus
+Author-email: Chris Newville <christopher.newville@hyprxa.io>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: <4.0,>=3.8
+Requires-Dist: anyio
+Provides-Extra: mongo
+Requires-Dist: motor; extra == 'mongo'
+Requires-Dist: pymongo; extra == 'mongo'
+Provides-Extra: redis
+Requires-Dist: redis; extra == 'redis'
+Description-Content-Type: text/markdown
+
+
+## Release Information
+
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+---
+
+[Full changelog](https://github.com/hyprxa/cacheplus/blob/master/CHANGELOG.md)
