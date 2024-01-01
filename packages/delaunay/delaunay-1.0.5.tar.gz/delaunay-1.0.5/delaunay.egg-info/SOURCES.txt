@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+delaunay/__init__.py
+delaunay/delaunay.py
+delaunay.egg-info/PKG-INFO
+delaunay.egg-info/SOURCES.txt
+delaunay.egg-info/dependency_links.txt
+delaunay.egg-info/top_level.txt
+delaunay/quadedge/__init__.py
+delaunay/quadedge/edge.py
+delaunay/quadedge/mesh.py
+delaunay/quadedge/point.py
+delaunay/quadedge/primitives.py
