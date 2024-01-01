@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pokemb
+Version: 0.1.2
+Home-page: https://github.com/spktrm/pokemb
+Author: Joseph Twin
+Author-email: joseph.twin14@gmail.com
+Requires-Dist: numpy
+Requires-Dist: torch
+Provides-Extra: generate
+Requires-Dist: pandas; extra == "generate"
+Requires-Dist: scikit_learn; extra == "generate"
+Requires-Dist: sentence-transformers; extra == "generate"

@@ -1,0 +1,7 @@
+numpy
+torch
+
+[generate]
+pandas
+scikit_learn
+sentence-transformers

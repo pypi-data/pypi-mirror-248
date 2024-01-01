@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+pokemb/__init__.py
+pokemb/mod.py
+pokemb/pred.py
+pokemb/utils.py
+pokemb.egg-info/PKG-INFO
+pokemb.egg-info/SOURCES.txt
+pokemb.egg-info/dependency_links.txt
+pokemb.egg-info/requires.txt
+pokemb.egg-info/top_level.txt
+pokemb/data/encodings.pkl
