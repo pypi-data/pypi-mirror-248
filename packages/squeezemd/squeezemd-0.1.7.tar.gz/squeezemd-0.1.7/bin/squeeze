@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Find Snakefile from active environment
+CONDA_BASE_PATH=$CONDA_PREFIX
+
+snakemake -s $CONDA_BASE_PATH/Snakefile "$@"
