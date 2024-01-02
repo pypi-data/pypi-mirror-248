@@ -1,0 +1,2 @@
+[console_scripts]
+cswitch = chrome_switcher.main:main
