@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: python-rpy
+Version: 1.1.0
+Summary: A Python library with various functional tools.
+Author: Riccardo Di Virgilio
+Author-email: riccardodivirgilio@gmail.com
+Keywords: password
+Requires-Python: >=3.5
+Description-Content-Type: text/x-rst
+License-File: LICENSE
