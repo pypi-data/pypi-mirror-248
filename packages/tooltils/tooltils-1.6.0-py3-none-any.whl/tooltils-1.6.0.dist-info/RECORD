@@ -1,0 +1,13 @@
+tooltils/__init__.py,sha256=zELnXK6K_whecefHzgXV-lKk0rttuFKrdDsk8ZRkn98,18536
+tooltils/_external.py,sha256=RFtk5h8soDsDR0V4mjBCpskS5K2AbhUOqZvmPKBP4Z4,824
+tooltils/errors.py,sha256=8Ht42zKO7I7oMLnvWRQVCGMDG8GWvONwUYc8hZ05CKQ,9498
+tooltils/info.py,sha256=KBA-HGBW92GONnZkUtr_GFyFiY0NW1_dbC3CEqrj3CQ,19590
+tooltils/requests/__init__.py,sha256=rYlDei-TlwV8HpbKQqrd62HDP7TDOraUbHYyTAiIZ0c,26167
+tooltils/requests/urllib.py,sha256=8fdPc4vwH_Z_HtO69VSqrxmTjDjJgJv-xXQ1ocKf1CU,24829
+tooltils/sys/__init__.py,sha256=Xr8zO2_jWm970pPnO_MNWpCxyZGI6QhnUTnHta4j_is,7515
+tooltils/sys/info.py,sha256=8C3iKRPpx_wOcq4NdaEWjsWbXptUodw0PmMhij5DObg,6633
+tooltils-1.6.0.dist-info/LICENSE,sha256=ZiEOesz8CSrHRxlB9BHkgD9BUupQL5stVOPdgYst_Es,1065
+tooltils-1.6.0.dist-info/METADATA,sha256=Ik4iHqfPVEMaeNXODcqR-tfAGy0r1AXuXCl6ad0_ZPA,2446
+tooltils-1.6.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+tooltils-1.6.0.dist-info/top_level.txt,sha256=4uKXlMhL5xFe_s9ST6dsjLPzfvXJDJfpShn8EGyArhA,9
+tooltils-1.6.0.dist-info/RECORD,,
