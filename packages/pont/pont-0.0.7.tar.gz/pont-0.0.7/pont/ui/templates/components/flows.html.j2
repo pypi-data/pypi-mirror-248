@@ -1,0 +1,31 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <tr>
+                <th scope="col">Start time</th>
+                <th scope="col">Host</th>
+                <th scope="col">Port</th>
+                <th scope="col">Protocol</th>
+                <th scope="col">Method</th>
+                <th scope="col">Path</th>
+                <th scope="col">Query</th>
+                <th scope="col">Status</th>
+                <th scope="col"></th>
+            </tr>
+    </thead>
+    <tbody>
+        {% for flow in flows %}
+            <tr>
+                <td scope="row">{{flow.start_time|format_datetime}}</td>
+                <td scope="row">{{flow.host}}</td>
+                <td scope="row">{{flow.port}}</td>
+                <td scope="row">{{flow.protocol}}</td>
+                <td scope="row">{{flow.method}}</td>
+                <td scope="row">{{flow.path}}</td>
+                <td scope="row">{{flow.query}}</td>
+                <td scope="row">{{flow.status}}</td>
+                <td scope="row"><a href="{{url('flow', id=flow.id)}}" class="btn btn-primary">View</a></td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>

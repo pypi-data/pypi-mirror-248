@@ -1,0 +1,56 @@
+{% extends "layout.html.j2" %}
+
+{% block body %}
+<h1>Configuration</h1>
+
+{% if config_file == None %}
+    <div class="alert alert-danger">
+        <h4 class="alert-heading">No configuration file found</h4>
+        <p>
+            You can create a <i>pont.yml</i> in the current directory {{current_directory}} or
+            in <i>{{ settings.user_config_directory() }}</i>.
+        </p>
+    </div>
+{% else %}
+    <div class="alert alert-information">
+        Current configuration is read from <i>{{config_file}}</i>.
+    </div>
+    <table class="table">
+        <tr>
+            <td>Host</td>
+            <td>{{settings.host}}</td>
+        </tr>
+        <tr>
+            <td>Port</td>
+            <td>{{settings.port}}</td>
+        </tr>
+    </table>
+    {% for proxy in settings.proxies %}
+        <h2>Proxy {{loop.index}}: {{proxy.protocol}}</h2>
+        <table class="table">
+            <tr>
+                <td>Protocol</td>
+                <td>{{proxy.protocol}}</td>
+            </tr>
+            <tr>
+                <td>Local host</td>
+                <td>{{proxy.local_host}}</td>
+            </tr>
+            <tr>
+                <td>Local port</td>
+                <td>{{proxy.local_port}}</td>
+            </tr>
+            <tr>
+                <td>Remote host</td>
+                <td>{{proxy.remote_host}}</td>
+            </tr>
+            <tr>
+                <td>Remote port</td>
+                <td>{{proxy.remote_port}}</td>
+            </tr>
+        </table>
+    {% endfor %}
+{% endif %}
+
+
+{% endblock %}
