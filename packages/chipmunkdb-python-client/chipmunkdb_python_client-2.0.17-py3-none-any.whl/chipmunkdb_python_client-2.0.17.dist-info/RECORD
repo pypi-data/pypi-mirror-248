@@ -1,0 +1,15 @@
+chipmunkdb/ChipmunkDb.py,sha256=--Cjpw2zAHk7ueJbfraOEnhsRdZjvAoahOOzLymbxOI,6483
+chipmunkdb/__init__.py,sha256=Dt7WEJ1eKi4KpJ0JoHId7CxF0Cm7XunF3NdYdP6Anj0,121
+chipmunkdb/base.py,sha256=yUxbRfV3OgIVp8UEvavY9u-vSS_zcfmco9zbFu67Nbk,17327
+chipmunkdb/config.cfg,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chipmunkdb/jdbc.py,sha256=8INihrVyp1F8csEw0dIC35iJcWQsBVNyhBjgSl4fX8o,3781
+chipmunkdb/chipmunkdbapi/__init__.py,sha256=OSq06IB_MXrGKaJKtlUbOM4WHCx-Nvj2AIGgVeyIhGs,59
+chipmunkdb/chipmunkdbapi/_chipmunkdbapi.py,sha256=ac8QNql0wAn3S-P3Wtw8lwMK9P9Bh72TWLnsQ8jKZko,19769
+chipmunkdb/chipmunkdbapi/api_exceptions.py,sha256=6LvfwM2wpUeictr8mPb7Sq2z2fNcx1HgVdaNrpSVngY,1288
+chipmunkdb/chipmunkdbapi/api_globals.py,sha256=NnKcXQWAZFDgwuUHEJKNXXXy0j_qFmtgYVNcJKsxaNo,212
+chipmunkdb_python_client-2.0.17.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chipmunkdb_python_client-2.0.17.dist-info/METADATA,sha256=dCtxyeOQXOgX5LNRkJh6Rp8QRdfrKA-XqckJtDIp5_g,1603
+chipmunkdb_python_client-2.0.17.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+chipmunkdb_python_client-2.0.17.dist-info/entry_points.txt,sha256=TcEBhzsTYn9Vi7SIYOloa8IPGkW8yiku6YTGO-GFeEY,147
+chipmunkdb_python_client-2.0.17.dist-info/top_level.txt,sha256=Za4V_HAW7NUfba__yfosOBwOXtRXh7VChOtLeLfAXsY,11
+chipmunkdb_python_client-2.0.17.dist-info/RECORD,,
