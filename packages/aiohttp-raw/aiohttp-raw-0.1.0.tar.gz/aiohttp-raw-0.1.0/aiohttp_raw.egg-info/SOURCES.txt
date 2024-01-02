@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+aiohttp_raw/__init__.py
+aiohttp_raw/__version__.py
+aiohttp_raw/client.py
+aiohttp_raw/client_reqrep.py
+aiohttp_raw.egg-info/PKG-INFO
+aiohttp_raw.egg-info/SOURCES.txt
+aiohttp_raw.egg-info/dependency_links.txt
+aiohttp_raw.egg-info/not-zip-safe
+aiohttp_raw.egg-info/requires.txt
+aiohttp_raw.egg-info/top_level.txt
