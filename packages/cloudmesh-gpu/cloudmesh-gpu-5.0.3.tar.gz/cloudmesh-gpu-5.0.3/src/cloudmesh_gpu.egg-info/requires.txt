@@ -1,0 +1,5 @@
+cloudmesh-cmd5
+pandas
+seaborn
+matplotlib
+xmltodict
