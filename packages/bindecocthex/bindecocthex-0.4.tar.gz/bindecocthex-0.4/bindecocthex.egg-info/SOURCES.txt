@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+bindecocthex/__init__.py
+bindecocthex/conversion.py
+bindecocthex.egg-info/PKG-INFO
+bindecocthex.egg-info/SOURCES.txt
+bindecocthex.egg-info/dependency_links.txt
+bindecocthex.egg-info/entry_points.txt
+bindecocthex.egg-info/top_level.txt
