@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: totoapicontroller
+Version: 1.0.0
+Summary: API Controller for Toto APIs
+Home-page: UNKNOWN
+Author: nicolasances
+Author-email: nicolas.matteazzi@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: PyJWT
+Requires-Dist: Flask-Cors
+Requires-Dist: Flask
+Requires-Dist: google-cloud-secret-manager
+
+UNKNOWN
+
