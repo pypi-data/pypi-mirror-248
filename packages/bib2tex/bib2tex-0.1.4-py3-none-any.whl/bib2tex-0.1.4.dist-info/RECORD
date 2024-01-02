@@ -1,0 +1,14 @@
+bib2tex/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bib2tex/__main__.py,sha256=769YxIO5UkaV8GCpLCMrAvVP_vzoDFkM3WwClAdik9o,5922
+bib2tex/bibtex_filter.py,sha256=yQJlA5fjVs72ThXvDA6hAcYhgBvaiNMBlTA1SOgd1w8,2289
+bib2tex/bibtex_parser.py,sha256=Z3ZWO8OnFWL8qfauetWVH11Dj3wHgNYBbfrgKN-H7SE,3676
+bib2tex/config.py,sha256=br7o8R7eaYOfSLiHT0P4zW4MfHRaqY7FXI1XY-HNiHw,913
+bib2tex/converter.py,sha256=c2CP3fy9R7wOzcNeack0k5bW9HovqLvJ2SQIEuwP0xU,3098
+bib2tex/format_schemes/compact.json,sha256=i1f3XO9BroEy4SMGhl5e9eEoLFssR2eJHSdL6YHNcYs,117
+bib2tex/format_schemes/default.json,sha256=YDPHAaf2rj4pKkJ0Vsyu0FxqClM-w5XGeH_pvqvIrZ0,1203
+bib2tex/format_schemes.py,sha256=IRT-TcCalFbJ8DZx9v_f4_6lp_T3xsdXDweSxZNzmkQ,2587
+bib2tex-0.1.4.dist-info/LICENSE,sha256=N4OjFpuhzwnkZkzPJSd_7sSl7AfOhi5EmzT2_Ezf4BU,1090
+bib2tex-0.1.4.dist-info/METADATA,sha256=roB8FcU8i6h0YqRlsAvqwytrqMm4m-hi3IDFTdqe17o,4820
+bib2tex-0.1.4.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+bib2tex-0.1.4.dist-info/entry_points.txt,sha256=EqiDDmAYUJtDuWo5duw8j0MKOcrtK86FYUkT0_yLSR8,48
+bib2tex-0.1.4.dist-info/RECORD,,
