@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: kasa_carbon
+Version: 0.0.4
+Summary: Monitor energy and carbon values from Kasa smart plug
+Home-page: https://github.com/scottcha/kasa_carbon
+Author: Scott Chamberlin
+Author-email: Scott Chamberlin <scott@snowymountainworks.com>
+Project-URL: Homepage, https://github.com/scottcha/kasa_carbon
+Project-URL: Issues, https://github.com/scottcha/kasa_carbon/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: python-kasa==0.5.4
+Requires-Dist: psycopg2-binary==2.9.9
+Requires-Dist: asyncpg==0.29.0
+Requires-Dist: pytz==2023.3.post1
+Requires-Dist: aiohttp==3.9.1
+Requires-Dist: python-dotenv==1.0.0
+
+# kasa_carbon
+Show CO2 emissions of devices connected to a Kasa energy meter.
+
+# Install instructions
+This utility is installed as a python module.  Its recommended to install within a python virtual environment such as conda.  For the example below I'll be using conda. 
+
+'''bash
+conda create -n kasa python=3.12
+conda activate kasa
+pip install kasa-carbon
+
+
+
+
+
+# Development instructions
+You can run the project from source as 
+'python -m kasa_carbon.kasa_carbon_main
+
