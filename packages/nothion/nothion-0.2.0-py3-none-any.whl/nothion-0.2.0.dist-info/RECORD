@@ -1,0 +1,13 @@
+nothion/__init__.py,sha256=yxI2TD3MkDSHZLXSVpKsXl2KZB8SMicGxIl5v--GNxg,88
+nothion/_config.py,sha256=3eahwEZbWefspBoXJIt3WGe3MPfFETFw0yLikX6Deo4,288
+nothion/_notion_api.py,sha256=nw82Va9smdXAkU9IvMTjh-apXSmvUpnHhhZWP-NV0Dk,2108
+nothion/_notion_payloads.py,sha256=8sdxDF6f6MhETCtap9FjMB67Y0q1NLwsoRTHBg-PH2A,6169
+nothion/_notion_table_headers.py,sha256=nM4qRyKyTlBMkPYdbeFGnI0GgNjR--ogj3GSYSHgf9Y,633
+nothion/notion_client.py,sha256=gCTZEG_Pmxai7y1CGgl2UJnFsAF_BUy_6DsEaiWTR_U,11655
+nothion/personal_stats_model.py,sha256=yGQKwTMrJq12edEBAfUFJ3TapjnmLsVw7p62lVnVqiI,480
+nothion/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nothion-0.2.0.dist-info/LICENSE,sha256=kaBn6kuL6ip1JBFSZ8aE6JNFR_FNv9lWa-NBzXpKllU,1072
+nothion-0.2.0.dist-info/METADATA,sha256=KuQnmNT-1qtSo19EwBrytygMm9rwJlMouaZElnv_t7k,2084
+nothion-0.2.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+nothion-0.2.0.dist-info/top_level.txt,sha256=htvm2cI6EtBhB35g0BsYN2uByWbI20ar8OJLV8Cs7C8,8
+nothion-0.2.0.dist-info/RECORD,,
