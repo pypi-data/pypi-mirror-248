@@ -1,0 +1,8 @@
+DataVisualization.exe
+MANIFEST.in
+setup.py
+DataAnaliticVisor.egg-info/PKG-INFO
+DataAnaliticVisor.egg-info/SOURCES.txt
+DataAnaliticVisor.egg-info/dependency_links.txt
+DataAnaliticVisor.egg-info/requires.txt
+DataAnaliticVisor.egg-info/top_level.txt
