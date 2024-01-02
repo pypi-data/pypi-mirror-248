@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: literadio2_se_usb
+Version: 0.0.1
+Summary: BETAFPV LiteRadio 2 SE Radio Transmitter USB.
+Home-page: https://github.com/Nacht1gall/literadio-2-se-usb
+Author-email: johnherbertdillinger@ukr.net
+License: MIT
+Keywords: betafpv,drone,controller
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+
+    BETAFPV LiteRadio 2 SE Radio Transmitter USB.
+    License: MIT
+    

@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+src/literadio2_se_usb/__init__.py
+src/literadio2_se_usb/literadio2_se_usb.py
+src/literadio2_se_usb.egg-info/PKG-INFO
+src/literadio2_se_usb.egg-info/SOURCES.txt
+src/literadio2_se_usb.egg-info/dependency_links.txt
+src/literadio2_se_usb.egg-info/requires.txt
+src/literadio2_se_usb.egg-info/top_level.txt
+src/literadio2_se_usb/utils/__init__.py
+src/literadio2_se_usb/utils/data.py
+src/literadio2_se_usb/utils/exceptions.py
+src/literadio2_se_usb/utils/tools.py
