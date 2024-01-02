@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pixoo
+Version: 0.8.0
+Summary: ('A library to easily communicate with the Divoom Pixoo 64', '(and hopefully soon more screens that support Wi-Fi)')
+Home-page: https://github.com/kongo09/pixoo#readme
+Author: Ron Talman, kongo09
+License: BSD
+Project-URL: Bug Tracker, https://github.com/kongo09/pixoo/issues
+Keywords: pixoo
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: requests~=2.31.0
+Requires-Dist: Pillow~=10.0.0
