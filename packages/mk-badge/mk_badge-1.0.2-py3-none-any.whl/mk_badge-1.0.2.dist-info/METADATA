@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: mk-badge
+Version: 1.0.2
+Summary: Makes badges like the ones made by travis-ci to show the status of a build
+Home-page: https://gitlab.com/NamingThingsIsHard/media_tools/mk_badge
+Author: LoveIsGrief
+Author-email: loveisgrief@tuta.io
+Project-URL: Bug Tracker, https://gitlab.com/NamingThingsIsHard/media_tools/mk_badge/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pycairo
+
+# mk_badge
+
+A python script to help making SVG badges like the ones made by travis-ci to show the status of a build
+
+# Examples
+
+```bash
+mk_badge -f examples/blackNwhite.svg \
+    --left-fill-color 0,0,0 --left-text-color 255,255,255 \
+    --right-fill-color 255,255,255 --right-text-color 0,0,0 \
+    "Black" "White"
+```
+
+![](/examples/blackNwhite.svg)
+
+```bash
+mk_badge -f examples/redNgreen_comicsans.svg \
+    --left-fill-color 255,0,0 --left-text-color 255,255,255 \
+    --right-fill-color 0,255,0 --right-text-color 0,0,0 \
+    --font "Comic Sans MS" \
+    "Comics Sans MS:" "Serious"
+```
+
+![](/examples/redNgreen_comicsans.svg)
+
+```bash
+mk_badge -f examples/build_passing.svg \
+    --left-fill-color 93,93,93 --left-text-color 255,255,255 \
+    --right-fill-color 77,199,31 --right-text-color 255,255,255 \
+    --left-stroke-color 93,93,93 --right-stroke-color 93,93,93 \
+    "build" "passing"
+```
+
+![](/examples/build_passing.svg)
