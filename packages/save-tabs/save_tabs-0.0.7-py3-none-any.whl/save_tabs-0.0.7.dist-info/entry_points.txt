@@ -1,0 +1,2 @@
+[console_scripts]
+savetabs = save_tabs.main:main

@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: save-tabs
+Version: 0.0.7
+Summary: Creates double-click shortcuts for currently open Google Chrome windows/ tabs
+Project-URL: Homepage, https://github.com/pilgrimtabby/save-tabs
+Project-URL: Issues, https://github.com/pilgrimtabby/save-tabs/issues
+Author-email: pilgrim_tabby <pilgrimtabby@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: chime; platform_system != 'Windows'
+Requires-Dist: pyautogui>=0.9.53; platform_system == 'Windows'
+Requires-Dist: pyperclip>=1.0.9; platform_system == 'Windows'
+Requires-Dist: pywin32; platform_system == 'Windows'
+Description-Content-Type: text/markdown
+
+# About
+
+Saves the current Google Chrome browsing session (windows and tabs) into an executable to use later.
+
+# Usage
+
+After [installation](#installation), run `$ savetabs` to open the GUI interface.
+
+A command line interface will be added in the future.
+
+### Windows
+
+After accepting the terms of use, you'll be prompted to snap your Chrome window to the left side of the screen. Follow the on-screen instructions. This program generates a .bat batch file with your saved Chrome session information--to use it, double-click it.
+
+### macOS
+
+If you have more than one window open, you'll be prompted to choose which window(s) to save. Follow the on-screen instructions. This program generates a bash executable file with your Chrome session information--to use it, double click it.
+
+# Installation
+
+Python is required. This program was tested on Python 3.11 but should work on all maintained Python versions.
+
+### Windows and macOS
+
+#### Option 1: pip
+
+The easiest way to install this program is using pip: `$ pip install save-tabs`
+
+#### Option 2: download and run
+
+Download the source code and run main.py: `$ python3 /path/to/main.py`
+
+### Linux
+
+This program has not been tested on Linux.
