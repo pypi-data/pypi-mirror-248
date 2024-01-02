@@ -1,0 +1,4 @@
+PyJWT
+Flask-Cors
+Flask
+google-cloud-secret-manager
