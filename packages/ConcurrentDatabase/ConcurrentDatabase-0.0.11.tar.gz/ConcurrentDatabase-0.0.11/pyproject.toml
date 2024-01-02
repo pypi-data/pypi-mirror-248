@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[metadata]
+name = "ConcurrentDatabase"
+author = "Jay S"
+author_email = ""
+version = "0.0.11"
+description = "A simple wrapper allow for treating an SQLite database as an object oriented structure"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+long_description = """
+# ConcurrentDatabase
+A simple sql wrapper for making a database be object oriented
+"""
+
+[options]
+packages = ["ConcurrentDatabase"]
+python_requires = ">=3.8"
+install_requires = ["sqlite3", "loguru"]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests"
+]
