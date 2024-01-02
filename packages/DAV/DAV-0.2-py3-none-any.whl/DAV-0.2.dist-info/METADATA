@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: DAV
+Version: 0.2
+Requires-Dist: DataVisualization.exe
+Requires-Dist: DataVisualization.exp
+Requires-Dist: DataVisualization.lib
+Requires-Dist: DataVisualization.pdb
+Requires-Dist: freeglut.dll
+Requires-Dist: glew32.dll
+Requires-Dist: glewinfo.exe
+Requires-Dist: glfw3.dll
+Requires-Dist: imgui.ini
+Requires-Dist: MANIFEST.in
+Requires-Dist: openal32.dll
+Requires-Dist: visualinfo.exe
+Requires-Dist: BackgroundFragment.glsl
+Requires-Dist: SpheresFragment.glsl
+Requires-Dist: SpheresVertex.glsl
+Requires-Dist: UserPrefs.txt
+
