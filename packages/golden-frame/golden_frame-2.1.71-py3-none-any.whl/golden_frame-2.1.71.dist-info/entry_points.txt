@@ -1,0 +1,3 @@
+[console_scripts]
+golden-frame=golden_frame.cli:main
+
