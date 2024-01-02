@@ -1,0 +1,14 @@
+ypywidgets_textual/__init__.py,sha256=fv3_jSjE8uZ9Uta5mmcl5sFmNYidJ8pQ9MvuPtrjRAk,212
+ypywidgets_textual/_driver.py,sha256=AIq1MLAOdtcvasMwBqpJG45Q4Ah2CCP8aTpg-7nsYX8,6596
+ypywidgets_textual/button.py,sha256=-bQ48Ak-OdRd8ah38sQDLGUgMsfbmYBSwybsRWDTYdc,1714
+ypywidgets_textual/plotext.py,sha256=TaeQLBdAH_7jyYP7kDyici6TricZE76BTiPtsrVpM-k,932
+ypywidgets_textual/switch.py,sha256=ScVju8tfWGDJeQiPrQyGiLZDq4sViT7Ql67KnsoTnIE,596
+ypywidgets_textual/widget.py,sha256=XKmOfB_ieJRDMTRQXa5ntUzf30sTU1vu_LHOAO2oH2M,3258
+ypywidgets_textual/txl/button.py,sha256=-5xf7kOzziTbdc41PQBFr3-fx6kfEcCumr153JfWK6c,985
+ypywidgets_textual/txl/plotext.py,sha256=u2_4lymzmM6t0fE0c62iyOM86nF7axvXnVai49Vhff0,1057
+ypywidgets_textual/txl/switch.py,sha256=UuQHAGFJcRl_kGfslplru9PC2KgYdEuDwf_e7-8CYkQ,587
+ypywidgets_textual/txl/widget.py,sha256=dqNiEYUlmdAvAFFjsfPMhco4lBQeJtdBYG0WTt5C5i4,5345
+ypywidgets_textual-0.2.4.dist-info/METADATA,sha256=9bhNigw2SMwOoXF6lzFvsIQTH2Mnsq7ZUWsELMPhWFk,527
+ypywidgets_textual-0.2.4.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+ypywidgets_textual-0.2.4.dist-info/entry_points.txt,sha256=q9jyzFisC6hKfOpJfqyjrt2N3COXObYyhEKVM5JITa8,598
+ypywidgets_textual-0.2.4.dist-info/RECORD,,
