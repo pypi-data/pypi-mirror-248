@@ -1,0 +1,48 @@
+An error occured at 2023-12-31 17:41:04:
+
+function: error_func
+args: (4,)
+kwargs: {}
+
+Traceback (most recent call last):
+  File "C:\Users\ideapad\AppData\Local\Programs\Python\Python312\Lib\site-packages\pam.py", line 427, in wrapper
+    return function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Apps\Pam_module\test.py", line 5, in error_func
+    raise KeyboardInterrupt
+KeyboardInterrupt
+
+
+
+An error occured at 2023-12-31 17:41:15:
+
+function: error_func
+args: (4,)
+kwargs: {}
+
+Traceback (most recent call last):
+  File "C:\Users\ideapad\AppData\Local\Programs\Python\Python312\Lib\site-packages\pam.py", line 427, in wrapper
+    return function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Apps\Pam_module\test.py", line 5, in error_func
+    raise KeyboardInterrupt
+KeyboardInterrupt
+
+
+
+An error occured at 2023-12-31 17:41:51:
+
+function: error_func
+args: (4,)
+kwargs: {}
+
+Traceback (most recent call last):
+  File "C:\Users\ideapad\AppData\Local\Programs\Python\Python312\Lib\site-packages\pam.py", line 427, in wrapper
+    return function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Apps\Pam_module\test.py", line 5, in error_func
+    raise KeyboardInterrupt
+KeyboardInterrupt
+
+
+
