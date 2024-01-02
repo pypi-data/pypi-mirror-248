@@ -1,0 +1,21 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Unit test / coverage reports
+.pytest_cache/
+
+# virtualenv
+.venv
+venv/
+ENV/
+
+# IDE settings
+.vscode/settings.json
+
+# Pont settings
+pont.yml
+pont.pid
+
+dist

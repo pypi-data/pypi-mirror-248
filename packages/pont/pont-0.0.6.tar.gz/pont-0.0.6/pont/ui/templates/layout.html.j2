@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="/static/tabler/tabler.js"></script>
+  <link rel="stylesheet" href="/static/tabler/tabler.css">
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="icon" type="image/png" href="/static/favicon.png">
+  <script src="/static/htmx.min.js"></script>
+  <title>Pont</title>
+</head>
+
+<body class="page">
+  <header>
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+      <a href="/" class="navbar-brand">
+        <img src="/static/logo.png" alt="Pont" />
+      </a>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Flows</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/config">Configuration</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="{% block container %}container{% endblock %}">
+      {% block body %}
+      {% endblock %}
+    </div>
+  </main>
+</body>
+
+</html>

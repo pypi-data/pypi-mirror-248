@@ -1,0 +1,47 @@
+[build-system]
+requires = ["hatchling", "hatch-requirements-txt"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pont"
+dynamic = ["version", "dependencies"]
+description = "A proxy for developers"
+readme = "README.md"
+authors = [{name = "Julien Duponchelle"}]
+license = {text = "Apache-2.0"}
+classifiers = [
+]
+requires-python = ">=3.8"
+
+[project.scripts]
+pont = "pont.__main__:main"
+
+[tool.hatch.metadata.hooks.requirements_txt]
+files = ["requirements.txt"]
+
+[tool.hatch.version]
+path = "pont/__init__.py"
+
+[tool.hatch.envs.lint]
+detached = true
+dependencies = [
+  "ruff>=0.0.243",
+]
+
+[tool.hatch.env]
+requires = ["hatch-mkdocs"]
+
+[tool.hatch.env.collectors.mkdocs.docs]
+path = "mkdocs.yml"
+
+[tool.hatch.envs.docs]
+detached = false
+
+[tool.hatch.envs.docs.env-vars]
+PYTHONPATH = "." # Required for mkdocs-click to find the package
+
+[tool.hatch.build]
+exclude = [
+  "/.github",
+]
+packages = ["pont"]

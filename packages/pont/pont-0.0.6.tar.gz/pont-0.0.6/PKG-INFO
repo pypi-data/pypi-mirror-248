@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pont
+Version: 0.0.6
+Summary: A proxy for developers
+Author: Julien Duponchelle
+License: Apache-2.0
+License-File: AUTHORS.md
+License-File: LICENSE
+Requires-Python: >=3.8
+Requires-Dist: aiohttp-jinja2>=1.5.1
+Requires-Dist: aiohttp>=3.8.5
+Requires-Dist: click>=8.1.7
+Requires-Dist: colorama>=0.4.6
+Requires-Dist: platformdirs>=3.11.0
+Requires-Dist: rocher>=0.44.0
+Requires-Dist: strictyaml>=1.7.3
+Description-Content-Type: text/markdown
+
+## Develoment
+
+To start the ui with fake data:
+```
+adev runserver demo.py
+```
